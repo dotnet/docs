@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.StringProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the string properties of a visual style element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StringProperty enumeration represents a set of string properties that describe visual style elements. The StringProperty values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetString%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Text">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.StringProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text that will be displayed with the element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

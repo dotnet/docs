@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates the method that will be used during deserialization for locating and loading assemblies.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +31,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterAssemblyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>In full mode, the assembly used during deserialization must match exactly the assembly used during serialization. The <see cref="System.Reflection.Assembly.Load%2A" /> method of the <see cref="T:System.Reflection.Assembly" /> class is used to load the assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Simple">
@@ -44,14 +52,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterAssemblyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>In simple mode, the assembly used during deserialization need not match exactly the assembly used during serialization. Specifically, the version numbers need not match as the <see cref="System.Reflection.Assembly.LoadWithPartialName%2A" /> method is used to load the assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Services.ITrackingHandler" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,42 +14,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that the implementing object must be notified of marshaling, unmarshaling, and disconnection of objects and proxies by the remoting infrastructure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Every object that is registered with <xref:System.Runtime.Remoting.Services.TrackingServices> is called by remoting when an object or proxy in the current <xref:System.AppDomain> is marshaled, unmarshaled, or disconnected.  
-  
- Note that only objects can be disconnected. An exception is thrown when disconnect is called on a proxy.  
-  
-> [!NOTE]
->  This interface makes a link demand. A SecurityException is thrown if the immediate caller makes the call through a reference to the interface and does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
-  
-   
-  
-## Examples  
- The following code example shows how to implement the methods of the ITrackingHandler interface to receive notifications from the remoting infrastructure.  
-  
- The following code example shows how to implement this interface.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#30](~/add/codesnippet/csharp/t-system.runtime.remotin_53_1.cs)]  
-  
- The following code example shows how to implement this interface on a server.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#20](~/add/codesnippet/csharp/t-system.runtime.remotin_53_2.cs)]  
-  
- The following code example shows how to implement this interface on a client for the server in the preceding code example.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#0](~/add/codesnippet/csharp/t-system.runtime.remotin_53_3.cs)]  
-  
- The following code example shows the remote object that is used by the server and the client.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#10](~/add/codesnippet/csharp/t-system.runtime.remotin_53_4.cs)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission Value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DisconnectedObject">
@@ -59,14 +25,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -74,18 +35,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The disconnected object.</param>
-        <summary>Notifies the current instance that an object has been disconnected from its proxy.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#33](~/add/codesnippet/csharp/c70937a7-e069-46f5-9d7a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarshaledObject">
@@ -95,14 +47,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -111,19 +58,10 @@
         <Parameter Name="or" Type="System.Runtime.Remoting.ObjRef" />
       </Parameters>
       <Docs>
-        <param name="obj">The object that has been marshaled.</param>
-        <param name="or">The <see cref="T:System.Runtime.Remoting.ObjRef" /> that results from marshaling and represents the specified object.</param>
-        <summary>Notifies the current instance that an object has been marshaled.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#31](~/add/codesnippet/csharp/fc48878c-93fe-42e1-b904-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="or">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnmarshaledObject">
@@ -133,14 +71,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -149,19 +82,10 @@
         <Parameter Name="or" Type="System.Runtime.Remoting.ObjRef" />
       </Parameters>
       <Docs>
-        <param name="obj">The unmarshaled object.</param>
-        <param name="or">The <see cref="T:System.Runtime.Remoting.ObjRef" /> that represents the specified object.</param>
-        <summary>Notifies the current instance that an object has been unmarshaled.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
-  
- [!code-cs[System.Runtime.Remoting.Services.TrackingServices#32](~/add/codesnippet/csharp/e9540189-7941-4492-9c75-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="or">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

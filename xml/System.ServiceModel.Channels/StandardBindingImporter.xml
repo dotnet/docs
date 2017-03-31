@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StandardBindingImporter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides an extensibility point for mapping WSDL contracts and policy assertions into [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] standard bindings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override this class to extend the standard mapping between WSDL and a standard binding. Then attach your custom object to a <xref:System.ServiceModel.Description.WsdlImporter> either programmatically or by using an application configuration file. You can also attach your custom object to the internal <xref:System.ServiceModel.Description.WsdlImporter> used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) using an application configuration file.  
-  
- Use the <xref:System.ServiceModel.Channels.StandardBindingImporter.System%23ServiceModel%23Description%23IWsdlImportExtension%23BeforeImport%2A> method to directly modify the metadata that is then imported into standard binding objects.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StandardBindingImporter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,18 +52,11 @@
         <Parameter Name="policy" Type="System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="wsdlDocuments">The <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> that describes the services.</param>
-        <param name="xmlSchemas">The <see cref="T:System.Xml.Schema.XmlSchemaSet" /> that describes the <c>wsdlDocuments</c>.</param>
-        <param name="policy">The <see cref="System.Collections.Generic.ICollection%601" /> of type <see cref="T:System.Xml.XmlElement" /> that contains the policy elements.</param>
-        <summary>Called prior to importing the metadata documents associated with the standard binding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport%2A> methods of all registered <xref:System.ServiceModel.Description.IWsdlImportExtension> objects is called before anything is imported from the supplied metadata. At this point, you can directly modify the metadata that is subsequently imported into standard binding objects.  
-  
- ]]></format>
-        </remarks>
+        <param name="wsdlDocuments">To be added.</param>
+        <param name="xmlSchemas">To be added.</param>
+        <param name="policy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IWsdlImportExtension.ImportContract">
@@ -85,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,9 +76,9 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">The <see cref="T:System.ServiceModel.Description.WsdlImporter" /> for importing and resolving WSDL metadata.</param>
-        <param name="context">The <see cref="T:System.ServiceModel.Description.WsdlContractConversionContext" /> that provides the context for the conversion from WSDL to the service description.</param>
-        <summary>Provides an extensibility point for importing WSDL contract information for standard bindings.</summary>
+        <param name="importer">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +89,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,9 +99,9 @@
         <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">The <see cref="T:System.ServiceModel.Description.WsdlImporter" /> for importing and resolving WSDL metadata.</param>
-        <param name="endpointContext">The <see cref="T:System.ServiceModel.Description.WsdlEndpointConversionContext" /> for the conversion.</param>
-        <summary>Provides an extensibility point for mapping endpoints defined in WSDL into the service description.</summary>
+        <param name="importer">To be added.</param>
+        <param name="endpointContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

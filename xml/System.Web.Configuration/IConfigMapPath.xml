@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IConfigMapPath" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the mapping between configuration-file virtual and physical paths.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IConfigMapPath is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetAppPathForPath">
@@ -27,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,18 +29,11 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteID">A unique identifier for the site.</param>
-        <param name="path">The URL associated with the site.</param>
-        <summary>Gets the virtual-directory name associated with a specific site.</summary>
-        <returns>The <paramref name="siteID" /> must be unique. No two sites share the same id. The <paramref name="siteID" /> distinguishes sites that have the same name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetAppPathForPath is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="siteID">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultSiteNameAndID">
@@ -59,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,17 +53,10 @@
         <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="siteName">The default site name.</param>
-        <param name="siteID">A unique identifier for the site.</param>
-        <summary>Populates the default site name and the site ID.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetDefaultSiteNameAndID is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="siteName">To be added.</param>
+        <param name="siteID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMachineConfigFilename">
@@ -90,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,16 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the machine-configuration file name.</summary>
-        <returns>The machine-configuration file name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetMachineConfigFilename is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPathConfigFilename">
@@ -117,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,19 +97,12 @@
         <Parameter Name="baseName" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="siteID">A unique identifier for the site.</param>
-        <param name="path">The URL associated with the site.</param>
-        <param name="directory">The physical directory of the configuration path.</param>
-        <param name="baseName">The name of the configuration file.</param>
-        <summary>Populates the directory and name of the configuration file based on the site ID and site path.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetPathConfigFilename is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="siteID">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="directory">To be added.</param>
+        <param name="baseName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRootWebConfigFilename">
@@ -152,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,16 +119,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the name of the configuration file at the Web root.</summary>
-        <returns>The name of the configuration file at the Web root.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetRootWebConfigFilename is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MapPath">
@@ -179,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,18 +141,11 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteID">A unique identifier for the site.</param>
-        <param name="path">The URL associated with the site.</param>
-        <summary>Gets the physical directory path based on the site ID and URL associated with the site.</summary>
-        <returns>The physical directory path.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MapPath is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="siteID">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveSiteArgument">
@@ -211,7 +155,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,20 +166,11 @@
         <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="siteArgument">The site name or site identifier.</param>
-        <param name="siteName">The default site name.</param>
-        <param name="siteID">A unique identifier for the site.</param>
-        <summary>Populates the site name and site ID based on a site argument value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `siteArgument` is `null`, is equal to the default site name, or is equal to the default site identifier, the `siteName` and `siteID` are populated with the default site values.  
-  
- ResolveSiteArgument is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="siteArgument">To be added.</param>
+        <param name="siteName">To be added.</param>
+        <param name="siteID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

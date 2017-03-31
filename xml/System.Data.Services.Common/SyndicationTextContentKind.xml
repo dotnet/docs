@@ -4,22 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.SyndicationTextContentKind" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumeration used to identify text content of syndication item.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a value of Xhtml for the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind%2A> attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Html">
@@ -29,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Common.SyndicationTextContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>HTML content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Plaintext">
@@ -46,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Common.SyndicationTextContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Plain text content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xhtml">
@@ -63,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Common.SyndicationTextContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XHTML content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

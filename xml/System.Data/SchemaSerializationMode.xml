@@ -4,22 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SchemaSerializationMode" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the schema serialization mode for a typed <see cref="T:System.Data.DataSet" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed <xref:System.Data.DataSet> to ExcludeSchema provides the option of omitting schema information from the serialization payload.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ExcludeSchema">
@@ -29,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SchemaSerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Skips schema serialization for a typed <see cref="T:System.Data.DataSet" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeSchema">
@@ -46,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SchemaSerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Includes schema serialization for a typed <see cref="T:System.Data.DataSet" />. The default.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

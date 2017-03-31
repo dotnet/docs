@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ThemeDictionaryExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a markup extension that enables application authors to customize control styles based on the current system theme.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ThemeDictionary Markup Extension](../Topic/ThemeDictionary%20Markup%20Extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-<a name="xamlTextUsage_ThemeDictionaryExtension"></a>   
-## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] information, see [ThemeDictionary Markup Extension](../Topic/ThemeDictionary%20Markup%20Extension.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.ThemeDictionaryExtension" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,15 +42,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The assembly name string.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.ThemeDictionaryExtension" /> class, using the specified assembly name.</summary>
+        <param name="assemblyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,26 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string setting a particular naming convention to identify which dictionary applies for a particular theme.</summary>
-        <value>The assembly name string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_AssemblyName"></a>   
-## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] information, see [ThemeDictionary Markup Extension](../Topic/ThemeDictionary%20Markup%20Extension.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">
@@ -103,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,28 +87,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">An object that can provide services for the markup extension. This service is expected to provide results for <see cref="T:System.Windows.Markup.IXamlTypeResolver" />.</param>
-        <summary>Returns an object that should be set on the property where this extension is applied. For <see cref="T:System.Windows.ThemeDictionaryExtension" />, this is the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] value for a particular theme dictionary extension.</summary>
-        <returns>The object value to set on the property where the extension is applied.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method supports [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] processor implementation, and is not intended to be called directly. The [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] processor implementation uses this method for proper handling of `ThemeResourceDictionary` extension values during object creation.  
-  
- This implementation relies on services based on the passed `serviceProvider`. It must not be `null`. The `serviceProvider` object is expected to implement <xref:System.Windows.Markup.IXamlTypeResolver>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.ThemeDictionaryExtension.AssemblyName%2A" /> property is <see langword="null" />. You must set this value during construction or before using the ProvideValue method.  
-  
- -or-  
-  
- <paramref name="serviceProvide" />r is <see langword="null" /> or does not provide a service for <see cref="T:System.Windows.Markup.IXamlTypeResolver" />.  
-  
- -or-  
-  
- <paramref name="serviceProvider" /> specifies a target type that does not match <see cref="System.Windows.ResourceDictionary.Source%2A" />.</exception>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

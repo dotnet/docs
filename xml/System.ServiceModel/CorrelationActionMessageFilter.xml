@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a XAML-friendly implementation of a <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> that filters on a single action.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the action for the <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
-        <value>The action for the <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +64,9 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">The <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" /> to compare with the current <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</param>
-        <summary>Determines whether the current <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" /> is equal to the specified <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" /> is equal to the current <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +84,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for the <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" /> instance.</summary>
-        <returns>The hash code for the <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,18 +105,10 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The message to compare.</param>
-        <summary>Determines whether the specified message’s action matches the <see cref="System.ServiceModel.CorrelationActionMessageFilter.Action%2A" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
-        <returns>
-          <see langword="true" /> if the action matches; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -136,18 +127,10 @@
         <Parameter Name="messageBuffer" Type="System.ServiceModel.Channels.MessageBuffer" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">The message buffer that contains the message to compare.</param>
-        <summary>Determines whether the action of the message contained by the specified message buffer matches the <see cref="System.ServiceModel.CorrelationActionMessageFilter.Action%2A" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
-        <returns>
-          <see langword="true" /> if the action matches; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="messageBuffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -164,16 +147,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> representation of the <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
-        <returns>The current <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.ServiceModel.CorrelationActionMessageFilter.Action%2A> property is set, its value is used to build the string representation; otherwise, the base class <xref:System.Object.ToString%2A> value is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

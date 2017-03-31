@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MessageSecurityOverTcpElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the configuration settings for the security of a message sent using TCP. This class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MessageSecurityOverTcpElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -54,8 +51,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the message encryption and key-wrap algorithms used to secure a TCP message.</summary>
-        <value>A valid <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" /> value that specifies the message encryption and key-wrap algorithms used to secure a TCP message. The default value is <see cref="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +63,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -78,8 +74,8 @@
         <ReturnType>System.ServiceModel.MessageCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the type of credential to be used when performing client authentication using message-based security or <see langword="TransportWithMessageCredential" />.</summary>
-        <value>A valid <see cref="T:System.ServiceModel.MessageCredentialType" /> value that specifies the type of credential to be used when performing client authentication using message-based security or <see langword="TransportWithMessageCredential" />. The default value is <see cref="T:System.ServiceModel.MessageCredentialType" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorStatus" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Used by <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> to indicate the status of its item generation.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The generator has finished generating containers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The generator has finished generating containers, but encountered one or more errors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeneratingContainers">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The generator is generating containers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotStarted">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The generator has not tried to generate content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

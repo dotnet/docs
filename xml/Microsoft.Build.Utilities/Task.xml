@@ -3,14 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Task extends System.Object implements class Microsoft.Build.Framework.ITask" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.Task" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,24 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>When overridden in a derived form, provides functionality for tasks.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This abstract class provides default implementations for the methods and properties of the <xref:Microsoft.Build.Framework.ITask> interface.  
-  
- This class can only be instantiated in a derived form.  
-  
-   
-  
-## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-cs[msbuild_MakeDirTask#1](~/add/codesnippet/csharp/msbuild_MakeDirTask/msbuild_MakeDirTask.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,20 +25,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Task.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.Task" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,14 +40,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Task.#ctor(System.Resources.ResourceManager)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -87,16 +47,9 @@
         <Parameter Name="taskResources" Type="System.Resources.ResourceManager" />
       </Parameters>
       <Docs>
-        <param name="taskResources">The task resources.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.Task" /> class with the specified <see cref="Microsoft.Build.Utilities.Task.TaskResources%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor allows derived task classes to register their resources.  
-  
- ]]></format>
-        </remarks>
+        <param name="taskResources">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -104,14 +57,6 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Resources.ResourceManager taskResources, string helpKeywordPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Task.#ctor(System.Resources.ResourceManager,System.String)" />
       <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,17 +66,10 @@
         <Parameter Name="helpKeywordPrefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskResources">The task resources.</param>
-        <param name="helpKeywordPrefix">The prefix to append to string resources to create Help keywords.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.Task" /> class with the specified <see cref="Microsoft.Build.Utilities.Task.TaskResources%2A" /> and <see cref="Microsoft.Build.Utilities.Task.HelpKeywordPrefix%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor allows derived task classes to register their resources, as well as provide a prefix for composing help keywords from string resource names. If `helpKeywordPrefix` is an empty string, string resource names will be used verbatim as help keywords.  
-  
- ]]></format>
-        </remarks>
+        <param name="taskResources">To be added.</param>
+        <param name="helpKeywordPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildEngine">
@@ -140,14 +78,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Task.BuildEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -155,16 +85,9 @@
         <ReturnType>Microsoft.Build.Framework.IBuildEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the instance of the <see cref="T:Microsoft.Build.Framework.IBuildEngine" /> object used by the task.</summary>
-        <value>The <see cref="T:Microsoft.Build.Framework.IBuildEngine" /> available to tasks.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The build engine automatically sets this property to allow tasks to call back into it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildEngine2">
@@ -173,10 +96,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Task.BuildEngine2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -184,8 +103,8 @@
         <ReturnType>Microsoft.Build.Framework.IBuildEngine2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance of the <see cref="T:Microsoft.Build.Framework.IBuildEngine2" /> object used by the task.</summary>
-        <value>The <see cref="T:Microsoft.Build.Framework.IBuildEngine2" /> available to tasks.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +121,8 @@
         <ReturnType>Microsoft.Build.Framework.IBuildEngine3</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance of the <see cref="T:Microsoft.Build.Framework.IBuildEngine3" /> object used by the task.</summary>
-        <value>The <see cref="T:Microsoft.Build.Framework.IBuildEngine3" /> available to tasks.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +139,8 @@
         <ReturnType>Microsoft.Build.Framework.IBuildEngine4</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance of the <see cref="T:Microsoft.Build.Framework.IBuildEngine4" /> object used by the task.</summary>
-        <value>Returns the <see cref="T:Microsoft.Build.Framework.IBuildEngine4" /> available to tasks.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,14 +150,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Task.Execute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -247,24 +158,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, executes the task.</summary>
-        <returns>
-          <see langword="true" /> if the task successfully executed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class must be overridden in a derived class, and is used for performing task execution logic.  
-  
-   
-  
-## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-cs[msbuild_MakeDirTask#1](~/add/codesnippet/csharp/msbuild_MakeDirTask/msbuild_MakeDirTask.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpKeywordPrefix">
@@ -273,14 +169,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Task.HelpKeywordPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -288,16 +176,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the prefix used to compose Help keywords from resource names.</summary>
-        <value>The prefix used to compose Help keywords from resource names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a task does not have Help keywords associated with its messages, it can ignore this property or set it to `null`. If this property is set to an empty <xref:System.String>, resource names will be used verbatim as Help keywords.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HostObject">
@@ -306,14 +187,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Task.HostObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -321,18 +194,9 @@
         <ReturnType>Microsoft.Build.Framework.ITaskHost</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the host object associated with the task.</summary>
-        <value>The host object associated with the task. This value can be <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the host IDE has associated a host object with this particular task, then the build engine sets this property.  
-  
- The host object is provided by <xref:Microsoft.Build.Execution.HostServices>. Visual Studio determines the host object via a system registry key. For more information, see <xref:Microsoft.VisualStudio.Shell.Interop.IVsMSBuildHostObject>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -341,14 +205,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Task.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -356,18 +212,9 @@
         <ReturnType>Microsoft.Build.Utilities.TaskLoggingHelper</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an instance of a <see cref="T:Microsoft.Build.Utilities.TaskLoggingHelper" /> class containing task logging methods.</summary>
-        <value>The logging helper object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-cs[msbuild_MakeDirTask#1](~/add/codesnippet/csharp/msbuild_MakeDirTask/msbuild_MakeDirTask.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskResources">
@@ -376,14 +223,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Task.TaskResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -391,16 +230,9 @@
         <ReturnType>System.Resources.ResourceManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the culture-specific resources associated with the task.</summary>
-        <value>The culture-specific resources associated with the task. This value can be <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If derived classes have localized strings, then they should register their resources either during construction, or through this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,41 +1,19 @@
 <Type Name="BasicHttpBinding" FullName="System.ServiceModel.BasicHttpBinding">
   <TypeSignature Language="C#" Value="public class BasicHttpBinding : System.ServiceModel.HttpBindingBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpBinding extends System.ServiceModel.HttpBindingBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpBinding extends System.ServiceModel.HttpBindingBase implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.HttpBindingBase</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces />
   <Docs>
-    <summary>Represents a binding that a [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] service can use to configure and expose endpoints that are able to communicate with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BasicHttpBinding uses HTTP as the transport for sending SOAP 1.1 messages. A service can use this binding to expose endpoints that conform to WS-I BP 1.1, such as those that ASMX clients access. Similarly, a client can use the BasicHttpBinding to communicate with services exposing endpoints that conform to WS-I BP 1.1, such as ASMX Web services or [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] services configured with the BasicHttpBinding.  
-  
- Security is turned off by default, but can be added setting the <xref:System.ServiceModel.BasicHttpSecurityMode> to a value other than <xref:System.ServiceModel.BasicHttpSecurityMode> in the <xref:System.ServiceModel.BasicHttpBinding.%23ctor%28System.ServiceModel.BasicHttpSecurityMode%29> constructor. It uses a "Text" message encoding and UTF-8 text encoding by default.  
-  
-   
-  
-## Examples  
- The following example shows how to configure the BasicHttpBinding in an application configuration file.  
-  
-   
-  
- The following example shows how to programmatically configure BasicHttpBinding.  
-  
- [!code-cs[S_UEBasicHttpBinding#1](~/add/codesnippet/csharp/t-system.servicemodel.ba_3_2.cs)]
- [!code-vb[S_UEBasicHttpBinding#1](~/add/codesnippet/visualbasic/t-system.servicemodel.ba_3_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,26 +23,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpBinding" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of <xref:System.ServiceModel.BasicHttpSecurityMode> used is <xref:System.ServiceModel.BasicHttpSecurityMode>, which specifies that the SOAP message is not secured and the client is not authenticated.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UEBasicHttpBinding#2](~/add/codesnippet/csharp/m-system.servicemodel.ba_1_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#2](~/add/codesnippet/visualbasic/m-system.servicemodel.ba_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,29 +39,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="securityMode" Type="System.ServiceModel.BasicHttpSecurityMode" />
       </Parameters>
       <Docs>
-        <param name="securityMode">The value of <see cref="T:System.ServiceModel.BasicHttpSecurityMode" /> that specifies the type of security that is used with the SOAP message and for the client.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpBinding" /> class with a specified type of security used by the binding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of <xref:System.ServiceModel.BasicHttpSecurityMode> used is <xref:System.ServiceModel.BasicHttpSecurityMode>, which specifies that the SOAP message is not secured and the client is not authenticated.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UEBasicHttpBinding#3](~/add/codesnippet/csharp/329d5213-79c9-431c-84d2-_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#3](~/add/codesnippet/visualbasic/329d5213-79c9-431c-84d2-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="securityMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,32 +58,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configurationName">The binding configuration name for the <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingElement" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpBinding" /> class with a binding specified by its configuration name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example initializes a new <xref:System.ServiceModel.BasicHttpBinding> class with a binding specified by the configuration name `BasicBinding`. You must create a bindings section in the service's configuration file.  
-  
- [!code-cs[S_UEBasicHttpBinding#5](~/add/codesnippet/csharp/m-system.servicemodel.ba_0_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#5](~/add/codesnippet/visualbasic/m-system.servicemodel.ba_0_1.vb)]  
-  
- Then the name of the binding configuration is specified in the call to the <xref:System.ServiceModel.BasicHttpBinding> constructor.  
-  
- [!code-cs[S_UEBasicHttpBinding#4](~/add/codesnippet/csharp/m-system.servicemodel.ba_0_2.cs)]
- [!code-vb[S_UEBasicHttpBinding#4](~/add/codesnippet/visualbasic/m-system.servicemodel.ba_0_2.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The binding with the configuration name <paramref name="configurationName" /> was not found.</exception>
+        <param name="configurationName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
@@ -153,10 +88,10 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel the channel factory produces.</typeparam>
-        <param name="parameters">Specifies the requirements for the channel factory built.</param>
-        <summary>Builds the channel factory stack on the client that creates a specified type of channel and that satisfies the features specified by a collection of binding parameters.</summary>
-        <returns>An <see cref="System.ServiceModel.Channels.IChannelFactory%601" /> of type <paramref name="TChannel" /> that satisfies the features specified by the collection.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +102,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,23 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns an ordered collection of binding elements contained in the current binding.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the ordered stack of binding elements described by the <see cref="T:System.ServiceModel.BasicHttpBinding" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The order of the binding elements is important. It reflects the order in which the protocol and transport channels are constructed and stacked. This collection of binding elements is a new collection and can be modified and then used to create a <xref:System.ServiceModel.Channels.CustomBinding>.  
-  
-   
-  
-## Examples  
- The following example creates an ordered collection of the binding elements in the current binding.  
-  
- [!code-cs[S_UEBasicHttpBinding#26](~/add/codesnippet/csharp/m-system.servicemodel.ba_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableHttpCookieContainer">
@@ -215,9 +136,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether HTTP cookie container is enabled.</summary>
-        <value>
-          <see langword="true" /> if HTTP cookie container is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,34 +148,35 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether MTOM or Text is used to encode SOAP messages.</summary>
-        <value>The value of <see cref="T:System.ServiceModel.WSMessageEncoding" /> that indicates whether MTOM or Text/XML is used to encode SOAP messages. The default value is <see cref="T:System.ServiceModel.WSMessageEncoding" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example sets MessageEncoding to Text.  
-  
- [!code-cs[S_UEBasicHttpBinding#19](~/add/codesnippet/csharp/p-system.servicemodel.ba_4_1.cs)]  
-  
- The value of this property can also be set in the configuration file.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpBinding.Scheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Security">
@@ -265,30 +186,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of security used with this binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.BasicHttpSecurity" /> that is used with this binding. The default value is <see cref="T:System.ServiceModel.BasicHttpSecurityMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the SOAP message is not secured and the client is not authenticated. To use a non-default type of security, use the <xref:System.ServiceModel.BasicHttpBinding.%23ctor%28System.ServiceModel.BasicHttpSecurityMode%29> constructor.  
-  
-   
-  
-## Examples  
- The following example gets the `Security` property.  
-  
- [!code-cs[S_UEBasicHttpBinding#23](~/add/codesnippet/csharp/p-system.servicemodel.ba_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeEnableHttpCookieContainer">
@@ -310,9 +217,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the http cookie container should enable the serialization.</summary>
-        <returns>
-          <see langword="true" /> if the http cookie container should enable the serialization; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,9 +241,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether security settings should be serialized based upon whether serialization already occurs, for example at the message or transport level.</summary>
-        <returns>
-          <see langword="true" /> if security should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

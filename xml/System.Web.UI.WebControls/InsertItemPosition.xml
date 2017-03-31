@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.InsertItemPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the location of the <see cref="System.Web.UI.WebControls.ListView.InsertItemTemplate%2A" /> template when it is rendered as part of the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows a <xref:System.Web.UI.WebControls.ListView> control that is configured to display the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the control.  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_34_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.ListView.ItemInserted#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_34_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FirstItem">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Web.UI.WebControls.ListView.InsertItemTemplate%2A" /> template is rendered as the first item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastItem">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Web.UI.WebControls.ListView.InsertItemTemplate%2A" /> template is rendered as the last item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Web.UI.WebControls.ListView.InsertItemTemplate%2A" /> template is not rendered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

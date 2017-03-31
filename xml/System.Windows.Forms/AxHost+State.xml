@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.State" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,17 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates the persisted state of an ActiveX control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AxHost.State can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=fullName> property, or by reading the control's state from a data stream.  
-  
- For more information, see the documentation for `IPersistStream` and `IPersistPropertyBag` in the MSDN library. `IPersistStream` can be found in the interface reference section of the COM SDK documentation, and `IPersistPropertyBag` can be found in the COM Fundamentals interface reference section of the COM SDK documentation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +31,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -49,19 +38,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> value.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.State" /> class for deserializing a state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,7 +51,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -81,22 +60,12 @@
         <Parameter Name="licKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ms">A <see cref="T:System.IO.Stream" /> in which the state is stored.</param>
-        <param name="storageType">An <see cref="T:System.Int32" /> indicating the storage type.</param>
-        <param name="manualUpdate">
-          <see langword="true" /> for manual updates; otherwise, <see langword="false" />.</param>
-        <param name="licKey">The license key of the control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.State" /> class for serializing a state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
+        <param name="ms">To be added.</param>
+        <param name="storageType">To be added.</param>
+        <param name="manualUpdate">To be added.</param>
+        <param name="licKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -106,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,19 +85,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the `context` parameter, see the <xref:System.Runtime.Serialization.StreamingContext> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for executing unmanaged code. Associated enumeration: <see cref="System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A" /></permission>
+        <param name="si">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

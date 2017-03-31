@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.AudioPlayMode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates how to play sounds when calling audio methods.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `AudioPlayMode` enumeration members to control how the <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A> method plays sounds.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Background">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AudioPlayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes the <see langword="My.Computer.Audio.Play" /> method to play the sound in the background. The calling code continues to execute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackgroundLoop">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AudioPlayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes the <see langword="My.Computer.Audio.Play" /> method to play the sound in the background until the <see cref="Microsoft.VisualBasic.Devices.Audio.Stop%2A" /> method is called. The calling code continues to execute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WaitToComplete">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.AudioPlayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes the <see langword="My.Computer.Audio.Play" /> method to play the sound, and waits until it completes before calling code continues.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

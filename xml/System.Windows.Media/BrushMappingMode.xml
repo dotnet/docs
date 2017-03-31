@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BrushMappingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the coordinate system used by a <see cref="T:System.Windows.Media.Brush" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that the bounding box for the RelativeToBoundingBox value depends on the property with which this enumeration is used.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Absolute">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BrushMappingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The coordinate system is not relative to a bounding box. Values are interpreted directly in local space.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelativeToBoundingBox">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BrushMappingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The coordinate system is relative to a bounding box: 0 indicates 0 percent of the bounding box, and 1 indicates 100 percent of the bounding box. For example, (0.5, 0.5) describes a point in the middle of the bounding box, and (1, 1) describes a point at the bottom right of the bounding box.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

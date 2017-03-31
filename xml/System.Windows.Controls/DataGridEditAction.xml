@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines constants that specify whether an edit is being canceled or committed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Controls.DataGridCellEditEndingEventArgs.EditAction%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction%2A?displayProperty=fullName> properties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
@@ -34,7 +27,7 @@
         <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The edit is being canceled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -50,7 +43,7 @@
         <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The edit is being committed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

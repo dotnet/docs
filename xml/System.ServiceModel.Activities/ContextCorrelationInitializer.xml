@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Initializes the associated <see cref="System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle%2A" /> with a.NET Context Exchange-based correlation, subject to the <see cref="T:System.ServiceModel.Channels.ContextExchangeMechanism" /> specified.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A context correlation is based on the context exchange mechanism described in the [.NET Context Exchange Protocol Specification](http://go.microsoft.com/fwlink/?LinkId=163882). To use context correlation a context-based binding such as <xref:System.ServiceModel.BasicHttpContextBinding>, <xref:System.ServiceModel.WSHttpContextBinding>, or <xref:System.ServiceModel.NetTcpContextBinding> must be used.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.ContextCorrelationInitializer" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

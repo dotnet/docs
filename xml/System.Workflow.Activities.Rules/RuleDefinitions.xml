@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleDefinitions" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the root of the .rules files and contains all the <see cref="System.Workflow.Activities.Rules.RuleDefinitions.RuleSets%2A" /> and <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />s associated with a workflow. This class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleDefinitions" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +41,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -55,8 +52,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleConditionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of rule conditions in the workflow.</summary>
-        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" /> that contains all the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />s in the workflow.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,10 +74,10 @@
         <Parameter Name="changedDefinition" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="originalDefinition">The original rule definition.</param>
-        <param name="changedDefinition">The new rule definition.</param>
-        <summary>Determines the difference between <see cref="System.Workflow.Activities.Rules.RuleDefinitions.Conditions%2A" /> and the <see cref="System.Workflow.Activities.Rules.RuleDefinitions.RuleSets%2A" /> in the original definition and the changed definition.</summary>
-        <returns>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> classes that differentiate the <paramref name="originalDefinition" /> from the <paramref name="changedDefinition" />.</returns>
+        <param name="originalDefinition">To be added.</param>
+        <param name="changedDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +88,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -104,15 +99,8 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="T:System.Workflow.Activities.Rules.RuleDefinitions" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RuleSets">
@@ -122,7 +110,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -134,8 +121,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleSetCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of RuleSets in the workflow.</summary>
-        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" /> that contains all the RuleSets in the workflow.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

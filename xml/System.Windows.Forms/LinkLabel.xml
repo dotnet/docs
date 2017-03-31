@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,41 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows label control that can display hyperlinks.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolStripLabel> control replaces and adds functionality to the <xref:System.Windows.Forms.Label> and LinkLabel controls. However, the <xref:System.Windows.Forms.Label> and LinkLabel controls are retained for both backward compatibility and future use, if you choose.  
-  
- The LinkLabel control is similar to a <xref:System.Windows.Forms.Label> control with the exception that it can display a hyperlink. Multiple hyperlinks can be specified in the text of the control. Each hyperlink can perform a different task within an application. For example, you can use a hyperlink to display a Web site in Microsoft Internet Explorer or to load a log file associated with an application.  
-  
- Each hyperlink displayed in the LinkLabel control is an instance of the <xref:System.Windows.Forms.LinkLabel.Link> class. The <xref:System.Windows.Forms.LinkLabel.Link> class defines display information, state, and location of the hyperlink. In addition, the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property of the <xref:System.Windows.Forms.LinkLabel.Link> class enables you to associate information, such as a URL to display, with the hyperlink. When a user clicks a hyperlink within the control, the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event is raised, and the <xref:System.Windows.Forms.LinkLabel.Link> object representing the hyperlink that was clicked is passed as part of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> object that is passed as a parameter to the event handler. You can use this object to obtain the <xref:System.Windows.Forms.LinkLabel.Link> object associated with the hyperlink that was clicked by the user. All hyperlinks contained within the LinkLabel control are stored in the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class instance for the control.  
-  
- There are two ways to add a hyperlink to the LinkLabel control. The quickest way is to specify a <xref:System.Windows.Forms.LinkArea> and assign it to the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property. This enables you to specify a single hyperlink within the text of the control. To add multiple hyperlinks, you can use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class by accessing the collection through the <xref:System.Windows.Forms.LinkLabel.Links%2A> property.  
-  
- When a LinkLabel control is created, a default hyperlink that contains all the text within the LinkLabel control is added to the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. You can override this default link by specifying a new link area with the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property, or specify a link using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. You can also remove the default hyperlink by using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class.  
-  
- The <xref:System.Windows.Forms.Label.TabStop%2A> property is `true` by default, as long as there is at least one link of greater than zero length in the <xref:System.Windows.Forms.LinkLabel.Links%2A> collection. The LinkLabel control has a single <xref:System.Windows.Forms.Control.TabIndex%2A> value. However, each link of greater than zero length gets its own tab stop, in left-to-right order. To prevent tab navigation to the LinkLabel control, set the <xref:System.Windows.Forms.Label.TabStop%2A> property to `false`. However, be aware that adding new links to the <xref:System.Windows.Forms.LinkLabel.Links%2A> collection will automatically set the <xref:System.Windows.Forms.Label.TabStop%2A> property to `true` again.  
-  
- The LinkLabel provides a number of properties that enable you to define the display appearance of hyperlinks in the control. The <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties define the colors used when displaying a hyperlink in various states. The <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property defines the display of the underline that is associated with a hyperlink.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the LinkLabel class. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by opening a Web site.  
-  
- [!code-cs[System.Windows.Forms.LinkLabelSimple#1](~/add/codesnippet/csharp/t-system.windows.forms.l_29_1.cs)]
- [!code-vb[System.Windows.Forms.LinkLabelSimple#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_29_1.vb)]  
-  
- The following example demonstrates using the LinkLabel class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the LinkLabel. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the LinkLabel using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/t-system.windows.forms.l_29_2.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/t-system.windows.forms.l_29_2.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_29_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,24 +40,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.Windows.Forms.LinkLabel" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/m-system.windows.forms.l_11_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/m-system.windows.forms.l_11_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/m-system.windows.forms.l_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveLinkColor">
@@ -101,37 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used to display an active link.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color to display an active link. The default color is specified by the system, typically this color is <see langword="Color.Red" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An active link is a link that is in the process of being clicked. This is similar to the depressed state of a <xref:System.Windows.Forms.Button> control. You can use this property to specify the color that the link is displayed in when the link is in the process of being clicked.  
-  
- There are a number of colors associated with a link. The <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> specifies the color of all links displayed in the <xref:System.Windows.Forms.LinkLabel> control. The <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> property enables you to specify the color of a link after it has been visited by the user. When a link is disabled, the <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A> is used to display the link in a disabled state.  
-  
-> [!NOTE]
->  When setting this property, ensure that the color you are setting the property to does not conflict with the color of the control's background or the text does not display properly. For example, if the background color of the control is `Color.Red` and this property is set to `Color.Red`, the text is not shown properly when the link is in the process of being clicked.  
-  
-   
-  
-## Examples  
- The following example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property using the <xref:System.Windows.Forms.LinkBehavior> enumeration. It also demonstrates setting the ActiveLinkColor, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties. To run this sample paste it in a blank form and call `InitializeLinkLabel` from the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/csharp/p-system.windows.forms.l_62_1.cs)]
- [!code-vb[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_62_1.vb)]
- [!code-cpp[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/cpp/p-system.windows.forms.l_62_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -141,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,20 +80,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.LinkLabel" /> control.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you do not explicitly call the CreateAccessibilityInstance method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property is referenced.  
-  
- Note: To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property, you must add a reference to the Accessibility assembly installed with the .NET Framework.  
-  
- Notes to Inheritors: When overriding CreateAccessibilityInstance in a derived class, you should not call the base class's CreateAccessibilityInstance method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -172,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,7 +99,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a handle for this control. This method is called by the .NET Framework, this should not be called. Inheriting classes should always call <see langword="base.createHandle" /> when overriding this method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,37 +110,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used when displaying a disabled link.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color when displaying a disabled link. The default is <see langword="Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to specify the color for links that are disabled in the <xref:System.Windows.Forms.LinkLabel>. Disabled links do not cause the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event to be raised.  
-  
- There are a number of colors associated with a link. All links in the <xref:System.Windows.Forms.LinkLabel> are initially displayed with the color defined in the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> property. The <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A> property enables you to specify the color of the link when it is in the process of being clicked. The <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> property enables you to specify the color of a link after it has been visited by the user.  
-  
-> [!NOTE]
->  When setting this property, ensure that the color you are setting the property to does not conflict with the color of the control's background or the text does not display properly. For example, if the background color of the control is `Color.Red` and this property is set to `Color.Red`, the text is not shown properly when the link is disabled.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, DisabledLinkColor, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/p-system.windows.forms.l_72_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/p-system.windows.forms.l_72_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_72_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -231,7 +128,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -246,16 +142,9 @@
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flat style appearance of the <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.FlatStyle" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant to this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkArea">
@@ -265,7 +154,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -283,40 +171,9 @@
         <ReturnType>System.Windows.Forms.LinkArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the range in the text to treat as a link.</summary>
-        <value>A <see cref="T:System.Windows.Forms.LinkArea" /> that represents the area treated as a link.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LinkArea property provides a quick way to specify a single hyperlink to display in the text of the <xref:System.Windows.Forms.LinkLabel> control. The <xref:System.Windows.Forms.LinkArea> object provides properties that specify the starting position of the link within the text of the control and the length of text for the hyperlink. When a hyperlink is specified using the LinkArea property, the hyperlink is added to the <xref:System.Windows.Forms.LinkLabel.LinkCollection> of the control. The LinkArea property converts the <xref:System.Windows.Forms.LinkArea> object assigned to it to a <xref:System.Windows.Forms.LinkLabel.Link> object that is stored within the collection.  
-  
- To add multiple hyperlinks to the text of the control, you can use the <xref:System.Windows.Forms.LinkLabel.Links%2A> property. The <xref:System.Windows.Forms.LinkLabel.Links%2A> property enables you to access the properties and methods of the <xref:System.Windows.Forms.LinkLabel.LinkCollection>, which stores the links specified for the control. This method of adding links to the <xref:System.Windows.Forms.LinkLabel> also enables you to specify data in the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property that is associated with the link being created. The value of the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property can be used to store the location of a file to display or the address of a Web site.  
-  
- When a <xref:System.Windows.Forms.LinkLabel> control is created, a default hyperlink that contains all the text within the <xref:System.Windows.Forms.LinkLabel> control is added to the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. You can override this default link by specifying a new link area with the LinkArea property, or specify a link using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. You can also remove the default hyperlink by using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class.  
-  
-> [!NOTE]
->  The LinkArea property always returns the first item in the <xref:System.Windows.Forms.LinkLabel.LinkCollection>, regardless of how the hyperlink was added to the collection.  
-  
-> [!NOTE]
->  The <xref:System.Windows.Forms.LinkArea.Length%2A> property on <xref:System.Windows.Forms.LinkArea> will differ if you call <xref:System.Windows.Forms.LinkLabel.UseCompatibleTextRendering%2A>, and the <xref:System.Windows.Forms.LinkLabel.Text%2A> property contains double-byte characters. If you call <xref:System.Windows.Forms.LinkLabel.UseCompatibleTextRendering%2A>, it will return the number of bytes in the string. Otherwise, it will return the number of actual characters.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the LinkArea property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/p-system.windows.forms.l_6_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/p-system.windows.forms.l_6_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="System.Windows.Forms.LinkArea.Start%2A" /> property of the <see cref="T:System.Windows.Forms.LinkArea" /> object is less than zero.  
-  
- -or-  
-  
- The <see cref="System.Windows.Forms.LinkArea.Length%2A" /> property of the <see cref="T:System.Windows.Forms.LinkArea" /> object is less than -1.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkBehavior">
@@ -326,7 +183,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -338,26 +194,9 @@
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the behavior of a link.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.LinkBehavior" /> values. The default is <see langword="LinkBehavior.SystemDefault" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to specify the behavior of links when they are displayed in the control. For example, if you want links to be displayed with an underline only when the mouse pointer is over a link, you can set this property to `LinkBehavior.HoverUnderline`. For more information on the types of behaviors that can be associated with a link, see <xref:System.Windows.Forms.LinkBehavior>.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, LinkBehavior, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/p-system.windows.forms.l_84_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/p-system.windows.forms.l_84_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_84_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value is assigned that is not one of the <see cref="T:System.Windows.Forms.LinkBehavior" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkClicked">
@@ -367,38 +206,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkLabelLinkClickedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a link is clicked within the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, the LinkClicked event is handled to perform tasks when the user clicks on a link in the control. The event handler for the LinkClicked event is passed an instance of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> class that contains a <xref:System.Windows.Forms.LinkLabel.Link> object that is associated with the link that was clicked. You can use information specified in the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property of <xref:System.Windows.Forms.LinkLabel.Link> class to determine which link was clicked or what type of task to perform when the link is clicked. For example, if a <xref:System.Windows.Forms.LinkLabel> control has a <xref:System.Windows.Forms.LinkLabel.Link> object defined with its <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property set to the string www.microsoft.com, you can use this information in an event handler for the LinkClicked event to display the Web site.  
-  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class. The example handles the LinkClicked event by opening a Web site.  
-  
- [!code-cs[System.Windows.Forms.LinkLabelSimple#1](~/add/codesnippet/csharp/e-system.windows.forms.l_28_1.cs)]
- [!code-vb[System.Windows.Forms.LinkLabelSimple#1](~/add/codesnippet/visualbasic/e-system.windows.forms.l_28_1.vb)]  
-  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the LinkClicked event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/e-system.windows.forms.l_28_2.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/e-system.windows.forms.l_28_2.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/e-system.windows.forms.l_28_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkColor">
@@ -408,37 +223,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used when displaying a normal link.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to displaying a normal link. The default color is specified by the system, typically this color is <see langword="Color.Blue" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to specify the color that is initially displayed for all links in the <xref:System.Windows.Forms.LinkLabel>.  
-  
- There are a number of colors associated with a link. The <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A> property enables you to specify the color of the link when it is in the process of being clicked. The <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> property enables you to specify the color of a link after it has been visited by the user. When a link is disabled, the <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A> is used to display the link in a disabled state.  
-  
-> [!NOTE]
->  When setting this property, ensure that the color you are setting the property to does not conflict with the color of the control's background or the text does not display properly. For example, if the background color of the control is `Color.Red` and this property is set to `Color.Red`, the text of the link is not shown properly.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, LinkColor, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/p-system.windows.forms.l_1_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/p-system.windows.forms.l_1_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Links">
@@ -448,7 +241,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -463,29 +255,9 @@
         <ReturnType>System.Windows.Forms.LinkLabel+LinkCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of links contained within the <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.LinkLabel.LinkCollection" /> that represents the links contained within the <see cref="T:System.Windows.Forms.LinkLabel" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Forms.LinkLabel> control can display any number of links within the text of the control. This property enables you to access the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance associated with the <xref:System.Windows.Forms.LinkLabel> that represents the collection of links displayed in the control. You can then use the members of the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class to add, remove, and find links in the collection. For more information on the types of tasks you can perform with the link collection, see <xref:System.Windows.Forms.LinkLabel.LinkCollection>.  
-  
- When a <xref:System.Windows.Forms.LinkLabel> control is created, a default hyperlink that contains all the text within the <xref:System.Windows.Forms.LinkLabel> control is added to the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. You can override this default link by specifying a new link area with the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property, or specify a link using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. You can also remove the default hyperlink by using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class.  
-  
- If you do not need to specify more than one link to display within the <xref:System.Windows.Forms.LinkLabel>, you can use the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/p-system.windows.forms.l_30_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/p-system.windows.forms.l_30_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_30_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkVisited">
@@ -495,7 +267,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -507,29 +278,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a link should be displayed as though it were visited.</summary>
-        <value>
-          <see langword="true" /> if links should display as though they were visited; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Forms.LinkLabel> control does not automatically denote that a link is a visited link. To display the link as a visited link, you can set the value of this property to `true` in an event handler for the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event of a <xref:System.Windows.Forms.LinkLabel>. A visited link is displayed using the color specified in the <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> property of the <xref:System.Windows.Forms.LinkLabel> control. Once the form containing the <xref:System.Windows.Forms.LinkLabel> control is closed, the "all display" state associated with the link is deleted. In order to retain the display state of the link, you need to store the display state of the link in a registry setting associated with your application.  
-  
-> [!NOTE]
->  This property only affects the first link defined in the <xref:System.Windows.Forms.LinkLabel> control. If you have more than one link specified in the control, use the <xref:System.Windows.Forms.LinkLabel.Link.Visited%2A> property of the <xref:System.Windows.Forms.LinkLabel.Link> class. You can access all the links defined in the <xref:System.Windows.Forms.LinkLabel> by using the <xref:System.Windows.Forms.LinkLabel.Links%2A> property.  
-  
-   
-  
-## Examples  
- The following example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property using the <xref:System.Windows.Forms.LinkBehavior> enumeration. It also demonstrates setting the <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> and LinkVisited properties. To run this sample paste it in a blank form and call `InitializeLinkLabel` from the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/csharp/p-system.windows.forms.l_80_1.cs)]
- [!code-vb[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_80_1.vb)]
- [!code-cpp[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/cpp/p-system.windows.forms.l_80_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAutoSizeChanged">
@@ -539,7 +290,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -549,18 +299,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Label.AutoSizeChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnAutoSizeChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -570,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -580,18 +320,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Provides handling for the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnEnabledChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -601,7 +332,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -611,8 +341,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,7 +353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -633,16 +362,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -652,7 +374,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -662,16 +383,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.OnKeyDown%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLinkClicked">
@@ -681,7 +395,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -691,18 +404,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.LinkLabelLinkClickedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.LinkLabel.LinkClicked" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLinkClicked method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -712,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -722,16 +425,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -741,7 +437,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -751,16 +446,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.OnMouseDown%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -770,7 +458,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -780,16 +467,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.OnMouseLeave%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -799,7 +479,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -809,16 +488,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.OnMouseMove%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -828,7 +500,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,16 +509,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.OnMouseUp%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaddingChanged">
@@ -857,7 +521,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -867,18 +530,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.PaddingChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnPaddingChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -888,7 +542,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -898,16 +551,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.OnPaint%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -917,7 +563,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -927,8 +572,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Paints the background of the control.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -939,7 +584,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -949,8 +593,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Label.TextAlignChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,7 +605,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -971,8 +614,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Provides handling for the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -983,15 +626,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the mouse pointer to use when the mouse pointer is within the bounds of the <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Cursor" /> to use when the mouse pointer is within the <see cref="T:System.Windows.Forms.LinkLabel" /> bounds.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1002,7 +644,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1014,9 +655,8 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interior spacing, in pixels, between the edges of a <see cref="T:System.Windows.Forms.LinkLabel" /> and its contents.</summary>
-        <value>
-          <see cref="T:System.Windows.Forms.Padding" /> values representing the interior spacing, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,7 +667,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1038,18 +677,11 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">The horizontal coordinate of the point to search for a link.</param>
-        <param name="y">The vertical coordinate of the point to search for a link.</param>
-        <summary>Gets the link located at the specified client coordinates.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link located at the specified coordinates. If the point does not contain a link, <see langword="null" /> is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to determine whether a link is located at a specific point within a <xref:System.Windows.Forms.LinkLabel> control. You can use this method in an event handler for the <xref:System.Windows.Forms.Control.MouseEnter> event of the control to determine whether the mouse pointer is hovering over a link in the control. Once you have determined that the mouse pointer is over a link, you can then display additional information about the link to the user through <xref:System.Windows.Forms.StatusBar> text or a <xref:System.Windows.Forms.ToolTip>.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -1059,7 +691,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1069,18 +700,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">Key code and modifier flags.</param>
-        <summary>Processes a dialog key.</summary>
-        <returns>
-          <see langword="true" /> to consume the key; <see langword="false" /> to allow further processing.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called during message pre-processing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the `isInputKey` method indicates that the control isn't interested in the key. `processDialogKey` simply sends the character to the parent's `processDialogKey` method, or returns false if the control has no parent. The `Form` class overrides this method to perform actual processing of dialog keys. When overriding `processDialogKey`, a control should return `true` to indicate that it has processed the key. For keys that aren't processed by the control, the result of `base.processDialogChar` should be returned. Controls will seldom, if ever, need to override this method.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1090,7 +713,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1101,11 +723,9 @@
         <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="directed">
-          <see langword="true" /> to specify the direction of the control to select; otherwise, <see langword="false" />.</param>
-        <param name="forward">
-          <see langword="true" /> to move forward in the tab order; <see langword="false" /> to move backward in the tab order.</param>
-        <summary>Activates a child control. Optionally specifies the direction in the tab order to select the control from.</summary>
+        <param name="directed">To be added.</param>
+        <param name="forward">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1116,7 +736,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1130,20 +749,13 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">New left of the control.</param>
-        <param name="y">New right of the control.</param>
-        <param name="width">New width of the control.</param>
-        <param name="height">New height of the control.</param>
-        <param name="specified">Which values were specified. This parameter reflects user intent, not which values have changed.</param>
-        <summary>Performs the work of setting the bounds of this control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Inheriting classes can override this function to add size restrictions. Inheriting classes must call `base.setBoundsCore` to actually cause the bounds of the control to change.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Forms.IButtonControl.DialogResult">
@@ -1153,23 +765,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Windows.Forms.IButtonControl.DialogResult%2A" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel> instance is cast to an <xref:System.Windows.Forms.IButtonControl> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Forms.IButtonControl.NotifyDefault">
@@ -1179,7 +783,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1189,17 +792,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">
-          <see langword="true" /> if the control should behave as a default button; otherwise, <see langword="false" />.</param>
-        <summary>Notifies the <see cref="T:System.Windows.Forms.LinkLabel" /> control that it is the default button.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Forms.LinkLabel> control appears the same regardless of whether it is the default button, so calling this method will not change the appearance or behavior of the <xref:System.Windows.Forms.LinkLabel>.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Forms.IButtonControl.PerformClick">
@@ -1209,7 +804,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1217,15 +811,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the <see cref="T:System.Windows.Forms.LinkLabel" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method causes the first link in the <xref:System.Windows.Forms.LinkLabel.LinkCollection> to be clicked.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1249,17 +836,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the user can tab to the <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-        <value>
-          <see langword="true" /> if the user can tab to the <see cref="T:System.Windows.Forms.LinkLabel" />;otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TabStop property is `true` by default, as long as there is at least one link of greater than zero length in the <xref:System.Windows.Forms.LinkLabel.Links%2A> collection. The <xref:System.Windows.Forms.LinkLabel> control has a single <xref:System.Windows.Forms.Control.TabIndex%2A> value. However, each link of greater than zero length gets its own tab stop, in left-to-right order. To prevent tab navigation to the <xref:System.Windows.Forms.LinkLabel> control, set the TabStop property to `false`. However, be aware that adding new links to the <xref:System.Windows.Forms.LinkLabel.Links%2A> collection will automatically set the TabStop property to `true` again.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -1269,7 +848,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1284,25 +862,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.Label.TabStop%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the TabStopChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.LinkLabel> named `LinkLabel1`. Then ensure that the event handler is associated with the TabStopChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#460](~/add/codesnippet/csharp/e-system.windows.forms.l_31_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#460](~/add/codesnippet/visualbasic/e-system.windows.forms.l_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1312,7 +873,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1324,8 +884,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed by the <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-        <value>The text displayed by the <see cref="T:System.Windows.Forms.LinkLabel" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1336,7 +896,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1348,23 +907,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether to use the <see cref="T:System.Drawing.Graphics" /> class ([!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)]) or the <see cref="T:System.Windows.Forms.TextRenderer" /> class ([!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)]) to render text.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Drawing.Graphics" /> class should be used to perform text rendering for compatibility with versions 1.0 and 1.1. of the .NET Framework; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the UseCompatibleTextRendering property is set to `false`, the <xref:System.Windows.Forms.LinkArea> covers the entire text. For example, text such as "abcd " is rendered with the trailing space underlined.  
-  
- If the UseCompatibleTextRendering property is set to `true`, the <xref:System.Windows.Forms.LinkArea> does not cover the entire text.  
-  
- The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/add/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/add/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/add/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/add/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
-  
- The [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/add/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisitedLinkColor">
@@ -1374,37 +919,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used when displaying a link that that has been previously visited.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to display links that have been visited. The default color is specified by the system, typically this color is <see langword="Color.Purple" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to specify the color that is displayed for all links in the `LinkLabel`<xref:System.Windows.Forms> that have been visited by the user.  
-  
- There are a number of colors associated with a link. All links in the <xref:System.Windows.Forms.LinkLabel> are initially displayed with the color defined in the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> property. The <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A> property enables you to specify the color of the link when it is in the process of being clicked. When a link is disabled, the <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A> is used to display the link in a disabled state.  
-  
-> [!NOTE]
->  When setting this property, ensure that the color you are setting the property to does not conflict with the color of the control's background or the text does not display properly. For example, if the background color of the control is `Color.Red` and this property is set to `Color.Red`, the text is not shown properly when the link is displayed as a visited link.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and VisitedLinkColor properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/p-system.windows.forms.l_94_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/p-system.windows.forms.l_94_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/p-system.windows.forms.l_94_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -1414,7 +937,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1424,10 +946,9 @@
         <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="msg">The message to process.</param>
-        <summary>Processes the specified Windows message.</summary>
+        <param name="msg">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateFormat" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates how to display dates when calling the <see langword="FormatDateTime" /> function.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
-  
-> [!NOTE]
->  You can access your computer's regional settings by double-clicking the **Regional Options** icon, found in **Control Panel**.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GeneralDate">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For real numbers, displays a date and time. If the number has no fractional part, displays only a date. If the number has no integer part, displays time only. Date and time display is determined by your computer's regional settings. This member is equivalent to the Visual Basic constant <see langword="vbGeneralDate" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LongDate">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays a date using the long-date format specified in your computer's regional settings. This member is equivalent to the Visual Basic constant <see langword="vbLongDate" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LongTime">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays a time using the long-time format specified in your computer's regional settings. This member is equivalent to the Visual Basic constant <see langword="vbLongTime" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShortDate">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays a date using the short-date format specified in your computer's regional settings. This member is equivalent to the Visual Basic constant <see langword="vbShortDate" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShortTime">
@@ -100,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays a time using the short-time format specified in your computer's regional settings. This member is equivalent to the Visual Basic constant <see langword="vbShortTime" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

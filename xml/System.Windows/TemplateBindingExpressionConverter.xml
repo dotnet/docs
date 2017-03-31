@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateBindingExpressionConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,16 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A type converter that is used to construct a markup extension from a <see cref="T:System.Windows.TemplateBindingExpression" /> instance during serialization.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_TemplateBindingExpressionConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateBindingExpressionConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,11 +47,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that provides a format context.</param>
-        <param name="destinationType">The desired type of the conversion's output.</param>
-        <summary>Returns whether this converter can convert the object to the specified type, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if this converter can perform the requested conversion; otherwise, <see langword="false" />. Only a <paramref name="destinationType" /> of <see cref="T:System.Windows.Markup.MarkupExtension" /> returns <see langword="true" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,20 +73,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that provides a format context.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object. If a null reference is passed, the current culture is assumed.</param>
-        <param name="value">The value to convert.</param>
-        <param name="destinationType">The desired type to convert to.</param>
-        <summary>Converts the given value object to a <see cref="T:System.Windows.Markup.MarkupExtension" /> type.</summary>
-        <returns>The converted value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only a `destinationType` of <xref:System.Windows.Markup.MarkupExtension> returns a value originating from this implementation. Any other type provided for `destinationType` causes this method to call base, which results in no usable converted value and only serves for basic validation of the remaining parameters.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

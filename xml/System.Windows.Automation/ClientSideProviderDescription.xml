@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderDescription" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Describes the scope of a client-side UI Automation provider so that it can be registered with the UI Automation client application.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,24 +29,10 @@
         <Parameter Name="className" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clientSideProviderFactoryCallback">The method that creates the client-side provider for a window.</param>
-        <param name="className">The class name of the windows that the provider is used for.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ClientSideProviderDescription" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When UI Automation encounters a window of class `className`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
-  
- If `className` is `null`, the provider is used for all windows for which no other provider is found.  
-  
-   
-  
-## Examples  
- For example code, see [Create a Client-Side UI Automation Provider](../Topic/Create%20a%20Client-Side%20UI%20Automation%20Provider.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="clientSideProviderFactoryCallback">To be added.</param>
+        <param name="className">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -68,23 +51,12 @@
         <Parameter Name="flags" Type="System.Windows.Automation.ClientSideProviderMatchIndicator" />
       </Parameters>
       <Docs>
-        <param name="clientSideProviderFactoryCallback">The method that creates the client-side provider for a window.</param>
-        <param name="className">The class name of the window that the provider is used for.</param>
-        <param name="imageName">The name of the executable or DLL for the process where the window resides.</param>
-        <param name="flags">Flags that specify behavior when matching window class names.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ClientSideProviderDescription" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] encounters a window of class `className` within the process specified by `imageName`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
-  
- If `className` is `null`, the provider is used for all windows for which no other provider is found.  
-  
- If `imageName` is `null`, the provider is used for all processes containing the window class.  
-  
- ]]></format>
-        </remarks>
+        <param name="clientSideProviderFactoryCallback">To be added.</param>
+        <param name="className">To be added.</param>
+        <param name="imageName">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassName">
@@ -94,23 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the class name of the windows that the provider is used for.</summary>
-        <value>The window class name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If ClassName is `null`, the provider is called for all windows for which no other provider is found.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientSideProviderFactoryCallback">
@@ -120,15 +84,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ClientSideProviderFactoryCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the method that creates the client-side provider.</summary>
-        <value>The callback method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,15 +102,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ClientSideProviderMatchIndicator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the flags that specify behavior when matching window class names.</summary>
-        <value>A bitwise combination of values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,15 +120,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the executable or [!INCLUDE[TLA#tla_dll](~/add/includes/tlasharptla-dll-md.md)] for the process where the window resides.</summary>
-        <value>The image name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

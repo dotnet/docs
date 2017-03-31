@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a synchronization context for the Windows Forms application model.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +41,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -55,17 +52,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> is installed when a control is created.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> is installed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AutoInstall property determines whether the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> is installed when a control is created, or when a message loop is started.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCopy">
@@ -75,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copies the synchronization context.</summary>
-        <returns>A copy of the synchronization context.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,18 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when you are finished using the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>. The Dispose method leaves the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Post">
@@ -124,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,17 +111,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="d">The <see cref="T:System.Threading.SendOrPostCallback" /> delegate to call.</param>
-        <param name="state">The object passed to the delegate.</param>
-        <summary>Dispatches an asynchronous message to a synchronization context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Post method starts an asynchronous request to post a message.  
-  
- ]]></format>
-        </remarks>
+        <param name="d">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -155,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,18 +134,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="d">The <see cref="T:System.Threading.SendOrPostCallback" /> delegate to call.</param>
-        <param name="state">The object passed to the delegate.</param>
-        <summary>Dispatches a synchronous message to a synchronization context</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the destination thread no longer exists or the value of its <xref:System.Threading.Thread.IsAlive%2A?displayProperty=fullName> property is `false`, the Send method raises an <xref:System.ComponentModel.InvalidAsynchronousStateException>. It is up to the caller to determine what further action to take.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidAsynchronousStateException">The destination thread no longer exists.</exception>
+        <param name="d">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -187,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,17 +154,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Uninstalls the currently installed <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> and replaces it with the previously installed context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the previously installed <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> is `null`, the current context is set to `null`.  
-  
- If the currently installed synchronization context is not a <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>, this method does nothing.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

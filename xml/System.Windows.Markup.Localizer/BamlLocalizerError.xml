@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizerError" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies error conditions that may be encountered by the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The localized BAML  contains more than one reference to the same element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateUid">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>More than one element has the same <see cref="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A" /> value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompleteElementPlaceholder">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The element's substitution contains incomplete child placeholders.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCommentingXml">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XML comments do not have the correct format.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLocalizationAttributes">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The localization commenting text contains invalid attributes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLocalizationComments">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The localization commenting text contains invalid comments.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidUid">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A" /> does not correspond to any element in the BAML source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MismatchedElements">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a mismatch between substitution and source. The substitution must contain all the element placeholders in the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SubstitutionAsPlaintext">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The substitution of an element's content cannot be parsed as XML, therefore any formatting tags in the substitution are not recognized. The substitution is instead applied as plain text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UidMissingOnChildElement">
@@ -175,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A child element does not have a <see cref="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A" />. As a result, it cannot be represented as a placeholder in the parent's content string.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownFormattingTag">
@@ -192,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A formatting tag in the substitution is not recognized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

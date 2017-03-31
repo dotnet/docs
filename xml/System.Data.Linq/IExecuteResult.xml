@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.IExecuteResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides access to the return value or results of executing a query.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,17 +32,10 @@
         <Parameter Name="parameterIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parameterIndex">The index of the parameter to be retrieved.</param>
-        <summary>Provides access to the *n*th output parameter.</summary>
-        <returns>An object that contains the value of the specified parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is typically used when the query is a mapped function that has output parameters.  
-  
- ]]></format>
-        </remarks>
+        <param name="parameterIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">
@@ -54,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the return value or result of the executed query.</summary>
-        <value>The value or result of the executed query.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This object has the same underlying type as the `Type` property of the query expression.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

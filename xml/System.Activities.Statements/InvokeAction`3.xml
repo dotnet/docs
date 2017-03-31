@@ -21,10 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T1">The data type of the first <see cref="System.Activities.InArgument%601" /> passed to the <see cref="System.Activities.ActivityAction%603" />.</typeparam>
-    <typeparam name="T2">The data type of the second <see cref="System.Activities.InArgument%601" /> passed to the <see cref="System.Activities.ActivityAction%603" />.</typeparam>
-    <typeparam name="T3">The data type of the third <see cref="System.Activities.InArgument%601" /> passed to the <see cref="System.Activities.ActivityAction%603" />.</typeparam>
-    <summary>Invokes an activity’s <see cref="System.Activities.ActivityAction%603" /> handler.</summary>
+    <typeparam name="T1">To be added.</typeparam>
+    <typeparam name="T2">To be added.</typeparam>
+    <typeparam name="T3">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Statements.InvokeAction%603" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Activities.ActivityAction&lt;T1,T2,T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.ActivityAction%603" /> invoked by this <see cref="System.Activities.Statements.InvokeAction%603" />.</summary>
-        <value>The <see cref="System.Activities.ActivityAction%603" /> invoked by this <see cref="System.Activities.Statements.InvokeAction%603" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.Activities.InArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the first <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%603" />.</summary>
-        <value>The first <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%603" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +107,8 @@
         <ReturnType>System.Activities.InArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the second <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%603" />.</summary>
-        <value>The second <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%603" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +130,8 @@
         <ReturnType>System.Activities.InArgument&lt;T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the third <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%603" />.</summary>
-        <value>The third <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%603" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

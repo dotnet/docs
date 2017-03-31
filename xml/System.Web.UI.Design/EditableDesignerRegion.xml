@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.EditableDesignerRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an editable content region within the design-time markup for the associated control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EditableDesignerRegion class to help manage templates at design time. A <xref:System.Web.UI.Design.ControlDesigner> will use an instance of this class with its <xref:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent%2A> method to generate HTML markup of the region's content.  
-  
-   
-  
-## Examples  
- This example shows how to create a control with two clickable regions and an EditableDesignerRegion object with two views, or templates. Compile the project, then open the page in a visual designer and switch to design (WYSIWYG) view. There are two clickable views, **View1** and **View2**. Click **View1** and drag the <xref:System.Web.UI.WebControls.CheckBox> control from the lower part of the page into the empty designer region just below the clickable regions. Click **View2** and drag the <xref:System.Web.UI.WebControls.RadioButton> control into the empty designer region. Click **View1** again, and the region with the <xref:System.Web.UI.WebControls.CheckBox> reappears. Click **View2** and the region with the <xref:System.Web.UI.WebControls.RadioButton> reappears. Switch back to source view to see how your changes are persisted in the HTML markup  
-  
-> [!NOTE]
->  Your project must have a reference to the System.Design.dll assembly.  
-  
- [!code-vb[SimpleMultiRegionControlDesigner#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.e_1_1.vb)]
- [!code-cs[SimpleMultiRegionControlDesigner#1](~/add/codesnippet/csharp/t-system.web.ui.design.e_1_1.cs)]  
-[!code-cs[SimpleMultiRegionControlDesigner#8](~/add/codesnippet/csharp/t-system.web.ui.design.e_1_2.aspx)]
-[!code-vb[SimpleMultiRegionControlDesigner#8](~/add/codesnippet/visualbasic/t-system.web.ui.design.e_1_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -51,9 +29,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object, or a designer that derives from <see cref="T:System.Web.UI.Design.ControlDesigner" />.</param>
-        <param name="name">The name of the region.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name.</summary>
+        <param name="owner">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,11 +50,10 @@
         <Parameter Name="serverControlsOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="owner">A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object, or a designer that derives from <see cref="T:System.Web.UI.Design.ControlDesigner" />.</param>
-        <param name="name">The name of the region.</param>
-        <param name="serverControlsOnly">
-          <see langword="true" /> to have the region accept only Web server controls for content; otherwise, <see langword="false" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name and the initial value of the <see cref="System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly%2A" /> property.</summary>
+        <param name="owner">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="serverControlsOnly">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,15 +64,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the HTML markup for the content of the region.</summary>
-        <value>HTML markup representing the content of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,9 +91,9 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The control for which to get the <see cref="T:System.Web.UI.Design.ViewRendering" /> object for the current region.</param>
-        <summary>Returns a <see cref="T:System.Web.UI.Design.ViewRendering" /> object containing the design-time HTML markup for the given control.</summary>
-        <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,16 +104,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the region can accept only Web server controls.</summary>
-        <value>
-          <see langword="true" /> if the region can contain only Web server controls; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,16 +122,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the region can be bound to a data source.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> content supports binding to a data source; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

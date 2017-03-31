@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -17,36 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" /> event. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ComponentChangedEventArgs provides data for a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event. The <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event notifies the <xref:System.ComponentModel.Design.IComponentChangeService> and registered event handlers that a particular component in the currently active document has been changed.  
-  
- A ComponentChangedEventArgs provides the following information:  
-  
--   A <xref:System.ComponentModel.Design.ComponentChangedEventArgs.Component%2A> property that indicates the component that was modified.  
-  
--   A <xref:System.ComponentModel.Design.ComponentChangedEventArgs.Member%2A> property that indicates the member that was changed.  
-  
--   A <xref:System.ComponentModel.Design.ComponentChangedEventArgs.NewValue%2A> property that indicates the new value of the member.  
-  
--   An <xref:System.ComponentModel.Design.ComponentChangedEventArgs.OldValue%2A> property that indicates the old value of the member.  
-  
- Component designers typically raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event automatically when components are added, removed, or modified. A <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event is not raised during form load and unload because changes at this time are expected. A component designer might raise the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event after it changes a property of the component; this ensures that the Properties window will display the updated property.  
-  
-   
-  
-## Examples  
- The following example demonstrates creating a ComponentChangedEventArgs.  
-  
- [!code-cs[ComponentChangedEventArgsExample#1](~/add/codesnippet/csharp/t-system.componentmodel._114_1.cs)]
- [!code-cpp[ComponentChangedEventArgsExample#1](~/add/codesnippet/cpp/t-system.componentmodel._114_1.cpp)]
- [!code-vb[ComponentChangedEventArgsExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._114_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,8 +32,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="component" Type="System.Object" />
@@ -66,19 +46,12 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">The component that was changed.</param>
-        <param name="member">A <see cref="T:System.ComponentModel.MemberDescriptor" /> that represents the member that was changed.</param>
-        <param name="oldValue">The old value of the changed member.</param>
-        <param name="newValue">The new value of the changed member.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The designer for a component calls this constructor after it has changed a property of the component. This ensures that the Properties window will display the property's updated value.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="member">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Component">
@@ -88,15 +61,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the component that was modified.</summary>
-        <value>An <see cref="T:System.Object" /> that represents the component that was modified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,23 +84,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.MemberDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the member that has been changed.</summary>
-        <value>A <see cref="T:System.ComponentModel.MemberDescriptor" /> that indicates the member that has been changed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be `null` if the member is unknown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -133,23 +107,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new value of the changed member.</summary>
-        <value>The new value of the changed member. This property can be <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property has meaning only if the member is not `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OldValue">
@@ -159,23 +130,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the old value of the changed member.</summary>
-        <value>The old value of the changed member. This property can be <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property has meaning only if the member is not `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

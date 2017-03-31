@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.TransformChain" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines an ordered list of <see cref="T:System.Security.Cryptography.Xml.Transform" /> objects that is applied to unsigned content prior to digest calculation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TransformChain class contains a list of <xref:System.Security.Cryptography.Xml.Transform> objects that determine how to order XML data before creating a digest.  
-  
- Use the TransformChain class whenever you need to add one or more transform objects to an encrypted XML document or to a signed XML document.  
-  
- Both the <xref:System.Security.Cryptography.Xml.Reference> class and the <xref:System.Security.Cryptography.Xml.EncryptedReference> class contain a TransformChain object.  You can add a <xref:System.Security.Cryptography.Xml.Transform> object to the <xref:System.Security.Cryptography.Xml.Reference> class by calling the <xref:System.Security.Cryptography.Xml.Reference.AddTransform%2A> method. You can add a <xref:System.Security.Cryptography.Xml.Transform> object to the <xref:System.Security.Cryptography.Xml.EncryptedReference> class by calling the <xref:System.Security.Cryptography.Xml.EncryptedReference.AddTransform%2A> method.  You can also create a TransformChain object manually and pass it to either the <xref:System.Security.Cryptography.Xml.Reference.TransformChain%2A> property or the <xref:System.Security.Cryptography.Xml.EncryptedReference.TransformChain%2A> property.  
-  
- If you want to sign only a portion of an XML document, you can use a transform to identify the XML elements you intend to sign.  Note that the <xref:System.Security.Cryptography.Xml.Reference.Uri%2A> property and the <xref:System.Security.Cryptography.Xml.EncryptedReference.Uri%2A> property automatically create internal transforms that allow you to sign a portion of a document.  
-  
- For more information about transforms, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,16 +46,9 @@
         <Parameter Name="transform" Type="System.Security.Cryptography.Xml.Transform" />
       </Parameters>
       <Docs>
-        <param name="transform">The transform to add to the list of transforms.</param>
-        <summary>Adds a transform to the list of transforms to be applied to the unsigned content prior to digest calculation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The transforms are applied to the unsigned content in the order in which they were added to the <xref:System.Security.Cryptography.Xml.TransformChain> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="transform">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -83,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of transforms in the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</summary>
-        <value>The number of transforms in the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,8 +83,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator of the transforms in the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</summary>
-        <returns>An enumerator of the transforms in the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +95,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,11 +104,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index into the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object that specifies which transform to return.</param>
-        <summary>Gets the transform at the specified index in the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</summary>
-        <value>The transform at the specified index in the <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="index" /> parameter is greater than the number of transforms.</exception>
       </Docs>
     </Member>
   </Members>

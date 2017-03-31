@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTipEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides event information for events that occur when a tooltip opens or closes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a tooltip opens and closes, this class provides event information. The element that specifies the tooltip inherits from either <xref:System.Windows.FrameworkElement> or <xref:System.Windows.ContentElement>. Therefore, open and close events exist on both of these classes. The following table lists the events that use this class.  
-  
-|Events that occur when a tooltip opens|Events that occur when a tooltip closes|  
-|--------------------------------------------|---------------------------------------------|  
-|<xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>|  
-|<xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>|  
-  
- These events are registered by the <xref:System.Windows.Controls.ToolTipService> class as the <xref:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent> and <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> fields. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event by defining the events in the previous table  
-  
- The ToolTipEventArgs class overrides the <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> method. However, this protected member does not appear on the ToolTipEventArgs list of members because the method is sealed and cannot be overridden in classes from ToolTipEventArgs. The implementation of the method in this class casts the event handler delegate that is provided as a parameter to the method to the <xref:System.Windows.Controls.ToolTipEventHandler> type.  
-  
- If the tooltip is defined as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Opened> and <xref:System.Windows.Controls.ToolTip.Closed> events of the <xref:System.Windows.Controls.ToolTip> class are also raised when a tooltip opens and closes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InvokeEventHandler">
@@ -41,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

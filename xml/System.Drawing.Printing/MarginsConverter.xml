@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.MarginsConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a MarginsConverter for <see cref="T:System.Drawing.Printing.Margins" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MarginsConverter class provides methods that can convert a string to a <xref:System.Drawing.Printing.Margins>.  
-  
-> [!NOTE]
->  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
-  
- For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.MarginsConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,19 +47,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="sourceType">A <see cref="T:System.Type" /> that represents the type from which you want to convert.</param>
-        <summary>Returns whether this converter can convert an object of the specified source type to the native type of the converter using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if an object can perform the conversion; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment from which this converter is being invoked. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -86,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,19 +71,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="destinationType">A <see cref="T:System.Type" /> that represents the type to which you want to convert.</param>
-        <summary>Returns whether this converter can convert an object to the given destination type using the context.</summary>
-        <returns>
-          <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment from which this converter is being invoked. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -119,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,22 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that provides the language to convert to.</param>
-        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>Converts the specified object to the converter's native type.</summary>
-        <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment from which this converter is being invoked. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> does not contain values for all four margins. For example, "100,100,100,100" specifies 1 inch for the left, right, top, and bottom margins.</exception>
-        <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -156,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,23 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that provides the language to convert to.</param>
-        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> to which to convert the value.</param>
-        <summary>Converts the given value object to the specified destination type using the specified context and arguments.</summary>
-        <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment from which this converter is being invoked. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destinationType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -195,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,20 +149,11 @@
         <Parameter Name="propertyValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="propertyValues">An <see cref="T:System.Collections.IDictionary" /> of new property values.</param>
-        <summary>Creates an <see cref="T:System.Object" /> given a set of property values for the object.</summary>
-        <returns>An <see cref="T:System.Object" /> representing the specified <see cref="T:System.Collections.IDictionary" />, or <see langword="null" /> if the object cannot be created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment from which this converter is being invoked. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="propertyValues" /> is <see langword="null" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="propertyValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCreateInstanceSupported">
@@ -229,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,18 +172,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Returns whether changing a value on this object requires a call to the <see cref="System.Drawing.Printing.MarginsConverter.CreateInstance%2A" /> method to create a new value, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if changing a property on this object requires a call to <see cref="System.Drawing.Printing.MarginsConverter.CreateInstance%2A" /> to create a new value; otherwise, <see langword="false" />. This method always returns <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment from which this converter is being invoked. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

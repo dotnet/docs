@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a real-time full-duplex connection between a web server and a client in an ASP.NET application.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,16 +29,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels any pending I/O operations on the <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object and sets the state of the object so that it cannot be used to start additional I/O operations.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After the Abort method has been called, you can still access properties and methods that do not involve I/O operations.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The object was previously disposed.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseAsync">
@@ -59,31 +51,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">The status code of the close operation.</param>
-        <param name="statusDescription">The status message of the close operation.</param>
-        <param name="cancellationToken">The object that cancels a pending operation.</param>
-        <summary>Sends an asynchronous message to a client to close the connection. If the server initiates the request to close the connection, the method waits for the client to acknowledge the request before it returns.</summary>
-        <returns>A reference to the operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the CloseAsync and <xref:System.Web.WebSockets.AspNetWebSocket.CloseOutputAsync%2A> methods for both client-initiated and server-initiated requests to close an <xref:System.Web.WebSockets.AspNetWebSocket> connection. The two methods handle client-initiated requests in the same way: After the client sends a message to the server to close the connection, the server calls one of these methods and sends an acknowledgment to the client, and then the method returns.  
-  
- For server-initiated requests, the two methods work differently. The CloseAsync method sends a message to the client to close the connection, waits for a response, and then returns. The server does not wait for any additional data sent by the client. In contrast, the <xref:System.Web.WebSockets.AspNetWebSocket.CloseOutputAsync%2A> method sends a message to the client to close the connection and returns without waiting for a response. After the method returns, you can call the <xref:System.Web.WebSockets.AspNetWebSocket.ReceiveAsync%2A> method and handle either additional data or the acknowledgment that the client sends.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object was previously disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object is in an aborted state.  
-  
- -or-  
-  
- Sending operations are unavailable.  
-  
- -or-  
-  
- Receiving operations are unavailable.</exception>
+        <param name="closeStatus">To be added.</param>
+        <param name="statusDescription">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseOutputAsync">
@@ -104,27 +77,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">The status code of the close operation.</param>
-        <param name="statusDescription">The status message of the close operation.</param>
-        <param name="cancellationToken">The object that cancels a pending operation.</param>
-        <summary>Sends an asynchronous message to a client to close the connection. If the server initiates the request to close the connection, the method returns without waiting for a response.</summary>
-        <returns>A reference to the operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the <xref:System.Web.WebSockets.AspNetWebSocket.CloseAsync%2A> and CloseOutputAsync methods for both client-initiated and server-initiated requests to close an <xref:System.Web.WebSockets.AspNetWebSocket> connection. The two methods handle client-initiated requests in the same way: After the client sends a message to the server to close the connection, the server calls one of these methods and sends an acknowledgment to the client, and then the method returns.  
-  
- For server-initiated requests, the two methods work differently. The <xref:System.Web.WebSockets.AspNetWebSocket.CloseAsync%2A> method sends a message to the client to close the connection, waits for a response, and then returns. The server does not wait for any additional data sent by the client. In contrast, the CloseOutputAsync method sends a message to the client to close the connection and returns without waiting for a response. After the method returns, you can call the <xref:System.Web.WebSockets.AspNetWebSocket.ReceiveAsync%2A> method and handle either additional data or the acknowledgment that the client sends.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The object was previously disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object is in an aborted state.  
-  
- -or-  
-  
- Sending operations are unavailable.</exception>
+        <param name="closeStatus">To be added.</param>
+        <param name="statusDescription">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseStatus">
@@ -140,10 +98,9 @@
         <ReturnType>System.Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a status code that indicates why an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object was closed.</summary>
-        <value>The status code.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object was previously disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CloseStatusDescription">
@@ -159,10 +116,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a status message that explains why an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object was closed.</summary>
-        <value>The status message.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object was previously disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -179,15 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET automatically calls the Dispose method on a <xref:System.Web.WebSockets.AspNetWebSocket> object to release any resources that remain after your code has finished executing.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync">
@@ -207,17 +156,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="buffer">The array that contains the message data.</param>
-        <param name="cancellationToken">The object that cancels a pending operation.</param>
-        <summary>Receives a single message fragment from a remote client.</summary>
-        <returns>A reference to the task of receiving a message.</returns>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object was previously disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object is in an aborted state.  
-  
- -or-  
-  
- Receiving operations are unavailable.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -239,20 +182,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="buffer">The array that contains the message data.</param>
-        <param name="messageType">The message type.</param>
-        <param name="endOfMessage">
-          <see langword="true" /> to indicate that a fragment is the end of a complete message; otherwise, <see langword="false" />.</param>
-        <param name="cancellationToken">The object that cancels a pending operation.</param>
-        <summary>Sends a single message fragment to a remote client.</summary>
-        <returns>A reference to the task of sending a message.</returns>
+        <param name="buffer">To be added.</param>
+        <param name="messageType">To be added.</param>
+        <param name="endOfMessage">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object is disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object is in an aborted state.  
-  
- -or-  
-  
- Sending operations are unavailable.</exception>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -268,10 +204,9 @@
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the open or closed state of an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> object.</summary>
-        <value>The current state.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object was previously disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SubProtocol">
@@ -287,10 +222,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of an application-specific protocol that a remote client and a server can use to exchange data over an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> connection.</summary>
-        <value>The name of the protocol.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object was previously disposed.</exception>
       </Docs>
     </Member>
   </Members>

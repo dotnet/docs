@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabAppearance" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the appearance of the tabs in a tab control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TabControl.Alignment%2A?displayProperty=fullName> and <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName> properties and the <xref:System.Windows.Forms.TabAlignment> and TabAppearance enumerations. To run the example, paste the following codein a form containing a <xref:System.Windows.Forms.TabControl> called TabControl1. Call the ChangeTheLookOfTheTabControl method in the form's constructor or Load method.  
-  
- [!code-cpp[System.Windows.Forms.TabControlExample#1](~/add/codesnippet/cpp/t-system.windows.forms.t_40_1.cpp)]
- [!code-cs[System.Windows.Forms.TabControlExample#1](~/add/codesnippet/csharp/t-system.windows.forms.t_40_1.cs)]
- [!code-vb[System.Windows.Forms.TabControlExample#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_40_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Buttons">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tabs have the appearance of three-dimensional buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FlatButtons">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tabs have the appearance of flat buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tabs have the standard appearance of tabs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

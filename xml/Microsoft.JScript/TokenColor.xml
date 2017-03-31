@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.TokenColor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the colors that individual units of code should have when text is being colorized in an editor. The members of this enumeration are used by the <see cref="Microsoft.JScript.ITokenColorInfo.Color%2A" /> property of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents a comment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_CONDITIONAL_COMP">
@@ -47,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_IDENTIFIER">
@@ -64,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents an identifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_KEYWORD">
@@ -81,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents a keyword.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_NUMBER">
@@ -98,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents a numeric literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_OPERATOR">
@@ -115,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents an operator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_STRING">
@@ -132,14 +125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents a string literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="COLOR_TEXT">
@@ -149,14 +141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color for a unit of code that represents text. This is the default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

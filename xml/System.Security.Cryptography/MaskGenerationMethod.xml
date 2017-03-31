@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MaskGenerationMethod" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,26 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the abstract class from which all mask generator algorithms must derive.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived classes of MaskGenerationMethod compute masks that are used in key exchange algorithms such as Optimal Asymmetric Encryption Padding (OAEP).  
-  
- This class is used by implementations of key exchange algorithms only for mask generation. Application code does not use this class directly.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to derive from the MaskGenerationMethod class.  
-  
- [!code-cs[System.Security.Cryptography.MaskGenerationMethod#1](~/add/codesnippet/csharp/t-system.security.crypto_120_1.cs)]
- [!code-cpp[System.Security.Cryptography.MaskGenerationMethod#1](~/add/codesnippet/cpp/t-system.security.crypto_120_1.cpp)]
- [!code-vb[System.Security.Cryptography.MaskGenerationMethod#1](~/add/codesnippet/visualbasic/t-system.security.crypto_120_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +32,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.MaskGenerationMethod" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +52,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -78,20 +72,11 @@
         <Parameter Name="cbReturn" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rgbSeed">The random seed to use to compute the mask.</param>
-        <param name="cbReturn">The length of the generated mask in bytes.</param>
-        <summary>When overridden in a derived class, generates a mask with the specified length using the specified random seed.</summary>
-        <returns>A randomly generated mask whose length is equal to the <paramref name="cbReturn" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the GenerateMask to create and return a mask using the specified seed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.MaskGenerationMethod> class.  
-  
- System.Security.Cryptography.MaskGenerationMethod#3  
-  
- ]]></format>
-        </remarks>
+        <param name="rgbSeed">To be added.</param>
+        <param name="cbReturn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

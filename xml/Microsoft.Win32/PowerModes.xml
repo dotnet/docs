@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.PowerModes" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines identifiers for power mode events reported by the operating system.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration defines identifiers that represent types of power mode changes or events. The values of this enumeration are used by a <xref:Microsoft.Win32.PowerModeChangedEventArgs> to indicate the type of a <xref:Microsoft.Win32.SystemEvents.PowerModeChanged> event.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Resume">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.PowerModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is about to resume from a suspended state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StatusChange">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.PowerModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A power mode status notification event has been raised by the operating system. This might indicate a weak or charging battery, a transition between AC power and battery, or another change in the status of the system power supply.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspend">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.PowerModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is about to be suspended.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

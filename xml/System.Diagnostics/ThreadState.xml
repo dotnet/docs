@@ -3,25 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ThreadState" />
   <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Process</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the current execution state of the thread.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  There are two thread state enumerations, ThreadState and <xref:System.Threading.ThreadState?displayProperty=fullName>.  The thread state enumerations are only of interest in a few debugging scenarios. Your code should never use thread state to synchronize the activities of threads.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Initialized">
@@ -30,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Initialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread has been initialized, but has not yet started.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ready">
@@ -47,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Ready" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread is waiting to use a processor because no processor is free. The thread is prepared to run on the next available processor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Running">
@@ -64,15 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread is currently using a processor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Standby">
@@ -81,15 +104,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Standby" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread is about to use a processor. Only one thread can be in this state at a time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminated">
@@ -98,15 +129,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Terminated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread has finished executing and has exited.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transition">
@@ -115,15 +154,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Transition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread is waiting for a resource, other than the processor, before it can execute. For example, it might be waiting for its execution stack to be paged in from disk.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -132,15 +179,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The state of the thread is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -149,15 +204,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadState.Wait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A state that indicates the thread is not ready to use the processor because it is waiting for a peripheral operation to complete or a resource to become free. When the thread is ready, it will be rescheduled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

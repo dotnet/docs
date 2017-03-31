@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbCommandTree" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An immutable class that implements the basic functionality for the Query, Insert, Update, Delete, and function invocation command tree types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A DbCommandTree is an abstract class that is used to represent queries, Data Manipulation Language (DML) operations and function/procedure invocations.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Parameters">
@@ -30,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Metadata.Edm.TypeUsage&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name and corresponding type of each parameter that can be referenced within this <see cref="T:System.Data.Common.CommandTrees.DbCommandTree" />.</summary>
-        <value>The name and corresponding type of each parameter that can be referenced within this <see cref="T:System.Data.Common.CommandTrees.DbCommandTree" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

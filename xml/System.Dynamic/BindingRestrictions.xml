@@ -3,8 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BindingRestrictions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.BindingRestrictions" />
   <AssemblyInfo>
+    <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a set of binding restrictions on the <see cref="T:System.Dynamic.DynamicMetaObject" /> under which the dynamic binding is valid.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +38,17 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.Combine(System.Collections.Generic.IList{System.Dynamic.DynamicMetaObject})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
@@ -39,9 +57,9 @@
         <Parameter Name="contributingObjects" Type="System.Collections.Generic.IList&lt;System.Dynamic.DynamicMetaObject&gt;" />
       </Parameters>
       <Docs>
-        <param name="contributingObjects">The list of <see cref="T:System.Dynamic.DynamicMetaObject" /> instances from which to combine restrictions.</param>
-        <summary>Combines binding restrictions from the list of <see cref="T:System.Dynamic.DynamicMetaObject" /> instances into one set of restrictions.</summary>
-        <returns>The new set of binding restrictions.</returns>
+        <param name="contributingObjects">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,14 +69,23 @@
       <MemberSignature Language="DocId" Value="F:System.Dynamic.BindingRestrictions.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an empty set of binding restrictions. This field is read only.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +95,17 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.GetExpressionRestriction(System.Linq.Expressions.Expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
@@ -78,17 +114,10 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">The expression representing the restrictions.</param>
-        <summary>Creates the binding restriction that checks the expression for arbitrary immutable properties.</summary>
-        <returns>The new binding restrictions.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By convention, the general restrictions created by this method must only test immutable object properties.  
-  
- ]]></format>
-        </remarks>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInstanceRestriction">
@@ -97,8 +126,17 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.GetInstanceRestriction(System.Linq.Expressions.Expression,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
@@ -108,10 +146,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="expression">The expression to test.</param>
-        <param name="instance">The exact object instance to test.</param>
-        <summary>Creates the binding restriction that checks the expression for object instance identity.</summary>
-        <returns>The new binding restrictions.</returns>
+        <param name="expression">To be added.</param>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +159,17 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.GetTypeRestriction(System.Linq.Expressions.Expression,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
@@ -132,10 +179,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="expression">The expression to test.</param>
-        <param name="type">The exact type to test.</param>
-        <summary>Creates the binding restriction that check the expression for runtime type identity.</summary>
-        <returns>The new binding restrictions.</returns>
+        <param name="expression">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +192,17 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.Merge(System.Dynamic.BindingRestrictions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
@@ -155,9 +211,9 @@
         <Parameter Name="restrictions" Type="System.Dynamic.BindingRestrictions" />
       </Parameters>
       <Docs>
-        <param name="restrictions">The set of restrictions with which to merge the current binding restrictions.</param>
-        <summary>Merges the set of binding restrictions with the current binding restrictions.</summary>
-        <returns>The new set of binding restrictions.</returns>
+        <param name="restrictions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,16 +223,25 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BindingRestrictions.ToExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the <see cref="T:System.Linq.Expressions.Expression" /> representing the binding restrictions.</summary>
-        <returns>The expression tree representing the restrictions.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

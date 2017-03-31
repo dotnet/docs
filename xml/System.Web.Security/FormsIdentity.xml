@@ -4,37 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Claims.ClaimsIdentity</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces />
   <Attributes>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a user identity authenticated using forms authentication. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FormsIdentity class is used by the <xref:System.Web.Security.FormsAuthenticationModule> when a user is authenticated with forms authentication. An instance of the FormsIdentity class is created using the <xref:System.Web.Security.FormsAuthenticationTicket> that is decrypted from the forms-authentication cookie or from the URL. The new instance of the FormsIdentity class is used to construct a new <xref:System.Security.Principal.GenericPrincipal> object that is set as the value of the <xref:System.Web.HttpContext.User%2A> property for the current <xref:System.Web.HttpContext>.  
-  
-   
-  
-## Examples  
- The following code example generates a <xref:System.Web.Security.FormsAuthenticationTicket> and then uses it to create an instance of the FormsIdentity class, based on whether the user supplies the correct user name and password on the form.  
-  
- [!code-vb[System.Web.UI.FormsIdentity#1](~/add/codesnippet/visualbasic/t-system.web.security.fo_1_1.aspx)]
- [!code-cs[System.Web.UI.FormsIdentity#1](~/add/codesnippet/csharp/t-system.web.security.fo_1_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="ticket" Type="System.Web.Security.FormsAuthenticationTicket" />
       </Parameters>
       <Docs>
-        <param name="ticket">The authentication ticket upon which this identity is based.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsIdentity" /> class.</summary>
+        <param name="ticket">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +51,8 @@
         <Parameter Name="identity" Type="System.Web.Security.FormsIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">The identity upon which this identity is based.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsIdentity" /> class based on the specified identity.</summary>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of authenticated identity.</summary>
-        <value>The type of authenticated identity. This property always returns "Forms".</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +87,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of claims that are associated with this identity.</summary>
-        <value>The collection of claims.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a copy of the current <see cref="T:System.Web.Security.FormsIdentity" /> instance.</summary>
-        <returns>A copy of the current <see cref="T:System.Web.Security.FormsIdentity" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,15 +118,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether authentication took place.</summary>
-        <value>This property always returns <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,23 +136,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user name of the forms identity.</summary>
-        <value>The user name of the forms identity.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Name property returns the value of the <xref:System.Web.Security.FormsAuthenticationTicket.Name%2A> property from the <xref:System.Web.Security.FormsAuthenticationTicket> supplied to the constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ticket">
@@ -182,15 +154,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.FormsAuthenticationTicket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> for the forms-authentication user identity.</summary>
-        <value>The <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> supplied to the <see cref="System.Web.Security.FormsIdentity.%23ctor%2A" /> constructor for the current object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

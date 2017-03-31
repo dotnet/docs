@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.ManifestKinds" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the type of manifest that the signature information applies to.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration has two purposes:  
-  
--   In the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method, it specifies which manifests you want to generate signature information for.  
-  
--   In a <xref:System.Security.Cryptography.ManifestSignatureInformation> object, it shows you which manifest the signature information is generated from.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The manifest is for an application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ApplicationAndDeployment">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The manifest is for deployment and application. The is the default value for verifying signatures.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deployment">
@@ -72,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The manifest is for deployment only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -89,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The manifest is of no particular type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

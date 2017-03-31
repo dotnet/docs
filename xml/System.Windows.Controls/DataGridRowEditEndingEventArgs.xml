@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.RowEditEnding" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="editAction" Type="System.Windows.Controls.DataGridEditAction" />
       </Parameters>
       <Docs>
-        <param name="row">The row for which the event occurred.</param>
-        <param name="editAction">A value that indicates whether the edit was canceled or committed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridRowEditEndingEventArgs" /> class.</summary>
+        <param name="row">To be added.</param>
+        <param name="editAction">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the event should be canceled.</summary>
-        <value>
-          <see langword="true" /> if the event should be canceled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +66,8 @@
         <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the edit was canceled or committed.</summary>
-        <value>A value that indicates whether the edit was canceled or committed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +84,8 @@
         <ReturnType>System.Windows.Controls.DataGridRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the row for which the event occurred.</summary>
-        <value>The row for which the event occurred.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,19 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Notifies workflow debugger that code condition evaluation events have occurred.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- This interface is implemented by the workflow runtime engine.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="NotifyHandlerInvoked">
@@ -36,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,7 +31,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called after a code condition handler is invoked.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,8 +51,8 @@
         <Parameter Name="delegateHandler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="delegateHandler">The code condition handler that will be invoked.</param>
-        <summary>Called before a code condition handler is invoked.</summary>
+        <param name="delegateHandler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.DirectoryObjectClassAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the schema object that is used to create an object of this type in the directory. This attribute is required for principal extensions and can only be set on classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="objectClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objectClass">The string that contains the object class value. The <see cref="System.DirectoryServices.AccountManagement.DirectoryObjectClassAttribute.ObjectClass%2A" /> property is initialized to this value. The object class string represents the objectClass attribute for the application directory and domain directories.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.DirectoryObjectClassAttribute" /> class with the specified object class value. The object created in the directory will be created with this object class type.</summary>
+        <param name="objectClass">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not implemented and always returns null.</summary>
-        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the type of store to which the attribute applies, or null if no context is set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the object class value for the extended class.</summary>
-        <value>The object class value for the extended class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

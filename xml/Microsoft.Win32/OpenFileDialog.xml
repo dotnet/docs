@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.OpenFileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,31 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a common dialog box that allows a user to specify a filename for one or more files to open.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following figure shows an OpenFileDialog for [!INCLUDE[TLA#tla_winvista](~/add/includes/tlasharptla-winvista-md.md)].  
-  
- ![Open dialog box](~/add/media/dialogboxesoverviewfigure2.png "Open dialog box")  
-  
- Starting in [!INCLUDE[TLA2#tla_winvista](~/add/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. Use the <xref:Microsoft.Win32.FileDialog.CustomPlaces%2A> property to set this list of links.  
-  
-<a name="xamlTextUsage_OpenFileDialog"></a>   
-## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following example shows how to create an OpenFileDialog that contains a default file name and extension type.  
-  
- [!code-cs[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/add/codesnippet/csharp/DialogBoxesOverviewSnippets.CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/add/codesnippet/visualbasic/dialogboxesoverviewsnippets/window1.xaml.vb#openfiledialogboxcodebehind)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -56,7 +31,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.OpenFileDialog" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -94,7 +68,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,11 +79,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an option indicating whether <see cref="T:Microsoft.Win32.OpenFileDialog" /> allows users to select multiple files.</summary>
-        <value>
-          <see langword="true" /> if multiple selections are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to change the dialog user interface behavior. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -120,7 +91,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -133,20 +103,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens a read-only stream for the file that is selected by the user using <see cref="T:Microsoft.Win32.OpenFileDialog" />.</summary>
-        <returns>A new <see cref="T:System.IO.Stream" /> that contains the selected file.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because the file is opened without the ability to overwrite or write to the file, an application can safely load a file while executing within partial trust restrictions.  
-  
- If more than one file is selected, the first selected file is opened.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
-        <permission cref="T:System.Security.Permissions.FileDialogPermission">to create a file stream. Associated enumeration:  <see cref="T:System.Security.Permissions.FileDialogPermissionAccess" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenFiles">
@@ -156,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -169,18 +127,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an array that contains one read-only stream for each file selected by the user using <see cref="T:Microsoft.Win32.OpenFileDialog" />.</summary>
-        <returns>An array of multiple new <see cref="T:System.IO.Stream" /> objects that contain the selected files.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because each file is opened without the ability to overwrite or write to the file, an application can safely load one or more files while executing within partial trust restrictions.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
-        <permission cref="T:System.Security.Permissions.FileDialogPermission">to create a file stream array. Associated enumeration:  <see cref="T:System.Security.Permissions.FileDialogPermissionAccess" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChecked">
@@ -190,7 +139,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -202,9 +150,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the read-only check box displayed by <see cref="T:Microsoft.Win32.OpenFileDialog" /> is selected.</summary>
-        <value>
-          <see langword="true" /> if the checkbox is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -228,9 +174,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all <see cref="T:Microsoft.Win32.OpenFileDialog" /> properties to their default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to reset the dialog. Associated enumeration:<see cref="T:System.Security.Permissions.PermissionState" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ShowReadOnly">
@@ -240,7 +185,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -252,9 +196,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether <see cref="T:Microsoft.Win32.OpenFileDialog" /> contains a read-only check box.</summary>
-        <value>
-          <see langword="true" /> if the checkbox is displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeFilter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TypeFilter" />
   <AssemblyInfo>
+    <AssemblyName>System.Reflection</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -23,25 +31,10 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="m">The <see langword="Type" /> object to which the filter is applied.</param>
-    <param name="filterCriteria">An arbitrary object used to filter the list.</param>
-    <summary>Filters the classes represented in an array of <see cref="T:System.Type" /> objects.</summary>
-    <returns>
-      <see langword="true" /> to include the <see cref="T:System.Type" /> in the filtered list; otherwise <see langword="false" />.</returns>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `TypeFilter` delegate is used to filter a list of classes. Specifically, you use it to filter the classes represented in an array of <xref:System.Type> objects. The <xref:System.Type.FindInterfaces%2A?displayProperty=fullName> method uses this delegate to filter the list of interfaces that it returns. Every derived class of <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and a `DynamicInvoke` method. See the Visual C++ code example given in the description for `Delegate`.  
-  
-   
-  
-## Examples  
- This example shows how to define a method matching the TypeFilter delegate prototype allowing you to use reflection to filter or return a subset of matching entries.  
-  
- [!code-vb[Typefilter#1](~/add/codesnippet/visualbasic/t-system.reflection.type_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <param name="m">To be added.</param>
+    <param name="filterCriteria">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

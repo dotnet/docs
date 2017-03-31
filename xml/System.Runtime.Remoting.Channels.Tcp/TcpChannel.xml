@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,44 +21,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a channel implementation that uses the TCP protocol to transmit messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Channels transport messages across remoting boundaries (for example, between computers on application domains). The TcpChannel class is a convenience class combining the functionality of the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> class and the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> class.  
-  
- Channels are used by the .NET Framework remoting infrastructure to transport remote calls. When a client makes a call to a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. It is then deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
-  
- To perform additional processing of messages, you can specify implementations of the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> and <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> through which all messages processed by the TcpChannel are passed.  
-  
- A TcpChannel object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel.%23ctor%2A> constructor). For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
-  
-> [!NOTE]
->  If the server computer is running Windows 95/98/Me, the server TcpChannel cannot be specified as secure.  
-  
-   
-  
-## Examples  
- The following code example shows how to use a TcpChannel to set up a remoting server and its client. The example contains three parts, a server, a client, and a remote object used by the server and the client.  
-  
- The following code example shows a server:  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#1](~/add/codesnippet/csharp/t-system.runtime.remotin_20_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#1](~/add/codesnippet/cpp/t-system.runtime.remotin_20_1.cpp)]  
-  
- The following code example shows a client for this server:  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#10](~/add/codesnippet/csharp/t-system.runtime.remotin_20_2.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#10](~/add/codesnippet/cpp/t-system.runtime.remotin_20_2.cpp)]  
-  
- The following code example shows the remote object used by the server and the client:  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#20](~/add/codesnippet/cpp/t-system.runtime.remotin_20_3.cpp)]
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#20](~/add/codesnippet/csharp/t-system.runtime.remotin_20_3.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,28 +32,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" /> class, activating only a client channel, and not a server channel.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default constructor initializes all fields to their default values. If the default constructor is used, the channel functions only as a client channel, and does not listen on any ports.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#11](~/add/codesnippet/csharp/m-system.runtime.remotin_33_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#11](~/add/codesnippet/cpp/m-system.runtime.remotin_33_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,34 +47,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="port">The port on which the server channel listens.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" /> class with a server channel that listens on the specified port.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To request that the remoting system choose an open port on your behalf, specify port 0 (zero). This will create a <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> instance to listen for requests on the dynamically assigned port. This is typically done on the client to make sure that a <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> is listening for callback methods.  
-  
- If 0 is passed to the constructor the <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is instantiated to use a free port.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using this method. To request that an available port be dynamically assigned, set the `port` parameter to zero.  
-  
- [!code-cpp[RemotingConfiguration.ServerActivation#2](~/add/codesnippet/cpp/m-system.runtime.remotin_94_1.cpp)]
- [!code-cs[RemotingConfiguration.ServerActivation#2](~/add/codesnippet/csharp/m-system.runtime.remotin_94_1.cs)]
- [!code-vb[RemotingConfiguration.ServerActivation#2](~/add/codesnippet/visualbasic/m-system.runtime.remotin_94_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,7 +65,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -146,32 +73,11 @@
         <Parameter Name="serverSinkProvider" Type="System.Runtime.Remoting.Channels.IServerChannelSinkProvider" />
       </Parameters>
       <Docs>
-        <param name="properties">A <see cref="T:System.Collections.IDictionary" /> collection that specifies values for configuration properties to be used by the client and server channels.</param>
-        <param name="clientSinkProvider">The <see cref="T:System.Runtime.Remoting.Channels.IClientChannelSinkProvider" /> implementation to be used by the client channel.</param>
-        <param name="serverSinkProvider">The <see cref="T:System.Runtime.Remoting.Channels.IServerChannelSinkProvider" /> implementation to be used by the server channel.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" /> class with the specified configuration properties and sinks.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
-  
-> [!NOTE]
->  If the server computer is running Windows 95/98/Me, the server <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> cannot be specified as secure.  
-  
- Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are also responsible for transporting messages between the client and the server. Channel sinks are linked together in a chain, and all channel messages flow through this chain of sinks before the message is finally serialized and transported. If you do not require sink functionality, set the `clientSinkProvider` and `serverSinkProvider` parameters to `null`.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel2#1](~/add/codesnippet/csharp/a59b945a-521d-44ce-a81e-_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel2#1](~/add/codesnippet/cpp/a59b945a-521d-44ce-a81e-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A provided channel property was improperly formatted.</exception>
+        <param name="properties">To be added.</param>
+        <param name="clientSinkProvider">To be added.</param>
+        <param name="serverSinkProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelData">
@@ -181,31 +87,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the channel-specific data.</summary>
-        <value>A <see cref="T:System.Runtime.Remoting.Channels.ChannelDataStore" /> instance that contains channel-specific data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although returned as an instance of <xref:System.Object?displayProperty=fullName>, the value of this property can be cast to an instance of <xref:System.Runtime.Remoting.Channels.ChannelDataStore> describing the channel to which the <xref:System.Runtime.Remoting.Channels.Http.HttpServerChannel> object listens.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this property.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#5](~/add/codesnippet/csharp/p-system.runtime.remotin_2_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#5](~/add/codesnippet/cpp/p-system.runtime.remotin_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelName">
@@ -215,31 +105,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the current channel.</summary>
-        <value>A <see cref="T:System.String" /> that contains the name of the channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Every registered channel has a unique name. The name is used to retrieve a specific channel when calling <xref:System.Runtime.Remoting.Channels.ChannelServices.GetChannel%2A>. To set the ChannelName property, assign the value to the "name" indexed property in the dictionary passed to the <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel.%23ctor%28System.Collections.IDictionary%2CSystem.Runtime.Remoting.Channels.IClientChannelSinkProvider%2CSystem.Runtime.Remoting.Channels.IServerChannelSinkProvider%29> constructor.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this property.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#3](~/add/codesnippet/csharp/p-system.runtime.remotin_65_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#3](~/add/codesnippet/cpp/p-system.runtime.remotin_65_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelPriority">
@@ -249,26 +123,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the priority of the current channel.</summary>
-        <value>An integer that represents the priority assigned to the channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use this property.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#4](~/add/codesnippet/csharp/p-system.runtime.remotin_50_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#4](~/add/codesnippet/cpp/p-system.runtime.remotin_50_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMessageSink">
@@ -278,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,29 +152,12 @@
         <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="url">The URL to which the new sink should deliver messages. Can be <see langword="null" />.</param>
-        <param name="remoteChannelData">The channel data object of the remote host to which the new sink should deliver messages. Can be <see langword="null" />.</param>
-        <param name="objectURI">When this method returns, contains a URI of the new channel message sink that delivers messages to the specified URL or channel data object. This parameter is passed uninitialized.</param>
-        <summary>Returns a channel message sink that delivers messages to the specified URL or channel data object.</summary>
-        <returns>A channel message sink that delivers messages to the specified URL or channel data object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateMessageSink method returns a channel message sink that delivers messages to either the specified URL or channel data object. If the `uri` parameter is `null`, `remoteChannelData` is used as a target for the sink. Either the `url` or `remoteChannelData` parameters can be `null`, but not both.  
-  
- Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of `ChannelSinkProviders` and all channel messages flow through this chain of sinks before the message is finally serialized and transported.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this method.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#12](~/add/codesnippet/csharp/73bdeed3-70ff-41b4-8d48-_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#12](~/add/codesnippet/cpp/73bdeed3-70ff-41b4-8d48-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <param name="remoteChannelData">To be added.</param>
+        <param name="objectURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUrlsForUri">
@@ -322,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,26 +176,10 @@
         <Parameter Name="objectURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objectURI">The URI of the object for which URLs are required.</param>
-        <summary>Returns an array of all the URLs for an object with the specified URI, hosted on the current <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" />.</summary>
-        <returns>An array of the URLs for an object with the specified URI, hosted on the current <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used by <xref:System.Runtime.Remoting.Channels.ChannelServices.GetUrlsForObject%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this method.  
-  
- [!code-cs[TcpChannel.GetUrlsForUri#1](~/add/codesnippet/csharp/m-system.runtime.remotin_3_1.cs)]
- [!code-vb[TcpChannel.GetUrlsForUri#1](~/add/codesnippet/visualbasic/m-system.runtime.remotin_3_1.vb)]
- [!code-cpp[TcpChannel.GetUrlsForUri#1](~/add/codesnippet/cpp/m-system.runtime.remotin_3_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="objectURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSecured">
@@ -361,23 +189,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether the current channel is secure.</summary>
-        <value>A Boolean value that indicates whether the current instance is secure.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property need not be set explicitly, as it is sufficient to set the ensureSecurity parameter of <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%28System.String%2CSystem.Boolean%29>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -387,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,26 +217,11 @@
         <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="url">The URL from which to extract the URI of the remote well-known object.</param>
-        <param name="objectURI">When this method returns, contains a <see cref="T:System.String" /> that holds the URI of the remote well-known object. This parameter is passed uninitialized.</param>
-        <summary>Extracts the channel URI and the remote well-known object URI from the specified URL.</summary>
-        <returns>The URI of the current channel.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A URI of an object is a value that uniquely identifies a specific object instance.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this method.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Tcp.TcpChannel#6](~/add/codesnippet/csharp/2b3d57e7-01ce-48be-88d4-_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Tcp.TcpChannel#6](~/add/codesnippet/cpp/2b3d57e7-01ce-48be-88d4-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <param name="objectURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -427,7 +231,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -437,22 +240,9 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="data">Optional initialization information.</param>
-        <summary>Instructs the current channel to start listening for requests.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is not necessary to call this method to begin listening on a newly initialized channel.  
-  
- Use this method to restart listening on a channel after the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening%2A> method has been called.  
-  
- If your channel uses a dynamically assigned port number, your port number might change when you restart listening.  
-  
- The `data` parameter can be used to pass a specific initialization state to the channel. If you do not want to pass a specific state to the channel, set `data` to `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -462,7 +252,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,20 +261,9 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="data">Optional state information for the channel.</param>
-        <summary>Instructs the current channel to stop listening for requests.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to stop listening on a channel. To restart listening, use the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StartListening%2A> method.  
-  
- If your channel uses a dynamically assigned port number, your port number might change when you restart listening.  
-  
- The `data` parameter can be used to pass a specific initialization state to the channel. If you do not want to pass a specific state to the channel, set `data` to `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

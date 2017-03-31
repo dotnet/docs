@@ -4,31 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapMessageStage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the processing stage of a SOAP message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET provides an extensibility mechanism for calling Web Services using SOAP. The extensibility mechanism revolves around a <xref:System.Web.Services.Protocols.SoapExtension> that can inspect or modify a message at specific stages in message processing on either the client or the server. This enumeration specifies the processing stage of the <xref:System.Web.Services.Protocols.SoapMessage>.  
-  
-   
-  
-## Examples  
- The following code example is a fragment of a SOAP extension, which implements the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A> method. Within the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A> method, processing of a <xref:System.Web.Services.Protocols.SoapMessage> is handled specific to the SoapMessageStage.  
-  
- [!code-vb[SoapMessageState#1](~/add/codesnippet/visualbasic/t-system.web.services.pr_14_1.vb)]
- [!code-cpp[SoapMessageState#1](~/add/codesnippet/cpp/t-system.web.services.pr_14_1.cpp)]
- [!code-cs[SoapMessageState#1](~/add/codesnippet/csharp/t-system.web.services.pr_14_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AfterDeserialize">
@@ -38,24 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The stage just after a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is deserialized from a SOAP message into an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the AfterDeserialize stage occurs after the SOAP message containing the response from an XML Web service method invocation has been deserialized into an object, but prior to the client receiving the deserialized results.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the AfterDeserialize stage occurs after a network request containing a SOAP message representing an XML Web service method invocation is deserialized into an object, but prior to the method on that object representing the XML Web service method is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AfterSerialize">
@@ -65,24 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The stage just after a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is serialized, but before the SOAP message is sent over the wire.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the AfterSerialize stage occurs after a client invokes an XML Web service method and the parameters are serialized into XML, but prior to the SOAP message containing that XML is sent over the network.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the AfterSerialize stage occurs after an XML Web service method returns and any return values are serialized into XML, but prior to the SOAP message containing that XML is sent over the network.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeDeserialize">
@@ -92,24 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The stage just before a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is deserialized from the SOAP message sent across the network into an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the BeforeDeserialize stage occurs after the network response from an XML Web service method invocation has been received, but just before the response containing the SOAP message is deserialized into an object.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the BeforeDeserialize stage occurs after a network request containing the SOAP message for an XML Web service method invocation is received by the Web server, but prior to the SOAP message being deserialized into an object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeSerialize">
@@ -119,24 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The stage just prior to a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> being serialized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the BeforeSerialize stage occurs after a client invokes an XML Web service method, but prior to the invocation being serialized.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the BeforeSerialize stage occurs after the invocation to the XML Web service method returns, but prior to the return values being serialized and sent over the wire back to the client.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

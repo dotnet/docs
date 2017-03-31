@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MatrixConverter" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Matrix" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use a MatrixConverter to create a <xref:System.Windows.Media.Matrix> from an attribute string; use a <xref:System.Windows.Media.Converters.MatrixValueSerializer> to create a [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] representation of a <xref:System.Windows.Media.Matrix> structure.  
-  
-   
-  
-## Examples  
- The following example uses a MatrixConverter to convert a string into a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-cs[MatrixExamples_snip#MatrixConverterExample_csharp](~/add/codesnippet/csharp/MatrixExamples_snip/MatrixExample.cs#matrixconverterexample_csharp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.MatrixConverter" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">The context information of a type.</param>
-        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
-        <summary>Determines whether an object can be converted from a specific type to an instance of a <see cref="T:System.Windows.Media.Matrix" />.</summary>
-        <returns>
-          <see langword="true" /> if the type can be converted to a <see cref="T:System.Windows.Media.Matrix" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">The context information of a type.</param>
-        <param name="destinationType">The desired type this <see cref="T:System.Windows.Media.Matrix" /> is being evaluated for conversion.</param>
-        <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Matrix" /> can be converted to a different type.</summary>
-        <returns>
-          <see langword="true" /> if this <see cref="T:System.Windows.Media.Matrix" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,20 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The context information of a type.</param>
-        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Media.Matrix" />.</summary>
-        <returns>The <see cref="T:System.Windows.Media.Matrix" /> created from converting <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.MatrixConverter.CanConvertFrom%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The specified object is null or is a type that cannot be converted to a <see cref="T:System.Windows.Media.Matrix" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -140,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,21 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">The context information of a type.</param>
-        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.Matrix" /> to convert.</param>
-        <param name="destinationType">The type to convert this <see cref="T:System.Windows.Media.Matrix" /> to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Media.Matrix" /> to a specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Media.Matrix" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.MatrixConverter.CanConvertTo%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <paramref name="value" /> is null or is not a <see cref="T:System.Windows.Media.Matrix" />, or the <paramref name="destinationType" /> is not a valid conversion type.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

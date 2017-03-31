@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControl.TabPageCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Windows.Forms.TabPage" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The order of tab pages in this collection reflects the order of tabs in the related <xref:System.Windows.Forms.TabControl> control. To change the order of tabs in the control, you must change their positions in the collection by removing them and inserting them at new indexes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,17 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.TabControl" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.TabControl" /> that this collection belongs to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Windows.Forms.TabControl" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -54,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,16 +53,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display on the tab page.</param>
-        <summary>Creates a tab page with the specified text, and adds it to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.Windows.Forms.TabPage> is added to the end of the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -83,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,23 +74,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.TabPage" /> to add.</param>
-        <summary>Adds a <see cref="T:System.Windows.Forms.TabPage" /> to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the Add method to add a single tab page to the `tabControl1` tab control. Notice the <xref:System.Windows.Forms.TabControl.TabPages%2A> property is used to get the `tabControl1` controls collection to add the `tabPage1` to this collection.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-cs[TabPageCollection.Add#1](~/add/codesnippet/csharp/ea71aa0e-7eb6-4549-9669-_1.cs)]
- [!code-cpp[TabPageCollection.Add#1](~/add/codesnippet/cpp/ea71aa0e-7eb6-4549-9669-_1.cpp)]
- [!code-vb[TabPageCollection.Add#1](~/add/codesnippet/visualbasic/ea71aa0e-7eb6-4549-9669-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -119,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,19 +96,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page.</param>
-        <param name="text">The text to display on the tab page.</param>
-        <summary>Creates a tab page with the specified text and key, and adds it to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The newly created <xref:System.Windows.Forms.TabPage> is added to the end of the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -152,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,22 +120,11 @@
         <Parameter Name="imageIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page.</param>
-        <param name="text">The text to display on the tab page.</param>
-        <param name="imageIndex">The index of the image to display on the tab page.</param>
-        <summary>Creates a tab page with the specified key, text, and image, and adds it to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The `imageIndex` parameter refers to an image in the <xref:System.Windows.Forms.TabControl.ImageList%2A> property of the <xref:System.Windows.Forms.TabControl>.  
-  
- The newly created <xref:System.Windows.Forms.TabPage> is added to the end of the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="imageIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -189,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,22 +145,11 @@
         <Parameter Name="imageKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page.</param>
-        <param name="text">The text to display on the tab page.</param>
-        <param name="imageKey">The key of the image to display on the tab page.</param>
-        <summary>Creates a tab page with the specified key, text, and image, and adds it to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The `imageKey` parameter refers to an image in the <xref:System.Windows.Forms.TabControl.ImageList%2A> property of the <xref:System.Windows.Forms.TabControl>.  
-  
- The newly created <xref:System.Windows.Forms.TabPage> is added to the end of the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="imageKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -226,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,23 +168,9 @@
         <Parameter Name="pages" Type="System.Windows.Forms.TabPage[]" />
       </Parameters>
       <Docs>
-        <param name="pages">An array of type <see cref="T:System.Windows.Forms.TabPage" /> that contains the tab pages to add.</param>
-        <summary>Adds a set of tab pages to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage>. This example uses the AddRange method to add an array of tab pages to the `tabControl1` tab control. Notice that the <xref:System.Windows.Forms.TabControl.TabPages%2A> property gets the `tabControl1` controls collection, in order to add the array of tab pages to this collection.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this collection.  
-  
- [!code-cs[TabPageCollection.AddRange#1](~/add/codesnippet/csharp/540fee7e-8b3c-492e-81b4-_1.cs)]
- [!code-vb[TabPageCollection.AddRange#1](~/add/codesnippet/visualbasic/540fee7e-8b3c-492e-81b4-_1.vb)]
- [!code-cpp[TabPageCollection.AddRange#1](~/add/codesnippet/cpp/540fee7e-8b3c-492e-81b4-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of pages equals <see langword="null" />.</exception>
+        <param name="pages">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -262,7 +180,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,21 +187,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the tab pages from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example initially creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage>. This example uses the Clear method to clear all controls in the `tabControl1` controls collection at one instance. Then, the example adds `tabPage2` back to the collection. Notice that the <xref:System.Windows.Forms.TabControl.TabPages%2A> property is used to get the `tabControl1` controls collection to remove (and add) tab pages from this collection.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-cs[TabPageCollection.Clear#1](~/add/codesnippet/csharp/m-system.windows.forms.t_20_1.cs)]
- [!code-cpp[TabPageCollection.Clear#1](~/add/codesnippet/cpp/m-system.windows.forms.t_20_1.cpp)]
- [!code-vb[TabPageCollection.Clear#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_20_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -294,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -304,25 +207,10 @@
         <Parameter Name="page" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:System.Windows.Forms.TabPage" /> to locate in the collection.</param>
-        <summary>Determines whether a specified tab page is in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.Forms.TabPage" /> is in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example initially creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage> objects. The first two tab pages are added directly to `tabControl1` by the <xref:System.Windows.Forms.TabControl.TabPageCollection.AddRange%2A> method. The Contains method determines `tabPage3` is part of the `tabControl1` controls collection. Because `tabPage3` was not found in this collection, it was added by the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-cs[TabPageCollection.Contains#1](~/add/codesnippet/csharp/0acb68d9-faae-4257-b6c4-_1.cs)]
- [!code-cpp[TabPageCollection.Contains#1](~/add/codesnippet/cpp/0acb68d9-faae-4257-b6c4-_1.cpp)]
- [!code-vb[TabPageCollection.Contains#1](~/add/codesnippet/visualbasic/0acb68d9-faae-4257-b6c4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of <paramref name="page" /> is <see langword="null" />.</exception>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -332,7 +220,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,20 +229,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page to search for.</param>
-        <summary>Determines whether the collection contains a tab page with the specified key.</summary>
-        <returns>
-          <see langword="true" /> to indicate a tab page with the specified key was found in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, ContainsKey returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -365,7 +242,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -377,22 +253,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of tab pages in the collection.</summary>
-        <value>The number of tab pages in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage>. The Count property gets the number of <xref:System.Windows.Forms.TabPage> objects in the `tabControl1` controls collection.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-vb[TabPageCollection.Count#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_207_1.vb)]
- [!code-cs[TabPageCollection.Count#1](~/add/codesnippet/csharp/p-system.windows.forms.t_207_1.cs)]
- [!code-cpp[TabPageCollection.Count#1](~/add/codesnippet/cpp/p-system.windows.forms.t_207_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -402,7 +265,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,20 +272,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumeration of all the tab pages in the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates an enumerator that contains a snapshot of the collection. You can change the collection by changing the enumerator; however, multiple enumerators can simultaneously access the same collection. Changing the collection (either directly or through another enumerator) can thus cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
-  
- Two enumerators created from the same collection at the same time can contain different snapshots.  
-  
- Removing objects from the enumerator also removes them from the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -433,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,24 +293,10 @@
         <Parameter Name="page" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:System.Windows.Forms.TabPage" /> to locate in the collection.</param>
-        <summary>Returns the index of the specified tab page in the collection.</summary>
-        <returns>The zero-based index of the tab page; -1 if it cannot be found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the IndexOf method to retrieve the `tabPage1` index value. A ToolTip is used to display this value.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-cpp[TabPageCollection.IndexOf#1](~/add/codesnippet/cpp/de64087f-5ed3-4f63-9d86-_1.cpp)]
- [!code-vb[TabPageCollection.IndexOf#1](~/add/codesnippet/visualbasic/de64087f-5ed3-4f63-9d86-_1.vb)]
- [!code-cs[TabPageCollection.IndexOf#1](~/add/codesnippet/csharp/de64087f-5ed3-4f63-9d86-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value of <paramref name="page" /> is <see langword="null" />.</exception>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -470,7 +306,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -480,19 +315,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page to find in the collection.</param>
-        <summary>Returns the index of the first occurrence of the <see cref="T:System.Windows.Forms.TabPage" /> with the specified key.</summary>
-        <returns>The zero-based index of the first occurrence of a tab page with the specified key, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If IndexOfKey is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, IndexOfKey returns -1.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -502,7 +328,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -513,17 +338,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the tab page is inserted.</param>
-        <param name="text">The text to display in the tab page.</param>
-        <summary>Creates a new tab page with the specified text and inserts it into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method allows you to create a new tab page and insert it at a specified location. To add a tab page without specifying a particular position in the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.AddRange%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -533,7 +351,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,17 +361,10 @@
         <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the tab page is inserted.</param>
-        <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to insert in the collection.</param>
-        <summary>Inserts an existing tab page into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Insert method allows you to insert a tab page at a specified location. To add a tab page without specifying a particular position in the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.AddRange%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="tabPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -564,7 +374,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -576,20 +385,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the tab page is inserted.</param>
-        <param name="key">The name of the tab page.</param>
-        <param name="text">The text to display on the tab page.</param>
-        <summary>Creates a new tab page with the specified key and text, and inserts it into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The Insert method allows you to create and insert a tab page at a specified location. To add a tab page without specifying a particular position in the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.AddRange%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -599,7 +399,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -612,23 +411,12 @@
         <Parameter Name="imageIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the tab page is inserted</param>
-        <param name="key">The name of the tab page.</param>
-        <param name="text">The text to display on the tab page</param>
-        <param name="imageIndex">The zero-based index of the image to display on the tab page.</param>
-        <summary>Creates a new tab page with the specified key, text, and image, and inserts it into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The Insert method allows you to create and insert a tab page at a specified location. To add a tab page without specifying a particular position in the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.AddRange%2A> method.  
-  
- The `imageIndex` parameter refers to an image in the <xref:System.Windows.Forms.TabControl.ImageList%2A> property of the <xref:System.Windows.Forms.TabControl>.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="imageIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -638,7 +426,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -651,23 +438,12 @@
         <Parameter Name="imageKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location where the tab page is inserted.</param>
-        <param name="key">The name of the tab page.</param>
-        <param name="text">The text to display on the tab page.</param>
-        <param name="imageKey">The key of the image to display on the tab page.</param>
-        <summary>Creates a tab page with the specified key, text, and image, and inserts it into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The Insert method allows you to create and insert a tab page at a specified location. To add a tab page without specifying a particular position in the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.AddRange%2A> method.  
-  
- The `imageKey` parameter refers to an image in the <xref:System.Windows.Forms.TabControl.ImageList%2A> property of the <xref:System.Windows.Forms.TabControl>.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="imageKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -677,29 +453,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>This property always returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage>. This example gets the `tabControl1` controls collection and determines if it is read-only using the IsReadOnly property.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-cs[TabPageCollection.IsReadOnly#1](~/add/codesnippet/csharp/p-system.windows.forms.t_42_1.cs)]
- [!code-vb[TabPageCollection.IsReadOnly#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_42_1.vb)]
- [!code-cpp[TabPageCollection.IsReadOnly#1](~/add/codesnippet/cpp/p-system.windows.forms.t_42_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -709,7 +471,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -719,12 +480,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the tab page to get or set.</param>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.TabPage" /> in the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.TabPage" /> at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero or greater than the highest available index.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -734,7 +493,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -744,19 +502,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page to retrieve.</param>
-        <summary>Gets a tab page with the specified key from the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.TabPage" /> with the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, Item returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -766,7 +515,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -776,23 +524,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.TabPage" /> to remove.</param>
-        <summary>Removes a <see cref="T:System.Windows.Forms.TabPage" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example initially creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage>. This example uses the Remove method to remove a single tab page, specifically `tabPage2` from the `tabControl1` controls collection. Notice that the <xref:System.Windows.Forms.TabControl.TabPages%2A> property gets the `tabControl1` controls collection to add and remove tab pages from this collection.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces with this example.  
-  
- [!code-cs[TabPageCollection.Remove#1](~/add/codesnippet/csharp/e34b3f84-c9ee-4257-b586-_1.cs)]
- [!code-cpp[TabPageCollection.Remove#1](~/add/codesnippet/cpp/e34b3f84-c9ee-4257-b586-_1.cpp)]
- [!code-vb[TabPageCollection.Remove#1](~/add/codesnippet/visualbasic/e34b3f84-c9ee-4257-b586-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -802,7 +536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -812,22 +545,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Windows.Forms.TabPage" /> to remove.</param>
-        <summary>Removes the tab page at the specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example initially creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage>. This example uses the RemoveAt method to remove `tabPage1`, which is specified by its index, from the `tabControl1` controls collection. Notice that the <xref:System.Windows.Forms.TabControl.TabPages%2A> property gets the `tabControl1` controls collection to add and remove tab pages from this collection.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
- [!code-vb[TabPageCollection.RemoveAt#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_39_1.vb)]
- [!code-cpp[TabPageCollection.RemoveAt#1](~/add/codesnippet/cpp/m-system.windows.forms.t_39_1.cpp)]
- [!code-cs[TabPageCollection.RemoveAt#1](~/add/codesnippet/csharp/m-system.windows.forms.t_39_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -837,7 +557,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -847,16 +566,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the tab page to remove.</param>
-        <summary>Removes the tab page with the specified key from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPageCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -866,7 +578,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -877,28 +588,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in the array at which copying begins.</param>
-        <summary>Copies the elements of the collection to the specified array, starting at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dest" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="dest" /> is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> is greater than the available space from index to the end of <paramref name="dest" />.</exception>
-        <exception cref="T:System.InvalidCastException">The items in the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> cannot be cast automatically to the type of <paramref name="dest" />.</exception>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -908,24 +601,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -935,23 +619,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -961,7 +637,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -971,21 +646,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.TabPage" /> to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Windows.Forms.TabPage" /> control to the collection.</summary>
-        <returns>The position into which the <see cref="T:System.Windows.Forms.TabPage" /> was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.TabPage" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -995,7 +659,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1005,18 +668,10 @@
         <Parameter Name="page" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="page">The object to locate in the collection.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Forms.TabPage" /> control is in the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is a <see cref="T:System.Windows.Forms.TabPage" /> in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1026,7 +681,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1036,17 +690,10 @@
         <Parameter Name="page" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:System.Windows.Forms.TabPage" /> to locate in the collection.</param>
-        <summary>Returns the index of the specified <see cref="T:System.Windows.Forms.TabPage" /> control in the collection.</summary>
-        <returns>The zero-based index if page is a <see cref="T:System.Windows.Forms.TabPage" /> in the collection; otherwise -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1056,7 +703,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1067,21 +713,10 @@
         <Parameter Name="tabPage" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which the <see cref="T:System.Windows.Forms.TabPage" /> should be inserted.</param>
-        <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to insert into the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</param>
-        <summary>Inserts a <see cref="T:System.Windows.Forms.TabPage" /> control into the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="tabPage" /> is not a <see cref="T:System.Windows.Forms.TabPage" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0, or index is greater than or equal to <see cref="System.Windows.Forms.TabControl.TabPageCollection.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="tabPage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1091,24 +726,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> has a fixed size.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -1118,7 +744,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1128,18 +753,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get.</param>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.TabPage" /> in the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.TabPage" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value is not a <see cref="T:System.Windows.Forms.TabPage" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1149,7 +766,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1159,16 +775,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.TabPage" /> to remove.</param>
-        <summary>Removes a <see cref="T:System.Windows.Forms.TabPage" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.TabControl.TabPageCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

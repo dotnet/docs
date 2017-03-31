@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetMsmqSecurityElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The NetMsmqSecurityElement class encapsulates the MSMQ security features available when using the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Objects of this type are created by creating an instance of the <xref:System.ServiceModel.NetMsmqBinding> binding. You can then use this object to reference all of the various security settings related to the <xref:System.ServiceModel.NetMsmqBinding> binding.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetMsmqSecurityElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -58,16 +48,9 @@
         <ReturnType>System.ServiceModel.Configuration.MessageSecurityOverMsmqElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.MessageSecurityOverMsmq" /> instance that is associated with the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.MessageSecurityOverMsmq" /> instance that is associated with the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.MessageSecurityOverMsmq> instance encapsulates the SOAP message security settings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -77,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -89,24 +71,9 @@
         <ReturnType>System.ServiceModel.NetMsmqSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.NetMsmqSecurityMode" /> instance that is associated with the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.NetMsmqSecurityMode" /> instance that is associated with the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the type of security used by the associated `NetMsmqBinding`. The following list describes the acceptable values:  
-  
--   `None` - No security will be used.  
-  
--   `Transport` - Transport security will be used.  
-  
--   `Message` - Message-based security will be used.  
-  
--   `Both` - Both message-based security and transport security will be used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -116,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,7 +101,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -147,16 +112,9 @@
         <ReturnType>System.ServiceModel.Configuration.MsmqTransportSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Configuration.MsmqTransportSecurityElement" /> element that is associated with the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> instance that is associated with the <see cref="T:System.ServiceModel.NetMsmqBinding" /> binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables access to Msmq Transport security settings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCommentStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a statement consisting of a single comment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeCommentStatement can be used to represent a single-line comment statement. CodeCommentStatement is a statement, so it can be inserted into a statements collection and will appear on its own line. CodeCommentStatement can also be added to the comments collection of <xref:System.CodeDom.CodeNamespace> or any object that derives from <xref:System.CodeDom.CodeTypeMember>.  
-  
-   
-  
-## Examples  
- This example demonstrates using a CodeCommentStatement to represent a comment in source code.  
-  
- [!code-cs[CodeCommentExample#2](~/add/codesnippet/csharp/t-system.codedom.codecom_2_1.cs)]
- [!code-cpp[CodeCommentExample#2](~/add/codesnippet/cpp/t-system.codedom.codecom_2_1.cpp)]
- [!code-vb[CodeCommentExample#2](~/add/codesnippet/visualbasic/t-system.codedom.codecom_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,15 +45,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="comment" Type="System.CodeDom.CodeComment" />
       </Parameters>
       <Docs>
-        <param name="comment">A <see cref="T:System.CodeDom.CodeComment" /> that indicates the comment.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class using the specified comment.</summary>
+        <param name="comment">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,15 +63,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The contents of the comment.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class using the specified text as contents.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +81,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -109,31 +88,10 @@
         <Parameter Name="docComment" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">The contents of the comment.</param>
-        <param name="docComment">
-          <see langword="true" /> if the comment is a documentation comment; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class using the specified text and documentation comment flag.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `docComment` parameter is `true`, the <xref:System.CodeDom.CodeCommentStatement> is a documentation comment and the comment is structured using triple delimiter characters. For example, in C# the comment is "`///`", in Visual Basic "`'''`". Documentation comments are used to identify an XML comment field, such as a type or member summary identified by the `<summary>` element.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the CodeCommentStatement constructor to create a comment statement to be used as an XML comment field. This example is part of a larger example that follows.  
-  
- [!code-cs[CodeDomHelloWorldSample#3](~/add/codesnippet/csharp/m-system.codedom.codecom_1.cs)]
- [!code-vb[CodeDomHelloWorldSample#3](~/add/codesnippet/visualbasic/m-system.codedom.codecom_1.vb)]  
-  
- The following code example demonstrates the creation of a simple "Hello World" console application and the generation of an XML documentation file for the compiled application.  
-  
- [!code-cs[CodeDomHelloWorldSample#1](~/add/codesnippet/csharp/m-system.codedom.codecom_2.cs)]
- [!code-vb[CodeDomHelloWorldSample#1](~/add/codesnippet/visualbasic/m-system.codedom.codecom_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="docComment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -143,15 +101,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeComment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the contents of the comment.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeComment" /> that indicates the comment.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

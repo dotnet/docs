@@ -16,22 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A potential path of execution within a <see cref="T:System.Activities.Statements.Pick" /> activity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A PickBranch contains a <xref:System.Activities.Statements.PickBranch.Trigger%2A> and an <xref:System.Activities.Statements.PickBranch.Action%2A>. At the beginning of a <xref:System.Activities.Statements.Pick> element’s execution, all the trigger activities from all PickBranch elements are scheduled. When the first (leftmost) activity completes, the corresponding action activity is scheduled, and all other trigger activities are canceled.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates creating a PickBranch activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,17 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.PickBranch" /> activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.PickBranch> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -79,18 +56,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Activities.Activity" /> to execute if this branch is triggered for execution.</summary>
-        <value>The activity to execute.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates setting the Action property of a <xref:System.Activities.Statements.PickBranch> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -111,8 +79,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of this branch to be displayed in the activity designer.</summary>
-        <value>The branch name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,18 +105,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity whose completion activates this pick branch.</summary>
-        <value>The triggering activity.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates setting the Trigger property of a <xref:System.Activities.Statements.PickBranch> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Variables">
@@ -164,8 +123,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of user-defined variables associated with this activity.</summary>
-        <value>The variable collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

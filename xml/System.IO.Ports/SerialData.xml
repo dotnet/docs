@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialData" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of character that was received on the serial port of the <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used with the <xref:System.IO.Ports.SerialPort.DataReceived> event. You examine the type of character that was received by retrieving the value of the eceivedEventArgs.EventType property of the eceivedEventArgs class. The eceivedEventArgs.EventType property contains one of the values from the SerialData enumeration.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Chars">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A character was received and placed in the input buffer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Eof">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The end of file character was received and placed in the input buffer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

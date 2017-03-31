@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class that exposes an element to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] queries the root of a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] application about an element, the root returns the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] peer for that element. The peer also responds to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] queries about its corresponding element.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Provides initialization for base class values when they are called by the constructor of a derived class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> that is reported to the automation client as a source for all the events that come from this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
-        <value>The <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> that is the source of events.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the accelerator key combinations for the element that is associated with the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] peer.</summary>
-        <returns>The accelerator key.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,16 +81,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAcceleratorKey%2A" />.</summary>
-        <returns>The accelerator key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an application responds to keyboard events to provide shortcut key behavior, it should return a string that contains the keyboard shortcut combination. For example, for an element that can copy text to the clipboard, this attached property might be set to the value "CTRL+C".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccessKey">
@@ -112,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,8 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the access key for the element that is associated with the automation peer.</summary>
-        <returns>The string that contains the access key.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,16 +119,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAccessKey%2A" />.</summary>
-        <returns>The string that contains the access key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An access key (sometimes referred to as a keyboard shortcut or mnemonic) is a character in the text of a menu, menu item, or label of a control such as a button that invokes the associated menu function. For example, to provide a shortcut way to open the `File` menu (for which the access key is typically F), an element might have this attached property set to "ALT+F".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlType">
@@ -159,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,8 +138,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the element that is associated with the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] peer.</summary>
-        <returns>The control type.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>The control type.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,16 +176,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.AutomationId%2A" /> of the element that is associated with the automation peer.</summary>
-        <returns>The identifier.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property. If that property is not set, the value is the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -226,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,16 +195,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationId%2A" />.</summary>
-        <returns>The string that contains the identifier.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property. If that property is not set, the value is the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangle">
@@ -253,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,8 +214,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Rect" /> object that represents the screen coordinates of the element that is associated with the automation peer.</summary>
-        <returns>The bounding rectangle.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +226,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,8 +233,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle%2A" />.</summary>
-        <returns>The bounding rectangle.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,7 +245,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,8 +252,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the collection of GetChildren elements that are represented in the UI Automation tree as immediate child elements of the automation peer.</summary>
-        <returns>The collection of child elements.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,7 +264,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -321,8 +271,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A" />.</summary>
-        <returns>The collection of child elements.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,8 +290,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a name that is used with <see cref="T:System.Windows.Automation.Peers.AutomationControlType" />, to differentiate the control that is represented by this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
-        <returns>The class name.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,7 +302,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -361,8 +309,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>The class name.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,7 +321,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,16 +328,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Point" /> on the element that is associated with the automation peer that responds to a mouse click.</summary>
-        <returns>A point in the clickable area of the element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, if the element represents a <xref:System.Windows.Controls.Button>, a clickable point is any point in the visible client area of the <xref:System.Windows.Controls.Button> that issues the command that the button represents when it is clicked by the mouse.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -400,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,8 +347,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint%2A" />.</summary>
-        <returns>A point within the clickable area of the element.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,7 +359,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,16 +366,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets text that describes the functionality of the control that is associated with the automation peer.</summary>
-        <returns>The help text.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned string typically provides the same text that is provided by the tooltip for the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHelpTextCore">
@@ -447,7 +378,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -455,8 +385,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetHelpText%2A" />.</summary>
-        <returns>The help text.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,7 +397,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -483,26 +412,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tells [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] where in the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree to place the <see langword="hwnd" /> being hosted by a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] element.</summary>
-        <returns>This method returns the hosted <see langword="hwnd" /> to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] for controls that host <see langword="hwnd" /> objects.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the hosted `hwnd` to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] for controls that host `hwnd` objects.  
-  
- The <xref:System.Windows.Automation.Peers.AutomationPeer> that is associated with an element that immediately hosts an `hwnd` must override this method.  
-  
- If this method is not overridden, [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] places the `hwnd` as a child element of the <xref:System.Windows.Interop.HwndSource> that hosts the whole application. Typically, you want to override this default behavior and set [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] to position the hosted `hwnd` parallel to the place where it is located in the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] logical tree.  
-  
- Except in hosting scenarios, do not allow <xref:System.Windows.Automation.Peers.AutomationPeer> types to override this method.  
-  
- In addition to overriding this method, the <xref:System.Windows.Automation.Peers.AutomationPeer> types that are associated with an element that immediately hosts an `hwnd` must return the <xref:System.Windows.Automation.Peers.AutomationPeer> that is cast to <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> in response to WM_GETOBJECT coming to the hosted `hwnd`.  
-  
- To get a pointer to <xref:System.Windows.Automation.Provider.IRawElementProviderSimple>, call <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemStatus">
@@ -512,7 +424,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -520,16 +431,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets text that conveys the visual status of the element that is associated with this automation peer.</summary>
-        <returns>The status.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, the status of a messenger contact might be "Busy" or "Online".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemStatusCore">
@@ -539,7 +443,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -547,8 +450,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetItemStatus%2A" />.</summary>
-        <returns>The status.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -567,16 +469,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string that describes what kind of item an object represents.</summary>
-        <returns>The kind of item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Examples of the returned string are "Mail Message", "Contact", and "Document".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemTypeCore">
@@ -586,7 +481,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,8 +488,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetItemType%2A" />.</summary>
-        <returns>The kind of item.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -606,7 +500,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -614,22 +507,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Label" /> that is targeted to the element.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, if the element is a <xref:System.Windows.Controls.ComboBox> control, the GetLabeledBy method gets the <xref:System.Windows.Automation.Peers.AutomationPeer> for the <xref:System.Windows.Controls.Label> that is associated with the <xref:System.Windows.Controls.ComboBox>.  
-  
- In the following image, the <xref:System.Windows.Controls.Label> "Themes" is targeted to the <xref:System.Windows.Controls.ComboBox>; therefore the <xref:System.Windows.Controls.AccessText.AccessKey%2A> for the <xref:System.Windows.Controls.Label> also targets the <xref:System.Windows.Controls.ComboBox>. When the user presses **ALT**+**T**, the <xref:System.Windows.Controls.ComboBox> gets focus instead of the <xref:System.Windows.Controls.Label>.  
-  
- ![Display properties shows labeled by usage](~/add/media/labeledby.JPG "Display properties shows labeled by usage")  
-  
- The GetLabeledBy method for <xref:System.Windows.Automation.Peers.ComboBoxAutomationPeer> returns the <xref:System.Windows.Automation.Peers.LabelAutomationPeer> for the corresponding <xref:System.Windows.Controls.Label>. This enables an automation client to get the text string that describes the <xref:System.Windows.Controls.ComboBox>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -639,7 +519,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -647,8 +526,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,7 +538,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -667,8 +545,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a human-readable localized string that represents the <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> value for the control that is associated with this automation peer.</summary>
-        <returns>The type of the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -679,7 +557,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -687,8 +564,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetLocalizedControlType%2A" />.</summary>
-        <returns>The type of the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -699,7 +576,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -707,16 +583,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets text that describes the element that is associated with this automation peer.</summary>
-        <returns>The name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the derived implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetNameCore%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -726,7 +595,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -734,18 +602,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetName%2A" />.</summary>
-        <returns>The string that contains the label.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can think of this value as a string that users use to explain the control they are referring to. This property is used by tools such as Narrator to tell the user what the control is. For example, a button with a string "OK" should return "OK". A <xref:System.Windows.Controls.ListBox> control that lets users select a color might return "Colors".  
-  
- Make sure that you have assigned a name to all controls in the [!INCLUDE[TLA#tla_gui](~/add/includes/tlasharptla-gui-md.md)] so that accessibility tools such as screen readers can refer to each control in a localized manner.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOrientation">
@@ -755,7 +614,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -763,8 +621,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates the explicit control orientation, if any.</summary>
-        <returns>The orientation of the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,7 +633,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -783,8 +640,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetOrientation%2A" />.</summary>
-        <returns>The orientation of the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,7 +652,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -803,8 +659,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> that is the parent of this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
-        <returns>The parent automation peer.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -815,7 +671,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -825,9 +680,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">A value from the <see cref="T:System.Windows.Automation.Peers.PatternInterface" /> enumeration.</param>
-        <summary>When overridden in a derived class, gets the control pattern that is associated with the specified <see cref="T:System.Windows.Automation.Peers.PatternInterface" />.</summary>
-        <returns>The object that implements the pattern interface; <see langword="null" /> if this peer does not support this interface.</returns>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -847,9 +702,9 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The position on the screen to get the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> from.</param>
-        <summary>Gets an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> from the specified point.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> at the specified point.</returns>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -869,9 +724,9 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The position on the screen to get the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> from.</param>
-        <summary>When overridden in a derived class, is called from <see cref="System.Windows.Automation.Peers.AutomationPeer.GetPeerFromPoint%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> at the specified point.</returns>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -882,7 +737,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -890,9 +744,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element that is associated with this automation peer currently has keyboard focus.</summary>
-        <returns>
-          <see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -903,7 +756,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -911,9 +763,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.HasKeyboardFocus%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,7 +775,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -932,17 +782,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Triggers recalculation of the main properties of the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> and raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> notification to the Automation Client if the properties changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Examples of main properties include, but are not limited to, <xref:System.Windows.Controls.ContentControl.LogicalChildren%2A> and <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.BoundingRectangle%2A>.  
-  
- Typically, updates and notifications happen automatically after the update of the layout in [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)]. (The update occurs in response to the <xref:System.Windows.UIElement.LayoutUpdated> event.) Sometimes, however, properties change without raising the <xref:System.Windows.UIElement.LayoutUpdated> event. For example, when the whole <xref:System.Windows.Window> moves, the <xref:System.Windows.UIElement.LayoutUpdated> event is not raised. In this example, the set of <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.BoundingRectangle%2A> objects change because the objects are expressed in screen coordinates. Therefore, the <xref:System.Windows.Window> must call InvalidatePeer on its peer on <xref:System.Windows.Automation.Peers.WindowAutomationPeer>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContentElement">
@@ -952,7 +793,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -960,17 +800,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element that is associated with this automation peer contains data that is presented to the user.</summary>
-        <returns>
-          <see langword="true" /> if the element is a content element; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A content element contains data that is presented to the user. An example of a content element is an item in a list box or a button in a dialog box. You typically use non-content elements (which are also referred to as peripheral elements) to work with the content in a composite control. An example of a non-content element is the button in a drop-down control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -980,7 +812,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -988,9 +819,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsContentElement%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element is a content element; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1001,7 +831,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1009,9 +838,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element is understood by the user as interactive or as contributing to the logical structure of the control in the [!INCLUDE[TLA2#tla_gui](~/add/includes/tla2sharptla-gui-md.md)].</summary>
-        <returns>
-          <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1022,7 +850,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1030,9 +857,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsControlElement%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1043,7 +869,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1051,9 +876,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element associated with this automation peer supports interaction.</summary>
-        <returns>
-          <see langword="true" /> if the element supports interaction; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1064,7 +888,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1072,9 +895,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsEnabled%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the automation peer can receive and send events; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1085,26 +907,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the element that is associated with this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> hosts <see langword="hwnds" /> in [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)].</summary>
-        <value>
-          <see langword="true" /> if the element that is associated with this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> hosts <see langword="hwnds" /> in [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)]; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two examples of elements that host `hwnds` in [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] are <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Controls.Primitives.Popup>.  
-  
- These peers must also override <xref:System.Windows.Automation.Peers.AutomationPeer.GetHostRawElementProviderCore%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusable">
@@ -1114,7 +925,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1122,9 +932,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element can accept keyboard focus.</summary>
-        <returns>
-          <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1135,7 +944,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1143,9 +951,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1156,7 +963,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1164,17 +970,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether an element is off the screen.</summary>
-        <returns>
-          <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property does not indicate whether the element is visible. In some circumstances, an element is on the screen but is still not visible. For example, if the element is on the screen but obscured by other elements, it might not be visible. In this case, the method returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -1184,7 +982,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1192,9 +989,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsOffscreen%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1205,7 +1001,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1213,9 +1008,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element contains sensitive content.</summary>
-        <returns>
-          <see langword="true" /> if the element contains sensitive content such as a password; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1226,7 +1020,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1234,9 +1027,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsPassword%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element contains sensitive content; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1247,7 +1039,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1255,9 +1046,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the element that is associated with this peer must be completed on a form.</summary>
-        <returns>
-          <see langword="true" /> if the element must be completed; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1268,7 +1058,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1276,9 +1065,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsRequiredForForm%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element is must be completed; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1289,7 +1077,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1299,20 +1086,10 @@
         <Parameter Name="eventId" Type="System.Windows.Automation.Peers.AutomationEvents" />
       </Parameters>
       <Docs>
-        <param name="eventId">One of the enumeration values.</param>
-        <summary>Gets a value that indicates whether [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] is listening for the specified event.</summary>
-        <returns>A <see langword="boolean" /> that indicates whether [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] is listening for the event.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, you call this method before creating the <xref:System.Windows.Automation.Peers.AutomationPeer> that raises the event. This method is a performance measure because if [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] does not listen for the event, it does not make sense to create a peer to raise one.  
-  
-> [!NOTE]
->  This method is static and only answers if a delegate listens for the specified event in [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)], not for an event on a specific element. [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] can create broadcast listeners; therefore the per-element information is irrelevant.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PeerFromProvider">
@@ -1322,7 +1099,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1332,9 +1108,9 @@
         <Parameter Name="provider" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
       </Parameters>
       <Docs>
-        <param name="provider">The class that implements <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" />.</param>
-        <summary>Gets an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the specified <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> proxy.</summary>
-        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the specified <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> proxy.</returns>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1345,7 +1121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1355,9 +1130,9 @@
         <Parameter Name="peer" Type="System.Windows.Automation.Peers.AutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="peer">The automation peer.</param>
-        <summary>Gets the <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> for the specified <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
-        <returns>The proxy.</returns>
+        <param name="peer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1368,7 +1143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1378,8 +1152,8 @@
         <Parameter Name="args" Type="System.Windows.Automation.AsyncContentLoadedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The event data.</param>
-        <summary>Called by the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> to raise the <see cref="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" /> event.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1390,7 +1164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1400,8 +1173,8 @@
         <Parameter Name="eventId" Type="System.Windows.Automation.Peers.AutomationEvents" />
       </Parameters>
       <Docs>
-        <param name="eventId">The event identifier.</param>
-        <summary>Raises an automation event.</summary>
+        <param name="eventId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1412,7 +1185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1424,10 +1196,10 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="property">The property that changed.</param>
-        <param name="oldValue">The previous value of the property.</param>
-        <param name="newValue">The new value of the property.</param>
-        <summary>Raises an event to notify the automation client of a changed property value.</summary>
+        <param name="property">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1438,7 +1210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1446,15 +1217,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Synchronously resets the tree of child elements by calling <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildrenCore%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method in certain peer implementations that change the set of child elements in response to a call to a control pattern interface. An example is <xref:System.Windows.Automation.Provider.ITextProvider>, which can change the child elements of the peer by moving the <xref:System.Windows.Documents.TextRange>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFocus">
@@ -1464,7 +1228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1472,7 +1235,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the keyboard focus on the element that is associated with this automation peer.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1483,7 +1246,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1491,7 +1253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.SetFocus%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

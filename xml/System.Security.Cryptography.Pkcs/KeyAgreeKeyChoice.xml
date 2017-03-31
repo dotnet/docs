@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The KeyAgreeKeyChoice enumeration defines the type of key used in a key agreement protocol.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key agreement key is ephemeral, existing only for the duration of the key agreement protocol.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticKey">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key agreement key is static, existing for an extended period of time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key agreement key type is unknown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

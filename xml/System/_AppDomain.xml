@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System._AppDomain" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -23,15 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Exposes the public members of the <see cref="T:System.AppDomain" /> class to unmanaged code.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface preserves the vtable order of the <xref:System.AppDomain?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AppendPrivatePath">
@@ -41,7 +34,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -56,17 +49,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The name of the directory to be appended to the private path.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.AppendPrivatePath%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.AppendPrivatePath%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyLoad">
@@ -76,7 +61,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -91,16 +76,8 @@
         <ReturnType>System.AssemblyLoadEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.AssemblyLoad" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.AssemblyLoad?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyResolve">
@@ -110,7 +87,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -125,16 +102,8 @@
         <ReturnType>System.ResolveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.AssemblyResolve" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseDirectory">
@@ -144,23 +113,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.BaseDirectory%2A" /> property.</summary>
-        <value>The base directory that the assembly resolver uses to probe for assemblies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.BaseDirectory%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearPrivatePath">
@@ -170,7 +132,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,16 +145,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.ClearPrivatePath%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ClearPrivatePath%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearShadowCopyPath">
@@ -202,7 +156,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -215,16 +169,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.ClearShadowCopyPath%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ClearShadowCopyPath%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -234,7 +180,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,18 +191,11 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The display name of the assembly. See <see cref="System.Reflection.Assembly.FullName%2A" />.</param>
-        <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="System.Type.FullName%2A" /> property.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.CreateInstance%2A" /> method.</summary>
-        <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.CreateInstance%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -266,7 +205,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,21 +217,12 @@
         <Parameter Name="activationAttributes" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The display name of the assembly. See <see cref="System.Reflection.Assembly.FullName%2A" />.</param>
-        <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="System.Type.FullName%2A" /> property.</param>
-        <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. The <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> specifies the URL that is required to activate a remote object.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.CreateInstance(String, String, Object\<see cref="System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29" /> method overload.</summary>
-        <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.CreateInstance(String, String, Object\<xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="activationAttributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -302,7 +232,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,27 +250,18 @@
         <Parameter Name="securityAttributes" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The display name of the assembly. See <see cref="System.Reflection.Assembly.FullName%2A" />.</param>
-        <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="System.Type.FullName%2A" /> property.</param>
-        <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
-        <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. The <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> specifies the URL that is required to activate a remote object.</param>
-        <param name="securityAttributes">Information used to authorize creation of <c>typeName</c>.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.CreateInstance(String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<see cref="System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>An object that is a wrapper for the new instance specified by <paramref name="typeName" />. The return value needs to be unwrapped to access the real object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.CreateInstance(String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="ignoreCase">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="args">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="activationAttributes">To be added.</param>
+        <param name="securityAttributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -350,7 +271,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -361,18 +282,11 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">The name, including the path, of a file that contains an assembly that defines the requested type. The assembly is loaded using the <see cref="System.Reflection.Assembly.LoadFrom%2A" /> method.</param>
-        <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="System.Type.FullName%2A" /> property.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29" /> method overload.</summary>
-        <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFile">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -382,7 +296,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,21 +308,12 @@
         <Parameter Name="activationAttributes" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">The name, including the path, of a file that contains an assembly that defines the requested type. The assembly is loaded using the <see cref="System.Reflection.Assembly.LoadFrom%2A" /> method.</param>
-        <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="System.Type.FullName%2A" /> property.</param>
-        <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. The <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> specifies the URL that is required to activate a remote object.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.CreateInstanceFrom(String, String, Object\<see cref="System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29" /> method overload.</summary>
-        <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.CreateInstanceFrom(String, String, Object\<xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFile">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="activationAttributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceFrom">
@@ -418,7 +323,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,27 +341,18 @@
         <Parameter Name="securityAttributes" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">The name, including the path, of a file that contains an assembly that defines the requested type. The assembly is loaded using the <see cref="System.Reflection.Assembly.LoadFrom%2A" /> method.</param>
-        <param name="typeName">The fully qualified name of the requested type, including the namespace but not the assembly, as returned by the <see cref="System.Type.FullName%2A" /> property.</param>
-        <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
-        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <c>binder</c> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <c>args</c> must be an empty array or null.</param>
-        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
-        <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. The <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> specifies the URL that is required to activate a remote object.</param>
-        <param name="securityAttributes">Information used to authorize creation of <c>typeName</c>.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<see cref="System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>An object that is a wrapper for the new instance, or <see langword="null" /> if <paramref name="typeName" /> is not found. The return value needs to be unwrapped to access the real object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFile">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="ignoreCase">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="args">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="activationAttributes">To be added.</param>
+        <param name="securityAttributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -466,7 +362,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,18 +373,11 @@
         <Parameter Name="access" Type="System.Reflection.Emit.AssemblyBuilderAccess" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The access mode for the dynamic assembly.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -498,7 +387,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -510,19 +399,12 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -532,7 +414,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,19 +426,12 @@
         <Parameter Name="dir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="dir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -566,7 +441,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -579,20 +454,13 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
-        <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="dir">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -602,7 +470,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -616,21 +484,14 @@
         <Parameter Name="refusedPermissions" Type="System.Security.PermissionSet" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="requiredPermissions">The required permissions request.</param>
-        <param name="optionalPermissions">The optional permissions request.</param>
-        <param name="refusedPermissions">The refused permissions request.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="requiredPermissions">To be added.</param>
+        <param name="optionalPermissions">To be added.</param>
+        <param name="refusedPermissions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -640,7 +501,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -655,22 +516,15 @@
         <Parameter Name="refusedPermissions" Type="System.Security.PermissionSet" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
-        <param name="requiredPermissions">The required permissions request.</param>
-        <param name="optionalPermissions">The optional permissions request.</param>
-        <param name="refusedPermissions">The refused permissions request.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <param name="requiredPermissions">To be added.</param>
+        <param name="optionalPermissions">To be added.</param>
+        <param name="refusedPermissions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -680,7 +534,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -695,22 +549,15 @@
         <Parameter Name="refusedPermissions" Type="System.Security.PermissionSet" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
-        <param name="requiredPermissions">The required permissions request.</param>
-        <param name="optionalPermissions">The optional permissions request.</param>
-        <param name="refusedPermissions">The refused permissions request.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="dir">To be added.</param>
+        <param name="requiredPermissions">To be added.</param>
+        <param name="optionalPermissions">To be added.</param>
+        <param name="refusedPermissions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -720,7 +567,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -736,23 +583,16 @@
         <Parameter Name="refusedPermissions" Type="System.Security.PermissionSet" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
-        <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
-        <param name="requiredPermissions">The required permissions request.</param>
-        <param name="optionalPermissions">The optional permissions request.</param>
-        <param name="refusedPermissions">The refused permissions request.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="dir">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <param name="requiredPermissions">To be added.</param>
+        <param name="optionalPermissions">To be added.</param>
+        <param name="refusedPermissions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDynamicAssembly">
@@ -762,7 +602,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -779,25 +619,17 @@
         <Parameter Name="isSynchronized" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The unique identity of the dynamic assembly.</param>
-        <param name="access">The mode in which the dynamic assembly will be accessed.</param>
-        <param name="dir">The name of the directory where the dynamic assembly will be saved. If <c>dir</c> is <see langword="null" />, the directory defaults to the current directory.</param>
-        <param name="evidence">The evidence supplied for the dynamic assembly. The evidence is used unaltered as the final set of evidence used for policy resolution.</param>
-        <param name="requiredPermissions">The required permissions request.</param>
-        <param name="optionalPermissions">The optional permissions request.</param>
-        <param name="refusedPermissions">The refused permissions request.</param>
-        <param name="isSynchronized">
-          <see langword="true" /> to synchronize the creation of modules, types, and members in the dynamic assembly; otherwise, <see langword="false" />.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Boolean%29" /> method overload.</summary>
-        <returns>Represents the dynamic assembly created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Boolean%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="dir">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <param name="requiredPermissions">To be added.</param>
+        <param name="optionalPermissions">To be added.</param>
+        <param name="refusedPermissions">To be added.</param>
+        <param name="isSynchronized">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DoCallBack">
@@ -807,7 +639,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -817,16 +649,9 @@
         <Parameter Name="theDelegate" Type="System.CrossAppDomainDelegate" />
       </Parameters>
       <Docs>
-        <param name="theDelegate">A delegate that specifies a method to call.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DoCallBack%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DoCallBack%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="theDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DomainUnload">
@@ -836,22 +661,15 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.DomainUnload" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DomainUnload?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DynamicDirectory">
@@ -861,23 +679,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.DynamicDirectory%2A" /> property.</summary>
-        <value>Get the directory that the assembly resolver uses to probe for dynamically-created assemblies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -887,7 +698,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -897,18 +708,10 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">The <see cref="T:System.Object" /> to compare to the current <see cref="T:System.Object" />.</param>
-        <summary>Provides COM objects with version-independent access to the inherited <see cref="System.Object.Equals%2A" /> method.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Evidence">
@@ -918,23 +721,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.Evidence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.Evidence%2A" /> property.</summary>
-        <value>Gets the <see cref="T:System.Security.Policy.Evidence" /> associated with this application domain that is used as input to the security policy.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.Evidence%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssembly">
@@ -944,7 +740,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -954,17 +750,10 @@
         <Parameter Name="assemblyFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">The name of the file that contains the assembly to execute.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.ExecuteAssembly%28System.String%29" /> method overload.</summary>
-        <returns>The value returned by the entry point of the assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssembly">
@@ -974,7 +763,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -985,18 +774,11 @@
         <Parameter Name="assemblySecurity" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">The name of the file that contains the assembly to execute.</param>
-        <param name="assemblySecurity">Evidence for loading the assembly.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>The value returned by the entry point of the assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFile">To be added.</param>
+        <param name="assemblySecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssembly">
@@ -1006,7 +788,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1018,19 +800,12 @@
         <Parameter Name="args" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">The name of the file that contains the assembly to execute.</param>
-        <param name="assemblySecurity">The supplied evidence for the assembly.</param>
-        <param name="args">The arguments to the entry point of the assembly.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.ExecuteAssembly(String, Evidence, String\<see cref="System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.String%5B%5D%29" /> method overload.</summary>
-        <returns>The value returned by the entry point of the assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.ExecuteAssembly(String, Evidence, String\<xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.String%5B%5D%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFile">To be added.</param>
+        <param name="assemblySecurity">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -1040,23 +815,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.FriendlyName%2A" /> property.</summary>
-        <value>The friendly name of this application domain.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.FriendlyName%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAssemblies">
@@ -1066,7 +834,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1074,16 +842,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.GetAssemblies%2A" /> method.</summary>
-        <returns>An array of assemblies in this application domain.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -1093,7 +854,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1103,17 +864,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a predefined application domain property, or the name of an application domain property you have defined.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.GetData%2A" /> method.</summary>
-        <returns>The value of the <paramref name="name" /> property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.GetData%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1123,7 +877,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1131,16 +885,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the inherited <see cref="System.Object.GetHashCode%2A" /> method.</summary>
-        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIDsOfNames">
@@ -1150,7 +897,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1164,21 +911,13 @@
         <Parameter Name="rgDispId" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
-        <param name="rgszNames">Passed-in array of names to be mapped.</param>
-        <param name="cNames">Count of the names to be mapped.</param>
-        <param name="lcid">The locale context in which to interpret the names.</param>
-        <param name="rgDispId">Caller-allocated array which receives the IDs corresponding to the names.</param>
-        <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="riid">To be added.</param>
+        <param name="rgszNames">To be added.</param>
+        <param name="cNames">To be added.</param>
+        <param name="lcid">To be added.</param>
+        <param name="rgDispId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLifetimeService">
@@ -1188,7 +927,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1201,17 +940,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the inherited <see cref="System.MarshalByRefObject.GetLifetimeService%2A" /> method.</summary>
-        <returns>An object of type <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> used to control the lifetime policy for this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.MarshalByRefObject.GetLifetimeService%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -1221,7 +952,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1229,16 +960,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.GetType%2A" /> method.</summary>
-        <returns>A <see cref="T:System.Type" /> representing the type of the current instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.GetType%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfo">
@@ -1248,7 +972,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1260,19 +984,11 @@
         <Parameter Name="ppTInfo" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="iTInfo">The type information to return.</param>
-        <param name="lcid">The locale identifier for the type information.</param>
-        <param name="ppTInfo">Receives a pointer to the requested type information object.</param>
-        <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="iTInfo">To be added.</param>
+        <param name="lcid">To be added.</param>
+        <param name="ppTInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfoCount">
@@ -1282,7 +998,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1292,17 +1008,9 @@
         <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
-        <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="pcTInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -1312,7 +1020,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1325,17 +1033,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.InitializeLifetimeService%2A" /> method.</summary>
-        <returns>Always <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.InitializeLifetimeService%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -1345,7 +1045,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1362,24 +1062,16 @@
         <Parameter Name="puArgErr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="dispIdMember">Identifies the member.</param>
-        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
-        <param name="lcid">The locale context in which to interpret arguments.</param>
-        <param name="wFlags">Flags describing the context of the call.</param>
-        <param name="pDispParams">Pointer to a structure containing an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.</param>
-        <param name="pVarResult">Pointer to the location where the result is to be stored.</param>
-        <param name="pExcepInfo">Pointer to a structure that contains exception information.</param>
-        <param name="puArgErr">The index of the first argument that has an error.</param>
-        <summary>Provides access to properties and methods exposed by an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="dispIdMember">To be added.</param>
+        <param name="riid">To be added.</param>
+        <param name="lcid">To be added.</param>
+        <param name="wFlags">To be added.</param>
+        <param name="pDispParams">To be added.</param>
+        <param name="pVarResult">To be added.</param>
+        <param name="pExcepInfo">To be added.</param>
+        <param name="puArgErr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1389,7 +1081,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1399,17 +1091,10 @@
         <Parameter Name="rawAssembly" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rawAssembly">An array of type <see langword="byte" /> that is a COFF-based image containing an emitted assembly.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.Load(Byte\<see cref="System.AppDomain.Load%28System.Byte%5B%5D%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.Load(Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="rawAssembly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1419,7 +1104,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1429,17 +1114,10 @@
         <Parameter Name="assemblyRef" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyRef">An object that describes the assembly to load.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.Load%28System.Reflection.AssemblyName%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1449,7 +1127,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1459,17 +1137,10 @@
         <Parameter Name="assemblyString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyString">The display name of the assembly. See <see cref="System.Reflection.Assembly.FullName%2A" />.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.Load%28System.String%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.Load%28System.String%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1479,7 +1150,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1490,18 +1161,11 @@
         <Parameter Name="rawSymbolStore" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rawAssembly">An array of type <see langword="byte" /> that is a COFF-based image containing an emitted assembly.</param>
-        <param name="rawSymbolStore">An array of type <see langword="byte" /> containing the raw bytes representing the symbols for the assembly.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.Load(Byte\[\], Byte\<see cref="System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.Load(Byte\[\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="rawAssembly">To be added.</param>
+        <param name="rawSymbolStore">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1511,7 +1175,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1522,18 +1186,11 @@
         <Parameter Name="assemblySecurity" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="assemblyRef">An object that describes the assembly to load.</param>
-        <param name="assemblySecurity">Evidence for loading the assembly.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.Load%28System.Reflection.AssemblyName%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyRef">To be added.</param>
+        <param name="assemblySecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1543,7 +1200,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1554,18 +1211,11 @@
         <Parameter Name="assemblySecurity" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="assemblyString">The display name of the assembly. See <see cref="System.Reflection.Assembly.FullName%2A" />.</param>
-        <param name="assemblySecurity">Evidence for loading the assembly.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.Load%28System.String%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.Load%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyString">To be added.</param>
+        <param name="assemblySecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1575,7 +1225,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1587,19 +1237,12 @@
         <Parameter Name="securityEvidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="rawAssembly">An array of type <see langword="byte" /> that is a COFF-based image containing an emitted assembly.</param>
-        <param name="rawSymbolStore">An array of type <see langword="byte" /> containing the raw bytes representing the symbols for the assembly.</param>
-        <param name="securityEvidence">Evidence for loading the assembly.</param>
-        <summary>Provides COM objects with version-independent access to the [AppDomain.Load(Byte\[\], Byte\<see cref="System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29" /> method overload.</summary>
-        <returns>The loaded assembly.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the [AppDomain.Load(Byte\[\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
-  
- ]]></format>
-        </remarks>
+        <param name="rawAssembly">To be added.</param>
+        <param name="rawSymbolStore">To be added.</param>
+        <param name="securityEvidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessExit">
@@ -1609,22 +1252,15 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.ProcessExit" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeSearchPath">
@@ -1634,23 +1270,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.RelativeSearchPath%2A" /> property.</summary>
-        <value>The path under the base directory where the assembly resolver should probe for private assemblies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.RelativeSearchPath%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResourceResolve">
@@ -1660,7 +1289,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1675,16 +1304,8 @@
         <ReturnType>System.ResolveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.ResourceResolve" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ResourceResolve?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAppDomainPolicy">
@@ -1694,7 +1315,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1709,17 +1330,9 @@
         <Parameter Name="domainPolicy" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="domainPolicy">The security policy level.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.SetAppDomainPolicy%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="domainPolicy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCachePath">
@@ -1729,7 +1342,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1744,17 +1357,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The fully qualified path to the shadow copy location.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.SetCachePath%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.SetCachePath%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -1764,7 +1369,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1780,18 +1385,10 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a user-defined application domain property to create or change.</param>
-        <param name="data">The value of the property.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.SetData%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.SetData%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="name">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPrincipalPolicy">
@@ -1801,7 +1398,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1811,16 +1408,9 @@
         <Parameter Name="policy" Type="System.Security.Principal.PrincipalPolicy" />
       </Parameters>
       <Docs>
-        <param name="policy">One of the <see cref="T:System.Security.Principal.PrincipalPolicy" /> values that specifies the type of the principal object to attach to threads.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.SetPrincipalPolicy%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.SetPrincipalPolicy%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="policy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetShadowCopyPath">
@@ -1830,7 +1420,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1845,17 +1435,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">A list of directory names, where each name is separated by a semicolon.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.SetShadowCopyPath%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.SetShadowCopyPath%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetThreadPrincipal">
@@ -1865,7 +1447,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1875,16 +1457,9 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">The principal object to attach to threads.</param>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.SetThreadPrincipal%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.SetThreadPrincipal%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="principal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShadowCopyFiles">
@@ -1894,24 +1469,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.ShadowCopyFiles%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if the application domain is configured to shadow copy files; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ShadowCopyFiles%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1921,7 +1488,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1929,16 +1496,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="System.AppDomain.ToString%2A" /> method.</summary>
-        <returns>A string formed by concatenating the literal string "Name:", the friendly name of the application domain, and either string representations of the context policies or the string "There are no context policies."</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeResolve">
@@ -1948,7 +1508,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1963,16 +1523,8 @@
         <ReturnType>System.ResolveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.TypeResolve" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhandledException">
@@ -1982,7 +1534,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1997,16 +1549,8 @@
         <ReturnType>System.UnhandledExceptionEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="E:System.AppDomain.UnhandledException" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

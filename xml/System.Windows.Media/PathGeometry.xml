@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathGeometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a complex shape that may be composed of arcs, curves, ellipses, lines, and rectangles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each PathGeometry object defines a collection of <xref:System.Windows.Media.PathFigure> objects. Each of the <xref:System.Windows.Media.PathFigure> objects is composed of one or more <xref:System.Windows.Media.PathSegment> objects, such as <xref:System.Windows.Media.ArcSegment> and <xref:System.Windows.Media.LineSegment>, which actually define their shape.  
-  
- The filled area of the PathGeometry is defined by taking all of the contained <xref:System.Windows.Media.PathFigure> objects that have their <xref:System.Windows.Media.PathFigure.IsFilled%2A> property set to `true` and applying the <xref:System.Windows.Media.PathGeometry.FillRule%2A> to determine the enclosed area.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathGeometry" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,15 +42,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="figures" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Media.PathFigure&gt;" />
       </Parameters>
       <Docs>
-        <param name="figures">The <see cref="System.Windows.Media.PathGeometry.Figures%2A" /> of the <see cref="T:System.Windows.Media.PathGeometry" /> which describes the contents of the <see cref="T:System.Windows.Shapes.Path" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathGeometry" /> class with the specified <see cref="System.Windows.Media.PathGeometry.Figures%2A" />.</summary>
+        <param name="figures">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -81,10 +68,10 @@
         <Parameter Name="transform" Type="System.Windows.Media.Transform" />
       </Parameters>
       <Docs>
-        <param name="figures">The <see cref="System.Windows.Media.PathGeometry.Figures%2A" /> of the <see cref="T:System.Windows.Media.PathGeometry" /> which describes the contents of the <see cref="T:System.Windows.Shapes.Path" />.</param>
-        <param name="fillRule">The <see cref="System.Windows.Media.PathGeometry.FillRule%2A" /> of the <see cref="T:System.Windows.Media.PathGeometry" />.</param>
-        <param name="transform">The <see cref="System.Windows.Media.Geometry.Transform%2A" /> which specifies the transform applied.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathGeometry" /> class with the specified <see cref="System.Windows.Media.PathGeometry.Figures%2A" />, <see cref="System.Windows.Media.PathGeometry.FillRule%2A" />, and <see cref="System.Windows.Media.Geometry.Transform%2A" />.</summary>
+        <param name="figures">To be added.</param>
+        <param name="fillRule">To be added.</param>
+        <param name="transform">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,8 +91,8 @@
         <Parameter Name="geometry" Type="System.Windows.Media.Geometry" />
       </Parameters>
       <Docs>
-        <param name="geometry">The geometry to add to the path.</param>
-        <summary>Converts the specified <see cref="T:System.Windows.Media.Geometry" /> into a collection of <see cref="T:System.Windows.Media.PathFigure" /> objects and adds it to the path.   **Note:** If the specified <see cref="T:System.Windows.Media.Geometry" /> is animated, the conversion from <see cref="T:System.Windows.Media.Geometry" /> to <see cref="T:System.Windows.Media.PathFigure" /> may result in some loss of information.</summary>
+        <param name="geometry">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,23 +103,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Rect" /> that specifies the bounding box of this <see cref="T:System.Windows.Media.PathGeometry" /> object.   **Note:** This method does not take any pens into account.</summary>
-        <value>The bounding box of this <see cref="T:System.Windows.Media.PathGeometry" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If animations are present, the base values of the <xref:System.Windows.Media.Geometry> object are used to calculate the bounding box.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -143,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,7 +128,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Windows.Media.PathFigure" /> objects from this <see cref="T:System.Windows.Media.PathGeometry" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,18 +146,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.PathGeometry" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -191,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,18 +165,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.PathGeometry" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromGeometry">
@@ -220,7 +177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,17 +186,10 @@
         <Parameter Name="geometry" Type="System.Windows.Media.Geometry" />
       </Parameters>
       <Docs>
-        <param name="geometry">The geometry from which to create a <see cref="T:System.Windows.Media.PathGeometry" />.</param>
-        <summary>Creates a <see cref="T:System.Windows.Media.PathGeometry" /> version of the specified <see cref="T:System.Windows.Media.Geometry" />.</summary>
-        <returns>A <see cref="T:System.Windows.Media.PathGeometry" /> created from the current values of the specified <see cref="T:System.Windows.Media.Geometry" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified geometry is animated, its current animated values are used when constructing the new <xref:System.Windows.Media.PathGeometry> (although the animations themselves are not copied). If the geometry is animated, the conversion may result in some loss of precision.  
-  
- ]]></format>
-        </remarks>
+        <param name="geometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -250,7 +199,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,58 +218,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.PathFigureCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of <see cref="T:System.Windows.Media.PathFigure" /> objects that describe the path's contents.</summary>
-        <value>A collection of <see cref="T:System.Windows.Media.PathFigure" /> objects that describe the path's contents. Each individual <see cref="T:System.Windows.Media.PathFigure" /> describes a shape.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_Figures"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object Figures="moveAndDrawCommands"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_Figures"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.Figures>  
-    oneOrMoreFigures  
-  </object.Figures>  
-</object>  
-```  
-  
-<a name="xamlValues_Figures"></a>   
-## XAML Values  
- *moveAndDrawCommands*  
- One or more move and draw commands. See [Path Markup Syntax](../Topic/Path%20Markup%20Syntax.md).  
-  
- *oneOrMoreFigures*  
- <xref:System.Windows.Media.PathFigure?displayProperty=fullName>  
-  
- One or more <xref:System.Windows.Media.PathFigure> objects.  
-  
-<a name="dependencyPropertyInfo_Figures"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.PathGeometry.FiguresProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FiguresProperty">
@@ -331,14 +236,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.PathGeometry.Figures%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,36 +253,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.FillRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines how the intersecting areas contained in this <see cref="T:System.Windows.Media.PathGeometry" /> are combined.</summary>
-        <value>Indicates how the intersecting areas of this <see cref="T:System.Windows.Media.PathGeometry" /> are combined.  The default value is <c>EvenOdd</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **EvenOdd** Determines the "insideness" of a point on the shape by drawing a ray from that point to infinity in any direction and counting the number of path segments from the given shape that the ray crosses. If this number is odd, the point is inside; if even, the point is outside.  
-  
- **NonZero** Determines the "insideness" of a point on the shape by drawing a ray from that point to infinity in any direction and then examining the places where a segment of the shape crosses the ray. Starting with a count of zero, add one each time a Segment crosses the ray from left to right and subtract one each time a path segment crosses the ray from right to left. After counting the crossings, if the result is zero then the point is outside the path. Otherwise, it is inside.  
-  
- ![Fill rule illustration](~/add/media/ref-mil-fillrule-stars.PNG "Fill rule illustration")  
-FillRule Example  
-  
-<a name="dependencyPropertyInfo_FillRule"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.PathGeometry.FillRuleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillRuleProperty">
@@ -388,14 +271,13 @@ FillRule Example
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.PathGeometry.FillRule%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,7 +288,6 @@ FillRule Example
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -423,10 +304,10 @@ FillRule Example
         <Parameter Name="tangent" Type="System.Windows.Point&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="progress">The fraction of the length of this <see cref="T:System.Windows.Media.PathGeometry" />.</param>
-        <param name="point">When this method returns, contains the location on this <see cref="T:System.Windows.Media.PathGeometry" /> at the specified fraction of its length. This parameter is passed uninitialized.</param>
-        <param name="tangent">When this method returns, contains the tangent vector. This parameter is passed uninitialized.</param>
-        <summary>Gets the <see cref="T:System.Windows.Point" /> and a tangent vector on this <see cref="T:System.Windows.Media.PathGeometry" /> at the specified fraction of its length.</summary>
+        <param name="progress">To be added.</param>
+        <param name="point">To be added.</param>
+        <param name="tangent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,7 +318,6 @@ FillRule Example
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -445,8 +325,8 @@ FillRule Example
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether this <see cref="T:System.Windows.Media.PathGeometry" /> object is empty.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.PathGeometry" /> is empty; otherwise, **false**.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,7 +337,6 @@ FillRule Example
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,8 +344,8 @@ FillRule Example
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether this <see cref="T:System.Windows.Media.PathGeometry" /> object may have curved segments.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.PathGeometry" /> object may have curved segments; otherwise, **false**.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,7 +356,6 @@ FillRule Example
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

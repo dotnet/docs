@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCacheOption" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a bitmap image takes advantage of memory caching.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to load a <xref:System.Windows.Media.Imaging.BitmapImage> and specify the BitmapCacheOption.  
-  
- [!code-cs[bitmapimageprops#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[bitmapimageprops#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Caches the entire image into memory. This is the default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not create a memory store. All requests for the image are filled directly by the image file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnDemand">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Creates a memory store for requested data only. The first request loads the image directly; subsequent requests are filled from the cache.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Caches the entire image into memory at load time. All requests for image data are filled from the memory store.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

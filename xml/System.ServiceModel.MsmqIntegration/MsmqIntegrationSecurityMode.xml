@@ -4,22 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>MsmqIntegrationSecurityMode is an enumeration that specifies the security modes supported by the MSMQ integration channel.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration can be set within a configuration file in the [\&lt;security\&gt;](../Topic/%3Csecurity%3E%20of%20%3CmsmqIntegrationBinding%3E.md) section. It can also be set in code by passing the appropriate value into the constructor of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -29,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No security.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -46,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the MSMQ transport security.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewPaintParts" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines values for specifying the parts of a <see cref="T:System.Windows.Forms.DataGridViewCell" /> that are to be painted.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the protected <xref:System.Windows.Forms.DataGridViewCell.Paint%2A?displayProperty=fullName> method and by handlers for the <xref:System.Windows.Forms.DataGridView.CellPainting>, <xref:System.Windows.Forms.DataGridView.RowPrePaint>, and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events of the <xref:System.Windows.Forms.DataGridView> control.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/add/codesnippet/visualbasic/t-system.windows.forms.d_94_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridViewRowPainting#20](~/add/codesnippet/csharp/t-system.windows.forms.d_94_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -42,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All parts of the cell should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -59,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The background of the cell should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -76,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border of the cell should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentBackground">
@@ -93,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The background of the cell content should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentForeground">
@@ -110,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The foreground of the cell content should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ErrorIcon">
@@ -127,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The cell error icon should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -144,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The focus rectangle should be painted around the cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -161,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Nothing should be painted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionBackground">
@@ -178,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The background of the cell should be painted when the cell is selected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

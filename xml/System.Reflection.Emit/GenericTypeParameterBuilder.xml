@@ -1,10 +1,14 @@
 <Type Name="GenericTypeParameterBuilder" FullName="System.Reflection.Emit.GenericTypeParameterBuilder">
   <TypeSignature Language="C#" Value="public sealed class GenericTypeParameterBuilder : System.Reflection.TypeInfo" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenericTypeParameterBuilder extends System.Reflection.TypeInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GenericTypeParameterBuilder extends System.Reflection.TypeInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.GenericTypeParameterBuilder" />
   <AssemblyInfo>
+    <AssemblyName>System.Reflection.Emit</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,50 +21,45 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines and creates generic type parameters for dynamically defined generic types and methods. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can get an array of GenericTypeParameterBuilder objects by using the <xref:System.Reflection.Emit.TypeBuilder.DefineGenericParameters%2A?displayProperty=fullName> method to add type parameters to a dynamic type, thus making it a generic type, or by using the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=fullName> method to add type parameters to a dynamic method. Use the GenericTypeParameterBuilder objects to add constraints to the type parameters. Constraints are of three kinds:  
-  
--   The base type constraint specifies that any type assigned to the generic type parameter must derive from a particular base type. Set this constraint by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetBaseTypeConstraint%2A> method.  
-  
--   An interface constraint specifies that any type assigned to the generic type parameter must implement a particular interface. Set the interface constraints by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetInterfaceConstraints%2A> method.  
-  
--   Special constraints specify that any type assigned to the generic type parameter must have a default constructor, must be a reference type, or must be a value type. Set the special constraints for a type parameter by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method.  
-  
- Interface constraints and special constraints cannot be retrieved using methods of the GenericTypeParameterBuilder class. Once you have created the generic type that contains the type parameters, you can use its <xref:System.Type> object to reflect the constraints. Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method to get the type parameters, and for each type parameter use the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method to get the base type constraint and interface constraints, and the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property to get the special constraints.  
-  
-   
-  
-## Examples  
- The following code example creates a generic type with two type parameters, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
-  
- [!code-cpp[EmitGenericType#1](~/add/codesnippet/cpp/t-system.reflection.emit_9_1.cpp)]
- [!code-vb[EmitGenericType#1](~/add/codesnippet/visualbasic/t-system.reflection.emit_9_1.vb)]
- [!code-cs[EmitGenericType#1](~/add/codesnippet/csharp/t-system.reflection.emit_9_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected GenericTypeParameterBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Assembly">
       <MemberSignature Language="C#" Value="public override System.Reflection.Assembly Assembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly Assembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Reflection.Assembly" /> object representing the dynamic assembly that contains the generic type definition the current type parameter belongs to.</summary>
-        <value>An <see cref="T:System.Reflection.Assembly" /> object representing the dynamic assembly that contains the generic type definition the current type parameter belongs to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,24 +69,39 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.AssemblyQualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="null" /> in all cases.</summary>
-        <value>A null reference (<see langword="Nothing" /> in Visual Basic) in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There is no assembly-qualified name for type parameters because their scope is limited to the generic type that declares them.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public override System.Reflection.TypeAttributes Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.TypeAttributes Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.TypeAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseType">
@@ -96,24 +110,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the base type constraint of the current generic type parameter.</summary>
-        <value>A <see cref="T:System.Type" /> object that represents the base type constraint of the generic type parameter, or <see langword="null" /> if the type parameter has no base type constraint.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To set the base type constraint, use the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetBaseTypeConstraint%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsGenericParameters">
@@ -122,25 +133,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.ContainsGenericParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="true" /> in all cases.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Reflection.Emit.GenericTypeParameterBuilder> object always represents a generic type parameter. The value of the ContainsGenericParameters property reflects that fact and does not imply anything about any generic type argument that might be assigned to the type parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaringMethod">
@@ -149,24 +156,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.DeclaringMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Reflection.MethodInfo" /> that represents the declaring method, if the current <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" /> represents a type parameter of a generic method.</summary>
-        <value>A <see cref="T:System.Reflection.MethodInfo" /> that represents the declaring method, if the current <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" /> represents a type parameter of a generic method; otherwise, <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the DeclaringMethod property is not `null`, then the declaring method is a generic method definition and `DeclaringMethod.IsGenericMethodDefinition` is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -175,24 +179,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the generic type definition or generic method definition to which the generic type parameter belongs.</summary>
-        <value>If the type parameter belongs to a generic type, a <see cref="T:System.Type" /> object representing that generic type; if the type parameter belongs to a generic method, a <see cref="T:System.Type" /> object representing that type that declared that generic method.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The declaring type is not necessarily a generic type. If the current type parameter belongs to a generic method, the type in which the method is declared might not be generic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -201,8 +202,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,9 +217,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to be compared with the current instance.</param>
-        <summary>Tests whether the given object is an instance of <see langword="EventToken" /> and is equal to the current instance.</summary>
-        <returns>Returns <see langword="true" /> if <paramref name="o" /> is an instance of <see langword="EventToken" /> and equals the current instance; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,24 +229,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="null" /> in all cases.</summary>
-        <value>A null reference (<see langword="Nothing" /> in Visual Basic) in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A generic type parameter does not have a full name, because its scope is limited to the generic type that declares it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterAttributes">
@@ -250,15 +252,20 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.GenericParameterAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a combination of <see cref="T:System.Reflection.GenericParameterAttributes" /> flags that describe the covariance and special constraints of the current generic type parameter.</summary>
-        <value>A bitwise combination of values that describes the covariance and special constraints of the current generic type parameter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,16 +275,57 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.GenericParameterPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position of the type parameter in the type parameter list of the generic type or method that declared the parameter.</summary>
-        <value>The position of the type parameter in the type parameter list of the generic type or method that declared the parameter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeArguments">
+      <MemberSignature Language="C#" Value="public override Type[] GenericTypeArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] GenericTypeArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.GenericTypeArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArrayRank">
+      <MemberSignature Language="C#" Value="public override int GetArrayRank ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetArrayRank() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.GetArrayRank" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,7 +336,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,7 +356,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,7 +387,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -354,18 +402,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -375,7 +415,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,18 +425,10 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inherit">Specifies whether to search this member's inheritance chain to find the attributes.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="inherit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -406,7 +438,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -417,19 +449,11 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">The type of attribute to search for. Only attributes that are assignable to this type are returned.</param>
-        <param name="inherit">Specifies whether to search this member's inheritance chain to find the attributes.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="attributeType">To be added.</param>
+        <param name="inherit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetElementType">
@@ -438,8 +462,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.GetElementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -447,17 +475,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
-        <returns>The type referred to by the current array type, pointer type, or <see langword="ByRef" /> type; or <see langword="null" /> if the current type is not an array type, is not a pointer type, and is not passed by reference.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A generic type parameter is a placeholder for a type. Because that type cannot be known in advance, there is no way to know whether it has an element type or what that element type might be. Any return value would be misleading, so the method throws a <xref:System.NotSupportedException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEvent">
@@ -467,7 +487,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,19 +498,11 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">Not supported.</param>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="name">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -500,7 +512,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,17 +520,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -528,7 +532,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,18 +542,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -559,7 +555,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -570,19 +566,11 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">Not supported.</param>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="name">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -592,7 +580,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -602,18 +590,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGenericArguments">
@@ -623,7 +603,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -631,17 +611,33 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Not valid for generic type parameters.</summary>
-        <returns>Not valid for generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a constructed type, the type that is assigned to a generic type parameter can be a generic type, but the type parameter itself is not generic.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGenericParameterConstraints">
+      <MemberSignature Language="C#" Value="public override Type[] GetGenericParameterConstraints ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type[] GetGenericParameterConstraints() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.GetGenericParameterConstraints" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGenericTypeDefinition">
@@ -650,8 +646,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.GetGenericTypeDefinition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -659,17 +659,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Not valid for generic type parameters.</summary>
-        <returns>Not valid for generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a constructed type, the type that is assigned to a generic type parameter can be a generic type, but the type parameter itself is not generic.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -678,8 +670,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -687,8 +683,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a 32-bit integer hash code for the current instance.</summary>
-        <returns>A 32-bit integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -699,7 +695,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -710,20 +706,11 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the interface.</param>
-        <param name="ignoreCase">
-          <see langword="true" /> to search without regard for case; <see langword="false" /> to make a case-sensitive search.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="name">To be added.</param>
+        <param name="ignoreCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInterfaceMap">
@@ -733,7 +720,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -748,18 +735,10 @@
         <Parameter Name="interfaceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="interfaceType">A <see cref="T:System.Type" /> object that represents the interface type for which the mapping is to be retrieved.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="interfaceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInterfaces">
@@ -769,7 +748,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -777,17 +756,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -797,7 +768,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -809,20 +780,12 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">Not supported.</param>
-        <param name="type">Not supported.</param>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -832,7 +795,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -842,18 +805,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMethodImpl">
@@ -863,7 +818,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -896,7 +851,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -906,18 +861,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNestedType">
@@ -927,7 +874,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -938,19 +885,11 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">Not supported.</param>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="name">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNestedTypes">
@@ -960,7 +899,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -970,18 +909,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -991,7 +922,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1001,18 +932,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyImpl">
@@ -1022,7 +945,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1054,25 +977,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.GUID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <value>Not supported for incomplete generic type parameters.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasElementTypeImpl">
@@ -1082,7 +1001,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1102,7 +1021,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1119,25 +1038,17 @@
         <Parameter Name="namedParameters" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="name">Not supported.</param>
-        <param name="invokeAttr">Not supported.</param>
-        <param name="binder">Not supported.</param>
-        <param name="target">Not supported.</param>
-        <param name="args">Not supported.</param>
-        <param name="modifiers">Not supported.</param>
-        <param name="culture">Not supported.</param>
-        <param name="namedParameters">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="name">To be added.</param>
+        <param name="invokeAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="args">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="namedParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsArrayImpl">
@@ -1147,7 +1058,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1166,7 +1077,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.IsAssignableFrom(System.Reflection.TypeInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1176,18 +1092,10 @@
         <Parameter Name="typeInfo" Type="System.Reflection.TypeInfo" />
       </Parameters>
       <Docs>
-        <param name="typeInfo">The object to test.</param>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
-        <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="typeInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAssignableFrom">
@@ -1197,7 +1105,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1207,18 +1115,10 @@
         <Parameter Name="c" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="c">The object to test.</param>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
-        <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsByRefImpl">
@@ -1228,7 +1128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1248,7 +1148,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1274,9 +1174,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this object represents a constructed generic type.</summary>
-        <value>
-          <see langword="true" /> if this object represents a constructed generic type; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1287,7 +1186,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1298,19 +1197,29 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">Not supported.</param>
-        <param name="inherit">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="attributeType">To be added.</param>
+        <param name="inherit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnum">
+      <MemberSignature Language="C#" Value="public override bool IsEnum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnum" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsEnum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsGenericParameter">
@@ -1319,17 +1228,20 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsGenericParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="true" /> in all cases.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1339,25 +1251,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsGenericType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns <see langword="false" /> in all cases.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a constructed type, the type that is assigned to a generic type parameter can be a generic type, but the type parameter itself is not generic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsGenericTypeDefinition">
@@ -1366,25 +1274,44 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsGenericTypeDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="false" /> in all cases.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a constructed type, the type that is assigned to a generic type parameter can be a generic type, but the type parameter itself is not generic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInstanceOfType">
+      <MemberSignature Language="C#" Value="public override bool IsInstanceOfType (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsInstanceOfType(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.IsInstanceOfType(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPointerImpl">
@@ -1394,7 +1321,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1414,7 +1341,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1427,14 +1354,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsSerializable">
+      <MemberSignature Language="C#" Value="public override bool IsSerializable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSerializable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsSerializable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsSubclassOf">
       <MemberSignature Language="C#" Value="public override bool IsSubclassOf (Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubclassOf(class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.IsSubclassOf(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1449,18 +1398,10 @@
         <Parameter Name="c" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="c">Not supported.</param>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <returns>Not supported for incomplete generic type parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValueTypeImpl">
@@ -1470,7 +1411,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1489,8 +1430,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeArrayType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1498,25 +1443,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the type of a one-dimensional array whose element type is the generic type parameter.</summary>
-        <returns>A <see cref="T:System.Type" /> object that represents the type of a one-dimensional array whose element type is the generic type parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Type.MakeArrayType%2A> method provides a way to generate array types for parameter lists.  
-  
-   
-  
-## Examples  
- The following code example creates a dynamic module, an abstract generic type named `Sample` with one type parameter, `T`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `T`, a pointer to type `T`, and an array of `T`. This method returns a two-dimensional array of `T`. The code example saves the dynamic module to disk, so you can examine it using the MSIL Disassembler (Ildasm.exe).  
-  
- [!code-cpp[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/cpp/m-system.reflection.emit_39_1.cpp)]
- [!code-cs[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/csharp/m-system.reflection.emit_39_1.cs)]
- [!code-vb[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/visualbasic/m-system.reflection.emit_39_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeArrayType">
@@ -1525,8 +1454,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeArrayType(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1536,28 +1469,10 @@
         <Parameter Name="rank" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rank">The number of dimensions for the array.</param>
-        <summary>Returns the type of an array whose element type is the generic type parameter, with the specified number of dimensions.</summary>
-        <returns>A <see cref="T:System.Type" /> object that represents the type of an array whose element type is the generic type parameter, with the specified number of dimensions.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Type.MakeArrayType%2A> method provides a way to generate array types for parameter lists.  
-  
-   
-  
-## Examples  
- The following code example creates a dynamic module, an abstract generic type named `Sample` with one type parameter, `T`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `T`, a pointer to type `T`, and an array of `T`. This method returns a two-dimensional array of `T`. The code example saves the dynamic module to disk, so you can examine it using the MSIL Disassembler (Ildasm.exe).  
-  
- [!code-cpp[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/cpp/m-system.reflection.emit_41_1.cpp)]
- [!code-cs[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/csharp/m-system.reflection.emit_41_1.cs)]
- [!code-vb[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/visualbasic/m-system.reflection.emit_41_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="rank" /> is not a valid number of dimensions. For example, its value is less than 1.</exception>
+        <param name="rank">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeByRefType">
@@ -1566,8 +1481,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeByRefType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1575,25 +1494,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Type" /> object that represents the current generic type parameter when passed as a reference parameter.</summary>
-        <returns>A <see cref="T:System.Type" /> object that represents the current generic type parameter when passed as a reference parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MakeByRefType method provides a way to generate `ref` types (`ByRef` in Visual Basic) for parameter lists.  
-  
-   
-  
-## Examples  
- The following code example creates a dynamic module, an abstract generic type named `Sample` with one type parameter, `T`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `T`, a pointer to type `T`, and an array of `T`. This method returns a two-dimensional array of `T`. The code example saves the dynamic module to disk, so you can examine it using the MSIL Disassembler (Ildasm.exe).  
-  
- [!code-cpp[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/cpp/m-system.reflection.emit_52_1.cpp)]
- [!code-cs[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/csharp/m-system.reflection.emit_52_1.cs)]
- [!code-vb[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/visualbasic/m-system.reflection.emit_52_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
@@ -1602,8 +1505,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeGenericType(System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1619,11 +1526,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="typeArguments">An array of type arguments.</param>
-        <summary>Not valid for incomplete generic type parameters.</summary>
-        <returns>This method is invalid for incomplete generic type parameters.</returns>
+        <param name="typeArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="MakePointerType">
@@ -1632,8 +1538,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakePointerType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1641,25 +1551,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Type" /> object that represents a pointer to the current generic type parameter.</summary>
-        <returns>A <see cref="T:System.Type" /> object that represents a pointer to the current generic type parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MakePointerType method provides a way to generate pointer types for parameter lists.  
-  
-   
-  
-## Examples  
- The following code example creates a dynamic module, an abstract generic type named `Sample` with one type parameter, `T`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `T`, a pointer to type `T`, and an array of `T`. This method returns a two-dimensional array of `T`. The code example saves the dynamic module to disk, so you can examine it using the MSIL Disassembler (Ildasm.exe).  
-  
- [!code-cpp[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/cpp/m-system.reflection.emit_29_1.cpp)]
- [!code-cs[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/csharp/m-system.reflection.emit_29_1.cs)]
- [!code-vb[MakeXxxGenericTypeParameterBuilder#1](~/add/codesnippet/visualbasic/m-system.reflection.emit_29_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -1668,16 +1562,20 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.Module" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Module</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dynamic module that contains the generic type parameter.</summary>
-        <value>A <see cref="T:System.Reflection.Module" /> object that represents the dynamic module that contains the generic type parameter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1687,16 +1585,20 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the generic type parameter.</summary>
-        <value>The name of the generic type parameter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1706,16 +1608,20 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.GenericTypeParameterBuilder.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see langword="null" /> in all cases.</summary>
-        <value>A null reference (<see langword="Nothing" /> in Visual Basic) in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1726,15 +1632,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Type" /> object that was used to obtain the <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />.</summary>
-        <value>The <see cref="T:System.Type" /> object that was used to obtain the <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1744,8 +1650,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.SetBaseTypeConstraint(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1755,27 +1665,9 @@
         <Parameter Name="baseTypeConstraint" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="baseTypeConstraint">The <see cref="T:System.Type" /> that must be inherited by any type that is to be substituted for the type parameter.</param>
-        <summary>Sets the base type that a type must inherit in order to be substituted for the type parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To retrieve the base type constraint use the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.BaseType%2A> property.  
-  
- Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameter and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method. For each type parameter, get the base type constraint and interface constraints by using the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method, and get the special constraints by using the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property.  
-  
-   
-  
-## Examples  
- The following code example creates a generic type with two type parameters, the second of which has a base type constraint, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
-  
- [!code-cpp[EmitGenericType#1](~/add/codesnippet/cpp/b8f921a2-8557-4f2a-b5a0-_1.cpp)]
- [!code-vb[EmitGenericType#1](~/add/codesnippet/visualbasic/b8f921a2-8557-4f2a-b5a0-_1.vb)]
- [!code-cs[EmitGenericType#1](~/add/codesnippet/csharp/b8f921a2-8557-4f2a-b5a0-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="baseTypeConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCustomAttribute">
@@ -1784,8 +1676,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1795,11 +1691,9 @@
         <Parameter Name="customBuilder" Type="System.Reflection.Emit.CustomAttributeBuilder" />
       </Parameters>
       <Docs>
-        <param name="customBuilder">An instance of a helper class that defines the custom attribute.</param>
-        <summary>Set a custom attribute using a custom attribute builder.</summary>
+        <param name="customBuilder">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="customBuilder" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCustomAttribute">
@@ -1808,8 +1702,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1820,25 +1718,10 @@
         <Parameter Name="binaryAttribute" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="con">The constructor for the custom attribute.</param>
-        <param name="binaryAttribute">A byte blob representing the attribute.</param>
-        <summary>Sets a custom attribute using a specified custom attribute blob.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For details on how to format `binaryAttribute`, see the documentation for Partition II: Metadata Definition and Semantics. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="con" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="binaryAttribute" /> is a null reference.</exception>
+        <param name="con">To be added.</param>
+        <param name="binaryAttribute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetGenericParameterAttributes">
@@ -1847,8 +1730,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes(System.Reflection.GenericParameterAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1858,29 +1745,9 @@
         <Parameter Name="genericParameterAttributes" Type="System.Reflection.GenericParameterAttributes" />
       </Parameters>
       <Docs>
-        <param name="genericParameterAttributes">A bitwise combination of <see cref="T:System.Reflection.GenericParameterAttributes" /> values that represent the variance characteristics and special constraints of the generic type parameter.</param>
-        <summary>Sets the variance characteristics and special constraints of the generic parameter, such as the parameterless constructor constraint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Special constraints can specify that any type assigned to the generic type parameter must have a default constructor, must be a reference type, or must be a value type.  
-  
- Special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method. To get the special constraints for each type parameter, use the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property.  
-  
- The <xref:System.Reflection.GenericParameterAttributes> enumeration values that refer to the variance characteristics of a type parameter are relevant only in languages that support covariance and contravariance, such as Microsoft intermediate language (MSIL). Visual Basic and C# currently do not support covariance and contravariance.  
-  
-   
-  
-## Examples  
- The following code example creates a generic type with two type parameters, the first of which is constrained to have a default constructor and to be a reference type, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
-  
- [!code-cpp[EmitGenericType#1](~/add/codesnippet/cpp/f9937312-0bf5-459d-9ccf-_1.cpp)]
- [!code-vb[EmitGenericType#1](~/add/codesnippet/visualbasic/f9937312-0bf5-459d-9ccf-_1.vb)]
- [!code-cs[EmitGenericType#1](~/add/codesnippet/csharp/f9937312-0bf5-459d-9ccf-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="genericParameterAttributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetInterfaceConstraints">
@@ -1889,8 +1756,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.SetInterfaceConstraints(System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1911,25 +1782,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="interfaceConstraints">An array of <see cref="T:System.Type" /> objects that represent the interfaces a type must implement in order to be substituted for the type parameter.</param>
-        <summary>Sets the interfaces a type must implement in order to be substituted for the type parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Interface constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method. For each type parameter, get the base type constraint and interface constraints by using the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code example creates a generic type with two type parameters, the second of which has two interface constraints, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
-  
- [!code-cpp[EmitGenericType#1](~/add/codesnippet/cpp/c4902ef7-a0f6-4d5a-9931-_1.cpp)]
- [!code-vb[EmitGenericType#1](~/add/codesnippet/visualbasic/c4902ef7-a0f6-4d5a-9931-_1.vb)]
- [!code-cs[EmitGenericType#1](~/add/codesnippet/csharp/c4902ef7-a0f6-4d5a-9931-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="interfaceConstraints">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1938,8 +1793,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1947,8 +1806,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of the current generic type parameter.</summary>
-        <returns>A string that contains the name of the generic type parameter.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1959,24 +1818,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.RuntimeTypeHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not supported for incomplete generic type parameters.</summary>
-        <value>Not supported for incomplete generic type parameters.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not supported for incomplete generic type parameters. Retrieve the type parameter from the completed generic type definition and then use reflection on the retrieved type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -1986,15 +1837,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current generic type parameter.</summary>
-        <value>The current <see cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,75 @@
+<Type Name="SectionLocation" FullName="System.Reflection.PortableExecutable.SectionLocation">
+  <TypeSignature Language="C#" Value="public struct SectionLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SectionLocation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.SectionLocation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SectionLocation (int relativeVirtualAddress, int pointerToRawData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 relativeVirtualAddress, int32 pointerToRawData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.SectionLocation.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relativeVirtualAddress" Type="System.Int32" />
+        <Parameter Name="pointerToRawData" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="relativeVirtualAddress">To be added.</param>
+        <param name="pointerToRawData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointerToRawData">
+      <MemberSignature Language="C#" Value="public int PointerToRawData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PointerToRawData" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionLocation.PointerToRawData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeVirtualAddress">
+      <MemberSignature Language="C#" Value="public int RelativeVirtualAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RelativeVirtualAddress" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionLocation.RelativeVirtualAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

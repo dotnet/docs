@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataRelationship" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents to the designer a relationship between two tables in the data source accessed through a data connection. This class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -33,11 +31,11 @@
         <Parameter Name="childColumns" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the relationship.</param>
-        <param name="parentColumns">The columns in the parent table that define the relationship.</param>
-        <param name="childTable">The child table in the relationship.</param>
-        <param name="childColumns">The columns in the child table that define the relationship.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataRelationship" /> class with the specified name, parent column, and child relationship.</summary>
+        <param name="name">To be added.</param>
+        <param name="parentColumns">To be added.</param>
+        <param name="childTable">To be added.</param>
+        <param name="childColumns">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,15 +46,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of columns from the child table that are part of the relationship.</summary>
-        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> objects that define the relationship in the child table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,15 +64,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Data.DesignerDataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the child table referenced in the relationship.</summary>
-        <value>A <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> object that represents the child table in the relationship.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +82,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the relationship.</summary>
-        <value>The name of the relationship.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,15 +100,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of columns from the parent table that are part of the relationship between two tables.</summary>
-        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> objects that define the relationship in the parent table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

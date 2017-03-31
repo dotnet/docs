@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteData" />
   <AssemblyInfo>
-    <AssemblyName>System.Web.Routing</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -20,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates information about a route.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RouteData class contains the values for a requested route. Typically, you retrieve a RouteData object by calling the <xref:System.Web.Routing.RouteCollection.GetRouteData%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,16 +26,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteData.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteData" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +41,6 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteData.#ctor(System.Web.Routing.RouteBase,System.Web.Routing.IRouteHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -68,9 +49,9 @@
         <Parameter Name="routeHandler" Type="System.Web.Routing.IRouteHandler" />
       </Parameters>
       <Docs>
-        <param name="route">An object that defines the route.</param>
-        <param name="routeHandler">An object that processes the request.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteData" /> class by using the specified route and route handler.</summary>
+        <param name="route">To be added.</param>
+        <param name="routeHandler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,10 +61,6 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.DataTokens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -91,16 +68,9 @@
         <ReturnType>System.Web.Routing.RouteValueDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of custom values that are passed to the route handler but are not used when ASP.NET routing determines whether the route matches a request.</summary>
-        <value>An object that contains custom values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use the DataTokens property to retrieve values associated with the route that are not used when ASP.NET routing determines whether a route matches a request. A custom route handler might have to retrieve these values when it is processing the request.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRequiredString">
@@ -108,10 +78,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRequiredString(string valueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteData.GetRequiredString(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,11 +89,10 @@
         <Parameter Name="valueName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="valueName">The key of the value to retrieve.</param>
-        <summary>Retrieves the value with the specified identifier.</summary>
-        <returns>The element in the <see cref="System.Web.Routing.RouteData.Values%2A" /> property whose key matches <paramref name="valueName" />.</returns>
+        <param name="valueName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">A value does not exist for <paramref name="valueName" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -136,10 +101,6 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.Route" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -147,8 +108,8 @@
         <ReturnType>System.Web.Routing.RouteBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that represents a route.</summary>
-        <value>An object that represents the route definition.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,10 +119,6 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.RouteHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -169,8 +126,8 @@
         <ReturnType>System.Web.Routing.IRouteHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that processes a requested route.</summary>
-        <value>An object that processes the route request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +137,6 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteData.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Routing</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -191,8 +144,8 @@
         <ReturnType>System.Web.Routing.RouteValueDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of URL parameter values and default values for the route.</summary>
-        <value>An object that contains values that are parsed from the URL and from default values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.InvokeCompletedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,9 +18,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">A reference to the Web service proxy.</param>
-    <param name="e">An <see cref="T:System.Web.Services.Protocols.InvokeCompletedEventArgs" /> containing the results of the method invocation.</param>
-    <summary>Represents an event handler that accepts the results of asynchronously invoked Web methods. This class cannot be inherited.</summary>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

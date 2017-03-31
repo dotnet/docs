@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a security token that is based upon XML.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GenericXmlSecurityToken class when you receive a token over the wire that is not defined in a specification or there is no way for you to determine the type of the security token. For example, in a federation scenario when you send a Request Security Token (RST) to a Security Token Service (STS) you do not always know the type of the security token returned by the STS. In such cases, you can use a GenericXmlSecurityToken to store the security token as XML along with its internal and external references.  
-  
- Use the GenericXmlSecurityToken class to define claims using XML when one of the built-in security tokens does not suffice. Other security tokens can define their claims using XML, however the GenericXmlSecurityToken security token generically allows a security token to have an application-defined set of XML.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -45,30 +34,15 @@
         <Parameter Name="authorizationPolicies" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" />
       </Parameters>
       <Docs>
-        <param name="tokenXml">An <see cref="T:System.Xml.XmlElement" /> that represents the XML that is associated with the security token. Sets the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml%2A" /> property.</param>
-        <param name="proofToken">A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the proof token for the security token. Sets the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ProofToken%2A" /> property.</param>
-        <param name="effectiveTime">A <see cref="T:System.DateTime" /> that represents the first instant in time at which this security token is valid. Sets the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom%2A" /> property.</param>
-        <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid. Sets the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom%2A" /> property.</param>
-        <param name="internalTokenReference">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents a reference to this security token when it is included in a SOAP message in which it is referenced. Sets the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A" /> property.</param>
-        <param name="externalTokenReference">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents a reference to this security token when it is not included in a SOAP message in which it is referenced. Sets the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom%2A" /> property.</param>
-        <param name="authorizationPolicies">A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set authorization policies for this security token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the `internalTokenReference` parameter is `null`, a <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> key identifier clause is created for this security token and set to the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A> property.  
-  
- When the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> is obtained in a federation scenario, the proof token contains the key that is encrypted for the client.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="tokenXml" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="proofToken" /> is <see langword="null" />.</exception>
+        <param name="tokenXml">To be added.</param>
+        <param name="proofToken">To be added.</param>
+        <param name="effectiveTime">To be added.</param>
+        <param name="expirationTime">To be added.</param>
+        <param name="internalTokenReference">To be added.</param>
+        <param name="externalTokenReference">To be added.</param>
+        <param name="authorizationPolicies">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthorizationPolicies">
@@ -78,15 +52,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of authorization policies for this security token.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set authorization policies for this security token.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +70,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,18 +84,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
-        <summary>Gets a value that indicates whether this security token is capable of creating the specified key identifier clause.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="T" /> is not <see langword="null" /> and the same type as either the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A" /> or <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference%2A" /> property values; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CanCreateKeyIdentifierClause(T) method to determine if a <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> security token can create a specific key identifier. To create the key identifier call the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.CreateKeyIdentifierClause%60%601> method.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyIdentifierClause&lt;T&gt;">
@@ -133,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,21 +111,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
-        <summary>Creates the specified key identifier clause.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause" /> that is a key identifier clause for a <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> security token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A> property or the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference%2A> property is returned by the CreateKeyIdentifierClause(T) method depending on the type that is passed into the `T` parameter.  
-  
- Use the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.CanCreateKeyIdentifierClause%60%601> method to determine if a <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> security token can create a specific key identifier. To create the key identifier call the CreateKeyIdentifierClause(T) method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">
-          <paramref name="T" /> is not <see langword="null" /> and not the same type as one of the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A" /> or <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference%2A" /> property values.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExternalTokenReference">
@@ -172,15 +124,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a security key identifier clause that references this security token when this security token is not included in the SOAP message in which it is referenced.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents a reference to this security token when it is not included in a SOAP message in which it is referenced.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,23 +142,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique identifier of the security token.</summary>
-        <value>The unique identifier of the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> security token is serialized into XML, the value of the `Id` attribute is set to the value of the Id property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InternalTokenReference">
@@ -217,26 +160,24 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a security key identifier clause that references this security token when this security token is included in the SOAP message in which it is referenced.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents a reference to this security token when it is included in a SOAP message in which it is referenced.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchesKeyIdentifierClause">
-      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
+      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,18 +187,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">An <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to compare to this instance.</param>
-        <summary>Returns a value that indicates whether the key identifier for this instance is equal to the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="keyIdentifierClause" /> is not <see langword="null" /> and matches either the <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A" /> or <see cref="System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference%2A" /> property values; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `keyIdentifierClause` parameter is matched against the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A> and <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference%2A> property values using the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Matches%2A> method on the key identifier clause that is returned by the property values.  
-  
- ]]></format>
-        </remarks>
+        <param name="skiClause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProofToken">
@@ -267,23 +200,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the proof token for the security token.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the proof token for the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The proof token is the security token that the requester of the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> security token used for authentication in obtaining the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> security token.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityKeys">
@@ -293,23 +218,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cryptographic keys associated with the proof token.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the proof token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The proof token can be obtained by getting the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ProofToken%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TokenXml">
@@ -319,23 +236,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the XML that is associated with the security token.</summary>
-        <value>An <see cref="T:System.Xml.XmlElement" /> that represents the XML that is associated with the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> security token is extensible, so exactly what is contained within the XML is application-dependent.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -345,7 +254,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,16 +261,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the current object.</summary>
-        <returns>The current object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom%2A>, <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidTo%2A>, <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference%2A>, and <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidFrom">
@@ -372,25 +273,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first instant in time at which this security token is valid.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the first instant in time at which this security token is valid.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ValidFrom and <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> token is valid. The ValidFrom and <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
-  
- The ValidFrom property is specified using the `effectiveTime` parameter of the constructor. The value returned from this property is always in Coordinated Universal Time (UTC).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
@@ -400,25 +291,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last instant in time at which this security token is valid.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom%2A> and ValidTo properties to determine the time period in which a <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom%2A> and ValidTo properties represent the first and last instants in time in which the security token is valid, respectively.  
-  
- The ValidTo property is specified using the `expirationTime` parameter of the constructor. The value returned from this property is always in Coordinated Universal Time (UTC).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

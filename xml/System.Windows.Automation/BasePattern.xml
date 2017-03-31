@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the base implementation for control pattern classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BasePattern class is effectively abstract, as it does not have a public constructor and cannot be instantiated by user applications.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Finalize">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,7 +29,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees resources and performs other cleanup operations before the object is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

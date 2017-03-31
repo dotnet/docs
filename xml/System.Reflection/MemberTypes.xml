@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MemberTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberTypes" />
   <AssemblyInfo>
+    <AssemblyName>System.Reflection</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -19,54 +27,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Marks each type of member that is defined as a derived class of <see cref="T:System.Reflection.MemberInfo" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These enumeration values are returned by the following properties:  
-  
--   <xref:System.Type.MemberType%2A?displayProperty=fullName>.  
-  
--   <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName>.  
-  
--   <xref:System.Reflection.ConstructorInfo?displayProperty=fullName>.  
-  
--   <xref:System.Reflection.EventInfo?displayProperty=fullName>.  
-  
--   <xref:System.Reflection.FieldInfo?displayProperty=fullName>.  
-  
--   <xref:System.Reflection.MethodInfo?displayProperty=fullName>.  
-  
--   <xref:System.Reflection.PropertyInfo?displayProperty=fullName>.  
-  
- To obtain the MemberTypes value for a type:  
-  
-1.  Get a <xref:System.Type> object that represents that type.  
-  
-2.  Retrieve the value of the <xref:System.Type.MemberType%2A?displayProperty=fullName> property.  
-  
- To get the MemberTypes values for the members of a type.:  
-  
-1.  Get a <xref:System.Type> object that represents that type.  
-  
-2.  Retrieve the <xref:System.Reflection.MemberInfo> array that represents the members of that type by calling the <xref:System.Type.GetMembers%2A?displayProperty=fullName> method.  
-  
-3.  Retrieve the value of the From the <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName> property for each member in the array.  A `switch` statement in C# or `Select Case` statement in Visual Basic is typically used to process member types.  
-  
- MemberTypes matches CorTypeAttr as defined in the corhdr.h file.  
-  
-   
-  
-## Examples  
- The following example displays the names of the members of the <xref:System.Reflection.ReflectionTypeLoadException> class and their associated member types.  
-  
- [!code-vb[System.Reflection.MemberTypes#1](~/add/codesnippet/visualbasic/t-system.reflection.memb_0_1.vb)]
- [!code-cs[System.Reflection.MemberTypes#1](~/add/codesnippet/csharp/t-system.reflection.memb_0_1.cs)]
- [!code-cpp[System.Reflection.MemberTypes#1](~/add/codesnippet/cpp/t-system.reflection.memb_0_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -75,15 +37,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies all member types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Constructor">
@@ -92,15 +62,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a constructor</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -109,15 +87,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a custom member type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -126,15 +112,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is an event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Field">
@@ -143,15 +137,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a field.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -160,15 +162,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NestedType">
@@ -177,15 +187,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.NestedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a nested type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -194,15 +212,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeInfo">
@@ -211,15 +237,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.TypeInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the member is a type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

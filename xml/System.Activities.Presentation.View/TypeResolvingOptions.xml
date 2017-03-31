@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the options available for resolving types used by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="defaultTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="defaultTypes">The default types in the <see cref="System.Activities.Presentation.View.TypePrensenter" /> control.</param>
-        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> class.</summary>
+        <param name="defaultTypes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control should show the type browser directly when a user tries to select a type.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Activities.Presentation.View.TypePrensenter" /> control should show the type browser directly when a user tries to select a type; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +79,8 @@
         <ReturnType>System.Func&lt;System.Type,System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a filter used to filter types in the <see cref="System.Activities.Presentation.View.TypePrensenter" /> control.</summary>
-        <value>The filter for the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,9 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ComInterfaceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComInterfaceType" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,15 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies how to expose an interface to COM.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration works in conjunction with the <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribute.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InterfaceIsDual">
@@ -33,15 +38,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the interface is exposed to COM as a [dual interface](http://msdn.microsoft.com/en-us/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. InterfaceIsDual is the default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIDispatch">
@@ -50,15 +67,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as a [dispinterface](http://msdn.microsoft.com/en-us/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf), which enables late binding only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIInspectable">
@@ -67,8 +96,21 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -79,7 +121,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIUnknown">
@@ -88,15 +130,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as an interface that is derived from [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), which enables only early binding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

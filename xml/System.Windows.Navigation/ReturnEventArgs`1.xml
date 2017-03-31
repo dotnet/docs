@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.ReturnEventArgs`1" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -15,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the return value.</typeparam>
-    <summary>Provides data for the <see cref="System.Windows.Navigation.PageFunction%601.Return" /> event.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Windows.Navigation.ReturnEventArgs%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,15 +41,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="result" Type="T" />
       </Parameters>
       <Docs>
-        <param name="result">The value to be returned.</param>
-        <summary>Initializes a new instance of the <see cref="System.Windows.Navigation.ReturnEventArgs%601" /> class with the return value.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,15 +59,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value that is returned by the page function.</summary>
-        <value>The value that is returned by the page function.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

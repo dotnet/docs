@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AutoSync" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Instructs the runtime how to retrieve the value after an insert or update operation.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Always returns the value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Automatically selects the value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Never returns the value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the value only after an insert operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnUpdate">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the value only after an update operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

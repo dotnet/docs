@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PnrpScope" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the different scopes of a PNRP cloud.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- PnrpScope is an enumerated type.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All IP addresses are allowed to register with the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />. There is no difference between any scope and all scopes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scope is global; all valid IP addresses are allowed to register with the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LinkLocal">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scope is link-local; only IP addresses defined for the local area subnet are allowed to register with the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SiteLocal">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scope is site-local; only IP addresses defined for the site are allowed to register with the PNRP.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

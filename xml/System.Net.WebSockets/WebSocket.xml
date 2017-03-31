@@ -3,8 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebSocket extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocket" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
+    <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,15 +24,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The WebSocket class allows applications to send and receive data after the WebSocket upgrade has completed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some of the classes in the <xref:System.Net.WebSockets> namespace are supported on Windows 7, Windows Vista SP2, and Windows Server 2008. However, the only public implementations of client and server WebSockets are supported on Windows 8 and Windows Server 2012. The classes and class elements in the <xref:System.Net.WebSockets> namespace that are supported on Windows 7, Windows Vista SP2, and Windows Server 2008 are abstract classes. This allows an application developer to inherit and extend these abstract classes with an actual implementation of client WebSockets.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +34,21 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Net.WebSockets.WebSocket" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,15 +58,24 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.Abort" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aborts the WebSocket connection and cancels any pending IO operations.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +85,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.CloseAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -77,23 +106,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">Indicates the reason for closing the WebSocket connection.</param>
-        <param name="statusDescription">Specifies a human readable explanation as to why the connection is closed.</param>
-        <param name="cancellationToken">The token that can be used to propagate notification that operations should be canceled.</param>
-        <summary>Closes the WebSocket connection as an asynchronous operation using the close handshake defined in the [WebSocket protocol specification](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06) section 7.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the WebSocket has been closed.  
-  
- This method closes the WebSocket connection using the close handshake defined in the [WebSocket protocol specification](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06) section 7.  
-  
- ]]></format>
-        </remarks>
+        <param name="closeStatus">To be added.</param>
+        <param name="statusDescription">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseOutputAsync">
@@ -102,8 +120,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -114,21 +141,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">Indicates the reason for closing the WebSocket connection.</param>
-        <param name="statusDescription">Allows applications to specify a human readable explanation as to why the connection is closed.</param>
-        <param name="cancellationToken">The token that can be used to propagate notification that operations should be canceled.</param>
-        <summary>Initiates or completes the close handshake defined in the [WebSocket protocol specification section 7](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06).</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the output on the WebSocket has been closed.  
-  
- ]]></format>
-        </remarks>
+        <param name="closeStatus">To be added.</param>
+        <param name="statusDescription">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseStatus">
@@ -137,23 +155,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.WebSocket.CloseStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the reason why the remote endpoint initiated the close handshake.</summary>
-        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketCloseStatus" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the close handshake has not been initiated yet, WebSocketCloseStatus.None is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseStatusDescription">
@@ -162,15 +182,24 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.WebSocket.CloseStatusDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Allows the remote endpoint to describe the reason why the connection was closed.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +210,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ArraySegment&lt;System.Byte&gt;</ReturnType>
       </ReturnValue>
@@ -191,12 +230,10 @@
         <Parameter Name="sendBufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="receiveBufferSize">The size, in bytes, of the client receive buffer.</param>
-        <param name="sendBufferSize">The size, in bytes, of the send buffer.</param>
-        <summary>Create client buffers to use with this <see cref="T:System.Net.WebSockets.WebSocket" /> instance.</summary>
-        <returns>Returns <see cref="System.ArraySegment%601" />.  
-  
- An array with the client buffers.</returns>
+        <param name="receiveBufferSize">To be added.</param>
+        <param name="sendBufferSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,11 +244,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.MonoTODO</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -227,17 +269,15 @@
         <Parameter Name="internalBuffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="innerStream">The connection to be used for IO operations.</param>
-        <param name="subProtocol">The subprotocol accepted by the client.</param>
-        <param name="receiveBufferSize">The size in bytes of the client WebSocket receive buffer.</param>
-        <param name="sendBufferSize">The size in bytes of the client WebSocket send buffer.</param>
-        <param name="keepAliveInterval">Determines how regularly a frame is sent over the connection as a keep-alive. Applies only when the connection is idle.</param>
-        <param name="useZeroMaskingKey">Indicates whether a random key or a static key (just zeros) should be used for the WebSocket masking.</param>
-        <param name="internalBuffer">Will be used as the internal buffer in the WPC. The size has to be at least <c>2 * ReceiveBufferSize + SendBufferSize + 256 + 20 (16 on 32-bit)</c>.</param>
-        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
-  
- Allows callers to create a client side WebSocket class which will use the WSPC for framing purposes.</summary>
-        <returns>Returns <see cref="T:System.Net.WebSockets.WebSocket" />.</returns>
+        <param name="innerStream">To be added.</param>
+        <param name="subProtocol">To be added.</param>
+        <param name="receiveBufferSize">To be added.</param>
+        <param name="sendBufferSize">To be added.</param>
+        <param name="keepAliveInterval">To be added.</param>
+        <param name="useZeroMaskingKey">To be added.</param>
+        <param name="internalBuffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,8 +288,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ArraySegment&lt;System.Byte&gt;</ReturnType>
       </ReturnValue>
@@ -257,9 +307,9 @@
         <Parameter Name="receiveBufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="receiveBufferSize">The size, in bytes, of the desired buffer.</param>
-        <summary>Creates a WebSocket server buffer.</summary>
-        <returns>Returns <see cref="System.ArraySegment%601" />.</returns>
+        <param name="receiveBufferSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,16 +320,24 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default WebSocket protocol keep-alive interval in milliseconds.</summary>
-        <value>Returns <see cref="T:System.TimeSpan" />.  
-  
- The default WebSocket protocol keep-alive interval in milliseconds. The typical value for this interval is 30 seconds.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,15 +347,24 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Used to clean up unmanaged resources for ASP.NET and self-hosted implementations.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,14 +375,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.MonoTODO</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.")</AttributeName>
+          <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,10 +391,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates if the WebSocket instance is targeting [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)].</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.  
-  
- <see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is targeting [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)]; otherwise <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +403,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -346,11 +417,9 @@
         <Parameter Name="state" Type="System.Net.WebSockets.WebSocketState" />
       </Parameters>
       <Docs>
-        <param name="state">The current state of the WebSocket.</param>
-        <summary>Returns a value that indicates if the state of the WebSocket instance is closed or aborted.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.  
-  
- <see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is closed or aborted; otherwise <see langword="false" />.</returns>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +429,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.ReceiveAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.WebSockets.WebSocketReceiveResult&gt;</ReturnType>
@@ -371,22 +449,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="buffer">References the application buffer that is the storage location for the received data.</param>
-        <param name="cancellationToken">Propagates the notification that operations should be canceled.</param>
-        <summary>Receives data from the <see cref="T:System.Net.WebSockets.WebSocket" /> connection asynchronously.</summary>
-        <returns>Returns <see cref="System.Threading.Tasks.Task%601" />.  
-  
- The task object representing the asynchronous operation. The <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property on the task object returns a <see cref="T:System.Byte" /> array containing the received data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the data has been received on the <xref:System.Net.WebSockets.WebSocket>.  
-  
- Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.WebSocket> object in parallel.  
-  
- ]]></format>
-        </remarks>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterPrefixes">
@@ -396,11 +463,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.MonoTODO</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -408,7 +480,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. Allows callers to register prefixes for WebSocket requests (ws and wss).</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,8 +490,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.SendAsync(System.ArraySegment{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -431,22 +512,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="buffer">The buffer to be sent over the connection.</param>
-        <param name="messageType">Indicates whether the application is sending a binary or text message.</param>
-        <param name="endOfMessage">Indicates whether the data in “buffer” is the last part of a message.</param>
-        <param name="cancellationToken">The token that propagates the notification that operations should be canceled.</param>
-        <summary>Sends data over the <see cref="T:System.Net.WebSockets.WebSocket" /> connection asynchronously.</summary>
-        <returns>The task object representing the asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the data has been sent on the <xref:System.Net.WebSockets.WebSocket>.  
-  
- Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.WebSocket> object in parallel.  
-  
- ]]></format>
-        </remarks>
+        <param name="buffer">To be added.</param>
+        <param name="messageType">To be added.</param>
+        <param name="endOfMessage">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -455,15 +527,24 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.WebSocket.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the current state of the WebSocket connection.</summary>
-        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketState" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,15 +554,24 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.WebSocket.SubProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The subprotocol that was negotiated during the opening handshake.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -492,8 +582,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -508,9 +608,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="state">The current state of the WebSocket to be tested against the list of valid states.</param>
-        <param name="validStates">List of valid connection states.</param>
-        <summary>Verifies that the connection is in an expected state.</summary>
+        <param name="state">To be added.</param>
+        <param name="validStates">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

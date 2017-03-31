@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabDrawMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether the tabs in a tab control are owner-drawn (drawn by the parent window), or drawn by the operating system.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.DrawMode%2A?displayProperty=fullName>.  
-  
- The <xref:System.Windows.Forms.TabControl> class and its derived classes support owner-draw functionality, but only one type, in which you can draw the tabs individually.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Normal">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tabs are drawn by the operating system, and are of the same size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawFixed">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tabs are drawn by the parent window, and are of the same size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

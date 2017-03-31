@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VirtualDirectoryMappingCollection class allows you to programmatically access a collection of <xref:System.Web.Configuration.VirtualDirectoryMapping> objects. The collection can be accessed with either the key or the index.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,15 +47,10 @@
         <Parameter Name="mapping" Type="System.Web.Configuration.VirtualDirectoryMapping" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">A <see cref="T:System.String" /> that contains the virtual directory path.</param>
-        <param name="mapping">A <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object to the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
+        <param name="virtualDirectory">To be added.</param>
+        <param name="mapping">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="mapping" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="virtualDirectory" /> already exists in the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -75,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a string array that contains all the keys in the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
-        <value>A string array that contains all the keys in the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> objects from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,13 +106,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the entire <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="System.Array.Length%2A" /> property of <paramref name="array" /> is less than the value of <see cref="System.Collections.Specialized.NameObjectCollectionBase.Count%2A" /> plus <paramref name="index" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -140,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,9 +128,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
-        <summary>Gets the specified <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element at the specified index.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> element at the specified index.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,9 +150,9 @@
         <Parameter Name="virtualDirectory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element based on the specified virtual-directory name.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> element based on the specified virtual-directory name.</returns>
+        <param name="virtualDirectory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,9 +172,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
-        <summary>Gets the key of the entry at the specified index of the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
-        <returns>A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +185,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,9 +194,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object at the specified index location.</summary>
-        <value>A <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +207,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +216,9 @@
         <Parameter Name="virtualDirectory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object based on the specified virtual directory name.</summary>
-        <value>A <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</value>
+        <param name="virtualDirectory">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,8 +238,8 @@
         <Parameter Name="virtualDirectory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
+        <param name="virtualDirectory">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,7 +250,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,8 +259,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object at the specified index from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

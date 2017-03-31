@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Int32CollectionConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts an <see cref="T:System.Windows.Media.Int32Collection" /> to and from other data types.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Int32Collection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
-        <summary>Determines if the converter can convert an object of the given type to an instance of <see cref="T:System.Windows.Media.Int32Collection" />.</summary>
-        <returns>
-          <see langword="true" /> if the converter can convert the provided type to an instance of <see cref="T:System.Windows.Media.Int32Collection" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">The context information of a type.</param>
-        <param name="destinationType">The desired type to evaluate the conversion to.</param>
-        <summary>Determines if the converter can convert an <see cref="T:System.Windows.Media.Int32Collection" /> to a given data type.</summary>
-        <returns>
-          <see langword="true" /> if an <see cref="T:System.Windows.Media.Int32Collection" /> can convert to <paramref name="destinationType" />; otherwise <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,14 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Context information used for conversion.</param>
-        <param name="culture">Cultural information that is respected during conversion.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Attempts to convert a specified object to an <see cref="T:System.Windows.Media.Int32Collection" /> instance.</summary>
-        <returns>A new instance of <see cref="T:System.Windows.Media.Int32Collection" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="value" /> is <see langword="null" /> or the type invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -120,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,16 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Context information used for conversion.</param>
-        <param name="culture">Cultural information that is respected during conversion.</param>
-        <param name="value">
-          <see cref="T:System.Windows.Media.Int32Collection" /> to convert.</param>
-        <param name="destinationType">Type being evaluated for conversion.</param>
-        <summary>Attempts to convert an instance of <see cref="T:System.Windows.Media.Int32Collection" /> to a specified type.</summary>
-        <returns>A new instance of the <paramref name="destinationType" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="value" /> is <see langword="null" /> or the type invalid.</exception>
       </Docs>
     </Member>
   </Members>

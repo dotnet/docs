@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionKind" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Contains values that each expression class uses to denote the operation it represents. The <see cref="System.Data.Common.CommandTrees.DbExpression.ExpressionKind%2A" /> property of an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> can be retrieved to determine which operation that expression represents.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DbExpressionKind enumeration to specify the various kinds of expressions. The Members table lists the functions that are members of this class and the type of expressions they specify.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -29,15 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="true" />-for-all expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="And">
@@ -47,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Logical AND expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Any">
@@ -64,15 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="true" />-for-any expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Case">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Conditional case statement expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cast">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Polymorphic type cast expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Constant">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Constant value expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CrossApply">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cross apply expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CrossJoin">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cross join expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deref">
@@ -167,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dereference expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Distinct">
@@ -184,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Duplicate removal expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -201,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Division expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -218,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set-to-singleton conversion expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntityRef">
@@ -235,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Entity reference value retrieval expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -252,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Equality expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Except">
@@ -269,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set subtraction expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -286,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Restriction expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullOuterJoin">
@@ -303,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Full outer join expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -320,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Standalone function expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -337,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Greater than expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEquals">
@@ -354,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Greater than or equal expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GroupBy">
@@ -371,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Grouping expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InnerJoin">
@@ -388,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Inner join expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -405,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set intersection expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -422,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Empty set determination expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -439,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Null determination expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsOf">
@@ -456,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type comparison (specified Type or Subtype) expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsOfOnly">
@@ -473,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type comparison (specified Type only) expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lambda">
@@ -496,7 +459,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lambda function expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftOuterJoin">
@@ -506,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Left outer join expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -523,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Less than expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEquals">
@@ -540,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Less than or equal expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Like">
@@ -557,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>String comparison expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Limit">
@@ -574,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Result count restriction (TOP n).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minus">
@@ -591,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Subtraction expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modulo">
@@ -608,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Modulo expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -625,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Multiplication expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NewInstance">
@@ -642,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Instance, row, and set construction expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Not">
@@ -659,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Logical NOT expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -676,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Inequality expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -693,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Null expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OfType">
@@ -710,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set members by type (or subtype) expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OfTypeOnly">
@@ -727,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set members by exact type expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Or">
@@ -744,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Logical OR expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OuterApply">
@@ -761,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Outer apply expressions</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParameterReference">
@@ -778,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reference to a parameter expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Plus">
@@ -795,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Addition expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Project">
@@ -812,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Projection expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -829,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static or instance property retrieval expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ref">
@@ -846,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reference expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RefKey">
@@ -863,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ref key value retrieval expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelationshipNavigation">
@@ -880,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Relationship (composition or association) navigation expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scan">
@@ -897,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Entity or relationship set scan expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -914,14 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Skip elements of an ordered collection.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -931,14 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sorting expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Treat">
@@ -948,14 +885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type conversion expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnaryMinus">
@@ -965,14 +901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Negation expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnionAll">
@@ -982,14 +917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set union (with duplicates) expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VariableReference">
@@ -999,14 +933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reference to a variable expressions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

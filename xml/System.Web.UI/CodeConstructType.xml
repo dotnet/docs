@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CodeConstructType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the code constructs that can be parsed in the <see cref="System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A" /> method of the <see cref="T:System.Web.UI.PageParserFilter" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you process a code construct by using the <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> method of the <xref:System.Web.UI.PageParserFilter> class, return `true` if you do not want to process the code construct further.  
-  
- For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CodeSnippet">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An expression in <see langword="&lt;% ..." /> <see langword="%&gt;" /> tags.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataBindingSnippet">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An expression in <see langword="&lt;%= ... %&gt;" /> tags.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EncodedExpressionSnippet">
@@ -71,7 +59,7 @@
         <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An expression in <see langword="&lt;%: ... %&gt;" /> tags.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpressionSnippet">
@@ -81,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An expression in <see langword="&lt;%# ... %&gt;" /> tags.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScriptTag">
@@ -98,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An expression in a <see langword="script" /> element that contains the <see langword="runat=&quot;server&quot;" /> attribute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

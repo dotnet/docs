@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.ListEnumerator`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -27,16 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TValue">The type of an element in the controlled sequence.</typeparam>
-    <summary>Supports simple iteration over any STL/CLR object that implements the <see cref="Microsoft.VisualC.StlClr.IList%601" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[unnamed_parm](~/add/includes/unnamed-parm-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +38,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -58,8 +49,8 @@
         <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_First">The first node in the container over which to iterate.</param>
-        <summary>Allocates and initializes a new <see cref="Microsoft.VisualC.StlClr.ListEnumerator%601" /> object.</summary>
+        <param name="_First">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,15 +61,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current element in the collection.</summary>
-        <value>The current element in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,7 +86,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="Microsoft.VisualC.StlClr.ListEnumerator%601" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,19 +97,17 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="System.Boolean" />
+        <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">
-          <see langword="true" /> to dispose of managed objects; <see langword="false" /> to dispose of unmanaged objects.</param>
-        <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="Microsoft.VisualC.StlClr.ListEnumerator%601" /> object.</summary>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,9 +125,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Advances the enumerator to the next element in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,7 +144,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

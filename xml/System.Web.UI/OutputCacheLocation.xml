@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.OutputCacheLocation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the valid values for controlling the location of the output-cached HTTP response for a resource.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The values specified by this enumeration are used when you include an `@ OutputCache` directive in an .aspx file. These values determine the cache location for page output. For more information, see [Caching ASP.NET Pages](../Topic/Caching%20ASP.NET%20Pages.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how the Server value is used to specify that the page should be cached on the Web server where the request is processed.  
-  
- [!code-cs[OutputCacheLocation_Resubmit#1](~/add/codesnippet/csharp/t-system.web.ui.outputca_1.aspx)]
- [!code-vb[OutputCacheLocation_Resubmit#1](~/add/codesnippet/visualbasic/t-system.web.ui.outputca_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Any">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output cache can be located on the browser client (where the request originated), on a proxy server (or any other server) participating in the request, or on the server where the request was processed. This value corresponds to the <see cref="T:System.Web.HttpCacheability" /> enumeration value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Client">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output cache is located on the browser client where the request originated. This value corresponds to the <see cref="T:System.Web.HttpCacheability" /> enumeration value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Downstream">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output cache can be stored in any HTTP 1.1 cache-capable devices other than the origin server. This includes proxy servers and the client that made the request.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output cache is disabled for the requested page. This value corresponds to the <see cref="T:System.Web.HttpCacheability" /> enumeration value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output cache is located on the Web server where the request was processed. This value corresponds to the <see cref="T:System.Web.HttpCacheability" /> enumeration value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerAndClient">
@@ -122,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output cache can be stored only at the origin server or at the requesting client. Proxy servers are not allowed to cache the response. This value corresponds to the combination of the <see cref="T:System.Web.HttpCacheability" /> and <see cref="T:System.Web.HttpCacheability" /> enumeration values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

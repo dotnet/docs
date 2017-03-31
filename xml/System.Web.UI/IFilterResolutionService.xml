@@ -4,26 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IFilterResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an interface that designer developers can use to evaluate device filters by name.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Page developers and control authors do not use the IFilterResolutionService interface. The IFilterResolutionService interface is implemented by designer developers to provide device filter-related services when parsing and persisting controls in the designer environment.  
-  
- The IFilterResolutionService interface is used when a designer developer needs to support the editing of filtered properties.  
-  
- The IFilterResolutionService interface is specific to controls' use of device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the IFilterResolutionService interface provides a way to determine whether the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
-  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase> class implements the IFilterResolutionService interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CompareFilters">
@@ -33,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,10 +29,10 @@
         <Parameter Name="filter2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filter1">A device filter name.</param>
-        <param name="filter2">A device filter name</param>
-        <summary>Returns a value indicating whether a parent-child relationship exists between two specified device filters.</summary>
-        <returns>1 if the device filter identified by <paramref name="filter1" /> is a parent of the filter identified by <paramref name="filter2" />, -1 if the device filter identified by <paramref name="filter2" /> is a parent of the filter identified by <paramref name="filter1" />, and 0 if there is no parent-child relationship between the two filters.</returns>
+        <param name="filter1">To be added.</param>
+        <param name="filter2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,18 +52,10 @@
         <Parameter Name="filterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterName">The name of a device filter.</param>
-        <summary>Returns a value indicating whether the specified filter is a type of the current filter object.</summary>
-        <returns>
-          <see langword="true" /> if the specified filter is a type applicable to the current filter object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EvaluateFilter method determines whether a named device filter is a type of filter supported by the <xref:System.Web.UI.IFilterResolutionService> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="filterName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

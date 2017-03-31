@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows declarative service controller permission checks.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
       </Parameters>
       <Docs>
-        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" /> class.</summary>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,8 +52,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the permission based on the requested access levels that are set through the <see cref="System.ServiceProcess.ServiceControllerPermissionAttribute.PermissionAccess%2A" /> property on the attribute.</summary>
-        <returns>An <see cref="T:System.Security.IPermission" /> that represents the created permission.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,17 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the computer on which the service resides.</summary>
-        <value>The name of the computer that is running the service associated with the <see cref="T:System.ServiceProcess.ServiceController" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The MachineName syntax is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="PermissionAccess">
@@ -94,15 +82,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the access levels used in the permissions request.</summary>
-        <value>A bitwise combination of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,18 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the short name that identifies the service to the system.</summary>
-        <value>The name of the service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The ServiceName is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The syntax of the ServiceName property is invalid.</exception>
       </Docs>
     </Member>
   </Members>

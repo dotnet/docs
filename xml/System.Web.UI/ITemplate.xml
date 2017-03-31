@@ -4,28 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ITemplate" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines the behavior for populating a templated ASP.NET server control with child controls. The child controls represent the inline templates defined on the page.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is used by custom server controls, but never implemented by them. ASP.NET always implements it.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a simple templated server control that uses the ITemplate interface to create a templated property.  
-  
- [!code-cs[Classic ITemplate Example#1](~/add/codesnippet/csharp/t-system.web.ui.itemplate_1.cs)]
- [!code-vb[Classic ITemplate Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.itemplate_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InstantiateIn">
@@ -35,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,22 +28,9 @@
         <Parameter Name="container" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="container">The <see cref="T:System.Web.UI.Control" /> object to contain the instances of controls from the inline template.</param>
-        <summary>When implemented by a class, defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to. These child controls are in turn defined within an inline template.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When developing templated server controls, you do not need to implement this method; the .NET Framework provides the implementation for you.  
-  
-   
-  
-## Examples  
- [!code-vb[ITemplate_Interface#2](~/add/codesnippet/visualbasic/m-system.web.ui.itemplat_1.vb)]
- [!code-cs[ITemplate_Interface#2](~/add/codesnippet/csharp/m-system.web.ui.itemplat_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="container">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

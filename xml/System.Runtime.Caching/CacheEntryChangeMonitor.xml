@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class that represents a <see cref="T:System.Runtime.Caching.ChangeMonitor" /> type that can be implemented in order to monitor changes to cache entries.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CacheEntryChangeMonitor class provides abstract, read-only properties that can be implemented for monitoring cache entries. This class is used when a cache implementation has to monitor changes to entries in its own cache. For caches that are <xref:System.Runtime.Caching.ObjectCache> cache implementations, an instance of the CacheEntryChangeMonitor type is returned by the <xref:System.Runtime.Caching.ObjectCache.CreateCacheEntryChangeMonitor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.CacheEntryChangeMonitor" /> class. This constructor is called from constructors in derived classes to initialize the base class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.CacheEntryChangeMonitor> class has a default constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheKeys">
@@ -57,16 +43,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of cache keys that are monitored for changes.</summary>
-        <value>A collection of cache keys.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection is typically set in the constructor of a derived <xref:System.Runtime.Caching.CacheEntryChangeMonitor> type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModified">
@@ -82,18 +61,9 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the latest time (in UTC time) that the monitored cache entry was changed.</summary>
-        <value>The elapsed time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If multiple cache entries are being monitored for changes, the LastModified property returns the latest time a modification occurred in any of the cache entries.  
-  
- The value of the LastModified property is typically calculated during initialization of a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegionName">
@@ -109,16 +79,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of a region of the cache.</summary>
-        <value>The name of a region in the cache.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property typically indicates a particular region where changes are monitored in the cache. The RegionName property provides the option to configure change monitors so that they monitor cache entries only in a specific cache region.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

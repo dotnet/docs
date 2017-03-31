@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryConnection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The DirectoryConnection class is an abstract class and cannot be instantiated. Use the <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> or <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> classes to connect to a directory server.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The DirectoryConnection constructor initializes a new instance of a <see cref="T:System.DirectoryServices.Protocols.DirectoryConnection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ClientCertificates property specifies one or more client certificates to send for authentication.</summary>
-        <value>One or more client certificates to send for authentication.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,26 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkCredential</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Credential property specifies alternate credentials for the connection object.</summary>
-        <value>Alternate credentials for the connection object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If not specified, the default value is `null`.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
-          <see cref="T:System.Security.Permissions.SecurityAction" />
-        </permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Directory">
@@ -87,23 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DirectoryIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Directory property specifies the domain or the server to which the connection should be made.</summary>
-        <value>The domain or the server to which the connection should be made.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, "http://fabrikam.com/platforms/adssoap.dll" represents a DSML server and "dc-01.fabrikam.com" represents an LDAP server.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendRequest">
@@ -113,7 +91,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,13 +100,10 @@
         <Parameter Name="request" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
       </Parameters>
       <Docs>
-        <param name="request">A <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object that contains the request.</param>
-        <summary>The SendRequest method sends a single directory operation to the server.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object that contains the server response to the request operation. The returned response object may be different than the requested object if the server returns a different response.</returns>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
-          <see cref="T:System.Security.Permissions.SecurityAction" />
-        </permission>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -139,23 +113,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Timeout property contains the length of time, in seconds, before the connection times out.</summary>
-        <value>The length of time, in seconds, before the connection times out.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Thirty seconds is the default time length property setting.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

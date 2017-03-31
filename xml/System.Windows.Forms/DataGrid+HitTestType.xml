@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid.HitTestType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control the user has clicked.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration to determine which part of the grid has been clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property of a <xref:System.Windows.Forms.DataGrid.HitTestInfo> returns a DataGrid.HitTestType. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> is created by invoking the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in a <xref:System.Windows.Forms.Control.MouseDown> event to return the <xref:System.Windows.Forms.DataGrid.HitTestInfo>. The row, column, and part of the grid are then printed.  
-  
- [!code-cs[Classic DataGrid.HitTestType Example#1](~/add/codesnippet/csharp/t-system.windows.forms.d_129_1.cs)]
- [!code-vb[Classic DataGrid.HitTestType Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_129_1.vb)]
- [!code-cpp[Classic DataGrid.HitTestType Example#1](~/add/codesnippet/cpp/t-system.windows.forms.d_129_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Caption">
@@ -43,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The caption of the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cell">
@@ -60,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A cell in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnHeader">
@@ -77,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A column header in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnResize">
@@ -94,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column border, which is the line between column headers. It can be dragged to resize a column's width.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -111,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The background area, visible when the control contains no table, few rows, or when a table is scrolled to its bottom.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParentRows">
@@ -128,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parent row section of the <see cref="T:System.Windows.Forms.DataGrid" /> control. The parent row displays information from or about the parent table of the currently displayed child table, such as the name of the parent table, column names and values of the parent record.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowHeader">
@@ -145,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A row header in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowResize">
@@ -162,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row border, which is the line between grid row headers. It can be dragged to resize a row's height.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

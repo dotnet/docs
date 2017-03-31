@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.CustomProviderDataAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a string of custom data to the provider for a profile property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomProviderDataAttribute class is used to supply a string of data with a profile property to a custom profile provider. The custom data string can be set to any string value and is set using the `customProviderData` attribute of the  configuration element for adding profile properties. If the `customProviderData` attribute is set, then the value is placed in the <xref:System.Configuration.SettingsProperty.Attributes%2A> collection for the property and is indexed by the name "CustomProviderData."  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,25 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="customProviderData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="customProviderData">The string of custom data to supply to the provider.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Web.Profile.CustomProviderDataAttribute" /> class and specifies a string of custom data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Profile.CustomProviderDataAttribute> class is used to supply a string of data with a profile property to a custom profile provider. The custom data string can be set to any string value and is set using the `customProviderData` attribute of the  configuration element for adding profile properties. If the `customProviderData` attribute is set, then the value is placed in the <xref:System.Configuration.SettingsProperty.Attributes%2A> collection for the property and is indexed by the name "CustomProviderData."  
-  
- This constructor is used the .NET Framework and is not intended to be called from application code.  
-  
- ]]></format>
-        </remarks>
+        <param name="customProviderData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProviderData">
@@ -63,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string of custom data for the profile property provider.</summary>
-        <value>A string of custom data for the profile property provider. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomProviderData property value is set using the `customProviderData` attribute of the  configuration element for adding profile properties. The CustomProviderData property can be set to any string value to be used by the profile provider for the property. If the `customProviderData` attribute is set, then the value is placed in the <xref:System.Configuration.SettingsProperty.Attributes%2A> collection for the property and is indexed by the name "CustomProviderData."  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -89,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,17 +70,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="System.Web.Profile.CustomProviderDataAttribute.CustomProviderData%2A" /> property is set to the default value.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Web.Profile.CustomProviderDataAttribute.CustomProviderData%2A" /> property is set to the default value; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for the <xref:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData%2A> property is `null`, or an empty string for profile properties of type `String`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,8 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -16,32 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies additional event schema information for an event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you apply this attribute to an ETW event method defined on an <xref:System.Diagnostics.Tracing.EventSource>-derived class, you must call the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method on the base class, passing the event ID, followed by the same arguments as the defined method is passed. You should follow the pattern shown in the following examples.  
-  
-   
-  
-## Examples  
- The following example shows how to use the EventAttribute class to define a variety of events. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#5](~/add/codesnippet/visualbasic/t-system.diagnostics.tra_6_1.vb)]
- [!code-cs[ETWTrace#5](~/add/codesnippet/csharp/t-system.diagnostics.tra_6_1.cs)]  
-  
- [!code-vb[ETWTrace#6](~/add/codesnippet/visualbasic/t-system.diagnostics.tra_6_2.vb)]
- [!code-cs[ETWTrace#6](~/add/codesnippet/csharp/t-system.diagnostics.tra_6_2.cs)]  
-  
- [!code-vb[ETWTrace#7](~/add/codesnippet/visualbasic/t-system.diagnostics.tra_6_3.vb)]
- [!code-cs[ETWTrace#7](~/add/codesnippet/csharp/t-system.diagnostics.tra_6_3.cs)]  
-  
- [!code-vb[ETWTrace#8](~/add/codesnippet/visualbasic/t-system.diagnostics.tra_6_4.vb)]
- [!code-cs[ETWTrace#8](~/add/codesnippet/csharp/t-system.diagnostics.tra_6_4.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,29 +38,28 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventAttribute.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="eventId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="eventId">The event identifier for the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.EventAttribute" /> class with the specified event identifier.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the EventAttribute constructor to specify events. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#1](~/add/codesnippet/visualbasic/m-system.diagnostics.tra_27_1.vb)]
- [!code-cs[ETWTrace#1](~/add/codesnippet/csharp/m-system.diagnostics.tra_27_1.cs)]  
-  
- [!code-vb[ETWTrace#2](~/add/codesnippet/visualbasic/m-system.diagnostics.tra_27_2.vb)]
- [!code-cs[ETWTrace#2](~/add/codesnippet/csharp/m-system.diagnostics.tra_27_2.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="eventId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivityOptions">
@@ -81,15 +68,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.ActivityOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the behavior of the start and stop events of an activity. An activity is the region of time in an app between the start and the stop.</summary>
-        <value>Returns <see cref="T:System.Diagnostics.Tracing.EventActivityOptions" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,15 +96,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an additional event log where the event should be written.</summary>
-        <value>An additional event log where the event should be written.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,23 +124,28 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.EventId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the identifier for the event.</summary>
-        <value>The event identifier. This value should be between 0 and 65535.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- EventId should be greater than 0 or less than 65535 or errors can occur in a tracing operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -142,35 +154,28 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the keywords for the event.</summary>
-        <value>A bitwise combination of the enumeration values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Keywords property to define event keywords. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#3](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_5_1.vb)]
- [!code-cs[ETWTrace#3](~/add/codesnippet/csharp/p-system.diagnostics.tra_5_1.cs)]  
-  
- [!code-vb[ETWTrace#5](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_5_2.vb)]
- [!code-cs[ETWTrace#5](~/add/codesnippet/csharp/p-system.diagnostics.tra_5_2.cs)]  
-  
- [!code-vb[ETWTrace#6](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_5_3.vb)]
- [!code-cs[ETWTrace#6](~/add/codesnippet/csharp/p-system.diagnostics.tra_5_3.cs)]  
-  
- [!code-vb[ETWTrace#7](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_5_4.vb)]
- [!code-cs[ETWTrace#7](~/add/codesnippet/csharp/p-system.diagnostics.tra_5_4.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -179,32 +184,28 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the level for the event.</summary>
-        <value>One of the enumeration values that specifies the level for the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Level property to specify event levels. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#5](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_14_1.vb)]
- [!code-cs[ETWTrace#5](~/add/codesnippet/csharp/p-system.diagnostics.tra_14_1.cs)]  
-  
- [!code-vb[ETWTrace#6](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_14_2.vb)]
- [!code-cs[ETWTrace#6](~/add/codesnippet/csharp/p-system.diagnostics.tra_14_2.cs)]  
-  
- [!code-vb[ETWTrace#11](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_14_3.vb)]
- [!code-cs[ETWTrace#11](~/add/codesnippet/csharp/p-system.diagnostics.tra_14_3.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -213,43 +214,28 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the message for the event.</summary>
-        <value>The message for the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use standard .NET Framework substitution operators (for example, {1}) in the string). They will be replaced with the string representation of the corresponding part of the event payload.  
-  
-```  
-[Event(1, Message = "Application Falure: {0}", Level = EventLevel.Error, Keywords = Keywords.Diagnostic)]  
-        public void Failure(string message) { WriteEvent(1, message); }  
-  
-```  
-  
-   
-  
-## Examples  
- The following example shows how to use the Message property to specify event messages. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#5](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_2_1.vb)]
- [!code-cs[ETWTrace#5](~/add/codesnippet/csharp/p-system.diagnostics.tra_2_1.cs)]  
-  
- [!code-vb[ETWTrace#6](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_2_2.vb)]
- [!code-cs[ETWTrace#6](~/add/codesnippet/csharp/p-system.diagnostics.tra_2_2.cs)]  
-  
- [!code-vb[ETWTrace#7](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_2_3.vb)]
- [!code-cs[ETWTrace#7](~/add/codesnippet/csharp/p-system.diagnostics.tra_2_3.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Opcode">
@@ -258,32 +244,28 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Opcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the operation code for the event.</summary>
-        <value>One of the enumeration values that specifies the operation code.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Opcode property to specify operation codes. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#8](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_15_1.vb)]
- [!code-cs[ETWTrace#8](~/add/codesnippet/csharp/p-system.diagnostics.tra_15_1.cs)]  
-  
- [!code-vb[ETWTrace#9](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_15_2.vb)]
- [!code-cs[ETWTrace#9](~/add/codesnippet/csharp/p-system.diagnostics.tra_15_2.cs)]  
-  
- [!code-vb[ETWTrace#10](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_15_3.vb)]
- [!code-cs[ETWTrace#10](~/add/codesnippet/csharp/p-system.diagnostics.tra_15_3.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tags">
@@ -292,15 +274,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Tags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="T:System.Diagnostics.Tracing.EventTags" /> value for this <see cref="T:System.Diagnostics.Tracing.EventAttribute" /> object. An event tag is a user-defined value that is passed through when the event is logged.</summary>
-        <value>Returns the <see cref="T:System.Diagnostics.Tracing.EventTags" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,32 +302,28 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventTask</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the task for the event.</summary>
-        <value>The task for the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Task property to define event tasks. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-vb[ETWTrace#4](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_3_1.vb)]
- [!code-cs[ETWTrace#4](~/add/codesnippet/csharp/p-system.diagnostics.tra_3_1.cs)]  
-  
- [!code-vb[ETWTrace#8](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_3_2.vb)]
- [!code-cs[ETWTrace#8](~/add/codesnippet/csharp/p-system.diagnostics.tra_3_2.cs)]  
-  
- [!code-vb[ETWTrace#9](~/add/codesnippet/visualbasic/p-system.diagnostics.tra_3_3.vb)]
- [!code-cs[ETWTrace#9](~/add/codesnippet/csharp/p-system.diagnostics.tra_3_3.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -344,15 +332,27 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the version of the event.</summary>
-        <value>The version of the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

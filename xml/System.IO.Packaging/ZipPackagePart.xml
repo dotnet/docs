@@ -3,8 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ZipPackagePart extends System.IO.Packaging.PackagePart" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.ZipPackagePart" />
   <AssemblyInfo>
+    <AssemblyName>System.IO.Packaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +15,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a part that is stored in a <see cref="T:System.IO.Packaging.ZipPackage" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ZipPackagePart provides the derived <xref:System.IO.Packaging.PackagePart> implementation for parts that are stored in a <xref:System.IO.Packaging.ZipPackage>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetStreamCore">
@@ -29,16 +25,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mode" Type="System.IO.FileMode" />
-        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="streamFileMode" Type="System.IO.FileMode" />
+        <Parameter Name="streamFileAccess" Type="System.IO.FileAccess" />
       </Parameters>
       <Docs>
         <param name="mode">To be added.</param>

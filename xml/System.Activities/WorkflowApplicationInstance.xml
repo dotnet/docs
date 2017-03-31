@@ -11,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies information about a workflow application instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
-  
- [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
- Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)].  
-  
- [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
- Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
-  
- [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
- Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
-  
- [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
- Describes how to host multiple versions of a workflow on a single endpoint.  
-  
- [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
- This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
-  
- [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
- This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Abandon">
@@ -54,7 +29,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the state machine to transition to the abandoned state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +49,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The timeout for the abandon operation complete.</param>
-        <summary>Causes the state machine to transition to the abandoned state with the specified timeout value.</summary>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,10 +71,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
-        <param name="state">The user-defined state data.</param>
-        <summary>Begins an asynchronous abandon operation.</summary>
-        <returns>An asynchronous abandon operation.</returns>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,11 +96,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The timeout that contains the reason for the abandon operation.</param>
-        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
-        <param name="state">The user-defined state data.</param>
-        <summary>Begins an asynchronous abandon operation.</summary>
-        <returns>An asynchronous abandon operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,11 +121,10 @@
         <Parameter Name="activitiesBlockingUpdate" Type="System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="updateMap">Updates a map.</param>
-        <param name="activitiesBlockingUpdate">The activities blocking update.</param>
-        <summary>Returns a value that indicates whether the WorkflowApplicationInstance can apply update.</summary>
-        <returns>
-          <see langword="True" /> if the WorkflowApplicationInstance can apply update; otherwise, <see langword="false" />.</returns>
+        <param name="updateMap">To be added.</param>
+        <param name="activitiesBlockingUpdate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +141,8 @@
         <ReturnType>System.Activities.WorkflowIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the definition identity of the workflow.</summary>
-        <value>The definition identity of the workflow.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +162,8 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The IAsyncResult returned by a call to one of the BeginAbandon methods.</param>
-        <summary>Completes an asynchronous abandon operation.</summary>
+        <param name="asyncResult">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +180,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unique identifier of the workflow instance.</summary>
-        <value>The unique identifier of the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,8 +198,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceStore</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an object that provides access to the persisted state of the current instance of the workflow application.</summary>
-        <value>An object that provides access to the persisted state of the current instance of the workflow application.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

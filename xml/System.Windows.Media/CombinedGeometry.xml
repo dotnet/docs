@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.CombinedGeometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,38 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a 2-D geometric shape defined by the combination of two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that CombinedGeometry combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
-  
- Geometries can be combined in several ways: using a <xref:System.Windows.Media.GeometryGroup>, a CombinedGeometry, or the <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class.  
-  
--   A <xref:System.Windows.Media.GeometryGroup> creates a composite geometry from one or more <xref:System.Windows.Media.Geometry> objects.  
-  
--   A CombinedGeometry uses a specified boolean operation to combine the area described by two <xref:System.Windows.Media.Geometry> objects.  
-  
--   The static <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class behaves in exactly the same manner as the CombinedGeometry object.  
-  
- Careful thought should be involved when using a CombinedGeometry to perform a union as it can be very CPU-expensive. In most cases, a <xref:System.Windows.Media.GeometryGroup> or <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> will work better.  
-  
- Use a CombinedGeometry only when any of the following apply:  
-  
--   The geometric operation is not a union.  
-  
--   Either of the geometries have a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
-  
--   Time is not a concern, but space is (for instance, if the geometry is created once and then cached). Typically, CombinedGeometry produces smaller output than <xref:System.Windows.Media.PathGeometry.AddGeometry%2A>.  
-  
--   The resulting geometry will be stroked or used in a path animation and <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> does not provide the desired outline.  
-  
-## Freezable Features  
- A CombinedGeometry is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,9 +44,9 @@
         <Parameter Name="geometry2" Type="System.Windows.Media.Geometry" />
       </Parameters>
       <Docs>
-        <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
-        <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
+        <param name="geometry1">To be added.</param>
+        <param name="geometry2">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +57,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -99,10 +65,10 @@
         <Parameter Name="geometry2" Type="System.Windows.Media.Geometry" />
       </Parameters>
       <Docs>
-        <param name="geometryCombineMode">The method by which <c>geometry1</c> and <c>geometry2</c> are combined.</param>
-        <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
-        <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects and <see cref="System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A" />.</summary>
+        <param name="geometryCombineMode">To be added.</param>
+        <param name="geometry1">To be added.</param>
+        <param name="geometry2">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +79,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,11 +88,11 @@
         <Parameter Name="transform" Type="System.Windows.Media.Transform" />
       </Parameters>
       <Docs>
-        <param name="geometryCombineMode">The method by which <c>geometry1</c> and <c>geometry2</c> are combined.</param>
-        <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
-        <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
-        <param name="transform">The <see cref="System.Windows.Media.Geometry.Transform%2A" /> applied to the <see cref="T:System.Windows.Media.CombinedGeometry" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects, <see cref="System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A" />, and <see cref="System.Windows.Media.Geometry.Transform%2A" />.</summary>
+        <param name="geometryCombineMode">To be added.</param>
+        <param name="geometry1">To be added.</param>
+        <param name="geometry2">To be added.</param>
+        <param name="transform">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,23 +103,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Rect" /> that specifies the bounding box of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object.   **Note:** This method does not take any pens into account.</summary>
-        <value>The bounding box of this <see cref="T:System.Windows.Media.CombinedGeometry" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If animations are present, the base values of the <xref:System.Windows.Media.Geometry> object are used to calculate the bounding box.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -164,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,18 +128,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.CombinedGeometry" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -193,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,18 +147,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -222,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,31 +178,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Geometry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the first <see cref="T:System.Windows.Media.Geometry" /> object of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object.</summary>
-        <value>The first <see cref="T:System.Windows.Media.Geometry" /> object to combine.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
-  
-<a name="dependencyPropertyInfo_Geometry1"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.CombinedGeometry.Geometry1Property>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Geometry1Property">
@@ -276,14 +196,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.CombinedGeometry.Geometry1%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,31 +213,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Geometry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the second <see cref="T:System.Windows.Media.Geometry" /> object of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object.</summary>
-        <value>The second <see cref="T:System.Windows.Media.Geometry" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
-  
-<a name="dependencyPropertyInfo_Geometry2"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.CombinedGeometry.Geometry2Property>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Geometry2Property">
@@ -328,14 +231,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.CombinedGeometry.Geometry2%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,30 +248,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the method by which the two geometries (specified by the <see cref="System.Windows.Media.CombinedGeometry.Geometry1%2A" /> and <see cref="System.Windows.Media.CombinedGeometry.Geometry2%2A" /> properties) are combined.</summary>
-        <value>The method by which <see cref="System.Windows.Media.CombinedGeometry.Geometry1%2A" /> and <see cref="System.Windows.Media.CombinedGeometry.Geometry2%2A" /> are combined. The default value is <see cref="T:System.Windows.Media.GeometryCombineMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_GeometryCombineMode"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.CombinedGeometry.GeometryCombineModeProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GeometryCombineModeProperty">
@@ -379,14 +266,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,7 +283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,10 +293,10 @@
         <Parameter Name="type" Type="System.Windows.Media.ToleranceType" />
       </Parameters>
       <Docs>
-        <param name="tolerance">The computational tolerance of error.</param>
-        <param name="type">Specifies how the error tolerance will be interpreted.</param>
-        <summary>Gets the area of the filled region.</summary>
-        <returns>The area of the filled region of this combined geometry.</returns>
+        <param name="tolerance">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,7 +307,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,8 +314,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether this <see cref="T:System.Windows.Media.CombinedGeometry" /> object is empty.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.CombinedGeometry" /> is empty; otherwise, **false**.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +326,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,8 +333,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether this <see cref="T:System.Windows.Media.CombinedGeometry" /> object may have curved segments.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.CombinedGeometry" /> object may have curved segments; otherwise, **false**.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

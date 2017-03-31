@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceViewSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines a set of methods and properties used to examine a data source.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Classes that implement the <xref:System.Web.UI.Design.IDataSourceSchema> class are used by custom control designer components to provide lists of views in a data source for data-bound controls at design time. In a class that is derived from the <xref:System.Web.UI.Design.IDataSourceSchema>, use the <xref:System.Web.UI.Design.IDataSourceSchema.GetViews%2A> method to get an array of IDataSourceViewSchema objects.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetChildren">
@@ -27,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -35,16 +26,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array representing the child views contained in the current view.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects that represent the child views contained in the current view.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.XmlDocumentSchema> class implements the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. It uses its implementation of the GetChildren method to create an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -54,7 +38,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,16 +45,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array containing information about each field in the data source.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceFieldSchema" /> objects representing each of the fields in the data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.DataSetSchema> class implements the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface; its implementation of the <xref:System.Web.UI.Design.DataSetViewSchema.GetFields%2A> method returns an array of <xref:System.Web.UI.Design.DataSetFieldSchema> objects, each of which derives from the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -81,23 +57,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the view.</summary>
-        <value>The name of the view.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a <xref:System.Data.DataTable> object, this property corresponds to the <xref:System.Data.DataTable.TableName%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

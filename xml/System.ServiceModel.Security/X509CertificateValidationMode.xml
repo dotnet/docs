@@ -3,32 +3,16 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509CertificateValidationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509CertificateValidationMode" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>An enumeration that lists the ways of validating a certificate.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UEX509CertificateValidationMode#0](~/add/codesnippet/csharp/t-system.servicemodel.se_5_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ChainTrust">
@@ -37,19 +21,15 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate is valid if the chain builds to a certification authority in the trusted root store.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -58,19 +38,15 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user must plug in a custom <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> to validate the certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -79,19 +55,15 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No validation of the certificate is done.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PeerOrChainTrust">
@@ -100,19 +72,15 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate is valid if it is in the trusted people store, or if the chain builds to a certification authority in the trusted root store.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PeerTrust">
@@ -121,19 +89,15 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The certificate is valid if it is in the trusted people store.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

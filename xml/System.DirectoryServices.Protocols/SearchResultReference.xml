@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchResultReference" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The SearchResultReference class contains a single search reference returned by the server.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DirectoryControl[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Controls property contains an array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server in the search reference.</summary>
-        <value>An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server in the search reference.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Reference property contains an array of <see cref="T:System.Uri" /> objects returned by the server in the search reference.</summary>
-        <value>An array of <see cref="T:System.Uri" /> objects returned by the server in the search reference.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

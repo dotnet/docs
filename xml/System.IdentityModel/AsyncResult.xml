@@ -18,17 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>An abstract base class that implements the <see cref="T:System.IAsyncResult" /> interface. Serves as a base class from which to derive <see cref="T:System.IAsyncResult" /> objects that can be used for common asynchronous programming scenarios.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information see the <xref:System.IAsyncResult?displayProperty=fullName> interface.  
-  
- The <xref:System.IdentityModel.TypedAsyncResult%601> class derives from AsyncResult.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Called from constructors in derived classes to initialize an instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class that does not have a callback delegate or  a state object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +50,8 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">A user-defined object that qualifies or contains information about an asynchronous operation.</param>
-        <summary>Called from constructors in derived classes to initialize an instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class that does not have a callback delegate but does have  a state object.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +69,9 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">The method to be called when the asynchronous operation completes.</param>
-        <param name="state">A user-defined object that qualifies or contains information about an asynchronous operation.</param>
-        <summary>Called from constructors in derived classes to initialize an instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class that has a callback delegate and  a state object.</summary>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,16 +88,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a user-defined object that qualifies or contains information about an asynchronous operation.</summary>
-        <value>A user-defined object that qualifies or contains information about an asynchronous operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information see the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AsyncWaitHandle">
@@ -122,16 +106,9 @@
         <ReturnType>System.Threading.WaitHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Threading.WaitHandle" /> that is used to wait for an asynchronous operation to complete.</summary>
-        <value>A <see cref="T:System.Threading.WaitHandle" /> that is used to wait for an asynchronous operation to complete.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information see the <xref:System.IAsyncResult.AsyncWaitHandle%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -150,9 +127,8 @@
         <Parameter Name="completedSynchronously" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="completedSynchronously">
-          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise <see langword="false" />.</param>
-        <summary>Call this version of complete when your asynchronous operation is complete and no exception was encountered. It updates the state of the operation and notifies the callback.</summary>
+        <param name="completedSynchronously">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,10 +149,9 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="completedSynchronously">
-          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise <see langword="false" />.</param>
-        <param name="exception">The exception that occurred during the processing of the asynchronous operation.</param>
-        <summary>Call this version of complete if you raise an exception during processing. In addition to notifying the callback, it captures the exception and stores it to be thrown during the call to the <see cref="System.IdentityModel.AsyncResult.End%2A" /> method.</summary>
+        <param name="completedSynchronously">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,17 +168,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the asynchronous operation completed synchronously.</summary>
-        <value>
-          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information see the <xref:System.IAsyncResult.CompletedSynchronously%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -220,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the current instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,9 +207,8 @@
         <Parameter Name="isExplicitDispose" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isExplicitDispose">
-          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources. <see langword="true" /> indicates that this is an explicit call to Dispose.</param>
-        <summary>Called by the <see cref="M:System.IdentityModel.AsyncResult.Dispose" /> and <see cref="System.IdentityModel.AsyncResult.Finalize%2A" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class.</summary>
+        <param name="isExplicitDispose">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +228,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> representing the status of the asynchronous operation.</param>
-        <summary>Call this method when the <c>End</c> function for the asynchronous operation is complete. It ensures that the asynchronous operation is complete, and does some common validation.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +247,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows the <see cref="T:System.IdentityModel.AsyncResult" /> object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,9 +264,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the asynchronous operation has completed.</summary>
-        <value>
-          <see langword="true" /> if the operation is complete; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

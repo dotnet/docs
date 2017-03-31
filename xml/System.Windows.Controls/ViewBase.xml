@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ViewBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the base class for views that define the appearance of data in a <see cref="T:System.Windows.Controls.ListView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.GridView> view mode is derived from the ViewBase class. You typically use a <xref:System.Windows.Controls.GridView> with the <xref:System.Windows.Controls.ListView> control to lay out data in columns. You can also use the ViewBase class to create custom view modes for a <xref:System.Windows.Controls.ListView>.  
-  
- The <xref:System.Windows.Controls.ListView.View%2A> property defines the view mode that the <xref:System.Windows.Controls.ListView> control uses.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ViewBase" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,8 +46,8 @@
         <Parameter Name="item" Type="System.Windows.Controls.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Controls.ListViewItem" /> to remove settings from.</param>
-        <summary>Removes all bindings and styling that are set for an item.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,25 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that is associated with the style for the view mode.</summary>
-        <value>The style to use for the view mode. The default value is the style for the <see cref="T:System.Windows.Controls.ListBox" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is not overridden by a derived class, the style for the <xref:System.Windows.Controls.ListBox> control is used as the default style.  
-  
- Use this property to set the style for the <xref:System.Windows.Controls.ListView>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationPeer">
@@ -98,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,17 +85,10 @@
         <Parameter Name="parent" Type="System.Windows.Controls.ListView" />
       </Parameters>
       <Docs>
-        <param name="parent">The <see cref="T:System.Windows.Controls.ListView" /> control to use to create the <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</param>
-        <summary>Is called when a <see cref="T:System.Windows.Controls.ListView" /> control creates a <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> for its <see cref="System.Windows.Controls.ListView.View%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.IViewAutomationPeer" /> interface that implements the <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> for a custom <see cref="System.Windows.Controls.ListView.View%2A" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Automation.Peers.ListViewAutomationPeer> first uses the properties and <xref:System.Windows.Automation.AutomationPattern> objects that are implemented by the specified view, before using the default properties and patterns that are defined for a <xref:System.Windows.Controls.ListView> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemContainerDefaultStyleKey">
@@ -128,23 +98,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style to use for the items in the view mode.</summary>
-        <value>The style of a <see cref="T:System.Windows.Controls.ListViewItem" />. The default value is the style for the <see cref="T:System.Windows.Controls.ListBoxItem" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to set the style for a <xref:System.Windows.Controls.ListViewItem>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareItem">
@@ -154,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,8 +125,8 @@
         <Parameter Name="item" Type="System.Windows.Controls.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="item">The item to prepare for display.</param>
-        <summary>Prepares an item in the view for display, by setting bindings and styles.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

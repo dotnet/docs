@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a callout annotation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A callout annotation is the only annotation that draws a connection between the annotation position and the anchor point. This class can also display text and automatically calculate its required size.  
-  
- Different callout styles are supported.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +48,8 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the annotation position alignment to the anchor point.</summary>
-        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the alignment of the annotation to the anchor point.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,16 +74,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset that the X-position of the annotation has from the anchor point.</summary>
-        <value>A <see langword="double" /> value that represents the offset of the annotation's X-position from the anchor point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorX%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.X%2A> property must be set to <xref:System.Double.NaN>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorOffsetY">
@@ -116,16 +100,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset that the Y-position of the annotation has from the anchor point.</summary>
-        <value>A <see langword="double" /> value that represents the offset of the annotation's Y-position from the anchor point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorY%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.Y%2A> property must be set to <xref:System.Double.NaN>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
@@ -155,16 +132,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the annotation type name. For internal use, should not be used.</summary>
-        <value>The annotation type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For internal use, should not be used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -197,8 +167,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the annotation.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> enumeration value used for the background of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,16 +199,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the annotation background gradient style.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration value used to draw the annotation background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two colors are used to draw the gradient, and are set with the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackSecondaryColor%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -268,16 +231,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background hatch style of the annotation.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the annotation background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two colors are used to draw the hatching, and are set with the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackSecondaryColor%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -310,16 +266,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the secondary color for the annotation background.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> enumeration value used in conjunction with a primary color to draw the annotation background with hatching or gradient fill.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This color is used with the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackColor%2A> property when the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.BackGradientStyle%2A> properties are used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutAnchorCap">
@@ -343,16 +292,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style of the callout line anchor cap.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> enumeration value that represents the style to use for a callout line anchor cap.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CalloutAnchorCap property sets the style of the anchor cap for the line that connects the annotation with the anchor point. This property is only applicable when a <xref:System.Windows.Forms.DataVisualization.Charting.CalloutStyle> or <xref:System.Windows.Forms.DataVisualization.Charting.CalloutStyle> callout style is used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutStyle">
@@ -379,8 +321,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CalloutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the annotation callout style.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CalloutStyle" /> enumeration value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -411,8 +353,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the annotation line color.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,8 +379,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the annotation line style.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value used to draw the annotation line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,8 +405,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line width of the annotation.</summary>
-        <value>An <see langword="integer" /> value that represents the annotation line width, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

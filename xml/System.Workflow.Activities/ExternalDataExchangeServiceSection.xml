@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExternalDataExchangeServiceSection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a configuration section that allows you to specify, in a configuration file, a set of services to be added to an instance of <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Workflow.Activities.ExternalDataExchangeServiceSection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -65,8 +53,8 @@
         <ReturnType>System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of services to be added to an instance of <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" />.</summary>
-        <value>A collection of service elements.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

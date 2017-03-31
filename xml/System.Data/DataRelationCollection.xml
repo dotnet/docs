@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRelationCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.InternalDataCollectionBase</BaseTypeName>
@@ -19,26 +23,12 @@
       <AttributeName>System.ComponentModel.DefaultProperty("Table")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataRelationCollectionEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataRelationCollectionEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of <see cref="T:System.Data.DataRelation" /> objects for this <see cref="T:System.Data.DataSet" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A DataRelationCollection object enables navigation between related parent/child <xref:System.Data.DataTable> objects.  
-  
- You create a DataRelationCollection object by defining it as a property of either the <xref:System.Data.DataSet> or the <xref:System.Data.DataTable>, instead of by directly using a constructor. (Use the <xref:System.Data.DataSet.Relations%2A> property of the <xref:System.Data.DataSet>, or the <xref:System.Data.DataTable.ParentRelations%2A> property of the <xref:System.Data.DataTable>.)  
-  
- To access the collection, use the <xref:System.Data.DataSet.Relations%2A> property of the <xref:System.Data.DataSet> object.  
-  
- As soon as the collection exists you can manage the objects it contains by using methods such as <xref:System.Data.DataRelationCollection.Add%2A>, <xref:System.Data.DataRelationCollection.Clear%2A>, and <xref:System.Data.DataRelationCollection.Remove%2A>.  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +38,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRelationCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +58,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -74,22 +72,9 @@
         <Parameter Name="relation" Type="System.Data.DataRelation" />
       </Parameters>
       <Docs>
-        <param name="relation">The <see langword="DataRelation" /> to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Data.DataRelation" /> to the <see cref="T:System.Data.DataRelationCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the relation is successfully added to the collection, the <xref:System.Data.DataRelationCollection.CollectionChanged> event occurs.  
-  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="relation" /> parameter is a null value.</exception>
-        <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
-        <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the specified name. (The comparison is not case sensitive.)</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <param name="relation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -99,8 +84,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -110,18 +99,11 @@
         <Parameter Name="childColumn" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="parentColumn">The parent column of the relation.</param>
-        <param name="childColumn">The child column of the relation.</param>
-        <summary>Creates a <see cref="T:System.Data.DataRelation" /> with a specified parent and child column, and adds it to the collection.</summary>
-        <returns>The created relation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist.  
-  
- ]]></format>
-        </remarks>
+        <param name="parentColumn">To be added.</param>
+        <param name="childColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -131,8 +113,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -142,22 +128,11 @@
         <Parameter Name="childColumns" Type="System.Data.DataColumn[]" />
       </Parameters>
       <Docs>
-        <param name="parentColumns">The parent columns of the relation.</param>
-        <param name="childColumns">The child columns of the relation.</param>
-        <summary>Creates a <see cref="T:System.Data.DataRelation" /> with the specified parent and child columns, and adds it to the collection.</summary>
-        <returns>The created relation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="relation" /> argument is a null value.</exception>
-        <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
-        <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <param name="parentColumns">To be added.</param>
+        <param name="childColumns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -167,8 +142,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -179,19 +158,12 @@
         <Parameter Name="childColumn" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the relation.</param>
-        <param name="parentColumn">The parent column of the relation.</param>
-        <param name="childColumn">The child column of the relation.</param>
-        <summary>Creates a <see cref="T:System.Data.DataRelation" /> with the specified name, and parent and child columns, and adds it to the collection.</summary>
-        <returns>The created relation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="parentColumn">To be added.</param>
+        <param name="childColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -201,8 +173,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -213,31 +189,12 @@
         <Parameter Name="childColumns" Type="System.Data.DataColumn[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="DataRelation" /> to create.</param>
-        <param name="parentColumns">An array of parent <see cref="T:System.Data.DataColumn" /> objects.</param>
-        <param name="childColumns">An array of child <see langword="DataColumn" /> objects.</param>
-        <summary>Creates a <see cref="T:System.Data.DataRelation" /> with the specified name and arrays of parent and child columns, and adds it to the collection.</summary>
-        <returns>The created <see langword="DataRelation" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the relation is successfully added to the collection, the <xref:System.Data.DataRelationCollection.CollectionChanged> event occurs.  
-  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist.  
-  
-   
-  
-## Examples  
- [!code-vb[Classic WebData DataRelationCollection.Add1 Example#1](~/add/codesnippet/visualbasic/6b73537f-f1c2-4f94-8352-_1.vb)]
- [!code-cs[Classic WebData DataRelationCollection.Add1 Example#1](~/add/codesnippet/csharp/6b73537f-f1c2-4f94-8352-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The relation name is a null value.</exception>
-        <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
-        <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <param name="name">To be added.</param>
+        <param name="parentColumns">To be added.</param>
+        <param name="childColumns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -247,8 +204,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -260,21 +221,13 @@
         <Parameter Name="createConstraints" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the relation.</param>
-        <param name="parentColumn">The parent column of the relation.</param>
-        <param name="childColumn">The child column of the relation.</param>
-        <param name="createConstraints">
-          <see langword="true" /> to create constraints; otherwise <see langword="false" />. (The default is <see langword="true" />).</param>
-        <summary>Creates a <see cref="T:System.Data.DataRelation" /> with the specified name, parent and child columns, with optional constraints according to the value of the <paramref name="createConstraints" /> parameter, and adds it to the collection.</summary>
-        <returns>The created relation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist. To prevent this, you can set `createConstraints` to false.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="parentColumn">To be added.</param>
+        <param name="childColumn">To be added.</param>
+        <param name="createConstraints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -284,8 +237,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -297,25 +254,13 @@
         <Parameter Name="createConstraints" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="DataRelation" /> to create.</param>
-        <param name="parentColumns">An array of parent <see cref="T:System.Data.DataColumn" /> objects.</param>
-        <param name="childColumns">An array of child <see langword="DataColumn" /> objects.</param>
-        <param name="createConstraints">
-          <see langword="true" /> to create a constraint; otherwise <see langword="false" />.</param>
-        <summary>Creates a <see cref="T:System.Data.DataRelation" /> with the specified name, arrays of parent and child columns, and value specifying whether to create a constraint, and adds it to the collection.</summary>
-        <returns>The created relation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Data.DataRelation> object is added to the collection, <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects are created by default if they do not already exist.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The relation name is a null value.</exception>
-        <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
-        <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The relation has entered an invalid state since it was created.</exception>
+        <param name="name">To be added.</param>
+        <param name="parentColumns">To be added.</param>
+        <param name="childColumns">To be added.</param>
+        <param name="createConstraints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCore">
@@ -325,8 +270,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -335,12 +284,9 @@
         <Parameter Name="relation" Type="System.Data.DataRelation" />
       </Parameters>
       <Docs>
-        <param name="relation">The relation to check.</param>
-        <summary>Performs verification on the table.</summary>
+        <param name="relation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The relation is null.</exception>
-        <exception cref="T:System.ArgumentException">The relation already belongs to this collection, or it belongs to another collection.</exception>
-        <exception cref="T:System.Data.DuplicateNameException">The collection already has a relation with the same name. (The comparison is not case sensitive.)</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -350,8 +296,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -360,22 +310,9 @@
         <Parameter Name="relations" Type="System.Data.DataRelation[]" />
       </Parameters>
       <Docs>
-        <param name="relations">The array of <see cref="T:System.Data.DataRelation" /> objects to add to the collection.</param>
-        <summary>Copies the elements of the specified <see cref="T:System.Data.DataRelation" /> array to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Data.DataSet.BeginInit%2A> has been called, `AddRange` does not add any objects to the collection until <xref:System.Data.DataSet.EndInit%2A> is called. At the time that `EndInit` is called, the collection will be populated with the items specified in the most recent call to `AddRange`. If `AddRange` is called multiple times within a `BeginInit` / `EndInit` sequence, only those items specified in the most recent call to `AddRange` are added.  
-  
-   
-  
-## Examples  
- [!code-cs[Classic WebData DataRelationCollection.AddRange Example#1](~/add/codesnippet/csharp/m-system.data.datarelati_0_1.cs)]
- [!code-vb[Classic WebData DataRelationCollection.AddRange Example#1](~/add/codesnippet/visualbasic/m-system.data.datarelati_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="relations">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRemove">
@@ -385,8 +322,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -395,10 +336,9 @@
         <Parameter Name="relation" Type="System.Data.DataRelation" />
       </Parameters>
       <Docs>
-        <param name="relation">The relation to perform the check against.</param>
-        <summary>Verifies whether the specified <see cref="T:System.Data.DataRelation" /> can be removed from the collection.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.DataRelation" /> can be removed; otherwise, <see langword="false" />.</returns>
+        <param name="relation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,15 +349,19 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection of any relations.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,14 +372,18 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the collection has changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +394,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -456,10 +408,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the relation to find.</param>
-        <summary>Verifies whether a <see cref="T:System.Data.DataRelation" /> with the specific name (case insensitive) exists in the collection.</summary>
-        <returns>
-          <see langword="true" />, if a relation with the specified name exists; otherwise <see langword="false" />.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,8 +421,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -481,9 +436,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array of <see cref="T:System.Data.DataRelation" /> objects to copy the collection to.</param>
-        <param name="index">The index to start from.</param>
-        <summary>Copies the collection of <see cref="T:System.Data.DataRelation" /> objects starting at the specified index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,16 +449,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataSet</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
-        <returns>The referenced DataSet.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,8 +473,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -524,9 +487,9 @@
         <Parameter Name="relation" Type="System.Data.DataRelation" />
       </Parameters>
       <Docs>
-        <param name="relation">The relation to search for.</param>
-        <summary>Gets the index of the specified <see cref="T:System.Data.DataRelation" /> object.</summary>
-        <returns>The 0-based index of the relation, or -1 if the relation is not found in the collection.</returns>
+        <param name="relation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,8 +500,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -547,9 +514,9 @@
         <Parameter Name="relationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relationName">The name of the relation to find.</param>
-        <summary>Gets the index of the <see cref="T:System.Data.DataRelation" /> specified by name.</summary>
-        <returns>The zero-based index of the relation with the specified name, or -1 if the relation does not exist in the collection.</returns>
+        <param name="relationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,8 +527,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -570,11 +541,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index to find.</param>
-        <summary>Gets the <see cref="T:System.Data.DataRelation" /> object at the specified index.</summary>
-        <value>The <see cref="T:System.Data.DataRelation" />, or a null value if the specified <see cref="T:System.Data.DataRelation" /> does not exist.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -584,8 +554,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRelation</ReturnType>
@@ -594,9 +568,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the relation to find.</param>
-        <summary>Gets the <see cref="T:System.Data.DataRelation" /> object specified by name.</summary>
-        <value>The named <see cref="T:System.Data.DataRelation" />, or a null value if the specified <see cref="T:System.Data.DataRelation" /> does not exist.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,8 +581,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -617,16 +595,9 @@
         <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="ccevent">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Data.DataRelationCollection.CollectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- ]]></format>
-        </remarks>
+        <param name="ccevent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanging">
@@ -636,8 +607,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -646,16 +621,9 @@
         <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="ccevent">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Data.DataRelationCollection.CollectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- ]]></format>
-        </remarks>
+        <param name="ccevent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -665,8 +633,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -675,18 +647,9 @@
         <Parameter Name="relation" Type="System.Data.DataRelation" />
       </Parameters>
       <Docs>
-        <param name="relation">The relation to remove.</param>
-        <summary>Removes the specified relation from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataRelationCollection.CollectionChanged> event is fired if the remove operation succeeds. Note that removing the relation does not remove any associated constraint objects.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The relation is a null value.</exception>
-        <exception cref="T:System.ArgumentException">The relation does not belong to the collection.</exception>
+        <param name="relation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -696,8 +659,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -706,17 +673,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the relation to remove.</param>
-        <summary>Removes the relation with the specified name from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataRelationCollection.CollectionChanged> event is fired if the remove operation succeeds.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The collection does not have a relation with the specified name.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -726,8 +685,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -736,17 +699,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the relation to remove.</param>
-        <summary>Removes the relation at the specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataRelationCollection.CollectionChanged> event is fired if the remove operation succeeds.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The collection does not have a relation at the specified index.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveCore">
@@ -756,8 +711,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -766,11 +725,9 @@
         <Parameter Name="relation" Type="System.Data.DataRelation" />
       </Parameters>
       <Docs>
-        <param name="relation">The <see langword="DataRelation" /> object to verify.</param>
-        <summary>Performs a verification on the specified <see cref="T:System.Data.DataRelation" /> object.</summary>
+        <param name="relation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The collection does not have a relation at the specified index.</exception>
-        <exception cref="T:System.ArgumentException">The specified relation does not belong to this collection, or it belongs to another collection.</exception>
       </Docs>
     </Member>
   </Members>

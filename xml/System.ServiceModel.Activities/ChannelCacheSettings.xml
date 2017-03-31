@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents settings that define operational characteristics of a channel cache.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a ChannelCacheSettings instance.  
-  
- [!code-cs[ChannelCache#0](~/add/codesnippet/csharp/t-system.servicemodel.ac_22_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,17 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.ChannelCacheSettings" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance.  
-  
- [!code-cs[ChannelCache#0](~/add/codesnippet/csharp/m-system.servicemodel.ac_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IdleTimeout">
@@ -61,18 +43,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum interval of time for which the object can remain idle in the cache before being disposed.</summary>
-        <value>An interval of time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the IdleTimeout property.  
-  
- [!code-cs[ChannelCache#0](~/add/codesnippet/csharp/p-system.servicemodel.ac_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LeaseTimeout">
@@ -88,18 +61,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the interval of time after which an object is removed from the cache.</summary>
-        <value>An interval of time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the LeaseTimeout property.  
-  
- [!code-cs[ChannelCache#0](~/add/codesnippet/csharp/p-system.servicemodel.ac_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemsInCache">
@@ -115,18 +79,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum number of objects that can be in the cache.</summary>
-        <value>A maximum number of objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the MaxItemsInCache property.  
-  
- [!code-cs[ChannelCache#0](~/add/codesnippet/csharp/p-system.servicemodel.ac_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

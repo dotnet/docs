@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an evaluated design-time property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,16 +42,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the evaluated property value.</summary>
-        <value>Returns the evaluated property value, which is never null.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cannot be set directly; only the unevaluated value can be set. The evaluated value contains no character escape sequences.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnvironmentProperty">
@@ -72,8 +65,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the property originated from the environment variables.</summary>
-        <value>True if the property originated from an environment variable; false otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +88,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the property is a global property.</summary>
-        <value>True if the property is a global property; false otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +106,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the property originates from an imported file.</summary>
-        <value>Returns true if the property originates from an imported file and not from an environment variable, a global property, or a reserved property. Returns false otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +129,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the property is a reserved property, for example 'MSBuildProjectFile'.</summary>
-        <value>Returns true if the property is a reserved property; false otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +155,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the property.</summary>
-        <value>Returns the name of the property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,18 +178,9 @@
         <ReturnType>Microsoft.Build.Evaluation.ProjectProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last property that was overridden by this property during evaluation.</summary>
-        <value>Returns the last property whose value was overridden by this property during evaluation. Returns null if the property has not been overridden.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method searches for all properties with the same name that lie above in the logical project file, and whose conditions evaluate to true.  
-  
- If the project has not been reevaluated since the last modification, this value may be incorrect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Project">
@@ -220,8 +204,8 @@
         <ReturnType>Microsoft.Build.Evaluation.Project</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the project that contains this property.</summary>
-        <value>Returns the project that contains this property, which is never null.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +225,9 @@
         <Parameter Name="other" Type="Microsoft.Build.Evaluation.ProjectProperty" />
       </Parameters>
       <Docs>
-        <param name="other">The project property to be compared to</param>
-        <summary>Compares this project property with the given project property for equality.</summary>
-        <returns>Returns true if the project properties are equal; false otherwise.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,18 +249,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unevaluated property value.</summary>
-        <value>Returns the unevaluated property value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The setter method updates both the unevaluated value and the evaluated value, but does not affect anything else in the project until reevaluation.  
-  
- The containing project is marked as modified. Unevaluated values are assumed to contain escaped character sequences as needed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -300,8 +275,8 @@
         <ReturnType>Microsoft.Build.Construction.ProjectPropertyElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the associated property element. Backing XML property. Null only if this is a global, environment, or built-in property.</summary>
-        <value>Returns the associated property element. Return null if this is a global or reserved property, or originates from an environment variable.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

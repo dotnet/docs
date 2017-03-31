@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmSchemaErrorSeverity" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the severity level of the error.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EdmSchemaErrorSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An error indicates that a severe problem occurred and the schema cannot be used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EdmSchemaErrorSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A warning indicates that there are some problems in the schema but it is still usable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

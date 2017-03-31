@@ -25,32 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">The data type of the OutArgument(T).</typeparam>
-    <summary>A binding terminal that represents the flow of data out of an activity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An OutArgument(T) is used to flow data out of an activity. If the activity is the root activity of a workflow, then it is also used to flow data out of the workflow to the workflow host. In this example, a custom `Divide` activity that has two input arguments and one output argument is used as the root activity of a workflow. The host application passes two values into the workflow and then retrieves the result of the division after the workflow completes.  
-  
- [!code-cs[CFX_WorkflowInvokerExample#20](~/add/codesnippet/csharp/t-system.activities.outa_1.cs)]  
-  
- The `Divide` activity uses arguments to receive the input values and to provide the computed result values. The `Remainder` OutArgument(T) is used to pass out the remainder of the division, and the <xref:System.Activities.Activity%601.Result%2A> output argument provided by <xref:System.Activities.Activity%601> derived activities is used to pass out the quotient.  
-  
-> [!NOTE]
->  If your custom activity is derived from the generic <xref:System.Activities.CodeActivity%601> with an <xref:System.Int32> as its generic type argument, when you invoke the activity with the <xref:System.Activities.WorkflowInvoker> Invoke method, it returns an <xref:System.Int32> value. In Addition, the <xref:System.Activities.CodeActivity%601.Execute%2A?displayProperty=fullName> method will return an <xref:System.Int32> value instead of `void` and you do not need to set a return value.  
-  
- [!code-cs[CFX_WorkflowApplicationExample#120](~/add/codesnippet/csharp/t-system.activities.outa_2.cs)]  
-  
-   
-  
-## Examples  
- The following code sample demonstrates creating an OutArgument(T). This example is from the Formatter sample.  
-  
- [!code-cs[wfs_Formatter#1](~/add/codesnippet/csharp/formatterclient/program.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,17 +41,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initialize a new instance of the <see cref="System.Activities.OutArgument%601" /> class using default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating an <xref:System.Activities.OutArgument%601>. This example is from the Formatter sample.  
-  
- [!code-cs[wfs_Formatter#1](~/add/codesnippet/csharp/formatterclient/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,8 +58,8 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.OutArgument%601" /> class using the specified <see cref="System.Activities.Activity%601" />.</summary>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +76,8 @@
         <Parameter Name="delegateArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="delegateArgument">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.OutArgument%601" /> class using the specified <see cref="T:System.Activities.DelegateArgument" />.</summary>
+        <param name="delegateArgument">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +94,8 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.OutArgument%601" /> class using the specified <see cref="T:System.Activities.Variable" />.</summary>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +112,8 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.OutArgument%601" /> class using the specified expression.</summary>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +135,8 @@
         <ReturnType>System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="System.Activities.Activity%601" /> that represents the value of this <see cref="System.Activities.OutArgument%601" />.</summary>
-        <value>An activity that represents the value of the argument.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +156,9 @@
         <Parameter Name="delegateArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="delegateArgument">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.OutArgument%601" /> constructed using the specified <see cref="T:System.Activities.DelegateArgument" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="delegateArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +178,9 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument,</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.OutArgument%601" /> constructed using the specified <see cref="System.Activities.Activity%601" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +200,9 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.OutArgument%601" /> constructed using the specified <see cref="T:System.Activities.Variable" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,9 +222,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <summary>Gets the value of the <see cref="System.Activities.OutArgument%601" /> using the specified activity context.</summary>
-        <returns>The value of the argument.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,9 +244,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The activity context that contains the value of the variable.</param>
-        <summary>Gets the location of the value for the <see cref="System.Activities.OutArgument%601" />.</summary>
-        <returns>A reference to the location where the value of the argument is stored.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,9 +333,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <param name="value">The new value.</param>
-        <summary>Sets the value of the <see cref="System.Activities.OutArgument%601" /> using the specified activity context.</summary>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

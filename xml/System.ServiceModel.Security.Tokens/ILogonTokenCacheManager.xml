@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>This interface enables an application to clear the Windows token cache on demand.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Without this interface, there is no way to remove Windows tokens obtained by logging on with the user name and password supplied with the message from the Windows logon tokens cache. When an application needs to log off a user by providing a logoff operation on its contract, there is no way to remove all traces of the user from the system: the cached Windows token that represents the user is held in the memory until its time-to-live expires and the token is removed from the cache.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FlushLogonTokenCache">
@@ -27,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -35,15 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all tokens from the logon cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When implemented, this method will empty the cache.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveCachedLogonToken">
@@ -53,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,18 +46,10 @@
         <Parameter Name="username" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">The user name on the token to remove.</param>
-        <summary>Removes the specified token from the logon cache.</summary>
-        <returns>
-          <see langword="true" /> if the user's token was successfully removed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method, when implemented, removes the token identified by `username` from the cache.  
-  
- ]]></format>
-        </remarks>
+        <param name="username">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.UIElement.ManipulationDelta" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ManipulationDeltaEventArgs class contains data about changes in the position of a manipulation. The <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property contains the changes that occurred since the last <xref:System.Windows.UIElement.ManipulationDelta> event occurred. The <xref:System.Windows.Input.ManipulationDeltaEventArgs.CumulativeManipulation%2A> property contains the total changes that occurred for the current manipulation. You use one of those properties to transform the manipulated object.  
-  
- You can end a manipulation by calling the <xref:System.Windows.Input.ManipulationDeltaEventArgs.Complete%2A> method or force the manipulation into inertia by calling the <xref:System.Windows.Input.ManipulationDeltaEventArgs.StartInertia%2A> method.  
-  
-   
-  
-## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. The example also checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
-  
- [!code-cs[BasicManipulation#ManipulationDelta](~/add/codesnippet/csharp/basicmanipulation/mainwindow.xaml.cs#manipulationdelta)]
- [!code-vb[BasicManipulation#ManipulationDelta](~/add/codesnippet/visualbasic/basicmanipulation/mainwindow.xaml.vb#manipulationdelta)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
@@ -46,17 +29,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels the manipulation.</summary>
-        <returns>
-          <see langword="true" /> if the manipulation was successfully canceled; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the method succeeds, the default <xref:System.Windows.Input.TouchDevice> sends previous touch events as mouse down or mouse move events to the element and future manipulation events do not occur. Touch cannot be promoted to mouse events if the <xref:System.Windows.UIElement.ManipulationCompleted> event occurs during inertia.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -73,23 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Completes the manipulation without inertia.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can call the Complete method to end the manipulation. For example, when an object reaches the edge of a window, you can call Complete to prevent the object from going off the screen.  
-  
-   
-  
-## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
-  
- [!code-cs[BasicManipulation#ManipulationDelta](~/add/codesnippet/csharp/basicmanipulation/mainwindow.xaml.cs#manipulationdelta)]
- [!code-vb[BasicManipulation#ManipulationDelta](~/add/codesnippet/visualbasic/basicmanipulation/mainwindow.xaml.vb#manipulationdelta)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CumulativeManipulation">
@@ -105,16 +65,9 @@
         <ReturnType>System.Windows.Input.ManipulationDelta</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cumulated changes of the current manipulation.</summary>
-        <value>The cumulated changes of the current manipulation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CumulativeManipulation property contains the total changes that occurred for the current manipulation. You can use CumulativeManipulation to transform the manipulated object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeltaManipulation">
@@ -130,24 +83,9 @@
         <ReturnType>System.Windows.Input.ManipulationDelta</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the most recent changes of the current manipulation.</summary>
-        <value>The most recent changes of the current manipulation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DeltaManipulation property contains the changes that occurred since the last <xref:System.Windows.UIElement.ManipulationDelta> event occurred. You can use this property to transform the manipulated object.  
-  
-   
-  
-## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the DeltaManipulation property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
-  
- [!code-cs[BasicManipulation#ManipulationDelta](~/add/codesnippet/csharp/basicmanipulation/mainwindow.xaml.cs#manipulationdelta)]
- [!code-vb[BasicManipulation#ManipulationDelta](~/add/codesnippet/visualbasic/basicmanipulation/mainwindow.xaml.vb#manipulationdelta)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -186,25 +124,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="E:System.Windows.UIElement.ManipulationDelta" /> event occurs during inertia.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="E:System.Windows.UIElement.ManipulationDelta" /> event occurs during inertia; <see langword="false" /> if the event occurs while the user has contact with the <see cref="T:System.Windows.UIElement" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to determine whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurs during inertia or while the user has contact with the element that receives the <xref:System.Windows.UIElement.ManipulationDelta> event.  
-  
-   
-  
-## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
-  
- [!code-cs[BasicManipulation#ManipulationDelta](~/add/codesnippet/csharp/basicmanipulation/mainwindow.xaml.cs#manipulationdelta)]
- [!code-vb[BasicManipulation#ManipulationDelta](~/add/codesnippet/visualbasic/basicmanipulation/mainwindow.xaml.vb#manipulationdelta)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ManipulationContainer">
@@ -220,8 +142,8 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the container that defines the coordinates for the manipulation.</summary>
-        <value>The container that defines the coordinates for the manipulation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +160,8 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the point from which the manipulation originated.</summary>
-        <value>The point from which the manipulation originated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +178,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of objects that represents the touch contacts for the manipulation.</summary>
-        <value>A collection of objects that represents the touch contacts for the manipulation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,26 +199,9 @@
         <Parameter Name="unusedManipulation" Type="System.Windows.Input.ManipulationDelta" />
       </Parameters>
       <Docs>
-        <param name="unusedManipulation">The portion of the manipulation that represents moving beyond the boundary.</param>
-        <summary>Specifies that the manipulation has gone beyond certain boundaries.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ReportBoundaryFeedback method to indicate that an element has moved beyond a certain boundary.  For example, if a user moves an element outside of the bounds of a <xref:System.Windows.Window>, you can call this method to report that to the window.  When you call ReportBoundaryFeedback, the <xref:System.Windows.UIElement.ManipulationBoundaryFeedback> event occurs.  By default, the <xref:System.Windows.Window> subscribes to the <xref:System.Windows.UIElement.ManipulationBoundaryFeedback> event to provide visual feedback to the user that a boundary has been reached.  You can subscribe to <xref:System.Windows.UIElement.ManipulationBoundaryFeedback> to implement custom behavior.  
-  
-   
-  
-## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event that calls the ReportBoundaryFeedback method when the user moves the element over the edge of its container.  To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md) and replace the code in step 5 with this code.  
-  
- [!code-cs[BasicManipulation#ReportBoundaryFeedback](~/add/codesnippet/csharp/basicmanipulation/reportboundaryfeedbackexample.xaml.cs#reportboundaryfeedback)]
- [!code-vb[BasicManipulation#ReportBoundaryFeedback](~/add/codesnippet/visualbasic/basicmanipulation/reportboundaryfeedbackexample.xaml.vb#reportboundaryfeedback)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="unusedManipulation" /> is <see langword="null" />.</exception>
+        <param name="unusedManipulation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartInertia">
@@ -313,7 +218,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts inertia on the manipulation by ignoring subsequent contact movements and raising the <see cref="E:System.Windows.UIElement.ManipulationInertiaStarting" /> event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +235,8 @@
         <ReturnType>System.Windows.Input.ManipulationVelocities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rates of the most recent changes to the manipulation.</summary>
-        <value>The rates of the most recent changes to the manipulation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

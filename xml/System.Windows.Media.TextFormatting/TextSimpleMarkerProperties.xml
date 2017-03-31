@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides for a generic implementation of text marker properties.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A text marker is a symbol that is commonly used for bullets and auto-numbering. The following example shows all the different representations of a <xref:System.Windows.TextMarkerStyle>.  
-  
- When you create a TextSimpleMarkerProperties object, you can create a custom text marker that is associated with an enumerated value of <xref:System.Windows.TextMarkerStyle>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,11 +31,11 @@
         <Parameter Name="textParagraphProperties" Type="System.Windows.Media.TextFormatting.TextParagraphProperties" />
       </Parameters>
       <Docs>
-        <param name="style">An enumerated value of <see cref="T:System.Windows.TextMarkerStyle" />.</param>
-        <param name="offset">A <see cref="T:System.Double" /> that represents the distance from the start of the line to the end of the text marker symbol.</param>
-        <param name="autoNumberingIndex">An <see cref="T:System.Int32" /> value that represents the auto-numbering counter of counter-style text marker.</param>
-        <param name="textParagraphProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> value that represents the properties shared by every text character of the text marker.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" /> class.</summary>
+        <param name="style">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="autoNumberingIndex">To be added.</param>
+        <param name="textParagraphProperties">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,15 +46,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the distance from the start of the line to the end of the text marker symbol.</summary>
-        <value>An <see cref="T:System.Int32" /> object that represents the offset of the text marker symbol.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,15 +64,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextFormatting.TextSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the source of the text runs used for the text marker.</summary>
-        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> value that represents the text run used for the text marker.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

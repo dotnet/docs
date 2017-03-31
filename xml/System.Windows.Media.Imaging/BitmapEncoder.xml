@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapEncoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,29 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encodes a collection of <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> objects to an image stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A derived codec may also provide support for specialized encoding properties, which are used to determine how a bitmap is encoded. For example, a codec may support specialized compression routines or interlacing of an encoded image.  
-  
- You can specify multiple frames for any derived encoder, even if the bitmap format only supports one frame. In this case, only the first frame is saved.  
-  
- The collection of frames can be encoded one at a time to any number of file streams.  
-  
- Encoding does not work in partial trust. See [WPF Partial Trust Security](../Topic/WPF%20Partial%20Trust%20Security.md) for information on partial trust.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the derived <xref:System.Windows.Media.Imaging.TiffBitmapEncoder> class to encode an image.  
-  
- [!code-vb[bitmapframeexample#3](~/add/codesnippet/visualbasic/BitmapFrame/BitmapFrame.vb#3)]
- [!code-cs[bitmapframeexample#3](~/add/codesnippet/csharp/BitmapFrame/BitmapFrame.cs#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapEncoder" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -72,24 +48,9 @@
         <ReturnType>System.Windows.Media.Imaging.BitmapCodecInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information that describes this codec.</summary>
-        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapCodecInfo" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Media.Imaging.BitmapCodecInfo> implementation is required for every codec.  
-  
-   
-  
-## Examples  
- The following example shows how to read information from a <xref:System.Windows.Media.Imaging.BitmapCodecInfo> object and send it to a string.  
-  
- [!code-vb[bitmapframeexample#3](~/add/codesnippet/visualbasic/BitmapFrame/BitmapFrame.vb#3)]
- [!code-cs[bitmapframeexample#3](~/add/codesnippet/csharp/BitmapFrame/BitmapFrame.cs#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorContexts">
@@ -99,18 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the color profile that is associated with this encoder.</summary>
-        <value>The collection of <see cref="T:System.Windows.Media.ColorContext" /> objects that represents the color profiles that this encoder uses.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The encoder does not support color profiles.</exception>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Media.ColorContext" /> value that is passed to the encoder is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -120,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,18 +92,10 @@
         <Parameter Name="containerFormat" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="containerFormat">Identifies the desired bitmap encoding format.</param>
-        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapEncoder" /> from a <see cref="T:System.Guid" /> that identifies the desired bitmap format.</summary>
-        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapEncoder" /> that can encode to the specified <paramref name="containerFormat" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is provided for extensibility purposes only. Codec authors must generate their own <xref:System.Guid> to identify their newly created encoder. Use the derived <xref:System.Windows.Media.Imaging.BitmapEncoder> classes, such as the <xref:System.Windows.Media.Imaging.BmpBitmapEncoder> class, to create an encoder for a built in codec.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="containerFormat" /> is <see langword="Empty" />.</exception>
+        <param name="containerFormat">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Frames">
@@ -156,36 +105,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Media.Imaging.BitmapFrame&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the individual frames within an image.</summary>
-        <value>A collection of <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> objects within the image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only [!INCLUDE[TLA#tla_tiff](~/add/includes/tlasharptla-tiff-md.md)], [!INCLUDE[TLA#tla_gif](~/add/includes/tlasharptla-gif-md.md)], and [!INCLUDE[TLA#tla_wdp](~/add/includes/tlasharptla-wdp-md.md)] images support more than one frame. Attempts to add additional frames to formats that do not support them will result in only the first frame being encoded.  
-  
-<a name="xamlTextUsage_Frames"></a>   
-## XAML Text Usage  
- You cannot use this property in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
-   
-  
-## Examples  
- The following example shows how to add a frame to an encoder.  
-  
- [!code-vb[bitmapframeexample#3](~/add/codesnippet/visualbasic/BitmapFrame/BitmapFrame.vb#3)]
- [!code-cs[bitmapframeexample#3](~/add/codesnippet/csharp/BitmapFrame/BitmapFrame.cs#3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> value that is passed to the encoder is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -195,25 +123,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the metadata that will be associated with this bitmap during encoding.</summary>
-        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Bitmap images support and store metadata differently. For more information about the metadata types that are supported for each bitmap, see the <xref:System.Windows.Media.Imaging.BitmapMetadata> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The encoder does not support global metadata.</exception>
-        <exception cref="T:System.ArgumentNullException">An attempt is made to write metadata in an incompatible format.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -223,32 +141,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> of an encoded bitmap.</summary>
-        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only [!INCLUDE[TLA#tla_tiff](~/add/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/add/includes/tlasharptla-gif-md.md)] images (and some older, non-standard [!INCLUDE[TLA#tla_bmp](~/add/includes/tlasharptla-bmp-md.md)] images) support palettes.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to apply a custom palette to a [!INCLUDE[TLA#tla_tiff](~/add/includes/tlasharptla-tiff-md.md)] image and subsequently encode it.  
-  
- [!code-vb[bitmapframeexample#1](~/add/codesnippet/visualbasic/BitmapFrame/BitmapFrame.vb#1)]
- [!code-cs[bitmapframeexample#1](~/add/codesnippet/csharp/BitmapFrame/BitmapFrame.cs#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> value that is passed to the encoder is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Preview">
@@ -258,18 +159,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the global preview of a bitmap, if there is one.</summary>
-        <value>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the preview of a bitmap.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The bitmap does not support preview.</exception>
-        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -279,7 +177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -294,26 +191,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">Identifies the file stream that this bitmap is encoded to.</param>
-        <summary>Encodes a bitmap image to a specified <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the context of this [!INCLUDE[TLA#tla_api](~/add/includes/tlasharptla-api-md.md)], "save" and "encode" are synonymous.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to save a bitmap image to a file stream by using the derived <xref:System.Windows.Media.Imaging.TiffBitmapEncoder> class.  
-  
- [!code-vb[bitmapframeexample#3](~/add/codesnippet/visualbasic/BitmapFrame/BitmapFrame.vb#3)]
- [!code-cs[bitmapframeexample#3](~/add/codesnippet/csharp/BitmapFrame/BitmapFrame.cs#3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The bitmap has already been encoded.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="System.Windows.Media.Imaging.BitmapEncoder.Frames%2A" /> count is less than or equal to zero.</exception>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">
@@ -323,18 +203,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the global embedded thumbnail.</summary>
-        <value>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the thumbnail of the bitmap.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The bitmap does not support thumbnails.</exception>
-        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

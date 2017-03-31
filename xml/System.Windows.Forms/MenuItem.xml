@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,30 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an individual item that is displayed within a <see cref="T:System.Windows.Forms.MainMenu" /> or <see cref="T:System.Windows.Forms.ContextMenu" />. Although <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> replaces and adds functionality to the MenuItem control of previous versions, MenuItem is retained for both backward compatibility and future use if you choose.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In order for a MenuItem to be displayed, you must add it to a <xref:System.Windows.Forms.MainMenu> or <xref:System.Windows.Forms.ContextMenu>. To create submenus, you can add MenuItem objects to the <xref:System.Windows.Forms.Menu.MenuItems%2A> property of the parent MenuItem.  
-  
- The MenuItem class provides properties that enable you to configure the appearance and functionality of a menu item. To display a check mark next to a menu item, use the <xref:System.Windows.Forms.MenuItem.Checked%2A> property. You can use this feature to identify a menu item that is selected in a list of mutually exclusive menu items. For example, if you have a set of menu items for setting the color of text in a <xref:System.Windows.Forms.TextBox> control, you can use the <xref:System.Windows.Forms.MenuItem.Checked%2A> property to identify which color is currently selected. The <xref:System.Windows.Forms.MenuItem.Shortcut%2A> property can be used to define a keyboard combination that can be pressed to select the menu item.  
-  
- For MenuItem objects displayed in a Multiple Document Interface (MDI) application, you can use the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A> method to merge the menus of an MDI parent for with that of its child forms to create a consolidated menu structure. Because a MenuItem cannot be reused in multiple locations at the same time, such as in a <xref:System.Windows.Forms.MainMenu> and a <xref:System.Windows.Forms.ContextMenu>, you can use the <xref:System.Windows.Forms.MenuItem.CloneMenu%2A> method to create a copy of a MenuItem for use in another location.  
-  
- The <xref:System.Windows.Forms.MenuItem.Popup> event enables you to perform tasks before a menu is displayed. For example, you can create an event handler for this event to display or hide menu items based on the state of your code. The <xref:System.Windows.Forms.MenuItem.Select> event enables you to perform tasks such as providing detailed help for your application's menu items when the user places the mouse pointer over a menu item.  
-  
-   
-  
-## Examples  
- The following code example creates a menu structure for a form. The example code adds a MenuItem to represent the top-level menu item, adds a submenu item to it for selecting a font size, and then adds two submenu items to that menu item that represent large and small font choices in an application. The example requires that there is a <xref:System.Windows.Forms.MainMenu> object named `mainMenu1` and four MenuItem objects named `menuItem1`, `menuItem2`, `menuItem3`, and `menuItem4`.  
-  
- [!code-cpp[Classic Menu Example#1](~/add/codesnippet/cpp/t-system.windows.forms.m_8_1.cpp)]
- [!code-cs[Classic Menu Example#1](~/add/codesnippet/csharp/t-system.windows.forms.m_8_1.cs)]
- [!code-vb[Classic Menu Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.m_8_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,29 +36,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a <see cref="T:System.Windows.Forms.MenuItem" /> with a blank caption.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once you have created a blank <xref:System.Windows.Forms.MenuItem> using this constructor, you can use the properties and methods of the <xref:System.Windows.Forms.MenuItem> class to specify the appearance and behavior of your <xref:System.Windows.Forms.MenuItem>.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MenuItem> using this version of the constructor.  
-  
- [!code-vb[Classic MenuItem.MenuItem Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_13_1.vb)]
- [!code-cpp[Classic MenuItem.MenuItem Example#1](~/add/codesnippet/cpp/m-system.windows.forms.m_13_1.cpp)]
- [!code-cs[Classic MenuItem.MenuItem Example#1](~/add/codesnippet/csharp/m-system.windows.forms.m_13_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,34 +51,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The caption for the menu item.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuItem" /> class with a specified caption for the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a caption for your menu item with the `text` parameter, you can also specify an access key by placing an '&' character before the character to be used as the access key. For example, to specify the "F" in "File" as an access key, you would specify the caption for the menu item as "&File". You can use this feature to provide keyboard navigation for your menus.  
-  
- Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MenuItem> that specifies the caption of the menu item at the time it is constructed.  
-  
- [!code-cpp[Classic MenuItem.MenuItem1 Example#1](~/add/codesnippet/cpp/m-system.windows.forms.m_1_1.cpp)]
- [!code-cs[Classic MenuItem.MenuItem1 Example#1](~/add/codesnippet/csharp/m-system.windows.forms.m_1_1.cs)]
- [!code-vb[Classic MenuItem.MenuItem1 Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -128,7 +69,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -136,30 +76,10 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">The caption for the menu item.</param>
-        <param name="onClick">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event for this menu item.</param>
-        <summary>Initializes a new instance of the class with a specified caption and event handler for the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event of the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a caption for your menu item with the `text` parameter, you can also specify an access key by placing an '&' before the character to be used as the access key. For example, to specify the "F" in "File" as an access key, you would specify the caption for the menu item as "&File". You can use this feature to provide keyboard navigation for your menus.  
-  
- Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
-  
- In addition, you can use this constructor to specify a delegate that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item being created. The <xref:System.EventHandler> that you pass to this constructor must be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. For more information on handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MenuItem> object with a specified caption and an <xref:System.EventHandler> delegate connected to an event handler that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item.  
-  
- [!code-cpp[Classic MenuItem.MenuItem2 Example#1](~/add/codesnippet/cpp/m-system.windows.forms.m_4_1.cpp)]
- [!code-cs[Classic MenuItem.MenuItem2 Example#1](~/add/codesnippet/csharp/m-system.windows.forms.m_4_1.cs)]
- [!code-vb[Classic MenuItem.MenuItem2 Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="onClick">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,7 +89,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -177,32 +96,10 @@
         <Parameter Name="items" Type="System.Windows.Forms.MenuItem[]" />
       </Parameters>
       <Docs>
-        <param name="text">The caption for the menu item.</param>
-        <param name="items">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that contains the submenu items for this menu item.</param>
-        <summary>Initializes a new instance of the class with a specified caption and an array of submenu items defined for the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a caption for your menu item with the `text` parameter, you can also specify an access key by placing an '&' before the character to be used as the access key. For example, to specify the "F" in "File" as an access key, you would specify the caption for the menu item as "&File". You can use this feature to provide keyboard navigation for your menus.  
-  
- Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
-  
- The `items` parameter enables you to assign an array of menu items to define a submenu of this menu item. Each item in the array can also have an array of menu items assigned to it. This enables you to create complete menu structures and assign them to the constructor for the menu item.  
-  
- For more information on handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example creates an object with a specified caption, an event handler connected to a method that will handle the event each menu item in an array of submenu items.  
-  
- [!code-cpp[Classic MenuItem.MenuItem4 Example#1](~/add/codesnippet/cpp/cfa20f10-2c8a-466e-a0e8-_1.cpp)]
- [!code-vb[Classic MenuItem.MenuItem4 Example#1](~/add/codesnippet/visualbasic/cfa20f10-2c8a-466e-a0e8-_1.vb)]
- [!code-cs[Classic MenuItem.MenuItem4 Example#1](~/add/codesnippet/csharp/cfa20f10-2c8a-466e-a0e8-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -212,7 +109,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -221,31 +117,11 @@
         <Parameter Name="shortcut" Type="System.Windows.Forms.Shortcut" />
       </Parameters>
       <Docs>
-        <param name="text">The caption for the menu item.</param>
-        <param name="onClick">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event for this menu item.</param>
-        <param name="shortcut">One of the <see cref="T:System.Windows.Forms.Shortcut" /> values.</param>
-        <summary>Initializes a new instance of the class with a specified caption, event handler, and associated shortcut key for the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a caption for your menu item with the `text` parameter, you can also specify an access key by placing an '&' before the character to be used as the access key. For example, to specify the "F" in "File" as an access key, you would specify the caption for the menu item as "&File". You can use this feature to provide keyboard navigation for your menus. This constructor also enables you to specify a shortcut key in addition to an access key to provide keyboard navigation. Shortcut keys allow you to specify a combination of keys that can be used to activate the menu item.  
-  
- Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
-  
- In addition, you can use this constructor to specify a delegate that will handle the <xref:System.Windows.Forms.MenuItem.Click> event for the menu item being created. The <xref:System.EventHandler> that you pass to this constructor must be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. For more information on handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example creates an object with a specified caption, shortcut key, and an event handler connected to a method that will handle the event for the menu item.  
-  
- [!code-cpp[Classic MenuItem.MenuItem3 Example#1](~/add/codesnippet/cpp/feb14794-39b6-433b-90a5-_1.cpp)]
- [!code-vb[Classic MenuItem.MenuItem3 Example#1](~/add/codesnippet/visualbasic/feb14794-39b6-433b-90a5-_1.vb)]
- [!code-cs[Classic MenuItem.MenuItem3 Example#1](~/add/codesnippet/csharp/feb14794-39b6-433b-90a5-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="onClick">To be added.</param>
+        <param name="shortcut">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -255,7 +131,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -269,40 +144,16 @@
         <Parameter Name="items" Type="System.Windows.Forms.MenuItem[]" />
       </Parameters>
       <Docs>
-        <param name="mergeType">One of the <see cref="T:System.Windows.Forms.MenuMerge" /> values.</param>
-        <param name="mergeOrder">The relative position that this menu item will take in a merged menu.</param>
-        <param name="shortcut">One of the <see cref="T:System.Windows.Forms.Shortcut" /> values.</param>
-        <param name="text">The caption for the menu item.</param>
-        <param name="onClick">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event for this menu item.</param>
-        <param name="onPopup">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Popup" /> event for this menu item.</param>
-        <param name="onSelect">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event for this menu item.</param>
-        <param name="items">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that contains the submenu items for this menu item.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuItem" /> class with a specified caption; defined event-handlers for the <see cref="E:System.Windows.Forms.MenuItem.Click" />, <see cref="E:System.Windows.Forms.MenuItem.Select" /> and <see cref="E:System.Windows.Forms.MenuItem.Popup" /> events; a shortcut key; a merge type; and order specified for the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a caption for your menu item with the `text` parameter, you can also specify an access key by placing an '&' before the character to be used as the access key. For example, to specify the "F" in "File" as an access key, you would specify the caption for the menu item as "&File". You can use this feature to provide keyboard navigation for your menus.  
-  
- Setting the `text` parameter to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
-  
- The `items` parameter enables you to assign an array of menu items to define a submenu of this menu item. Each item in the array can also have an array of menu items assigned to it. This enables you to create complete menu structures and assign them to the constructor for the menu item.  
-  
- The `mergeType` and `mergeOrder` parameters allow you to determine how this menu item will behave when the menu item is merged with another menu. Depending on the value you specify for the `mergeType` parameter, you can either add, remove, replace, or merge the menu item and its submenu items with the menu that it is merging with. The `mergeOrder` parameter determines where the menu item being created will be positioned when the menu is merged.  
-  
- In addition, you can use this constructor to create a <xref:System.Windows.Forms.MenuItem> and have it connected to an event handler in your code that will process the click of the menu item. The <xref:System.EventHandler> that you pass into this constructor should be configured to call an event handler that can handle the <xref:System.Windows.Forms.MenuItem.Click> event. By using this constructor version, you can also connect the <xref:System.Windows.Forms.MenuItem.Popup> and <xref:System.Windows.Forms.MenuItem.Select> events to determine when this menu item is selected. You can use these events for tasks such as determining whether or not to display a check mark next to submenu items or to enable or disable menu items based on the state of the application. The <xref:System.Windows.Forms.MenuItem.Select> and <xref:System.Windows.Forms.MenuItem.Click> events are raised only for <xref:System.Windows.Forms.MenuItem> objects that are not parent menu items. For more information on handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example creates a menu item that has a caption and shortcut key. The menu item also has event handlers defined for the <xref:System.Windows.Forms.MenuItem.Popup>, <xref:System.Windows.Forms.MenuItem.Click>, and <xref:System.Windows.Forms.MenuItem.Select> events. If this menu item is merged, it will add the menu item to the menu with the merge order of zero.  
-  
- [!code-cs[Classic MenuItem.MenuItem5 Example#1](~/add/codesnippet/csharp/a423d634-c30f-4d0b-905e-_1.cs)]
- [!code-cpp[Classic MenuItem.MenuItem5 Example#1](~/add/codesnippet/cpp/a423d634-c30f-4d0b-905e-_1.cpp)]
- [!code-vb[Classic MenuItem.MenuItem5 Example#1](~/add/codesnippet/visualbasic/a423d634-c30f-4d0b-905e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="mergeType">To be added.</param>
+        <param name="mergeOrder">To be added.</param>
+        <param name="shortcut">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="onClick">To be added.</param>
+        <param name="onPopup">To be added.</param>
+        <param name="onSelect">To be added.</param>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BarBreak">
@@ -312,7 +163,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -327,28 +177,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MenuItem" /> is placed on a new line (for a menu item added to a <see cref="T:System.Windows.Forms.MainMenu" /> object) or in a new column (for a submenu item or menu item displayed in a <see cref="T:System.Windows.Forms.ContextMenu" />).</summary>
-        <value>
-          <see langword="true" /> if the menu item is placed on a new line or in a new column; <see langword="false" /> if the menu item is left in its default placement. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the BarBreak property to create a menu where each menu item is placed next to each other horizontally instead of in a vertical list. You can also use this property to create a menu bar that contains multiple rows of top-level menu items.  
-  
- This property differs from the <xref:System.Windows.Forms.MenuItem.Break%2A> property in that a bar is displayed on the left edge of each menu item that has the <xref:System.Windows.Forms.MenuItem.Break%2A> property set to `true`. The bar is only displayed when the menu item is not a top-level menu item.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MenuItem> with two submenu items. The two submenu items are displayed horizontally instead of vertically using the BarBreak property.  
-  
- [!code-cs[Classic MenuItem.BarBreak Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_7_1.cs)]
- [!code-cpp[Classic MenuItem.BarBreak Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_7_1.cpp)]
- [!code-vb[Classic MenuItem.BarBreak Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Break">
@@ -358,7 +189,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -373,26 +203,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the item is placed on a new line (for a menu item added to a <see cref="T:System.Windows.Forms.MainMenu" /> object) or in a new column (for a menu item or submenu item displayed in a <see cref="T:System.Windows.Forms.ContextMenu" />).</summary>
-        <value>
-          <see langword="true" /> if the menu item is placed on a new line or in a new column; <see langword="false" /> if the menu item is left in its default placement. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the Break property to create a menu where each menu is placed next to each other horizontally instead of in a vertical list. You can also use this property to create a menu bar that contains multiple rows of top-level menu items.  
-  
-   
-  
-## Examples  
- The following code example creates a menu with two top-level menu items on the top row and one menu item on the bottom row.  
-  
- [!code-cs[Classic MenuItem.Break Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_32_1.cs)]
- [!code-vb[Classic MenuItem.Break Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_32_1.vb)]
- [!code-cpp[Classic MenuItem.Break Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_32_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -402,7 +215,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -414,30 +226,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a check mark appears next to the text of the menu item.</summary>
-        <value>
-          <see langword="true" /> if there is a check mark next to the menu item; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the Checked property in combination with other menu items in a menu to provide state for an application. For example, you can place a check mark on a menu item in a group of items to identify the size of the font to be displayed for the text in an application. You can also use the Checked property to identify the selected menu item in a group of mutually exclusive menu items.  
-  
-> [!NOTE]
->  This property cannot be set to `true` for top-level menu items.  
-  
-   
-  
-## Examples  
- The following code example uses the Checked property to provide the state in an application. In this example, a group of menu items are used to specify the color for the text in a <xref:System.Windows.Forms.TextBox> control. The event handler provided is used by the <xref:System.Windows.Forms.MenuItem.Click> event of three menu items. Each menu item specifies a text color, `menuItemRed` (Red), `menuItemGreen` (Green), or `menuItemBlue` (Blue). The event handler determines which menu item was clicked, places a checkmark to the selected menu item, and changes the text color of the form's <xref:System.Windows.Forms.TextBox> control. The example requires that the <xref:System.Drawing> namespace has been added to the form that this code is placed in. The example also requires that a <xref:System.Windows.Forms.TextBox> has been added to the form that this example code is located in that is named `textBox1`.  
-  
- [!code-cpp[Classic MenuItem.Checked Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_33_1.cpp)]
- [!code-cs[Classic MenuItem.Checked Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_33_1.cs)]
- [!code-vb[Classic MenuItem.Checked Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.MenuItem" /> is a top-level menu or has children.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -447,34 +238,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu item is clicked or selected using a shortcut key or access key defined for the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Click event occurs when this <xref:System.Windows.Forms.MenuItem> is clicked by the user. This event also occurs if the user selects the menu item using the keyboard and presses the Enter key. It can also occur if an access key or shortcut key is pressed that is associated with the <xref:System.Windows.Forms.MenuItem>. For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-> [!NOTE]
->  If the <xref:System.Windows.Forms.Menu.MenuItems%2A> property for the <xref:System.Windows.Forms.MenuItem> contains any items, this event is not raised. This event is not raised for parent menu items.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Click event to perform tasks when a <xref:System.Windows.Forms.MenuItem> is clicked. The example creates a <xref:System.Windows.Forms.MainMenu> called `mainMenu1` and adds two <xref:System.Windows.Forms.MenuItem> objects, `topMenuItem` (`File`) and `menuItem1` (`Open`). It then connects the `Click` event to the `menuItem1_Click` event handler. When the user clicks the `Open` menu item, an <xref:System.Windows.Forms.OpenFileDialog> is initialized and displayed. The example requires that you have created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cs[MenuItemClick#1](~/add/codesnippet/csharp/e-system.windows.forms.m_15_1.cs)]
- [!code-cpp[MenuItemClick#1](~/add/codesnippet/cpp/e-system.windows.forms.m_15_1.cpp)]
- [!code-vb[MenuItemClick#1](~/add/codesnippet/visualbasic/e-system.windows.forms.m_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneMenu">
@@ -484,7 +255,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -492,25 +262,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the current <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the duplicated menu item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Forms.MenuItem> objects cannot be used in more than one place unless you obtain a copy of the <xref:System.Windows.Forms.MenuItem>. You can call this method to create a copy of this menu item for use in a <xref:System.Windows.Forms.ContextMenu>, <xref:System.Windows.Forms.MainMenu>, or other <xref:System.Windows.Forms.MenuItem> within your application. When a menu item is cloned, any event handlers specified in the original menu item will continue to function in the cloned version of the menu item. For example, if you created a <xref:System.Windows.Forms.MenuItem> and connected its <xref:System.Windows.Forms.MenuItem.Click> event to an event handler. When the menu item is cloned, the cloned menu item will call the same event handler.  
-  
-   
-  
-## Examples  
- The following code example clones a <xref:System.Windows.Forms.MenuItem> and displays it in a <xref:System.Windows.Forms.ContextMenu>. The example requires that a <xref:System.Windows.Forms.MenuItem> exists in a <xref:System.Windows.Forms.MainMenu> on a form with the name of `menuItem1` and that a <xref:System.Windows.Forms.ContextMenu> object named `contextMenu1` also exists on the form.  
-  
- [!code-cs[Classic MenuItem.CloneMenu Example#1](~/add/codesnippet/csharp/m-system.windows.forms.m_18_1.cs)]
- [!code-cpp[Classic MenuItem.CloneMenu Example#1](~/add/codesnippet/cpp/m-system.windows.forms.m_18_1.cpp)]
- [!code-vb[Classic MenuItem.CloneMenu Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_18_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneMenu">
@@ -520,7 +274,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,25 +283,9 @@
         <Parameter Name="itemSrc" Type="System.Windows.Forms.MenuItem" />
       </Parameters>
       <Docs>
-        <param name="itemSrc">The <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item to copy.</param>
-        <summary>Creates a copy of the specified <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method to create copies of menu items that you have already created for use in a shortcut menu or another menu structure within your application. This version of <xref:System.Windows.Forms.MenuItem.CloneMenu%2A> allows you to specify a specific <xref:System.Windows.Forms.MenuItem> to copy instead of the menu item that is calling the method. You can use this method to initialize a new <xref:System.Windows.Forms.MenuItem> object with a copy of another <xref:System.Windows.Forms.MenuItem>. When a menu item is cloned, any event handlers specified in the original menu item will continue to function in the cloned version of the menu item. For example, if you created a <xref:System.Windows.Forms.MenuItem> and connected its <xref:System.Windows.Forms.MenuItem.Click> event to an event handler. When the menu item is cloned, the cloned menu item will call the same event handler.  
-  
-   
-  
-## Examples  
- The following code example initializes a new <xref:System.Windows.Forms.MenuItem> with a copy of an existing <xref:System.Windows.Forms.MenuItem> that is used in a <xref:System.Windows.Forms.MainMenu> on a form. The code then adds the cloned <xref:System.Windows.Forms.MenuItem> to a <xref:System.Windows.Forms.ContextMenu> on the form. This example requires that a <xref:System.Windows.Forms.MenuItem> is already created and named `menuItem1` and that a <xref:System.Windows.Forms.ContextMenu> control has been created and named `contextMenu1`.  
-  
- [!code-cs[Classic MenuItem.CloneMenu1 Example#1](~/add/codesnippet/csharp/m-system.windows.forms.m_14_1.cs)]
- [!code-cpp[Classic MenuItem.CloneMenu1 Example#1](~/add/codesnippet/cpp/m-system.windows.forms.m_14_1.cpp)]
- [!code-vb[Classic MenuItem.CloneMenu1 Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="itemSrc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultItem">
@@ -558,7 +295,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -570,26 +306,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item is the default menu item.</summary>
-        <value>
-          <see langword="true" /> if the menu item is the default item in a menu; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default menu item for a menu is boldfaced. When the user double-clicks a submenu that contains a default item, the default item is selected, and the submenu is closed. You can use the DefaultItem property to indicate, the default action that is expected in a menu or shortcut menu.  
-  
-   
-  
-## Examples  
- The following code example creates a menu item with two submenu items. The example sets `menuItem2` as the default menu item using the DefaultItem property.  
-  
- [!code-cs[Classic MenuItem.DefaultItem Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_5_1.cs)]
- [!code-cpp[Classic MenuItem.DefaultItem Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_5_1.cpp)]
- [!code-vb[Classic MenuItem.DefaultItem Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -599,7 +318,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,20 +327,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call Dispose when you are finished using the <xref:System.Windows.Forms.MenuItem>. The Dispose method leaves the <xref:System.Windows.Forms.MenuItem> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Windows.Forms.MenuItem> so the memory it was occupying can be reclaimed by garbage collection.  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Windows.Forms.MenuItem>. Otherwise, the resources the <xref:System.Windows.Forms.MenuItem> is using will not be freed until garbage collection calls the <xref:System.Windows.Forms.MenuItem> object's destructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItem">
@@ -632,33 +339,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.MenuItem.OwnerDraw%2A" /> property of a menu item is set to <see langword="true" /> and a request is made to draw the menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DrawItemEventArgs> argument passed to a DrawItem event handler provides a <xref:System.Drawing.Graphics> object that enables you to perform drawing and other graphical operations on the surface of the menu item. You can use this event handler to create custom menus that meet the needs of your application. For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to handle the DrawItem event. This example draws a menu item using a <xref:System.Drawing.Brush> and a <xref:System.Drawing.Font>, and then draws a <xref:System.Drawing.Rectangle> around the menu item. The drawing is performed through the <xref:System.Drawing.Graphics> object, which is passed to the event handler in the <xref:System.Windows.Forms.DrawItemEventArgs> parameter. This example requires that you have initialized the <xref:System.Windows.Forms.MenuItem.OwnerDraw%2A> property for the item to `true`. For the C# example, add the following code in the form's constructor, after `InitializeComponent`, to hook up the event:  
-  
- `this.menuItem1.DrawItem += new DrawItemEventHandler(menuItem1_DrawItem);`  
-  
- [!code-cs[OwnerDraw example#1](~/add/codesnippet/csharp/e-system.windows.forms.m_10_1.cs)]
- [!code-cpp[OwnerDraw example#1](~/add/codesnippet/cpp/e-system.windows.forms.m_10_1.cpp)]
- [!code-vb[OwnerDraw example#1](~/add/codesnippet/visualbasic/e-system.windows.forms.m_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -668,7 +356,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -683,26 +370,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item is enabled.</summary>
-        <value>
-          <see langword="true" /> if the menu item is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Forms.MenuItem> that is disabled is displayed in a gray color to indicate its state. When a parent menu item is disabled, all submenu items are not displayed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.MenuItem.Popup> event to determine whether <xref:System.Windows.Forms.MenuItem> objects that provide support for cut, copy, and delete operations are enabled before the menu they are displayed in is shown. The example determines if `textBox1`, a <xref:System.Windows.Forms.TextBox> control on the form, is enabled, has input focus, and has text selected before enabling the <xref:System.Windows.Forms.MenuItem> objects. This example requires that three <xref:System.Windows.Forms.MenuItem> objects are created named `menuCut`, `menuCopy`, and `menuDelete` have been created.  
-  
- [!code-cs[MenuItem.Popup#1](~/add/codesnippet/csharp/p-system.windows.forms.m_23_1.cs)]
- [!code-cpp[MenuItem.Popup#1](~/add/codesnippet/cpp/p-system.windows.forms.m_23_1.cpp)]
- [!code-vb[MenuItem.Popup#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_23_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -712,7 +382,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -724,26 +393,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the position of the menu item in its parent menu.</summary>
-        <value>The zero-based index representing the position of the menu item in its parent menu.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property provides the indexed position of a menu item in the menu item collection of its parent menu. You can use this property to reposition a menu item to a different location within its menu. You can also use this property when creating a <xref:System.Windows.Forms.MenuItem> to specify its position in a menu structure at the time of creation.  
-  
-   
-  
-## Examples  
- The following code example switches the position of two menu items in a menu. The following code example requires that two <xref:System.Windows.Forms.MenuItem> objects are created named `menuItem1` and `menuItem2`. The `menuItem1` menu item moves down one position in the menu, while `menuItem2` moves up one position.  
-  
- [!code-cpp[Classic MenuItem.Index Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_28_1.cpp)]
- [!code-cs[Classic MenuItem.Index Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_28_1.cs)]
- [!code-vb[Classic MenuItem.Index Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than zero or greater than the item count.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsParent">
@@ -753,7 +405,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -765,26 +416,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the menu item contains child menu items.</summary>
-        <value>
-          <see langword="true" /> if the menu item contains child menu items; <see langword="false" /> if the menu is a standalone menu item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property with the <xref:System.Windows.Forms.MenuItem.Parent%2A> property to navigate in code through an entire menu structure.  
-  
-   
-  
-## Examples  
- The following code example determines whether there are any submenus associated with a <xref:System.Windows.Forms.MenuItem> named `menuItem1`. If any submenus exist, it disables them by setting the <xref:System.Windows.Forms.MenuItem.Enabled%2A> property to `false`. The example requires that there is a <xref:System.Windows.Forms.MenuItem> created named `menuItem1`.  
-  
- [!code-cs[Classic MenuItem.IsParent Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_17_1.cs)]
- [!code-cpp[Classic MenuItem.IsParent Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_17_1.cpp)]
- [!code-vb[Classic MenuItem.IsParent Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MdiList">
@@ -794,7 +428,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -806,26 +439,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item will be populated with a list of the Multiple Document Interface (MDI) child windows that are displayed within the associated form.</summary>
-        <value>
-          <see langword="true" /> if a list of the MDI child windows is displayed in this menu item; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a menu item is selected to display an MDI child window list, the list is displayed as a submenu of the menu item. Only forms that are defined as MDI child forms are displayed in the window list. Only nine child windows can be displayed at a time. If there are more than nine child windows displayed, a "More Windows..." menu item is displayed at the end of the window list. Clicking this menu item displays a dialog box with a complete list of the child windows that are currently active.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MenuItem> that is used to display the list of currently open MDI child forms in an MDI form.  
-  
- [!code-cs[Classic MenuItem.MdiList Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_42_1.cs)]
- [!code-cpp[Classic MenuItem.MdiList Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_42_1.cpp)]
- [!code-vb[Classic MenuItem.MdiList Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_42_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasureItem">
@@ -835,32 +451,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MeasureItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu needs to know the size of a menu item before drawing it.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In order for this event to be raised, you must have the <xref:System.Windows.Forms.MenuItem.OwnerDraw%2A> property of the menu item set to `true`. This event is raised before owner drawn menus are drawn to allow for the size of the menu item to be drawn to be specified. For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the MeasureItem event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MenuItem> named `MenuItem1`. Then ensure that the event handler is associated with the MeasureItem event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#499](~/add/codesnippet/csharp/e-system.windows.forms.m_11_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#499](~/add/codesnippet/visualbasic/e-system.windows.forms.m_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuID">
@@ -870,15 +468,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the Windows identifier for this menu item.</summary>
-        <value>The Windows identifier for this menu item.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,7 +486,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -897,16 +493,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Merges this <see cref="T:System.Windows.Forms.MenuItem" /> with another <see cref="T:System.Windows.Forms.MenuItem" /> and returns the resulting merged <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the merged menu item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call this version of MergeMenu, the <xref:System.Windows.Forms.MenuItem> returned is a copy of the current menu item that can be merged with another menu item without affecting the functionality of the current item. This version of the MergeMenu method is similar to calling the <xref:System.Windows.Forms.MenuItem.CloneMenu%2A> method that contains no parameters.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeMenu">
@@ -916,7 +505,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -926,25 +514,9 @@
         <Parameter Name="itemSrc" Type="System.Windows.Forms.MenuItem" />
       </Parameters>
       <Docs>
-        <param name="itemSrc">A <see cref="T:System.Windows.Forms.MenuItem" /> that specifies the menu item to merge with this one.</param>
-        <summary>Merges another menu item with this menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Menu items are merged according to the value of the menu item's <xref:System.Windows.Forms.MenuItem.MergeType%2A> and <xref:System.Windows.Forms.MenuItem.MergeOrder%2A> properties. This version of the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A> method enables you to merge two <xref:System.Windows.Forms.MenuItem> objects (and their submenus) into a single menu. Menu merging is handled automatically when a Multiple Document Interface (MDI) parent form and a child both have menus. You can use this version of the method to merge two <xref:System.Windows.Forms.MenuItem> objects (and their submenu items) located in a <xref:System.Windows.Forms.MainMenu> control into a single menu within a <xref:System.Windows.Forms.ContextMenu>. For example, you can call this version of the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A> method to merge the menu items of a File and Edit menu into a single <xref:System.Windows.Forms.MenuItem> that can then be added to and displayed by a <xref:System.Windows.Forms.ContextMenu>.  
-  
-   
-  
-## Examples  
- The following code example uses this version of the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A> method to create a copy of a <xref:System.Windows.Forms.MenuItem> and merge it with another. The merged <xref:System.Windows.Forms.MenuItem> is then added to a <xref:System.Windows.Forms.ContextMenu> control. This example requires that there are two menu items called `menuItem1` and `menuItem2` that contain submenu items within them and a <xref:System.Windows.Forms.ContextMenu> named `contextMenu1` to display the menu items. `menuItem1` and `menuItem2` have different menu items contained within them. After the call to <xref:System.Windows.Forms.MenuItem.MergeMenu%2A> is made, a consolidated menu is created.  
-  
- [!code-vb[Classic MenuItem.MergeMenu1 Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_12_1.vb)]
- [!code-cpp[Classic MenuItem.MergeMenu1 Example#1](~/add/codesnippet/cpp/m-system.windows.forms.m_12_1.cpp)]
- [!code-cs[Classic MenuItem.MergeMenu1 Example#1](~/add/codesnippet/csharp/m-system.windows.forms.m_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="itemSrc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeOrder">
@@ -954,7 +526,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -966,25 +537,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the relative position of the menu item when it is merged with another.</summary>
-        <value>A zero-based index representing the merge order position for this menu item. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The merge order of a menu item specifies the relative position that this menu item will take if the menu structure that the <xref:System.Windows.Forms.MenuItem> is contained in is merged with another.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the MergeOrder property to control the way a merged menu is displayed. This is a complete example, ready to run once you add it to your project.  
-  
- [!code-cs[System.Windows.Forms.MenuItemMergeOrder#1](~/add/codesnippet/csharp/p-system.windows.forms.m_48_1.cs)]
- [!code-cpp[System.Windows.Forms.MenuItemMergeOrder#1](~/add/codesnippet/cpp/p-system.windows.forms.m_48_1.cpp)]
- [!code-vb[System.Windows.Forms.MenuItemMergeOrder#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_48_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeType">
@@ -994,7 +549,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1006,26 +560,9 @@
         <ReturnType>System.Windows.Forms.MenuMerge</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the behavior of this menu item when its menu is merged with another.</summary>
-        <value>A <see cref="T:System.Windows.Forms.MenuMerge" /> value that represents the menu item's merge type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The merge type of a menu item indicates how the menu item behaves when it has the same merge order as another menu item being merged. You can use merged menus to create a consolidated menu based on two or more existing menus.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.MenuItem> with the MergeType and <xref:System.Windows.Forms.MenuItem.MergeOrder%2A> specified so that the menu item is added to the merged menu at first position.  
-  
- [!code-cpp[Classic MenuItem.MergeType Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_8_1.cpp)]
- [!code-cs[Classic MenuItem.MergeType Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_8_1.cs)]
- [!code-vb[Classic MenuItem.MergeType Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.MenuMerge" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mnemonic">
@@ -1035,7 +572,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1047,16 +583,9 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the mnemonic character that is associated with this menu item.</summary>
-        <value>A character that represents the mnemonic character associated with this menu item. Returns the NUL character (ASCII value 0) if no mnemonic character is specified in the text of the <see cref="T:System.Windows.Forms.MenuItem" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The mnemonic character is the first character after an ampersand character (&) in the text of the <xref:System.Windows.Forms.MenuItem>. This property will not return a mnemonic if two ampersand characters are placed together as the ampersands are used to display an ampersand in the text of the <xref:System.Windows.Forms.MenuItem> instead of defining a mnemonic character.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -1066,7 +595,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1076,25 +604,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.MenuItem.Click> event to perform tasks when a <xref:System.Windows.Forms.MenuItem> is clicked. The example creates a <xref:System.Windows.Forms.MainMenu> called `mainMenu1` and adds two <xref:System.Windows.Forms.MenuItem> objects, `topMenuItem` (`File`) and `menuItem1` (`Open`). It then connects the `Click` event to the `menuItem1_Click` event handler. When the user clicks the `Open` menu item, an <xref:System.Windows.Forms.OpenFileDialog> is initialized and displayed. The example requires that you have created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cs[MenuItemClick#1](~/add/codesnippet/csharp/m-system.windows.forms.m_3_1.cs)]
- [!code-cpp[MenuItemClick#1](~/add/codesnippet/cpp/m-system.windows.forms.m_3_1.cpp)]
- [!code-vb[MenuItemClick#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDrawItem">
@@ -1104,7 +616,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1114,16 +625,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.DrawItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.DrawItem" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInitMenuPopup">
@@ -1133,7 +637,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1143,8 +646,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Popup" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1155,7 +658,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1165,16 +667,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MeasureItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.MeasureItem" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPopup">
@@ -1184,7 +679,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1194,25 +688,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Popup" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.MenuItem.Popup> event to determine whether <xref:System.Windows.Forms.MenuItem> objects that provide support for cut, copy, and delete operations are enabled before the menu they are displayed in is shown. The example determines if `textBox1`, a <xref:System.Windows.Forms.TextBox> control on the form, is enabled, has input focus, and has text selected before enabling the <xref:System.Windows.Forms.MenuItem> objects. This example requires that three <xref:System.Windows.Forms.MenuItem> objects are created named `menuCut`, `menuCopy`, and `menuDelete` have been created.  
-  
- [!code-cs[MenuItem.Popup#1](~/add/codesnippet/csharp/m-system.windows.forms.m_28_1.cs)]
- [!code-cpp[MenuItem.Popup#1](~/add/codesnippet/cpp/m-system.windows.forms.m_28_1.cpp)]
- [!code-vb[MenuItem.Popup#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelect">
@@ -1222,7 +700,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1232,25 +709,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.MenuItem.Select> event of the <xref:System.Windows.Forms.MenuItem> class to assign help text to a <xref:System.Windows.Forms.StatusBarPanel> of a <xref:System.Windows.Forms.StatusBar> control. This example requires that <xref:System.Windows.Forms.MenuItem> objects named `menuOpen`, `menuSave`, and `menuExit` are added to a <xref:System.Windows.Forms.MainMenu> control on a form. The example also requires that a <xref:System.Windows.Forms.StatusBar> control, named `statusBar1` has been added to the form. The <xref:System.Windows.Forms.StatusBar> control should contain a <xref:System.Windows.Forms.StatusBarPanel>.  
-  
- [!code-vb[MenuItem.Select#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_21_1.vb)]
- [!code-cs[MenuItem.Select#1](~/add/codesnippet/csharp/m-system.windows.forms.m_21_1.cs)]
- [!code-cpp[MenuItem.Select#1](~/add/codesnippet/cpp/m-system.windows.forms.m_21_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OwnerDraw">
@@ -1260,7 +721,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1272,26 +732,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the code that you provide draws the menu item or Windows draws the menu item.</summary>
-        <value>
-          <see langword="true" /> if the menu item is to be drawn using code; <see langword="false" /> if the menu item is to be drawn by Windows. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the OwnerDraw property is set to `true`, you need to handle all drawing of the menu item. You can use this capability to create your own special menu displays.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a menu with an owner-drawn menu item. This example set the OwnerDraw property and uses the `AddHandler` statement and the `AddressOf` operator to designate a delegate to handle the <xref:System.Windows.Forms.MenuItem.DrawItem> event. To run the example, paste it in a form that imports the <xref:System>, <xref:System.Windows.Forms>, and <xref:System.Drawing> namespaces. Call `InitializeMenu` from the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.MenuItemOwnerDraw#1](~/add/codesnippet/csharp/p-system.windows.forms.m_22_1.cs)]
- [!code-cpp[System.Windows.Forms.MenuItemOwnerDraw#1](~/add/codesnippet/cpp/p-system.windows.forms.m_22_1.cpp)]
- [!code-vb[System.Windows.Forms.MenuItemOwnerDraw#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1301,7 +744,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1313,25 +755,9 @@
         <ReturnType>System.Windows.Forms.Menu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the menu that contains this menu item.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Menu" /> that represents the menu that contains this menu item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to obtain the <xref:System.Windows.Forms.Menu> object for a submenu. You can cast the <xref:System.Windows.Forms.Menu> object returned by this property to a <xref:System.Windows.Forms.MenuItem> object to manipulate it.  
-  
-   
-  
-## Examples  
- In this example, you create a main menu and a top-level menu item, `menuItem1` (`File`). You also create two menu items, `menuItem2` (`New`) and `menuItem3` (`Open`), and add them to the menu item list of `menuItem1`. Then you check to see if `menuItem3` has got a parent menu, which is true, and display the information of this parent menu in message box. This example requires that you have created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cs[ParentMenu#1](~/add/codesnippet/csharp/p-system.windows.forms.m_26_1.cs)]
- [!code-cpp[ParentMenu#1](~/add/codesnippet/cpp/p-system.windows.forms.m_26_1.cpp)]
- [!code-vb[ParentMenu#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_26_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformClick">
@@ -1341,7 +767,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1349,24 +774,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the <see cref="T:System.Windows.Forms.MenuItem" />, simulating a click by a user.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this menu to activate a menu item through code without passing any event information. For example, if you want to activate a menu item based on an action that occurs in your application, you can call the PerformClick method for that <xref:System.Windows.Forms.MenuItem>.  
-  
-   
-  
-## Examples  
- In this example you programmatically click a menu item by using the `PerformClick` method. First, you create a main menu (`mainMenu1`) and add to it two menu items, `menuItem1` (`File`) and `menuItem2` (`Edit`). You also use the <xref:System.Windows.Forms.MenuItem.Click> event to send data to the event handler when a menu item is clicked. Then you use the `PerformClick` method to click the `File` menu item. When you start the application, the `File` menu item is activated, and a message box that contains the text "The File menu is clicked." appears on the screen. The example requires that you have created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cpp[PerformClick#1](~/add/codesnippet/cpp/m-system.windows.forms.m_0_1.cpp)]
- [!code-cs[PerformClick#1](~/add/codesnippet/csharp/m-system.windows.forms.m_0_1.cs)]
- [!code-vb[PerformClick#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -1376,7 +785,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1384,24 +792,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event for this menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to raise the <xref:System.Windows.Forms.MenuItem.Select> event without passing any event information to the event handler.  
-  
-   
-  
-## Examples  
- In this example you programmatically select a menu item by using the `PerformSelect` method. First, you create a main menu (`mainMenu1`) and add to it two menu items, `menuItem1` (`File`) and `menuItem2` (`Edit`). You also use the <xref:System.Windows.Forms.MenuItem.Select> event to send data to the event handler when a menu item is selected. Then you use the `PerformSelect` method to select the `File` menu item. When you start the application, the `File` menu item is selected, and a message box that contains the text "The File menu is selected." appears on the screen. The example requires that you have created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-cpp[PerformSelect#1](~/add/codesnippet/cpp/m-system.windows.forms.m_17_1.cpp)]
- [!code-cs[PerformSelect#1](~/add/codesnippet/csharp/m-system.windows.forms.m_17_1.cs)]
- [!code-vb[PerformSelect#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Popup">
@@ -1411,31 +803,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a menu item's list of menu items is displayed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event only occurs when a menu item has submenu items to display. You can use this event handler to add, remove, enable, disable, check, or uncheck menu items based on the state of your application before they are displayed. For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Popup event to determine whether <xref:System.Windows.Forms.MenuItem> objects that provide support for cut, copy, and delete operations are enabled before the menu they are displayed in is shown. The example determines if `textBox1`, a <xref:System.Windows.Forms.TextBox> control on the form, is enabled, has input focus, and has text selected before enabling the <xref:System.Windows.Forms.MenuItem> objects. This example requires that three <xref:System.Windows.Forms.MenuItem> objects are created named `menuCut`, `menuCopy`, and `menuDelete` have been created.  
-  
- [!code-cs[MenuItem.Popup#1](~/add/codesnippet/csharp/e-system.windows.forms.m_8_1.cs)]
- [!code-cpp[MenuItem.Popup#1](~/add/codesnippet/cpp/e-system.windows.forms.m_8_1.cpp)]
- [!code-vb[MenuItem.Popup#1](~/add/codesnippet/visualbasic/e-system.windows.forms.m_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RadioCheck">
@@ -1445,7 +820,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1457,26 +831,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MenuItem" />, if checked, displays a radio-button instead of a check mark.</summary>
-        <value>
-          <see langword="true" /> if a radio-button is to be used instead of a check mark; <see langword="false" /> if the standard check mark is to be displayed when the menu item is checked. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Check marks do not necessarily imply a mutually exclusive state for a group of menu items. You can use this property to indicate to the user that the check mark of a menu item is mutually exclusive.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.MenuItem.Checked%2A> property to change the state of an application. In the example, a group of menu items are provided that are used to specify the color for the text in an <xref:System.Windows.Forms.TextBox> control. In the example, the event handler provided is used by the <xref:System.Windows.Forms.MenuItem.Click> event of the three menu items. Each menu item specifies a color, `menuItemRed`, `menuItemGreen`, or `menuItemBlue`. The event handler determines which menu item was clicked, places a checkmark to the selected menu item, and changes the text color of the form's <xref:System.Windows.Forms.TextBox> control, named `textBox1`. The example also uses the RadioCheck property to demonstrate how a radio-button check is used to show menu items that are mutually exclusive. This example requires that the <xref:System.Drawing?displayProperty=fullName> namespace has been added to the form that contains this code.  
-  
- [!code-cs[Classic MenuItem.RadioCheck Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_14_1.cs)]
- [!code-vb[Classic MenuItem.RadioCheck Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_14_1.vb)]
- [!code-cpp[Classic MenuItem.RadioCheck Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_14_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1486,34 +843,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user places the pointer over a menu item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is typically raised when the user places the mouse pointer over the menu item. The event can also be raised when the user highlights a menu item using the keyboard by scrolling to the menu item with the arrow keys. You can use this event to display a detailed help string pertaining to this menu item in an application's status bar. For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-> [!NOTE]
->  If the <xref:System.Windows.Forms.Menu.MenuItems%2A> property for the <xref:System.Windows.Forms.MenuItem> contains any items, this event is not raised. This event is not raised for parent menu items.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Select event of the <xref:System.Windows.Forms.MenuItem> class to assign help text to a <xref:System.Windows.Forms.StatusBarPanel> of a <xref:System.Windows.Forms.StatusBar> control. This example requires that <xref:System.Windows.Forms.MenuItem> objects named `menuOpen`, `menuSave`, and `menuExit` are added to a <xref:System.Windows.Forms.MainMenu> control on a form. The example also requires that a <xref:System.Windows.Forms.StatusBar> control, named `statusBar1` has been added to the form. The <xref:System.Windows.Forms.StatusBar> control should contain a <xref:System.Windows.Forms.StatusBarPanel>.  
-  
- [!code-vb[MenuItem.Select#1](~/add/codesnippet/visualbasic/e-system.windows.forms.m_0_1.vb)]
- [!code-cs[MenuItem.Select#1](~/add/codesnippet/csharp/e-system.windows.forms.m_0_1.cs)]
- [!code-cpp[MenuItem.Select#1](~/add/codesnippet/cpp/e-system.windows.forms.m_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Shortcut">
@@ -1523,7 +860,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1538,26 +874,9 @@
         <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the shortcut key associated with the menu item.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.Shortcut" /> values. The default is <see langword="Shortcut.None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Shortcut keys provide a method for users to activate frequently used menu items in your menu system and to provide keyboard access to your application for those users who do not have access to a mouse or other pointer device.  
-  
-   
-  
-## Examples  
- The following code example creates a menu item, sets the caption, assigns a shortcut key, makes the menu item visible, and shows the shortcut key display for the menu item. The example requires that a <xref:System.Windows.Forms.MenuItem> has been created that is named `menuItem1`.  
-  
- [!code-cs[Classic MenuItem.Text Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_40_1.cs)]
- [!code-cpp[Classic MenuItem.Text Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_40_1.cpp)]
- [!code-vb[Classic MenuItem.Text Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_40_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.Shortcut" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowShortcut">
@@ -1567,7 +886,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1582,26 +900,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the shortcut key that is associated with the menu item is displayed next to the menu item caption.</summary>
-        <value>
-          <see langword="true" /> if the shortcut key combination is displayed next to the menu item caption; <see langword="false" /> if the shortcut key combination is not to be displayed. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to provide the option for users to hide shortcuts from menus to conserve menu space or to hide a shortcut key from being displayed.  
-  
-   
-  
-## Examples  
- The following code example creates a menu item, sets the caption, assigns a shortcut key, makes the menu item visible, and shows the shortcut key display for the menu item. The example requires that a <xref:System.Windows.Forms.MenuItem> has been created that is named `menuItem1`.  
-  
- [!code-cs[Classic MenuItem.Text Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_31_1.cs)]
- [!code-cpp[Classic MenuItem.Text Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_31_1.cpp)]
- [!code-vb[Classic MenuItem.Text Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1611,7 +912,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1623,27 +923,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the caption of the menu item.</summary>
-        <value>The text caption of the menu item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify a caption for your menu item, you can also specify an access key by placing an '&' before the character to be used as the access key. For example, to specify the "F" in "File" as an access key, you would specify the caption for the menu item as "&File". You can use this feature to provide keyboard navigation for your menus.  
-  
- Setting this property to "`-`" causes your menu item to be displayed as a separator (a horizontal line) rather than a standard menu item.  
-  
-   
-  
-## Examples  
- The following code example creates a menu item, sets the caption, assigns a shortcut key, makes the menu item visible, and shows the shortcut key display for the menu item. The example requires that a <xref:System.Windows.Forms.MenuItem> has been created that is named `menuItem1`.  
-  
- [!code-cs[Classic MenuItem.Text Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_57_1.cs)]
- [!code-cpp[Classic MenuItem.Text Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_57_1.cpp)]
- [!code-vb[Classic MenuItem.Text Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_57_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1653,7 +935,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1661,8 +942,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.MenuItem" />. The string includes the type and the <see cref="System.Windows.Forms.MenuItem.Text%2A" /> property of the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1673,7 +954,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1688,26 +968,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item is visible.</summary>
-        <value>
-          <see langword="true" /> if the menu item will be made visible on the menu; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to modify a menu structure without having to merge menus or disable menus. For example, if you want to hide a complete section of functionality from the menus for your application, you can hide them from the user by setting this property to `false`.  
-  
-   
-  
-## Examples  
- The following code example creates a menu item, sets the caption, assigns a shortcut key, makes the menu item visible, and shows the shortcut key display for the menu item. The example requires that a <xref:System.Windows.Forms.MenuItem> has been created that is named `menuItem1`.  
-  
- [!code-cs[Classic MenuItem.Text Example#1](~/add/codesnippet/csharp/p-system.windows.forms.m_52_1.cs)]
- [!code-cpp[Classic MenuItem.Text Example#1](~/add/codesnippet/cpp/p-system.windows.forms.m_52_1.cpp)]
- [!code-vb[Classic MenuItem.Text Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.m_52_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,11 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Atom10ItemFormatter extends System.ServiceModel.Syndication.SyndicationItemFormatter implements class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10ItemFormatter" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,33 +20,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="entry", Namespace="http://www.w3.org/2005/Atom")</AttributeName>
+      <AttributeName>System.Xml.Serialization.XmlRoot("entry", Namespace="http://www.w3.org/2005/Atom")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A class that serializes a <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to and from Atom 1.0 format.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationItem> and to create an instance of <xref:System.ServiceModel.Syndication.SyndicationItem> from an XML document that contains an Atom 1.0 entry. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Atom10ItemFormatter%601> formatter instead.  
-  
-> [!NOTE]
->  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing, the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] implementation ignores the fractional seconds.  
-  
-   
-  
-## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationItem> instance and serialize it.  
-  
- [!code-vb[AtomFormatter#7](~/add/codesnippet/visualbasic/t-system.servicemodel.sy_8_1.vb)]
- [!code-cs[AtomFormatter#7](~/add/codesnippet/csharp/t-system.servicemodel.sy_8_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,49 +34,39 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Atom10ItemFormatter (System.ServiceModel.Syndication.SyndicationItem itemToWrite);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationItem itemToWrite) cil managed" />
+      <MemberSignature Language="C#" Value="public Atom10ItemFormatter (System.ServiceModel.Syndication.SyndicationItem feedToWrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationItem feedToWrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="itemToWrite" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="itemToWrite">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to serialize.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call this constructor.  
-  
- [!code-vb[AtomFormatter#8](~/add/codesnippet/visualbasic/6f80e76a-5890-49b8-9ba0-_1.vb)]
- [!code-cs[AtomFormatter#8](~/add/codesnippet/csharp/6f80e76a-5890-49b8-9ba0-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="feedToWrite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,35 +75,20 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor(System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="itemTypeToCreate" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="itemTypeToCreate">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> derived instance to associate with the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /></param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to specify a class derived from <xref:System.ServiceModel.Syndication.SyndicationItem> to instantiate when a syndication item is read in.  
-  
-   
-  
-## Examples  
- The following code shows how to use this constructor.  
-  
- [!code-vb[AtomFormatter#15](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_23_1.vb)]
- [!code-cs[AtomFormatter#15](~/add/codesnippet/csharp/m-system.servicemodel.sy_23_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="itemTypeToCreate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -143,11 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,20 +111,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <summary>Verifies whether the specified <see cref="T:System.Xml.XmlReader" /> contains a valid Atom 1.0 syndication item.</summary>
-        <returns>A value that specifies whether the <see cref="T:System.Xml.XmlReader" /> contains a valid Atom 1.0 syndication item.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to use the CanRead method.  
-  
- [!code-vb[AtomFormatter#13](~/add/codesnippet/visualbasic/78553a53-c924-4fa7-b7e8-_1.vb)]
- [!code-cs[AtomFormatter#13](~/add/codesnippet/csharp/78553a53-c924-4fa7-b7e8-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItemInstance">
@@ -179,11 +123,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.CreateItemInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,16 +135,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not automatically associated with the <xref:System.ServiceModel.Syndication.Atom10ItemFormatter> used to create it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -209,19 +146,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the syndication item associated with the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" />.</summary>
-        <value>The type of the syndication item associated with the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,27 +168,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveAttributeExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to preserve attribute extensions during serialization.</summary>
-        <value>A value that specifies whether to preserve attribute extensions during serialization.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of this property is `true`. Attribute extensions are XML attributes that are not defined in the Atom 1.0 specification. This property determines whether to write these attributes during serialization. Similarly, this property determines whether to preserve unknown attributes inside the `AttributeExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationItem> instance when deserializing an Atom1.0 entry.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveElementExtensions">
@@ -260,27 +190,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveElementExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to preserve element extensions during serialization.</summary>
-        <value>A value that specifies whether to preserve element extensions during serialization.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of this property is `true`. Element extensions are XML elements that are not defined in the Atom 1.0 specification. This property determines whether to write these elements during serialization. Similarly, this property determines whether to preserve unknown elements inside the `ElementExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationItem> instance when deserializing an Atom1.0 entry.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadFrom">
@@ -289,11 +212,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,19 +226,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <summary>Reads an Atom 1.0 syndication item from the specified <see cref="T:System.Xml.XmlReader" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to use the ReadFrom method.  
-  
- [!code-vb[AtomFormatter#13](~/add/codesnippet/visualbasic/02f2c6a5-d787-4728-bd21-_1.vb)]
- [!code-cs[AtomFormatter#13](~/add/codesnippet/csharp/02f2c6a5-d787-4728-bd21-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -324,11 +237,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,17 +249,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.GetSchema" /> method.</summary>
-        <returns>
-          <see langword="Null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override this method to return your own schema.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.ReadXml">
@@ -355,11 +260,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,8 +274,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read XML document.</param>
-        <summary>Implements the <see cref="System.Xml.Serialization.IXmlSerializable.ReadXml%28System.Xml.XmlReader%29" /> method.</summary>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,11 +285,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,8 +299,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML node.</param>
-        <summary>Implements the <see cref="System.Xml.Serialization.IXmlSerializable.WriteXml%28System.Xml.XmlWriter%29" /> method.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,27 +310,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the syndication version used by the formatter.</summary>
-        <value>The syndication version used by the formatter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -434,11 +332,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -448,19 +346,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <summary>Writes the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> associated with the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to call the WriteTo.  
-  
- [!code-vb[AtomFormatter#14](~/add/codesnippet/visualbasic/f9ba9dd0-494e-49ce-abde-_1.vb)]
- [!code-cs[AtomFormatter#14](~/add/codesnippet/csharp/f9ba9dd0-494e-49ce-abde-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

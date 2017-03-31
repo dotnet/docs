@@ -4,27 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the border style of a control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BorderStyle enumeration represents the different border style options for a control.  
-  
- The width of the border is controlled by using the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of the <xref:System.Web.UI.WebControls.WebControl> class.  
-  
-> [!NOTE]
->  When using the Double style, the border width you specify must be at least 3 pixels wide to accommodate both lines and the space in between.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dashed">
@@ -34,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A dashed line border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dotted">
@@ -51,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A dotted line border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -68,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A double solid line border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Groove">
@@ -85,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A grooved border for a sunken border appearance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inset">
@@ -102,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An inset border for a sunken control appearance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -119,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -136,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No set border style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Outset">
@@ -153,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An outset border for a raised control appearance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ridge">
@@ -170,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A ridged border for a raised border appearance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -187,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A solid line border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Key" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,15 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the possible key values on a keyboard.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Information pertaining to key input can be obtained in several different ways in [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)].  Key-related events, such as <xref:System.Windows.UIElement.KeyDown> and <xref:System.Windows.UIElement.KeyUp>, provide key state information through the ventArgs object that is passed to the event handler.  Key state information can also be obtained through the static methods on the oard class, such as oard.IsKeyUp(System.Windows.Input.Key) and oard.GetKeyStates(System.Windows.Input.Key).  The oard class reports the current state of the keyboard.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="A">
@@ -37,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The A key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbntC1">
@@ -54,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ABNT_C1 (Brazilian) key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbntC2">
@@ -71,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ABNT_C2 (Brazilian) key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -88,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Add key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Apps">
@@ -105,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Application key (Microsoft Natural Keyboard).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Attn">
@@ -122,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ATTN key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="B">
@@ -139,14 +125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The B key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Back">
@@ -156,14 +141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Backspace key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserBack">
@@ -173,14 +157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Back key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserFavorites">
@@ -190,14 +173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Favorites key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserForward">
@@ -207,14 +189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Forward key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserHome">
@@ -224,14 +205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Home key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserRefresh">
@@ -241,14 +221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Refresh key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserSearch">
@@ -258,14 +237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Search key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserStop">
@@ -275,14 +253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Browser Stop key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="C">
@@ -292,14 +269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The C key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -309,14 +285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Cancel key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Capital">
@@ -326,14 +301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Caps Lock key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CapsLock">
@@ -343,14 +317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Caps Lock key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -360,14 +333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Clear key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CrSel">
@@ -377,14 +349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CRSEL key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D">
@@ -394,14 +365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The D key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D0">
@@ -411,14 +381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 0 (zero) key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D1">
@@ -428,14 +397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 1 (one) key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D2">
@@ -445,14 +413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 2 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D3">
@@ -462,14 +429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 3 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D4">
@@ -479,14 +445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 4 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D5">
@@ -496,14 +461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 5 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D6">
@@ -513,14 +477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 6 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D7">
@@ -530,14 +493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 7 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D8">
@@ -547,14 +509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 8 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="D9">
@@ -564,14 +525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 9 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeAlphanumeric">
@@ -581,14 +541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_ALPHANUMERIC key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeCodeInput">
@@ -598,14 +557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_CODEINPUT key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeDbcsChar">
@@ -615,14 +573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_DBCSCHAR key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeDetermineString">
@@ -632,14 +589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_DETERMINESTRING key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeEnterDialogConversionMode">
@@ -649,14 +605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_ENTERDLGCONVERSIONMODE key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeEnterImeConfigureMode">
@@ -666,14 +621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_ENTERIMECONFIGMODE key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeEnterWordRegisterMode">
@@ -683,14 +637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_ENTERWORDREGISTERMODE key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeFlushString">
@@ -700,14 +653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_FLUSHSTRING key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeHiragana">
@@ -717,14 +669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_HIRAGANA key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeKatakana">
@@ -734,14 +685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_KATAKANA key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeNoCodeInput">
@@ -751,14 +701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_NOCODEINPUT key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeNoRoman">
@@ -768,14 +717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_NOROMAN key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeRoman">
@@ -785,14 +733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_ROMAN key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeSbcsChar">
@@ -802,14 +749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DBE_SBCSCHAR key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeadCharProcessed">
@@ -825,7 +771,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The key is used with another key to create a single combined character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -835,14 +781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Decimal key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -852,14 +797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Delete key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -869,14 +813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Divide key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Down">
@@ -886,14 +829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Down Arrow key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -903,14 +845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The E key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -920,14 +861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The End key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -937,14 +877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Enter key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EraseEof">
@@ -954,14 +893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ERASE EOF key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Escape">
@@ -971,14 +909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ESC key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -988,14 +925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Execute key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExSel">
@@ -1005,14 +941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The EXSEL key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F">
@@ -1022,14 +957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F1">
@@ -1039,14 +973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F1 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F10">
@@ -1056,14 +989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F10 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F11">
@@ -1073,14 +1005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F11 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F12">
@@ -1090,14 +1021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F12 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F13">
@@ -1107,14 +1037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F13 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F14">
@@ -1124,14 +1053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F14 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F15">
@@ -1141,14 +1069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F15 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F16">
@@ -1158,14 +1085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F16 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F17">
@@ -1175,14 +1101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F17 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F18">
@@ -1192,14 +1117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F18 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F19">
@@ -1209,14 +1133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F19 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F2">
@@ -1226,14 +1149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F2 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F20">
@@ -1243,14 +1165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F20 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F21">
@@ -1260,14 +1181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F21 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F22">
@@ -1277,14 +1197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F22 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F23">
@@ -1294,14 +1213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F23 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F24">
@@ -1311,14 +1229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F24 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F3">
@@ -1328,14 +1245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F3 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F4">
@@ -1345,14 +1261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F4 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F5">
@@ -1362,14 +1277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F5 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F6">
@@ -1379,14 +1293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F6 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F7">
@@ -1396,14 +1309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F7 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F8">
@@ -1413,14 +1325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F8 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="F9">
@@ -1430,14 +1341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The F9 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FinalMode">
@@ -1447,14 +1357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Final mode key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="G">
@@ -1464,14 +1373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The G key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="H">
@@ -1481,14 +1389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The H key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HangulMode">
@@ -1498,14 +1405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Hangul mode key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HanjaMode">
@@ -1515,14 +1421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Hanja mode key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -1532,14 +1437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Home">
@@ -1549,14 +1453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Home key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="I">
@@ -1566,14 +1469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The I key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeAccept">
@@ -1583,14 +1485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Accept key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeConvert">
@@ -1600,14 +1501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Convert key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeModeChange">
@@ -1617,14 +1517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Mode change request.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeNonConvert">
@@ -1634,14 +1533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME NonConvert key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeProcessed">
@@ -1651,14 +1549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A special key masking the real key being processed by an IME.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1668,14 +1565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Insert key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="J">
@@ -1685,14 +1581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The J key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JunjaMode">
@@ -1702,14 +1597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Junja mode key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="K">
@@ -1719,14 +1613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The K key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KanaMode">
@@ -1736,14 +1629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Kana mode key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KanjiMode">
@@ -1753,14 +1645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IME Kanji mode key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="L">
@@ -1770,14 +1661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The L key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchApplication1">
@@ -1787,14 +1677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Launch Application1 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchApplication2">
@@ -1804,14 +1693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Launch Application2 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchMail">
@@ -1821,14 +1709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Launch Mail key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1838,14 +1725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Left Arrow key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftAlt">
@@ -1855,14 +1741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left ALT key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftCtrl">
@@ -1872,14 +1757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left CTRL key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftShift">
@@ -1889,14 +1773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left Shift key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LineFeed">
@@ -1906,14 +1789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Linefeed key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LWin">
@@ -1923,14 +1805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left Windows logo key (Microsoft Natural Keyboard).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="M">
@@ -1940,14 +1821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The M key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaNextTrack">
@@ -1957,14 +1837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Media Next Track key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaPlayPause">
@@ -1974,14 +1853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Media Play Pause key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaPreviousTrack">
@@ -1991,14 +1869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Media Previous Track key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaStop">
@@ -2008,14 +1885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Media Stop key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -2025,14 +1901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Multiply key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="N">
@@ -2042,14 +1917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The N key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -2059,14 +1933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Page Down key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoName">
@@ -2076,14 +1949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A constant reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -2093,14 +1965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No key pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumLock">
@@ -2110,14 +1981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Num Lock key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad0">
@@ -2127,14 +1997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 0 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad1">
@@ -2144,14 +2013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 1 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad2">
@@ -2161,14 +2029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 2 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad3">
@@ -2178,14 +2045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 3 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad4">
@@ -2195,14 +2061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 4 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad5">
@@ -2212,14 +2077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 5 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad6">
@@ -2229,14 +2093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 6 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad7">
@@ -2246,14 +2109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 7 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad8">
@@ -2263,14 +2125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 8 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad9">
@@ -2280,14 +2141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The 9 key on the numeric keypad.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="O">
@@ -2297,14 +2157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The O key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem1">
@@ -2314,14 +2173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 1 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem102">
@@ -2331,14 +2189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 102 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem2">
@@ -2348,14 +2205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 2 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem3">
@@ -2365,14 +2221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 3 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem4">
@@ -2382,14 +2237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 4 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem5">
@@ -2399,14 +2253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 5 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem6">
@@ -2416,14 +2269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 6 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem7">
@@ -2433,14 +2285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 7 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem8">
@@ -2450,14 +2301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM 8 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemAttn">
@@ -2467,14 +2317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM ATTN key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemAuto">
@@ -2484,14 +2333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM AUTO key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemBackslash">
@@ -2501,14 +2349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Backslash key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemBackTab">
@@ -2518,14 +2365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM BACKTAB key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemClear">
@@ -2535,14 +2381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Clear key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemCloseBrackets">
@@ -2552,14 +2397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Close Brackets key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemComma">
@@ -2569,14 +2413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Comma key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemCopy">
@@ -2586,14 +2429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM COPY key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemEnlw">
@@ -2603,14 +2445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM ENLW key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemFinish">
@@ -2620,14 +2461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM FINISH key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemMinus">
@@ -2637,14 +2477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Minus key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemOpenBrackets">
@@ -2654,14 +2493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Open Brackets key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemPeriod">
@@ -2671,14 +2509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Period key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemPipe">
@@ -2688,14 +2525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Pipe key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemPlus">
@@ -2705,14 +2541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Addition key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemQuestion">
@@ -2722,14 +2557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Question key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemQuotes">
@@ -2739,14 +2573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Quotes key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemSemicolon">
@@ -2756,14 +2589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Semicolon key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemTilde">
@@ -2773,14 +2605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OEM Tilde key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="P">
@@ -2790,14 +2621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The P key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pa1">
@@ -2807,14 +2637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The PA1 key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageDown">
@@ -2824,14 +2653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Page Down key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageUp">
@@ -2841,14 +2669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Page Up key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -2858,14 +2685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Pause key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -2875,14 +2701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The PLAY key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -2892,14 +2717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Print key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintScreen">
@@ -2909,14 +2733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Print Screen key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prior">
@@ -2926,14 +2749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Page Up key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Q">
@@ -2943,14 +2765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Q key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="R">
@@ -2960,14 +2781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The R key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -2977,14 +2797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Return key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -2994,14 +2813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Right Arrow key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightAlt">
@@ -3011,14 +2829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right ALT key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightCtrl">
@@ -3028,14 +2845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right CTRL key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightShift">
@@ -3045,14 +2861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right Shift key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RWin">
@@ -3062,14 +2877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right Windows logo key (Microsoft Natural Keyboard).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="S">
@@ -3079,14 +2893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The S key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -3096,14 +2909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Scroll Lock key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -3113,14 +2925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Select key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectMedia">
@@ -3130,14 +2941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Select Media key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -3147,14 +2957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Separator key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sleep">
@@ -3164,14 +2973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Computer Sleep key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Snapshot">
@@ -3181,14 +2989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Print Screen key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -3198,14 +3005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Spacebar key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -3215,14 +3021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Subtract key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -3232,14 +3037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A special key masking the real key being processed as a system key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="T">
@@ -3249,14 +3053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The T key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -3266,14 +3069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Tab key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="U">
@@ -3283,14 +3085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The U key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -3300,14 +3101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Up Arrow key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="V">
@@ -3317,14 +3117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The V key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeDown">
@@ -3334,14 +3133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Volume Down key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeMute">
@@ -3351,14 +3149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Volume Mute key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeUp">
@@ -3368,14 +3165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Volume Up key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="W">
@@ -3385,14 +3181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The W key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -3402,14 +3197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The X key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -3419,14 +3213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Y key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Z">
@@ -3436,14 +3229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Z key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -3453,14 +3245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ZOOM key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

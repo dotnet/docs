@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the known folders for custom places in file dialog boxes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Custom places are available starting in[!INCLUDE[TLA2#tla_winvista](~/add/includes/tla2sharptla-winvista-md.md)].  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Contacts">
@@ -35,16 +28,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Contacts folder for the current user.</summary>
-        <value>The Contacts folder for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 56784854-C6CB-462b-8169-88E350ACB882.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -60,16 +46,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Internet cookies folder for the current user.</summary>
-        <value>The Internet cookies folder for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 2B0F765D-C0E9-4171-908E-08A611B84FF6.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -85,16 +64,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder for storing files on the desktop for the current user.</summary>
-        <value>The folder for storing files on the desktop for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is B4BFCC3A-DB2C-424C-B029-7FE99A87C641.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Documents">
@@ -110,16 +82,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Documents folder for the current user.</summary>
-        <value>The Documents folder for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is FDD39AD0-238F-46AF-ADB4-6C85480369C7.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Favorites">
@@ -135,16 +100,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Favorites folder for the current user.</summary>
-        <value>The  Favorites folder for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 1777F761-68AD-4D8A-87BD-30B759FA33DD.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalApplicationData">
@@ -160,16 +118,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder for application-specific data that is used by the current, non-roaming user.</summary>
-        <value>The folder for application-specific data that is used by the current, non-roaming user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is F1B32785-6FBA-4FCF-9D55-7B8E7F157091.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Music">
@@ -185,16 +136,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Music folder for the current user.</summary>
-        <value>The Music folder for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 4BD8D571-6D19-48D3-BE97-422220080E43.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pictures">
@@ -210,16 +154,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Pictures folder for the current user.</summary>
-        <value>The Pictures folder for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 33E28130-4E1E-4676-835A-98395C3BC3BB.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -235,16 +172,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Program Files folder.</summary>
-        <value>The Program Files folder.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 905E63B6-C1BF-494E-B29C-65B732D3D21A.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProgramFilesCommon">
@@ -260,16 +190,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder for components that are shared across applications.</summary>
-        <value>The folder for components that are shared across applications.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is F7F1ED05-9F6D-47A2-AAAE-29D317C6F066.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -285,16 +208,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder that contains the program groups for the current user.</summary>
-        <value>The folder that contains the program groups for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is A77F5D77-2E2B-44C3-A6A2-ABA601054A51.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RoamingApplicationData">
@@ -310,16 +226,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder for application-specific data for the current roaming user.</summary>
-        <value>The folder for application-specific data for the current roaming user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 3EB685DB-65F9-4CF6-A03A-E3EF65729F3D.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendTo">
@@ -335,16 +244,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder that contains the Send To menu items for the current user.</summary>
-        <value>The folder that contains the Send To menu items for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 8983036C-27C0-404B-8F08-102D10DCFD74.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartMenu">
@@ -360,16 +262,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder that contains the Start menu items for the current user.</summary>
-        <value>The folder that contains the Start menu items for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 625B53C3-AB48-4EC1-BA1F-A1EF4146FC19.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Startup">
@@ -385,16 +280,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder that corresponds to the Startup program group for the current user.</summary>
-        <value>The folder that corresponds to the Startup program group for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is B97D20BB-F46A-4C97-BA10-5E3608430854.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -410,16 +298,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the System folder.</summary>
-        <value>The System folder.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is 1AC14E77-02E7-4E5D-B744-2EB1AE5198B7.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Templates">
@@ -435,16 +316,9 @@
         <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the folder for document templates for the current user.</summary>
-        <value>The folder for document templates for the current user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUID for this folder is A63293E8-664E-48DB-A079-DF759E0509F7.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

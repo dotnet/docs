@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpSessionStateBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpSessionStateBase" />
   <AssemblyInfo>
-    <AssemblyName>System.Web.Abstractions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,18 +14,14 @@
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Abstractions, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>Serves as the base class for classes that provides access to session-state values, session-level settings, and lifetime management methods.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpSessionStateBase class is an abstract class that contains the same members as the <xref:System.Web.SessionState.HttpSessionState> class. The HttpSessionStateBase class enables you to create derived classes that are like the <xref:System.Web.SessionState.HttpSessionState> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpSessionStateWrapper> class derives from the HttpSessionStateBase class. The <xref:System.Web.HttpSessionStateWrapper> class serves as a wrapper for the <xref:System.Web.SessionState.HttpSessionState> class. At run time, you typically use an instance of the <xref:System.Web.HttpSessionStateWrapper> class to call members of the <xref:System.Web.SessionState.HttpSessionState> object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +30,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,17 +45,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.Abandon" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, cancels the current session.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -68,8 +63,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.Add(System.String,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -79,11 +74,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item to add to the session-state collection.</param>
-        <param name="value">The value of the item to add to the session-state collection.</param>
-        <summary>When overridden in a derived class, adds an item to the session-state collection.</summary>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -92,17 +86,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, removes all keys and values from the session-state collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -111,17 +104,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.CodePage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the character-set identifier for the current session.</summary>
-        <value>The character-set identifier for the current session.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -130,17 +122,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Contents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpSessionStateBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a reference to the current session-state object.</summary>
-        <value>The current session-state object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -149,17 +140,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.CookieMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the application is configured for cookieless sessions.</summary>
-        <value>One of the cookie-mode values that indicate whether the application is configured for cookieless sessions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -168,8 +158,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -179,11 +169,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array to copy session values to.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying starts.</param>
-        <summary>When overridden in a derived class, copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -192,17 +181,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the number of items in the session-state collection.</summary>
-        <value>The number of items in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -211,18 +199,17 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, returns an enumerator that can be used to read all the session-state variable names in the current session.</summary>
-        <returns>An enumerator that can iterate through the variable names in the session-state collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -231,18 +218,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.IsCookieless" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the session ID is embedded in the URL.</summary>
-        <value>
-          <see langword="true" /> if the session ID is embedded in the URL; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -251,18 +236,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.IsNewSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the session was created during the current request.</summary>
-        <value>
-          <see langword="true" /> if the session was created during the current request; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -271,18 +254,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the session is read-only.</summary>
-        <value>
-          <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -291,18 +272,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether access to the collection of session-state values is synchronized (thread safe).</summary>
-        <value>
-          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -311,8 +290,8 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -321,11 +300,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the session value.</param>
-        <summary>When overridden in a derived class, gets or sets a session value by using the specified index.</summary>
-        <value>The session-state value that is stored at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -334,8 +312,8 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -344,11 +322,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The key name of the session value.</param>
-        <summary>When overridden in a derived class, gets or sets a session value by using the specified name.</summary>
-        <value>The session-state value that has the specified name, or <see langword="null" /> if the item does not exist.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -357,17 +334,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a collection of the keys for all values that are stored in the session-state collection.</summary>
-        <value>The session keys.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -376,17 +352,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.LCID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the locale identifier (LCID) of the current session.</summary>
-        <value>The LCID (culture) of the current session.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -395,17 +370,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the current session-state mode.</summary>
-        <value>The session-state mode.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -414,8 +388,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.Remove(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -424,10 +398,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item to delete from the session-state collection.</param>
-        <summary>When overridden in a derived class, deletes an item from the session-state collection.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -436,24 +409,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.RemoveAll" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, removes all keys and values from the session-state collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method performs the same function as the <xref:System.Web.HttpSessionStateBase.Clear%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -462,8 +427,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpSessionStateBase.RemoveAt(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -472,10 +437,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item to remove from the session-state collection.</param>
-        <summary>When overridden in a derived class, deletes the item at the specified index from the session-state collection.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -484,17 +448,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.SessionID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the unique identifier for the session.</summary>
-        <value>The unique session identifier.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -503,17 +466,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.StaticObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpStaticObjectsCollectionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a collection of objects that are declared by <see langword="object" /> elements that are marked as server controls and scoped to the current session in the application's Global.asax file.</summary>
-        <value>The objects that are declared in the Global.asax file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -522,17 +484,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets an object that can be used to synchronize access to the collection of session-state values.</summary>
-        <value>An object that can be used to synchronize access to the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -541,17 +502,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpSessionStateBase.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the time, in minutes, that can elapse between requests before the session-state provider ends the session.</summary>
-        <value>The time-out period, in minutes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
   </Members>

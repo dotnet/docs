@@ -16,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> adds a default control endpoint using this class if the &lt;<see langword="workflowInstanceControl" />&gt; sub-element in the &lt;<see langword="sqlWorkflowInstanceStoreBehavior" />&gt; element is not specified explicitly.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <`workflowInstanceControl`> sub-element in the SqlWorkflowInstanceStore element is an optional element that specifies parameters for a workflow instance control endpoint. The Workflow Management Service uses this endpoint to issue control commands to the service host.  
-  
- If the <`workflowInstanceControl`> sub-element in the SqlWorkflowInstanceStore element is omitted, the SqlWorkflowInstanceStore still adds a default control endpoint using the WorkflowRuntimeEndpoint class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +51,8 @@
         <Parameter Name="service" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="service">The service object that must be added to the list of run-time services.</param>
-        <summary>Adds the specified service to the list of run-time services supported by the workflow run-time instance.</summary>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +72,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of the service whose object must retrieved from the list of objects.</param>
-        <summary>Gets the service object for the specified service type from the list of service objects.</summary>
-        <returns>The service object for the specified service type.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +95,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the service to get.</typeparam>
-        <summary>Gets the service object that corresponds to the service type specified as a template parameter.</summary>
-        <returns>The service object that corresponds to the service type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,10 +118,10 @@
         <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="inputs">The input objects.</param>
-        <param name="operationContext">The operation context information.</param>
-        <summary>Gets the instance identifier based on the inputs and operation context passed as parameters.</summary>
-        <returns>The instance identifier.</returns>
+        <param name="inputs">To be added.</param>
+        <param name="operationContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,12 +144,12 @@
         <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="inputs">The input objects.</param>
-        <param name="operationContext">The operation context information.</param>
-        <param name="responseContext">The response context information.</param>
-        <param name="value">The value object.</param>
-        <summary>Resolves a bookmark.</summary>
-        <returns>A bookmark.</returns>
+        <param name="inputs">To be added.</param>
+        <param name="operationContext">To be added.</param>
+        <param name="responseContext">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +169,8 @@
         <Parameter Name="service" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="service">The service object that must be removed from the list of supported run-time services.</param>
-        <summary>Removes the specified service from the list of run-time services supported by the workflow run-time instance.</summary>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

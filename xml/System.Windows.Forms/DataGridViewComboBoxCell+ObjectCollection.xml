@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of selection choices in a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can retrieve DataGridViewComboBoxCell.ObjectCollection objects from the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A?displayProperty=fullName> property or the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,15 +31,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewComboBoxCell" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> that owns the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,14 +58,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">An object representing the item to add to the collection.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
-        <returns>The position into which the new element was inserted.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -85,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,17 +86,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="items">One or more objects that represent items for the drop-down list.  
-  
- -or-  
-  
- An <see cref="T:System.Array" /> of <see cref="T:System.Object" /> values.</param>
-        <summary>Adds one or more items to the list of items for a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="items" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -121,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,13 +107,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.DataGridViewComboBoxCell+ObjectCollection" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> to load into this collection.</param>
-        <summary>Adds the items of an existing <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> to the list of items in a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -147,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,10 +126,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all items from the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The collection contains at least one item and the cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The collection contains at least one item and the cell is in a shared row.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -168,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,13 +146,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An object representing the item to locate in the collection.</param>
-        <summary>Determines whether the specified item is contained in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="item" /> is in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -194,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,20 +169,10 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">The destination array to which the contents will be copied.</param>
-        <param name="arrayIndex">The index of the element in <c>dest</c> at which to start copying.</param>
-        <summary>Copies the entire collection into an existing array of objects at a specified location within the array.</summary>
+        <param name="destination">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destination" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="arrayIndex" /> is less than 0 or equal to or greater than the length of <paramref name="destination" />.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of <paramref name="destination" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="destination" /> is multidimensional.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -228,15 +182,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
-        <value>The number of items in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -255,8 +207,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" />.</summary>
-        <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,7 +219,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,12 +228,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An object representing the item to locate in the collection.</param>
-        <summary>Returns the index of the specified item in the collection.</summary>
-        <returns>The zero-based index of the <paramref name="value" /> parameter if it is found in the collection; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -292,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,23 +251,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to place <c>item</c> within an unsorted <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</param>
-        <param name="item">An object representing the item to insert.</param>
-        <summary>Inserts an item into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Forms.DataGridViewComboBoxCell.Sorted%2A> is `false`, then the `index` value represents the position at which the `item` value is inserted. If <xref:System.Windows.Forms.DataGridViewComboBoxCell.Sorted%2A> is `true`, then `index` is ignored and `item` is placed in the collection in a position determined by the sorting order.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0 or greater than the number of items in the collection.</exception>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -329,16 +264,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +282,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -359,15 +291,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the item at the current index location. In C#, this property is the indexer for the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> class.</summary>
-        <value>The <see cref="T:System.Object" /> stored at the given index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0 or greater than the number of items in the collection minus one.</exception>
-        <exception cref="T:System.ArgumentNullException">The specified value when setting this property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">When setting this property, the cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">When setting this property, the cell is in a shared row.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -377,7 +304,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,18 +313,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An object representing the item to remove from the collection.</param>
-        <summary>Removes the specified object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `value` parameter is not in the collection, this method does nothing.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -408,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,13 +334,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the object to be removed.</param>
-        <summary>Removes the object at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0 or greater than the number of items in the collection minus one.</exception>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -434,7 +346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -445,27 +356,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in the array at which copying begins.</param>
-        <summary>Copies the elements of the collection to the specified array, starting at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destination" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0 or equal to or greater than the length of <paramref name="destination" />.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="destination" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="destination" /> is multidimensional.</exception>
+        <param name="destination">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -475,24 +369,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -502,23 +387,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -528,7 +405,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,21 +414,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The object to add to the collection.</param>
-        <summary>Adds an object to the collection.</summary>
-        <returns>The position in which to insert the new element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The cell's <see cref="System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A" /> property value is not <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -562,24 +427,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

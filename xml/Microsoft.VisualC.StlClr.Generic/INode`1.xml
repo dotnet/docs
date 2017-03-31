@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.INode`1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -12,8 +11,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/add/includes/cpp-iter-arg-md.md)]</typeparam>
-    <summary>Interface for the node data structure. Containers that support bidirectional iteration contain nodes. A node consists of a value for the element at that position in the container and pointers to the next and previous elements in the container.</summary>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,15 +23,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue@</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the element for this node in the container.</summary>
-        <value>The value of the element for this node in the container.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,8 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the container that the current node is in.</summary>
-        <returns>The container that the current node is in.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,9 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the current node is the first node of the container.</summary>
-        <returns>
-          <see langword="true" /> if the current node is the first node in the container; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,8 +86,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the next node in the container past the current node.</summary>
-        <returns>The next node in the container past the current node.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,8 +105,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the node in the container immediately before the current node.</summary>
-        <returns>The node in the container immediately before the current node.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

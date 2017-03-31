@@ -4,27 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataSourceUpdateMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when a data source is updated when changes occur in the bound control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a control is bound to a data source using a <xref:System.Windows.Forms.Binding> object, you can specify when an update to the data source will occur using the DataSourceUpdateMode enumeration.  
-  
- When the update mode is Never, you can force the data source to be updated by using the <xref:System.Windows.Forms.Binding.WriteValue%2A> method.  
-  
-> [!NOTE]
->  Even when the update mode is set to Never, the data source will be updated when the binding is first created, so at that least one update will always occur.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Never">
@@ -34,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Data source is never updated and values entered into the control are not parsed, validated or re-formatted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -51,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Data source is updated whenever the value of the control property changes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnValidation">
@@ -68,22 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Data source is updated when the control property is validated,</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After validation, the value in the control property will also be re-formatted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ComboBoxState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the visual state of a combo box that is drawn with visual styles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ComboBoxState values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox.DropDownButton> class. The ComboBoxState values are also used as an argument in the <xref:System.Windows.Forms.ComboBoxRenderer.DrawDropDownButton%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%2A?displayProperty=fullName> methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The combo box is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hot">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The combo box is hot.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The combo box has the default appearance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The combo box is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

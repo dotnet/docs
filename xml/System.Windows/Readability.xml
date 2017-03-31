@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Readability" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the readability value of a <see cref="T:System.Windows.LocalizabilityAttribute" /> for a [!INCLUDE[TLA#tla_baml](~/add/includes/tlasharptla-baml-md.md)] class or class member.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.LocalizabilityAttribute> attribute can be applied to a class, property, or method.  
-  
- For more information on how to use localization attributes, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
-   
-  
-## Examples  
- The following code example shows the readability value of a <xref:System.Windows.LocalizabilityAttribute> defined for a button.  
-  
- [!code-xml[AttributesSnippets#AttributesSnippet1](~/add/codesnippet/xaml/AttributesSnippets/Attributes.xaml#attributessnippet1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Inherit">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Readability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targeted value readability is inherited from its parent node.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Readable">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Readability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targeted value is readable text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unreadable">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Readability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targeted value is not readable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -3,9 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509ChainStatusFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,17 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the status of an X509 chain.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used in conjunction with the <xref:System.Security.Cryptography.X509Certificates.X509ChainStatus> structure and the <xref:System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus%2A> property.  
-  
- The flags ExplicitDistrust, HasNotSupportedCriticalExtension and  HasWeakSignature were introduced with the [!INCLUDE[net_v461](~/add/includes/net-v461-md.md)].  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CtlNotSignatureValid">
@@ -35,15 +35,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotSignatureValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate trust list (CTL) contains an invalid signature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CtlNotTimeValid">
@@ -52,15 +61,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotTimeValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate trust list (CTL) is not valid because of an invalid time value, such as one that indicates that the CTL has expired.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CtlNotValidForUsage">
@@ -69,15 +87,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotValidForUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate trust list (CTL) is not valid for this use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cyclic">
@@ -86,15 +113,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Cyclic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain could not be built.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExplicitDistrust">
@@ -103,14 +139,23 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.ExplicitDistrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate is explicitly distrusted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasExcludedNameConstraint">
@@ -119,15 +164,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasExcludedNameConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid because a certificate has excluded a name constraint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasNotDefinedNameConstraint">
@@ -136,15 +190,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotDefinedNameConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate has an undefined name constraint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasNotPermittedNameConstraint">
@@ -153,15 +216,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotPermittedNameConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate has an impermissible name constraint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasNotSupportedCriticalExtension">
@@ -170,14 +242,23 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedCriticalExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate does not support a critical extension.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasNotSupportedNameConstraint">
@@ -186,15 +267,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedNameConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate does not have a supported name constraint or has a name constraint that is unsupported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasWeakSignature">
@@ -203,14 +293,23 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasWeakSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the certificate has not been strong signed. Typically, this indicates that the MD2 or MD5 hashing algorithms were used to create a hash of the certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidBasicConstraints">
@@ -219,15 +318,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidBasicConstraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to invalid basic constraints.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidExtension">
@@ -236,15 +344,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to an invalid extension.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidNameConstraints">
@@ -253,15 +370,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidNameConstraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to invalid name constraints.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPolicyConstraints">
@@ -270,15 +396,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidPolicyConstraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to invalid policy constraints.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoError">
@@ -287,15 +422,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain has no errors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoIssuanceChainPolicy">
@@ -304,15 +448,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoIssuanceChainPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that there is no certificate policy extension in the certificate. This error would occur if a group policy has specified that all certificates must have a certificate policy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSignatureValid">
@@ -321,15 +474,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotSignatureValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to an invalid certificate signature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTimeNested">
@@ -338,15 +500,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeNested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Deprecated. Specifies that the CA (certificate authority) certificate and the issued certificate have validity periods that are not nested. For example, the CA cert can be valid from January 1 to December 1 and the issued certificate from January 2 to December 2, which would mean the validity periods are not nested.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTimeValid">
@@ -355,15 +526,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is not valid due to an invalid time value, such as a value that indicates an expired certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotValidForUsage">
@@ -372,15 +552,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotValidForUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the key usage is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OfflineRevocation">
@@ -389,15 +578,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.OfflineRevocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the online certificate revocation list (CRL) the X509 chain relies on is currently offline.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartialChain">
@@ -406,15 +604,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.PartialChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain could not be built up to the root certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RevocationStatusUnknown">
@@ -423,15 +630,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that it is not possible to determine whether the certificate has been revoked. This can be due to the certificate revocation list (CRL) being offline or unavailable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Revoked">
@@ -440,15 +656,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Revoked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to a revoked certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedRoot">
@@ -457,15 +682,24 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.UntrustedRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ChainStatusFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the X509 chain is invalid due to an untrusted root certificate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

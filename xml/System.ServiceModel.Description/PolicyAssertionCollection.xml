@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.PolicyAssertionCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,17 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains policy assertions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the PolicyAssertionCollection class to group together policy assertions and to enumerate or modify a group of assertions.  
-  
- The PolicyAssertionCollection is used most frequently as a return value for the methods of the <xref:System.ServiceModel.Description.PolicyConversionContext> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,12 +25,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.PolicyAssertionCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,15 +40,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="elements">The policy assertions the collection is to contain.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.PolicyAssertionCollection" /> class using the specified <see cref="T:System.Xml.XmlElement" /> objects.</summary>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,11 +68,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The name of the policy assertion.</param>
-        <param name="namespaceUri">The namespace of the policy assertion.</param>
-        <summary>Returns a value that indicates whether the collection contains the specified policy assertion.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified policy assertion; otherwise, <see langword="false" />.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,10 +92,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the policy assertion.</param>
-        <param name="namespaceUri">The namespace of the policy assertion.</param>
-        <summary>Returns the specified policy assertion.</summary>
-        <returns>The specified policy assertion, or <see langword="null" /> if the assertion cannot be found.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,10 +116,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the policy assertion.</param>
-        <param name="namespaceUri">The namespace of the policy assertion.</param>
-        <summary>Returns all specified policy assertions.</summary>
-        <returns>A collection of all policy assertions that match the specification, or an empty collection.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,9 +140,9 @@
         <Parameter Name="item" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which to insert <c>item</c>.</param>
-        <param name="item">The policy assertion to insert at <c>index</c>. The assertion must not be null.</param>
-        <summary>Inserts a specified policy assertion into the collection at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,10 +163,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the policy assertion.</param>
-        <param name="namespaceUri">The namespace of the policy assertion.</param>
-        <summary>Removes the specified policy assertion from the collection.</summary>
-        <returns>The policy assertion that was removed from the collection or <see langword="null" /> if the policy assertion was not in the collection.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,10 +187,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the policy assertion.</param>
-        <param name="namespaceUri">The namespace of the policy assertion.</param>
-        <summary>Removes all policy assertions that match the specified name and namespace.</summary>
-        <returns>A collection of all removed policy assertions or an empty collection if no assertions were found that match the specified name and namespace.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +201,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,9 +211,9 @@
         <Parameter Name="item" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="index">The index that contains the assertion to replace.</param>
-        <param name="item">The policy assertion to replace the assertion already at <c>index</c>. The assertion must not be null.</param>
-        <summary>Replaces the policy assertion at a specified index with a specified policy assertion.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

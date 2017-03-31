@@ -4,26 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessageDirection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the direction of the message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The direction of a message indicates whether the message is coming into an endpoint or going out from an endpoint. Input is incoming to the server and Output is outgoing from the server. For a basic request/response message pattern, a request is incoming to the server and the response is outgoing from the server. On callbacks from the server to client, however, a request is outgoing from the server and a response is incoming to the server.  
-  
- Use the <xref:System.ServiceModel.Description.MessageDescription.%23ctor%28System.String%2CSystem.ServiceModel.Description.MessageDirection%29> constructor to specify the direction of a message.  
-  
- Retrieve the direction of a message using the <xref:System.ServiceModel.Description.MessageDescription.Direction%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Input">
@@ -33,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.MessageDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message is incoming.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -50,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.MessageDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message is outgoing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

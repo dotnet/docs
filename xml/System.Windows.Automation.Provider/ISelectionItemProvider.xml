@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISelectionItemProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Exposes methods and properties to support UI Automation client access to individual, selectable child controls of containers that implement <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.SelectionItemPattern> control pattern.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddToSelection">
@@ -38,7 +30,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,28 +37,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds the current element to the collection of selected items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the result of a call to AddToSelection is that a single item is selected, then send an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> for that element; otherwise send an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> or <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.  
-  
-> [!NOTE]
->  This rule does not depend on whether the container allows single or multiple selections, or on what method was used to change the selection. Only the result matters.  
-  
-   
-  
-## Examples  
- The following example code adds the item to a collection of selected items.  
-  
- [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#AddToSelection](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#addtoselection)]
- [!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#AddToSelection](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#addtoselection)]  
-[!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#isselected)]
-[!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#isselected)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -77,27 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an item is selected.</summary>
-        <value>
-          <see langword="true" /> if the element is selected; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example code returns `true` if this item is in the collection of selected items.  
-  
- [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#isselected)]
- [!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#isselected)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveFromSelection">
@@ -107,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,28 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the current element from the collection of selected items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Send an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.  
-  
-> [!NOTE]
->  This rule does not depend on whether the container allows single or multiple selections, or on what method was used to change the selection. Only the result matters.  
-  
-   
-  
-## Examples  
- The following example code removes the item from a collection of selected items.  
-  
- [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#RemoveFromSelection](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#removefromselection)]
- [!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#RemoveFromSelection](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#removefromselection)]  
-[!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#isselected)]
-[!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#isselected)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -146,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,18 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deselects any selected items and then selects the current element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example code clears all items from the collection of selected items and then adds this one.  
-  
- [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#Select](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#select)]
- [!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#Select](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#select)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionContainer">
@@ -175,26 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
-        <value>The provider that supports <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example code returns the UI Automation provider for the list box that contains this list item.  
-  
- [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#SelectionContainer](~/add/codesnippet/visualbasic/elementprovider/listitemfragment.vb#selectioncontainer)]
- [!code-cs[UIAISelectionProvider_ISelectionItemProvider_snip#SelectionContainer](~/add/codesnippet/csharp/UIAISelectionProvider_ISelectionItemProvider_snip.ElementProvider/ListItemFragment.cs#selectioncontainer)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,38 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Net.OpenWriteCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Net.WebClient.OpenWriteCompleted" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Instances of this class are passed to <xref:System.Net.OpenWriteCompletedEventHandler> methods.  
-  
-   
-  
-## Examples  
- The following code example demonstrates opening a stream to write data to be uploaded.  
-  
- [!code-cpp[NCLWebClientAsync#16](~/add/codesnippet/cpp/t-system.net.openwriteco_1_1.cpp)]
- [!code-cs[NCLWebClientAsync#16](~/add/codesnippet/csharp/t-system.net.openwriteco_1_1.cs)]
- [!code-vb[NCLWebClientAsync#16](~/add/codesnippet/visualbasic/t-system.net.openwriteco_1_1.vb)]  
-  
- The following method is called when the stream is available.  
-  
- [!code-cpp[NCLWebClientAsync#15](~/add/codesnippet/cpp/t-system.net.openwriteco_1_2.cpp)]
- [!code-cs[NCLWebClientAsync#15](~/add/codesnippet/csharp/t-system.net.openwriteco_1_2.cs)]
- [!code-vb[NCLWebClientAsync#15](~/add/codesnippet/visualbasic/t-system.net.openwriteco_1_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Result">
@@ -45,32 +27,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a writable stream that is used to send data to a server.</summary>
-        <value>A <see cref="T:System.IO.Stream" /> where you can write data to be uploaded.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties before using the stream returned by this property. If the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property's value is an <xref:System.Exception> object or the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property's value is `true`, the asynchronous operation did not complete correctly and the Result property's value will not be valid.  
-  
-   
-  
-## Examples  
- The following code example uses the stream returned by this property.  
-  
- [!code-cpp[NCLWebClientAsync#15](~/add/codesnippet/cpp/p-system.net.openwriteco_1.cpp)]
- [!code-cs[NCLWebClientAsync#15](~/add/codesnippet/csharp/p-system.net.openwriteco_1.cs)]
- [!code-vb[NCLWebClientAsync#15](~/add/codesnippet/visualbasic/p-system.net.openwriteco_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

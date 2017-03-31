@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContentsResizedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.RichTextBox.ContentsResized" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when the bounding rectangle necessary to accept new text changes. If the text within the control spans multiple lines, the requested rectangle will always be the width of the control. You can handle this event in your control to implement auto-resizing for multiline <xref:System.Windows.Forms.RichTextBox> controls. The ContentsResizedEventArgs identifies the requested size of the <xref:System.Windows.Forms.RichTextBox>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#537](~/add/codesnippet/csharp/t-system.windows.forms.c_37_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#537](~/add/codesnippet/visualbasic/t-system.windows.forms.c_37_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="newRectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="newRectangle">A <see cref="T:System.Drawing.Rectangle" /> that specifies the requested dimensions of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContentsResizedEventArgs" /> class.</summary>
+        <param name="newRectangle">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,33 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the requested size of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the requested size of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When text is entered into the <xref:System.Windows.Forms.RichTextBox> control, the <xref:System.Windows.Forms.RichTextBox> control determines the proper size of the control in order to display all of the contents of the control. You can use the NewRectangle property in an event handler for the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event of the <xref:System.Windows.Forms.RichTextBox> control to properly size the control to display all of the control's contents.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ContentsResized?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.ContentsResized?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#537](~/add/codesnippet/csharp/p-system.windows.forms.c_11_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#537](~/add/codesnippet/visualbasic/p-system.windows.forms.c_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

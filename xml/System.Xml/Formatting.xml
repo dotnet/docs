@@ -4,14 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Formatting" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies formatting options for the <see cref="T:System.Xml.XmlTextWriter" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,22 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes child elements to be indented according to the <see cref="System.Xml.XmlTextWriter.Indentation%2A" /> and <see cref="System.Xml.XmlTextWriter.IndentChar%2A" /> settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This option indents element content only; mixed content is not affected. For the XML 1.0 definitions of these terms, see the World Wide Web Consortium (W3C) documentation (www.w3.org/TR/1998/REC-xml-19980210#sec-element-content and www.w3.org/TR/1998/REC-xml-19980210#sec-mixed-content).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -47,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No special formatting is applied. This is the default.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

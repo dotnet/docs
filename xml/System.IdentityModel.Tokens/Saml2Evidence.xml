@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the Evidence element specified in [Saml2Core, 2.7.4.3].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Contains one or more assertions or assertion references that the SAML authority relied on in issuing the authorization decision. [Saml2Core, 2.7.4.3]  
-  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,18 +43,9 @@
         <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
       </Parameters>
       <Docs>
-        <param name="assertion">A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that contains the evidence.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class with the specified assertion.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The specified assertion is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.Assertions%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="assertion" /> is <see langword="null" />.</exception>
+        <param name="assertion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,18 +61,9 @@
         <Parameter Name="idReference" Type="System.IdentityModel.Tokens.Saml2Id" />
       </Parameters>
       <Docs>
-        <param name="idReference">A <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> that references the assertion.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class with an ID that references an assertion.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The specified ID is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.AssertionIdReferences%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="idReference" /> is <see langword="null" />.</exception>
+        <param name="idReference">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,18 +79,9 @@
         <Parameter Name="uriReference" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uriReference">A <see cref="T:System.Uri" /> that references an assertion.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> class with a URI that references an assertion.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The specified URI is added to the collection accessed through the <xref:System.IdentityModel.Tokens.Saml2Evidence.AssertionUriReferences%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="uriReference" /> is <see langword="null" />.</exception>
+        <param name="uriReference">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AssertionIdReferences">
@@ -133,8 +97,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Id&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of assertions referenced by ID.</summary>
-        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> that contains IDs that reference the assertions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +115,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Assertion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of assertions specified by value.</summary>
-        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that contains the assertions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +133,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of assertions referenced by URI.</summary>
-        <value>A collection of type <see cref="T:System.Uri" /> that contains URIs that reference the assertions.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

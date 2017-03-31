@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LoginNameDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.LoginName" /> Web server control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.LoginName> control renders a label that contains the name of the current user.  
-  
- In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.LoginName> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The LoginNameDesigner class provides design-time support for the <xref:System.Web.UI.WebControls.LoginName> control.  
-  
- The <xref:System.Web.UI.Design.WebControls.LoginNameDesigner.UsePreviewControl%2A> property always returns `true`, indicating that the designer creates a temporary copy of the associated <xref:System.Web.UI.WebControls.LoginName> to generate the design-time markup. The <xref:System.Web.UI.Design.WebControls.LoginNameDesigner.GetErrorDesignTimeHtml%2A> method provides the markup that is used to render the associated <xref:System.Web.UI.WebControls.LoginName> at design time when an error has occurred.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LoginNameDesigner" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.LoginNameDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.LoginName> control or a copy of that control on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -57,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,17 +46,10 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Exception" /> that was thrown.</param>
-        <summary>Provides the markup that is used to render the associated control at design time when an error has occurred.</summary>
-        <returns>A string that contains the markup used to render the associated <see cref="T:System.Web.UI.WebControls.LoginName" /> at design time after an error has occurred.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an error occurs in trying to display the design-time view of the <xref:System.Web.UI.WebControls.LoginName> control, this method returns the HTML markup to display a placeholder that contains the type name, the control name, and one or more messages describing the error.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -87,25 +59,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the designer should use a temporary copy, rather than the actual control that is associated with the designer, to generate the design-time markup.</summary>
-        <value>Always <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the UsePreviewControl property is always `true`, the designer <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property returns a copy of the associated <xref:System.Web.UI.WebControls.LoginName> control to generate the design-time markup. The <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property creates the copy by persisting the actual <xref:System.Web.UI.WebControls.LoginName> control, then parsing the persisted control string. The copied control does not affect any persistence for the actual <xref:System.Web.UI.WebControls.LoginName> control.  
-  
- If the UsePreviewControl property has been overridden to return `false`, the designer will use the associated <xref:System.Web.UI.WebControls.LoginName> control itself to generate the design-time markup, and design-time changes to the control will persist to the page markup source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

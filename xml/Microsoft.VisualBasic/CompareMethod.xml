@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompareMethod" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates how to compare strings when calling comparison functions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call comparison functions, you can use the `CompareMethod` enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
-  
- For details on binary and text comparisons, see [Option Compare Statement](../Topic/Option%20Compare%20Statement.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Binary">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Performs a binary comparison. This member is equivalent to the Visual Basic constant <see langword="vbBinaryCompare" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.CompareMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Performs a textual comparison. This member is equivalent to the Visual Basic constant <see langword="vbTextCompare" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

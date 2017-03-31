@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that is thrown when a XAML writer (such as the <see cref="T:System.Xaml.XamlObjectWriter" /> class) encounters an error while attempting to produce object graphs from a XAML node stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For cases where line information is available (such as when the XAML node stream was read by a <xref:System.Xaml.XamlXmlReader>), and for certain exception cases, a XamlObjectWriterException can report line information from the source of the XAML node stream. This information is appended to the <xref:System.Xaml.XamlException.Message%2A> and is also contained in <xref:System.Xaml.XamlException.LineNumber%2A> and <xref:System.Xaml.XamlException.LinePosition%2A>. Each of these members is implemented by the <xref:System.Xaml.XamlException> base class of XamlObjectWriterException.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class with a system-supplied message that describes the error.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class with a specified message that describes the error.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The object that holds the serialized object data.</param>
-        <param name="context">The contextual information about the source or destination.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class with serialized data.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,17 +82,10 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
-        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlTriggerContext" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides contextual information about the trigger that was fired.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The contextual information provided includes the type of action that caused the trigger to fire, which columns were modified in an UPDATE operation, and, in the case of a data definition language (DDL) trigger, an XML EventData structure (see "Transact-SQL Reference" in SQL Server Books Online) that describes the triggering operation.  
-  
- An instance of SqlTriggerContext is available from the <xref:Microsoft.SqlServer.Server.SqlContext> class, when the code is running inside a trigger through the <xref:Microsoft.SqlServer.Server.SqlContext.TriggerContext%2A> property.  
-  
-   
-  
-## Examples  
- The following example shows a SqlTriggerContext object being used to determine if an <xref:Microsoft.SqlServer.Server.TriggerAction> action occurred. If a row was inserted into the `user`'s table, the user name and real name are retrieved from the inserted row and then added to the **UserNameAudit** table.  
-  
- [!code-cs[DataWorks SqlTriggerContext Sample#1](~/add/codesnippet/csharp/t-microsoft.sqlserver.se_7_1.cs)]
- [!code-vb[DataWorks SqlTriggerContext Sample#1](~/add/codesnippet/visualbasic/t-microsoft.sqlserver.se_7_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnCount">
@@ -40,23 +23,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of columns contained by the data table bound to the trigger. This property is read-only.</summary>
-        <value>The number of columns contained by the data table bound to the trigger, as an integer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ColumnCount property is useful to determine the maximum ordinal that <xref:Microsoft.SqlServer.Server.SqlTriggerContext.IsUpdatedColumn%2A> allows for a given trigger invocation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EventData">
@@ -66,23 +42,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlXml</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the event data specific to the action that fired the trigger.</summary>
-        <value>The event data specific to the action that fired the trigger as a <see cref="T:System.Data.SqlTypes.SqlXml" /> if more information is available; <see langword="null" /> otherwise.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This information is available for data definition language (DDL) triggers. No information is available through this property for data manipulation language (DML) triggers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUpdatedColumn">
@@ -92,7 +61,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,12 +71,10 @@
         <Parameter Name="columnOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="columnOrdinal">The zero-based ordinal of the column.</param>
-        <summary>Returns <see langword="true" /> if a column was affected by an INSERT or UPDATE statement.</summary>
-        <returns>
-          <see langword="true" /> if the column was affected by an INSERT or UPDATE operation.</returns>
+        <param name="columnOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Called in the context of a trigger where the value of the <see cref="Microsoft.SqlServer.Server.SqlTriggerContext.TriggerAction%2A" /> property is not <see langword="Insert" /> or <see langword="Update" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TriggerAction">
@@ -117,26 +84,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates what action fired the trigger.</summary>
-        <value>The action that fired the trigger as a <see cref="T:Microsoft.SqlServer.Server.TriggerAction" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows an auditing trigger. If an <xref:Microsoft.SqlServer.Server.TriggerAction> or <xref:Microsoft.SqlServer.Server.TriggerAction> action occurred, the affected rows are retrieved from the INSERTED and DELETED tables.  
-  
- [!code-cs[DataWorks SqlTriggerContext Sample#2](~/add/codesnippet/csharp/p-microsoft.sqlserver.se_1_1.cs)]
- [!code-vb[DataWorks SqlTriggerContext Sample#2](~/add/codesnippet/visualbasic/p-microsoft.sqlserver.se_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

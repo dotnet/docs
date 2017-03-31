@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Operation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,24 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an abstract definition of an action supported by the XML Web service. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Operation class corresponds to the Web Services Description Language (WSDL) `operation` element enclosed by the `portType` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- The following example demonstrates a typical use of the Operation class. The example takes a <xref:System.Web.Services.Description.ServiceDescription> that does not have a <xref:System.Web.Services.Description.PortType> that supports the HTTP POST protocol. It adds a <xref:System.Web.Services.Description.PortType> instance that supports POST, and writes out a new WSDL contract.  
-  
- [!code-vb[Operation_5#1](~/add/codesnippet/visualbasic/t-system.web.services.de_16_1.vb)]
- [!code-cs[Operation_5#1](~/add/codesnippet/csharp/t-system.web.services.de_16_1.cs)]
- [!code-cpp[Operation_5#1](~/add/codesnippet/cpp/t-system.web.services.de_16_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Operation" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +44,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -72,8 +56,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.Operation" />.</summary>
-        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.Operation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +68,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -96,18 +80,9 @@
         <ReturnType>System.Web.Services.Description.OperationFaultCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of faults, or error messages, defined by the current <see cref="T:System.Web.Services.Description.Operation" />.</summary>
-        <value>A collection of faults, or error messages, defined by the current operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[Operation_Faults#1](~/add/codesnippet/cpp/p-system.web.services.de_14_1.cpp)]
- [!code-cs[Operation_Faults#1](~/add/codesnippet/csharp/p-system.web.services.de_14_1.cs)]
- [!code-vb[Operation_Faults#1](~/add/codesnippet/visualbasic/p-system.web.services.de_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBoundBy">
@@ -117,7 +92,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,22 +102,10 @@
         <Parameter Name="operationBinding" Type="System.Web.Services.Description.OperationBinding" />
       </Parameters>
       <Docs>
-        <param name="operationBinding">An <see cref="T:System.Web.Services.Description.OperationBinding" /> to be checked to determine whether it matches with the <see cref="T:System.Web.Services.Description.Operation" />.</param>
-        <summary>Returns a value that indicates whether the specified <see cref="T:System.Web.Services.Description.OperationBinding" /> matches with the <see cref="T:System.Web.Services.Description.Operation" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.Services.Description.Operation" /> instance matches the <paramref name="operationBinding" /> parameter; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates a typical use of the IsBoundBy method.  
-  
- [!code-vb[Operation_IsBoundBy#1](~/add/codesnippet/visualbasic/5150a4e8-9338-43c3-b389-_1.vb)]
- [!code-cs[Operation_IsBoundBy#1](~/add/codesnippet/csharp/5150a4e8-9338-43c3-b389-_1.cs)]
- [!code-cpp[Operation_IsBoundBy#1](~/add/codesnippet/cpp/5150a4e8-9338-43c3-b389-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="operationBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Messages">
@@ -152,38 +115,24 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("input", typeof(System.Web.Services.Description.OperationInput))</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("output", typeof(System.Web.Services.Description.OperationOutput))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlElement("output", typeof(System.Web.Services.Description.OperationOutput))</AttributeName>
+          <AttributeName>System.Xml.Serialization.XmlElement("input", typeof(System.Web.Services.Description.OperationInput))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationMessageCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of instances of the <see cref="T:System.Web.Services.Description.Message" /> class defined by the current <see cref="T:System.Web.Services.Description.Operation" />.</summary>
-        <value>The collection of instances of the <see cref="T:System.Web.Services.Description.Message" /> class defined by the current <see cref="T:System.Web.Services.Description.Operation" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because an <xref:System.Web.Services.Description.Operation> is associated with exactly one <xref:System.Web.Services.Description.OperationInput> and exactly one <xref:System.Web.Services.Description.OperationOutput>, only one instance of each can be a member of this collection, and thus the collection can have a maximum of two members.  
-  
-   
-  
-## Examples  
- [!code-vb[Operation_5#3](~/add/codesnippet/visualbasic/p-system.web.services.de_54_1.vb)]
- [!code-cs[Operation_5#3](~/add/codesnippet/csharp/p-system.web.services.de_54_1.cs)]
- [!code-cpp[Operation_5#3](~/add/codesnippet/cpp/p-system.web.services.de_54_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterOrder">
@@ -193,7 +142,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -205,23 +154,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an array of the elements contained in the <see cref="System.Web.Services.Description.Operation.ParameterOrderString%2A" />.</summary>
-        <value>An array of names of <see cref="T:System.Web.Services.Description.MessagePart" /> instances.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The elements of this array are identical to those of the <xref:System.Web.Services.Description.Operation.ParameterOrderString%2A> property, but housed in an array rather than a space-delimited string.  
-  
-   
-  
-## Examples  
- [!code-cpp[Operation_2#2](~/add/codesnippet/cpp/p-system.web.services.de_80_1.cpp)]
- [!code-cs[Operation_2#2](~/add/codesnippet/csharp/p-system.web.services.de_80_1.cs)]
- [!code-vb[Operation_2#2](~/add/codesnippet/visualbasic/p-system.web.services.de_80_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterOrderString">
@@ -231,7 +166,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -246,35 +181,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an optional Remote Procedure Call (RPC) signature that orders specification for request-response or solicit-response operations.</summary>
-        <value>A list of names of the <see cref="T:System.Web.Services.Description.MessagePart" /> instances separated by a single space.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The named <xref:System.Web.Services.Description.MessagePart> instances must adhere to the following rules:  
-  
--   The order of the named <xref:System.Web.Services.Description.MessagePart> instances reflects the order of the parameters in the RPC (remote procedure call) signature, which is the name of the operation, its input and output parameters, the results it returns and the exceptions it might be asked to handle.  
-  
--   The return value is not present in the list.  
-  
--   If the <xref:System.Web.Services.Description.MessagePart> name appears in both the input and output messages, it is an `in/out` parameter.  
-  
--   If the <xref:System.Web.Services.Description.MessagePart> name appears only in the input message, it is an `in` parameter.  
-  
--   If the <xref:System.Web.Services.Description.MessagePart> name appears only in the output message, it is an `out` parameter.  
-  
- Note that this parameter list is not required, even if the <xref:System.Web.Services.Description.Operation> is to be used with an RPC-style <xref:System.Web.Services.Description.Binding>. Do not call ParameterOrderString directly. This method is only used internally for XML serialization. To return the parameter list use <xref:System.Web.Services.Description.Operation.ParameterOrder%2A>.  
-  
-   
-  
-## Examples  
- [!code-cpp[Operation_2#1](~/add/codesnippet/cpp/p-system.web.services.de_74_1.cpp)]
- [!code-cs[Operation_2#1](~/add/codesnippet/csharp/p-system.web.services.de_74_1.cs)]
- [!code-vb[Operation_2#1](~/add/codesnippet/visualbasic/p-system.web.services.de_74_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PortType">
@@ -284,23 +193,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.PortType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.PortType" /> of which the <see cref="T:System.Web.Services.Description.Operation" /> is a member.</summary>
-        <value>A <see cref="T:System.Web.Services.Description.PortType" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- Operation_5#5  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

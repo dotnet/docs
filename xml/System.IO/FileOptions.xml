@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileOptions" />
   <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -19,18 +27,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents advanced options for creating a <see cref="T:System.IO.FileStream" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Asynchronous value when creating a file stream.  
-  
- [!code-cs[IO.FileStream.ctor2#2](~/add/codesnippet/csharp/t-system.io.fileoptions_1.cs)]
- [!code-vb[IO.FileStream.ctor2#2](~/add/codesnippet/visualbasic/t-system.io.fileoptions_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Asynchronous">
@@ -39,15 +37,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.Asynchronous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a file can be used for asynchronous reading and writing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteOnClose">
@@ -56,15 +62,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.DeleteOnClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a file is automatically deleted when it is no longer in use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encrypted">
@@ -73,15 +87,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.Encrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a file is encrypted and can be decrypted only by using the same user account used for encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -90,15 +112,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that no additional options should be used when creating a <see cref="T:System.IO.FileStream" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RandomAccess">
@@ -107,15 +137,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.RandomAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the file is accessed randomly. The system can use this as a hint to optimize file caching.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SequentialScan">
@@ -124,23 +162,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.SequentialScan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Specifying this flag can increase performance for applications that read large files using sequential access. Performance gains can be even more noticeable for applications that read large files mostly sequentially, but occasionally skip over small ranges of bytes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteThrough">
@@ -149,15 +187,23 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.WriteThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the system should write through any intermediate cache and go directly to disk.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.RenderingBias" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates whether the system renders an effect with emphasis on speed or quality.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- <xref:System.Windows.Media.Effects.Effect>  
-  
- <xref:System.Windows.Media.Effects.BlurEffect>  
-  
- <xref:System.Windows.Media.Effects.DropShadowEffect>  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Performance">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.RenderingBias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The rendering system emphasizes performance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Quality">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.RenderingBias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The rendering system emphasizes quality.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContributeServerContextSink" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,19 +14,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contributes an interception sink at the context boundary on the server end of a remoting call.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IContributeServerContextSink interface is implemented by context properties in a <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an interception sink at the context boundary on the server end of a remoting call.  
-  
- The server context chain is composed from those properties in the server context that implement IContributeServerContextSink and which contribute a sink by using the <xref:System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink%2A> method call.  
-  
- Serialization is an example of such a context property. In this case, the message sink would involve taking a synchronization primitive lock before processing a call any further.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetServerContextSink">
@@ -36,14 +25,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
       </ReturnValue>
@@ -51,9 +35,9 @@
         <Parameter Name="nextSink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
       </Parameters>
       <Docs>
-        <param name="nextSink">The chain of sinks composed so far.</param>
-        <summary>Takes the first sink in the chain of sinks composed so far, and then chains its message sink in front of the chain already formed.</summary>
-        <returns>The composite sink chain.</returns>
+        <param name="nextSink">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Table.RowControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the collection of <see cref="T:System.Web.UI.WebControls.TableRow" /> objects in a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Table.RowControlCollection collection is returned by the <xref:System.Web.UI.Control.Controls%2A> property of the <xref:System.Web.UI.WebControls.Table> control. Only <xref:System.Web.UI.WebControls.TableRow> objects can be added to this Table.RowControlCollection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,19 +31,9 @@
         <Parameter Name="child" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the <see cref="T:System.Web.UI.WebControls.Table.RowControlCollection" />.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the <see cref="T:System.Web.UI.WebControls.Table.RowControlCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Add method to add a new control to the <xref:System.Web.UI.WebControls.Table.RowControlCollection> collection. The specified control is added at the end of the array. The control can be only an instance of a <xref:System.Web.UI.WebControls.TableRow> control.  
-  
- To add a control to the <xref:System.Web.UI.WebControls.Table.RowControlCollection> collection at a specific index location, use the <xref:System.Web.UI.WebControls.Table.RowControlCollection.AddAt%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The object specified by <paramref name="child" /> is not a <see cref="T:System.Web.UI.WebControls.TableRow" />.</exception>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -62,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,25 +53,10 @@
         <Parameter Name="child" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the array at which to add the child control.</param>
-        <param name="child">The <see langword="Control" /> object to add to the <see cref="T:System.Web.UI.WebControls.Table.RowControlCollection" />.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the <see cref="T:System.Web.UI.WebControls.Table.RowControlCollection" /> collection. The new control is added to the array at the specified index location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AddAt method to add a new control to the <xref:System.Web.UI.WebControls.Table.RowControlCollection> collection at a specified location. The control can be only an instance of a <xref:System.Web.UI.WebControls.TableRow> control.  
-  
- To add a control to the <xref:System.Web.UI.WebControls.Table.RowControlCollection> at the end of the <xref:System.Web.UI.WebControls.Table.RowControlCollection>, use the <xref:System.Web.UI.WebControls.Table.RowControlCollection.Add%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">The control does not allow child controls.</exception>
-        <exception cref="T:System.ArgumentException">The child value is <see langword="null" />.  
-  
- -or-  
-  
- The object is not a <see cref="T:System.Web.UI.WebControls.TableRow" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

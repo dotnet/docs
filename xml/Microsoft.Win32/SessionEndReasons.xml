@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndReasons" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines identifiers that represent how the current logon session is ending.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user is logging off and ending the current user session. The operating system continues to run.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemShutdown">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is shutting down.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

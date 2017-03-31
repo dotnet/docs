@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerSecuritySettings" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains the security settings associated with a peer channel, including the type of authentication used and the security used for the message transport.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerSecuritySettings" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -38,18 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value that indicates the security mode of the peer channel.</summary>
-        <value>
-          <see cref="T:System.ServiceModel.SecurityMode" /> enumeration value that indicates the security mode for the peer channel.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not an enumerated value from <see cref="T:System.ServiceModel.SecurityMode" /></exception>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMode">
@@ -71,8 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the security mode information should be serialized.</summary>
-        <returns>Returns <see cref="T:System.Boolean" /> that specifies <see langword="true" /> if the security mode information should be serialized, and <see langword="false" /> if it should not be serialized..</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the transport information should be serialized.</summary>
-        <returns>Returns <see cref="T:System.Boolean" /> that specifies <see langword="true" /> if the transport information should be serialized, and <see langword="false" /> if it should not be serialized..</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,24 +103,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerTransportSecuritySettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that indicates the security settings for the transport used for messages transmitted over the peer channel.</summary>
-        <value>
-          <see cref="T:System.ServiceModel.PeerTransportSecuritySettings" /> that contains the transport security settings for the peer channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set only if <xref:System.ServiceModel.PeerSecuritySettings.Mode%2A> is set to <xref:System.ServiceModel.SecurityMode> or <xref:System.ServiceModel.SecurityMode>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

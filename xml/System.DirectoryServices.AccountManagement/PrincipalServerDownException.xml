@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>This exception is thrown when the API is unable to connect to the server.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default constructor initializes a new instance of the <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,23 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">An error message.</param>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class with the specified error message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -80,9 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the information required to serialize the new <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /></param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the source of the serialized stream that is associated with the new <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /></param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +75,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -101,17 +82,10 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the message.</param>
-        <param name="innerException">A nested exception.</param>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class with the specified error message and specified nested exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> is initialized to `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,7 +95,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -129,17 +102,10 @@
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the message.</param>
-        <param name="errorCode">An error code.</param>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class with the specified error message and specified error code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException.ErrorCode%2A> property set to the value of `errorCode`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="errorCode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,7 +115,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -158,18 +123,11 @@
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the error message.</param>
-        <param name="innerException">A nested exception.</param>
-        <param name="errorCode">An error code.</param>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class with the specified error message, the specified nested exception, and the specified error code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`, and the private `errorCode` property is set to `errorCode`.  If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> is initialized to `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <param name="errorCode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,7 +137,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -189,19 +146,12 @@
         <Parameter Name="serverName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the message.</param>
-        <param name="innerException">A nested exception.</param>
-        <param name="errorCode">An error code.</param>
-        <param name="serverName">A server name.</param>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" /> class with the specified error message, the specified nested exception, the specified error code, and the specified server name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`, the private `errorCode` property is set to `errorCode`, and the private `serverName` property is set to `serverName`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> is initialized to `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <param name="errorCode">To be added.</param>
+        <param name="serverName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -211,7 +161,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -227,19 +176,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that will hold the serialized object data.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that will hold contextual information about the source or destination.</param>
-        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the parameter name and additional exception information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization, the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
-  
- For more information, see <xref:System.Runtime.Serialization.SerializationInfo>.  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

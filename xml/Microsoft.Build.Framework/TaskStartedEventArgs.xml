@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskStartedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskStarted" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-cs[msbuild_BasicLogger#1](~/add/codesnippet/csharp/msbuild_BasicLogger/msbuild_BasicLogger.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,13 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -62,12 +47,12 @@
         <Parameter Name="taskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="projectFile">The name of the project file associated with the event.</param>
-        <param name="taskFile">The file in which the task is defined.</param>
-        <param name="taskName">The name of the task.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> class with the specified values.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="taskFile">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,13 +74,13 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">The text message about the event.</param>
-        <param name="helpKeyword">The help keyword.</param>
-        <param name="projectFile">The project file.</param>
-        <param name="taskFile">The file that defines the task.</param>
-        <param name="taskName">The name of the task.</param>
-        <param name="eventTimestamp">The date and time the task was created.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> class.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="taskFile">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,16 +91,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the project file associated with the event.</summary>
-        <value>The name of the project file associated with the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,16 +109,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] file where the task was defined.</summary>
-        <value>The [!INCLUDE[vstecmsbuild](~/add/includes/vstecmsbuild-md.md)] file where the task was defined.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,16 +127,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the task associated with the event.</summary>
-        <value>The name of the task associated with the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

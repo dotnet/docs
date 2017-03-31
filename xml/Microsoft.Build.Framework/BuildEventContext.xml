@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildEventContext" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides contextual location information for build events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BuildEventContext is especially useful in multiprocessor environments.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,11 +31,11 @@
         <Parameter Name="taskId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="nodeId">The node ID of the build event.</param>
-        <param name="targetId">The target ID of the build event.</param>
-        <param name="projectContextId">The project ID of the build event.</param>
-        <param name="taskId">The task ID of the build event.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildEventContext" /> class.</summary>
+        <param name="nodeId">To be added.</param>
+        <param name="targetId">To be added.</param>
+        <param name="projectContextId">To be added.</param>
+        <param name="taskId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,12 +56,12 @@
         <Parameter Name="taskId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="nodeId">The node ID of the build event.</param>
-        <param name="projectInstanceId">The project instance ID of the build event.</param>
-        <param name="projectContextId">The project ID of the build event.</param>
-        <param name="targetId">The target ID of the build event.</param>
-        <param name="taskId">The task ID of the build event.</param>
-        <summary>Constructs a BuildEventContext with a specified project instance id.</summary>
+        <param name="nodeId">To be added.</param>
+        <param name="projectInstanceId">To be added.</param>
+        <param name="projectContextId">To be added.</param>
+        <param name="targetId">To be added.</param>
+        <param name="taskId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,13 +83,13 @@
         <Parameter Name="taskId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="submissionId">The submission ID of the build event.</param>
-        <param name="nodeId">The node ID of the build event.</param>
-        <param name="projectInstanceId">The project instance ID of the build event.</param>
-        <param name="projectContextId">The project ID of the build event.</param>
-        <param name="targetId">The target ID of the build event.</param>
-        <param name="taskId">The task ID of the build event.</param>
-        <summary>Constructs a BuildEventContext with a specific submission id</summary>
+        <param name="submissionId">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <param name="projectInstanceId">To be added.</param>
+        <param name="projectContextId">To be added.</param>
+        <param name="targetId">To be added.</param>
+        <param name="taskId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +106,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the BuildRequest id. Note that this is not the same as the global request id on a BuildRequest or BuildResult.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,10 +127,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The reference to compare.</param>
-        <summary>Gets whether the references are the same.</summary>
-        <returns>
-          <see langword="true" /> if the references are equal, <see langword="false" /> otherwise.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,8 +147,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a code comprised of the <see cref="Microsoft.Build.Framework.BuildEventContext.ProjectContextId%2A" /> and the <see cref="Microsoft.Build.Framework.BuildEventContext.NodeId%2A" />.</summary>
-        <returns>An integer value representing the hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,16 +159,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.BuildEventContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the context where the event occurred is valid.</summary>
-        <value>
-          <see langword="true" /> if the context is valid; <see langword="false" /> otherwise.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +177,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,15 +184,8 @@
       </ReturnValue>
       <MemberValue>-2</MemberValue>
       <Docs>
-        <summary>The node ID of the target the event was in when the event was triggered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An integer value representing the node ID.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidProjectContextId">
@@ -217,7 +195,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,7 +202,7 @@
       </ReturnValue>
       <MemberValue>-2</MemberValue>
       <Docs>
-        <summary>The project ID of the target the event was in when the event was triggered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +220,7 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>The project instance ID of the target the event was in when the event was triggered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,7 +238,7 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>The submission ID of the target the event was in when the event was triggered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,7 +249,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,7 +256,7 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>The name of the target the event was in when the event was triggered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +267,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,7 +274,7 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>The task ID of the target the event was in when the event was triggered.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,15 +285,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the node ID where the event occurred.</summary>
-        <value>An integer value representing the node ID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,10 +313,10 @@
         <Parameter Name="right" Type="Microsoft.Build.Framework.BuildEventContext" />
       </Parameters>
       <Docs>
-        <param name="left">Left hand side operand</param>
-        <param name="right">Right hand side operand</param>
-        <summary>Override == so the equals comparison using this operator will be the same as .Equals</summary>
-        <returns>True if the object values are identical, false if they are not identical</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,10 +337,10 @@
         <Parameter Name="right" Type="Microsoft.Build.Framework.BuildEventContext" />
       </Parameters>
       <Docs>
-        <param name="left">Left hand side operand</param>
-        <param name="right">Right hand side operand</param>
-        <summary>Override != so the equals comparison using this operator will be the same as ! Equals</summary>
-        <returns>True if the object values are not identical, false if they are identical</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,15 +351,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the project where the event occurred.</summary>
-        <value>An integer value representing the project ID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,7 +375,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the project instance id.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,7 +393,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the Submission id.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -432,15 +405,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the target where the event occurred.</summary>
-        <value>An integer value representing the target ID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,15 +423,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID of the task where the event occurred.</summary>
-        <value>An integer value representing the task ID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

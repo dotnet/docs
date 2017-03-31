@@ -11,31 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>WorkflowInstance is a lightweight, per-instance runtime for executing a workflow program. It can be constructed to create a new workflow instance or from existing instance state. The APIs that <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> exposes are the minimal set of runtime controls from which higher level operations can be implemented. This API set represents the entire breadth of functionality of the runtime. WorkflowInstance is an abstract class and relies on a host’s implementation of its abstract methods in order to provide host functionality such as synchronization, persistence, tracking, and extensions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WorkflowInstance is single threaded and assumes that the host synchronizes all access to it. An attempt to call multiple APIs simultaneously will result in an <xref:System.InvalidOperationException> being thrown.  
-  
- Internally, a WorkflowInstance has two states: Running and Paused. The only way to cause the runtime to transition from paused to running is to call <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A>. All actions (except Pause) can only be taken while the runtime is Paused. The runtime will become spontaneously Paused in the following situations:  
-  
--   An error fatal to the runtime has occurred. The host will be signaled through <xref:System.Activities.Hosting.WorkflowInstance.OnRequestAbort%2A> (which does not signal a transition to Paused) and then notified through <xref:System.Activities.Hosting.WorkflowInstance.OnNotifyPaused%2A>.  
-  
--   An exception in the workflow was uncaught and escaped the root. The host will be notified through the <xref:System.Activities.Hosting.WorkflowInstance.OnNotifyUnhandledException%2A> method.  
-  
--   The scheduler has run out of work items and is now <xref:System.Activities.Hosting.WorkflowInstanceState>. The host will be notified through the <xref:System.Activities.Hosting.WorkflowInstance.OnNotifyPaused%2A> method. Note that the scheduler could have run out of work items because the instance is idle or because the instance is complete. The <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.State%2A> value of the <xref:System.Activities.Hosting.WorkflowInstance.Controller%2A> property can be used to differentiate between the two.  
-  
- The host can request a change from Running to Paused by calling the <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.RequestPause%2A> or <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.PauseWhenPersistable%2A> methods of the <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> instance returned by the <xref:System.Activities.Hosting.WorkflowInstance.Controller%2A> property. This request should not be considered to have a specific response meaning that the host should not attempt to correlate an OnNotify* or <xref:System.Activities.Hosting.WorkflowInstance.OnRequestAbort%2A> with a specific call to pause. In response to a pause request, the runtime may transition to Paused and call <xref:System.Activities.Hosting.WorkflowInstance.OnNotifyPaused%2A> while the scheduler still has pending work items. The <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.State%2A> value of the <xref:System.Activities.Hosting.WorkflowInstance.Controller%2A> property can be used to determine whether the scheduler has no more work or was interrupted by a request to pause.  
-  
- The <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.RequestPause%2A> method of the <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> instance returned by the <xref:System.Activities.Hosting.WorkflowInstance.Controller%2A> property is the only method which can be called while the WorkflowInstance is in the Running state. All other methods will throw an <xref:System.InvalidOperationException> if called.Given the rules for how WorkflowInstance transitions from one state to another, the public notion of Running and Paused can be defined as follows:  
-  
--   Running – The state between a call to <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A> and the next WorkflowInstance.OnNotify*.  
-  
--   Paused – The state between the last WorkflowInstance.OnNotify* and the next call to <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +28,8 @@
         <Parameter Name="workflowDefinition" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="workflowDefinition">The activity that defines the workflow.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> class with the specified workflow definition.</summary>
+        <param name="workflowDefinition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +47,9 @@
         <Parameter Name="definitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="workflowDefinition">The activity that defines the workflow.</param>
-        <param name="definitionIdentity">The definition identity.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> class with the specified workflow definition and definition identity.</summary>
+        <param name="workflowDefinition">To be added.</param>
+        <param name="definitionIdentity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,11 +71,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which to abort the attempt.</param>
-        <param name="callback">The method to be called when the track operation has completed.</param>
-        <param name="state">The information about the asynchronous operation.</param>
-        <summary>Called by the workflow runtime to begin sending pending tracking records to tracking participants asynchronously.</summary>
-        <returns>The status of the current track operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +92,8 @@
         <ReturnType>System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instance for this <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
-        <value>The controller instance for this workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +110,8 @@
         <ReturnType>System.Activities.WorkflowIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the definition identity of <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
-        <value>The definition identity of <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,7 +129,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls <see cref="System.Disposable.Dispose%2A" /> on all extensions that implement <see cref="T:System.IDisposable" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +149,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The status of the asynchronous track operation.</param>
-        <summary>Called by the workflow runtime to end the track operation.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +170,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which to abort the attempt.</param>
-        <summary>Called by the workflow runtime to send pending tracking records to tracking participants.</summary>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +192,10 @@
         <Parameter Name="updateMap" Type="System.Activities.DynamicUpdate.DynamicUpdateMap" />
       </Parameters>
       <Docs>
-        <param name="deserializedRuntimeState">The deserialized runtime state.</param>
-        <param name="updateMap">The update map.</param>
-        <summary>Retrieves the list of activity that is blocking the update of the workflow.</summary>
-        <returns>The list of activity that is blocking the update.</returns>
+        <param name="deserializedRuntimeState">To be added.</param>
+        <param name="updateMap">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +220,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the extension to find.</typeparam>
-        <summary>Returns an extension of the specified type.</summary>
-        <returns>An extension of the specified type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +247,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the extension to find.</typeparam>
-        <summary>Returns all extensions found for the specified type.</summary>
-        <returns>All extensions found for the specified type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,16 +266,9 @@
         <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the root environment for the workflow instance’s arguments and variables.</summary>
-        <value>The root environment for the workflow instance’s arguments and variables.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is set after the workflow instance is initialized and <xref:System.Activities.Hosting.WorkflowInstance.IsReadOnly%2A> returns `true`, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -314,8 +284,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unique identifier for the workflow instance.</summary>
-        <value>The unique identifier for the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,8 +305,8 @@
         <Parameter Name="deserializedRuntimeState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="deserializedRuntimeState">The run-time state used to execute the workflow.</param>
-        <summary>Called by the host to initialize the workflow instance with the workflow run-time state.</summary>
+        <param name="deserializedRuntimeState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,9 +327,9 @@
         <Parameter Name="workflowExecutionProperties" Type="System.Collections.Generic.IList&lt;System.Activities.Handle&gt;" />
       </Parameters>
       <Docs>
-        <param name="workflowArgumentValues">The input parameters to the workflow, keyed by argument name.</param>
-        <param name="workflowExecutionProperties">The list of workflow execution properties.</param>
-        <summary>Called by the host to initialize the workflow instance with the argument values and execution properties.</summary>
+        <param name="workflowArgumentValues">To be added.</param>
+        <param name="workflowExecutionProperties">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,9 +350,9 @@
         <Parameter Name="updateMap" Type="System.Activities.DynamicUpdate.DynamicUpdateMap" />
       </Parameters>
       <Docs>
-        <param name="deserializedRuntimeState">The run-time state used to execute the workflow.</param>
-        <param name="updateMap">The update map.</param>
-        <summary>Called by the host to initialize the workflow instance with the workflow run-time state and update map.</summary>
+        <param name="deserializedRuntimeState">To be added.</param>
+        <param name="updateMap">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,9 +369,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the workflow instance has been initialized.</summary>
-        <value>
-          <see langword="true" /> if the workflow instance has been initialized; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,11 +392,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="keys">The instance keys to associate with this workflow instance.</param>
-        <param name="callback">The method to be called when the operation completes.</param>
-        <param name="state">An optional application-specific object that contains information about the asynchronous operation.</param>
-        <summary>Called by the workflow runtime to notify the host that new instance keys should be associated with this instance.</summary>
-        <returns>A reference to the asynchronous associate keys operation.</returns>
+        <param name="keys">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,10 +417,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">The method to be called when the track operation has completed.</param>
-        <param name="state">The information about the asynchronous operation.</param>
-        <summary>Asynchronous call to ask host to flush pending tracking records to tracking participants.</summary>
-        <returns>The status of the current track operation.</returns>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -472,10 +441,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">The method to be called when the persist operation has completed.</param>
-        <param name="state">An optional application-specific object that contains information about the asynchronous operation.</param>
-        <summary>Asynchronous call to ask the host to persist the workflow.</summary>
-        <returns>A reference to the current persist operation.</returns>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,13 +468,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bookmark">The bookmark to resume.</param>
-        <param name="value">The data to be passed to the activity that created the <see cref="T:System.Activities.Bookmark" />.</param>
-        <param name="timeout">The interval in which the resume operation must complete before the operation is canceled and a <see cref="T:System.TimeoutException" /> is thrown.</param>
-        <param name="callback">The method to be called when the resume operation has completed.</param>
-        <param name="state">An optional application-specific object that contains information about the asynchronous operation.</param>
-        <summary>Called by the workflow runtime to notify the host that a resume bookmark operation is beginning.</summary>
-        <returns>A reference to the asynchronous resume operation.</returns>
+        <param name="bookmark">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,8 +494,8 @@
         <Parameter Name="keys" Type="System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" />
       </Parameters>
       <Docs>
-        <param name="keys">The list of keys to disassociate.</param>
-        <summary>Called by the workflow runtime to notify the host that a certain set of instance keys should no longer be associated with this instance.</summary>
+        <param name="keys">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,8 +515,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The reference to the asynchronous associate keys operation.</param>
-        <summary>Called by the workflow runtime to notify the host that an associate keys operation is complete.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,8 +536,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The status of the asynchronous flush tracking records operation.</param>
-        <summary>Called by the workflow runtime to notify the host when the flush tracking records operation is complete.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,8 +557,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The reference to the asynchronous persist operation.</param>
-        <summary>Called by the workflow runtime to notify the host that a persist operation is complete.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,9 +578,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The reference to the asynchronous resume bookmark operation.</param>
-        <summary>Called by the workflow runtime to notify the host that a resume bookmark operation is complete.</summary>
-        <returns>One of the enumeration values that indicates the result of a <see cref="T:System.Activities.Bookmark" /> resume operation.</returns>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,7 +598,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called by the workflow runtime to notify the host that the workflow instance has transitioned from the running state to the paused state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,10 +620,10 @@
         <Parameter Name="sourceInstanceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="exception">The unhandled exception.</param>
-        <param name="source">The activity that threw the exception.</param>
-        <param name="sourceInstanceId">The unique identifier of the <see cref="T:System.Activities.ActivityInstance" /> representing the activity that threw the exception.</param>
-        <summary>Called by the workflow runtime to notify the host an unhandled exception has occurred in the workflow instance.</summary>
+        <param name="exception">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="sourceInstanceId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,16 +643,9 @@
         <Parameter Name="reason" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="reason">The reason for aborting the workflow instance.</param>
-        <summary>Called by the workflow runtime to notify the host that an abort operation has been requested for the workflow instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once OnRequestAbort is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> will throw an <xref:System.InvalidOperationException>. It is expected that after OnRequestAbort is called a host will trend toward a state in which it can satisfy the abort.  
-  
- ]]></format>
-        </remarks>
+        <param name="reason">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterExtensionManager">
@@ -702,16 +664,9 @@
         <Parameter Name="extensionManager" Type="System.Activities.Hosting.WorkflowInstanceExtensionManager" />
       </Parameters>
       <Docs>
-        <param name="extensionManager">The extension manager to register.</param>
-        <summary>Called by the host to register the specified extension manager, validate that all required extensions are present, and to initialize the collection of extensions to be used.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Extensions are keyed by type, and a host provided extension will always be used if provided. Extensions added through <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> use the runtime type of the object as the type key. Extensions providers added through <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> use the decared type T of the Func\<T> as the type key. Extension providers contributed by activities through the various *ActivityMetadata.AddDefaultExtensionProvider methods are dropped if a host extension exists for the declared type or if there is a broader type provided through AddDefaultExtensionProvider (ex. if Func\<StreamWriter> is provided and Func\<TextWriter> is provided, only Func\<StreamWriter> will be kept). If an extension does not exist in the collection that is required by an activity (expressed by calling \*ActivityMetadata.RequireExtension) a <xref:System.Activities.ValidationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="extensionManager">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsInstanceKeys">
@@ -727,9 +682,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the host supports the association of <see cref="System.Runtime.Persistence.InstanceView.InstanceKeys%2A" /> with a run-time instance.</summary>
-        <value>
-          <see langword="true" /> if the host supports the association of <see cref="System.Runtime.Persistence.InstanceView.InstanceKeys%2A" /> with a workflow instance; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,16 +700,9 @@
         <ReturnType>System.Threading.SynchronizationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Threading.SynchronizationContext" /> used for scheduling the workflow instance.</summary>
-        <value>The synchronization context used for scheduling the workflow instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is set after the workflow instance is initialized and <xref:System.Activities.Hosting.WorkflowInstance.IsReadOnly%2A> returns `true`, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfReadOnly">
@@ -772,15 +719,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws an <see cref="T:System.InvalidOperationException" /> if the workflow instance has been initialized, as determined by <see cref="System.Activities.Hosting.WorkflowInstance.IsReadOnly%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Activities.Hosting.WorkflowInstance.IsReadOnly%2A> returns `true`, then an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkflowDefinition">
@@ -796,8 +736,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the workflow definition of the workflow instance.</summary>
-        <value>The workflow definition of the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

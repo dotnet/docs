@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Describes the service’s authentication behavior.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of <see cref="T:System.ServiceModel.Description.ServiceAuthenticationBehavior" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value that represents the authentication scheme used by the service.</summary>
-        <value>The authentication scheme used by the service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.ServiceModel.ServiceAuthenticationManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.ServiceAuthenticationManager" /> associated with this behavior.</summary>
-        <value>Returns <see cref="T:System.ServiceModel.ServiceAuthenticationManager" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +84,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether the service should serialize authentication schemes.</summary>
-        <returns>
-          <see langword="True" /> if the service should serialize authentication schemes; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see langword="true" /> if the <see cref="T:System.ServiceModel.ServiceAuthenticationManager" /> should be serialized; otherwise, <see langword="false" />.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,19 +127,12 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">The service description of the service.</param>
-        <param name="serviceHostBase">The host of the service.</param>
-        <param name="endpoints">The service endpoints.</param>
-        <param name="parameters">Custom objects to which binding elements have access.</param>
-        <summary>An implementation of the <see cref="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called once for each listen URI. For example, if a service has four endpoints, and two of them have the same listen URI, then this method gets called three times. The reason is that the `bindingParameters` target each channel stack and there is one channel stack for each listen URI. Because each call receives those endpoints at that listen URI, two calls each get a single <xref:System.ServiceModel.Description.ServiceEndpoint>, and one call gets a collection of two <xref:System.ServiceModel.Description.ServiceEndpoint> objects.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <param name="endpoints">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
@@ -161,9 +152,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="description">The service description.</param>
-        <param name="serviceHostBase">The host that is currently being built.</param>
-        <summary>An implementation of the <see cref="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A" /> method.</summary>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +175,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="description">The service description.</param>
-        <param name="serviceHostBase">The service host that is currently being constructed.</param>
-        <summary>An implementation of the IServiceBehavior.Validate method.</summary>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

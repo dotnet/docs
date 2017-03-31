@@ -4,28 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSMessageEncoding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether Message Transmission Optimization Mechanism (MTOM) or text is used to encode SOAP messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used by interoperable bindings, such as <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.BasicHttpBinding> to specify the SOAP message encoding that may be used.  
-  
- The Message-Transmission Optimization Mechanism (MTOM) is a method for efficiently encoding binary XML elements within the context of a SOAP envelope.  
-  
- Text encodings for messages, such as UTF8, are used for interoperability purposes.  
-  
- Note that the standard bindings designed for interoperability with Web services do not use binary encodings. For more information about the standard bindings, see [System-Provided Bindings](../Topic/System-Provided%20Bindings.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Mtom">
@@ -35,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>MTOM is used to encode the SOAP messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -52,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Text is used to encode the SOAP messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

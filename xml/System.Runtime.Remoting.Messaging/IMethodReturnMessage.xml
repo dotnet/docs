@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -18,24 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the method call return message interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A method call return message represents the response to a method call on an object at the end of the message sink. An IMethodReturnMessage is generated as a result of a method called on a remote object, and is used to return the results of the method call back to the caller.  
-  
-   
-  
-## Examples  
- The following example code shows a custom proxy that overrides `RealProxy.Invoke` in order to write the return message information to the console.  
-  
- [!code-cpp[IMethodReturnMessage_ReturnValue#1](~/add/codesnippet/cpp/t-system.runtime.remotin_64_1.cpp)]
- [!code-vb[IMethodReturnMessage_ReturnValue#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_64_1.vb)]
- [!code-cs[IMethodReturnMessage_ReturnValue#1](~/add/codesnippet/csharp/t-system.runtime.remotin_64_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -45,34 +29,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the exception thrown during the method call.</summary>
-        <value>The exception object for the method call, or <see langword="null" /> if the method did not throw an exception.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example code shows a custom proxy that overrides RealProxy.Invoke in order to write the return message information, including whether the method threw an exception.  
-  
- [!code-cpp[IMethodReturnMessage_Exception#1](~/add/codesnippet/cpp/p-system.runtime.remotin_88_1.cpp)]
- [!code-vb[IMethodReturnMessage_Exception#1](~/add/codesnippet/visualbasic/p-system.runtime.remotin_88_1.vb)]
- [!code-cs[IMethodReturnMessage_Exception#1](~/add/codesnippet/csharp/p-system.runtime.remotin_88_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOutArg">
@@ -82,14 +48,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -97,12 +58,10 @@
         <Parameter Name="argNum" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="argNum">The number of the requested argument.</param>
-        <summary>Returns the specified argument marked as a <see langword="ref" /> or an <see langword="out" /> parameter.</summary>
-        <returns>The specified argument marked as a <see langword="ref" /> or an <see langword="out" /> parameter.</returns>
+        <param name="argNum">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetOutArgName">
@@ -112,14 +71,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -127,12 +81,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The number of the requested argument name.</param>
-        <summary>Returns the name of the specified argument marked as a <see langword="ref" /> or an <see langword="out" /> parameter.</summary>
-        <returns>The argument name, or <see langword="null" /> if the current method is not implemented.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OutArgCount">
@@ -142,34 +94,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of arguments in the method call marked as <see langword="ref" /> or <see langword="out" /> parameters.</summary>
-        <value>The number of arguments in the method call marked as <see langword="ref" /> or <see langword="out" /> parameters.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example code shows a custom proxy that overrides `RealProxy.Invoke` in order to write the return message information to the console.  
-  
- [!code-cpp[IMethodReturnMessage_ReturnValue#2](~/add/codesnippet/cpp/p-system.runtime.remotin_55_1.cpp)]
- [!code-vb[IMethodReturnMessage_ReturnValue#2](~/add/codesnippet/visualbasic/p-system.runtime.remotin_55_1.vb)]
- [!code-cs[IMethodReturnMessage_ReturnValue#2](~/add/codesnippet/csharp/p-system.runtime.remotin_55_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutArgs">
@@ -179,40 +113,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the specified argument marked as a <see langword="ref" /> or an <see langword="out" /> parameter.</summary>
-        <value>The specified argument marked as a <see langword="ref" /> or an <see langword="out" /> parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although the OutArgs property is redundant since the same functionality can be achieved through the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgCount%2A> field and <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.GetOutArg%2A> method, there might be performance optimization available if the implementer understands when all the arguments will be retrieved.  
-  
-> [!WARNING]
->  If <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.Exception%2A> is not `null`, a <xref:System.IndexOutOfRangeException?displayProperty=fullName> exception is thrown when OutArgs is accessed.  
-  
-   
-  
-## Examples  
- [!code-cpp[IMethodReturnMessage_ReturnValue#2](~/add/codesnippet/cpp/p-system.runtime.remotin_41_1.cpp)]
- [!code-vb[IMethodReturnMessage_ReturnValue#2](~/add/codesnippet/visualbasic/p-system.runtime.remotin_41_1.vb)]
- [!code-cs[IMethodReturnMessage_ReturnValue#2](~/add/codesnippet/csharp/p-system.runtime.remotin_41_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">
@@ -222,23 +132,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the return value of the method call.</summary>
-        <value>The return value of the method call.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

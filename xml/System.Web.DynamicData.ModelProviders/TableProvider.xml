@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.TableProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the base class for Dynamic Data table providers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Table providers must extend this class. LINQ to SQL classes and the ADO.NET Entity data model are providers that extend this class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="model" Type="System.Web.DynamicData.ModelProviders.DataModelProvider" />
       </Parameters>
       <Docs>
-        <param name="model">The model that the table belongs to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.ModelProviders.TableProvider" /> class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
+        <param name="model">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +46,8 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the attributes that are defined for the table that is represented by this provider.</summary>
-        <value>The attribute collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +67,9 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">The user.</param>
-        <summary>Gets a value that indicates whether the user is allowed to delete items from the table.</summary>
-        <returns>
-          <see langword="true" /> if the user is allowed to delete items from the table; otherwise, <see langword="false" />.</returns>
+        <param name="principal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +89,9 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">The user.</param>
-        <summary>Gets a value that indicates whether the user is allowed to insert items into the table.</summary>
-        <returns>
-          <see langword="true" /> if the user is allowed to insert items into the table; otherwise, <see langword="false" />.</returns>
+        <param name="principal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +111,9 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">The user.</param>
-        <summary>Gets a value that indicates whether the user is allowed to read items in the table.</summary>
-        <returns>
-          <see langword="true" /> if the user is allowed to read items in the table; otherwise, <see langword="false" />.</returns>
+        <param name="principal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +133,9 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">The user.</param>
-        <summary>Gets a value that indicates whether the user is allowed to update items in the table.</summary>
-        <returns>
-          <see langword="true" /> if the user is allowed to update items in the table; otherwise, <see langword="false" />.</returns>
+        <param name="principal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,15 +146,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.ModelProviders.ColumnProvider&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of columns in this table.</summary>
-        <value>The collection of columns in this table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +170,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the table from the data context.</summary>
-        <value>The name of the table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,23 +182,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.ModelProviders.DataModelProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.DynamicData.ModelProviders.DataModelProvider" /> object.</summary>
-        <value>The <see cref="T:System.Web.DynamicData.ModelProviders.DataModelProvider" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [ASP.NET Dynamic Data](../Topic/ASP.NET%20Dynamic%20Data.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EntityType">
@@ -222,15 +200,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type that represents the table.</summary>
-        <value>The type that represents the table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,10 +228,10 @@
         <Parameter Name="foreignKeyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="row">The row to get the foreign-key value for.</param>
-        <param name="foreignKeyName">The name of the foreign-key column.</param>
-        <summary>Returns the value of a foreign key for the specified row.</summary>
-        <returns>The foreign key.</returns>
+        <param name="row">To be added.</param>
+        <param name="foreignKeyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +242,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,9 +251,9 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The data context for the table.</param>
-        <summary>When overridden in a derived class, returns the <see cref="T:System.Linq.IQueryable" /> object that in turn returns the elements of the table.</summary>
-        <returns>An <see cref="T:System.Linq.IQueryable" /> object that returns the elements of the table.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +271,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the type descriptor for the table.</summary>
-        <returns>The type descriptor for the table.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,23 +283,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the table.</summary>
-        <value>The name of the table.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, this is the name of the table property in the data-context class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentEntityType">
@@ -340,8 +307,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent type.</summary>
-        <value>The parent type if the entity has a parent; otherwise, an instance of the <see cref="T:System.Data.Metadata.Edm.EntityType" /> class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,8 +325,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the root type for this entity.</summary>
-        <value>The root type for this entity if the entity has a parent; otherwise, an instance of the <see cref="T:System.Data.Metadata.Edm.EntityType" /> class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,7 +337,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,16 +344,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the <see cref="System.Web.DynamicData.ModelProviders.TableProvider.Name%2A" /> property of the <see cref="T:System.Web.DynamicData.ModelProviders.TableProvider" /> instance.</summary>
-        <returns>The name of the <see cref="T:System.Web.DynamicData.ModelProviders.TableProvider" /> instance. If the <see cref="System.Web.DynamicData.ModelProviders.TableProvider.Name%2A" /> property is <see langword="null" />, the base class <see langword="Name" /> property is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended for debugging purposes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

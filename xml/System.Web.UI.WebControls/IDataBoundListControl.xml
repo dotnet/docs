@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes the common properties of data-bound-controls that display multiple rows.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +29,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the names of the data fields whose values are appended to the <see cref="System.Web.UI.Control.ClientID%2A" /> property value to uniquely identify each instance of a data-bound control.</summary>
-        <value>An array of data field names.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>System.Web.UI.WebControls.DataKeyArray</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.DataKey" /> objects that represent the data key value of each row in a data-bound control.</summary>
-        <value>A collection of data-key objects that contains the data-key value of each row in a data-bound control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +65,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the selection of a row is based on index or on data-key values.</summary>
-        <value>
-          <see langword="true" /> if the row selection is based on data-key values; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +83,8 @@
         <ReturnType>System.Web.UI.WebControls.DataKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that contains the data-key value for the selected row in a data-bound control.</summary>
-        <value>The object that contains the data-key value for the selected row in a data-bound control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +101,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the selected row in a data-bound control.</summary>
-        <value>The index of the selected row in a data-bound control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

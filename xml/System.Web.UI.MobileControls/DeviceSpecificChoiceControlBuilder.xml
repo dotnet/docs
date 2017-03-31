@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,16 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a custom persistence format for the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> class. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET server controls can implement customized persistence formats by using their own control builder. This is done by creating a control builder class and adding a control builder attribute to the class. Control builder objects are used when the page is parsed and compiled. For more information, see [Implementing Custom Persistence](http://msdn.microsoft.com/en-us/ac8e85a9-422e-49b8-98c0-5ade5853ea7c).  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,8 +51,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The literal content to add to a control.</param>
-        <summary>Adds the specified literal content to a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,8 +72,8 @@
         <Parameter Name="subBuilder" Type="System.Web.UI.ControlBuilder" />
       </Parameters>
       <Docs>
-        <param name="subBuilder">A <see cref="T:System.Web.UI.ControlBuilder" /> object.</param>
-        <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the container control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="subBuilder">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,10 +94,10 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="tagName">A string that represents the name of the tag.</param>
-        <param name="attributes">An <see cref="T:System.Collections.IDictionary" /> object.</param>
-        <summary>Obtains the type for the control's child controls. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>None.</returns>
+        <param name="tagName">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,23 +122,14 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="parser">The template parser object responsible for parsing the control.</param>
-        <param name="parentBuilder">The control builder object responsible for building the parent control. If the <see cref="T:System.Web.UI.ControlBuilder" /> is not a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificControlBuilder" /> object, an exception is thrown.</param>
-        <param name="type">The type that is assigned to the control that the builder will create.</param>
-        <param name="tagName">The name of the tag to be built. This enables the builder to support multiple tag types.</param>
-        <param name="id">The <see cref="System.Web.UI.ControlBuilder.ID%2A" /> attribute that is assigned to the control.</param>
-        <param name="attributes">The <see cref="T:System.Collections.IDictionary" /> object that holds the specified tag attributes.</param>
-        <summary>Occurs when the server control is initialized, which is the first step in its life cycle. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the ASP.NET page framework during parsing and is not intended to be called directly in your code.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="parentBuilder" /> is not a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificControlBuilder" /> object.</exception>
+        <param name="parser">To be added.</param>
+        <param name="parentBuilder">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="tagName">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

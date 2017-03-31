@@ -4,40 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalOwnership" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a <see cref="T:System.Windows.Controls.Frame" /> uses its own journal. JournalOwnership is used by the <see cref="System.Windows.Controls.Frame.JournalOwnership%2A" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When JournalOwnership is Automatic, the following behavior applies:  
-  
--   The hosted <xref:System.Windows.Controls.Frame> behaves as though UsesParentJournal was set if it is hosted by either a <xref:System.Windows.Controls.Frame> or a <xref:System.Windows.Navigation.NavigationWindow>.  
-  
--   The hosted <xref:System.Windows.Controls.Frame> behaves as though OwnsJournal was set if:  
-  
-    -   It is not directly hosted by either a <xref:System.Windows.Controls.Frame> or <xref:System.Windows.Navigation.NavigationWindow>.  
-  
-    -   It is hosted by at least one <xref:System.Windows.Controls.Frame>, where each containing <xref:System.Windows.Controls.Frame> has its <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property is set to UsesParentJournal.  
-  
-> [!NOTE]
->  once a <xref:System.Windows.Controls.Frame> creates its own journal, switching to Automatic has no effect.  
-  
-   
-  
-## Examples  
- The following example illustrates a <xref:System.Windows.Controls.Frame> yielding journal management to a host <xref:System.Windows.Navigation.NavigationWindow>.  
-  
- [!code-xml[FrameJournalOwnershipSnippetSample#SetJournalOwnershipProperty](~/add/codesnippet/xaml/FrameJournalOwnershipSnippetSample.XAML/HomePage.xaml#setjournalownershipproperty)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -47,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.JournalOwnership</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Whether or not this <see cref="T:System.Windows.Controls.Frame" /> will create and use its own journal depends on its parent.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OwnsJournal">
@@ -64,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.JournalOwnership</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Frame" /> maintains its own journal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UsesParentJournal">
@@ -81,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.JournalOwnership</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Frame" /> uses the journal of the next available navigation host up the content tree, if available. Otherwise, navigation history is not maintained for the <see cref="T:System.Windows.Controls.Frame" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

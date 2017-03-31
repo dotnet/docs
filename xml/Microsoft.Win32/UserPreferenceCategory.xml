@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceCategory" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines identifiers that represent categories of user preferences.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UserPreferenceCategory provides identifiers that can represent a category of user preferences.  
-  
- Some of the user preferences in these categories can be changed using the Windows Control Panel, the Computer Management console, or programatically using an appropriate API.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Accessibility">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences associated with accessibility features of the system for users with disabilities.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences associated with system colors. This category includes such as the default color of windows or menus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences associated with the system desktop. This category includes the background image or background image layout of the desktop.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="General">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences that are not associated with any other category.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences for icon settings, including icon height and spacing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Keyboard">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences for keyboard settings, such as the key down repeat rate and delay.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Locale">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates changes in user preferences for regional settings, such as the character encoding and culture strings.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences for menu settings, such as menu delays and text alignment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mouse">
@@ -167,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences for mouse settings, such as double-click time and mouse sensitivity.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Policy">
@@ -184,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences for policy settings, such as user rights and access levels.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Power">
@@ -201,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the user preferences for system power settings. This category includes power feature settings, such as the idle time before the system automatically enters low power mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Screensaver">
@@ -218,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences associated with the screensaver.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VisualStyle">
@@ -235,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences associated with visual styles, such as enabling or disabling visual styles and switching from one visual style to another.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -252,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates user preferences associated with the dimensions and characteristics of windows on the system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

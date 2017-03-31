@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationHost" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables hosting of ASP.NET pages outside the Internet Information Services (IIS) application. This class enables the host to create application domains for processing ASP.NET requests.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ApplicationHost is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateApplicationHost">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,13 +33,12 @@
         <Parameter Name="physicalDir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hostType">The name of a user-supplied class to be created in the new application domain.</param>
-        <param name="virtualDir">The virtual directory for the application domain; for example, /myapp.</param>
-        <param name="physicalDir">The physical directory for the application domain where ASP.NET pages are located; for example, c:\mypages.</param>
-        <summary>Creates and configures an application domain for hosting ASP.NET.</summary>
-        <returns>An instance of a user-supplied class used to marshal calls into the newly created application domain.</returns>
+        <param name="hostType">To be added.</param>
+        <param name="virtualDir">To be added.</param>
+        <param name="physicalDir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.PlatformNotSupportedException">The Web host computer is not running the Windows NT platform or a Coriolis environment.</exception>
       </Docs>
     </Member>
   </Members>

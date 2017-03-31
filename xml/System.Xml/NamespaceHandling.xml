@@ -3,8 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NamespaceHandling extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.NamespaceHandling" />
   <AssemblyInfo>
-    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -15,15 +26,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether to remove duplicate namespace declarations in the <see cref="T:System.Xml.XmlWriter" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NamespaceHandling enumeration has a <xref:System.FlagsAttribute> attribute that allows a bitwise combination of its member values.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -32,14 +36,25 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NamespaceHandling.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.NamespaceHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that duplicate namespace declarations will not be removed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OmitDuplicates">
@@ -48,14 +63,25 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NamespaceHandling.OmitDuplicates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.NamespaceHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that duplicate namespace declarations will be removed. For the duplicate namespace to be removed, the prefix and the namespace must match.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

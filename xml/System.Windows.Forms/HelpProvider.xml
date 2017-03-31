@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,30 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides pop-up or online Help for controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each instance of HelpProvider maintains a collection of references to controls associated with it. To associate a Help file with the HelpProvider, set the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property. You specify the type of Help provided by calling the <xref:System.Windows.Forms.HelpProvider.SetHelpNavigator%2A> method and providing a <xref:System.Windows.Forms.HelpNavigator> value for the specified control. You provide the keyword or topic for the Help by calling the <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> method. To open Help to a specific topic, the keyword should be passed in the form *topicName*.htm.  
-  
- To associate a specific Help string with a control, use the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method. The string that you associate with a control using this method is displayed in a pop-up window when the user presses the F1 key while the control has focus.  
-  
- If the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property has not been set, you must use the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method to provide the Help text. If you have set both <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> and the Help string, Help based on the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> will take precedence.  
-  
- HelpProvider calls methods on the <xref:System.Windows.Forms.Help> class to provide Help functionality.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the HelpProvider class to display context-sensitive Help on a form containing four address fields. The example uses the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method to set the Help ToolTip text. When you use the context-sensitive Help button and click the Help cursor on an address field, the Help ToolTip appears with the specified text. When you press the F1 key with the focus in an address field, the mspaint.chm Help file is displayed because the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property has been set to mspaint.chm. The <xref:System.Windows.Forms.HelpProvider.SetShowHelp%2A> method is called for each address control to identify that it has Help content available.  
-  
- [!code-cs[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/csharp/t-system.windows.forms.h_8_1.cs)]
- [!code-vb[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/visualbasic/t-system.windows.forms.h_8_1.vb)]
- [!code-cpp[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/cpp/t-system.windows.forms.h_8_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,29 +43,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.HelpProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once you have created an instance of the <xref:System.Windows.Forms.HelpProvider> class, use the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property, <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> method, and <xref:System.Windows.Forms.HelpProvider.SetHelpNavigator%2A> method to associate your Help topics with a control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.HelpProvider> class to display context-sensitive Help on a form containing four address fields. The example uses the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method to set the Help ToolTip text. When you use the context-sensitive Help button and click the Help cursor on an address field, the Help ToolTip appears with the specified text. When you press the F1 key with the focus in an address field, the mspaint.chm Help file is displayed because the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property has been set to `mspaint.chm`. The <xref:System.Windows.Forms.HelpProvider.SetShowHelp%2A> method is called for each address control to identify that it has Help content available.  
-  
- [!code-cs[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/csharp/m-system.windows.forms.h_7_1.cs)]
- [!code-vb[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/visualbasic/m-system.windows.forms.h_7_1.vb)]
- [!code-cpp[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/cpp/m-system.windows.forms.h_7_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanExtend">
@@ -98,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,10 +67,9 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">The object that the externder properties are provided to.</param>
-        <summary>Specifies whether this object can provide its extender properties to the specified object.</summary>
-        <returns>
-          <see langword="true" /> if this object can provide its extender properties; otherwise, <see langword="false" />.</returns>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -140,9 +97,9 @@
         <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> from which to retrieve the Help topic.</param>
-        <summary>Returns the Help keyword for the specified control.</summary>
-        <returns>The Help keyword associated with this control, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.HelpProvider" /> is currently configured to display the entire Help file or is configured to provide a Help string.</returns>
+        <param name="ctl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -171,9 +127,9 @@
         <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> from which to retrieve the Help navigator.</param>
-        <summary>Returns the current <see cref="T:System.Windows.Forms.HelpNavigator" /> setting for the specified control.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.HelpNavigator" /> setting for the specified control. The default is <see cref="T:System.Windows.Forms.HelpNavigator" />.</returns>
+        <param name="ctl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -202,26 +157,10 @@
         <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> from which to retrieve the Help string.</param>
-        <summary>Returns the contents of the pop-up Help window for the specified control.</summary>
-        <returns>The Help string associated with this control. The default is <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To display this Help string at run time, the user presses the F1 key while the specified control has the input focus.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Windows.Forms.KeyPressEventHandler> and <xref:System.Windows.Forms.KeyEventHandler> classes to filter input. It also demonstrates the GetHelpString method. This is a complete example; it is ready to run once you add it to your project.  
-  
- [!code-cs[System.Windows.Forms.KeyEventsHelpAndErrors#1](~/add/codesnippet/csharp/m-system.windows.forms.h_2_1.cs)]
- [!code-vb[System.Windows.Forms.KeyEventsHelpAndErrors#1](~/add/codesnippet/visualbasic/m-system.windows.forms.h_2_1.vb)]
- [!code-cpp[System.Windows.Forms.KeyEventsHelpAndErrors#1](~/add/codesnippet/cpp/m-system.windows.forms.h_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetShowHelp">
@@ -231,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -246,18 +184,10 @@
         <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> for which Help will be displayed.</param>
-        <summary>Returns a value indicating whether the specified control's Help should be displayed.</summary>
-        <returns>
-          <see langword="true" /> if Help will be displayed for the control; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use the <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> or <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method to associate a keyword or prompt with a specified control, calling this method automatically returns `true`. You can override this behavior by passing `false` to the <xref:System.Windows.Forms.HelpProvider.SetShowHelp%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpNamespace">
@@ -267,7 +197,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -285,25 +214,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the name of the Help file associated with this <see cref="T:System.Windows.Forms.HelpProvider" /> object.</summary>
-        <value>The name of the Help file. This can be of the form C:\path\sample.chm or /folder/file.htm.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file name retrieved by this method identifies the file that provides Help support for all the controls for which this object provides Help. This file name can designate either a compiled Help (.chm) file or a raw HTML file.  
-  
-   
-  
-## Examples  
- The following example demonstrates using the <xref:System.Windows.Forms.HelpProvider> class to display context-sensitive Help on a form containing four address fields. The example uses the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> to set the Help ToolTip text. When using the context-sensitive Help button and clicking the Help cursor on an address field, the Help ToolTip appears with the specified text. When pressing the F1 key with the focus in an address field, the `mspaint.chm` Help file is displayed because the HelpNamespace property has been set to `mspaint.chm`. The <xref:System.Windows.Forms.HelpProvider.SetShowHelp%2A> method is called for each address control to identify that it has Help content available.  
-  
- [!code-cs[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/csharp/p-system.windows.forms.h_18_1.cs)]
- [!code-vb[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/visualbasic/p-system.windows.forms.h_18_1.vb)]
- [!code-cpp[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/cpp/p-system.windows.forms.h_18_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetShowHelp">
@@ -313,7 +226,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,16 +235,9 @@
         <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="ctl">The control to remove Help from.</param>
-        <summary>Removes the Help associated with the specified control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used by the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHelpKeyword">
@@ -342,7 +247,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,17 +257,10 @@
         <Parameter Name="keyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> that specifies the control for which to set the Help topic.</param>
-        <param name="keyword">The Help keyword to associate with the control.</param>
-        <summary>Specifies the keyword used to retrieve Help when the user invokes Help for the specified control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Help keyword provides the key information to retrieve the Help associated with this control from the Help file specified by the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property. To open Help to a specific topic, the keyword should be passed in the form *topicName*.htm. To clear the keyword, call the SetHelpKeyword method with a `keyword` value of `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <param name="keyword">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHelpNavigator">
@@ -373,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -384,24 +280,10 @@
         <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> for which to set the Help keyword.</param>
-        <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
-        <summary>Specifies the Help command to use when retrieving Help from the Help file for the specified control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the SetHelpNavigator method.  
-  
- To run this example, place it in a form containing a <xref:System.Windows.Forms.HelpProvider> named `HelpProvider1` and a <xref:System.Windows.Forms.TextBox> named `TextBox1`. The example requires the existence of a Help file named input.chm in the C:\Windows directory.  
-  
- [!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#1](~/add/codesnippet/cpp/6049c68b-19ea-43c1-b824-_1.cpp)]
- [!code-cs[System.Windows.Forms.HelpProviderAndImageListExample#1](~/add/codesnippet/csharp/6049c68b-19ea-43c1-b824-_1.cs)]
- [!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#1](~/add/codesnippet/visualbasic/6049c68b-19ea-43c1-b824-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value of <paramref name="navigator" /> is not one of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</exception>
+        <param name="ctl">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHelpString">
@@ -411,7 +293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,26 +303,10 @@
         <Parameter Name="helpString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> with which to associate the Help string.</param>
-        <param name="helpString">The Help string associated with the control.</param>
-        <summary>Specifies the Help string associated with the specified control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Help string that you specify in the `helpString` parameter is displayed in a pop-up window when the user presses the F1 key while the specified control has focus.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.HelpProvider> class to display context-sensitive Help on a form containing four address fields. The example uses the SetHelpString method to set the Help ToolTip text. When you use the context-sensitive Help button and click the Help cursor on an address field, the Help ToolTip appears with the specified text. When you press the F1 key with the focus in an address field, the mspaint.chm Help file is displayed because the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property has been set to `mspaint.chm`. The <xref:System.Windows.Forms.HelpProvider.SetShowHelp%2A> method is called for each address control to identify that it has Help content available.  
-  
- [!code-cs[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/csharp/12cb0b01-2825-49a2-bcf4-_1.cs)]
- [!code-vb[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/visualbasic/12cb0b01-2825-49a2-bcf4-_1.vb)]
- [!code-cpp[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/cpp/12cb0b01-2825-49a2-bcf4-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <param name="helpString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetShowHelp">
@@ -451,7 +316,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,27 +326,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> for which Help is turned on or off.</param>
-        <param name="value">
-          <see langword="true" /> if Help displays for the control; otherwise, <see langword="false" />.</param>
-        <summary>Specifies whether Help is displayed for the specified control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you previously called the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> or <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> for the control specified in the `ctl` parameter, the <xref:System.Windows.Forms.HelpProvider> automatically displays Help for that control. To modify this behavior, call the SetShowHelp method, specifying `false` in the `value` parameter.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.HelpProvider> class to display context-sensitive Help on a form containing four address fields. The example uses the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method to set the Help ToolTip text. When you use the context-sensitive Help button and click the Help cursor on an address field, the Help ToolTip appears with the specified text. When you press the F1 key with the focus in an address field, the mspaint.chm Help file is displayed because the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property has been set to `mspaint.chm`. The SetShowHelp method is called for each address control to identify that it has Help content available.  
-  
- [!code-cs[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/csharp/6f226fe7-a151-4e8b-b634-_1.cs)]
- [!code-vb[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/visualbasic/6f226fe7-a151-4e8b-b634-_1.vb)]
- [!code-cpp[System.Windows.Forms.HelpProvider#1](~/add/codesnippet/cpp/6f226fe7-a151-4e8b-b634-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctl">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -492,7 +339,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -513,8 +359,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that contains supplemental data about the <see cref="T:System.Windows.Forms.HelpProvider" />.</summary>
-        <value>An <see cref="T:System.Object" /> that contains data about the <see cref="T:System.Windows.Forms.HelpProvider" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,7 +371,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -533,16 +378,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Windows.Forms.HelpProvider" />.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.HelpProvider" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns a string that includes the type and the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property of the <xref:System.Windows.Forms.HelpProvider>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

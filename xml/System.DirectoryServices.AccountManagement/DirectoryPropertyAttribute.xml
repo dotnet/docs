@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains the data required by the store to map a principal property to a directory attribute. This attribute is required for principal extensions and can only be set on a property. It must be specified on every property that represents a directory attribute in the extended class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If multiple directory attributes are used in the extension methods, multiple attributes should be added to the propert (one per attribute).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="schemaAttributeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="schemaAttributeName">The name of the attribute that is set in the directory. The <see cref="System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.SchemaAttributeName%2A" /> property is initialized to this value. This property represents the ldapDisplayName for application directory and domain directories.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute" /> class with the schema attribute name.</summary>
+        <param name="schemaAttributeName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not implemented and always returns null.</summary>
-        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the type of store to which this attribute applies, or null if no context is set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the string that represents the attribute name in the directory.</summary>
-        <value>The string that represents the attribute name in the directory.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

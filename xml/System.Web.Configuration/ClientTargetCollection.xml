@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ClientTargetCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,36 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.ClientTarget" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClientTargetCollection type allows access to the <xref:System.Web.Configuration.ClientTarget> elements of the <xref:System.Web.Configuration.ClientTargetSection> section element collection.  
-  
- It belongs to a group that includes <xref:System.Web.Configuration.ClientTarget> and <xref:System.Web.Configuration.ClientTargetSection>.  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the ClientTargetCollection object from the configuration file of an existing Web application.  
-  
- [!code-vb[System.Web.Configuration.ClientTarget#1](~/add/codesnippet/visualbasic/t-system.web.configurati_80_1.vb)]
- [!code-cs[System.Web.Configuration.ClientTarget#1](~/add/codesnippet/csharp/t-system.web.configurati_80_1.cs)]  
-  
- The following example shows an excerpt from the configuration file.  
-  
-```  
-<clientTarget>  
-  <add alias=  
-    "uplevel"   
-    userAgent="Mozilla/5.0 (compatible;MSIE 6.0;Windows NT 5.1)"/>  
-  <add alias="downlevel" userAgent="Generic Downlevel"/>  
-</clientTarget>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ClientTargetCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClientTargetCollection constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.ClientTargetCollection> class by using the <xref:System.Web.Configuration.ClientTargetSection.ClientTargets%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -79,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,26 +51,9 @@
         <Parameter Name="clientTarget" Type="System.Web.Configuration.ClientTarget" />
       </Parameters>
       <Docs>
-        <param name="clientTarget">The <see cref="T:System.Web.Configuration.ClientTarget" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Configuration.ClientTarget" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before adding a client target to the collection, you must create a <xref:System.Web.Configuration.ClientTarget> object and initialize its <xref:System.Web.Configuration.ClientTarget.Alias%2A> and <xref:System.Web.Configuration.ClientTarget.UserAgent%2A> properties.  
-  
-   
-  
-## Examples  
- The following code example adds a <xref:System.Web.Configuration.ClientTarget> object to the <xref:System.Web.Configuration.ClientTargetCollection> collection.  
-  
- For information about how to get the collection, see to the code example in the <xref:System.Web.Configuration.ClientTargetCollection> class overview.  
-  
- [!code-vb[System.Web.Configuration.ClientTarget#5](~/add/codesnippet/visualbasic/70f32969-2262-44ca-b980-_1.vb)]
- [!code-cs[System.Web.Configuration.ClientTarget#5](~/add/codesnippet/csharp/70f32969-2262-44ca-b980-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="clientTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -118,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an array of the keys for all the configuration elements contained in the <see cref="T:System.Web.Configuration.ClientTargetCollection" /> collection.</summary>
-        <value>The array of the keys for all of the <see cref="T:System.Web.Configuration.ClientTarget" /> objects contained in the <see cref="T:System.Web.Configuration.ClientTargetCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,43 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the <see cref="T:System.Web.Configuration.ClientTarget" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The result of updating the configuration file after calling the Clear method is dependent upon the <xref:System.Configuration.ConfigurationSaveMode> value chosen. To update the configuration file you use one of these two methods: <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> or  <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName>.  
-  
-> [!NOTE]
->  Calling <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> is equivalent to calling <xref:System.Configuration.Configuration.Save%2A> when the <xref:System.Configuration.ConfigurationSaveMode> value is modified.  
-  
- If you use the <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> method, the following conditions apply:  
-  
--   If you pass the <xref:System.Configuration.ConfigurationSaveMode> or <xref:System.Configuration.ConfigurationSaveMode> parameter value, then a `clear` element is inserted into the `clientTarget` section of the configuration file at the current hierarchy level.  
-  
--   If you pass the <xref:System.Configuration.ConfigurationSaveMode> parameter value, a series of `remove` elements are added to the `clientTarget` section of the configuration file at the current hierarchy level. This removes all references to the `add` elements defined in the parent configuration files at higher levels in the hierarchy. With the <xref:System.Configuration.ConfigurationSaveMode> enumeration value, one additional property on the collection affects what gets serialized to the configuration file. The property is <xref:System.Configuration.ConfigurationElementCollection.EmitClear%2A> and is `false` by default. One of the following conditions applies:  
-  
-    -   When <xref:System.Configuration.ConfigurationElementCollection.EmitClear%2A> is set to `true`, a `clear` element is inserted into the `clientTarget` section of the configuration file at the current hierarchy level. This removes all references to the `add` elements defined in the parent configuration files at higher levels in the hierarchy.  
-  
-    -   When <xref:System.Configuration.ConfigurationElementCollection.EmitClear%2A> is set to `false`, the `clear` element is removed from the `clientTarget` section of the configuration file at the current hierarchy level, if it exists.  
-  
- The Clear method actually deletes the `add` elements defined in the `clientTarget` section of the configuration file at the current hierarchy level. It also removes all references to the `add` elements defined in the parent configuration files at higher levels in the hierarchy.  
-  
-> [!NOTE]
->  The `add` elements are not deleted from the `clientTarget` section of the parent configuration files.  
-  
-   
-  
-## Examples  
- The following code example removes all the <xref:System.Web.Configuration.ClientTarget> objects from the <xref:System.Web.Configuration.ClientTargetCollection> collection.  
-  
- For information about how to get the collection, see the code example in the <xref:System.Web.Configuration.ClientTargetCollection> class overview.  
-  
- [!code-vb[System.Web.Configuration.ClientTarget#6](~/add/codesnippet/visualbasic/m-system.web.configurati_28_1.vb)]
- [!code-cs[System.Web.Configuration.ClientTarget#6](~/add/codesnippet/csharp/m-system.web.configurati_28_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -191,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,9 +149,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The collection index of the element to get.</param>
-        <summary>Gets the collection key for the specified element.</summary>
-        <returns>A string containing the value of the key.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +162,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -267,9 +171,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The collection index of the object.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.ClientTarget" /> object at the specified index.</summary>
-        <value>The <see cref="T:System.Web.Configuration.ClientTarget" /> object at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,7 +184,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,9 +193,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user agent's name.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.ClientTarget" /> object with the specified name.</summary>
-        <value>The <see cref="T:System.Web.Configuration.ClientTarget" /> object with the specified name.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +206,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,26 +233,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The alias of the <see cref="T:System.Web.Configuration.ClientTarget" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.ClientTarget" /> object with the specified alias from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.ClientTargetCollection.Remove%2A> method deletes the `add` element in the `clientTarget` section at the current hierarchy level and inserts a `remove` element. The `remove` element effectively removes the reference to the `add` element defined in the parent configuration files at higher levels in the hierarchy but does not delete it.  
-  
-   
-  
-## Examples  
- The following code example removes the <xref:System.Web.Configuration.ClientTarget> object from the <xref:System.Web.Configuration.ClientTargetCollection> collection.  
-  
- For information about how to get the collection, see the code example in the <xref:System.Web.Configuration.ClientTargetCollection> class overview.  
-  
- [!code-vb[System.Web.Configuration.ClientTarget#8](~/add/codesnippet/visualbasic/m-system.web.configurati_36_1.vb)]
- [!code-cs[System.Web.Configuration.ClientTarget#8](~/add/codesnippet/csharp/m-system.web.configurati_36_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -361,7 +245,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -371,26 +254,9 @@
         <Parameter Name="clientTarget" Type="System.Web.Configuration.ClientTarget" />
       </Parameters>
       <Docs>
-        <param name="clientTarget">The <see cref="T:System.Web.Configuration.ClientTarget" /> to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Web.Configuration.ClientTarget" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Remove method deletes the `add` element in the `clientTarget` section at the current hierarchy level and inserts a `remove` element. The `remove` element effectively removes the reference to the `add` element defined in the parent configuration files at higher levels in the hierarchy but does not delete it.  
-  
-   
-  
-## Examples  
- The following code example removes the <xref:System.Web.Configuration.ClientTarget> object from the <xref:System.Web.Configuration.ClientTargetCollection> collection.  
-  
- For information about how to get the collection, see the code example in the <xref:System.Web.Configuration.ClientTargetCollection> class overview.  
-  
- [!code-vb[System.Web.Configuration.ClientTarget#7](~/add/codesnippet/visualbasic/5d3f62ad-c21a-4506-bd52-_1.vb)]
- [!code-cs[System.Web.Configuration.ClientTarget#7](~/add/codesnippet/csharp/5d3f62ad-c21a-4506-bd52-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="clientTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -400,7 +266,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,26 +275,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The collection index of the <see cref="T:System.Web.Configuration.ClientTarget" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.ClientTarget" /> object with the specified collection index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RemoveAt method deletes the `add` element in the `clientTarget` section at the current hierarchy level and inserts a `remove` element. The `remove` element effectively removes the reference to the `add` element defined in the parent configuration files at higher levels in the hierarchy but does not delete it.  
-  
-   
-  
-## Examples  
- The following code example removes the <xref:System.Web.Configuration.ClientTarget> object from the <xref:System.Web.Configuration.ClientTargetCollection> collection.  
-  
- For information about how to get the collection, see to the code example in the <xref:System.Web.Configuration.ClientTargetCollection> class overview.  
-  
- [!code-vb[System.Web.Configuration.ClientTarget#9](~/add/codesnippet/visualbasic/m-system.web.configurati_37_1.vb)]
- [!code-cs[System.Web.Configuration.ClientTarget#9](~/add/codesnippet/csharp/m-system.web.configurati_37_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

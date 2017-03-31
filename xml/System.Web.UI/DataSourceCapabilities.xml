@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceCapabilities" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a way to request processing beyond record retrieval for a data retrieval operation of a data source control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data source controls use the DataSourceCapabilities enumeration in conjunction with the <xref:System.Web.UI.DataSourceSelectArguments> class to request paging, sorting, or other select-specific capabilities when performing a data retrieval operation. The requested capabilities are checked against the actual capabilities of the data source control during the data retrieval operation, and if they do not match an exception is raised.  
-  
- This enumeration supports the <xref:System.FlagsAttribute> attribute, which enables you to use more than one member at a time.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents no paging, sorting, or total row count retrieval capabilities.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the capability to page through the rows returned by an <see cref="System.Web.UI.DataSourceView.ExecuteSelect%2A" /> operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RetrieveTotalRowCount">
@@ -70,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the capability to retrieve a total row count of data, which corresponds to using the <see cref="System.Web.UI.DataSourceOperation.SelectCount" /> value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -87,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the capability to sort through the rows returned by an <see cref="System.Web.UI.DataSourceView.ExecuteSelect%2A" /> operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

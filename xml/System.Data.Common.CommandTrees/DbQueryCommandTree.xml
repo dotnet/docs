@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbQueryCommandTree" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a query operation expressed as a command tree. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DbQueryCommandTree describes a query.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Query">
@@ -30,25 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the logic of the query operation.</summary>
-        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the logic of the query operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Query property describes the root of the expression tree that defines the query. The <xref:System.Data.Common.CommandTrees.DbCommandTree> is in an invalid state until the Query property is set to a valid value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The expression is associated with a different command tree.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

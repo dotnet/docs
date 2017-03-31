@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The RDN prefix used to construct the RDN for the new object that is inserted into the store. The default RDN prefix of "CN" is used by the Account Management API if this attribute is not set. This attribute is optional and can only be set on principal extension classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rdnPrefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rdnPrefix">The RDN prefix. The <see cref="System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.RdnPrefix%2A" /> property is initialized to this value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute" /> class with the RDN prefix.</summary>
+        <param name="rdnPrefix">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not implemented and always returns null.</summary>
-        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the type of store to which this attribute applies, or null is no context is set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the RDN prefix used to construct the RDN.</summary>
-        <value>The RDN prefix used to construct the RDN.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

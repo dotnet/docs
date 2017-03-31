@@ -18,8 +18,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TEventArgs">The type that holds the event data.</typeparam>
-    <summary>Provides a type-safe collection list for storing listeners for a <see cref="T:System.Windows.WeakEventManager" />. This class defines a type parameter for the event data that is used.</summary>
+    <typeparam name="TEventArgs">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Windows.WeakEventManager.ListenerList%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">The number of items that should be allocated in the initial list.</param>
-        <summary>Initializes a new instance of the <see cref="System.Windows.WeakEventManager.ListenerList%601" /> class with the specified initial capacity.</summary>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.WeakEventManager.ListenerList" />, making deep copies of the values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property will be <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property was <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,12 +93,11 @@
         <Parameter Name="managerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sender">The object that raised the event.</param>
-        <param name="e">An object that contains the event data.</param>
-        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> that calls this method.</param>
-        <summary>Delivers the event being managed to each listener in the <see cref="System.Windows.WeakEventManager.ListenerList%601" />.</summary>
-        <returns>
-          <see langword="true" /> if any of the listeners in the <see cref="System.Windows.WeakEventManager.ListenerList%601" /> refer to an object that has been garbage collected; otherwise, <see langword="false" />.</returns>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="managerType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,27 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointPropertyUnit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the unit of measurement for a <see cref="T:System.Windows.Input.StylusPoint" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
-  
- [!code-cs[PacketSpy#2](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#2)]
- [!code-vb[PacketSpy#2](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#2)]  
-[!code-cs[PacketSpy#4](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#4)]
-[!code-vb[PacketSpy#4](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Centimeters">
@@ -34,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in centimeters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Degrees">
@@ -51,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in degrees.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Grams">
@@ -68,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in grams.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inches">
@@ -85,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in inches.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -102,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property's measurement is not specified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pounds">
@@ -119,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in pounds.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Radians">
@@ -136,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in radians.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Seconds">
@@ -153,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointPropertyUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Windows.Input.StylusPoint" /> property is measured in seconds.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,43 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the core behavior of classes used to search for specific correlating data in a message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessageQuery class is similar to the <xref:System.ServiceModel.Dispatcher.MessageFilter> class.  However, instead of returning matches, the <xref:System.ServiceModel.Dispatcher.MessageQuery.Evaluate%2A> method returns the results of evaluating a query against a message. The result of the query is a value in the message. Use the value as a key to correlate the message to other messages. To add a new property for the data, use the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty.Add%2A> method of the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> class.  
-  
-> [!NOTE]
->  For a concrete implementation of the MessageQuery, see the <xref:System.ServiceModel.XPathMessageQuery> class.  
-  
-## Using the XPathMessageQuery and MessageQueryCollection classes  
- You can optimize the query process by creating a set of query objects and inserting them into an instance of the <xref:System.ServiceModel.Dispatcher.MessageQueryCollection> class.  
-  
-> [!NOTE]
->  For a concrete implementation of the <xref:System.ServiceModel.Dispatcher.MessageQueryCollection>, see the <xref:System.ServiceModel.Dispatcher.XPathMessageQueryCollection> class.  
-  
- A common usage is to populate the collection with queries that have the same XPath predicate, but that differ only in the final leaf value. For example, the following XPath queries are identical except for the final clause. The first queries for all elements that have the quantity attribute set to 1, and the second queries for elements with the product attribute set to 'Contoso'):  
-  
-```  
-"/s12:Envelope/s12:Body/PurchaseOrder/Items/Item[@quantity = 1]"  
-"/s12:Envelope/s12:Body/PurchaseOrder/Items/Item[@product = 'Contoso']"  
-```  
-  
- The <xref:System.ServiceModel.Dispatcher.MessageQueryCollection> class allows you to create tables of queries that differ only slightly, enabling more efficient processing.  
-  
- Alternatively, you can use the <xref:System.ServiceModel.Dispatcher.MessageQueryTable%601> class to store and evaluate message queries.  
-  
-   
-  
-## Examples  
- The following example creates a message and XPath message queries. The queries are evaluated by the <xref:System.ServiceModel.XPathMessageQuery> objects contained in an <xref:System.ServiceModel.Dispatcher.XPathMessageQueryCollection> object. The results of each query are tested using the <xref:System.ServiceModel.Dispatcher.XPathResult.ResultType%2A> property of the <xref:System.ServiceModel.Dispatcher.XPathResult> class.  
-  
- [!code-vb[XPathMessageQuery#0](~/add/codesnippet/visualbasic/t-system.servicemodel.di_14_1.vb)]
- [!code-cs[XPathMessageQuery#0](~/add/codesnippet/csharp/t-system.servicemodel.di_14_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MessageQuery" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,17 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a collection of queries that returns a specific type of data associated with it.</summary>
-        <returns>
-          <see cref="T:System.ServiceModel.Dispatcher.MessageQueryCollection" /> The collection of queries associated with the data type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended to be used by the <xref:System.ServiceModel.Dispatcher.MessageQueryCollection> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate&lt;TResult&gt;">
@@ -111,13 +68,10 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the value to return.</typeparam>
-        <param name="message">The message to query.</param>
-        <summary>When overridden in a derived class, runs a query against the message and returns a result. The body cannot be queried.</summary>
-        <returns>
-          <see cref="T:System.ServiceModel.Dispatcher.MessageQueryCollection" />  
-  
- An enumerable collection of results that satisfy the query.</returns>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,24 +94,11 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the object to return.</typeparam>
-        <param name="buffer">The message to query.</param>
-        <summary>When overridden in a derived class, runs a query against the message and returns a result.</summary>
-        <returns>
-          <see cref="T:System.ServiceModel.Dispatcher.MessageQueryCollection" />  
-  
- An enumerable collection of results that satisfy the query.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a message and XPath message queries. The queries are evaluated by the <xref:System.ServiceModel.XPathMessageQuery> objects contained in an <xref:System.ServiceModel.Dispatcher.XPathMessageQueryCollection> object. The results of each query are tested using the <xref:System.ServiceModel.Dispatcher.XPathResult.ResultType%2A> property of the <xref:System.ServiceModel.Dispatcher.XPathResult> class.  
-  
- [!code-vb[XPathMessageQuery#0](~/add/codesnippet/visualbasic/fa025457-5f56-4510-bc73-_1.vb)]
- [!code-cs[XPathMessageQuery#0](~/add/codesnippet/csharp/fa025457-5f56-4510-bc73-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

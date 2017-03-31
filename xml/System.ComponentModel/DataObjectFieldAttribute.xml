@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectFieldAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,27 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides metadata for a property representing a data field. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DataObjectFieldAttribute attribute to provide information about the schema of the underlying data. Design-time classes such as the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class use the <xref:System.ComponentModel.DataObjectAttribute> attribute to set properties at design-time based on the exposed schema.  
-  
- You apply the DataObjectFieldAttribute attribute to members of the data item objects that are returned by the Select method of an object marked with the <xref:System.ComponentModel.DataObjectAttribute> attribute. In the following example, the `NorthwindData` class is marked with the <xref:System.ComponentModel.DataObjectAttribute> attribute, and returns an <xref:System.Collections.IEnumerable> object containing `NorthwindEmployee` objects from the `GetAllEmployees` method. Fields in the `NorthwindEmployee` class are marked with the DataObjectFieldAttribute attribute to indicate they represent data fields in the underlying data source.  
-  
- For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how you can apply the DataObjectFieldAttribute to a publicly exposed property to identify metadata associated with the property. In this example the `NorthwindEmployee` type exposes three data properties: `EmployeeID`, `FirstName`, and `LastName`. The DataObjectFieldAttribute attribute is applied to all three properties; however, only the `EmployeeID` property attribute indicates it is the primary key for the data row.  
-  
- [!code-vb[System.ComponentModel.DataObjectMethodAttribute#2](~/add/codesnippet/visualbasic/t-system.componentmodel._103_1.vb)]
- [!code-cs[System.ComponentModel.DataObjectMethodAttribute#2](~/add/codesnippet/csharp/t-system.componentmodel._103_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,16 +32,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="primaryKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="primaryKey">
-          <see langword="true" /> to indicate that the field is in the primary key of the data row; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectFieldAttribute" /> class and indicates whether the field is the primary key for the data row.</summary>
+        <param name="primaryKey">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,19 +55,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="primaryKey" Type="System.Boolean" />
         <Parameter Name="isIdentity" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="primaryKey">
-          <see langword="true" /> to indicate that the field is in the primary key of the data row; otherwise, <see langword="false" />.</param>
-        <param name="isIdentity">
-          <see langword="true" /> to indicate that the field is an identity field that uniquely identifies the data row; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectFieldAttribute" /> class and indicates whether the field is the primary key for the data row, and whether the field is a database identity field.</summary>
+        <param name="primaryKey">To be added.</param>
+        <param name="isIdentity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +80,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="primaryKey" Type="System.Boolean" />
@@ -99,24 +93,11 @@
         <Parameter Name="isNullable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="primaryKey">
-          <see langword="true" /> to indicate that the field is in the primary key of the data row; otherwise, <see langword="false" />.</param>
-        <param name="isIdentity">
-          <see langword="true" /> to indicate that the field is an identity field that uniquely identifies the data row; otherwise, <see langword="false" />.</param>
-        <param name="isNullable">
-          <see langword="true" /> to indicate that the field can be null in the data store; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectFieldAttribute" /> class and indicates whether the field is the primary key for the data row, whether the field is a database identity field, and whether the field can be null.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how you can apply the <xref:System.ComponentModel.DataObjectFieldAttribute> to a publicly exposed property to identify metadata associated with the property. In this example the `NorthwindEmployee` type exposes three data properties: `EmployeeID`, `FirstName`, and `LastName`. The <xref:System.ComponentModel.DataObjectFieldAttribute> attribute is applied to all three properties; however, only the `EmployeeID` property attribute indicates it is the primary key for the data row.  
-  
- [!code-vb[System.ComponentModel.DataObjectMethodAttribute#2](~/add/codesnippet/visualbasic/78a278e9-37b9-4cd1-926f-_1.vb)]
- [!code-cs[System.ComponentModel.DataObjectMethodAttribute#2](~/add/codesnippet/csharp/78a278e9-37b9-4cd1-926f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="primaryKey">To be added.</param>
+        <param name="isIdentity">To be added.</param>
+        <param name="isNullable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,8 +107,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="primaryKey" Type="System.Boolean" />
@@ -136,14 +121,11 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="primaryKey">
-          <see langword="true" /> to indicate that the field is in the primary key of the data row; otherwise, <see langword="false" />.</param>
-        <param name="isIdentity">
-          <see langword="true" /> to indicate that the field is an identity field that uniquely identifies the data row; otherwise, <see langword="false" />.</param>
-        <param name="isNullable">
-          <see langword="true" /> to indicate that the field can be null in the data store; otherwise, <see langword="false" />.</param>
-        <param name="length">The length of the field in bytes.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectFieldAttribute" /> class and indicates whether the field is the primary key for the data row, whether it is a database identity field, and whether it can be null and sets the length of the field.</summary>
+        <param name="primaryKey">To be added.</param>
+        <param name="isIdentity">To be added.</param>
+        <param name="isNullable">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +136,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -164,18 +150,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An object to compare with this instance of <see cref="T:System.ComponentModel.DataObjectFieldAttribute" />.</param>
-        <summary>Returns a value indicating whether this instance is equal to a specified object.</summary>
-        <returns>
-          <see langword="true" /> if this instance is the same as the instance specified by the <paramref name="obj" /> parameter; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method determines whether this instance of <xref:System.ComponentModel.DataObjectFieldAttribute> fits the pattern of another object.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -185,16 +163,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,26 +187,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a property represents an identity field in the underlying data.</summary>
-        <value>
-          <see langword="true" /> if the property represents an identity field in the underlying data; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the IsIdentity property to `true` when the <xref:System.ComponentModel.DataObjectFieldAttribute> attribute is applied to a property that represents an identity field in the underlying data store. Typically an identity field is generated by the data store and uniquely identifies an entity in the data store.  
-  
- Set the IsIdentity property with one of the <xref:System.ComponentModel.DataObjectFieldAttribute> constructors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNullable">
@@ -234,26 +210,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a property represents a field that can be null in the underlying data store.</summary>
-        <value>
-          <see langword="true" /> if the property represents a field that can be null in the underlying data store; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the IsNullable property to `true` when then <xref:System.ComponentModel.DataObjectFieldAttribute> attribute is applied to a property that represents a field in the underlying data store that can be set to null. The value that represents null in the data store may be different from `null` in the programming language.  
-  
- Set the IsNullable property with one of the <xref:System.ComponentModel.DataObjectFieldAttribute> constructors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -263,25 +233,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the property in bytes.</summary>
-        <value>The length of the property in bytes, or -1 if not set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the Length property to the length, in bytes, of the data from the underlying data store. If the Length property is not set, it will be -1.  
-  
- Set the Length property with one of the <xref:System.ComponentModel.DataObjectFieldAttribute> constructors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryKey">
@@ -291,26 +256,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a property is in the primary key in the underlying data.</summary>
-        <value>
-          <see langword="true" /> if the property is in the primary key of the data store; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the PrimaryKey property to `true` when the <xref:System.ComponentModel.DataObjectFieldAttribute> attribute is applied to a property that represents the primary key value of the underlying data. The primary key is typically used by the underlying data store to uniquely identify an entity in the data store, and often is, but is not required to be, a data store identity field.  
-  
- Set the PrimaryKey property with one of the <xref:System.ComponentModel.DataObjectFieldAttribute> constructors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

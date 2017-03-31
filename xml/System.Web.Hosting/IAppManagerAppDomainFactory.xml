@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppManagerAppDomainFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a method used to create an <see cref="T:System.AppDomain" /> instance for a Web-application manager and a method used to stop all <see cref="T:System.AppDomain" /> instances for a Web-application manager.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -39,10 +37,10 @@
         <Parameter Name="appPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appId">The unique identifier for the new application.</param>
-        <param name="appPath">The path to the new application's files.</param>
-        <summary>Creates a new application domain for the specified Web application.</summary>
-        <returns>A new application domain for the specified Web application.</returns>
+        <param name="appId">To be added.</param>
+        <param name="appPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,7 +58,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops all application domains associated with this application manager.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

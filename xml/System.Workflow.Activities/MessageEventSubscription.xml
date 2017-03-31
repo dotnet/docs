@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.MessageEventSubscription" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Creates a message event subscription to route messages to the appropriate workflow instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,9 +49,9 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="queueName">The friendly name that identifies the queue.</param>
-        <param name="instanceId">The <see cref="T:System.Guid" /> that indicates the workflow instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class using a specified queue name and instance ID.</summary>
+        <param name="queueName">To be added.</param>
+        <param name="instanceId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +62,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -83,10 +70,10 @@
         <Parameter Name="subscriptionId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="queueName">The friendly name that identifies the queue.</param>
-        <param name="instanceId">The <see cref="T:System.Guid" /> that indicates the workflow instance.</param>
-        <param name="subscriptionId">The <see cref="T:System.Guid" /> that indicates the subscription identifier.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class using a specified queue name, instance ID, and subscription ID.</summary>
+        <param name="queueName">To be added.</param>
+        <param name="instanceId">To be added.</param>
+        <param name="subscriptionId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +84,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -107,11 +93,11 @@
         <Parameter Name="operation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="queueName">The friendly name that identifies the queue.</param>
-        <param name="subscriptionId">The <see cref="T:System.Guid" /> that indicates the subscription identifier.</param>
-        <param name="interfaceType">The <see cref="T:System.Type" /> of the interface.</param>
-        <param name="operation">The event name on the interface that represents the messaging operation for which you are creating a subscription.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class using a specified queue name, subscription ID, interface type, and operation name.</summary>
+        <param name="queueName">To be added.</param>
+        <param name="subscriptionId">To be added.</param>
+        <param name="interfaceType">To be added.</param>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +108,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -133,12 +118,12 @@
         <Parameter Name="subscriptionId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="queueName">The friendly name that identifies the queue.</param>
-        <param name="instanceId">The <see cref="T:System.Guid" /> that indicates the workflow instance.</param>
-        <param name="interfaceType">The <see cref="T:System.Type" /> of the interface.</param>
-        <param name="operation">The event name on the interface that represents the messaging operation for which you are creating a subscription.</param>
-        <param name="subscriptionId">The <see cref="T:System.Guid" /> that indicates the subscription identifier.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class using a specified queue name, instance ID, interface type, operation, and a subscription ID.</summary>
+        <param name="queueName">To be added.</param>
+        <param name="instanceId">To be added.</param>
+        <param name="interfaceType">To be added.</param>
+        <param name="operation">To be added.</param>
+        <param name="subscriptionId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,15 +134,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of correlation properties for the message that will map the incoming message together with the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" />.</summary>
-        <value>A list of correlation properties for the message that will map the incoming message together with the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,15 +152,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interface type.</summary>
-        <value>The <see cref="T:System.Type" /> of the interface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,15 +170,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the method.</summary>
-        <value>The name of the method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,15 +188,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IComparable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the queue to which this subscription belongs.</summary>
-        <value>The name that identifies the queue to which this subscription belongs.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,15 +206,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unique identifier for this subscription.</summary>
-        <value>The <see cref="T:System.Guid" /> that indicates the subscription identifier.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,15 +224,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see langword="InstanceId" /> of the workflow for which this subscription was created.</summary>
-        <value>The <see cref="T:System.Guid" /> that indicates the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

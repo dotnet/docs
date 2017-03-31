@@ -4,26 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentResourceManager" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Resources.ResourceManager</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides simple functionality for enumerating resources for a component or object. The ComponentResourceManager class is a <see cref="T:System.Resources.ResourceManager" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use ComponentResourceManager to assign image resources to the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property of <xref:System.Windows.Forms.ToolStripButton> controls.  
-  
- [!code-vb[System.Windows.Forms.ContextMenuStrip#1](~/add/codesnippet/visualbasic/t-system.componentmodel._53_1.vb)]
- [!code-cs[System.Windows.Forms.ContextMenuStrip#1](~/add/codesnippet/csharp/t-system.componentmodel._53_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComponentResourceManager" /> class with default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,26 +47,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="t">A <see cref="T:System.Type" /> from which the <see cref="T:System.ComponentModel.ComponentResourceManager" /> derives all information for finding resource files.</param>
-        <summary>Creates a <see cref="T:System.ComponentModel.ComponentResourceManager" /> that looks up resources in satellite assemblies based on information from the specified <see cref="T:System.Type" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.ComponentResourceManager> to assign image resources to the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property of <xref:System.Windows.Forms.ToolStripButton> controls.  
-  
- [!code-vb[System.Windows.Forms.ContextMenuStrip#1](~/add/codesnippet/visualbasic/m-system.componentmodel._44_1.vb)]
- [!code-cs[System.Windows.Forms.ContextMenuStrip#1](~/add/codesnippet/csharp/m-system.componentmodel._44_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyResources">
@@ -78,8 +70,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -89,19 +85,10 @@
         <Parameter Name="objectName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Object" /> that contains the property value to be applied.</param>
-        <param name="objectName">A <see cref="T:System.String" /> that contains the name of the object to look up in the resources.</param>
-        <summary>Applies a resource's value to the corresponding property of the object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> or <paramref name="objectName" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <param name="objectName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyResources">
@@ -111,8 +98,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -123,22 +114,11 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Object" /> that contains the property value to be applied.</param>
-        <param name="objectName">A <see cref="T:System.String" /> that contains the name of the object to look up in the resources.</param>
-        <param name="culture">The culture for which to apply resources.</param>
-        <summary>Applies a resource's value to the corresponding property of the object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method examines all the resources for the provided culture. If `culture` is `null`, the current culture is assumed.  
-  
- The ApplyResources method attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> or <paramref name="objectName" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <param name="objectName">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

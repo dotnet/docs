@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebColorConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,54 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts a predefined color name or an RGB color value to and from a <see cref="T:System.Drawing.Color" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebColorConverter class is used to convert a <xref:System.Drawing.Color?displayProperty=fullName> object to a predefined color name or an RGB color value. It is also used to convert a predefined color name or an RGB color value to a <xref:System.Drawing.Color?displayProperty=fullName> object.  
-  
-> [!CAUTION]
->  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> class overview.  
-  
- The following list contains the sixteen predefined HTML color names you can use:  
-  
--   Black  
-  
--   Blue  
-  
--   Cyan  
-  
--   Gray  
-  
--   Green  
-  
--   Lime  
-  
--   Magenta  
-  
--   Maroon  
-  
--   Navy  
-  
--   Olive  
-  
--   Purple  
-  
--   Red  
-  
--   Silver  
-  
--   Teal  
-  
--   White  
-  
--   Yellow  
-  
- You can also specify a custom color by using a hexadecimal number, preceded by the pound character (#), in the form `#RRGGBB`. `RR`, `GG`, and `BB` represent hexadecimal values from 0 to 255 that indicate the red, green, and blue components of a color, respectively. For example, the value `#0000FF` represents the color blue. It specifies the minimum value (`00`) for the red and green components, while specifying the maximum value (`FF`) for the blue component.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebColorConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,11 +48,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context of the object to convert.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that represents information about a culture such as language, calendar system, and so on. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass in <see langword="null" /> for this parameter.</param>
-        <param name="value">The object to convert.</param>
-        <summary>Converts the given value to the type of the converter.</summary>
-        <returns>The object resulting from conversion.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,15 +75,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> instance that indicates the context of the object to convert.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that represents information about a culture such as language, calendar system, and so on. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass in <see langword="null" /> for this parameter.</param>
-        <param name="value">The object to convert.</param>
-        <param name="destinationType">The type to convert to.</param>
-        <summary>Converts the specified object to a specified type.</summary>
-        <returns>The object resulting from conversion.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destinationType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

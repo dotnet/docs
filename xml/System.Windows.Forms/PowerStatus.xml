@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PowerStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Indicates current system power status information.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PowerStatus class represents information about the current AC line power status, battery charging status, and battery charge status.  
-  
- This class is used by the <xref:System.Windows.Forms.SystemInformation.PowerStatus%2A> property of the <xref:System.Windows.Forms.SystemInformation> class to indicate current system power information.  
-  
-   
-  
-## Examples  
- The following example lists all properties of the PowerStatus class in a <xref:System.Windows.Forms.ListBox> control and displays the current value of the associated property in a <xref:System.Windows.Forms.TextBox> control when a list item selected.  
-  
- [!code-cs[PowerStatusBrowser#1](~/add/codesnippet/csharp/t-system.windows.forms.p_3_1.cs)]
- [!code-vb[PowerStatusBrowser#1](~/add/codesnippet/visualbasic/t-system.windows.forms.p_3_1.vb)]
- [!code-cpp[PowerStatusBrowser#1](~/add/codesnippet/cpp/t-system.windows.forms.p_3_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BatteryChargeStatus">
@@ -41,23 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current battery charge status.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.BatteryChargeStatus" /> values indicating the current battery charge level or charging status.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates the current battery charge level or battery charging status.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BatteryFullLifetime">
@@ -67,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the reported full charge lifetime of the primary battery power source in seconds.</summary>
-        <value>The reported number of seconds of battery life available when the battery is fully charged, or -1 if the battery life is unknown.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the approximate amount of full battery charge remaining.</summary>
-        <value>The approximate amount, from 0.0 to 1.0, of full battery charge remaining.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the approximate number of seconds of battery time remaining.</summary>
-        <value>The approximate number of seconds of battery life remaining, or –1 if the approximate remaining battery life is unknown.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,23 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PowerLineStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current system power status.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.PowerLineStatus" /> values indicating the current system power status.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates whether the system power is online, or that the system power status is unknown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

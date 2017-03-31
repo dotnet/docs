@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,22 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Collects exceptions that occurred during XML Web services discovery. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Errors%2A> property of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> is of type DiscoveryExceptionDictionary.  
-  
-   
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#1](~/add/codesnippet/cpp/t-system.web.services.di_5_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#1](~/add/codesnippet/csharp/t-system.web.services.di_5_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#1](~/add/codesnippet/visualbasic/t-system.web.services.di_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,22 +50,10 @@
         <Parameter Name="value" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="url">The URL that caused an exception during XML Web services discovery.</param>
-        <param name="value">The <see cref="T:System.Exception" /> that occurred during XML Web services discovery.</param>
-        <summary>Adds an <see cref="T:System.Exception" /> with a key of <paramref name="url" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#6](~/add/codesnippet/cpp/ce85e60a-ab0b-4b12-a7d5-_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#6](~/add/codesnippet/csharp/ce85e60a-ab0b-4b12-a7d5-_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#6](~/add/codesnippet/visualbasic/ce85e60a-ab0b-4b12-a7d5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An entry with a key of <paramref name="url" /> already exists in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</exception>
+        <param name="url">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -89,7 +63,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,22 +73,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL of the <see cref="T:System.Exception" /> to locate within the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</param>
-        <summary>Determines whether the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" /> contains an <see cref="T:System.Exception" /> with the specified URL.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" /> contains an <see cref="T:System.Exception" /> with the specified URL; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#2](~/add/codesnippet/cpp/9ddc52ec-8c74-4c71-9572-_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#2](~/add/codesnippet/csharp/9ddc52ec-8c74-4c71-9572-_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#2](~/add/codesnippet/visualbasic/9ddc52ec-8c74-4c71-9572-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -124,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,21 +96,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL of the discovery document that caused an exception to be thrown during XML Web services discovery.</param>
-        <summary>Gets or sets the <see cref="T:System.Exception" /> that occurred while discovering the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
-        <value>An <see cref="T:System.Exception" /> that was thrown discovering <paramref name="url" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#3](~/add/codesnippet/cpp/p-system.web.services.di_8_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#3](~/add/codesnippet/csharp/p-system.web.services.di_8_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#3](~/add/codesnippet/visualbasic/p-system.web.services.di_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -158,25 +109,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Collections.ICollection" /> object with all the keys in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#7](~/add/codesnippet/cpp/p-system.web.services.di_31_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#7](~/add/codesnippet/csharp/p-system.web.services.di_31_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#7](~/add/codesnippet/visualbasic/p-system.web.services.di_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -186,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,20 +138,9 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL of the <see cref="T:System.Exception" /> to remove from the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</param>
-        <summary>Removes an <see cref="T:System.Exception" /> with the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#4](~/add/codesnippet/cpp/7c8316e5-5b09-44c0-a235-_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#4](~/add/codesnippet/csharp/7c8316e5-5b09-44c0-a235-_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#4](~/add/codesnippet/visualbasic/7c8316e5-5b09-44c0-a235-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -219,25 +150,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Collections.ICollection" /> object containing all the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryExceptionDictionary_Property_Method#8](~/add/codesnippet/cpp/p-system.web.services.di_14_1.cpp)]
- [!code-cs[DiscoveryExceptionDictionary_Property_Method#8](~/add/codesnippet/csharp/p-system.web.services.di_14_1.cs)]
- [!code-vb[DiscoveryExceptionDictionary_Property_Method#8](~/add/codesnippet/visualbasic/p-system.web.services.di_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

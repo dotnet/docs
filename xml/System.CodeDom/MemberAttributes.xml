@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.MemberAttributes" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,30 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines member attribute identifiers for class members.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The identifiers defined in the MemberAttributes enumeration can be used to indicate the scope and access attributes of a class member.  
-  
-> [!NOTE]
->  There is no `Virtual` member attribute. A member is declared virtual by setting its member access to Public (`property1.Attributes = MemberAttributes.Public`) without specifying it as Final. The absence of the Final flag makes a member `virtual` in C# (`public virtual`), `overrideable` in Visual Basic (`Public Overrideable`). To avoid declaring the member as `virtual` or `overrideable`, set both the Public and Final flags in the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property. See the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property for more information on setting member attributes.  
-  
-> [!NOTE]
->  The pattern for setting the access flags (flags containing the terms `Public`, `Private`, `Assembly`, or `Family`) is to mask out all access flags using the AccessMask mask and then set the desired access flag. For example, the code statement to identify a constructor (named `constructor1`) as public is `constructor1.Attributes = (constructor1.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;`. Setting the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property directly to an access flag (for example, `constructor1.Attributes = MemberAttributes.Public;`) erases all other flags that might be set. This pattern should also be used for setting the scope flags (Abstract, Final, Static, Override or Const) using the ScopeMask mask.  
-  
-   
-  
-## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeMemberProperty> to define a `string` property with `get` and `set` accessors.  
-  
- [!code-cpp[CodeMemberPropertyExample#3](~/add/codesnippet/cpp/t-system.codedom.membera_1.cpp)]
- [!code-vb[CodeMemberPropertyExample#3](~/add/codesnippet/visualbasic/t-system.codedom.membera_1.vb)]
- [!code-cs[CodeMemberPropertyExample#3](~/add/codesnippet/csharp/t-system.codedom.membera_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Abstract">
@@ -49,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An abstract member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccessMask">
@@ -66,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An access mask.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -83,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member that is accessible to any class within the same assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Const">
@@ -100,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A constant member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Family">
@@ -117,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member that is accessible within the family of its class and derived classes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FamilyAndAssembly">
@@ -134,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member that is accessible within its class, and derived classes in the same assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FamilyOrAssembly">
@@ -151,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member that is accessible within its class, its derived classes in any assembly, and any class in the same assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Final">
@@ -168,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member that cannot be overridden in a derived class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -185,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A new member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Overloaded">
@@ -202,14 +170,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An overloaded member. Some languages, such as Visual Basic, require overloaded members to be explicitly indicated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Override">
@@ -219,14 +186,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member that overrides a base class member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -236,14 +202,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A private member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -253,14 +218,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A public member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScopeMask">
@@ -270,14 +234,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A scope mask.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -287,14 +250,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A static member. In Visual Basic, this is equivalent to the <see langword="Shared" /> keyword.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VTableMask">
@@ -304,14 +266,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A VTable mask.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,9 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ActiveDirectorySchema class represents the schema partition for a particular domain.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -24,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,17 +31,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false " />to release only unmanaged resources.</param>
-        <summary>Releases the managed resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object and, optionally, releases unmanaged resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `disposing` parameter affects only the release of managed resources. Unmanaged resources are always released by this method.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAllClasses">
@@ -54,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,10 +50,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all Active Directory Domain Services classes in the schema.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> objects for the classes that were retrieved.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllClasses">
@@ -75,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,11 +71,10 @@
         <Parameter Name="type" Type="System.DirectoryServices.ActiveDirectory.SchemaClassType" />
       </Parameters>
       <Docs>
-        <param name="type">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" /> members that identifies which type of classes to retrieve.</param>
-        <summary>Retrieves all Active Directory Domain Services classes in the schema that are of the specified type.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> objects for the classes that were retrieved.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllDefunctClasses">
@@ -99,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,10 +91,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all of the defunct Active Directory Domain Services classes in the schema.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> objects for the classes that were retrieved.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllDefunctProperties">
@@ -120,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,10 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all of the defunct Active Directory Domain Services properties in the schema.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> objects for the properties that were retrieved.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllProperties">
@@ -141,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,10 +129,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves all of the Active Directory Domain Services properties in the schema.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> objects for the properties that were retrieved.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllProperties">
@@ -162,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,11 +150,10 @@
         <Parameter Name="type" Type="System.DirectoryServices.ActiveDirectory.PropertyTypes" />
       </Parameters>
       <Docs>
-        <param name="type">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.PropertyTypes" /> members that identifies which type of properties to retrieve.</param>
-        <summary>Retrieves all of the Active Directory Domain Services properties in the schema of the specified type.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> objects for the properties that were retrieved.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindClass">
@@ -186,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,16 +172,10 @@
         <Parameter Name="ldapDisplayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ldapDisplayName">The LDAP display name of the class to find.</param>
-        <summary>Retrieves the class with the specified name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object that represents the class with the specified name.</returns>
+        <param name="ldapDisplayName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A class with the specified name cannot be found.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="ldapDisplayName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="ldapDisplayName" /> is zero length.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindDefunctClass">
@@ -215,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,16 +194,10 @@
         <Parameter Name="commonName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="commonName">The common name of the defunct class to find.</param>
-        <summary>Retrieves the defunct class that has the specified common name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object that represents the class with the specified common name.</returns>
+        <param name="commonName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A class with the specified name cannot be found.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="commonName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="commonName" /> is zero length.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindDefunctProperty">
@@ -244,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,16 +216,10 @@
         <Parameter Name="commonName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="commonName">The common name of the defunct property to find.</param>
-        <summary>Retrieves the defunct property that has the specified common name.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object that represents the property.</returns>
+        <param name="commonName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A property with the specified name cannot be found.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="commonName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="commonName" /> is zero length.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindProperty">
@@ -273,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,16 +238,10 @@
         <Parameter Name="ldapDisplayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ldapDisplayName">The LDAP display name of the property to find.</param>
-        <summary>Retrieves the property with the specified name.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object that represents the property with the specified name.</returns>
+        <param name="ldapDisplayName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A property with the specified name cannot be found.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="propertyName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="propertyName" /> is zero length.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentSchema">
@@ -302,7 +251,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,10 +258,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the schema object for the forest that the currently logged-on user is a member of.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object that represents the schema for the domain that the local computer is a member of.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the local domain cannot be made.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -323,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,11 +277,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory partition.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory partition.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
-        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -345,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,15 +298,10 @@
         <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use to retrieve the object. The target of the context must be a forest, directory server, or configuration set.</param>
-        <summary>Retrieves the schema object for the specified context.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object that represents the schema for the specified context.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the target specified in <paramref name="context" /> cannot be made.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="context" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -373,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,7 +318,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes the schema cache on the client computer.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,17 +329,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryServer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the schema master role owner.</summary>
-        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that represents the server that is the schema master.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

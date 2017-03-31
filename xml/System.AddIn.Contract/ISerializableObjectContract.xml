@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.ISerializableObjectContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines a contract that provides information about a serializable object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -32,18 +30,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the canonical name of the type of the object that this <see cref="T:System.AddIn.Contract.ISerializableObjectContract" /> describes.</summary>
-        <returns>The canonical name of the type of the object that this <see cref="T:System.AddIn.Contract.ISerializableObjectContract" /> describes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The canonical name is a globally unique name, such as a fully qualified type name. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
-  
- Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSerializableObjectData">
@@ -53,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns data that can be used to help deserialize the object that this <see cref="T:System.AddIn.Contract.ISerializableObjectContract" /> describes.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.SerializableObjectData" /> that contains data about the object that this <see cref="T:System.AddIn.Contract.ISerializableObjectContract" /> describes.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

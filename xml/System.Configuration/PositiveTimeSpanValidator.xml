@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.PositiveTimeSpanValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides validation of a <see cref="T:System.TimeSpan" /> object. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PositiveTimeSpanValidator is used to ensure a <xref:System.TimeSpan> object meets specific criteria. The <xref:System.Configuration.PositiveTimeSpanValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.PositiveTimeSpanValidator.Validate%2A> method. To pass validation, the object being validated must be a positive <xref:System.TimeSpan> value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the PositiveTimeSpanValidator type.  
-  
- [!code-cs[System.Configuration.PositiveTimeSpanValidator#1](~/add/codesnippet/csharp/t-system.configuration.p_2_1.cs)]
- [!code-vb[System.Configuration.PositiveTimeSpanValidator#1](~/add/codesnippet/visualbasic/t-system.configuration.p_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,23 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.PositiveTimeSpanValidator" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the PositiveTimeSpanValidator constructor. This code example is part of a larger example provided for the <xref:System.Configuration.PositiveTimeSpanValidator> class.  
-  
- [!code-cs[System.Configuration.PositiveTimeSpanValidator#2](~/add/codesnippet/csharp/m-system.configuration.p_1_1.cs)]
- [!code-vb[System.Configuration.PositiveTimeSpanValidator#2](~/add/codesnippet/visualbasic/m-system.configuration.p_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanValidate">
@@ -64,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,21 +46,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The object type.</param>
-        <summary>Determines whether the object type can be validated.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="type" /> parameter matches a <see cref="T:System.TimeSpan" /> object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the CanValidate method. This code example is part of a larger example provided for the <xref:System.Configuration.PositiveTimeSpanValidator> class.  
-  
- [!code-cs[System.Configuration.PositiveTimeSpanValidator#3](~/add/codesnippet/csharp/m-system.configuration.p_2_1.cs)]
- [!code-vb[System.Configuration.PositiveTimeSpanValidator#3](~/add/codesnippet/visualbasic/m-system.configuration.p_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -98,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,28 +68,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value of an object.</param>
-        <summary>Determines whether the value of an object is valid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object to validate is passed as a parameter of the Validate method. To pass validation, the object being validated must be a positive <xref:System.TimeSpan> value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Validate method. This code example is part of a larger example provided for the <xref:System.Configuration.PositiveTimeSpanValidator> class.  
-  
- [!code-cs[System.Configuration.PositiveTimeSpanValidator#4](~/add/codesnippet/csharp/m-system.configuration.p_0_1.cs)]
- [!code-vb[System.Configuration.PositiveTimeSpanValidator#4](~/add/codesnippet/visualbasic/m-system.configuration.p_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> cannot be resolved as a positive <see cref="T:System.TimeSpan" /> value.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the scope of a writing progress indicator for [!INCLUDE[TLA#tla_metro](~/add/includes/tlasharptla-metro-md.md)] content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These values are primarily used for the <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> property of the <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FixedDocumentSequenceWritingProgress">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An entire sequence of one or more documents.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDocumentWritingProgress">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single document.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedPageWritingProgress">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is no interpretation for the progress value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

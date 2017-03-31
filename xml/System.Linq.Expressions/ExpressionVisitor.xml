@@ -3,23 +3,27 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionVisitor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.ExpressionVisitor" />
   <AssemblyInfo>
-    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a visitor or rewriter for expression trees.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is designed to be inherited to create more specialized classes whose functionality requires traversing, examining or copying an expression tree.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,12 +32,23 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Linq.Expressions.ExpressionVisitor" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +58,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.Visit(System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</ReturnType>
@@ -53,9 +79,9 @@
         <Parameter Name="nodes" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" />
       </Parameters>
       <Docs>
-        <param name="nodes">The expressions to visit.</param>
-        <summary>Dispatches the list of expressions to one of the more specialized visit methods in this class.</summary>
-        <returns>The modified expression list, if any one of the elements were modified; otherwise, returns the original expression list.</returns>
+        <param name="nodes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +91,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.Visit(System.Linq.Expressions.Expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -75,9 +112,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Dispatches the expression to one of the more specialized visit methods in this class.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +124,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.Visit``1(System.Collections.ObjectModel.ReadOnlyCollection{``0},System.Func{``0,``0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</ReturnType>
@@ -101,11 +149,11 @@
         <Parameter Name="elementVisitor" Type="System.Func&lt;T,T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the nodes.</typeparam>
-        <param name="nodes">The nodes to visit.</param>
-        <param name="elementVisitor">A delegate that visits a single element, optionally replacing it with a new element.</param>
-        <summary>Visits all nodes in the collection using a specified element visitor.</summary>
-        <returns>The modified node list, if any of the elements were modified; otherwise, returns the original node list.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="nodes">To be added.</param>
+        <param name="elementVisitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +163,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(System.Collections.ObjectModel.ReadOnlyCollection{``0},System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</ReturnType>
@@ -133,13 +192,12 @@
         <Parameter Name="callerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the expression.</typeparam>
-        <param name="nodes">The expression to visit.</param>
-        <param name="callerName">The name of the calling method; used to report to report a better error message.</param>
-        <summary>Visits an expression, casting the result back to the original expression type.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="nodes">To be added.</param>
+        <param name="callerName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The visit method for this node returned a different type.</exception>
       </Docs>
     </Member>
     <Member MemberName="VisitAndConvert&lt;T&gt;">
@@ -148,8 +206,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(``0,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -166,13 +235,12 @@
         <Parameter Name="callerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the expression.</typeparam>
-        <param name="node">The expression to visit.</param>
-        <param name="callerName">The name of the calling method; used to report to report a better error message.</param>
-        <summary>Visits an expression, casting the result back to the original expression type.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="node">To be added.</param>
+        <param name="callerName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The visit method for this node returned a different type.</exception>
       </Docs>
     </Member>
     <Member MemberName="VisitBinary">
@@ -181,8 +249,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -191,9 +270,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.BinaryExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.BinaryExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +282,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitBlock(System.Linq.Expressions.BlockExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -213,9 +303,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.BlockExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.BlockExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +315,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitCatchBlock(System.Linq.Expressions.CatchBlock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.CatchBlock</ReturnType>
@@ -235,9 +336,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.CatchBlock" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.CatchBlock" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +348,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -257,9 +369,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.ConditionalExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.ConditionalExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,8 +381,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -279,9 +402,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.ConstantExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the <see cref="T:System.Linq.Expressions.ConstantExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,8 +414,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitDebugInfo(System.Linq.Expressions.DebugInfoExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -301,9 +435,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.DebugInfoExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the <see cref="T:System.Linq.Expressions.DebugInfoExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,8 +447,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitDefault(System.Linq.Expressions.DefaultExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -323,9 +468,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.DefaultExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the <see cref="T:System.Linq.Expressions.DefaultExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,7 +481,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -345,9 +495,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.DynamicExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.DynamicExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,8 +507,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitElementInit(System.Linq.Expressions.ElementInit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.ElementInit</ReturnType>
@@ -367,9 +528,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.ElementInit" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.ElementInit" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,8 +540,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -389,19 +561,10 @@
         <Parameter Name="node" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the extension expression.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This can be overridden to visit or rewrite specific extension nodes.  
-  
- If it is not overridden, this method will call <xref:System.Linq.Expressions.Expression.VisitChildren%2A>, which gives the node a chance to walk its children. By default, <xref:System.Linq.Expressions.Expression.VisitChildren%2A> will try to reduce the node.  
-  
- ]]></format>
-        </remarks>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisitGoto">
@@ -410,8 +573,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitGoto(System.Linq.Expressions.GotoExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -420,9 +594,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.GotoExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.GotoExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,8 +606,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitIndex(System.Linq.Expressions.IndexExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -442,9 +627,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.IndexExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.IndexExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,8 +639,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -464,9 +660,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.InvocationExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.InvocationExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,8 +672,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLabel(System.Linq.Expressions.LabelExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -486,9 +693,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.LabelExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.LabelExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,8 +705,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLabelTarget(System.Linq.Expressions.LabelTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.LabelTarget</ReturnType>
@@ -508,9 +726,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.LabelTarget" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the <see cref="T:System.Linq.Expressions.LabelTarget" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,8 +738,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{``0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -533,10 +762,10 @@
         <Parameter Name="node" Type="System.Linq.Expressions.Expression&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the delegate.</typeparam>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="System.Linq.Expressions.Expression%601" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,8 +775,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitListInit(System.Linq.Expressions.ListInitExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -556,9 +796,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.ListInitExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.ListInitExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,8 +808,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLoop(System.Linq.Expressions.LoopExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -578,9 +829,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.LoopExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.LoopExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,8 +841,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -600,9 +862,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MemberExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MemberExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,8 +874,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberAssignment(System.Linq.Expressions.MemberAssignment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberAssignment</ReturnType>
@@ -622,9 +895,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MemberAssignment" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MemberAssignment" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,8 +907,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberBinding(System.Linq.Expressions.MemberBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberBinding</ReturnType>
@@ -644,9 +928,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MemberBinding" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MemberBinding" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,8 +940,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberInit(System.Linq.Expressions.MemberInitExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -666,9 +961,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MemberInitExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MemberInitExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -678,8 +973,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberListBinding(System.Linq.Expressions.MemberListBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberListBinding</ReturnType>
@@ -688,9 +994,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MemberListBinding" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MemberListBinding" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,8 +1006,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberMemberBinding(System.Linq.Expressions.MemberMemberBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberMemberBinding</ReturnType>
@@ -710,9 +1027,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MemberMemberBinding" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MemberMemberBinding" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,8 +1039,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -732,9 +1060,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.MethodCallExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.MethodCallExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,8 +1072,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -754,9 +1093,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.NewExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.NewExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -766,8 +1105,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitNewArray(System.Linq.Expressions.NewArrayExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -776,9 +1126,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.NewArrayExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.NewArrayExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,8 +1138,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -798,9 +1159,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.ParameterExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the <see cref="T:System.Linq.Expressions.ParameterExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -810,8 +1171,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitRuntimeVariables(System.Linq.Expressions.RuntimeVariablesExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -820,9 +1192,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.RuntimeVariablesExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.RuntimeVariablesExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,8 +1204,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitSwitch(System.Linq.Expressions.SwitchExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -842,9 +1225,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.SwitchExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.SwitchExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -854,8 +1237,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitSwitchCase(System.Linq.Expressions.SwitchCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.SwitchCase</ReturnType>
@@ -864,9 +1258,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.SwitchCase" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.SwitchCase" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,8 +1270,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitTry(System.Linq.Expressions.TryExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -886,9 +1291,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.TryExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.TryExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,8 +1303,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -908,9 +1324,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.TypeBinaryExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.TypeBinaryExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -920,8 +1336,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -930,9 +1357,9 @@
         <Parameter Name="node" Type="System.Linq.Expressions.UnaryExpression" />
       </Parameters>
       <Docs>
-        <param name="node">The expression to visit.</param>
-        <summary>Visits the children of the <see cref="T:System.Linq.Expressions.UnaryExpression" />.</summary>
-        <returns>The modified expression, if it or any subexpression was modified; otherwise, returns the original expression.</returns>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

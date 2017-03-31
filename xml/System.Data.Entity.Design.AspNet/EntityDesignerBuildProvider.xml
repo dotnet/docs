@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Extracts the model and mapping portions of .edmx files under the App_Code directory of an ASP.NET Web site, and embeds them as resources in the assembly that is dynamically compiled by the ASP.NET runtime.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is intended to be called only by the ASP.NET compiler.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateCode">
@@ -51,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,16 +51,9 @@
         <Parameter Name="assemblyBuilder" Type="System.Web.Compilation.AssemblyBuilder" />
       </Parameters>
       <Docs>
-        <param name="assemblyBuilder">A container for building an assembly.</param>
-        <summary>Generates C# or Visual Basic code based on the model and mapping portions of an .edmx file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended to be called only by the ASP.NET compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyBuilder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResultFlags">
@@ -80,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,17 +72,10 @@
         <Parameter Name="results" Type="System.CodeDom.Compiler.CompilerResults" />
       </Parameters>
       <Docs>
-        <param name="results">The results of compilation returned from the ASP.NET compiler.</param>
-        <summary>Provides instructions to the ASP.NET compiler about building a project.</summary>
-        <returns>The required behavior when a virtual path is built.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended to be called only by the ASP.NET compiler.  
-  
- ]]></format>
-        </remarks>
+        <param name="results">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

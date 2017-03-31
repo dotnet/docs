@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CatalogExtensions" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -11,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides extension methods for constructing composition services.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,6 +23,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -31,9 +33,9 @@
         <Parameter Name="composablePartCatalog" Type="System.ComponentModel.Composition.Primitives.ComposablePartCatalog" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="composablePartCatalog">The catalog that will provide exports.</param>
-        <summary>Creates a new composition service by using the specified catalog as a source for exports.</summary>
-        <returns>A new composition service.</returns>
+        <param name="composablePartCatalog">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

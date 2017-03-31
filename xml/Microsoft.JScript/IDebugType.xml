@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines methods that provide information about debugger objects. This interface is implemented by debugger objects that represent a type in the debugger target.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,10 +36,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to test.</param>
-        <summary>When implemented in a class, determines whether the specified object is an instance of the current type.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="o" /> is an instance of the current type; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

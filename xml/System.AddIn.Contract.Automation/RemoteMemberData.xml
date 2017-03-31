@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemoteMemberData" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about a member of a type that components can access across application domain and process boundaries.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RemoteMemberData structure provides information about a member of an object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DeclaringType">
@@ -30,14 +22,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.Automation.IRemoteTypeContract</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the type that declares the member that this <see cref="T:System.AddIn.Contract.Automation.RemoteMemberData" /> describes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,14 +39,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the name of the member that this <see cref="T:System.AddIn.Contract.Automation.RemoteMemberData" /> describes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

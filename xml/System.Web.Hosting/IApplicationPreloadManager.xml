@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods that ASP.NET uses to invoke the application-preload feature in [!INCLUDE[iisver](~/add/includes/iisver-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,11 +38,10 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="context">The application context.</param>
-        <param name="appId">The unique ID of the application.</param>
-        <param name="enabled">
-          <see langword="true" /> to indicate that the application should be preloaded; otherwise, <see langword="false" />.</param>
-        <summary>Called by [!INCLUDE[iisver](~/add/includes/iisver-md.md)] to notify ASP.NET whether an application should be preloaded.</summary>
+        <param name="context">To be added.</param>
+        <param name="appId">To be added.</param>
+        <param name="enabled">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,16 +61,9 @@
         <Parameter Name="preloadUtil" Type="System.Web.Hosting.IApplicationPreloadUtil" />
       </Parameters>
       <Docs>
-        <param name="preloadUtil">The handle to an unmanaged interface in [!INCLUDE[iisver](~/add/includes/iisver-md.md)] that ASP.NET calls to get information.</param>
-        <summary>Calls [!INCLUDE[iisver](~/add/includes/iisver-md.md)] to get information that is required in order to preload an application.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IIS calls ASP.NET through this interface, supplying a reference to an object that implements the <xref:System.Web.Hosting.IApplicationPreloadUtil> interface. ASP.NET uses that interface later to perform a callback into IIS to get preload information for individual applications.  
-  
- ]]></format>
-        </remarks>
+        <param name="preloadUtil">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

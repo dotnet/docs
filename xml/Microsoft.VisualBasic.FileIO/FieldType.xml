@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.FieldType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates whether text fields are delimited or fixed width.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used with the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Delimited">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the fields are delimited.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedWidth">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the fields are fixed width.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

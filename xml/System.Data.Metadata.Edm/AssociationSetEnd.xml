@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.AssociationSetEnd" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the <see langword="End" /> of the association set in a conceptual model.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
-        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.AssociationEndMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="End" /> member that this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" /> object corresponds to.</summary>
-        <value>An <see cref="T:System.Data.Metadata.Edm.AssociationEndMember" /> object that represents the <see langword="End" /> member that this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" /> object corresponds to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EntitySet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the entity set referenced by this <see langword="End" /> role.</summary>
-        <value>An <see cref="T:System.Data.Metadata.Edm.EntitySet" /> object that represents the entity set referred by this <see langword="End" /> role.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the End for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
-        <value>The name of the End for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,15 +94,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.AssociationSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent association set of this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
-        <value>An <see cref="T:System.Data.Metadata.Edm.AssociationSet" /> object that represents the parent association set of this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +112,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -130,8 +123,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
-        <value>The name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
-        <returns>The name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

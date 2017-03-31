@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.CursorInteropHelper" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a static helper class for [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)]/[!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] interoperation with one method, which is used to obtain a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -38,18 +36,10 @@
         <Parameter Name="cursorHandle" Type="System.Runtime.InteropServices.SafeHandle" />
       </Parameters>
       <Docs>
-        <param name="cursorHandle">Cursor reference to use for interoperation.</param>
-        <summary>Returns a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
-        <returns>The [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] cursor object based on the provided [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)] cursor handle.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting a custom cursor image requires security permissions even if done in pure [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] programming. See <xref:System.Windows.Input.Cursor>.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="cursorHandle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

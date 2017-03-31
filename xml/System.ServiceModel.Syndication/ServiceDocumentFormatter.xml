@@ -3,11 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceDocumentFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,22 +16,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An abstract class used as a base class for other formatters, such as <see cref="T:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is abstract and cannot be instantiated directly.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,16 +30,16 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,19 +49,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.#ctor(System.ServiceModel.Syndication.ServiceDocument)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="documentToWrite" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="documentToWrite">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to serialize.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
+        <param name="documentToWrite">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,11 +71,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,10 +85,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">An XML reader to check.</param>
-        <summary>Verifies whether the specified <see cref="T:System.Xml.XmlReader" /> contains a valid service document.</summary>
-        <returns>
-          <see langword="true" />, if the XML reader contains a valid service document, otherwise <see langword="false" />.</returns>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,11 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CreateCategory(System.ServiceModel.Syndication.InlineCategoriesDocument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,9 +111,9 @@
         <Parameter Name="inlineCategories" Type="System.ServiceModel.Syndication.InlineCategoriesDocument" />
       </Parameters>
       <Docs>
-        <param name="inlineCategories">An <see cref="System.ServiceModel.Syndication.InlineCategories" /> instance used to create the new categories document.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class.</summary>
-        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
+        <param name="inlineCategories">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,11 +123,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CreateCollection(System.ServiceModel.Syndication.Workspace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,9 +137,9 @@
         <Parameter Name="workspace" Type="System.ServiceModel.Syndication.Workspace" />
       </Parameters>
       <Docs>
-        <param name="workspace">A <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance used to create the new collection.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance.</summary>
-        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance.</returns>
+        <param name="workspace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,11 +149,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CreateDocumentInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,8 +161,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</summary>
-        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,11 +172,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CreateInlineCategories(System.ServiceModel.Syndication.ResourceCollectionInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -197,9 +186,9 @@
         <Parameter Name="collection" Type="System.ServiceModel.Syndication.ResourceCollectionInfo" />
       </Parameters>
       <Docs>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to create the new <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
-        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> instance.</returns>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,11 +198,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CreateReferencedCategories(System.ServiceModel.Syndication.ResourceCollectionInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,9 +212,9 @@
         <Parameter Name="collection" Type="System.ServiceModel.Syndication.ResourceCollectionInfo" />
       </Parameters>
       <Docs>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance to use to create the new <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</summary>
-        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</returns>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,11 +224,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.CreateWorkspace(System.ServiceModel.Syndication.ServiceDocument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,9 +238,9 @@
         <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to create the new workspace.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.Workspace" /></summary>
-        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.Workspace" />.</returns>
+        <param name="document">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,19 +250,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocumentFormatter.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.ServiceDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</summary>
-        <value>Returns the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,11 +272,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.CategoriesDocument,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,10 +288,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to read the element extensions.</param>
-        <param name="maxExtensionSize">The maximum size of an element extension to be loaded.</param>
-        <summary>Loads element extensions.</summary>
+        <param name="reader">To be added.</param>
+        <param name="categories">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,11 +301,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.ResourceCollectionInfo,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,10 +317,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to load the element extensions.</param>
-        <param name="maxExtensionSize">The maximum size of an extension to load.</param>
-        <summary>Loads element extensions.</summary>
+        <param name="reader">To be added.</param>
+        <param name="collection">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,11 +330,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.ServiceDocument,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,10 +346,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to read the element extensions.</param>
-        <param name="maxExtensionSize">The maximum size of an extension to load.</param>
-        <summary>Loads element extensions.</summary>
+        <param name="reader">To be added.</param>
+        <param name="document">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,11 +359,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.Workspace,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,10 +375,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to load the element extensions.</param>
-        <param name="maxExtensionSize">The maximum size of an extension to load.</param>
-        <summary>Loads element extensions.</summary>
+        <param name="reader">To be added.</param>
+        <param name="workspace">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,11 +388,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -413,8 +402,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <summary>Reads a service document from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,11 +413,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.SetDocument(System.ServiceModel.Syndication.ServiceDocument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -438,8 +427,8 @@
         <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to write.</param>
-        <summary>Sets the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to write.</summary>
+        <param name="document">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,11 +438,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.CategoriesDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -467,13 +456,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to parse the attribute extension.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was successfully parsed.</returns>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="categories">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,11 +472,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.ResourceCollectionInfo,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -501,13 +490,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to parse the attribute.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="collection">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,11 +506,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.ServiceDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,13 +524,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute extension to parse.</param>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to parse the attribute extension.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extensions.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="document">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,11 +540,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.Workspace,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -569,13 +558,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to parse the attribute.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="workspace">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,11 +574,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.CategoriesDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -601,11 +590,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to parse the element extension.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
+        <param name="reader">To be added.</param>
+        <param name="categories">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,11 +604,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.ResourceCollectionInfo,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -631,11 +620,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to parse the element extension.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
+        <param name="reader">To be added.</param>
+        <param name="collection">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -645,11 +634,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.ServiceDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -661,11 +650,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to parse the element extension.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was successfully parsed.</returns>
+        <param name="reader">To be added.</param>
+        <param name="document">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -675,11 +664,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.Workspace,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -691,11 +680,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to parse the element extension.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
+        <param name="reader">To be added.</param>
+        <param name="workspace">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,19 +694,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocumentFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the formatter.</summary>
-        <value>Returns a <see cref="T:System.String" /> that contains the version of the formatter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -727,11 +716,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.CategoriesDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -743,10 +732,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to write the element extensions.</param>
-        <param name="version">The syndication version to use when writing.</param>
-        <summary>Writes attribute extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="categories">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,11 +745,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.ResourceCollectionInfo,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -772,10 +761,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to write the attribute extensions.</param>
-        <param name="version">The syndication version to use when writing the attribute extensions.</param>
-        <summary>Writes attribute extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="collection">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -785,11 +774,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.ServiceDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -801,10 +790,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to write the attribute extensions.</param>
-        <param name="version">The syndication version to use when writing the attribute extensions.</param>
-        <summary>Writes attribute extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="document">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -814,11 +803,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.Workspace,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -830,10 +819,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to write the attribute extensions.</param>
-        <param name="version">The syndication version to use when writing the attribute extensions.</param>
-        <summary>Writes attribute extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="workspace">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -843,11 +832,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.CategoriesDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -859,10 +848,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="categories">The  <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to write the element extensions.</param>
-        <param name="version">The syndication version to use when writing the element extensions.</param>
-        <summary>Writes element extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="categories">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -872,11 +861,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.ResourceCollectionInfo,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -888,10 +877,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to write the element extensions.</param>
-        <param name="version">The syndication version to use when writing the element extensions.</param>
-        <summary>Writes element extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="collection">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -901,11 +890,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.ServiceDocument,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -917,10 +906,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to write the element extensions.</param>
-        <param name="version">The syndication version to use when writing the element extensions.</param>
-        <summary>Writes element extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="document">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -930,11 +919,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.Workspace,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -946,10 +935,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to write the element extensions.</param>
-        <param name="version">The syndication version to use when writing the element extensions.</param>
-        <summary>Writes element extensions.</summary>
+        <param name="writer">To be added.</param>
+        <param name="workspace">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -959,11 +948,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -973,8 +962,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <summary>Writes a service document to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

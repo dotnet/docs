@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="primaryConnection">An <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the primary connection.</param>
-    <param name="connectionToDereference">An <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection to dereference.</param>
-    <summary>The DereferenceConnectionCallback delegate dereferences a connection that is no longer required. The connection was probably established through a successful call to the <see cref="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" /> or <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> delegate.</summary>
+    <param name="primaryConnection">To be added.</param>
+    <param name="connectionToDereference">To be added.</param>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.FaultContractInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents information about a SOAP fault that is specified in a <see cref="T:System.ServiceModel.FaultContractAttribute" /> attribute.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can get a collection of FaultContractInfo objects by accessing the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A?displayProperty=fullName> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos%2A?displayProperty=fullName> properties. The FaultContractInfo class exposes the action of the SOAP fault and the detail type that is serialized into the SOAP fault.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +23,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,17 +31,10 @@
         <Parameter Name="detail" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="action">The action of the SOAP fault.</param>
-        <param name="detail">The detail type that is serialized as the SOAP fault detail.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.FaultContractInfo" /> class that uses the specified action and detail type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new FaultContractInfo from the `action` and `detail`.  
-  
- ]]></format>
-        </remarks>
+        <param name="action">To be added.</param>
+        <param name="detail">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -58,15 +44,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the SOAP fault action value.</summary>
-        <value>The SOAP fault action value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,15 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type of the object that is serialized as the SOAP fault detail.</summary>
-        <value>The <see cref="T:System.Type" /> that represents the serialized SOAP fault detail.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

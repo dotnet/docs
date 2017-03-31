@@ -4,37 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeRowMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values for specifying how the height of a row is adjusted.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control can resize its rows based on the preferred height of each row. The preferred row height is the minimum height required to display the largest cell value in that row. Different size modes let you indicate which cells are used to calculate the new heights (either header cells or non-header cells) and whether to resize all rows or only the rows that are currently displayed. Resizing a subset of rows is useful to avoid a performance penalty when working with many rows of data.  
-  
- Content-based automatic resizing prevents users from adjusting row heights with the mouse.  
-  
- This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A> method.  
-  
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
-   
-  
-## Examples  
- The following code example resizes the third row in the control to fit the contents of its nonheader cells. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/add/codesnippet/csharp/t-system.windows.forms.d_30_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/add/codesnippet/visualbasic/t-system.windows.forms.d_30_1.vb)]
- [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/add/codesnippet/cpp/t-system.windows.forms.d_30_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllCells">
@@ -44,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row height adjusts to fit the contents of all cells in the row, including the header cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllCellsExceptHeader">
@@ -61,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row height adjusts to fit the contents of all cells in the row, excluding the header cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowHeader">
@@ -78,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The row height adjusts to fit the contents of the row header.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

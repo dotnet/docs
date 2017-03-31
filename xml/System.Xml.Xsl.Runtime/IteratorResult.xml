@@ -4,7 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.IteratorResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Iterators that use containment to control a nested iterator return one of the values in this enumeration.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +30,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Iteration is complete; there are no more nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedInputNode">
@@ -44,14 +50,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The next node must be fetched from the contained iterator before iteration can continue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMoreNodes">
@@ -61,14 +70,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Iteration is complete; there are no more nodes</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

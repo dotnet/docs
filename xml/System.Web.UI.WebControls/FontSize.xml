@@ -4,29 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FontSize" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the font sizes defined by HTML 4.0.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FontSize enumeration represents the font sizes defined by HTML 4.0. The font size can be an absolute or relative size.  
-  
- An absolute font size represents a predefined font size determined by the browser. The possible values for an absolute font size are XXSmall, XSmall, Small, Medium, Large, XLarge, and XXLarge.  
-  
- A relative font size represents a font size one size larger or smaller than a parent element's font size. The possible values for a relative font size are Smaller and Larger.  
-  
-> [!NOTE]
->  Some browers do not recognize Smaller and Larger font sizes. Check with your browser for compatibility.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AsUnit">
@@ -36,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is specified by a point value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Large">
@@ -53,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is two sizes larger than the base font size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Larger">
@@ -70,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is one size larger than the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -87,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is one size larger than the default font size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -104,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is not set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Small">
@@ -121,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The base font size determined by the browser.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Smaller">
@@ -138,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is one size smaller than the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XLarge">
@@ -155,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is three sizes larger than the base font size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XSmall">
@@ -172,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is one size smaller than the base font size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XXLarge">
@@ -189,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is four sizes larger than the base font size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XXSmall">
@@ -206,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The font size is two sizes smaller than the base font size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

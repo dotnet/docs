@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptVolume" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates values for volume levels (loudness) in prompts.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Members of the PromptVolume enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the volume level for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Volume%2A> property gets the volume for a <xref:System.Speech.Synthesis.PromptStyle> object using a PromptVolume instance.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the engine-specific default volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtraLoud">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an extra loud volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtraSoft">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an extra soft volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Loud">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a loud volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a medium volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the volume level is not set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Silent">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a muted volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Soft">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a soft volume level.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

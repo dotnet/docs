@@ -3,11 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SyndicationElementExtensionCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationElementExtension&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,13 +17,8 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,11 +28,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,8 +42,8 @@
         <Parameter Name="extension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="extension">The <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> object to add.</param>
-        <summary>Adds the specified <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> object to the collection.</summary>
+        <param name="extension">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,11 +53,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,8 +67,8 @@
         <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> to read the syndication element extension from.</param>
-        <summary>Adds a new syndication element extension to the collection.</summary>
+        <param name="xmlReader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,11 +78,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Object,System.Runtime.Serialization.DataContractSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,9 +93,9 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.DataContractSerializer" />
       </Parameters>
       <Docs>
-        <param name="dataContractExtension">The object to add to the collection.</param>
-        <param name="serializer">The serializer to use.</param>
-        <summary>Adds the specified object to the collection using the specified data contract serializer.</summary>
+        <param name="dataContractExtension">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,11 +105,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Object,System.Xml.Serialization.XmlSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,9 +120,9 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <param name="xmlSerializerExtension">The object to add to the collection.</param>
-        <param name="serializer">The XML serializer to use.</param>
-        <summary>Adds the specified object to the collection using the specified XML serializer.</summary>
+        <param name="xmlSerializerExtension">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,11 +132,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.String,System.String,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,10 +148,10 @@
         <Parameter Name="dataContractExtension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="outerName">The outer name.</param>
-        <param name="outerNamespace">The outer namespace.</param>
-        <param name="dataContractExtension">The object to add to the collection.</param>
-        <summary>Adds the specified object to the collection with the specified outer name and outer namespace.</summary>
+        <param name="outerName">To be added.</param>
+        <param name="outerNamespace">To be added.</param>
+        <param name="dataContractExtension">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,11 +161,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,11 +178,11 @@
         <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <param name="outerName">The outer name.</param>
-        <param name="outerNamespace">The outer namespace.</param>
-        <param name="dataContractExtension">The object to add to the collection.</param>
-        <param name="dataContractSerializer">The serializer to use.</param>
-        <summary>Adds the specified object to the collection with the specified outer name and outer namespace using the specified data contract serializer.</summary>
+        <param name="outerName">To be added.</param>
+        <param name="outerNamespace">To be added.</param>
+        <param name="dataContractExtension">To be added.</param>
+        <param name="dataContractSerializer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,11 +192,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ClearItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,11 +214,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.GetReaderAtElementExtensions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,8 +226,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an <see cref="T:System.Xml.XmlReader" /> with the element extensions.</summary>
-        <returns>An <see cref="T:System.Xml.XmlReader" /> that contains the element extensions.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,11 +237,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.InsertItem(System.Int32,System.ServiceModel.Syndication.SyndicationElementExtension)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,11 +264,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions``1(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,14 +282,12 @@
         <Parameter Name="extensionNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TExtension">The type of the extension to read.</typeparam>
-        <param name="extensionName">The name of the element extension.</param>
-        <param name="extensionNamespace">The namespace of the element extension.</param>
-        <summary>Reads the element extensions with the specified name and namespace.</summary>
-        <returns>A collection of element extension objects.</returns>
+        <typeparam name="TExtension">To be added.</typeparam>
+        <param name="extensionName">To be added.</param>
+        <param name="extensionNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type is not a valid data contract.</exception>
-        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementExtensions&lt;TExtension&gt;">
@@ -303,11 +296,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions``1(System.String,System.String,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,15 +315,13 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="TExtension">The type of the extension to read.</typeparam>
-        <param name="extensionName">The name of the element extension.</param>
-        <param name="extensionNamespace">The namespace of the element extension.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
-        <summary>Reads the element extensions with the specified name and namespace.</summary>
-        <returns>A collection of element extension objects.</returns>
+        <typeparam name="TExtension">To be added.</typeparam>
+        <param name="extensionName">To be added.</param>
+        <param name="extensionNamespace">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type is not a valid data contract.</exception>
-        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementExtensions&lt;TExtension&gt;">
@@ -339,11 +330,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions``1(System.String,System.String,System.Xml.Serialization.XmlSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -358,14 +349,13 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="TExtension">The type of the extension to read.</typeparam>
-        <param name="extensionName">The name of the element extension.</param>
-        <param name="extensionNamespace">The namespace of the element extension.</param>
-        <param name="serializer">The <see cref="T:System.Xml.Serialization.XmlSerializer" /> to use.</param>
-        <summary>Reads the element extensions with the specified name and namespace.</summary>
-        <returns>A collection of element extension objects.</returns>
+        <typeparam name="TExtension">To be added.</typeparam>
+        <param name="extensionName">To be added.</param>
+        <param name="extensionNamespace">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -374,11 +364,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.RemoveItem(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,11 +389,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.SetItem(System.Int32,System.ServiceModel.Syndication.SyndicationElementExtension)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

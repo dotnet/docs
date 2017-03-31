@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.AuthType" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The AuthType enumeration is used to specify the authentication method to use on a connection.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the connection should be made without passing credentials. The value is equal to 0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Basic">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that basic authentication should be used on the connection. The value is equal to 1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Digest">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the Digest Access Authentication should be used on the connection. The value is equal to 4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dpa">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that Distributed Password Authentication (DPA) should be used on the connection. The value is equal to 6.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="External">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an external method will be used to authenticate the connection. The value is equal to 8.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kerberos">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that Kerberos authentication should be used on the connection. The value is equal to 9.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Msn">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that it is authenticated by "Microsoft Network Authentication Service". The value is equal to 7.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Negotiate">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that Microsoft Negotiate authentication should be used on the connection. The value is equal to 2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ntlm">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that Windows NT Challenge/Response (NTLM) authentication should be used on the connection. The value is equal to 3.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sicily">
@@ -175,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a negotiation mechanism (Sicily) will be used to choose MSN, DPA or NTLM.  This should be used for LDAPv2 servers only. The value is equal to 5.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

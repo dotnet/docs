@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines how to format the text inside of a <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A> and <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> to control how text is returned—in the first case, by performing a cut and copy operation, and in the second place, by using the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ExcludePromptAndLiterals">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return only text input by the user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeLiterals">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return text input by the user as well as any literal characters defined in the mask.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludePrompt">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return text input by the user as well as any instances of the prompt character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludePromptAndLiterals">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return text input by the user as well as any literal characters defined in the mask and any instances of the prompt character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,24 +4,15 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.TriggerAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The TriggerAction enumeration is used by the <see cref="T:Microsoft.SqlServer.Server.SqlTriggerContext" /> class to indicate what action fired the trigger.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TriggerAction enumeration is used by the <xref:Microsoft.SqlServer.Server.SqlTriggerContext> class to indicate what action fired the trigger.  
-  
- For more information, see the Transact-SQL Reference of SQL Server Books Online.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlterAppRole">
@@ -31,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER APPLICATION ROLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterAssembly">
@@ -48,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER ASSEMBLY Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterBinding">
@@ -65,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterFunction">
@@ -82,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER FUNCTION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterIndex">
@@ -99,14 +90,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER INDEX Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterLogin">
@@ -116,14 +107,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER LOGIN Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterPartitionFunction">
@@ -133,14 +124,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER PARTITION FUNCTION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterPartitionScheme">
@@ -150,14 +141,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER PARTITION SCHEME Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterProcedure">
@@ -167,14 +158,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER PROCEDURE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterQueue">
@@ -184,14 +175,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER QUEUE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterRole">
@@ -201,14 +192,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER ROLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterRoute">
@@ -218,14 +209,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER ROUTE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterSchema">
@@ -235,14 +226,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER SCHEMA Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterService">
@@ -252,14 +243,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER SERVICE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterTable">
@@ -269,14 +260,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER TABLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterTrigger">
@@ -286,14 +277,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER TRIGGER Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterUser">
@@ -303,14 +294,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER USER Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlterView">
@@ -320,14 +311,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ALTER VIEW Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateAppRole">
@@ -337,14 +328,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE APPLICATION ROLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateAssembly">
@@ -354,14 +345,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE ASSEMBLY Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateBinding">
@@ -371,14 +362,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateContract">
@@ -388,14 +379,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE CONTRACT Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateEventNotification">
@@ -405,14 +396,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE EVENT NOTIFICATION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateFunction">
@@ -422,14 +413,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE FUNCTION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateIndex">
@@ -439,14 +430,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE INDEX Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateLogin">
@@ -456,14 +447,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE LOGIN Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateMsgType">
@@ -473,14 +464,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE MESSAGE TYPE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreatePartitionFunction">
@@ -490,14 +481,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE PARTITION FUNCTION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreatePartitionScheme">
@@ -507,14 +498,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE PARTITION SCHEME Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateProcedure">
@@ -524,14 +515,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE PROCEDURE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateQueue">
@@ -541,14 +532,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE QUEUE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
@@ -558,14 +549,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE ROLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateRoute">
@@ -575,14 +566,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE ROUTE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateSchema">
@@ -592,14 +583,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE SCHEMA Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateSecurityExpression">
@@ -609,14 +600,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateService">
@@ -626,14 +617,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE SERVICE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateSynonym">
@@ -643,14 +634,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE SYNONYM Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateTable">
@@ -660,14 +651,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE TABLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateTrigger">
@@ -677,14 +668,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE TRIGGER Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateType">
@@ -694,14 +685,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE TYPE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -711,14 +702,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE USER Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateView">
@@ -728,14 +719,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A CREATE VIEW Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -745,14 +736,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DELETE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DenyObject">
@@ -762,14 +753,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DENY Object Permissions Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DenyStatement">
@@ -779,14 +770,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DENY Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropAppRole">
@@ -796,14 +787,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP APPLICATION ROLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropAssembly">
@@ -813,14 +804,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP ASSEMBLY Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropBinding">
@@ -830,14 +821,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropContract">
@@ -847,14 +838,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP CONTRACT Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropEventNotification">
@@ -864,14 +855,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP EVENT NOTIFICATION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropFunction">
@@ -881,14 +872,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP FUNCTION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropIndex">
@@ -898,14 +889,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP INDEX Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropLogin">
@@ -915,14 +906,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP LOGIN Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropMsgType">
@@ -932,14 +923,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP MESSAGE TYPE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropPartitionFunction">
@@ -949,14 +940,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP PARTITION FUNCTION Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropPartitionScheme">
@@ -966,14 +957,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP PARTITION SCHEME Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropProcedure">
@@ -983,14 +974,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP PROCEDURE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropQueue">
@@ -1000,14 +991,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP QUEUE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropRole">
@@ -1017,14 +1008,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP ROLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropRoute">
@@ -1034,14 +1025,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP ROUTE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropSchema">
@@ -1051,14 +1042,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP SCHEMA Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropSecurityExpression">
@@ -1068,14 +1059,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropService">
@@ -1085,14 +1076,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP SERVICE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropSynonym">
@@ -1102,14 +1093,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP SYNONYM Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropTable">
@@ -1119,14 +1110,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP TABLE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropTrigger">
@@ -1136,14 +1127,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP TRIGGER Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropType">
@@ -1153,14 +1144,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP TYPE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropUser">
@@ -1170,14 +1161,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP USER Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DropView">
@@ -1187,14 +1178,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A DROP VIEW Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GrantObject">
@@ -1204,14 +1195,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A GRANT OBJECT Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GrantStatement">
@@ -1221,14 +1212,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A GRANT Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1238,14 +1229,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An INSERT Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -1255,14 +1246,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An invalid trigger action, one that is not exposed to the user, occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RevokeObject">
@@ -1272,14 +1263,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A REVOKE OBJECT Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RevokeStatement">
@@ -1289,14 +1280,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A REVOKE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1306,14 +1297,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An UPDATE Transact-SQL statement was executed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

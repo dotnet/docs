@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A persistence command that lets you save instance state information into the persistence store.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.SaveWorkflowCommand" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the status of the instance in the persistence database to “Completed” and deletes the state information from the database unless the <see cref="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction%2A" /> property is set to “Delete Nothing”.</summary>
-        <value>
-          <see langword="true" /> if the status of the instance is “Completed” and the state information is deleted; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +79,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance data to be saved into the persistence store. A dictionary that contains names of properties and their values.</summary>
-        <value>The dictionary that contains names of properties and their values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +97,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary with an instance key as the key and a dictionary of XName and <see cref="System.Runtime.Persistence.InstanceValue" /> pairs as the value.</summary>
-        <value>The dictionaries with key/value pairs.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +115,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains instance keys that must be associated with an instance. A dictionary that contains a GUID associated with an instance key and metadata associated with the instance key.</summary>
-        <value>The instance keys that must be associated with an instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +133,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Guid&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of instance keys that must be disassociated with an instance.</summary>
-        <value>A collection of instance keys that must be disassociated with an instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +151,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Guid&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of instance keys to be deleted from the persistence store.</summary>
-        <value>A collection of instance keys to be deleted from the persistence store.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +169,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary that contains changes to instance metadata.</summary>
-        <value>The changes to instance metadata.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +205,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Removes the lock on an instance. Sets the lock owner to <see langword="null" /> for an instance.</summary>
-        <value>
-          <see langword="true" /> if the lock is removed on an instance; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

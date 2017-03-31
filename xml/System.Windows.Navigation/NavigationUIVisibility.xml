@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationUIVisibility" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a <see cref="T:System.Windows.Controls.Frame" /> displays its navigation chrome. NavigationUIVisibility is used by the <see cref="System.Windows.Controls.Frame.NavigationUIVisibility%2A" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how always show the navigation chrome of a <xref:System.Windows.Controls.Frame> by setting NavigationUIVisibility to NavigationUIVisibility.  
-  
- [!code-cs[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/add/codesnippet/csharp/FrameNavigationUIVisibilitySnippets.CSharp/Window1.xaml.cs#setnavigationuivisibility)]
- [!code-vb[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/add/codesnippet/visualbasic/framenavigationuivisibilitysnippets/window1.xaml.vb#setnavigationuivisibility)]
- [!code-xml[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/add/codesnippet/xaml/FrameNavigationUIVisibilitySnippets.XAML/Window1.xaml#setnavigationuivisibility)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The navigation chrome is visible when a <see cref="T:System.Windows.Controls.Frame" /> uses its own journal (see <see cref="System.Windows.Controls.Frame.JournalOwnership%2A" />).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The navigation chrome is not visible.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The navigation chrome is visible.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

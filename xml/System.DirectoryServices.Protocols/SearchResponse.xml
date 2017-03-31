@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchResponse" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The SearchResponse class is sent by the server as a response to a <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> object. This response contains zero or more <see cref="T:System.DirectoryServices.Protocols.SearchResultEntry" /> objects, and zero or more <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DirectoryControl[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Controls property contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object returned by the server.</summary>
-        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object returned by the server.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SearchResultEntryCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Entries property contains a <see cref="T:System.DirectoryServices.Protocols.SearchResultEntryCollection" /> object that contains the entries returned by the search.</summary>
-        <value>A <see cref="T:System.DirectoryServices.Protocols.SearchResultEntryCollection" /> object that contains the entries returned by the search.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ErrorMessage property contains the error message, if any, for this operation.</summary>
-        <value>The error message, if any, for this operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MatchedDN property contains the matched distinguished name returned by the server.</summary>
-        <value>The matched distinguished name returned by the server.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,15 +94,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SearchResultReferenceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The References property contains a <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> object that contains search references returned by the server.</summary>
-        <value>A <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> object that contains search references returned by the server.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,15 +112,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Referral property contains the server referrals.</summary>
-        <value>The server referrals.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,15 +130,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ResultCode property contains a value of <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> that specifies the result code for the operation.</summary>
-        <value>The result code for the operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

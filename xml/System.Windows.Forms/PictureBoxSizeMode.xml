@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PictureBoxSizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how an image is positioned within a <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property of the <xref:System.Windows.Forms.PictureBox>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property. To run this example, paste the following code into a Windows Form and call the `InitializePictureBoxAndButton` method from the form's constructor or Load-event handling method.  
-  
- [!code-cs[System.Windows.Forms.PictureBox.SizeMode#10](~/add/codesnippet/csharp/t-system.windows.forms.p_2_1.cs)]
- [!code-vb[System.Windows.Forms.PictureBox.SizeMode#10](~/add/codesnippet/visualbasic/t-system.windows.forms.p_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoSize">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.PictureBox" /> is sized equal to the size of the image that it contains.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CenterImage">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The image is displayed in the center if the <see cref="T:System.Windows.Forms.PictureBox" /> is larger than the image. If the image is larger than the <see cref="T:System.Windows.Forms.PictureBox" />, the picture is placed in the center of the <see cref="T:System.Windows.Forms.PictureBox" /> and the outside edges are clipped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The image is placed in the upper-left corner of the <see cref="T:System.Windows.Forms.PictureBox" />. The image is clipped if it is larger than the <see cref="T:System.Windows.Forms.PictureBox" /> it is contained in.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StretchImage">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The image within the <see cref="T:System.Windows.Forms.PictureBox" /> is stretched or shrunk to fit the size of the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The size of the image is increased or decreased maintaining the size ratio.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ValidationConstraints" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,27 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines constants that inform <see cref="System.Windows.Forms.ContainerControl.ValidateChildren%2A" /> about how it should validate a container's child controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> will validate all enabled controls in a container, such as a form. Use this enumeration to restrict the types of controls whose <xref:System.Windows.Forms.Control.Validating> event is raised.  
-  
- You can combine these enumerated values together with a bitwise OR operation. Combining parameters with a bitwise OR operator will result in a logical AND operation. For example, calling `ValidateChildren(ValidationConstraints.ImmediateChildren | ValidationConstraints.Enabled)` will only raise the <xref:System.Windows.Forms.Control.Validating> event on controls that are both immediate children of the container AND are enabled.  
-  
- If you do not specify ImmediateChildren when you call <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A>, the method will require that you validate all child controls in the control hierarchy.  
-  
-   
-  
-## Examples  
- The following code example will only cause the <xref:System.Windows.Forms.Control.Validating> event to be raised for immediate children of the form whose <xref:System.Windows.Forms.Control.Enabled%2A> property is `true`.  
-  
- [!code-vb[ValidateChildrenWithConstraints#1](~/add/codesnippet/visualbasic/t-system.windows.forms.v_100_1.vb)]
- [!code-cs[ValidateChildrenWithConstraints#1](~/add/codesnippet/csharp/t-system.windows.forms.v_100_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Enabled">
@@ -46,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validates child controls whose <see cref="System.Windows.Forms.Control.Enabled%2A" /> property is set to <see langword="true" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImmediateChildren">
@@ -63,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validates child controls that are directly hosted within the container. Does not validate any of the children of these children. For example, if you have a <see cref="T:System.Windows.Forms.Form" /> that contains a custom <see cref="T:System.Windows.Forms.UserControl" />, and the <see cref="T:System.Windows.Forms.UserControl" /> contains a <see cref="T:System.Windows.Forms.Button" />, using ImmediateChildren will cause the <see cref="E:System.Windows.Forms.Control.Validating" /> event of the <see cref="T:System.Windows.Forms.UserControl" /> to occur, but not the <see cref="E:System.Windows.Forms.Control.Validating" /> event of the <see cref="T:System.Windows.Forms.Button" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validates all child controls, and all children of these child controls, regardless of their property settings.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -97,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validates child controls that can be selected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -114,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validates child controls that have a <see cref="System.Windows.Forms.Control.TabStop%2A" /> value set, which means that the user can navigate to the control using the TAB key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -131,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validates child controls whose <see cref="System.Windows.Forms.Control.Visible%2A" /> property is set to <see langword="true" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

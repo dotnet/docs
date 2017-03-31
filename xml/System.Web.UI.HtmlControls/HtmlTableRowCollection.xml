@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,26 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A collection of <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects that represent the rows of an <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HtmlTableRowCollection class to programmatically manage a collection of <xref:System.Web.UI.HtmlControls.HtmlTableRow> objects that represent the rows in an <xref:System.Web.UI.HtmlControls.HtmlTable> control. This class is commonly used to add, remove, or modify the contents of a row in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
-  
-> [!NOTE]
->  An <xref:System.Web.UI.HtmlControls.HtmlTable> control contains a <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property that represents a collection of <xref:System.Web.UI.HtmlControls.HtmlTableRow> objects. Each <xref:System.Web.UI.HtmlControls.HtmlTableRow> represents an individual row in the table. An <xref:System.Web.UI.HtmlControls.HtmlTableRow> contains a <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> property that represents a collection of <xref:System.Web.UI.HtmlControls.HtmlTableCell> objects. These objects, in turn, represent the individual cells of the table. To retrieve an individual cell, first get the <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, representing the row containing the cell, from the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. You can then get the <xref:System.Web.UI.HtmlControls.HtmlTableCell> object, representing the cell in the row, from the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> collection of the <xref:System.Web.UI.HtmlControls.HtmlTableRow>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to dynamically generate the contents of an <xref:System.Web.UI.HtmlControls.HtmlTable> control by adding rows to an HtmlTableRowCollection collection. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of a table is the HtmlTableRowCollection object.  
-  
- [!code-vb[HtmlTableRowCollection#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_23_1.aspx)]
- [!code-cs[HtmlTableRowCollection#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_23_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -45,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,24 +35,9 @@
         <Parameter Name="row" Type="System.Web.UI.HtmlControls.HtmlTableRow" />
       </Parameters>
       <Docs>
-        <param name="row">The <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> to add to the collection.</param>
-        <summary>Appends the specified <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> object to the end of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to add the specified <xref:System.Web.UI.HtmlControls.HtmlTableRow> object to the end of an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. To insert an <xref:System.Web.UI.HtmlControls.HtmlTableRow> in the middle of the collection, use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Insert%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Add method to append a row of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, to the end of an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of a table is the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> object.  
-  
- [!code-vb[HtmlTableRowCollection#1](~/add/codesnippet/visualbasic/7157ab51-1482-4f4c-9c8c-_1.aspx)]
- [!code-cs[HtmlTableRowCollection#1](~/add/codesnippet/csharp/7157ab51-1482-4f4c-9c8c-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -82,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,23 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to remove all <xref:System.Web.UI.HtmlControls.HtmlTableRow> objects from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection and reset the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Count%2A> property to `0`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Clear method to remove all items from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. New entries are then added to the collection and displayed in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
-  
- [!code-cs[HtmlTableRowCollectionClear#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_11_1.aspx)]
- [!code-vb[HtmlTableRowCollectionClear#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_11_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -116,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,28 +75,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />.</param>
-        <param name="index">The first index in the specified array to receive the items.</param>
-        <summary>Copies the items from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection to the specified <see cref="T:System.Array" /> object, starting at the specified index in the array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection into the specified <xref:System.Array?displayProperty=fullName> object, starting at the specified index in the array.  
-  
-> [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the CopyTo method to create an array that contains the same contents as the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. The array is then iterated through to display the contents of the collection.  
-  
- [!code-cs[HtmlTableRowCollectionCopyTo#1](~/add/codesnippet/csharp/6d7d8d7a-5ee9-4978-a56c-_1.aspx)]
- [!code-vb[HtmlTableRowCollectionCopyTo#1](~/add/codesnippet/visualbasic/6d7d8d7a-5ee9-4978-a56c-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -158,31 +88,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects in the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <value>The number of <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects in the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />. The default value is <see langword="0" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Count property to determine the number of rows contained in the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. The Count property is commonly used when iterating through the collection to determine the upper bound.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Count property to determine the number of rows in the <xref:System.Web.UI.HtmlControls.HtmlTable> control. This value is then used as the upper bound of a loop to iterate through the rows of a table.  
-  
- [!code-vb[HtmlTableRowCollectionCount#1](~/add/codesnippet/visualbasic/p-system.web.ui.htmlcont_93_1.aspx)]
- [!code-cs[HtmlTableRowCollectionCount#1](~/add/codesnippet/csharp/p-system.web.ui.htmlcont_93_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -192,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,33 +113,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" />-implemented object that contains all <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects in the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" />-implemented object that contains all <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects in the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to create an <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object that can be iterated through to get each item in the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection.  
-  
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the current element in the collection.  
-  
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
-  
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the initial position.  
-  
-> [!NOTE]
->  You must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method after creating an <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object, or after using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the GetEnumerator method to create an <xref:System.Collections.IEnumerator?displayProperty=fullName> object. The <xref:System.Collections.IEnumerator?displayProperty=fullName> object is then iterated through to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection.  
-  
- [!code-vb[HtmlTableRowCollectionGetEnumerator#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_47_1.aspx)]
- [!code-cs[HtmlTableRowCollectionGetEnumerator#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_47_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -236,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,25 +135,10 @@
         <Parameter Name="row" Type="System.Web.UI.HtmlControls.HtmlTableRow" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> at which to add the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</param>
-        <param name="row">The <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> to add to the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />.</param>
-        <summary>Adds an <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> object to the specified location in the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Insert method to add the specified <xref:System.Web.UI.HtmlControls.HtmlTableRow> object to an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection at the specified index. If you simply want to append an <xref:System.Web.UI.HtmlControls.HtmlTableRow> to the end of the collection, use the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection.Add%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Insert method to insert a row of a table, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, into an <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection.  
-  
- [!code-vb[HtmlTableRowCollectionInsert#1](~/add/codesnippet/visualbasic/5b084f99-9fbd-41e1-b017-_1.aspx)]
- [!code-cs[HtmlTableRowCollectionInsert#1](~/add/codesnippet/csharp/5b084f99-9fbd-41e1-b017-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -275,24 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection is read-only.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property always returns `false` to indicate that the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection can be written to in all cases.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -302,26 +166,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases, which indicates that access to the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> is not synchronized (not thread safe).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is derived from <xref:System.Collections.ICollection?displayProperty=fullName> and is overridden to always return `false` to indicate that access to the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection is not synchronized (not thread safe).  
-  
- For more information on the IsSynchronized property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -331,7 +184,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,28 +193,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An ordinal index value that specifies the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> to return.</param>
-        <summary>Gets the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> object at the specified index from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <value>An <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> that represents a row contained in the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this indexer to get an individual <xref:System.Web.UI.HtmlControls.HtmlTableRow> object from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection at a specified index, using simple array notation.  
-  
-> [!NOTE]
->  The collection is zero-based; therefore, the first element in the collection contains an index value of `0`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the indexer to retrieve a table row, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. The cells in the row are then updated with new content. Notice that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of the table is the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> object.  
-  
- [!code-vb[HtmlTableRowCollection#1](~/add/codesnippet/visualbasic/p-system.web.ui.htmlcont_70_1.aspx)]
- [!code-cs[HtmlTableRowCollection#1](~/add/codesnippet/csharp/p-system.web.ui.htmlcont_70_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -372,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,27 +215,9 @@
         <Parameter Name="row" Type="System.Web.UI.HtmlControls.HtmlTableRow" />
       </Parameters>
       <Docs>
-        <param name="row">The <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> to remove from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />.</param>
-        <summary>Removes the specified <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> object from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to remove the specified <xref:System.Web.UI.HtmlControls.HtmlTableRow> object from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection.  
-  
-> [!NOTE]
->  If you specify an <xref:System.Web.UI.HtmlControls.HtmlTableRow> that does not exist in the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection>, no item is removed from the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Remove method to remove the specified table row, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object, from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. This example removes the cells from the first row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
-  
- [!code-cs[HtmlTableRowCollectionRemove#1](~/add/codesnippet/csharp/08b2050a-be31-4241-b08a-_1.aspx)]
- [!code-vb[HtmlTableRowCollectionRemove#1](~/add/codesnippet/visualbasic/08b2050a-be31-4241-b08a-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -412,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,28 +236,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> to remove from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />.</param>
-        <summary>Removes the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> object at the specified index from the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to remove the <xref:System.Web.UI.HtmlControls.HtmlTableRow> object at the specified index from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. The index number is zero-based. Therefore, the first item in the collection has an index value of `0`.  
-  
-> [!NOTE]
->  If you specify an index that is outside the range of index values, an exception is raised.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the RemoveAt method to remove the item at the specified index from the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> collection. This example removes the first row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
-  
- [!code-cs[HtmlTableRowCollectionRemoveAt#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_22_1.aspx)]
- [!code-vb[HtmlTableRowCollectionRemoveAt#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_22_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is outside the range of index values in the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -453,25 +248,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that can be used to synchronize access to the <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection.</summary>
-        <value>An object that can be used to synchronize access to the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object returned in this implementation is the current instance of the <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> class.  
-  
- For more information on the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

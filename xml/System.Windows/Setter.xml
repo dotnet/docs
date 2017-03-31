@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Setter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,31 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a setter that applies a property value.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Style>s and the different types of triggers (classes that inherit from <xref:System.Windows.TriggerBase>) use Setters to apply property values.  
-  
- Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a Setter for the setter to be meaningful. If one or both properties are not set, an exception will be thrown.  
-  
-   
-  
-## Examples  
- The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. This <xref:System.Windows.Style> applies values to several <xref:System.Windows.Controls.TextBlock> properties with the use of Setters.  
-  
- [!code-xml[PhotoStoreDemoStyled#1](~/add/codesnippet/xaml/photostore/window1.xaml#1)]
- [!code-xml[PhotoStoreDemoStyled#1](~/add/codesnippet/xaml/t-system.windows.setter_1.xaml)]  
-  
- The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
-  
- [!code-xml[BtnStyles#2](~/add/codesnippet/xaml/ButtonStyles2/app.xaml#2)]  
-  
- ]]></format>
-    </remarks>
-    <exception cref="T:System.ArgumentNullException">The <see cref="System.Windows.Setter.Property%2A" /> property cannot be null.</exception>
-    <exception cref="T:System.ArgumentException">If the specified <see cref="System.Windows.Setter.Value%2A" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Setter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +49,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -82,9 +56,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="property">The <see cref="T:System.Windows.DependencyProperty" /> to apply the <see cref="System.Windows.Setter.Value%2A" /> to.</param>
-        <param name="value">The value to apply to the property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Setter" /> class with the specified property and value.</summary>
+        <param name="property">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +69,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -104,10 +77,10 @@
         <Parameter Name="targetName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">The <see cref="T:System.Windows.DependencyProperty" /> to apply the <see cref="System.Windows.Setter.Value%2A" /> to.</param>
-        <param name="value">The value to apply to the property.</param>
-        <param name="targetName">The name of the child node this <see cref="T:System.Windows.Setter" /> is intended for.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Setter" /> class with the specified property, value, and target name.</summary>
+        <param name="property">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +91,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -136,32 +108,9 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the property to which the <see cref="System.Windows.Setter.Value%2A" /> will be applied.</summary>
-        <value>A <see cref="T:System.Windows.DependencyProperty" /> to which the <see cref="System.Windows.Setter.Value%2A" /> will be applied. The default value is null.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that you must specify both the Property and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
-  
-   
-  
-## Examples  
- The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
-  
- [!code-xml[PhotoStoreDemoStyled#1](~/add/codesnippet/xaml/photostore/window1.xaml#1)]
- [!code-xml[PhotoStoreDemoStyled#1](~/add/codesnippet/xaml/p-system.windows.setter._2_1.xaml)]  
-  
- The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>. Note that property name in this example is qualified with the name of the class (<xref:System.Windows.Controls.Control>) because the <xref:System.Windows.Style> does not specify a <xref:System.Windows.Style.TargetType%2A>.  
-  
- [!code-xml[StyleOvw01#StyleSimple](~/add/codesnippet/xaml/StyleOvw1/Page1.xaml#stylesimple)]
- [!code-xml[StyleOvw01#StyleSimple](~/add/codesnippet/xaml/p-system.windows.setter._2_2.xaml)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The Property property cannot be <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The specified Property property cannot be read-only.</exception>
-        <exception cref="T:System.InvalidOperationException">If the specified <see cref="System.Windows.Setter.Value%2A" /> is not valid for the type of the specified Property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -181,17 +130,10 @@
         <Parameter Name="eventArgs" Type="System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="targetObject">The object where the markup extension sets the value.</param>
-        <param name="eventArgs">Data that is relevant for markup extension processing.</param>
-        <summary>Handles cases where a markup extension provides a value for a property of <see cref="T:System.Windows.Setter" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Setter> with a markup extension. You do not typically call this method directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="targetObject">To be added.</param>
+        <param name="eventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -211,17 +153,10 @@
         <Parameter Name="eventArgs" Type="System.Windows.Markup.XamlSetTypeConverterEventArgs" />
       </Parameters>
       <Docs>
-        <param name="targetObject">The object where the type converter sets the value.</param>
-        <param name="eventArgs">Data that is relevant for type converter processing.</param>
-        <summary>Handles cases where a type converter provides a value for a property of a <see cref="T:System.Windows.Setter" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Setter> with a type converter. You do not typically call this method directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="targetObject">To be added.</param>
+        <param name="eventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -238,15 +173,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the object that initialization is starting.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Setter> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
@@ -263,15 +191,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the object that initialization is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Setter> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetName">
@@ -281,7 +202,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -296,23 +216,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the object this <see cref="T:System.Windows.Setter" /> is intended for.</summary>
-        <value>The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property to the name of any element within the scope of where the setter collection (the collection that this setter is part of) is applied. This is typically a named element that is within the template that contains this setter.  
-  
-   
-  
-## Examples  
- In the following example, the TargetName is used for the trigger <xref:System.Windows.Setter> to specify that the <xref:System.Windows.Setter> is intended for the <xref:System.Windows.Shapes.Ellipse> named `ThumbCover` within the <xref:System.Windows.Controls.ControlTemplate>.  
-  
- [!code-xml[ColorPicker_snip#StyleTargetNameRef](~/add/codesnippet/xaml/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -322,7 +228,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -343,63 +248,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value to apply to the property that is specified by this <see cref="T:System.Windows.Setter" />.</summary>
-        <value>The default value is <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_Value"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object Value="value"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_Value"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.Value>  
-    value  
-  </object.Value>  
-</object>  
-```  
-  
-<a name="xamlValues_Value"></a>   
-## XAML Values  
- *value*  
- An object or a markup extension. See [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
-  
- Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and Value properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
-  
- Data binding and dynamic resources within the object is supported if the specified value is a <xref:System.Windows.Freezable> object. See [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) and [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).  
-  
-   
-  
-## Examples  
- The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
-  
- [!code-xml[PhotoStoreDemoStyled#1](~/add/codesnippet/xaml/photostore/window1.xaml#1)]
- [!code-xml[PhotoStoreDemoStyled#1](~/add/codesnippet/xaml/p-system.windows.setter._0_1.xaml)]  
-  
- The following example defines a <xref:System.Windows.Style> with <xref:System.Windows.Setter>s that reference system resources.  
-  
- [!code-xml[BtnStyles#1](~/add/codesnippet/xaml/ButtonStyles2/app.xaml#1)]  
-  
- The following example defines a <xref:System.Windows.Style> for the <xref:System.Windows.Controls.Primitives.RepeatButton>.  
-  
- [!code-xml[ColorPicker_snip#StyleTargetNameRef](~/add/codesnippet/xaml/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
-  
- The following example shows a Value property that uses the <xref:System.Windows.Data.Binding> declaration. For the complete example, see [Binding Validation Sample](http://go.microsoft.com/fwlink/?LinkID=159972).  
-  
- [!code-xml[bindvalidation#5](~/add/codesnippet/xaml/BindingValidation/Window1.xaml#5)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">If the specified Value is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

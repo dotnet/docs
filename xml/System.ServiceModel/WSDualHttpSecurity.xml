@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies the security settings for the <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class specifies the security settings for the `wsDualHttpBinding` binding.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSDualHttpSecurity" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,31 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MessageSecurityOverHttp</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the message-level security properties for the <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
-        <value>A <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> value. The default values include: <see cref="System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A" /> is <see cref="T:System.ServiceModel.MessageCredentialType" />, <see cref="System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A" /> is <see cref="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A" />, and <see cref="System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A" /> is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object returned specifies detailed message-level security properties for the `wsDualHttpBinding` binding.  
-  
-   
-  
-## Examples  
- The following code shows how to set the <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> property by accessing this property.  
-  
- [!code-cs[S_UEWSDualHttpSecurity#30](~/add/codesnippet/csharp/p-system.servicemodel.ws_4_1.cs)]
- [!code-vb[S_UEWSDualHttpSecurity#30](~/add/codesnippet/visualbasic/p-system.servicemodel.ws_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -79,32 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSDualHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the security mode for the parent <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
-        <value>A value from the <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" /> enumeration. The default is <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property determines whether message-level security is applied to the binding.  
-  
-   
-  
-## Examples  
- The following code shows how to set this property.  
-  
- [!code-cs[S_UEWSDualHttpSecurity#30](~/add/codesnippet/csharp/p-system.servicemodel.ws_16_1.cs)]
- [!code-vb[S_UEWSDualHttpSecurity#30](~/add/codesnippet/visualbasic/p-system.servicemodel.ws_16_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMessage">
@@ -126,9 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSDualHttpSecurity.Message%2A" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSDualHttpSecurity.Message%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSDualHttpSecurity.Mode%2A" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSDualHttpSecurity.Mode%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

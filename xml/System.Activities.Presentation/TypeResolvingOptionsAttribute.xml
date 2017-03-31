@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Used to configure how a [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] initializes type-resolver and type-browser dialogs to enable a user to select a type for arguments, variables, and generic type activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.TypeResolvingOptionsAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +48,8 @@
         <Parameter Name="options" Type="System.Activities.Presentation.View.TypeResolvingOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> that are supported.</param>
-        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.TypeResolvingOptionsAttribute" /> class with specified type resolving options.</summary>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +66,8 @@
         <ReturnType>System.Activities.Presentation.View.TypeResolvingOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the options used to configure how a [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] initializes type-resolver and type-browser dialogs to enable a user to select a type for arguments, variables, and generic type activities.</summary>
-        <value>An instance of <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> that specifies the options available for how a [!INCLUDE[wfd2](~/add/includes/wfd2-md.md)] initializes type-resolver and type-browser dialogs to enable a user to select a type for arguments, variables, and generic type activities.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumberPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.NumberObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.NumberConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
-        <value>A reference to a prototype-based object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -58,10 +55,10 @@
         <Parameter Name="fractionDigits" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="fractionDigits">A number between 0 and 20 that represents the number of decimal places to display. The default is 16.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.NumberObject" /> that uses scientific (E) notation.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="fractionDigits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -88,10 +84,10 @@
         <Parameter Name="fractionDigits" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="fractionDigits">A number between 0 and 20 that represents the number of decimal places to display. The default is 0.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.NumberObject" /> that displays the specified number of decimal digits.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="fractionDigits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -117,9 +112,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Creates a string representation of the specified object that is based on <see cref="System.Globalization.NumberFormatInfo.CurrentInfo%2A" /> and <see cref="T:System.Globalization.CultureInfo" />.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -146,10 +140,10 @@
         <Parameter Name="precision" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="precision">A number between 0 and 21 that represents the number of precision digits to display. <c>Precision digits</c> are the digits of the decimal and the exponent combined.</param>
-        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.NumberObject" /> that displays the specified number of precision digits.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="precision">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -176,10 +169,10 @@
         <Parameter Name="radix" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <param name="radix">A number between 2 and 36 that represents the base of the number system that <c>thisob</c> is expressed in. The default is 10.</param>
-        <summary>Creates a string representation of the specified object.</summary>
-        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <param name="radix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -205,9 +197,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">The object that this method is acting upon.</param>
-        <summary>Returns the value of the specified <see cref="T:Microsoft.JScript.NumberObject" />.</summary>
-        <returns>The value of <paramref name="thisob" />.</returns>
+        <param name="thisob">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

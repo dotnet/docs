@@ -4,39 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PagesEnableSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Used to determine session-state activation for a single Web page or an entire Web application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration determines session-state activation for an entire Web application. This value can be used in the `pages` configuration-file section to affect all .aspx pages in the Web application for the scope of the configuration file. The <xref:System.Web.Configuration.PagesSection> type allows programmatic access to the `pages` configuration section.  
-  
-   
-  
-## Examples  
- The following configuration file excerpt shows how to declaratively use values of the PagesEnableSessionState enumeration to specify whether the session state is enabled.  
-  
-```  
-<system.web>  
-  <pages enableSessionState="true" />  
-</system.web>  
-  
-```  
-  
- The following code example shows how to use the PagesEnableSessionState enumeration with the <xref:System.Web.Configuration.PagesSection> type.  
-  
- [!code-cs[System.Web.Configuration.PagesSection#14](~/add/codesnippet/csharp/t-system.web.configurati_56_1.cs)]
- [!code-vb[System.Web.Configuration.PagesSection#14](~/add/codesnippet/visualbasic/t-system.web.configurati_56_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="False">
@@ -46,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Session state is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -63,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Session state is enabled, but not writable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -80,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Session state is enabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

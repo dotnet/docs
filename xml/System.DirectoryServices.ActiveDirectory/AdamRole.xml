@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates specific roles of a <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The AdamRole class refers to Active Directory Application Mode (ADAM) which has been renamed to Active Directory Lightweight Directory Services (AD LDS).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="NamingRole">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The AD LDS server holds the domain naming master role.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SchemaRole">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The AD LDS server holds the schema operations master role.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

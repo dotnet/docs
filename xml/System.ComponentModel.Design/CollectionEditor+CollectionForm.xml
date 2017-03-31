@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a modal dialog box for editing the contents of a collection using a <see cref="T:System.Drawing.Design.UITypeEditor" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="editor" Type="System.ComponentModel.Design.CollectionEditor" />
       </Parameters>
       <Docs>
-        <param name="editor">The <see cref="T:System.ComponentModel.Design.CollectionEditor" /> to use for editing the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> class.</summary>
+        <param name="editor">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,20 +49,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to remove.</param>
-        <summary>Indicates whether you can remove the original members of the collection.</summary>
-        <returns>
-          <see langword="true" /> if it is permissible to remove this value from the collection; otherwise, <see langword="false" />. By default, this method returns the value from <see cref="System.ComponentModel.Design.CollectionEditor.CanRemoveInstance%2A" /> of the <see cref="T:System.ComponentModel.Design.CollectionEditor" /> for this form.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When implemented in a derived class, this method indicates whether the specified value can be removed from the collection. By default, this returns the value from <xref:System.ComponentModel.Design.CollectionEditor.CanRemoveInstance%2A> of the <xref:System.ComponentModel.Design.CollectionEditor> for this form.  
-  
- This method is called when the user tries to remove from the collection an item that is an original member of the collection. This method is not called when removing items that were added in this editing session, because they are not yet part of the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSelectMultipleInstances">
@@ -75,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,17 +69,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether multiple collection items can be selected at once.</summary>
-        <returns>
-          <see langword="true" /> if it multiple collection members can be selected at the same time; otherwise, <see langword="false" />. By default, this method returns the value from <see cref="System.ComponentModel.Design.CollectionEditor.CanSelectMultipleInstances%2A" /> of the <see cref="T:System.ComponentModel.Design.CollectionEditor" /> for this form.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method indicates whether multiple collection members can be selected within the collection editor dialog box.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionItemType">
@@ -103,23 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of each item in the collection.</summary>
-        <value>The data type of the collection items.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property represents the data type of the items of the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -129,23 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the collection object.</summary>
-        <value>The data type of the collection object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property represents the data type of the collection object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -155,15 +117,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ITypeDescriptorContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a type descriptor that indicates the current context.</summary>
-        <value>An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context currently in use, or <see langword="null" /> if no context is available.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,17 +144,10 @@
         <Parameter Name="itemType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="itemType">The type of item to create.</param>
-        <summary>Creates a new instance of the specified collection item type.</summary>
-        <returns>A new instance of the specified object, or <see langword="null" /> if the user chose to cancel the creation of this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method throws an exception if a new instance cannot be created. If the user chooses to cancel the creation of this instance, this method returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="itemType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DestroyInstance">
@@ -204,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,8 +166,8 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The object to destroy.</param>
-        <summary>Destroys the specified instance of the object.</summary>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,8 +187,8 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">The exception to display.</param>
-        <summary>Displays the specified exception to the user.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,15 +199,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection object to edit.</summary>
-        <value>The collection object to edit.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,7 +217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,9 +226,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets the requested service, if it is available.</summary>
-        <returns>An instance of the service, or <see langword="null" /> if the service cannot be found.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,23 +239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the array of items for this form to display.</summary>
-        <value>An array of objects for the form to display.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation retrieves the current set of items from the `Item` property of the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewItemTypes">
@@ -316,23 +257,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the available item types that can be created for this collection.</summary>
-        <value>The types of items that can be created.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates the data types that can be added to the collection. By default, this returns a single type of <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A>. If more than one type is returned, the collection editor UI provides a way to choose which item type to create.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEditValueChanged">
@@ -342,7 +275,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,15 +282,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an opportunity to perform processing when a collection value has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is raised when the value of a collection item has changed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowEditorDialog">
@@ -368,7 +293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,9 +302,9 @@
         <Parameter Name="edSvc" Type="System.Windows.Forms.Design.IWindowsFormsEditorService" />
       </Parameters>
       <Docs>
-        <param name="edSvc">An <see cref="T:System.Windows.Forms.Design.IWindowsFormsEditorService" /> that can be used to show the dialog box.</param>
-        <summary>Shows the dialog box for the collection editor using the specified <see cref="T:System.Windows.Forms.Design.IWindowsFormsEditorService" /> object.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DialogResult" /> that indicates the result code returned from the dialog box.</returns>
+        <param name="edSvc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

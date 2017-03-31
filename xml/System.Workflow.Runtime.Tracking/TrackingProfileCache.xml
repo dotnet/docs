@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingProfileCache" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a method that a host application can use to clear the tracking profile cache.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- When the workflow runtime engine has one or more tracking services registered with it, the runtime tracking infrastructure must determine whether tracking profiles exist for any workflow that is loaded into memory. The runtime tracking infrastructure maintains a cache of tracking profiles which it checks before it requests a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow from each tracking service. The TrackingProfileCache class provides a static method, <xref:System.Workflow.Runtime.Tracking.TrackingProfileCache.Clear%2A>, which a host application can use to clear the tracking profile cache. This will force the runtime tracking infrastructure to load tracking profiles from its registered tracking services for any workflow instances that are loaded into memory after the cache is cleared.  
-  
-> [!NOTE]
->  <xref:System.Workflow.Runtime.Tracking.TrackingProfile> caching is not supported for markup only workflows.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -42,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,15 +34,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the tracking profile cache maintained by the runtime tracking infrastructure of all tracking profiles.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After the cache is cleared, the runtime tracking infrastructure will load tracking profiles directly from its registered tracking services for any workflow instances loaded into memory. Any workflow instance that is in memory and is running will not need to have its tracking profiles reloaded unless the workflow is unloaded and then reloaded into memory.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

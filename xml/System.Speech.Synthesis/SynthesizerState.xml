@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesizerState" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates values for the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> property uses SynthesizerState to indicate the current state of the <xref:System.Speech.Synthesis.SpeechSynthesizer>. See <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> for an example.  
-  
- The <xref:System.Speech.Synthesis.StateChangedEventArgs.PreviousState%2A> and <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> properties use SynthesizerState to indicate state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> when the <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged> event is raised.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Paused">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is paused.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ready">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is ready to generate speech from a prompt.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Speaking">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is speaking.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

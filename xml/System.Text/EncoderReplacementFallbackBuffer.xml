@@ -4,25 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderReplacementFallbackBuffer" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Text.EncoderFallbackBuffer</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a substitute input string that is used when the original input character cannot be encoded. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It might not be possible to convert a character to an equivalent encoded byte sequence if no suitable encoding exists. A common reason for an encoding to fail is if the conversion operation uses a code page that cannot represent the character to encode.  
-  
- If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the original input character. The replacement string initializes the value of the <xref:System.Text.EncoderReplacementFallback> object, and the value of the <xref:System.Text.EncoderReplacementFallback> object initializes the value of an EncoderReplacementFallbackBuffer object. The value of an EncoderReplacementFallbackBuffer object is called the replacement fallback buffer. The conversion operation encodes the replacement fallback buffer instead of the original input character, then continues to process the remainder of the input.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,15 +27,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fallback" Type="System.Text.EncoderReplacementFallback" />
       </Parameters>
       <Docs>
-        <param name="fallback">A <see cref="T:System.Text.EncoderReplacementFallback" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderReplacementFallbackBuffer" /> class using the value of a <see cref="T:System.Text.EncoderReplacementFallback" /> object.</summary>
+        <param name="fallback">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +50,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -62,20 +65,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="charUnknown">An input character. This parameter is ignored in this operation unless an exception is thrown.</param>
-        <param name="index">The index position of the character in the input buffer. This parameter is ignored in this operation.</param>
-        <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
-        <returns>
-          <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call Fallback if they encounter an unknown character in their input. If the return value of Fallback is `true`, the calling method can invoke the <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character in the replacement fallback buffer.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">This method is called again before the <see cref="System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A" /> method has read all the characters in the replacement fallback buffer.</exception>
+        <param name="charUnknown">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fallback">
@@ -85,8 +79,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -97,26 +95,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="charUnknownHigh">The high surrogate of the input pair.</param>
-        <param name="charUnknownLow">The low surrogate of the input pair.</param>
-        <param name="index">The index position of the surrogate pair in the input buffer.</param>
-        <summary>Indicates whether a replacement string can be used when an input surrogate pair cannot be encoded, or whether the surrogate pair can be ignored. Parameters specify the surrogate pair and the index position of the pair in the input.</summary>
-        <returns>
-          <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call Fallback if they encounter an unknown character in their input. If the return value of Fallback is `true`, the calling method can invoke the <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character in the replacement fallback buffer.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">This method is called again before the <see cref="System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A" /> method has read all the replacement string characters.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="charUnknownHigh" /> is less than U+D800 or greater than U+D8FF.  
-  
- -or-  
-  
- The value of <paramref name="charUnknownLow" /> is less than U+DC00 or greater than U+DFFF.</exception>
+        <param name="charUnknownHigh">To be added.</param>
+        <param name="charUnknownLow">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextChar">
@@ -126,24 +110,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the next character in the replacement fallback buffer.</summary>
-        <returns>The next Unicode character in the replacement fallback buffer that the application can encode.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke GetNextChar to obtain each character in the replacement fallback buffer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MovePrevious">
@@ -153,17 +134,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the next call to the <see cref="System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A" /> method to access the character position in the replacement fallback buffer prior to the current character position.</summary>
-        <returns>
-          <see langword="true" /> if the MovePrevious operation was successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,23 +158,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of characters in the replacement fallback buffer that remain to be processed.</summary>
-        <value>The number of characters in the replacement fallback buffer that have not yet been processed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> method returns `true` if the Remaining property is nonzero.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -200,8 +181,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,15 +198,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes all internal state information and data in this instance of <see cref="T:System.Text.EncoderReplacementFallbackBuffer" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Reset method discards any persisted state information and data that govern emitting a replacement string. Unpredictable results occur if the encoding operation continues after the Reset method is invoked.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

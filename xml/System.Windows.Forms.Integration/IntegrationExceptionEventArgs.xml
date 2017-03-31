@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class for <see cref="T:System.EventArgs" /> classes which support optionally raising exceptions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IntegrationExceptionEventArgs class enables the user to preview an exception before it is raised.  
-  
- In your event handler, set the value of the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> property to `true` to indicate that the exception should be raised.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,13 +29,10 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="throwException">
-          <see langword="true" /> to raise the <see cref="T:System.Exception" /> specified by <c>exception</c>; otherwise, <see langword="false" />.</param>
-        <param name="exception">The <see cref="T:System.Exception" /> to raise.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.IntegrationExceptionEventArgs" /> class.</summary>
+        <param name="throwException">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -56,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Exception" /> associated with this <see cref="T:System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />.</summary>
-        <value>The <see cref="T:System.Exception" /> associated with this <see cref="T:System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,24 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to raise the <see cref="T:System.Exception" /> specified by the <see cref="System.Windows.Forms.Integration.IntegrationExceptionEventArgs.Exception%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.Windows.Forms.Integration.IntegrationExceptionEventArgs.Exception%2A" /> will be raised; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In your event handler, set the value of the ThrowException property to `true` to indicate that the exception should be raised.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

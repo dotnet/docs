@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.OrCondition" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a combination of two or more conditions where a match exists if any one of the conditions is true.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -36,19 +34,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="conditions">Two or more conditions, any one of which may be true for a match.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.OrCondition" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.OrCondition> is used to retrieve [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements that are either buttons or radio buttons.  
-  
- [!code-cs[UIAClient_snip#175](~/add/codesnippet/csharp/CustomElementClient/ConditionSnips.cs#175)]
- [!code-vb[UIAClient_snip#175](~/add/codesnippet/visualbasic/UIAClient_snip/ConditionSnips.vb#175)]  
-  
- ]]></format>
-        </remarks>
+        <param name="conditions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConditions">
@@ -58,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,24 +53,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the conditions that are combined in this condition.</summary>
-        <returns>The conditions combined in this condition.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned array is a copy. Modifying it does not affect the state of the condition.  
-  
-   
-  
-## Examples  
- The following example function constructs an <xref:System.Windows.Automation.OrCondition> and then displays the number of subconditions that it contains.  
-  
- [!code-cs[UIAClient_snip#175](~/add/codesnippet/csharp/CustomElementClient/ConditionSnips.cs#175)]
- [!code-vb[UIAClient_snip#175](~/add/codesnippet/visualbasic/UIAClient_snip/ConditionSnips.vb#175)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

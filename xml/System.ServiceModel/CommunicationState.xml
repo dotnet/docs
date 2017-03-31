@@ -4,58 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.CommunicationState" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the states in which an <see cref="T:System.ServiceModel.ICommunicationObject" /> can exist.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration defines the states that are valid for all communication objects in the system, including channels, listeners, factories, dispatchers, and service hosts.  
-  
- The methods that manage transitions between these states and the events that can be associated with them are defined in the <xref:System.ServiceModel.ICommunicationObject> interface. The state of an object can be obtained using the <xref:System.ServiceModel.ICommunicationObject.State%2A> property.  
-  
- There are four main states and two transient states that a communication object can occupy. The main states are:  
-  
--   Created  
-  
--   Opened  
-  
--   Closed  
-  
--   Faulted  
-  
- The two transitory states that a communication object can occupy when transitioning between these main states are:  
-  
--   Opening  
-  
--   Closing  
-  
- The communication object can be configured in the Created state. For example, its properties can be changed, and its events can be registered. No input or output can occur in this state. So messages, for example, cannot be sent or received from a channel in this state.  
-  
- The Opening is a temporary state that the communication object enters when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method is invoked. Unless otherwise noted on derived classes, objects in the opening state cannot be configured. This transition state can only be entered from the Created state.  
-  
- Objects transition to the Opened state when the open process completes. This transition to the Opened state is only valid from the Opening state. Unless otherwise noted on derived classes, the configuration of the object is now disabled. At this point, the object is fully usable for message transfers.  
-  
- The Closing is a temporary state that the object enters when the <xref:System.ServiceModel.ICommunicationObject.Close%2A> method is invoked for a graceful shutdown or the object is aborted. At this point, the object becomes (if not already) unusable. This transition is valid from any state except the Closed state.  
-  
- The Closed state is equivalent to being disposed and the configuration of the object can still be inspected.  
-  
- The Faulted state is used to indicate that the object has transitioned to a state where it can no longer be used. There are two primary scenarios where this can happen:  
-  
--   If the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method fails for any reason, the object transitions to the faulted state.  
-  
--   If a session-based channel detects an error that it cannot recover from, it transitions to the faulted state. This can happen for instance if there is a protocol error (that is, it receives a protocol message at an invalid time) or if the remote endpoint aborts the session.  
-  
- An object in the Faulted state is not closed and may be holding resources. The <xref:System.ServiceModel.ICommunicationObject.Abort%2A> method should be used to close an object that has faulted. If <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called on an object in the Faulted state, a <xref:System.ServiceModel.CommunicationObjectFaultedException> is thrown because the object cannot be gracefully closed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Closed">
@@ -65,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the communication object has been closed and is no longer usable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Closing">
@@ -82,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the communication object is transitioning to the Closed state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -99,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the communication object has been instantiated and is configurable, but not yet open or ready for use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Faulted">
@@ -116,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the communication object has encountered an error or fault from which it cannot recover and from which it is no longer usable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Opened">
@@ -133,14 +90,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the communication object is now open and ready to be used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Opening">
@@ -150,14 +107,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the communication object is being transitioned from the Created state to the Opened state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

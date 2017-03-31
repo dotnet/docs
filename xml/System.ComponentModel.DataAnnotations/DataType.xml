@@ -3,51 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DataType" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents an enumeration of the data types associated with data fields and parameters.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used to specify the type of data to associate with a data column or a parameter. You use the ttribute class to specify the data type you want to associate with the data field or parameter. You select the data type from this enumeration.  
-  
- The ttribute attribute lets you mark fields by using a type that is more specific than the database intrinsic types. For example, a string data field that contains e-mail addresses can be attributed with the EmailAddress type. This information can be accessed by the field templates and modify how the data field is processed.  
-  
- The following table lists the data types Dynamic Data provides.  
-  
-   
-  
-## Examples  
- The following example uses the ttribute to customize the display of EmailAddress data field of the customer table in the AdventureWorksLT database. The e-mail addresses are shown as hyperlinks instead of the simple text that ASP.NET Dynamic Data would have inferred from the intrinsic data type.  
-  
- The example code:  
-  
--   Implements a metadata partial class for the related table and the associated metadata class.  
-  
--   Applies the ttribute attribute to the EmailAddress data field by specifying the EmailAddress enumerated value in the associated metadata class. This indicates to the Text.ascx field template that the e-mail address display is customized.  
-  
- [!code-cs[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/add/codesnippet/csharp/t-system.componentmodel._157_1.cs)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/add/codesnippet/visualbasic/t-system.componentmodel._157_1.vb)]  
-  
- To compile the example code, you need the following:  
-  
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
-  
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
-  
--   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](../Topic/Walkthrough:%20Creating%20a%20New%20Dynamic%20Data%20Web%20Site%20Using%20Scaffolding.md).  
-  
- For the complete code example that the field template uses to customize the display of the EmailAddress data fields, see ttribute.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreditCard">
@@ -56,14 +25,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.CreditCard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a credit card number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Currency">
@@ -72,15 +46,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a currency value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -89,15 +67,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a custom data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -106,15 +88,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a date value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -123,15 +109,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an instant in time, expressed as a date and time of day.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -140,15 +130,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Duration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a continuous time during which an object exists.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -157,15 +151,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.EmailAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an e-mail address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Html">
@@ -174,15 +172,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an HTML file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -191,14 +193,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.ImageUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a URL to an image.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultilineText">
@@ -207,15 +214,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.MultilineText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents multi-line text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -224,15 +235,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Password" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represent a password value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhoneNumber">
@@ -241,15 +256,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.PhoneNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a phone number value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PostalCode">
@@ -258,14 +277,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.PostalCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a postal code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -274,15 +298,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents text that is displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -291,15 +319,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a time value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Upload">
@@ -308,14 +340,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Upload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents file upload data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -324,15 +361,19 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Url" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a URL value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.IPendingWork" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,23 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods to participate in a work batch.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The IPendingWork interface is provided for services that want to participate in the workflow runtime engine batching mechanism. The batching mechanism is especially useful for services that use a durable store. It is often important in these cases to maintain consistency between the durable store used by the service and the internal state of the workflow runtime engine.  
-  
- If you want your service to participate in workflow transaction batching provided by the <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService>, you must implement the methods defined by the IPendingWork interface. The workflow runtime engine will call the <xref:System.Workflow.Runtime.IPendingWork.Commit%2A> method on your service to commit the batch.  
-  
- The <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class implements the IPendingWork interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Commit">
@@ -40,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,17 +34,10 @@
         <Parameter Name="items" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="transaction">The <see cref="T:System.Transactions.Transaction" /> associated with the pending work.</param>
-        <param name="items">The work items to be committed.</param>
-        <summary>Commits the list of work items by using the specified <see cref="T:System.Transactions.Transaction" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The workflow runtime engine calls the Commit method when its semantics dictate that the pending work in the work batch should be committed. When it reaches a commit point, the workflow runtime engine calls the Commit method on each <xref:System.Workflow.Runtime.IPendingWork> object in its work batch; the workflow runtime engine passes the Commit method the collection of items associated with that <xref:System.Workflow.Runtime.IPendingWork> object. Either all of the work in a batch succeeds or none of it succeeds. You should throw an exception if any of the work items passed to the Commit method in your implementation cannot be committed. Depending on your implementation, you may want to perform some rollback in your Commit method if it cannot commit its work items. If the workflow runtime engine successfully commits all of the work in the work batch, it calls <xref:System.Workflow.Runtime.IPendingWork.Complete%2A> with the `succeeded` parameter set to `true`; otherwise, it calls <xref:System.Workflow.Runtime.IPendingWork.Complete%2A> with `succeeded` set to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="transaction">To be added.</param>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -71,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,18 +57,10 @@
         <Parameter Name="items" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="succeeded">
-          <see langword="true" /> if the transaction succeeded; otherwise, <see langword="false" />.</param>
-        <param name="items">An <see cref="T:System.Collections.ICollection" /> of work items.</param>
-        <summary>Called when the transaction has completed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `succeeded` is `true`, the transaction succeeded and any resources used by the work batch may be released. If `succeeded` is `false`, the transaction failed. Depending on your implementation, you can perform any appropriate roll back on the work in the work batch when the transaction fails.  
-  
- ]]></format>
-        </remarks>
+        <param name="succeeded">To be added.</param>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MustCommit">
@@ -103,7 +70,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,18 +79,10 @@
         <Parameter Name="items" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="items">An <see cref="T:System.Collections.ICollection" /> of work items.</param>
-        <summary>Allows the items in the work batch to assert whether they must commit immediately.</summary>
-        <returns>
-          <see langword="true" /> if any item in the collection must be committed immediately; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If MustCommit returns `false`, the work can be postponed to a future commit point. If any of the items must be committed, then return `true` and all items will be committed at the current commit point. For a discussion about possible commit points, see the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

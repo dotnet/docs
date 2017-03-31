@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains the data sent to a tracking participant by the run-time tracking infrastructure when a fault is propagated from a workflow activity.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,14 +38,13 @@
         <Parameter Name="fault" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="instanceId">The instance ID of the activity that generated the event.</param>
-        <param name="recordNumber">A sequence that defines the order in which tracking events are generated.</param>
-        <param name="faultSource">The activity that is the source of the fault.</param>
-        <param name="faultHandler">The activity that is the fault handler.</param>
-        <param name="isFaultSource">
-          <see langword="true" /> if this handler is the first handler of the fault; <see langword="false" /> if this handler is a subsequent handler of the fault.</param>
-        <param name="fault">The exception details.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.FaultPropagationRecord" /> class.</summary>
+        <param name="instanceId">To be added.</param>
+        <param name="recordNumber">To be added.</param>
+        <param name="faultSource">To be added.</param>
+        <param name="faultHandler">To be added.</param>
+        <param name="isFaultSource">To be added.</param>
+        <param name="fault">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +80,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the exception data contained in the fault.</summary>
-        <value>The exception data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +98,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> of the fault handler.</summary>
-        <value>The activity information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +116,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> of the activity that generated the fault.</summary>
-        <value>The activity information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +134,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A value that indicates whether this handler is the first handler for the fault.</summary>
-        <value>
-          <see langword="true" /> if this is the first handler for the exception. <see langword="false" /> if this handler is a subsequent handler for the fault.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Activities.Tracking.FaultPropagationRecord" /> object.</summary>
-        <returns>The tracking data.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,30 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.DependentCloneOption" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Controls what kind of dependent transaction to create.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A dependent transaction can be obtained using the <xref:System.Transactions.Transaction.DependentClone%2A> method, with the DependentCloneOption parameter controlling what kind of dependent transaction to create.  For more information on how this enumeration is used, see [Managing Concurrency with DependentTransaction](http://msdn.microsoft.com/en-us/bdad8468-2a90-4b81-8375-278067120cab).  
-  
-   
-  
-## Examples  
- The following example shows you how to create a dependent transaction.  
-  
- [!code-vb[Tx_DependentTx#1](~/add/codesnippet/visualbasic/t-system.transactions.de_1_1.vb)]
- [!code-cs[Tx_DependentTx#1](~/add/codesnippet/csharp/t-system.transactions.de_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BlockCommitUntilComplete">
@@ -37,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.DependentCloneOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dependent transaction blocks the commit process of the transaction until the parent transaction times out, or <see cref="System.Transactions.DependentTransaction.Complete%2A" /> is called. In this case, additional work can be done on the transaction and new enlistments can be created.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RollbackIfNotComplete">
@@ -54,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.DependentCloneOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dependent transaction automatically aborts the transaction if Commit is called on the parent transaction before <see cref="System.Transactions.DependentTransaction.Complete%2A" /> is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

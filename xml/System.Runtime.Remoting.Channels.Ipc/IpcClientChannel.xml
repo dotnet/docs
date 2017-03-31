@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,38 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Implements a client channel for remote calls that uses the IPC protocol to transmit messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Channels are used by the.NET Framework remoting infrastructure to transport remote calls. When a client calls a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. After the message is received, it is deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
-  
- The IpcClientChannel class uses the Windows interprocess communication (IPC) system to transport messages between application domains on the same computer. When communicating between application domains on the same computer, the IPC channel is much faster than the TCP or HTTP channels.  
-  
- To perform additional processing of messages on the client side, you can specify an implementation of the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> interface through which all messages processed by the IpcClientChannel object will be passed.  
-  
- By default, the IpcClientChannel class uses a binary formatter to serialize all messages.  
-  
- A IpcClientChannel object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the IpcClientChannel class.  
-  
- [!code-cs[Remoting_Ipc#20](~/add/codesnippet/csharp/t-system.runtime.remotin_5_1.cs)]
- [!code-cpp[Remoting_Ipc#20](~/add/codesnippet/cpp/t-system.runtime.remotin_5_1.cpp)]  
-  
- The preceding code uses the following remote object.  
-  
- [!code-cpp[Remoting_Ipc#0](~/add/codesnippet/cpp/t-system.runtime.remotin_5_2.cpp)]
- [!code-cs[Remoting_Ipc#0](~/add/codesnippet/csharp/t-system.runtime.remotin_5_2.cs)]  
-  
- For an example of a server that exposes this object remotely, see <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,33 +29,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The configuration properties of the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> instance returned by this constructor are all set to their default values. The following table shows the default value for each configuration property.  
-  
-|Configuration property|Description|  
-|----------------------------|-----------------|  
-|`name`|The default name is "ipc client". Each channel must have a unique name.|  
-|`priority`|The default priority is 1.|  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cs[Remoting_Ipc#21](~/add/codesnippet/csharp/m-system.runtime.remotin_34_1.cs)]
- [!code-cpp[Remoting_Ipc#21](~/add/codesnippet/cpp/m-system.runtime.remotin_34_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,7 +44,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -104,27 +51,10 @@
         <Parameter Name="sinkProvider" Type="System.Runtime.Remoting.Channels.IClientChannelSinkProvider" />
       </Parameters>
       <Docs>
-        <param name="properties">A <see cref="T:System.Collections.IDictionary" /> collection that specifies values for configuration properties to be used by the channel.</param>
-        <param name="sinkProvider">The <see cref="T:System.Runtime.Remoting.Channels.IServerChannelSinkProvider" /> implementation to be used by the channel.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel" /> class with the specified configuration properties and sink.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
-  
- If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#41](~/add/codesnippet/cpp/e5e9822a-6bc5-4440-94c1-_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#41](~/add/codesnippet/csharp/e5e9822a-6bc5-4440-94c1-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="properties">To be added.</param>
+        <param name="sinkProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,7 +64,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -142,27 +71,10 @@
         <Parameter Name="sinkProvider" Type="System.Runtime.Remoting.Channels.IClientChannelSinkProvider" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the channel.</param>
-        <param name="sinkProvider">The <see cref="T:System.Runtime.Remoting.Channels.IClientChannelSinkProvider" /> implementation to be used by the channel.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel" /> class with the specified name and sink.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelName%2A> property by using the `name` parameter. If you want to register more than one channel, each channel must have a unique name.  
-  
- If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#42](~/add/codesnippet/cpp/c7989d9c-5253-4e00-b8ab-_1.cpp)]
- [!code-cs[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#42](~/add/codesnippet/csharp/c7989d9c-5253-4e00-b8ab-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="sinkProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelName">
@@ -172,31 +84,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the current channel.</summary>
-        <value>A <see cref="T:System.String" /> instance that contains the name of the channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Every registered channel has a unique name. The name is used to retrieve a specific channel when calling the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetChannel%2A?displayProperty=fullName> method. The default name is "ipc client".  
-  
-   
-  
-## Examples  
- The following code example shows how to use the ChannelName property.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#21](~/add/codesnippet/csharp/p-system.runtime.remotin_26_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#21](~/add/codesnippet/cpp/p-system.runtime.remotin_26_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelPriority">
@@ -206,31 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the priority of the current channel.</summary>
-        <value>An integer that indicates the priority assigned to the channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The priority controls the order in which competing clients connect to a given endpoint; higher priority channels connect before lower priority channels. The default priority is 1; negative priorities are allowed.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the ChannelPriority property.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#23](~/add/codesnippet/csharp/p-system.runtime.remotin_86_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#23](~/add/codesnippet/cpp/p-system.runtime.remotin_86_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMessageSink">
@@ -240,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,28 +131,12 @@
         <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="url">The URL to which the new sink delivers messages. This parameter can be <see langword="null" />.</param>
-        <param name="remoteChannelData">The channel data object of the remote host to which the new sink will deliver messages. This parameter can be <see langword="null" />.</param>
-        <param name="objectURI">When this method returns, contains the URI of the new channel message sink that delivers messages to the specified URL or channel data object. This parameter is passed uninitialized.</param>
-        <summary>Returns a channel message sink that delivers messages to the specified URL or channel data object.</summary>
-        <returns>A channel message sink that delivers messages to the specified URL or channel data object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateMessageSink method returns a channel message sink that delivers messages to either the specified URL or the channel data object. If the `uri` parameter is `null`, `remoteChannelData` is used as a target for the sink. Either the `url` or `remoteChannelData` parameters can be `null`, but not both.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the CreateMessageSink method.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#22](~/add/codesnippet/csharp/26558359-cde8-4500-9c80-_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#22](~/add/codesnippet/cpp/26558359-cde8-4500-9c80-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Remoting.RemotingException">The provided sink does not implement <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" />.</exception>
+        <param name="url">To be added.</param>
+        <param name="remoteChannelData">To be added.</param>
+        <param name="objectURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSecured">
@@ -283,15 +146,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether the current channel is secure.</summary>
-        <value>A Boolean value that indicates whether the current instance is secure.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,21 +174,11 @@
         <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="url">The URL from which to extract the object URI.</param>
-        <param name="objectURI">When this method returns, a <see cref="T:System.String" /> instance that holds the URI of the remote well-known object. This parameter is passed uninitialized.</param>
-        <summary>Extracts the channel URI and the remote well-known object URI from the specified URL.</summary>
-        <returns>A <see cref="T:System.String" /> that contains the channel URI.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Parse method.  
-  
- [!code-cs[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#24](~/add/codesnippet/csharp/a3ba2658-4290-43bf-abd5-_1.cs)]
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#24](~/add/codesnippet/cpp/a3ba2658-4290-43bf-abd5-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <param name="objectURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

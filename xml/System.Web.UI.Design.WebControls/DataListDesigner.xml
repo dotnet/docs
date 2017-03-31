@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataListDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,24 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.DataList" /> Web server control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to extend the DataListDesigner class. The code overrides the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A> method to display a five-point border that is purple if the <xref:System.Web.UI.WebControls.DataList> control is enabled.  
-  
- [!code-cs[DataGriddesigner_Sample2#10](~/add/codesnippet/csharp/t-system.web.ui.design.w_6_1.cs)]  
-[!code-vb[DataGriddesigner_Sample2#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_6_2.vb)]
-[!code-cs[DataGriddesigner_Sample2#1](~/add/codesnippet/csharp/t-system.web.ui.design.w_6_2.cs)]  
-  
- The following code example shows how to use the <xref:System.ComponentModel.DesignerAttribute> to associate the designer with the <xref:System.Web.UI.WebControls.DataList> control.  
-  
- [!code-vb[DataGridDesigner_Sample2#6](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_6_3.vb)]
- [!code-cs[DataGridDesigner_Sample2#6](~/add/codesnippet/csharp/t-system.web.ui.design.w_6_3.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataListDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,16 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.DataList" /> control can be resized.</summary>
-        <value>
-          <see langword="true" /> if the data list has templates; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object associated with this designer.</summary>
-        <value>The <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> associated with this designer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -114,17 +92,10 @@
         <Parameter Name="verb" Type="System.Web.UI.Design.TemplateEditingVerb" />
       </Parameters>
       <Docs>
-        <param name="verb">The <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> for which to create the template editing frame.</param>
-        <summary>Creates a template editing frame using the specified verb.</summary>
-        <returns>An <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than using editing frames, use template groups and designer editing regions. For more information, see <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> and <xref:System.Web.UI.Design.DesignerRegion>.  
-  
- ]]></format>
-        </remarks>
+        <param name="verb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -134,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,17 +114,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both the managed and unmanaged resources; <see langword="false" /> to release only the unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.Design.WebControls.DataListDesigner" /> object and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `disposing` is `true`, the Dispose method releases all resources held by the managed objects that this <xref:System.Web.UI.Design.WebControls.DataListDesigner> object references.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCachedTemplateEditingVerbs">
@@ -164,7 +126,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -177,16 +138,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the cached template editing verbs available to the designer.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> objects consisting of the cached template editing verbs that are available to the designer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than using editing frames, use template groups and designer editing regions. For more information, see <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> and <xref:System.Web.UI.Design.DesignerRegion>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -196,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,29 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the HTML used to represent the <see cref="T:System.Web.UI.WebControls.DataList" /> control at design time.</summary>
-        <returns>The HTML that is used to represent the <see cref="T:System.Web.UI.WebControls.DataList" /> control at design time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to override the GetDesignTimeHtml method. It alters the appearance of the control on the design surface if the control's <xref:System.Web.UI.WebControls.WebControl.Enabled%2A?displayProperty=fullName> property is `true`.  
-  
- The code uses `Try...Catch...Finally` syntax to do the following:  
-  
--   The `Try` section changes the values of the properties of the control.  
-  
--   The `Catch` section catches any exceptions and sends them to the <xref:System.Web.UI.Design.WebControls.DataListDesigner.GetErrorDesignTimeHtml%2A> method.  
-  
--   The `Finally` section sets the properties to their original values.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataListDesigner> class.  
-  
- [!code-vb[DataGridDesigner_Sample2#2](~/add/codesnippet/visualbasic/m-system.web.ui.design.w_18_1.vb)]
- [!code-cs[DataGridDesigner_Sample2#2](~/add/codesnippet/csharp/m-system.web.ui.design.w_18_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -236,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,8 +176,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the HTML used to represent an empty template-based control at design time.</summary>
-        <returns>The HTML used to represent an empty template-based control at design time.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,22 +197,10 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">The exception that occurred.</param>
-        <summary>Gets the HTML to display at design time for the specified exception when an error has been encountered while rendering the control.</summary>
-        <returns>The HTML displayed at design time for the specified exception.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to override the GetErrorDesignTimeHtml method to modify the appearance of the <xref:System.Web.UI.WebControls.DataList> control on the design surface when an exception occurs.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataListDesigner> class.  
-  
- [!code-vb[DataGriddesigner_Sample2#4](~/add/codesnippet/visualbasic/b0fe9042-b615-4537-909a-_1.vb)]
- [!code-cs[DataGriddesigner_Sample2#4](~/add/codesnippet/csharp/b0fe9042-b615-4537-909a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContainerDataItemProperty">
@@ -291,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -306,17 +224,10 @@
         <Parameter Name="templateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="templateName">The name of the template.</param>
-        <summary>Gets the <see cref="System.Web.UI.WebControls.DataListItem.System%23Web%23UI%23IDataItemContainer%23DataItem%2A" /> property of the template container.</summary>
-        <returns>The <see cref="System.Web.UI.WebControls.DataListItem.System%23Web%23UI%23IDataItemContainer%23DataItem%2A" /> property of the container of the template.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetTemplateContainerDataItemProperty method is obsolete. To access the template metadata, see <xref:System.Web.UI.Design.TemplateDefinition>.  
-  
- ]]></format>
-        </remarks>
+        <param name="templateName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContent">
@@ -326,7 +237,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -343,20 +253,12 @@
         <Parameter Name="allowEditing" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="editingFrame">The <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" /> instance from which to get the content.</param>
-        <param name="templateName">The name of the template.</param>
-        <param name="allowEditing">
-          <see langword="true" /> if the template's content can be edited; <see langword="false" /> if the content is read-only.</param>
-        <summary>Gets the content of the template.</summary>
-        <returns>The content of the template.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than using editing frames, use template groups and designer editing regions. For more information, see <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> and <xref:System.Web.UI.Design.DesignerRegion>.  
-  
- ]]></format>
-        </remarks>
+        <param name="editingFrame">To be added.</param>
+        <param name="templateName">To be added.</param>
+        <param name="allowEditing">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -366,7 +268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -376,21 +277,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">The control element being designed.</param>
-        <summary>Initializes the designer with the specified component.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to override the Initialize method to ensure that the designer is initialized only with instances of the `SimpleDataList` class.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataListDesigner> class.  
-  
- [!code-vb[DataGriddesigner_Sample2#5](~/add/codesnippet/visualbasic/1e4c89d2-98b6-4d78-973f-_1.vb)]
- [!code-cs[DataGriddesigner_Sample2#5](~/add/codesnippet/csharp/1e4c89d2-98b6-4d78-973f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSchemaRefreshed">
@@ -400,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,15 +296,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the data source to which the underlying control is bound loads a new schema.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the OnSchemaRefreshed method to perform additional actions that might be required when new schema becomes available.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTemplateEditingVerbsChanged">
@@ -426,7 +307,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,15 +314,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the template editing verbs change.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than using editing verbs, use template groups and designer editing regions. For more information, see <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> and <xref:System.Web.UI.Design.DesignerRegion>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetTemplateContent">
@@ -452,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -469,18 +341,11 @@
         <Parameter Name="templateContent" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="editingFrame">The <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" /> instance for which to set the content.</param>
-        <param name="templateName">The name of the template.</param>
-        <param name="templateContent">The new content for the template.</param>
-        <summary>Sets the content for the specified template and frame.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than using editing verbs, use template groups and designer editing regions. For more information, see <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> and <xref:System.Web.UI.Design.DesignerRegion>.  
-  
- ]]></format>
-        </remarks>
+        <param name="editingFrame">To be added.</param>
+        <param name="templateName">To be added.</param>
+        <param name="templateContent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TemplatesExist">
@@ -490,16 +355,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether there are templates defined for the associated control.</summary>
-        <value>
-          <see langword="true" /> if the associated control has templates defined; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

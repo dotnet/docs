@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,30 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows toolbar button. Although <see cref="T:System.Windows.Forms.ToolStripButton" /> replaces and extends the ToolBarButton control of previous versions, ToolBarButton is retained for both backward compatibility and future use if you choose.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ToolBarButton controls are parented by <xref:System.Windows.Forms.ToolBar> controls. Common properties to set once the toolbar button has been created are <xref:System.Windows.Forms.ToolBarButton.Text%2A> and <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A>. Set the <xref:System.Windows.Forms.ToolBarButton.Text%2A> property of the button to display text beneath or to the right of the image. To assign images to the buttons by creating an <xref:System.Windows.Forms.ImageList>, assigning it to the <xref:System.Windows.Forms.ToolBar.ImageList%2A> property of the toolbar; then assign the image index value to the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property of the button.  
-  
- To change the appearance of the toolbar buttons assigned to the toolbar, set the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property of the parent toolbar control. The `ToolBarAppearance.Flat` appearance gives the buttons a flat appearance. As the mouse pointer moves over the buttons, their appearance changes to three-dimensional. Button separators appear as lines rather than spaces between the buttons when the buttons have a flat appearance. If the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property is set to `ToolBarAppearance.Normal`, the buttons appear raised and three-dimensional, and the separators appear as a gap between the buttons.  
-  
- You can assign a <xref:System.Windows.Forms.ContextMenu> to a button if the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property is set to `ToolBarButtonStyle.DropDown`. When the button is clicked, the assigned menu is displayed.  
-  
- To create a collection of ToolBarButton controls to display on a <xref:System.Windows.Forms.ToolBar>, add the buttons individually by using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add%2A> method of the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property. Alternatively, you can add several toolbar buttons using the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange%2A> method.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three ToolBarButton controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated and the appropriate dialog box opened. This code requires that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have all been created.  
-  
- [!code-cpp[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/cpp/t-system.windows.forms.t_14_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_14_1.vb)]
- [!code-cs[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/csharp/t-system.windows.forms.t_14_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,29 +36,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBarButton" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A newly created <xref:System.Windows.Forms.ToolBarButton> has no default <xref:System.Windows.Forms.ToolBarButton.Text%2A> or <xref:System.Drawing.Image> assigned to it. The button's default style is `ToolBarButtonStyle.PushButton`.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that a <xref:System.Windows.Forms.MenuItem>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_69_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_69_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_69_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,32 +51,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display on the new <see cref="T:System.Windows.Forms.ToolBarButton" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBarButton" /> class and displays the assigned text on the button.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.Windows.Forms.ToolBarButton> has no <xref:System.Drawing.Image> assigned to it. The button's default style is <xref:System.Windows.Forms.ToolBarButtonStyle>. The `text` parameter is assigned to the <xref:System.Windows.Forms.ToolBarButton.Text%2A> property and is displayed on the new toolbar button control.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that a <xref:System.Windows.Forms.MenuItem>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_30_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_30_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_30_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -126,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,19 +78,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolBarButton" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolBarButton> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownMenu">
@@ -158,7 +90,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -173,29 +104,9 @@
         <ReturnType>System.Windows.Forms.Menu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the menu to be displayed in the drop-down toolbar button.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ContextMenu" /> to be displayed in the drop-down toolbar button. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify a <xref:System.Windows.Forms.ContextMenu> to be displayed when the drop-down button is clicked. This property is not used unless the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property value is set to <xref:System.Windows.Forms.ToolBarButtonStyle?displayProperty=fullName>.  
-  
-> [!NOTE]
->  Although the DropDownMenu property is defined as a <xref:System.Windows.Forms.Menu> type, you must assign it a <xref:System.Windows.Forms.ContextMenu> for it to display properly. If you are creating your own <xref:System.Windows.Forms.MenuItem> derived class you must assign that object to a <xref:System.Windows.Forms.ContextMenu> and assign the <xref:System.Windows.Forms.ContextMenu> to the DropDownMenu property.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that an <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_100_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_100_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_100_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The assigned object is not a <see cref="T:System.Windows.Forms.ContextMenu" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -205,7 +116,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -220,17 +130,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the button is enabled.</summary>
-        <value>
-          <see langword="true" /> if the button is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the Enabled property is set to `false`, the toolbar button cannot be clicked, and the button's appearance changes. The <xref:System.Drawing.Image> and <xref:System.Windows.Forms.ToolBarButton.Text%2A> assigned to the button appear grayed out. If the image or text has multiple colors, they display in a monochromatic gray.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -240,7 +142,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -264,26 +165,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index value of the image assigned to the button.</summary>
-        <value>The index value of the <see cref="T:System.Drawing.Image" /> assigned to the toolbar button. The default is -1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageIndex value references the indexed value of the images in an <xref:System.Windows.Forms.ImageList> assigned to the parent <xref:System.Windows.Forms.ToolBar> control.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that a <xref:System.Windows.Forms.MenuItem>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_231_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_231_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_231_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The assigned value is less than -1.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -293,7 +177,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -317,16 +200,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the image assigned to the button.</summary>
-        <value>The name of the <see cref="T:System.Drawing.Image" /> assigned to the toolbar button.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageKey value indicates an image in the <xref:System.Windows.Forms.ImageList> assigned to the parent <xref:System.Windows.Forms.ToolBar> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -336,7 +212,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -348,16 +223,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the button.</summary>
-        <value>The name of the button.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the button name as a key to retrieve the <xref:System.Windows.Forms.ToolBarButton> from the <xref:System.Windows.Forms.ToolBar.Buttons%2A> collection of a <xref:System.Windows.Forms.ToolBar> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -367,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -379,8 +246,8 @@
         <ReturnType>System.Windows.Forms.ToolBar</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the toolbar control that the toolbar button is assigned to.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ToolBar" /> control that the <see cref="T:System.Windows.Forms.ToolBarButton" /> is assigned to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,7 +258,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -403,26 +269,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a toggle-style toolbar button is partially pushed.</summary>
-        <value>
-          <see langword="true" /> if a toggle-style toolbar button is partially pushed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When PartialPush is set to `true`, the toolbar button appears to have its face grayed. This appearance is different from the dimmed appearance when the <xref:System.Windows.Forms.ToolBarButton.Enabled%2A> property is set to `false` since the partial-push appearance gives a haze to the entire button face. This property has no effect unless the <xref:System.Windows.Forms.ToolBarButtonStyle> is set to `ToggleButton`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.ToolBarButton.Pushed%2A>, and PartialPush properties. To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.RichTextBox> control called `RichTextBox1`.Call the `InitializeToolBar` method in the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/csharp/p-system.windows.forms.t_204_1.cs)]
- [!code-cpp[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/cpp/p-system.windows.forms.t_204_1.cpp)]
- [!code-vb[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_204_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pushed">
@@ -432,7 +281,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -444,26 +292,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a toggle-style toolbar button is currently in the pushed state.</summary>
-        <value>
-          <see langword="true" /> if a toggle-style toolbar button is currently in the pushed state; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When Pushed is set to `true`, the toolbar button appears sunken or inset relative to the other buttons. This property has no effect unless the <xref:System.Windows.Forms.ToolBarButtonStyle> is set to `ToggleButton`.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Pushed, and <xref:System.Windows.Forms.ToolBarButton.PartialPush%2A> properties. To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.RichTextBox> control called `RichTextBox1`. Call the `InitializeToolBar` method in the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/csharp/p-system.windows.forms.t_130_1.cs)]
- [!code-cpp[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/cpp/p-system.windows.forms.t_130_1.cpp)]
- [!code-vb[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_130_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rectangle">
@@ -473,23 +304,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounding rectangle for a toolbar button.</summary>
-        <value>The bounding <see cref="T:System.Drawing.Rectangle" /> for a toolbar button.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Windows.Forms.ToolBar> and the current button are both <xref:System.Windows.Forms.ToolBarButton.Visible%2A>, then this property retrieves the bounding rectangle the button is currently contained in.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -499,7 +322,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -514,26 +336,9 @@
         <ReturnType>System.Windows.Forms.ToolBarButtonStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style of the toolbar button.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolBarButtonStyle" /> values. The default is <see langword="ToolBarButtonStyle.PushButton" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the button Style is set to <xref:System.Windows.Forms.ToolBarButtonStyle> you can specify a <xref:System.Windows.Forms.MenuItem> to be displayed when the drop-down button is pressed. If the style is set to `ToolBarButtonStyle.Separator`, the toolbar button appears as a button separator and not as a button. The `ToolBarButtonStyle.ToggleButton` style causes the toolbar button to act like a toggle button; it can be in an on or off state.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that a <xref:System.Windows.Forms.MenuItem>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_192_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_192_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_192_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ToolBarButtonStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -543,7 +348,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -564,25 +368,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that contains data about the toolbar button.</summary>
-        <value>An <see cref="T:System.Object" /> that contains data about the toolbar button. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Retrieves or assigns the data currently associated with the toolbar button. Any <xref:System.Object> derived type can be assigned to this property. If this property is being set through the Windows Forms designer, only text can be assigned.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.ToolBarButton.Pushed%2A>, <xref:System.Windows.Forms.ToolBarButton.PartialPush%2A>, and Tag properties. To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.RichTextBox> control called `RichTextBox1`. Call the `InitializeToolBar` method in the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/csharp/p-system.windows.forms.t_72_1.cs)]
- [!code-cpp[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/cpp/p-system.windows.forms.t_72_1.cpp)]
- [!code-vb[System.Windows.Forms.ToolBarButtonExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_72_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -592,7 +380,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -607,25 +394,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed on the toolbar button.</summary>
-        <value>The text displayed on the toolbar button. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default the Text property value is an empty string ("") unless you created the control with the <xref:System.Windows.Forms.ToolBar.%23ctor%2A> constructor that accepts the text string as a parameter. The orientation of the text on the toolbar button is determined by the <xref:System.Windows.Forms.ToolBar.TextAlign%2A> property of the button's parent <xref:System.Windows.Forms.ToolBar>, which can be set to one of the <xref:System.Windows.Forms.ToolBarTextAlign> enumeration values. The orientation is in relation to the image assigned to the button. If no image is assigned to the button, there will be space left for one on the surface of the toolbar button.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that a <xref:System.Windows.Forms.MenuItem>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_51_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_51_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_51_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -635,7 +406,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -650,25 +420,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that appears as a ToolTip for the button.</summary>
-        <value>The text that is displayed when the mouse pointer moves over the toolbar button. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To enable the display of the ToolTip text when the mouse pointer is moved over the button, set the <xref:System.Windows.Forms.ToolBar.ShowToolTips%2A> property of the button's parent <xref:System.Windows.Forms.ToolBar> to `true`.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls, assigns the buttons to the toolbar, and sets some of the buttons' common properties. This code requires that a <xref:System.Windows.Forms.MenuItem>, <xref:System.Windows.Forms.ImageList>, <xref:System.Windows.Forms.ToolTip> and a <xref:System.Windows.Forms.Form> have been created and the <xref:System.Windows.Forms.ImageList> has at least one <xref:System.Drawing.Image> assigned to it.  
-  
- [!code-cpp[Classic ToolBarButton.Style Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_213_1.cpp)]
- [!code-cs[Classic ToolBarButton.Style Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_213_1.cs)]
- [!code-vb[Classic ToolBarButton.Style Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_213_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -678,7 +432,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -686,16 +439,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.ToolBarButton" /> control.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.ToolBarButton" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns a string that includes the type and the value of the <xref:System.Windows.Forms.ToolBarButton.Style%2A> and <xref:System.Windows.Forms.ToolBarButton.Text%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -705,7 +451,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -720,17 +465,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the toolbar button is visible.</summary>
-        <value>
-          <see langword="true" /> if the toolbar button is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the toolbar button is not visible, it will not be displayed on the toolbar, and therefore cannot receive user input.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

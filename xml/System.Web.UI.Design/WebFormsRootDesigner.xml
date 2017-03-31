@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebFormsRootDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,15 +21,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a base class for the design-time functionality of a Web Forms page and allows access to and manipulation of components and controls that are contained within the Web Forms page at design time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)], must provide its own derived version of the WebFormsRootDesigner class to control designers through the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> property of the designer. Control designers use the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> property to access and manipulate the containing Web Forms page at design time.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,12 +32,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebFormsRootDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,8 +56,8 @@
         <Parameter Name="scriptItem" Type="System.Web.UI.Design.ClientScriptItem" />
       </Parameters>
       <Docs>
-        <param name="scriptItem">A <see cref="T:System.Web.UI.Design.ClientScriptItem" /> to add to the Web Forms page.</param>
-        <summary>When overridden in a derived class, adds a client script element to the current Web Forms page.</summary>
+        <param name="scriptItem">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,19 +79,12 @@
         <Parameter Name="location" Type="System.Web.UI.Design.ControlLocation" />
       </Parameters>
       <Docs>
-        <param name="newControl">The control to add to the Web Forms page.</param>
-        <param name="referenceControl">The control relative to which <c>newControl</c> is added.</param>
-        <param name="location">A <see cref="T:System.Web.UI.Design.ControlLocation" /> value that indicates the location for <c>newControl</c> relative to <c>referenceControl</c>.</param>
-        <summary>When overridden in a derived class, adds a Web server control to the Web Forms page.</summary>
-        <returns>The ID of the control that was added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although a control might already have an ID assigned to it, if there is already a control in the Web Forms page with the same ID, a new ID is assigned.  
-  
- ]]></format>
-        </remarks>
+        <param name="newControl">To be added.</param>
+        <param name="referenceControl">To be added.</param>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Component">
@@ -112,23 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the component that this designer is designing.</summary>
-        <value>The component managed by the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Component property is set by the <xref:System.Web.UI.Design.WebFormsRootDesigner.Initialize%28System.ComponentModel.IComponent%29?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDesignerActionService">
@@ -138,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,17 +121,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">A design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)], cast as an <see cref="T:System.IServiceProvider" />.</param>
-        <summary>Returns a design-time <see cref="T:System.ComponentModel.Design.DesignerActionService" /> object.</summary>
-        <returns>A design-time designer action service object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateDesignerActionService method is called by a control designer and provides a way for action items for the control designer to be implemented in the Web Forms page through a design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateUrlResolutionService">
@@ -168,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,8 +141,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Web.UI.IUrlResolutionService" /> that resolves relative URLs.</summary>
-        <returns>An object that resolves relative URLs.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,15 +153,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the culture information for the current thread.</summary>
-        <value>The culture information for the current thread.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,9 +180,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Web.UI.Design.WebFormsRootDesigner" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,15 +192,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the URL at which the Web Forms page is located.</summary>
-        <value>The URL at which the Web Forms page is located; otherwise, <see langword="null" />, if the Web Forms page has no associated URL.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,7 +217,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees the resources of the current <see cref="T:System.Web.UI.Design.WebFormsRootDesigner" /> object before it is reclaimed by the garbage collector.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,17 +237,10 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The control to generate HTML markup for.</param>
-        <summary>Generates empty HTML markup for a control at design time.</summary>
-        <returns>HTML markup for an empty control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GenerateEmptyDesignTimeHtml method enables a consistent display of empty controls at design time.  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateErrorDesignTimeHtml">
@@ -298,7 +250,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,23 +261,11 @@
         <Parameter Name="errorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="control">The control that raised the exception.  
-  
- -or-  
-  
- <see langword="null" />.</param>
-        <param name="e">The exception.  
-  
- -or-  
-  
- <see langword="null" />.</param>
-        <param name="errorMessage">A message to add to the exception message.  
-  
- -or-  
-  
- An empty string ("").</param>
-        <summary>Generates HTML markup that is used to display an error message at design time by using the specified control, exception, and message.</summary>
-        <returns>HTML markup for a control and exception information.</returns>
+        <param name="control">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="errorMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,8 +283,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, returns a <see cref="T:System.Web.UI.Design.ClientScriptItemCollection" /> object that contains all client script items that are on the page.</summary>
-        <returns>An object that contains all client script items that are on the page.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,7 +295,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,10 +306,10 @@
         <Parameter Name="tag" Type="System.Web.UI.Design.IControlDesignerTag&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="control">The control to provide the view and tag for.</param>
-        <param name="view">When the GetControlViewAndTag method returns, <c>view</c> contains an <see langword="IControlDesignerView" /> object that provides access to the visual representation and content of a control at design time. <c>view</c> is passed uninitialized.</param>
-        <param name="tag">When the GetControlViewAndTag method returns, <c>tag</c> contains an <see langword="IControlDesignerTag" /> object that provides access to the HTML element for the control's control designer. <c>tag</c> is passed uninitialized.</param>
-        <summary>When overridden in a derived class, returns both the current design-time view and the HTML markup for the specified control.</summary>
+        <param name="control">To be added.</param>
+        <param name="view">To be added.</param>
+        <param name="tag">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,9 +329,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Returns the requested service.</summary>
-        <returns>The requested service; otherwise, <see langword="null" />, if the service cannot be resolved.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,7 +342,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -416,9 +351,9 @@
         <Parameter Name="viewTechnology" Type="System.ComponentModel.Design.ViewTechnology" />
       </Parameters>
       <Docs>
-        <param name="viewTechnology">A <see cref="T:System.ComponentModel.Design.ViewTechnology" /> obtained from the <see cref="System.Web.UI.Design.WebFormsRootDesigner.SupportedTechnologies%2A" /> property.</param>
-        <summary>Returns a view object that is determined by the provided <see cref="T:System.ComponentModel.Design.ViewTechnology" /> object.</summary>
-        <returns>An object containing the current view of the component.</returns>
+        <param name="viewTechnology">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +364,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,8 +373,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">The component that this designer is designing.</param>
-        <summary>Initializes the <see cref="T:System.Web.UI.Design.WebFormsRootDesigner" /> object using the specified component.</summary>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,16 +385,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value indicating whether the designer view is locked.</summary>
-        <value>
-          <see langword="true" />, if the designer view is locked; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,16 +403,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value indicating whether the Web Forms page is still loading.</summary>
-        <value>
-          <see langword="true" />, if the Web Forms page is loading; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,14 +421,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the designer completes loading the Web Forms page.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,7 +438,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -519,8 +447,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" />.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Design.WebFormsRootDesigner.LoadComplete" /> event when the Web Forms page is completely loaded.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,7 +459,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -541,8 +468,8 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="attributes">The attributes for the class of the component.</param>
-        <summary>Allows a designer to change or remove items from the set of attributes that the designer exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,7 +480,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -563,8 +489,8 @@
         <Parameter Name="events" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="events">The events for the class of the component.</param>
-        <summary>Allows a designer to change or remove items from the set of events that the designer exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,7 +501,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -585,8 +510,8 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">The properties for the class of the component.</param>
-        <summary>Allows a designer to change or remove items from the set of properties that the designer exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,7 +522,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -607,8 +531,8 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="attributes">The attributes for the class of the component.</param>
-        <summary>Allows a designer to add to the set of attributes that the designer exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -619,7 +543,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -629,8 +552,8 @@
         <Parameter Name="events" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="events">The events for the class of the component.</param>
-        <summary>Allows a designer to add items to the set of events that the designer exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,7 +564,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -651,8 +573,8 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">The properties for the class of the component.</param>
-        <summary>Allows a designer to add items to the set of properties that the designer exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,15 +585,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.WebFormsReferenceManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a <see cref="T:System.Web.UI.Design.WebFormsReferenceManager" /> object that has information about the current Web Forms page.</summary>
-        <value>A <see cref="T:System.Web.UI.Design.WebFormsReferenceManager" /> containing information about the current Web Forms page.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -682,7 +603,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -692,8 +612,8 @@
         <Parameter Name="clientScriptId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clientScriptId">The identifier for the previously registered client script.</param>
-        <summary>Removes the specified client script from the document at design time.</summary>
+        <param name="clientScriptId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,7 +624,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -714,8 +633,8 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The control to remove from the Web Forms page.</param>
-        <summary>When overridden in a derived class, removes the specified control from the Web Forms page.</summary>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -726,7 +645,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -736,12 +654,10 @@
         <Parameter Name="relativeUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeUrl">A relative URL for a resource on the site.</param>
-        <summary>Converts a relative URL into a fully qualified URL.</summary>
-        <returns>A fully qualified URL resolved from <paramref name="relativeUrl" />.</returns>
+        <param name="relativeUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="relativeUrl" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetControlID">
@@ -751,7 +667,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -762,9 +677,9 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="control">The control on which to set the ID.</param>
-        <param name="id">The string to set as the ID for the control.</param>
-        <summary>Sets the <see langword="ID" /> property of the specified control with the specified string.</summary>
+        <param name="control">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,15 +690,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ViewTechnology[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of technologies that the designer component can support for its display.</summary>
-        <value>An array of supported <see cref="T:System.ComponentModel.Design.ViewTechnology" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,7 +708,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -802,15 +715,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesigner.DoDefaultAction%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesigner.Verbs">
@@ -820,23 +726,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the design-time verbs that are supported by the designer. For a description of this member, see <see cref="System.ComponentModel.Design.IDesigner.Verbs%2A" />.</summary>
-        <value>The design-time verbs that are supported by the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes">
@@ -846,7 +744,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -856,16 +753,9 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="attributes">The attribute objects for the class of the component.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesignerFilter.PostFilterEvents">
@@ -875,7 +765,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -885,16 +774,9 @@
         <Parameter Name="events" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="events">The event descriptor objects that represent the events of the class of the component. The keys in the dictionary of events are event names.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesignerFilter.PostFilterEvents%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesignerFilter.PostFilterProperties">
@@ -904,7 +786,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -914,16 +795,9 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">The property descriptor objects that represent the properties of the class of the component. The keys in the dictionary of properties are property names.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesignerFilter.PostFilterProperties%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes">
@@ -933,7 +807,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -943,16 +816,9 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="attributes">The attribute objects for the class of the component.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesignerFilter.PreFilterEvents">
@@ -962,7 +828,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -972,16 +837,9 @@
         <Parameter Name="events" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="events">The event descriptor objects that represent the events of the class of the component. The keys in the dictionary of events are event names.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesignerFilter.PreFilterEvents%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IDesignerFilter.PreFilterProperties">
@@ -991,7 +849,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1001,16 +858,9 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">The property descriptor objects that represent the properties of the class of the component. The keys in the dictionary of properties are property names.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.Design.IDesignerFilter.PreFilterProperties%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IRootDesigner.GetView">
@@ -1020,7 +870,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1030,17 +879,10 @@
         <Parameter Name="viewTechnology" Type="System.ComponentModel.Design.ViewTechnology" />
       </Parameters>
       <Docs>
-        <param name="viewTechnology">The view technology.</param>
-        <summary>Gets a view object for the specified view technology. For a description of this member, see <see cref="System.ComponentModel.Design.IRootDesigner.GetView%28System.ComponentModel.Design.ViewTechnology%29" />.</summary>
-        <returns>The view object for the specified view technology.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IRootDesigner> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="viewTechnology">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IRootDesigner.SupportedTechnologies">
@@ -1050,23 +892,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ViewTechnology[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of technologies that the designer component can support for its display. For a description of this member, see <see cref="P:System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />.</summary>
-        <value>An array of technologies that the designer component can support for its display.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IRootDesigner> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -1076,7 +910,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1084,15 +917,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.IDisposable.Dispose%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.IDisposable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Verbs">
@@ -1102,25 +928,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the design-time verbs that are supported by the designer.</summary>
-        <value>An array of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects supported by the designer; otherwise, <see langword="null" />, if the component has no verbs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Typically, a design-time environment provides a **Properties** command on a shortcut menu for a component. Therefore, do not include a similar entry in the collection of designer-specified verbs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

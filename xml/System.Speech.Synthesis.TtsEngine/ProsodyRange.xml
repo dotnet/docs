@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyRange" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates values for the <see langword="Range" /> property of a <see langword="Prosody" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `ProsodyRange` is the difference between the lowest and highest values of pitch. A voice using a low `ProsodyRange` value will sound monotone. A voice using a high `ProsodyRange` value will vary between high and low levels of pitch.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a normal prosody range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtraHigh">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an extra high prosody range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtraLow">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an extra low prosody range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a high prosody range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a low prosody range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a medium prosody range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

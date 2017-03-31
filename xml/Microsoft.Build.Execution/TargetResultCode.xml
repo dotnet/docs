@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The result code for a given target.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Execution.TargetResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The target failed to build.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Skipped">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Execution.TargetResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The target was skipped because its condition was not met.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Execution.TargetResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The target successfully built.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

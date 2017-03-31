@@ -4,29 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.D3DResourceType" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the Direct3D surface types that are compatible with the <see cref="T:System.Windows.Interop.D3DImage" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the D3DResourceType when you assign a Direct3D surface in the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code example shows how to specify the D3DResourceType in a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
-  
- [!code-cs[System.Windows.Interop.D3DImage#3](~/add/codesnippet/csharp/d3dhost/window1.xaml.cs#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IDirect3DSurface9">
@@ -36,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Interop.D3DResourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies an IDirect3DSurface9 surface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

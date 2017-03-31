@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,40 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerActionListCollection class represents the aggregation of all the items in a smart tag panel. The DesignerActionListCollection class contains zero or more <xref:System.ComponentModel.Design.DesignerActionList> objects. Each of these lists contains zero or more objects that represent the actual items in the panel and are derived from the <xref:System.ComponentModel.Design.DesignerActionItem> class.  
-  
- The following table shows the two techniques for supplying a DesignerActionListCollection to populate the panel with items for components, including custom controls.  
-  
-|Technique|Description|  
-|---------------|-----------------|  
-|Pull model|The designer for the component class, which is derived from the <xref:System.ComponentModel.Design.ComponentDesigner> class, supplies this collection through the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property. The designer infrastructure reads this property when it must display the panel.|  
-|Push model|A <xref:System.ComponentModel.Design.DesignerActionList> or DesignerActionListCollection is supplied as a parameter in a call to the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method of the <xref:System.ComponentModel.Design.DesignerActionService> associated with the component.|  
-  
- The designer infrastructure constructs a panel by creating a smart tag panel, whose constructor takes two parameters of type DesignerActionListCollection. The collections of lists, which contain the pulled and pushed items, are merged into one panel.  
-  
- Because it derives from the <xref:System.Collections.CollectionBase?displayProperty=fullName> class, DesignerActionListCollection uses an internal <xref:System.Collections.ArrayList> to store its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
-  
- For a full example, see [How to: Attach Smart Tags to a Windows Forms Component](../Topic/How%20to:%20Attach%20Smart%20Tags%20to%20a%20Windows%20Forms%20Component.md).  
-  
- [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#8](~/add/codesnippet/visualbasic/t-system.componentmodel._61_1.vb)]
- [!code-cs[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#8](~/add/codesnippet/csharp/t-system.componentmodel._61_1.cs)]  
-  
- [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#9](~/add/codesnippet/visualbasic/t-system.componentmodel._61_2.vb)]
- [!code-cs[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#9](~/add/codesnippet/csharp/t-system.componentmodel._61_2.cs)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,21 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> class with default settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerActionListCollection constructor creates an empty collection, containing zero <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,26 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList[]" />
       </Parameters>
       <Docs>
-        <param name="value">The array of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects to populate the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> class with the specified panel items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerActionListCollection constructor creates a collection that contains the supplied <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -116,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,18 +72,10 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to add.</param>
-        <summary>Adds the supplied <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to the current collection.</summary>
-        <returns>The position into which the new element is inserted into the collection's internal list.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The new element is added to the end of the internal list.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -147,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,21 +94,9 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList[]" />
       </Parameters>
       <Docs>
-        <param name="value">The array of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects to add.</param>
-        <summary>Adds the elements of the supplied <see cref="T:System.ComponentModel.Design.DesignerActionList" /> array to the end of the current collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The new elements are added to the end of the internal list.  
-  
- After validating the `value` parameter, the AddRange method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -181,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,21 +115,9 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionListCollection" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> to add.</param>
-        <summary>Adds the elements of the supplied <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> to the end of the current collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The new elements are added to the end of the internal list.  
-  
- After validating the `value` parameter, the AddRangemethod makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -215,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,19 +136,10 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to search for.</param>
-        <summary>Indicates whether the collection contains a specific value.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified value; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A match is determined by value, not identity, comparison.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -247,7 +149,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,29 +159,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional array of type <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that is the destination of the elements copied from the current collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the elements of the current collection into the supplied array, starting at the specified array index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the CopyTo method throws an exception while copying, the state of the destination array is undefined. For example, if an <xref:System.ArgumentException> or <xref:System.InvalidCastException> occurs, the destination array may be left in a partially filled state.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> is multidimensional.  
-  
- -or-  
-  
- The number of elements in the current collection is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
-        <exception cref="T:System.InvalidCastException">A problem occurred casting the elements of the current collection to the type of the destination array, perhaps as the result of a failed downcast.</exception>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -290,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,18 +181,10 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to locate in the collection.</param>
-        <summary>Determines the index of a specific item in the collection.</summary>
-        <returns>The index of <paramref name="value" /> if found in the internal list; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -321,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,22 +204,10 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
-        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to insert into the collection.</param>
-        <summary>Inserts the supplied <see cref="T:System.ComponentModel.Design.DesignerActionList" /> into the collection at the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `index` parameter is equal to the value of the <xref:System.Collections.CollectionBase.Count%2A> property, the new element is added to the end of the collection.  
-  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Because lists maintain contiguous elements, the elements that follow the insertion point move down to accommodate the new element. This rearrangement changes the index of the elements after the insertion point.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0 or greater than the count of elements in the current collection.</exception>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -357,7 +217,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -367,18 +226,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element.</param>
-        <summary>Gets or sets the element at the specified index.</summary>
-        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting an element to `null` causes a design-time exception to be thrown when the smart tag panel is displayed.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -388,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -396,7 +246,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs additional custom processes when clearing the contents of the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,11 +267,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
-        <summary>Performs additional custom processes before inserting a new element into the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> instance.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
@@ -432,7 +280,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,11 +290,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The value of the element to remove from <c>index</c>.</param>
-        <summary>Performs additional custom processes when removing an element from the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> instance.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="OnSet">
@@ -457,7 +303,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,12 +314,11 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the element at <c>index</c>.</param>
-        <summary>Performs additional custom processes before setting a value in the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> instance.</summary>
+        <param name="index">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -484,7 +328,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,10 +337,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to validate.</param>
-        <summary>Performs additional custom processes when validating a value.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -507,7 +349,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -517,17 +358,9 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionList" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to remove from the current collection.</param>
-        <summary>Removes the first occurrence of a specific <see cref="T:System.ComponentModel.Design.DesignerActionList" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Since lists maintain contiguous elements, the elements that follow the removal point move up to occupy the vacated spot. This rearrangement changes the index of the elements after the removal point.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

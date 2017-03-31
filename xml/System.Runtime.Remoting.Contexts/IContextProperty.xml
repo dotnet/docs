@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContextProperty" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,15 +14,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Gathers naming information from the context property and determines whether the new context is ok for the context property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IContextProperty interface is exposed by the property contributed to a context by an attribute. By default, it is also implemented by the <xref:System.Runtime.Remoting.Contexts.ContextAttribute> base class, from which <xref:System.Runtime.Remoting.Contexts.Context> attribute classes can extend.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Freeze">
@@ -32,14 +25,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -47,16 +35,9 @@
         <Parameter Name="newContext" Type="System.Runtime.Remoting.Contexts.Context" />
       </Parameters>
       <Docs>
-        <param name="newContext">The context to freeze.</param>
-        <summary>Called when the context is frozen.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Context properties cannot be added after the context has been frozen.  
-  
- ]]></format>
-        </remarks>
+        <param name="newContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNewContextOK">
@@ -66,14 +47,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -81,18 +57,10 @@
         <Parameter Name="newCtx" Type="System.Runtime.Remoting.Contexts.Context" />
       </Parameters>
       <Docs>
-        <param name="newCtx">The new context in which the <see cref="T:System.Runtime.Remoting.Contexts.ContextProperty" /> has been created.</param>
-        <summary>Returns a Boolean value indicating whether the context property is compatible with the new context.</summary>
-        <returns>
-          <see langword="true" /> if the context property can coexist with the other context properties in the given context; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once all the context properties have been added to the new context, they are all queried as to whether they are okay in the new context. The context property could look at the other context properties from `newCtx` and determine whether it is compatible with these other context properties.  
-  
- ]]></format>
-        </remarks>
+        <param name="newCtx">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -102,20 +70,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the property under which it will be added to the context.</summary>
-        <value>The name of the property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

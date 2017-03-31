@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.RangeValuePattern" /> object using its <see cref="System.Windows.Automation.TransformPattern.Current%2A" /> or <see cref="System.Windows.Automation.TransformPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,36 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the value of a [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element is read-only.</summary>
-        <value>
-          <see langword="true" /> if the value is read-only; <see langword="false" /> if it can be modified. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` prior to the creation of a <xref:System.Windows.Automation.RangeValuePattern> object.  
-  
-   
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange%2A> value.  
-  
- [!code-cs[UIARangeValuePattern_snip#103LargeChange](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#103largechange)]
- [!code-vb[UIARangeValuePattern_snip#103LargeChange](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#103largechange)]  
-[!code-cs[UIARangeValuePattern_snip#103](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#103)]
-[!code-vb[UIARangeValuePattern_snip#103](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#103)]  
-[!code-cs[UIARangeValuePattern_snip#101](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#101)]
-[!code-vb[UIARangeValuePattern_snip#101](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LargeChange">
@@ -62,30 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control-specific large-change value which is added to or subtracted from the <see cref="System.Windows.Automation.Provider.IRangeValueProvider.Value%2A" /> property.</summary>
-        <value>The large-change value or <see langword="null" /> if the element does not support LargeChange. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value incremented or decremented by the control-specific LargeChange value.  
-  
- [!code-cs[UIARangeValuePattern_snip#103LargeChange](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#103largechange)]
- [!code-vb[UIARangeValuePattern_snip#103LargeChange](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#103largechange)]  
-[!code-cs[UIARangeValuePattern_snip#103](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#103)]
-[!code-vb[UIARangeValuePattern_snip#103](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#103)]  
-[!code-cs[UIARangeValuePattern_snip#101](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#101)]
-[!code-vb[UIARangeValuePattern_snip#101](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -95,30 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum range value supported by the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element.</summary>
-        <value>The maximum value supported by the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element or <see langword="null" /> if the element does not support Maximum. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value set to the control-specific maximum value.  
-  
- [!code-cs[UIARangeValuePattern_snip#104Maximum](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#104maximum)]
- [!code-vb[UIARangeValuePattern_snip#104Maximum](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#104maximum)]  
-[!code-cs[UIARangeValuePattern_snip#104](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#104)]
-[!code-vb[UIARangeValuePattern_snip#104](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#104)]  
-[!code-cs[UIARangeValuePattern_snip#101](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#101)]
-[!code-vb[UIARangeValuePattern_snip#101](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -128,30 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minimum range value supported by the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element.</summary>
-        <value>The minimum value supported by the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element or <see langword="null" /> if the element does not support Minimum. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value set to the control-specific minimum value.  
-  
- [!code-cs[UIARangeValuePattern_snip#104Minimum](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#104minimum)]
- [!code-vb[UIARangeValuePattern_snip#104Minimum](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#104minimum)]  
-[!code-cs[UIARangeValuePattern_snip#104](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#104)]
-[!code-vb[UIARangeValuePattern_snip#104](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#104)]  
-[!code-cs[UIARangeValuePattern_snip#101](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#101)]
-[!code-vb[UIARangeValuePattern_snip#101](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallChange">
@@ -161,30 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the small-change value, unique to the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element, which is added to or subtracted from the elements <see cref="System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Value%2A" /> property.</summary>
-        <value>The small-change value unique to the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element or <see langword="null" /> if the element does not support SmallChange. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value incremented or decremented by the control-specific SmallChange value.  
-  
- [!code-cs[UIARangeValuePattern_snip#103SmallChange](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#103smallchange)]
- [!code-vb[UIARangeValuePattern_snip#103SmallChange](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#103smallchange)]  
-[!code-cs[UIARangeValuePattern_snip#103](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#103)]
-[!code-vb[UIARangeValuePattern_snip#103](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#103)]  
-[!code-cs[UIARangeValuePattern_snip#101](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#101)]
-[!code-vb[UIARangeValuePattern_snip#101](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -194,26 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current value of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element.</summary>
-        <value>The current value of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element or <see langword="null" /> if the element does not support Value. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.RangeValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.RangeValuePattern> property values.  
-  
- [!code-cs[UIARangeValuePattern_snip#102](~/add/codesnippet/csharp/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.cs#102)]
- [!code-vb[UIARangeValuePattern_snip#102](~/add/codesnippet/visualbasic/UIARangeValuePattern_snip/UIARangeValuePattern_snippets.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

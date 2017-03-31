@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -26,8 +25,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TServiceModelExtensionElement">A ServiceModel extension element.</typeparam>
-    <summary>An abstract base class for a collection of <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> objects.</summary>
+    <typeparam name="TServiceModelExtensionElement">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,18 +46,9 @@
         <Parameter Name="element" Type="TServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to be added.</param>
-        <summary>Adds the specified element to this configuration section.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="element" /> already exists in the collection.  
-  
- -or-  
-  
- The element type specified by <paramref name="element" /> is not permitted.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanAdd">
@@ -69,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,13 +67,10 @@
         <Parameter Name="element" Type="TServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">A <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to be added.</param>
-        <summary>Adds a new behavior element to this section and returns a value that indicates whether the operation is successful.</summary>
-        <returns>
-          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -95,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,16 +87,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes all elements in this collection. This method cannot be inherited.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method empties the collection and resets its <xref:System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement%601.Count%2A> property to 0.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -122,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,13 +107,10 @@
         <Parameter Name="element" Type="TServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element to look for.</param>
-        <summary>Returns a value that indicates whether this collection contains a specific element. This method cannot be inherited.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified element; otherwise, <see langword="false" />.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -148,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,13 +129,10 @@
         <Parameter Name="elementName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="elementName">The name of the element to search for.</param>
-        <summary>Determines whether this collection contains an element of the specified name.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains an element of the specified name; otherwise, <see langword="false" />.</returns>
+        <param name="elementName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="elementName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -174,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,13 +151,10 @@
         <Parameter Name="elementType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="elementType">The type of the element to search for.</param>
-        <summary>Determines whether this collection contains an element of the specified type.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains an element of the specified type; otherwise, <see langword="false" />.</returns>
+        <param name="elementType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="elementName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -200,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,14 +174,10 @@
         <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="elements">A one-dimensional array that is the destination of the elements copied from collection. The array must have zero-based</param>
-        <param name="start">The zero-based index in the <c>elements</c> array at which copying begins.</param>
-        <summary>Copies the entire collection to a compatible one-dimensional array, starting at the specified index of the target array. This method cannot be inherited.</summary>
+        <param name="elements">To be added.</param>
+        <param name="start">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="start" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -228,15 +187,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in this collection.</summary>
-        <value>The number of items in this collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -263,10 +220,9 @@
         <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> that reads from the configuration file.</param>
-        <param name="serializeCollectionKey">
-          <see langword="true" /> to serialize only the collection key properties; otherwise, <see langword="false" />.</param>
-        <summary>Reads XML from the configuration file.</summary>
+        <param name="reader">To be added.</param>
+        <param name="serializeCollectionKey">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -290,8 +245,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through a collection. This method cannot be inherited.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,21 +264,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether this configuration element has been modified since it was last saved or loaded, when implemented in a derived class.</summary>
-        <returns>
-          <see langword="true" /> if the element has been modified; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method determines whether this object is written to the configuration file. If the return value is `false`, it is assumed that the configuration file represents the current state of the element.  
-  
- By default, this property returns `true` after a property is set through the indexer to this object.  
-  
- You should override this method to provide custom indication of the state of this element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -334,7 +276,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,9 +285,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item in the collection to retrieve.</param>
-        <summary>Gets the item at the specified index within the collection.</summary>
-        <value>A <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> that represents the item located at the specified index within the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,7 +298,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -367,14 +307,10 @@
         <Parameter Name="extensionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="extensionType">The type of the item in the collection to retrieve.</param>
-        <summary>Gets the item of the specified type within the collection.</summary>
-        <value>A <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> that represents the item located at the specified index within the collection.</value>
+        <param name="extensionType">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="extensionType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="extensionType" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnDeserializeUnrecognizedElement">
@@ -384,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,11 +330,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="elementName">The name of the unknown sub-element.</param>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> being used for deserialization.</param>
-        <summary>Gets a value that indicates whether an unknown element is encountered during deserialization.</summary>
-        <returns>
-          <see langword="true" /> when an unknown element is encountered while deserializing; otherwise, <see langword="false" />.</returns>
+        <param name="elementName">To be added.</param>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,15 +344,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
-        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +362,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,13 +371,10 @@
         <Parameter Name="element" Type="TServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element to be removed from the collection.</param>
-        <summary>Removes the specified element from the collection. This method cannot be inherited.</summary>
-        <returns>
-          <see langword="true" /> if the element is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the element is not found in the collection.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -455,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -470,16 +398,9 @@
         <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" /> object of the current element, or <see langword="null" /> if this is the top level.</param>
-        <summary>Resets this collection to its unmodified state when overridden in a derived class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default behavior for this method is to clear any modified elements a collection contains and to set the modified elements to the values specified by their parent configuration file. If any element in the collection has child elements, this method is also called on those child elements.  
-  
- ]]></format>
-        </remarks>
+        <param name="parentElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetModified">
@@ -489,7 +410,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,15 +417,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the value of the <see cref="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement%601.IsModified%2A" /> property to <see langword="false" /> when overridden in a derived class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method determines whether the elements of this collection is written to the configuration file when the configuration is updated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIsModified">
@@ -515,7 +428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -523,7 +435,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the <see cref="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement%601.IsModified%2A" /> property for this collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,7 +446,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,7 +453,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the internal <see langword="IsReadOnly" /> property for this collection and for all sub-elements.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,24 +464,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this <see cref="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement%601" /> is read-only.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement%601" /> is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -580,7 +482,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -588,8 +489,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through a collection. This method cannot be inherited.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,7 +501,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -612,20 +512,11 @@
         <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
       </Parameters>
       <Docs>
-        <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> object at the current level that contains a merged view of the properties.</param>
-        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" /> object of the current element, or <see langword="null" /> if this is the top level.</param>
-        <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> enumerated value that determines which property values to include.</param>
-        <summary>Reverses the effect of merging configuration information from different levels of the configuration hierarchy.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method reverses the effect of merging configuration information from different levels of the configuration hierarchy. This allows configuration set at the current hierarchy level to be differentiated from that set at parent levels, before serialization.  
-  
- This method is called by the system on a new temporary element to compare the parent object and the source object. Based on the `saveMode` value, it then sets the temporary object to contain the data that must be serialized. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] save modes, see <xref:System.Configuration.ConfigurationSaveMode>.  
-  
- ]]></format>
-        </remarks>
+        <param name="sourceElement">To be added.</param>
+        <param name="parentElement">To be added.</param>
+        <param name="saveMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

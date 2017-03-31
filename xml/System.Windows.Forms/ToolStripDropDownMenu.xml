@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownMenu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,26 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides basic functionality for the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> control. Although ToolStripDropDownMenu and <see cref="T:System.Windows.Forms.ToolStripDropDown" /> replace and add functionality to the <see cref="T:System.Windows.Forms.Menu" /> control of previous versions, <see cref="T:System.Windows.Forms.Menu" /> is retained for both backward compatibility and future use if you choose.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ToolStripDropDownMenu is the base class for <xref:System.Windows.Forms.ContextMenuStrip>, providing necessary painting and layout properties and methods. The properties of this class that you are most likely to use directly are the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> and <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> properties, which determine whether the shortcut menu will be able to display a check mark, an image, or both.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins.  
-  
-> [!IMPORTANT]
->  This code is not a complete sample so it will not compile. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](../Topic/How%20to:%20Enable%20Check%20Margins%20and%20Image%20Margins%20in%20ContextMenuStrip%20Controls.md).  
-  
- [!code-cs[System.Windows.Forms.ToolStrip.Misc#61](~/add/codesnippet/csharp/t-system.windows.forms.t_71_1.cs)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/add/codesnippet/visualbasic/t-system.windows.forms.t_71_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,23 +33,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](../Topic/How%20to:%20Enable%20Check%20Margins%20and%20Image%20Margins%20in%20ContextMenuStrip%20Controls.md).  
-  
- [!code-cs[System.Windows.Forms.ToolStrip.Misc#62](~/add/codesnippet/csharp/m-system.windows.forms.t_82_1.cs)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#62](~/add/codesnippet/visualbasic/m-system.windows.forms.t_82_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultItem">
@@ -78,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,19 +59,12 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">The text to use for the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />. If the <c>text</c> parameter is a hyphen (-), this method creates a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> to display on the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</param>
-        <param name="onClick">An event handler that raises the <see cref="E:System.Windows.Forms.ToolStripItem.Click" /> event when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is clicked.</param>
-        <summary>Creates a default <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> with the specified text, image, and event handler on a new <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.ToolStripMenuItem" />, or a <see cref="T:System.Windows.Forms.ToolStripSeparator" /> if the <paramref name="text" /> parameter is a hyphen (-).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CreateDefaultItem method to add a <xref:System.Windows.Forms.ToolStripMenuItem> with commonly used characteristics to a <xref:System.Windows.Forms.ToolStripDropDownMenu>.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="onClick">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPadding">
@@ -112,15 +74,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the internal spacing, in pixels, of the control.</summary>
-        <value>A <see langword="Padding" /> object representing the spacing.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,15 +92,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rectangle that represents the display area of the <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the display area.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,15 +110,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Layout.LayoutEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Passes a reference to the cached <see cref="System.Windows.Forms.Control.LayoutEngine%2A" /> returned by the layout engine interface.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> that represents the cached layout engine returned by the layout engine interface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +128,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -181,16 +139,9 @@
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating how the items of <see cref="T:System.Windows.Forms.ContextMenuStrip" /> are displayed.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The default is <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, <xref:System.Windows.Forms.ContextMenuStrip> items flow horizontally or vertically as necessary. See the <xref:System.Windows.Forms.ToolStripLayoutStyle> enumeration for the other possibilities.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemSize">
@@ -200,15 +151,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum height and width, in pixels, of the <see cref="T:System.Windows.Forms.ContextMenuStrip" />.</summary>
-        <value>A <see langword="Size" /> object representing the height and width of the control, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,18 +178,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.FontChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnFontChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -250,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,18 +199,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLayout method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -281,7 +211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,8 +220,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Paints the background of the control.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,7 +239,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the collection of displayed and overflow items after a layout is done.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +250,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -334,25 +261,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether space for a check mark is shown on the left edge of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
-        <value>
-          <see langword="true" /> if the check margin is shown; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the ShowCheckMargin property to `true` to display a check mark when the user chooses the <xref:System.Windows.Forms.ToolStripMenuItem>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](../Topic/How%20to:%20Enable%20Check%20Margins%20and%20Image%20Margins%20in%20ContextMenuStrip%20Controls.md).  
-  
- [!code-cs[System.Windows.Forms.ToolStrip.Misc#61](~/add/codesnippet/csharp/p-system.windows.forms.t_219_1.cs)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/add/codesnippet/visualbasic/p-system.windows.forms.t_219_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowImageMargin">
@@ -362,7 +273,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -374,25 +284,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether space for an image is shown on the left edge of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
-        <value>
-          <see langword="true" /> if the image margin is shown; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the ShowImageMargin property to `true` to display a graphic image with the <xref:System.Windows.Forms.ToolStripMenuItem>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](../Topic/How%20to:%20Enable%20Check%20Margins%20and%20Image%20Margins%20in%20ContextMenuStrip%20Controls.md).  
-  
- [!code-cs[System.Windows.Forms.ToolStrip.Misc#61](~/add/codesnippet/csharp/p-system.windows.forms.t_87_1.cs)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/add/codesnippet/visualbasic/p-system.windows.forms.t_87_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

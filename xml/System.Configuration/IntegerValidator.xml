@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IntegerValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides validation of an <see cref="T:System.Int32" /> value.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IntegerValidator class is used to ensure that an integer meets specific criteria. The criteria for validation are established when an instance of the IntegerValidator class is created. The <xref:System.Configuration.IntegerValidator.%23ctor%2A> constructor with two parameters ensures that the integer being verified adheres to both a minimum and a maximum value. The <xref:System.Configuration.IntegerValidator.%23ctor%2A> constructor with three parameters checks both the minimum and maximum <xref:System.Int32> values, as well as whether the value to be validated is within the specified range. The <xref:System.Configuration.IntegerValidator.%23ctor%2A> constructor with four parameters checks the previous three parameters and also checks whether the <xref:System.Int32> value is equal to a specific resolution.  
-  
- The <xref:System.Configuration.IntegerValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.IntegerValidator.Validate%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the IntegerValidator type.  
-  
- [!code-vb[System.Configuration.IntegerValidator#1](~/add/codesnippet/visualbasic/t-system.configuration.i_3_1.vb)]
- [!code-cs[System.Configuration.IntegerValidator#1](~/add/codesnippet/csharp/t-system.configuration.i_3_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,17 +29,10 @@
         <Parameter Name="maxValue" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="minValue">An <see cref="T:System.Int32" /> object that specifies the minimum value.</param>
-        <param name="maxValue">An <see cref="T:System.Int32" /> object that specifies the maximum value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IntegerValidator" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This IntegerValidator constructor ensures that the integer being verified adheres to both a minimum and a maximum length.  
-  
- ]]></format>
-        </remarks>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,27 +50,11 @@
         <Parameter Name="rangeIsExclusive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="minValue">An <see cref="T:System.Int32" /> object that specifies the minimum value.</param>
-        <param name="maxValue">An <see cref="T:System.Int32" /> object that specifies the maximum value.</param>
-        <param name="rangeIsExclusive">
-          <see langword="true" /> to specify that the validation range is exclusive. Inclusive means the value to be validated must be within the specified range; exclusive means that it must be below the minimum or above the maximum.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IntegerValidator" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When creating an instance of  the <xref:System.Configuration.IntegerValidator> class, this IntegerValidator constructor checks both the minimum and maximum <xref:System.Int32> values, as well as whether the validation range is exclusive. When the `rangeIsExclusive` parameter is set to `true`, the <xref:System.Int32> value must not be between the `minValue` and `maxValue` parameter values.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the IntegerValidator constructor. This code example is part of a larger example provided for the <xref:System.Configuration.IntegerValidator> class.  
-  
- [!code-vb[System.Configuration.IntegerValidator#2](~/add/codesnippet/visualbasic/39b5b9f2-305e-4ede-8502-_1.vb)]
- [!code-cs[System.Configuration.IntegerValidator#2](~/add/codesnippet/csharp/39b5b9f2-305e-4ede-8502-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="rangeIsExclusive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -107,7 +64,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -117,25 +73,12 @@
         <Parameter Name="resolution" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="minValue">An <see cref="T:System.Int32" /> object that specifies the minimum length of the integer value.</param>
-        <param name="maxValue">An <see cref="T:System.Int32" /> object that specifies the maximum length of the integer value.</param>
-        <param name="rangeIsExclusive">A <see cref="T:System.Boolean" /> value that specifies whether the validation range is exclusive.</param>
-        <param name="resolution">An <see cref="T:System.Int32" /> object that specifies a value that must be matched.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IntegerValidator" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Int32> value being validated must be equal to the `resolution` value in order to pass validation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="resolution" /> is less than <see langword="0" />.  
-  
- \- or -  
-  
- <paramref name="minValue" /> is greater than <paramref name="maxValue" />.</exception>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="rangeIsExclusive">To be added.</param>
+        <param name="resolution">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanValidate">
@@ -145,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,21 +97,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the object.</param>
-        <summary>Determines whether the type of the object can be validated.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="type" /> parameter matches an <see cref="T:System.Int32" /> value; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the CanValidate method. This code example is part of a larger example provided for the <xref:System.Configuration.IntegerValidator> class.  
-  
- [!code-vb[System.Configuration.IntegerValidator#3](~/add/codesnippet/visualbasic/m-system.configuration.i_1_1.vb)]
- [!code-cs[System.Configuration.IntegerValidator#3](~/add/codesnippet/csharp/m-system.configuration.i_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -179,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,24 +119,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to be validated.</param>
-        <summary>Determines whether the value of an object is valid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Configuration.IntegerValidator> object contains the rules necessary to validate an integer object. The rules are established when an instance of the <xref:System.Configuration.IntegerValidator> class is created. The integer object to validate is passed as a parameter of the Validate method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Validate method. This code example is part of a larger example provided for the <xref:System.Configuration.IntegerValidator> class.  
-  
- [!code-vb[System.Configuration.IntegerValidator#4](~/add/codesnippet/visualbasic/m-system.configuration.i_6_1.vb)]
- [!code-cs[System.Configuration.IntegerValidator#4](~/add/codesnippet/csharp/m-system.configuration.i_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

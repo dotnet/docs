@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.HorizontalAlignment" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates where an element should be displayed on the horizontal axis relative to the allocated layout slot of the parent element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Stretch is the default layout behavior.  
-  
- Element <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set take precedence over the Stretch property value.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Center">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An element aligned to the center of the layout slot for the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An element aligned to the left of the layout slot for the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -70,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An element aligned to the right of the layout slot for the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -87,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An element stretched to fill the entire layout slot of the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

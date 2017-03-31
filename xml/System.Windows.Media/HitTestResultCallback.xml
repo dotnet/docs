@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResultCallback" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,24 +16,9 @@
     <ReturnType>System.Windows.Media.HitTestResultBehavior</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="result">The <see cref="T:System.Windows.Media.HitTestResult" /> value that represents a visual object that is returned from a hit test.</param>
-    <summary>Represents a callback that is used to customize hit testing. [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] invokes the HitTestResultCallback to report hit test intersections to the user.</summary>
-    <returns>A <see cref="T:System.Windows.Media.HitTestFilterBehavior" /> that represents the action resulting from the hit test.</returns>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The hit test callback method defines the actions that you perform when a hit test is identified on a particular visual object in the visual tree. After you perform the actions, your callback is expected to return a <xref:System.Windows.Media.HitTestResultBehavior> value that determines whether to continue iterating through the visual tree for any other visual objects.  
-  
-   
-  
-## Examples  
- The following example shows how to invoke <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> by using a HitTestResultCallback value. The corresponding hit test callback method is also defined.  
-  
- [!code-cs[DrawingVisualSample#103](~/add/codesnippet/csharp/DrawingVisual/Window1.xaml.cs#103)]
- [!code-vb[DrawingVisualSample#103](~/add/codesnippet/visualbasic/drawingvisual/window1.xaml.vb#103)]  
-  
- ]]></format>
-    </remarks>
+    <param name="result">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

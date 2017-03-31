@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AssemblyReferenceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -14,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>This class represents the type of an assembly reference.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,10 +20,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ClickOnceManifest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -35,7 +27,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a ClickOnce manifest.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManagedAssembly">
@@ -44,10 +36,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ManagedAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -55,7 +43,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a .NET Framework assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NativeAssembly">
@@ -64,10 +52,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.NativeAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -75,7 +59,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a Win32 native assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -84,10 +68,6 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -95,7 +75,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Assembly type is unspecified and will be determined by the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.UpdateFileInfo%2A" /> method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

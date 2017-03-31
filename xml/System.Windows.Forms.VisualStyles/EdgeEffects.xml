@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.EdgeEffects" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the visual effects that can be applied to the edges of a visual style element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EdgeEffects values are used as argument values in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawEdge%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FillInterior">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The area within the element borders is filled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Flat">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border is flat.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mono">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border is one-dimensional.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border is drawn without any effects.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Soft">
@@ -102,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border is soft.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

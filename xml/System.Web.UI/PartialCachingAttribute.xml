@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PartialCachingAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,53 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the metadata attribute that Web Forms user controls (.ascx files) use to indicate if and how their output is cached. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PartialCachingAttribute attribute class marks user controls (.ascx files) that support fragment caching, and encapsulates the cache settings that ASP.NET uses when caching the control. Page and controls developers use the PartialCachingAttribute attribute to enable output caching for a user control in a code-behind file.  
-  
- Using the PartialCachingAttribute is one of several ways you can enable output caching. The following list describes methods you can use to enable output caching.  
-  
--   Use the  directive to enable output caching in declarative scenarios.  
-  
--   Use the PartialCachingAttribute to enable caching for a user control in a code-behind file.  
-  
--   Use the <xref:System.Web.UI.ControlCachePolicy> class to programmatically specify cache settings in programmatic scenarios in which you are working with <xref:System.Web.UI.BasePartialCachingControl> instances.  
-  
- If a user control contains an  directive or has a PartialCachingAttribute applied, the ASP.NET parser generates an instance of the <xref:System.Web.UI.PartialCachingControl> class to wrap the user control.  
-  
- For more information about ASP.NET caching, see [Caching](../Topic/ASP.NET%20Caching.md). For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the PartialCachingAttribute. This example has three parts:  
-  
--   A partial class, `ctlMine`, that inherits from the <xref:System.Web.UI.UserControl> base class and to which the PartialCachingAttribute attribute is applied.  
-  
--   A user control that is used with the `ctlMine` partial class.  
-  
--   A Web Forms page that hosts the user control.  
-  
- The first part of the example demonstrates a partial class that inherits from the <xref:System.Web.UI.UserControl> base class and to which the PartialCachingAttribute attribute is applied. In this example, the attribute specifies that the user control should be cached for 20 seconds.  
-  
- [!code-vb[PartialCachingAttribute_1#1](~/add/codesnippet/visualbasic/t-system.web.ui.partialc_1.vb)]
- [!code-cs[PartialCachingAttribute_1#1](~/add/codesnippet/csharp/t-system.web.ui.partialc_1.cs)]  
-  
- The second part of the example shows a user control that is used with the previous example to demonstrate user control caching.  
-  
- [!code-cs[PartialCachingAttribute_1#5](~/add/codesnippet/csharp/t-system.web.ui.partialc_2.ascx)]
- [!code-vb[PartialCachingAttribute_1#5](~/add/codesnippet/visualbasic/t-system.web.ui.partialc_2.ascx)]  
-  
- The third part of the example demonstrates a Web Forms page that hosts the user control.  
-  
- [!code-cs[PartialCachingAttribute_1#6](~/add/codesnippet/csharp/t-system.web.ui.partialc_3.aspx)]
- [!code-vb[PartialCachingAttribute_1#6](~/add/codesnippet/visualbasic/t-system.web.ui.partialc_3.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,26 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="duration" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="duration">The amount of time, in seconds, a user control should remain in the output cache.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class with the specified duration assigned to the user control to be cached.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how the PartialCachingAttribute constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify the caching duration. This code example is part of a larger example provided for the <xref:System.Web.UI.PartialCachingAttribute> class.  
-  
- [!code-vb[PartialCachingAttribute_1#2](~/add/codesnippet/visualbasic/m-system.web.ui.partialc_1.vb)]
- [!code-cs[PartialCachingAttribute_1#2](~/add/codesnippet/csharp/m-system.web.ui.partialc_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="duration">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -112,22 +54,12 @@
         <Parameter Name="varyByCustom" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="duration">The amount of time, in seconds, that the user control is cached.</param>
-        <param name="varyByParams">A semicolon-separated list of strings used to vary the output cache. By default, these strings correspond to a query string value sent with GET method attributes or to a parameter sent using the POST method. When this attribute is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or POST parameter name.</param>
-        <param name="varyByControls">A semicolon-separated list of strings used to vary the output cache. These strings represent fully qualified names of properties on a user control. When this parameter is used for a user control, the user control output is varied to the cache for each specified user control property.</param>
-        <param name="varyByCustom">Any text that represents custom output caching requirements. If this parameter is given a value of "browser", the cache is varied by browser name and major version information. If a custom string is entered, you must override the <see cref="System.Web.HttpApplication.GetVaryByCustomString%2A" /> method in your application's Global.asax file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class, specifying the caching duration, any GET and POST values, control names, and custom output caching requirements used to vary the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how the PartialCachingAttribute constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached, specify the caching duration as 20 seconds, and specify a control named `state` for which the user control output will be varied.  
-  
- [!code-cs[PartialCachingAttribute_2_Resubmit#2](~/add/codesnippet/csharp/cc14ef24-5c8b-457c-8f3f-_1.cs)]
- [!code-vb[PartialCachingAttribute_2_Resubmit#2](~/add/codesnippet/visualbasic/cc14ef24-5c8b-457c-8f3f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="duration">To be added.</param>
+        <param name="varyByParams">To be added.</param>
+        <param name="varyByControls">To be added.</param>
+        <param name="varyByCustom">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,7 +69,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -148,13 +79,12 @@
         <Parameter Name="shared" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="duration">The amount of time, in seconds, that the user control is cached.</param>
-        <param name="varyByParams">A semicolon-separated list of strings used to vary the output cache. By default, these strings correspond to a query string value sent with <see langword="GET" /> method attributes, or a parameter sent using the <see langword="POST" /> method. When this attribute is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or <see langword="POST" /> parameter name.</param>
-        <param name="varyByControls">A semicolon-separated list of strings used to vary the output cache. These strings represent fully qualified names of properties on a user control. When this parameter is used for a user control, the user control output is varied to the cache for each specified user control property.</param>
-        <param name="varyByCustom">Any text that represents custom output caching requirements. If this parameter is given a value of "browser", the cache is varied by browser name and major version information. If a custom string is entered, you must override the <see cref="System.Web.HttpApplication.GetVaryByCustomString%2A" /> method in your application's Global.asax file.</param>
-        <param name="shared">
-          <see langword="true" /> to indicate that the user control output can be shared with multiple pages; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class, specifying the caching duration, any <see langword="GET" /> and <see langword="POST" /> values, control names, custom output caching requirements used to vary the cache, and whether the user control output can be shared with multiple pages.</summary>
+        <param name="duration">To be added.</param>
+        <param name="varyByParams">To be added.</param>
+        <param name="varyByControls">To be added.</param>
+        <param name="varyByCustom">To be added.</param>
+        <param name="shared">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +95,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -177,14 +106,13 @@
         <Parameter Name="shared" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="duration">The amount of time, in seconds, that the user control is cached.</param>
-        <param name="varyByParams">A semicolon-separated list of strings used to vary the output cache. By default, these strings correspond to a query string value sent with <see langword="GET" /> method attributes, or a parameter sent using the <see langword="POST" /> method. When this attribute is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or <see langword="POST" /> parameter name.</param>
-        <param name="varyByControls">A semicolon-separated list of strings used to vary the output cache. These strings represent fully qualified names of properties on a user control. When this parameter is used for a user control, the user control output is varied to the cache for each specified user control property.</param>
-        <param name="varyByCustom">Any text that represents custom output caching requirements. If this parameter is given a value of "browser", the cache is varied by browser name and major version information. If a custom string is entered, you must override the <see cref="System.Web.HttpApplication.GetVaryByCustomString%2A" /> method in your application's Global.asax file.</param>
-        <param name="sqlDependency">A delimited list of database names and table names that, when changed, explicitly expire a cache entry in the ASP.NET cache. These database names match those SQL Server cache dependencies identified in your Web configuration section.</param>
-        <param name="shared">
-          <see langword="true" /> to indicate that the user control output can be shared with multiple pages; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class, specifying the caching duration, any <see langword="GET" /> and <see langword="POST" /> values, control names, custom output caching requirements used to vary the cache, the database dependencies, and whether the user control output can be shared with multiple pages.</summary>
+        <param name="duration">To be added.</param>
+        <param name="varyByParams">To be added.</param>
+        <param name="varyByControls">To be added.</param>
+        <param name="varyByCustom">To be added.</param>
+        <param name="sqlDependency">To be added.</param>
+        <param name="shared">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,26 +123,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the amount of time, in seconds, that cached items should remain in the output cache.</summary>
-        <value>The amount of time, in seconds, a user control should remain in the output cache.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%29> constructor can be applied to a user control. The attribute indicates that the user control can be cached and specifies a 20 second caching duration. This code example is part of a larger example provided for the <xref:System.Web.UI.PartialCachingAttribute> class.  
-  
- [!code-vb[PartialCachingAttribute_1#2](~/add/codesnippet/visualbasic/p-system.web.ui.partialc_3_1.vb)]
- [!code-cs[PartialCachingAttribute_1#2](~/add/codesnippet/csharp/p-system.web.ui.partialc_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -230,16 +147,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the provider that is used to store the output-cached data for the associated control.</summary>
-        <value>The name of the provider.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property declaratively or by using an attribute.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -249,24 +159,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether user control output can be shared with multiple pages.</summary>
-        <value>
-          <see langword="true" /> if user control output can be shared between multiple pages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set this property to `true`, cached user control output can be accessed by multiple Web Forms pages. If you do not set it to `true`, the default behavior is to cache one version of user control output for each page that contains that user control. You can potentially save a significant amount of memory by enabling this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SqlDependency">
@@ -276,23 +177,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a delimited string that identifies one or more database and table name pairs that the cached user control is dependent on.</summary>
-        <value>A delimited string that identifies a set of database and table names that the user control cache entry is dependent on.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SqlDependency string identifies databases and table names according to the name of a SQL Server cache dependency in your configuration (typically added using the `sqlcachedependency` configuration elements). If you use SQL Server 2005, you can set the SqlDependency property to "CommandNotification", which instructs ASP.NET to create row level dependencies for all SQL commands issued within the context of the current ASP.NET page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByControls">
@@ -302,26 +195,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of user control properties that the output cache uses to vary the user control.</summary>
-        <value>The list of user control properties.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached, to specify the caching duration as 20 seconds, and to specify a control named `state` for which the user control output will be varied.  
-  
- [!code-cs[PartialCachingAttribute_2_Resubmit#2](~/add/codesnippet/csharp/p-system.web.ui.partialc_2_1.cs)]
- [!code-vb[PartialCachingAttribute_2_Resubmit#2](~/add/codesnippet/visualbasic/p-system.web.ui.partialc_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByCustom">
@@ -331,31 +213,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of custom strings that the output cache will use to vary the user control.</summary>
-        <value>The list of custom strings.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you specify "browser" for this property, the user control will be varied by browser type and major version number. You can also use this property to extend the values that output cache varies the user control response.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify that the cache entry is dependent on the browser type and major version number.  
-  
- [!code-vb[PartialCachingAttribute_4#2](~/add/codesnippet/visualbasic/p-system.web.ui.partialc_0_1.vb)]
- [!code-cs[PartialCachingAttribute_4#2](~/add/codesnippet/csharp/p-system.web.ui.partialc_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByParams">
@@ -365,26 +231,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of query string or form <see langword="POST" /> parameters that the output cache will use to vary the user control.</summary>
-        <value>The list of query string or form <see langword="POST" /> parameters.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute.%23ctor%28System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor can be applied to a user control. In the example, the constructor is used to indicate that the user control can be cached and to specify the parameter upon which the cache entry is dependent.  
-  
- [!code-cs[PartialCachingAttribute_3#2](~/add/codesnippet/csharp/p-system.web.ui.partialc_1_1.cs)]
- [!code-vb[PartialCachingAttribute_3#2](~/add/codesnippet/visualbasic/p-system.web.ui.partialc_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies values that indicates whether data should be encrypted or decrypted, whether a hash-based message authentication code (HMAC) should be appended or validated, or both.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.Security.MachineKeyProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a hash-based message authentication code (HMAC) should be appended to the data and that the data should be encrypted (for the <see cref="System.Web.Security.Encode%2A" /> method) or that the data should be both decrypted and validated (for the <see cref="System.Web.Security.Decode%2A" /> method).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encryption">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.Security.MachineKeyProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the data should be encrypted (for the <see cref="System.Web.Security.Encode%2A" /> method) or decrypted (for the <see cref="System.Web.Security.Decode%2A" /> method).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Validation">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.Security.MachineKeyProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a hash-based message authentication code (HMAC) should be appended to the data (for the <see cref="System.Web.Security.Encode%2A" /> method) or validated (for the <see cref="System.Web.Security.Decode%2A" /> method).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

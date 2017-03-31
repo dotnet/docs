@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,15 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains security-related properties and is attached to a message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Client authentication results are translated into an instance of <xref:System.ServiceModel.ServiceSecurityContext>, which is attached to the message using a SecurityMessageProperty. This property can be used by higher layers to implement custom authorization logic.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +29,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,16 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clones the current instance of this class.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.IMessageProperty" /> cloned from the current instance of this class.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To access any objects in the <xref:System.ServiceModel.Security.SecurityMessageProperty>, such as <xref:System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext%2A>, <xref:System.ServiceModel.Security.SecurityMessageProperty.TransportToken%2A>, or <xref:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens%2A>), a copy must be created because these properties are undefined after the message is disposed of.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -80,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disposes of the current instance of this class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,23 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection of external authorization policies.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> is called on these authorization policies as part of the process that creates the <xref:System.ServiceModel.ServiceSecurityContext>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOrCreate">
@@ -125,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,9 +108,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" />.</param>
-        <summary>Gets or creates an instance of this class from the specified message.</summary>
-        <returns>An instance of <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />.</returns>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,24 +121,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the incoming message contains at least one supporting security token.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens%2A" /> contains at least one entry; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Supporting tokens provide additional claims beyond those contained in the principal tokens for the binding. Supporting tokens can be scoped at a different scope than the binding.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingSupportingTokens">
@@ -175,23 +139,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection of incoming supporting tokens.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.Collection%601" /> of type <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Supporting tokens provide additional claims beyond those contained in the principal tokens for the binding. Supporting tokens can be scoped at a different scope than the binding.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitiatorToken">
@@ -201,23 +157,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> initiator token for this message.</summary>
-        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> initiator token for this message.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the message pattern requires multiple messages, the Initiator Token is used for the message signature from initiator to the recipient, and for encryption from recipient to initiator.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingSupportingTokens">
@@ -233,8 +181,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of outgoing <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" /> objects.</summary>
-        <value>A collection of outgoing supporting tokens.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,23 +193,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> protection token for this message.</summary>
-        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> protection token for this message.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Protection Tokens are used in symmetric security bindings for signing and encryption.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientToken">
@@ -271,23 +211,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> recipient token for this message.</summary>
-        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> recipient token for this message.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the message pattern requires multiple messages, the Recipient Token is used for encryption from initiator to recipient, and for the message signature from recipient to initiator.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderIdPrefix">
@@ -297,18 +229,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the sender ID prefix for this message.</summary>
-        <value>The sender ID prefix for this message.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The property value is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">No character of the property value is alphabetic, numeric, or equal to "_", ".", or "-".</exception>
       </Docs>
     </Member>
     <Member MemberName="ServiceSecurityContext">
@@ -318,25 +247,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ServiceSecurityContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> for this message.</summary>
-        <value>The <see cref="T:System.ServiceModel.ServiceSecurityContext" /> object for this message.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this class to obtain information about the runtime security context. A security context is created when a client is successfully authenticated. The security information from the client and for the current service instance can be obtained from an instance of this class.  
-  
- A common use of the class is to retrieve the current set of claims for the purpose of authorizing a client when accessing a method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransportToken">
@@ -346,23 +265,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> transport token for this message.</summary>
-        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> transport token for this message.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Transport Token provides security at the transport level. A token used by HTTPS is an example of a Transport Token.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

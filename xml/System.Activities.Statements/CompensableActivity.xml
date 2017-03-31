@@ -19,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An activity that supports compensation of its child activities.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CompensableActivity allows a developer to specify a <xref:System.Activities.Statements.CompensableActivity.Body%2A> activity that defines a long-running task that performs their core business logic. It also allows the developer to optionally specify a compensation and confirmation activity to schedule appropriate business logic in the event of errors or successful completion of the <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Compensation and confirmation of a CompensableActivity is invoked by using the <xref:System.Activities.Statements.CompensationToken> returned by the CompensableActivity. <xref:System.Activities.Statements.CompensationToken> is an opaque, typed object returned as the <xref:System.Activities.WorkflowElement%601.Result%2A> argument after successful completion of a CompensableActivity activity’s <xref:System.Activities.Statements.CompensableActivity.Body%2A>. This <xref:System.Activities.Statements.CompensationToken> is used by the <xref:System.Activities.Statements.Confirm> and <xref:System.Activities.Statements.Compensate> activities to explicitly invoke confirmation and compensation of a CompensableActivity. CompensableActivity can be composed in a nested hierarchical fashion in the workflow. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Compensation Programming Model](http://msdn.microsoft.com/en-us/29e5442c-1df7-401d-a6ca-746e617cbf9f).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.CompensableActivity" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,16 +59,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the activity that is scheduled when the <see cref="T:System.Activities.Statements.CompensableActivity" /> executes.</summary>
-        <value>The activity that is scheduled when the <see cref="T:System.Activities.Statements.CompensableActivity" /> executes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -141,18 +127,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the activity that is scheduled when the activity is canceled.</summary>
-        <value>The activity that is scheduled when the activity is canceled.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CancellationHandler can be used to specify custom cancelation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
-  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanInduceIdle">
@@ -194,18 +171,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the activity that is scheduled when compensation is performed on the <see cref="T:System.Activities.Statements.CompensableActivity" />.</summary>
-        <value>The activity that is scheduled when compensation is performed on the <see cref="T:System.Activities.Statements.CompensableActivity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CompensationHandler can be used to specify custom compensation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
-  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfirmationHandler">
@@ -229,18 +197,9 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the activity that is scheduled when confirmation is performed for this <see cref="T:System.Activities.Statements.CompensableActivity" />.</summary>
-        <value>The activity that is scheduled when confirmation is performed for this <see cref="T:System.Activities.Statements.CompensableActivity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ConfirmationHandler can be used to specify custom confirmation logic for the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of the <xref:System.Activities.Statements.CompensableActivity>.  
-  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -300,8 +259,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="System.WorkflowModel.Variable" /> objects for this <see cref="T:System.Activities.Statements.CompensableActivity" />.</summary>
-        <value>The collection of <see cref="System.WorkflowModel.Variable" /> objects for this <see cref="T:System.Activities.Statements.CompensableActivity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

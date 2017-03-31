@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEventHandler" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,26 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The object that raised the event.</param>
-    <param name="e">Information about the event.</param>
-    <summary>Represents the method implemented by the UI Automation client application to handle an event raised by a UI Automation provider.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use an AutomationEventHandler delegate to specify the method that is called by a client to handle [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] events.  
-  
- The <xref:System.Windows.Automation.AutomationElement> represented by `sender` might not have any cached properties or patterns, depending on whether the application subscribed to this event while a <xref:System.Windows.Automation.CacheRequest> was active.  
-  
-   
-  
-## Examples  
- The following example shows how to subscribe to and handle an event.  
-  
- [!code-vb[UIAClient_snip#101](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#101)]
- [!code-cs[UIAClient_snip#101](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#101)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

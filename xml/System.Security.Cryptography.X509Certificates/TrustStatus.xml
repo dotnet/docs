@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.TrustStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the level of trustworthiness that is assigned to the signature for a manifest.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The identity is known and the signature is valid. A valid Authenticode signature provides an identity.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Trusted">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The signature is valid and was created by an explicitly trusted publisher.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownIdentity">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The identity is not known and the signature is invalid. Because there is no verified signature, an identity cannot be determined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Untrusted">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The signature was created by an explicitly distrusted publisher.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

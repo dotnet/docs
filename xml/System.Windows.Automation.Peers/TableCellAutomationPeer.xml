@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Documents.TableCell" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Documents.TableCell" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>A string that contains "TableCell".</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the localized version of the control type for the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />.</summary>
-        <returns>A string that contains "cell".</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,9 +110,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">A value from the enumeration.</param>
-        <summary>Gets the control pattern for the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />.</summary>
-        <returns>If <paramref name="patternInterface" /> is <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, this method returns the current instance of the <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />; otherwise, this method returns <see langword="null" />.</returns>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,9 +130,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" /> is understood by the end user as interactive or as contributing to the logical structure of the control in the [!INCLUDE[TLA2#tla_gui](~/add/includes/tla2sharptla-gui-md.md)]. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsControlElement%2A" />.</summary>
-        <returns>
-          <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,23 +142,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal number of the column that contains the cell or item.</summary>
-        <value>A zero-based ordinal number that identifies the column containing the cell or item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan">
@@ -176,23 +160,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of columns spanned by a cell or item.</summary>
-        <value>The number of columns spanned.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid">
@@ -202,23 +178,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a UI Automation provider that implements <see cref="T:System.Windows.Automation.GridPattern" /> and represents the container of the cell or item.</summary>
-        <value>A UI Automation provider that implements the <see cref="T:System.Windows.Automation.GridPattern" /> and represents the cell or item container.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.Row">
@@ -228,23 +196,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal number of the row that contains the cell or item.</summary>
-        <value>A zero-based ordinal number that identifies the row containing the cell or item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.RowSpan">
@@ -254,23 +214,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of rows spanned by a cell or item.</summary>
-        <value>The number of rows spanned.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

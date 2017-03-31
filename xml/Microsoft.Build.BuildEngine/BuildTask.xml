@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a [Task](../Topic/Task%20Element%20\(MSBuild\).md) element in a project.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,8 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -36,9 +32,9 @@
         <Parameter Name="itemName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskParameter">The value of the <see langword="TaskParameter" /> attribute of the <see langword="Output" /> element.</param>
-        <param name="itemName">The value of the <see langword="ItemName" /> attribute of the <see langword="Output" /> element.</param>
-        <summary>Adds an [Output](../Topic/Output%20Element%20\(MSBuild\).md) element with the specified <c>TaskParameter</c> and <c>ItemName</c> attributes to the [Task](../Topic/Task%20Element%20\(MSBuild\).md) element.</summary>
+        <param name="taskParameter">To be added.</param>
+        <param name="itemName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,9 +55,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="taskParameter">The value of the <see langword="TaskParameter" /> attribute of the <see langword="Output" /> element.</param>
-        <param name="propertyName">The value of the <see langword="PropertyName" /> attribute of the <see langword="Output" /> element.</param>
-        <summary>Adds an [Output](../Topic/Output%20Element%20\(MSBuild\).md) element with the specified <c>TaskParameter</c> and <c>PropertyName</c> attributes to the [Task](../Topic/Task%20Element%20\(MSBuild\).md) element.</summary>
+        <param name="taskParameter">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,16 +68,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>Condition</c> attribute value of the [Task](../Topic/Task%20Element%20\(MSBuild\).md) element.</summary>
-        <value>The <c>Condition</c> attribute value of the <c>Task</c> element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,16 +86,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>ContinueOnError</c> attribute value of the [Task](../Topic/Task%20Element%20\(MSBuild\).md) element.</summary>
-        <value>The <c>ContinueOnError</c> attribute value of the <c>Task</c> element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,9 +111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Runs the task represented by this <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,18 +130,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array containing the parameter names passed to the task.</summary>
-        <returns>An array containing the parameter names passed to the task.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned array excludes the `Condition` and `ContinueOnError` parameters.  
-  
- If no parameters are passed to the task, this method returns an empty array.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParameterValue">
@@ -166,8 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,9 +151,9 @@
         <Parameter Name="attributeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributeName">The parameter name.</param>
-        <summary>Gets the value of the specified task parameter.</summary>
-        <returns>The value of the specified task parameter.</returns>
+        <param name="attributeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,16 +164,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.ITaskHost</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the host object associated with the task.</summary>
-        <value>The host object associated with the task.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,16 +182,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the task name.</summary>
-        <value>The task name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +210,9 @@
         <Parameter Name="parameterValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The parameter name to set.</param>
-        <param name="parameterValue">The value to assign to <c>parameterName</c>.</param>
-        <summary>Sets the value of the specified task parameter.</summary>
+        <param name="parameterName">To be added.</param>
+        <param name="parameterValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +223,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,11 +234,10 @@
         <Parameter Name="treatParameterValueAsLiteral" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="parameterName">The parameter name to set.</param>
-        <param name="parameterValue">The value to assign to <c>parameterName</c>.</param>
-        <param name="treatParameterValueAsLiteral">
-          <see langword="true" /> to treat <c>parameterValue</c> as a literal value; otherwise, <see langword="false" />.</param>
-        <summary>Sets the value of the specified task parameter.</summary>
+        <param name="parameterName">To be added.</param>
+        <param name="parameterValue">To be added.</param>
+        <param name="treatParameterValueAsLiteral">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,16 +248,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Type" /> of the class that implements the task.</summary>
-        <value>The <see cref="T:System.Type" /> of the class that implements the task.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

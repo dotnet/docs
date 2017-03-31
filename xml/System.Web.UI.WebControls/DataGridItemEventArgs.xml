@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridItemEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,35 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" /> and <see cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" /> events of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is created.  
-  
- The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is bound to a data source.  
-  
- For a list of initial property values for an instance of DataGridItemEventArgs, see the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.%23ctor%2A> constructor.  
-  
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event to display the order in which the items in the <xref:System.Web.UI.WebControls.DataGrid> control are created.  
-  
- [!code-vb[Classic DataGridItemEventArgs Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_68_1.aspx)]
- [!code-cs[Classic DataGridItemEventArgs Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_68_1.aspx)]  
-  
- [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_68_2.aspx)]
- [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_68_2.aspx)]  
-  
- [!code-vb[DataGridItemDataBound2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_68_3.aspx)]
- [!code-cs[DataGridItemDataBound2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_68_3.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,37 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="item" Type="System.Web.UI.WebControls.DataGridItem" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Web.UI.WebControls.DataGridItem" /> that represents an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> class.  
-  
- When an instance of <xref:System.Web.UI.WebControls.DataGridItemEventArgs> is created by a call to this constructor, the following property is initialized to the specified value.  
-  
-|Item|Description|  
-|----------|-----------------|  
-|Item|The `item` parameter.|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> class.  
-  
- [!code-cs[Classic DataGridItemEventArgs.DataGridItemEventArgs Example#1](~/add/codesnippet/csharp/797b0400-f9f1-4f6c-9b4d-_1.cs)]
- [!code-vb[Classic DataGridItemEventArgs.DataGridItemEventArgs Example#1](~/add/codesnippet/visualbasic/797b0400-f9f1-4f6c-9b4d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -90,34 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the referenced item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control when the event is raised.</summary>
-        <value>The referenced item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control when the event is raised.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to programmatically access the item referenced in the <xref:System.Web.UI.WebControls.DataGrid> control when the event is raised.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Item property to display the order in which the items in the <xref:System.Web.UI.WebControls.DataGrid> control are created.  
-  
- [!code-vb[Classic DataGridItemEventArgs Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_317_1.aspx)]
- [!code-cs[Classic DataGridItemEventArgs Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_317_1.aspx)]  
-  
- [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_317_2.aspx)]
- [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_317_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

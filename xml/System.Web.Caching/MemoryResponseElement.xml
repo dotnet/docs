@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents part of an output-cache entry that is stored in memory.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output-cache response in a MemoryResponseElement object is stored in memory as an array of bytes. The array can contain all or part of an output-cache response.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,21 +29,10 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="buffer">An array of bytes that contains a part of an output-cache response.</param>
-        <param name="length">The size of the array in <c>buffer</c>.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.MemoryResponseElement" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of `buffer` must not be `null`, although it can be a zero-length array.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="length" /> is less than zero or greater than the size of <paramref name="buffer" />.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Buffer">
@@ -66,16 +48,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array that contains all or part of an output-cache response.</summary>
-        <value>An array of byte objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of Buffer property must not be `null`, although it can be a zero-length array. If Bufferproperty is `null`, the <xref:System.Web.Caching.MemoryResponseElement> constructor throws an <xref:System.ArgumentNullException>. If the <xref:System.Web.Caching.MemoryResponseElement.Length%2A> property is less than zero or greater than the size of the value of Bufferproperty.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -91,16 +66,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the array that is referenced by the <see cref="System.Web.Caching.MemoryResponseElement.Buffer%2A" /> property.</summary>
-        <value>The size of the array.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.Caching.MemoryResponseElement> object that is created by ASP.NET is a fixed-size memory buffer that is created from a pool of memory buffers. As a result, the contents of a <xref:System.Web.Caching.MemoryResponseElement> object often do not completely fill the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array. Typically only a part of the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array will contain response data. Therefore, providers that serialize the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array directly (instead of serializing the complete type that is being stored in the output cache) must use the Length property to determine how much of the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array must be stored.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

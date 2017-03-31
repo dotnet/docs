@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies additional options when performing a synchronization.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Aborts the synchronization if any server cannot be contacted or if any server is unreachable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CheckServerAlivenessOnly">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Disables all synchronization. The topology is analyzed and unavailable or unreachable servers are identified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CrossSite">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Synchronizes across site boundaries. By default, this method attempts to synchronize only with domain controllers in the same site as the home system. Set this flag to attempt to synchronize with all domain controllers in the enterprise forest. However, the domain controllers can be synchronized only if connected by a synchronous (RPC) transport.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No synchronization options.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PushChangeOutward">
@@ -95,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Pushes changes from the home server out to all partners using transitive replication. This reverses the direction of replication and the order of execution of the replication sets from the usual mode of execution.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipInitialCheck">
@@ -112,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Assumes that all servers are responding. This will speed up the operation of this method, but if some servers are not responding, some transitive replications might be blocked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SyncAdjacentServerOnly">
@@ -129,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Disables transitive replication. Synchronization is performed only with adjacent servers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

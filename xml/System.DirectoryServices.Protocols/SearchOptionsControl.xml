@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchOptionsControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The SearchOptionsControl class is used to pass flags to the server to control search behavior.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The SearchOptionsControl constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="flags" Type="System.DirectoryServices.Protocols.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="flags">The <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration value that specifies the search behavior.</param>
-        <summary>The SearchOptionsControl constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class using the specified search options.</summary>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The GetValue method returns search option for this object.</summary>
-        <returns>The search option associated with this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,17 +74,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SearchOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SearchOption property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration that specifies the search behavior.</summary>
-        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration that specifies the search behavior.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" />.</exception>
       </Docs>
     </Member>
   </Members>

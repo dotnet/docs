@@ -1,0 +1,42 @@
+<Type Name="IEvent&lt;TDelegate,TArgs&gt;" FullName="Microsoft.FSharp.Control.IEvent&lt;TDelegate,TArgs&gt;">
+  <TypeSignature Language="C#" Value="public interface IEvent&lt;TDelegate,TArgs&gt; : IObservable&lt;TArgs&gt;, Microsoft.FSharp.Control.IDelegateEvent&lt;TDelegate&gt; where TDelegate : Delegate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract serializable IEvent`2&lt;(class System.Delegate) TDelegate, TArgs&gt; implements class Microsoft.FSharp.Control.IDelegateEvent`1&lt;!TDelegate&gt;, class System.IObservable`1&lt;!TArgs&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.IEvent`2" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TDelegate">
+      <Constraints>
+        <BaseTypeName>System.Delegate</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TArgs" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.FSharp.Control.IDelegateEvent&lt;TDelegate&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IObservable&lt;TArgs&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Interface</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TDelegate">To be added.</typeparam>
+    <typeparam name="TArgs">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

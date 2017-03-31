@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpModuleCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a way to index and retrieve a collection of <see cref="T:System.Web.IHttpModule" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Web.HttpModuleCollection.AllKeys%2A> property and the <xref:System.Web.HttpModuleCollection.GetKey%2A> and <xref:System.Web.HttpModuleCollection.CopyTo%2A> methods of the HttpModuleCollection class. The example gets the application object for the current request from the current <xref:System.Web.HttpContext> object. It then extracts the HttpModuleCollection object from the application instance and displays the names of the <xref:System.Web.IHttpModule> objects.  
-  
- [!code-cs[HttpModuleCollection1#1](~/add/codesnippet/csharp/t-system.web.httpmodulec_1.aspx)]
- [!code-vb[HttpModuleCollection1#1](~/add/codesnippet/visualbasic/t-system.web.httpmodulec_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllKeys">
@@ -33,26 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string array containing all the keys (module names) in the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-        <value>An array of module names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the AllKeys property and the <xref:System.Web.HttpModuleCollection.GetKey%2A> and <xref:System.Web.HttpModuleCollection.CopyTo%2A> methods of the <xref:System.Web.HttpModuleCollection> class. The example gets the application object for the current request from the current <xref:System.Web.HttpContext> object. It then extracts the <xref:System.Web.HttpModuleCollection> object from the application instance and displays the names of the <xref:System.Web.IHttpModule> objects.  
-  
- [!code-cs[HttpModuleCollection1#1](~/add/codesnippet/csharp/p-system.web.httpmodulec_1.aspx)]
- [!code-vb[HttpModuleCollection1#1](~/add/codesnippet/visualbasic/p-system.web.httpmodulec_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -62,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,20 +50,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">The destination <see cref="T:System.Array" />.</param>
-        <param name="index">The index of the destination <see cref="T:System.Array" /> where copying starts.</param>
-        <summary>Copies members of the module collection to an <see cref="T:System.Array" />, beginning at the specified index of the array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Web.HttpModuleCollection.AllKeys%2A> property and the <xref:System.Web.HttpModuleCollection.GetKey%2A> and CopyTo methods of the <xref:System.Web.HttpModuleCollection> class. The example gets the application object for the current request from the current <xref:System.Web.HttpContext> object. It then extracts the <xref:System.Web.HttpModuleCollection> object from the application instance and displays the names of the <xref:System.Web.IHttpModule> objects.  
-  
- [!code-cs[HttpModuleCollection1#1](~/add/codesnippet/csharp/m-system.web.httpmodulec_1_1.aspx)]
- [!code-vb[HttpModuleCollection1#1](~/add/codesnippet/visualbasic/m-system.web.httpmodulec_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -96,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,9 +72,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.IHttpModule" /> object to return from the collection.</param>
-        <summary>Returns the <see cref="T:System.Web.IHttpModule" /> object with the specified index from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-        <returns>The <see cref="T:System.Web.IHttpModule" /> member specified by the <paramref name="index" /> parameter.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,9 +94,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The key of the item to be retrieved.</param>
-        <summary>Returns the <see cref="T:System.Web.IHttpModule" /> object with the specified name from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-        <returns>The <see cref="T:System.Web.IHttpModule" /> member specified by the <paramref name="name" /> parameter.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +107,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,20 +116,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">Index of the key to retrieve from the collection.</param>
-        <summary>Returns the key (name) of the <see cref="T:System.Web.IHttpModule" /> object at the specified numerical index.</summary>
-        <returns>The name of the <see cref="T:System.Web.IHttpModule" /> member specified by the <paramref name="index" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Web.HttpModuleCollection.AllKeys%2A> property and the GetKey and <xref:System.Web.HttpModuleCollection.CopyTo%2A> methods of the <xref:System.Web.HttpModuleCollection> class. The example gets the application object for the current request from the current <xref:System.Web.HttpContext> object. It then extracts the <xref:System.Web.HttpModuleCollection> object from the application instance and displays the names of the <xref:System.Web.IHttpModule> objects.  
-  
- [!code-cs[HttpModuleCollection1#1](~/add/codesnippet/csharp/m-system.web.httpmodulec_0_1.aspx)]
- [!code-vb[HttpModuleCollection1#1](~/add/codesnippet/visualbasic/m-system.web.httpmodulec_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -175,7 +129,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,9 +138,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.IHttpModule" /> object to retrieve from the collection.</param>
-        <summary>Gets the <see cref="T:System.Web.IHttpModule" /> object with the specified numerical index from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-        <value>The <see cref="T:System.Web.IHttpModule" /> object module specified by the <paramref name="index" /> parameter.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +151,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,9 +160,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The key of the item to be retrieved.</param>
-        <summary>Gets the <see cref="T:System.Web.IHttpModule" /> object with the specified name from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-        <value>The <see cref="T:System.Web.IHttpModule" /> object module specified by the <paramref name="name" /> parameter.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

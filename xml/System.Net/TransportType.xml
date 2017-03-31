@@ -4,22 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Net.TransportType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines transport types for the <see cref="T:System.Net.SocketPermission" /> and <see cref="T:System.Net.Sockets.Socket" /> classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TransportType enumeration defines transport types for the <xref:System.Net.SocketPermission> and <xref:System.Net.Sockets.Socket> classes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -29,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All transport types.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connectionless">
@@ -46,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The transport type is connectionless, such as UDP. Specifying this value has the same effect as specifying Udp.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectionOriented">
@@ -63,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The transport is connection oriented, such as TCP. Specifying this value has the same effect as specifying Tcp.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tcp">
@@ -80,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TCP transport.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Udp">
@@ -97,14 +90,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>UDP transport.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

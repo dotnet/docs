@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.EntitySetRights" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An enumeration used to define access rights to data that is deployed by [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example sets read-only access to all data deployed by the `AccountingService`.  
-  
-```  
-namespace AccountingServiceWebApp  
-{  
-    public class AccountingService :  
-                DataService<DataModel>  
-    {  
-        config.SetResourceContainerAccessRule("*",   
-                                ResourceContainerRights.AllRead);  
-  
-    }  
-}  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -48,14 +26,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to create, read, update, and delete data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllRead">
@@ -65,14 +42,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to read data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllWrite">
@@ -82,14 +58,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to write data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -99,14 +74,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Denies all rights to access data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadMultiple">
@@ -116,14 +90,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to read sets of data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadSingle">
@@ -133,14 +106,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to read single data items.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteAppend">
@@ -150,14 +122,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to create new data items in data sets.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteDelete">
@@ -167,14 +138,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to delete data items from data sets.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteMerge">
@@ -184,14 +154,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to merge data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteReplace">
@@ -201,14 +170,13 @@ namespace AccountingServiceWebApp
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authorization to replace data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Management.CompletedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,19 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The instance of the object for which to invoke this method.</param>
-    <param name="e">The <see cref="T:System.Management.CompletedEventArgs" /> that specifies the reason the event was invoked.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Management.ManagementOperationObserver.Completed" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example calls a method asynchronously. The **Win32_Process.Create** method is called to create a new process for Calc.exe.  
-  
- [!code-cs[wminet_CompletedEventHandler#1](~/add/codesnippet/csharp/t-system.management.comp_0_1.cs)]
- [!code-vb[wminet_CompletedEventHandler#1](~/add/codesnippet/visualbasic/t-system.management.comp_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

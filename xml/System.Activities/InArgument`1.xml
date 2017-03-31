@@ -25,26 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">The data type of the InArgument(T).</typeparam>
-    <summary>A binding terminal that represents the flow of data into an activity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In this example, a workflow is created that consists of a single <xref:System.Activities.Statements.WriteLine> activity. The <xref:System.Activities.Statements.WriteLine> activity has an InArgument(T) named <xref:System.Activities.Statements.WriteLine.Text%2A>. The host application creates an instance of the workflow and passes a string, which maps to the <xref:System.Activities.Statements.WriteLine.Text%2A> argument of the <xref:System.Activities.Statements.WriteLine> and is used by the <xref:System.Activities.Statements.WriteLine> activity.  
-  
-```c#  
-Activity wf = new WriteLine();  
-  
-Dictionary<string, object> wfParams = new Dictionary<string, object>();  
-wfParams.Add("Text", "Hello World!");  
-  
-WorkflowInvoker.Invoke(wf, wfParams);  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,7 +41,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InArgument%601" /> class using default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +58,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="expression" Type="System.Activities.Activity&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InArgument%601" /> class using the specified <see cref="System.Activities.Activity%601" />.</summary>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +76,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="delegateArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="delegateArgument">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InArgument%601" /> class using the specified <see cref="T:System.Activities.DelegateArgument" />.</summary>
+        <param name="delegateArgument">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +94,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">The data that is passed through this argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InArgument%601" /> class using the specified <see cref="T:System.Activities.Variable" />.</summary>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +112,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InArgument%601" /> class using the specified expression.</summary>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,16 +130,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="constValue" Type="T" />
       </Parameters>
       <Docs>
-        <param name="constValue">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InArgument%601" /> class using the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `constValue` parameter is shared across all workflow instances using this workflow definition. For example, if a `List<string>` was provided as a `constValue` and three instances were created then all three instances would be accessing the same `List<string>`.  
-  
- ]]></format>
-        </remarks>
+        <param name="constValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -177,8 +153,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <ReturnType>System.Activities.Activity&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="System.Activities.Activity%601" /> that represents the value of this <see cref="System.Activities.InArgument%601" />.</summary>
-        <value>An activity that represents the value of the argument.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +174,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="delegateArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="delegateArgument">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.InArgument%601" /> using the specified <see cref="T:System.Activities.DelegateArgument" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="delegateArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,9 +196,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="expression" Type="System.Activities.Activity&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.InArgument%601" /> using the specified <see cref="System.Activities.Activity%601" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +218,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="constValue" Type="T" />
       </Parameters>
       <Docs>
-        <param name="constValue">The value of the argument,</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.InArgument%601" /> using the specified value.</summary>
-        <returns>The new argument.</returns>
+        <param name="constValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,9 +240,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.InArgument%601" /> using the specified <see cref="T:System.Activities.Variable" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,9 +262,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <summary>Gets the value of the <see cref="System.Activities.InArgument%601" /> using the specified activity context.</summary>
-        <returns>The value of the argument.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,9 +373,9 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <param name="value">The new value.</param>
-        <summary>Sets the value of the <see cref="System.Activities.InArgument%601" /> using the specified value.</summary>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PageRangeSelection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether all the pages or only a limited range will be processed by an operation, usually printing.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is primarily used as the value of the <xref:System.Windows.Controls.PrintDialog.PageRangeSelection%2A> property of the [PrintDialog](../Topic/PrintDialog.md).  
-  
-   
-  
-## Examples  
- The following example shows how to use the enumeration to set the <xref:System.Windows.Controls.PrintDialog.PageRangeSelection%2A> property by using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[PrintDialog#2](~/add/codesnippet/xaml/PrintDialog_Sample/Window1.xaml#2)]  
-  
- ...  
-  
- [!code-cs[PrintDialog#1](~/add/codesnippet/csharp/PrintDialog_Sample/Window1.xaml.cs#1)]
- [!code-vb[PrintDialog#1](~/add/codesnippet/visualbasic/printdialog_sample/window1.xaml.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllPages">
@@ -41,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All pages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrentPage">
@@ -64,7 +43,7 @@
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectedPages">
@@ -80,7 +59,7 @@
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The selected pages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserPages">
@@ -90,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A user-specified range of pages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

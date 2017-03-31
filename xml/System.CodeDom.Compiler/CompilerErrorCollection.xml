@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerErrorCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.CodeDom.Compiler.CompilerError" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CompilerErrorCollection class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.Compiler.CompilerError> objects.  
-  
-> [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CompilerErrorCollection class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CompilerErrorCollectionExample#1](~/add/codesnippet/cpp/t-system.codedom.compile_5_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#1](~/add/codesnippet/csharp/t-system.codedom.compile_5_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#1](~/add/codesnippet/visualbasic/t-system.codedom.compile_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the CompilerErrorCollection class. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,24 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to create an empty instance of the <xref:System.CodeDom.Compiler.CompilerErrorCollection> class.  
-  
- [!code-cpp[CompilerErrorCollectionExample#2](~/add/codesnippet/cpp/m-system.codedom.compile_6_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#2](~/add/codesnippet/csharp/m-system.codedom.compile_6_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#2](~/add/codesnippet/visualbasic/m-system.codedom.compile_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,18 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.Compiler.CompilerError" /> objects to initialize the collection with.</param>
-        <summary>Initializes a new instance of <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> that contains the specified array of <see cref="T:System.CodeDom.Compiler.CompilerError" /> objects.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,18 +55,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerErrorCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> object with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> class that contains the contents of the specified <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -112,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,21 +82,10 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.Compiler.CompilerError" /> object to add.</param>
-        <summary>Adds the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> object to the error collection.</summary>
-        <returns>The index at which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Add method to add a <xref:System.CodeDom.Compiler.CompilerError> object to a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#3](~/add/codesnippet/cpp/be92296f-3b21-426f-9f56-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#3](~/add/codesnippet/csharp/be92296f-3b21-426f-9f56-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#3](~/add/codesnippet/visualbasic/be92296f-3b21-426f-9f56-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -146,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,22 +104,9 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.CodeDom.Compiler.CompilerError" /> that contains the objects to add to the collection.</param>
-        <summary>Copies the elements of an array to the end of the error collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add an array of <xref:System.CodeDom.Compiler.CompilerError> objects to a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#4](~/add/codesnippet/cpp/7efebf17-52f6-4c1c-b0b9-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#4](~/add/codesnippet/csharp/7efebf17-52f6-4c1c-b0b9-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#4](~/add/codesnippet/visualbasic/7efebf17-52f6-4c1c-b0b9-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -181,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,22 +125,9 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerErrorCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> object that contains the objects to add to the collection.</param>
-        <summary>Adds the contents of the specified compiler error collection to the end of the error collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add <xref:System.CodeDom.Compiler.CompilerError> objects from one <xref:System.CodeDom.Compiler.CompilerErrorCollection> to another <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#4](~/add/codesnippet/cpp/256e69b1-b36e-40ce-a42d-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#4](~/add/codesnippet/csharp/256e69b1-b36e-40ce-a42d-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#4](~/add/codesnippet/visualbasic/256e69b1-b36e-40ce-a42d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -216,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,22 +146,10 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.Compiler.CompilerError" /> to locate.</param>
-        <summary>Gets a value that indicates whether the collection contains the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.CodeDom.Compiler.CompilerError" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the Contains method to locate a specific <xref:System.CodeDom.Compiler.CompilerError> object and determine the index value at which it was found.  
-  
- [!code-cpp[CompilerErrorCollectionExample#5](~/add/codesnippet/cpp/bb07697f-7b01-4f44-8d64-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#5](~/add/codesnippet/csharp/bb07697f-7b01-4f44-8d64-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#5](~/add/codesnippet/visualbasic/bb07697f-7b01-4f44-8d64-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -251,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,28 +169,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />.</param>
-        <param name="index">The index in the array at which to start copying.</param>
-        <summary>Copies the collection values to a one-dimensional <see cref="T:System.Array" /> instance at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the CopyTo method to copy the contents of a <xref:System.CodeDom.Compiler.CompilerErrorCollection> to an array, starting at the specified index value.  
-  
- [!code-cpp[CompilerErrorCollectionExample#6](~/add/codesnippet/cpp/02c7937d-bd68-46cc-bb92-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#6](~/add/codesnippet/csharp/02c7937d-bd68-46cc-bb92-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#6](~/add/codesnippet/visualbasic/02c7937d-bd68-46cc-bb92-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The array indicated by the <paramref name="array" /> parameter is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> is greater than the available space between the index value of the <paramref name="arrayIndex" /> parameter in the array indicated by the <paramref name="array" /> parameter and the end of the array indicated by the <paramref name="array" /> parameter.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the lowbound of the array indicated by the <paramref name="array" /> parameter.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasErrors">
@@ -293,16 +182,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection contains errors.</summary>
-        <value>
-          <see langword="true" /> if the collection contains errors; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,16 +200,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection contains warnings.</summary>
-        <value>
-          <see langword="true" /> if the collection contains warnings; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,21 +227,10 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.Compiler.CompilerError" /> to locate.</param>
-        <summary>Gets the index of the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> object in the collection, if it exists in the collection.</summary>
-        <returns>The index of the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> in the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example searches for a specific <xref:System.CodeDom.Compiler.CompilerError> object and uses the IndexOf method to determine the index value at which it was found.  
-  
- [!code-cpp[CompilerErrorCollectionExample#5](~/add/codesnippet/cpp/92818b8c-a27d-4171-ace4-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#5](~/add/codesnippet/csharp/92818b8c-a27d-4171-ace4-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#5](~/add/codesnippet/visualbasic/92818b8c-a27d-4171-ace4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -367,7 +240,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,21 +250,10 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the compiler error should be inserted.</param>
-        <param name="value">The <see cref="T:System.CodeDom.Compiler.CompilerError" /> to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.CodeDom.Compiler.CompilerError" /> into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Insert method to insert a <xref:System.CodeDom.Compiler.CompilerError> object into a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#8](~/add/codesnippet/cpp/3b04abae-b4bc-44f0-965a-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#8](~/add/codesnippet/csharp/3b04abae-b4bc-44f0-965a-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#8](~/add/codesnippet/visualbasic/3b04abae-b4bc-44f0-965a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -402,7 +263,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,11 +272,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the entry to locate in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.CodeDom.Compiler.CompilerError" /> at the specified index.</summary>
-        <value>A <see cref="T:System.CodeDom.Compiler.CompilerError" /> at each valid index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The index value indicated by the <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -426,7 +285,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,21 +294,9 @@
         <Parameter Name="value" Type="System.CodeDom.Compiler.CompilerError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.Compiler.CompilerError" /> to remove from the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />.</param>
-        <summary>Removes a specific <see cref="T:System.CodeDom.Compiler.CompilerError" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to remove a <xref:System.CodeDom.Compiler.CompilerError> item from a <xref:System.CodeDom.Compiler.CompilerErrorCollection>.  
-  
- [!code-cpp[CompilerErrorCollectionExample#9](~/add/codesnippet/cpp/f4d37280-8bb9-4a0c-bdd9-_1.cpp)]
- [!code-cs[CompilerErrorCollectionExample#9](~/add/codesnippet/csharp/f4d37280-8bb9-4a0c-bdd9-_1.cs)]
- [!code-vb[CompilerErrorCollectionExample#9](~/add/codesnippet/visualbasic/f4d37280-8bb9-4a0c-bdd9-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

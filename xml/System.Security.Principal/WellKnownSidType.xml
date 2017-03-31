@@ -3,8 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WellKnownSidType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WellKnownSidType" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a set of commonly used security identifiers (SIDs).</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +30,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountAdministratorSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account administrators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountCertAdminsSid">
@@ -43,15 +51,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountCertAdminsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the certificate administrators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountComputersSid">
@@ -60,15 +72,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountComputersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account computer group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountControllersSid">
@@ -77,15 +93,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountControllersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account controller group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountDomainAdminsSid">
@@ -94,15 +114,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountDomainAdminsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account domain administrator group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountDomainGuestsSid">
@@ -111,15 +135,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountDomainGuestsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account domain guests group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountDomainUsersSid">
@@ -128,15 +156,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountDomainUsersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account domain users group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountEnterpriseAdminsSid">
@@ -145,15 +177,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountEnterpriseAdminsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the enterprise administrators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountGuestSid">
@@ -162,15 +198,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountGuestSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account guest group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountKrbtgtSid">
@@ -179,15 +219,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountKrbtgtSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account Kerberos target group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountPolicyAdminsSid">
@@ -196,15 +240,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountPolicyAdminsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the policy administrators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountRasAndIasServersSid">
@@ -213,15 +261,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountRasAndIasServersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the RAS and IAS server account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AccountSchemaAdminsSid">
@@ -230,15 +282,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AccountSchemaAdminsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the schema administrators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AnonymousSid">
@@ -247,15 +303,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AnonymousSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for the anonymous account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AuthenticatedUserSid">
@@ -264,15 +324,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.AuthenticatedUserSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for an authenticated user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BatchSid">
@@ -281,15 +345,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BatchSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for a batch process. This SID is added to the process of a token when it logs on as a batch job.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinAccountOperatorsSid">
@@ -298,15 +366,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinAccountOperatorsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the account operators account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinAdministratorsSid">
@@ -315,15 +387,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinAdministratorsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the administrator account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinAuthorizationAccessSid">
@@ -332,15 +408,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinAuthorizationAccessSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the Windows Authorization Access group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinBackupOperatorsSid">
@@ -349,15 +429,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinBackupOperatorsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the backup operators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinDomainSid">
@@ -366,15 +450,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinDomainSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the domain account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinGuestsSid">
@@ -383,15 +471,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinGuestsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the guest account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinIncomingForestTrustBuildersSid">
@@ -400,15 +492,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinIncomingForestTrustBuildersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that allows a user to create incoming forest trusts. It is added to the token of users who are a member of the Incoming Forest Trust Builders built-in group in the root domain of the forest.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinNetworkConfigurationOperatorsSid">
@@ -417,15 +513,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinNetworkConfigurationOperatorsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the network operators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinPerformanceLoggingUsersSid">
@@ -434,15 +534,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinPerformanceLoggingUsersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the group of users that have remote access to monitor the computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinPerformanceMonitoringUsersSid">
@@ -451,15 +555,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinPerformanceMonitoringUsersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the group of users that have remote access to schedule logging of performance counters on this computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinPowerUsersSid">
@@ -468,15 +576,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinPowerUsersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the power users group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinPreWindows2000CompatibleAccessSid">
@@ -485,15 +597,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinPreWindows2000CompatibleAccessSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches pre-[!INCLUDE[Win2kFamily](~/add/includes/win2kfamily-md.md)] compatible accounts.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinPrintOperatorsSid">
@@ -502,15 +618,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinPrintOperatorsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the print operators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinRemoteDesktopUsersSid">
@@ -519,15 +639,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinRemoteDesktopUsersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches remote desktop users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinReplicatorSid">
@@ -536,15 +660,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinReplicatorSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the replicator account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinSystemOperatorsSid">
@@ -553,15 +681,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinSystemOperatorsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the system operators group.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuiltinUsersSid">
@@ -570,15 +702,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.BuiltinUsersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches built-in user accounts.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreatorGroupServerSid">
@@ -587,15 +723,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.CreatorGroupServerSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a creator group server SID.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreatorGroupSid">
@@ -604,15 +744,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.CreatorGroupSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the creator group of an object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreatorOwnerServerSid">
@@ -621,15 +765,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.CreatorOwnerServerSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a creator owner server SID.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreatorOwnerSid">
@@ -638,15 +786,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.CreatorOwnerSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the owner or creator of an object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DialupSid">
@@ -655,15 +807,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.DialupSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for a dial-up account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DigestAuthenticationSid">
@@ -672,15 +828,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.DigestAuthenticationSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID present when the Microsoft Digest authentication package authenticated the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnterpriseControllersSid">
@@ -689,15 +849,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.EnterpriseControllersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for an enterprise controller.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InteractiveSid">
@@ -706,15 +870,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.InteractiveSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for an interactive account. This SID is added to the process of a token when it logs on interactively.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalServiceSid">
@@ -723,15 +891,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.LocalServiceSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches a local service.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalSid">
@@ -740,15 +912,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.LocalSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a local SID.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalSystemSid">
@@ -757,15 +933,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.LocalSystemSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches the local system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogonIdsSid">
@@ -774,15 +954,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.LogonIdsSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches logon IDs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxDefined">
@@ -791,15 +975,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.MaxDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the maximum defined SID in the WellKnownSidType enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetworkServiceSid">
@@ -808,15 +996,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.NetworkServiceSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches a network service.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetworkSid">
@@ -825,15 +1017,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.NetworkSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for a network account. This SID is added to the process of a token when it logs on across a network.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NTAuthoritySid">
@@ -842,15 +1038,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.NTAuthoritySid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for the Windows NT authority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NtlmAuthenticationSid">
@@ -859,15 +1059,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.NtlmAuthenticationSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID present when the Microsoft NTLM authentication package authenticated the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NullSid">
@@ -876,15 +1080,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.NullSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a null SID.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherOrganizationSid">
@@ -893,15 +1101,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.OtherOrganizationSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID present when the user authenticated across a forest with the selective authentication option enabled. If this SID is present, then ThisOrganizationSid cannot be present.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxySid">
@@ -910,15 +1122,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.ProxySid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a proxy SID.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteLogonIdSid">
@@ -927,15 +1143,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.RemoteLogonIdSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches remote logons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictedCodeSid">
@@ -944,15 +1164,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.RestrictedCodeSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for restricted code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SChannelAuthenticationSid">
@@ -961,15 +1185,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.SChannelAuthenticationSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID present when the Secure Channel (SSL/TLS) authentication package authenticated the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelfSid">
@@ -978,15 +1206,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.SelfSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for self.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceSid">
@@ -995,15 +1227,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.ServiceSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID for a service. This SID is added to the process of a token when it logs on as a service.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TerminalServerSid">
@@ -1012,15 +1248,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.TerminalServerSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches a terminal server account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThisOrganizationSid">
@@ -1029,15 +1269,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.ThisOrganizationSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID present when the user authenticated from within the forest or across a trust that does not have the selective authentication option enabled. If this SID is present, then OtherOrganizationSid cannot be present.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WinBuiltinTerminalServerLicenseServersSid">
@@ -1046,15 +1290,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.WinBuiltinTerminalServerLicenseServersSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID is present in a server that can issue Terminal Server licenses.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WorldSid">
@@ -1063,15 +1311,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WellKnownSidType.WorldSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WellKnownSidType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a SID that matches everyone.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

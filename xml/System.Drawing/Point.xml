@@ -1,45 +1,26 @@
 <Type Name="Point" FullName="System.Drawing.Point">
   <TypeSignature Language="C#" Value="public struct Point" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Point extends System.ValueType" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Point extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Point" />
   <AssemblyInfo>
-    <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.PointConverter))</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Represents an ordered pair of integer x- and y-coordinates that defines a point in a two-dimensional plane.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To convert a Point to a <xref:System.Drawing.PointF>, use <xref:System.Drawing.Point.op_Implicit%2A>.  
-  
-   
-  
-## Examples  
- The following code example creates points and sizes using several of the overloaded operators defined for these types. It also demonstrates how to use the <xref:System.Drawing.SystemPens> class.  
-  
- This example is designed to be used with Windows Forms. Create a form that contains a <xref:System.Windows.Forms.Button> named `subtractButton`. Paste the code into the form and call the `CreatePointsAndSizes` method from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.PointsAndSizes#1](~/add/codesnippet/csharp/t-system.drawing.point_1.cs)]
- [!code-cpp[System.Drawing.PointsAndSizes#1](~/add/codesnippet/cpp/t-system.drawing.point_1.cpp)]
- [!code-vb[System.Drawing.PointsAndSizes#1](~/add/codesnippet/visualbasic/t-system.drawing.point_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,28 +29,24 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.#ctor(System.Drawing.Size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the coordinates for the new <see cref="T:System.Drawing.Point" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Point" /> class from a <see cref="T:System.Drawing.Size" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.op_Equality%2A> operator and how to construct a <xref:System.Drawing.Point> from a <xref:System.Drawing.Size> or two integers. It also demonstrates how to use the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> properties. This example is designed to be used with Windows Forms. Paste the code into a form that contains a button named `Button1`, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.Misc2#3](~/add/codesnippet/csharp/m-system.drawing.point.s_2_1.cs)]
- [!code-vb[System.Drawing.Misc2#3](~/add/codesnippet/visualbasic/m-system.drawing.point.s_2_1.vb)]
- [!code-cpp[System.Drawing.Misc2#3](~/add/codesnippet/cpp/m-system.drawing.point.s_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,33 +55,24 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dw" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dw">A 32-bit integer that specifies the coordinates for the new <see cref="T:System.Drawing.Point" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Point" /> class using coordinates specified by an integer value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The low-order 16 bits of the `dw` parameter specify the horizontal x-coordinate and the higher 16 bits specify the vertical y-coordinate for the new <xref:System.Drawing.Point>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Point and <xref:System.Drawing.Size.%23ctor%2A?displayProperty=fullName> constructors and the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> enumeration. To run this example, paste this code into a Windows Form that contains a label named `Label1`, and call the `IntializeLabel1` method in the form's constructor.  
-  
- [!code-cs[System.Drawing.PointsAndSizes#7](~/add/codesnippet/csharp/m-system.drawing.point.s_0_1.cs)]
- [!code-cpp[System.Drawing.PointsAndSizes#7](~/add/codesnippet/cpp/m-system.drawing.point.s_0_1.cpp)]
- [!code-vb[System.Drawing.PointsAndSizes#7](~/add/codesnippet/visualbasic/m-system.drawing.point.s_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="dw">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,30 +81,26 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.#ctor(System.Int32,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="x" Type="System.Int32" />
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">The horizontal position of the point.</param>
-        <param name="y">The vertical position of the point.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Point" /> class with the specified coordinates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.op_Equality%2A> operator and how to construct a <xref:System.Drawing.Point> from a <xref:System.Drawing.Size> or two integers. It also demonstrates how to use the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> properties. This example is designed to be used with Windows Forms. Paste the code into a form that contains a button named `Button1`, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.Misc2#3](~/add/codesnippet/csharp/m-system.drawing.point.s_1_1.cs)]
- [!code-vb[System.Drawing.Misc2#3](~/add/codesnippet/visualbasic/m-system.drawing.point.s_1_1.vb)]
- [!code-cpp[System.Drawing.Misc2#3](~/add/codesnippet/cpp/m-system.drawing.point.s_1_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -145,9 +109,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Add(System.Drawing.Point,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -157,26 +128,11 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">The <see cref="T:System.Drawing.Point" /> to add.</param>
-        <param name="sz">The <see cref="T:System.Drawing.Size" /> to add</param>
-        <summary>Adds the specified <see cref="T:System.Drawing.Size" /> to the specified <see cref="T:System.Drawing.Point" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Point" /> that is the result of the addition operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add adds the <xref:System.Drawing.Size.Width%2A> and <xref:System.Drawing.Size.Height%2A> of the specified <xref:System.Drawing.Size> to the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> values of the specified point.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Add method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `AddPoint` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-vb[System.Drawing.MiscWhidbeySnippets#9](~/add/codesnippet/visualbasic/m-system.drawing.point.a_1.vb)]
- [!code-cs[System.Drawing.MiscWhidbeySnippets#9](~/add/codesnippet/csharp/m-system.drawing.point.a_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ceiling">
@@ -185,9 +141,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Ceiling(System.Drawing.PointF)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -196,9 +159,9 @@
         <Parameter Name="value" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Drawing.PointF" /> to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Drawing.PointF" /> to a <see cref="T:System.Drawing.Point" /> by rounding the values of the <see cref="T:System.Drawing.PointF" /> to the next higher integer values.</summary>
-        <returns>The <see cref="T:System.Drawing.Point" /> this method converts to.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,15 +171,22 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Point.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="T:System.Drawing.Point" /> that has <see cref="System.Drawing.Point.X%2A" /> and <see cref="System.Drawing.Point.Y%2A" /> values set to zero.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +196,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -237,10 +214,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to test.</param>
-        <summary>Specifies whether this <see cref="T:System.Drawing.Point" /> contains the same coordinates as the specified <see cref="T:System.Object" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Drawing.Point" /> and has the same coordinates as this <see cref="T:System.Drawing.Point" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,25 +226,25 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash code for this <see cref="T:System.Drawing.Point" />.</summary>
-        <returns>An integer value that specifies a hash value for this <see cref="T:System.Drawing.Point" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should avoid depending on GetHashCode for unique values, as two <xref:System.Drawing.Point> objects with the same values for their <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> properties may return the same hash code. This behavior could change in a future release.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -277,22 +253,23 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Point.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this <see cref="T:System.Drawing.Point" /> is empty.</summary>
-        <value>
-          <see langword="true" /> if both <see cref="System.Drawing.Point.X%2A" /> and <see cref="System.Drawing.Point.Y%2A" /> are 0; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,9 +279,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Offset(System.Drawing.Point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -313,24 +297,9 @@
         <Parameter Name="p" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="p">The <see cref="T:System.Drawing.Point" /> used offset this <see cref="T:System.Drawing.Point" />.</param>
-        <summary>Translates this <see cref="T:System.Drawing.Point" /> by the specified <see cref="T:System.Drawing.Point" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method adjusts the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> values of this <xref:System.Drawing.Point> to the sum of the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> values of this <xref:System.Drawing.Point> and `p`.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Offset method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `OffsetPoint` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-vb[System.Drawing.MiscWhidbeySnippets#10](~/add/codesnippet/visualbasic/m-system.drawing.point.o_1_1.vb)]
- [!code-cs[System.Drawing.MiscWhidbeySnippets#10](~/add/codesnippet/csharp/m-system.drawing.point.o_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="p">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -339,9 +308,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Offset(System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -351,9 +327,9 @@
         <Parameter Name="dy" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dx">The amount to offset the x-coordinate.</param>
-        <param name="dy">The amount to offset the y-coordinate.</param>
-        <summary>Translates this <see cref="T:System.Drawing.Point" /> by the specified amount.</summary>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,9 +339,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.op_Addition(System.Drawing.Point,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -375,24 +358,11 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">The <see cref="T:System.Drawing.Point" /> to translate.</param>
-        <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the pair of numbers to add to the coordinates of <c>pt</c>.</param>
-        <summary>Translates a <see cref="T:System.Drawing.Point" /> by a given <see cref="T:System.Drawing.Size" />.</summary>
-        <returns>The translated <see cref="T:System.Drawing.Point" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates points and sizes using several of the overloaded operators defined for these types. It also demonstrates how to use the <xref:System.Drawing.SystemPens> class.  
-  
- This example is designed to be used with Windows Forms. Create a form that contains a <xref:System.Windows.Forms.Button> named `subtractButton`. Paste the code into the form and call the `CreatePointsAndSizes` method from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.PointsAndSizes#1](~/add/codesnippet/csharp/m-system.drawing.point.o_2_1.cs)]
- [!code-cpp[System.Drawing.PointsAndSizes#1](~/add/codesnippet/cpp/m-system.drawing.point.o_2_1.cpp)]
- [!code-vb[System.Drawing.PointsAndSizes#1](~/add/codesnippet/visualbasic/m-system.drawing.point.o_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -401,9 +371,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.op_Equality(System.Drawing.Point,System.Drawing.Point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -413,23 +390,11 @@
         <Parameter Name="right" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="left">A <see cref="T:System.Drawing.Point" /> to compare.</param>
-        <param name="right">A <see cref="T:System.Drawing.Point" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Drawing.Point" /> objects. The result specifies whether the values of the <see cref="System.Drawing.Point.X%2A" /> and <see cref="System.Drawing.Point.Y%2A" /> properties of the two <see cref="T:System.Drawing.Point" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Drawing.Point.X%2A" /> and <see cref="System.Drawing.Point.Y%2A" /> values of <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Equality operator and how to construct a <xref:System.Drawing.Point> from a <xref:System.Drawing.Size> or two integers. It also demonstrates how to use the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> properties. This example is designed to be used with Windows Forms. Paste the code into a form that contains a button named `Button1`, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.Misc2#3](~/add/codesnippet/csharp/m-system.drawing.point.o_0_1.cs)]
- [!code-vb[System.Drawing.Misc2#3](~/add/codesnippet/visualbasic/m-system.drawing.point.o_0_1.vb)]
- [!code-cpp[System.Drawing.Misc2#3](~/add/codesnippet/cpp/m-system.drawing.point.o_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -438,9 +403,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.op_Explicit(System.Drawing.Point)~System.Drawing.Size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -461,9 +433,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.op_Implicit(System.Drawing.Point)~System.Drawing.PointF" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.PointF</ReturnType>
@@ -484,9 +463,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.op_Inequality(System.Drawing.Point,System.Drawing.Point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -496,11 +482,10 @@
         <Parameter Name="right" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="left">A <see cref="T:System.Drawing.Point" /> to compare.</param>
-        <param name="right">A <see cref="T:System.Drawing.Point" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Drawing.Point" /> objects. The result specifies whether the values of the <see cref="System.Drawing.Point.X%2A" /> or <see cref="System.Drawing.Point.Y%2A" /> properties of the two <see cref="T:System.Drawing.Point" /> objects are unequal.</summary>
-        <returns>
-          <see langword="true" /> if the values of either the <see cref="System.Drawing.Point.X%2A" /> properties or the <see cref="System.Drawing.Point.Y%2A" /> properties of <paramref name="left" /> and <paramref name="right" /> differ; otherwise, <see langword="false" />.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,9 +495,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.op_Subtraction(System.Drawing.Point,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -522,22 +514,11 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">The <see cref="T:System.Drawing.Point" /> to translate.</param>
-        <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the pair of numbers to subtract from the coordinates of <c>pt</c>.</param>
-        <summary>Translates a <see cref="T:System.Drawing.Point" /> by the negative of a given <see cref="T:System.Drawing.Size" />.</summary>
-        <returns>A <see cref="T:System.Drawing.Point" /> structure that is translated by the negative of a given <see cref="T:System.Drawing.Size" /> structure.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.PointConverter> and the Subtraction operator. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowPointConverter` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.Converters#1](~/add/codesnippet/cpp/m-system.drawing.point.o_3_1.cpp)]
- [!code-cs[System.Drawing.Converters#1](~/add/codesnippet/csharp/m-system.drawing.point.o_3_1.cs)]
- [!code-vb[System.Drawing.Converters#1](~/add/codesnippet/visualbasic/m-system.drawing.point.o_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -546,9 +527,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Round(System.Drawing.PointF)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -557,9 +545,9 @@
         <Parameter Name="value" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Drawing.PointF" /> to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Drawing.PointF" /> to a <see cref="T:System.Drawing.Point" /> object by rounding the <see cref="T:System.Drawing.Point" /> values to the nearest integer.</summary>
-        <returns>The <see cref="T:System.Drawing.Point" /> this method converts to.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,9 +557,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Subtract(System.Drawing.Point,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -581,18 +576,11 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">The <see cref="T:System.Drawing.Point" /> to be subtracted from.</param>
-        <param name="sz">The <see cref="T:System.Drawing.Size" /> to subtract from the <see cref="T:System.Drawing.Point" />.</param>
-        <summary>Returns the result of subtracting specified <see cref="T:System.Drawing.Size" /> from the specified <see cref="T:System.Drawing.Point" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Point" /> that is the result of the subtraction operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Subtract subtracts the <xref:System.Drawing.Size.Width%2A> and <xref:System.Drawing.Size.Height%2A> of the specified <xref:System.Drawing.Size> from the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> values of the specified point.  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -601,17 +589,24 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts this <see cref="T:System.Drawing.Point" /> to a human-readable string.</summary>
-        <returns>A string that represents this <see cref="T:System.Drawing.Point" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,9 +616,16 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Point.Truncate(System.Drawing.PointF)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -632,9 +634,9 @@
         <Parameter Name="value" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Drawing.PointF" /> to convert.</param>
-        <summary>Converts the specified <see cref="T:System.Drawing.PointF" /> to a <see cref="T:System.Drawing.Point" /> by truncating the values of the <see cref="T:System.Drawing.Point" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Point" /> this method converts to.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,28 +646,24 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Point.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the x-coordinate of this <see cref="T:System.Drawing.Point" />.</summary>
-        <value>The x-coordinate of this <see cref="T:System.Drawing.Point" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.op_Equality%2A> operator and how to construct a <xref:System.Drawing.Point> from a <xref:System.Drawing.Size> or two integers. It also demonstrates how to use the X and <xref:System.Drawing.Point.Y%2A> properties. This example is designed to be used with Windows Forms. Paste the code into a form that contains a button named `Button1`, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.Misc2#3](~/add/codesnippet/csharp/p-system.drawing.point.x_1.cs)]
- [!code-vb[System.Drawing.Misc2#3](~/add/codesnippet/visualbasic/p-system.drawing.point.x_1.vb)]
- [!code-cpp[System.Drawing.Misc2#3](~/add/codesnippet/cpp/p-system.drawing.point.x_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -674,28 +672,24 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Point.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the y-coordinate of this <see cref="T:System.Drawing.Point" />.</summary>
-        <value>The y-coordinate of this <see cref="T:System.Drawing.Point" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.op_Equality%2A> operator and how to construct a <xref:System.Drawing.Point> from a <xref:System.Drawing.Size> or two integers. It also demonstrates how to use the <xref:System.Drawing.Point.X%2A> and Y properties. This example is designed to be used with Windows Forms. Paste the code into a form that contains a button named `Button1`, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.Misc2#3](~/add/codesnippet/csharp/p-system.drawing.point.y_1.cs)]
- [!code-vb[System.Drawing.Misc2#3](~/add/codesnippet/visualbasic/p-system.drawing.point.y_1.vb)]
- [!code-cpp[System.Drawing.Misc2#3](~/add/codesnippet/cpp/p-system.drawing.point.y_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,9 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMoniker" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IMoniker" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -17,17 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the managed definition of the <see langword="IMoniker" /> interface, with COM functionality from <see langword="IPersist" /> and <see langword="IPersistStream" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the `IMoniker`, `IPersist`, and `IPersistStream` interfaces, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BindToObject">
@@ -36,9 +39,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.BindToObject(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Guid@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -50,19 +65,12 @@
         <Parameter Name="ppvResult" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of the current moniker, if the moniker is part of a composite moniker.</param>
-        <param name="riidResult">The interface identifier (IID) of the interface that the client intends to use to communicate with the object that the moniker identifies.</param>
-        <param name="ppvResult">When this method returns, contains a reference to the interface requested by <c>riidResult</c>. This parameter is passed uninitialized.</param>
-        <summary>Uses the moniker to bind to the object that it identifies.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::BindToObject`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="riidResult">To be added.</param>
+        <param name="ppvResult">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BindToStorage">
@@ -71,9 +79,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.BindToStorage(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Guid@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -85,19 +105,12 @@
         <Parameter Name="ppvObj" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used during this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of the current moniker, if the moniker is part of a composite moniker.</param>
-        <param name="riid">The interface identifier (IID) of the storage interface requested.</param>
-        <param name="ppvObj">When this method returns, contains a reference to the interface requested by <c>riid</c>. This parameter is passed uninitialized.</param>
-        <summary>Retrieves an interface pointer to the storage that contains the object identified by the moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::BindToStorage`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="riid">To be added.</param>
+        <param name="ppvObj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommonPrefixWith">
@@ -106,9 +119,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.CommonPrefixWith(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -118,17 +143,10 @@
         <Parameter Name="ppmkPrefix" Type="System.Runtime.InteropServices.ComTypes.IMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pmkOther">A reference to the <see langword="IMoniker" /> interface on another moniker to compare with the current moniker for a common prefix.</param>
-        <param name="ppmkPrefix">When this method returns, contains the moniker that is the common prefix of the current moniker and <c>pmkOther</c>. This parameter is passed uninitialized.</param>
-        <summary>Creates a new moniker based on the common prefix that this moniker shares with another moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::CommonPrefixWith`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkOther">To be added.</param>
+        <param name="ppmkPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComposeWith">
@@ -137,9 +155,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.ComposeWith(System.Runtime.InteropServices.ComTypes.IMoniker,System.Boolean,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -150,19 +180,11 @@
         <Parameter Name="ppmkComposite" Type="System.Runtime.InteropServices.ComTypes.IMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pmkRight">A reference to the <see langword="IMoniker" /> interface on a moniker to append to the end of the current moniker.</param>
-        <param name="fOnlyIfNotGeneric">
-          <see langword="true" /> to indicate that the caller requires a nongeneric composition. The operation proceeds only if <c>pmkRight</c> is a moniker class that the current moniker can combine with in some way other than forming a generic composite. <see langword="false" /> to indicate that the method can create a generic composite if necessary.</param>
-        <param name="ppmkComposite">When this method returns, contains a reference to the resulting composite moniker. This parameter is passed uninitialized.</param>
-        <summary>Combines the current moniker with another moniker, creating a new composite moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::ComposeWith`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkRight">To be added.</param>
+        <param name="fOnlyIfNotGeneric">To be added.</param>
+        <param name="ppmkComposite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -171,9 +193,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Enum(System.Boolean,System.Runtime.InteropServices.ComTypes.IEnumMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -183,18 +217,10 @@
         <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.ComTypes.IEnumMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="fForward">
-          <see langword="true" /> to enumerate the monikers from left to right. <see langword="false" /> to enumerate from right to left.</param>
-        <param name="ppenumMoniker">When this method returns, contains a reference to the enumerator object for the moniker. This parameter is passed uninitialized.</param>
-        <summary>Supplies a pointer to an enumerator that can enumerate the components of a composite moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Enum`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="fForward">To be added.</param>
+        <param name="ppenumMoniker">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClassID">
@@ -203,9 +229,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetClassID(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -214,16 +252,9 @@
         <Parameter Name="pClassID" Type="System.Guid&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pClassID">When this method returns, contains the CLSID. This parameter is passed uninitialized.</param>
-        <summary>Retrieves the class identifier (CLSID) of an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersist::GetClassID`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pClassID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDisplayName">
@@ -232,9 +263,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetDisplayName(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -245,18 +288,11 @@
         <Parameter Name="ppszDisplayName" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to use in this operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of the current moniker, if the moniker is part of a composite moniker.</param>
-        <param name="ppszDisplayName">When this method returns, contains the display name string. This parameter is passed uninitialized.</param>
-        <summary>Gets the display name, which is a user-readable representation of the current moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::GetDisplayName`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="ppszDisplayName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSizeMax">
@@ -265,9 +301,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetSizeMax(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -276,16 +324,9 @@
         <Parameter Name="pcbSize" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcbSize">When this method returns, contains a <see langword="long" /> value indicating the size, in bytes, of the stream needed to save this object. This parameter is passed uninitialized.</param>
-        <summary>Returns the size, in bytes, of the stream needed to save the object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::GetSizeMax`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pcbSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTimeOfLastChange">
@@ -294,9 +335,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -307,18 +360,11 @@
         <Parameter Name="pFileTime" Type="System.Runtime.InteropServices.ComTypes.FILETIME&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to use in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of the current moniker, if the moniker is part of a composite moniker.</param>
-        <param name="pFileTime">When this method returns, contains the time of the last change. This parameter is passed uninitialized.</param>
-        <summary>Provides a number representing the time that the object identified by the current moniker was last changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::GetTimeOfLastChange`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="pFileTime">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Hash">
@@ -327,9 +373,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Hash(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -338,16 +396,9 @@
         <Parameter Name="pdwHash" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pdwHash">When this method returns, contains the hash value for this moniker. This parameter is passed uninitialized.</param>
-        <summary>Calculates a 32-bit integer using the internal state of the moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Hash`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pdwHash">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inverse">
@@ -356,9 +407,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Inverse(System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -367,16 +430,9 @@
         <Parameter Name="ppmk" Type="System.Runtime.InteropServices.ComTypes.IMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppmk">When this method returns, contains a moniker that is the inverse of the current moniker. This parameter is passed uninitialized.</param>
-        <summary>Provides a moniker that, when composed to the right of the current moniker or one of similar structure, composes to nothing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Inverse`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="ppmk">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -385,25 +441,30 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsDirty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Checks the object for changes since it was last saved.</summary>
-        <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the object has changed; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::IsDirty`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEqual">
@@ -412,9 +473,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsEqual(System.Runtime.InteropServices.ComTypes.IMoniker)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -423,17 +496,10 @@
         <Parameter Name="pmkOtherMoniker" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
       </Parameters>
       <Docs>
-        <param name="pmkOtherMoniker">A reference to the moniker to use for comparison.</param>
-        <summary>Compares the current moniker with a specified moniker and indicates whether they are identical.</summary>
-        <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the monikers are identical; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::IsEqual`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkOtherMoniker">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRunning">
@@ -442,9 +508,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsRunning(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.IMoniker)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -455,19 +533,12 @@
         <Parameter Name="pmkNewlyRunning" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to use in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker to the left of the current moniker if the current moniker is part of a composite.</param>
-        <param name="pmkNewlyRunning">A reference to the moniker most recently added to the Running Object Table (ROT).</param>
-        <summary>Determines whether the object that is identified by the current moniker is currently loaded and running.</summary>
-        <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the moniker is running; an <see langword="S_FALSE" /><see langword="HRESULT" /> value if the moniker is not running; or an <see langword="E_UNEXPECTED" /><see langword="HRESULT" /> value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::IsRunning`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="pmkNewlyRunning">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSystemMoniker">
@@ -476,9 +547,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsSystemMoniker(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -487,17 +570,10 @@
         <Parameter Name="pdwMksys" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pdwMksys">When this method returns, contains a pointer to an integer that is one of the values from the <see langword="MKSYS" /> enumeration, and refers to one of the COM moniker classes. This parameter is passed uninitialized.</param>
-        <summary>Indicates whether this moniker is of one of the system-supplied moniker classes.</summary>
-        <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the moniker is a system moniker; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details on the values of the `MKSYS` enumeration and for information about `IMoniker::IsSystemMoniker`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pdwMksys">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -506,9 +582,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Load(System.Runtime.InteropServices.ComTypes.IStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -517,16 +605,9 @@
         <Parameter Name="pStm" Type="System.Runtime.InteropServices.ComTypes.IStream" />
       </Parameters>
       <Docs>
-        <param name="pStm">The stream that the object is loaded from.</param>
-        <summary>Initializes an object from the stream where it was previously saved.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::Load`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pStm">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseDisplayName">
@@ -535,9 +616,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.ParseDisplayName(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.String,System.Int32@,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -550,20 +643,13 @@
         <Parameter Name="ppmkOut" Type="System.Runtime.InteropServices.ComTypes.IMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the bind context to use in this binding operation.</param>
-        <param name="pmkToLeft">A reference to the moniker that has been built from the display name up to this point.</param>
-        <param name="pszDisplayName">A reference to the string containing the remaining display name to parse.</param>
-        <param name="pchEaten">When this method returns, contains the number of characters that were consumed in parsing <c>pszDisplayName</c>. This parameter is passed uninitialized.</param>
-        <param name="ppmkOut">When this method returns, contains a reference to the moniker that was built from <c>pszDisplayName</c>. This parameter is passed uninitialized.</param>
-        <summary>Reads as many characters of the specified display name as the ParseDisplayName understands and builds a moniker corresponding to the portion read.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::ParseDisplayName`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="pmkToLeft">To be added.</param>
+        <param name="pszDisplayName">To be added.</param>
+        <param name="pchEaten">To be added.</param>
+        <param name="ppmkOut">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reduce">
@@ -572,9 +658,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Reduce(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Int32,System.Runtime.InteropServices.ComTypes.IMoniker@,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -586,19 +684,12 @@
         <Parameter Name="ppmkReduced" Type="System.Runtime.InteropServices.ComTypes.IMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context to use in this binding operation.</param>
-        <param name="dwReduceHowFar">A value that specifies how far the current moniker should be reduced.</param>
-        <param name="ppmkToLeft">A reference to the moniker to the left of the current moniker.</param>
-        <param name="ppmkReduced">When this method returns, contains a reference to the reduced form of the current moniker, which can be <see langword="null" /> if an error occurs or if the current moniker is reduced to nothing. This parameter is passed uninitialized.</param>
-        <summary>Returns a reduced moniker, which is another moniker that refers to the same object as the current moniker but can be bound with equal or greater efficiency.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::Reduce`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pbc">To be added.</param>
+        <param name="dwReduceHowFar">To be added.</param>
+        <param name="ppmkToLeft">To be added.</param>
+        <param name="ppmkReduced">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativePathTo">
@@ -607,9 +698,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.RelativePathTo(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -619,17 +722,10 @@
         <Parameter Name="ppmkRelPath" Type="System.Runtime.InteropServices.ComTypes.IMoniker&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pmkOther">A reference to the moniker to which a relative path should be taken.</param>
-        <param name="ppmkRelPath">When this method returns, contains a reference to the relative moniker. This parameter is passed uninitialized.</param>
-        <summary>Supplies a moniker that, when appended to the current moniker (or one with a similar structure), yields the specified moniker.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IMoniker::RelativePath`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pmkOther">To be added.</param>
+        <param name="ppmkRelPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -638,9 +734,21 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Save(System.Runtime.InteropServices.ComTypes.IStream,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -650,18 +758,10 @@
         <Parameter Name="fClearDirty" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="pStm">The stream to which the object is saved.</param>
-        <param name="fClearDirty">
-          <see langword="true" /> to clear the modified flag after the save is complete; otherwise <see langword="false" /></param>
-        <summary>Saves an object to the specified stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about `IPersistStream::Save`, see the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pStm">To be added.</param>
+        <param name="fClearDirty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

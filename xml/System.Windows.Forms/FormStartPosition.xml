@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormStartPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the initial position of a form.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.Form.StartPosition%2A> property of the <xref:System.Windows.Forms.Form> class. It represents the different start positions of the form. The default start position is `WindowsDefaultLocation`.  
-  
-   
-  
-## Examples  
- In this example, you change the form's start position to the center of the screen and display the position information using a label. This example assumes that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
-  
- [!code-vb[FormStartPosition#1](~/add/codesnippet/visualbasic/t-system.windows.forms.f_10_1.vb)]
- [!code-cpp[FormStartPosition#1](~/add/codesnippet/cpp/t-system.windows.forms.f_10_1.cpp)]
- [!code-cs[FormStartPosition#1](~/add/codesnippet/csharp/t-system.windows.forms.f_10_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CenterParent">
@@ -43,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The form is centered within the bounds of its parent form.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CenterScreen">
@@ -60,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The form is centered on the current display, and has the dimensions specified in the form's size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -77,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The position of the form is determined by the <see cref="System.Windows.Forms.Control.Location%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsDefaultBounds">
@@ -94,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The form is positioned at the Windows default location and has the bounds determined by Windows default.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsDefaultLocation">
@@ -111,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The form is positioned at the Windows default location and has the dimensions specified in the form's size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

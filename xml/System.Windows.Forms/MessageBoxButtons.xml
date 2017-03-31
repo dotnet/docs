@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxButtons" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants defining which buttons to display on a <see cref="T:System.Windows.Forms.MessageBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class.  
-  
-   
-  
-## Examples  
- The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to give the user an opportunity to prevent a form from closing. This example requires that the method is called from the <xref:System.Windows.Forms.Form.FormClosing> event of the form.  
-  
- [!code-cs[Classic MessageBox Example#1](~/add/codesnippet/csharp/t-system.windows.forms.m_12_1.cs)]
- [!code-cpp[Classic MessageBox Example#1](~/add/codesnippet/cpp/t-system.windows.forms.m_12_1.cpp)]
- [!code-vb[Classic MessageBox Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.m_12_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AbortRetryIgnore">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains Abort, Retry, and Ignore buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OK">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains an OK button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OKCancel">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains OK and Cancel buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RetryCancel">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains Retry and Cancel buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="YesNo">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains Yes and No buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="YesNoCancel">
@@ -123,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains Yes, No, and Cancel buttons.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

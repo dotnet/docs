@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.WarpMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of warp transformation applied in a <see cref="System.Drawing.Drawing2D.GraphicsPath.Warp%2A" /> method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A warp style is used by the <xref:System.Drawing.Drawing2D.GraphicsPath.Warp%2A> method to warp or distort the figures in a graphics path. This can be used to create unusual shapes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bilinear">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WarpMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a bilinear warp.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Perspective">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WarpMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a perspective warp.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

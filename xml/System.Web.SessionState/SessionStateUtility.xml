@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateUtility" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,50 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides helper methods used by session-state modules and session-state store providers to manage session information for an ASP.NET application. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SessionStateUtility class provides static helper methods that are used by a session-state module or a session-state store provider. Application developers will not need to call these methods from their code.  
-  
- The following table describes the ways the session-state module and session-state store provider use the methods.  
-  
-|Method|Use|  
-|------------|---------|  
-|<xref:System.Web.SessionState.SessionStateUtility.GetHttpSessionStateFromContext%2A> method|Can be used by custom session-state modules to either retrieve session information for an existing session or create session information for a new session.|  
-|<xref:System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext%2A> method|Called by the session-state module to add the session data to the current <xref:System.Web.HttpContext> and make it available to application code through the <xref:System.Web.HttpContext.Session%2A> property.|  
-|<xref:System.Web.SessionState.SessionStateUtility.RemoveHttpSessionStateFromContext%2A> method|Called by the session-state module during the <xref:System.Web.HttpApplication.ReleaseRequestState> or <xref:System.Web.HttpApplication.EndRequest> events at the end of a request, to clear session data from the current <xref:System.Web.HttpContext>.|  
-|<xref:System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects%2A> method|Called by the session-state module to get a reference to the <xref:System.Web.SessionState.HttpSessionState.StaticObjects%2A> collection based on objects defined in the Global.asax file. The <xref:System.Web.HttpStaticObjectsCollection> collection returned is included with the session data added to the current <xref:System.Web.HttpContext>.|  
-  
- Session data is passed to and retrieved from the current <xref:System.Web.HttpContext> as an <xref:System.Web.SessionState.HttpSessionStateContainer> object or any valid implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
- For information about implementing a session-state store provider, see [Implementing a Session-State Store Provider](../Topic/Implementing%20a%20Session-State%20Store%20Provider.md).  
-  
-   
-  
-## Examples  
- The following code example shows a custom session-state module implementation that stores session information in memory using a <xref:System.Collections.Hashtable>. The module uses the SessionStateUtility class to reference the current <xref:System.Web.HttpContext> and <xref:System.Web.SessionState.SessionIDManager>, retrieve the current <xref:System.Web.HttpStaticObjectsCollection>, and raise the **Session_OnEnd** event defined in the Global.asax file for the ASP.NET application. This application does not prevent simultaneous Web requests from using the same session identifier.  
-  
- [!code-vb[System.Web.SessionState.SessionStateUtility#1](~/add/codesnippet/visualbasic/t-system.web.sessionstat_6_1.vb)]
- [!code-cs[System.Web.SessionState.SessionStateUtility#1](~/add/codesnippet/csharp/t-system.web.sessionstat_6_1.cs)]  
-  
- To use this custom session-state module in an ASP.NET application, you can replace the existing <xref:System.Web.SessionState.SessionStateModule> reference in the Web.config file, as shown in the following example.  
-  
-```  
-<configuration>  
-  <system.web>  
-    <httpModules>  
-      <remove name="Session" />  
-      <add name="Session"  
-      type="Samples.AspNet.SessionState.MySessionStateModule" />  
-    </httpModules>  
-  </system.web>  
-</configuration>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddHttpSessionStateToContext">
@@ -65,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,26 +32,10 @@
         <Parameter Name="container" Type="System.Web.SessionState.IHttpSessionState" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.Web.HttpContext" /> object to which to add the <see cref="T:System.Web.SessionState.HttpSessionState" /> object.</param>
-        <param name="container">The <see cref="T:System.Web.SessionState.IHttpSessionState" /> implementation instance to add to the specified HTTP context.</param>
-        <summary>Applies the session data to the context for the current request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddHttpSessionStateToContext method is used by a session-state module to apply session data to the current request. This occurs during the <xref:System.Web.HttpApplication.AcquireRequestState> event at the beginning of a request. Session data for the current request is either retrieved for an existing session or created for a new session. The session data is then encapsulated in an <xref:System.Web.SessionState.IHttpSessionState> implementation instance, which is passed to the AddHttpSessionStateToContext method along with the current <xref:System.Web.HttpContext>. The supplied session data is then made available to application code through the <xref:System.Web.HttpContext.Session%2A> property of the current context.  
-  
-   
-  
-## Examples  
- The following code example shows the handler for the <xref:System.Web.HttpApplication.AcquireRequestState> event in a custom session-state module. The custom module retrieves existing session information or creates new session information and uses the AddHttpSessionStateToContext method to add it to the <xref:System.Web.HttpContext> of the current request. This code example is part of a larger example provided for the <xref:System.Web.SessionState.SessionStateUtility> class.  
-  
- [!code-vb[System.Web.SessionState.SessionStateUtility#4](~/add/codesnippet/visualbasic/5c9b7582-11c3-42e9-975d-_1.vb)]
- [!code-cs[System.Web.SessionState.SessionStateUtility#4](~/add/codesnippet/csharp/5c9b7582-11c3-42e9-975d-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">An <see cref="T:System.Web.SessionState.HttpSessionState" /> object for the current session has already been added to the specified <paramref name="context" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="container">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHttpSessionStateFromContext">
@@ -105,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,25 +54,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.Web.HttpContext" /> from which to retrieve session data.</param>
-        <summary>Retrieves session data from the context for the current request.</summary>
-        <returns>An <see cref="T:System.Web.SessionState.IHttpSessionState" /> implementation instance populated with session data from the current request.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetHttpSessionStateFromContext method can be used by a session-state module to retrieve session data from the current request. This occurs during the <xref:System.Web.HttpApplication.ReleaseRequestState> event at the end of a request. The returned session data can then be written to the session data store. If the session has been abandoned, the session data can be removed from the data store and <xref:System.Web.HttpContext>, and the **Session_OnEnd** event can be executed.  
-  
-   
-  
-## Examples  
- The following code example shows the handler for the <xref:System.Web.HttpApplication.ReleaseRequestState> event in a custom session-state module. The module retrieves session data from the <xref:System.Web.HttpContext> for the current request using the GetHttpSessionStateFromContext method. This code example is part of a larger example provided for the <xref:System.Web.SessionState.SessionStateUtility> class.  
-  
- [!code-vb[System.Web.SessionState.SessionStateUtility#5](~/add/codesnippet/visualbasic/9c400b1a-e4b0-47ca-aaa3-_1.vb)]
- [!code-cs[System.Web.SessionState.SessionStateUtility#5](~/add/codesnippet/csharp/9c400b1a-e4b0-47ca-aaa3-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSessionStaticObjects">
@@ -143,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,27 +76,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.Web.HttpContext" /> from which to get the static objects collection.</param>
-        <summary>Gets a reference to the static objects collection for the specified context.</summary>
-        <returns>An <see cref="T:System.Web.HttpStaticObjectsCollection" /> collection populated with the <see cref="System.Web.SessionState.HttpSessionState.StaticObjects%2A" /> property value for the specified <see cref="T:System.Web.HttpContext" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetSessionStaticObjects method is used to retrieve the collection of static objects defined in the Global.asax file for the ASP.NET application. A session-state module implementation will supply the returned <xref:System.Web.HttpStaticObjectsCollection> collection to the <xref:System.Web.SessionState.IHttpSessionState> implementation instance that is added to the current context using the <xref:System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext%2A> method.  
-  
- A <xref:System.Web.SessionState.SessionStateStoreProviderBase> can also use the GetSessionStaticObjects method when creating a <xref:System.Web.SessionState.SessionStateStoreData> object.  
-  
-   
-  
-## Examples  
- The following code example shows the handler for the <xref:System.Web.HttpApplication.AcquireRequestState> event in a custom session-state module. The module retrieves existing session information or creates new session information, including the <xref:System.Web.HttpStaticObjectsCollection> collection returned from the GetSessionStaticObjects method, and adds it to the <xref:System.Web.HttpContext> of the current request. This code example is part of a larger example provided for the <xref:System.Web.SessionState.SessionStateUtility> class.  
-  
- [!code-vb[System.Web.SessionState.SessionStateUtility#4](~/add/codesnippet/visualbasic/ce95f35b-c097-49c6-952e-_1.vb)]
- [!code-cs[System.Web.SessionState.SessionStateUtility#4](~/add/codesnippet/csharp/ce95f35b-c097-49c6-952e-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSessionStateReadOnly">
@@ -192,10 +98,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">Specifies the <see cref="T:System.Web.HttpContext" /> to check.</param>
-        <summary>Gets a value which indicates whether the session state is read-only for the specified <see cref="T:System.Web.HttpContext" />.</summary>
-        <returns>
-          <see langword="true" /> if the session state is read-only; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +120,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">Specifies the <see cref="T:System.Web.HttpContext" /> to check.</param>
-        <summary>Gets a value which indicates whether the session state is required for the specified <see cref="T:System.Web.HttpContext" />.</summary>
-        <returns>
-          <see langword="true" /> if the session state is required; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,26 +144,11 @@
         <Parameter Name="eventArgs" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="session">The <see cref="T:System.Web.SessionState.IHttpSessionState" /> implementation instance for the session that has ended.</param>
-        <param name="eventSource">The event source object to supply to the <see langword="Session_OnEnd" /> event.</param>
-        <param name="eventArgs">The <see cref="T:System.EventArgs" /> object to supply to the <see langword="Session_OnEnd" /> event.</param>
-        <summary>Executes the **Session_OnEnd** event defined in the Global.asax file for the ASP.NET application.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaiseSessionEnd method is used by a session-state module to execute the **Session_OnEnd** event defined in the Global.asax file for an ASP.NET application. A session-state module will call the RaiseSessionEnd method when a session has been abandoned, or if the session expires.  
-  
-   
-  
-## Examples  
- The following code example shows the handler for the <xref:System.Web.HttpApplication.ReleaseRequestState> event in a custom session-state module. If the session has been abandoned, the module executes the **Session_OnEnd** event defined in the Global.asax file for the application using the RaiseSessionEnd method. This code example is part of a larger example provided for the <xref:System.Web.SessionState.SessionStateUtility> class.  
-  
- [!code-vb[System.Web.SessionState.SessionStateUtility#5](~/add/codesnippet/visualbasic/cd86aefd-3df6-4b8a-826f-_1.vb)]
- [!code-cs[System.Web.SessionState.SessionStateUtility#5](~/add/codesnippet/csharp/cd86aefd-3df6-4b8a-826f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="session">To be added.</param>
+        <param name="eventSource">To be added.</param>
+        <param name="eventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveHttpSessionStateFromContext">
@@ -270,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,24 +167,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.Web.HttpContext" /> from which to remove session data.</param>
-        <summary>Removes session data from the specified context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RemoveHttpSessionStateFromContext method clears session data from the specified <xref:System.Web.HttpContext>. A session-state module will call the RemoveHttpSessionStateFromContext method in the handler for the <xref:System.Web.HttpApplication.ReleaseRequestState> event.  
-  
-   
-  
-## Examples  
- The following code example shows the handler for the <xref:System.Web.HttpApplication.ReleaseRequestState> event in a custom session-state module. The event handler removes session data from the current <xref:System.Web.HttpContext>. This code example is part of a larger example provided for the <xref:System.Web.SessionState.SessionStateUtility> class.  
-  
- [!code-vb[System.Web.SessionState.SessionStateUtility#5](~/add/codesnippet/visualbasic/db56662a-8b24-4084-9ec3-_1.vb)]
- [!code-cs[System.Web.SessionState.SessionStateUtility#5](~/add/codesnippet/csharp/db56662a-8b24-4084-9ec3-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializationSurrogateSelector">
@@ -313,8 +185,8 @@
         <ReturnType>System.Runtime.Serialization.ISurrogateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a serialization surrogate selector that is used for session serialization customization.</summary>
-        <value>A serialization surrogate selector.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

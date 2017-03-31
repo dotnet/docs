@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDispatchImplAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,26 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates which <see langword="IDispatch" /> implementation the common language runtime uses when exposing dual interfaces and dispinterfaces to COM.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to classes or assemblies.  
-  
- This attribute should only be set when an explicit implementation is required. When you set the attribute to <xref:System.Runtime.InteropServices.IDispatchImplType>, the `IDispatch` implementation is supplied by passing the type information for the object to COM's `CreateStdDispatch` API. When you set the attribute to <xref:System.Runtime.InteropServices.IDispatchImplType>, the `IDispatch` implementation is supplied by the common language runtime. Setting the attribute to <xref:System.Runtime.InteropServices.IDispatchImplType> allows the runtime to choose the appropriate implementation. When using the attribute on an assembly, the attribute applies to all classes defined within the assembly. When using the attribute on an individual class, the attribute applies only to the interfaces exposed by that class and overrides any assembly-level setting.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to apply IDispatchImplAttribute to select the `IDispatch` implementation supplied by the common language runtime.  
-  
- [!code-cpp[ImprovedInteropSnippets#1](~/add/codesnippet/cpp/t-system.runtime.interop_17_1.cpp)]
- [!code-vb[ImprovedInteropSnippets#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_17_1.vb)]
- [!code-cs[ImprovedInteropSnippets#1](~/add/codesnippet/csharp/t-system.runtime.interop_17_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,23 +34,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="implType" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="implType">Indicates which <see cref="T:System.Runtime.InteropServices.IDispatchImplType" /> enumeration will be used.</param>
-        <summary>Initializes a new instance of the <see langword="IDispatchImplAttribute" /> class with specified <see cref="T:System.Runtime.InteropServices.IDispatchImplType" /> value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor takes an underlying 16-bit signed integer that represents each <xref:System.Runtime.InteropServices.IDispatchImplType> enumeration member. The Type Library Importer (TlbImp.exe) uses this constructor to avoid generating a typeref to the `IDispatchImplType` value that `value` represents, and then builds the signature with that token.  
-  
- ]]></format>
-        </remarks>
+        <param name="implType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,23 +53,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="implType" Type="System.Runtime.InteropServices.IDispatchImplType" />
       </Parameters>
       <Docs>
-        <param name="implType">Indicates which <see cref="T:System.Runtime.InteropServices.IDispatchImplType" /> enumeration will be used.</param>
-        <summary>Initializes a new instance of the <see langword="IDispatchImplAttribute" /> class with specified <see cref="T:System.Runtime.InteropServices.IDispatchImplType" /> value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For readable code that is less prone to error, always use this constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="implType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -104,15 +72,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Runtime.InteropServices.IDispatchImplType" /> value used by the class.</summary>
-        <value>The <see cref="T:System.Runtime.InteropServices.IDispatchImplType" /> value used by the class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

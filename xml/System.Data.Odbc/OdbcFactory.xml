@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a set of methods for creating instances of the ODBC provider's implementation of the data source classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -31,26 +29,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbCommand" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbCommand = newFactory.CreateCommand()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbCommand cmd = newFactory.CreateCommand();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCommandBuilder">
@@ -60,7 +41,6 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,26 +48,9 @@ DbCommand cmd = newFactory.CreateCommand();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbCommandBuilder" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbCommandBuilder> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbCommandBuilder = newFactory.CreateCommandBuilder()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbCommandBuilder cmd = newFactory.CreateCommandBuilder();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnection">
@@ -97,7 +60,6 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,26 +67,9 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbConnection" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnection> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbConnection = newFactory.CreateConnection()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbConnection cmd = newFactory.CreateConnection();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnectionStringBuilder">
@@ -134,7 +79,6 @@ DbConnection cmd = newFactory.CreateConnection();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,26 +86,9 @@ DbConnection cmd = newFactory.CreateConnection();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbConnectionStringBuilder = newFactory.CreateConnectionStringBuilder()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDataAdapter">
@@ -171,7 +98,6 @@ DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,26 +105,9 @@ DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbDataAdapter" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbDataAdapter> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbDataAdapter = newFactory.CreateDataAdapter()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbDataAdapter cmd = newFactory.CreateDataAdapter();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateParameter">
@@ -208,7 +117,6 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,26 +124,9 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly-typed <see cref="T:System.Data.Common.DbParameter" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly-typed <xref:System.Data.Common.DbParameter> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbParameter = newFactory.CreateParameter()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbParameter cmd = newFactory.CreateParameter();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">
@@ -245,7 +136,6 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -255,9 +145,9 @@ DbParameter cmd = newFactory.CreateParameter();
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">A member of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
-        <summary>Returns a strongly-typed <see cref="T:System.Security.CodeAccessPermission" /> instance.</summary>
-        <returns>A new strongly-typed instance of <see cref="T:System.Security.CodeAccessPermission" />.</returns>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,32 +158,14 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Odbc.OdbcFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an instance of the <see cref="T:System.Data.Odbc.OdbcFactory" />, which can be used to retrieve strongly-typed data objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment uses the <xref:System.Data.Odbc.OdbcFactory.Instance%2A> property to retrieve an <xref:System.Data.Odbc.OdbcFactory> instance, and then return a strongly-typed <xref:System.Data.Common.DbCommand> instance:  
-  
-```vb#  
-Dim newFactory As OdbcFactory = OdbcFactory.Instance  
-Dim cmd As DbCommand = newFactory.CreateCommand()  
-```  
-  
-```c#  
-OdbcFactory newFactory = OdbcFactory.Instance;  
-DbCommand cmd = newFactory.CreateCommand();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

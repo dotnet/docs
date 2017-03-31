@@ -4,48 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationFormatStyle" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents the SOAP style that determines how the WSDL metadata for the service is formatted.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the message body is formatted with the Style set to Document. The style `RPC` means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.  
-  
-```  
-<wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
-  <wsdl:part name="n1" type="xsd:double"/>  
-  <wsdl:part name="n2" type="xsd:double"/>  
-</wsdl:message>  
-  
-```  
-  
- Setting the style to `Document` means that the WSDL representation contains a single element that represents the document that is exchanged for an operation as shown in the following example.  
-  
-```  
-<wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
-  <wsdl:part name="parameters" element="tns:Add"/>  
-</wsdl:message>  
-```  
-  
- Use the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=fullName> to set this value.  
-  
-   
-  
-## Examples  
- The following code shows how to use this enumeration.  
-  
- [!code-cs[style_and_Use#0](~/add/codesnippet/csharp/t-system.servicemodel.op_5_1.cs)]
- [!code-vb[style_and_Use#0](~/add/codesnippet/visualbasic/t-system.servicemodel.op_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Document">
@@ -55,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes the WSDL representation to contain a single element that represents the document that is exchanged for the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rpc">
@@ -72,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Causes the WSDL representation of messages exchanged for an operation and contains parameters as if it were a remote procedure call.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ObjectItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Class for representing a collection of items for the object layer. Most of the implemetation for actual maintainance of the collection is done by ItemCollection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No content here will be updated; please do not add material here.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.ObjectItemCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,9 +51,9 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.EnumType" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">The OSpace type to look up.</param>
-        <summary>The method returns the underlying CLR type for the specified OSpace type argument. If the DataSpace of the parameter is not OSpace, an ArgumentException is thrown.</summary>
-        <returns>The CLR type of the OSpace argument.</returns>
+        <param name="objectSpaceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,9 +73,9 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.StructuralType" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> that represents the object space type.</param>
-        <summary>Returns the CLR type that corresponds to the <see cref="T:System.Data.Metadata.Edm.StructuralType" /> supplied by the objectSpaceType parameter.</summary>
-        <returns>The CLR type of the OSpace argument.</returns>
+        <param name="objectSpaceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +100,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type returned by the method.</typeparam>
-        <summary>Returns all the items of the specified type from this item collection.</summary>
-        <returns>A collection of type <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> that contains all items of the specified type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,8 +120,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a collection of primitive type objects.</summary>
-        <returns>A collection of primitive type objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,8 +141,8 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly from which the metadata will be loaded.</param>
-        <summary>Loads metadata from the given assembly.</summary>
+        <param name="assembly">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,9 +163,9 @@
         <Parameter Name="edmItemCollection" Type="System.Data.Metadata.Edm.EdmItemCollection" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly from which the metadata will be loaded.</param>
-        <param name="edmItemCollection">The EDM metadata source for the O space metadata.</param>
-        <summary>Loads metadata from the specified assembly.</summary>
+        <param name="assembly">To be added.</param>
+        <param name="edmItemCollection">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,10 +187,10 @@
         <Parameter Name="logLoadMessage" Type="System.Action&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly from which the metadata will be loaded.</param>
-        <param name="edmItemCollection">The EDM metadata source for the O space metadata.</param>
-        <param name="logLoadMessage">The delegate to which log messages are sent.</param>
-        <summary>Loads metadata from the given assembly.</summary>
+        <param name="assembly">To be added.</param>
+        <param name="edmItemCollection">To be added.</param>
+        <param name="logLoadMessage">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +211,10 @@
         <Parameter Name="clrType" Type="System.Type&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">The OSpace enum type to look up</param>
-        <param name="clrType">The CLR enum type of the OSpace argument</param>
-        <summary>Returns the underlying CLR type for the specified OSpace enum type argument. If the DataSpace of the parameter is not OSpace, the method returns false and sets the out parameter to null.</summary>
-        <returns>true on success, false on failure</returns>
+        <param name="objectSpaceType">To be added.</param>
+        <param name="clrType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,11 +235,10 @@
         <Parameter Name="clrType" Type="System.Type&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> that represents the object space type.</param>
-        <param name="clrType">The CLR type.</param>
-        <summary>Returns a CLR type corresponding to the <see cref="T:System.Data.Metadata.Edm.StructuralType" /> supplied by the objectSpaceType parameter.</summary>
-        <returns>
-          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
+        <param name="objectSpaceType">To be added.</param>
+        <param name="clrType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

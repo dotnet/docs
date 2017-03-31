@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryRequestHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>An ASP.NET HTTP handler that processes a request for a Web services discovery document.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DiscoveryRequestHandler class, via its <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, processes an HTTP request for a discovery document. A discovery document is represented by the <xref:System.Web.Services.Discovery.DiscoveryDocument> class and is usually serialized as a file using a .disco extension. Web services discovery provides a mechanism for determining the Web services that are available at a given location.  
-  
- The DiscoveryRequestHandler class normally does not need to be used directly by a developer.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryRequestHandler" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,15 +41,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value of <see langword="true" />, indicates whether the instance of <see cref="T:System.Web.Services.Discovery.DiscoveryRequestHandler" /> (or a derived class) is reusable.</summary>
-        <value>This property always returns <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,18 +68,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="System.Web.HttpContext.Request%2A" /> and <see cref="System.Web.HttpContext.Response%2A" /> properties of the <see cref="T:System.Web.HttpContext" /> class are used for input and output, respectively.</param>
-        <summary>Handles an HTTP request for a discovery document, which is serialized to the HTTP response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProcessRequest method searches for applicable files within the file system path corresponding to the HTTP request's Uniform Resource Locator (URL). The search may extend to subdirectories and switch target file extensions depending on what it finds in the root search directory.  
-  
- The search process populates the <xref:System.Web.Services.Discovery.DiscoveryDocument> object's <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property with files that are found.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

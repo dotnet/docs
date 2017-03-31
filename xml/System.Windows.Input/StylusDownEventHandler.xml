@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDownEventHandler" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,16 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Windows.Input.StylusDownEventArgs" /> that contains the event data. .</param>
-    <summary>Represents the method that handles the <see cref="System.Windows.Input.Stylus.StylusDown" /> event, as well as several variations, including the corresponding Preview event. Also re-exposes the event in the base element classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, this delegate corresponds to a routed event. Check the event data, in particular the <xref:System.Windows.RoutedEventArgs.Source%2A> property, to determine which element raised the event.  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

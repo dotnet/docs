@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.DataSpace" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the default names for the models in the [!INCLUDE[adonet_ef](~/add/includes/adonet-ef-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the models in the [!INCLUDE[adonet_ef](~/add/includes/adonet-ef-md.md)], see [Metadata Workspace Overview](http://msdn.microsoft.com/en-us/b9c75c95-7626-484d-86bb-2ddd4c7042e2).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CSpace">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the default name for the conceptual model.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CSSpace">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the default name for the mapping between the conceptual model and the storage model.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OCSpace">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the default name for the mapping between the object model and the conceptual model.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OSpace">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the default name for the object model.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SSpace">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the default name for the storage model.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

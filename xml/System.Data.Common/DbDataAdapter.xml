@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DataAdapter</BaseTypeName>
@@ -19,19 +23,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Aids implementation of the <see cref="T:System.Data.IDbDataAdapter" /> interface. Inheritors of DbDataAdapter implement a set of functions to provide strong typing, but inherit most of the functionality needed to fully implement a **DataAdapter**.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DbDataAdapter class inherits from the <xref:System.Data.Common.DataAdapter> class and helps a class implement a **DataAdapter** designed for use with a relational database.  
-  
- An application does not create an instance of the DbDataAdapter interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbDataAdapter> and DbDataAdapter.  
-  
- Classes that inherit DbDataAdapter must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the DbDataAdapter class defines the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property, and the DbDataAdapter interface defines eight overloads of the <xref:System.Data.IDataAdapter.Fill%2A> method. In turn, the <xref:System.Data.OleDb.OleDbDataAdapter> class inherits the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method, and also defines two additional overloads of <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> that take an ADO Recordset object as a parameter.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,31 +34,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of a **DataAdapter** class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create an instance of <xref:System.Data.Common.DbDataAdapter>, the following read/write properties are set to the following initial values.  
-  
-|Properties|Initial value|  
-|----------------|-------------------|  
-|<xref:System.Data.IDbDataAdapter.SelectCommand%2A>|A new <xref:System.Data.IDbCommand>.|  
-|<xref:System.Data.IDbDataAdapter.InsertCommand%2A>|A new <xref:System.Data.IDbCommand>.|  
-|<xref:System.Data.IDbDataAdapter.DeleteCommand%2A>|A new <xref:System.Data.IDbCommand>.|  
-|<xref:System.Data.IDbDataAdapter.UpdateCommand%2A>|A new <xref:System.Data.IDbCommand>.|  
-|<xref:System.Data.Common.DataAdapter.MissingMappingAction%2A>|`MissingMappingAction.Passthrough`|  
-|<xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A>|`MissingSchemaAction.Add`|  
-  
- You can change the value of any of these properties through a separate call to the property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,23 +54,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="System.Data.Common.DbDataAdapter" />
       </Parameters>
       <Docs>
-        <param name="adapter">A <see langword="DataAdapter" /> object used to create the new <see langword="DataAdapter" />.</param>
-        <summary>Initializes a new instance of a <see langword="DataAdapter" /> class from an existing object of the same type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload of the <xref:System.Data.Common.DbDataAdapter> constructor is designed for use by a .NET Framework data provider when implementing a similar constructor for use in a clone implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="adapter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddToBatch">
@@ -101,8 +77,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -111,18 +91,10 @@
         <Parameter Name="command" Type="System.Data.IDbCommand" />
       </Parameters>
       <Docs>
-        <param name="command">The <see cref="T:System.Data.IDbCommand" /> to add to the batch.</param>
-        <summary>Adds a <see cref="T:System.Data.IDbCommand" /> to the current batch.</summary>
-        <returns>The number of commands in the batch before adding the <see cref="T:System.Data.IDbCommand" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In <xref:System.Data.Common.DbDataAdapter>, this method throws <xref:System.NotSupportedException>. Classes that inherit from <xref:System.Data.Common.DbDataAdapter> override this method to provide support for batches.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The adapter does not support batches.</exception>
+        <param name="command">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearBatch">
@@ -132,24 +104,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Data.IDbCommand" /> objects from the batch.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In <xref:System.Data.Common.DbDataAdapter>, this method throws <xref:System.NotSupportedException>. Classes that inherit from <xref:System.Data.Common.DbDataAdapter> override this method to provide support for batches.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The adapter does not support batches.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRowUpdatedEvent">
@@ -159,8 +127,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.RowUpdatedEventArgs</ReturnType>
@@ -172,12 +144,12 @@
         <Parameter Name="tableMapping" Type="System.Data.Common.DataTableMapping" />
       </Parameters>
       <Docs>
-        <param name="dataRow">The <see cref="T:System.Data.DataRow" /> used to update the data source.</param>
-        <param name="command">The <see cref="T:System.Data.IDbCommand" /> executed during the <see cref="System.Data.IDataAdapter.Update%2A" />.</param>
-        <param name="statementType">Whether the command is an UPDATE, INSERT, DELETE, or SELECT statement.</param>
-        <param name="tableMapping">A <see cref="T:System.Data.Common.DataTableMapping" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.RowUpdatedEventArgs" /> class.</summary>
-        <returns>A new instance of the <see cref="T:System.Data.Common.RowUpdatedEventArgs" /> class.</returns>
+        <param name="dataRow">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="statementType">To be added.</param>
+        <param name="tableMapping">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +160,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.RowUpdatingEventArgs</ReturnType>
@@ -201,12 +177,12 @@
         <Parameter Name="tableMapping" Type="System.Data.Common.DataTableMapping" />
       </Parameters>
       <Docs>
-        <param name="dataRow">The <see cref="T:System.Data.DataRow" /> that updates the data source.</param>
-        <param name="command">The <see cref="T:System.Data.IDbCommand" /> to execute during the <see cref="System.Data.IDataAdapter.Update%2A" />.</param>
-        <param name="statementType">Whether the command is an UPDATE, INSERT, DELETE, or SELECT statement.</param>
-        <param name="tableMapping">A <see cref="T:System.Data.Common.DataTableMapping" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.RowUpdatingEventArgs" /> class.</summary>
-        <returns>A new instance of the <see cref="T:System.Data.Common.RowUpdatingEventArgs" /> class.</returns>
+        <param name="dataRow">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="statementType">To be added.</param>
+        <param name="tableMapping">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,24 +193,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default name used by the <see cref="T:System.Data.Common.DataAdapter" /> object for table mappings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- "Table" is the default name used by the <xref:System.Data.Common.DataAdapter> object for table mappings.  
-  
- DefaultSourceTableName is when an application adds a table mapping to be used with <xref:System.Data.Common.DbDataAdapter.Fill%2A>, but does not specify a <xref:System.Data.DataTable> name.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
@@ -244,8 +215,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -259,24 +234,9 @@
         <ReturnType>System.Data.Common.DbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a command for deleting records from the data set.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="System.Data.IDataAdapter.Update%2A" /> to delete records in the data source for deleted rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the <xref:System.Data.IDbDataAdapter.DeleteCommand%2A> is automatically generated.  
-  
-   
-  
-## Examples  
- The following example creates the derived class <xref:System.Data.OleDb.OleDbDataAdapter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData DbDataAdapter.DeleteCommand Example#1](~/add/codesnippet/csharp/p-system.data.common.dbd_3_1.cs)]
- [!code-vb[Classic WebData DbDataAdapter.DeleteCommand Example#1](~/add/codesnippet/visualbasic/p-system.data.common.dbd_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -286,8 +246,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -296,9 +260,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Data.Common.DbDataAdapter" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,24 +272,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Executes the current batch.</summary>
-        <returns>The return value from the last command in the batch.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In <xref:System.Data.Common.DbDataAdapter>, this method throws <xref:System.NotSupportedException>. Classes that inherit from <xref:System.Data.Common.DbDataAdapter> override this method to provide support for batches.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -336,8 +296,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -346,40 +310,10 @@
         <Parameter Name="dataSet" Type="System.Data.DataSet" />
       </Parameters>
       <Docs>
-        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to fill with records and, if necessary, schema.</param>
-        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" />.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataSet" />. This does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Fill method retrieves the data from the data source using a SELECT statement. The <xref:System.Data.IDbConnection> object associated with the select command must be valid, but it does not need to be open. If the <xref:System.Data.IDbConnection> is closed before Fill is called, it is opened to retrieve data and then closed. If the connection is open before Fill is called, it remains open.  
-  
- If an error or an exception is encountered while populating the data tables, rows added prior to the occurrence of the error remain in the data tables. The remainder of the operation is aborted.  
-  
- If a command does not return any rows, no tables are added to the <xref:System.Data.DataSet>, and no exception is raised.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> object encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on.  
-  
- When the query specified returns multiple results, the result set for each row returning query is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Because no table is created for a query that does not return rows, if you process an insert query followed by a select query, the table created for the select query is named "Table" because it is the first table created. Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- When the SELECT statement used to populate the <xref:System.Data.DataSet> returns multiple results, such as batch SQL statements, if one of the results contains an error, all subsequent results are skipped and are not added to the <xref:System.Data.DataSet>.  
-  
- When using subsequent Fill calls to refresh the contents of the <xref:System.Data.DataSet>, two conditions must be met:  
-  
-1.  The SQL statement should match the one initially used to populate the <xref:System.Data.DataSet>.  
-  
-2.  The **Key** column information must be present.  
-  
- If primary key information is present, any duplicate rows are reconciled and only appear once in the <xref:System.Data.DataTable> that corresponds to the <xref:System.Data.DataSet>. Primary key information may be set either through <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, by specifying the <xref:System.Data.DataTable.PrimaryKey%2A> property of the <xref:System.Data.DataTable>, or by setting the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property to `AddWithKey`.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use Fill with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -389,8 +323,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -399,49 +337,10 @@
         <Parameter Name="dataTable" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="dataTable">The name of the <see cref="T:System.Data.DataTable" /> to use for table mapping.</param>
-        <summary>Adds or refreshes rows in a specified range in the <see cref="T:System.Data.DataSet" /> to match those in the data source using the <see cref="T:System.Data.DataTable" /> name.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataSet" />. This does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves rows from the data source using the SELECT statement specified by an associated <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property. The connection object associated with the SELECT statement must be valid, but it does not need to be open. If the connection is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> operation then adds the rows to destination <xref:System.Data.DataTable> objects in the <xref:System.Data.DataSet>, creating the <xref:System.Data.DataTable> objects if they do not already exist. When creating <xref:System.Data.DataTable> objects, the <xref:System.Data.Common.DbDataAdapter.Fill%2A> operation normally creates only column name metadata. However, if the <xref:System.Data.IDataAdapter.MissingSchemaAction%2A> property is set to `AddWithKey`, appropriate primary keys and constraints are also created.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table.  
-  
- The overload of <xref:System.Data.Common.DbDataAdapter.Fill%2A> that takes `DataTable` as a parameter only obtains the first result. Use an overload of <xref:System.Data.Common.DbDataAdapter.Fill%2A> that takes `DataSet` as a parameter to obtain multiple results.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
- dataset.Tables.Add("aaa");  
- dataset.Tables.Add("AAA");  
- adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
-    adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
- dataset.Tables.Add("aaa");  
-    adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- You can use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method multiple times on the same <xref:System.Data.DataTable>. If a primary key exists, incoming rows are merged with matching rows that already exist. If no primary key exists, incoming rows are appended to the <xref:System.Data.DataTable>.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.Fill%2A> and <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for a .NET Framework data provider retrieves schema information for only the first result.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
+        <param name="dataTable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -451,8 +350,12 @@ DataSet dataset = new DataSet();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -462,68 +365,11 @@ DataSet dataset = new DataSet();
         <Parameter Name="srcTable" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to fill with records and, if necessary, schema.</param>
-        <param name="srcTable">The name of the source table to use for table mapping.</param>
-        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in the data source using the <see cref="T:System.Data.DataSet" /> and <see cref="T:System.Data.DataTable" /> names.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataSet" />. This does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves the data from the data source using a SELECT statement. The <xref:System.Data.IDbConnection> object associated with the select command must be valid, but it does not need to be open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
-  
- If a command does not return any rows, no tables are added to the <xref:System.Data.DataSet>, and no exception is raised.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> object encounters duplicate columns while populating a <xref:System.Data.DataTable>, it will generate names for the subsequent columns, using the pattern "columnname1", "columnname2", "columnname3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on.  
-  
- When the query specified returns multiple results, each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Since no table is created for a query that does not return rows, if you were to process an insert query followed by a select query, the table created for the select query would be named "Table", because it is the first table created. Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
-adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- If an error or an exception is encountered while populating the data tables, rows added prior to the occurrence of the error remain in the data tables. The remainder of the operation is aborted.  
-  
- When the SELECT statement used to populate the <xref:System.Data.DataSet> returns multiple results, such as a batch SQL statement, be aware of the following:  
-  
--   If one of the results contains an error, all subsequent results are skipped and not added to the <xref:System.Data.DataSet>.  
-  
- When using subsequent <xref:System.Data.Common.DbDataAdapter.Fill%2A> calls to refresh the contents of the <xref:System.Data.DataSet>, two conditions must be met:  
-  
-1.  The SQL statement should match the one initially used to populate the <xref:System.Data.DataSet>.  
-  
-2.  The **Key** column information must be present. If primary key information is present, any duplicate rows are reconciled and only appear once in the <xref:System.Data.DataTable> that corresponds to the <xref:System.Data.DataSet>. Primary key information may be set either through <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, by specifying the <xref:System.Data.DataTable.PrimaryKey%2A> property of the <xref:System.Data.DataTable>, or by setting the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property to `AddWithKey`.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see[Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.OleDb.OleDbDataAdapter>, to fill a <xref:System.Data.DataSet> with rows from the categories table. This example assumes that you have created an <xref:System.Data.OleDb.OleDbDataAdapter> and a <xref:System.Data.DataSet>.  
-  
- [!code-vb[Classic WebData DbDataAdapter.Fill2 Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dbd_3_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.Fill2 Example#1](~/add/codesnippet/csharp/m-system.data.common.dbd_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.SystemException">The source table is invalid.</exception>
+        <param name="dataSet">To be added.</param>
+        <param name="srcTable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -533,8 +379,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -545,32 +395,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="dataTable">A <see cref="T:System.Data.DataTable" /> to fill with records and, if necessary, schema.</param>
-        <param name="command">The SQL SELECT statement used to retrieve rows from the data source.</param>
-        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
-        <summary>Adds or refreshes rows in a <see cref="T:System.Data.DataTable" /> to match those in the data source using the specified <see cref="T:System.Data.DataTable" />, <see cref="T:System.Data.IDbCommand" /> and <see cref="T:System.Data.CommandBehavior" />.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataTable" />. This does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves rows from the data source using the SELECT statement specified by an associated <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property. The connection object associated with the SELECT statement must be valid, but it does not need to be open. If the connection is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data and then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> operation then adds the rows to the specified destination <xref:System.Data.DataTable> object in the <xref:System.Data.DataSet>, creating the <xref:System.Data.DataTable> object if it does not already exist. When creating a <xref:System.Data.DataTable> object, the <xref:System.Data.Common.DbDataAdapter.Fill%2A> operation normally creates only column name metadata. However, if the <xref:System.Data.IDataAdapter.MissingSchemaAction%2A> property is set to `AddWithKey`, appropriate primary keys and constraints are also created.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> object encounters duplicate columns while populating a <xref:System.Data.DataTable>, it will generate names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on.  
-  
- The overload of <xref:System.Data.Common.DbDataAdapter.Fill%2A> that takes `DataTable` as a parameter only obtains the first result. Use an overload of <xref:System.Data.Common.DbDataAdapter.Fill%2A> that takes `DataSet` as a parameter to obtain multiple results.  
-  
- You can use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method multiple times on the same <xref:System.Data.DataTable>. If a primary key exists, incoming rows are merged with matching rows that already exist. If no primary key exists, incoming rows are appended to the <xref:System.Data.DataTable>.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataTable">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -580,8 +410,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -598,32 +432,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="startRecord">The zero-based record number to start with.</param>
-        <param name="maxRecords">The maximum number of records to retrieve.</param>
-        <param name="dataTables">The <see cref="T:System.Data.DataTable" /> objects to fill from the data source.</param>
-        <summary>Adds or refreshes rows in a <see cref="T:System.Data.DataTable" /> to match those in the data source starting at the specified record and retrieving up to the specified maximum number of records.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataTable" />. This value does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DataAdapter.Fill%2A> method retrieves rows from the data source using the SELECT statement specified by an associated <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property. The connection object associated with the SELECT statement must be valid, but it does not need to be open. If the connection is closed before <xref:System.Data.Common.DataAdapter.Fill%2A> is called, it is opened to retrieve data, and then it is closed. If the connection is open before <xref:System.Data.Common.DataAdapter.Fill%2A> is called, it remains open.  
-  
- The <xref:System.Data.Common.DataAdapter.Fill%2A> operation then adds the rows to destination <xref:System.Data.DataTable> objects in the <xref:System.Data.DataSet>, creating the <xref:System.Data.DataTable> objects if they do not already exist. When creating <xref:System.Data.DataTable> objects, the <xref:System.Data.Common.DataAdapter.Fill%2A> operation normally creates only column name metadata. However, if the <xref:System.Data.IDataAdapter.MissingSchemaAction%2A> property is set to `AddWithKey`, appropriate primary keys and constraints are also created.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
- If the data adapter encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "columnname1", "columnname2", "columnname3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet>, each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- When the SELECT statement used to populate the <xref:System.Data.DataSet> returns multiple results, such as a batch SQL statements, if one of the results contains an error, all subsequent results are skipped and not added to the <xref:System.Data.DataSet>.  
-  
- You can use the <xref:System.Data.Common.DataAdapter.Fill%2A> method multiple times on the same <xref:System.Data.DataTable>. If a primary key exists, incoming rows are merged with matching rows that already exist. If no primary key exists, incoming rows are appended to the <xref:System.Data.DataTable>.  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- ]]></format>
-        </remarks>
+        <param name="startRecord">To be added.</param>
+        <param name="maxRecords">To be added.</param>
+        <param name="dataTables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -633,8 +447,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -646,92 +464,13 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="srcTable" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to fill with records and, if necessary, schema.</param>
-        <param name="startRecord">The zero-based record number to start with.</param>
-        <param name="maxRecords">The maximum number of records to retrieve.</param>
-        <param name="srcTable">The name of the source table to use for table mapping.</param>
-        <summary>Adds or refreshes rows in a specified range in the <see cref="T:System.Data.DataSet" /> to match those in the data source using the <see cref="T:System.Data.DataSet" /> and <see cref="T:System.Data.DataTable" /> names.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataSet" />. This does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A `maxRecords` value of 0 gets all records found after the start record. If `maxRecords` is greater than the number of remaining rows, only the remaining rows are returned, and no error is issued.  
-  
- If the corresponding select command is a statement returning multiple results, <xref:System.Data.Common.DbDataAdapter.Fill%2A> only applies `maxRecords` to the first result.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves the data from the data source using a SELECT statement. The <xref:System.Data.IDbConnection> object associated with the SELECT statement must be valid, but it does not need to be open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data and then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
-  
- If a command does not return any rows, no tables are added to the <xref:System.Data.DataSet>, but no exception is raised.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> object encounters duplicate columns while populating a <xref:System.Data.DataTable>, it will generate names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on.  
-  
- When the query specified returns multiple results, each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Because no table is created for a query that does not return rows, if you process an insert query followed by a select query, the table created for the select query is named "Table", because it is the first table created. Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
-adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- If an error or an exception is encountered while populating the data tables, rows added prior to the occurrence of the error remain in the data tables. The remainder of the operation is aborted.  
-  
- When the SELECT statement used to populate the <xref:System.Data.DataSet> returns multiple results, such as batch SQL statements, be aware of the following:  
-  
--   When processing multiple results from a batch SQL statement, `maxRecords` only applies to the first result. The same is true for rows containing chaptered results (.NET Framework Data Provider for OLE DB only). The top level result is limited by `maxRecords`, but all child rows are added.  
-  
--   If one of the results contains an error, all subsequent results are skipped and not added to the <xref:System.Data.DataSet>.  
-  
- When using subsequent <xref:System.Data.Common.DbDataAdapter.Fill%2A> calls to refresh the contents of the <xref:System.Data.DataSet>, two conditions must be met:  
-  
-1.  The SQL statement should match the one initially used to populate the <xref:System.Data.DataSet>.  
-  
-2.  The **Key** column information must be present.  
-  
- If primary key information is present, any duplicate rows will be reconciled and only appear once in the <xref:System.Data.DataTable> that corresponds to the <xref:System.Data.DataSet>. Primary key information may be set either through <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, by specifying the <xref:System.Data.DataTable.PrimaryKey%2A> property of the <xref:System.Data.DataTable>, or by setting the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property to `AddWithKey`.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see [Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
-> [!NOTE]
->  The `DataSet` will not contain more than the number of records indicated by `maxRecords`. However, the entire result set generated by the query is still returned from the server.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.OleDb.OleDbDataAdapter>, to fill a <xref:System.Data.DataSet> with 15 rows, beginning at row 10, from the **Categories** table. This example assumes that you have created an <xref:System.Data.OleDb.OleDbDataAdapter> and a <xref:System.Data.DataSet>.  
-  
- [!code-vb[Classic WebData DbDataAdapter.Fill3 Example#1](~/add/codesnippet/visualbasic/db016a7d-8591-46f9-abcc-_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.Fill3 Example#1](~/add/codesnippet/csharp/db016a7d-8591-46f9-abcc-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.SystemException">The <see cref="T:System.Data.DataSet" /> is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.  
-  
- -or-  
-  
- The connection is invalid.</exception>
-        <exception cref="T:System.InvalidCastException">The connection could not be found.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="startRecord" /> parameter is less than 0.  
-  
- -or-  
-  
- The <paramref name="maxRecords" /> parameter is less than 0.</exception>
+        <param name="dataSet">To be added.</param>
+        <param name="startRecord">To be added.</param>
+        <param name="maxRecords">To be added.</param>
+        <param name="srcTable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -741,8 +480,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -755,70 +498,14 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="dataTables">The <see cref="T:System.Data.DataTable" /> objects to fill from the data source.</param>
-        <param name="startRecord">The zero-based record number to start with.</param>
-        <param name="maxRecords">The maximum number of records to retrieve.</param>
-        <param name="command">The <see cref="T:System.Data.IDbCommand" /> executed to fill the <see cref="T:System.Data.DataTable" /> objects.</param>
-        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
-        <summary>Adds or refreshes rows in a specified range in the <see cref="T:System.Data.DataSet" /> to match those in the data source using the <see cref="T:System.Data.DataSet" /> and <see cref="T:System.Data.DataTable" /> names.</summary>
-        <returns>The number of rows added to or refreshed in the data tables.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A `maxRecords` value of 0 gets all records found after the start record. If `maxRecords` is greater than the number of remaining rows, only the remaining rows are returned and no error is issued.  
-  
- The Fill method retrieves the data from the data source using a SELECT statement. The <xref:System.Data.IDbConnection> object associated with the SELECT statement must be valid, but it does not need to be open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
-  
- If a command does not return any rows, no tables are added to the <xref:System.Data.DataSet>, but no exception is raised.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> object encounters duplicate columns while populating a <xref:System.Data.DataTable>, it will generate names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on.  
-  
- When the query specified returns multiple results, each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Since no table is created for a query that does not return rows, if you were to process an insert query followed by a select query, the table created for the select query would be named "Table", because it is the first table created. Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The Fill method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
-adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- If an error or an exception is encountered while populating the data tables, rows added prior to the occurrence of the error remain in the data tables. The remainder of the operation is aborted.  
-  
- When the SELECT statement used to populate the <xref:System.Data.DataTable> objects returns multiple results, such as a batch SQL statement, be aware of the following:  
-  
--   When processing multiple results from a batch SQL statement, `maxRecords` only applies to the first result. The same is true for rows containing chaptered results (.NET Framework Data Provider for OLE DB only). The top level result is limited by `maxRecords`, but all child rows are added.  
-  
--   If one of the results contains an error, all subsequent results are skipped.  
-  
-> [!NOTE]
->  The `DataSet` will not contain more than the number of records indicated by `maxRecords`. However, the entire resultset generated by the query is still returned from the server.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.SystemException">The <see cref="T:System.Data.DataSet" /> is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.  
-  
- -or-  
-  
- The connection is invalid.</exception>
-        <exception cref="T:System.InvalidCastException">The connection could not be found.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="startRecord" /> parameter is less than 0.  
-  
- -or-  
-  
- The <paramref name="maxRecords" /> parameter is less than 0.</exception>
+        <param name="dataTables">To be added.</param>
+        <param name="startRecord">To be added.</param>
+        <param name="maxRecords">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -828,8 +515,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -843,57 +534,15 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to fill with records and, if necessary, schema.</param>
-        <param name="startRecord">The zero-based record number to start with.</param>
-        <param name="maxRecords">The maximum number of records to retrieve.</param>
-        <param name="srcTable">The name of the source table to use for table mapping.</param>
-        <param name="command">The SQL SELECT statement used to retrieve rows from the data source.</param>
-        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
-        <summary>Adds or refreshes rows in a specified range in the <see cref="T:System.Data.DataSet" /> to match those in the data source using the <see cref="T:System.Data.DataSet" /> and source table names, command string, and command behavior.</summary>
-        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataSet" />. This does not include rows affected by statements that do not return rows.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method retrieves rows from the data source using the SELECT statement specified by an associated <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property. The connection object associated with the SELECT statement must be valid, but it does not need to be open. If the connection is closed before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called, it remains open.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> operation then adds the rows to destination <xref:System.Data.DataTable> objects in the <xref:System.Data.DataSet>, creating the <xref:System.Data.DataTable> objects if they do not already exist. When creating <xref:System.Data.DataTable> objects, the <xref:System.Data.Common.DbDataAdapter.Fill%2A> operation normally creates only column name metadata. However, if the <xref:System.Data.IDataAdapter.MissingSchemaAction%2A> property is set to `AddWithKey`, appropriate primary keys and constraints are also created.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The <xref:System.Data.Common.DbDataAdapter.Fill%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.Fill%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.Fill(dataset, "aaa"); // Fills "aaa", which already exists in the DataSet.  
-adapter.Fill(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.Fill%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- You can use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method multiple times on the same <xref:System.Data.DataTable>. If a primary key exists, incoming rows are merged with matching rows that already exist. If no primary key exists, incoming rows are appended to the <xref:System.Data.DataTable>.  
-  
- If the `SelectCommand` returns the results of an OUTER JOIN, the `DataAdapter` does not set a <xref:System.Data.DataTable.PrimaryKey%2A> value for the resulting <xref:System.Data.DataTable>. You must explicitly define the primary key to ensure that duplicate rows are resolved correctly. For more information, see[Defining Primary Keys](../Topic/Defining%20Primary%20Keys.md).  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.Fill%2A> and <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for a .NET Framework data provider retrieves schema information for only the first result.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="startRecord" /> parameter is less than 0.  
-  
- -or-  
-  
- The <paramref name="maxRecords" /> parameter is less than 0.</exception>
+        <param name="dataSet">To be added.</param>
+        <param name="startRecord">To be added.</param>
+        <param name="maxRecords">To be added.</param>
+        <param name="srcTable">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillCommandBehavior">
@@ -903,15 +552,19 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.CommandBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the behavior of the command used to fill the data adapter.</summary>
-        <value>The <see cref="T:System.Data.CommandBehavior" /> of the command used to fill the data adapter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -922,8 +575,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -933,61 +590,11 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="schemaType" Type="System.Data.SchemaType" />
       </Parameters>
       <Docs>
-        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to insert the schema in.</param>
-        <param name="schemaType">One of the <see cref="T:System.Data.SchemaType" /> values that specify how to insert the schema.</param>
-        <summary>Adds a <see cref="T:System.Data.DataTable" /> named "Table" to the specified <see cref="T:System.Data.DataSet" /> and configures the schema to match that in the data source based on the specified <see cref="T:System.Data.SchemaType" />.</summary>
-        <returns>A reference to a collection of <see cref="T:System.Data.DataTable" /> objects that were added to the <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method retrieves the schema information from the data source using the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>.  
-  
- A <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> operation adds a <xref:System.Data.DataTable> to the destination <xref:System.Data.DataSet>. It then adds columns to the <xref:System.Data.DataColumnCollection> of the <xref:System.Data.DataTable>, and configures the following <xref:System.Data.DataColumn> properties if they exist at the data source:  
-  
--   <xref:System.Data.DataColumn.AllowDBNull%2A>  
-  
--   <xref:System.Data.DataColumn.AutoIncrement%2A>. You must set <xref:System.Data.DataColumn.AutoIncrementStep%2A> and <xref:System.Data.DataColumn.AutoIncrementSeed%2A> separately.  
-  
--   <xref:System.Data.DataColumn.MaxLength%2A>  
-  
--   <xref:System.Data.DataColumn.ReadOnly%2A>  
-  
--   <xref:System.Data.DataColumn.Unique%2A>  
-  
- <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> also configures the <xref:System.Data.DataTable.PrimaryKey%2A> and <xref:System.Data.DataTable.Constraints%2A> properties according to the following rules:  
-  
--   If one or more primary key columns are returned by the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>, they are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
--   If no primary key columns are returned but unique columns are, the unique columns are used as the primary key if, and only if, all the unique columns are nonnullable. If any of the columns are nullable, a <xref:System.Data.UniqueConstraint> is added to the <xref:System.Data.ConstraintCollection>, but the <xref:System.Data.DataTable.PrimaryKey%2A> property is not set.  
-  
--   If both primary key columns and unique columns are returned, the primary key columns are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
- Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
-  
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
-  
- Primary key information is used during <xref:System.Data.Common.DbDataAdapter.Fill%2A> to find and replace any rows whose key columns match. If this is not the desired behavior, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> without requesting schema information.  
-  
- If the <xref:System.Data.IDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The <xref:System.Data.IDbConnection> object associated with the select command must be valid, but it does not need to open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it is left open.  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.SqlClient.SqlDataAdapter>, to fill a <xref:System.Data.DataSet> with the schema, and returns a <xref:System.Data.DataSet>.  
-  
- [!code-vb[Classic WebData DbDataAdapter.FillSchema1 Example#1](~/add/codesnippet/visualbasic/5283d285-2680-48b0-856a-_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.FillSchema1 Example#1](~/add/codesnippet/csharp/5283d285-2680-48b0-856a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="dataSet">To be added.</param>
+        <param name="schemaType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -997,8 +604,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -1008,61 +619,11 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="schemaType" Type="System.Data.SchemaType" />
       </Parameters>
       <Docs>
-        <param name="dataTable">The <see cref="T:System.Data.DataTable" /> to be filled with the schema from the data source.</param>
-        <param name="schemaType">One of the <see cref="T:System.Data.SchemaType" /> values.</param>
-        <summary>Configures the schema of the specified <see cref="T:System.Data.DataTable" /> based on the specified <see cref="T:System.Data.SchemaType" />.</summary>
-        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information returned from the data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FillSchema method retrieves the schema from the data source using the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>. The connection object associated with the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> must be valid, but it does not need to be open. If the connection is closed before FillSchema is called, it is opened to retrieve data, then closed. If the connection is open before FillSchema is called, it remains open.  
-  
- A FillSchema operation returns a <xref:System.Data.DataTable>. It then adds columns to the <xref:System.Data.DataColumnCollection> of the <xref:System.Data.DataTable>, and configures the following <xref:System.Data.DataColumn> properties if they exist at the data source:  
-  
--   <xref:System.Data.DataColumn.AllowDBNull%2A>  
-  
--   <xref:System.Data.DataColumn.AutoIncrement%2A>. You must set <xref:System.Data.DataColumn.AutoIncrementStep%2A> and <xref:System.Data.DataColumn.AutoIncrementSeed%2A> separately.  
-  
--   <xref:System.Data.DataColumn.MaxLength%2A>  
-  
--   <xref:System.Data.DataColumn.ReadOnly%2A>  
-  
--   <xref:System.Data.DataColumn.Unique%2A>  
-  
- FillSchema also configures the <xref:System.Data.DataTable.PrimaryKey%2A> and <xref:System.Data.DataTable.Constraints%2A> properties according to the following rules:  
-  
--   If a <xref:System.Data.DataTable.PrimaryKey%2A> has already been defined for the `DataTable`, or the `DataTable` contains data, the `PrimaryKey` property will not be set.  
-  
--   If one or more primary key columns are returned by the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>, they are used as the primary key columns for the `DataTable`.  
-  
--   If no primary key columns are returned but unique columns are, the unique columns are used as the primary key if, and only if, all the unique columns are nonnullable. If any of the columns are nullable, a <xref:System.Data.UniqueConstraint> is added to the <xref:System.Data.ConstraintCollection>, but the `PrimaryKey` property is not set.  
-  
--   If both primary key columns and unique columns are returned, the primary key columns are used as the primary key columns for the `DataTable`.  
-  
- Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added. This process may require several round-trips to the server.  
-  
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
-  
- If the <xref:System.Data.Common.DbDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- FillSchema does not return any rows. Use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method to add rows to a <xref:System.Data.DataTable>.  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of FillSchema for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- When using FillSchema, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.SqlClient.SqlDataAdapter>, to fill a <xref:System.Data.DataSet> with the schema, and returns a <xref:System.Data.DataTable>.  
-  
- [!code-vb[Classic WebData DbDataAdapter.FillSchema3#1](~/add/codesnippet/visualbasic/658ac10a-3a87-4693-8b37-_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.FillSchema3#1](~/add/codesnippet/csharp/658ac10a-3a87-4693-8b37-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="dataTable">To be added.</param>
+        <param name="schemaType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -1072,8 +633,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -1084,81 +649,12 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="srcTable" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to insert the schema in.</param>
-        <param name="schemaType">One of the <see cref="T:System.Data.SchemaType" /> values that specify how to insert the schema.</param>
-        <param name="srcTable">The name of the source table to use for table mapping.</param>
-        <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" /> and configures the schema to match that in the data source based upon the specified <see cref="T:System.Data.SchemaType" /> and <see cref="T:System.Data.DataTable" />.</summary>
-        <returns>A reference to a collection of <see cref="T:System.Data.DataTable" /> objects that were added to the <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method retrieves the schema information from the data source using the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>.  
-  
- A <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> operation adds a <xref:System.Data.DataTable> to the destination <xref:System.Data.DataSet>. It then adds columns to the <xref:System.Data.DataColumnCollection> of the <xref:System.Data.DataTable>, and configures the following <xref:System.Data.DataColumn> properties if they exist at the data source:  
-  
--   <xref:System.Data.DataColumn.AllowDBNull%2A>  
-  
--   <xref:System.Data.DataColumn.AutoIncrement%2A>. You must set <xref:System.Data.DataColumn.AutoIncrementStep%2A> and <xref:System.Data.DataColumn.AutoIncrementSeed%2A> separately.  
-  
--   <xref:System.Data.DataColumn.MaxLength%2A>  
-  
--   <xref:System.Data.DataColumn.ReadOnly%2A>  
-  
--   <xref:System.Data.DataColumn.Unique%2A>  
-  
- <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> also configures the <xref:System.Data.DataTable.PrimaryKey%2A> and <xref:System.Data.DataTable.Constraints%2A> properties according to the following rules:  
-  
--   If one or more primary key columns are returned by the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>, they are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
--   If no primary key columns are returned but unique columns are, the unique columns are used as the primary key if, and only if, all the unique columns are nonnullable. If any of the columns are nullable, a <xref:System.Data.UniqueConstraint> is added to the <xref:System.Data.ConstraintCollection>, but the <xref:System.Data.DataTable.PrimaryKey%2A> property is not set.  
-  
--   If both primary key columns and unique columns are returned, the primary key columns are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
- Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
-  
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
-  
- Primary key information is used during <xref:System.Data.Common.DbDataAdapter.Fill%2A> to find and replace any rows whose key columns match. If this is not the desired behavior, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> without requesting schema information.  
-  
- If the <xref:System.Data.Common.DbDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.FillSchema(dataset, "aaa"); // Fills the schema of "aaa", which already exists in the DataSet.  
-adapter.FillSchema(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- The <xref:System.Data.IDbConnection> object associated with the select command must be valid, but it does not need to open. If the <xref:System.Data.IDbConnection> is closed before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it is left open.  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.SqlClient.SqlDataAdapter>, to fill a <xref:System.Data.DataSet> with the schema, and returns a <xref:System.Data.DataSet>.  
-  
- [!code-vb[Classic WebData DbDataAdapter.FillSchema2 Example#1](~/add/codesnippet/visualbasic/c7e2b899-0a44-4d9d-9e8d-_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.FillSchema2 Example#1](~/add/codesnippet/csharp/c7e2b899-0a44-4d9d-9e8d-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A source table from which to get the schema could not be found.</exception>
+        <param name="dataSet">To be added.</param>
+        <param name="schemaType">To be added.</param>
+        <param name="srcTable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -1168,8 +664,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -1181,53 +681,13 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="dataTable">The <see cref="T:System.Data.DataTable" /> to be filled with the schema from the data source.</param>
-        <param name="schemaType">One of the <see cref="T:System.Data.SchemaType" /> values.</param>
-        <param name="command">The SQL SELECT statement used to retrieve rows from the data source.</param>
-        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
-        <summary>Configures the schema of the specified <see cref="T:System.Data.DataTable" /> based on the specified <see cref="T:System.Data.SchemaType" />, command string, and <see cref="T:System.Data.CommandBehavior" /> values.</summary>
-        <returns>A of <see cref="T:System.Data.DataTable" /> object that contains schema information returned from the data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> method retrieves the schema from the data source using the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>. The connection object associated with the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> must be valid, but it does not need to be open. If the connection is closed before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it remains open.  
-  
- A <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> operation adds a <xref:System.Data.DataTable> to the destination <xref:System.Data.DataSet>. It then adds columns to the <xref:System.Data.DataColumnCollection> of the <xref:System.Data.DataTable>, and configures the following <xref:System.Data.DataColumn> properties if they exist at the data source:  
-  
--   <xref:System.Data.DataColumn.AllowDBNull%2A>  
-  
--   <xref:System.Data.DataColumn.AutoIncrement%2A>. You must set <xref:System.Data.DataColumn.AutoIncrementStep%2A> and <xref:System.Data.DataColumn.AutoIncrementSeed%2A> separately.  
-  
--   <xref:System.Data.DataColumn.MaxLength%2A>  
-  
--   <xref:System.Data.DataColumn.ReadOnly%2A>  
-  
--   <xref:System.Data.DataColumn.Unique%2A>  
-  
- <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> also configures the <xref:System.Data.DataTable.PrimaryKey%2A> and <xref:System.Data.DataTable.Constraints%2A> properties according to the following rules:  
-  
--   If one or more primary key columns are returned by the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>, they are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
--   If no primary key columns are returned but unique columns are, the unique columns are used as the primary key if, and only if, all the unique columns are nonnullable. If any of the columns are nullable, a <xref:System.Data.UniqueConstraint> is added to the <xref:System.Data.ConstraintCollection>, but the <xref:System.Data.DataTable.PrimaryKey%2A> property is not set.  
-  
--   If both primary key columns and unique columns are returned, the primary key columns are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
- Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
-  
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
-  
- If the <xref:System.Data.IDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> does not return any rows. Use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method to add rows to a <xref:System.Data.DataTable>.  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataTable">To be added.</param>
+        <param name="schemaType">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -1237,8 +697,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -1251,72 +715,14 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="dataSet">The <see cref="T:System.Data.DataSet" /> to be filled with the schema from the data source.</param>
-        <param name="schemaType">One of the <see cref="T:System.Data.SchemaType" /> values.</param>
-        <param name="command">The SQL SELECT statement used to retrieve rows from the data source.</param>
-        <param name="srcTable">The name of the source table to use for table mapping.</param>
-        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
-        <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" /> and configures the schema to match that in the data source based on the specified <see cref="T:System.Data.SchemaType" />.</summary>
-        <returns>An array of <see cref="T:System.Data.DataTable" /> objects that contain schema information returned from the data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> method retrieves the schema from the data source using the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>. The connection object associated with the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> must be valid, but it does not need to be open. If the connection is closed before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it is opened to retrieve data, then closed. If the connection is open before <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called, it remains open.  
-  
- A <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> operation adds a <xref:System.Data.DataTable> to the destination <xref:System.Data.DataSet>. It then adds columns to the <xref:System.Data.DataColumnCollection> of the <xref:System.Data.DataTable>, and configures the following <xref:System.Data.DataColumn> properties if they exist at the data source:  
-  
--   <xref:System.Data.DataColumn.AllowDBNull%2A>  
-  
--   <xref:System.Data.DataColumn.AutoIncrement%2A>. You must set <xref:System.Data.DataColumn.AutoIncrementStep%2A> and <xref:System.Data.DataColumn.AutoIncrementSeed%2A> separately.  
-  
--   <xref:System.Data.DataColumn.MaxLength%2A>  
-  
--   <xref:System.Data.DataColumn.ReadOnly%2A>  
-  
--   <xref:System.Data.DataColumn.Unique%2A>  
-  
- <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> also configures the <xref:System.Data.DataTable.PrimaryKey%2A> and <xref:System.Data.DataTable.Constraints%2A> properties according to the following rules:  
-  
--   If one or more primary key columns are returned by the <xref:System.Data.IDbDataAdapter.SelectCommand%2A>, they are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
--   If no primary key columns are returned but unique columns are, the unique columns are used as the primary key if, and only if, all the unique columns are nonnullable. If any of the columns are nullable, a <xref:System.Data.UniqueConstraint> is added to the <xref:System.Data.ConstraintCollection>, but the <xref:System.Data.DataTable.PrimaryKey%2A> property is not set.  
-  
--   If both primary key columns and unique columns are returned, the primary key columns are used as the primary key columns for the <xref:System.Data.DataTable>.  
-  
- Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
-  
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
-  
- If the <xref:System.Data.IDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
-  
- The <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. In such situations, <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> performs a case-sensitive comparison to find the corresponding table, and creates a new table if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-dataset.Tables.Add("AAA");  
-adapter.FillSchema(dataset, "aaa"); // Fills the schema of "aaa", which already exists in the DataSet.  
-adapter.FillSchema(dataset, "Aaa"); // Adds a new table called "Aaa".  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
-dataset.Tables.Add("aaa");  
-adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> does not return any rows. Use the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method to add rows to a <xref:System.Data.DataTable>.  
-  
-> [!NOTE]
->  When handling batch SQL statements that return multiple results, the implementation of <xref:System.Data.Common.DbDataAdapter.FillSchema%2A> for the .NET Framework Data Provider for OLE DB retrieves schema information for only the first result. To retrieve schema information for multiple results, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> with the <xref:System.Data.MissingSchemaAction> set to `AddWithKey`.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>, the .NET Framework Data Provider for SQL Server appends a FOR BROWSE clause to the statement being executed. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataSet">To be added.</param>
+        <param name="schemaType">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="srcTable">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBatchedParameter">
@@ -1326,8 +732,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDataParameter</ReturnType>
@@ -1337,19 +747,11 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="parameterIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="commandIdentifier">The index of the command to retrieve the parameter from.</param>
-        <param name="parameterIndex">The index of the parameter within the command.</param>
-        <summary>Returns a <see cref="T:System.Data.IDataParameter" /> from one of the commands in the current batch.</summary>
-        <returns>The <see cref="T:System.Data.IDataParameter" /> specified.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In <xref:System.Data.Common.DbDataAdapter>, this method throws <xref:System.NotSupportedException>. Classes that inherit from <xref:System.Data.Common.DbDataAdapter> override this method to provide support for batches.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The adapter does not support batches.</exception>
+        <param name="commandIdentifier">To be added.</param>
+        <param name="parameterIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBatchedRecordsAffected">
@@ -1359,8 +761,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1371,19 +777,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="error" Type="System.Exception&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="commandIdentifier">The zero-based column ordinal of the individual command within the batch.</param>
-        <param name="recordsAffected">The number of rows affected in the data store by the specified command within the batch.</param>
-        <param name="error">An <see cref="T:System.Exception" /> thrown during execution of the specified command. Returns <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) if no exception is thrown.</param>
-        <summary>Returns information about an individual update attempt within a larger batched update.</summary>
-        <returns>Information about an individual update attempt within a larger batched update.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Data providers that support batched updating logic must override a series of virtual methods on the <xref:System.Data.Common.DbDataAdapter> class. `GetBatchedRecordsAffected` represents one of those virtual methods. The `DbDataAdapter` class relies on `GetBatchedRecordsAffected` to determine the success or failure of individual update attempts within a batch so it can mark each corresponding <xref:System.Data.DataRow> accordingly.  
-  
- ]]></format>
-        </remarks>
+        <param name="commandIdentifier">To be added.</param>
+        <param name="recordsAffected">To be added.</param>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFillParameters">
@@ -1393,8 +792,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1406,8 +809,8 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the parameters set by the user when executing an SQL SELECT statement.</summary>
-        <returns>An array of <see cref="T:System.Data.IDataParameter" /> objects that contains the parameters set by the user.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1418,24 +821,20 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes batching for the <see cref="T:System.Data.Common.DbDataAdapter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In <xref:System.Data.Common.DbDataAdapter>, this method throws <xref:System.NotSupportedException>. Classes that inherit from <xref:System.Data.Common.DbDataAdapter> override this method to provide support for batches.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The adapter does not support batches.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -1445,8 +844,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1460,24 +863,9 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <ReturnType>System.Data.Common.DbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a command used to insert new records into the data source.</summary>
-        <value>A <see cref="T:System.Data.IDbCommand" /> used during <see cref="System.Data.IDataAdapter.Update%2A" /> to insert records in the data source for new rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the <xref:System.Data.IDbDataAdapter.InsertCommand%2A> will be automatically generated.  
-  
-   
-  
-## Examples  
- The following example creates the derived class <xref:System.Data.OleDb.OleDbDataAdapter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData DbDataAdapter.InsertCommand Example#1](~/add/codesnippet/csharp/p-system.data.common.dbd_0_1.cs)]
- [!code-vb[Classic WebData DbDataAdapter.InsertCommand Example#1](~/add/codesnippet/visualbasic/p-system.data.common.dbd_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">
@@ -1487,8 +875,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1497,16 +889,9 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="value" Type="System.Data.Common.RowUpdatedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Data.Common.RowUpdatedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see langword="RowUpdated" /> event of a .NET Framework data provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdating">
@@ -1516,8 +901,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1526,16 +915,9 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="value" Type="System.Data.Common.RowUpdatingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Data.Common.RowUpdatingEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see langword="RowUpdating" /> event of a .NET Framework data provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -1545,8 +927,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1560,19 +946,9 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <ReturnType>System.Data.Common.DbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a command used to select records in the data source.</summary>
-        <value>A <see cref="T:System.Data.IDbCommand" /> that is used during <see cref="System.Data.IDataAdapter.Update%2A" /> to select records from data source for placement in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates the derived class <xref:System.Data.OleDb.OleDbDataAdapter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData DbDataAdapter.SelectCommand Example#1](~/add/codesnippet/csharp/p-system.data.common.dbd_1_1.cs)]
- [!code-vb[Classic WebData DbDataAdapter.SelectCommand Example#1](~/add/codesnippet/visualbasic/p-system.data.common.dbd_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.DeleteCommand">
@@ -1582,25 +958,20 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement for deleting records from the data set.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to delete records in the data source for deleted rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- For more information, see <xref:System.Data.IDbDataAdapter.DeleteCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.InsertCommand">
@@ -1610,25 +981,20 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement used to insert new records into the data source.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to insert records in the data source for new rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- For more information, see <xref:System.Data.IDbDataAdapter.InsertCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.SelectCommand">
@@ -1638,25 +1004,20 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement used to select records in the data source.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to select records from data source for placement in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- For more information, see <xref:System.Data.IDbDataAdapter.SelectCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbDataAdapter.UpdateCommand">
@@ -1666,25 +1027,20 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an SQL statement used to update records in the data source.</summary>
-        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="System.Data.Common.DbDataAdapter.Update%2A" /> to update records in the data source for modified rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.Data.IDbDataAdapter> interface.  
-  
- For more information, see <xref:System.Data.IDbDataAdapter.UpdateCommand%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1694,26 +1050,21 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new object that is a copy of the current instance.</summary>
-        <returns>A new object that is a copy of this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.ICloneable> interface.  
-  
- For more information, see <xref:System.ICloneable.Clone%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TerminateBatching">
@@ -1723,24 +1074,20 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends batching for the <see cref="T:System.Data.Common.DbDataAdapter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In <xref:System.Data.Common.DbDataAdapter>, this method throws <xref:System.NotSupportedException>. Classes that inherit from <xref:System.Data.Common.DbDataAdapter> override this method to provide support for batches.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The adapter does not support batches.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1750,8 +1097,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1760,78 +1111,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="dataRows" Type="System.Data.DataRow[]" />
       </Parameters>
       <Docs>
-        <param name="dataRows">An array of <see cref="T:System.Data.DataRow" /> objects used to update the data source.</param>
-        <summary>Updates the values in the database by executing the respective INSERT, UPDATE, or DELETE statements for each inserted, updated, or deleted row in the specified array in the <see cref="T:System.Data.DataSet" />.</summary>
-        <returns>The number of rows successfully updated from the <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an application calls the <xref:System.Data.Common.DbDataAdapter.Update%2A> method, the <xref:System.Data.Common.DbDataAdapter> examines the <xref:System.Data.DataRow.RowState%2A> property, and executes the required INSERT, UPDATE, or DELETE statements iteratively for each row, based on the order of the indexes configured in the <xref:System.Data.DataSet>. For example, <xref:System.Data.Common.DbDataAdapter.Update%2A> might execute a DELETE statement, followed by an INSERT statement, and then another DELETE statement, due to the ordering of the rows in the <xref:System.Data.DataTable>.  
-  
- It should be noted that these statements are not performed as a batch process; each row is updated individually. An application can call the <xref:System.Data.DataSet.GetChanges%2A> method in situations where you must control the sequence of statement types (for example, INSERTs before UPDATEs). For more information, see [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
-  
- If INSERT, UPDATE, or DELETE statements have not been specified, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method generates an exception. However, you can create a <xref:System.Data.SqlClient.SqlCommandBuilder> or <xref:System.Data.OleDb.OleDbCommandBuilder> object to automatically generate SQL statements for single-table updates if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional SQL statements that you do not set are generated by the **CommandBuilder**. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- The <xref:System.Data.Common.DbDataAdapter.Update%2A> method retrieves rows from the table listed in the first mapping before performing an update. The <xref:System.Data.Common.DbDataAdapter.Update%2A> then refreshes the row using the value of the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property. Any additional rows returned are ignored.  
-  
- After any data is loaded back into the <xref:System.Data.DataSet>, the <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised, allowing the user to inspect the reconciled <xref:System.Data.DataSet> row and any output parameters returned by the command. After a row updates successfully, the changes to that row are accepted.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, the order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- Each command associated with the <xref:System.Data.Common.DbDataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET Framework data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DbDataAdapter> references to obtain parameter values for the current row.  
-  
- `SourceColumn` refers to the unmapped column name before any table mappings have been applied. If `SourceColumn` refers to a nonexistent column, the action taken depends on one of the following <xref:System.Data.MissingMappingAction> values.  
-  
-|Enumeration value|Action taken|  
-|-----------------------|------------------|  
-|`MissingMappingAction.Passthrough`|Use the source column names and table names in the <xref:System.Data.DataSet> if no mapping is present.|  
-|`MissingMappingAction.Ignore`|A <xref:System.SystemException> is generated. When the mappings are explicitly set, a missing mapping for an input parameter is usually the result of an error.|  
-|`MissingMappingAction.Error`|A <xref:System.SystemException> is generated.|  
-  
- The `SourceColumn` property is also used to map the value for output or input/output parameters back to the `DataSet`. An exception is generated if it refers to a nonexistent column.  
-  
- The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
-  
-> [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.OleDb.OleDbDataAdapter>, to update the data source.  
-  
- [!code-cs[Classic WebData DbDataAdapter.Update1 Example#1](~/add/codesnippet/csharp/m-system.data.common.dbd_0_1.cs)]
- [!code-vb[Classic WebData DbDataAdapter.Update1 Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dbd_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Data.DataSet" /> is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
-        <exception cref="T:System.SystemException">No <see cref="T:System.Data.DataRow" /> exists to update.  
-  
- -or-  
-  
- No <see cref="T:System.Data.DataTable" /> exists to update.  
-  
- -or-  
-  
- No <see cref="T:System.Data.DataSet" /> exists to use as a source.</exception>
-        <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
+        <param name="dataRows">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1841,8 +1124,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1851,68 +1138,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="dataSet" Type="System.Data.DataSet" />
       </Parameters>
       <Docs>
-        <param name="dataSet">The <see cref="T:System.Data.DataSet" /> used to update the data source.</param>
-        <summary>Updates the values in the database by executing the respective INSERT, UPDATE, or DELETE statements for each inserted, updated, or deleted row in the specified <see cref="T:System.Data.DataSet" />.</summary>
-        <returns>The number of rows successfully updated from the <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an application calls the Update method, the <xref:System.Data.Common.DbDataAdapter> examines the <xref:System.Data.DataRow.RowState%2A> property, and executes the required INSERT, UPDATE, or DELETE statements iteratively for each row, based on the order of the indexes configured in the <xref:System.Data.DataSet>. For example, Update might execute a DELETE statement, followed by an INSERT statement, and then another DELETE statement, due to the ordering of the rows in the <xref:System.Data.DataTable>.  
-  
- It should be noted that these statements are not performed as a batch process; each row is updated individually. An application can call the <xref:System.Data.DataSet.GetChanges%2A> method in situations where you must control the sequence of statement types (for example, INSERTs before UPDATEs). For more information, see [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
-  
- If INSERT, UPDATE, or DELETE statements have not been specified, the Update method generates an exception. However, you can create a <xref:System.Data.SqlClient.SqlCommandBuilder> or <xref:System.Data.OleDb.OleDbCommandBuilder> object to automatically generate SQL statements for single-table updates if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional SQL statements that you do not set are generated by the **CommandBuilder**. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- The Update method retrieves rows from the table listed in the first mapping before performing an update. The Update then refreshes the row using the value of the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property. Any additional rows returned are ignored.  
-  
- After any data is loaded back into the <xref:System.Data.DataSet>, the <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised, allowing the user to inspect the reconciled <xref:System.Data.DataSet> row and any output parameters returned by the command. After a row updates successfully, the changes to that row are accepted.  
-  
- When using Update, the order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, then the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- Each command associated with the <xref:System.Data.Common.DbDataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET Framework data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DbDataAdapter> references to obtain parameter values for the current row.  
-  
- `SourceColumn` refers to the unmapped column name before any table mappings have been applied. If `SourceColumn` refers to a nonexistent column, the action taken depends on one of the following <xref:System.Data.MissingMappingAction> values.  
-  
-|Enumeration value|Action taken|  
-|-----------------------|------------------|  
-|`MissingMappingAction.Passthrough`|Use the source column names and table names in the <xref:System.Data.DataSet> if no mapping is present.|  
-|`MissingMappingAction.Ignore`|A <xref:System.SystemException> is generated. When the mappings are explicitly set, a missing mapping for an input parameter is usually the result of an error.|  
-|`MissingMappingAction.Error`|A <xref:System.SystemException> is generated.|  
-  
- The `SourceColumn` property is also used to map the value for output or input/output parameters back to the `DataSet`. An exception is generated if it refers to a nonexistent column.  
-  
- The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
-  
-> [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling Update. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.OleDb.OleDbDataAdapter>, to update the data source.  
-  
- [!code-vb[Classic WebData DbDataAdapter.Update Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dbd_4_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.Update Example#1](~/add/codesnippet/csharp/m-system.data.common.dbd_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
-        <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
+        <param name="dataSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1922,8 +1151,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1932,78 +1165,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="dataTable" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="dataTable">The <see cref="T:System.Data.DataTable" /> used to update the data source.</param>
-        <summary>Updates the values in the database by executing the respective INSERT, UPDATE, or DELETE statements for each inserted, updated, or deleted row in the specified <see cref="T:System.Data.DataTable" />.</summary>
-        <returns>The number of rows successfully updated from the <see cref="T:System.Data.DataTable" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an application calls the <xref:System.Data.Common.DbDataAdapter.Update%2A> method, the <xref:System.Data.Common.DbDataAdapter> examines the <xref:System.Data.DataRow.RowState%2A> property, and executes the required INSERT, UPDATE, or DELETE statements iteratively for each row, based on the order of the indexes configured in the <xref:System.Data.DataSet>. For example, <xref:System.Data.Common.DbDataAdapter.Update%2A> might execute a DELETE statement, followed by an INSERT statement, and then another DELETE statement, due to the ordering of the rows in the <xref:System.Data.DataTable>.  
-  
- It should be noted that these statements are not performed as a batch process; each row is updated individually. An application can call the <xref:System.Data.DataSet.GetChanges%2A> method in situations where you must control the sequence of statement types (for example, INSERTs before UPDATEs). For more information, see [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
-  
- If INSERT, UPDATE, or DELETE statements have not been specified, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method generates an exception. However, you can create a <xref:System.Data.SqlClient.SqlCommandBuilder> or <xref:System.Data.OleDb.OleDbCommandBuilder> object to automatically generate SQL statements for single-table updates if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional SQL statements that you do not set are generated by the **CommandBuilder**. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- The <xref:System.Data.Common.DbDataAdapter.Update%2A> method retrieves rows from the table listed in the first mapping before performing an update. The <xref:System.Data.Common.DbDataAdapter.Update%2A> then refreshes the row using the value of the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property. Any additional rows returned are ignored.  
-  
- After any data is loaded back into the <xref:System.Data.DataSet>, the <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised, allowing the user to inspect the reconciled <xref:System.Data.DataSet> row and any output parameters returned by the command. After a row updates successfully, the changes to that row are accepted.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, the order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, then the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- Each command associated with the <xref:System.Data.Common.DbDataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET Framework data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DbDataAdapter> references to obtain parameter values for the current row.  
-  
- `SourceColumn` refers to the unmapped column name before any table mappings have been applied. If `SourceColumn` refers to a nonexistent column, the action taken depends on one of the following <xref:System.Data.MissingMappingAction> values.  
-  
-|Enumeration value|Action taken|  
-|-----------------------|------------------|  
-|`MissingMappingAction.Passthrough`|Use the source column names and table names in the <xref:System.Data.DataSet> if no mapping is present.|  
-|`MissingMappingAction.Ignore`|A <xref:System.SystemException> is generated. When the mappings are explicitly set, a missing mapping for an input parameter is usually the result of an error.|  
-|`MissingMappingAction.Error`|A <xref:System.SystemException> is generated.|  
-  
- The `SourceColumn` property is also used to map the value for output or input/output parameters back to the `DataSet`. An exception is generated if it refers to a nonexistent column.  
-  
- The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
-  
-> [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.OleDb.OleDbDataAdapter>, to update the data source.  
-  
- [!code-vb[Classic WebData DbDataAdapter.Update2 Example#1](~/add/codesnippet/visualbasic/m-system.data.common.dbd_1_1.vb)]
- [!code-cs[Classic WebData DbDataAdapter.Update2 Example#1](~/add/codesnippet/csharp/m-system.data.common.dbd_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Data.DataSet" /> is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
-        <exception cref="T:System.SystemException">No <see cref="T:System.Data.DataRow" /> exists to update.  
-  
- -or-  
-  
- No <see cref="T:System.Data.DataTable" /> exists to update.  
-  
- -or-  
-  
- No <see cref="T:System.Data.DataSet" /> exists to use as a source.</exception>
-        <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
+        <param name="dataTable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2013,8 +1178,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2024,71 +1193,11 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="tableMapping" Type="System.Data.Common.DataTableMapping" />
       </Parameters>
       <Docs>
-        <param name="dataRows">An array of <see cref="T:System.Data.DataRow" /> objects used to update the data source.</param>
-        <param name="tableMapping">The <see cref="System.Data.IDataAdapter.TableMappings%2A" /> collection to use.</param>
-        <summary>Updates the values in the database by executing the respective INSERT, UPDATE, or DELETE statements for each inserted, updated, or deleted row in the specified array of <see cref="T:System.Data.DataSet" /> objects.</summary>
-        <returns>The number of rows successfully updated from the <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an application calls the <xref:System.Data.Common.DbDataAdapter.Update%2A> method, the <xref:System.Data.Common.DbDataAdapter> examines the <xref:System.Data.DataRow.RowState%2A> property, and executes the required INSERT, UPDATE, or DELETE statements iteratively for each row, based on the order of the indexes configured in the <xref:System.Data.DataSet>. For example, <xref:System.Data.Common.DbDataAdapter.Update%2A> might execute a DELETE statement, followed by an INSERT statement, and then another DELETE statement, due to the ordering of the rows in the <xref:System.Data.DataTable>.  
-  
- It should be noted that these statements are not performed as a batch process; each row is updated individually. An application can call the <xref:System.Data.DataSet.GetChanges%2A> method in situations where you must control the sequence of statement types (for example, INSERTs before UPDATEs). For more information, see [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
-  
- If INSERT, UPDATE, or DELETE statements have not been specified, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method generates an exception. However, you can create a <xref:System.Data.SqlClient.SqlCommandBuilder> or <xref:System.Data.OleDb.OleDbCommandBuilder> object to automatically generate SQL statements for single-table updates if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional SQL statements that you do not set are generated by the **CommandBuilder**. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- The <xref:System.Data.Common.DbDataAdapter.Update%2A> method retrieves rows from the table listed in the first mapping before performing an update. The <xref:System.Data.Common.DbDataAdapter.Update%2A> then refreshes the row using the value of the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property. Any additional rows returned are ignored.  
-  
- After any data is loaded back into the <xref:System.Data.DataSet>, the <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised, allowing the user to inspect the reconciled <xref:System.Data.DataSet> row and any output parameters returned by the command. After a row updates successfully, the changes to that row are accepted.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, the order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, then the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- Each command associated with the <xref:System.Data.Common.DbDataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET Framework data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DbDataAdapter> references to obtain parameter values for the current row.  
-  
- `SourceColumn` refers to the unmapped column name before any table mappings have been applied. If `SourceColumn` refers to a nonexistent column, the action taken depends on one of the following <xref:System.Data.MissingMappingAction> values.  
-  
-|Enumeration value|Action taken|  
-|-----------------------|------------------|  
-|`MissingMappingAction.Passthrough`|Use the source column names and table names in the <xref:System.Data.DataSet> if no mapping is present.|  
-|`MissingMappingAction.Ignore`|A <xref:System.SystemException> is generated. When the mappings are explicitly set, a missing mapping for an input parameter is usually the result of an error.|  
-|`MissingMappingAction.Error`|A <xref:System.SystemException> is generated.|  
-  
- The `SourceColumn` property is also used to map the value for output or input/output parameters back to the `DataSet`. An exception is generated if it refers to a nonexistent column.  
-  
- The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
-  
-> [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Data.DataSet" /> is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
-        <exception cref="T:System.SystemException">No <see cref="T:System.Data.DataRow" /> exists to update.  
-  
- -or-  
-  
- No <see cref="T:System.Data.DataTable" /> exists to update.  
-  
- -or-  
-  
- No <see cref="T:System.Data.DataSet" /> exists to use as a source.</exception>
-        <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
+        <param name="dataRows">To be added.</param>
+        <param name="tableMapping">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2098,8 +1207,12 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2109,89 +1222,11 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <Parameter Name="srcTable" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataSet">The <see cref="T:System.Data.DataSet" /> to use to update the data source.</param>
-        <param name="srcTable">The name of the source table to use for table mapping.</param>
-        <summary>Updates the values in the database by executing the respective INSERT, UPDATE, or DELETE statements for each inserted, updated, or deleted row in the <see cref="T:System.Data.DataSet" /> with the specified <see cref="T:System.Data.DataTable" /> name.</summary>
-        <returns>The number of rows successfully updated from the <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an application calls the <xref:System.Data.Common.DbDataAdapter.Update%2A> method, the <xref:System.Data.Common.DbDataAdapter> examines the <xref:System.Data.DataRow.RowState%2A> property, and executes the required INSERT, UPDATE, or DELETE statements iteratively for each row, based on the order of the indexes configured in the <xref:System.Data.DataSet>. For example, <xref:System.Data.Common.DbDataAdapter.Update%2A> might execute a DELETE statement, followed by an INSERT statement, and then another DELETE statement, due to the ordering of the rows in the <xref:System.Data.DataTable>.  
-  
- It should be noted that these statements are not performed as a batch process; each row is updated individually. An application can call the <xref:System.Data.DataSet.GetChanges%2A> method in situations where you must control the sequence of statement types (for example, INSERT before UPDATE). For more information, see [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
-  
- If INSERT, UPDATE, or DELETE statements have not been specified, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method generates an exception. However, you can create a <xref:System.Data.SqlClient.SqlCommandBuilder> or <xref:System.Data.OleDb.OleDbCommandBuilder> object to automatically generate SQL statements for single-table updates if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional SQL statements that you do not set are generated by the **CommandBuilder**. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
-  
- The <xref:System.Data.Common.DbDataAdapter.Update%2A> method supports scenarios where the <xref:System.Data.DataSet> contains multiple <xref:System.Data.DataTable> objects whose names differ only by case. When multiple tables with the same name, but different case, exist in a `DataSet`, <xref:System.Data.Common.DbDataAdapter.Update%2A> performs a case-sensitive comparison to find the corresponding table, and generates an exception if no exact match exists. The following C# code illustrates this behavior.  
-  
-```  
-DataSet ds = new DataSet();  
- ds.Tables.Add("aaa");  
- ds.Tables.Add("AAA");  
- adapter.Update(ds, "aaa"); // Updates "aaa", which already exists in the DataSet.  
- adapter.Update(ds, "AAA"); // Updates "AAA", which already exists in the DataSet.  
-    adapter.Update(ds, "Aaa"); // Results in an exception.  
-```  
-  
- If <xref:System.Data.Common.DbDataAdapter.Update%2A> is called and the <xref:System.Data.DataSet> contains only one <xref:System.Data.DataTable> whose name differs only by case, that <xref:System.Data.DataTable> is updated. In this scenario, the comparison is case insensitive. The following C# code illustrates this behavior.  
-  
-```  
-DataSet dataset = new DataSet();  
- dataset.Tables.Add("aaa");  
-    adapter.Update(dataset, "AAA"); // Updates table "aaa" because only one similarly named table is in the DataSet.  
-```  
-  
- The <xref:System.Data.Common.DbDataAdapter.Update%2A> method retrieves rows from the table listed in the first mapping before performing an update. The <xref:System.Data.Common.DbDataAdapter.Update%2A> then refreshes the row using the value of the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property. Any additional rows returned are ignored.  
-  
- After any data is loaded back into the <xref:System.Data.DataSet>, the <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised, allowing the user to inspect the reconciled <xref:System.Data.DataSet> row and any output parameters returned by the command. After a row updates successfully, the changes to that row are accepted.  
-  
- When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, the order of execution is as follows:  
-  
-1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
-  
-2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
-  
-3.  The command executes.  
-  
-4.  If the command is set to `FirstReturnedRecord`, then the first returned result is placed in the <xref:System.Data.DataRow>.  
-  
-5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
-  
-6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
-  
-7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
-  
- Each command associated with the <xref:System.Data.Common.DbDataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET Framework data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DbDataAdapter> references to obtain parameter values for the current row.  
-  
- `SourceColumn` refers to the unmapped column name before any table mappings have been applied. If `SourceColumn` refers to a nonexistent column, the action taken depends on one of the following <xref:System.Data.MissingMappingAction> values.  
-  
-|Enumeration value|Action taken|  
-|-----------------------|------------------|  
-|`MissingMappingAction.Passthrough`|Use the source column names and table names in the <xref:System.Data.DataSet> if no mapping is present.|  
-|`MissingMappingAction.Ignore`|A <xref:System.SystemException> is generated. When the mappings are explicitly set, a missing mapping for an input parameter is usually the result of an error.|  
-|`MissingMappingAction.Error`|A <xref:System.SystemException> is generated.|  
-  
- The `SourceColumn` property is also used to map the value for output or input/output parameters back to the `DataSet`. An exception is generated if it refers to a nonexistent column.  
-  
- The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
-  
-> [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
-  
-   
-  
-## Examples  
- The following example uses the derived class, <xref:System.Data.OleDb.OleDbDataAdapter>, to update the data source.  
-  
- [!code-cs[Classic WebData DbDataAdapter.Update3#1](~/add/codesnippet/csharp/m-system.data.common.dbd_2_1.cs)]
- [!code-vb[Classic WebData DbDataAdapter.Update3#1](~/add/codesnippet/visualbasic/m-system.data.common.dbd_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Data.DataSet" /> is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
-        <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
+        <param name="dataSet">To be added.</param>
+        <param name="srcTable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateBatchSize">
@@ -2201,8 +1236,12 @@ DataSet dataset = new DataSet();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2213,57 +1252,9 @@ DataSet dataset = new DataSet();
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables batch processing support, and specifies the number of commands that can be executed in a batch.</summary>
-        <value>The number of rows to process per batch.  
-  
- <list type="table">  
-<listheader>  
-<term> Value is  
-  
- </term>  
-<description> Effect  
-  
- </description>  
-</listheader>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> There is no limit on the batch size.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> Disables batch updating.  
-  
- </description>  
-</item>  
-<item>  
-<term> &gt; 1  
-  
- </term>  
-<description> Changes are sent using batches of UpdateBatchSize operations at a time.  
-  
- </description>  
-</item>  
-</list>  
-  
- When setting this to a value other than 1 ,all the commands associated with the <see cref="T:System.Data.Common.DbDataAdapter" /> must have their <see cref="System.Data.IDbCommand.UpdatedRowSource%2A" /> property set to **None** or **OutputParameters**. An exception will be thrown otherwise.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the UpdateBatchSize property to update a data source with changes from a <xref:System.Data.DataSet>. If the data provider supports batch processing, this can increase application performance by reducing the number of round-trips to the server. In ADO.NET 2.0, this property is supported for the .NET data providers for SQL Server (SqlClient) and Oracle (OracleClient).  
-  
- Executing an extremely large batch could decrease performance. Therefore, you should test for the optimum batch size setting before implementing your application.  
-  
- An <xref:System.ArgumentOutOfRangeException> will be thrown if the value is set to a number less than zero.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -2273,8 +1264,12 @@ DataSet dataset = new DataSet();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2288,24 +1283,9 @@ DataSet dataset = new DataSet();
         <ReturnType>System.Data.Common.DbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a command used to update records in the data source.</summary>
-        <value>A <see cref="T:System.Data.IDbCommand" /> used during <see cref="System.Data.IDataAdapter.Update%2A" /> to update records in the data source for modified rows in the data set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> will be automatically generated.  
-  
-   
-  
-## Examples  
- The following example creates the derived class <xref:System.Data.OleDb.OleDbDataAdapter> and sets some of its properties.  
-  
- [!code-cs[Classic WebData DbDataAdapter.UpdateCommand Example#1](~/add/codesnippet/csharp/p-system.data.common.dbd_2_1.cs)]
- [!code-vb[Classic WebData DbDataAdapter.UpdateCommand Example#1](~/add/codesnippet/visualbasic/p-system.data.common.dbd_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

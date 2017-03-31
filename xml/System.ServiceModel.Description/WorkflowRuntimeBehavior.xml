@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the behavior for the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> associated with a <see cref="T:System.ServiceModel.WorkflowServiceHost" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use WorkflowRuntimeBehavior to access the <xref:System.Workflow.Runtime.WorkflowRuntime> object in your workflow service. The <xref:System.Workflow.Runtime.WorkflowRuntime> object is added by default when the <xref:System.ServiceModel.WorkflowServiceHost> is created.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,20 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.ServiceModel.Description.WorkflowRuntimeBehavior.CachedInstanceExpiration%2A> property to 10 minutes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddBindingParameters">
@@ -62,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,11 +58,11 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">Not implemented.</param>
-        <param name="serviceHostBase">Not implemented.</param>
-        <param name="endpoints">Not implemented.</param>
-        <param name="bindingParameters">Not implemented.</param>
-        <summary>Not implemented in <see cref="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" />.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <param name="endpoints">To be added.</param>
+        <param name="bindingParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,17 +83,10 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <summary>Configures the workflow service to support the workflow run-time behavior.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a <xref:System.ServiceModel.Description.WorkflowRuntimeBehavior.CachedInstanceExpiration%2A> extension and configures it for the <xref:System.Workflow.Runtime.WorkflowRuntime>.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CachedInstanceExpiration">
@@ -121,15 +96,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates how long a workflow instance stays in-memory in the idle state before it is forcibly removed from memory.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> object indicating how long a workflow instance stays in-memory in the idle state before it is forcibly removed from memory.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,11 +124,10 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <summary>Verifies the scheduling service used for workflow services has been added to the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> object and that the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> object has not started before the call to <see cref="System.ServiceModel.Channels.CommunicationObject.Open%2A" />.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The wrong <see cref="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" /> is registered.</exception>
       </Docs>
     </Member>
     <Member MemberName="WorkflowRuntime">
@@ -165,23 +137,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowRuntime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> associated with a <see cref="T:System.ServiceModel.WorkflowServiceHost" /> instance.</summary>
-        <value>A <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Workflow.Runtime.WorkflowRuntime> object is not initialized before retrieving this property, then a new <xref:System.Workflow.Runtime.WorkflowRuntime> object is created.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

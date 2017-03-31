@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains information about a connector at a specified coordinate in <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" /> and all classes that inherit from it.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,22 +35,11 @@
         <Parameter Name="connector" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="compositeActivityDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> that contains the connector.</param>
-        <param name="flags">A <see cref="T:System.Workflow.ComponentModel.Design.HitTestLocations" /> that defines the location on the connector that the user clicked.</param>
-        <param name="connector">The index identifier of the connector that was clicked.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns `true`, a new branch is created using the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. A <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo> object is created as a parameter to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. When this is finished, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> method is used to ensure that the newly added branch is displayed in the workflow designer.  
-  
- [!code-cs[wf_Samples#29](~/add/codesnippet/csharp/wf_snippets/snippets.cs#29)]
- [!code-vb[wf_Samples#29](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#29)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Prior to the constructor call the connector index was set to less than zero.</exception>
+        <param name="compositeActivityDesigner">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="connector">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -71,15 +49,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounding rectangle for the connector that was clicked.</summary>
-        <value>The <see cref="T:System.Drawing.Rectangle" /> that bounds the connector that was clicked.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,10 +76,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" />; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +89,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" />.</summary>
-        <returns>The hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,8 +115,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the index of the connector that the user clicked.</summary>
-        <returns>The index of the connector that the user clicked.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,23 +127,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a selectable object associated with the hit area.</summary>
-        <value>A selectable <see cref="T:System.Object" /> associated with the area where the user clicked.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SelectableObject always returns the current <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ProviderOptions" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains values that specify the type of UI Automation provider.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation provider is a client-side provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonClientAreaProvider">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation provider is a non-client-area provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideProvider">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation provider overrides another provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderOwnsSetFocus">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation provider handles its own focus, and does not want [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] to set focus to the nearest window on its behalf when <see cref="System.Windows.Automation.AutomationElement.SetFocus%2A" /> is called. This option is typically used by providers for windows that appear to take focus without actually receiving [!INCLUDE[TLA2#tla_win32](~/add/includes/tla2sharptla-win32-md.md)] focus, such as menus and drop-down menus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerSideProvider">
@@ -95,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation provider is a server-side provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseComThreading">
@@ -118,7 +112,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation provider expects to be called according to COM threading rules. If the provider is in a Single-Threaded Apartment, it will be called only on the apartment thread. Only Server-side providers can use this option.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

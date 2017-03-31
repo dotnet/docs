@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtension`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -16,16 +16,9 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The object that participates in the custom behavior.</typeparam>
-    <summary>Enables an object to extend another object through aggregation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] allows you to extend <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=fullName> objects (the <xref:System.ServiceModel.IContextChannel?displayProperty=fullName>, <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>, <xref:System.ServiceModel.InstanceContext?displayProperty=fullName>, and <xref:System.ServiceModel.OperationContext?displayProperty=fullName> classes) by adding a new state or behavior by using its extensible object pattern. The extensible object pattern is used in [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to either extend existing run-time classes with new functionality or to add new state features to an object.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Attach">
@@ -35,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,33 +38,9 @@
         <Parameter Name="owner" Type="T" />
       </Parameters>
       <Docs>
-        <param name="owner">The extensible object that aggregates this extension.</param>
-        <summary>Enables an extension object to find out when it has been aggregated. Called when the extension is added to the <see cref="System.ServiceModel.IExtensibleObject%601.Extensions%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to keep track of the <xref:System.ServiceModel.IExtensibleObject%601> object to which the current instance of the extension belongs. This call gives extensions a chance to handle events or inspect properties of their owner.  
-  
-   
-  
-## Examples  
- The following example code shows how this method can be used to keep track of the <xref:System.ServiceModel.IExtensibleObject%601> object to which the current instance of the extension belongs.  
-  
- [C#]  
-  
-```  
-InstanceContext owner;  
-  
-public void Attach(InstanceContext owner)  
-{  
-  this.owner = owner;   
-}  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -81,7 +50,7 @@ public void Attach(InstanceContext owner)
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,18 +60,9 @@ public void Attach(InstanceContext owner)
         <Parameter Name="owner" Type="T" />
       </Parameters>
       <Docs>
-        <param name="owner">The extensible object that aggregates this extension.</param>
-        <summary>Enables an object to find out when it is no longer aggregated. Called when an extension is removed from the <see cref="System.ServiceModel.IExtensibleObject%601.Extensions%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Detach method to find out when the extension has been removed. An extension can use this to unhook events on the extensible object. An extension can also throw <xref:System.InvalidOperationException?displayProperty=fullName> from this method to indicate that, once added, the extension cannot be removed.  
-  
- Note that this method is not called when the owner object is disposed or closed. If needed, it is up to the extension or the code adding the extension to hook the appropriate <xref:System.ServiceModel.ICommunicationObject?displayProperty=fullName> events or implement the appropriate interfaces (for <xref:System.ServiceModel.OperationContext?displayProperty=fullName>) to observe the lifecycle of the owner.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

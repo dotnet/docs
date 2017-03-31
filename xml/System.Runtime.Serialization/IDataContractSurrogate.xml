@@ -4,32 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDataContractSurrogate" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides the methods needed to substitute one type for another by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> during serialization, deserialization, and export and import of XML schema documents (XSD).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IDataContractSurrogate when using the <xref:System.Runtime.Serialization.DataContractSerializer> if you need to do one of the following: substitute one type or object for another, or to dynamically generate schema variations. For a sample application, see [DataContract Surrogate](../Topic/DataContract%20Surrogate.md). For more information about data contracts, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
-  
- At run time, you can find the specific <xref:System.Runtime.Serialization.DataContractSerializer> for any operation in a service by using the <xref:System.ServiceModel.Description.OperationDescription> to find the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> instance. For more information about implementing the interface to create a surrogate, see [Data Contract Surrogates](../Topic/Data%20Contract%20Surrogates.md).  
-  
- You can also use the IDataContractSurrogate to affect the import and export of XML schemas when you are using the <xref:System.Runtime.Serialization.XsdDataContractExporter> and <xref:System.Runtime.Serialization.XsdDataContractImporter> classes. You can do so by assigning the IDataContractSurrogate to the <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A> property of the <xref:System.Runtime.Serialization.ExportOptions> class, or to the <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property of the <xref:System.Runtime.Serialization.ImportOptions> class.  For more information, see [Schema Import and Export](../Topic/Schema%20Import%20and%20Export.md).  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the IDataContractSurrogate interface. The code substitutes the serialization of the `Person` type for a `PersonSurrogated` class.  
-  
- [!code-vb[IDataContractSurrogate#0](~/add/codesnippet/visualbasic/t-system.runtime.seriali_11_1.vb)]
- [!code-cs[IDataContractSurrogate#0](~/add/codesnippet/csharp/t-system.runtime.seriali_11_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetCustomDataToExport">
@@ -39,7 +20,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,10 +31,10 @@
         <Parameter Name="dataContractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="memberInfo">A <see cref="T:System.Reflection.MemberInfo" /> that describes the member.</param>
-        <param name="dataContractType">A <see cref="T:System.Type" />.</param>
-        <summary>During schema export operations, inserts annotations into the schema for non-null return values.</summary>
-        <returns>An object that represents the annotation to be inserted into the XML schema definition.</returns>
+        <param name="memberInfo">To be added.</param>
+        <param name="dataContractType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +45,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,10 +56,10 @@
         <Parameter Name="dataContractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="clrType">The CLR type to be replaced.</param>
-        <param name="dataContractType">The data contract type to be annotated.</param>
-        <summary>During schema export operations, inserts annotations into the schema for non-null return values.</summary>
-        <returns>An object that represents the annotation to be inserted into the XML schema definition.</returns>
+        <param name="clrType">To be added.</param>
+        <param name="dataContractType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +70,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,20 +80,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The CLR type <see cref="T:System.Type" /> to substitute.</param>
-        <summary>During serialization, deserialization, and schema import and export, returns a data contract type that substitutes the specified type.</summary>
-        <returns>The <see cref="T:System.Type" /> to substitute for the <paramref name="type" /> value. This type must be serializable by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />. For example, it must be marked with the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute or other mechanisms that the serializer recognizes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows an implementation of the GetDataContractType method.  
-  
- [!code-vb[IDataContractSurrogate#1](~/add/codesnippet/visualbasic/90968a41-34e3-48fc-8e53-_1.vb)]
- [!code-cs[IDataContractSurrogate#1](~/add/codesnippet/csharp/90968a41-34e3-48fc-8e53-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDeserializedObject">
@@ -122,7 +93,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,26 +104,11 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="obj">The deserialized object to be substituted.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> that the substituted object should be assigned to.</param>
-        <summary>During deserialization, returns an object that is a substitute for the specified object.</summary>
-        <returns>The substituted deserialized object. This object must be of a type that is serializable by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />. For example, it must be marked with the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute or other mechanisms that the serializer recognizes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a simple implementation, use an if…then…else control structure to test whether the `obj` value is of the surrogated type. If so, transform it as necessary and return the substituted object. The substituted object can be a new instance or the same `obj` instance.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the GetDeserializedObject method.  
-  
- [!code-vb[IDataContractSurrogate#3](~/add/codesnippet/visualbasic/98dab246-6ee5-4fc3-8a64-_1.vb)]
- [!code-cs[IDataContractSurrogate#3](~/add/codesnippet/csharp/98dab246-6ee5-4fc3-8a64-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKnownCustomDataTypes">
@@ -162,7 +118,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,16 +128,9 @@
         <Parameter Name="customDataTypes" Type="System.Collections.ObjectModel.Collection&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="customDataTypes">A <see cref="System.Collections.ObjectModel.Collection%601" /> of <see cref="T:System.Type" /> to add known types to.</param>
-        <summary>Sets the collection of known types to use for serialization and deserialization of the custom data objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is required during schema export or schema import only if annotations are inserted into the schema using the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetCustomDataToExport%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="customDataTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectToSerialize">
@@ -191,7 +140,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,26 +151,11 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to substitute.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> that the substituted object should be assigned to.</param>
-        <summary>During serialization, returns an object that substitutes the specified object.</summary>
-        <returns>The substituted object that will be serialized. The object must be serializable by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />. For example, it must be marked with the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute or other mechanisms that the serializer recognizes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method must not return `null` because on deserialization the data will be cast to type <xref:System.Object> and an <xref:System.InvalidCastException> is thrown.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the GetObjectToSerialize method.  
-  
- [!code-vb[IDataContractSurrogate#2](~/add/codesnippet/visualbasic/5c78fc6a-caaf-4bc0-ab0d-_1.vb)]
- [!code-cs[IDataContractSurrogate#2](~/add/codesnippet/csharp/5c78fc6a-caaf-4bc0-ab0d-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReferencedTypeOnImport">
@@ -231,7 +165,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,27 +177,12 @@
         <Parameter Name="customData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeName">The name of the type in schema.</param>
-        <param name="typeNamespace">The namespace of the type in schema.</param>
-        <param name="customData">The object that represents the annotation inserted into the XML schema definition, which is data that can be used for finding the referenced type.</param>
-        <summary>During schema import, returns the type referenced by the schema.</summary>
-        <returns>The <see cref="T:System.Type" /> to use for the referenced type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` should be returned if a CLR type does not exist for representing the schema type. This will cause a new type to be generated during schema import.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the GetReferencedTypeOnImport method.  
-  
- [!code-vb[IDataContractSurrogate#4](~/add/codesnippet/visualbasic/9ffa3127-8c36-42f6-862b-_1.vb)]
- [!code-cs[IDataContractSurrogate#4](~/add/codesnippet/csharp/9ffa3127-8c36-42f6-862b-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="typeName">To be added.</param>
+        <param name="typeNamespace">To be added.</param>
+        <param name="customData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessImportedType">
@@ -273,7 +192,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,18 +202,11 @@
         <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="typeDeclaration">A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to process that represents the type declaration generated during schema import.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> that contains the other code generated during schema import.</param>
-        <summary>Processes the type that has been generated from the imported schema.</summary>
-        <returns>A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> that contains the processed type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The input <xref:System.CodeDom.CodeTypeDeclaration> or other information in the <xref:System.CodeDom.CodeCompileUnit> can be modified by the user in this method. If `null` is returned, it will cause the type to not be generated. If a new <xref:System.CodeDom.CodeTypeDeclaration> is returned, it will replace the original type generated.  
-  
- ]]></format>
-        </remarks>
+        <param name="typeDeclaration">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,9 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnaryExpression extends System.Linq.Expressions.Expression" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.UnaryExpression" />
   <AssemblyInfo>
-    <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Linq.Expressions.Expression</BaseTypeName>
@@ -17,37 +27,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an expression that has a unary operator.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table summarizes the factory methods that can be used to create a UnaryExpression that has a specific node type.  
-  
-|<xref:System.Linq.Expressions.Expression.NodeType%2A>|Factory Method|  
-|----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.ArrayLength%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Convert%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.ConvertChecked%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Negate%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.NegateChecked%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Not%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Quote%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.TypeAs%2A>|  
-|<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.UnaryPlus%2A>|  
-  
- In addition, the <xref:System.Linq.Expressions.Expression.MakeUnary%2A> methods can also be used to create a UnaryExpression. These factory methods can be used to create a UnaryExpression of any node type that represents a unary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType%2A> specifies the desired node type.  
-  
-   
-  
-## Examples  
- The following example creates a UnaryExpression object that represents the reference conversion of a non-nullable integer expression to the nullable integer type.  
-  
- [!code-cs[System.Linq.Expressions.Expression#11](~/add/codesnippet/csharp/t-system.linq.expression_5_1.cs)]
- [!code-vb[System.Linq.Expressions.Expression#11](~/add/codesnippet/visualbasic/t-system.linq.expression_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -56,8 +37,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.UnaryExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
@@ -78,15 +70,26 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.CanReduce" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the expression tree node can be reduced.</summary>
-        <value>True if a node can be reduced, otherwise false.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,25 +99,27 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.IsLifted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the expression tree node represents a lifted call to an operator.</summary>
-        <value>
-          <see langword="true" /> if the node represents a lifted call; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An operator call is *lifted* if the operator expects a non-nullable operand but a nullable operand is passed to it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiftedToNull">
@@ -123,25 +128,27 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.IsLiftedToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the expression tree node represents a lifted call to an operator whose return type is lifted to a nullable type.</summary>
-        <value>
-          <see langword="true" /> if the operator's return type is lifted to a nullable type; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An operator call is *lifted* if the operator expects a non-nullable operand but a nullable operand is passed to it. If the value of IsLiftedToNull is `true`, the operator returns a nullable type and if the nullable operand evaluates to `null`, the operator returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -150,16 +157,26 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the implementing method for the unary operation.</summary>
-        <value>The <see cref="T:System.Reflection.MethodInfo" /> that represents the implementing method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,15 +186,26 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the node type of this <see cref="T:System.Linq.Expressions.Expression" />.</summary>
-        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> that represents this expression.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,16 +215,26 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.Operand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the operand of the unary operation.</summary>
-        <value>An <see cref="T:System.Linq.Expressions.Expression" /> that represents the operand of the unary operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,26 +244,28 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.UnaryExpression.Reduce" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reduces the expression node to a simpler expression.</summary>
-        <returns>The reduced expression.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `CanReduce` method returns true, this should return a valid expression.  
-  
- This method can return another node which itself must be reduced.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -234,15 +274,26 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the static type of the expression that this <see cref="T:System.Linq.Expressions.Expression" /> represents.</summary>
-        <value>The Type that represents the static type of the expression.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,8 +303,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.UnaryExpression.Update(System.Linq.Expressions.Expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.UnaryExpression</ReturnType>
@@ -262,9 +324,9 @@
         <Parameter Name="operand" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="operand">The <see cref="System.Linq.Expressions.UnaryExpression.Operand%2A" /> property of the result.</param>
-        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
-        <returns>This expression if no children are changed or an expression with the updated children.</returns>
+        <param name="operand">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

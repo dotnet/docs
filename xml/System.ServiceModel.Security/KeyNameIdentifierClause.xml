@@ -3,11 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyNameIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.KeyNameIdentifierClause" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,13 +10,8 @@
     <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Represents the key name identifier clause in a security token.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +21,6 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.KeyNameIdentifierClause.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -43,8 +28,8 @@
         <Parameter Name="keyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keyName">The key name.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.KeyNameIdentifierClause" /> class.</summary>
+        <param name="keyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,11 +39,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.KeyNameIdentifierClause.KeyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -66,21 +46,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key name.</summary>
-        <value>The key name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Matches">
-      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.KeyNameIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,10 +67,9 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that is to be compared.</param>
-        <summary>Checks whether a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> matches the current instance of this class.</summary>
-        <returns>
-          <see langword="true" /> if there is a match; otherwise, <see langword="false" />.</returns>
+        <param name="clause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,11 +78,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(string keyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.KeyNameIdentifierClause.Matches(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,10 +89,9 @@
         <Parameter Name="keyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keyName">The security key name clause.</param>
-        <summary>Checks whether the specified key name matches the current instance's key name.</summary>
-        <returns>
-          <see langword="true" /> if there is a match; otherwise, <see langword="false" />.</returns>
+        <param name="keyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,11 +101,6 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.KeyNameIdentifierClause.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -146,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> that represents the current <see langword="Object" />. (Inherited from <see cref="T:System.Object" />)</summary>
-        <returns>The current <see langword="Object" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

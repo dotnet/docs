@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButtonState" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents the state of a <see cref="T:System.Windows.Input.StylusButton" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to determine the state of a <xref:System.Windows.Input.StylusButton>.  
-  
- [!code-vb[StylusSnippets#26](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#26)]
- [!code-cs[StylusSnippets#26](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#26)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Down">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The button is pressed down.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The button is up.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

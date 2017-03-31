@@ -3,11 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UriTemplateEquivalenceComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class System.UriTemplate&gt;" />
   <TypeSignature Language="DocId" Value="T:System.UriTemplateEquivalenceComparer" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,29 +19,9 @@
       <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;System.UriTemplate&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>A class used to compare <see cref="T:System.UriTemplate" /> instances for structural (instead of reference) equivalence.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.UriTemplate> instances are compared using reference equality by default. The UriTemplateEquivalenceComparer class evaluates equivalence using <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> instead of the default reference equality check. This class is useful when you wish to compare two <xref:System.UriTemplate> instances based on the URIs they match instead of strict reference equality.  
-  
-   
-  
-## Examples  
- The following example shows the difference between reference equality and structural equality. It also shows how to use the UriTemplateEquivalenceComparer as a comparer in a dictionary.  
-  
- [!code-cs[UriTemplateEquivalenceComparer#0](~/add/codesnippet/csharp/t-system.uritemplateequi_1.cs)]
- [!code-vb[UriTemplateEquivalenceComparer#0](~/add/codesnippet/visualbasic/t-system.uritemplateequi_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,27 +30,18 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateEquivalenceComparer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateEquivalenceComparer" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call the constructor for this class.  
-  
- [!code-cs[UriTemplateEquivalenceComparer#1](~/add/codesnippet/csharp/m-system.uritemplateequi_1.cs)]
- [!code-vb[UriTemplateEquivalenceComparer#1](~/add/codesnippet/visualbasic/m-system.uritemplateequi_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -78,11 +50,12 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateEquivalenceComparer.Equals(System.UriTemplate,System.UriTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,25 +66,11 @@
         <Parameter Name="y" Type="System.UriTemplate" />
       </Parameters>
       <Docs>
-        <param name="x">A <see cref="T:System.UriTemplate" /> instance.</param>
-        <param name="y">A <see cref="T:System.UriTemplate" /> instance.</param>
-        <summary>Compares two <see cref="T:System.UriTemplate" /> instances for equivalence.</summary>
-        <returns>A value that indicates whether the two <see cref="T:System.UriTemplate" /> instances are equivalent.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not normally called directly. It is called by another class that is comparing two <xref:System.UriTemplate> instances.  
-  
-   
-  
-## Examples  
- The following code shows how to call the Equals method.  
-  
- [!code-cs[UriTemplateEquivalenceComparer#2](~/add/codesnippet/csharp/10867cdb-9e1f-4a5d-8d13-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -120,11 +79,12 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateEquivalenceComparer.GetHashCode(System.UriTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,17 +94,10 @@
         <Parameter Name="obj" Type="System.UriTemplate" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.UriTemplate" /> instance.</param>
-        <summary>Gets a hash code for the specified <see cref="T:System.UriTemplate" /> instance.</summary>
-        <returns>The hash code.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not normally called directly. It is called by another class that requires a hash of a <xref:System.UriTemplate> instance.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeVariableDeclarationStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,29 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a variable declaration.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeVariableDeclarationStatement can be used to represent code that declares a variable.  
-  
- The <xref:System.CodeDom.CodeVariableDeclarationStatement.Type%2A> property specifies the type of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.Name%2A> property specifies the name of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.InitExpression%2A> property is optional, and specifies an initialization expression to assign to the variable after it is created.  
-  
-> [!NOTE]
->  Some languages can implement the optional variable initialization expression by making a separate assignment statement after the variable declaration.  
-  
-   
-  
-## Examples  
- This example demonstrates using a CodeVariableDeclarationStatement to declare a variable.  
-  
- [!code-cpp[CodeVariableDeclarationStatementExample#2](~/add/codesnippet/cpp/t-system.codedom.codevar_1_1.cpp)]
- [!code-cs[CodeVariableDeclarationStatementExample#2](~/add/codesnippet/csharp/t-system.codedom.codevar_1_1.cs)]
- [!code-vb[CodeVariableDeclarationStatementExample#2](~/add/codesnippet/visualbasic/t-system.codedom.codevar_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -76,9 +52,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the variable.</param>
-        <param name="name">The name of the variable.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified type and name.</summary>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +65,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -97,9 +72,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The name of the data type of the variable.</param>
-        <param name="name">The name of the variable.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type name and variable name.</summary>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +85,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -118,9 +92,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The data type for the variable.</param>
-        <param name="name">The name of the variable.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type and variable name.</summary>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +105,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -140,10 +113,10 @@
         <Parameter Name="initExpression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="type">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the type of the variable.</param>
-        <param name="name">The name of the variable.</param>
-        <param name="initExpression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type, variable name, and initialization expression.</summary>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="initExpression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +127,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -163,10 +135,10 @@
         <Parameter Name="initExpression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="type">The name of the data type of the variable.</param>
-        <param name="name">The name of the variable.</param>
-        <param name="initExpression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type, variable name, and initialization expression.</summary>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="initExpression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +149,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -186,10 +157,10 @@
         <Parameter Name="initExpression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="type">The data type of the variable.</param>
-        <param name="name">The name of the variable.</param>
-        <param name="initExpression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type, variable name, and initialization expression.</summary>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="initExpression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,15 +171,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initialization expression for the variable.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,15 +189,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the variable.</summary>
-        <value>The name of the variable.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,15 +207,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data type of the variable.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the variable.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

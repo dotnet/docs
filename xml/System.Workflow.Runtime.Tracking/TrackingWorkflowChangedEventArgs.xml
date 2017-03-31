@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains data associated with a workflow change that occurs during the execution of a workflow instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- When a workflow change occurs during the execution of a workflow instance and a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with the workflow instance includes a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> configured for the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> event, the runtime tracking infrastructure sets <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to TrackingWorkflowChangedEventArgs in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> that it sends to the tracking service.  
-  
-> [!NOTE]
->  TrackingWorkflowChangedEventArgs is used only by the runtime tracking service to pass information in a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Changes">
@@ -42,15 +27,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the changes that occurred to the workflow instance.</summary>
-        <value>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> objects that specify the changes that occurred to the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the workflow definition.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Activity" /> that represents the root activity of the workflow instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

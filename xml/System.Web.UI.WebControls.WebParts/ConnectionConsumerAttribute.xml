@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,49 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies the callback method in a server control acting as the consumer in a Web Parts connection, and enables developers to specify details about the consumer's connection point.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Web Parts connection consists of two server controls residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone and sharing data by means of an interface instance passed from one control to the other. The control that serves the interface instance is called the provider, and the control that receives the interface instance and processes or displays the data is called the consumer. For details on connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class and [Web Parts Connections Overview](../Topic/Web%20Parts%20Connections%20Overview.md).  
-  
- The consumer control in a connection can be a <xref:System.Web.UI.WebControls.WebParts.WebPart> control or any type of server or user control, but it must have a method designated as a callback method. The callback method is invoked during the connection process, and its purpose is to receive from the provider an interface instance that contains data. To designate the method that serves as the callback method in a consumer, you must add a `ConnectionConsumerAttribute` metadata element to the method (the element is based on the ConnectionConsumerAttribute class).  
-  
- In addition to designating the callback method in a consumer, the ConnectionConsumerAttribute object also enables you to specify certain details about a consumer's connection point. A consumer connection point is an instance of the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> class that encapsulates all the details about a consumer needed to establish a connection, including the consumer's control type, whether it can connect to multiple providers at the same time, what type of interface the consumer can receive from a provider, details about the callback method, and a display name that represents the consumer connection point in the user interface (UI). Every Web Parts connection includes a consumer connection point that is associated with the consumer control.  
-  
- When you add the `ConnectionConsumerAttribute` metadata element to the callback method in a consumer, you can also use it to specify the following details about the consumer connection point: a display name for the connection point (for details, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A> property), whether the consumer can connect to multiple providers at the same time (for details, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections%2A> property), an ID for the connection point (for details, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ID%2A> property), and the type of the connection point that the consumer uses (for details, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ConnectionPointType%2A> property). The four overloads of the constructor for the ConnectionConsumerAttribute class each have parameters that allow you to specify values for one or more of these connection point properties when a new instance of the class is created. Most of the properties for a consumer connection point can also be set programmatically; setting them using the `ConnectionConsumerAttribute` element is optional.  
-  
-> [!NOTE]
->  When you add the `ConnectionConsumerAttribute` metadata element to a callback method in a consumer, the only required parameter that you must always specify is the `displayName` parameter (for details, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.%23ctor%28System.String%29> constructor overload). The value of this parameter is assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A> property, and when a user opens the connection UI (created by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control), the display name represents the consumer connection point in the UI. If you designate multiple callback methods in a consumer control, you will have multiple possible connection points to choose from, and when you add the `ConnectionConsumerAttribute` metadata element to each callback method, you should also specify a value for the `id` parameter, so that each consumer connection point has a known, unique identifier.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the ConnectionConsumerAttribute class, by showing how to declare the `ConnectionConsumerAttribute` metadata element on a callback method in a consumer control. Note that the simplest overload of the constructor is used; only the `displayName` parameter value is supplied.  
-  
- [!code-vb[UI.WebControls.WebParts.Connection#5](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_136_1.vb)]
- [!code-cs[UI.WebControls.WebParts.Connection#5](~/add/codesnippet/csharp/t-system.web.ui.webcontr_136_1.cs)]  
-  
- The following code examples demonstrate how to create a basic, static connection between two Web Parts controls using the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class. The provider and consumer code files should be put into the App_Code folder under the application folder that contains the .aspx page.  
-  
- The first example shows a class acting as a provider.  
-  
- [!code-vb[UI.WebControls.WebParts.Connection#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_136_2.vb)]
- [!code-cs[UI.WebControls.WebParts.Connection#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_136_2.cs)]  
-  
- The second example shows a class acting as a consumer. Notice that a method is designated as the callback method with the `ConnectionConsumerAttribute` metadata element.  
-  
- [!code-vb[UI.WebControls.WebParts.Connection#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_136_3.vb)]
- [!code-cs[UI.WebControls.WebParts.Connection#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_136_3.cs)]  
-  
- The final example shows the ASP.NET page that contains the two controls.  
-  
- [!code-vb[UI.WebControls.WebParts.Connection#3](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_136_4.aspx)]
- [!code-cs[UI.WebControls.WebParts.Connection#3](~/add/codesnippet/csharp/t-system.web.ui.webcontr_136_4.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,35 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">A string that contains a friendly name for the consumer connection point to display in the user interface (UI).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" /> class, specifying a display name for the consumer connection point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor creates an instance of the attribute that is used with a method of a Web Parts control acting as a consumer. This method becomes the connection point between the provider and the consumer. Typically, the way you use this constructor is to declare a `ConnectionConsumerAttribute` metadata element on a method that you want to designate as a callback method in a consumer control.  
-  
- The `displayName` parameter is a friendly name of the consumer connection point that is used by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to represent a consumer's connection point in the UI.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> class, by showing how to declare the `ConnectionConsumerAttribute` metadata element on a callback method in a consumer control. Note that the simplest overload of the constructor is used; only the `displayName` parameter value is supplied. For the full code required to run the code example, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> class overview.  
-  
- [!code-vb[UI.WebControls.WebParts.Connection#5](~/add/codesnippet/visualbasic/15f1175b-7777-4e66-b53e-_1.vb)]
- [!code-cs[UI.WebControls.WebParts.Connection#5](~/add/codesnippet/csharp/15f1175b-7777-4e66-b53e-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" /> is <see langword="null" />.</exception>
+        <param name="displayName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -107,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -115,21 +52,10 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">A string that contains a friendly name for the consumer connection point to display in the user interface (UI).</param>
-        <param name="id">The <see cref="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ID%2A" />, a unique string value assigned to the consumer connection point.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" /> class, specifying a display name and an ID for the consumer connection point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `displayName` parameter is a friendly name of the consumer connection point that is used by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to represent a consumer's connection point in the UI.  
-  
- The `id` parameter is used to specify the ID for the consumer connection point associated with the specific callback method. A control can have multiple connection points, but the `id` for each must be unique. Therefore, this overload of the constructor is useful if you have multiple callback methods in your consumer control.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" /> or <paramref name="id" /> is <see langword="null" />.</exception>
+        <param name="displayName">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -139,7 +65,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -147,23 +72,10 @@
         <Parameter Name="connectionPointType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="displayName">A string that contains a friendly name for the consumer connection point to display in the user interface (UI).</param>
-        <param name="connectionPointType">A <see cref="T:System.Type" /> that derives from <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />, and that you want to specify as the type of connection point object to use with a specific callback method.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" /> class, specifying a display name and a specific type of connection point object to use for the consumer connection point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `displayName` parameter is a friendly name of the consumer connection point that is used by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to represent a consumer's connection point in the UI.  
-  
- The `connectionPointType` parameter must be a <xref:System.Type> derived from <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint>. If this parameter is specified, the <xref:System.Type> is used to create the connection point instead of the standard <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> class provided with the Web Parts control set.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" /> or<paramref name=" connectionPointType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="connectionPointType" /> is not valid.</exception>
+        <param name="displayName">To be added.</param>
+        <param name="connectionPointType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -173,7 +85,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -182,26 +93,11 @@
         <Parameter Name="connectionPointType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="displayName">A string that contains a friendly name for the consumer connection point to display in the user interface (UI).</param>
-        <param name="id">The <see cref="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ID%2A" />, a unique string value assigned to the consumer connection point.</param>
-        <param name="connectionPointType">A <see cref="T:System.Type" /> that derives from <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />, and that you want to specify as the type of connection point object to use with a specific callback method.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" /> class, specifying a display name, an ID, and a specific type of connection point object to use for the consumer connection point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `displayName` parameter is a friendly name of the consumer connection point that is used by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to represent a consumer's connection point in the UI.  
-  
- The `id` parameter is used to specify the ID for the consumer connection point associated with the specific callback method. A control can have multiple connection points, but the `id` for each must be unique. Therefore, this overload of the constructor is useful if you have multiple callback methods in your consumer control.  
-  
- The `connectionPointType` parameter must be a <xref:System.Type> derived from <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint>. If this parameter is specified, the <xref:System.Type> is used to create the connection point instead of the standard <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> class provided with the Web Parts control set.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" />, <paramref name="id" />, or<paramref name=" connectionPointType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="connectionPointType" /> is not valid.</exception>
+        <param name="displayName">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="connectionPointType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowsMultipleConnections">
@@ -211,24 +107,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the connection point allows multiple connections.</summary>
-        <value>
-          <see langword="true" /> if the connection point accepts multiple connections; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, consumer connections do not accept multiple connections, so this property is set to `false`. Provider connections, however, do accept multiple connections by default, and this property on a <xref:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute> object is set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionPointType">
@@ -238,24 +125,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the connection point type of the consumer connection point.</summary>
-        <value>A <see cref="T:System.Type" /> that indicates the type of the connection point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns the <xref:System.Type> of the consumer connection point. The <xref:System.Type> must derive from <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint>, and when you declare the `connectionPointType` parameter with a `ConnectionConsumerAttribute` metadata element on a callback method, an instance of the type you declare is used to create a connection point instead of the standard <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">An invalid connection point type (one that does not derive from the <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" /> class) was used.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -265,35 +143,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the friendly name of the consumer connection point.</summary>
-        <value>A string containing a friendly display name for the consumer connection point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is the friendly name of a consumer connection point. Its value can be set declaratively, when you add the `displayName` parameter to a `ConnectionConsumerAttribute` metadata element on a callback method. It can also be set programmatically by a derived class, by using the protected <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayNameValue%2A> property.  
-  
- When you are searching through a connection point collection, you should use the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ID%2A> property, because the ID property must be unique, but the DisplayName property need not be.  
-  
- The DisplayName property of a consumer connection point is displayed to users when a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is on the page, the connection user interface (UI) is open, and the users are in a view where they are allowed to select connection points to establish a connection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the DisplayName property, by showing how to declare the `ConnectionConsumerAttribute` metadata element on a callback method in a consumer control. Note that the simplest overload of the constructor is used; only the `displayName` parameter value is supplied. The value of the parameter will become the value of the DisplayName property. For the full code required to run the code example, see the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> class overview.  
-  
- [!code-vb[UI.WebControls.WebParts.Connection#5](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_356_1.vb)]
- [!code-cs[UI.WebControls.WebParts.Connection#5](~/add/codesnippet/csharp/p-system.web.ui.webcontr_356_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayNameValue">
@@ -303,23 +161,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string used as the value of the <see cref="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A" /> property, for use in localization scenarios.</summary>
-        <value>A string that is used as the value of <see cref="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This extra property exists so that you can derive from <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> and provide a localized version. The derived localizable <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> attribute will maintain a private Boolean field to indicate whether it has been localized. On the first access to the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A> property, it will look up the localized string, and then use the DisplayNameValue property to assign the localized value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -329,23 +179,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string that represents the unique identity of the consumer connection point.</summary>
-        <value>The unique ID assigned to the consumer connection point. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If searching through a connection point collection, you should use the ID property to locate a particular connection point. This property can be used to distinguish between two connection points of the same name. Consumer connection points can have the same <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName%2A> property value, but the ID property must be different.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

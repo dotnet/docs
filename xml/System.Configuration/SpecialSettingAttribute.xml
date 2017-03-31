@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SpecialSettingAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,37 +16,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that an application settings property has a special significance. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Certain application settings properties have a special significance that alters the way in which their associated settings provider should process them. The SpecialSettingAttribute is used to identify such properties. This class uses the <xref:System.Configuration.SpecialSetting?displayProperty=fullName> enumeration to indicate what special category the property belongs to.  
-  
- SpecialSettingAttribute can only be applied to the settings class or to the individual settings property.  
-  
- For an example of how a settings provider deals with the SpecialSettingAttribute, see the <xref:System.Configuration.LocalFileSettingsProvider.GetPropertyValues%2A> method of the <xref:System.Configuration.LocalFileSettingsProvider> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SpecialSettingAttribute (System.Configuration.SpecialSetting specialSetting);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.SpecialSetting specialSetting) cil managed" />
+      <MemberSignature Language="C#" Value="public SpecialSettingAttribute (System.Configuration.SpecialSetting setting);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.SpecialSetting setting) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SpecialSettingAttribute.#ctor(System.Configuration.SpecialSetting)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="specialSetting" Type="System.Configuration.SpecialSetting" />
       </Parameters>
       <Docs>
-        <param name="specialSetting">A <see cref="T:System.Configuration.SpecialSetting" /> enumeration value defining the category of the application settings property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SpecialSettingAttribute" /> class.</summary>
+        <param name="setting">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SpecialSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value describing the special setting category of the application settings property.</summary>
-        <value>A <see cref="T:System.Configuration.SpecialSetting" /> enumeration value defining the category of the application settings property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SpecialSetting property is set in the <xref:System.Configuration.SpecialSettingAttribute.%23ctor%2A> constructor of this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

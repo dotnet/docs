@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DragDropKeyStates" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the current state of the modifier keys (SHIFT, CTRL, and ALT), as well as the state of the mouse buttons.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No distinction is made between the left or right SHIFT, ALT, and CTRL keys.  
-  
- This enumeration is used by the <xref:System.Windows.DragEventArgs> and <xref:System.Windows.QueryContinueDragEventArgs> classes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AltKey">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ALT key is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlKey">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control (CTRL) key is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftMouseButton">
@@ -70,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left mouse button is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleMouseButton">
@@ -87,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The middle mouse button is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -104,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No modifier keys or mouse buttons are pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightMouseButton">
@@ -121,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right mouse button is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftKey">
@@ -138,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The shift (SHIFT) key is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a custom CategoryEditor to use for grouping properties that are displayed in a <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +46,9 @@
         <Parameter Name="propertyEntry" Type="System.Activities.Presentation.PropertyEditing.PropertyEntry" />
       </Parameters>
       <Docs>
-        <param name="propertyEntry">The <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instance that is checked to determine whether it is included among those properties edited by the <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" />.</param>
-        <summary>Determines which properties are edited by the <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" />.</summary>
-        <returns>
-          <see langword="true" /> if this editor edits the specified property; otherwise, <see langword="false" />.</returns>
+        <param name="propertyEntry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +68,9 @@
         <Parameter Name="editor" Type="System.Activities.Presentation.PropertyEditing.CategoryEditor" />
       </Parameters>
       <Docs>
-        <param name="editor">The  <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" /> for which to create a new <see cref="T:System.ComponentModel.EditorAttribute" />.</param>
-        <summary>Creates a new <see cref="T:System.ComponentModel.EditorAttribute" /> for the specified <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" />.</summary>
-        <returns>A new <see cref="T:System.ComponentModel.EditorAttribute" />.</returns>
+        <param name="editor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +90,9 @@
         <Parameter Name="categoryEditorType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="categoryEditorType">The <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" /> type for which to create the new <see cref="T:System.ComponentModel.EditorAttribute" />.</param>
-        <summary>Creates a new <see cref="T:System.ComponentModel.EditorAttribute" /> for the specified <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" /> type.</summary>
-        <returns>A new <see cref="T:System.ComponentModel.EditorAttribute" />.</returns>
+        <param name="categoryEditorType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +109,8 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.DataTemplate" /> that is hosted by the property inspector to provide the user interface for a <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" />.</summary>
-        <value>A <see cref="T:System.Windows.DataTemplate" /> user interface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +130,9 @@
         <Parameter Name="desiredSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="desiredSize">The desired [T.Systems.Windows.Size](assetId:///T.Systems.Windows.Size?qualifyHint=False&amp;autoUpgrade=True) of the image to return.</param>
-        <summary>Returns an <see cref="T:System.Object" /> that the host can display in a <see cref="T:System.Windows.Controls.ContentControl" />.</summary>
-        <returns>An <see cref="T:System.Object" /> to display in the <see cref="T:System.Windows.Controls.ContentControl" />.</returns>
+        <param name="desiredSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,16 +149,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a localized string that indicates to which category the editor belongs.</summary>
-        <value>A <see cref="T:System.String" /> that represents the editor category.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Category editors are defined on types and, thus, at load time they need to indicate to which category they belong.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a cookie handler that writes cookie data so that cookies never exceed a set size.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ChunkedCookieHandler class presents the cookie as a logical entity, so that, in the case of cookies with a size that exceeds a specified threshold (the chunk size), a single call to the [Write(Byte\<xref:System.IdentityModel.Services.CookieHandler.Write%2A> method breaks the data into a series of actual client-side cookies, none of which exceeds the chunk size.  
-  
- Cookie names are constructed based on the `name` parameter to the <xref:System.IdentityModel.Services.CookieHandler.Write%2A>, <xref:System.IdentityModel.Services.CookieHandler.Read%2A>, or <xref:System.IdentityModel.Services.CookieHandler.Delete%2A> methods. The cookie names are constructed by appending a number to the base name: name, name1, name2, and so on.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.ChunkedCookieHandler" /> class that uses the default chunk size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default chunk size is specified by <xref:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -59,18 +43,9 @@
         <Parameter Name="chunkSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="chunkSize">The chunk size that will be used to write cookies.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.ChunkedCookieHandler" /> class that uses a specified chunk size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must be careful when adjusting the chunk size. Web browsers have different limits on the size of cookies and the number of cookies that are allowed in total and per domain. For example, the original Netscape specification specified these limits: 300 cookies total, 4096 bytes per cookie header (including metadata, not just the cookie value), and 20 cookies per domain.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="chunkSize" />' is less than the minimum chunk size of 1000 (<see cref="F:System.IdentityModel.Services.ChunkedCookieHandler.MinimumChunkSize" />).</exception>
+        <param name="chunkSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChunkSize">
@@ -86,8 +61,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the chunk size used by the current instance.</summary>
-        <value>The chunk size, in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +80,7 @@
       </ReturnValue>
       <MemberValue>2000</MemberValue>
       <Docs>
-        <summary>The default chunk size of 2000 characters.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +125,7 @@
       </ReturnValue>
       <MemberValue>1000</MemberValue>
       <Docs>
-        <summary>The minimum chunk size of 1000 characters.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,23 +3,26 @@
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncVoidMethodBuilder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a builder for asynchronous methods that do not return a value.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type and its members are intended for use by the compiler.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt;">
@@ -28,8 +31,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted``2(``0@,``1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -51,11 +64,11 @@
         <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
-        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
-        <param name="awaiter">The awaiter.</param>
-        <param name="stateMachine">The state machine.</param>
-        <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
+        <typeparam name="TAwaiter">To be added.</typeparam>
+        <typeparam name="TStateMachine">To be added.</typeparam>
+        <param name="awaiter">To be added.</param>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +78,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -93,11 +116,11 @@
         <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
-        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
-        <param name="awaiter">The awaiter.</param>
-        <param name="stateMachine">The state machine.</param>
-        <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes. This method can be called from partially trusted code.</summary>
+        <typeparam name="TAwaiter">To be added.</typeparam>
+        <typeparam name="TStateMachine">To be added.</typeparam>
+        <param name="awaiter">To be added.</param>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,24 +130,27 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.AsyncVoidMethodBuilder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Runtime.CompilerServices.AsyncVoidMethodBuilder" /> class.</summary>
-        <returns>A new instance of the builder.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type and its members are intended for use by the compiler.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetException">
@@ -133,8 +159,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException(System.Exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -143,19 +179,9 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">The exception to bind.</param>
-        <summary>Binds an exception to the method builder.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type and its members are intended for use by the compiler.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The builder is not initialized.</exception>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetResult">
@@ -164,24 +190,26 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Marks the method builder as successfully completed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type and its members are intended for use by the compiler.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The builder is not initialized.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetStateMachine">
@@ -190,8 +218,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -200,12 +238,9 @@
         <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
       </Parameters>
       <Docs>
-        <param name="stateMachine">The state machine instance to associate with the builder.</param>
-        <summary>Associates the builder with the specified state machine.</summary>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stateMachine" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The state machine was previously set.</exception>
       </Docs>
     </Member>
     <Member MemberName="Start&lt;TStateMachine&gt;">
@@ -214,8 +249,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -239,12 +284,10 @@
         <Parameter Name="stateMachine" Type="TStateMachine&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
-        <param name="stateMachine">The state machine instance, passed by reference.</param>
-        <summary>Begins running the builder with the associated state machine.</summary>
+        <typeparam name="TStateMachine">To be added.</typeparam>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stateMachine" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

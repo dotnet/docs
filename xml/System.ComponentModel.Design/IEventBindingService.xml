@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IEventBindingService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -14,28 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a service for registering event handlers for component events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The event binding service provides a way to link an event handler with a component event from designer code.  
-  
- To link an event handler with a component event using the IEventBindingService, you must first obtain an <xref:System.ComponentModel.EventDescriptor> for the event of the component you intend to link. The IEventBindingService provides methods that can convert an <xref:System.ComponentModel.EventDescriptor> to a <xref:System.ComponentModel.PropertyDescriptor> which you can use to configure the event with an event handler method name.  
-  
- The <xref:System.ComponentModel.TypeDescriptor> object provides a <xref:System.ComponentModel.TypeDescriptor.GetEvents%2A> method that you can use to obtain an <xref:System.ComponentModel.EventDescriptorCollection> containing <xref:System.ComponentModel.EventDescriptor> objects for each event of a component. The <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> and <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> methods of the IEventBindingService return a <xref:System.ComponentModel.PropertyDescriptor> for each <xref:System.ComponentModel.EventDescriptor> passed to either method. Each <xref:System.ComponentModel.PropertyDescriptor> returned from <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> or <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> has a property type of string. You can set this string to a value that indicates the name of the event-handler method to link the event with using the <xref:System.ComponentModel.PropertyDescriptor.SetValue%2A> method of the <xref:System.ComponentModel.PropertyDescriptor>.  
-  
-   
-  
-## Examples  
- The following example demonstrates a designer that uses the IEventBindingService to link a component's event with an event handler at design time when the custom shortcut menu command that the designer adds for the component is invoked. To use the example, compile it to a class library, add a reference from a Windows Forms project, add the component in the class library to the Toolbox by right-clicking the Toolbox and selecting Customize Toolbox..., then choosing the class library and clicking OK, and add an instance of the EventControl to a Form. Then right-click the EventControl and click the Connect testEvent shortcut menu command. An empty event handler method is created and the EventControl's testEvent method is initialized to this event handler in the initialization code for the Form.  
-  
- [!code-cpp[IEventBindingServiceExample#1](~/add/codesnippet/cpp/t-system.componentmodel._118_1.cpp)]
- [!code-vb[IEventBindingServiceExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._118_1.vb)]
- [!code-cs[IEventBindingServiceExample#1](~/add/codesnippet/csharp/t-system.componentmodel._118_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateUniqueMethodName">
@@ -45,8 +29,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -56,18 +44,11 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="component">The component instance the event is connected to.</param>
-        <param name="e">The event to create a name for.</param>
-        <summary>Creates a unique name for an event-handler method for the specified component and event.</summary>
-        <returns>The recommended name for the event-handler method for this event.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns a name that is unique from any other method name in the user's source code.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCompatibleMethods">
@@ -77,8 +58,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
@@ -87,17 +72,10 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="e">The event to get the compatible event-handler methods for.</param>
-        <summary>Gets a collection of event-handler methods that have a method signature compatible with the specified event.</summary>
-        <returns>A collection of strings.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each string in the collection is the name of a method that has a method signature compatible with the specified event.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEvent">
@@ -107,8 +85,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.EventDescriptor</ReturnType>
@@ -117,9 +99,9 @@
         <Parameter Name="property" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="property">The property that represents an event.</param>
-        <summary>Gets an <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the specified property descriptor represents, if it represents an event.</summary>
-        <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the property represents, or <see langword="null" /> if the property does not represent an event.</returns>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +112,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
@@ -140,17 +126,10 @@
         <Parameter Name="events" Type="System.ComponentModel.EventDescriptorCollection" />
       </Parameters>
       <Docs>
-        <param name="events">The events to convert to properties.</param>
-        <summary>Converts a set of event descriptors to a set of property descriptors.</summary>
-        <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that describe the event set.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
-  
- ]]></format>
-        </remarks>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEventProperty">
@@ -160,8 +139,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
@@ -170,17 +153,10 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="e">The event to convert.</param>
-        <summary>Converts a single event descriptor to a property descriptor.</summary>
-        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the event.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCode">
@@ -190,25 +166,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays the user code for the designer.</summary>
-        <returns>
-          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method displays the code editor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCode">
@@ -218,8 +190,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -228,18 +204,10 @@
         <Parameter Name="lineNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineNumber">The line number to place the caret on.</param>
-        <summary>Displays the user code for the designer at the specified line.</summary>
-        <returns>
-          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method displays the code editor and positions the cursor on the specified line.  
-  
- ]]></format>
-        </remarks>
+        <param name="lineNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCode">
@@ -249,8 +217,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -260,19 +232,11 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="component">The component that the event is connected to.</param>
-        <param name="e">The event to display.</param>
-        <summary>Displays the user code for the specified event.</summary>
-        <returns>
-          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method displays the code editor and positions the cursor on the line that the specified event is declared on.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

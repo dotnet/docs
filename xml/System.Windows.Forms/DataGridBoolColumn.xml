@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridBoolColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies a column in which each cell contains a check box for representing a Boolean value.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridBoolColumn derives from the `abstract` class <xref:System.Windows.Forms.DataGridColumnStyle>. At run time, the DataGridBoolColumn contains check boxes in each cell that have three states by default: checked (`true`), unchecked (`false`), and <xref:System.DBNull.Value>. To use two-state check boxes, set the <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property to `false`.  
-  
- Properties added to the class include <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>. These properties specify the value underlying each of the column's states.  
-  
-   
-  
-## Examples  
- The following code example first creates a new DataGridBoolColumn and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGridTableStyle>.  
-  
- [!code-cs[DataGridBoolColumn overview#1](~/add/codesnippet/csharp/t-system.windows.forms.d_9_1.cs)]
- [!code-vb[DataGridBoolColumn overview#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_9_1.vb)]
- [!code-cpp[DataGridBoolColumn overview#1](~/add/codesnippet/cpp/t-system.windows.forms.d_9_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,29 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using this overload to create a <xref:System.Windows.Forms.DataGridBoolColumn>, be sure to set the <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> value to the <xref:System.Data.DataColumn.ColumnName%2A> of a <xref:System.Data.DataColumn>.  
-  
-   
-  
-## Examples  
- The following code example first creates a new <xref:System.Windows.Forms.DataGridBoolColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGridTableStyle>.  
-  
- [!code-vb[Classic DataGridBoolColumn Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.d_98_1.vb)]
- [!code-cs[Classic DataGridBoolColumn Example#1](~/add/codesnippet/csharp/m-system.windows.forms.d_98_1.cs)]
- [!code-cpp[Classic DataGridBoolColumn Example#1](~/add/codesnippet/cpp/m-system.windows.forms.d_98_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,34 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> associated with the column.</param>
-        <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn> must be associated with a data source that contains <xref:System.Boolean> values.  
-  
- To get a <xref:System.ComponentModel.PropertyDescriptor>, first use the <xref:System.Windows.Forms.BindingContext> to return the appropriate <xref:System.Windows.Forms.BindingManagerBase>. Then use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. Finally, use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property of the <xref:System.ComponentModel.PropertyDescriptorCollection> to return the specific <xref:System.ComponentModel.PropertyDescriptor> for the column.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-vb[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/add/codesnippet/visualbasic/5c796ff4-477d-44d1-b4c0-_1.vb)]
- [!code-cs[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/add/codesnippet/csharp/5c796ff4-477d-44d1-b4c0-_1.cs)]
- [!code-cpp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/add/codesnippet/cpp/5c796ff4-477d-44d1-b4c0-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="prop">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -118,18 +62,10 @@
         <Parameter Name="isDefault" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> associated with the column.</param>
-        <param name="isDefault">
-          <see langword="true" /> to specify the column as the default; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />, and specifying whether the column style is a default column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get a <xref:System.ComponentModel.PropertyDescriptor>, first use the <xref:System.Windows.Forms.BindingContext> to return the appropriate <xref:System.Windows.Forms.BindingManagerBase>. Then use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. Finally, use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property of the <xref:System.ComponentModel.PropertyDescriptorCollection> to return the specific <xref:System.ComponentModel.PropertyDescriptor> for the column.  
-  
- ]]></format>
-        </remarks>
+        <param name="prop">To be added.</param>
+        <param name="isDefault">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -139,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,8 +84,8 @@
         <Parameter Name="rowNum" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowNum">The number of the row in which an operation is being interrupted.</param>
-        <summary>Initiates a request to interrupt an edit procedure.</summary>
+        <param name="rowNum">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +96,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -173,26 +107,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether null values are allowed.</summary>
-        <value>
-          <see langword="true" /> if null values are allowed, otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to false, the check boxes in the column have only two states: checked (`true`) and unchecked (`false`).  
-  
-   
-  
-## Examples  
- The following code example sets the AllowNull property.  
-  
- [!code-cpp[Classic DataGridBoolColumn.AllowNull Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_332_1.cpp)]
- [!code-cs[Classic DataGridBoolColumn.AllowNull Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_332_1.cs)]
- [!code-vb[Classic DataGridBoolColumn.AllowNull Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_332_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowNullChanged">
@@ -202,26 +119,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.DataGridBoolColumn.AllowNull%2A" /> property is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridBoolColumn#2](~/add/codesnippet/cpp/e-system.windows.forms.d_148_1.cpp)]
- [!code-vb[DataGridBoolColumn#2](~/add/codesnippet/visualbasic/e-system.windows.forms.d_148_1.vb)]
- [!code-cs[DataGridBoolColumn#2](~/add/codesnippet/csharp/e-system.windows.forms.d_148_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -231,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,11 +146,10 @@
         <Parameter Name="rowNum" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dataSource">The <see cref="T:System.Data.DataView" /> of the edited column.</param>
-        <param name="rowNum">The number of the edited row.</param>
-        <summary>Initiates a request to complete an editing procedure.</summary>
-        <returns>
-          <see langword="true" /> if the editing procedure committed successfully; otherwise, <see langword="false" />.</returns>
+        <param name="dataSource">To be added.</param>
+        <param name="rowNum">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies a column that it must relinquish the focus to the control it is hosting.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,23 +192,14 @@
         <Parameter Name="cellIsVisible" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Data.DataView" /> of the edited cell.</param>
-        <param name="rowNum">The row number of the edited cell.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
-        <param name="readOnly">
-          <see langword="true" /> if the value is read only; otherwise, <see langword="false" />.</param>
-        <param name="displayText">The text to display in the cell.</param>
-        <param name="cellIsVisible">
-          <see langword="true" /> to show the cell; otherwise, <see langword="false" />.</param>
-        <summary>Prepares the cell for editing a value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unlike the typical implementation of this method (as described in the <xref:System.Windows.Forms.DataGridColumnStyle> class), the Edit method does not site a control for editing the cell value. Instead, a check box is drawn when the <xref:System.Windows.Forms.DataGridBoolColumn.Paint%2A> method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <param name="rowNum">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="readOnly">To be added.</param>
+        <param name="displayText">To be added.</param>
+        <param name="cellIsVisible">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnterNullValue">
@@ -317,7 +209,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,25 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enters a <see cref="F:System.DBNull.Value" /> into the column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To set the actual value used when entering a null value, use the <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> property.  
-  
-   
-  
-## Examples  
- The following code example uses the EnterNullValue to enter a null value into the column.  
-  
- [!code-cs[Classic DataGridBoolColumn.EnterNullValue Example#1](~/add/codesnippet/csharp/m-system.windows.forms.d_94_1.cs)]
- [!code-cpp[Classic DataGridBoolColumn.EnterNullValue Example#1](~/add/codesnippet/cpp/m-system.windows.forms.d_94_1.cpp)]
- [!code-vb[Classic DataGridBoolColumn.EnterNullValue Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.d_94_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Exception">The <see cref="System.Windows.Forms.DataGridBoolColumn.AllowNull%2A" /> property is set to <see langword="false" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FalseValue">
@@ -353,7 +227,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -368,25 +241,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the actual value used when setting the value of the column to <see langword="false" />.</summary>
-        <value>The value, typed as <see cref="T:System.Object" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FalseValue, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
-  
-   
-  
-## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, FalseValue, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_46_1.vb)]
- [!code-cs[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_46_1.cs)]
- [!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_46_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FalseValueChanged">
@@ -396,26 +253,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.DataGridBoolColumn.FalseValue%2A" /> property is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridBoolColumn#3](~/add/codesnippet/cpp/e-system.windows.forms.d_110_1.cpp)]
- [!code-vb[DataGridBoolColumn#3](~/add/codesnippet/visualbasic/e-system.windows.forms.d_110_1.vb)]
- [!code-cs[DataGridBoolColumn#3](~/add/codesnippet/csharp/e-system.windows.forms.d_110_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColumnValueAtRow">
@@ -425,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,10 +280,10 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lm">The <see cref="T:System.Windows.Forms.CurrencyManager" /> for the column.</param>
-        <param name="row">The row number.</param>
-        <summary>Gets the value at the specified row.</summary>
-        <returns>The value, typed as <see cref="T:System.Object" />.</returns>
+        <param name="lm">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,7 +294,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -458,8 +301,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the height of a cell in a column.</summary>
-        <returns>The height of the column. The default is 16.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,7 +313,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -481,10 +323,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that draws on the screen.</param>
-        <param name="value">An <see cref="T:System.Object" /> that contains the value to be drawn to the screen.</param>
-        <summary>Gets the height used when resizing columns.</summary>
-        <returns>The height used to automatically resize cells in a column.</returns>
+        <param name="g">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,7 +337,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,18 +347,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that draws the cell.</param>
-        <param name="value">The value that must fit in the cell.</param>
-        <summary>Gets the optimum width and height of a cell given a specific value to contain.</summary>
-        <returns>A <see cref="T:System.Drawing.Size" /> that contains the drawing information for the cell.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetPreferredSize method allows you to resize the column based on the value displayed. For example, if a cell contains an especially large value, you can use the GetPreferredSize method to return the optimum size of the cell based on the value. The optimum size takes into account not only the size of the string, but also the font used to display it.  
-  
- ]]></format>
-        </remarks>
+        <param name="g">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NullValue">
@@ -527,7 +361,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -539,29 +372,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the actual value used when setting the value of the column to <see cref="F:System.DBNull.Value" />.</summary>
-        <value>The value, typed as <see cref="T:System.Object" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also specify what text will be displayed by setting the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property.  
-  
- The <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property must be set to true to enter null values.  
-  
- The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, NullValue, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
-  
-   
-  
-## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and NullValue properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_37_1.vb)]
- [!code-cs[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_37_1.cs)]
- [!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_37_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -571,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -584,19 +396,12 @@
         <Parameter Name="rowNum" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to draw to.</param>
-        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
-        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the column.</param>
-        <param name="rowNum">The number of the row referred to in the underlying data.</param>
-        <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" /> and row number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method paints the background with the background color in the graphics object passed in.  
-  
- ]]></format>
-        </remarks>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="rowNum">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -606,7 +411,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,12 +424,12 @@
         <Parameter Name="alignToRight" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to draw to.</param>
-        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
-        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the column.</param>
-        <param name="rowNum">The number of the row in the underlying data table being referred to.</param>
-        <param name="alignToRight">A value indicating whether to align the content to the right. <see langword="true" /> if the content is aligned to the right, otherwise, <see langword="false" />.</param>
-        <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, row number, and alignment settings.</summary>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="rowNum">To be added.</param>
+        <param name="alignToRight">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,7 +440,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -652,22 +455,15 @@
         <Parameter Name="alignToRight" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to draw to.</param>
-        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
-        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the column.</param>
-        <param name="rowNum">The number of the row in the underlying data table being referred to.</param>
-        <param name="backBrush">A <see cref="T:System.Drawing.Brush" /> used to paint the background color.</param>
-        <param name="foreBrush">A <see cref="T:System.Drawing.Color" /> used to paint the foreground color.</param>
-        <param name="alignToRight">A value indicating whether to align the content to the right. <see langword="true" /> if the content is aligned to the right, otherwise, <see langword="false" />.</param>
-        <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, row number, <see cref="T:System.Drawing.Brush" />, and <see cref="T:System.Drawing.Color" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Paints the check box in the column.  
-  
- ]]></format>
-        </remarks>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="rowNum">To be added.</param>
+        <param name="backBrush">To be added.</param>
+        <param name="foreBrush">To be added.</param>
+        <param name="alignToRight">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetColumnValueAtRow">
@@ -677,7 +473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -689,10 +484,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="lm">The <see cref="T:System.Windows.Forms.CurrencyManager" /> for the column.</param>
-        <param name="row">The row number.</param>
-        <param name="value">The value to set, typed as <see cref="T:System.Object" />.</param>
-        <summary>Sets the value of a specified row.</summary>
+        <param name="lm">To be added.</param>
+        <param name="row">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,7 +498,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -718,25 +512,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the actual value used when setting the value of the column to <see langword="true" />.</summary>
-        <value>The value, typed as <see cref="T:System.Object" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and TrueValue properties determine the actual values pushed into the data source.  
-  
-   
-  
-## Examples  
- The following code example sets the TrueValue, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_90_1.vb)]
- [!code-cs[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_90_1.cs)]
- [!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_90_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrueValueChanged">
@@ -746,31 +524,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.DataGridBoolColumn.TrueValue%2A" /> property value is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridBoolColumn#1](~/add/codesnippet/cpp/e-system.windows.forms.d_8_1.cpp)]
- [!code-vb[DataGridBoolColumn#1](~/add/codesnippet/visualbasic/e-system.windows.forms.d_8_1.vb)]
- [!code-cs[DataGridBoolColumn#1](~/add/codesnippet/csharp/e-system.windows.forms.d_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

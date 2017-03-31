@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSScanner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Scans JScript code searching for individual units of code, or *tokens*. This class belongs to the scanning and parsing category. For more information about scanning and parsing, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSScanner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sourceContext" Type="Microsoft.JScript.Context" />
       </Parameters>
       <Docs>
-        <param name="sourceContext">The source code to scan.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSScanner" /> class, specifying the source code to scan.</summary>
+        <param name="sourceContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the current line number in the code. This is a pointer that moves as the code is scanned.</summary>
-        <returns>The current line number in the code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,9 +83,9 @@
         <Parameter Name="absolute" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="absolute">This parameter is ignored.</param>
-        <summary>Gets the current position in the code string. This is a pointer that moves as the code is scanned.</summary>
-        <returns>The current position in the code string.</returns>
+        <param name="absolute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,7 +103,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scans for the next token in the code.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,16 +121,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the source code that is associated with this scanner object.</summary>
-        <returns>The source code to scan.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The source code is specified to the <xref:Microsoft.JScript.JSScanner.%23ctor%28Microsoft.JScript.Context%29> method or to the <xref:Microsoft.JScript.JSScanner.SetSource%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStartLinePosition">
@@ -147,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,8 +140,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the position in the code string where the first line of the current code starts. All lines of code are stored in a single string. This is a pointer that moves as the code is scanned.</summary>
-        <returns>The position in the code string where the first line of the current code starts.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,8 +159,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string that has been scanned and had all its escape sequences replaced.</summary>
-        <returns>A string that has been scanned and had all its escape sequences replaced.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,7 +171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,9 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the end of a line was reached after the scanner scans or peeks for a token.</summary>
-        <returns>
-          <see langword="true" /> if the end of the line was reached; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,10 +199,9 @@
         <Parameter Name="token" Type="Microsoft.JScript.JSToken" />
       </Parameters>
       <Docs>
-        <param name="token">The token to check.</param>
-        <summary>Determines whether the specified token is a keyword in the JScript language.</summary>
-        <returns>
-          <see langword="true" /> if the token is a keyword; otherwise, <see langword="false" />.</returns>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,10 +221,9 @@
         <Parameter Name="token" Type="Microsoft.JScript.JSToken" />
       </Parameters>
       <Docs>
-        <param name="token">The token to check.</param>
-        <summary>Determines whether the specified token is an operator in the JScript language.</summary>
-        <returns>
-          <see langword="true" /> if the token is an operator; otherwise, <see langword="false" />.</returns>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +234,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,17 +243,9 @@
         <Parameter Name="mode" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="mode">
-          <see langword="true" /> to indicate authoring mode; otherwise, <see langword="false" />.</param>
-        <summary>Sets a flag that indicates whether the scanner is operating in authoring mode.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An example of operating in authoring mode occurs when a host scans the code in an editor to colorize it.  
-  
- ]]></format>
-        </remarks>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSource">
@@ -286,7 +255,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,8 +264,8 @@
         <Parameter Name="sourceContext" Type="Microsoft.JScript.Context" />
       </Parameters>
       <Docs>
-        <param name="sourceContext">The source code to scan.</param>
-        <summary>Sets the source code to scan.</summary>
+        <param name="sourceContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,7 +276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,8 +283,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Skips a comment that spans multiple lines, and advances the pointers that identify the current position in the code.</summary>
-        <returns>The new current position in the code string.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

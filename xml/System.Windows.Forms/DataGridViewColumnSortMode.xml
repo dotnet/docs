@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnSortMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines how a <see cref="T:System.Windows.Forms.DataGridView" /> column can be sorted by the user.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each column may have a different sort mode specified by the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type. For more information, see [How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Set%20the%20Sort%20Modes%20for%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#066](~/add/codesnippet/csharp/t-system.windows.forms.d_62_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#066](~/add/codesnippet/visualbasic/t-system.windows.forms.d_62_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can sort the column by clicking the column header unless the column headers are used for selection. A sorting glyph will be displayed automatically.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSortable">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column can only be sorted programmatically, but it is not intended for sorting, so the column header will not include space for a sorting glyph.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Programmatic">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column can only be sorted programmatically, and the column header will include space for a sorting glyph.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

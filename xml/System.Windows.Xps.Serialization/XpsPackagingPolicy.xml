@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the writer, resource, print ticket, and package relationship settings that are associated with a specified <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="xpsPackage" Type="System.Windows.Xps.Packaging.XpsDocument" />
       </Parameters>
       <Docs>
-        <param name="xpsPackage">The <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> that is associated with this <see cref="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" /> class for a specified <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+        <param name="xpsPackage">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,9 +47,9 @@
         <Parameter Name="interleavingType" Type="System.Windows.Xps.Packaging.PackageInterleavingOrder" />
       </Parameters>
       <Docs>
-        <param name="xpsPackage">The [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] document that the packaging policy applies to.</param>
-        <param name="interleavingType">The order in which to interleave document elements.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" /> class with a specified <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> and specified interleave order.</summary>
+        <param name="xpsPackage">To be added.</param>
+        <param name="interleavingType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,9 +69,9 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The resource identifier of the color context.</param>
-        <summary>Acquires the resource stream for a specified <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" />.</summary>
-        <returns>The resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" /> that has the specified <paramref name="resourceId" />.</returns>
+        <param name="resourceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Acquires the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
-        <returns>The resource stream for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,9 +110,9 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The identifier of the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] font.</param>
-        <summary>Acquires the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for a specified <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
-        <returns>The resource stream for the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] font that has the specified <paramref name="resourceId" />.</returns>
+        <param name="resourceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,9 +132,9 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The resource identifier of the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] image.</param>
-        <summary>Acquires the resource stream for a specified <see cref="T:System.Windows.Xps.Packaging.XpsImage" />.</summary>
-        <returns>The resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsImage" /> that has the specified <paramref name="resourceId" />.</returns>
+        <param name="resourceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,9 +154,9 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The identifier of the resource dictionary.</param>
-        <summary>Acquires the resource stream for a specified <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</summary>
-        <returns>The [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" /> that has the specified <paramref name="resourceId" />.</returns>
+        <param name="resourceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,8 +174,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a list of <see cref="System.Windows.Documents.PageContent.LinkTargets%2A" /> for the current page content.</summary>
-        <returns>The list of <see cref="System.Windows.Documents.PageContent.LinkTargets%2A" /> for the current page content.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +186,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -203,8 +193,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <returns>The [!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedDocument" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,8 +212,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
-        <returns>The [!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,8 +231,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedPage" />.</summary>
-        <returns>The [!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedPage" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,7 +243,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,8 +250,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current page.</summary>
-        <returns>The [!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedPage" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,8 +269,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</summary>
-        <returns>The [!INCLUDE[TLA#tla_xml](~/add/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,15 +281,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] of the current fixed document.</summary>
-        <value>The [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of the current fixed document.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,15 +299,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] of the current fixed page.</summary>
-        <value>The [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of the current fixed page.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,14 +317,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.PackagingProgressEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.Windows.Documents.FixedPage" />, <see cref="T:System.Windows.Documents.FixedDocument" />, or <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> is added to the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,7 +334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -361,16 +343,9 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="printTicket">The print ticket to store as part of the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] document.</param>
-        <summary>Stores a specified <see cref="T:System.Printing.PrintTicket" /> as part of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
- ]]></format>
-        </remarks>
+        <param name="printTicket">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreCommitCurrentPage">
@@ -380,7 +355,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -388,7 +362,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Prepares to commit the current page to the output store.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,7 +373,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,9 +383,9 @@
         <Parameter Name="relationshipName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetUri">The [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] of the resource to associate with the current page.</param>
-        <param name="relationshipName">The identifying name of the <see cref="T:System.IO.Packaging.PackageRelationship" /> that associates the current page with the specified resource.</param>
-        <summary>Adds a <see cref="T:System.IO.Packaging.PackageRelationship" /> with a specified name that associates a specified resource with the current page.</summary>
+        <param name="targetUri">To be added.</param>
+        <param name="relationshipName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,7 +396,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,8 +405,8 @@
         <Parameter Name="targetUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="targetUri">The [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] of the restricted font to associate with the current document.</param>
-        <summary>Adds a <see cref="T:System.IO.Packaging.PackageRelationship" /> that associates a restricted font with the current document.</summary>
+        <param name="targetUri">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,7 +417,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -453,7 +424,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,7 +435,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,7 +442,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,7 +453,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -493,8 +462,8 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">The identifier of the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] font that you want to release.</param>
-        <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for a specified <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
+        <param name="resourceId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,7 +474,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -513,7 +481,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsImage" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,7 +492,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,7 +499,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,7 +510,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -551,7 +517,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -562,7 +528,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -570,7 +535,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,7 +546,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -589,7 +553,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedPage" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

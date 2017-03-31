@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewPagerRow" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the pager row in a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An instance of the FormViewPagerRow is created to hold the pager controls in a <xref:System.Web.UI.WebControls.FormView> control. The <xref:System.Web.UI.INamingContainer> interface is a marker that indicates that the FormViewPagerRow control is part of the <xref:System.Web.UI.Page> object's control hierarchy.  
-  
- This class is used primarily by control developers. Control developers can override the <xref:System.Web.UI.WebControls.FormViewPagerRow.%23ctor%2A> constructor and the <xref:System.Web.UI.WebControls.FormView.CreateRow%2A> and <xref:System.Web.UI.WebControls.FormView.InitializePager%2A> methods of the <xref:System.Web.UI.WebControls.FormView> class to create a custom pager row.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,18 +30,11 @@
         <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The index of the row in the <see cref="T:System.Web.UI.WebControls.FormView" /> control.</param>
-        <param name="rowType">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowType" /> enumeration values.</param>
-        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> enumeration values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormViewPagerRow" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FormViewPagerRow constructor calls the base class constructor, <xref:System.Web.UI.WebControls.FormViewRow.%23ctor%2A>, with the specified parameters. For a <xref:System.Web.UI.WebControls.FormViewPagerRow> control in a <xref:System.Web.UI.WebControls.FormView> control, the call is made  `rowType` equal to <xref:System.Web.UI.WebControls.DataControlRowType> and `rowState` equal to <xref:System.Web.UI.WebControls.DataControlRowState>.  
-  
- ]]></format>
-        </remarks>
+        <param name="rowIndex">To be added.</param>
+        <param name="rowType">To be added.</param>
+        <param name="rowState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

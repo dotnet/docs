@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables tooling for analyzing XAML visual trees.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[internalonly_netframework_type](~/add/includes/internalonly-netframework-type-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetXamlSourceInfo">
@@ -38,19 +31,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object for which to find the XAML source.</param>
-        <summary>Returns an instance of <see cref="T:System.Windows.Diagnostics.XamlSourceInfo" /> that contains information about the XAML source document for the specified object.</summary>
-        <returns>Information about the XAML source document if available; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Source info is available only for Debug assemblies and only if the ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO environment variable is set to anything other than 0 or `false`.  
-  
- [!INCLUDE[internalonly_netframework_member](~/add/includes/internalonly-netframework-member-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualTreeChanged">
@@ -66,17 +50,8 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.VisualTreeChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a managed debugger is attached and any element is added to or removed from the visual tree of another element, regardless of whether either of the elements are descendants of any other specific element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event occurs only when a managed debugger is attached.  
-  
- [!INCLUDE[internalonly_netframework_member](~/add/includes/internalonly-netframework-member-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

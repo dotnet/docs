@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.LockingPersistenceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The abstract base class from which all durable service persistence providers that implement locking are derived.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In addition to persistence, the LockingPersistenceProvider class implements locking of service state data records. Methods that interact with persisted data (such as the `Load` method) have an optional parameter (`lockInstance`) that defines whether locks on the data in question are released or maintained.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="id">The unique identifier to be associated with this persistence provider instance.</param>
-        <summary>When implemented in a derived class, creates a new instance of the <see cref="T:System.ServiceModel.Persistence.LockingPersistenceProvider" /> class, configured with the specified identity value.</summary>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,20 +57,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance whose state information is saved into the persistence store.</param>
-        <param name="timeout">The interval in which the operation must be completed without timing out.</param>
-        <param name="callback">The delegate that receives the notification when the operation completes.</param>
-        <param name="state">The state information associated with the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to create instance state information in the persistence store using the parameters. This method does not unlock the instance after saving the state information.</summary>
-        <returns>The status of an asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls into the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate%2A> method, which takes an additional parameter to determine whether the instance is unlocked. This method passes `false` as a value for this parameter to the calling method.  
-  
- ]]></format>
-        </remarks>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginCreate">
@@ -90,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,14 +86,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance whose state information is saved into the persistence store.</param>
-        <param name="timeout">The interval in which the operation must be completed without timing out.</param>
-        <param name="unlockInstance">
-          <see langword="true" /> if the instance must be unlocked in the persistence store; otherwise <see langword="false" />.</param>
-        <param name="callback">The delegate that receives the notification when the operation completes.</param>
-        <param name="state">The state information associated with the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to create instance state information in the persistence store using the parameters. This method unlocks the instance after saving the instance state if the value of the <paramref name="unlockInstance" /> parameter is <see langword="true" />.</summary>
-        <returns>The status of an asynchronous operation.</returns>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="unlockInstance">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,19 +114,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The interval in which the operation must be completed without timing out.</param>
-        <param name="callback">The delegate that receives the notification when the operation completes.</param>
-        <param name="state">The state information associated with the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to load an instance based on state information in the persistence store using the parameters. This method does not lock the instance.</summary>
-        <returns>The status of an asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls into the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad%2A>, which takes an additional parameter that specifies whether the instance must be locked in the persistence store. This method passes `false` as a value for this parameter to the calling method.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginLoad">
@@ -156,7 +129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,13 +141,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">An interval in which the operation must be completed before timing out.</param>
-        <param name="lockInstance">
-          <see langword="true" /> if the instance must be locked; otherwise <see langword="false" />.</param>
-        <param name="callback">The delegate that receives the notification when the operation completes.</param>
-        <param name="state">The state information associated with the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to load an instance based on state information in the persistence store using the parameters. This method locks the instance after loading the instance state if the value of the <paramref name="lockInstance" /> parameter is <see langword="true" />.</summary>
-        <returns>The status of an asynchronous operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="lockInstance">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,12 +169,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
-        <param name="instanceToken">The token returned by a previous <see langword="Create" /> or <see langword="Update" /> method that represents the current state held by the caller.</param>
-        <param name="callback">The method to be called when the operation is completed.</param>
-        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
-        <summary>When implemented in a derived class, represents the beginning of the LoadIfChanged phase. The LoadIfChanged phase occurs when state data is loaded into the persistence provider from the persistence store and the state data in the persistence store has been changed. This method call does not lock the instance in the persistence store.</summary>
-        <returns>The status of an asynchronous operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="instanceToken">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,14 +198,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
-        <param name="instanceToken">The token returned by a previous <see langword="Create" /> or <see langword="Update" /> method that represents the current state held by the caller.</param>
-        <param name="lockInstance">
-          <see langword="true" /> if the instance is locked in the persistence store; otherwise <see langword="false" />.</param>
-        <param name="callback">The method to be called when the operation is completed.</param>
-        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
-        <summary>When implemented in a derived class, represents the beginning of the LoadIfChanged phase. The LoadIfChanged phase occurs when state data is loaded into the persistence provider from the persistence store and the state data in the persistence store has been changed. This method call lets you specify whether you want to lock the instance in the persistence store.</summary>
-        <returns>The status of an asynchronous operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="instanceToken">To be added.</param>
+        <param name="lockInstance">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,7 +215,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,11 +226,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">An interval in which the operation must be completed before timing out.</param>
-        <param name="callback">The delegate that receives the notification when the operation completes.</param>
-        <param name="state">The state information associated with the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to unlock an instance in the persistence store.</summary>
-        <returns>The status of an asynchronous operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,20 +253,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance whose state information is being updated in the persistence store.</param>
-        <param name="timeout">The interval in which the operation must complete without timing out.</param>
-        <param name="callback">The delegate that receives the notification when the operation is completed.</param>
-        <param name="state">The state information about the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to update instance state information in the persistence store using the parameters passed. This operation does not unlock the instance in the instance store.</summary>
-        <returns>The status of an asynchronous operation.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls into the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate%2A> method and passes a `false` value for the `unlockInstance` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginUpdate">
@@ -310,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -324,14 +282,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance whose state information is being updated in the persistence store.</param>
-        <param name="timeout">The interval in which the operation must complete without timing out.</param>
-        <param name="unlockInstance">
-          <see langword="true" /> if the instance must be locked after the instance state is updated in the persistence store; otherwise <see langword="false" />.</param>
-        <param name="callback">The delegate that receives the notification when the operation completes.</param>
-        <param name="state">The state information about the asynchronous operation.</param>
-        <summary>Begins an asynchronous operation to update instance state information in the persistence store using the parameters passed. This operation locks the instance in the persistence store if the value of the <paramref name="unlockInstance" /> parameter is <see langword="true" />.</summary>
-        <returns>The status of an asynchronous operation.</returns>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="unlockInstance">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,10 +309,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance object whose state information must be saved into the persistence store.</param>
-        <param name="timeout">The interval in which the operation must complete before timing out.</param>
-        <summary>Creates instance state information in the persistence store using parameters passed into the method. This method does not unlock the instance in the persistence store after saving the instance state.</summary>
-        <returns>The state information.</returns>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,7 +323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -379,12 +334,11 @@
         <Parameter Name="unlockInstance" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance object whose state information is saved into the persistence store.</param>
-        <param name="timeout">The interval within which the operation must complete before timing out.</param>
-        <param name="unlockInstance">
-          <see langword="true" /> if the instance must be unlocked in the persistence store; otherwise <see langword="false" />.</param>
-        <summary>This method creates instance state information in the persistence store using parameters passed into the method. The method unlocks the instance in the instance store if the value of the <paramref name="unlockInstance" /> parameter is <see langword="true" />.</summary>
-        <returns>The state information.</returns>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="unlockInstance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,7 +349,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -405,8 +358,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The result returned by the unlock operation.</param>
-        <summary>Ends the asynchronous operation to unlock an instance in the persistence store.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,7 +370,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -427,17 +379,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
-        <summary>Loads service state information from the persistence store without locking the instance.</summary>
-        <returns>The service state information.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method invokes the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.Load%2A> method with `lockInstance` parameter set to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -447,7 +392,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -458,11 +402,10 @@
         <Parameter Name="lockInstance" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="timeout">The period after which the persistence provider aborts this operation.</param>
-        <param name="lockInstance">
-          <see langword="true" /> if the instance should be locked; otherwise <see langword="false" />.</param>
-        <summary>Loads state information from the persistence store after locking the instance.</summary>
-        <returns>The state information.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="lockInstance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -485,12 +427,11 @@
         <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
-        <param name="instanceToken">The token returned by the previous <see langword="Create" /> or <see langword="Update" /> method calls, which represents the current state held by the caller.</param>
-        <param name="instance">The actual instance state information.</param>
-        <summary>Loads the instance state information from the persistence store if the state information has been changed since the last time the information was loaded by the caller. This method does not lock the instance in the persistence store.</summary>
-        <returns>
-          <see langword="true" /> if the instance should be locked in the persistence store at the end of this operation; otherwise <see langword="false" />.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="instanceToken">To be added.</param>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,14 +454,12 @@
         <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
-        <param name="instanceToken">The token returned by the previous Create or Update method calls, which represents the current state held by the caller.</param>
-        <param name="lockInstance">
-          <see langword="true" /> if the instance should be locked in the persistence store at the end of this operation; otherwise <see langword="false" />.</param>
-        <param name="instance">The instance state information.</param>
-        <summary>Loads the instance state information from the persistence store if the state information has been changed since the last time the information was loaded by the caller. This method also lets the caller specify whether to lock the instance in the persistence store.</summary>
-        <returns>
-          <see langword="true" /> if the instance should be locked in the persistence store at the end of this operation; otherwise <see langword="false" />.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="instanceToken">To be added.</param>
+        <param name="lockInstance">To be added.</param>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,7 +470,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,8 +479,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The time period after which the persistence provider aborts the operation.</param>
-        <summary>Unlocks the instance whose ID is specified when constructing the <see cref="T:System.ServiceModel.Persistence.LockingPersistenceProvider" /> object in the persistence store.</summary>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,7 +491,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -565,10 +501,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance state information.</param>
-        <param name="timeout">The time period after which the persistence provider aborts the operation.</param>
-        <summary>When implemented in a derived class, updates the instance state information in the persistence store. This method does not unlock the instance after updating the instance state information in the persistence store.</summary>
-        <returns>The instance state information.</returns>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,7 +515,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -591,12 +526,11 @@
         <Parameter Name="unlockInstance" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="instance">The instance state information.</param>
-        <param name="timeout">The time period after which the persistence provider aborts the operation.</param>
-        <param name="unlockInstance">
-          <see langword="true" /> if the instance is unlocked after the instance state information is updated; otherwise <see langword="false" />.</param>
-        <summary>When implemented in a derived class, updates the instance state information in the persistence store. This method does not unlock the instance after updating the instance state information in the persistence store.</summary>
-        <returns>The instance state information.</returns>
+        <param name="instance">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="unlockInstance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

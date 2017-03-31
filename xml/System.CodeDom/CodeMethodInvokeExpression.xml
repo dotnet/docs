@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodInvokeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,26 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an expression that invokes a method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeMethodInvokeExpression can be used to represent an expression that invokes a method.  
-  
- The <xref:System.CodeDom.CodeMethodInvokeExpression.Method%2A> property specifies the method to invoke. The <xref:System.CodeDom.CodeMethodInvokeExpression.Parameters%2A> property indicates the parameters to pass to the method. Use a <xref:System.CodeDom.CodeDirectionExpression> to specify the field direction of a parameter.  
-  
-   
-  
-## Examples  
- This example demonstrates using a CodeMethodInvokeExpression to invoke a method.  
-  
- [!code-cs[CodeMethodInvokeExpression#2](~/add/codesnippet/csharp/t-system.codedom.codemet_0_1.cs)]
- [!code-cpp[CodeMethodInvokeExpression#2](~/add/codesnippet/cpp/t-system.codedom.codemet_0_1.cpp)]
- [!code-vb[CodeMethodInvokeExpression#2](~/add/codesnippet/visualbasic/t-system.codedom.codemet_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,9 +58,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> that indicates the method to invoke.</param>
-        <param name="parameters">An array of <see cref="T:System.CodeDom.CodeExpression" /> objects that indicate the parameters with which to invoke the method.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class using the specified method and parameters.</summary>
+        <param name="method">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +71,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -107,10 +85,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the target object with the method to invoke.</param>
-        <param name="methodName">The name of the method to invoke.</param>
-        <param name="parameters">An array of <see cref="T:System.CodeDom.CodeExpression" /> objects that indicate the parameters to call the method with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class using the specified target object, method name, and parameters.</summary>
+        <param name="targetObject">To be added.</param>
+        <param name="methodName">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,15 +99,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeMethodReferenceExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the method to invoke.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> that indicates the method to invoke.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,23 +117,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parameters to invoke the method with.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the parameters to invoke the method with.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use a <xref:System.CodeDom.CodeDirectionExpression> to specify a field direction for the parameter.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

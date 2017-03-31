@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DeliveryRequirementsAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,29 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the feature requirements that bindings must provide to the service or client implementation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DeliveryRequirementsAttribute to instruct [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] to confirm that the binding provides the features required by the service or client implementation. If a DeliveryRequirementsAttribute attribute is detected when a service description is loaded from an application configuration file or built programmatically in code, [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] validates the configured binding and supports all the features that the attribute specifies. For example, your service may require the bindings to support queuing. Using DeliveryRequirementsAttribute allows [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to confirm that the following requirements are met:  
-  
--   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property specifies the queuing requirements that a binding must meet.  
-  
--   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property indicates whether the binding must support ordered messaging.  
-  
--   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract%2A> property indicates to which type the requirements apply.  
-  
- The DeliveryRequirementsAttribute attribute is applied to a class, which can implement any number of service contract interfaces. DeliveryRequirementsAttribute can be applied to all the contracts the class implements or to only one of them. The attribute can be applied to a class more than once.  
-  
-   
-  
-## Examples  
- [!code-cs[UEDeliveryRequirementsAttribute#1](~/add/codesnippet/csharp/t-system.servicemodel.de_29_1.cs)]
- [!code-vb[UEDeliveryRequirementsAttribute#1](~/add/codesnippet/visualbasic/t-system.servicemodel.de_29_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,24 +34,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DeliveryRequirementsAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The defaults are:  
-  
--   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property is set to <xref:System.ServiceModel.QueuedDeliveryRequirementsMode>.  
-  
--   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property is set to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QueuedDeliveryRequirements">
@@ -83,32 +49,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueuedDeliveryRequirementsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the binding for a service must support queued contracts.</summary>
-        <value>One of the <see cref="T:System.ServiceModel.QueuedDeliveryRequirementsMode" /> values; the default is <see cref="T:System.ServiceModel.QueuedDeliveryRequirementsMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> instructs [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to confirm that the binding supports queued delivery. The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> value instructs [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to confirm that the binding does not support queued delivery.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to confirm at runtime that the actual binding does not support queued contracts but does support ordered messages.  
-  
- [!code-cs[UEDeliveryRequirementsAttribute#1](~/add/codesnippet/csharp/p-system.servicemodel.de_8_1.cs)]
- [!code-vb[UEDeliveryRequirementsAttribute#1](~/add/codesnippet/visualbasic/p-system.servicemodel.de_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value is not one of the <see cref="T:System.ServiceModel.QueuedDeliveryRequirementsMode" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireOrderedDelivery">
@@ -118,32 +67,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the binding must support ordered messages.</summary>
-        <value>
-          <see langword="true" /> instructs [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] to confirm that the binding must support the ordering of messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the RequireOrderedDelivery property to `false` instructs [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to perform no validation.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to confirm at runtime that the actual binding does support ordered messages.  
-  
- [!code-cs[UEDeliveryRequirementsAttribute#1](~/add/codesnippet/csharp/p-system.servicemodel.de_34_1.cs)]
- [!code-vb[UEDeliveryRequirementsAttribute#1](~/add/codesnippet/visualbasic/p-system.servicemodel.de_34_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IContractBehavior.AddBindingParameters">
@@ -153,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,10 +96,10 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description.</param>
-        <param name="endpoint">The service endpoint for the contract.</param>
-        <param name="parameters">The binding parameters.</param>
-        <summary>Implements the IContractBehavior.AddBindingParameters method to attach binding parameters correctly.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,10 +121,10 @@
         <Parameter Name="proxy" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description to which the behavior is attached.</param>
-        <param name="endpoint">The endpoint for the contract.</param>
-        <param name="proxy">The client runtime on which the behavior operates.</param>
-        <summary>Implementation of the IContractBehavior.ApplyClientBehavior method for client support.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="proxy">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,10 +146,10 @@
         <Parameter Name="dispatch" Type="System.ServiceModel.Dispatcher.DispatchRuntime" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description to which the behavior is attached.</param>
-        <param name="endpoint">The endpoint for the contract.</param>
-        <param name="dispatch">The dispatch runtime that supports the endpoint.</param>
-        <summary>Implementation of the <see cref="System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior%2A" /> method that enables service support.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="dispatch">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +170,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="description">The contract description.</param>
-        <param name="endpoint">The endpoint to be validated.</param>
-        <summary>Implements the IContractBehavior.Validate method to enable validation support.</summary>
+        <param name="description">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,31 +183,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type to which it applies.</summary>
-        <value>The <see cref="T:System.Type" /> to which the attribute applies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A service class can implement any number of service contract interfaces. Use the TargetContract property to validate that endpoints with the TargetContract have bindings that support the requirements. This attribute can be used any number of times on the same class.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.ServiceModel.DeliveryRequirementsAttribute> attribute to instruct [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to confirm at runtime that the actual binding does not support queued contracts but does support ordered messages. It also specifies the target contract to which this restriction should be applied.  
-  
- [!code-cs[UEDeliveryRequirementsAttribute#2](~/add/codesnippet/csharp/p-system.servicemodel.de_11_1.cs)]
- [!code-vb[UEDeliveryRequirementsAttribute#2](~/add/codesnippet/visualbasic/p-system.servicemodel.de_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaChildrenColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a database field that indicates a one-to-many relationship.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In ASP.NET Dynamic Data applications, the MetaChildrenColumn class represents a database field that indicates a one-to-many relationship or a parent-child relationship.  
-  
- The MetaChildrenColumn class represents the field in the parent table of the one-to-many relationship. However, you can access the child table object by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property. You can also retrieve the foreign-key field in the child table by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,9 +29,9 @@
         <Parameter Name="entityMember" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
       </Parameters>
       <Docs>
-        <param name="table">The meta table.</param>
-        <param name="entityMember">The column provider.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.MetaChildrenColumn" /> class.</summary>
+        <param name="table">To be added.</param>
+        <param name="entityMember">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,23 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that represents the child table of the one-to-many relationship.</summary>
-        <value>An object that represents the child table of the one-to-many relationship.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ChildTable property to get an object that represents the child table of the one-to-many relationship. You can access the parent table by using the <xref:System.Web.DynamicData.MetaColumn.Table%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnInOtherTable">
@@ -78,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that represents the foreign-key field in the child table.</summary>
-        <value>An object that represents the foreign-key field in the child table.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ColumnInOtherTable property enables you to get a reference to the field in the child table.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenListPath">
@@ -104,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,19 +87,10 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="row">The row that contains the foreign-key field.</param>
-        <summary>Gets the path of the list-action page for the child table.</summary>
-        <returns>The path of the list-action page for the child table.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetChildrenListPath method when you want to retrieve the list-action page for the child table using the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
-  
- Using the GetChildrenListPath method is the same as invoking the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method and passing the <xref:System.Web.DynamicData.PageAction.List%2A> action as the first parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenPath">
@@ -136,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,22 +110,11 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">The target action.</param>
-        <param name="row">The row that contains the foreign-key field.</param>
-        <summary>Gets the path of the specified action page of the child table.</summary>
-        <returns>The path of the specified action page of the child table.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetChildrenPath method returns the path of the specified action page for the child table. The path returned is based on the routes that are defined for the ASP.NET Dynamic Data application and has the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
-  
- If `row` is `null`, his method returns an empty string.  
-  
- You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="action">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenPath">
@@ -172,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,23 +135,12 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="action">The target action.</param>
-        <param name="row">The row that contains the foreign-key field.</param>
-        <param name="path">The target page.</param>
-        <summary>Gets the path for the specified action page of the child table.</summary>
-        <returns>The path of the specified action page of the child table.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetChildrenPath method returns the path of the specified action page for the child table. The path is based on the specified path with the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
-  
- If `row` is `null`, this method returns an empty string. If `path` is `null`, the GetChildrenPath method returns the path based on the routes defined for the ASP.NET Dynamic Data application.  
-  
- You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="action">To be added.</param>
+        <param name="row">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -217,15 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes data that might not be available when the constructor is called.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method cannot be called directly. To customize initialization, you can derive from this class and override the `Initialize` method. If you override this method, call the base control's `Initialize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsManyToMany">
@@ -241,9 +174,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the many-to-many relationship status of the column.</summary>
-        <value>
-          <see langword="true" /> if the column relationship is many-to-many; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UrlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Starts a URL editor that allows a user to select or create a URL. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method starts a user interface for selecting a URL.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
-  
- [!code-cs[UrlBuilderExample#1](~/add/codesnippet/csharp/t-system.web.ui.design.u_0_1.cs)]
- [!code-vb[UrlBuilderExample#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.u_0_1.vb)]
- [!code-cpp[UrlBuilderExample#1](~/add/codesnippet/cpp/t-system.web.ui.design.u_0_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BuildUrl">
@@ -39,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,25 +35,14 @@
         <Parameter Name="filter" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> whose site is to be used to access design-time services.</param>
-        <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> used as the parent for the picker window.</param>
-        <param name="initialUrl">The initial URL to be shown in the picker window.</param>
-        <param name="caption">The caption of the picker window.</param>
-        <param name="filter">The filter string to use to optionally filter the files displayed in the picker window.</param>
-        <summary>Creates a UI to create or pick a URL.</summary>
-        <returns>The URL returned from the UI.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
-  
- [!code-cs[UrlBuilderExample#1](~/add/codesnippet/csharp/ba4d9e5a-10fa-470d-ac8f-_1.cs)]
- [!code-vb[UrlBuilderExample#1](~/add/codesnippet/visualbasic/ba4d9e5a-10fa-470d-ac8f-_1.vb)]
- [!code-cpp[UrlBuilderExample#1](~/add/codesnippet/cpp/ba4d9e5a-10fa-470d-ac8f-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="initialUrl">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildUrl">
@@ -81,7 +52,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,24 +66,15 @@
         <Parameter Name="options" Type="System.Web.UI.Design.UrlBuilderOptions" />
       </Parameters>
       <Docs>
-        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> whose site is to be used to access design-time services.</param>
-        <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> used as the parent for the picker window.</param>
-        <param name="initialUrl">The initial URL to be shown in the picker window.</param>
-        <param name="caption">The caption of the picker window.</param>
-        <param name="filter">The filter string to use to optionally filter the files displayed in the picker window.</param>
-        <param name="options">A <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> indicating the options for URL selection.</param>
-        <summary>Creates a UI to create or pick a URL, using the specified <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> object.</summary>
-        <returns>The URL returned from the UI.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[UrlBuilderExample#1](~/add/codesnippet/csharp/919a4bb5-d16f-4596-9112-_1.cs)]
- [!code-vb[UrlBuilderExample#1](~/add/codesnippet/visualbasic/919a4bb5-d16f-4596-9112-_1.vb)]
- [!code-cpp[UrlBuilderExample#1](~/add/codesnippet/cpp/919a4bb5-d16f-4596-9112-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="initialUrl">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildUrl">
@@ -123,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,22 +98,15 @@
         <Parameter Name="options" Type="System.Web.UI.Design.UrlBuilderOptions" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">The <see cref="T:System.IServiceProvider" /> to be used to access design-time services.</param>
-        <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> used as the parent for the picker window.</param>
-        <param name="initialUrl">The initial URL to be shown in the picker window.</param>
-        <param name="caption">The caption of the picker window.</param>
-        <param name="filter">The filter string to use to optionally filter the files displayed in the picker window.</param>
-        <param name="options">A <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> indicating the options for URL selection.</param>
-        <summary>Creates a UI to create or pick a URL, using the specified <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> object.</summary>
-        <returns>The URL returned from the UI.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IServiceProvider> interface is used to obtain the <xref:System.ComponentModel.Design.IDesignerHost> implementation for the designer host.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceProvider">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="initialUrl">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

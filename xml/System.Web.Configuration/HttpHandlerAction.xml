@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpHandlerAction" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,40 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures an <see cref="T:System.Web.Configuration.HttpHandlersSection" /> configuration section. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpHandlerAction class provides a way to programmatically access and modify the `add` element of the `httpHandlers` configuration section.  
-  
- This type is part of a group that includes the <xref:System.Web.Configuration.HttpHandlerActionCollection> and the <xref:System.Web.Configuration.HttpHandlersSection> types.  
-  
-> [!NOTE]
->  The HttpHandlerAction can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
-  
- ASP.NET searches for the handler assembly DLL in the application's private \bin directory first, and then it searches in the system assembly cache.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.HttpModuleAction> type.  
-  
- [!code-cs[System.Web.Configuration.HttpHandlers#2](~/add/codesnippet/csharp/t-system.web.configurati_22_1.cs)]
- [!code-vb[System.Web.Configuration.HttpHandlers#2](~/add/codesnippet/visualbasic/t-system.web.configurati_22_1.vb)]  
-  
- The following configuration excerpt shows how to specify values declaratively for the `httpHandlers` section.  
-  
-```  
-<httpHandlers>  
-  <add path="Calculator.custom"  
-    type="Samples.Aspnet.SystemWebConfiguration.Calculator, CalculatorHandler"  
-    verb="GET" validate="false" />  
-</httpHandlers>   
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,18 +30,11 @@
         <Parameter Name="verb" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Web.Configuration.HttpHandlerAction" /> URL path.</param>
-        <param name="type">A comma-separated class/assembly combination consisting of version, culture, and public-key tokens.</param>
-        <param name="verb">A comma-separated list of HTTP verbs (for example, "GET, PUT, POST").</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> class using the passed parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpHandlerAction constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.HttpHandlerAction> class by using the <xref:System.Web.Configuration.HttpHandlersSection.Handlers%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="verb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,7 +44,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -95,28 +53,12 @@
         <Parameter Name="validate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Web.Configuration.HttpHandlerAction" /> URL path.</param>
-        <param name="type">A comma-separated class/assembly combination consisting of version, culture, and public-key tokens.</param>
-        <param name="verb">A comma-separated list of HTTP verbs (for example, "GET, PUT, POST").</param>
-        <param name="validate">
-          <see langword="true" /> to allow validation; otherwise, <see langword="false" />. If <see langword="false" />, ASP.NET will not attempt to load the class until the actual matching request comes, potentially delaying the error but improving the startup time.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> class using the passed parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpHandlerAction constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.HttpHandlerAction> class by using the <xref:System.Web.Configuration.HttpHandlersSection.Handlers%2A> property.  
-  
-   
-  
-## Examples  
- The following code example shows how to create an <xref:System.Web.Configuration.HttpHandlerAction> object.  
-  
- [!code-cs[System.Web.Configuration.HttpHandlers#3](~/add/codesnippet/csharp/94056c28-bc95-494d-84db-_1.cs)]
- [!code-vb[System.Web.Configuration.HttpHandlers#3](~/add/codesnippet/visualbasic/94056c28-bc95-494d-84db-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="verb">To be added.</param>
+        <param name="validate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -126,7 +68,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -138,24 +79,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> path.</summary>
-        <value>The <see cref="T:System.Web.Configuration.HttpHandlerAction" /> URL path.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Path property can contain either a single URL or a wildcard string.  
-  
-   
-  
-## Examples  
- The following code example shows how to access the Path property.  
-  
- [!code-cs[System.Web.Configuration.HttpHandlers#5](~/add/codesnippet/csharp/p-system.web.configurati_236_1.cs)]
- [!code-vb[System.Web.Configuration.HttpHandlers#5](~/add/codesnippet/visualbasic/p-system.web.configurati_236_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -165,7 +91,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,7 +109,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -196,27 +120,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> type.</summary>
-        <value>The <see cref="T:System.Web.Configuration.HttpHandlerAction" /> type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Type property is a comma-separated class/assembly combination consisting of version, culture, and public-key tokens.  
-  
-> [!NOTE]
->  ASP.NET searches for the handler assembly DLL in the application's private \bin directory first, and then it searches in the system assembly cache.  
-  
-   
-  
-## Examples  
- The following code example shows how to access the Type property.  
-  
- [!code-cs[System.Web.Configuration.HttpHandlers#6](~/add/codesnippet/csharp/p-system.web.configurati_281_1.cs)]
- [!code-vb[System.Web.Configuration.HttpHandlers#6](~/add/codesnippet/visualbasic/p-system.web.configurati_281_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -226,7 +132,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -238,25 +143,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> validation.</summary>
-        <value>
-          <see langword="true" /> if the validation is allowed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the Validate property is `false`, ASP.NET will not attempt to load the class until the actual matching request comes, potentially delaying the error but improving the startup time.  
-  
-   
-  
-## Examples  
- The following code example shows how to access the Validate property.  
-  
- [!code-cs[System.Web.Configuration.HttpHandlers#8](~/add/codesnippet/csharp/p-system.web.configurati_128_1.cs)]
- [!code-vb[System.Web.Configuration.HttpHandlers#8](~/add/codesnippet/visualbasic/p-system.web.configurati_128_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Verb">
@@ -266,7 +155,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -278,24 +166,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the verb allowed by the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> object.</summary>
-        <value>The verb allowed by the object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This Verb property can be a comma-separated list of HTTP verbs (for example, "GET, PUT, POST").  
-  
-   
-  
-## Examples  
- The following code example shows how to access the Verb property.  
-  
- [!code-cs[System.Web.Configuration.HttpHandlers#7](~/add/codesnippet/csharp/p-system.web.configurati_301_1.cs)]
- [!code-vb[System.Web.Configuration.HttpHandlers#7](~/add/codesnippet/visualbasic/p-system.web.configurati_301_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

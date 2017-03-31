@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IEventActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,17 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods and properties that event-driven activities must derive from, to subscribe to events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="QueueName">
@@ -34,15 +24,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IComparable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> on which the activity is waiting for data to arrive.</summary>
-        <value>The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> on which the activity is waiting for data to arrive.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,20 +52,10 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
-        <summary>Creates the subscription of an <see cref="T:System.Workflow.ComponentModel.Activity" /> to an event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Subscribe method. This code example is part of the FileWatcher SDK Sample from the FileSystemEvent.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-cs[wf_samples#106](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#106)]
- [!code-vb[wf_samples#106](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#106)]  
-  
- ]]></format>
-        </remarks>
+        <param name="parentContext">To be added.</param>
+        <param name="parentEventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unsubscribe">
@@ -87,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,20 +75,10 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
-        <summary>Cancels the subscription of an <see cref="T:System.Workflow.ComponentModel.Activity" /> to an event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following code example shows how to use the Unsubscribe method. This code example is part of the FileWatcher SDK Sample from the FileSystemEvent.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
-  
- [!code-cs[wf_samples#107](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#107)]
- [!code-vb[wf_samples#107](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#107)]  
-  
- ]]></format>
-        </remarks>
+        <param name="parentContext">To be added.</param>
+        <param name="parentEventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

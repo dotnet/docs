@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.SerializationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Handles the XML elements used to configure serialization by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used to handle the [\&lt;dataContractSerializer\&gt;](../Topic/%3CdataContractSerializer%3E.md) group, which contains the [\&lt;dataContractSerializer\&gt;](../Topic/%3CdataContractSerializer%3E.md) element, specifically, to allow the addition of types to the collection of known types. For more information about data contract known types, see [Data Contract Known Types](../Topic/Data%20Contract%20Known%20Types.md).  
-  
- For an example of using the element to add to the known types collection, see [\&lt;declaredTypes\&gt;](../Topic/%3CdeclaredTypes%3E.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.SerializationSectionGroup" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Configuration.DataContractSerializerSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Runtime.Serialization.Configuration.DataContractSerializerSection" /> used to set up the known types collection.</summary>
-        <value>The <see cref="T:System.Runtime.Serialization.Configuration.DataContractSerializerSection" /> used for the serialization configuration section.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,9 +64,9 @@
         <Parameter Name="config" Type="System.Configuration.Configuration" />
       </Parameters>
       <Docs>
-        <param name="config">A <see cref="T:System.Configuration.Configuration" /> that represents the configuration to retrieve.</param>
-        <summary>Gets the serialization configuration section for the specified configuration.</summary>
-        <returns>A <see cref="T:System.Runtime.Serialization.Configuration.SerializationSectionGroup" /> that represents the configuration section.</returns>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +83,8 @@
         <ReturnType>System.Runtime.Serialization.Configuration.NetDataContractSerializerSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection" /> used to set up the known types collection.</summary>
-        <value>The <see cref="T:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

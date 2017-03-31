@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts <see cref="T:System.Drawing.Font" /> objects from one data type to another.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A type converter is used to convert values between data types. A type converter also supports property configuration at design time by providing text-to-value conversion or a list of values that users can select from. Access the FontConverter class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the FontConverter to convert a <xref:System.Drawing.Font> to and from a string. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowFontStringConversion` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.Converters#3](~/add/codesnippet/cpp/t-system.drawing.fontcon_1.cpp)]
- [!code-cs[System.Drawing.Converters#3](~/add/codesnippet/csharp/t-system.drawing.fontcon_1.cs)]
- [!code-vb[System.Drawing.Converters#3](~/add/codesnippet/visualbasic/t-system.drawing.fontcon_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see cref="T:System.Drawing.FontConverter" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should access a <xref:System.Drawing.FontConverter> object through the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -62,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,10 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A formatter context. This object can be used to get additional information about the environment this converter is being called from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
-        <param name="sourceType">The type you want to convert from.</param>
-        <summary>Determines whether this converter can convert an object in the specified source type to the native type of the converter.</summary>
-        <returns>This method returns <see langword="true" /> if this object can perform the conversion.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,18 +71,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see langword="ITypeDescriptorContext" /> object that provides a format context.</param>
-        <param name="destinationType">A <see cref="T:System.Type" /> object that represents the type you want to convert to.</param>
-        <summary>Gets a value indicating whether this converter can convert an object to the given destination type using the context.</summary>
-        <returns>This method returns <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -119,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,13 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">A formatter context. This object can be used to get additional information about the environment this converter is being called from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
-        <param name="culture">A <see langword="CultureInfo" /> object that specifies the culture used to represent the font.</param>
-        <param name="value">The object to convert.</param>
-        <summary>Converts the specified object to the native type of the converter.</summary>
-        <returns>The converted object.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -147,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,21 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A formatter context. This object can be used to get additional information about the environment this converter is being called from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the culture used to represent the object.</param>
-        <param name="value">The object to convert.</param>
-        <param name="destinationType">The data type to convert the object to.</param>
-        <summary>Converts the specified object to another type.</summary>
-        <returns>The converted object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The most common type conversion is to and from a string type. The default implementation calls the <xref:System.Object.ToString%2A> method of the object if the object is valid and if the destination type is string.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The conversion was not successful.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -184,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,12 +149,10 @@
         <Parameter Name="propertyValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="context">A type descriptor through which additional context can be provided.</param>
-        <param name="propertyValues">A dictionary of new property values. The dictionary contains a series of name-value pairs, one for each property returned from the <see cref="System.Drawing.FontConverter.GetProperties%2A" /> method.</param>
-        <summary>Creates an object of this type by using a specified set of property values for the object.</summary>
-        <returns>The newly created object, or <see langword="null" /> if the object could not be created. The default implementation returns <see langword="null" />.  
-  
- CreateInstance useful for creating non-changeable objects that have changeable properties.</returns>
+        <param name="context">To be added.</param>
+        <param name="propertyValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,7 +170,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows the <see cref="T:System.Drawing.FontConverter" /> to attempt to free resources and perform other cleanup operations before the <see cref="T:System.Drawing.FontConverter" /> is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,9 +190,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">A type descriptor through which additional context can be provided.</param>
-        <summary>Determines whether changing a value on this object should require a call to the <see cref="System.Drawing.FontConverter.CreateInstance%2A" /> method to create a new value.</summary>
-        <returns>This method returns <see langword="true" /> if the <see langword="CreateInstance" /> object should be called when a change is made to one or more properties of this object; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,13 +214,11 @@
         <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
-        <param name="context">A type descriptor through which additional context can be provided.</param>
-        <param name="value">The value of the object to get the properties for.</param>
-        <param name="attributes">An array of <see cref="T:System.Attribute" /> objects that describe the properties.</param>
-        <summary>Retrieves the set of properties for this type. By default, a type does not have any properties to return.</summary>
-        <returns>The set of properties that should be exposed for this data type. If no properties should be exposed, this may return <see langword="null" />. The default implementation always returns <see langword="null" />.  
-  
- An easy implementation of this method can call the <see cref="System.ComponentModel.TypeConverter.GetProperties%2A" /> method for the correct data type.</returns>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,9 +238,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">A type descriptor through which additional context can be provided.</param>
-        <summary>Determines whether this object supports properties. The default is <see langword="false" />.</summary>
-        <returns>This method returns <see langword="true" /> if the GetPropertiesSupported method should be called to find the properties of this object; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

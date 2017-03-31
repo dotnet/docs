@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ClickMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows three buttons that respond to clicks in three different ways.  
-  
--   Hover - the first button changes colors when the user hovers with the mouse over the button.  
-  
--   Press - the second button requires that the mouse be pressed while the mouse pointer is in the button.  
-  
--   Release - the third button does not reset the background color of the buttons until the mouse is pressed and released in the button.  
-  
- [!code-xml[ClickModes_snip#1](~/add/codesnippet/xaml/ClickModes_snip.ButtonAlign/Pane1.xaml#1)]  
-  
- [!code-cs[ClickModes_snip#2](~/add/codesnippet/csharp/ClickModes_snip.ButtonAlign/Pane1.xaml.cs#2)]
- [!code-vb[ClickModes_snip#2](~/add/codesnippet/visualbasic/ClickMode_Snips/Window1.xaml.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Hover">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised when the mouse hovers over a control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Press">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised as soon as a button is pressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Release">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised when a button is pressed and released.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

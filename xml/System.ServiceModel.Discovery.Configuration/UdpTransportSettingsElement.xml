@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Allows you to set the settings of a UDP transport.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These properties can be used to modify the setting on the underlying UDP transport as required by the application.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +51,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.ServiceModel.Discovery.UdpTransportSettings.DuplicateMessageHistoryLength%2A" /> property in a UDP transport configuration element.</summary>
-        <value>The maximum number of message hashes used by the transport to identify duplicate messages.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +77,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a maximum allotment, in bytes, of memory for the process of reading and writing pages of data into memory from the disk.</summary>
-        <value>A number that indicates the size of a buffer pool.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +103,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.ServiceModel.Discovery.UdpTransportSettings.MaxMulticastRetransmitCount%2A" /> property in a UDP transport configuration element.</summary>
-        <value>The maximum number of times a multicast message can be retransmitted.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +129,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.ServiceModel.Discovery.UdpTransportSettings.MaxPendingMessageCount%2A" /> property in a UDP transport configuration element.</summary>
-        <value>The maximum number of messages that are received but not yet removed from the input queue for an individual channel instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +155,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the MaxReceivedMessageSize property in a UDP transport configuration element.</summary>
-        <value>The maximum size, in bytes, for a message that can be processed by the binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +181,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.ServiceModel.Discovery.UdpTransportSettings.MaxUnicastRetransmitCount%2A" /> property in a UDP transport configuration element.</summary>
-        <value>The maximum number of times a unicast message can be retransmitted.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +204,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.ServiceModel.Discovery.UdpTransportSettings.MulticastInterfaceId%2A" /> property in a UDP transport configuration element.</summary>
-        <value>The network adapter that is used when sending and receiving multicast traffic on multi-honed machines.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +248,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="System.ServiceModel.Discovery.UdpTransportSettings.SocketReceiveBufferSize%2A" /> property in a UDP transport configuration element.</summary>
-        <value>The receive buffer size on the underlying WinSock socket.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,8 +274,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the TimeToLive property in a UDP transport configuration element.</summary>
-        <value>The number of network segment hops that a multicast packet can traverse.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

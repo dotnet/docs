@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PathDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the hierarchical order in which navigation nodes are rendered for site-navigation controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PathDirection enumeration is used by the <xref:System.Web.UI.WebControls.SiteMapPath> control to specify the ordering used to render site map nodes. If the <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> property is set to RootToCurrent, the navigation path is displayed in the most common way, from the top-most node to the current node, from left to right. If the <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> is set to CurrentToRoot, the navigation path is displayed from the current node to the top-most node, from left to right.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> property of a <xref:System.Web.UI.WebControls.SiteMapPath> in a Web Forms page.  
-  
- [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_294_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_294_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CurrentToRoot">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PathDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Nodes are rendered in a hierarchical order from the current node to the top-most node, from left to right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RootToCurrent">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PathDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Nodes are rendered in a hierarchical order from the top-most node to the current node, from left to right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

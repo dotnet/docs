@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Orientation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the general layout of items within a composite control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the results of applying different Orientation enumeration settings to the <xref:System.Web.UI.WebControls.Login> control.  
-  
- [!code-cs[LoginLoginLayout#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_227_1.aspx)]
- [!code-vb[LoginLoginLayout#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_227_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Horizontal">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lays out the elements of the control in a horizontal manner. Most controls are side-by-side, with very little stacking of controls.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lays out the elements of the control in a vertical manner. Most controls are stacked, with few controls side-by-side.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

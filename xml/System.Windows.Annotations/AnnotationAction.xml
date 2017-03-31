@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the actions that occur with <see cref="T:System.Windows.Annotations.Annotation" /> author, anchor, and cargo resources.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- AnnotationAction defines the operations that occur to an annotation's <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.Annotation.Anchors%2A>, and <xref:System.Windows.Annotations.Annotation.Cargos%2A> properties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Added">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The component was added to the annotation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modified">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The component was modified within the annotation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Removed">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The component was removed from the annotation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

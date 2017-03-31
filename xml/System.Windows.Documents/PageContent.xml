@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.PageContent" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,29 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides information about the <see cref="T:System.Windows.Documents.FixedPage" /> elements within a <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- PageContent elements are the only allowable child elements of a <xref:System.Windows.Documents.FixedDocument>. The order of the PageContent elements within the <xref:System.Windows.Documents.FixedDocument> defines the page order.  
-  
- PageContent provides information about the <xref:System.Windows.Documents.FixedPage> elements within a <xref:System.Windows.Documents.FixedDocument> without the requiring the application to load individual pages.  
-  
- The <xref:System.Windows.Documents.PageContent.Source%2A> dependency property specifies the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] of the corresponding <xref:System.Windows.Documents.FixedPage>.  
-  
- For more information about the PageContent element, see Chapter 3 of the XPS *Open XML Paper Specification* available for download at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
-   
-  
-## Examples  
- The following example shows the process of adding PageContent to a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-vb[XpsSave#XpsSaveCreateFixedDocPages](~/add/codesnippet/visualbasic/xpssave/xpfcontent.vb#xpssavecreatefixeddocpages)]
- [!code-cs[XpsSave#XpsSaveCreateFixedDocPages](~/add/codesnippet/csharp/XpsSave/XpfContent.cs#xpssavecreatefixeddocpages)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,23 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.PageContent" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows use of the PageContent constructor.  
-  
- [!code-vb[XpsSave#XpsSaveCreateFixedPage5](~/add/codesnippet/visualbasic/xpssave/xpfcontent.vb#xpssavecreatefixedpage5)]
- [!code-cs[XpsSave#XpsSaveCreateFixedPage5](~/add/codesnippet/csharp/XpsSave/XpfContent.cs#xpssavecreatefixedpage5)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -79,7 +46,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -94,30 +60,9 @@
         <ReturnType>System.Windows.Documents.FixedPage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Documents.FixedPage" /> associated with this <see cref="T:System.Windows.Documents.PageContent" />.</summary>
-        <value>The <see cref="T:System.Windows.Documents.FixedPage" /> associated with this <see cref="T:System.Windows.Documents.PageContent" />, or **null** when the <see cref="T:System.Windows.Documents.FixedPage" /> is set by the <see cref="System.Windows.Documents.PageContent.Source%2A" /> property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Child property returns a <xref:System.Windows.Documents.FixedPage> when:  
-  
-1.  <xref:System.Windows.Documents.PageContent> has an immediate <xref:System.Windows.Documents.FixedPage> child defined in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] markup.  
-  
-2.  The <xref:System.Windows.Documents.PageContent.System%23Windows%23Markup%23IAddChild%23AddChild%2A> has been called to set the <xref:System.Windows.Documents.FixedPage> as the child of the <xref:System.Windows.Documents.PageContent>.  
-  
- The Child property returns **null** when:  
-  
-1.  The <xref:System.Windows.Documents.FixedPage> is set by the <xref:System.Windows.Documents.PageContent.Source%2A> property (when specified by the <xref:System.Windows.Documents.PageContent.Source%2A> property, the <xref:System.Windows.Documents.FixedPage> is not cached).  Use <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> or <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> to return the <xref:System.Windows.Documents.FixedPage> when set by the <xref:System.Windows.Documents.PageContent.Source%2A> property.  
-  
- For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *XML Paper Specification* available for download at [http://www.microsoft.com/whdc/xps/xpsspec.mspx](http://www.microsoft.com/whdc/xps/xpsspec.mspx).  
-  
-<a name="xamlTextUsage_Child"></a>   
-## XAML Text Usage  
- You cannot use this property in XAML.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPageRoot">
@@ -127,7 +72,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,21 +81,10 @@
         <Parameter Name="forceReload" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="forceReload">
-          <see langword="true" /> to always reload the <see cref="T:System.Windows.Documents.FixedPage" /> even if it has been previously loaded and cached; <see langword="false" /> to load the <see cref="T:System.Windows.Documents.FixedPage" /> only if there is no cached version.</param>
-        <summary>Loads and returns the <see cref="T:System.Windows.Documents.FixedPage" /> content element.</summary>
-        <returns>The root element of the visual tree for this page.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetPageRoot performs synchronous loading and parsing of the <xref:System.Windows.Documents.FixedPage>.  
-  
-> [!NOTE]
->  Use the <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A>instead of GetPageRoot to avoid thread blocking while the <xref:System.Windows.Documents.FixedPage> loads.  
-  
- ]]></format>
-        </remarks>
+        <param name="forceReload">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPageRootAsync">
@@ -161,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,27 +103,9 @@
         <Parameter Name="forceReload" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="forceReload">
-          <see langword="true" /> to always reload the <see cref="T:System.Windows.Documents.FixedPage" /> even if it has been previously loaded and cached; <see langword="false" /> to load the <see cref="T:System.Windows.Documents.FixedPage" /> only if there is no cached version.</param>
-        <summary>Asynchronously loads and returns the <see cref="T:System.Windows.Documents.FixedPage" /> content element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetPageRootAsync asynchronously loads and parses the <xref:System.Windows.Documents.FixedPage> data stream associated with this <xref:System.Windows.Documents.PageContent>.  Other threads will continue to run while GetPageRootAsync completes.  
-  
- The following steps illustrate how to load the <xref:System.Windows.Documents.FixedPage> content  asynchronously:  
-  
-1.  Create a <xref:System.Windows.Documents.GetPageRootCompletedEventHandler> delegate and add it to be notified of <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> events.  
-  
-2.  Call GetPageRootAsync.  
-  
-3.  When the <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event occurs and the delegate is called, the <xref:System.Windows.Documents.FixedPage> content has completed loading.  The loaded <xref:System.Windows.Documents.FixedPage> element is returned through the <xref:System.Windows.Documents.GetPageRootCompletedEventArgs>.<xref:System.Windows.Documents.GetPageRootCompletedEventArgs.Result%2A> property.  
-  
- For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
- ]]></format>
-        </remarks>
+        <param name="forceReload">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPageRootAsyncCancel">
@@ -201,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,15 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels any current <see cref="System.Windows.Documents.PageContent.GetPageRootAsync%2A" /> operation in progress.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetPageRootAsyncCancel cancels any <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> operation that has not already finished with a <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPageRootCompleted">
@@ -227,22 +133,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.GetPageRootCompletedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when <see cref="System.Windows.Documents.PageContent.GetPageRootAsync%2A" /> has completed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetPageRootCompleted event is handled by methods based on the <xref:System.Windows.Documents.GetPageRootCompletedEventHandler> delegate.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkTargets">
@@ -252,25 +150,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.LinkTargetCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Windows.Documents.LinkTarget" /> elements that identify the hyperlink-addressable locations on the page.</summary>
-        <value>The <see cref="T:System.Windows.Documents.LinkTargetCollection" /> of <see cref="T:System.Windows.Documents.LinkTarget" /> elements that identify the hyperlink-addressable locations on the page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- LinkTargets will never return `null`, but the collection may contain zero elements.  
-  
- For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -280,7 +168,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,7 +186,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -314,10 +200,9 @@
         <Parameter Name="manager" Type="System.Windows.Markup.XamlDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="manager">The serialization services provider.</param>
-        <summary>Gets a value indicating whether the value of the <see cref="System.Windows.Documents.PageContent.Child%2A" /> property should be serialized when this <see cref="T:System.Windows.Documents.PageContent" /> is serialized.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="manager" /> is not <see langword="null" /> and it does not have an XmlWriter; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,31 +213,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] to the <see cref="T:System.Windows.Documents.FixedPage" /> content data stream.</summary>
-        <value>The <see cref="T:System.Uri" /> of the corresponding <see cref="T:System.Windows.Documents.FixedPage" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the `<PageContent>` element and its `Source` attribute, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
-<a name="dependencyPropertyInfo_Source"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.PageContent.SourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceProperty">
@@ -362,14 +231,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.PageContent.Source%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -390,16 +257,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The child <see cref="T:System.Object" /> to add.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Markup.IAddChild.AddChild%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -409,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -419,16 +278,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to add to the object.</param>
-        <summary>For a description of this member, see <see cref="System.Windows.Markup.IAddChild.AddText%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IUriContext.BaseUri">
@@ -438,23 +290,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Windows.Markup.IUriContext.BaseUri%2A" />.</summary>
-        <value>The base URI of the current context.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

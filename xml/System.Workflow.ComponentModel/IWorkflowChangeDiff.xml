@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Supports mining of workflow changes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Diff">
@@ -37,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,10 +37,10 @@
         <Parameter Name="changedDefinition" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="originalDefinition">The original workflow definition.</param>
-        <param name="changedDefinition">The new workflow definition.</param>
-        <summary>Determines the changes that occurred between two workflow definitions.</summary>
-        <returns>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> objects that indicates the differences between the two workflow definitions.</returns>
+        <param name="originalDefinition">To be added.</param>
+        <param name="changedDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

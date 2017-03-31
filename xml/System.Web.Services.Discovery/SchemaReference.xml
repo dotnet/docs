@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.SchemaReference" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,28 +13,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlRoot("schemaRef", Namespace="http://schemas.xmlsoap.org/disco/schema/")</AttributeName>
+      <AttributeName>System.Xml.Serialization.XmlRoot("schemaRef", IsNullable=true, Namespace="http://schemas.xmlsoap.org/disco/schema/")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a reference in a discovery document to an XML Schema Definition (XSD) language schema. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- XML Web services discovery involves discovering the available XML Web services given, a URL. A The URL typically points to a discovery document, which usually has a.disco file name extension. The discovery document contains references to information about the existance of XML Web services. These references can refer to service descriptions, XSD schemas, or other discovery documents. This class represents a reference to an XSD schema.  
-  
- Within a discovery document, a reference to an XSD schema is contained within a `schemaRef` XML element. The `schemaRef` XML element has an XML namespace and a `ref` attribute. The value of the XML namespace must match the <xref:System.Web.Services.Discovery.SchemaReference.Namespace> constant. The value of the `ref` attribute is placed in the <xref:System.Web.Services.Discovery.SchemaReference.Ref%2A> property.  
-  
-   
-  
-## Examples  
- [!code-cs[SchemaReference#1](~/add/codesnippet/csharp/t-system.web.services.di_1_1.cs)]
- [!code-vb[SchemaReference#1](~/add/codesnippet/visualbasic/t-system.web.services.di_1_1.vb)]
- [!code-cpp[SchemaReference#1](~/add/codesnippet/cpp/t-system.web.services.di_1_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,50 +28,32 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SchemaReference" /> class using default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/m-system.web.services.di_5_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/m-system.web.services.di_5_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/m-system.web.services.di_5_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SchemaReference (string url);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url) cil managed" />
+      <MemberSignature Language="C#" Value="public SchemaReference (string href);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SchemaReference.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the XSD schema. Initializes the <see cref="System.Web.Services.Discovery.SchemaReference.Ref%2A" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SchemaReference" /> class using the supplied URL as the XSD schema reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/m-system.web.services.di_3_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/m-system.web.services.di_3_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/m-system.web.services.di_3_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="href">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultFilename">
@@ -97,7 +63,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -109,18 +75,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the default file to use when saving the referenced XSD schema.</summary>
-        <value>Default name to use when saving the referenced XSD schema to a file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/p-system.web.services.di_30_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/p-system.web.services.di_30_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/p-system.web.services.di_30_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -130,29 +87,15 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XML namespace for XSD schema references in discovery documents.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Within a discovery document, a reference to an XSD schema is contained within a `schemaRef` XML element, which is a part of the XML namespace specified in the Namespace constant.  
-  
-   
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/f-system.web.services.di_2_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/f-system.web.services.di_2_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/f-system.web.services.di_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDocument">
@@ -162,7 +105,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,20 +115,10 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">
-          <see cref="T:System.IO.Stream" /> containing the XSD schema.</param>
-        <summary>Reads and returns the XSD schema from the passed <see cref="T:System.IO.Stream" />.</summary>
-        <returns>An <see cref="T:System.Xml.Schema.XmlSchema" /> containing the contents of the referenced XSD schema.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/m-system.web.services.di_2_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/m-system.web.services.di_2_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/m-system.web.services.di_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ref">
@@ -195,7 +128,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -207,23 +140,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL to the referenced XSD schema.</summary>
-        <value>The URL for the referenced XSD schema. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a discovery document, a reference to an XSD schema is contained within a `schemaRef` XML element. The `schemaRef` XML element has a `ref` attribute, which is the URL for the referenced XSD schema. The <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> property represents the value of the `ref` attribute.  
-  
-   
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/p-system.web.services.di_20_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/p-system.web.services.di_20_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/p-system.web.services.di_20_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -233,7 +152,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,7 +176,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -269,29 +188,9 @@
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Xml.Schema.XmlSchema" /> object representing the XSD schema.</summary>
-        <value>An <see cref="T:System.Xml.Schema.XmlSchema" /> object representing the XSD schema.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the XSD schema has not been downloaded and added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> property of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>, an attempt to download and resolve the document is made.  
-  
-   
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/p-system.web.services.di_17_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/p-system.web.services.di_17_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/p-system.web.services.di_17_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A" /> property is <see langword="null" />.  
-  
- -or-  
-  
- An error occurred during the download or resolution of the XSD schema using <see cref="System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetNamespace">
@@ -301,7 +200,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -316,18 +215,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see langword="targetNamespace" /> XML attribute of the XSD schema.</summary>
-        <value>The <see langword="targetNamespace" /> XML attribute of the XSD schema. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/p-system.web.services.di_7_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/p-system.web.services.di_7_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/p-system.web.services.di_7_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -337,7 +227,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -349,23 +239,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL for the schema reference.</summary>
-        <value>The URL for the referenced XSD schema. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the <xref:System.Web.Services.Discovery.SchemaReference> class, the Url property returns the value of the <xref:System.Web.Services.Discovery.SchemaReference.Ref%2A> property.  
-  
-   
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/p-system.web.services.di_24_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/p-system.web.services.di_24_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/p-system.web.services.di_24_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteDocument">
@@ -375,7 +251,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,19 +262,10 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="document">The <see cref="T:System.Xml.Schema.XmlSchema" /> to write into <c>stream</c>.</param>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> into which the serialized XSD schema is written.</param>
-        <summary>Writes the passed XSD schema into the passed <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[SchemaReference#2](~/add/codesnippet/csharp/45b66242-f1fb-4df2-9842-_1.cs)]
- [!code-vb[SchemaReference#2](~/add/codesnippet/visualbasic/45b66242-f1fb-4df2-9842-_1.vb)]
- [!code-cpp[SchemaReference#2](~/add/codesnippet/cpp/45b66242-f1fb-4df2-9842-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="document">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

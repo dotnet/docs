@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the overflow section of a <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used by <xref:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel> and is not intended to be used independently.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +46,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The size that the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" /> needs to position its child elements.</param>
-        <summary>Positions and sizes the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" />.</summary>
-        <returns>The actual size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" />.</returns>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +68,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" />.</param>
-        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" /> in preparation of arranging them during the <see cref="System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel.ArrangeOverride%2A" /> pass.</summary>
-        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" />.</returns>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

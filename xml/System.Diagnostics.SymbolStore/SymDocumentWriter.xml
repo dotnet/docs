@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocumentWriter" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,15 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods for writing to a document referenced by a symbol store.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A document is defined by a URL and a document type GUID. Optionally, the document source can be stored in the symbol store.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +34,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -68,7 +59,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymDocumentWriter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,17 +84,9 @@
         <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">
-          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Called by the <see cref="System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose%2A" /> and <see cref="System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize%2A" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymBinder" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize%2A> methods; do not call this method directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -113,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,15 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymDocumentWriter" /> is reclaimed by garbage collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUnmanaged">
@@ -139,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,11 +143,10 @@
         <Parameter Name="source" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithmId">This parameter is not used.</param>
-        <param name="source">This parameter is not used.</param>
-        <summary>Throws a <see cref="T:System.NotImplementedException" /> in all cases.</summary>
+        <param name="algorithmId">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetSource">
@@ -184,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,10 +165,9 @@
         <Parameter Name="source" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="source">This parameter is not used.</param>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
   </Members>

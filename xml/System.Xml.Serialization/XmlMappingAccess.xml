@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMappingAccess" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether a mapping is read, write, or both.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping%2A> when generating code for serialization and deserialization methods. The value specifies whether the schema importer generates write methods for mappings with write access, and read methods for mappings with read access. This minimizes the generation of serialization code.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -34,14 +31,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both read and write methods are generated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -51,14 +52,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read methods are generated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -68,14 +73,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Write methods are generated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

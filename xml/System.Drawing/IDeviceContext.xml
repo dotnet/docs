@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.IDeviceContext" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,15 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines methods for obtaining and releasing an existing handle to a Windows device context.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A device context defines the graphics object for drawing on a Windows-based device. An example of a class that implements the IDeviceContext interface is the <xref:System.Drawing.Graphics> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetHdc">
@@ -31,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -39,18 +30,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the handle to a Windows device context.</summary>
-        <returns>An <see cref="T:System.IntPtr" /> representing the handle of a device context.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetHdc and <xref:System.Drawing.IDeviceContext.ReleaseHdc%2A> are two methods that allow you to get and release the handle for a Windows-based device. You should always follow a call to GetHdc with a call to <xref:System.Drawing.IDeviceContext.ReleaseHdc%2A> when you are finished with the Windows handle.  
-  
- GetHdc is not designed to obtain handles created using Windows GDI methods such as `CreateDC` or `CreateCompatibleDC`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseHdc">
@@ -60,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,15 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the handle of a Windows device context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Drawing.IDeviceContext.GetHdc%2A> and ReleaseHdc are two methods that allow you to get and release the handle for a Windows-based device. You should always follow a call to <xref:System.Drawing.IDeviceContext.GetHdc%2A> with a call to ReleaseHdc when you are finished with the Windows handle.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBoxMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the behavior mode of the text box.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TextBoxMode enumeration represents the different display options for <xref:System.Web.UI.WebControls.TextBox> controls.  
-  
- SingleLine mode displays the <xref:System.Web.UI.WebControls.TextBox> control as a single row. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox> control, the text will scroll horizontally.  
-  
- MultiLine mode displays the height of the <xref:System.Web.UI.WebControls.TextBox> based on the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property, and allows data entry on multiple lines. The text will automatically wrap if the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property is set to `true`. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox>, the text will scroll accordingly and scroll bars will appear.  
-  
- The behavior of Password mode is similar to SingleLine mode except that all characters entered in the <xref:System.Web.UI.WebControls.TextBox> control are masked and are not saved in view state.  
-  
- The remaining options correspond to `type` attribute values for the `input` element in the HTML5 specification.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Color">
@@ -43,7 +27,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents color entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -59,7 +43,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents date entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -75,7 +59,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents date-time entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTimeLocal">
@@ -91,7 +75,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents local date-time entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -107,7 +91,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents email address entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -123,7 +107,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents month entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents multiline entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -156,7 +139,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents number entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -166,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents password entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Phone">
@@ -189,7 +171,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents phone number entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -205,7 +187,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents numeric range entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Search">
@@ -221,7 +203,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents search string entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleLine">
@@ -231,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents single-line entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -254,7 +235,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents time entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -270,7 +251,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents URL entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Week">
@@ -286,7 +267,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents week entry mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

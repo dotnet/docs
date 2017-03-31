@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumeration of activity status values that correspond to the life cycle of an activity within a running workflow instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Status represents the current status of an <xref:System.Workflow.ComponentModel.Activity> instance within a workflow instance.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Canceling">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the status when an activity is in the process of being canceled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the status when an activity is closed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Compensating">
@@ -72,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the status when an activity is compensating.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Executing">
@@ -89,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the status when an activity is executing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Faulting">
@@ -106,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the status when an activity is faulting.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -123,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the status when an activity is being initialized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenValidated" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The event is raised just after the issued token that was received from the security token service (STS) is validated during sign-in. You can access the principal that was created during validation by using the <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property and either modify or replace it. You can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to cancel processing of the sign-in response message.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,18 +28,9 @@
         <Parameter Name="claimsPrincipal" Type="System.Security.Claims.ClaimsPrincipal" />
       </Parameters>
       <Docs>
-        <param name="claimsPrincipal">The claims principal resulting from validation of the received <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SecurityTokenValidatedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property is set to the principal specified in the `claimsPrincipal` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="claimsPrincipal" /> is <see langword="null" />.</exception>
+        <param name="claimsPrincipal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClaimsPrincipal">
@@ -62,10 +46,9 @@
         <ReturnType>System.Security.Claims.ClaimsPrincipal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Security.Claims.ClaimsPrincipal" /> that results from token validation.</summary>
-        <value>The claims principal that results from token validation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermissionAttribute">for setting the property. Associated enumerations: <see cref="T:System.Security.Permissions.SecurityAction" /><see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

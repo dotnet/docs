@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.MarginProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the margin properties of a visual style element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MarginProperty enumeration represents a set of margin properties that describe the placement of visual style elements. The MarginProperty values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetMargins%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CaptionMargins">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies where caption text can be placed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentMargins">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies where content can be placed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizingMargins">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a margin used for nine-grid sizing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

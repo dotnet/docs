@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The ActiveDirectorySiteLink class represents a set of two or more sites that can be scheduled, for replication, to communicate at uniform cost and through a particular transport.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -36,27 +33,10 @@
         <Parameter Name="siteLinkName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object for creating this site link.</param>
-        <param name="siteLinkName">The name for the site link.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object and name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default transport type is RPC.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
-  
--   The target in the <paramref name="context" /> parameter is not a forest,  configuration set, domain controller, or an AD LDS server.  
-  
--   <paramref name="siteLinkName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <param name="context">To be added.</param>
+        <param name="siteLinkName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,7 +46,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -75,24 +54,11 @@
         <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object for creating this site link.</param>
-        <param name="siteLinkName">The name for the site link.</param>
-        <param name="transport">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> object that specifies the transport type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object, name, and transport type.</summary>
+        <param name="context">To be added.</param>
+        <param name="siteLinkName">To be added.</param>
+        <param name="transport">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
-  
--   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
-  
--   <paramref name="siteLinkName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> parameter or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
-        <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,7 +68,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -112,25 +77,12 @@
         <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object for creating this site link.</param>
-        <param name="siteLinkName">The name for the site link.</param>
-        <param name="transport">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> object that specifies the transport type.</param>
-        <param name="schedule">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that specifies the replication schedule for this site link.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object, name, transport type, and replication schedule.</summary>
+        <param name="context">To be added.</param>
+        <param name="siteLinkName">To be added.</param>
+        <param name="transport">To be added.</param>
+        <param name="schedule">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
-  
--   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
-  
--   <paramref name="siteLinkName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or the <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
-        <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cost">
@@ -140,19 +92,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the site link cost.</summary>
-        <value>A cost that is associated with this site link. The default value is 100.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
-        <exception cref="T:System.ArgumentException">The cost is less than zero. (applies to set only)</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="DataCompressionEnabled">
@@ -162,19 +110,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data compression mode of the site link.</summary>
-        <value>
-          <see langword="true" /> if data compression mode is enabled; <see langword="false" /> if data compression is disabled.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -184,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,13 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes the current site link.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -208,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,7 +153,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,9 +173,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> if the managed resources should be released; <see langword="false" /> if only the unmanaged resources should be released.</param>
-        <summary>Releases the unmanaged resources used by the object and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,22 +195,11 @@
         <Parameter Name="siteLinkName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that is valid for this site link.</param>
-        <param name="siteLinkName">The name of the site link to find.</param>
-        <summary>Returns a site link based on a site link name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object for the requested site link.</returns>
+        <param name="context">To be added.</param>
+        <param name="siteLinkName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">The site could not be found for the given <paramref name="siteLinkName" /> in the <paramref name="context" /> specified.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
-  
--   The target in the <paramref name="context" /> parameter is not a forest,  configuration set, domain controller, or an AD LDS server.  
-  
--   <paramref name="siteLinkName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -286,7 +209,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -298,25 +220,12 @@
         <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that is valid for this site link.</param>
-        <param name="siteLinkName">The name of the site link to find.</param>
-        <param name="transport">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> object that specifies the transport type.</param>
-        <summary>Returns a site link based on a site link name and transport.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object for the requested site link.</returns>
+        <param name="context">To be added.</param>
+        <param name="siteLinkName">To be added.</param>
+        <param name="transport">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">The site could not be found for the given <paramref name="siteLinkName" /> in the <paramref name="context" /> specified.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
-  
--   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
-  
--   <paramref name="siteLinkName" /> is an empty string.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transport" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
-        <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -326,7 +235,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -334,11 +242,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.DirectoryServices.DirectoryEntry" /> for this object.</summary>
-        <returns>The <see cref="T:System.DirectoryServices.DirectoryEntry" /> object for this site link.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="InterSiteReplicationSchedule">
@@ -348,18 +254,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object for the current site link object.</summary>
-        <value>Gets or sets the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object for the current site link object. Setting this property changes the replication schedule for the site link.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -369,17 +272,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the site link.</summary>
-        <value>The name of the site link.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="NotificationEnabled">
@@ -389,19 +290,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether notifications are enabled.</summary>
-        <value>
-          <see langword="true" /> if notifications are enabled; <see langword="false" /> if notifications are disabled.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReciprocalReplicationEnabled">
@@ -411,19 +308,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the mode for reciprocal replication between sites.</summary>
-        <value>
-          <see langword="true" /> if reciprocal replication is enabled; <see langword="false" /> if reciprocal replication is disabled.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReplicationInterval">
@@ -433,18 +326,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the replication interval between sites.</summary>
-        <value>The replication interval between sites.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">Invalid <paramref name="ReplicationInterval" /> specified.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -454,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,20 +351,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Writes any changes to the object to the Active Directory Domain Services store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object must contain at least one site or the operation will fail.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">The site object already exists.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Sites">
@@ -485,18 +362,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read/write collection of sites that this site link contains.</summary>
-        <value>A writable <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection" /> collection of sites that this site link contains. Sites can be added and deleted from this collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -506,7 +380,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,10 +387,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the site link name.</summary>
-        <returns>A string that contains the name of the site link.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransportType">
@@ -527,17 +399,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the transport type of the site link.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value indicating the transport type of this site link.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

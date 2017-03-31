@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.FragmentNavigationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the **FragmentNavigation** event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- T These event arguments contain information about the content fragment that is being navigated to, and are passed to handlers of the **FragmentNavigation** event, which is implemented by the following:  
-  
--   <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=fullName>  
-  
--   <xref:System.Windows.Navigation.NavigationWindow.FragmentNavigation?displayProperty=fullName>  
-  
--   <xref:System.Windows.Controls.Frame.FragmentNavigation?displayProperty=fullName>  
-  
--   <xref:System.Windows.Application.FragmentNavigation?displayProperty=fullName>  
-  
- By default, a content fragment is content that is contained by a named <xref:System.Windows.UIElement>, which is a <xref:System.Windows.UIElement> whose <xref:System.Windows.FrameworkElement.Name%2A> attribute is set, e.g.:  
-  
-```  
-<TextBlock Name="FragmentName">...</TextBlock>  
-```  
-  
- You navigate to a [!INCLUDE[TLA2#tla_titlexaml](~/add/includes/tla2sharptla-titlexaml-md.md)] fragment by providing a [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] with a suffix in the following format:  
-  
- \#*FragmentName*  
-  
- The following shows an example of a [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] that refers to a content fragment:  
-  
- [http://www.microsoft.com/targetpage.xaml#FragmentName](http://www.www.com/homepage.xaml)  
-  
- You can handle the **FragmentNavigation** event and use FragmentNavigationEventArgs to implement a custom content fragment handling implementation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Fragment">
@@ -54,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] fragment.</summary>
-        <value>The [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] fragment. If you set the property to an empty string, the top of the content will be navigated to by default.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,26 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the fragment navigation has been handled.</summary>
-        <value>
-          <see langword="true" /> if the navigation has been handled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If Handled is set to `false`, the system attempts to find an element with the name of the fragment and bring it into view.  
-  
- When you handle the **FragmentNavigation** event and use <xref:System.Windows.Navigation.FragmentNavigationEventArgs> to implement a custom content fragment handling implementation, you need to set Handled is set to `true` to override the default behavior.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Navigator">
@@ -102,15 +58,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The navigator that raised the <see cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" /> event.</summary>
-        <value>A <see cref="T:System.Object" /> that refers to the navigator ([!INCLUDE[TLA2#tla_iegeneric](~/add/includes/tla2sharptla-iegeneric-md.md)], <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />.) that is navigating to the content fragment.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

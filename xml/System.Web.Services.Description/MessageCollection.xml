@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessageCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.Message" /> class. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DescriptionNamespaceSample1#9](~/add/codesnippet/csharp/t-system.web.services.de_35_1.cs)]
- [!code-cpp[DescriptionNamespaceSample1#9](~/add/codesnippet/cpp/t-system.web.services.de_35_1.cpp)]
- [!code-vb[DescriptionNamespaceSample1#9](~/add/codesnippet/visualbasic/t-system.web.services.de_35_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -32,7 +23,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,19 +33,10 @@
         <Parameter Name="message" Type="System.Web.Services.Description.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.Web.Services.Description.Message" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Message" /> to the end of the <see cref="T:System.Web.Services.Description.MessageCollection" />.</summary>
-        <returns>The zero-based index where the <paramref name="message" /> parameter has been added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DescriptionNamespaceSample1#7](~/add/codesnippet/csharp/7e1c7439-e671-4be2-9aa7-_1.cs)]
- [!code-cpp[DescriptionNamespaceSample1#7](~/add/codesnippet/cpp/7e1c7439-e671-4be2-9aa7-_1.cpp)]
- [!code-vb[DescriptionNamespaceSample1#7](~/add/codesnippet/visualbasic/7e1c7439-e671-4be2-9aa7-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -64,7 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,22 +56,10 @@
         <Parameter Name="message" Type="System.Web.Services.Description.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.Web.Services.Description.Message" /> for which to check collection membership.</param>
-        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Message" /> is a member of the <see cref="T:System.Web.Services.Description.MessageCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="message" /> parameter is a member of the <see cref="T:System.Web.Services.Description.MessageCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `Contains` method.  
-  
- [!code-cpp[MessageCollection#4](~/add/codesnippet/cpp/4b48a0cc-108b-4f6b-ad77-_1.cpp)]
- [!code-cs[MessageCollection#4](~/add/codesnippet/csharp/4b48a0cc-108b-4f6b-ad77-_1.cs)]
- [!code-vb[MessageCollection#4](~/add/codesnippet/visualbasic/4b48a0cc-108b-4f6b-ad77-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -99,7 +69,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,21 +80,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Message" /> serving as the destination for the copy action.</param>
-        <param name="index">The zero-based index at which to start placing the copied collection.</param>
-        <summary>Copies the entire <see cref="T:System.Web.Services.Description.MessageCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.Message" />, starting at the specified zero-based index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `CopyTo` method.  
-  
- [!code-cpp[MessageCollection#1](~/add/codesnippet/cpp/6c9a9861-5d09-4182-bbc6-_1.cpp)]
- [!code-cs[MessageCollection#1](~/add/codesnippet/csharp/6c9a9861-5d09-4182-bbc6-_1.cs)]
- [!code-vb[MessageCollection#1](~/add/codesnippet/visualbasic/6c9a9861-5d09-4182-bbc6-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -134,7 +93,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,7 +116,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,21 +126,10 @@
         <Parameter Name="message" Type="System.Web.Services.Description.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.Web.Services.Description.Message" /> for which to search in the collection.</param>
-        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Message" /> and returns the zero-based index of the first occurrence within the collection.</summary>
-        <returns>A 32-bit signed integer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `IndexOf` method.  
-  
- [!code-cpp[MessageCollection#5](~/add/codesnippet/cpp/899a81cd-c2d4-4446-8c5f-_1.cpp)]
- [!code-cs[MessageCollection#5](~/add/codesnippet/csharp/899a81cd-c2d4-4446-8c5f-_1.cs)]
- [!code-vb[MessageCollection#5](~/add/codesnippet/visualbasic/899a81cd-c2d4-4446-8c5f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -191,7 +139,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,33 +150,10 @@
         <Parameter Name="message" Type="System.Web.Services.Description.Message" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>message</c> parameter.</param>
-        <param name="message">The <see cref="T:System.Web.Services.Description.Message" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Message" /> to the <see cref="T:System.Web.Services.Description.MessageCollection" /> at the specified zero-based index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
-  
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `message` parameter is added to the end of the <xref:System.Web.Services.Description.MessageCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
-## Examples  
- [!code-cs[DescriptionNamespaceSample1#8](~/add/codesnippet/csharp/3a31c5d9-d45a-4247-823a-_1.cs)]
- [!code-cpp[DescriptionNamespaceSample1#8](~/add/codesnippet/cpp/3a31c5d9-d45a-4247-823a-_1.cpp)]
- [!code-vb[DescriptionNamespaceSample1#8](~/add/codesnippet/visualbasic/3a31c5d9-d45a-4247-823a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
-  
- \- or -  
-  
- The <paramref name="index" /> parameter is greater than <see cref="System.Collections.CollectionBase.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -238,7 +163,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,21 +173,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Message" /> whose value is modified or returned.</param>
-        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.Message" /> at the specified zero-based index.</summary>
-        <value>A <see langword="Message" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of a zero-based index to iterate through the members of a `MessageCollection`.  
-  
- [!code-cpp[MessageCollection#2](~/add/codesnippet/cpp/p-system.web.services.de_38_1.cpp)]
- [!code-cs[MessageCollection#2](~/add/codesnippet/csharp/p-system.web.services.de_38_1.cs)]
- [!code-vb[MessageCollection#2](~/add/codesnippet/visualbasic/p-system.web.services.de_38_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -272,7 +186,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,21 +196,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Services.Description.Message" /> returned.</param>
-        <summary>Gets a <see cref="T:System.Web.Services.Description.Message" /> specified by its name.</summary>
-        <value>A <see langword="Message" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of a string to retrieve a `Message`.  
-  
- [!code-cpp[MessageCollection#3](~/add/codesnippet/cpp/p-system.web.services.de_87_1.cpp)]
- [!code-cs[MessageCollection#3](~/add/codesnippet/csharp/p-system.web.services.de_87_1.cs)]
- [!code-vb[MessageCollection#3](~/add/codesnippet/visualbasic/p-system.web.services.de_87_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -306,7 +209,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,27 +219,9 @@
         <Parameter Name="message" Type="System.Web.Services.Description.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.Web.Services.Description.Message" /> to remove from the collection.</param>
-        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Message" /> from the <see cref="T:System.Web.Services.Description.MessageCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
-  
- The elements that follow the removed <xref:System.Web.Services.Description.Message> move up to occupy the vacated spot.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the `Remove` method.  
-  
- [!code-cpp[MessageCollection#6](~/add/codesnippet/cpp/c17a74b9-06df-4407-8f96-_1.cpp)]
- [!code-cs[MessageCollection#6](~/add/codesnippet/csharp/c17a74b9-06df-4407-8f96-_1.cs)]
- [!code-vb[MessageCollection#6](~/add/codesnippet/visualbasic/c17a74b9-06df-4407-8f96-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">
@@ -346,7 +231,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a helper class to assist dragging and dropping inside the [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class abstracts the encoding formats used in the <xref:System.Windows.Forms.DataObject> that is passed from the drag source to the target.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowDrop">
@@ -46,12 +39,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="draggedDataObject">The data object that is being dragged.</param>
-        <param name="context">The <see cref="T:System.Activities.Presentation.EditingContext" /> for the <see langword="DragDropHelper" />.</param>
-        <param name="allowedItemTypes">The types that are allowed to be dragged.</param>
-        <summary>Indicates whether the designer can accept data that the user drags onto it.</summary>
-        <returns>
-          <see langword="true" /> if drag-and-drop operations are allowed in the designer; otherwise, <see langword="false" />.</returns>
+        <param name="draggedDataObject">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="allowedItemTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +60,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the desired effects of the completion of a drag-and-drop operation.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +77,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains a unique data format name for a composite view.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,10 +103,10 @@
         <Parameter Name="referencePoint" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="draggedViewElement">The UI element on which the operation happens.</param>
-        <param name="referencePoint">The location of the drag point.</param>
-        <summary>Allows a UI element to be dragged by a mouse with its left button down over an exposed area of the UI element’s client area.</summary>
-        <returns>A value from the <see cref="T:System.Windows.DragDropEffects" /> enumeration that represents the final effect that was performed during the drag-and-drop operation.</returns>
+        <param name="draggedViewElement">To be added.</param>
+        <param name="referencePoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +123,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the format for a drag operation anchor point.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +140,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the drag source.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +160,9 @@
         <Parameter Name="workflowViewElement" Type="System.Activities.Presentation.WorkflowViewElement" />
       </Parameters>
       <Docs>
-        <param name="workflowViewElement">The <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> that supplies the composite view data.</param>
-        <summary>Retrieves the composite view information from the specified workflow view element.</summary>
-        <returns>An element that contains user interface data.</returns>
+        <param name="workflowViewElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,9 +187,9 @@
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An event raised when the user performs a drag operation.</param>
-        <summary>Retrieves the composite view information from the specified drag event arguments.</summary>
-        <returns>The composite view information.</returns>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +209,9 @@
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The drag event data.</param>
-        <summary>Retrieves the anchor point for a drag-and-drop operation.</summary>
-        <returns>The anchor point.</returns>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +236,9 @@
         <Parameter Name="data" Type="System.Windows.DataObject" />
       </Parameters>
       <Docs>
-        <param name="data">An object that contains data that contains effects of a drag-and-drop operation.</param>
-        <summary>Returns the outcome of the drag-and-drop operation whose behavior is determined by the specified <see cref="T:System.Windows.DataObject" />.</summary>
-        <returns>An enumerated process.</returns>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +263,9 @@
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The drag event data.</param>
-        <summary>Retrieves the object that is being dragged in a drag-and-drop operation.</summary>
-        <returns>The model item that was dragged.</returns>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,9 +285,9 @@
         <Parameter Name="e" Type="System.Windows.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The drag event data.</param>
-        <summary>Retrieves the model items that are being dragged in a drag-and-drop operation.</summary>
-        <returns>The model items that were dragged.</returns>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,11 +314,11 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="dropTarget">The location for the drag.</param>
-        <param name="e">The drag event data.</param>
-        <param name="context">The editing context.</param>
-        <summary>Retrieves the object that is being dropped in a drag-and-drop operation.</summary>
-        <returns>The object that was dropped.</returns>
+        <param name="dropTarget">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,11 +340,11 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="dropTarget">The location for the drag.</param>
-        <param name="e">The drag event data.</param>
-        <param name="context">The editing context.</param>
-        <summary>Retrieves the objects that are being dropped in a drag-and-drop operation.</summary>
-        <returns>The objects that were dropped.</returns>
+        <param name="dropTarget">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +361,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the format for model item data.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,9 +382,9 @@
         <Parameter Name="dragSource" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="workflowViewElement">The <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> that supplies the composite view data.</param>
-        <param name="dragSource">A user interface type of element that indicates the drag source.</param>
-        <summary>Sets the composite view from the specified workflow view element and drag source.</summary>
+        <param name="workflowViewElement">To be added.</param>
+        <param name="dragSource">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,9 +410,9 @@
         <Parameter Name="completedEffects" Type="System.Windows.DragDropEffects" />
       </Parameters>
       <Docs>
-        <param name="e">The drag event data.</param>
-        <param name="completedEffects">The desired effects of a drag-and-drop operation.</param>
-        <summary>Sets the final effect that is to be performed during the drag-and-drop operation.</summary>
+        <param name="e">To be added.</param>
+        <param name="completedEffects">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,7 +429,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the format for the type name of a workflow item.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

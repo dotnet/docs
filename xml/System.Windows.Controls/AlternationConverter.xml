@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.AlternationConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,26 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Converts an integer to and from an object by applying the integer as an index to a list of objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the AlternationConverter to bind a property to alternating values. For example, if you want items in a <xref:System.Windows.Controls.ListBox> to have alternating blue and light blue backgrounds, you do the following:  
-  
--   Create an AlternationConverter and add a blue <xref:System.Windows.Media.SolidColorBrush> and a light blue <xref:System.Windows.Media.SolidColorBrush> to its <xref:System.Windows.Controls.AlternationConverter.Values%2A> property.  
-  
--   In a <xref:System.Windows.Style> for <xref:System.Windows.Controls.ListBoxItem>, bind the <xref:System.Windows.Controls.Control.Background%2A> property to <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and assign the converter you created to the <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> property.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.ListBox> and uses two AlternationConverter objects to alternate the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.FontStyle%2A> of the items.  
-  
- [!code-xml[AlternationIndexSnippets#4](~/add/codesnippet/xaml/AltnerationIndexSnippets/Window1.xaml#4)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.AlternationConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,12 +58,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="o">The integer to use to find an object in the <see cref="System.Windows.Controls.AlternationConverter.Values%2A" /> property.</param>
-        <param name="targetType">The type of the binding target property.</param>
-        <param name="parameter">The converter parameter to use.</param>
-        <param name="culture">The culture to use in the converter.</param>
-        <summary>Converts an integer to an object in the <see cref="System.Windows.Controls.AlternationConverter.Values%2A" /> list.</summary>
-        <returns>The object that is in the position of <paramref name="o" /> modulo the number of items in <see cref="System.Windows.Controls.AlternationConverter.Values%2A" />.</returns>
+        <param name="o">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,12 +86,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="o">The object to find in the <see cref="System.Windows.Controls.AlternationConverter.Values%2A" /> property.</param>
-        <param name="targetType">The type of the binding target property.</param>
-        <param name="parameter">The converter parameter to use.</param>
-        <param name="culture">The culture to use in the converter.</param>
-        <summary>Converts an object in the <see cref="System.Windows.Controls.AlternationConverter.Values%2A" /> list to an integer.</summary>
-        <returns>The index of <paramref name="o" /> if it is in <see cref="System.Windows.Controls.AlternationConverter.Values%2A" />, or –1 if o does not exist in <see cref="System.Windows.Controls.AlternationConverter.Values%2A" />.</returns>
+        <param name="o">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,30 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of objects that the <see cref="T:System.Windows.Controls.AlternationConverter" /> returns when an integer is passed to the <see cref="System.Windows.Controls.AlternationConverter.Convert%2A" /> method.</summary>
-        <value>A list of objects that the <see cref="T:System.Windows.Controls.AlternationConverter" /> returns when an integer is passed to the <see cref="System.Windows.Controls.AlternationConverter.Convert%2A" /> method.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use the <xref:System.Windows.Controls.AlternationConverter> to bind a property to alternating values, the Values property contains the objects that are assigned to the property.  For example, if you want items in a <xref:System.Windows.Controls.ListBox> to have alternating blue and light blue backgrounds, you add a blue <xref:System.Windows.Media.SolidColorBrush> and a light blue <xref:System.Windows.Media.SolidColorBrush> to Values.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.ListBox> and uses two <xref:System.Windows.Controls.AlternationConverter> objects to alternate the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.FontStyle%2A> of the items.  
-  
- [!code-xml[AlternationIndexSnippets#4](~/add/codesnippet/xaml/AltnerationIndexSnippets/Window1.xaml#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

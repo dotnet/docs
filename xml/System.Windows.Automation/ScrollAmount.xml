@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollAmount" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains values used by <see cref="T:System.Windows.Automation.ScrollPattern" /> to indicate the direction and distance to scroll.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scrolling is done in large decrements, equivalent to **PageUp** or clicking on a blank part of a scrollbar. If **PageUp** is not a relevant amount for the control and/or no scrollbar exists, the value represents an amount equal to the current visible window.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIncrement">
@@ -47,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scrolling is done in large increments, equivalent to a **PageDown** or clicking on the track of a scrollbar component. If a **PageDown** is not a relevant amount for the control and/or no scrollbar exists, the value represents an amount equal to the current visible region.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAmount">
@@ -64,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scrolling should not be performed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDecrement">
@@ -81,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scrolling is done in small decrements, equivalent to pressing an arrow key or clicking the arrow button on a scrollbar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIncrement">
@@ -98,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that scrolling is done in small increments, equivalent to pressing an arrow key or clicking the arrow button on a scrollbar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

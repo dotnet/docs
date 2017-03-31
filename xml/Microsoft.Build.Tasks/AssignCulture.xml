@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssignCulture extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.AssignCulture" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements the <c>AssignCulture</c> task. Use the <c>AssignCulture</c> element in your project file to create and execute this task. For usage and parameter information, see [AssignCulture Task](../Topic/AssignCulture%20Task.md).</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,16 +21,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AssignCulture.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.AssignCulture" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,10 +36,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -60,18 +48,9 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of <see cref="Microsoft.Build.Tasks.AssignCulture.Files%2A" /> with a <c>Culture</c> metadata entry added to each item.</summary>
-        <value>The list of <see cref="Microsoft.Build.Tasks.AssignCulture.Files%2A" />, with a <c>Culture</c> metadata entry added to each item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the incoming item from the <xref:Microsoft.Build.Tasks.AssignCulture.Files%2A> property already contains a `Culture` metadata entry, the original metadata entry is used.  
-  
- The task only assigns a `Culture` metadata entry if the file name contains a valid culture identifier. The culture identifier must be between the last two dots in the filename.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AssignedFilesWithCulture">
@@ -80,10 +59,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.AssignedFilesWithCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -96,8 +71,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a subset of <see cref="Microsoft.Build.Tasks.AssignCulture.AssignedFiles%2A" /> that have a <c>Culture</c> metadata entry.</summary>
-        <value>A subset of <see cref="Microsoft.Build.Tasks.AssignCulture.AssignedFiles%2A" /> that have a <c>Culture</c> metadata entry.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,10 +82,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.AssignedFilesWithNoCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -123,8 +94,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a subset of <see cref="Microsoft.Build.Tasks.AssignCulture.AssignedFiles%2A" /> that do not have a <c>Culture</c> metadata entry.</summary>
-        <value>A subset of <see cref="Microsoft.Build.Tasks.AssignCulture.AssignedFiles%2A" /> that do not have a <c>Culture</c> metadata entry.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,10 +105,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.CultureNeutralAssignedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -150,8 +117,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a subset of <see cref="Microsoft.Build.Tasks.AssignCulture.AssignedFiles%2A" /> that do not have a <c>Culture</c> metadata entry.</summary>
-        <value>A subset of <see cref="Microsoft.Build.Tasks.AssignCulture.AssignedFiles%2A" /> that do not have a <c>Culture</c> metadata entry.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,10 +128,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AssignCulture.Execute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -173,9 +136,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Executes the <c>AssignCulture</c> task.</summary>
-        <returns>
-          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +146,6 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Files" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.Files" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -201,8 +159,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of files with embedded culture names to assign a culture to.</summary>
-        <value>The list of files with embedded culture names to assign a culture to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Button" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,45 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a Windows button control, which reacts to the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Button class inherits directly from the <xref:System.Windows.Controls.Primitives.ButtonBase?displayProperty=fullName> class.  
-  
- **Content Model:** Button is a <xref:System.Windows.Controls.ContentControl>. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A>.  
-  
- Handle the <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=fullName> event to respond when the user clicks a Button.  
-  
- The <xref:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown%2A> method marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
-  
-## Customizing the Button Control  
- To apply the same property settings to multiple Button controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the Button, see [Button Styles and Templates](../Topic/Button%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example shows three buttons that respond to clicks in three different ways.  
-  
--   Hover: the first button changes colors when the user hovers with the mouse over the button.  
-  
--   Press: the second button requires that the mouse be pressed while the mouse pointer is over the button.  
-  
--   Release: the third does not reset the background color of the buttons until the mouse is pressed and released on the button.  
-  
- [!code-xml[ClickModes_snip#1](~/add/codesnippet/xaml/ClickModes_snip.ButtonAlign/Pane1.xaml#1)]  
-  
- [!code-cs[ClickModes_snip#2](~/add/codesnippet/csharp/ClickModes_snip.ButtonAlign/Pane1.xaml.cs#2)]
- [!code-vb[ClickModes_snip#2](~/add/codesnippet/visualbasic/ClickMode_Snips/Window1.xaml.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Button" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,39 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a <see cref="T:System.Windows.Controls.Button" /> is a Cancel button. A user can activate the Cancel button by pressing the ESC key.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Button" /> is a Cancel button; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set the IsCancel property of a button to `true`, you create a <xref:System.Windows.Controls.Button> that is registered with the <xref:System.Windows.Input.AccessKeyManager>. The button is then activated when a user presses the ESC key.  
-  
-<a name="dependencyPropertyInfo_IsCancel"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Button.IsCancelProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to use this property to create a Cancel button.  
-  
- [!code-xml[ButtonProps_snip#2](~/add/codesnippet/xaml/ButtonProps/Page1.xaml#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCancelProperty">
@@ -118,14 +55,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Button.IsCancel%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,39 +72,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a <see cref="T:System.Windows.Controls.Button" /> is the default button. A user invokes the default button by pressing the ENTER key.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Button" /> is the default button; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set the IsDefault property of a button to `true`, you register the button with the <xref:System.Windows.Input.AccessKeyManager> so that a user can invoke the button by pressing the ENTER key.  
-  
-<a name="dependencyPropertyInfo_IsDefault"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Button.IsDefaultProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to specify a button as the default button.  
-  
- [!code-xml[ButtonProps_snip#1](~/add/codesnippet/xaml/ButtonProps/Page1.xaml#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefaulted">
@@ -178,43 +90,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a <see cref="T:System.Windows.Controls.Button" /> is the button that is activated when a user presses ENTER.</summary>
-        <value>
-          <see langword="true" /> if the button is activated when the user presses ENTER; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsDefaulted property is `true` when the <xref:System.Windows.Controls.Button.IsDefault%2A> property is set to `true` and the control that has focus does not accept ENTER as input.  For example, in the **Run** dialog box, the **OK** button is the default button. When focus is on the text box, IsDefaulted on the **OK** button is `true` because a user can activate the button by pressing ENTER.  
-  
-> [!NOTE]
->  If the default button has focus, IsDefaulted is `false`. This is because the <xref:System.Windows.Controls.Primitives.ButtonBase.OnKeyDown%2A> method handles ENTER, and it is not necessary for IsDefaulted to be set to `true`.  
-  
-<a name="dependencyPropertyInfo_IsDefaulted"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Button.IsDefaultedProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to determine whether the IsDefaulted property is `true` for a default button.  
-  
- [!code-cs[ButtonProps_snip#3](~/add/codesnippet/csharp/ButtonProps/Page1.xaml.cs#3)]
- [!code-vb[ButtonProps_snip#3](~/add/codesnippet/visualbasic/ButtonProps/Window1.xaml.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultedProperty">
@@ -224,14 +108,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Button.IsDefaulted%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,14 +125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Button.IsDefault%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,7 +149,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when a <see cref="T:System.Windows.Controls.Button" /> is clicked.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,8 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an appropriate <see cref="T:System.Windows.Automation.Peers.ButtonAutomationPeer" /> for this control as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
-        <returns>A <see cref="T:System.Windows.Automation.Peers.ButtonAutomationPeer" /> for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

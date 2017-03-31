@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TabletDeviceType" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values for the type of devices the tablet device uses.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to determine the type of tablet device.  
-  
- [!code-vb[HwCaps#2](~/add/codesnippet/visualbasic/HwCaps_VB/Window1.xaml.vb#2)]
- [!code-cs[HwCaps#2](~/add/codesnippet/csharp/HwCaps_CS/Window1.xaml.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Stylus">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.TabletDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the tablet device is a stylus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Touch">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.TabletDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the tablet device is a touch screen.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

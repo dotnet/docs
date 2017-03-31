@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ScrollEventType" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the behavior that caused a <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event for a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The page buttons are not visible as buttons, but they occupy the space between the <xref:System.Windows.Controls.Primitives.Thumb> and the <xref:System.Windows.Controls.Primitives.RepeatButton> controls on either end of the <xref:System.Windows.Controls.Primitives.ScrollBar>. The user clicks a page button when clicking the left mouse button between the <xref:System.Windows.Controls.Primitives.Thumb> and a <xref:System.Windows.Controls.Primitives.RepeatButton>. The result of this action is to move the <xref:System.Windows.Controls.Primitives.Thumb> in the direction of the page button. For more information about the effect of the page buttons, see the descriptions of the LargeIncrement and LargeDecrement members. The following illustration shows the elements of a <xref:System.Windows.Controls.Primitives.ScrollBar>, including the page buttons.  
-  
- ![The different parts of a ScrollBar](~/add/media/scrollbarpagebutton.png "The different parts of a ScrollBar")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EndScroll">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> was dragged to a new position and is now no longer being dragged by the user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved to the <see cref="System.Windows.Controls.Primitives.RangeBase.Minimum%2A" /> position of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the CTRL+HOME keys are pressed. This movement corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToTopCommand" /> in a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> and a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToLeftEndCommand" /> in a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeDecrement">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a specified distance, as determined by the value of <see cref="System.Windows.Controls.Primitives.RangeBase.LargeChange%2A" />, to the left for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or upward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button that is above the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, or when the PAGE UP key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button to the left of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIncrement">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a specified distance, as determined by the value of <see cref="System.Windows.Controls.Primitives.RangeBase.LargeChange%2A" />, to the right for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or downward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button that is below the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, or when the PAGE DOWN key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button to the right of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -99,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved to the <see cref="System.Windows.Controls.Primitives.RangeBase.Maximum%2A" /> position of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the CTRL+END keys are pressed. This movement corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToEndCommand" /> in a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> and a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToRightEndCommand" /> in a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDecrement">
@@ -116,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a small distance, as determined by the value of <see cref="System.Windows.Controls.Primitives.RangeBase.SmallChange%2A" />, to the left for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or upward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the upper <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed or when the UP ARROW key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the left <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIncrement">
@@ -133,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a small distance, as determined by the value of <see cref="System.Windows.Controls.Primitives.RangeBase.SmallChange%2A" />, to the right for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or downward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the lower <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed or when the DOWN ARROW key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the right <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbPosition">
@@ -150,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved to a new position because the user selected **Scroll Here** in the shortcut menu of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. This movement corresponds to the <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollHereCommand" />. To view the shortcut menu, right-click the mouse when the pointer is over the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbTrack">
@@ -167,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> was dragged and caused a <see cref="E:System.Windows.UIElement.MouseMove" /> event. A <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event of this ScrollEventType may occur more than one time when the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is dragged in the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

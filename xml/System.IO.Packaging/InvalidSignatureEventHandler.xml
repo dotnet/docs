@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.InvalidSignatureEventHandler" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The invalid <see cref="T:System.IO.Packaging.PackageDigitalSignature" /> source of the event.</param>
-    <param name="e">The event data.</param>
-    <summary>Represents the method that handles the <see cref="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" /> that is raised when <see cref="System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures%2A" /> detects an invalid signature.</summary>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

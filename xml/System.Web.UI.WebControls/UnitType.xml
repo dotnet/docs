@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.UnitType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the unit of measurement.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The UnitType enumeration represents the different supported measurement units. Measurements can be represented in pixels, points, picas, inches, millimeters, centimeters, percentages, em, or ex.  
-  
- A Point is a unit of measurement that represents 1/72 of an inch.  
-  
- A Pica is a unit that equals 12 points.  
-  
- A Percentage is a unit of measurement that is relative to a parent element. For example, if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 200%. The font size of the phrase becomes twice the font size of the paragraph, or 20 pixels.  
-  
- An Em is a unit of measurement that is relative to the height of a parent element's font. For example, if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 2 em. The font size of the phrase becomes twice the font size of the paragraph, or 20 pixels.  
-  
- An Ex is a unit of measurement that is relative to the height of the lowercase letter x of the parent element's font. For example if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 2 ex. The font size of the phrase becomes twice the font size of a lowercase letter x in the paragraph.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cm">
@@ -39,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is in centimeters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Em">
@@ -56,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is relative to the height of the parent element's font.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ex">
@@ -73,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is relative to the height of the lowercase letter x of the parent element's font.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inch">
@@ -90,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is in inches.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mm">
@@ -107,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is in millimeters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percentage">
@@ -124,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is a percentage relative to the parent element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pica">
@@ -141,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is in picas. A pica represents 12 points.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -158,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is in pixels.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -175,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.UnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Measurement is in points. A point represents 1/72 of an inch.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

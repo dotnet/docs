@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ThemeType" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of theme displayed in the **Options** dialog box.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The user can modify UserDefined themes in the workflow designer, but cannot modify Default or System themes in that context.  
-  
- The **Options** dialog box appears when a user right-clicks the workflow design surface and selects **Select Custom Theme…**. The Default and System categories are listed under the **Standard Themes** header in the selection window, while the UserDefined category, which contains any themes created by the user, are listed under the **User Defined Themes** header.  
-  
- Themes define the background, foreground, text, icon and other styles used to render a workflow on the workflow design surface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -42,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The theme settings are provided by the default workflow theme.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -59,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The theme settings are provided by the operating system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserDefined">
@@ -76,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The theme settings are provided by user-defined themes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

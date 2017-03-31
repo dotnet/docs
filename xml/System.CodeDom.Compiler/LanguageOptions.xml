@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.LanguageOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines identifiers that indicate special features of a language.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.CodeDom.Compiler.CodeDomProvider> has a <xref:System.CodeDom.Compiler.CodeDomProvider.LanguageOptions%2A> property that is used to indicate certain characteristics of the programming language supported by the provider. The meaning of a LanguageOptions identifier can be relevant to properly generating, compiling, and reading the language.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CaseInsensitive">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The language is case-insensitive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The language has default characteristics.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

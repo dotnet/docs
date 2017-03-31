@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of settings that customize the behavior that <see cref="System.Activities.Validation.ActivityValidationServices.Validate%2A" /> will exhibit. It also enables the activity user to apply policy constraints to a workflow.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Validation.ValidationSettings" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Type,System.Collections.Generic.IList&lt;System.Activities.Validation.Constraint&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a  dictionary of type-constraint pairs. Each additional constraint added to the dictionary will be applied to every activity of the specify type in the workflow to validate.</summary>
-        <value>A dictionary type list of constraints and types.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cancellation token used to notify should the activity be cancelled.</summary>
-        <value>The cancellation token used to notify should the activity be cancelled.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the environment of variables and arguments associated with this validation settings.</summary>
-        <value>The environment of variables and arguments associated with this validation settings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,17 +97,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the additional validation constraints are to be used exclusively to validate the workflow. If set to <see langword="true" />, all the validation contained inside the activity itself will be ignored.</summary>
-        <value>
-          <see langword="true" /> if the additional constraints are to be used exclusively; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> is called whenever a workflow is executed, and and any resulting errors will cause a <xref:System.Activities.InvalidWorkflowException> to be thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareForRuntime">
@@ -123,9 +115,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether this instance is prepared for runtime.</summary>
-        <value>
-          <see langword="True" /> if this instance is prepared for runtime; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,9 +133,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the supplied activity and all the children and sub-children of the supplied activity are validated, or if the validator should validate only to the supplied activity.</summary>
-        <value>
-          <see langword="true" /> if an element is being validated without validating its child elements; otherwise, <see langword="false" /> if the element and its children and sub-children are being validated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,9 +151,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the root configuration is not subject for validation.</summary>
-        <value>
-          <see langword="true" /> if the root configuration is not subject for validation; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,17 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an implementation of the OLE DB <see langword="IRowPositionChange" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="OnRowPositionChange">
@@ -40,7 +30,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,21 +41,12 @@
         <Parameter Name="fCantDeny" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dbReason">The reason of the event that caused this change.</param>
-        <param name="eventPhase">The phase of this notification.</param>
-        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
-        <summary>Notifies the consumer of a row position object of a change to the current row position.</summary>
-        <returns>An <see langword="Integer" /> that represents the result.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="dbReason">To be added.</param>
+        <param name="eventPhase">To be added.</param>
+        <param name="fCantDeny">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

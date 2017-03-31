@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStrip" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,51 +35,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a container for Windows toolbar objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ToolStrip is the base class for <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.StatusStrip>, and <xref:System.Windows.Forms.ContextMenuStrip>.  
-  
- Use ToolStrip and its associated classes in new Windows Forms applications to create toolbars that can have a Windows XP, Office, Internet Explorer, or custom appearance and behavior, all with or without themes, and with support for overflow and run-time item reordering. ToolStrip controls also offer a rich design-time experience that includes in-place activation and editing, custom layout, and sharing of horizontal or vertical space within a specified <xref:System.Windows.Forms.ToolStripContainer>.  
-  
- The ToolStrip class provides many members that manage painting, mouse and keyboard input, and drag-and-drop functionality. Use the <xref:System.Windows.Forms.ToolStripRenderer> class with the <xref:System.Windows.Forms.ToolStripManager> class to gain even more control and customizability over the painting and layout style of all ToolStrip controls on a Windows Form.  
-  
- The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the ToolStrip control:  
-  
--   <xref:System.Windows.Forms.ToolStripButton>  
-  
--   <xref:System.Windows.Forms.ToolStripSeparator>  
-  
--   <xref:System.Windows.Forms.ToolStripLabel>  
-  
--   <xref:System.Windows.Forms.ToolStripDropDownButton>  
-  
--   <xref:System.Windows.Forms.ToolStripSplitButton>  
-  
--   <xref:System.Windows.Forms.ToolStripTextBox>  
-  
--   <xref:System.Windows.Forms.ToolStripComboBox>  
-  
- You can join ToolStrip controls within a specified <xref:System.Windows.Forms.ToolStripContainer> and merge ToolStrip controls with each other. Use <xref:System.Windows.Forms.ToolStripPanel> rather than <xref:System.Windows.Forms.ToolStripContainer> for Multiple Document Interface (MDI) applications. Typically, a ToolStrip does not participate in the tab order unless it is absolutely positioned rather than being docked or in a <xref:System.Windows.Forms.ToolStripPanel>.  
-  
- Use the <xref:System.Windows.Forms.ToolStripControlHost> class to host any other Windows Forms control in a ToolStrip.  
-  
- By default, the ToolStrip is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles> setting.  
-  
- Although ToolStrip replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control of previous versions, <xref:System.Windows.Forms.ToolBar> is retained for both backward compatibility and future use if you choose.  
-  
-   
-  
-## Examples  
- The following code example demonstrates adding a <xref:System.Windows.Forms.ToolStripContainer> and a ToolStrip to a Windows Forms, adding items to the ToolStrip, and adding the ToolStrip to the <xref:System.Windows.Forms.ToolStripContainer.TopToolStripPanel%2A> of the <xref:System.Windows.Forms.ToolStripContainer>.  
-  
- [!code-vb[System.Windows.Forms.ToolStripContainer2#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_39_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStripContainer2#1](~/add/codesnippet/csharp/t-system.windows.forms.t_39_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,12 +46,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStrip" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +61,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,8 +73,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="items">An array of <see cref="T:System.Windows.Forms.ToolStripItem" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStrip" /> class with the specified array of <see cref="T:System.Windows.Forms.ToolStripItem" />s.</summary>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,37 +85,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether drag-and-drop and item reordering are handled through events that you implement.</summary>
-        <value>
-          <see langword="true" /> to control drag-and-drop and item reordering through events that you implement; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the AllowDrop property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.Control.DragEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DragLeave?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> events.  
-  
- Set AllowDrop to `false` and set <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` to cause the <xref:System.Windows.Forms.ToolStrip> class to handle drag-and-drop and item reordering automatically. Set <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` for two <xref:System.Windows.Forms.ToolStrip> objects to allow dragging of items from one <xref:System.Windows.Forms.ToolStrip> to the other. To enable the default drag-and-drop, the ALT key must be pressed during the drag operation.  
-  
- Setting both AllowDrop and <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> to `true` throws an exception.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the AllowDrop property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_76_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_76_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">AllowDrop and <see cref="System.Windows.Forms.ToolStrip.AllowItemReorder%2A" /> are both set to <see langword="true" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowItemReorder">
@@ -171,7 +103,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,31 +114,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether drag-and-drop and item reordering are handled privately by the <see cref="T:System.Windows.Forms.ToolStrip" /> class.</summary>
-        <value>
-          <see langword="true" /> to cause the <see cref="T:System.Windows.Forms.ToolStrip" /> class to handle drag-and-drop and item reordering automatically; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> property to `true` and set the AllowItemReorder property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.Control.DragEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DragLeave?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> events.  
-  
- Set <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> to `false` and set AllowItemReorder to `true` to cause the <xref:System.Windows.Forms.ToolStrip> class to handle drag-and-drop and item reordering automatically. Set AllowItemReorder to `true` for two <xref:System.Windows.Forms.ToolStrip> objects to allow dragging of items from one <xref:System.Windows.Forms.ToolStrip> to the other. To enable the default drag-and-drop, the ALT key must be pressed during the drag operation.  
-  
- Setting both <xref:System.Windows.Forms.ToolStrip.AllowDrop%2A> and AllowItemReorder to `true` throws an exception.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the AllowItemReorder property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_283_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_283_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <see cref="System.Windows.Forms.ToolStrip.AllowDrop%2A" /> and AllowItemReorder are both set to <see langword="true" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowMerge">
@@ -217,7 +126,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -229,25 +137,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether multiple <see cref="T:System.Windows.Forms.MenuStrip" />, <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />, <see cref="T:System.Windows.Forms.ToolStripMenuItem" />, and other types can be combined.</summary>
-        <value>
-          <see langword="true" /> if combining of types is allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AllowMerge property to enable multiple-document interface (MDI) children to combine their respective menus in the MDI parent.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the AllowMerge property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_151_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_151_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Anchor">
@@ -257,34 +149,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the edges of the container to which a <see cref="T:System.Windows.Forms.ToolStrip" /> is bound and determines how a <see cref="T:System.Windows.Forms.ToolStrip" /> is resized with its parent.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.AnchorStyles" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Anchor property to define how a <xref:System.Windows.Forms.ToolStrip> is automatically resized as its parent control is resized. Anchoring a control to its parent control ensures that the anchored edges remain in the same position relative to the edges of the parent control when the parent control is resized.  
-  
-> [!NOTE]
->  The Anchor and <xref:System.Windows.Forms.ToolStrip.Dock%2A> properties are mutually exclusive. Only one can be set at a time, and the last one set takes precedence.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the Anchor property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_186_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_186_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -294,7 +167,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -312,18 +184,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>
-          <see langword="true" /> to automatically scroll; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Automatic scrolling is not supported by <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMargin">
@@ -333,7 +196,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -351,16 +213,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMinSize">
@@ -370,7 +225,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -388,16 +242,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScrollPosition">
@@ -407,7 +254,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -425,16 +271,9 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Drawing.Point" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -444,7 +283,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -465,35 +303,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control is automatically resized to display its entire contents.</summary>
-        <value>
-          <see langword="true" /> if the control adjusts its width to closely fit its contents; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set AutoSize to `false` and the <xref:System.Windows.Forms.ToolStrip> is embedded in a <xref:System.Windows.Forms.ToolStripContainer> panel, the bounds of the <xref:System.Windows.Forms.ToolStrip> are not translated when you move the <xref:System.Windows.Forms.ToolStrip> to a different panel of the <xref:System.Windows.Forms.ToolStripContainer>. To translate the bounds properly, synchronize the <xref:System.Windows.Forms.ToolStrip.LayoutStyleChanged> event, check the value of the <xref:System.Windows.Forms.ToolStrip.Orientation%2A> property, and resize the <xref:System.Windows.Forms.ToolStrip>.  
-  
- The <xref:System.Windows.Forms.ToolStripItem.Image%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageIndex%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageKey%2A>, and <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> properties pertain to various aspects of image handling. Use images in <xref:System.Windows.Forms.ToolStrip> controls by setting these properties directly or by setting the run-time–only <xref:System.Windows.Forms.ToolStrip.ImageList%2A> property.  
-  
- Image scaling is determined by the interaction of properties in both <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem>, as follows:  
-  
--   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's AutoSize setting.  
-  
-    -   If AutoSize is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
-  
-    -   If AutoSize is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the AutoSize property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_233_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_233_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -503,7 +315,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -518,25 +329,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolStrip.AutoSize%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the AutoSizeChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the AutoSizeChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#85](~/add/codesnippet/csharp/e-system.windows.forms.t_54_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#85](~/add/codesnippet/visualbasic/e-system.windows.forms.t_54_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -546,25 +340,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the <see cref="T:System.Windows.Forms.ToolStrip" />. The default is the value of the <see cref="System.Windows.Forms.Control.DefaultBackColor%2A" /> property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BackColor property does not support transparent colors unless the `SupportsTransparentBackColor` value of <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> is set to `true`.  
-  
- The BackColor property is an ambient property. An ambient property is a control property that, if not set, is retrieved from the parent control. For example, a <xref:System.Windows.Forms.Button> will have the same BackColor as its parent <xref:System.Windows.Forms.Form> by default. For more information about ambient properties, see the <xref:System.Windows.Forms.AmbientProperties> class or the <xref:System.Windows.Forms.Control> class overview.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDrag">
@@ -574,30 +358,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user begins to drag the <see cref="T:System.Windows.Forms.ToolStrip" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of BeginDrag and <xref:System.Windows.Forms.ToolStrip.EndDrag> with a <xref:System.Windows.Forms.ToolStrip> and a <xref:System.Windows.Forms.ToolStripContainer>.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.BeginEndDrag#1](~/add/codesnippet/visualbasic/e-system.windows.forms.t_76_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.BeginEndDrag#1](~/add/codesnippet/csharp/e-system.windows.forms.t_76_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingContext">
@@ -607,25 +375,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding context for the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.BindingContext" /> for the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.BindingContext> of a <xref:System.Windows.Forms.ToolStrip> returns a single <xref:System.Windows.Forms.BindingManagerBase> for all data-bound controls contained by the <xref:System.Windows.Forms.ToolStrip>. The <xref:System.Windows.Forms.BindingManagerBase> keeps all controls that are bound to the same data source synchronized. For example, setting the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property of the <xref:System.Windows.Forms.BindingManagerBase> specifies the item in the underlying list that all data-bound controls point to.  
-  
- For more information about creating a new <xref:System.Windows.Forms.BindingContext> and assigning it to the <xref:System.Windows.Forms.Control.BindingContext%2A> property, see the <xref:System.Windows.Forms.BindingContext.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanOverflow">
@@ -635,7 +393,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -647,28 +404,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether items in the <see cref="T:System.Windows.Forms.ToolStrip" /> can be sent to an overflow menu.</summary>
-        <value>
-          <see langword="true" /> to send <see cref="T:System.Windows.Forms.ToolStrip" /> items to an overflow menu; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the CanOverflow property to `true` to send a <xref:System.Windows.Forms.ToolStrip> item to an overflow menu when the item's content exceeds the width of the toolbar.  
-  
-> [!NOTE]
->  If there are more overflow items than can be displayed on the form, use the ToolStrip Items Collection Editor to manage this situation.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the CanOverflow property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_109_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_109_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -678,7 +416,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -693,9 +430,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStrip" /> causes validation to be performed on any controls that require validation when it receives focus.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -706,7 +442,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -718,25 +453,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ToolStrip.CausesValidation%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the CausesValidationChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the CausesValidationChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#87](~/add/codesnippet/csharp/e-system.windows.forms.t_24_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#87](~/add/codesnippet/visualbasic/e-system.windows.forms.t_24_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlAdded">
@@ -746,7 +464,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -761,15 +478,8 @@
         <ReturnType>System.Windows.Forms.ControlEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlRemoved">
@@ -779,7 +489,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -794,15 +503,8 @@
         <ReturnType>System.Windows.Forms.ControlEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -812,7 +514,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -827,16 +528,9 @@
         <ReturnType>System.Windows.Forms.Control+ControlCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Control.ControlCollection" /> representing the collection of controls contained within the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -846,7 +540,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -854,8 +547,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.ToolStrip" /> item.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Windows.Forms.ToolStrip" /> item.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -866,7 +559,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -874,8 +566,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the control collection for the control.</summary>
-        <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -886,7 +578,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -898,11 +589,11 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">The text to use for the <see cref="T:System.Windows.Forms.ToolStripItem" />. If the <c>text</c> parameter is a hyphen (-), this method creates a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> to display on the <see cref="T:System.Windows.Forms.ToolStripItem" />.</param>
-        <param name="onClick">An event handler that raises the <see cref="E:System.Windows.Forms.Control.Click" /> event when the <see cref="T:System.Windows.Forms.ToolStripItem" /> is clicked.</param>
-        <summary>Creates a default <see cref="T:System.Windows.Forms.ToolStripItem" /> with the specified text, image, and event handler on a new <see cref="T:System.Windows.Forms.ToolStrip" /> instance.</summary>
-        <returns>A <see cref="System.Windows.Forms.ToolStripButton.%23ctor%28System.String%2CSystem.Drawing.Image%2CSystem.EventHandler%29" />, or a <see cref="T:System.Windows.Forms.ToolStripSeparator" /> if the <paramref name="text" /> parameter is a hyphen (-).</returns>
+        <param name="text">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="onClick">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -913,7 +604,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -923,9 +613,9 @@
         <Parameter Name="layoutStyle" Type="System.Windows.Forms.ToolStripLayoutStyle" />
       </Parameters>
       <Docs>
-        <param name="layoutStyle">The visual arrangement to be applied to the <see cref="T:System.Windows.Forms.ToolStrip" />.</param>
-        <summary>Specifies the visual arrangement for the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The default is <see langword="null" />.</returns>
+        <param name="layoutStyle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -936,7 +626,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -951,24 +640,9 @@
         <ReturnType>System.Windows.Forms.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cursor that is displayed when the mouse pointer is over the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor to display when the mouse pointer is over the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Cursor property to get or set a specific <xref:System.Windows.Forms.Cursor> used with the <xref:System.Windows.Forms.ToolStrip>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the Cursor property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_189_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_189_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CursorChanged">
@@ -978,7 +652,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -990,25 +663,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="T:System.Windows.Forms.Cursor" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the CursorChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the CursorChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#88](~/add/codesnippet/csharp/e-system.windows.forms.t_2_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#88](~/add/codesnippet/visualbasic/e-system.windows.forms.t_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultDock">
@@ -1018,15 +674,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the docking location of the <see cref="T:System.Windows.Forms.ToolStrip" />, indicating which borders are docked to the container.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see cref="T:System.Windows.Forms.DockStyle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1037,7 +692,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1049,25 +703,9 @@
         <ReturnType>System.Windows.Forms.ToolStripDropDownDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value representing the default direction in which a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control is displayed relative to the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripDropDownDirection" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DefaultDropDownDirection property to get or set where a <xref:System.Windows.Forms.ToolStripDropDown> control appears in relation to its container.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the DefaultDropDownDirection property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_236_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_236_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the <see cref="T:System.Windows.Forms.ToolStripDropDownDirection" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultGripMargin">
@@ -1077,16 +715,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default spacing, in pixels, between the sizing grip and the edges of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>
-          <see cref="T:System.Windows.Forms.Padding" /> values representing the spacing, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1097,15 +733,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the spacing, in pixels, between the <see cref="T:System.Windows.Forms.ToolStrip" /> and the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.Padding" /> values. The default is <see cref="T:System.Windows.Forms.Padding" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1116,23 +751,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the internal spacing, in pixels, of the contents of a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" /> value of <c>(0, 0, 1, 0)</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the contents of the <xref:System.Windows.Forms.ToolStrip> are padded one pixel from the right edge of the <xref:System.Windows.Forms.ToolStrip> to prevent the right border from painting over a <xref:System.Windows.Forms.ToolStripItem> that is right-aligned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultShowItemToolTips">
@@ -1142,16 +769,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether ToolTips are shown for the <see cref="T:System.Windows.Forms.ToolStrip" /> by default.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1162,26 +787,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>The default <see cref="T:System.Drawing.Size" /> of the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DefaultSize property represents the <xref:System.Drawing.Size> value of the <xref:System.Windows.Forms.ToolStrip> when it is initially created. You can adjust the size of the <xref:System.Windows.Forms.ToolStrip> by setting its <xref:System.Windows.Forms.Control.PreferredSize%2A> property value.  
-  
-> [!NOTE]
->  To maintain better performance, do not set the <xref:System.Drawing.Size> of a <xref:System.Windows.Forms.ToolStrip> in its constructor. Instead, override the DefaultSize property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayedItems">
@@ -1191,25 +805,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the subset of items that are currently displayed on the <see cref="T:System.Windows.Forms.ToolStrip" />, including items that are automatically added into the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> representing the items that are currently displayed on the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DisplayedItems property to access only those items that are currently displayed. These are the items that are not currently in an overflow menu.  
-  
- Use the <xref:System.Windows.Forms.ToolStrip.Items%2A> collection to retrieve all the items of a <xref:System.Windows.Forms.ToolStrip>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRectangle">
@@ -1219,23 +823,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the current display rectangle.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> representing the <see cref="T:System.Windows.Forms.ToolStrip" /> area for item layout.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The display rectangle is the area where you lay out items. The position and dimensions of the <xref:System.Windows.Forms.ToolStrip> display rectangle change during automatic scrolling.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1245,7 +841,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1255,19 +850,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStrip" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStrip> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -1277,7 +862,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1289,31 +873,9 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which <see cref="T:System.Windows.Forms.ToolStrip" /> borders are docked to its parent control and determines how a <see cref="T:System.Windows.Forms.ToolStrip" /> is resized with its parent.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default value is <see cref="T:System.Windows.Forms.DockStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Dock property to define how a <xref:System.Windows.Forms.ToolStrip> is automatically resized as its parent control is resized. For example, setting Dock to <xref:System.Windows.Forms.DockStyle> causes the <xref:System.Windows.Forms.ToolStrip> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their z-order, which is the visual layering of controls on a form along the form's z-axis (depth).  
-  
- A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
-  
- If the <xref:System.Windows.Forms.ToolStrip> control is in a <xref:System.Windows.Forms.ToolStripPanel>, the <xref:System.Windows.Forms.ToolStrip> can be repositioned within the <xref:System.Windows.Forms.ToolStripPanel> and across <xref:System.Windows.Forms.ToolStripPanel>s. The Dock property is ignored, and if the <xref:System.Windows.Forms.ToolStrip.Stretch%2A> property is `false`, the size of the <xref:System.Windows.Forms.ToolStrip> grows as items are added to the <xref:System.Windows.Forms.ToolStripPanel>. Typically, the <xref:System.Windows.Forms.ToolStrip> does not participate in the tab order.  
-  
-> [!NOTE]
->  The <xref:System.Windows.Forms.ToolStrip.Anchor%2A> and Dock properties are mutually exclusive. Only one can be set at a time, and the last one set takes precedence.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the Dock property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_12_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDrag">
@@ -1323,30 +885,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user stops dragging the <see cref="T:System.Windows.Forms.ToolStrip" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.ToolStrip.BeginDrag> and EndDrag with a <xref:System.Windows.Forms.ToolStrip> and a <xref:System.Windows.Forms.ToolStripContainer>.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.BeginEndDrag#1](~/add/codesnippet/visualbasic/e-system.windows.forms.t_63_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.BeginEndDrag#1](~/add/codesnippet/csharp/e-system.windows.forms.t_63_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -1356,15 +902,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font used to display text in the control.</summary>
-        <value>The current default font.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1375,7 +920,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1387,8 +931,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> representing the foreground color.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1399,7 +943,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1411,25 +954,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.ToolStrip.ForeColor%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ForeColorChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the ForeColorChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#90](~/add/codesnippet/csharp/e-system.windows.forms.t_32_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#90](~/add/codesnippet/visualbasic/e-system.windows.forms.t_32_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildAtPoint">
@@ -1439,7 +965,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1454,17 +979,10 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">A <see cref="T:System.Drawing.Point" />.</param>
-        <summary>This method is not relevant for this class.</summary>
-        <returns>The child <see cref="T:System.Windows.Forms.Control" /> that is located at the specified coordinates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildAtPoint">
@@ -1474,7 +992,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1490,18 +1007,11 @@
         <Parameter Name="skipValue" Type="System.Windows.Forms.GetChildAtPointSkip" />
       </Parameters>
       <Docs>
-        <param name="pt">A <see cref="T:System.Drawing.Point" /> value.</param>
-        <param name="skipValue">A <see cref="T:System.Windows.Forms.GetChildAtPointSkip" /> value.</param>
-        <summary>This method is not relevant for this class.</summary>
-        <returns>The child <see cref="T:System.Windows.Forms.Control" /> that is located at the specified coordinates.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <param name="skipValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemAt">
@@ -1511,7 +1021,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1521,9 +1030,9 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.Point" /> at which to search for the <see cref="T:System.Windows.Forms.ToolStripItem" />.</param>
-        <summary>Returns the item located at the specified point in the client area of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.ToolStripItem" /> at the specified location, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is not found.</returns>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1534,7 +1043,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1545,10 +1053,10 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">The horizontal coordinate, in pixels, from the left edge of the client area.</param>
-        <param name="y">The vertical coordinate, in pixels, from the top edge of the client area.</param>
-        <summary>Returns the item located at the specified x- and y-coordinates of the <see cref="T:System.Windows.Forms.ToolStrip" /> client area.</summary>
-        <returns>The <see cref="T:System.Windows.Forms.ToolStripItem" /> located at the specified location, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is not found.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1559,7 +1067,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1570,19 +1077,11 @@
         <Parameter Name="direction" Type="System.Windows.Forms.ArrowDirection" />
       </Parameters>
       <Docs>
-        <param name="start">The <see cref="T:System.Windows.Forms.ToolStripItem" /> that is the reference point from which to begin the retrieval of the next item.</param>
-        <param name="direction">One of the values of <see cref="T:System.Windows.Forms.ArrowDirection" /> that specifies the direction to move.</param>
-        <summary>Retrieves the next <see cref="T:System.Windows.Forms.ToolStripItem" /> from the specified reference point and moving in the specified direction.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that is specified by the <paramref name="start" /> parameter and is next in the order as specified by the <paramref name="direction" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetNextItem method to get the next <xref:System.Windows.Forms.ToolStripItem> of a <xref:System.Windows.Forms.ToolStrip>. The <xref:System.Windows.Forms.ArrowDirection> enumeration coordinates with the <xref:System.Windows.Forms.ToolStrip.Orientation%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value of the <paramref name="direction" /> parameter is not one of the values of <see cref="T:System.Windows.Forms.ArrowDirection" />.</exception>
+        <param name="start">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GripDisplayStyle">
@@ -1592,7 +1091,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1604,8 +1102,8 @@
         <ReturnType>System.Windows.Forms.ToolStripGripDisplayStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the orientation of the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> values. Possible values are <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> and <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1616,31 +1114,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the space around the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" />, which represents the spacing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GripMargin property to get or set the space around the <xref:System.Windows.Forms.ToolStrip> move handle. Because <xref:System.Windows.Forms.Padding?displayProperty=fullName> can take individual values for <xref:System.Windows.Forms.Padding.Top%2A>, <xref:System.Windows.Forms.Padding.Bottom%2A>, <xref:System.Windows.Forms.Padding.Left%2A>, and <xref:System.Windows.Forms.Padding.Right%2A>, you can adjust the space around the move handle as preferred. The margin can even be off the edge of the <xref:System.Windows.Forms.ToolStrip>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the GripMargin property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_225_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_225_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GripRectangle">
@@ -1650,7 +1132,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1662,16 +1143,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the boundaries of the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle.</summary>
-        <value>An object of type <see cref="T:System.Drawing.Rectangle" />, representing the move handle boundaries. If the boundaries are not visible, the GripRectangle property returns <see cref="T:System.Drawing.Rectangle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GripRectangle property to get boundaries for painting, hit testing, and so on.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GripStyle">
@@ -1681,7 +1155,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1693,17 +1166,9 @@
         <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle is visible or hidden.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripStyle" /> values. The default value is <see cref="T:System.Windows.Forms.ToolStripGripStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a stack layout, make a <xref:System.Windows.Forms.ToolStrip> movable by putting it in a <xref:System.Windows.Forms.ToolStripPanel> and ensuring that its GripStyle is set to <xref:System.Windows.Forms.ToolStripGripStyle>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the <see cref="T:System.Windows.Forms.ToolStripGripStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasChildren">
@@ -1713,7 +1178,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1731,17 +1195,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStrip" /> has children; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScroll">
@@ -1751,7 +1207,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1766,16 +1221,9 @@
         <ReturnType>System.Windows.Forms.HScrollProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>An instance of the <see cref="T:System.Windows.Forms.HScrollProperties" /> class, which provides basic properties for an <see cref="T:System.Windows.Forms.HScrollBar" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageList">
@@ -1785,7 +1233,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1800,24 +1247,9 @@
         <ReturnType>System.Windows.Forms.ImageList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image list that contains the image displayed on a <see cref="T:System.Windows.Forms.ToolStrip" /> item.</summary>
-        <value>An object of type <see cref="T:System.Windows.Forms.ImageList" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolStripItem.Image%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageIndex%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageKey%2A>, and <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> properties pertain to various aspects of image handling. Use images in <xref:System.Windows.Forms.ToolStrip> controls by setting these properties directly or by setting the run-time–only ImageList property.  
-  
- Image scaling is determined by the interaction of properties in both <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem>, as follows:  
-  
--   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
-  
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
-  
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageScalingSize">
@@ -1827,7 +1259,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1839,34 +1270,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size, in pixels, of an image used on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> value representing the size of the image, in pixels. The default is 16 x 16 pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripItemImageScaling> property to control the default size of an image. Use <xref:System.Windows.Forms.ToolStripItemImageScaling> to make the size of the image on a <xref:System.Windows.Forms.ToolStripItem> to automatically adjust to fit on a <xref:System.Windows.Forms.ToolStrip> while retaining the original image proportions.  
-  
- The <xref:System.Windows.Forms.ToolStripItem.Image%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageIndex%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageKey%2A>, and <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> properties pertain to various aspects of image handling. Use images in <xref:System.Windows.Forms.ToolStrip> controls by setting these properties directly or by setting the run-time–only <xref:System.Windows.Forms.ToolStrip.ImageList%2A> property.  
-  
- Image scaling is determined by the interaction of properties in both <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem>, as follows:  
-  
--   ImageScalingSize is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
-  
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
-  
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the ImageScalingSize property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_223_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_223_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentlyDragging">
@@ -1876,7 +1282,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1891,9 +1296,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user is currently moving the <see cref="T:System.Windows.Forms.ToolStrip" /> from one <see cref="T:System.Windows.Forms.ToolStripContainer" /> to another.</summary>
-        <value>
-          <see langword="true" /> if the user is currently moving the <see cref="T:System.Windows.Forms.ToolStrip" /> from one <see cref="T:System.Windows.Forms.ToolStripContainer" /> to another; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1904,7 +1308,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1916,9 +1319,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a <see cref="T:System.Windows.Forms.ToolStrip" /> is a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStrip" /> is a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1929,7 +1331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1939,18 +1340,10 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">The character to test.</param>
-        <summary>Determines whether a character is an input character that the item recognizes.</summary>
-        <returns>
-          <see langword="true" /> if the character should be sent directly to the item and not preprocessed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsInputChar method is called during window message preprocessing to determine whether the given input character should be preprocessed or sent directly to the <xref:System.Windows.Forms.ToolStrip>. If the IsInputChar method returns `true`, the specified character is sent directly to the <xref:System.Windows.Forms.ToolStrip>. However, if the method returns `false`, the character is preprocessed and only sent to the <xref:System.Windows.Forms.ToolStrip> if it is not consumed by the preprocessing phase. The preprocessing of a character includes checking whether the character is a mnemonic of another control.  
-  
- ]]></format>
-        </remarks>
+        <param name="charCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -1960,7 +1353,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1970,10 +1362,9 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
-        <summary>Determines whether the specified key is a regular input key or a special key that requires preprocessing.</summary>
-        <returns>
-          <see langword="true" /> if the specified key is a regular input key; otherwise, <see langword="false" />.</returns>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1984,32 +1375,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a new <see cref="T:System.Windows.Forms.ToolStripItem" /> is added to the <see cref="T:System.Windows.Forms.ToolStripItemCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ItemAdded event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the ItemAdded event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#91](~/add/codesnippet/csharp/e-system.windows.forms.t_82_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#91](~/add/codesnippet/visualbasic/e-system.windows.forms.t_82_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemClicked">
@@ -2019,32 +1392,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemClickedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripItem" /> is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ItemClicked event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the ItemClicked event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#92](~/add/codesnippet/csharp/e-system.windows.forms.t_55_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#92](~/add/codesnippet/visualbasic/e-system.windows.forms.t_55_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemRemoved">
@@ -2054,32 +1409,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.Windows.Forms.ToolStripItem" /> is removed from the <see cref="T:System.Windows.Forms.ToolStripItemCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ItemRemoved event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the ItemRemoved event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#93](~/add/codesnippet/csharp/e-system.windows.forms.t_117_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#93](~/add/codesnippet/visualbasic/e-system.windows.forms.t_117_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -2089,7 +1426,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2104,26 +1440,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all the items that belong to a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>An object of type <see cref="T:System.Windows.Forms.ToolStripItemCollection" />, representing all the elements contained by a <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Items collection to retrieve all the items that have been added to the <xref:System.Windows.Forms.ToolStrip>, not just the items that are displayed. An item remains in the Items collection even if it is an overflow item and is therefore not currently visible.  
-  
- Use the <xref:System.Windows.Forms.ToolStrip.DisplayedItems%2A> property to retrieve only the items that are currently displayed on the <xref:System.Windows.Forms.ToolStrip>.  
-  
-   
-  
-## Examples  
- The following code example adds a collection of items to a <xref:System.Windows.Forms.ToolStrip>.  
-  
- [!code-vb[System.Windows.Forms.MainToolStripExample#3](~/add/codesnippet/visualbasic/p-system.windows.forms.t_66_1.vb)]
- [!code-cs[System.Windows.Forms.MainToolStripExample#3](~/add/codesnippet/csharp/p-system.windows.forms.t_66_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutCompleted">
@@ -2133,36 +1452,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the layout of the <see cref="T:System.Windows.Forms.ToolStrip" /> is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When items do not fit within the <xref:System.Windows.Forms.ToolStrip>, an overflow button automatically appears. The <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property setting determines whether an item appears in the overflow area always, as needed, or never.  
-  
- Inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property in the LayoutCompleted event to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow>.  
-  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the LayoutCompleted event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the LayoutCompleted event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#94](~/add/codesnippet/csharp/e-system.windows.forms.t_147_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#94](~/add/codesnippet/visualbasic/e-system.windows.forms.t_147_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutEngine">
@@ -2172,15 +1469,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Layout.LayoutEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Passes a reference to the cached <see cref="System.Windows.Forms.Control.LayoutEngine%2A" /> returned by the layout engine interface.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> that represents the cached layout engine returned by the layout engine interface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2191,7 +1487,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2209,8 +1504,8 @@
         <ReturnType>System.Windows.Forms.LayoutSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets layout scheme characteristics.</summary>
-        <value>A <see cref="T:System.Windows.Forms.LayoutSettings" /> representing the layout scheme characteristics.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2221,7 +1516,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2233,25 +1527,9 @@
         <ReturnType>System.Windows.Forms.ToolStripLayoutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating how the <see cref="T:System.Windows.Forms.ToolStrip" /> lays out the items collection.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The possible values are <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />, <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />, <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />, <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />, and <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The sizing grip will not be displayed unless you also set the LayoutStyle property to one of the overflow values. If the LayoutStyle property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle> or <xref:System.Windows.Forms.ToolStripLayoutStyle>, the sizing grip will not be displayed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the LayoutStyle property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_57_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_57_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value of LayoutStyle is not one of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutStyleChanged">
@@ -2261,32 +1539,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.ToolStrip.LayoutStyle%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the LayoutStyleChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the LayoutStyleChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#95](~/add/codesnippet/csharp/e-system.windows.forms.t_78_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#95](~/add/codesnippet/visualbasic/e-system.windows.forms.t_78_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemSize">
@@ -2296,15 +1556,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum height and width, in pixels, of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> representing the height and width of the control, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2315,7 +1574,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2325,18 +1583,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.BeginDrag" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnBeginDrag method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDockChanged">
@@ -2346,7 +1595,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2356,18 +1604,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.DockChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnDockChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -2377,7 +1616,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2387,18 +1625,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="System.Windows.Forms.Control.Enabled%2A" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnEnabledChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEndDrag">
@@ -2408,7 +1637,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2418,18 +1646,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.EndDrag" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnEndDrag method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -2439,7 +1658,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2449,8 +1667,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2461,7 +1679,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2471,18 +1688,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnHandleCreated method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -2492,7 +1700,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2502,18 +1709,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnHandleDestroyed method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInvalidated">
@@ -2523,7 +1721,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2533,8 +1730,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.InvalidateEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.Windows.Forms.InvalidateEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Invalidated" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2545,7 +1742,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2555,18 +1751,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ItemAdded" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnItemAdded method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemClicked">
@@ -2576,7 +1763,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2586,18 +1772,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemClickedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemClickedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ItemClicked" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnItemClicked method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemRemoved">
@@ -2607,7 +1784,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2617,18 +1793,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ItemRemoved" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnItemRemoved method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -2638,7 +1805,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2648,18 +1814,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLayout method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayoutCompleted">
@@ -2669,7 +1826,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2679,18 +1835,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.LayoutCompleted" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLayoutCompleted method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayoutStyleChanged">
@@ -2700,7 +1847,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2710,18 +1856,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.LayoutStyleChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLayoutStyleChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -2731,7 +1868,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2741,18 +1877,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Leave" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLeave method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -2762,7 +1889,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2772,18 +1898,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLostFocus method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseCaptureChanged">
@@ -2793,7 +1910,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2803,8 +1919,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseCaptureChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2815,7 +1931,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2825,18 +1940,9 @@
         <Parameter Name="mea" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="mea">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMouseDown method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="mea">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -2846,7 +1952,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2856,18 +1961,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMouseLeave method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -2877,7 +1973,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2887,18 +1982,9 @@
         <Parameter Name="mea" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="mea">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseMove" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMouseMove method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="mea">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -2908,7 +1994,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2918,18 +2003,9 @@
         <Parameter Name="mea" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="mea">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMouseUp method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="mea">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -2939,7 +2015,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2949,18 +2024,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnPaint method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -2970,7 +2036,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2985,18 +2050,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains information about the control to paint.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event for the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnPaintBackground method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaintGrip">
@@ -3006,7 +2062,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3016,20 +2071,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.PaintGrip" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method when the move handle is painted.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnPaintGrip method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRendererChanged">
@@ -3039,7 +2083,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3049,18 +2092,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.RendererChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRendererChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -3070,7 +2104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3085,18 +2118,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnRightToLeftChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnScroll">
@@ -3106,7 +2130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3116,8 +2139,8 @@
         <Parameter Name="se" Type="System.Windows.Forms.ScrollEventArgs" />
       </Parameters>
       <Docs>
-        <param name="se">A <see cref="T:System.Windows.Forms.ScrollEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ScrollableControl.Scroll" /> event.</summary>
+        <param name="se">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3128,7 +2151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3138,18 +2160,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TabStopChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnTabStopChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -3159,7 +2172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3169,20 +2181,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.VisibleChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Changing the <xref:System.Windows.Forms.Control.Enabled%2A> property of a <xref:System.Windows.Forms.ToolStrip> does not raise the various *Changed events of a <xref:System.Windows.Forms.ToolStripItem>. Raise those events with specific property settings.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnVisibleChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -3192,7 +2193,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3204,8 +2204,8 @@
         <ReturnType>System.Windows.Forms.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the orientation of the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.Orientation" /> values. The default is <see cref="T:System.Windows.Forms.Orientation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3216,7 +2216,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3231,8 +2230,8 @@
         <ReturnType>System.Windows.Forms.ToolStripOverflowButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that is the overflow button for a <see cref="T:System.Windows.Forms.ToolStrip" /> with overflow enabled.</summary>
-        <value>An object of type <see cref="T:System.Windows.Forms.ToolStripOverflowButton" /> with its <see cref="T:System.Windows.Forms.ToolStripItemAlignment" /> set to <see cref="T:System.Windows.Forms.ToolStripItemAlignment" /> and its <see cref="T:System.Windows.Forms.ToolStripItemOverflow" /> value set to <see cref="T:System.Windows.Forms.ToolStripItemOverflow" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3243,32 +2242,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle is painted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the PaintGrip event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the PaintGrip event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#96](~/add/codesnippet/csharp/e-system.windows.forms.t_31_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#96](~/add/codesnippet/visualbasic/e-system.windows.forms.t_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -3278,7 +2259,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3289,13 +2269,11 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a command key.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="m">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller and inheriting classes to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -3305,7 +2283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3315,18 +2292,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog box key.</summary>
-        <returns>
-          <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProcessDialogKey method is called during message preprocessing to handle dialog characters such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the <xref:System.Windows.Forms.ToolStrip.IsInputKey%2A> method indicates that the control is not processing the key. The ProcessDialogKey simply sends the character to the parent control's ProcessDialogKey method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form?displayProperty=fullName> class overrides this method to perform actual processing of dialog box keys. This method is only called when the control is hosted in a Windows Forms application or an ActiveX control.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -3336,7 +2305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3346,22 +2314,10 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">The character to process.</param>
-        <summary>Processes a mnemonic character.</summary>
-        <returns>
-          <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProcessMnemonic method is called to give a control the opportunity to process a mnemonic character. This method should determine whether the control is in a state to process mnemonics and whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`.  
-  
- Implementations of this method often use the <xref:System.Windows.Forms.Control.IsMnemonic%2A?displayProperty=fullName> method to determine whether the given character matches a mnemonic in the control's text.  
-  
- This default implementation of the ProcessMnemonic method simply returns `false`, to indicate that the control has no mnemonic.  
-  
- ]]></format>
-        </remarks>
+        <param name="charCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Renderer">
@@ -3371,7 +2327,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3386,18 +2341,9 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ToolStripRenderer" /> used to customize the look and feel of a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ToolStripRenderer" /> used to customize the look and feel of a <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Renderer property and the <xref:System.Windows.Forms.ToolStripRenderer> class to customize the look and feel of any <xref:System.Windows.Forms.ToolStripItem> that does not have a window handle.  
-  
- To do this, derive a class from <xref:System.Windows.Forms.ToolStripRenderer>, assign it to the Renderer property, and call the <xref:System.Windows.Forms.ToolStripItem.Invalidate%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RendererChanged">
@@ -3407,32 +2353,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.ToolStrip.Renderer%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the RendererChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStrip> named `ToolStrip1`. Then ensure that the event handler is associated with the RendererChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#97](~/add/codesnippet/csharp/e-system.windows.forms.t_91_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#97](~/add/codesnippet/visualbasic/e-system.windows.forms.t_91_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderMode">
@@ -3442,34 +2370,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates which visual styles will be applied to the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>A value that indicates the visual style to apply. The default is <see cref="T:System.Windows.Forms.ToolStripRenderMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to indicate which set of visual styles the <xref:System.Windows.Forms.ToolStrip> will use. You can use this property to specify a professional rendering style, a default system rendering style, or a style managed by the <xref:System.Windows.Forms.ToolStrip.Renderer%2A> property value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the RenderMode property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_106_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_106_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value being set is not one of the <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> values.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> is set to <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> without the <see cref="System.Windows.Forms.ToolStrip.Renderer%2A" /> property being assigned to a new instance of <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetMinimumSize">
@@ -3479,7 +2388,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3492,15 +2400,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RestoreFocus">
@@ -3510,7 +2411,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3523,15 +2423,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Controls the return location of the focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the RestoreFocus method to control where the focus returns to when the <xref:System.Windows.Forms.ToolStrip.TabStop%2A> property is `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -3541,7 +2434,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3552,21 +2444,10 @@
         <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="directed">
-          <see langword="true" /> to specify the direction of the control to select; otherwise, <see langword="false" />.</param>
-        <param name="forward">
-          <see langword="true" /> to move forward in the tab order; <see langword="false" /> to move backward in the tab order.</param>
-        <summary>Activates a child control. Optionally specifies the direction in the tab order to select the control from.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `directed` and `forward` parameters are used by container-style controls. When the `directed` parameter is set to `true`, the `forward` parameter is evaluated to determine which control to select. When `forward` is set to `true`, the next control in the tab order is selected; when `false`, the previous control in the tab order is selected.  
-  
- The Select method activates the control if the control's <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
-  
- ]]></format>
-        </remarks>
+        <param name="directed">To be added.</param>
+        <param name="forward">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAutoScrollMargin">
@@ -3576,7 +2457,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3592,17 +2472,10 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Int32" />.</param>
-        <param name="y">An <see cref="T:System.Int32" />.</param>
-        <summary>This method is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -3612,7 +2485,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3626,12 +2498,12 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">The new <see cref="System.Windows.Forms.Control.Left%2A" /> property value of the control.</param>
-        <param name="y">The new <see cref="System.Windows.Forms.Control.Top%2A" /> property value of the control.</param>
-        <param name="width">The new <see cref="System.Windows.Forms.Control.Width%2A" /> property value of the control.</param>
-        <param name="height">The new <see cref="System.Windows.Forms.Control.Height%2A" /> property value of the control.</param>
-        <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
-        <summary>Performs the work of setting the specified bounds of this control.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3642,7 +2514,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3650,7 +2521,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the collection of displayed and overflow items after a layout is done.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3661,7 +2532,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3672,12 +2542,10 @@
         <Parameter Name="location" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Forms.ToolStripItem" /> to anchor.</param>
-        <param name="location">A <see cref="T:System.Drawing.Point" /> representing the x and y client coordinates of the <see cref="T:System.Windows.Forms.ToolStripItem" /> location, in pixels.</param>
-        <summary>Anchors a <see cref="T:System.Windows.Forms.ToolStripItem" /> to a particular place on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <param name="item">To be added.</param>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="item" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Windows.Forms.ToolStrip" /> is not the owner of the <see cref="T:System.Windows.Forms.ToolStripItem" /> referred to by the <paramref name="item" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItemParent">
@@ -3687,7 +2555,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3698,17 +2565,10 @@
         <Parameter Name="parent" Type="System.Windows.Forms.ToolStrip" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Forms.ToolStripItem" /> whose <see cref="System.Windows.Forms.Control.Parent%2A" /> property is to be changed.</param>
-        <param name="parent">The <see cref="T:System.Windows.Forms.ToolStrip" /> that is the parent of the <see cref="T:System.Windows.Forms.ToolStripItem" /> referred to by the <c>item</c> parameter.</param>
-        <summary>Enables you to change the parent <see cref="T:System.Windows.Forms.ToolStrip" /> of a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the SetItemParent property when creating a custom layout engine.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetVisibleCore">
@@ -3718,7 +2578,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3728,17 +2587,9 @@
         <Parameter Name="visible" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="visible">
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is visible; otherwise, <see langword="false" />.</param>
-        <summary>Retrieves a value that sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> to the specified visibility state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You would typically override this method to change the visibility behavior of the control.  
-  
- ]]></format>
-        </remarks>
+        <param name="visible">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowItemToolTips">
@@ -3748,7 +2599,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3760,25 +2610,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether ToolTips are to be displayed on <see cref="T:System.Windows.Forms.ToolStrip" /> items.</summary>
-        <value>
-          <see langword="true" /> if ToolTips are to be displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ShowItemToolTips property to determine whether ToolTips are displayed for the <xref:System.Windows.Forms.ToolStripItem>.  
-  
-   
-  
-## Examples  
- The following code example turns off the automatic <xref:System.Windows.Forms.ToolTip> text for a <xref:System.Windows.Forms.ToolStripButton> and sets custom <xref:System.Windows.Forms.ToolTip> text. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripButton.AutoToolTip%2A> property.  
-  
- [!code-cs[System.Windows.Forms.ToolStripToolTip#2](~/add/codesnippet/csharp/p-system.windows.forms.t_245_1.cs)]
- [!code-vb[System.Windows.Forms.ToolStripToolTip#2](~/add/codesnippet/visualbasic/p-system.windows.forms.t_245_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -3788,7 +2622,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3800,25 +2633,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStrip" /> stretches from end to end in the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStrip" /> stretches from end to end in its <see cref="T:System.Windows.Forms.ToolStripContainer" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Stretch property to get or set whether the <xref:System.Windows.Forms.ToolStrip> automatically fills its container.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the Stretch property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_180_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_180_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -3828,7 +2645,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3843,25 +2659,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can give the focus to an item in the <see cref="T:System.Windows.Forms.ToolStrip" /> using the TAB key.</summary>
-        <value>
-          <see langword="true" /> if the user can give the focus to an item in the <see cref="T:System.Windows.Forms.ToolStrip" /> using the TAB key; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user presses the TAB key, the input focus is set to the next <xref:System.Windows.Forms.ToolStripItem> in the tab order. Controls with a <xref:System.Windows.Forms.Control.TabStop%2A> property value of `false` are not included in the collection of controls in the tab order. You can manipulate the tab order by changing the <xref:System.Windows.Forms.Control.TabIndex%2A> property value for controls in the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the TabStop property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_99_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_99_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextDirection">
@@ -3871,7 +2671,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3883,25 +2682,9 @@
         <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the direction in which to draw text on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ToolStripTextDirection" /> values. The default is <see cref="T:System.Windows.Forms.ToolStripTextDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TextDirection property to get or set the direction of the display text of a <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripLabel> or a <xref:System.Windows.Forms.ToolStripButton>. You can set the TextDirection property on the <xref:System.Windows.Forms.ToolStrip> itself, in which case the setting will apply to each <xref:System.Windows.Forms.ToolStripItem> you add to the <xref:System.Windows.Forms.ToolStrip>, or you can set the TextDirection property differently for each <xref:System.Windows.Forms.ToolStripItem>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the syntax for setting common <xref:System.Windows.Forms.ToolStrip> properties, including the TextDirection property.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_41_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.CommonProps#1](~/add/codesnippet/csharp/p-system.windows.forms.t_41_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the <see cref="T:System.Windows.Forms.ToolStripTextDirection" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3911,7 +2694,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3919,8 +2701,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.ToolStrip" /> control.</summary>
-        <returns>A string that represents the <see cref="T:System.Windows.Forms.ToolStrip" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3931,7 +2713,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3946,16 +2727,9 @@
         <ReturnType>System.Windows.Forms.VScrollProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>An instance of the <see cref="T:System.Windows.Forms.VScrollProperties" /> class, which provides basic properties for a <see cref="T:System.Windows.Forms.VScrollBar" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -3965,7 +2739,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3975,27 +2748,9 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All messages are sent to the <xref:System.Windows.Forms.Control.WndProc%2A> method after getting filtered through the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method.  
-  
- The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the `WindowProc` function documentation in the Windows Platform SDK reference located in the MSDN library at http://msdn.microsoft.com/library.  
-  
-   
-  
-## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values, see the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library. Actual constant values can be found in the windows.h header file included in the Platform SDK (Core SDK section) download, which is also available on MSDN.  
-  
- [!code-cs[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/csharp/m-system.windows.forms.t_52_1.cs)]
- [!code-vb[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_52_1.vb)]
- [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/cpp/m-system.windows.forms.t_52_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.QueryOperationResponse" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +16,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the responses to a <see cref="T:System.Data.Services.Client.DataServiceQuery" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,6 +27,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,8 +35,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a <see cref="T:System.Data.Services.Client.DataServiceQueryContinuation" /> object containing the URI that is used to retrieve the next results page.</summary>
-        <returns>An object containing the URI that is used to return the next results page.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,6 +47,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,19 +57,10 @@
         <Parameter Name="collection" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="collection">The collection of related objects being loaded.</param>
-        <summary>Gets a <see cref="T:System.Data.Services.Client.DataServiceQueryContinuation" /> object containing the URI that is used to retrieve the next page of related entities in the specified collection.</summary>
-        <returns>A continuation object that points to the next page for the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetContinuation method is used to obtain the URI that is used to retrieve the next results page for a nested result.  
-  
- Specify a `null` value for `collection` when the collection is the top-level collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContinuation&lt;T&gt;">
@@ -77,6 +70,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,10 +83,10 @@
         <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the items in the collection.</typeparam>
-        <param name="collection">The collection of related objects being loaded.</param>
-        <summary>Gets a <see cref="System.Data.Services.Client.DataServiceQueryContinuation%601" /> object that contains the URI that is used to retrieve the next page of related entities in the specified collection.</summary>
-        <returns>A continuation object that points to the next page for the collection.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +97,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,8 +105,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Executes the <see cref="T:System.Data.Services.Client.DataServiceQuery" /> and returns <see cref="T:System.Data.Services.Client.QueryOperationResponse" /> items.</summary>
-        <returns>The enumerator to a collection of <see cref="T:System.Data.Services.Client.QueryOperationResponse" /> items.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,15 +117,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.DataServiceRequest</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Data.Services.Client.DataServiceQuery" /> that generates the <see cref="T:System.Data.Services.Client.QueryOperationResponse" /> items.</summary>
-        <value>A <see cref="T:System.Data.Services.Client.DataServiceQuery" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,23 +136,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The server result set count value from a query, if the query has requested the value.</summary>
-        <value>The return value can be either a zero or positive value equal to the number of entities in the set on the server.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.InvalidOperationException> is raised when count was not part of the original request, that is, if the count tag is not found in the response stream.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Thrown when the count tag is not found in the response stream.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that, when interpreting <see cref="T:System.Drawing.ToolboxBitmapAttribute" /> declarations, the assembly should look for the indicated resources in a satellite assembly, but with the <see cref="System.Drawing.Configuration.SystemDrawingSection.BitmapSuffix%2A" /> configuration value appended to the declared file name.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The bitmap suffix is appended to the file name before the extension. For example, with a bitmap suffix of ".test.1.0", a <xref:System.Drawing.ToolboxBitmapAttribute> reference to "my.bmp" is interpreted as "my.test.1.0.bmp".  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.BitmapSuffixInSatelliteAssemblyAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccPropServices" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,15 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The IAccPropServices interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about IAccPropServices, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ClearHmenuProps">
@@ -38,7 +30,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,19 +48,12 @@
         <Parameter Name="cProps" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hmenu">Identifies the HMENU-based accessible element to be annotated.</param>
-        <param name="idChild">Specifies the child ID of the accessible element.</param>
-        <param name="paProps">Specifies an array of properties to be reset. These properties will revert to the default behavior that they displayed before they were annotated.</param>
-        <param name="cProps">Specifies the number of properties in the <c>paProps</c> array.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearHwndProps">
@@ -79,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,20 +82,13 @@
         <Parameter Name="cProps" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hwnd">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idObject">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idChild">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="paProps">Specifies an array of properties that is to be reset. These properties will revert to the default behavior that they displayed before they were annotated.</param>
-        <param name="cProps">Specifies the number of properties in the <c>paProps</c> array.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about ClearHwndProps, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearProps">
@@ -122,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,19 +110,12 @@
         <Parameter Name="cProps" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pIDString">Identifies the accessible element that is to be un-annotated.</param>
-        <param name="dwIDStringLen">Length of <c>pIDString</c>.</param>
-        <param name="paProps">Specifies an array of properties that is to be reset. These properties will revert to the default behavior they displayed before they were annotated.</param>
-        <param name="cProps">Specifies the number of properties in the <c>paProps</c> array.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComposeHmenuIdentityString">
@@ -157,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,19 +143,12 @@
         <Parameter Name="pdwIDStringLen" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hmenu">Identifies the HMENU-based accessible element.</param>
-        <param name="idChild">Specifies the child ID of the accessible element.</param>
-        <param name="ppIDString">Pointer to a buffer that receives the identity string. The callee allocates this buffer using <see langword="CoTaskMemAlloc" />. When finished, the caller must free the buffer by calling <see langword="CoTaskMemFree" />.</param>
-        <param name="pdwIDStringLen">Pointer to a buffer that receives the length of the identity string.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="ppIDString">To be added.</param>
+        <param name="pdwIDStringLen">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ComposeHwndIdentityString">
@@ -198,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,20 +177,13 @@
         <Parameter Name="pdwIDStringLen" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hwnd">Specifies the HWND of the accessible element that the caller wants to identify.</param>
-        <param name="idObject">Specifies the object ID of the accessible element.</param>
-        <param name="idChild">Specifies the child ID of the accessible element.</param>
-        <param name="ppIDString">Pointer to a buffer that receives the identity string. The callee allocates this buffer using <see langword="CoTaskMemAlloc" />. When finished, the caller must free the buffer by calling <see langword="CoTaskMemFree" />.</param>
-        <param name="pdwIDStringLen">Pointer to a buffer that receives the length of the identity string.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="ppIDString">To be added.</param>
+        <param name="pdwIDStringLen">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecomposeHmenuIdentityString">
@@ -259,11 +211,11 @@
         <Parameter Name="pidChild" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pIDString">Pointer to a buffer containing identity string of an HMENU-based accessible element.</param>
-        <param name="dwIDStringLen">Specifies the length of the identity string specified by <c>pIDString</c>.</param>
-        <param name="phmenu">Pointer to a buffer that receives the HMENU of the accessible element.</param>
-        <param name="pidChild">Pointer to a buffer that receives the child ID of the accessible element.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="phmenu">To be added.</param>
+        <param name="pidChild">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,12 +245,12 @@
         <Parameter Name="pidChild" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pIDString">Pointer to a buffer containing identity string of an Hwnd-based accessible element.</param>
-        <param name="dwIDStringLen">Specifies the length of the identity string specified by <c>pIDString</c>.</param>
-        <param name="phwnd">Pointer to a buffer that receives the HWND of the accessible element.</param>
-        <param name="pidObject">Pointer to a buffer that receives the object ID of the accessible element.</param>
-        <param name="pidChild">Pointer to a buffer that receives the child ID of the accessible element.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="phwnd">To be added.</param>
+        <param name="pidObject">To be added.</param>
+        <param name="pidChild">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,7 +261,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,19 +279,12 @@
         <Parameter Name="var" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="hmenu">Identifies the HMENU-based accessible element to be annotated.</param>
-        <param name="idChild">Specifies the child ID of the accessible element.</param>
-        <param name="idProp">Specifies which property of the accessible element is to be annotated.</param>
-        <param name="var">Specifies a new value for the <c>idProp</c> property.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHmenuPropServer">
@@ -350,7 +294,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -371,21 +314,14 @@
         <Parameter Name="AnnoScope" Type="Accessibility.AnnoScope" />
       </Parameters>
       <Docs>
-        <param name="hmenu">Identifies the HMENU-accessible element to be annotated.</param>
-        <param name="idChild">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="paProps">Specifies an array of properties that is to be handled by the specified callback object.</param>
-        <param name="cProps">Specifies the number of properties in the <c>paProps</c> array.</param>
-        <param name="pServer">Specifies the callback object, which will be invoked when a client requests one of the overridden properties.</param>
-        <param name="AnnoScope">May be ANNO_THIS, indicating that the annotation affects the indicated accessible element only; or ANNO_CONTAINER, indicating that it applies to the element and its immediate element children.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <param name="pServer">To be added.</param>
+        <param name="AnnoScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHmenuPropStr">
@@ -395,7 +331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -414,19 +349,12 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hmenu">Identifies the HMENU-based accessible element to be annotated.</param>
-        <param name="idChild">Specifies the child ID of the accessible element.</param>
-        <param name="idProp">Specifies which property of the accessible element is to be annotated.</param>
-        <param name="str">Specifies a new value for the <c>idProp</c> property.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHwndProp">
@@ -436,7 +364,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,20 +383,13 @@
         <Parameter Name="var" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="hwnd">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idObject">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idChild">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idProp">Specifies which property of that element is to be annotated.</param>
-        <param name="var">Specifies a new value for that property.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHwndPropServer">
@@ -479,7 +399,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -501,22 +420,15 @@
         <Parameter Name="AnnoScope" Type="Accessibility.AnnoScope" />
       </Parameters>
       <Docs>
-        <param name="hwnd">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idObject">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idChild">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="paProps">Specifies an array of properties that is to be handled by the specified callback object.</param>
-        <param name="cProps">Specifies the number of properties in the <c>paProps</c> array.</param>
-        <param name="pServer">Specifies the callback object, which will be invoked when a client requests one of the overridden properties.</param>
-        <param name="AnnoScope">May be ANNO_THIS, indicating that the annotation affects the indicated accessible element only; or ANNO_CONTAINER, indicating that it applies to the element and its immediate element children.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <param name="pServer">To be added.</param>
+        <param name="AnnoScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHwndPropStr">
@@ -526,7 +438,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -546,20 +457,13 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hwnd">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idObject">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idChild">Identifies the accessible element that is to be annotated. This replaces the identity string.</param>
-        <param name="idProp">Specifies which property of that element is to be annotated.</param>
-        <param name="str">Specifies a new value for that property.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPropServer">
@@ -569,7 +473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -584,21 +487,14 @@
         <Parameter Name="AnnoScope" Type="Accessibility.AnnoScope" />
       </Parameters>
       <Docs>
-        <param name="pIDString">Identifies the accessible element that is to be annotated.</param>
-        <param name="dwIDStringLen">Specifies the length of the string identified by the <c>pIDString</c> parameter.</param>
-        <param name="paProps">Specifies an array of properties to be handled by the specified callback object.</param>
-        <param name="cProps">Specifies an array of properties to be handled by the specified callback object.</param>
-        <param name="pServer">Specifies the callback object that will be invoked when a client requests one of the overridden properties.</param>
-        <param name="AnnoScope">May be ANNO_THIS, indicating that the annotation affects the indicated accessible element only; or ANNO_CONTAINER, indicating that it applies to the element and its immediate element children.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <param name="pServer">To be added.</param>
+        <param name="AnnoScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPropValue">
@@ -608,7 +504,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -621,19 +516,12 @@
         <Parameter Name="var" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pIDString">Identifies the accessible element that is to be annotated.</param>
-        <param name="dwIDStringLen">Specifies the length of the string identified by the <c>pIDString</c> parameter.</param>
-        <param name="idProp">Specifies the property of the accessible element to be annotated.</param>
-        <param name="var">Specifies a new value for the property.</param>
-        <summary>The <see cref="T:Accessibility.IAccPropServices" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about <xref:Accessibility.IAccPropServices>, see the documentation about "Dynamic Annotation" in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-        </remarks>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

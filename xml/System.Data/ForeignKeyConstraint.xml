@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ForeignKeyConstraint" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Constraint</BaseTypeName>
@@ -16,41 +20,12 @@
       <AttributeName>System.ComponentModel.DefaultProperty("ConstraintName")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an action restriction enforced on a set of columns in a primary key/foreign key relationship when a value or row is either deleted or updated.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ForeignKeyConstraint restricts the action performed when a value in a column (or columns) is either deleted or updated. Such a constraint is intended to be used with primary key columns. In a parent/child relationship between two tables, deleting a value from the parent table can affect the child rows in one of the following ways.  
-  
--   The child rows can also be deleted (a cascading action).  
-  
--   The values in the child column (or columns) can be set to null values.  
-  
--   The values in the child column (or columns) can be set to default values.  
-  
--   An exception can be generated.  
-  
- ForeignKeyConstraint objects are contained in the <xref:System.Data.ConstraintCollection> of a <xref:System.Data.DataTable>, which is accessed through the <xref:System.Data.DataTable.Constraints%2A> property.  
-  
- Constraints are not enforced unless the <xref:System.Data.DataSet.EnforceConstraints%2A> property is set to `true`.  
-  
- The <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A> is enforced whenever a <xref:System.Data.DataTable> object's <xref:System.Data.DataTable.AcceptChanges%2A> method is invoked.  
-  
-   
-  
-## Examples  
- The following example creates a ForeignKeyConstraint, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint Example#1](~/add/codesnippet/visualbasic/t-system.data.foreignkey_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,33 +35,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentColumn" Type="System.Data.DataColumn" />
         <Parameter Name="childColumn" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="parentColumn">The parent <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <param name="childColumn">The child <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint Example#1](~/add/codesnippet/visualbasic/7b884ca9-7295-4ee4-9e9f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types.  
-  
- -Or -  
-  
- The tables don't belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+        <param name="parentColumn">To be added.</param>
+        <param name="childColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,33 +60,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentColumns" Type="System.Data.DataColumn[]" />
         <Parameter Name="childColumns" Type="System.Data.DataColumn[]" />
       </Parameters>
       <Docs>
-        <param name="parentColumns">An array of parent <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <param name="childColumns">An array of child <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified arrays of parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint2 Example#1](~/add/codesnippet/visualbasic/6a5fdb43-18da-430f-89ae-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types.  
-  
- -Or -  
-  
- The tables don't belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+        <param name="parentColumns">To be added.</param>
+        <param name="childColumns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,8 +85,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="constraintName" Type="System.String" />
@@ -141,26 +98,11 @@
         <Parameter Name="childColumn" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="constraintName">The name of the constraint.</param>
-        <param name="parentColumn">The parent <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <param name="childColumn">The child <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified name, parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint1 Example#1](~/add/codesnippet/visualbasic/f49c9e20-f0ff-4865-a418-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types.  
-  
- -Or -  
-  
- The tables don't belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+        <param name="constraintName">To be added.</param>
+        <param name="parentColumn">To be added.</param>
+        <param name="childColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -170,8 +112,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="constraintName" Type="System.String" />
@@ -179,26 +125,11 @@
         <Parameter Name="childColumns" Type="System.Data.DataColumn[]" />
       </Parameters>
       <Docs>
-        <param name="constraintName">The name of the <see cref="T:System.Data.ForeignKeyConstraint" />. If <see langword="null" /> or empty string, a default name will be given when added to the constraints collection.</param>
-        <param name="parentColumns">An array of parent <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <param name="childColumns">An array of child <see cref="T:System.Data.DataColumn" /> in the constraint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> class with the specified name, and arrays of parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint>, sets some of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.ForeignKeyConstraint3 Example#1](~/add/codesnippet/visualbasic/a9316ee7-f4ba-4b40-ac64-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types.  
-  
- -Or -  
-  
- The tables don't belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+        <param name="constraintName">To be added.</param>
+        <param name="parentColumns">To be added.</param>
+        <param name="childColumns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -208,8 +139,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -226,21 +161,15 @@
         <Parameter Name="updateRule" Type="System.Data.Rule" />
       </Parameters>
       <Docs>
-        <param name="constraintName">The name of the constraint.</param>
-        <param name="parentTableName">The name of the parent <see cref="T:System.Data.DataTable" /> that contains parent <see cref="T:System.Data.DataColumn" /> objects in the constraint.</param>
-        <param name="parentColumnNames">An array of the names of parent <see cref="T:System.Data.DataColumn" /> objects in the constraint.</param>
-        <param name="childColumnNames">An array of the names of child <see cref="T:System.Data.DataColumn" /> objects in the constraint.</param>
-        <param name="acceptRejectRule">One of the <see cref="T:System.Data.AcceptRejectRule" /> values. Possible values include <see langword="None" />, <see langword="Cascade" />, and <see langword="Default" />.</param>
-        <param name="deleteRule">One of the <see cref="T:System.Data.Rule" /> values to use when a row is deleted. The default is <see langword="Cascade" />. Possible values include: <see langword="None" />, <see langword="Cascade" />, <see langword="SetNull" />, <see langword="SetDefault" />, and <see langword="Default" />.</param>
-        <param name="updateRule">One of the <see cref="T:System.Data.Rule" /> values to use when a row is updated. The default is <see langword="Cascade" />. Possible values include: <see langword="None" />, <see langword="Cascade" />, <see langword="SetNull" />, <see langword="SetDefault" />, and <see langword="Default" />.</param>
-        <summary>This constructor is provided for design time support in the Visual Studio  environment. <see cref="T:System.Data.ForeignKeyConstraint" /> objects created by using this constructor must then be added to the collection via <see cref="System.Data.ConstraintCollection.AddRange%2A" />. Tables and columns with the specified names must exist at the time the method is called, or if <see cref="System.Data.DataTable.BeginInit%2A" /> has been called prior to calling this constructor, the tables and columns with the specified names must exist at the time that <see cref="System.Data.DataTable.EndInit%2A" /> is called.</summary>
+        <param name="constraintName">To be added.</param>
+        <param name="parentTableName">To be added.</param>
+        <param name="parentColumnNames">To be added.</param>
+        <param name="childColumnNames">To be added.</param>
+        <param name="acceptRejectRule">To be added.</param>
+        <param name="deleteRule">To be added.</param>
+        <param name="updateRule">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types.  
-  
- -Or -  
-  
- The tables don't belong to the same <see cref="T:System.Data.DataSet" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -250,8 +179,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -269,22 +202,16 @@
         <Parameter Name="updateRule" Type="System.Data.Rule" />
       </Parameters>
       <Docs>
-        <param name="constraintName">The name of the constraint.</param>
-        <param name="parentTableName">The name of the parent <see cref="T:System.Data.DataTable" /> that contains parent <see cref="T:System.Data.DataColumn" /> objects in the constraint.</param>
-        <param name="parentTableNamespace">The name of the <see cref="System.Data.DataTable.Namespace%2A" />.</param>
-        <param name="parentColumnNames">An array of the names of parent <see cref="T:System.Data.DataColumn" /> objects in the constraint.</param>
-        <param name="childColumnNames">An array of the names of child <see cref="T:System.Data.DataColumn" /> objects in the constraint.</param>
-        <param name="acceptRejectRule">One of the <see cref="T:System.Data.AcceptRejectRule" /> values. Possible values include <see langword="None" />, <see langword="Cascade" />, and <see langword="Default" />.</param>
-        <param name="deleteRule">One of the <see cref="T:System.Data.Rule" /> values to use when a row is deleted. The default is <see langword="Cascade" />. Possible values include: <see langword="None" />, <see langword="Cascade" />, <see langword="SetNull" />, <see langword="SetDefault" />, and <see langword="Default" />.</param>
-        <param name="updateRule">One of the <see cref="T:System.Data.Rule" /> values to use when a row is updated. The default is <see langword="Cascade" />. Possible values include: <see langword="None" />, <see langword="Cascade" />, <see langword="SetNull" />, <see langword="SetDefault" />, and <see langword="Default" />.</param>
-        <summary>This constructor is provided for design time support in the Visual Studio  environment. <see cref="T:System.Data.ForeignKeyConstraint" /> objects created by using this constructor must then be added to the collection via <see cref="System.Data.ConstraintCollection.AddRange%2A" />. Tables and columns with the specified names must exist at the time the method is called, or if <see cref="System.Data.DataTable.BeginInit%2A" /> has been called prior to calling this constructor, the tables and columns with the specified names must exist at the time that <see cref="System.Data.DataTable.EndInit%2A" /> is called.</summary>
+        <param name="constraintName">To be added.</param>
+        <param name="parentTableName">To be added.</param>
+        <param name="parentTableNamespace">To be added.</param>
+        <param name="parentColumnNames">To be added.</param>
+        <param name="childColumnNames">To be added.</param>
+        <param name="acceptRejectRule">To be added.</param>
+        <param name="deleteRule">To be added.</param>
+        <param name="updateRule">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">One or both of the columns is <see langword="null" />.</exception>
-        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types.  
-  
- -Or -  
-  
- The tables don't belong to the same <see cref="T:System.Data.DataSet" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AcceptRejectRule">
@@ -294,8 +221,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -306,23 +237,9 @@
         <ReturnType>System.Data.AcceptRejectRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the action that should take place across this constraint when <see cref="System.Data.DataTable.AcceptChanges%2A" /> is invoked.</summary>
-        <value>One of the <see cref="T:System.Data.AcceptRejectRule" /> values. Possible values include <see langword="None" />, and <see langword="Cascade" />. The default is <see langword="None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Changes to a <xref:System.Data.DataRow> or <xref:System.Data.DataTable> are not final until the `AcceptChanges` method is invoked. At that point, the AcceptRejectRule determines the course of action on any values that have been changed or deleted.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets its AcceptRejectRule, and adds the constraint to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/add/codesnippet/visualbasic/p-system.data.foreignkey_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -332,8 +249,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -344,18 +265,9 @@
         <ReturnType>System.Data.DataColumn[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the child columns of this constraint.</summary>
-        <value>An array of <see cref="T:System.Data.DataColumn" /> objects that are the child columns of the constraint.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example returns an array of <xref:System.Data.DataColumn> objects through the Columns property.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.Columns Example#1](~/add/codesnippet/visualbasic/p-system.data.foreignkey_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteRule">
@@ -365,8 +277,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -377,27 +293,9 @@
         <ReturnType>System.Data.Rule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the action that occurs across this constraint when a row is deleted.</summary>
-        <value>One of the <see cref="T:System.Data.Rule" /> values. The default is <see langword="Cascade" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a row is deleted from a parent table, the DeleteRule determines what will happen in the columns of the child table (or tables). If the rule is set to `Cascade`, child rows will be deleted.  
-  
- If set to `SetNull`, a `DBnull` will be placed in the appropriate columns of the affected rows. Depending on your data source, a null value may or may not be permitted in a column. For example, SQLServer allows multiple null values to be found in a primary key column, even if they are not unique. In a <xref:System.Data.DataTable>, however, if a <xref:System.Data.DataColumn> object's <xref:System.Data.DataColumn.Unique%2A> property is set to `true`, multiple null values are not allowed in primary key columns.  
-  
- If set to `SetDefault`, the default value for the column is assigned.  
-  
-   
-  
-## Examples  
- The following example creates a ForeignKeyConstraint, sets various of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/add/codesnippet/visualbasic/p-system.data.foreignkey_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -407,8 +305,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -417,21 +319,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The object to which this <see cref="T:System.Data.ForeignKeyConstraint" /> is compared. Two <see cref="T:System.Data.ForeignKeyConstraint" /> are equal if they constrain the same columns.</param>
-        <summary>Gets a value indicating whether the current <see cref="T:System.Data.ForeignKeyConstraint" /> is identical to the specified object.</summary>
-        <returns>
-          <see langword="true" />, if the objects are identical; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a new <xref:System.Data.ForeignKeyConstraint> and checks it against other collection members with the Equals method before adding it to a <xref:System.Data.ConstraintCollection>.  
-  
- [!code-cs[Classic WebData ForeignKeyConstraint.Equals Example#1](~/add/codesnippet/csharp/m-system.data.foreignkey_1.cs)]
- [!code-vb[Classic WebData ForeignKeyConstraint.Equals Example#1](~/add/codesnippet/visualbasic/m-system.data.foreignkey_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -441,16 +332,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code of this instance of the <see cref="T:System.Data.ForeignKeyConstraint" /> object.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,8 +356,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -473,8 +372,8 @@
         <ReturnType>System.Data.DataColumn[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parent columns of this constraint.</summary>
-        <value>An array of <see cref="T:System.Data.DataColumn" /> objects that are the parent columns of the constraint.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,8 +384,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -497,8 +400,8 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent table of this constraint.</summary>
-        <value>The parent <see cref="T:System.Data.DataTable" /> of this constraint.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,8 +412,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -521,16 +428,9 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the child table of this constraint.</summary>
-        <value>A <see cref="T:System.Data.DataTable" /> that is the child table in the constraint.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[Classic WebData ForeignKeyConstraint.Table Example#1](~/add/codesnippet/visualbasic/p-system.data.foreignkey_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateRule">
@@ -540,8 +440,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -552,18 +456,9 @@
         <ReturnType>System.Data.Rule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the action that occurs across this constraint on when a row is updated.</summary>
-        <value>One of the <see cref="T:System.Data.Rule" /> values. The default is <see langword="Cascade" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets various of its properties, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-vb[Classic WebData ForeignKeyConstraint.DeleteRule Example#1](~/add/codesnippet/visualbasic/p-system.data.foreignkey_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

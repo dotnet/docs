@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.Repeater.ItemCommand" /> event of a <see cref="T:System.Web.UI.WebControls.Repeater" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a list of initial property values for an instance of RepeaterCommandEventArgs, see the <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs.%23ctor%2A> constructor. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following example illustrates a way to handle an <xref:System.Web.UI.WebControls.Repeater.ItemCommand> event of the <xref:System.Web.UI.WebControls.Repeater>. Information about the button is displayed whenever a <xref:System.Web.UI.WebControls.Button> control within the <xref:System.Web.UI.WebControls.Repeater> is clicked.  
-  
- [!code-cs[Classic RepeaterCommandEventArgs Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_170_1.aspx)]
- [!code-vb[Classic RepeaterCommandEventArgs Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_170_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,23 +30,11 @@
         <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Web.UI.WebControls.RepeaterItem" /> that represents an item in the <see cref="T:System.Web.UI.WebControls.Repeater" />. The <see cref="System.Web.UI.WebControls.RepeaterCommandEventArgs.Item%2A" /> property is set to this value.</param>
-        <param name="commandSource">The command source. The <see cref="System.Web.UI.WebControls.RepeaterCommandEventArgs.CommandSource%2A" /> property is set to this value.</param>
-        <param name="originalArgs">The original event arguments.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs>.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|`Item`|`item` parameter|  
-|`CommandSource`|`commandSource` parameter|  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <param name="originalArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -73,31 +44,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the source of the command.</summary>
-        <value>The command source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to determine the source of the command.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to determine the command source from the CommandSource property.  
-  
- [!code-vb[Classic RepeaterCommandEventArgs.CommandSource Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_374_1.vb)]
- [!code-cs[Classic RepeaterCommandEventArgs.CommandSource Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_374_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -107,31 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeaterItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.WebControls.RepeaterItem" /> associated with the event.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.RepeaterItem" /> associated with the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to access the properties of the <xref:System.Web.UI.WebControls.RepeaterItem> associated with this event.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to determine the index number from the Item property.  
-  
- [!code-vb[Classic RepeaterCommandEventArgs.Item Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1291_1.vb)]
- [!code-cs[Classic RepeaterCommandEventArgs.Item Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1291_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

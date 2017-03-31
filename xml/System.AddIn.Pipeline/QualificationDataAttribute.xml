@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.QualificationDataAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,31 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides developer-specified data for a pipeline segment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this attribute to assign data, in the form of name-value string pairs, for any purpose to a pipeline segment. For example, you can indicate that an add-in should be loaded into an external process.  
-  
- The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify a segment that has qualification data.  
-  
- To access the qualification data for a pipeline segment, see the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A> property. To enumerate the data for all the pipeline segments, see the <xref:System.AddIn.Hosting.QualificationDataItem> class.  
-  
- Qualification data is only read by the host and is not consumed by the add-in system in any other way.  
-  
- You can apply qualification data to a pipeline segment by placing a QualificationDataAttribute attribute next to the segment attribute. For more information about pipeline segments and their attributes, see [Pipeline Development](../Topic/Pipeline%20Development.md).  
-  
-   
-  
-## Examples  
- The following example applies qualification data to an add-in.  
-  
- [!code-vb[AddInP2AddInCalcV2#2](~/add/codesnippet/visualbasic/AddInCalcV2/AddInCalcV2.vb#2)]
- [!code-cs[AddInP2AddInCalcV2#2](~/add/codesnippet/csharp/AddInCalcV2/addincalcv2.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -59,17 +34,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Any identifier that serves as a key in a key/value pair.</param>
-        <param name="value">Any value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Pipeline.QualificationDataAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `name` and `value` can be any text.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -79,15 +47,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name, which serves as a key, of a key/value pair.</summary>
-        <value>The assigned name for the attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of a key/value pair.</summary>
-        <value>The assigned value for the attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

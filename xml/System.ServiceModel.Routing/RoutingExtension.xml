@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides run-time access to the routing service to allow dynamic modification of the routing configuration.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,21 +35,9 @@
         <Parameter Name="routingConfiguration" Type="System.ServiceModel.Routing.RoutingConfiguration" />
       </Parameters>
       <Docs>
-        <param name="routingConfiguration">The routing configuration to be applied.</param>
-        <summary>Applies a new <see cref="T:System.ServiceModel.Routing.RoutingConfiguration" /> to a running instance of the routing service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After calling ApplyConfiguration, the new <xref:System.ServiceModel.Routing.RoutingConfiguration> only applies to new sessions and messages.  
-  
-> [!WARNING]
->  Do not modify the <xref:System.ServiceModel.Routing.RoutingConfiguration> object after calling ApplyConfiguration, as <xref:System.ServiceModel.Routing.RoutingConfiguration> does not provide thread-safe updates or extensions.  
->   
->  If you must perform subsequent updates of the routing configuration, use a new instance of <xref:System.ServiceModel.Routing.RoutingConfiguration> for each update.  
-  
- ]]></format>
-        </remarks>
+        <param name="routingConfiguration">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.IExtension&lt;System.ServiceModel.ServiceHostBase&gt;.Attach">
@@ -68,8 +56,8 @@
         <Parameter Name="owner" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="owner">The service host base.</param>
-        <summary>Called when the runtime attaches the extension to an instance of the <see cref="T:System.ServiceModel.ServiceHostBase" /> class.  For internal use only.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +77,8 @@
         <Parameter Name="owner" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="owner">The service host base.</param>
-        <summary>Called when the runtime detaches the extension from an instance of the <see cref="T:System.ServiceModel.ServiceHostBase" /> class.  For internal use only.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

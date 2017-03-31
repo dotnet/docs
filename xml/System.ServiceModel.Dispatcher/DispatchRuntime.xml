@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.DispatchRuntime" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,47 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Exposes properties that can be used to modify default service behavior as well as attach custom objects that can modify how incoming messages are transformed into objects and dispatched to operations. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DispatchRuntime class either to modify the default behavior of a service or individual endpoint, or to insert objects that implement custom modifications to one or both of the following service processes:  
-  
-1.  The transformation of incoming messages into objects and releasing those objects as method invocations on a service object.  
-  
-2.  The transformation of objects received from the response to a service operation invocation into outbound messages.  
-  
- In [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)], the channel and endpoint dispatchers are the service components responsible for accepting new channels, receiving messages, method dispatch and invocation, and response processing. Each endpoint exposed by a <xref:System.ServiceModel.ServiceHost> object has one endpoint dispatcher and an associated channel dispatcher; in addition, each client that participates in duplex communication also has an endpoint dispatcher and channel dispatcher for each callback endpoint.  
-  
- The DispatchRuntime enables you to intercept and extend the channel or endpoint dispatcher for all messages across a particular contract, even when a message is not recognized. When a message arrives that does not match any messages declared in the contract it is dispatched to the operation that was returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation%2A> property. To intercept or extend across all messages for a particular operation, see the <xref:System.ServiceModel.Dispatcher.DispatchOperation> class.  
-  
- There are four main areas of dispatcher extensibility exposed by the DispatchRuntime class:  
-  
-1.  Dispatch components use the properties of the DispatchRuntime and those of the associated channel dispatcher returned by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher%2A> property to customize how the channel dispatcher accepts and closes channels. This category includes the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers%2A> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers%2A> properties.  
-  
-2.  Message components are customized for each message processed. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A>, <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A>, and the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> properties.  
-  
-3.  Instance components customize the creation, lifetime, and disposal of instances of the service type. For more information about service object lifetimes, see the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property. This category includes the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextInitializers%2A> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> properties.  
-  
-4.  Security-related components can use the following properties:  
-  
-    -   <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> indicates where audit events are written.  
-  
-    -   <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations%2A> controls whether the service attempts to impersonate using the credentials provided by the incoming message.  
-  
-    -   <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageAuthenticationAuditLevel%2A> controls whether successful message authentication events are written to the event log specified by <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A>.  
-  
-    -   <xref:System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode%2A> controls how the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is set.  
-  
-    -   <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel%2A> specifies how the auditing of authorization events is performed.  
-  
-    -   <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SuppressAuditFailure%2A> specifies whether to suppress non-critical exceptions that occur during the logging process.  
-  
- Typically custom extension objects are assigned to a DispatchRuntime property or inserted into a collection by a service behavior (an object that implements <xref:System.ServiceModel.Description.IServiceBehavior>), a contract behavior (an object that implements <xref:System.ServiceModel.Description.IContractBehavior>), or an endpoint behavior (an object that implements <xref:System.ServiceModel.Description.IEndpointBehavior>). Then the installing behavior object is added to the appropriate collection of behaviors either programmatically or by implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> object to enable the behavior to be inserted using an application configuration file.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutomaticInputSessionShutdown">
@@ -62,26 +23,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the service closes an input session when the client closes an output session.</summary>
-        <value>
-          <see langword="true" /> if the service closes an input session when the client closes an output session; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set the AutomaticInputSessionShutdown property to `false`, the channel must be closed by some other mechanism. In this case, you must add a custom session shutdown handler to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers%2A> property.  
-  
- By default when a client closes an output session and the service has finished processing any remaining messages the server closes the session. Setting AutomaticInputSessionShutdown to `false` prevents the server from automatically closing the session and enables custom control of session lifetimes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CallbackClientRuntime">
@@ -91,23 +41,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ClientRuntime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object that represents the installation point for extensions to [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] for outbound calls to a duplex callback endpoint.</summary>
-        <value>The <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object that is the installation point for run-time client customization in duplex contracts.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CallbackClientRuntime to add custom extension objects that view or modify the conversion of parameters to outbound messages and response messages back into return values. For details, see <xref:System.ServiceModel.Dispatcher.ClientRuntime>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelDispatcher">
@@ -117,15 +59,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ChannelDispatcher</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> for this dispatch run-time object.</summary>
-        <value>The channel dispatcher for the dispatch run-time object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,23 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ConcurrencyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether an instance of a service processes messages sequentially or concurrently.</summary>
-        <value>A <see cref="T:System.ServiceModel.ConcurrencyMode" /> object that controls whether an instance of a service processes messages sequentially or concurrently.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The service implementation must be thread-safe to use the `Multiple` concurrency mode.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndpointDispatcher">
@@ -162,23 +95,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.EndpointDispatcher</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> for this dispatch runtime.</summary>
-        <value>The <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> for this dispatch runtime.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the EndpointDispatcher property to obtain the endpoint dispatcher associated with this dispatch runtime to modify or customize endpoint-specific execution.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureOrderedDispatch">
@@ -194,9 +119,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether messages are to be dispatched in the order they were sent.</summary>
-        <value>
-          <see langword="true" /> if messages are to be dispatched in the order they were sent; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,23 +131,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the external authorization policies that define a set of rules for authorizing a user, given a set of claims.</summary>
-        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> objects that define a set of rules for authorizing a user, given a set of claims.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to add a custom implementation of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> that defines a set of rules for authorizing a user, given a set of claims. This custom implementation is used every time the service is called.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreTransactionMessageProperty">
@@ -233,24 +149,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether to ignore the <see cref="T:System.ServiceModel.Channels.TransactionMessageProperty" />.</summary>
-        <value>
-          <see langword="true" />, the <see cref="T:System.ServiceModel.Channels.TransactionMessageProperty" /> is ignored when executing the service method; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Channels.TransactionMessageProperty> allows third-party channel developers who use a proprietary transaction flow mechanism for their channel to introduce their transaction into [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)]. If this property is set to `true`, the transaction is ignored when executing the service method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImpersonateCallerForAllOperations">
@@ -260,26 +167,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls whether the service attempts to impersonate using the credentials provided by the incoming message.</summary>
-        <value>
-          <see langword="true" /> if the service attempts to impersonate based on message credentials when an operation's <see cref="System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A" /> property value is either <see cref="T:System.ServiceModel.ImpersonationOption" /> or <see cref="T:System.ServiceModel.ImpersonationOption" />; <see langword="false" /> if the service attempts impersonation only if an operation's <see cref="System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A" /> property value is <see cref="T:System.ServiceModel.ImpersonationOption" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ImpersonateCallerForAllOperations property to control whether impersonation is performed when an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption>. An exception is thrown if the property is `true` but an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption>.  
-  
- If an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption> impersonation is always attempted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImpersonateOnSerializingReply">
@@ -295,9 +191,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether impersonation is used on serializing reply operation.</summary>
-        <value>
-          <see langword="true" /> if impersonation is used on serializing reply operation; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,23 +203,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInputSessionShutdown&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.ServiceModel.Dispatcher.IInputSessionShutdown" /> objects that can be used to add a custom handler to control how input sessions are closed.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedCollection%601" /> of type <see cref="T:System.ServiceModel.Dispatcher.IInputSessionShutdown" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Add an <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> object to this property to control the manner in which input sessions are closed. When a call to the <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel?displayProperty=fullName> first returns `null`, (which indicates that the input session has been closed), the dispatcher invokes each <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> object, passing it an <xref:System.ServiceModel.Channels.IDuplexSessionChannel?displayProperty=fullName> object. Custom <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> objects can use this <xref:System.ServiceModel.Channels.IDuplexSessionChannel> object to perform clean-up for each channel state or to send a response message before closing the channel.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceContextInitializers">
@@ -334,23 +221,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInstanceContextInitializer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.ServiceModel.Dispatcher.IInstanceContextInitializer" /> objects that can be used to inspect or modify an <see cref="T:System.ServiceModel.InstanceContext" /> object when it is first created.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedCollection%601" /> object of type <see cref="T:System.ServiceModel.Dispatcher.IInstanceContextInitializer" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the InstanceContextInitializers property to add a custom initializer that can inspect or modify an <xref:System.ServiceModel.InstanceContext> object when it is first created. The frequency with which <xref:System.ServiceModel.InstanceContext> objects are created is controlled by the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceContextProvider">
@@ -360,15 +239,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.IInstanceContextProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Dispatcher.IInstanceContextProvider" /> to be used by the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</summary>
-        <value>The <see cref="T:System.ServiceModel.Dispatcher.IInstanceContextProvider" /> to be used by the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,27 +257,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.IInstanceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an <see cref="T:System.ServiceModel.Dispatcher.IInstanceProvider" /> object that you can use to control the creation and destruction of service objects.</summary>
-        <value>An <see cref="T:System.ServiceModel.Dispatcher.IInstanceProvider" /> object that controls the creation and destruction of service objects associated with an <see cref="T:System.ServiceModel.InstanceContext" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implement the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface and assign the implementation to the InstanceProvider property to control instances of the service type using a constructor other than the default constructor, for example, to implement a custom instancing mode such as instance pooling.  
-  
- Typically the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method is invoked once, when the <xref:System.ServiceModel.InstanceContext> object is first created. The <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method is also invoked once, when the <xref:System.ServiceModel.InstanceContext> object is closed.  
-  
- A service can also be configured to release an instance before the <xref:System.ServiceModel.InstanceContext> object is closed. This can be configured by using the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property or by calling the <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A> method. If this is done, the <xref:System.ServiceModel.InstanceContext> object calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method. If a new message arrives after the instance has been released, a new instance is created using the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageAuthenticationAuditLevel">
@@ -409,23 +275,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether successful message authentication events are written to the event log specified by <see cref="System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A" />.</summary>
-        <value>One of the <see cref="T:System.ServiceModel.AuditLevel" /> values. The default is <see cref="T:System.ServiceModel.AuditLevel" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MessageAuthenticationAuditLevel property to specify whether successful message authentication events are written to the event log.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageInspectors">
@@ -435,23 +293,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IDispatchMessageInspector&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.ServiceModel.Dispatcher.IDispatchMessageInspector" /> objects that can be used to attach a custom message inspector for all incoming and outgoing messages across the endpoint.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedCollection%601" /> object of type <see cref="T:System.ServiceModel.Dispatcher.IDispatchMessageInspector" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the MessageInspectors property to attach custom <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> objects that can inspect or transform all messages that flow through the endpoint. Because the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> object gets a reference to the message, you can buffer it and examine a copy of the body.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Operations">
@@ -461,23 +311,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedKeyedCollection&lt;System.String,System.ServiceModel.Dispatcher.DispatchOperation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> objects that can be used to control the execution behavior of a particular operation.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedKeyedCollection%602" /> of type <see cref="T:System.String" /> and <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Operations property to inspect or modify parameters, control parameter and return value serialization and deserialization, control operation invocation, and modify other behaviors for a single operation. For details, see <xref:System.ServiceModel.Dispatcher.DispatchOperation>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OperationSelector">
@@ -487,23 +329,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.IDispatchOperationSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Dispatcher.IDispatchOperationSelector" /> object that controls the selection of a destination <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> for a particular message.</summary>
-        <value>The <see cref="T:System.ServiceModel.Dispatcher.IDispatchOperationSelector" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the OperationSelector property to decide which operation receives a given message. The default operation selector returns the value of the action header for the message, which is used as the key to locate the correct <xref:System.ServiceModel.Dispatcher.DispatchOperation>. If no matching operation is found, the invocation is dispatched to the return value from the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveMessage">
@@ -519,9 +353,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the message is preserved.</summary>
-        <value>
-          <see langword="true" /> if message is preserved; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,29 +365,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.PrincipalPermissionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies how the <see cref="System.Threading.Thread.CurrentPrincipal%2A" /> property is set.</summary>
-        <value>One of the <see cref="T:System.ServiceModel.Description.PrincipalPermissionMode" /> values; the default is <see cref="T:System.ServiceModel.Description.PrincipalPermissionMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the PrincipalPermissionMode is <xref:System.ServiceModel.Description.PrincipalPermissionMode>, the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is not set.  
-  
- When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated with a <xref:System.Security.Principal.WindowsPrincipal> based on the user credentials of the incoming message.  
-  
- When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated with an <xref:System.Security.Principal.IPrincipal> object based on [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] role information.  
-  
- When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated by a custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> implementation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseServiceInstanceOnTransactionComplete">
@@ -564,24 +383,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the service object is recycled after the transaction successfully completes.</summary>
-        <value>
-          <see langword="true" /> if the service object is recycled after the transaction successfully completes; otherwise, <see langword="false" />. The default value is the value of <see cref="System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ReleaseServiceInstanceOnTransactionComplete to specify that the <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A> method is called when the transaction successfully completes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RoleProvider">
@@ -591,15 +401,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.RoleProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom <see cref="T:System.Web.Security.RoleProvider" /> that is used by the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</summary>
-        <value>The custom <see cref="T:System.Web.Security.RoleProvider" /> that is used by the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,15 +419,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.AuditLogLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the audit log.</summary>
-        <value>One of the <see cref="T:System.ServiceModel.AuditLogLocation" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,16 +443,9 @@
         <ReturnType>System.ServiceModel.ServiceAuthenticationManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that manages an authentication process for service operations.</summary>
-        <value>An authentication management object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Authentication determines the identity of the entity that signed a message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceAuthorizationAuditLevel">
@@ -654,23 +455,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls what service authorization events are audited.</summary>
-        <value>One of the <see cref="T:System.ServiceModel.AuditLevel" /> values. The default is <see cref="T:System.ServiceModel.AuditLevel" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the default case, no service authorization events are audited. If the ServiceAuthorizationAuditLevel value is <xref:System.ServiceModel.AuditLevel>, only successful service authorization events are written to the audit log specified by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> property. If this property has a value of <xref:System.ServiceModel.AuditLevel>, only unsuccessful service authorization events are written to the audit log specified by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> property. If the ServiceAuthorizationAuditLevel value is <xref:System.ServiceModel.AuditLevel>, both successful and failed service authorization events are written to the audit log.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceAuthorizationManager">
@@ -680,15 +473,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ServiceAuthorizationManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.ServiceAuthorizationManager" /> that provides authorization checking for the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</summary>
-        <value>A <see cref="T:System.ServiceModel.ServiceAuthorizationManager" /> that provides authorization checking for the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -699,15 +491,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.InstanceContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the singleton <see cref="T:System.ServiceModel.Dispatcher.IInstanceContextProvider" /> to be used by the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</summary>
-        <value>The singleton <see cref="T:System.ServiceModel.Dispatcher.IInstanceContextProvider" /> to be used by the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -718,24 +509,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to suppress non-critical exceptions that occur during the logging process.</summary>
-        <value>
-          <see langword="true" /> if non-critical exceptions that occur during the logging process are suppressed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set SuppressAuditFailure to `false` if you want exceptions that occur during the course of writing the audit log to be re-thrown to the application. In the default case, only the <xref:System.OutOfMemoryException>, <xref:System.StackOverflowException>, <xref:System.Threading.ThreadAbortException>, and <xref:System.ArgumentException> exceptions that result from attempts to write audit events are re-thrown to the application; all other exceptions are suppressed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SynchronizationContext">
@@ -745,23 +527,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.SynchronizationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the synchronization context that is used to invoke the service operations.</summary>
-        <value>The <see cref="T:System.Threading.SynchronizationContext" /> object used to determine on which thread the service operation is invoked.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value can be `null`. If this value is not `null`, then this synchronization context is used to invoke the service operations on the correct thread.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionAutoCompleteOnSessionClose">
@@ -771,24 +545,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to automatically complete the current transaction when the session closes.</summary>
-        <value>
-          <see langword="true" /> if transactions automatically complete when the session closes; otherwise, <see langword="false" />. The default is the value specified by <see cref="System.ServiceModel.ServiceBehaviorAttribute.TransactionAutoCompleteOnSessionClose%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If TransactionAutoCompleteOnSessionClose is `true` and there is an active transaction, the transaction is completed when the session closes. If TransactionAutoCompleteOnSessionClose is `false`, active transactions are not completed and are eventually aborted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -798,15 +563,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the contract type.</summary>
-        <value>The type of the contract.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,23 +581,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.DispatchOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the operation to which unrecognized messages are dispatched.</summary>
-        <value>The <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> to which unrecognized messages are dispatched.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The operation return by the UnhandledDispatchOperation is the operation indicated by the use of the "*" (asterisk) in the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateMustUnderstand">
@@ -843,23 +600,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of <see cref="System.ServiceModel.ServiceBehaviorAttribute.ValidateMustUnderstand%2A" />.</summary>
-        <value>The value of <see cref="System.ServiceModel.ServiceBehaviorAttribute.ValidateMustUnderstand%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Determines whether unexpected message headers cause an error condition.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides design-time support in a visual designer for adding and editing data fields in a data-bound control, such as <see cref="T:System.Web.UI.WebControls.GridView" /> or <see cref="T:System.Web.UI.WebControls.DetailsView" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, creates an empty field object.</summary>
-        <returns>An empty field object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +56,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,9 +65,9 @@
         <Parameter Name="fieldSchema" Type="System.Web.UI.Design.IDataSourceFieldSchema" />
       </Parameters>
       <Docs>
-        <param name="fieldSchema">Schema information that contains the structure of a data field.</param>
-        <summary>When overridden in a derived class, creates a new field object using the specified data field information.</summary>
-        <returns>A new field object.</returns>
+        <param name="fieldSchema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,18 +88,11 @@
         <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.DataBoundControl" />
       </Parameters>
       <Docs>
-        <param name="dataControlField">The data field.</param>
-        <param name="dataBoundControl">The data-bound control that contains the data field.</param>
-        <summary>When overridden in a derived class, creates a <see cref="T:System.Web.UI.WebControls.TemplateField" /> field for the specified data field.</summary>
-        <returns>The new template field.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateTemplateField method is invoked when you click on the link to convert a data field into a <xref:System.Web.UI.WebControls.TemplateField> in the fields editor.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataControlField">To be added.</param>
+        <param name="dataBoundControl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultNodeText">
@@ -114,15 +102,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the default text that is displayed for the data field in the fields editor.</summary>
-        <value>The default text that is displayed for the data field in the fields editor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,18 +130,11 @@
         <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
       </Parameters>
       <Docs>
-        <param name="controlType">The type of the control that will be created.</param>
-        <param name="mode">The data entry mode for the control.</param>
-        <summary>Gets an unique ID for a control that is created when a data field is converted into a <see cref="T:System.Web.UI.WebControls.TemplateField" />.</summary>
-        <returns>A unique ID for the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetNewDataSourceName method is a helper method that can be used by the <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method to generate unique IDs for the controls that are created when you click the link to convert a data field into a <xref:System.Web.UI.WebControls.TemplateField> in the fields editor.  
-  
- ]]></format>
-        </remarks>
+        <param name="controlType">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNodeText">
@@ -165,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,9 +153,9 @@
         <Parameter Name="dataControlField" Type="System.Web.UI.WebControls.DataControlField" />
       </Parameters>
       <Docs>
-        <param name="dataControlField">The data field.</param>
-        <summary>When overridden in a derived class, gets the name that is displayed for the data field in the fields editor.</summary>
-        <returns>The name that is displayed for the data field in the fields editor.</returns>
+        <param name="dataControlField">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,9 +175,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service object to get.</param>
-        <summary>Gets the service object of the specified type.</summary>
-        <returns>The service object of the specified type.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,10 +198,10 @@
         <Parameter Name="templateContent" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="control">The data-bound control.</param>
-        <param name="templateContent">The template markup.</param>
-        <summary>Gets the <see cref="T:System.Web.UI.ITemplate" /> object that contains the template markup for the specified data-bound control.</summary>
-        <returns>An object that contains the template markup for the specified data-bound control.</returns>
+        <param name="control">To be added.</param>
+        <param name="templateContent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,18 +222,11 @@
         <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.DataBoundControl" />
       </Parameters>
       <Docs>
-        <param name="dataControlField">The data field.</param>
-        <param name="dataBoundControl">The data-bound control that contains the data field.</param>
-        <summary>Gets a <see cref="T:System.Web.UI.WebControls.TemplateField" /> object for the specified data field.</summary>
-        <returns>The new template field.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetTemplateField method is a helper method that can be used by the <xref:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField%2A> method to create a new <xref:System.Web.UI.WebControls.TemplateField> object and initialize its properties using the specified data field properties.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataControlField">To be added.</param>
+        <param name="dataBoundControl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -268,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,9 +245,9 @@
         <Parameter Name="parent" Type="System.Web.UI.WebControls.DataBoundControl" />
       </Parameters>
       <Docs>
-        <param name="parent">The data-bound control that contains the data field.</param>
-        <summary>When overridden in a derived class, gets a value that indicates whether the data field is enabled in the fields editor.</summary>
-        <returns>A value that indicates whether the data field is enabled in the fields editor.</returns>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,15 +258,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IServiceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the service provider implementation that is used by the fields editor.</summary>
-        <value>The service provider implementation, typically provided by the design host, which can be used to obtain additional design-time services.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,16 +276,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether schema information is used to load the data fields.</summary>
-        <value>
-          <see langword="true" /> if schema information is used to load the data fields; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

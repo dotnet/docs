@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildErrorEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.ErrorRaised" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
-  
-   
-  
-## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-cs[msbuild_BasicLogger#1](~/add/codesnippet/csharp/msbuild_BasicLogger/msbuild_BasicLogger.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,13 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildErrorEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -72,17 +52,17 @@
         <Parameter Name="senderName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="subcategory">The custom subcategory of the event.</param>
-        <param name="code">The error code of the event.</param>
-        <param name="file">The name of the file associated with the event.</param>
-        <param name="lineNumber">The line number that corresponds to the beginning of the section of code that raised the event.</param>
-        <param name="columnNumber">The column number that corresponds to the beginning of the section of code that raised the event.</param>
-        <param name="endLineNumber">The line number that corresponds to the end of the section of code that raised the event.</param>
-        <param name="endColumnNumber">The column number that corresponds to the end of the section of code that raised the event.</param>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildErrorEventArgs" /> class with the specified <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.SubCategory%2A" />, <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.Code%2A" />, <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.File%2A" />, <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.LineNumber%2A" />, <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.ColumnNumber%2A" />, <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.EndLineNumber%2A" />, <see cref="Microsoft.Build.Framework.BuildErrorEventArgs.EndColumnNumber%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.Message%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.HelpKeyword%2A" />, and <see cref="Microsoft.Build.Framework.BuildEventArgs.SenderName%2A" /> values.</summary>
+        <param name="subcategory">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="columnNumber">To be added.</param>
+        <param name="endLineNumber">To be added.</param>
+        <param name="endColumnNumber">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,18 +89,18 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="subcategory">event sub-category</param>
-        <param name="code">event code</param>
-        <param name="file">file associated with the event</param>
-        <param name="lineNumber">line number (0 if not applicable)</param>
-        <param name="columnNumber">column number (0 if not applicable)</param>
-        <param name="endLineNumber">end line number (0 if not applicable)</param>
-        <param name="endColumnNumber">end column number (0 if not applicable)</param>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="senderName">name of event sender</param>
-        <param name="eventTimestamp">Timestamp when event was created</param>
-        <summary>This constructor which allows a timestamp to be set</summary>
+        <param name="subcategory">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="columnNumber">To be added.</param>
+        <param name="endLineNumber">To be added.</param>
+        <param name="endColumnNumber">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,19 +134,19 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="subcategory">event sub-category</param>
-        <param name="code">event code</param>
-        <param name="file">file associated with the event</param>
-        <param name="lineNumber">line number (0 if not applicable)</param>
-        <param name="columnNumber">column number (0 if not applicable)</param>
-        <param name="endLineNumber">end line number (0 if not applicable)</param>
-        <param name="endColumnNumber">end column number (0 if not applicable)</param>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="senderName">name of event sender</param>
-        <param name="eventTimestamp">Timestamp when event was created</param>
-        <param name="messageArgs">message arguments</param>
-        <summary>This constructor which allows a timestamp to be set</summary>
+        <param name="subcategory">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="columnNumber">To be added.</param>
+        <param name="endLineNumber">To be added.</param>
+        <param name="endColumnNumber">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <param name="messageArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,16 +157,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the error code of the event.</summary>
-        <value>The error code of the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,26 +175,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column number that corresponds to the beginning of the section of code that raised the event.</summary>
-        <value>The column number that corresponds to the beginning of the section of code that raised the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-cs[msbuild_BasicLogger#1](~/add/codesnippet/csharp/msbuild_BasicLogger/msbuild_BasicLogger.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndColumnNumber">
@@ -226,16 +193,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column number that corresponds to the end of the section of code that raised the event.</summary>
-        <value>The column number that corresponds to the end of the section of code that raised the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,16 +211,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the line number that corresponds to the end of the section of code that raised the event.</summary>
-        <value>The line number that corresponds to the end of the section of code that raised the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,26 +229,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the file that raised the event.</summary>
-        <value>The name of the file that raised the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-cs[msbuild_BasicLogger#1](~/add/codesnippet/csharp/msbuild_BasicLogger/msbuild_BasicLogger.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -295,26 +247,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the line number that corresponds to the beginning of the section of code that raised the event.</summary>
-        <value>The line number that corresponds to the beginning of the section of code that raised the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-cs[msbuild_BasicLogger#1](~/add/codesnippet/csharp/msbuild_BasicLogger/msbuild_BasicLogger.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProjectFile">
@@ -330,8 +271,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the name of the project file which issued this event.</summary>
-        <value>Returns the name of the project file which issued this event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,16 +283,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the custom subtype of the event.</summary>
-        <value>The custom subtype of the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

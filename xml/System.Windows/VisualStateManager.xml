@@ -11,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Manages states and the logic for transitioning between states for controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VisualStateManager enables you to specify states for a control, the appearance of a control when it is in a certain state, and when a control changes states. For example, a <xref:System.Windows.Controls.Button> might have a slightly different appearance when it is pressed than when it is not pressed. Two states that the <xref:System.Windows.Controls.Button> defines correspond to when it is pressed (`"Pressed"`) and when it is not (`"Normal"`). The appearance of a control when it is in a state is defined by a <xref:System.Windows.VisualState>. A <xref:System.Windows.VisualState> contains a collection of <xref:System.Windows.Media.Animation.Storyboard> objects that specify how the control's appearance changes when the control is in that state. You add visual states to a control by setting the `VisualStateManager.VisualStateGroups` attached property on the control. Each <xref:System.Windows.VisualStateGroup> contains a collection of <xref:System.Windows.VisualState> objects that are mutually exclusive. That is, the control is always in exactly one state of in each <xref:System.Windows.VisualStateGroup>.  
-  
- The VisualStateManager also enables you to specify when a control enters a specific state. The method that you should call to change states depends on your scenario. If you create a control that uses the VisualStateManager in its <xref:System.Windows.Controls.ControlTemplate>, call the <xref:System.Windows.VisualStateManager.GoToState%2A> method. For more information about how to create controls that use the VisualStateManager, see [Creating a Control That Has a Customizable Appearance](../Topic/Creating%20a%20Control%20That%20Has%20a%20Customizable%20Appearance.md). If you use the VisualStateManager outside of a <xref:System.Windows.Controls.ControlTemplate> (for example, if you use a VisualStateManager in a <xref:System.Windows.Controls.UserControl> or in a single element), call the <xref:System.Windows.VisualStateManager.GoToElementState%2A> method. In either case, the VisualStateManager performs the logic that is required to appropriately start and stop the storyboards that are associated with the involved state. For example, suppose that a control defines the states, `State1` and `State2`, each of which has a storyboard associated with it. If the control is in `State1` and you pass `State2` to <xref:System.Windows.VisualStateManager.GoToState%2A> or <xref:System.Windows.VisualStateManager.GoToElementState%2A>, the VisualStateManager starts the storyboard in `State2` and stops the storyboard in `State1`.  
-  
- Controls that are included with [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] use the VisualStateManager to change visual states. When you create a <xref:System.Windows.Controls.ControlTemplate> for a control that is included with [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)], you can add <xref:System.Windows.VisualState> objects to the control's <xref:System.Windows.Controls.ControlTemplate> to specify the control's appearance in a certain state. To find the names of the visual states for the controls that are included with [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)], see [Control Styles and Templates](../Topic/Control%20Styles%20and%20Templates.md). The control's logic handles transitioning between states, so you do not need to do anything other than define the <xref:System.Windows.VisualState> objects in the new <xref:System.Windows.Controls.ControlTemplate>. For more information about how to create control templates for existing controls, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
- If you want to implement your own logic for transitioning between states, you must inherit from VisualStateManager, override the <xref:System.Windows.VisualStateManager.GoToStateCore%2A> method, and set the <xref:System.Windows.VisualStateManager.CustomVisualStateManager%2A?displayProperty=fullName> attached property on the control that uses the custom logic.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Shapes.Rectangle> and adds a <xref:System.Windows.VisualStateGroup> named `CommonStates` to the `VisualStateManager.VisualStatesGroups` attached property. The example defines the `MouseOver` and `Normal`<xref:System.Windows.VisualState> objects in the `CommonStates`<xref:System.Windows.VisualStateGroup>. When the user moves the mouse pointer over the <xref:System.Windows.Shapes.Rectangle>, it changes from red to green over one half second. When the user moves the mouse away from the rectangle, the <xref:System.Windows.Controls.Grid> immediately changes back to red. Note that the `Normal` state does not define a <xref:System.Windows.Media.Animation.Storyboard>. A <xref:System.Windows.Media.Animation.Storyboard> is not required because when the <xref:System.Windows.Shapes.Rectangle> transitions from the `MouseOver` state to the `Normal` state, the <xref:System.Windows.Media.Animation.Storyboard> for `MouseOver` is stopped and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property for the <xref:System.Windows.Media.SolidColorBrush> returns to red.  
-  
- [!code-xml[VSMCustomControl#VSMNoTemplate](~/add/codesnippet/xaml/vsmcustomcontrol/window1.xaml#vsmnotemplate)]  
-  
- The following example shows the event handler that is defined in the previous example and calls the <xref:System.Windows.VisualStateManager.GoToElementState%2A> method to transition between states. If the rectangle in the previous example was part of a <xref:System.Windows.Controls.ControlTemplate>, the example would have to call the <xref:System.Windows.VisualStateManager.GoToState%2A> method.  
-  
- [!code-cs[VSMCustomControl#GoToElementState](~/add/codesnippet/csharp/vsmcustomcontrol/window1.xaml.cs#gotoelementstate)]
- [!code-vb[VSMCustomControl#GoToElementState](~/add/codesnippet/visualbasic/vsmcustomcontrolvb2/window1.xaml.vb#gotoelementstate)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.VisualStateManager" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +43,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.VisualStateManager.CustomVisualStateManager%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +63,9 @@
         <Parameter Name="obj" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="obj">The element to get the <see cref="System.Windows.VisualStateManager.CustomVisualStateManager%2A" /> attached property from.</param>
-        <summary>Gets the <see cref="System.Windows.VisualStateManager.CustomVisualStateManager%2A" /> attached property.</summary>
-        <returns>The visual state manager that transitions between the states of a control.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +90,9 @@
         <Parameter Name="obj" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="obj">The element to get the <see cref="System.Windows.VisualStateManager.VisualStateGroups%2A" /> attached property from.</param>
-        <summary>Gets the <see cref="System.Windows.VisualStateManager.VisualStateGroups%2A" /> attached property.</summary>
-        <returns>The collection of <see cref="T:System.Windows.VisualStateGroup" /> objects that is associated with the specified object.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,39 +114,12 @@
         <Parameter Name="useTransitions" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stateGroupsRoot">The root element that contains the <see cref="T:System.Windows.VisualStateManager" />.</param>
-        <param name="stateName">The state to transition to.</param>
-        <param name="useTransitions">
-          <see langword="true" /> to use a <see cref="T:System.Windows.VisualTransition" /> object to transition between states; otherwise, <see langword="false" />.</param>
-        <summary>Transitions the element between two states. Use this method to transition states that are defined by an application, rather than defined by a control.</summary>
-        <returns>
-          <see langword="true" /> if the control successfully transitioned to the new state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the GoToElementState method to change states on an element outside of a <xref:System.Windows.Controls.ControlTemplate> (for example, if you use a <xref:System.Windows.VisualStateManager> in a <xref:System.Windows.DataTemplate> or <xref:System.Windows.Window>). Call the <xref:System.Windows.VisualStateManager.GoToState%2A> method if you are changing states in a control that uses the <xref:System.Windows.VisualStateManager> in its <xref:System.Windows.Controls.ControlTemplate>.  
-  
-   
-  
-## Examples  
- The following example creates an application that prompts the user to guess a number between 1 and 100.  When the user enters a number, the application indicates whether the guess is too high, too low, or correct.  The following [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] creates the user interface for the application and defines 4 states: `TooLow`, `TooHigh`, `Correct`, and `Guessing`. When the application begins, it is in the `Guessing` state. .  
-  
- [!code-xml[VSMGoToElementState#GoToElementStateXaml](~/add/codesnippet/xaml/vsmgotoelementstate/mainwindow.xaml#gotoelementstatexaml)]  
-  
- The following code shows the logic of the application.  When the user enters a number and clicks the button, the application calls GoToElementState to transition to `TooHigh`, `TooLow`, or `Correct` to provide feedback to the user about the guess.  To try this example, call the `GenerateNumber` method when the application begins.  
-  
- [!code-cs[VSMGoToElementState#GoToElementStateCode](~/add/codesnippet/csharp/vsmgotoelementstate/mainwindow.xaml.cs#gotoelementstatecode)]
- [!code-vb[VSMGoToElementState#GoToElementStateCode](~/add/codesnippet/visualbasic/vsmgotoelementstate/mainwindow.xaml.vb#gotoelementstatecode)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stateGroupsRoot" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="stateName" /> is <see langword="null" />.</exception>
+        <param name="stateGroupsRoot">To be added.</param>
+        <param name="stateName">To be added.</param>
+        <param name="useTransitions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToState">
@@ -192,35 +140,12 @@
         <Parameter Name="useTransitions" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="control">The control to transition between states.</param>
-        <param name="stateName">The state to transition to.</param>
-        <param name="useTransitions">
-          <see langword="true" /> to use a <see cref="T:System.Windows.VisualTransition" /> object to transition between states; otherwise, <see langword="false" />.</param>
-        <summary>Transitions the control between two states. Use this method to transition states on control that has a <see cref="T:System.Windows.Controls.ControlTemplate" />.</summary>
-        <returns>
-          <see langword="true" /> if the control successfully transitioned to the new state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the GoToState method if you are changing states in a control that uses the <xref:System.Windows.VisualStateManager> in its <xref:System.Windows.Controls.ControlTemplate>. Call the <xref:System.Windows.VisualStateManager.GoToElementState%2A> method to change states on an element outside of a <xref:System.Windows.Controls.ControlTemplate> (for example, if you use a <xref:System.Windows.VisualStateManager> in a <xref:System.Windows.Controls.UserControl> or in a single element).  
-  
-   
-  
-## Examples  
- The following example demonstrates a control that uses the GoToState method to transition between states. For the entire example, see [Creating a Control That Has a Customizable Appearance](../Topic/Creating%20a%20Control%20That%20Has%20a%20Customizable%20Appearance.md).  
-  
- [!code-cs[VSMCustomControl#UpdateStates](~/add/codesnippet/csharp/vsmcustomcontrol/numericupdown.cs#updatestates)]
- [!code-vb[VSMCustomControl#UpdateStates](~/add/codesnippet/visualbasic/vsmcustomcontrolvb2/numericupdown.vb#updatestates)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="control" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="stateName" /> is <see langword="null" />.</exception>
+        <param name="control">To be added.</param>
+        <param name="stateName">To be added.</param>
+        <param name="useTransitions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToStateCore">
@@ -244,32 +169,15 @@
         <Parameter Name="useTransitions" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="control">The control to transition between states.</param>
-        <param name="stateGroupsRoot">The root element that contains the <see cref="T:System.Windows.VisualStateManager" />.</param>
-        <param name="stateName">The name of the state to transition to.</param>
-        <param name="group">The <see cref="T:System.Windows.VisualStateGroup" /> that the state belongs to.</param>
-        <param name="state">The representation of the state to transition to.</param>
-        <param name="useTransitions">
-          <see langword="true" /> to use a <see cref="T:System.Windows.VisualTransition" /> object to transition between states; otherwise, <see langword="false" />.</param>
-        <summary>Transitions a control between states.</summary>
-        <returns>
-          <see langword="true" /> if the control successfully transitioned to the new state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GoToStateCore method performs the logic necessary to appropriately start and stop the storyboards that are associated with a transition. When a control calls <xref:System.Windows.VisualStateManager.GoToState%2A> to change its state, the <xref:System.Windows.VisualStateManager> does the following:  
-  
--   First, if the <xref:System.Windows.VisualState> that the control is transitioning to has a <xref:System.Windows.Media.Animation.Storyboard>, the storyboard begins. Then, if the <xref:System.Windows.VisualState> that the control is coming from has a <xref:System.Windows.Media.Animation.Storyboard>, the storyboard ends.  
-  
--   If the control is already in the `stateName` state, <xref:System.Windows.VisualStateManager.GoToState%2A> takes no action and returns `true`.  
-  
--   If `stateName` does not exist in the <xref:System.Windows.Controls.ControlTemplate> of `control`, <xref:System.Windows.VisualStateManager.GoToState%2A> takes no action and returns `false`.  
-  
- You can implement your own <xref:System.Windows.VisualStateManager> to provide different logic for transitioning between states. For example, you can change the logic described previously, or you can provide logic to transition between custom animation types.  To implement a <xref:System.Windows.VisualStateManager>, create a class that inherits from <xref:System.Windows.VisualStateManager> and override the GoToStateCore method. To use the custom class, set the <xref:System.Windows.VisualStateManager.CustomVisualStateManager%2A> property to an object of your custom type.  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <param name="stateGroupsRoot">To be added.</param>
+        <param name="stateName">To be added.</param>
+        <param name="group">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="useTransitions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseCurrentStateChanged">
@@ -292,26 +200,13 @@
         <Parameter Name="stateGroupsRoot" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="stateGroup">The object that the <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanging" /> event occurred on.</param>
-        <param name="oldState">The state that the control is transitioning from.</param>
-        <param name="newState">The state that the control is transitioning to.</param>
-        <param name="control">The control that is transitioning states.</param>
-        <param name="stateGroupsRoot">The root element that contains the <see cref="T:System.Windows.VisualStateManager" />.</param>
-        <summary>Raises the <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanging" /> event on the specified <see cref="T:System.Windows.VisualStateGroup" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.VisualStateGroup> is set on the <xref:System.Windows.Controls.ControlTemplate> of a control, the `control` parameter is set to the control that owns <xref:System.Windows.Controls.ControlTemplate>.  When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement>, `control` is `null` and you should use the `stateGroupsRoot` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stateGroupsRoot" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="newState" /> is <see langword="null" />.</exception>
+        <param name="stateGroup">To be added.</param>
+        <param name="oldState">To be added.</param>
+        <param name="newState">To be added.</param>
+        <param name="control">To be added.</param>
+        <param name="stateGroupsRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseCurrentStateChanging">
@@ -334,26 +229,13 @@
         <Parameter Name="stateGroupsRoot" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="stateGroup">The object that the <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanging" /> event occurred on.</param>
-        <param name="oldState">The state that the control is transitioning from.</param>
-        <param name="newState">The state that the control is transitioning to.</param>
-        <param name="control">The control that is transitioning states.</param>
-        <param name="stateGroupsRoot">The root element that contains the <see cref="T:System.Windows.VisualStateManager" />.</param>
-        <summary>Raises the <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanging" /> event on the specified <see cref="T:System.Windows.VisualStateGroup" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.VisualStateGroup> is set on the <xref:System.Windows.Controls.ControlTemplate> of a control, the `control` parameter is set to the control that owns <xref:System.Windows.Controls.ControlTemplate>.  When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement>, `control` is `null` and you should use the `stateGroupsRoot` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stateGroupsRoot" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="newState" /> is <see langword="null" />.</exception>
+        <param name="stateGroup">To be added.</param>
+        <param name="oldState">To be added.</param>
+        <param name="newState">To be added.</param>
+        <param name="control">To be added.</param>
+        <param name="stateGroupsRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCustomVisualStateManager">
@@ -373,9 +255,9 @@
         <Parameter Name="value" Type="System.Windows.VisualStateManager" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to set the property on.</param>
-        <param name="value">The visual state manager that transitions between the states of a control.</param>
-        <summary>Sets the <see cref="System.Windows.VisualStateManager.CustomVisualStateManager%2A" /> attached property.</summary>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +274,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.VisualStateManager.VisualStateGroups%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.KernelType" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the kernel used to create the effect.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration specifies the curve that is used to calculate the blur.  
-  
- **Performance Note:** A Gaussian kernel creates a higher-quality blur but if performance is a concern, use the Box kernel because it uses less calculations.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Box">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.KernelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A simple blur created with a square distribution curve.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gaussian">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.KernelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A distributed curve that creates a smooth distribution for a blur.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

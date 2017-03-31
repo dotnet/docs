@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables the instantiation of a tree of <see cref="T:System.Windows.FrameworkElement" /> and/or <see cref="T:System.Windows.FrameworkContentElement" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,12 +37,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkTemplate" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +52,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,18 +62,11 @@
         <Parameter Name="templatedParent" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="name">The string name.</param>
-        <param name="templatedParent">The context of the <see cref="T:System.Windows.FrameworkElement" /> where this template is applied.</param>
-        <summary>Finds the element associated with the specified name defined within this template.</summary>
-        <returns>The element associated with the specified name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="templatedParent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasContent">
@@ -86,16 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this template has optimized content.</summary>
-        <value>
-          <see langword="true" /> if this template has optimized content; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,16 +94,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this object is in an immutable state so it cannot be changed.</summary>
-        <value>
-          <see langword="true " />if this object is in an immutable state; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,8 +119,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads the content of the template as an instance of an object and returns the root element of the content.</summary>
-        <returns>The root element of the content. Calling this multiple times returns separate instances.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,17 +141,10 @@
         <Parameter Name="scopedElement" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name to register.</param>
-        <param name="scopedElement">The object to be mapped to the provided name.</param>
-        <summary>Registers a new name/object pair into the current name scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="scopedElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -177,7 +154,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -192,40 +168,9 @@
         <ReturnType>System.Windows.ResourceDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of resources that can be used within the scope of this template.</summary>
-        <value>The resources that can be used within the scope of this template.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlPropertyElementUsage_Resources"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.Resources>  
-    oneOrMoreResourceElements  
-  </object.Resources>  
-</object>  
-- or -   
-<object>  
-  <object.Resources>  
-    <ResourceDictionary Source="externalDictionarySource"/>  
-  </object.Resources>  
-</object>  
-```  
-  
-<a name="xamlValues_Resources"></a>   
-## XAML Values  
- *oneOrMoreResourceElements*  
- One or more resource elements. To be referenced later in either [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) or [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) syntax in XAML, a resource element MUST have an `x:Key` attribute.  
-  
- \<ResourceDictionary Source="*externalDictionarySource*"/>  
- An external file that defines a <xref:System.Windows.ResourceDictionary>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Seal">
@@ -235,7 +180,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Locks the template so it cannot be changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -269,10 +212,9 @@
         <Parameter Name="manager" Type="System.Windows.Markup.XamlDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="manager">The <see cref="T:System.Windows.Markup.XamlDesignerSerializationManager" />.</param>
-        <summary>Returns a value that indicates whether serialization processes should serialize the value of the <see cref="System.Windows.FrameworkTemplate.Resources%2A" /> property on instances of this class.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Windows.FrameworkTemplate.Resources%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -296,9 +237,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether serialization processes should serialize the value of the <see cref="System.Windows.FrameworkTemplate.VisualTree%2A" /> property on instances of this class.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Windows.FrameworkTemplate.VisualTree%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,17 +258,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name identifier for the object being requested.</param>
-        <summary>Returns an object that has the provided identifying name.</summary>
-        <returns>The object, if found. Returns <see langword="null" /> if no object of that name was found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FrameworkTemplate> instance is cast to an <xref:System.Windows.Markup.INameScope> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable">
@@ -348,10 +280,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The name of the requested ambient property.</param>
-        <summary>Queries whether a specified ambient property is available in the current scope.</summary>
-        <returns>
-          <see langword="true" /> if the requested ambient property is available; otherwise, <see langword="false" />.</returns>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +307,8 @@
         <ReturnType>System.Windows.TemplateContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a reference to the object that records or plays the XAML nodes for the template when the template is defined or applied by a writer.</summary>
-        <value>A reference to the object that records or plays the XAML nodes for the template.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +319,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,16 +328,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the mapping to remove.</param>
-        <summary>Removes a name/object mapping from the XAML namescope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateTemplatedParent">
@@ -417,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -427,16 +349,9 @@
         <Parameter Name="templatedParent" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="templatedParent">The element this template is applied to.</param>
-        <summary>When overridden in a derived class, supplies rules for the element this template is applied to.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base implementation specifies that the templated parent must be a non-null <xref:System.Windows.FrameworkElement>.  
-  
- ]]></format>
-        </remarks>
+        <param name="templatedParent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualTree">
@@ -446,40 +361,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FrameworkElementFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the root node of the template.</summary>
-        <value>The root node of the template.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlPropertyElementUsage_VisualTree"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <VisualTreeRootNode > VisualTreeNodeContents  
-  </VisualTreeRootNode >  
-</object>  
-```  
-  
-<a name="xamlValues_VisualTree"></a>   
-## XAML Values  
- *VisualTreeRootNode*  
- A single XAML element as the immediate child of the <xref:System.Windows.FrameworkTemplate> subclass. Templates must have a single root node. In order to generate a useful template, the element chosen as *VisualTreeRootNode* is expected to support a content model of its own, often a model that supports multiple child elements.  
-  
- *VisualTreeNodeContents*  
- One or more elements that complete the intended template. If the element chosen as *VisualTreeRootNode* only supports a single child, then there can only be one element declared as *VisualTreeNodeContents*. It is also possible (though uncommon) to provide text content if the chosen *VisualTreeRootNode* supports a text content property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

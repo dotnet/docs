@@ -4,14 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EntityReference`1" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TEntity">
       <Constraints>
         <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-        <InterfaceName>System.Data.Objects.DataClasses.IEntityWithRelationships</InterfaceName>
       </Constraints>
     </TypeParameter>
   </TypeParameters>
@@ -25,28 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TEntity">The entity type of the reference.</typeparam>
-    <summary>Represents a related end of an association with a multiplicity of zero or one.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An EntityReference(TEntity) object is returned by a navigation property when the related end has a multiplicity of zero or one. For more information, see [NavigationProperty Element (CSDL)](http://msdn.microsoft.com/en-us/5829a238-a50e-4c81-901d-7b54fc00f27e).  
-  
- An EntityReference(TEntity) object might have a corresponding <xref:System.Data.Objects.DataClasses.EntityCollection%601> (one-to-many relationship) or EntityReference(TEntity) (one-to-one relationship) at the other end of the relationship. When an EntityReference(TEntity) and an <xref:System.Data.Objects.DataClasses.EntityCollection%601> model opposing ends of the same relationship, the integrity of the relationship is maintained at the object level.  
-  
- This class cannot be inherited.  
-  
-   
-  
-## Examples  
- This example shows how to use the EntityReference(TEntity) object to change a relationship between a `SalesOrderHeader` object and a related `Address` object that represents the shipping address for the order.  
-  
- [!code-vb[DP ObjectServices Concepts#ChangeObjectRelationship](~/add/codesnippet/visualbasic/objectservicesconceptsvb/Source.vb#changeobjectrelationship)]
- [!code-cs[DP ObjectServices Concepts#ChangeObjectRelationship](~/add/codesnippet/csharp/objectservicesconceptscs/Source.cs#changeobjectrelationship)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TEntity">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,12 +35,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of <see cref="System.Data.Objects.DataClasses.EntityReference%601" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +50,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,22 +59,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">The object being attached.</param>
-        <summary>Creates a many-to-one or one-to-one relationship between two objects in the object context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Attach method is used to define a relationship between an object and a related object when both objects are already attached to an object context. Set the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property if the related object is not already attached to the object context. When both objects are detached, you can also define the relationship by setting the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property and then attaching the root object in the object graph. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/en-us/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
-  
- The object associated with this <xref:System.Data.Objects.DataClasses.EntityReference%601> and all objects being attached to it must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state.  
-  
- An object in the <xref:System.Data.EntityState> state can only be attached when the <xref:System.Data.Objects.ObjectStateManager> is already tracking the relationship instance.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">When the <paramref name="entity" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">When the <paramref name="entity" /> cannot be related to the current related end. This can occur when the association in the conceptual schema does not support a relationship between the two types.</exception>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSourceQuery">
@@ -107,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,21 +78,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an equivalent object query that returns the related object.</summary>
-        <returns>An <see cref="System.Data.Objects.ObjectQuery%601" /> that returns the related object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to obtain a new instance of <xref:System.Data.Objects.ObjectQuery%601> that, when it is executed, returns the related object. This is useful as the starting point for a more complex join, union, or filtered query, or to return the referenced object in a detached state using the <xref:System.Data.Objects.MergeOption> option.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When the object is in an <see cref="T:System.Data.EntityState" /> state.  
-  
- -or-  
-  
- When the object is in a <see cref="T:System.Data.EntityState" /> state with a <see cref="System.Data.Objects.ObjectQuery.MergeOption%2A" /> other than <see cref="T:System.Data.Objects.MergeOption" />.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -139,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,38 +99,9 @@
         <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
       </Parameters>
       <Docs>
-        <param name="mergeOption">Specifies how the object should be returned if it already exists in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
-        <summary>Loads the related object for this <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> with the specified merge option.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to load the related object.  
-  
- When loaded, the related object is accessed from the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property.  
-  
- To explicitly load related objects, you must call the `Load` method on the related end retuned by the navigation property. For a one-to-many relationship, call the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A> method on <xref:System.Data.Objects.DataClasses.EntityCollection%601>, and for a one-to-one relationship, call the Load on <xref:System.Data.Objects.DataClasses.EntityReference%601>. This loads the related object data into the object context. When a query returns results, you can enumerate through the collection of objects using a `foreach` loop (`For Each...Next` in Visual Basic) and conditionally call the `Load` method on <xref:System.Data.Objects.DataClasses.EntityReference%601> and <xref:System.Data.Objects.DataClasses.EntityCollection%601> properties for each entity in the results.  
-  
- The Load method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
-  
-> [!NOTE]
->  When you call the Load method during a `foreach` (C#) or `For Each` (Visual Basic) enumeration, Object Services tries to open a new data reader. This operation will fail unless you have enabled multiple active results sets by specifying `multipleactiveresultsets=true` in the connection string. You can also load the result of the query into a <xref:System.Collections.Generic.List%601> collection. This closes the data reader and enables you to enumerate over the collection to load referenced objects.  
-  
- This method calls the <xref:System.Data.Objects.DataClasses.RelatedEnd.ValidateLoad%2A> method before loading the related object. See this method for a list of additional exceptions.  
-  
- When the related object is already loaded in the <xref:System.Data.Objects.ObjectContext>, the Load method enforces the <xref:System.Data.Objects.MergeOption> specified by the `mergeOption` parameter. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The source of the <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> is <see langword="null" />.  
-  
- -or-  
-  
- A query returned more than one related end.  
-  
- -or-  
-  
- A query returned zero related ends, and one related end was expected.</exception>
+        <param name="mergeOption">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRefDeserialized">
@@ -210,8 +131,8 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The serialized stream.</param>
-        <summary>This method is used internally to serialize related entity objects.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,8 +163,8 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The serialized stream.</param>
-        <summary>This method is used internally to serialize related entity objects.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -269,16 +189,9 @@
         <ReturnType>TEntity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the related object returned by this <see cref="System.Data.Objects.DataClasses.EntityReference%601" />.</summary>
-        <value>The object returned by this <see cref="System.Data.Objects.DataClasses.EntityReference%601" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No value will be assigned if the value being set is the same as the current value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

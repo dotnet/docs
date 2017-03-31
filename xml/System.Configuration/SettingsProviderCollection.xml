@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of application settings providers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SettingsProviderCollection class is a straightforward extension of the <xref:System.Configuration.Provider.ProviderCollection> class to provide for storage of <xref:System.Configuration.SettingsProvider> objects.  
-  
- The <xref:System.Configuration.ApplicationSettingsBase> class uses this collection to manage the settings providers associated with each of its application settings properties through the <xref:System.Configuration.SettingsProviderAttribute>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsProviderCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default constructor that is implicitly provided.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -55,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,30 +46,9 @@
         <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
       </Parameters>
       <Docs>
-        <param name="provider">A <see cref="T:System.Configuration.Provider.ProviderBase" /> to add to the collection.</param>
-        <summary>Adds a new settings provider to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Configuration.Provider.ProviderBase.Name%2A> property of the <xref:System.Configuration.SettingsProvider> is used as the storage key.  
-  
-> [!CAUTION]
->  Although the Add method has a single <xref:System.Configuration.Provider.ProviderBase> parameter to match the signature of this same method in the base class <xref:System.Configuration.Provider.ProviderCollection>, this method will throw an exception if the `provider` parameter is not of type <xref:System.Configuration.SettingsProvider>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="provider" /> parameter is not of type <see cref="T:System.Configuration.SettingsProvider" />.  
-  
- -or-  
-  
- The <see cref="System.Configuration.Provider.ProviderBase.Name%2A" /> property of the provider parameter is null or an empty string.  
-  
- -or-  
-  
- A settings provider with the same <see cref="System.Configuration.Provider.ProviderBase.Name%2A" /> already exists in the collection.</exception>
-        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="provider" /> parameter is <see langword="null" />.</exception>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -98,7 +58,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,19 +67,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A <see cref="T:System.String" /> containing the friendly name of the settings provider.</param>
-        <summary>Gets the settings provider in the collection that matches the specified name.</summary>
-        <value>If found, the <see cref="T:System.Configuration.SettingsProvider" /> whose name matches that specified by the name parameter; otherwise, <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can make a <xref:System.Configuration.SettingsProviderCollection> read-only by using the <xref:System.Configuration.Provider.ProviderCollection.SetReadOnly%2A> method. However, it is invalid to methods such as <xref:System.Configuration.SettingsProviderCollection.Add%2A>, <xref:System.Configuration.Provider.ProviderCollection.Remove%2A>, and <xref:System.Configuration.Provider.ProviderCollection.Clear%2A> on such a collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The collection is read-only when setting this value.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

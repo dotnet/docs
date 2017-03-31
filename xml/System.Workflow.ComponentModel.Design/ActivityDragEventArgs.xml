@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDragEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a class that provides data for the <see cref="System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragDrop%2A" />, <see cref="System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnDragEnter%2A" />, and <see cref="System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A" /> events in the workflow designer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- These event arguments are passed to <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes when a drag-and-drop operation is in progress on the workflow design surface. <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes can access the information contained in the ActivityDragEventArgs class to influence the behavior of the operation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Activities">
@@ -39,15 +27,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of activities upon which a drag-and-drop operation is performed.</summary>
-        <value>A read-only collection that contains all <see cref="T:System.Workflow.ComponentModel.Activity" /> objects on which the drag-and-drop operation is performed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location where the activities are to be dropped on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Point" /> that defines the location on the workflow design surface where the activities will be dropped.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.WorkflowView> class creates a drag image for the activities being dragged. <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> objects can use the DragImageSnapPoint property to snap the image to a target and drop the activities at the specified location.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DragInitiationPoint">
@@ -84,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Point" /> on the workflow design surface where a drag operation began.</summary>
-        <value>A <see cref="T:System.Drawing.Point" /> that defines the location on the workflow design surface where the drag operation began.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

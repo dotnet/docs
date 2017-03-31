@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.VirtualPathExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains the service's virtual path when the service is hosted in Internet Information Services (IIS) or Windows Process Activation Service (WAS).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This extension is present only for services hosted in IIS or WAS. Services can determine whether they are hosted in IIS or WAS by retrieving this extension from their <xref:System.ServiceModel.ServiceHostBase>, as shown in the following example.  
-  
-   
-  
-## Examples  
- The following example shows how to recover the VirtualPathExtension from the service host and return a value that it is hosted in IIS or WAS.  
-  
-```c#  
-bool isHosted = false;  
-ServiceHostBase host = OperationContext.Current.Host;  
-VirtualPathExtension vpe = host.Extentions.Find<VirtualPathExtension>();  
-  
-if( vpe != null )  
-Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPath);  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationVirtualPath">
@@ -54,8 +32,8 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the IIS or WAS application that hosts the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service.</summary>
-        <value>The virtual path of the IIS or WAS application that hosts the service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +44,6 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,16 +53,9 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <Parameter Name="owner" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.ServiceModel.ServiceHostBase" /> using the virtual path.</param>
-        <summary>This method is provided to support the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] infrastructure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method supports the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -95,7 +65,6 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,16 +74,9 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <Parameter Name="owner" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.ServiceModel.ServiceHostBase" /> using the virtual path.</param>
-        <summary>This method is provided to support the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] infrastructure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method supports the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -130,8 +92,8 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the site name of the IIS or WAS application that hosts the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service.</summary>
-        <value>The site name of the IIS or WAS application that hosts the service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,15 +104,14 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path used by a service.</summary>
-        <value>The virtual path used by a service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

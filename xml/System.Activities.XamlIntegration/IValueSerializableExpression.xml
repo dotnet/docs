@@ -8,15 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for converting expressions to strings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Authors of expression activities who want to offer a short textual form of the activities' expressions should implement this interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CanConvertToString">
@@ -35,10 +28,9 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">Context information that is used for conversion.</param>
-        <summary>Determines whether the expression can be converted into a string.</summary>
-        <returns>
-          <see langword="true" /> if the expression can be converted into a string; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +50,9 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">Context information that is used for conversion.</param>
-        <summary>Converts an expression to a string.</summary>
-        <returns>A string representation of the expression.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.UserControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,35 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a simple way to create a control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Controls in [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] support rich content, styles, triggers, and templates. In many cases, these features allow you to create custom and consistent experiences without having to create a new control. For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
-  
- If you do need to create a new control, the simplest way is to create a class that derives from UserControl. Before you do so, consider that your control will not support templates and therefore will not support complex customization. However, deriving from UserControl is a suitable model if you want to build your control by adding existing elements to it, similar to how you build an application, and if you do not need to support complex customization. (If you want to use templates with your control, derive from <xref:System.Windows.Controls.Control> instead.) For more information about the different models for authoring controls, see [Control Authoring Overview](../Topic/Control%20Authoring%20Overview.md).  
-  
- A UserControl is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-   
-  
-## Examples  
- The following example shows how to create a simple `NumericUpDown`UserControl.  
-  
- [!code-xml[UserControlNumericUpDown#Markup](~/add/codesnippet/xaml/UserControl/NumericUpDown.xaml#markup)]  
-  
- The following shows the logic of this UserControl:  
-  
- [!code-cs[UserControlNumericUpDown#CodeBehind](~/add/codesnippet/csharp/UserControl/NumericUpDown.xaml.cs#codebehind)]
- [!code-vb[UserControlNumericUpDown#CodeBehind](~/add/codesnippet/visualbasic/usercontrol/numericupdown.xaml.vb#codebehind)]  
-  
- For more information, see [Control Authoring Overview](../Topic/Control%20Authoring%20Overview.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.UserControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for this <see cref="T:System.Windows.Controls.UserControl" />.</summary>
-        <returns>A new <see cref="T:System.Windows.Automation.Peers.UserControlAutomationPeer" /> for this <see cref="T:System.Windows.Controls.UserControl" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

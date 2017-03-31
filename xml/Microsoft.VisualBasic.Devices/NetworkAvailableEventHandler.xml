@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,16 +22,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" /> object that contains the event data.</param>
-    <summary>Represents the method that will handle the <see langword="My.Application.NetworkAvailabilityChanged" /> or <see langword="My.Computer.Network.NetworkAvailabilityChanged" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In Visual Basic, you do not need to work with this delegate explicitly. For more information, see the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> event or the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> event.  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineOptionParser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Determines whether options that are specified to the command-line compiler jsc.exe are correctly formed, and reads the arguments if any are included.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineOptionParser" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,10 +47,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="option">The command-line option that the user specified.</param>
-        <param name="prefix">The option name.</param>
-        <summary>Gets the argument from the specified command-line option. Applies to options that have only one name, such as <c>/out:&lt;filename&gt;</c>.</summary>
-        <returns>The argument, "" if the argument is not specified, or null if the option or argument is not correctly formed.</returns>
+        <param name="option">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,11 +72,11 @@
         <Parameter Name="longPrefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="option">The command-line option that the user specified.</param>
-        <param name="shortPrefix">The short form of the option name.</param>
-        <param name="longPrefix">The long form of the option name.</param>
-        <summary>Gets the argument from the specified command-line option. Applies to options that can be specified by a short or long form of the option name, such as <c>/r</c> or <c>/reference</c> for <c>/r[eference]:&lt;file list&gt;</c>.</summary>
-        <returns>The argument, "" if the argument is not specified, or null if the option or argument is not correctly formed.</returns>
+        <param name="option">To be added.</param>
+        <param name="shortPrefix">To be added.</param>
+        <param name="longPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,11 +97,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="option">The command-line option that the user specified.</param>
-        <param name="prefix">The option name.</param>
-        <summary>Gets the <c>+</c> or <c>-</c> argument from the specified command-line option. Applies to options that have only one name, such as <c>/debug[+|-]</c>.</summary>
-        <returns>
-          <see langword="false" /> for <c>-</c>; <see langword="true" /> for <c>+</c> or if the argument is not specified; null if the option or argument is not correctly formed.</returns>
+        <param name="option">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,12 +122,11 @@
         <Parameter Name="longPrefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="option">The command-line option that the user specified.</param>
-        <param name="shortPrefix">The short form of the option name.</param>
-        <param name="longPrefix">The long form of the option name.</param>
-        <summary>Gets the <c>+</c> or <c>-</c> argument from the specified command-line option. Applies to options that can be specified by a short or long form of the option name.</summary>
-        <returns>
-          <see langword="false" /> for <c>-</c>; <see langword="true" /> for <c>+</c> or if the argument is not specified; null if the option or argument is not correctly formed.</returns>
+        <param name="option">To be added.</param>
+        <param name="shortPrefix">To be added.</param>
+        <param name="longPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,11 +147,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="option">The command-line option that the user specified.</param>
-        <param name="prefix">The option name.</param>
-        <summary>Verifies that the specified option is correctly formed.</summary>
-        <returns>
-          <see langword="true" /> if the option is correctly formed; otherwise, <see langword="false" />.</returns>
+        <param name="option">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

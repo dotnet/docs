@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,33 +19,10 @@
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a default implementation for a lifetime sponsor class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current lifetime sponsor implementation can be used to sponsor objects by specifying the required renewal <xref:System.TimeSpan>.  
-  
-> [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
-  
-   
-  
-## Examples  
- The following example illustrates the ClientSponsor class to extend the life of a class-activated remote object.  
-  
- [!code-cs[ClientSponsor_Register#1](~/add/codesnippet/csharp/t-system.runtime.remotin_34_1.cs)]
- [!code-vb[ClientSponsor_Register#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_34_1.vb)]
- [!code-cpp[ClientSponsor_Register#1](~/add/codesnippet/cpp/t-system.runtime.remotin_34_1.cpp)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission Value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,20 +32,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> class with default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default time by which the lifetime of a sponsored object is increased when renewal is requested to 2 minutes. For more information on the renewal time, see the <xref:System.Runtime.Remoting.Lifetime.LifetimeServices.RenewOnCallTime%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,15 +48,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="renewalTime" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="renewalTime">The <see cref="T:System.TimeSpan" /> by which to increase the lifetime of the sponsored objects when renewal is requested.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> class with the renewal time of the sponsored object.</summary>
+        <param name="renewalTime">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,30 +67,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Empties the list objects registered with the current <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ClientSponsor_Register#2](~/add/codesnippet/csharp/m-system.runtime.remotin_73_1.cs)]
- [!code-vb[ClientSponsor_Register#2](~/add/codesnippet/visualbasic/m-system.runtime.remotin_73_1.vb)]
- [!code-cpp[ClientSponsor_Register#2](~/add/codesnippet/cpp/m-system.runtime.remotin_73_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -130,20 +86,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees the resources of the current <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> before the garbage collector reclaims them.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,36 +105,17 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />, providing a lease for the current object.</summary>
-        <returns>An <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> for the current object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- [!code-cs[ClientSponsor_Register#2](~/add/codesnippet/csharp/m-system.runtime.remotin_23_1.cs)]
- [!code-vb[ClientSponsor_Register#2](~/add/codesnippet/visualbasic/m-system.runtime.remotin_23_1.vb)]
- [!code-cpp[ClientSponsor_Register#2](~/add/codesnippet/cpp/m-system.runtime.remotin_23_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -193,14 +125,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -208,20 +135,10 @@
         <Parameter Name="obj" Type="System.MarshalByRefObject" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to register for sponsorship with the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />.</param>
-        <summary>Registers the specified <see cref="T:System.MarshalByRefObject" /> for sponsorship.</summary>
-        <returns>
-          <see langword="true" /> if registration succeeded; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ClientSponsor_Register#2](~/add/codesnippet/csharp/cd049e6d-46c7-4c07-ad1d-_1.cs)]
- [!code-vb[ClientSponsor_Register#2](~/add/codesnippet/visualbasic/cd049e6d-46c7-4c07-ad1d-_1.vb)]
- [!code-cpp[ClientSponsor_Register#2](~/add/codesnippet/cpp/cd049e6d-46c7-4c07-ad1d-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Renewal">
@@ -231,14 +148,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -246,24 +158,10 @@
         <Parameter Name="lease" Type="System.Runtime.Remoting.Lifetime.ILease" />
       </Parameters>
       <Docs>
-        <param name="lease">The lifetime lease of the object that requires lease renewal.</param>
-        <summary>Requests a sponsoring client to renew the lease for the specified object.</summary>
-        <returns>The additional lease time for the specified object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Remoting.Lifetime.ISponsor.Renewal%2A> method is called by the distributed garbage collector to renew the lease for the specified object.  
-  
-   
-  
-## Examples  
- [!code-cs[ClientSponsor_Register#2](~/add/codesnippet/csharp/33c31606-7c3d-4649-88b6-_1.cs)]
- [!code-vb[ClientSponsor_Register#2](~/add/codesnippet/visualbasic/33c31606-7c3d-4649-88b6-_1.vb)]
- [!code-cpp[ClientSponsor_Register#2](~/add/codesnippet/cpp/33c31606-7c3d-4649-88b6-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="lease">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenewalTime">
@@ -273,25 +171,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.TimeSpan" /> by which to increase the lifetime of the sponsored objects when renewal is requested.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> by which to increase the lifetime of the sponsored objects when renewal is requested.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ClientSponsor_Register#2](~/add/codesnippet/csharp/p-system.runtime.remotin_80_1.cs)]
- [!code-vb[ClientSponsor_Register#2](~/add/codesnippet/visualbasic/p-system.runtime.remotin_80_1.vb)]
- [!code-cpp[ClientSponsor_Register#2](~/add/codesnippet/cpp/p-system.runtime.remotin_80_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unregister">
@@ -301,14 +190,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -316,18 +200,9 @@
         <Parameter Name="obj" Type="System.MarshalByRefObject" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to unregister.</param>
-        <summary>Unregisters the specified <see cref="T:System.MarshalByRefObject" /> from the list of objects sponsored by the current <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ClientSponsor_Register#2](~/add/codesnippet/csharp/476ce3f0-ff57-4e60-8db3-_1.cs)]
- [!code-vb[ClientSponsor_Register#2](~/add/codesnippet/visualbasic/476ce3f0-ff57-4e60-8db3-_1.vb)]
- [!code-cpp[ClientSponsor_Register#2](~/add/codesnippet/cpp/476ce3f0-ff57-4e60-8db3-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

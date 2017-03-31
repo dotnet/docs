@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserRefreshOption" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants that define how the <see cref="T:System.Windows.Forms.WebBrowser" /> control can refresh its contents.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used with the <xref:System.Windows.Forms.WebBrowser.Refresh%2A?displayProperty=fullName> method to specify how the <xref:System.Windows.Forms.WebBrowser> control requests an updated version of the current Web page from the server.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Completely">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserRefreshOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A refresh that requests the latest version of the current Web page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserRefreshOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use only; do not use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IfExpired">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserRefreshOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A refresh that requests an update only if the current Web page has expired.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserRefreshOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A refresh that requests a copy of the current Web page that has been cached on the server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

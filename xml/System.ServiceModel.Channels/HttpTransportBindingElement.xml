@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpTransportBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,49 +19,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the binding element used to specify an HTTP transport for transmitting messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpTransportBindingElement class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] to ensure interoperability with other non-[!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] Web services stacks.  
-  
- The [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTP protocol.  
-  
- You configure the factories that this class creates by setting its properties, such as <xref:System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme%2A>, <xref:System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode%2A>, and <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize%2A>.  
-  
- You can also set properties on the base class, <xref:System.ServiceModel.Channels.TransportBindingElement>, such as <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A>, <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A>, and <xref:System.ServiceModel.Channels.TransportBindingElement.MaxBufferPoolSize%2A>. For a complete list of properties, see <xref:System.ServiceModel.Channels.TransportBindingElement>.  
-  
-   
-  
-## Examples  
- The following code shows how to imperatively use the HttpTransportBindingElement.  
-  
- [!code-vb[S_Imperative#1](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_19_1.vb)]
- [!code-cs[S_Imperative#1](~/add/codesnippet/csharp/t-system.servicemodel.ch_19_1.cs)]  
-  
- `HttpTransportBindingElement` can also be used in a configuration file as shown in the following configuration.  
-  
-```  
-<bindings>  
-  <customBinding>  
-    <binding name="Binding1">  
-      <reliableSession acknowledgementInterval="00:00:00.2000000" enableFlowControl="true"  
-                        maxTransferWindowSize="32" inactivityTimeout="00:10:00" maxPendingChannels="128"  
-                        maxRetryCount="8" ordered="true" />  
-      <security mode="None"/>  
-      <httpTransport authenticationScheme="Anonymous" bypassProxyOnLocal="false"  
-                    hostNameComparisonMode="StrongWildcard"   
-                    proxyAuthenticationScheme="Anonymous" realm=""   
-                    useDefaultWebProxy="true" />  
-    </binding>  
-  </customBinding>  
-</bindings>  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,12 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpTransportBindingElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,39 +46,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="elementToBeCloned" Type="System.ServiceModel.Channels.HttpTransportBindingElement" />
       </Parameters>
       <Docs>
-        <param name="elementToBeCloned">An <see cref="T:System.ServiceModel.Channels.HttpTransportBindingElement" /> object used to initialize this instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpTransportBindingElement" /> class using another binding element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is a copy constructor used to clone the binding.  
-  
-   
-  
-## Examples  
- The following example shows how to use the copy constructor in a derived class.  
-  
- [C#]  
-  
-```  
-public class MyBindingElement : HttpTransportBindingElement  
-{  
-    public MyBindingElement(MyBindingElement elementToBeCloned) : base(elementToBeCloned)  
-    {  
-    }  
-}  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="elementToBeCloned">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowCookies">
@@ -129,7 +65,7 @@ public class MyBindingElement : HttpTransportBindingElement
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -141,30 +77,9 @@ public class MyBindingElement : HttpTransportBindingElement
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the client accepts cookies and propagates them on future requests.</summary>
-        <value>
-          <see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is provided as a convenience for interacting with ASMX Web services that use cookies to make sure that the cookies returned from the server are automatically copied to all future client requests for that service.  
-  
-   
-  
-## Examples  
- The following example sets this property to indicate that all cookies from the server should be copied to future client requests.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBindingElement = new HttpBindingElement();  
-httpBindingElement.AllowCookies = true;  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationScheme">
@@ -174,7 +89,7 @@ httpBindingElement.AllowCookies = true;
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -186,48 +101,9 @@ httpBindingElement.AllowCookies = true;
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the authentication scheme used to authenticate client requests being processed by an HTTP listener.</summary>
-        <value>One of the enumeration values of the <see cref="T:System.Net.AuthenticationSchemes" /> enumeration that specifies the protocols used for client authentication. The default is <see cref="T:System.Net.AuthenticationSchemes" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The authentication scheme can only be set once.  
-  
-   
-  
-## Examples  
- The following example sets this property to use when authenticating client requests.  
-  
- [C#]  
-  
-```  
-[ServiceContract]  
-interface ICalculator  
-{  
-     [OperationContract]  
-            Int Add(int a, int b);  
-}  
-  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.AuthenticationScheme = AuthenticationSchemes.Digest;  
-CustomBinding binding = new CustomBinding(new TextMessageEncodingBindingElement(), httpBinding);  
-  
-EndpointAddress endpoint = new EndpointAddress(address);  
-ChannelFactory<ICalculator> proxy = new ChannelFactory<ICalculator>(binding, endpoint);  
-  
-proxy.Credentials.Windows.ClientCredential = new NetworkCredential("user", "password", "domain");  
-proxy.Credentials.Windows.AllowedImpersonationLevel = System.Security.Principal.TokenImpersonationLevel.Impersonation;  
-proxy.Open();  
-  
-ICalculator calc = proxy.CreateChannel();  
-  
-int odd=calc.Add(5,4);  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value for the <see cref="T:System.Net.AuthenticationSchemes" /> was already set.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
@@ -237,7 +113,7 @@ int odd=calc.Add(5,4);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,22 +126,11 @@ int odd=calc.Add(5,4);
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel factory.</typeparam>
-        <param name="context">
-          <see cref="T:System.ServiceModel.Channels.BindingContext" /> members that describe bindings, behaviors, contracts and other information required to create the channel factory.</param>
-        <summary>Creates a channel factory that can be used to create a channel.</summary>
-        <returns>A channel factory of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> cannot be <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An invalid argument was passed.</exception>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
@@ -275,7 +140,6 @@ int odd=calc.Add(5,4);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,22 +157,11 @@ int odd=calc.Add(5,4);
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel factory.</typeparam>
-        <param name="context">
-          <see cref="T:System.ServiceModel.Channels.BindingContext" /> members that describe bindings, behaviors, contracts and other information required to create the channel factory.</param>
-        <summary>Creates a channel listener of the specified type.</summary>
-        <returns>A channel listener of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> cannot be <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An invalid argument was passed.</exception>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BypassProxyOnLocal">
@@ -318,7 +171,7 @@ int odd=calc.Add(5,4);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -330,31 +183,9 @@ int odd=calc.Add(5,4);
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether proxies are ignored for local addresses.</summary>
-        <value>
-          <see langword="true" /> if proxies are ignored for local addresses; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A local address is one that is on the local LAN or intranet.  
-  
- [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] always ignores the proxy if the service address begins with `http://localhost`. You should use the host name (rather than `localhost`) if you want clients to go through a proxy when talking to services on the same machine.  
-  
-   
-  
-## Examples  
- The following example sets this property to use when performing requests on the binding.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.BypassProxyOnLocal = true;  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
@@ -364,7 +195,7 @@ httpBinding.BypassProxyOnLocal = true;
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -377,14 +208,11 @@ httpBinding.BypassProxyOnLocal = true;
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel to check.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the channel.</param>
-        <summary>Determines whether a channel factory of the specified type can be built.</summary>
-        <returns>
-          <see langword="true" /> if a channel factory can be built; otherwise <see langword="false" />.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelListener&lt;TChannel&gt;">
@@ -394,7 +222,6 @@ httpBinding.BypassProxyOnLocal = true;
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,14 +239,11 @@ httpBinding.BypassProxyOnLocal = true;
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">The type of channel to check.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the channel.</param>
-        <summary>Determines whether a channel listener of the specified type can be built.</summary>
-        <returns>
-          <see langword="true" /> if a channel listener can be built; otherwise <see langword="false" />.</returns>
+        <typeparam name="TChannel">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -429,7 +253,7 @@ httpBinding.BypassProxyOnLocal = true;
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -437,22 +261,9 @@ httpBinding.BypassProxyOnLocal = true;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance that is a copy of the current binding element.</summary>
-        <returns>A new instance that is a copy of the current binding element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example clones the specified binding element.  
-  
- [C#]  
-  
-```  
-HttpBindingElement bindingElement = elementToClone.Clone();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecompressionEnabled">
@@ -462,20 +273,20 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the process for returning compressed message data to its original size and format is enabled.</summary>
-        <value>
-          <see langword="true" /> if decompression is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,14 +297,15 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the extended security policy used by the server to validate incoming client connections.</summary>
-        <value>The value of the extended security policy used by the server to validate incoming client connections.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,7 +316,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -521,10 +333,10 @@ HttpBindingElement bindingElement = elementToClone.Clone();
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the property to get.</typeparam>
-        <param name="context">A <see cref="T:System.ServiceModel.Channels.BindingContext" />.</param>
-        <summary>Gets a property from the specified <see cref="T:System.ServiceModel.Channels.BindingContext" />.</summary>
-        <returns>The property from the specified <see cref="T:System.ServiceModel.Channels.BindingContext" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,7 +347,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -547,10 +359,9 @@ HttpBindingElement bindingElement = elementToClone.Clone();
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching on the URI.</summary>
-        <value>The <see cref="System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode%2A" /> enumeration value that indicates whether the hostname is included when routing incoming requests to an endpoint URI. The default value is <see cref="T:System.ServiceModel.HostNameComparisonMode" />, which ignores the hostname in the match.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value set is not defined.</exception>
       </Docs>
     </Member>
     <Member MemberName="KeepAliveEnabled">
@@ -560,7 +371,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -572,24 +383,33 @@ HttpBindingElement bindingElement = elementToClone.Clone();
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to make a persistent connection to a service endpoint.</summary>
-        <value>
-          <see langword="true" /> if the request to the service endpoint should contain a Connection HTTP header with the value <see langword="Keep-alive" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set this property to `true` to send a Connection HTTP header with the value `Keep-alive`. A client uses this property to indicate a preference for persistent connections. When this property is `true`, the connection that the client makes to a service endpoint is persistent if the service endpoint supports that.  
-  
-   
-  
-## Examples  
- The following code shows how to set this property.  
-  
- [!code-cs[PoxSample#1](~/add/codesnippet/csharp/p-system.servicemodel.ch_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyExtendedProtectionPolicy">
+      <MemberSignature Language="C#" Value="public object LegacyExtendedProtectionPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LegacyExtendedProtectionPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.LegacyExtendedProtectionPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use ExtendedProtectionPolicy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferSize">
@@ -599,7 +419,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -611,30 +431,9 @@ HttpBindingElement bindingElement = elementToClone.Clone();
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size of the buffer to use. For buffered messages this value is the same as <see cref="System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A" />. For streamed messages, this value is the maximum size of the SOAP headers, which must be read in buffered mode.</summary>
-        <value>The maximum size, in bytes, of the buffer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For streamed messages, if the size of the message headers is greater than this property, then a <xref:System.ServiceModel.QuotaExceededException> is thrown. For a non-streamed message, if the message size is greater than this property, then the message is dropped.  
-  
- If not specified, this defaults to 65536.  
-  
-   
-  
-## Examples  
- The following example sets this property to use when performing requests on the binding.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.MaxBufferSize = 16384;  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPendingAccepts">
@@ -655,16 +454,9 @@ httpBinding.MaxBufferSize = 16384;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of connections the service can accept simultaneously.</summary>
-        <value>The maximum number of connections the service can accept simultaneously.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of MaxPendingAccepts is 0, which means WCF will configure the value for you. You can increase the number for better scalability. In the self-hosted case, this property controls the maximum number of simultaneous BeginGetContext calls WCF will invoke. Each time BeginGetContext is called some memory is pinned within the managed heap for buffering. If too many buffers are pinned, excessive heap fragmentation may result. This property is ignored in the web-hosted case.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageHandlerFactory">
@@ -680,8 +472,8 @@ httpBinding.MaxBufferSize = 16384;
         <ReturnType>System.ServiceModel.Channels.HttpMessageHandlerFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Http transport message handler factory.</summary>
-        <value>The Http transport message handler factory.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,12 +484,12 @@ httpBinding.MaxBufferSize = 16384;
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
@@ -707,23 +499,9 @@ httpBinding.MaxBufferSize = 16384;
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a URI that contains the address of the proxy to use for HTTP requests.</summary>
-        <value>The <see cref="T:System.Uri" /> that contains the address for the proxy. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example sets this property to use when performing requests on the binding. All requests are routed through this proxy, unless <xref:System.ServiceModel.Channels.HttpTransportBindingElement.BypassProxyOnLocal%2A> is set to `true` and the endpoint is a local endpoint.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.ProxyAddress = new Uri(http://proxyserver);  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProxyAuthenticationScheme">
@@ -733,7 +511,7 @@ httpBinding.ProxyAddress = new Uri(http://proxyserver);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -745,24 +523,9 @@ httpBinding.ProxyAddress = new Uri(http://proxyserver);
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the authentication scheme used to authenticate client requests being processed by an HTTP proxy.</summary>
-        <value>The <see cref="T:System.Net.AuthenticationSchemes" /> enumeration that specifies the protocols used for client authentication on the proxy. The default is <see cref="T:System.Net.AuthenticationSchemes" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example sets this property to use when sending requests to the proxy specified in the <xref:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress%2A> property.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.ProxyAddress = new Uri(http://proxyserver);  
-httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Realm">
@@ -772,7 +535,7 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -784,16 +547,9 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the authentication realm.</summary>
-        <value>The authentication realm. The default value is "".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Servers use realms to partition protected resources; each partition can have its own authentication scheme or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see [RFC 2617](http://go.microsoft.com/fwlink/?LinkID=95943).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestInitializationTimeout">
@@ -814,8 +570,8 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the requested initialization time out.</summary>
-        <value>The requested initialization time out.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -826,37 +582,16 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URI scheme for the transport.</summary>
-        <value>A <see cref="F:System.Uri.UriSchemeHttp" /> object that represents the URI scheme for the transport.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to validate bindings against base addresses.  
-  
-   
-  
-## Examples  
- The following example outputs the scheme of the binding to the console.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);  
-```  
-  
- The output is: "The scheme of the binding is http."  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeExtendedProtectionPolicy">
@@ -878,10 +613,8 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a valueindicating that it is not possible to XAML serialize the extended protection policy.</summary>
-        <returns>
-          <see langword="false" />
-        </returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -904,9 +637,8 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the message handler factory should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the message handler factory should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -929,9 +661,8 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the web socket settings should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the web socket settings should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,7 +673,6 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -953,23 +683,10 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
-        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert your custom policy assertion.</param>
-        <summary>Exports a custom policy assertion about bindings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
-  
- This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
-  
- The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
-  
- Once custom policy assertions have been attached to the WSDL information, clients can detect and import the custom binding assertions by implementing an <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="exporter">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportContract">
@@ -979,7 +696,6 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -990,9 +706,9 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
-        <param name="context">A context that provides mappings from exported WSDL elements to the contract description.</param>
-        <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
+        <param name="exporter">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1003,7 +719,6 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1014,9 +729,9 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
-        <param name="endpointContext">An endpoint context that provides mappings from exported WSDL elements to the endpoint description.</param>
-        <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
+        <param name="exporter">To be added.</param>
+        <param name="endpointContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,7 +742,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1039,24 +754,9 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the transfer mode.</summary>
-        <value>One of the following member values of TransferMode:  
-  
--   Buffered  
-  
--   Streamed  
-  
--   StreamedRequest  
-  
--   StreamedResponse</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Specifying TransferMode = Streamed implies both `StreamedRequest` and `StreamedResponse`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnsafeConnectionNtlmAuthentication">
@@ -1066,7 +766,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1078,37 +778,9 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether Unsafe Connection Sharing is enabled on the server. If enabled, NTLM authentication is performed once on each TCP connection.</summary>
-        <value>
-          <see langword="true" /> if Unsafe Connection Sharing is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to `true` and the first request over a particular connection is authenticated using NTLM, subsequent requests over the same connection are processed using the authentication information in <xref:System.Security.Principal.IIdentity> of the initial request.  
-  
- This property has no effect when NTLM is not the authentication protocol.  
-  
-> [!NOTE]
->  While setting this property to `true` increases performance because additional NTLM authentication challenges are not sent, there is a security risk in not requiring all requests to provide authentication information. You must determine whether the increase in performance is worth this risk.  
-  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication%2A>.  
-  
-   
-  
-## Examples  
- The following example sets the property to enable Unsafe Connection Sharing.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.AuthenticationScheme = AuthenticationSchemes.Ntlm;  
-httpBinding.UnsafeConnectionNtlmAuthentication = true;  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAuthenticationSchemes">
@@ -1127,8 +799,8 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The binding context.</param>
-        <summary>Updates the transport authentication schemes that contains the binding context.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1139,7 +811,7 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1151,24 +823,9 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the machine-wide proxy settings are used rather than the user specific settings.</summary>
-        <value>
-          <see langword="true" /> if the machine-wide proxy settings are used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example causes user-specific proxy settings to be used.  
-  
- [C#]  
-  
-```  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.UseDefaultWebProxy = false;  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WebSocketSettings">
@@ -1178,14 +835,15 @@ httpBinding.UseDefaultWebProxy = false;
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.WebSocketTransportSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the web socket configuration of the binding element.</summary>
-        <value>The web socket settings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

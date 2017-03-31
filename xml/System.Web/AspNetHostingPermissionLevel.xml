@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.AspNetHostingPermissionLevel" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the trust level that is granted to an ASP.NET Web application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See [ASP.NET Code Access Security](../Topic/ASP.NET%20Code%20Access%20Security.md) for detailed information about the permissions that are granted to each trust level.  
-  
- The members of this enumeration define application security levels ranging from full trust (the application is unconstrained by code access security) to minimal trust (the application has permission only to execute). You set the trust level for an ASP.NET resource with the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) configuration element in a Web.config or Machine.config file.  
-  
- If you want to lock security policy for a specific server or Web site, use the [location](http://msdn.microsoft.com/en-us/922ef7d5-da38-4661-b1c6-5b9e5ceda1d5) element in conjunction with the `allowOverride=false` attribute to ensure that trust policy settings cannot be overridden locally.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="High">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.AspNetHostingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that features protected with a demand for any level less than or equal to the <see langword="High" /> trust level will succeed. This level is intended for highly trusted managed-code applications that need to use most of the managed permissions that support semi-trusted access. It does not grant some of the highest permissions (for example, the ability to call into native code), but it does provide a way to run trusted applications with least privilege or to provide some level of constraints for highly trusted applications. This level is granted by configuring at least the High trust level in the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) section in a configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.AspNetHostingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that features protected with a demand for any level less than or equal to the Low level will succeed. This level is intended to allow read-only access to limited resources in a constrained environment. This level is granted by specifying the Low trust level in the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) section in a configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.AspNetHostingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that features protected with a demand for any level less than or equal to the Medium level will succeed. This level is granted by configuring at least the Medium trust level in the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) section in a configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimal">
@@ -84,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.AspNetHostingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that features protected with a demand for the Minimal level will succeed. This level allows code to execute but not to interact with resources present on the system. This level is granted by configuring at least the Minimal trust level using the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) section in a configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -101,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.AspNetHostingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that no permission is granted. All demands for <see cref="T:System.Web.AspNetHostingPermission" /> will fail.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unrestricted">
@@ -118,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.AspNetHostingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that all demands for permission to use all features of an application will be granted. This is equivalent to granting <see langword="Full" /> trust level in the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) section in a configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

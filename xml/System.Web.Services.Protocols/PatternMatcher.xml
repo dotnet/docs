@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.PatternMatcher" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Searches HTTP response text for return values for Web service clients.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PatternMatcher class performs pattern matching using regular expressions to find Web method return values in text encoded in the body of an HTTP response. The PatternMatcher class is called by the client-side <xref:System.Web.Services.Protocols.TextReturnReader> class, which deserializes Web service return values.  
-  
- Text pattern matching provides a way for Web services to retrieve HTML content without converting it to XML documents that must be bound to XML Schema definitions. Regular expression search targets are specified in a Web Services Description Language (WSDL) document via `match` XML elements within `text` elements. Both elements belong to the namespace http://microsoft.com/wsdl/mime/textMatching/.  
-  
- When `match` elements are specified in a WSDL document, the Wsdl.exe tool applies <xref:System.Web.Services.Protocols.MatchAttribute> attributes to the corresponding Web methods in the client proxy class that is generated. A <xref:System.Web.Services.Protocols.MatchAttribute> attribute's properties establish the search criteria for a PatternMatcher instance.  
-  
- A developer typically does not need to directly use PatternMatcher.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">A <see cref="T:System.Type" /> that specifies the return type for a Web method.</param>
-        <summary>Creates a <see cref="T:System.Web.Services.Protocols.PatternMatcher" /> instance based on the input type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Protocols.PatternMatcher> instance's properties, such as the regular expression to make the search target, are populated based on <xref:System.Web.Services.Protocols.MatchAttribute> attributes applied to fields of the return type.  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -62,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,17 +49,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to search, which is the body of the HTTP response.</param>
-        <summary>Searches a text input to deserialize an object representing a Web method return value.</summary>
-        <returns>An object representing a Web method return value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Match method's return value is the Web method return value deserialized from the input text.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

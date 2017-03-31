@@ -3,9 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Lookup`2&lt;TKey, TElement&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.IGrouping`2&lt;!TKey, !TElement&gt;&gt;, class System.Collections.IEnumerable, class System.Linq.ILookup`2&lt;!TKey, !TElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Lookup`2" />
   <AssemblyInfo>
-    <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TKey" />
@@ -23,30 +33,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TKey">The type of the keys in the Lookup(TKey,.</typeparam>
-    <typeparam name="TElement">The type of the elements of each <see cref="System.Collections.Generic.IEnumerable%601" /> value in the Lookup(TKey,.</typeparam>
-    <summary>Represents a collection of keys each mapped to one or more values.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Lookup(TKey, resembles a <xref:System.Collections.Generic.Dictionary%602>. The difference is that a <xref:System.Collections.Generic.Dictionary%602> maps keys to single values, whereas a Lookup(TKey, maps keys to collections of values.  
-  
- You can create an instance of a Lookup(TKey, by calling <xref:System.Linq.Enumerable.ToLookup%2A> on an object that implements <xref:System.Collections.Generic.IEnumerable%601>.  
-  
-> [!NOTE]
->  There is no public constructor to create a new instance of a Lookup(TKey,. Additionally, Lookup(TKey, objects are immutable, that is, you cannot add or remove elements or keys from a Lookup(TKey, object after it has been created.  
-  
-   
-  
-## Examples  
- The following example creates a Lookup(TKey, from a collection of objects. It then enumerates the Lookup(TKey, and outputs each key and each value in the key's associated collection of values. It also demonstrates how to use the properties <xref:System.Linq.Lookup%602.Count%2A> and <xref:System.Linq.Lookup%602.Item%2A> and the methods <xref:System.Linq.Lookup%602.Contains%2A> and <xref:System.Linq.Lookup%602.GetEnumerator%2A>.  
-  
- [!code-cs[System.Linq.Lookup#1](~/add/codesnippet/csharp/t-system.linq.lookup`2_1.cs)]
- [!code-vb[System.Linq.Lookup#1](~/add/codesnippet/visualbasic/t-system.linq.lookup`2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TKey">To be added.</typeparam>
+    <typeparam name="TElement">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplyResultSelector&lt;TResult&gt;">
@@ -55,15 +45,20 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Lookup`2.ApplyResultSelector``1(System.Func{`0,System.Collections.Generic.IEnumerable{`1},``0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Linq.Lookup`2/&lt;ApplyResultSelector&gt;d__13`1))</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -74,10 +69,10 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TKey,System.Collections.Generic.IEnumerable&lt;TElement&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the result values produced by <c>resultSelector</c>.</typeparam>
-        <param name="resultSelector">A function to project a result value from each key and its associated values.</param>
-        <summary>Applies a transform function to each key and its associated values and returns the results.</summary>
-        <returns>A collection that contains one value for each key/value collection pair in the <see cref="System.Linq.Lookup%602" />.</returns>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="resultSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +82,19 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Lookup`2.Contains(`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -98,21 +103,10 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">The key to find in the <see cref="System.Linq.Lookup%602" />.</param>
-        <summary>Determines whether a specified key is in the <see cref="System.Linq.Lookup%602" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the <see cref="System.Linq.Lookup%602" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use Contains to determine whether a <xref:System.Linq.Lookup%602> contains a specified key. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-cs[System.Linq.Lookup#4](~/add/codesnippet/csharp/m-system.linq.lookup`2.c_1.cs)]
- [!code-vb[System.Linq.Lookup#4](~/add/codesnippet/visualbasic/m-system.linq.lookup`2.c_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -121,32 +115,27 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Lookup`2.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of key/value collection pairs in the <see cref="System.Linq.Lookup%602" />.</summary>
-        <value>The number of key/value collection pairs in the <see cref="System.Linq.Lookup%602" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the Count property does not change because items cannot be added to or removed from a <xref:System.Linq.Lookup%602> object after it has been created.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use Count to determine the number of key/value collection pairs in a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-cs[System.Linq.Lookup#2](~/add/codesnippet/csharp/p-system.linq.lookup`2.c_1.cs)]
- [!code-vb[System.Linq.Lookup#2](~/add/codesnippet/visualbasic/p-system.linq.lookup`2.c_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -155,33 +144,28 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Lookup`2.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Linq.Lookup`2/&lt;GetEnumerator&gt;d__12))</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Linq.IGrouping&lt;TKey,TElement&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a generic enumerator that iterates through the <see cref="System.Linq.Lookup%602" />.</summary>
-        <returns>An enumerator for the <see cref="System.Linq.Lookup%602" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use GetEnumerator to iterate through the keys and values of a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-cs[System.Linq.Lookup#5](~/add/codesnippet/csharp/m-system.linq.lookup`2.g_1.cs)]
- [!code-vb[System.Linq.Lookup#5](~/add/codesnippet/visualbasic/m-system.linq.lookup`2.g_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -190,9 +174,19 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Lookup`2.Item(`0)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TElement&gt;</ReturnType>
@@ -201,25 +195,10 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the desired collection of values.</param>
-        <summary>Gets the collection of values indexed by the specified key.</summary>
-        <value>The collection of values indexed by the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This indexed property provides the ability to index a specific collection of values in the <xref:System.Linq.Lookup%602> by using the following syntax: `myLookup[key]` in [!INCLUDE[csprcs](~/add/includes/csprcs-md.md)] or `myLookup(key)` in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. If the `key` is not found in the collection, an empty sequence is returned.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use Item to index directly into a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-cs[System.Linq.Lookup#3](~/add/codesnippet/csharp/p-system.linq.lookup`2.i_1.cs)]
- [!code-vb[System.Linq.Lookup#3](~/add/codesnippet/visualbasic/p-system.linq.lookup`2.i_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -228,17 +207,27 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Lookup`2.System#Collections#IEnumerable#GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the <see cref="System.Linq.Lookup%602" />. This class cannot be inherited.</summary>
-        <returns>An enumerator for the <see cref="System.Linq.Lookup%602" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

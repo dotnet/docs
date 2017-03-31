@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.PropertyChangedCallback" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,22 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="d">The <see cref="T:System.Windows.DependencyObject" /> on which the property has changed value.</param>
-    <param name="e">Event data that is issued by any event that tracks changes to the effective value of this property.</param>
-    <summary>Represents the callback that is invoked when the effective property value of a dependency property changes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example registers a new dependency property, using the signature that specifies a PropertyChangedCallback. The PropertyChangedCallback is used to create a callback that changes an internal property whenever the public property changes.  
-  
- [!code-cs[WPFAquariumSln#RegisterAG](~/add/codesnippet/csharp/WPFAquariumSln/WPFAquariumObjects/Class1.cs#registerag)]
- [!code-vb[WPFAquariumSln#RegisterAG](~/add/codesnippet/visualbasic/wpfaquariumobjects/class1.vb#registerag)]  
-  
- [!code-cs[WPFAquariumSln#AGPropertyChangedCallback](~/add/codesnippet/csharp/WPFAquariumSln/WPFAquariumObjects/Class1.cs#agpropertychangedcallback)]
- [!code-vb[WPFAquariumSln#AGPropertyChangedCallback](~/add/codesnippet/visualbasic/wpfaquariumobjects/class1.vb#agpropertychangedcallback)]  
-  
- ]]></format>
-    </remarks>
+    <param name="d">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

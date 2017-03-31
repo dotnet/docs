@@ -4,24 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseUsageMode" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when the <see cref="T:System.ComponentModel.License" /> can be used.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.LicenseManager> and the <xref:System.ComponentModel.LicenseContext> classes use this enumeration. It is used to set a component's <xref:System.ComponentModel.LicenseManager.CurrentContext%2A>. See the <xref:System.ComponentModel.LicenseManager> class for details.  
-  
- For more information on licensing, see [How to: License Components and Controls](../Topic/How%20to:%20License%20Components%20and%20Controls.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Designtime">
@@ -31,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LicenseUsageMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used during design time by a visual designer or the compiler.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Runtime">
@@ -48,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LicenseUsageMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used during runtime.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

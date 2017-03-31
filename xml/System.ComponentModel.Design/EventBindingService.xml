@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.EventBindingService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,16 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A default implementation of the <see cref="T:System.ComponentModel.Design.IEventBindingService" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By providing a service for registering event handlers for component events, EventBindingService provides a way to link an event handler with a component event from designer code.  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,18 +31,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">The service provider from which <see cref="T:System.ComponentModel.Design.EventBindingService" /> will query for services.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.EventBindingService" /> class.</summary>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateUniqueMethodName">
@@ -61,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,20 +59,11 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="component">The component for which the method name will be created.</param>
-        <param name="e">The event to create a name for.</param>
-        <summary>Creates a unique method name.</summary>
-        <returns>The unique method name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The name returned by the CreateUniqueMethodName method must be compatible with the script language being used and it must not conflict with any other name in your code.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> or <paramref name="e" /> is <see langword="null" />.</exception>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FreeMethod">
@@ -95,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,18 +84,11 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">The component to which the method is bound.</param>
-        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> for the event handler.</param>
-        <param name="methodName">The name of the method to be freed.</param>
-        <summary>Provides a notification that a particular method is no longer being used by an event handler.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some implementations may intend to remove the event hander when no events are using it. By overriding <xref:System.ComponentModel.Design.EventBindingService.UseMethod%2A> and FreeMethod, an implementation can infer when a method is no longer needed.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="methodName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCompatibleMethods">
@@ -128,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,19 +107,10 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> containing the compatible delegate.</param>
-        <summary>Returns a collection of names of compatible methods.</summary>
-        <returns>A collection of strings that are names of compatible methods.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each string returned in the collection is the method name of a method whose signature is compatible with the delegate contained in `e`. GetCompatibleMethods should return an empty collection if no names are compatible.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> is <see langword="null" />.</exception>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -160,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,9 +129,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets the requested service from the service provider.</summary>
-        <returns>A reference to the service specified by <paramref name="serviceType" />, or <see langword="null" /> if the requested service is not available.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,17 +149,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays user code.</summary>
-        <returns>
-          <see langword="true" /> if it is possible to display the code; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ShowCode method does not display any particular code; generally it displays the last code the user typed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCode">
@@ -211,7 +161,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,18 +170,10 @@
         <Parameter Name="lineNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineNumber">The line number to show.</param>
-        <summary>Displays the user code at the given line number.</summary>
-        <returns>
-          <see langword="true" /> if it is possible to display the code; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Line numbers are one-based.  
-  
- ]]></format>
-        </remarks>
+        <param name="lineNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCode">
@@ -242,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,20 +194,12 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">The component to which the method is bound.</param>
-        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> for the event handler.</param>
-        <param name="methodName">The name of the method for which to display code.</param>
-        <summary>Displays the user code for the specified method.</summary>
-        <returns>
-          <see langword="true" /> if it is possible to display the code; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ShowCode method displays the body of the user code with the given method name.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="methodName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName">
@@ -277,7 +209,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,13 +219,11 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="component">The component instance the event is connected to.</param>
-        <param name="e">The event to create a name for.</param>
-        <summary>Creates a unique name for an event-handler method for the specified component and event.</summary>
-        <returns>The recommended name for the event-handler method for this event.</returns>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> or <paramref name="e" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods">
@@ -304,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,19 +242,10 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="e">The event to get the compatible event-handler methods for.</param>
-        <summary>Gets a collection of event-handler methods that have a method signature compatible with the specified event.</summary>
-        <returns>A collection of strings that are names of compatible methods.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each string returned in the collection is the method name of a method whose signature is compatible with the delegate contained in `e`. <xref:System.ComponentModel.Design.EventBindingService.GetCompatibleMethods%2A> should return an empty collection if no names are compatible.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> is <see langword="null" />.</exception>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetEvent">
@@ -336,7 +255,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,9 +264,9 @@
         <Parameter Name="property" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="property">The property that represents an event.</param>
-        <summary>Gets an <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the specified property descriptor represents, if it represents an event.</summary>
-        <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the property represents, or <see langword="null" /> if the property does not represent an event.</returns>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,7 +277,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,12 +286,10 @@
         <Parameter Name="events" Type="System.ComponentModel.EventDescriptorCollection" />
       </Parameters>
       <Docs>
-        <param name="events">The events to convert to properties.</param>
-        <summary>Converts a set of event descriptors to a set of property descriptors.</summary>
-        <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that describe the event set.</returns>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="events" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetEventProperty">
@@ -384,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,12 +308,10 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="e">The event to convert.</param>
-        <summary>Converts a single event descriptor to a property descriptor.</summary>
-        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the event.</returns>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IEventBindingService.ShowCode">
@@ -409,7 +321,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -417,9 +328,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays the user code for the designer.</summary>
-        <returns>
-          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -440,10 +349,9 @@
         <Parameter Name="lineNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineNumber">The line number to place the caret on.</param>
-        <summary>Displays the user code for the designer at the specified line.</summary>
-        <returns>
-          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <param name="lineNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,7 +362,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,14 +372,11 @@
         <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
       </Parameters>
       <Docs>
-        <param name="component">The component that the event is connected to.</param>
-        <param name="e">The event to display.</param>
-        <summary>Displays the user code for the specified event.</summary>
-        <returns>
-          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="events" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="UseMethod">
@@ -482,7 +386,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,18 +397,11 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">The component to which the method is bound.</param>
-        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> for the event handler.</param>
-        <param name="methodName">The name of the method.</param>
-        <summary>Provides a notification that a particular method is being used by an event handler.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some implementations may intend to remove the event hander when no events are using it. By overriding UseMethod and <xref:System.ComponentModel.Design.EventBindingService.FreeMethod%2A>, an implementation can infer when a method is no longer needed.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="methodName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateMethodName">
@@ -515,7 +411,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -525,16 +420,9 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="methodName">The method name to validate.</param>
-        <summary>Validates that the provided method name is valid for the language or script being used.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation does nothing. You may override this and throw an exception if the name is invalid for your use.  
-  
- ]]></format>
-        </remarks>
+        <param name="methodName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

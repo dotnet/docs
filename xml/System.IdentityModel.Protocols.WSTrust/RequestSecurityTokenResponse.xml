@@ -11,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the wst:RequestSecurityTokenResponse element, which is used to return a security token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The wst:RequestSecurityTokenResponse element (message) contains the parameters and properties in the response sent by a security token service (STS) to a security token request (RST) made by a client. The response message (or element) is abbreviated as RSTR. The <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenRequest> class contains properties that represent the elements of the RSTR. An RSTR can form a response to a request that corresponds to any of the request bindings defined by WS-Trust; for example, the Issuance binding, the Renewal binding, the Validate binding, or the Cancel binding. Many of the properties in the RequestSecurityTokenResponse class correspond to elements that are present only in specific kinds of responses as defined by these bindings. Depending on the kind of response a particular RequestSecurityTokenResponse object represents or the parameters present in the specific response that it represents, some properties of the object may be `null`.  
-  
- Requests arrive at the STS in a message that contains a wst:RequestSecurityToken element (RST). This message is represented by the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> class.  
-  
- For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,15 +26,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is usually used by the receiver of an RSTR.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,21 +43,9 @@
         <Parameter Name="message" Type="System.IdentityModel.Protocols.WSTrust.WSTrustMessage" />
       </Parameters>
       <Docs>
-        <param name="message">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustMessage" /> that represents the request (RST).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> class based on the specified request message (RST) .</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is usually used by the sender of an RSTR. The following properties are set from the request message: <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Context%2A>, <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyType%2A>, <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeySizeInBits%2A> (if the key is symmetric), and <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.RequestType%2A>.  
-  
-> [!NOTE]
->  When working in a Challenge/Response environment the RequestType is used within the wst:RequestSecurityTokenResponse context to establish processing rules on a response coming back for a given challenge.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="message" /> is <see langword="null" />.</exception>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFinal">
@@ -91,17 +61,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag that determines if the RSTR is the final message and should be serialized as such.</summary>
-        <value>
-          <see langword="true" /> if the RSTR is the final message; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This flag only has an effect when the version of WS-Trust provides rules for serializing the final RSTR in a message flow. For example, WS-Trust 1.3 requires the final RSTR to be enclosed within a wst:RequestSecurityTokenResponseCollection element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedAttachedReference">
@@ -117,16 +79,9 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the security token reference when the requested token is attached to the message.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that contains the reference.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the contents of the wst:RequestedAttachedReference element. This optional element is specified to indicate how to reference the returned token when that token doesn't support references using URI fragments.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedProofToken">
@@ -142,16 +97,9 @@
         <ReturnType>System.IdentityModel.Protocols.WSTrust.RequestedProofToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the optional element used to return the proof of possession token.</summary>
-        <value>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedProofToken" /> that represents the proof token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the contents of the wst:RequestedProofToken.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedSecurityToken">
@@ -167,16 +115,9 @@
         <ReturnType>System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the optional element used to return the requested security token.</summary>
-        <value>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" /> that represents the security token.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the contents of the wst:RequestedSecurityToken element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedTokenCancelled">
@@ -192,17 +133,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wst:RequestedTokenCancelled element.</summary>
-        <value>
-          <see langword="true" /> if the token was cancelled; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the RequestedTokenCancelled property is `true` then the response contains a wst:RequestedTokenCancelled element, which indicates that the Cancel request succeeded and the token was cancelled. If it is `false`, the element was not included in the response and the token was not cancelled.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedUnattachedReference">
@@ -218,16 +151,9 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the security token reference when the requested token is not attached to the message.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that contains the reference.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the contents of the wst:RequestedUnattachedReference element. This optional element is specified to indicate how to reference the returned token when that token is not placed in the message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -243,8 +169,8 @@
         <ReturnType>System.IdentityModel.Protocols.WSTrust.Status</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wst:Status element in the RSTR.</summary>
-        <value>A <see cref="T:System.IdentityModel.Protocols.WSTrust.Status" /> that contains status information for a WS-Trust Validation request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

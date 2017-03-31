@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.AmbientTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the look and feel property settings to a top-level workflow in a design-time environment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Workflow themes define the look and feel of a workflow design surface. This includes any background styles, foreground styles, fonts, and icons defined for the workflow design surface. An ambient theme contains the default display properties for the workflow design surface. It provides settings to be used across the entire design surface (for example, the grid, background and foreground colors, read-only designer color, and so on). It can use either user-selected values or the values from the operational system.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="theme" Type="System.Workflow.ComponentModel.Design.WorkflowTheme" />
       </Parameters>
       <Docs>
-        <param name="theme">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> with which the ambient theme is associated.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> class by using a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</summary>
+        <param name="theme">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +45,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -76,16 +62,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient back color on a workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the ambient background color. The default is white.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set the BackColor property, it negates the <xref:System.Workflow.ComponentModel.Design.AmbientTheme.BackgroundBrush%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundBrush">
@@ -95,7 +74,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -110,16 +88,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient brush used to fill graphical shapes displayed on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> value that represents the background brush of the workflow on a design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.SolidBrush> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.BackColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BoldFont">
@@ -129,7 +100,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -144,8 +114,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient bold font setting for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> value that determines whether the text on the workflow design surface is bold.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +126,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -171,8 +140,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient border width for objects that are placed onto the workflow design surface.</summary>
-        <value>An integer that represents the border width of objects placed on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +152,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -198,16 +166,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient brush associated with commented designers on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> that is associated with commented designers on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.SolidBrush> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommentIndicatorColor">
@@ -217,7 +178,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -235,8 +195,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient color associated with commented designers on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that is associated with commented designers on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,7 +207,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -262,16 +221,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient pen associated with commented designers on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> value that is associated with commented designers on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic) by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorColor%2A> property value and its width set to 1.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignerSize">
@@ -281,7 +233,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -302,8 +253,8 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient size settings for activity designers on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerSize" /> enumeration value that determines the size of activity designers on the workflow design surface. The default value is <see cref="T:System.Workflow.ComponentModel.Design.DesignerSize" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +265,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -324,9 +274,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +286,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -352,9 +300,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ambient theme associated with the workflow design surface draws grayscales.</summary>
-        <value>
-          <see langword="true" /> if the ambient theme associated with the workflow draws grayscales; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,7 +312,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -380,9 +326,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ambient theme associated with the workflow design surface draws rounded shapes.</summary>
-        <value>
-          <see langword="true" /> if the ambient theme associated with the workflow draws rounded shapes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,7 +338,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -408,9 +352,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ambient theme associated with the workflow design surface draws shadows.</summary>
-        <value>
-          <see langword="true" /> if the ambient theme associated with the workflow draws shadows; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,7 +364,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -436,16 +378,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient brush associated with an object that you drag onto the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> associated with an object that you drag onto the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic) by default it will return a <xref:System.Drawing.SolidBrush> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.DropIndicatorColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropIndicatorColor">
@@ -455,7 +390,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -473,8 +407,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient color associated with an object that you drags onto the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value associated with an object that you drag onto the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,7 +419,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -500,16 +433,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient pen associated with an object that you drag onto the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> associated with an object that you drag onto the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.DropIndicatorColor%2A> property value and its width set to the <xref:System.Workflow.ComponentModel.Design.AmbientTheme.BorderWidth%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -519,7 +445,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -534,8 +459,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient font settings for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> that represents the ambient font settings for the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,7 +471,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -561,8 +485,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient font name for the workflow design surface.</summary>
-        <value>A string that represents the ambient font name for the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,7 +497,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -591,8 +514,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient fore color property for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the ambient fore color for the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -603,7 +526,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -618,16 +540,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient foreground brush for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> value that represents the ambient foreground brush.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.SolidBrush> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.ForeColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundPen">
@@ -637,7 +552,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -652,16 +566,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient foreground pen for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> value that represents the ambient foreground pen.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.DropIndicatorColor%2A> property value, its width set to 1, and its <xref:System.Drawing.Pen.DashStyle%2A> property set to <xref:System.Drawing.Drawing2D.DashStyle?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GlyphSize">
@@ -671,7 +578,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -686,21 +592,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient height and width of glyphs on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> value that represents the ambient height and width of glyphs on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates a common way you can access the GlyphSize property from a class that derives from the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> class.  
-  
- This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
-  
- [!code-cs[WF_Samples#133](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#133)]
- [!code-vb[WF_Samples#133](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#133)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GridColor">
@@ -710,7 +604,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -728,8 +621,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient grid color for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the grid color for the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,7 +633,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -755,8 +647,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient size of the grid to display on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> value that represents the height and width of the grid to display on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,7 +659,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -782,8 +673,8 @@
         <ReturnType>System.Drawing.Drawing2D.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient grid style for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Drawing2D.DashStyle" /> value that represents the dash style for the grid. The default setting is <see cref="T:System.Drawing.Drawing2D.DashStyle" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,7 +685,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -802,15 +692,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs additional initialization tasks for the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> class that are not performed by the <see cref="System.Workflow.ComponentModel.Design.AmbientTheme.%23ctor%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings%2A> returns `true`, Initialize sets all <xref:System.Workflow.ComponentModel.Design.AmbientTheme> properties to the values defined by the operating system.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorGridBrush">
@@ -820,7 +703,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -835,16 +717,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient brush settings for major grids on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> associated with the major grid on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.SolidBrush> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.GridColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorGridPen">
@@ -854,7 +729,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -869,16 +743,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient pen settings for major grids on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> associated with the major grid on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.GridColor%2A> property value, its width set to 1, and its <xref:System.Drawing.Pen.DashStyle%2A> property set to <xref:System.Drawing.Drawing2D.DashStyle>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Margin">
@@ -888,7 +755,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -903,8 +769,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient margin settings for the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the margin settings on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -915,7 +781,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -930,16 +795,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient pen settings for minor grids on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> associated with the minor grid on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color calculated based on the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.GridColor%2A> property value, its width set to 1, and its <xref:System.Drawing.Pen.DashStyle%2A> property set to <xref:System.Drawing.Drawing2D.DashStyle?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAmbientPropertyChanged">
@@ -949,7 +807,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -959,16 +816,9 @@
         <Parameter Name="ambientProperty" Type="System.Workflow.ComponentModel.Design.AmbientProperty" />
       </Parameters>
       <Docs>
-        <param name="ambientProperty">The <see cref="T:System.Workflow.ComponentModel.Design.AmbientProperty" /> enumeration value to which the setting was changed.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> when the value of the <see cref="T:System.Workflow.ComponentModel.Design.AmbientProperty" /> enumeration changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Workflow.ComponentModel.Design.AmbientProperty> specifies the source of ambient theme properties for classes that inherit from the <xref:System.Workflow.ComponentModel.Design.DesignerTheme> class.  The two possible sources are the operating system and the designer-specified settings.  
-  
- ]]></format>
-        </remarks>
+        <param name="ambientProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadonlyIndicatorBrush">
@@ -978,7 +828,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -993,16 +842,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient brush used to fill graphical shapes associated with read-only items displayed on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> that represents the brush associated with read-only items on the workflow on a design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.SolidBrush> object with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.ReadonlyIndicatorColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadonlyIndicatorColor">
@@ -1012,7 +854,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1030,8 +871,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient color for read-only items on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the ambient color for read-only items on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1042,7 +883,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1060,8 +900,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient color for selected items on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the ambient color for read-only items on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1072,7 +912,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1087,16 +926,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient foreground brush used to fill graphical shapes associated with selected items displayed on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> that represents the brush associated with read-only items on the workflow on a design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.SolidBrush> object with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionForeColor%2A> property value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionForegroundPen">
@@ -1106,7 +938,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1121,16 +952,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient foreground pen settings for selected items on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> associated with the foreground of selected items on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic) by default it will return a `Pen` with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionForeColor%2A> property value and its width set to 1.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionPatternColor">
@@ -1140,7 +964,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1158,16 +981,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient pattern color for items that you select on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the ambient pattern color for items that you select on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionPatternPen%2A> is not null reference (`Nothing` in Visual Basic) when you set SelectionPatternColor, SelectionPatternColor will dispose of any resources used by <xref:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionPatternPen%2A> and set it to `null` (`Nothing`).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionPatternPen">
@@ -1177,7 +993,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1192,16 +1007,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient pen settings for the pattern associated with selected items on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> associated with the pattern of selected items on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionPatternColor%2A> property value, its width set to 1, and its <xref:System.Drawing.Pen.DashStyle%2A> property set to <xref:System.Drawing.Drawing2D.DashStyle?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionSize">
@@ -1211,7 +1019,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1226,8 +1033,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient size of a selected item on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the ambient property settings for selected items on the workflow design surface.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1238,7 +1045,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1253,22 +1059,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the workflow design surface displays configuration errors.</summary>
-        <value>
-          <see langword="true" /> if the workflow design surface is to display configuration errors; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how you can set ShowConfigErrors to false. Doing this for a workflow design surface means that none of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> objects displayed on the design surface will display their associated <xref:System.Workflow.ComponentModel.Design.DesignerAction> objects.  
-  
- This code example is part of the Tracking Profile Designer SDK Sample from the WorkflowDesignerControl.cs file. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-cs[WF_Samples#125](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#125)]
- [!code-vb[WF_Samples#125](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#125)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDesignerBorder">
@@ -1278,7 +1071,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1293,9 +1085,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the workflow design surface displays designer borders.</summary>
-        <value>
-          <see langword="true" /> if the workflow design surface displays designer borders; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1306,7 +1097,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1321,9 +1111,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether grids will be shown on the workflow design surface.</summary>
-        <value>
-          <see langword="true" /> if grids will be displayed on the workflow design surface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1334,7 +1123,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1349,16 +1137,9 @@
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text quality to display on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Workflow.ComponentModel.Design.TextQuality" /> that specifies the text quality settings to use on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TextQuality allows you to determine whether the text displayed on a workflow design surface, and all its child designers, is anti-aliased or aliased. Anti-aliased text provides higher quality text display, while aliased text requires fewer resources to maintain.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseOperatingSystemSettings">
@@ -1368,7 +1149,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1383,9 +1163,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> uses the theme settings of the operating system.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> uses theme settings of the operating system; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1396,7 +1175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1411,8 +1189,8 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient alignment settings for watermark images on the workflow design surface.</summary>
-        <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" /> that specifies the ambient alignment settings for watermark images on the workflow design surface. The default is <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1423,7 +1201,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1438,16 +1215,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient path to the image to display as a watermark on the workflow design surface.</summary>
-        <value>A string that contains the ambient path to the image to display as a watermark on the workflow design surface. The default is an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use WatermarkImagePath to associate an image as a watermark image for a workflow design surface. If WatermarkImagePath is not `null` (`Nothing` in Visual Basic) when you set WatermarkImagePath, WatermarkImagePath disposes of any resources used by WatermarkImagePath and sets its value to `null` (`Nothing`).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkflowWatermarkImage">
@@ -1457,7 +1227,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1472,16 +1241,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ambient image to associate with the workflow design surface as its watermark.</summary>
-        <value>An <see cref="T:System.Drawing.Image" /> to use as a watermark on the workflow design surface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkImagePath%2A> to associate an image as a watermark image for a workflow design surface. If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkImagePath%2A> is not `null` (`Nothing` in Visual Basic) when you set <xref:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkImagePath%2A>, <xref:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkImagePath%2A> disposes of any resources used by <xref:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkImagePath%2A> and sets its value to `null` (`Nothing`).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

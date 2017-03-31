@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TextPattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents controls that contain text.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TextPattern class may not provide for text features that exist only in a particular UI Automation provider. For these unique and often advanced features, the <xref:System.Windows.Automation.AutomationElement> class provides methods for a UI Automation client to access the corresponding native object model.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AnimationStyleAttribute">
@@ -30,40 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.Text.AnimationStyle" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Animations appear on the screen only; the animated text prints, but the animation effect does not.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.AnimationStyle>. The default value is <xref:System.Windows.Automation.Text.AnimationStyle>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1000](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1000)]  
-  
- [!code-vb[UIATextPattern_snip#2000](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2000)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundColorAttribute">
@@ -73,38 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the [BackgroundColor](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Int32>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1001](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1001)]  
-  
- [!code-vb[UIATextPattern_snip#2001](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2001)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BulletStyleAttribute">
@@ -114,38 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.Text.BulletStyle" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.BulletStyle>. The default value is <xref:System.Windows.Automation.Text.BulletStyle>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1002](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1002)]  
-  
- [!code-vb[UIATextPattern_snip#2002](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2002)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CapStyleAttribute">
@@ -155,38 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.Text.CapStyle" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.CapStyle>. The default value is <xref:System.Windows.Automation.Text.CapStyle>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1003](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1003)]  
-  
- [!code-vb[UIATextPattern_snip#2003](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2003)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CultureAttribute">
@@ -196,43 +90,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="Culture" /> (<see cref="T:System.Globalization.CultureInfo" />) attribute of a text range down to the sub-language level; for example, French–Switzerland (fr-CH) instead of French (fr).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Globalization.CultureInfo>. The default value is the language of the application [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)].  
-  
- See <xref:System.Globalization.CultureInfo> in the [!INCLUDE[TLA#tla_netframewk](~/add/includes/tlasharptla-netframewk-md.md)] for more detail on the language code format.  
-  
-> [!NOTE]
->  There might be cases where the server does not support the language tag or authors cannot use it. In those cases the default applies.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1005](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1005)]  
-  
- [!code-vb[UIATextPattern_snip#2005](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2005)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentRange">
@@ -242,31 +107,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.TextPatternRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a text range that encloses the main text of a document.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some auxiliary text such as headers, footnotes, or annotations might not be included.  
-  
-   
-  
-## Examples  
- In the following code example, the targetTextPattern member variable is a <xref:System.Windows.Automation.TextPattern> object obtained from a text provider of interest.  
-  
- [!code-vb[FindText#DocumentRange](~/add/codesnippet/visualbasic/FindTextClient/SearchWindow.vb#documentrange)]
- [!code-cs[FindText#DocumentRange](~/add/codesnippet/csharp/FindTextClient/SearchWindow.cs#documentrange)]  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontNameAttribute">
@@ -276,41 +125,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="FontName" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Example values for this attribute include "Arial Black" and "Arial Narrow".  
-  
- The values for this attribute are non-localized.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.String>. The default value is an `empty string`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-vb[UIATextPattern_snip#FontName](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#fontname)]
- [!code-cs[UIATextPattern_snip#FontName](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#fontname)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontSizeAttribute">
@@ -320,38 +142,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="FontSize" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1007](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1007)]  
-  
- [!code-vb[UIATextPattern_snip#2007](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2007)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontWeightAttribute">
@@ -361,42 +159,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="FontWeight" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute refers to the relative stroke, thickness, or boldness of a font.  
-  
- This attribute is modeled after the `lfWeight` field in [GDI LOGFONT](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/fontext_1wmq.asp). For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Int32>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1008](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1008)]  
-  
- [!code-vb[UIATextPattern_snip#2008](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2008)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundColorAttribute">
@@ -406,40 +176,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ForegroundColor" /> ([COLORREF](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp)) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this attribute is equivalent to the text or font color.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Int32>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1009](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1009)]  
-  
- [!code-vb[UIATextPattern_snip#2009](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2009)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelection">
@@ -449,7 +193,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -457,29 +200,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of disjoint text ranges associated with the current text selection or selections.</summary>
-        <returns>A collection of disjoint text ranges.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no text is selected, GetSelection returns the degenerate text range (empty range) at the position of the system cursor (text insertion point).  
-  
- If the system cursor (text insertion point) is not present, GetSelection might return `null`.  
-  
-> [!NOTE]
->  Use the <xref:System.Windows.Automation.TextPattern.SupportedTextSelection%2A> property to test if text selection or positioning of the text insertion point is supported by the control.  
-  
-   
-  
-## Examples  
- [!code-cs[UIATextPattern_snip#1046](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1046)]  
-  
- [!code-vb[UIATextPattern_snip#2046](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2046)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The text container does not support text selection.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVisibleRanges">
@@ -489,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,24 +219,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves an array of disjoint text ranges from a text container where each text range begins with the first partially visible line through to the end of the last partially visible line.</summary>
-        <returns>The collection of visible text ranges within the container or an empty array. <see langword="Null" /> is never returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Disjoint text ranges may occur when any content of a text container is obscured by an overlapping window or other object, or when a text container with a multi-column layout has one or more columns partially scrolled out of view.  
-  
- If no text is visible, a degenerate (empty) text range is returned. This empty range can be returned if the text container is empty or when all text is scrolled out of view.  
-  
-   
-  
-## Examples  
- [!code-vb[UIATextPattern_snip#VisibleRanges](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#visibleranges)]
- [!code-cs[UIATextPattern_snip#VisibleRanges](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#visibleranges)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalTextAlignmentAttribute">
@@ -524,40 +231,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.Text.HorizontalTextAlignment" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the horizontal text alignment applied to the paragraph(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.HorizontalTextAlignment>. The default value is <xref:System.Windows.Automation.Text.HorizontalTextAlignment>  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1011](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1011)]  
-  
- [!code-vb[UIATextPattern_snip#2011](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2011)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentationFirstLineAttribute">
@@ -567,40 +248,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IndentationFirstLine" /> (<see cref="System.Windows.Documents.Paragraph.TextIndent%2A" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the first-line indentation in points (<xref:System.Drawing.GraphicsUnit>) applied to the paragraph(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1012](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1012)]  
-  
- [!code-vb[UIATextPattern_snip#2012](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2012)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentationLeadingAttribute">
@@ -610,40 +265,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IndentationLeading" />(<see cref="System.Windows.Documents.Paragraph.TextIndent%2A" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the leading indentation in points (<xref:System.Drawing.GraphicsUnit>) applied to the paragraph(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1013](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1013)]  
-  
- [!code-vb[UIATextPattern_snip#2013](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2013)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentationTrailingAttribute">
@@ -653,40 +282,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IndentationTrailing" />(<see cref="System.Windows.Documents.Paragraph.TextIndent%2A" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the trailing indentation in points (<xref:System.Drawing.GraphicsUnit>) applied to the paragraph(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1014](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1014)]  
-  
- [!code-vb[UIATextPattern_snip#2014](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2014)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsHiddenAttribute">
@@ -696,38 +299,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IsHidden" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Boolean>. The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1015](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1015)]  
-  
- [!code-vb[UIATextPattern_snip#2015](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2015)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsItalicAttribute">
@@ -737,38 +316,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IsItalic" /> (<see cref="T:System.Windows.FontStyle" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Boolean>. The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1016](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1016)]  
-  
- [!code-vb[UIATextPattern_snip#2016](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2016)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyAttribute">
@@ -778,43 +333,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IsReadOnly" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the read-only state of the document associated with the calling text range.  
-  
-> [!NOTE]
->  If a document or file is read-only, but you can still edit it and save it as another file, the text is not considered read-only.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Boolean>. The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1022](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1022)]  
-  
- [!code-vb[UIATextPattern_snip#2022](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2022)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSubscriptAttribute">
@@ -824,38 +350,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IsSubscript" /> (<see cref="T:System.Windows.FontVariants" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Boolean>. The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1023](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1023)]  
-  
- [!code-vb[UIATextPattern_snip#2023](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2023)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSuperscriptAttribute">
@@ -865,38 +367,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="IsSuperscript" /> (<see cref="T:System.Windows.FontVariants" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Boolean>. The default value is `false`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1024](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1024)]  
-  
- [!code-vb[UIATextPattern_snip#2024](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2024)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottomAttribute">
@@ -906,40 +384,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="MarginBottom" /> (<see cref="T:System.Drawing.Printing.PageSettings" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the bottom margin applied to the page(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1025](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1025)]  
-  
- [!code-vb[UIATextPattern_snip#2025](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2025)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginLeadingAttribute">
@@ -949,40 +401,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="MarginLeading" /> (<see cref="T:System.Drawing.Printing.PageSettings" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the leading margin applied to the page(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1026](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1026)]  
-  
- [!code-vb[UIATextPattern_snip#2026](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2026)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginTopAttribute">
@@ -992,40 +418,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="MarginTop" /> (<see cref="T:System.Drawing.Printing.PageSettings" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the top margin applied to the page(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1027](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1027)]  
-  
- [!code-vb[UIATextPattern_snip#2027](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2027)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginTrailingAttribute">
@@ -1035,40 +435,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="MarginTrailing" /> (<see cref="T:System.Drawing.Printing.PageSettings" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the trailing margin applied to the page(s) associated with the calling text range.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Double>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1028](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1028)]  
-  
- [!code-vb[UIATextPattern_snip#2028](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2028)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MixedAttributeValue">
@@ -1078,40 +452,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies whether the value of a given attribute varies over a text range in a rich edit control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A> returns `TextPattern.MixedAttributeValue` to indicate this variation instead of a collection of attribute values.  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Object>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1000](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1000)]  
-  
- [!code-vb[UIATextPattern_snip#2000](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2000)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineStylesAttribute">
@@ -1121,38 +469,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="OutlineStyles" /> (<see cref="T:System.Windows.Automation.Text.OutlineStyles" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.OutlineStyles>. The default value is <xref:System.Windows.Automation.Text.OutlineStyles>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1031](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1031)]  
-  
- [!code-vb[UIATextPattern_snip#2031](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2031)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OverlineColorAttribute">
@@ -1162,38 +486,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="OverlineColor" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Int32>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1032](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1032)]  
-  
- [!code-vb[UIATextPattern_snip#2032](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2032)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OverlineStyleAttribute">
@@ -1203,38 +503,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="OverlineStyle" /> (<see cref="T:System.Windows.Automation.Text.TextDecorationLineStyle" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1033](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1033)]  
-  
- [!code-vb[UIATextPattern_snip#2033](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2033)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -1244,30 +520,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.TextPattern" /> pattern.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
-   
-  
-## Examples  
- [!code-vb[FindText#TextPatternPattern](~/add/codesnippet/visualbasic/FindTextClient/SearchWindow.vb#textpatternpattern)]
- [!code-cs[FindText#TextPatternPattern](~/add/codesnippet/csharp/FindTextClient/SearchWindow.cs#textpatternpattern)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RangeFromChild">
@@ -1277,7 +537,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1287,29 +546,10 @@
         <Parameter Name="childElement" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="childElement">The enclosed object.</param>
-        <summary>Retrieves a text range enclosing a child element such as an image, hyperlink, [!INCLUDE[TLA#tla_xl](~/add/includes/tlasharptla-xl-md.md)] spreadsheet, or other embedded object.</summary>
-        <returns>A range that spans the child element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If there is no text in the range where the child element exists, a degenerate (empty) range is returned.  
-  
- The `childElement` parameter is either a child of the <xref:System.Windows.Automation.AutomationElement> associated with a <xref:System.Windows.Automation.TextPattern> or from the array of children of a <xref:System.Windows.Automation.Text.TextPatternRange>.  
-  
-   
-  
-## Examples  
- [!code-vb[UIATextPattern_snip#GetTextElement](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#gettextelement)]
- [!code-cs[UIATextPattern_snip#GetTextElement](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#gettextelement)]  
-[!code-vb[UIATextPattern_snip#GetRangeFromChild](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#getrangefromchild)]
-[!code-cs[UIATextPattern_snip#GetRangeFromChild](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#getrangefromchild)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The child element is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The element is not a child of the text container.</exception>
+        <param name="childElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RangeFromPoint">
@@ -1319,7 +559,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1329,26 +568,10 @@
         <Parameter Name="screenLocation" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="screenLocation">The location in screen coordinates.</param>
-        <summary>Returns the degenerate (empty) text range nearest to the specified screen coordinates.</summary>
-        <returns>A degenerate range nearest the specified location. <see langword="Null" /> is never returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A text range that wraps a child object is returned if the screen coordinates are within the coordinates of an image, hyperlink, [!INCLUDE[TLA#tla_xl](~/add/includes/tlasharptla-xl-md.md)] spreadsheet, or other embedded object.  
-  
- Because hidden text is not ignored by RangeFromPoint, a degenerate range from the visible text closest to the given point is returned.  
-  
-   
-  
-## Examples  
- [!code-vb[UIATextPattern_snip#1049](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#1049)]
- [!code-cs[UIATextPattern_snip#1049](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1049)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A given point is outside the <see cref="T:System.Windows.Automation.AutomationElement" /> associated with the text pattern.</exception>
+        <param name="screenLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrikethroughColorAttribute">
@@ -1358,38 +581,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="StrikethroughColor" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Int32>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1038](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1038)]  
-  
- [!code-vb[UIATextPattern_snip#2038](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2038)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrikethroughStyleAttribute">
@@ -1399,38 +598,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="StrikethroughStyle" /> (<see cref="T:System.Windows.Automation.Text.TextDecorationLineStyle" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1039](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1039)]  
-  
- [!code-vb[UIATextPattern_snip#2039](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2039)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportedTextSelection">
@@ -1440,24 +615,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SupportedTextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether a text provider supports selection and, if so, the type of selection supported.</summary>
-        <value>One of <see langword="None" />, <see langword="Single" />, or <see langword="Multiple" /> from <see cref="T:System.Windows.Automation.SupportedTextSelection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[FindText#SupportedTextSelection](~/add/codesnippet/visualbasic/FindTextClient/SearchWindow.vb#supportedtextselection)]
- [!code-cs[FindText#SupportedTextSelection](~/add/codesnippet/csharp/FindTextClient/SearchWindow.cs#supportedtextselection)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabsAttribute">
@@ -1467,40 +633,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="Tabs" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This attribute represents the collection of tab stops in points (<xref:System.Drawing.GraphicsUnit>).  
-  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are an array of type <xref:System.Double>. The default value is an `empty` array.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1040](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1040)]  
-  
- [!code-vb[UIATextPattern_snip#2040](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2040)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChangedEvent">
@@ -1510,28 +650,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the event raised whenever textual content is modified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- [!code-vb[FindText#TextChanged](~/add/codesnippet/visualbasic/FindTextClient/SearchWindow.vb#textchanged)]
- [!code-cs[FindText#TextChanged](~/add/codesnippet/csharp/FindTextClient/SearchWindow.cs#textchanged)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFlowDirectionsAttribute">
@@ -1541,38 +667,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="TextFlowDirections" /> (<see cref="T:System.Windows.Automation.Text.FlowDirections" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.FlowDirections>. The default value is <xref:System.Windows.Automation.Text.FlowDirections>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1041](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1041)]  
-  
- [!code-vb[UIATextPattern_snip#2041](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2041)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextSelectionChangedEvent">
@@ -1582,33 +684,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the event raised when the text selection is modified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some text controls handle the text insertion point (cursor) as a zero-width text selection and might raise `TextSelectionChangedEvent` when the cursor is moved.  
-  
-> [!NOTE]
->  To follow cursor movements, UI Automation clients are advised to keep track of insertion point changes by listening for corresponding [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element events rather than depending on TextSelectionChangedEvent.  
-  
- This identifier is used by UI Automation client applications UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
-   
-  
-## Examples  
- [!code-vb[FindText#SelectionChanged](~/add/codesnippet/visualbasic/FindTextClient/SearchWindow.vb#selectionchanged)]
- [!code-cs[FindText#SelectionChanged](~/add/codesnippet/csharp/FindTextClient/SearchWindow.cs#selectionchanged)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlineColorAttribute">
@@ -1618,38 +701,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="UnderlineColor" /> attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Int32>. The default value is `zero`.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1043](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1043)]  
-  
- [!code-vb[UIATextPattern_snip#2043](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2043)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlineStyleAttribute">
@@ -1659,38 +718,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="UnderlineStyle" /> (<see cref="T:System.Windows.Automation.Text.TextDecorationLineStyle" />) attribute of a text range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
-  
- UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
-  
- Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)].  
-  
-> [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/add/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
-  
- [!code-cs[UIATextPattern_snip#1044](~/add/codesnippet/csharp/UIATextPattern_snip/SearchWindow.cs#1044)]  
-  
- [!code-vb[UIATextPattern_snip#2044](~/add/codesnippet/visualbasic/UIATextPattern_snip/SearchWindow.vb#2044)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

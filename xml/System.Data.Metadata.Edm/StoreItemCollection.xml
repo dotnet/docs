@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.StoreItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Loads metadata about the storage (database) model. The StoreItemCollection loads metadata from store schema definition language (SSDL) files. This class is derived from the <see cref="T:System.Data.Metadata.Edm.ItemCollection" /> class.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="xmlReaders" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
       </Parameters>
       <Docs>
-        <param name="xmlReaders">The XMLReader used to create metadata.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class using the specified XMLReader.</summary>
+        <param name="xmlReaders">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -60,8 +57,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="filePaths">The file paths used to create metadata.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class using the specified file paths.</summary>
+        <param name="filePaths">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,8 +76,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a collection of the <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> objects.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> object that represents the collection of the <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +94,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the store schema for this collection.</summary>
-        <value>The version of the store schema for this collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderAppliesTo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the locations where the ttribute attribute is respected during code generation for a resource by a <see cref="T:System.Web.Compilation.BuildProvider" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.Compilation.BuildProvider> object provides functionality to parse a particular file type and generate code during compilation of a resource. A build provider generates code for those resources that correspond to the ttribute attribute and which have the extension mapped to the build provider.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the build provider generates code for resources wherever the resources are found. This is the default value for the ttribute attribute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Code">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the build provider generates code for only those resources in the \App_Code directory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the build provider generates code for resources in the \App_GlobalResources and \App_LocalResources directories.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Web">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the build provider generates code for only those resources in Web content directories, which are directories other than the reserved ASP.NET directories \App_Code, \App_GlobalResources, and \App_LocalResources.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

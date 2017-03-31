@@ -4,26 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FirstWeekOfYear" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the first week of the year to use when calling date-related functions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
-  
- The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FirstFourDays">
@@ -33,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The first week that has at least four days in the new year. This member is equivalent to the Visual Basic constant <see langword="vbFirstFourDays" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstFullWeek">
@@ -50,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The first full week of the year. This member is equivalent to the Visual Basic constant <see langword="vbFirstFullWeek" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Jan1">
@@ -67,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The week in which January 1 occurs (default). This member is equivalent to the Visual Basic constant <see langword="vbFirstJan1" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -84,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The weekspecified in your system settings as the first week of the year. This member is equivalent to the Visual Basic constant <see langword="vbUseSystem" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

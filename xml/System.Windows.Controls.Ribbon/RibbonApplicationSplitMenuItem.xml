@@ -16,28 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a menu item inside a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" /> control that can invoke a command and also display a submenu.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You typically use a RibbonApplicationSplitMenuItem when you want to invoke a command and also display a submenu of related commands using a single menu item. For more information about using commands with menu items, see [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/en-us/013d68a0-5373-4a68-bd91-5de574307370).  
-  
- The command that is associated with the RibbonApplicationSplitMenuItem is invoked when the menu item is clicked. The submenu is displayed when the mouse pointer is moved over the menu item. The submenu of the RibbonApplicationSplitMenuItem is made up of the objects within the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection of a RibbonApplicationSplitMenuItem. It is common for a RibbonApplicationSplitMenuItem to host <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> objects to create submenus.  
-  
- The following illustration shows the Application Menu for a ribbon control. The **Save As** and **Print** items are examples of the RibbonApplicationSplitMenuItem control.  
-  
- ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
-  
-   
-  
-## Examples  
- The following example shows the menu items of the Application Menu shown previously. The RibbonApplicationSplitMenuItem objects are hosting <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> objects.  
-  
- [!code-xml[Ribbon_Snippets#AppMenuItems](~/add/codesnippet/xaml/wpfribbonapplication1/ribbonwindow1.xaml#appmenuitems)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem" /> object.</summary>
-        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem" /> container object that is used to display an item from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +70,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to test.</param>
-        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
-        <returns>
-          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem" />, a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />, a <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,23 +89,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates at what level the menu item is displayed.</summary>
-        <value>One the enumeration values that specifies at what level the menu item is displayed. The registered default is <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Level"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LevelProperty">
@@ -142,7 +107,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +127,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.ActivatingKeyTipEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Contains data about the activation.</param>
-        <summary>Called when the KeyTip or accelerator key is pressed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,15 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" /> when a new template is applied.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -208,8 +166,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +188,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,11 +211,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">The container element.</param>
-        <param name="item">The item that the container is for.</param>
-        <summary>Returns a value that indicates whether to apply the style from the <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyle%2A" /> or <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A" /> property to the container element of the specified item.</summary>
-        <returns>
-          <see langword="false" /> if <paramref name="container" /> is a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />, <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, the value returned by the base implementation.</returns>
+        <param name="container">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

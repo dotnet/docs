@@ -4,30 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IEditableCollectionView" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines methods and properties that a <see cref="T:System.Windows.Data.CollectionView" /> implements to provide editing capabilities to a collection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a collection view implements the IEditableCollectionView interface, you can directly change the underlying collection, if it allows changes to be made, by using the methods and properties that IEditableCollectionView exposes, regardless of the collection's type.  
-  
- The types <xref:System.Windows.Controls.ItemCollection>, <xref:System.Windows.Data.BindingListCollectionView>, and <xref:System.Windows.Data.ListCollectionView> are the types that ship with [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] that inherit from <xref:System.Windows.Data.CollectionView>.  These types also implement the IEditableCollectionView, so you can edit a collection that uses one of those types.  <xref:System.Windows.Controls.ItemCollection>, in particular, is often used because the <xref:System.Windows.Controls.ItemsControl.Items%2A?displayProperty=fullName> property is an <xref:System.Windows.Controls.ItemCollection>.  
-  
-   
-  
-## Examples  
- The following example shows how to add an item to a collection by using methods that are defined by IEditableCollectionView.  This application displays a list of items for sale and gives the user the option of adding, editing, or removing an item.  When the user adds or edits an item, a form prompts the user to enter a new item.  If the user submits the form, the item is committed to the collection.  If the user cancels the form, the item is discarded. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#AddItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#additem)]
- [!code-vb[EditingCollectionsSnippets#AddItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#additem)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNew">
@@ -37,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,24 +26,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new item to the collection.</summary>
-        <returns>The new item that is added to the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling AddNew begins an add transaction.  You should call <xref:System.ComponentModel.IEditableCollectionView.CommitNew%2A> or <xref:System.ComponentModel.IEditableCollectionView.CancelNew%2A> to end the add transaction. A new item always appears in the collection view. Any filtering, sorting, or grouping that is applied to the view is applied to the new item when <xref:System.ComponentModel.IEditableCollectionView.CommitNew%2A> is called.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Window> that prompts the user to add a new item.  Then it calls AddNew to create a new object and sets the <xref:System.Windows.FrameworkElement.DataContext%2A> of the <xref:System.Windows.Window> to that object. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#AddItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#additem)]
- [!code-vb[EditingCollectionsSnippets#AddItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#additem)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanAddNew">
@@ -72,36 +38,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a new item can be added to the collection.</summary>
-        <value>
-          <see langword="true" /> if a new item can be added to the collection; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.ComponentModel.IEditableCollectionView> can add a new item if the following are true:  
-  
--   An item can be added to the underlying collection.  For example, if the collection is read-only, CanAddNew is `false`.  
-  
--   The <xref:System.ComponentModel.IEditableCollectionView> can create an object of the type that is in the collection.  For example, if the collection is of type <xref:System.Collections.ObjectModel.ObservableCollection%601>, the <xref:System.ComponentModel.IEditableCollectionView> must be able to create an object of type `T`.  
-  
-   
-  
-## Examples  
- The following example checks whether an item can be added to the collection.  If CanAddNew is `false`, the example tells the user that an item cannot be added.  Otherwise, it shows a form that prompts the user to add a new item. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974) .  
-  
- [!code-cs[EditingCollectionsSnippets#AddItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#additem)]
- [!code-vb[EditingCollectionsSnippets#AddItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#additem)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanCancelEdit">
@@ -111,32 +56,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection view can discard pending changes and restore the original values of an edited object.</summary>
-        <value>
-          <see langword="true" /> if the collection view can discard pending changes and restore the original values of an edited object; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CanCancelEdit is `true` if the view supports the notion of "pending changes" on the currently edited item.   For example, a collection view might return `true` if the edited item implements <xref:System.ComponentModel.IEditableObject>, or if the view has information about the item's state that it can use to roll back changes. CanCancelEdit is `false` if the view cannot revert changes on an object.  In that case, call <xref:System.ComponentModel.IEditableCollectionView.CancelEdit%2A> to cause the view to exit the edit state and provide logic to revert the changes on the object that was edited.  
-  
-   
-  
-## Examples  
- The following example gets CanCancelEdit to check whether the original values of the edited item can be restored before it calls <xref:System.ComponentModel.IEditableCollectionView.CancelEdit%2A>.  If the values cannot be restored, you must supply additional logic to do so.  If they can be, the values are restored when the example calls <xref:System.ComponentModel.IEditableCollectionView.CancelEdit%2A>.   For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#CancelEdit](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#canceledit)]
- [!code-vb[EditingCollectionsSnippets#CancelEdit](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#canceledit)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
@@ -146,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,23 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the edit transaction and, if possible, restores the original value to the item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CancelEdit sets <xref:System.ComponentModel.IEditableCollectionView.CurrentEditItem%2A> to `null` and causes the collection view to exit the edit state.  If <xref:System.ComponentModel.IEditableCollectionView.CanCancelEdit%2A> is `true`, CancelEdit also restores the original values of the edited object.  
-  
-   
-  
-## Examples  
- The following example gets <xref:System.ComponentModel.IEditableCollectionView.CanCancelEdit%2A> to check whether the original values of the edited item can be restored before it calls CancelEdit.  If the values cannot be restored, you must supply additional logic to do so.  If they can be, the values are restored when the example calls CancelEdit. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#CancelEdit](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#canceledit)]
- [!code-vb[EditingCollectionsSnippets#CancelEdit](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#canceledit)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelNew">
@@ -180,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,18 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the add transaction and discards the pending new item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example displays a form that prompts the user to add a new item.  If the user submits the form, the example calls <xref:System.ComponentModel.IEditableCollectionView.CommitNew%2A> to add the item to the collection.  If the user cancels the form, the example calls CancelNew to discard the item. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#AddItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#additem)]
- [!code-vb[EditingCollectionsSnippets#AddItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#additem)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRemove">
@@ -209,32 +110,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an item can be removed from the collection.</summary>
-        <value>
-          <see langword="true" /> if an item can be removed from the collection; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CanRemove is `false` if the underlying collection is read-only.  
-  
-   
-  
-## Examples  
- The following example calls CanRemove to check whether an item can be removed from the collection.  If an item can be removed, the example prompts the user to confirm the action and calls <xref:System.ComponentModel.IEditableCollectionView.Remove%2A> if the user clicks **Yes**. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#RemoveItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#removeitem)]
- [!code-vb[EditingCollectionsSnippets#RemoveItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#removeitem)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommitEdit">
@@ -244,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,18 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the edit transaction and saves the pending changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a form that prompts the user to edit an existing item.  If the user submits the form, the example calls CommitEdit to save the changes to the collection.  If the user cancels the form, the example calls <xref:System.ComponentModel.IEditableCollectionView.CancelEdit%2A> to discard the changes. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#EditItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#edititem)]
- [!code-vb[EditingCollectionsSnippets#EditItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#edititem)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommitNew">
@@ -273,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,23 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the add transaction and saves the pending new item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any filtering, sorting, or grouping that is applied to the <xref:System.Windows.Data.CollectionView> is applied to the new item when CommitNew is called.  
-  
-   
-  
-## Examples  
- The following example displays a form that prompts the user to add a new item.  If the user submits the form, the example calls CommitNew to add the item to the collection.  If the user cancels the form, the example calls <xref:System.ComponentModel.IEditableCollectionView.CancelNew%2A> to discard the item. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#AddItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#additem)]
- [!code-vb[EditingCollectionsSnippets#AddItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#additem)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentAddItem">
@@ -307,15 +164,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item that is being added during the current add transaction.</summary>
-        <value>The item that is being added if <see cref="System.ComponentModel.IEditableCollectionView.IsAddingNew%2A" /> is <see langword="true" />; otherwise, <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,15 +182,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item in the collection that is being edited.</summary>
-        <value>The item in the collection that is being edited if <see cref="System.ComponentModel.IEditableCollectionView.IsEditingItem%2A" /> is <see langword="true" />; otherwise, <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,19 +209,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to edit.</param>
-        <summary>Begins an edit transaction of the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a form that prompts the user to edit an existing item.  If the user submits the form, the changes are committed to the collection.  If the user cancels the form, the changes are discarded. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974) .  
-  
- [!code-cs[EditingCollectionsSnippets#EditItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#edititem)]
- [!code-vb[EditingCollectionsSnippets#EditItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#edititem)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAddingNew">
@@ -377,24 +221,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an add transaction is in progress.</summary>
-        <value>
-          <see langword="true" /> if an add transaction is in progress; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You begin an add transaction by calling <xref:System.ComponentModel.IEditableCollectionView.AddNew%2A> and end the add transaction by calling <xref:System.ComponentModel.IEditableCollectionView.CommitNew%2A> or <xref:System.ComponentModel.IEditableCollectionView.CancelNew%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEditingItem">
@@ -404,24 +239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an edit transaction is in progress.</summary>
-        <value>
-          <see langword="true" /> if an edit transaction is in progress; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You begin an edit transaction by calling <xref:System.ComponentModel.IEditableCollectionView.EditItem%2A> and end the transaction by calling <xref:System.ComponentModel.IEditableCollectionView.CommitEdit%2A> or <xref:System.ComponentModel.IEditableCollectionView.CancelEdit%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewItemPlaceholderPosition">
@@ -431,15 +257,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.NewItemPlaceholderPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the position of the new item placeholder in the collection view.</summary>
-        <value>One of the enumeration values that specifies the position of the new item placeholder in the collection view.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,7 +275,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,24 +284,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to remove.</param>
-        <summary>Removes the specified item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `item` is not in the collection, Remove does nothing.  
-  
-   
-  
-## Examples  
- The following example calls <xref:System.ComponentModel.IEditableCollectionView.CanRemove%2A> to check whether an item can be removed from the collection.  If an item can be removed, the example prompts the user to confirm the action and calls Remove if the user clicks **Yes**. For the entire sample, see [Changing a Collection by Using IEditableCollectionView Sample](http://go.microsoft.com/fwlink/?LinkID=159974).  
-  
- [!code-cs[EditingCollectionsSnippets#RemoveItem](~/add/codesnippet/csharp/EditingCollectionsSnippets/Window1.xaml.cs#removeitem)]
- [!code-vb[EditingCollectionsSnippets#RemoveItem](~/add/codesnippet/visualbasic/editingcollectionssnippets/window1.xaml.vb#removeitem)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -487,7 +296,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,18 +305,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The position of the item to remove.</param>
-        <summary>Removes the item at the specified position from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `index` is relative to the collection view, not the collection.  For example, if the collection has 10 items and the view has a <xref:System.ComponentModel.ICollectionView.Filter%2A> so that 7 items appear, the valid values of `index` are 0 through 6.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0 or greater than the number of items in the collection view.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

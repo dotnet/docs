@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.SignedInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains information about the canonicalization algorithm and signature algorithm used for the XML signature.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SignedInfo class represents the <`SignedInfo`> element of an XML signature defined by the XML digital signature specification. The <`SignedInfo`> element, which is a subelement of the <`Signature`> element, contains the canonicalization method used for signing, the algorithm used for signing and validation, and references that describe a digital signature.  
-  
- For most scenarios, you should use the SignedInfo class available from the <xref:System.Security.Cryptography.Xml.SignedXml.SignedInfo%2A> property to sign and verify XML digital signatures.  
-  
- For more information about the <`SignedInfo`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,17 +50,9 @@
         <Parameter Name="reference" Type="System.Security.Cryptography.Xml.Reference" />
       </Parameters>
       <Docs>
-        <param name="reference">The reference to add to the list of references.</param>
-        <summary>Adds a <see cref="T:System.Security.Cryptography.Xml.Reference" /> object to the list of references to digest and sign.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddReference method adds a <xref:System.Security.Cryptography.Xml.Reference> object to a collection that is accessible using the <xref:System.Security.Cryptography.Xml.SignedInfo.References%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The reference parameter is <see langword="null" />.</exception>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanonicalizationMethod">
@@ -84,36 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the canonicalization algorithm that is used before signing for the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <value>The canonicalization algorithm used before signing for the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanonicalizationMethod property uses a string Uniform Resource Identifier (URI) to represent the <`Canonicalization`> element of an XML digital signature.  
-  
- Use the CanonicalizationMethod property to specify the canonicalization algorithm applied to the XML output of the <xref:System.Security.Cryptography.Xml.SignedInfo> class before performing signature calculations.  
-  
- Use one of the URIs listed in the following table with this property.  
-  
-|Canonicalization Method|Value|  
-|-----------------------------|-----------|  
-|Canonical XML|http://www.w3.org/TR/2001/REC-xml-c14n-20010315<br /><br /> This is default method. Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl>|  
-|Canonical XML with comments|http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl>|  
-|Exclusive Canonical XML|http://www.w3.org/2001/10/xml-exc-c14n#<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NTransformUrl>|  
-|Exclusive Canonical XML with comments|http://www.w3.org/2001/10/xml-exc-c14n#WithComments<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl>|  
-  
- For more information about XML digital signatures, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanonicalizationMethodObject">
@@ -123,7 +80,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,20 +91,9 @@
         <ReturnType>System.Security.Cryptography.Xml.Transform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Security.Cryptography.Xml.Transform" /> object used for canonicalization.</summary>
-        <value>A <see cref="T:System.Security.Cryptography.Xml.Transform" /> object used for canonicalization.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanonicalizationMethodObject property contains the <xref:System.Security.Cryptography.Xml.Transform> object used by the <xref:System.Security.Cryptography.Xml.SignedXml> class to canonicalize an XML document before signing or verifying.  
-  
- The CanonicalizationMethodObject property is read-only. You can modify the <xref:System.Security.Cryptography.Xml.Transform> object within this property by passing the desired transform Uniform Resource Identifier (URI) to the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <see cref="T:System.Security.Cryptography.Xml.Transform" /> is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -158,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,11 +113,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An <see cref="T:System.Array" /> object that holds the collection's elements.</param>
-        <param name="index">The beginning index in the array where the elements are copied.</param>
-        <summary>Copies the elements of this instance into an <see cref="T:System.Array" /> object, starting at a specified index in the array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -183,17 +126,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of references in the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <value>The number of references in the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -203,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,10 +151,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection of references.</summary>
-        <returns>An enumerator that iterates through the collection of references.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXml">
@@ -224,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,14 +170,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the XML representation of the <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <returns>The XML representation of the <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="System.Security.Cryptography.Xml.SignedInfo.SignatureMethod%2A" /> property is <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="System.Security.Cryptography.Xml.SignedInfo.References%2A" /> property is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -249,23 +182,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ID of the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <value>The ID of the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Id property to add a string ID to the XML representation of the current <xref:System.Security.Cryptography.Xml.SignedInfo> element. The ID is used to reference the <xref:System.Security.Cryptography.Xml.SignedInfo> from another location.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -275,18 +200,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -296,18 +218,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection is synchronized.</summary>
-        <value>
-          <see langword="true" /> if the collection is synchronized; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadXml">
@@ -317,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,19 +245,9 @@
         <Parameter Name="value" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="value">The XML element from which to load the <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> state.</param>
-        <summary>Loads a <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> state from an XML element.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="value" /> parameter is not a valid <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> element.  
-  
- -or-  
-  
- The <paramref name="value" /> parameter does not contain a valid <see cref="System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A" /> property.  
-  
- -or-  
-  
- The <paramref name="value" /> parameter does not contain a valid <see cref="System.Security.Cryptography.Xml.SignedInfo.SignatureMethod%2A" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="References">
@@ -349,27 +257,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of the <see cref="T:System.Security.Cryptography.Xml.Reference" /> objects of the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <value>A list of the <see cref="T:System.Security.Cryptography.Xml.Reference" /> elements of the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The References property uses a list of <xref:System.Security.Cryptography.Xml.Reference> objects to represent the `<Reference>` elements of an XML digital signature.  
-  
- Use the References property to describe the transforms, digest algorithms, and digest values of an XML digital signature.  
-  
- For more information about XML digital signatures, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SignatureLength">
@@ -379,15 +275,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the length of the signature for the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <value>The length of the signature for the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,35 +293,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the algorithm used for signature generation and validation for the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</summary>
-        <value>The name of the algorithm used for signature generation and validation for the current <see cref="T:System.Security.Cryptography.Xml.SignedInfo" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SignatureMethod property uses a string Uniform Resource Identifier (URI) to represents the `<SignatureMethod>` element of an XML digital signature.  
-  
- Use the SignatureMethod property to specify the algorithm to use for signature generation and verification. This property identifies all cryptographic functions involved in creating an XML digital signature, including hashing, public key algorithms, Message Authentication Codes (MACs), and padding.  
-  
- Use one of the URIs in the following table with this property.  
-  
-|Signature Method|Value|  
-|----------------------|-----------|  
-|HMAC-SHA1|http://www.w3.org/2000/09/xmldsig#hmac-sha1<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigHMACSHA1Url>|  
-|DSA with SHA1|http://www.w3.org/2000/09/xmldsig#dsa-sha1<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>|  
-|RSA with SHA1|http://www.w3.org/2000/09/xmldsig#rsa-sha1<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url>|  
-  
- For more information about XML digital signatures, see the World Wide Web Consortium (W3C) [XML Signature Syntax and Processing Specification](http://www.w3.org/TR/xmldsig-core/).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -436,17 +311,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object to use for synchronization.</summary>
-        <value>An object to use for synchronization.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
       </Docs>
     </Member>
   </Members>

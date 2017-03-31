@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of chart content to be serialized.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SerializationContents enumeration represents the chart content type to be serialized. This enumeration is used with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.Content%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -39,7 +32,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Serialize all chart information. This includes all appearance properties and data point values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -55,7 +48,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Serialize all appearance properties, such as color or line style, if they have non-default values.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -71,7 +64,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Serialize data values from all chart series. Does not include appearance properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -87,7 +80,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Serialize all non-default chart content. This includes appearance properties, series and their data points, axis minimums/maximums, and so forth.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

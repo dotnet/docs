@@ -4,22 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides basic functionality for describing the structure of a data source at design time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implement the IDataSourceSchema interface to describe a custom data source at design time. For example, the <xref:System.Web.UI.Design.DataSetSchema>, <xref:System.Web.UI.Design.XmlDocumentSchema>, and <xref:System.Web.UI.Design.TypeSchema> classes implement the IDataSourceSchema interface.  
-  
- Classes that implement the IDataSourceSchema are used by custom control designer components to provide lists of fields and views for data-bound controls at design time.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetViews">
@@ -29,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,16 +26,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array of schema descriptors for views contained in the data source.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A class that implements the GetViews method returns an array of objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. For example, in the array returned by the <xref:System.Web.UI.Design.DataSetSchema.GetViews%2A?displayProperty=fullName> method, each element of the array is a <xref:System.Web.UI.Design.DataSetViewSchema> object that implements <xref:System.Web.UI.Design.IDataSourceViewSchema>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

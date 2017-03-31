@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Vector3DConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [C#]  
-  
- The following sample uses a Vector3DConverter structure to convert a string into a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
-  
-```c#  
-...  
-  
-// Converts a String to a Vector3D using a Vector3DConverter  
-// Returns a Vector3D.  
-  
-Vector3DConverter v3DConverter = new Vector3DConverter();  
-Vector3D vector3DResult = new Vector3D();  
-string string3 = "10,20,30";      
-  
-vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);  
-// vector3DResult is equal to (10, 20, 30)  
-  
-...  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +22,11 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Media3D.Vector3DConverter" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +37,6 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,37 +47,10 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
-        <summary>Determines whether a class can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
-        <returns>Indicates whether the type can be converted to a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.  
-  
- <list type="table">  
-<listheader>  
-<term> Value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> false  
-  
- </term>  
-<description> The converter cannot convert from the provided type.  
-  
- </description>  
-</item>  
-<item>  
-<term> true  
-  
- </term>  
-<description> The converter can convert the provided type to a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +61,6 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,37 +71,10 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="destinationType">The desired type that this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure is being evaluated for conversion.</param>
-        <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure can be converted to a different type.</summary>
-        <returns>Indicates whether this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure can be converted to <paramref name="destinationType" />.  
-  
- <list type="table">  
-<listheader>  
-<term> Value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> false  
-  
- </term>  
-<description> The converter cannot convert this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to the specified type.  
-  
- </description>  
-</item>  
-<item>  
-<term> true  
-  
- </term>  
-<description> The converter can convert this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to the specified type.  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +85,6 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,13 +96,12 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The ITypeDescriptorContext for this call.</param>
-        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Attempts to convert a specified object to a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
-        <returns>The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure created from the converted <paramref name="value" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">Occurs if the specified object is **null** or is a type that cannot be converted to to a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -196,7 +111,6 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,12 +123,12 @@ vector3DResult = (Vector3D)v3DConverter.ConvertFromString(string3);
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="culture">The CultureInfo which is respected when converting.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to convert.</param>
-        <param name="destinationType">The type this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure is converted to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to a specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

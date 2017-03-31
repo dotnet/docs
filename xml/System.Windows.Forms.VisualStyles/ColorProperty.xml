@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ColorProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the color properties of a visual style element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ColorProperty enumeration represents a set of color properties that describe visual style elements. The ColorProperty values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetColor%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AccentColorHint">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A recommended companion color for the accent color of the visual style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border color of an element with a filled-border background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderColorHint">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A recommended companion color for the border color of the visual style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdgeDarkShadowColor">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dark shadow color for edges.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdgeFillColor">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The fill color for edges.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdgeHighlightColor">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The highlight color for edges.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdgeLightColor">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The light color for edges.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdgeShadowColor">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The shadow color for edges.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillColor">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The fill color of an element with a filled-border background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillColorHint">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A recommended companion color for the fill color of the visual style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlowColor">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The glow color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphTextColor">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color that a font-based glyph is drawn with.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphTransparentColor">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color of pixels in a glyph that are treated as transparent.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientColor1">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The first color in a gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientColor2">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The second color in a gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientColor3">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The third color in a gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientColor4">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The fourth color in a gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientColor5">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The fifth color in a gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShadowColor">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color of the shadow.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextBorderColor">
@@ -352,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color of the text border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextColor">
@@ -369,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextShadowColor">
@@ -386,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color of the text shadow.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransparentColor">
@@ -403,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ColorProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The color of pixels that are treated as transparent.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

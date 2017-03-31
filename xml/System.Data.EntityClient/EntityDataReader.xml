@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityDataReader" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Reads a forward-only stream of rows from a data source.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Combines the functionality of the <xref:System.Data.Common.DbDataReader> class and the <xref:System.Data.IExtendedDataRecord> interface.  
-  
- An EntityDataReader has no public constructor. It can only be obtained through one of the `EntityCommand.ExecuteReader` method overloads.  
-  
- [!INCLUDE[ssNoVersion](~/add/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the EntityDataReader (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
-  
- EntityDataReader does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
-  
--   EntityDataReader calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exeption, [EntityDataReader](assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True) will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
-  
--   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
--   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -48,7 +26,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,23 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the <see cref="T:System.Data.EntityClient.EntityDataReader" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[ssNoVersion](~/add/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
-  
- <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
-  
--   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, <xref:System.Data.EntityClient.EntityDataReader> will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
-  
--   Close only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
--   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataRecordInfo">
@@ -82,15 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DataRecordInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets <see cref="T:System.Data.Common.DataRecordInfo" /> for this <see cref="T:System.Data.IExtendedDataRecord" />.</summary>
-        <value>The information of a data record.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,23 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the depth of nesting for the current row.</summary>
-        <value>The depth of nesting for the current row.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The outermost table has a depth of zero.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -127,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,25 +89,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the resources consumed by this <see cref="T:System.Data.EntityClient.EntityDataReader" /> and calls <see cref="System.Data.EntityClient.EntityDataReader.Close%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[ssNoVersion](~/add/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
-  
- [EntityDataReader](assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True) does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
-  
--   assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
-  
--   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
--   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldCount">
@@ -165,23 +101,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of columns in the current row.</summary>
-        <value>The number of columns in the current row.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Includes hidden fields. Use <xref:System.Data.EntityClient.EntityDataReaderr.VisibleFieldCount%2A> to exclude hidden fields.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -191,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,9 +128,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a Boolean.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,9 +150,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a byte.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,13 +176,13 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <param name="dataOffset">The index within the row from which to begin the read operation.</param>
-        <param name="buffer">The buffer into which to copy the data.</param>
-        <param name="bufferOffset">The index with the buffer to which the data will be copied.</param>
-        <param name="length">The maximum number of characters to read.</param>
-        <summary>Reads a stream of bytes from the specified column, starting at location indicated by <paramref name="dataIndex" />, into the buffer, starting at the location indicated by <paramref name="bufferIndex" />.</summary>
-        <returns>The actual number of bytes read.</returns>
+        <param name="ordinal">To be added.</param>
+        <param name="dataOffset">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferOffset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +193,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,9 +202,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a single character.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +215,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -305,13 +228,13 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <param name="dataOffset">The index within the row from which to begin the read operation.</param>
-        <param name="buffer">The buffer into which to copy the data.</param>
-        <param name="bufferOffset">The index with the buffer to which the data will be copied.</param>
-        <param name="length">The maximum number of characters to read.</param>
-        <summary>Reads a stream of characters from the specified column, starting at location indicated by <paramref name="dataIndex" />, into the buffer, starting at the location indicated by <paramref name="bufferIndex" />.</summary>
-        <returns>The actual number of characters read.</returns>
+        <param name="ordinal">To be added.</param>
+        <param name="dataOffset">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferOffset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +245,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,9 +254,9 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The ordinal of the column.</param>
-        <summary>Returns nested readers as <see cref="T:System.Data.Common.DbDataReader" /> objects.</summary>
-        <returns>The nested readers as <see cref="T:System.Data.Common.DbDataReader" /> objects.</returns>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,7 +267,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,9 +276,9 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The number of the <see langword="DbDataRecord" /> to return.</param>
-        <summary>Returns a nested <see cref="T:System.Data.Common.DbDataRecord" />.</summary>
-        <returns>The nested data record.</returns>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,9 +298,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the name of the data type of the specified column.</summary>
-        <returns>The name of the data type.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -401,9 +320,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a <see cref="T:System.DateTime" /> object.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,7 +333,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,9 +342,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Returns a <see cref="T:System.Data.Common.DbDataReader" /> object for the requested column ordinal that can be overridden with a provider-specific implementation.</summary>
-        <returns>A data reader.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,7 +355,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -447,9 +364,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a <see cref="T:System.Decimal" /> object.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,7 +377,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -470,9 +386,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a double-precision floating point number.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,7 +399,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -491,8 +406,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,7 +418,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -513,9 +427,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the data type of the specified column.</summary>
-        <returns>The data type of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,7 +440,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,9 +449,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a single-precision floating point number.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -559,9 +471,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a globally-unique identifier (GUID).</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,7 +484,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -582,9 +493,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a 16-bit signed integer.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,7 +506,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -605,9 +515,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a 32-bit signed integer.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,7 +528,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -628,9 +537,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as a 64-bit signed integer.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,7 +550,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -651,9 +559,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the name of the column, given the zero-based column ordinal.</summary>
-        <returns>The name of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,7 +572,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,11 +581,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <summary>Gets the column ordinal given the name of the column.</summary>
-        <returns>The zero-based column ordinal.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificFieldType">
@@ -688,7 +594,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -703,9 +608,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Returns the provider-specific field type of the specified column.</summary>
-        <returns>The <see cref="T:System.Type" /> object that describes the data type of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -716,7 +621,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -731,9 +635,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,7 +648,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -759,9 +662,9 @@
         <Parameter Name="values" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the attribute columns.</param>
-        <summary>Gets all provider-specific attribute columns in the collection for the current row.</summary>
-        <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,7 +675,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -780,8 +682,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Data.DataTable" /> that describes the column metadata of the <see cref="T:System.Data.Common.DbDataReader" />.</summary>
-        <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -792,7 +694,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -802,9 +703,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as an instance of <see cref="T:System.String" />.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -815,7 +716,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -825,9 +725,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
-        <returns>The value of the specified column.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -838,7 +738,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -848,9 +747,9 @@
         <Parameter Name="values" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the attribute columns.</param>
-        <summary>Populates an array of objects with the column values of the current row.</summary>
-        <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,16 +760,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this <see cref="T:System.Data.EntityClient.EntityDataReader" /> contains one or more rows.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityDataReader" /> contains one or more rows; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -881,16 +778,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Data.EntityClient.EntityDataReader" /> is closed.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityDataReader" /> is closed; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -901,7 +796,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -911,10 +805,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal.</param>
-        <summary>Gets a value that indicates whether the column contains nonexistent or missing values.</summary>
-        <returns>
-          <see langword="true" /> if the specified column is equivalent to <see cref="T:System.DBNull" />; otherwise, <see langword="false" />.</returns>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -925,7 +818,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -935,9 +827,9 @@
         <Parameter Name="ordinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ordinal">The zero-based column ordinal</param>
-        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
-        <value>The value of the specified column.</value>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -948,7 +840,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -958,9 +849,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
-        <value>The value of the specified column.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -971,7 +862,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -979,17 +869,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Advances the reader to the next result when reading the results of a batch of statements.</summary>
-        <returns>
-          <see langword="true" /> if there are more result sets; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to process multiple result sets returned when a batch is submitted to the data provider.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -999,7 +881,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1007,17 +888,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Advances the reader to the next record in a result set.</summary>
-        <returns>
-          <see langword="true" /> if there are more rows; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default position of a data reader is before the first record. Therefore, you must call `Read` to begin accessing data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">
@@ -1027,23 +900,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.</summary>
-        <value>The number of rows changed, inserted, or deleted. Returns -1 for SELECT statements; 0 if no rows were affected or the statement failed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `RecordsAffected` property is not set until all rows are read and you close the `DataReader`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleFieldCount">
@@ -1053,23 +918,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of fields in the <see cref="T:System.Data.EntityClient.EntityDataReader" /> that are not hidden.</summary>
-        <value>The number of fields that are not hidden.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value is used to determine how many fields in the <xref:System.Data.EntityClient.EntityDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.InvalidMessageContractException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a message contract that is not valid.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InvalidMessageContractException is thrown when custom attribute usage results in the generation of an invalid service description. For example, if a <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName> type has multiple parts with the same name, or a method has multiple parameters with the same name.  
-  
-   
-  
-## Examples  
- The following code example shows a contract and service that throws an InvalidMessageContractException that says `operand` appears more than once in the message.  
-  
-```  
-[ServiceContract(Namespace = "http://contoso.com/IMath")]  
-public interface IMath  
-{  
-    [OperationContract]  
-    void Add(AddMessage a);  
-}  
-  
-[MessageContract]  
-public class AddMessage   
-{  
-    [MessageBodyMember(Name="operand")]  
-    public int a;  
-  
-    [MessageBodyMember(Name = "operand")]  
-    public int b;  
-}  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,20 +23,13 @@ public class AddMessage
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -77,23 +39,16 @@ public class AddMessage
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message for the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class using the specified message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object using the `message`.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,7 +58,7 @@ public class AddMessage
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,17 +66,10 @@ public class AddMessage
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The serialization information.</param>
-        <param name="context">The stream from which to deserialize.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class when deserializing from a stream into an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object from the stream on deserialization.  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -131,7 +79,7 @@ public class AddMessage
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -139,17 +87,10 @@ public class AddMessage
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message.</param>
-        <param name="innerException">The inner exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class that uses the specified message and inner exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object from the `message` and `innerException`.  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

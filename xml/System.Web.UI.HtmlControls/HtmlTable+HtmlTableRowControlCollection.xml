@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects that are the rows of an <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HtmlTable.HtmlTableRowControlCollection class represents a collection of <xref:System.Web.UI.HtmlControls.HtmlTableRow> objects for an <xref:System.Web.UI.HtmlControls.HtmlTable> control. Controls can be added at the end of the collection with the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method, or at a specified index location in the collection with the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt%2A> method. Only controls of type <xref:System.Web.UI.HtmlControls.HtmlTableRow> can be added to the HtmlTable.HtmlTableRowControlCollection collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a custom HtmlTable.HtmlTableRowControlCollection that overrides the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method so that when rows are added to a table, they are always added at the beginning of the table's row collection.  
-  
- [!code-cs[CustomHtmlTable.HtmlTableRowControlCollection#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_4_1.aspx)]
- [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_4_1.aspx)]  
-  
- [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#2](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_4_2.vb)]
- [!code-cs[CustomHtmlTable.HtmlTableRowControlCollection#2](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_4_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -41,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,28 +31,9 @@
         <Parameter Name="child" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableRow> control; otherwise, an <xref:System.ArgumentException> exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> collection that overrides the Add method so that when rows are added to a table, they are always added at the beginning of the table's row collection. Notice how the custom Add method calls the base class's <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt%2A> method with the `index` parameter equal to 0.  
-  
- [!code-cs[CustomHtmlTable.HtmlTableRowControlCollection#1](~/add/codesnippet/csharp/3e9c57c5-5bea-49e6-a429-_1.aspx)]
- [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/add/codesnippet/visualbasic/3e9c57c5-5bea-49e6-a429-_1.aspx)]  
-  
- [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#2](~/add/codesnippet/visualbasic/3e9c57c5-5bea-49e6-a429-_2.vb)]
- [!code-cs[CustomHtmlTable.HtmlTableRowControlCollection#2](~/add/codesnippet/csharp/3e9c57c5-5bea-49e6-a429-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</exception>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -82,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,18 +53,10 @@
         <Parameter Name="child" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the array at which to add the child control.</param>
-        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection. The new control is added to the array at the specified index location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableRow> control; otherwise, an <xref:System.ArgumentException> is thrown.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

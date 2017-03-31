@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerView" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Serves as a repository for information about the views supported by the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> or classes that inherit from it.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,13 +35,11 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="viewId">The integer identifier for the designer view.</param>
-        <param name="text">The string that specifies the name of the designer view.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> associated with the designer view.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" /> class by using an integer, a string, and an <see cref="T:System.Drawing.Image" />.</summary>
+        <param name="viewId">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="image">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="viewId" /> or <paramref name="text" /> contains <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,7 +49,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -72,14 +58,12 @@
         <Parameter Name="associatedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="viewId">The integer identifier for the designer view.</param>
-        <param name="text">The string that specifies the name of the designer view.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> associated with the designer view.</param>
-        <param name="associatedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> associated with the designer view.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" /> class by using an integer, a string, an <see cref="T:System.Drawing.Image" />, and an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+        <param name="viewId">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="associatedDesigner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="viewId" />, <paramref name="text" />, or <paramref name="associatedDesigner" /> contains <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AssociatedDesigner">
@@ -89,15 +73,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the activity designer associated with the designer view.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +91,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,18 +100,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An <see cref="T:System.Object" /> to compare to the current <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current designer view.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> and the current <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Equals uses the <xref:System.Workflow.ComponentModel.Design.DesignerView.ViewId%2A> property to determine whether the compared designer views are equal.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -139,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,8 +120,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" /> and is suitable for use in hashing algorithms and data structures like a hash table.</summary>
-        <returns>A hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,15 +132,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the image associated with the designer view.</summary>
-        <value>The <see cref="T:System.Drawing.Image" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,15 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the designer when the view is activated.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnActivate has no default behavior; classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerView> must implement their own logic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeactivate">
@@ -204,7 +168,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,15 +175,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the designer when the view is deactivated.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnDeactivate has no default behavior; classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerView> must implement their own logic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -230,15 +186,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the designer view.</summary>
-        <value>A string that contains the name of the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,23 +204,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dictionary of user data associated with the designer view.</summary>
-        <value>An <see cref="T:System.Collections.IDictionary" /> that contains the user data associated with the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If UserData is `null`, a <xref:System.Collections.Specialized.HybridDictionary> is created to hold the user data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewId">
@@ -275,23 +222,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the identifier associated with the designer view.</summary>
-        <value>An integer that contains the identifier for the <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property uniquely identifies a view associated with the designer. This property must contain a unique value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that occurs when an error condition prevents accessing or creating a <see cref="System.Printing.PrintSystemObject" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
-  
- If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">A string that describes the error condition.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class that provides a specific error message.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,9 +62,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
-        <param name="message">A string that describes the error condition.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class that provides a specific error code and error message.</summary>
+        <param name="errorCode">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +75,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -98,9 +82,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The data that is required to serialize or deserialize an object.</param>
-        <param name="context">The context, including source and destination, of the serialized stream.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class that provides specific serialization information and streaming context.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +95,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,9 +102,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">A string that describes the error condition.</param>
-        <param name="innerException">The underlying error condition that caused the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class that provides a specific error message, including the underlying cause of the exception.</summary>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +115,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -141,10 +123,10 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
-        <param name="message">A string that describes the error condition.</param>
-        <param name="innerException">The underlying error condition that caused the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class that provides a specific error code and error message, including the underlying cause of the exception.</summary>
+        <param name="errorCode">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +137,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -164,10 +145,10 @@
         <Parameter Name="printerMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
-        <param name="message">A string that describes the error condition.</param>
-        <param name="printerMessage">The exception message sent by the printer driver or unmanaged print system component that caused the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class that provides a specific error code, error message, and printer message.</summary>
+        <param name="errorCode">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="printerMessage">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -194,9 +174,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The data that is required to serialize or deserialize an object.</param>
-        <param name="context">The context, including source and destination, of the serialized stream.</param>
-        <summary>Gets the data that is used to serialize the object and gets the context of the serialized stream.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

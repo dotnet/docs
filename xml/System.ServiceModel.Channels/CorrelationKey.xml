@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an association between a piece of application data and an instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The key data is typically taken from a message that uses a set of queries contained in a <xref:System.ServiceModel.MessageQuerySet>. The CorrelationKey is then generated using a hash of the key data. Correlations are represented as a mapping between a CorrelationKey and an instance ID.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,10 +30,10 @@
         <Parameter Name="provider" Type="System.Xml.Linq.XNamespace" />
       </Parameters>
       <Docs>
-        <param name="keyData">The key data.</param>
-        <param name="scopeName">The scope name.</param>
-        <param name="provider">The provider.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CorrelationKey" /> class using the specified key data, scope name, and provider.</summary>
+        <param name="keyData">To be added.</param>
+        <param name="scopeName">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +50,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary of key data.</summary>
-        <value>A dictionary of key data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.String" /> representation of the key data.</summary>
-        <value>The key data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.ServiceModel.Channels.CorrelationKey" />.</summary>
-        <value>The name of the <see cref="T:System.ServiceModel.Channels.CorrelationKey" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +104,8 @@
         <ReturnType>System.Xml.Linq.XNamespace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the provider.</summary>
-        <value>The provider.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +122,8 @@
         <ReturnType>System.Xml.Linq.XName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scope name.</summary>
-        <value>The scope name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

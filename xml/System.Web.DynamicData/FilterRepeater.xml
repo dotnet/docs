@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FilterRepeater" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,73 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a control that enumerates table columns that can be filtered.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type is obsolete. Use <xref:System.Web.DynamicData.QueryableFilterRepeater>, instead.  
-  
- In this topic:  
-  
--   [Introduction](#introduction)  
-  
--   [Declarative Syntax](#declarative_syntax)  
-  
-<a name="introduction"></a>   
-## Introduction  
- The FilterRepeater control is a control in the ASP.NET Dynamic Data framework. It automatically renders controls that can be used to filter data rows that are displayed for a table. The filters work by providing a list of `Where` parameters to the data source for each supported column type. By default, Dynamic Data filters foreign-key and Boolean columns and renders them by using a `DropDownList` list control.  
-  
- The FilterRepeater control is a specialized <xref:System.Web.UI.WebControls.Repeater> control that automatically binds to a collection of filterable columns for the table that is displayed in the current page. For example, if a request is made for /Products/List.aspx, the FilterRepeater control binds to the columns in the Products table. The table is chosen based on the route that matches the request. It can also be overridden by setting the <xref:System.Web.DynamicData.FilterRepeater.TableName%2A> and <xref:System.Web.DynamicData.FilterRepeater.ContextTypeName%2A> properties of the FilterRepeater control.  
-  
- To display the filter UI, the `ItemTemplate` template of the FilterRepeater control must contain a control with a known ID. By default, the known ID is "DynamicFilter". The control in the item template must derive from <xref:System.Web.DynamicData.FilterUserControlBase>. When data binding occurs, the FilterRepeater control initializes an instance of the filter control with information about the column to filter.  
-  
-<a name="declarative_syntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp:FilterRepeater  
-    ContextTypeName="string"  
-    DataMember="string"  
-    DataSource="string"  
-    DataSourceID="string"  
-    DynamicFilterContainerId="string"  
-    EnableTheming="True|False"  
-    EnableViewState="True|False"  
-    ID="string"  
-    OnDataBinding="DataBinding event handler"  
-    OnDisposed="Disposed event handler"  
-    OnInit="Init event handler"  
-    OnItemCommand="ItemCommand event handler"  
-    OnItemCreated="ItemCreated event handler"  
-    OnItemDataBound="ItemDataBound event handler"  
-    OnLoad="Load event handler"  
-    OnPreRender="PreRender event handler"  
-    OnUnload="Unload event handler"  
-    runat="server"  
-    TableName="string"  
-    Visible="True|False"  
->  
-        <AlternatingItemTemplate>  
-            <!-- child controls -->  
-        </AlternatingItemTemplate>  
-        <FooterTemplate>  
-            <!-- child controls -->  
-        </FooterTemplate>  
-        <HeaderTemplate>  
-            <!-- child controls -->  
-        </HeaderTemplate>  
-        <ItemTemplate>  
-            <!-- child controls -->  
-        </ItemTemplate>  
-        <SeparatorTemplate>  
-            <!-- child controls -->  
-        </SeparatorTemplate>  
-</asp:FilterRepeater>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.FilterRepeater" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +49,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -134,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the data-source object to use to retrieve the data.</summary>
-        <value>The name of the data source object to use to retrieve the data.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Binds the <see cref="T:System.Web.DynamicData.FilterRepeater" /> control to the data that is retrieved from a data source.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +96,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -186,8 +116,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ID of the <see cref="T:System.Web.DynamicData.FilterRepeater" /> control in an <see cref="System.Web.UI.WebControls.TemplateColumn.ItemTemplate%2A" /> instance.</summary>
-        <value>The ID of the control used to display the filter UI in the <see cref="System.Web.UI.WebControls.TemplateColumn.ItemTemplate%2A" /> instance, if an ID is specified; otherwise, "DynamicFilter".</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,16 +135,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumeration of the sortable columns that belong to the table that is associated with the current <see cref="T:System.Web.DynamicData.FilterRepeater" /> control.</summary>
-        <returns>An enumeration of the sortable columns that belong to the table that is associated with the current <see cref="T:System.Web.DynamicData.FilterRepeater" /> control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, foreign-key columns and Boolean columns are sortable.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetWhereParameters">
@@ -225,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,9 +156,9 @@
         <Parameter Name="dataSource" Type="System.Web.DynamicData.IDynamicDataSource" />
       </Parameters>
       <Docs>
-        <param name="dataSource">The data source of the <see langword="Where" /> parameters.</param>
-        <summary>Gets the list of <see langword="Where" /> parameters to add to the <see langword="Where" /> parameter collection of the <see cref="T:System.Web.DynamicData.FilterRepeater" /> control.</summary>
-        <returns>A list of <see langword="Where" /> parameters.</returns>
+        <param name="dataSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,16 +178,9 @@
         <Parameter Name="item" Type="System.Web.UI.WebControls.RepeaterItem" />
       </Parameters>
       <Docs>
-        <param name="item">The contents of the item template.</param>
-        <summary>Called for every item and alternating item template that is being instantiated by this <see cref="T:System.Web.DynamicData.FilterRepeater" /> control during data binding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can override this method to customize the contents of the item template while the items are being created. Data is available for each item when this method is called.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -277,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,8 +199,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event to initialize the <see cref="T:System.Web.DynamicData.FilterRepeater" /> control.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,16 +220,9 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.RepeaterItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.Repeater.ItemCreated" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.Repeater.ItemCreated> event is raised when an item is created in the <xref:System.Web.UI.WebControls.Repeater> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -328,15 +232,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the table that is associated with the <see cref="T:System.Web.DynamicData.FilterRepeater" /> control.</summary>
-        <value>The table that is associated with the <see cref="T:System.Web.DynamicData.FilterRepeater" /> control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +250,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -365,8 +267,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the table to filter.</summary>
-        <value>The name of the table to filter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,16 +279,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the control is displayed.</summary>
-        <value>
-          <see langword="true" /> if the control is displayed; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

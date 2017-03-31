@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.MembershipSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,55 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines configuration settings to support the infrastructure for configuring and managing membership details. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MembershipSection class provides a way to programmatically access and modify the `membership` section in a configuration file.  
-  
-   
-  
-## Examples  
- This example demonstrates how to specify values declaratively for several attributes of the `membership` section, which can also be accessed as members of the MembershipSection class.  
-  
- The following configuration file example shows how to specify values declaratively for the `membership` section.  
-  
-```  
-<system.web>  
-  <membership   
-    defaultProvider="AspNetSqlMembershipProvider"  
-    userIsOnlineTimeWindow="15">  
-    <providers>  
-      <add   
-        name=" AspNetSqlMembershipProvider"  
-        type="System.Web.Security.SqlMembershipProvider, System.Web,   
-          Version=2.0.3600.0, Culture=neutral,   
-          PublicKeyToken=b03f5f7f11d50a3a"  
-        connectionStringName="LocalSqlServer"  
-        passwordAttemptThreshold="5"  
-        passwordAttemptWindow="10"  
-        enablePasswordRetrieval="false"  
-        enablePasswordReset="true"  
-        requiresQuestionAndAnswer="true"  
-        applicationName="/"  
-        requiresUniqueEmail="false"  
-        passwordFormat="Hashed"  
-        description="Stores and retrieves membership data from   
-          the local Microsoft SQL Server database."  
-      />  
-    </providers>  
-  </membership>  
-</system.web>  
-```  
-  
- The following code example demonstrates how to use the MembershipSection class.  
-  
- [!code-cs[System.Web.Configuration.MembershipSection#1](~/add/codesnippet/csharp/t-system.web.configurati_44_1.cs)]
- [!code-vb[System.Web.Configuration.MembershipSection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_44_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.MembershipSection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MembershipSection constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.MembershipSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProvider">
@@ -93,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -108,24 +51,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the default provider that is used to manage roles.</summary>
-        <value>The name of a provider in <see cref="System.Web.Configuration.MembershipSection.Providers%2A" />. The default is <see langword="AspNetSqlRoleProvider" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DefaultProvider must match a named value in the `providers` subsection of the `membership` section of the configuration file. An empty string (`""`) is not a valid value for the DefaultProvider property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the DefaultProvider property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.MembershipSection> class.  
-  
- [!code-cs[System.Web.Configuration.MembershipSection#2](~/add/codesnippet/csharp/p-system.web.configurati_239_1.cs)]
- [!code-vb[System.Web.Configuration.MembershipSection#2](~/add/codesnippet/visualbasic/p-system.web.configurati_239_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithmType">
@@ -135,7 +63,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -147,24 +74,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of encryption that is used for sensitive membership information.</summary>
-        <value>The type of encryption used to encrypt sensitive membership information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- At run time, the membership system binds to the appropriate hash algorithm type, and then uses this type when encrypting membership information. If the HashAlgorithmType property is not set, the membership system defaults to the <xref:System.Web.Configuration.MachineKeySection.Validation%2A> property within the <xref:System.Web.Configuration.MachineKeySection> class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HashAlgorithmType property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.MembershipSection> class.  
-  
- [!code-cs[System.Web.Configuration.MembershipSection#3](~/add/codesnippet/csharp/p-system.web.configurati_135_1.cs)]
- [!code-vb[System.Web.Configuration.MembershipSection#3](~/add/codesnippet/visualbasic/p-system.web.configurati_135_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -174,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,7 +104,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -205,26 +115,9 @@
         <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Configuration.ProviderSettingsCollection" /> object of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
-        <value>A <see cref="T:System.Configuration.ProviderSettingsCollection" /> that contains the provider's settings, defined within the <see langword="providers" /> subsection of the <see langword="membership" /> section of the configuration file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Membership providers are components that provide access to the membership for a site. You can specify membership providers in the `providers` subsection of the `membership` section of the configuration file.  
-  
- The <xref:System.Web.Configuration.MembershipSection.DefaultProvider%2A> property contains the name of the provider that is used by default.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Providers property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.MembershipSection> class.  
-  
- [!code-cs[System.Web.Configuration.MembershipSection#5](~/add/codesnippet/csharp/p-system.web.configurati_90_1.cs)]
- [!code-vb[System.Web.Configuration.MembershipSection#5](~/add/codesnippet/visualbasic/p-system.web.configurati_90_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserIsOnlineTimeWindow">
@@ -234,7 +127,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -252,24 +144,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the length of time, in minutes, before a user is no longer considered to be online.</summary>
-        <value>A length of time in minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value for the UserIsOnlineTimeWindow property is calculated by comparing the current time minus the UserIsOnlineTimeWindow property with the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> value for the user.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the UserIsOnlineTimeWindow property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.MembershipSection> class.  
-  
- [!code-cs[System.Web.Configuration.MembershipSection#4](~/add/codesnippet/csharp/p-system.web.configurati_39_1.cs)]
- [!code-vb[System.Web.Configuration.MembershipSection#4](~/add/codesnippet/visualbasic/p-system.web.configurati_39_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,66 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables dynamic behavior for ASP.NET Web controls that support ASP.NET Dynamic Data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this topic:  
-  
--   [Introduction](#introduction)  
-  
--   [Declarative Syntax](#declarative_syntax)  
-  
-<a name="introduction"></a>   
-## Introduction  
- The DynamicDataManager control provides the glue between the data-bound control, the data source control, and Dynamic Data in the following ways:  
-  
--   Sets a field generator for the data-bound control to create the correct column set when <xref:System.Web.UI.WebControls.GridView.AutoGenerateColumns%2A> is set to `true`. The data-bound control can be a <xref:System.Web.UI.WebControls.GridView> control, a <xref:System.Web.UI.WebControls.DetailsView> control, or a <xref:System.Web.UI.WebControls.FormView> control.  
-  
--   Sets the context type and table name for the data source control. The data source control for LINQ-to-SQL is <xref:System.Web.UI.WebControls.LinqDataSource>. The data source control for the ADO Entity Framework is <xref:System.Web.UI.WebControls.EntityDataSource>.  
-  
--   Sets the <xref:System.Web.DynamicData.IDynamicDataSource.AutoGenerateWhereClause%2A> to `true` for the data source if there is no Where clause.  
-  
--   Expands the special dynamic parameters such as <xref:System.Web.DynamicData.DynamicControlParameter> into parameters that the data source can consume.  
-  
--   If the LINQ-to-SQL <xref:System.Web.DynamicData.DynamicDataManager.AutoLoadForeignKeys%2A> property is set to `true`, loads the foreign keys.  
-  
- The DynamicDataManager control must be included on a page in order for data controls to use Dynamic Data support. The markup for the DynamicDataManager control must precede the markup for any controls that use Dynamic Data support.  
-  
-> [!NOTE]
->  A DynamicDataManager control cannot be put inside an <xref:System.Web.UI.UpdatePanel> control.  
-  
-<a name="declarative_syntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp:DynamicDataManager  
-    AutoLoadForeignKeys="True|False"  
-    EnableQueryStringSelection="True|False"  
-    EnableViewState="True|False"  
-    ID="string"  
-    OnDataBinding="DataBinding event handler"  
-    OnDisposed="Disposed event handler"  
-    OnInit="Init event handler"  
-    OnLoad="Load event handler"  
-    OnPreRender="PreRender event handler"  
-    OnUnload="Unload event handler"  
-    runat="server"  
->  
-</asp:DynamicDataManager>  
-```  
-  
-   
-  
-## Examples  
- The following example shows how to use a DynamicDataManager control to enable dynamic behavior for an instance of the <xref:System.Web.UI.WebControls.GridView?displayProperty=fullName> control.  
-  
- [!code-vb[System.Web.DynamicData.DynamicDataManager#1](~/add/codesnippet/visualbasic/t-system.web.dynamicdata_6_1.aspx)]
- [!code-cs[System.Web.DynamicData.DynamicDataManager#1](~/add/codesnippet/csharp/t-system.web.dynamicdata_6_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,12 +39,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +54,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -129,17 +68,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether foreign keys are automatically loaded for a LINQ-to-SQL data context.</summary>
-        <value>
-          <see langword="true" /> if foreign keys are automatically loaded; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the data model is not based on LINQ to SQL, this property is ignored. When the property set to `true`, it causes the related entities to be loaded in the initial query. When the property is set to `false`, LINQ to SQL will load the related objects when they are requested. This property is only for load optimization and does not affect what is displayed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -166,16 +97,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="System.Web.UI.Control.ClientID%2A" /> property that is generated by ASP.NET.</summary>
-        <value>The <see cref="System.Web.UI.Control.ClientID%2A" /> property that is generated by ASP.NET.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- <xref:System.Web.UI.Control.ClientID%2A>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientIDMode">
@@ -202,8 +126,8 @@
         <ReturnType>System.Web.UI.ClientIDMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the algorithm that is used to generate the value in the <see cref="System.Web.UI.Control.ClientID%2A" /> property.</summary>
-        <value>A value that indicates how the <see cref="System.Web.UI.Control.ClientID%2A" /> property is generated. This property cannot be set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,34 +158,9 @@
         <ReturnType>System.Web.DynamicData.DataControlReferenceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of data-control references in the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
-        <value>The list of data-control references in the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows markup from a Dynamic Data page template that uses the DataControls property.  
-  
-```  
-<asp:DynamicDataManager ID="DDM1" runat="server">  
-  <DataControls>  
-    <asp:DataControlReference ControlID="FormView1" />  
-  </DataControls>  
-</asp:DynamicDataManager>  
-  
-<asp:UpdatePanel ID="UpdatePanel1" runat="server">  
-  <ContentTemplate>  
-  
-    <asp:FormView runat="server" ID="FormView1" DataSourceID="DDS">  
-        <!-- Items omitted for clarity. -->  
-    </asp:FormView>  
-  
-  </ContentTemplate>  
-</asp:UpdatePanel>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -280,8 +179,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,8 +200,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -324,24 +221,9 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The data control to register.</param>
-        <summary>Registers a control with the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To enables dynamic behavior in a control, you must register it.  
-  
-   
-  
-## Examples  
- The following example shows how to register a <xref:System.Web.UI.WebControls.GridView?displayProperty=fullName> control in the `Page_Init` method of an ASP.NET Web page.  
-  
- [!code-vb[System.Web.DynamicData.DynamicDataManager#1](~/add/codesnippet/visualbasic/a0143781-761d-4323-b4e2-_1.aspx)]
- [!code-cs[System.Web.DynamicData.DynamicDataManager#1](~/add/codesnippet/csharp/a0143781-761d-4323-b4e2-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterControl">
@@ -351,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,18 +243,10 @@
         <Parameter Name="setSelectionFromUrl" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="control">The data control to register.</param>
-        <param name="setSelectionFromUrl">
-          <see langword="true" /> to use the primary key to set the selected item; otherwise, the selected item is not set.</param>
-        <summary>Registers a control with the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Registering the control enables its dynamic behavior. If the `setSelectionFromUrl` parameter is `true` and the primary key value is found in the route values, the primary key will be used to set the selected item. The primary key value is typically passed in the route by using the query string in the request URL.  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <param name="setSelectionFromUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -383,7 +256,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -401,17 +273,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control is visible.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> is visible; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.DynamicData.DynamicDataManager> is not a visible run-time control. The property is only used at design time in a designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ETagAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This attribute on an entity type is used to specify the properties that determine changes in content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Optimistic concurrency checks are enabled on a per type basis in [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)]. For more information, see [Making Changes to Data (WCF Data Services)](http://msdn.microsoft.com/en-us/c83a5a41-826c-4fe5-8d43-61bc96ddaa19).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The string value containing properties used in eTag value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.ETagAttribute" /> class.</summary>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,8 +57,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="propertyNames">String value containing properties used in eTag value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.ETagAttribute" /> class.</summary>
+        <param name="propertyNames">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,23 +69,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the names of properties used in the <see cref="T:System.Data.Services.ETagAttribute" />.</summary>
-        <value>String value containing property names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Parameters to the <xref:System.Data.Services.ETagAttribute> constructors are the set of property names used to make up the eTag value for the type. If a type has eTags defined, the server automatically implements optimistic concurrency checks on all requests to the type. If a key property, complex type property, or navigation property is specified, an <xref:System.ArgumentException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

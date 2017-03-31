@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,40 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Serves as the base class for controls that represent data sources to data-bound controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET supports a control data-binding architecture that enables Web server controls to bind to data in a consistent fashion. Web server controls that bind to data are referred to as data-bound controls, and the classes that facilitate that binding are called data source controls. Data source controls can represent any data source: a relational database, a file, a stream, a business object, and so on. Data source controls present data in a consistent way to data-bound controls, regardless of the source or format of the underlying data.  
-  
- You use the data source controls that are provided with ASP.NET, including <xref:System.Web.UI.WebControls.SqlDataSource>, <xref:System.Web.UI.WebControls.AccessDataSource>, and <xref:System.Web.UI.WebControls.XmlDataSource>, to perform most Web development tasks. You use the base DataSourceControl class when you want to implement your own custom data source control.  
-  
- While any class that implements the <xref:System.Web.UI.IDataSource> interface is a data source control, most ASP.NET data source controls extend the abstract DataSourceControl class, which provides a base implementation of the <xref:System.Web.UI.IDataSource> interface. The DataSourceControl class also provides an implementation of the <xref:System.ComponentModel.IListSource> interface, which enables you to programmatically assign the data source control to the `DataSource` property of a data-bound control and return data to the control as a basic list.  
-  
- Any ASP.NET control that derives from the <xref:System.Web.UI.WebControls.DataBoundControl> class can bind to a data source control. When a <xref:System.Web.UI.WebControls.DataBoundControl> is bound to a data source control, data binding is performed automatically at run time. You can also use data source controls with ASP.NET controls that expose a `DataSource` or `DataSourceID` property and support basic data binding, but are not derived from <xref:System.Web.UI.WebControls.DataBoundControl>. When using these data-bound controls, you must explicitly call the `DataBind` method. For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
-  
- You can think of a data source control as the combination of the DataSourceControl object and its associated lists of data, called data source views. Each list of data is represented by a <xref:System.Web.UI.DataSourceView> object. Because the underlying data storage contains one or more lists of data, a DataSourceControl is always associated with one or more named <xref:System.Web.UI.DataSourceView> objects. The <xref:System.Web.UI.IDataSource> interface defines the methods that all data source controls use to interact with data source views: the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method is used to enumerate the data source views currently associated with the data source control, and the <xref:System.Web.UI.DataSourceControl.GetView%2A> method is used to retrieve a specific data source view instance by name.  
-  
- You can also think of the data source control as two distinct interfaces that callers use to access data. The DataSourceControl class is the interface that page developers interact with directly when developing a Web Forms page, and the <xref:System.Web.UI.DataSourceView> class is the interface that data-bound controls and data-bound control authors interact with. Because the <xref:System.Web.UI.DataSourceView> object is available only at run time, any state persisted for the data source control or data source view must be exposed directly by the data source control.  
-  
- There is no visual rendering of ASP.NET data source controls; they are implemented as controls so you can create them declaratively, and to optionally allow them to participate in state management. As a result, data source controls do not support visual features such as <xref:System.Web.UI.DataSourceControl.EnableTheming%2A> or <xref:System.Web.UI.DataSourceControl.SkinID%2A>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a class can extend the DataSourceControl class. The `CsvDataSource` control represents comma-separated file data stored in a .csv file. The `CsvDataSource` class provides its own implementations of the <xref:System.Web.UI.DataSourceControl.GetView%2A>, <xref:System.Web.UI.DataSourceControl.GetViewNames%2A>, and other methods, because the base class implementations are not functional.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#1](~/add/codesnippet/csharp/t-system.web.ui.datasour_0_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#1](~/add/codesnippet/visualbasic/t-system.web.ui.datasour_0_1.vb)]  
-  
- The following code example demonstrates how to use the `CsvDataSource` control in a Web form.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1_webform#50](~/add/codesnippet/csharp/t-system.web.ui.datasour_0_2.aspx)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1_webform#50](~/add/codesnippet/visualbasic/t-system.web.ui.datasour_0_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,12 +43,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataSourceControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -107,8 +72,8 @@
         <Parameter Name="page" Type="System.Web.UI.Page" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:System.Web.UI.Page" /> containing the control.</param>
-        <summary>Applies the style properties that are defined in the page style sheet to the control.</summary>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +84,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -134,8 +98,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the server control identifier generated by ASP.NET.</summary>
-        <value>The server control identifier generated by ASP.NET.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,17 +127,9 @@
         <ReturnType>System.Web.UI.ClientIDMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not used for data source controls.</summary>
-        <value>This property is not used for data source controls.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property of the <xref:System.Web.UI.Control> base class is not used for data source controls because data source controls do not render markup.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -183,7 +139,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -195,8 +150,8 @@
         <ReturnType>System.Web.UI.ControlCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Web.UI.ControlCollection" /> object that represents the child controls for a specified server control in the UI hierarchy.</summary>
-        <value>The collection of child controls for the specified server control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,18 +169,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a collection to store child controls.</summary>
-        <returns>Returns a <see cref="T:System.Web.UI.EmptyControlCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Because data source controls do not allow child controls, the <xref:System.Web.UI.DataSourceControl> class's default implementation does not support the embedding of child controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -236,7 +181,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -254,18 +198,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this control supports themes.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the <xref:System.Web.UI.DataSourceControl> control has no visual rendering, it does not support themes.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the EnableTheming property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -275,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -290,9 +224,9 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">The identifier for the control to be found.</param>
-        <summary>Searches the current naming container for a server control with the specified <paramref name="id" /> parameter.</summary>
-        <returns>The specified control, or <see langword="null" /> if the specified control does not exist.</returns>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +237,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -316,16 +249,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets input focus to the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the <xref:System.Web.UI.DataSourceControl> control has no visual rendering, calling the Focus method on it throws a <xref:System.NotSupportedException> exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt was made to call the Focus method.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -335,7 +260,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,30 +269,10 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">The name of the <see cref="T:System.Web.UI.DataSourceView" /> to retrieve. In data source controls that support only one view, such as <see cref="T:System.Web.UI.WebControls.SqlDataSource" />, this parameter is ignored.</param>
-        <summary>Gets the named data source view associated with the data source control.</summary>
-        <returns>Returns the named <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.DataSourceControl" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can enumerate through the set of views currently associated with the data source control by calling the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method.  
-  
- Data source control classes can support one or more views on their underlying data. These views are represented by instances of the <xref:System.Web.UI.DataSourceView> class. The data source view defines the capabilities of a data source control, does all the work necessary to retrieve data from the underlying data store, and performs operations such as sorting, inserting, deleting, and updating.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceControl> class's default implementation returns `null`. If you extend the <xref:System.Web.UI.DataSourceControl> class, override the GetView method to return the specified <xref:System.Web.UI.DataSourceView> object.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a data source control class that extends the <xref:System.Web.UI.DataSourceControl> class implements the <xref:System.Web.UI.IDataSource.GetView%2A> method, returning a strongly typed instance of the <xref:System.Web.UI.DataSourceView> class. Because the data source control supports only one view, it ignores the name and returns a view named with the default view name. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceControl> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#3](~/add/codesnippet/csharp/m-system.web.ui.datasour_3_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#3](~/add/codesnippet/visualbasic/m-system.web.ui.datasour_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="viewName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -378,7 +282,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,29 +289,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a collection of names, representing the list of <see cref="T:System.Web.UI.DataSourceView" /> objects associated with the <see cref="T:System.Web.UI.DataSourceControl" /> control.</summary>
-        <returns>An <see cref="T:System.Collections.ICollection" /> that contains the names of the <see cref="T:System.Web.UI.DataSourceView" /> objects associated with the <see cref="T:System.Web.UI.DataSourceControl" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Collections.ICollection> collection of names is the allowable set of values that can be passed to the <xref:System.Web.UI.DataSourceControl.GetView%2A> method.  
-  
- The <xref:System.Web.UI.ListSourceHelper> class, which is used for the <xref:System.Web.UI.DataSourceControl> class's <xref:System.ComponentModel.IListSource> implementation, checks the GetViewNames method for both the <xref:System.Web.UI.DataSourceControl.System%23ComponentModel%23IListSource%23ContainsListCollection%2A> and <xref:System.Web.UI.DataSourceControl.System%23ComponentModel%23IListSource%23GetList%2A> calls to determine whether the data source control is associated with one or more data source views. If GetViewNames returns `null`, which is the default implementation of the method, <xref:System.Web.UI.DataSourceControl.System%23ComponentModel%23IListSource%23ContainsListCollection%2A> returns `false` and <xref:System.Web.UI.DataSourceControl.System%23ComponentModel%23IListSource%23GetList%2A> returns `null`.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceControl> class's default implementation returns `null`. If you extend the <xref:System.Web.UI.DataSourceControl> class, override the GetViewNames method to return a collection of view names.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a class that extends the <xref:System.Web.UI.DataSourceControl> class can override the default implementation, which returns `null`, to provide a collection of view names. The `CsvDataSource` class only supports one view; therefore, a collection of one element with the default view name is returned. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceControl> class.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#4](~/add/codesnippet/csharp/m-system.web.ui.datasour_2_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#4](~/add/codesnippet/visualbasic/m-system.web.ui.datasour_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -418,7 +301,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -431,9 +313,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines if the server control contains any child controls.</summary>
-        <returns>
-          <see langword="true" /> if the control contains other controls; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -454,26 +334,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.IDataSource.DataSourceChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaiseDataSourceChangedEvent method notifies a data-bound control that the underlying data source or the data cached in memory has changed, and that the control should rebind and perform any necessary additional work. Typically, the RaiseDataSourceChangedEvent method is called when a property of the data source control or a parameter value has changed.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to call the RaiseDataSourceChangedEvent method when a data source or its underlying data has changed in a way that might affect any bound controls. In this example, a file-based data source control that extends the <xref:System.Web.UI.DataSourceControl> class raises the <xref:System.Web.UI.IDataSource.DataSourceChanged> event by calling RaiseDataSourceChangedEvent any time the `FileName` property is changed.  
-  
- [!code-cs[Urtue.Samples.Alexkr.CsvDataSource_1#1](~/add/codesnippet/csharp/m-system.web.ui.datasour_1_1.cs)]
- [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#1](~/add/codesnippet/visualbasic/m-system.web.ui.datasour_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -483,7 +346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -498,8 +360,8 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the control content.</param>
-        <summary>Outputs server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object and stores tracing information about the control if tracing is enabled.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,7 +372,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -528,18 +389,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the skin to apply to the <see cref="T:System.Web.UI.DataSourceControl" /> control.</summary>
-        <value>
-          <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the <xref:System.Web.UI.DataSourceControl> control has no visual rendering, you cannot set the SkinID property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the SkinID property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -549,26 +401,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the data source control is associated with one or more lists of data.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.DataSourceControl" /> is associated with one or more <see cref="T:System.Web.UI.DataSourceView" /> objects; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to determine whether the current object can be used as a source of one or more lists of data. Data source controls encapsulate their lists of data as <xref:System.Web.UI.DataSourceView> objects; therefore, when associated with one or more <xref:System.Web.UI.DataSourceView> objects, a <xref:System.Web.UI.DataSourceControl> control represents a list source object and the property returns `true`.  
-  
- This property calls the static <xref:System.Web.UI.ListSourceHelper.ContainsListCollection%2A?displayProperty=fullName> method to determine whether the current data source control can be used as a source of data. The <xref:System.Web.UI.ListSourceHelper> class determines whether the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method returns a valid collection of view names. If it does, this property returns `true`. If <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns `null`, which is the default implementation of the <xref:System.Web.UI.DataSourceControl> class, the method returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -578,7 +419,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -586,18 +426,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a list of data source controls that can be used as sources of lists of data.</summary>
-        <returns>An <see cref="T:System.Collections.IList" /> of data source controls that can be used as sources of lists of data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to retrieve a set of objects that can be used as sources of data. Data source controls encapsulate their lists of data as <xref:System.Web.UI.DataSourceView> objects; therefore, when associated with one or more <xref:System.Web.UI.DataSourceView> objects, a <xref:System.Web.UI.DataSourceControl> control represents a list source object and the method returns an <xref:System.Collections.IList> collection of one element, the <xref:System.Web.UI.DataSourceControl> itself.  
-  
- This method calls the static <xref:System.Web.UI.ListSourceHelper.GetList%2A?displayProperty=fullName> method to retrieve an <xref:System.Collections.IList> collection of objects that can be used as sources of data. The <xref:System.Web.UI.ListSourceHelper> class determines whether <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns a valid collection of view names. If it does, the <xref:System.Web.UI.ListSourceHelper> class returns an <xref:System.Collections.IList> collection of one element, the <xref:System.Web.UI.DataSourceControl> control. If <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> returns `null`, which is the default implementation of the <xref:System.Web.UI.DataSourceControl> class, the <xref:System.Web.UI.ListSourceHelper> class also returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetView">
@@ -607,7 +438,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -617,22 +447,10 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">The name of the <see cref="T:System.Web.UI.DataSourceView" /> to retrieve. In data source controls that support only one view, such as <see cref="T:System.Web.UI.WebControls.SqlDataSource" />, this parameter is ignored.</param>
-        <summary>Gets the named <see cref="T:System.Web.UI.DataSourceView" /> object associated with the <see cref="T:System.Web.UI.DataSourceControl" /> control. Some data source controls support only one view, while others support more than one.</summary>
-        <returns>Returns the named <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.DataSourceControl" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `viewName` parameter is ignored when this method is called on data source controls that support only one view, such as the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.AccessDataSource> controls.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceControl> class's default implementation, which is called by this interface method, returns `null`. If you extend the <xref:System.Web.UI.DataSourceControl> class, override the <xref:System.Web.UI.DataSourceControl.GetView%2A> method to return the specified <xref:System.Web.UI.DataSourceView> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="viewName" /> is <see langword="null" />.</exception>
+        <param name="viewName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
@@ -642,7 +460,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -650,18 +467,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a collection of names, representing the list of <see cref="T:System.Web.UI.DataSourceView" /> objects associated with the <see cref="T:System.Web.UI.DataSourceControl" /> control.</summary>
-        <returns>An <see cref="T:System.Collections.ICollection" /> that contains the names of the <see cref="T:System.Web.UI.DataSourceView" /> objects associated with the <see cref="T:System.Web.UI.DataSourceControl" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.DataSourceControl> class's default implementation, which is called by this interface method, returns `null`, which indicates that only one view is supported. If you extend the <xref:System.Web.UI.DataSourceControl> class, override the <xref:System.Web.UI.DataSourceControl.GetViewNames%2A> method to return a collection of view names. A name can be passed to the <xref:System.Web.UI.DataSourceControl.GetView%2A> method to return a <xref:System.Web.UI.DataSourceView> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -671,7 +479,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -689,17 +496,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control is visually displayed.</summary>
-        <value>Always <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the <xref:System.Web.UI.DataSourceControl> control has no visual rendering, the Visible property always returns `false`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the Visible property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

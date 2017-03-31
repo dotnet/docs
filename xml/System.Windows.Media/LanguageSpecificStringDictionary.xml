@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.LanguageSpecificStringDictionary" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a dictionary of strings that are used to represent the name of an object in different languages.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +35,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -51,8 +49,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Windows.Markup.XmlLanguage,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">An array of key/value pairs. The key is an object of type <see cref="T:System.Windows.Markup.XmlLanguage" />. The value is an associated string.</param>
-        <summary>Adds a key/value pair to the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,9 +71,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
-        <param name="value">A value of type <see cref="T:System.String" />.</param>
-        <summary>Adds a language and associated string to the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,7 +91,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all elements from the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -121,10 +116,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Windows.Markup.XmlLanguage,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The key/pair to locate. The key is an object of type <see cref="T:System.Windows.Markup.XmlLanguage" />. The value is an associated string.</param>
-        <summary>Determines whether the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains the key/value pair.</summary>
-        <returns>
-          <see langword="true " />if the collection contains the key/value pair; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,10 +138,9 @@
         <Parameter Name="key" Type="System.Windows.Markup.XmlLanguage" />
       </Parameters>
       <Docs>
-        <param name="key">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
-        <summary>Determines whether the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains the specified language.</summary>
-        <returns>
-          <see langword="true " />if the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains <paramref name="key" />; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -175,9 +166,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The destination array to copy to.</param>
-        <param name="index">The index within the source <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> to start copying from.</param>
-        <summary>Copies the elements of the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> to an array, starting at a specific array index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,15 +179,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of strings in the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</summary>
-        <value>A value of type <see cref="T:System.Int32" /> representing the total number of strings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -220,8 +209,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An enumerator that iterates through the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,16 +221,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> is read-only.</summary>
-        <value>
-          <see langword="true " />if the dictionary is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +239,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,9 +248,9 @@
         <Parameter Name="key" Type="System.Windows.Markup.XmlLanguage" />
       </Parameters>
       <Docs>
-        <param name="key">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
-        <summary>Gets or sets the string associated with the specified language.</summary>
-        <value>A value of type <see cref="T:System.String" />.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +261,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -287,8 +272,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Windows.Markup.XmlLanguage&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection containing the keys, or <see cref="T:System.Windows.Markup.XmlLanguage" /> objects, in the dictionary.</summary>
-        <value>A collection of objects of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -314,10 +298,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Windows.Markup.XmlLanguage,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The key/value pair of the element to remove.</param>
-        <summary>Removes the element with the specified key/value pair from the collection.</summary>
-        <returns>
-          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> was not found in the original collection.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,10 +320,9 @@
         <Parameter Name="key" Type="System.Windows.Markup.XmlLanguage" />
       </Parameters>
       <Docs>
-        <param name="key">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
-        <summary>Removes the element from <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> based on the specified key value.</summary>
-        <returns>
-          <see langword="true" /> if the element referenced by <paramref name="key" /> was successfully deleted; otherwise <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,7 +333,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -363,17 +343,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</param>
-        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.CopyTo%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -383,24 +356,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.IsSynchronized%2A" />.</summary>
-        <value>
-          <see langword="true" /> if access to the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -410,23 +374,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.SyncRoot%2A" />.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -436,7 +392,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -447,17 +402,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The <see cref="T:System.Object" /> to use as the key of the element to add.</param>
-        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.Add%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -467,7 +415,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,18 +424,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.Contains%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -498,7 +437,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,16 +444,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.GetEnumerator%2A" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -525,24 +456,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.IsFixedSize%2A" />.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> has a fixed size; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Item">
@@ -552,7 +474,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -562,17 +483,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the element to get or set.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.Item%2A" />.</summary>
-        <value>The element with the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Keys">
@@ -582,23 +496,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.Keys%2A" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> object containing the keys of the <see cref="T:System.Collections.IDictionary" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -608,7 +514,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -618,16 +523,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.Remove%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">
@@ -637,23 +535,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IDictionary.Values%2A" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.IDictionary" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IDictionary> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -663,7 +553,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -671,16 +560,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IEnumerable.GetEnumerator%2A" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.LanguageSpecificStringDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -690,7 +572,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -701,19 +582,11 @@
         <Parameter Name="value" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
-        <param name="value">A value of type <see cref="T:System.String" />.</param>
-        <summary>Retrieves the string value in the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> for a specified key, or language.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains an entry for <paramref name="key" />; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the return value is `true`, `value` contains a copy of the string that is associated with the `key` value. If the return value is `false`, `value` is set to `null`.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -723,7 +596,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -735,8 +607,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection containing the values, or strings, in the dictionary.</summary>
-        <value>A collection containing the strings in the dictionary.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

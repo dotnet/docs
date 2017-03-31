@@ -16,37 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the strip lines on a chart.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Strip lines, or strips, are horizontal or vertical ranges that shade the background of a chart in regular or custom intervals. You can use strip lines to:  
-  
--   Improve readability for looking up individual values on the chart.  
-  
--   Separate data points when reading the chart.  
-  
--   Highlight dates that occur at regular intervals, for example, to identify weekend data points.  
-  
--   Highlight a specific key range of data.  
-  
--   Add a threshold line at a specific constant value.  
-  
- A single StripLine object can either be drawn once, or repeatedly, for a given interval. This action is controlled by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> property. When a value of zero is assigned to the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> property, one strip line will be drawn. When a non-zero value is assigned to the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> property, a strip line will be drawn repeatedly at each given interval. The location where a strip line is drawn is also affected by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalOffset%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalOffsetType%2A> properties of the strip line.  
-  
- Strip lines are always associated with an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object. They can be added at both design time and run time.  
-  
- To add a horizontal or vertical line to display a threshold, set the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property to a value of 0.0. This will result in a line being drawn. You can use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderDashStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderWidth%2A> properties for the color, width and style of the line. No chart background properties (`Back*`) are used when the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to 0.0.  
-  
- Use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Text%2A> property of the strip line to associate text with a strip line. The placement and orientation of this text can be controlled by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.TextAlignment%2A> property.  
-  
- When multiple strip lines are defined for the same axis, it is possible that the strip lines will overlap. The Z-order of StripLine objects is determined by their order of occurrence in the <xref:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection> object. This means that the first occurrence is drawn first; the second occurrence is drawn second, and so on.  
-  
- Strip lines are not supported for the following chart types: Pie, Doughnut, Funnel, Pyramid, Kagi, ThreeLineBreak, PointAndFigure, Polar and Radar.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLine" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,22 +62,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the strip line.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> structure. The default color is <see cref="System.Drawing.Color.White%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property to any valid ARGB (alpha, red, green, blue) value.  
-  
- To set a gradient for the strip line, set the BackColor and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackSecondaryColor%2A> properties.  
-  
- If you set this color to "transparent"—in other words, set the alpha value to 0—no color will be assigned to the background of the element. As a result, the background will be transparent.  
-  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to 0.0, a line will be drawn and the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor%2A> property will determine the color of the line, not this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
@@ -133,26 +91,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the gradient style of the strip line.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BackGradientStyle property determines whether a chart element will display a gradient, as well as the orientation of the gradient, if used.  
-  
- To use gradient colors:  
-  
--   Use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor%2A> property to set the primary color.  
-  
--   Use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackSecondaryColor%2A> property to set the secondary color.  
-  
--   Set this BackGradientStyle property of the chart element to the desired gradient style.  
-  
- This property is not applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to a value of 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -179,16 +120,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the hatching style of the strip line.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The hatch pattern consists of a solid background color and lines drawn over the background. The two colors used in the hatch style are set by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackSecondaryColor%2A> properties. This property is not applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to a value of 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackImage">
@@ -218,26 +152,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image of the strip line.</summary>
-        <value>A <see langword="string" /> value that represents an image file's URL. The default is an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BackImage property defines a path to a background image for many chart elements, and is an absolute or relative URL.  
-  
- To position this image, use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageAlignment%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode%2A> properties.  
-  
- You can also specify that one color will be displayed by the image as "transparent" by setting the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageTransparentColor%2A> property.  
-  
- An image can be any valid graphics file supported by .NET Framework, including icons.  
-  
- This property is not applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to a value of 0.0.  
-  
- Background images take precedence over other background properties, such as gradient colors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackImageAlignment">
@@ -264,18 +181,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image alignment.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle" /> enumeration value. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the alignment of the background image for strip lines; it is only applied when the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>.  
-  
- For more information about available alignments, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle> enumeration topic.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackImageTransparentColor">
@@ -308,16 +216,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a color which will be replaced with a transparent color when the background image is drawn.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that will be displayed as transparent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to a value of 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackImageWrapMode">
@@ -344,24 +245,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the drawing mode of the background image of the strip line.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode" /> integer enumeration. The default is <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines how the image is displayed; that is, tiled, scaled, and so forth.  
-  
- If an image is scaled, it will be stretched to fit within the bounding strip line. If the image is tiled, it is repeatedly drawn, starting from the top-left corner.  
-  
- For more information concerning the available wrapping modes, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
-  
- If the BackImageWrapMode property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageAlignment%2A> property setting.  
-  
- This property is not applicable if <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> is set to a value of 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -391,30 +277,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the secondary color of the strip line background.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used for the secondary color of a background with hatching or gradient fill. The default color is <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the secondary background color of many chart objects, and is used when gradient colors are being applied.  
-  
- You can set background secondary color to any valid ARGB (alpha, red, green, blue) value.  
-  
- If hatching is used, the BackSecondaryColor property determines the color of the hatching lines.  
-  
- To use gradient colors for the background of a chart element:  
-  
--   Use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor%2A> property to set the primary color.  
-  
--   Use this BackSecondaryColor property to set the secondary color.  
-  
--   Set the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackGradientStyle%2A> property to the desired gradient style.  
-  
- This property is not applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to a value of 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -444,18 +309,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border color of a strip line.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value. The default color is <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property to any valid ARGB (alpha, red, green, blue) value.  
-  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property of a <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> object is set to 0.0, a line will be drawn, and it is this property and not the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor%2A> property setting that will determine the color of the line.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderDashStyle">
@@ -479,16 +335,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style of the strip line.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value that determines the border style of the strip line.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property specifies the line style used for a border. The line can be solid, dotted or some variation of solid and dotted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -512,16 +361,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border width of the strip line.</summary>
-        <value>An <see langword="integer" /> value that determines the width of the strip line's border, in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is measured in pixels.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -540,9 +382,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="True" /> to release both managed and unmanaged resources; <see langword="False" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLine" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,8 +411,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font used for the strip line text.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> value that represents the font of the strip line text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,16 +446,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the strip line text.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that represents the text color of a strip line. The default value is <see cref="System.Drawing.Color.Black%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify any valid ARGB color for this property. This property is only applicable when a text value is specified for the strip line.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Interval">
@@ -641,16 +475,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval for a strip line, and determines if the strip line is drawn once or repeatedly.</summary>
-        <value>A <see langword="double" /> value that represents the interval between strip lines. The default value is zero.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set the Interval property to a value of zero, one strip line will be displayed, with a width specified by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property. When you set Interval to a value of other than zero, multiple strip lines will be shown. The unit that is used for the Interval property is defined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalOffset">
@@ -677,22 +504,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the offset of grid lines, tick marks, strip lines and axis labels.</summary>
-        <value>A <see langword="double" /> value that represents the interval offset.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The interval offset of minor tick marks and grid lines is never affected by the value of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
-  
- The IntervalOffset property setting defines the units of measurement of the offset.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> can be a negative value.  
-  
- The default value is `Auto` (`0`).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalOffsetType">
@@ -719,16 +533,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval offset type of the strip line.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that indicates the interval type. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, this property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>; the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalType">
@@ -755,18 +562,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval type of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLine" /> object.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that indicates the interval type. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Interval types can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>, in which case the type depends on: the X-value or Y-value types of the plotted <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> objects—depending on which axis the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects belong to—and the axis scale.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> property determines how often a strip or line is drawn.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -796,8 +594,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the strip line.</summary>
-        <value>A <see langword="string" /> value that represents the name of the strip line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -822,22 +620,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of a strip line.</summary>
-        <value>A <see langword="double" /> value that determines whether a strip or a line is drawn. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property cannot be set to a value less than zero, otherwise an exception will be raised.  
-  
- A setting of 0.0 will result in a line being drawn; this line will use the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderDashStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderWidth%2A> property settings for its color, width and style. None of the `Back*` properties in this class are utilized when the value of StripWidth is 0.0.  
-  
- If you set the StripWidth property to a value greater than zero, a strip will be created. The <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderDashStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderWidth%2A> properties only apply to the border of the strip; all of the `Back*` properties are then used for the background properties of the strip.  
-  
- If the value of the StripWidth property is greater than 0.0, the units are determined by the relevant axis scale.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StripWidthType">
@@ -864,18 +649,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unit of measurement for the <see cref="System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A" /> property.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that indicates the width type. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the units used for the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property. For example, to set a strip line to represent "one week", you could set this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> and set the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property to one (1.0).  
-  
- You can change the value of this property from <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> to a <xref:System.DateTime> value when the relevant axis scale uses a <xref:System.DateTime> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -902,16 +678,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the strip line.</summary>
-        <value>A <see langword="string" /> value that represents the text of a strip line.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to add text to a strip line.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlignment">
@@ -938,8 +707,8 @@
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text alignment of the strip line.</summary>
-        <value>A <see cref="T:System.Drawing.StringAlignment" /> value that represents the alignment of the strip line text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -967,8 +736,8 @@
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text line alignment of the strip line.</summary>
-        <value>A <see cref="T:System.Drawing.StringAlignment" /> value that represents the alignment of the text line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -996,16 +765,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text orientation.</summary>
-        <value>A TextOrientation value that represents the alignment of the text orientation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to a value of <xref:System.Windows.Forms.DataVisualization.Charting.TextOrientation>, the text is oriented based on the chart type. For all X-Y chart types other than Bar, X-axis strip line text is oriented horizontally from left to right on the bottom of the strip line. For Bar charts, X-axis strip line text is oriented vertically from top to bottom to the right of the strip line.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1029,8 +791,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the tooltip of a strip line.</summary>
-        <value>A <see langword="string" /> value that represents the tooltip of the strip line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Authenticates a security token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SecurityTokenAuthenticator class and the classes that derive from it authenticate security tokens. Typically, you would only derive a class directly from SecurityTokenAuthenticator when you create a custom security token. If you wanted to override the default authentication or authorization behaviors for built-in security tokens, derive from one of the classes that derive from SecurityTokenAuthenticator, such as <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>.  
-  
- When you derive a class from SecurityTokenAuthenticator, override the following two methods: <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateTokenCore%2A>. The <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateTokenCore%2A> method determines whether this security token authenticator can authenticate a specific security token. The <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method authenticates the security token and establishes a set of authorization policies for authorization. The authorization policies map the claims found in the security token to claims required by the application.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,20 +46,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
-        <summary>Gets a value indicating whether the specified security token can be validated by this security token authenticator.</summary>
-        <returns>
-          <see langword="true" /> when token can be validated; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanValidateToken method checks whether the token parameter is `null` and then calls the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateTokenCore%2A> method to determine whether this security token authenticator can authenticate the security token type for `token`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.</exception>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanValidateTokenCore">
@@ -81,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,18 +68,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
-        <summary>When overridden in a derived class, gets a value indicating whether the specified security token can be validated by this security token authenticator.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="token" /> can be validated; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanValidateTokenCore method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateToken%2A> method to determine whether this security token authenticator can authenticate the security token type for `token`. This does not authenticate the security token; that is performed by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateToken">
@@ -112,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,25 +90,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
-        <summary>Authenticates the specified security token and returns the set of authorization policies for the security token.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidateToken method checks whether the `token` parameter is `null`, calls the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateToken%2A> method to determine if this security token authenticator can authenticate this security token, and then if it can, calls the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">
-          <paramref name="token" /> cannot be authenticated by this security token authenticator  
-  
- -or-  
-  
- <paramref name="token" /> is not authenticated.</exception>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateTokenCore">
@@ -150,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,27 +112,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
-        <summary>When overridden in a derived class, authenticates the specified security token and returns the set of authorization policies for the security token.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the ValidateTokenCore method to authenticate a specific security token type.  
-  
- When the ValidateTokenCore method is overridden, follow these guidelines:  
-  
--   When the security token passed into the `token` parameter cannot be validated, throw the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
-  
--   When there are no authorization policies in effect for this application, return an empty <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of type <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
-  
- When `null` is returned by this method, [!INCLUDE[vsindigo](~/add/includes/vsindigo-md.md)] throws the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
-  
- The ValidateTokenCore method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

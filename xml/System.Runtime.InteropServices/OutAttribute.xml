@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OutAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.OutAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,32 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that data should be marshaled from callee back to caller.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to parameters.  
-  
- The OutAttribute is optional. The attribute is supported for COM interop and platform invoke only. In the absence of explicit settings, the interop marshaler assumes rules based on the parameter type, whether the parameter is passed by reference or by value, and whether the type is blittable or non-blittable. For example, the <xref:System.Text.StringBuilder> class is always assumed to be In/Out and an array of strings passed by value is assumed to be In.  
-  
- Out-only behavior is never a default marshaling behavior for parameters. You can apply the OutAttribute to value and reference types passed by reference to change In/Out behavior to Out-only behavior, which is equivalent to using the `out` keyword in C#. For example, arrays passed by value, marshaled as In-only parameters by default, can be changed to Out-only. However, the behavior does not always provide expected semantics when the types include all-blittable elements or fields because the interop marshaler uses pinning. If you do not care about passing data into the callee, Out-only marshaling can provide better performance for non-blittable types.  
-  
- Combining the <xref:System.Runtime.InteropServices.InAttribute> and OutAttribute is particularly useful when applied to arrays and formatted, non-blittable types. Callers see the changes a callee makes to these types only when you apply both attributes. Since these types require copying during marshaling, you can use <xref:System.Runtime.InteropServices.InAttribute> and OutAttribute to reduce unnecessary copies.  
-  
- For more information on the effect of OutAttribute on marshaling behavior, see [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2).  
-  
-   
-  
-## Examples  
- The following example shows how to apply the <xref:System.Runtime.InteropServices.InAttribute> and OutAttribute to a platform invoke prototype that passes an array as a parameter. The combination of directional attributes allows the caller to see the changes made by the callee.  
-  
- [!code-cpp[Interop InOutParameters#1](~/add/codesnippet/cpp/t-system.runtime.interop_9_1.cpp)]
- [!code-cs[Interop InOutParameters#1](~/add/codesnippet/csharp/t-system.runtime.interop_9_1.cs)]
- [!code-vb[Interop InOutParameters#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_9_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,13 +41,24 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OutAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.OutAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

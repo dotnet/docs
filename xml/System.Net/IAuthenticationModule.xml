@@ -4,33 +4,17 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IAuthenticationModule" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides the base authentication interface for Web client authentication modules.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IAuthenticationModule interface defines the properties and methods that custom authentication modules must use.  
-  
- Authentication modules conduct the entire authentication process with a server, responding to an authentication challenge as appropriate. This process may consist of requests to an authentication server separate from the resource server, as well as any other activities required to properly authenticate a request for a URI.  
-  
- Custom authentication modules should implement the IAuthenticationModule interface and then register with the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method. Authentication modules are also registered at program initialization by reading the configuration file.  
-  
-   
-  
-## Examples  
- The following example creates creates a customized authentication class by implementing the IAuthenticationModule interface. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
-  
- [!code-cs[System.Net.Authentication#6](~/add/codesnippet/csharp/t-system.net.iauthentica_1.cs)]
- [!code-cpp[System.Net.Authentication#6](~/add/codesnippet/cpp/t-system.net.iauthentica_1.cpp)]
- [!code-vb[System.Net.Authentication#6](~/add/codesnippet/visualbasic/t-system.net.iauthentica_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Authenticate">
@@ -40,8 +24,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Authorization</ReturnType>
@@ -52,28 +40,12 @@
         <Parameter Name="credentials" Type="System.Net.ICredentials" />
       </Parameters>
       <Docs>
-        <param name="challenge">The authentication challenge sent by the server.</param>
-        <param name="request">The <see cref="T:System.Net.WebRequest" /> instance associated with the challenge.</param>
-        <param name="credentials">The credentials associated with the challenge.</param>
-        <summary>Returns an instance of the <see cref="T:System.Net.Authorization" /> class in respose to an authentication challenge from a server.</summary>
-        <returns>An <see cref="T:System.Net.Authorization" /> instance containing the authorization message for the request, or <see langword="null" /> if the challenge cannot be handled.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Authenticate method conducts the authentication process with the server and returns an <xref:System.Net.Authorization> instance to the <xref:System.Net.AuthenticationManager>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the Authenticate method. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
-  
- [!code-cs[System.Net.Authentication#3](~/add/codesnippet/csharp/4972f2e3-c89b-4471-afd2-_1.cs)]
- [!code-cpp[System.Net.Authentication#3](~/add/codesnippet/cpp/4972f2e3-c89b-4471-afd2-_1.cpp)]
- [!code-vb[System.Net.Authentication#3](~/add/codesnippet/visualbasic/4972f2e3-c89b-4471-afd2-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="challenge">To be added.</param>
+        <param name="request">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
@@ -83,32 +55,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the authentication type provided by this authentication module.</summary>
-        <value>A string indicating the authentication type provided by this authentication module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AuthenticationType property identifies the authentication type implemented by this authentication module. The AuthenticationType property is used by the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method to determine if the authentication module has been registered, and by the <xref:System.Net.AuthenticationManager.Unregister%2A?displayProperty=fullName> method to remove a registered authentication module.  
-  
-   
-  
-## Examples  
- The following example shows how to use the AuthenticationType property. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
-  
- [!code-cs[System.Net.Authentication#7](~/add/codesnippet/csharp/p-system.net.iauthentica_1_1.cs)]
- [!code-cpp[System.Net.Authentication#7](~/add/codesnippet/cpp/p-system.net.iauthentica_1_1.cpp)]
- [!code-vb[System.Net.Authentication#7](~/add/codesnippet/visualbasic/p-system.net.iauthentica_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanPreAuthenticate">
@@ -118,33 +78,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the authentication module supports preauthentication.</summary>
-        <value>
-          <see langword="true" /> if the authorization module supports preauthentication; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CanPreAuthenticate property is set to `true` to indicate that the authentication module can respond with a valid <xref:System.Net.Authorization> instance when the <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> method is called.  
-  
-   
-  
-## Examples  
- The following example shows how to use the CanPreAuthenticate property. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
-  
- [!code-cs[System.Net.Authentication#7](~/add/codesnippet/csharp/p-system.net.iauthentica_0_1.cs)]
- [!code-cpp[System.Net.Authentication#7](~/add/codesnippet/cpp/p-system.net.iauthentica_0_1.cpp)]
- [!code-vb[System.Net.Authentication#7](~/add/codesnippet/visualbasic/p-system.net.iauthentica_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreAuthenticate">
@@ -154,8 +101,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Authorization</ReturnType>
@@ -165,27 +116,11 @@
         <Parameter Name="credentials" Type="System.Net.ICredentials" />
       </Parameters>
       <Docs>
-        <param name="request">The <see cref="T:System.Net.WebRequest" /> instance associated with the authentication request.</param>
-        <param name="credentials">The credentials associated with the authentication request.</param>
-        <summary>Returns an instance of the <see cref="T:System.Net.Authorization" /> class for an authentication request to a server.</summary>
-        <returns>An <see cref="T:System.Net.Authorization" /> instance containing the authorization message for the request.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Net.IAuthenticationModule.CanPreAuthenticate%2A> property is `true`, the PreAuthenticate method will return an instance of the <xref:System.Net.Authorization> class containing an authentication message.  
-  
-   
-  
-## Examples  
- The following example shows how to use the PreAuthenticate method. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
-  
- [!code-cs[System.Net.Authentication#4](~/add/codesnippet/csharp/8db36693-aec8-4613-b44c-_1.cs)]
- [!code-cpp[System.Net.Authentication#4](~/add/codesnippet/cpp/8db36693-aec8-4613-b44c-_1.cpp)]
- [!code-vb[System.Net.Authentication#4](~/add/codesnippet/visualbasic/8db36693-aec8-4613-b44c-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="request">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

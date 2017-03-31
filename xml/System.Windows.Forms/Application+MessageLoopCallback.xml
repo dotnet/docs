@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Application.MessageLoopCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,16 +19,8 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>Represents a method that will check whether the hosting environment is still sending messages.</summary>
-    <returns>
-      <see langword="true" /> if the hosting environment is still sending messages; otherwise, <see langword="false" />.</returns>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This delegate is used with the <xref:System.Windows.Forms.Application.RegisterMessageLoop%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

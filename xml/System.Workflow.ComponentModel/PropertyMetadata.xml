@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.PropertyMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the behavior of a dependency property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -66,8 +54,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with an array of attributes.</summary>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,15 +66,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="defaultValue">The object representing the <see cref="System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value.</summary>
+        <param name="defaultValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,15 +84,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value.</summary>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +102,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -130,9 +115,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="defaultValue">The object that represents the <see cref="System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value and an array of attributes.</summary>
+        <param name="defaultValue">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +128,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -151,9 +135,9 @@
         <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
       </Parameters>
       <Docs>
-        <param name="defaultValue">The object representing the <see cref="System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value and a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value.</summary>
+        <param name="defaultValue">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,7 +148,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -178,9 +161,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
-        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value and an array of attributes.</summary>
+        <param name="options">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +174,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -206,10 +188,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="defaultValue">The object that represents the <see cref="System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
-        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, and an array of attributes.</summary>
+        <param name="defaultValue">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +202,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -230,11 +211,11 @@
         <Parameter Name="setValueOverride" Type="System.Workflow.ComponentModel.SetValueOverride" />
       </Parameters>
       <Docs>
-        <param name="defaultValue">The object that represents the <see cref="System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
-        <param name="getValueOverride">The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> delegate that belongs to this instance.</param>
-        <param name="setValueOverride">The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> delegate that belongs to this instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, and delegates to override the <see langword="GetValue" /> and <see langword="SetValue" /> logic associated with the dependency property.</summary>
+        <param name="defaultValue">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="getValueOverride">To be added.</param>
+        <param name="setValueOverride">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,7 +226,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -262,12 +242,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="defaultValue">The object that represents the <see cref="System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
-        <param name="getValueOverride">The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> delegate that belongs to this instance.</param>
-        <param name="setValueOverride">The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> delegate that belongs to this instance.</param>
-        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, delegates to override the <see langword="GetValue" /> and <see langword="SetValue" /> logic associated with the dependency property, and an array of attributes.</summary>
+        <param name="defaultValue">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="getValueOverride">To be added.</param>
+        <param name="setValueOverride">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,24 +258,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default value of the associated dependency property.</summary>
-        <value>An object representing the default value for this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be a null reference (`Nothing` in Visual Basic).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="System.Workflow.ComponentModel.PropertyMetadata.IsSealed%2A" /> is <see langword="true." /></exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAttributes">
@@ -305,7 +276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,8 +283,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves an array that contains all attributes.</summary>
-        <returns>An array that contains all attributes.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,7 +295,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -335,9 +304,9 @@
         <Parameter Name="attributeType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="attributeType">The <see cref="T:System.Type" /> of attributes to return.</param>
-        <summary>Receives an array of type <see cref="T:System.Attribute" /> that contains those attributes having type equal to <paramref name="attributeType" />.</summary>
-        <returns>An array of type <see cref="T:System.Attribute" /> that contains those attributes having type equal to <paramref name="attributeType" />.</returns>
+        <param name="attributeType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,17 +317,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.GetValueOverride</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="System.Workflow.ComponentModel.DependencyObject.GetValue%2A" /> method.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="System.Workflow.ComponentModel.DependencyObject.GetValue%2A" /> method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="System.Workflow.ComponentModel.PropertyMetadata.IsSealed%2A" /> is <see langword="true." /></exception>
       </Docs>
     </Member>
     <Member MemberName="IsMetaProperty">
@@ -368,16 +335,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Workflow.ComponentModel.PropertyMetadata.Options%2A" /> is set to <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />.</summary>
-        <value>
-          <see langword="true" /> if this option is set to <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,16 +353,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Workflow.ComponentModel.PropertyMetadata.Options%2A" /> is set to <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />.</summary>
-        <value>
-          <see langword="true" /> if set to <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,16 +371,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Workflow.ComponentModel.PropertyMetadata.Options%2A" /> are set to <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />.</summary>
-        <value>
-          <see langword="true" /> if set to <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,32 +389,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> has been applied to a property resulting in the immutable state.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is immutable; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the PropertyMetadata.IsSealed is equal to `true`, the following operations cause a <xref:System.InvalidOperationException> to be raised:  
-  
--   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A>.  
-  
--   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.Options%2A>.  
-  
--   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.SetValueOverride%2A>.  
-  
--   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.GetValueOverride%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApply">
@@ -463,7 +407,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -474,17 +417,10 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="dependencyProperty">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to which this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> has been applied.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> associated with this metadata if this instance is type-specific metadata. If this is default metadata, this value is a null reference (<see langword="Nothing" /> in Visual Basic).</param>
-        <summary>Provides processing when this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is applied to a dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sends notification that this metadata has been applied to a property, and the metadata is being sealed. This routine is no-op in this implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="dependencyProperty">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -494,34 +430,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the property which represents the option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</summary>
-        <value>The option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The possible values for this property are:  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="System.Workflow.ComponentModel.PropertyMetadata.IsSealed%2A" /> is <see langword="true." /></exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValueOverride">
@@ -531,17 +448,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.SetValueOverride</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="System.Workflow.ComponentModel.DependencyObject.SetValue%2A" /> method.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="System.Workflow.ComponentModel.DependencyObject.SetValue%2A" /> method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Trying to set this property when <see cref="System.Workflow.ComponentModel.PropertyMetadata.IsSealed%2A" /> is <see langword="true." /></exception>
       </Docs>
     </Member>
   </Members>

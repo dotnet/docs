@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByParams" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type-safe way to set the <see cref="System.Web.HttpCachePolicy.VaryByParams%2A" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpCachePolicy.VaryByParams%2A> property identifies which HTTP `Get` or `Post` parameters ASP.NET uses to uniquely identify a variation of the response when there are multiple cached responses for a resource. This is useful when a response depends on a set of client inputs, such as headers or parameters.  
-  
- The HttpCacheVaryByParams is not directly related to HTTP cache-control headers, but helps ensure that a client or proxy varies by the specified parameters. For more information about `VaryByParams`, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web](http://go.microsoft.com/fwlink/?linkid=37125) site. See section 14, "Header Field Definitions", for complete details.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how the HttpCacheVaryByParams object is accessed from the <xref:System.Web.HttpCachePolicy> object associated with an <xref:System.Web.HttpResponse>.  
-  
- [!code-vb[Classic HttpResponse.Cache Example#1](~/add/codesnippet/visualbasic/t-system.web.httpcacheva_0_1.vb)]
- [!code-cs[Classic HttpResponse.Cache Example#1](~/add/codesnippet/csharp/t-system.web.httpcacheva_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpCacheVaryByParams" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array of values which specify the HTTP <see langword="GET" /> or <see langword="POST" /> parameters to be used for varying the cache.</summary>
-        <returns>An array of values which contain the HTTP <see langword="GET" /> or <see langword="POST" /> parameters for varying the cache.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,24 +56,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether an HTTP response varies by <see langword="Get" /> or <see langword="Post" /> parameters.</summary>
-        <value>
-          <see langword="true" /> if HTTP request parameters are ignored; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the IgnoreParams property to `true` is equivalent to setting the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive `VaryByParams` attribute to "none" for the resource.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -101,7 +74,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,30 +83,10 @@
         <Parameter Name="header" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The name of the custom parameter.</param>
-        <summary>Gets or sets a value indicating whether the cache varies according to the specified HTTP request parameter.</summary>
-        <value>
-          <see langword="true" /> if the cache should vary by the specified parameter value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When used as an accessor (getter), the Item indexer returns `true` if a value for the specified parameter is found in the current parameters collection, or if the collection is set to vary by * (an asterisk), which indicates all parameters.  
-  
- When used as a mutator (setter), the Item indexer sets the value for the parameter in the parameters collection that corresponds to the specified header to `true`. The value * can be specified, which indicates all parameters.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how the Item indexer is accessed from the <xref:System.Web.HttpCachePolicy> object associated with an <xref:System.Web.HttpResponse>.  
-  
- [!code-vb[Classic HttpResponse.Cache Example#1](~/add/codesnippet/visualbasic/p-system.web.httpcacheva_1_1.vb)]
- [!code-cs[Classic HttpResponse.Cache Example#1](~/add/codesnippet/csharp/p-system.web.httpcacheva_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="header" /> is <see langword="null" />.</exception>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParams">
@@ -153,8 +105,8 @@
         <Parameter Name="parameters" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="parameters">An array of values which contain the HTTP <see langword="GET" /> or <see langword="POST" /> parameters for varying the cache.</param>
-        <summary>Sets an array of values which specify the HTTP <see langword="GET" /> or <see langword="POST" /> parameters to be used for varying the cache.</summary>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

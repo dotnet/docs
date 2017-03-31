@@ -3,14 +3,23 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParallelExecutionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelExecutionMode" />
   <AssemblyInfo>
-    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The query execution mode is a hint that specifies how the system should handle performance trade-offs when parallelizing queries.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,14 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelExecutionMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.ParallelExecutionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This is the default setting. PLINQ will examine the query's structure and will only parallelize the query if will likely result in speedup. If the query structure indicates that speedup is not likely to be obtained, then PLINQ will execute the query as an ordinary LINQ to Objects query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForceParallelism">
@@ -36,14 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelExecutionMode.ForceParallelism" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.ParallelExecutionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Parallelize the entire query, even if that means using high-overhead algorithms. Use this flag in cases where you know that parallel execution of the query will result in speedup, but PLINQ in the Default mode would execute it as sequential.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

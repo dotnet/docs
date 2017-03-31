@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsFont" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a font in an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XpsFont class has no public constructor.  
-  
- Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font and obtain a reference to it in a new document.  
-  
- Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.GetFont%2A> method to obtain a font reference in an existing document.  
-  
- Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method of the XpsFont class may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
-  
-   
-  
-## Examples  
- The following example shows how to add fonts to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cs[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/csharp/XpsCreate/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/cpp/xpscreate/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/add/codesnippet/visualbasic/xpscreate/xpscreate.vb#xpscreateaddpageresources)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IsObfuscated">
@@ -45,24 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the font is obfuscated.</summary>
-        <value>
-          <see langword="true" /> if the font is obfuscated; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRestricted">
@@ -72,24 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether text that uses this font can be modified.</summary>
-        <value>
-          <see langword="true" /> if text that uses this font can be changed or edited; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the use of restricted fonts, see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ObfuscateFontData">
@@ -99,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,21 +68,10 @@
         <Parameter Name="guid" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="fontData">The typeface data to obfuscate.</param>
-        <param name="guid">The [!INCLUDE[TLA#tla_guid](~/add/includes/tlasharptla-guid-md.md)] to use to obfuscate the <c>fontdata</c>.</param>
-        <summary>Obfuscates the font typeface data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ObfuscateFontData method is provided for use when you are legally obligated to obfuscate licensed proprietary fonts.  
-  
- While this method does not provide encryption, the ObfuscateFontData method can be used to inhibit users from unzipping proprietary [!INCLUDE[TLA#tla_opentype](~/add/includes/tlasharptla-opentype-md.md)] fonts and installing them separately for other uses.  
-  
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
- ]]></format>
-        </remarks>
+        <param name="fontData">To be added.</param>
+        <param name="guid">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

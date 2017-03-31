@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PathAnimationSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the output property value of the path that is used to drive the animation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are three possible output property values that a path animation can move along - X, Y, and Angle. By specifying one of these values, you are telling the animation to use that property output value of the path to drive the animation. For example, if you are animating the property that specifies the x-coordinate of an object (i.e. <xref:System.Windows.Media.TranslateTransform.X%2A?displayProperty=fullName>) using a PathAnimationSource of Y, then the animation will animate the x-coordinate of the object using the y-coordinates of the path.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Angle">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the tangent angle of rotation during the progression along an animation sequence path.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the x-coordinate offset during the progression along an animation sequence path.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the y-coordinate offset during the progression along an animation sequence path.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

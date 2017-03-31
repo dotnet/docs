@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FieldOffsetAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.FieldOffsetAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,28 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates the physical position of fields within the unmanaged representation of a class or structure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to fields.  
-  
- This attribute is used when <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>, with <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> passed to its constructor, is applied to a class or structure to specify the offset of each non- `static` or constant member within the unmanaged representation of that class or structure.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to apply the FieldOffsetAttribute to members of a class with an explicit layout.  
-  
- [!code-cpp[Classic FieldOffsetAttribute Example#1](~/add/codesnippet/cpp/t-system.runtime.interop_10_1.cpp)]
- [!code-cs[Classic FieldOffsetAttribute Example#1](~/add/codesnippet/csharp/t-system.runtime.interop_10_1.cs)]
- [!code-vb[Classic FieldOffsetAttribute Example#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_10_1.vb)]  
-  
- For a larger example, see the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,16 +41,27 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.FieldOffsetAttribute.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="offset">The offset in bytes from the beginning of the structure to the beginning of the field.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.FieldOffsetAttribute" /> class with the offset in the structure to the beginning of the field.</summary>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,16 +71,27 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.FieldOffsetAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the offset from the beginning of the structure to the beginning of the field.</summary>
-        <value>The offset from the beginning of the structure to the beginning of the field.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ListItem" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,41 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A flow content element that represents a particular content item in an ordered or unordered <see cref="T:System.Windows.Documents.List" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ListItem enforces a strong content model for child content. See [TextElement Content Model Overview](../Topic/TextElement%20Content%20Model%20Overview.md) for more information about the ListItem content model.  
-  
- ListItem elements must be contained by a <xref:System.Windows.Documents.List> element.  
-  
-   
-  
-## Examples  
- The following example shows how to define a <xref:System.Windows.Documents.List> using [!INCLUDE[TLA#tla_titlexaml](~/add/includes/tlasharptla-titlexaml-md.md)].  
-  
- [!code-xml[ListSnippets#_ListXAML](~/add/codesnippet/xaml/ListSnippets/Window1.xaml#_listxaml)]  
-  
- The following example shows how to create and populate a <xref:System.Windows.Documents.List> programmatically.  
-  
- [!code-cs[ListSnippets#_List_Props](~/add/codesnippet/csharp/ListSnippets/Window1.xaml.cs#_list_props)]
- [!code-vb[ListSnippets#_List_Props](~/add/codesnippet/visualbasic/listsnippets/window1.xaml.vb#_list_props)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: Ordered list](~/add/media/ordered-list.png "Screenshot: Ordered list")  
-  
- The following example shows how to define a nested <xref:System.Windows.Documents.List> (lists within lists) using [!INCLUDE[TLA#tla_titlexaml](~/add/includes/tlasharptla-titlexaml-md.md)].  
-  
- [!code-xml[ListSnippets#_NestedListXAML](~/add/codesnippet/xaml/ListSnippets/Window1.xaml#_nestedlistxaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Nested list](~/add/media/flow-nested-list-example.png "Nested list")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.ListItem" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,26 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="paragraph" Type="System.Windows.Documents.Paragraph" />
       </Parameters>
       <Docs>
-        <param name="paragraph">A <see cref="T:System.Windows.Documents.Paragraph" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.ListItem" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.ListItem" /> class, taking a specified <see cref="T:System.Windows.Documents.Paragraph" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.ListItem" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-cs[ListSnippets#_List_Const](~/add/codesnippet/csharp/ListSnippets/Window1.xaml.cs#_list_const)]
- [!code-vb[ListSnippets#_List_Const](~/add/codesnippet/visualbasic/listsnippets/window1.xaml.vb#_list_const)]  
-  
- ]]></format>
-        </remarks>
+        <param name="paragraph">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Blocks">
@@ -106,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -118,16 +71,9 @@
         <ReturnType>System.Windows.Documents.BlockCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a block collection that contains the top-level <see cref="T:System.Windows.Documents.Block" /> elements of the <see cref="T:System.Windows.Documents.ListItem" />.</summary>
-        <value>A block collection that contains the <see cref="T:System.Windows.Documents.Block" /> elements of the <see cref="T:System.Windows.Documents.ListItem" /></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the block collection returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.Section> element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderBrush">
@@ -137,47 +83,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Media.Brush" /> to use when painting the element's border.</summary>
-        <value>The brush used to apply to the element's border. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a table of swatches that show the available predefined brush colors, see <xref:System.Windows.Media.Brushes>.  
-  
-<a name="dependencyPropertyInfo_BorderBrush"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.BorderBrushProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the BorderBrush attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_BordersXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_bordersxaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: Blue, 1&#47;4inch border around Block](~/add/media/block-borders.png "Screenshot: Blue, 1/4inch border around Block")  
-  
- The following example shows how to set the BorderBrush property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_Borders](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_borders)]
- [!code-cs[BlockSnippets#_Block_Borders](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_borders)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderBrushProperty">
@@ -187,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.BorderBrush%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,85 +118,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border thickness for the element.</summary>
-        <value>A <see cref="T:System.Windows.Thickness" /> structure that specifies the amount of border to apply, in device independent pixels. The default is a uniform thickness of zero (0.0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_BorderThickness"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object BorderThickness="uniformThickness"/>  
-- or -  
-<object BorderThickness="independentThickness"/>  
-- or -  
-<object BorderThickness="qualifiedUniformThickness"/>  
-- or -  
-<object BorderThickness="qualifiedIndependentThickness"/>  
-```  
-  
-<a name="xamlValues_BorderThickness"></a>   
-## XAML Values  
- *uniformThickness*  
- String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *independentThickness*  
- String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of border to the left of content, 10 pixels of border above content, 15 pixels of border to the right of content, and 20 pixels of border below the content.  
-  
- *qualifiedUniformThickness*  
- A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1in"` provides uniform border of 1 inch in all directions.  
-  
- *qualifiedIndependentThickness*  
- A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
-  
-<a name="dependencyPropertyInfo_BorderThickness"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.BorderThicknessProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the BorderThickness attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_BordersXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_bordersxaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: Blue, 1&#47;4inch border around Block](~/add/media/block-borders.png "Screenshot: Blue, 1/4inch border around Block")  
-  
- The following example shows how to set the BorderThickness property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_Borders](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_borders)]
- [!code-cs[BlockSnippets#_Block_Borders](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_borders)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderThicknessProperty">
@@ -293,14 +136,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.BorderThickness%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,48 +153,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the relative direction for flow of content within a <see cref="T:System.Windows.Documents.ListItem" /> element.</summary>
-        <value>One of the <see cref="T:System.Windows.FlowDirection" /> values that specifies the relative flow direction.  The default is <see cref="T:System.Windows.FlowDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Getting this property returns the currently effective flow direction.  Setting this property causes the contents of the <xref:System.Windows.Documents.ListItem> element to re-flow in the indicated direction.  
-  
- The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic are examples of languages that naturally flow from right to left.  English, German, and Russian are examples of languages that naturally flow from left to right.  
-  
-> [!NOTE]
->  The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value than the default of <xref:System.Windows.FlowDirection>, you must specify it yourself.  
-  
-<a name="dependencyPropertyInfo_FlowDirection"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.FlowDirectionProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the FlowDirection attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_flowdirectionxaml)]  
-  
- The following example shows how to set the FlowDirection property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_FlowDirection](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_flowdirection)]
- [!code-cs[BlockSnippets#_Block_FlowDirection](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_flowdirection)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlowDirectionProperty">
@@ -362,14 +171,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.FlowDirection%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +188,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -392,76 +199,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height of each line of content.</summary>
-        <value>The height of each line in device independent pixels with a value range of 0.0034 to 160000.  A value of <see cref="T:System.Double" /> (equivalent to an attribute value of "<c>Auto</c>") causes the line height to be determined automatically from the current font characteristics.  The default is <see cref="T:System.Double" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Changing the LineHeight value does not change the height of the associated text; rather, it changes the height of the line that contains the text.  
-  
- In addition to this property, the layout of lines in a <xref:System.Windows.Documents.ListItem> is affected by its <xref:System.Windows.Documents.ListItem.LineStackingStrategy%2A> property.  
-  
-<a name="xamlAttributeUsage_LineHeight"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object LineHeight="double"/>  
-- or -  
-<object LineHeight="qualifiedDouble"/>  
-- or -  
-<object LineHeight="Auto"/>  
-```  
-  
-<a name="xamlValues_LineHeight"></a>   
-## XAML Values  
- *double*  
- String representation of a <xref:System.Double> value in the range `0.0034` to `160000`. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *qualifiedDouble*  
- A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- `cm` is centimeters; 1cm==(96/2.54) px  
-  
- `pt` is points; 1pt==(96/72) px  
-  
- Auto  
- Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
-  
-<a name="dependencyPropertyInfo_LineHeight"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.LineHeightProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the LineHeight attribute of a <xref:System.Windows.Documents.Block> element.  
-  
- [!code-xml[BlockSnippets#_Block_LineHeightXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_lineheightxaml)]  
-  
- The following figure shows how the previous example renders.  
-  
- ![Screenshot: FlowDocument LineHeight](~/add/media/flowdocument-lineheight.png "Screenshot: FlowDocument LineHeight")  
-  
- The following figure shows how the same example renders with the default setting of LineHeight=<xref:System.Double.NaN?displayProperty=fullName>.  
-  
- ![Screenshot: FlowDocument LineHeight default](~/add/media/flowdocument-lineheightdefault.png "Screenshot: FlowDocument LineHeight default")  
-  
- The following example shows how to set the LineHeight property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_LineHeight](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_lineheight)]
- [!code-cs[BlockSnippets#_Block_LineHeight](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_lineheight)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineHeightProperty">
@@ -471,14 +211,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.LineHeight%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,41 +228,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the mechanism by which a line box is determined for each line of text within the <see cref="T:System.Windows.Documents.ListItem" />.</summary>
-        <value>One of the <see cref="T:System.Windows.LineStackingStrategy" /> values that specifies the mechanism by which a line box is determined for each line of text within the <see cref="T:System.Windows.Documents.ListItem" />. The default is <see cref="T:System.Windows.LineStackingStrategy" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.LineStackingStrategyProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy>.  
-  
- [!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
-  
- The following illustration shows the result of the preceding code.  
-  
- ![Screenshot: Compare LineStackingStrategy values](~/add/media/flow-linestackingstrategy.gif "Screenshot: Compare LineStackingStrategy values")  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStackingStrategyProperty">
@@ -533,14 +246,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.LineStackingStrategy%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,15 +263,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.List</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Documents.List" /> that contains the <see cref="T:System.Windows.Documents.ListItem" />.</summary>
-        <value>The list that contains the <see cref="T:System.Windows.Documents.ListItem" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,86 +281,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the margin thickness for the element.</summary>
-        <value>A <see cref="T:System.Windows.Thickness" /> structure that specifies the amount of margin to apply, in device independent pixels. The default is a uniform thickness of zero (0.0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Margin is buffer space that falls outside an element's content area, between the edges of the element's content area and the edges of the parent element.  Contrast with <xref:System.Windows.Documents.ListItem.Padding%2A>, which is buffer space that falls inside an element's content area, between the element's content and the inner edge of the element.  
-  
-<a name="xamlAttributeUsage_Margin"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object Margin="uniformThickness"/>  
-- or -  
-<object Margin="independentThickness"/>  
-- or -  
-<object Margin="qualifiedUniformThickness"/>  
-- or -  
-<object Margin="qualifiedIndependentThickness"/>  
-```  
-  
-<a name="xamlValues_Margin"></a>   
-## XAML Values  
- *uniformThickness*  
- String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *independentThickness*  
- String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of margin to the left of content, 10 pixels of margin above content, 15 pixels of margin to the right of content, and 20 pixels of margin below the content.  
-  
- *qualifiedUniformThickness*  
- A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1in"` provides uniform margin of 1 inch in all directions.  
-  
- *qualifiedIndependentThickness*  
- A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
-  
-<a name="dependencyPropertyInfo_Margin"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.MarginProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the Margin attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_MarginPaddingXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_marginpaddingxaml)]  
-  
- The following figure shows how this example renders.  Exaggerated thicknesses and colors are used for illustration.  
-  
- ![Screenshot: Paragraphs with padding and margins](~/add/media/block-marginpadding.png "Screenshot: Paragraphs with padding and margins")  
-  
- The following example shows how to set the Margin property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_MarginPadding](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_marginpadding)]
- [!code-cs[BlockSnippets#_Block_MarginPadding](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_marginpadding)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginProperty">
@@ -659,14 +299,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.Margin%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,15 +316,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.ListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next <see cref="T:System.Windows.Documents.ListItem" /> in the containing <see cref="T:System.Windows.Documents.List" />.</summary>
-        <value>The next <see cref="T:System.Windows.Documents.ListItem" /> in the <see cref="T:System.Windows.Documents.List" />, or <see langword="null" /> if there is no next <see cref="T:System.Windows.Documents.ListItem" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -696,86 +334,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the padding thickness for the element.</summary>
-        <value>A <see cref="T:System.Windows.Thickness" /> structure that specifies the amount of padding to apply, in device independent pixels. The default is a uniform thickness of zero (0.0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Padding is buffer space that falls inside an element's content area, between the element's content and the inner edge of the element.  Contrast with <xref:System.Windows.Documents.ListItem.Margin%2A>, which is buffer space that falls outside an element's content area, between the edges of the element's content area and the edges of the parent element.  
-  
-<a name="xamlAttributeUsage_Padding"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object Padding="uniformThickness"/>  
-- or -  
-<object Padding="independentThickness"/>  
-- or -  
-<object Padding="qualifiedUniformThickness"/>  
-- or -  
-<object Padding="qualifiedIndependentThickness"/>  
-```  
-  
-<a name="xamlValues_Padding"></a>   
-## XAML Values  
- *uniformThickness*  
- String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *independentThickness*  
- String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of padding to the left of content, 10 pixels of padding above content, 15 pixels of padding to the right of content, and 20 pixels of padding below the content.  
-  
- *qualifiedUniformThickness*  
- A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1in"` provides uniform padding of 1 inch in all directions.  
-  
- *qualifiedIndependentThickness*  
- A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
-  
-<a name="dependencyPropertyInfo_Padding"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.PaddingProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the Padding attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_MarginPaddingXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_marginpaddingxaml)]  
-  
- The following figure shows how this example renders.  Exaggerated thicknesses and colors are used for illustration.  
-  
- ![Screenshot: Paragraphs with padding and margins](~/add/media/block-marginpadding.png "Screenshot: Paragraphs with padding and margins")  
-  
- The following example shows how to set the Padding property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_MarginPadding](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_marginpadding)]
- [!code-cs[BlockSnippets#_Block_MarginPadding](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_marginpadding)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -785,14 +352,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.Padding%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -803,15 +369,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.ListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous <see cref="T:System.Windows.Documents.ListItem" /> in the containing <see cref="T:System.Windows.Documents.List" />.</summary>
-        <value>The previous <see cref="T:System.Windows.Documents.ListItem" /> in the <see cref="T:System.Windows.Documents.List" />, or <see langword="null" /> if there is no previous <see cref="T:System.Windows.Documents.ListItem" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -822,7 +387,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -837,13 +401,10 @@
         <Parameter Name="manager" Type="System.Windows.Markup.XamlDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="manager">A serialization service manager object for the object.</param>
-        <summary>Returns a value that indicates whether the effective value of the <see cref="System.Windows.Documents.ListItem.Blocks%2A" /> property should be serialized during serialization of the <see cref="T:System.Windows.Documents.ListItem" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Windows.Documents.ListItem.Blocks%2A" /> property should be serialized; otherwise, <see langword="false" />.</returns>
+        <param name="manager">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NullReferenceException">
-          <paramref name="manager" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SiblingListItems">
@@ -853,23 +414,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.ListItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Documents.ListItemCollection" /> that contains the <see cref="T:System.Windows.Documents.ListItem" /> elements that are siblings of the current <see cref="T:System.Windows.Documents.ListItem" /> element.</summary>
-        <value>A <see cref="T:System.Windows.Documents.ListItemCollection" /> that contains the child <see cref="T:System.Windows.Documents.ListItem" /> elements that are directly hosted by the parent of the current <see cref="T:System.Windows.Documents.ListItem" /> element, or <see langword="null" /> if the current <see cref="T:System.Windows.Documents.ListItem" /> element has no parent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Documents.ListItemCollection> returned by this property includes the <xref:System.Windows.Documents.ListItem> element through which the collection is accessed; that is, the element that owns this property is considered to be its own sibling for the purposes of generating the collection of siblings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlignment">
@@ -879,54 +432,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates the horizontal alignment of text content.</summary>
-        <value>One of the <see cref="T:System.Windows.TextAlignment" /> values that specifies the desired alignment. The default is <see cref="T:System.Windows.TextAlignment" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_TextAlignment"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Documents.ListItem.TextAlignmentProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.TextAlignment%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
-  
- [!code-xml[BlockSnippets#_Block_TextAlignmentXAML](~/add/codesnippet/xaml/BlockSnippets/Window1.xaml#_block_textalignmentxaml)]  
-  
- The following figure shows how the previous example renders with <xref:System.Windows.TextAlignment> text alignment (the default).  
-  
- ![Screenshot: TextAlign property value of Left](~/add/media/flowdoc-textalign-left.png "Screenshot: TextAlign property value of Left")  
-  
- The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
-  
- ![Screenshot: TextAlign value of Right](~/add/media/flowdoc-textalign-right.png "Screenshot: TextAlign value of Right")  
-  
- The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
-  
- ![Screenshot: TextAlign property value of Center](~/add/media/flowdoc-textalign-center.png "Screenshot: TextAlign property value of Center")  
-  
- The following example shows how to set the TextAlignment property programmatically.  
-  
- [!code-vb[BlockSnippets#_Block_TextAlignment](~/add/codesnippet/visualbasic/blocksnippets/window1.xaml.vb#_block_textalignment)]
- [!code-cs[BlockSnippets#_Block_TextAlignment](~/add/codesnippet/csharp/BlockSnippets/Window1.xaml.cs#_block_textalignment)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlignmentProperty">
@@ -936,14 +450,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Documents.ListItem.TextAlignment%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

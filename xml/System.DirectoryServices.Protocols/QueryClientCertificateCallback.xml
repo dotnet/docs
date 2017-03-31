@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,10 +17,10 @@
     <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="connection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection.</param>
-    <param name="trustedCAs">An array of <see cref="T:System.Byte" /> arrays that specifies the trusted certification authorities (CAs).</param>
-    <summary>The QueryClientCertificateCallback delegate gets or sets the default callback function used to specify the client certificates while establishing an SSL connection.</summary>
-    <returns>The default callback function used to specify the client certificates while establishing an SSL connection.</returns>
+    <param name="connection">To be added.</param>
+    <param name="trustedCAs">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

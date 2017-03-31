@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IDesignerVerbProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,17 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a means for an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to return its designer verbs.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetVerbs">
@@ -34,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,9 +33,9 @@
         <Parameter Name="activityDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="activityDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> for which to return the activity verb collection.</param>
-        <summary>Returns the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerb" /> collection associated with the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
-        <returns>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" /> that contains the verbs associated with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</returns>
+        <param name="activityDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

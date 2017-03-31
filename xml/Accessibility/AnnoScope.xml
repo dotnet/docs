@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.AnnoScope" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The AnnoScope and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about AnnoScope, see the documentation on `Dynamic Properties` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ANNO_CONTAINER">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Accessibility.AnnoScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Annotation is scoped to the container object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ANNO_THIS">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Accessibility.AnnoScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Annotation is scoped to the immediate object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

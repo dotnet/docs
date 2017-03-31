@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.UnregisterInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains the information used to remove a registration entry from a peer resolver service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Instances of this class are primarily used to pass registration removal request information to the resolver service from a network client of that service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.UnregisterInfo" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -59,11 +49,9 @@
         <Parameter Name="registrationId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="meshId">
-          <see cref="T:System.String" /> that specifies the mesh ID of the peer whose entry is to be removed.</param>
-        <param name="registrationId">
-          <see cref="T:System.Guid" /> that uniquely identifies the entry to remove from the lookup table of the resolver service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.UnregisterInfo" /> class with mesh and registration ID of the peer to remove from the registration lookup table in the resolver service.</summary>
+        <param name="meshId">To be added.</param>
+        <param name="registrationId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
-        <returns>True if the registration removal information body is correctly-formed by the sender; false if it is not.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,16 +81,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the mesh ID of the peer whose entry is to be removed.</summary>
-        <value>
-          <see cref="T:System.String" /> that specifies the mesh ID of the peer whose entry is to be removed.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,16 +99,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unique ID of the entry to remove from the lookup table of the resolver service.</summary>
-        <value>
-          <see cref="T:System.Guid" /> that uniquely identifies the entry to remove from the lookup table of the resolver service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

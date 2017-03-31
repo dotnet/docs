@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.Operation" /> class. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.Operation> class corresponds to the Web Services Description Language (WSDL) `<operation>` element enclosed by the `<portType>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the properties and methods exposed by the `OperationCollection` class.  
-  
- [!code-cs[OperationCollection_Methods#1](~/add/codesnippet/csharp/t-system.web.services.de_32_1.cs)]
- [!code-cpp[OperationCollection_Methods#1](~/add/codesnippet/cpp/t-system.web.services.de_32_1.cpp)]
- [!code-vb[OperationCollection_Methods#1](~/add/codesnippet/visualbasic/t-system.web.services.de_32_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -39,7 +23,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,21 +33,10 @@
         <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
       </Parameters>
       <Docs>
-        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Operation" /> to the end of the <see cref="T:System.Web.Services.Description.OperationCollection" />.</summary>
-        <returns>The zero-based index where the <paramref name="operation" /> parameter has been added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `Add` method.  
-  
- [!code-cs[OperationCollection_Methods#2](~/add/codesnippet/csharp/f82fd830-ac68-4808-aff0-_1.cs)]
- [!code-cpp[OperationCollection_Methods#2](~/add/codesnippet/cpp/f82fd830-ac68-4808-aff0-_1.cpp)]
- [!code-vb[OperationCollection_Methods#2](~/add/codesnippet/visualbasic/f82fd830-ac68-4808-aff0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -73,7 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,22 +56,10 @@
         <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
       </Parameters>
       <Docs>
-        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> for which to check collection membership.</param>
-        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Operation" /> is a member of the <see cref="T:System.Web.Services.Description.OperationCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="operation" /> is a member of the <see cref="T:System.Web.Services.Description.OperationCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `Contains` method.  
-  
- [!code-cs[OperationCollection_Methods#3](~/add/codesnippet/csharp/a72d544f-33e8-47b8-9439-_1.cs)]
- [!code-cpp[OperationCollection_Methods#3](~/add/codesnippet/cpp/a72d544f-33e8-47b8-9439-_1.cpp)]
- [!code-vb[OperationCollection_Methods#3](~/add/codesnippet/visualbasic/a72d544f-33e8-47b8-9439-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -108,7 +69,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,21 +80,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Operation" /> serving as the destination for the copy action.</param>
-        <param name="index">The zero-based index at which to start placing the copied collection.</param>
-        <summary>Copies the entire <see cref="T:System.Web.Services.Description.OperationCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.Operation" />, starting at the specified zero-based index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `CopyTo` method.  
-  
- [!code-cs[OperationCollection_Methods#8](~/add/codesnippet/csharp/78bf11c3-f476-496d-9e47-_1.cs)]
- [!code-cpp[OperationCollection_Methods#8](~/add/codesnippet/cpp/78bf11c3-f476-496d-9e47-_1.cpp)]
- [!code-vb[OperationCollection_Methods#8](~/add/codesnippet/visualbasic/78bf11c3-f476-496d-9e47-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -143,7 +93,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,21 +103,10 @@
         <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
       </Parameters>
       <Docs>
-        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> for which to search in the collection.</param>
-        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Operation" /> and returns the zero-based index of the first occurrence within the collection.</summary>
-        <returns>A 32-bit signed integer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `IndexOf` method.  
-  
- [!code-cs[OperationCollection_Methods#4](~/add/codesnippet/csharp/fad7d4e0-a8a6-4fac-907e-_1.cs)]
- [!code-cpp[OperationCollection_Methods#4](~/add/codesnippet/cpp/fad7d4e0-a8a6-4fac-907e-_1.cpp)]
- [!code-vb[OperationCollection_Methods#4](~/add/codesnippet/visualbasic/fad7d4e0-a8a6-4fac-907e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -177,7 +116,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,30 +127,10 @@
         <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>operation</c> parameter.</param>
-        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Operation" /> to the <see cref="T:System.Web.Services.Description.OperationCollection" /> at the specified zero-based index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
-  
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `operation` parameter is added to the end of the <xref:System.Web.Services.Description.OperationCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the `Insert` method.  
-  
- [!code-cs[OperationCollection_Methods#6](~/add/codesnippet/csharp/31a85f42-d2e6-46ea-b3ba-_1.cs)]
- [!code-cpp[OperationCollection_Methods#6](~/add/codesnippet/cpp/31a85f42-d2e6-46ea-b3ba-_1.cpp)]
- [!code-vb[OperationCollection_Methods#6](~/add/codesnippet/visualbasic/31a85f42-d2e6-46ea-b3ba-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -221,7 +140,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,21 +150,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Operation" /> whose value is modified or returned.</param>
-        <summary>Gets or sets the value of an <see cref="T:System.Web.Services.Description.Operation" /> at the specified zero-based index.</summary>
-        <value>An <see langword="Operation" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the zero-based index to retrieve a member of the `OperationCollection`.  
-  
- [!code-cs[OperationCollection_Methods#7](~/add/codesnippet/csharp/p-system.web.services.de_12_1.cs)]
- [!code-cpp[OperationCollection_Methods#7](~/add/codesnippet/cpp/p-system.web.services.de_12_1.cpp)]
- [!code-vb[OperationCollection_Methods#7](~/add/codesnippet/visualbasic/p-system.web.services.de_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -255,7 +163,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,27 +173,9 @@
         <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
       </Parameters>
       <Docs>
-        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> to remove from the collection.</param>
-        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Operation" /> from the <see cref="T:System.Web.Services.Description.OperationCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
-  
- The elements that follow the removed <xref:System.Web.Services.Description.Operation> move up to occupy the vacated spot.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the `Remove` method.  
-  
- [!code-cs[OperationCollection_Methods#5](~/add/codesnippet/csharp/940573b4-b288-49ce-a25c-_1.cs)]
- [!code-cpp[OperationCollection_Methods#5](~/add/codesnippet/cpp/940573b4-b288-49ce-a25c-_1.cpp)]
- [!code-vb[OperationCollection_Methods#5](~/add/codesnippet/visualbasic/940573b4-b288-49ce-a25c-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">
@@ -295,7 +185,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

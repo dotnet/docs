@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowExtensions" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the extension methods to the <see cref="T:System.Data.DataRow" /> class. This is a static class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> API has been extended with two new methods of the <xref:System.Data.DataRow> class, <xref:System.Data.DataRowExtensions.Field%2A> and <xref:System.Data.DataRowExtensions.SetField%2A>. You can use these to form [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expressions and method queries against <xref:System.Data.DataTable> objects. They are the recommended methods to use for accessing column values within [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expressions and method queries. For more information, see [Generic Field and SetField Methods](../Topic/Generic%20Field%20and%20SetField%20Methods%20\(LINQ%20to%20DataSet\).md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Field&lt;T&gt;">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,26 +35,12 @@
         <Parameter Name="column" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the return type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="column">The input <see cref="T:System.Data.DataColumn" /> object that specifies the column to return the value of.</param>
-        <summary>Provides strongly-typed access to each of the column values in the specified row. The Field(T) method also supports nullable types.</summary>
-        <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="column" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> does not support nullable types. The Field(T) method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is <xref:System.DBNull.Value> and `T` is a reference type or nullable type, the return type will be **null**. The Field(T) method will not return <xref:System.DBNull.Value>.  
-  
- The Field(T) method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the Field(T) method. The column value should then be converted to another type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The column specified by <paramref name="column" /> does not occur in the <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataRow" /> is a part of.</exception>
-        <exception cref="T:System.NullReferenceException">A **null** value was assigned to a non-nullable type.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Field&lt;T&gt;">
@@ -73,7 +50,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,26 +63,12 @@
         <Parameter Name="columnIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the return type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="columnIndex">The column index.</param>
-        <summary>Provides strongly-typed access to each of the column values in the specified row. The Field(T) method also supports nullable types.</summary>
-        <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="columnIndex" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The Field(T) method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is **null** and `T` is a reference type or nullable type, then the return type will be **null**.  The Field(T) method will not return <xref:System.DBNull.Value>.  
-  
- The Field(T) method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the Field(T) method. The column value should then be converted to another type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The column specified by <paramref name="ordinal" /> does not exist in the <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataRow" /> is a part of.</exception>
-        <exception cref="T:System.NullReferenceException">A **null** value was assigned to a non-nullable type.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="columnIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Field&lt;T&gt;">
@@ -116,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,26 +91,12 @@
         <Parameter Name="columnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the return type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="columnName">The name of the column to return the value of.</param>
-        <summary>Provides strongly-typed access to each of the column values in the specified row. The Field(T) method also supports nullable types.</summary>
-        <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="columnName" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class. A [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> does not support nullable types. The Field(T) method provides support for accessing columns as nullable types. If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is **null** and `T` is a reference type or nullable type, the return type will be **null**. The Field(T) method will not return <xref:System.DBNull.Value>.  
-  
- The Field(T) method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the Field(T) method. The column value should then be converted to another type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The column specified by <paramref name="columnName" /> does not occur in the <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataRow" /> is a part of.</exception>
-        <exception cref="T:System.NullReferenceException">A <see langword="null" /> value was assigned to a non-nullable type.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="columnName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Field&lt;T&gt;">
@@ -159,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,27 +120,13 @@
         <Parameter Name="version" Type="System.Data.DataRowVersion" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the return type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="column">The input <see cref="T:System.Data.DataColumn" /> object that specifies the column to return the value of.</param>
-        <param name="version">A <see cref="T:System.Data.DataRowVersion" /> enumeration that specifies the version of the column value to return, such as <see langword="Current" /> or <see langword="Original" /> version.</param>
-        <summary>Provides strongly-typed access to each of the column values in the specified row. The Field(T) method also supports nullable types.</summary>
-        <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="column" /> and <paramref name="version" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The Field(T) method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The Field(T) method will not return <xref:System.DBNull.Value>.  
-  
- The Field(T) method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the Field(T) method. The column value should then be converted to another type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The column specified by <paramref name="column" /> does not exist in the <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataRow" /> is a part of.</exception>
-        <exception cref="T:System.NullReferenceException">A **null** value was assigned to a non-nullable type.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Field&lt;T&gt;">
@@ -204,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,27 +150,13 @@
         <Parameter Name="version" Type="System.Data.DataRowVersion" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the return type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="columnIndex">The zero-based ordinal of the column to return the value of.</param>
-        <param name="version">A <see cref="T:System.Data.DataRowVersion" /> enumeration that specifies the version of the column value to return, such as <see langword="Current" /> or <see langword="Original" /> version.</param>
-        <summary>Provides strongly-typed access to each of the column values in the specified row. The Field(T) method also supports nullable types.</summary>
-        <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="ordinal" /> and <paramref name="version" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The Field(T) method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The Field(T) method will not return <xref:System.DBNull.Value>.  
-  
- The Field(T) method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the Field(T) method. The column value should then be converted to another type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The column specified by <paramref name="ordinal" /> does not exist in the <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataRow" /> is a part of.</exception>
-        <exception cref="T:System.NullReferenceException">A **null** value was assigned to a non-nullable type.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="columnIndex">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Field&lt;T&gt;">
@@ -249,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,27 +180,13 @@
         <Parameter Name="version" Type="System.Data.DataRowVersion" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the return type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="columnName">The name of the column to return the value of.</param>
-        <param name="version">A <see cref="T:System.Data.DataRowVersion" /> enumeration that specifies the version of the column value to return, such as <see langword="Current" /> or <see langword="Original" /> version.</param>
-        <summary>Provides strongly-typed access to each of the column values in the specified row. The Field(T) method also supports nullable types.</summary>
-        <returns>The value, of type <paramref name="T" />, of the <see cref="T:System.Data.DataColumn" /> specified by <paramref name="columnName" /> and <paramref name="version" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataSet> class represents **null** values with the <xref:System.DBNull.Value> instance of the <xref:System.DBNull> class.  A [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)] expression that accessed a column with a **null** value would generate a <xref:System.InvalidCastException> at run time. Additionally, <xref:System.Data.DataSet> doesn’t support nullable types. The Field(T) method provides support for accessing columns as nullable types.  If the underlying value in the <xref:System.Data.DataSet> is <xref:System.DBNull.Value>, the returned nullable type will have a value of **null**.  
-  
- If the value of the specified <xref:System.Data.DataColumn> is null and `T` is a reference type or nullable type, then the return type will be **null**. The Field(T) method will not return <xref:System.DBNull.Value>.  
-  
- The Field(T) method does not perform type conversions. If type conversion is required, you should first obtain the column value by using the Field(T) method. The column value should then be converted to another type.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The column specified by <paramref name="columnName" /> does not exist in the <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataRow" /> is a part of.</exception>
-        <exception cref="T:System.NullReferenceException">A **null** value was assigned to a non-nullable type.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="columnName">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetField&lt;T&gt;">
@@ -294,7 +196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,27 +210,12 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the value type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="column">The input <see cref="T:System.Data.DataColumn" /> specifies which row value to retrieve.</param>
-        <param name="value">The new row value for the specified column, of type <c>T</c>.</param>
-        <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" />. The SetField(T) method also supports nullable types.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `value` is **null**, the SetField(T) method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
-  
- The SetField(T) method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The SetField(T) method exposes the [!INCLUDE[ado_whidbey_long](~/add/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
-  
- Exceptions can be passed up through the SetField(T) method from the underlying <xref:System.Data.DataRow> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The column specified by <paramref name="column" /> cannot be found.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="column" /> is **null**.</exception>
-        <exception cref="T:System.Data.DeletedRowInaccessibleException">Occurs when attempting to set a value on a deleted row.</exception>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetField&lt;T&gt;">
@@ -339,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -354,26 +239,12 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the value type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="columnIndex">The zero-based ordinal of the column to set the value of.</param>
-        <param name="value">The new row value for the specified column, of type <c>T</c>.</param>
-        <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" /> the method is called on. The SetField(T) method also supports nullable types.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `value` is **null**, the SetField(T) method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
-  
- The SetField(T) method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The SetField(T) method exposes the [!INCLUDE[ado_whidbey_long](~/add/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
-  
- Exceptions can be passed up through the SetField(T) method from the underlying <xref:System.Data.DataRow> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Data.DeletedRowInaccessibleException">Occurs when attempting to set a value on a deleted row.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> argument is out of range.</exception>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could be not cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="columnIndex">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetField&lt;T&gt;">
@@ -383,7 +254,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,26 +268,12 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A generic parameter that specifies the value type of the column.</typeparam>
-        <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
-        <param name="columnName">The name of the column to set the value of.</param>
-        <param name="value">The new row value for the specified column, of type <c>T</c>.</param>
-        <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" />. The SetField(T) method also supports nullable types.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `value` is **null**, the SetField(T) method converts the **null** value to <xref:System.DBNull.Value> in the underlying <xref:System.Data.DataColumn>.  
-  
- The SetField(T) method does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The SetField(T) method exposes the [!INCLUDE[ado_whidbey_long](~/add/includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the row.  
-  
- Exceptions can be passed up through the SetField(T) method from the underlying <xref:System.Data.DataRow> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The column specified by <paramref name="columnName" /> cannot be found.</exception>
-        <exception cref="T:System.Data.DeletedRowInaccessibleException">Occurs when attempting to set a value on a deleted row.</exception>
-        <exception cref="T:System.InvalidCastException">The value type of the underlying column could not be cast to the type specified by the generic parameter, <paramref name="T" />.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="row">To be added.</param>
+        <param name="columnName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

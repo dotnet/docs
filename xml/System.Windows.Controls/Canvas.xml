@@ -1,10 +1,9 @@
 <Type Name="Canvas" FullName="System.Windows.Controls.Canvas">
   <TypeSignature Language="C#" Value="public class Canvas : System.Windows.Controls.Panel" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Canvas extends System.Windows.Controls.Panel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Canvas extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Canvas" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,36 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines an area within which you can explicitly position child elements by using coordinates that are relative to the Canvas area.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Canvas contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
-  
- Canvas is the only panel element that has no inherent layout characteristics. A Canvas has default <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties of zero, unless it is the child of an element that automatically sizes its child elements. Child elements of a Canvas are never resized, they are just positioned at their designated coordinates. This provides flexibility for situations in which inherent sizing constraints or alignment are not needed or wanted. For cases in which you want child content to be automatically resized and aligned, it is usually best to use a <xref:System.Windows.Controls.Grid> element.  
-  
- The <xref:System.Windows.Controls.Panel.ZIndex%2A> property determines the order in which child elements that share the same coordinate space appear. A higher <xref:System.Windows.Controls.Panel.ZIndex%2A> value for one child element indicates that this element will appear above another child element that has a lower value.  
-  
- If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=fullName> take priority over the <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=fullName> properties.  
-  
- Child elements of a Canvas are always given the full size that they desire. As a result, vertical alignment and horizontal alignment have no effect inside a Canvas.  
-  
- Canvas is a top-level layout control that you can use for absolute positioning of child content. For painting and drawing, you use brushes and do not have to use a Canvas. For more information, see [Painting with Solid Colors and Gradients Overview](../Topic/Painting%20with%20Solid%20Colors%20and%20Gradients%20Overview.md).  
-  
- By default, panel elements do not receive focus. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
-  
-   
-  
-## Examples  
- The following example produces three <xref:System.Windows.Shapes.Rectangle> elements, each element 100 pixels. The first <xref:System.Windows.Shapes.Rectangle> is red, and its upper-left (*x, y*) position is specified as (0, 0). The second <xref:System.Windows.Shapes.Rectangle> is green, and its upper-left position is (100, 100), which is just below, and to the right of, the first square. The third <xref:System.Windows.Shapes.Rectangle> is blue, and its upper-left position is (50, 50). Hence, the third <xref:System.Windows.Shapes.Rectangle> covers the lower-right quadrant of the first <xref:System.Windows.Shapes.Rectangle> and the upper-left quadrant of the second. Because the third <xref:System.Windows.Shapes.Rectangle> is laid out last, it appears to be on top of the other two squares—that is, the overlapping portions assume the color of the third <xref:System.Windows.Shapes.Rectangle>.  
-  
- [!code-cs[CanvasOvwSample#1](~/add/codesnippet/csharp/CanvasOvwSample.Canvas_Ovw_Sample/Canvas_Ovw_Sample.cs#1)]
- [!code-xml[CanvasOvwSample#1](~/add/codesnippet/xaml/CanvasOvwSample.Canvas_Ovw_Sample/default.xaml#1)]
- [!code-vb[CanvasOvwSample#1](~/add/codesnippet/visualbasic/Canvas_Ovw_vb/canvas_vb.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Canvas" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,9 +46,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">The size that this <see cref="T:System.Windows.Controls.Canvas" /> element should use to arrange its child elements.</param>
-        <summary>Arranges the content of a <see cref="T:System.Windows.Controls.Canvas" /> element.</summary>
-        <returns>A <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.Canvas" /> element and its descendants.</returns>
+        <param name="arrangeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,14 +59,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Canvas.Bottom%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -126,9 +93,9 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Controls.Canvas.Bottom%2A" /> attached property for a given dependency object.</summary>
-        <returns>The <see cref="System.Windows.Controls.Canvas.Bottom%2A" /> coordinate of the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,9 +115,9 @@
         <Parameter Name="layoutSlotSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="layoutSlotSize">The available size of the element.</param>
-        <summary>Returns a clipping geometry that indicates the area that will be clipped if the <see cref="System.Windows.UIElement.ClipToBounds%2A" /> property is set to <see langword="true" />.</summary>
-        <returns>A <see cref="T:System.Windows.Media.Geometry" /> that represents the area that is clipped if <see cref="System.Windows.UIElement.ClipToBounds%2A" /> is <see langword="true" />.</returns>
+        <param name="layoutSlotSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -180,9 +145,9 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.Canvas.Left%2A" /> attached property for a given dependency object.</summary>
-        <returns>The <see cref="System.Windows.Controls.Canvas.Left%2A" /> coordinate of the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -211,9 +175,9 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.Canvas.Right%2A" /> attached property for a given dependency object.</summary>
-        <returns>The <see cref="System.Windows.Controls.Canvas.Right%2A" /> coordinate of the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -242,9 +205,9 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Gets the value of the <see cref="System.Windows.Controls.Canvas.Top%2A" /> attached property for a given dependency object.</summary>
-        <returns>The <see cref="System.Windows.Controls.Canvas.Top%2A" /> coordinate of the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,14 +218,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Canvas.Left%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +235,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,9 +244,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">An upper limit <see cref="T:System.Windows.Size" /> that should not be exceeded.</param>
-        <summary>Measures the child elements of a <see cref="T:System.Windows.Controls.Canvas" /> in anticipation of arranging them during the <see cref="System.Windows.Controls.Canvas.ArrangeOverride%2A" /> pass.</summary>
-        <returns>A <see cref="T:System.Windows.Size" /> that represents the size that is required to arrange child content.</returns>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,14 +257,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Canvas.Right%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +274,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,9 +284,9 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the property value is written.</param>
-        <param name="length">Sets the <see cref="System.Windows.Controls.Canvas.Bottom%2A" /> coordinate of the specified element.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.Canvas.Bottom%2A" /> attached property for a given dependency object.</summary>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,7 +297,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,9 +307,9 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the property value is written.</param>
-        <param name="length">Sets the <see cref="System.Windows.Controls.Canvas.Left%2A" /> coordinate of the specified element.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.Canvas.Left%2A" /> attached property for a given dependency object.</summary>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,7 +320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,9 +330,9 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the property value is written.</param>
-        <param name="length">Sets the <see cref="System.Windows.Controls.Canvas.Right%2A" /> coordinate of the specified element.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.Canvas.Right%2A" /> attached property for a given dependency object.</summary>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,7 +343,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -397,9 +353,9 @@
         <Parameter Name="length" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">The element to which the property value is written.</param>
-        <param name="length">Sets the <see cref="System.Windows.Controls.Canvas.Top%2A" /> coordinate of the specified element.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.Canvas.Top%2A" /> attached property for a given dependency object.</summary>
+        <param name="element">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,14 +366,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Canvas.Top%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebRequestInformation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,65 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about the current Web request.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- Instances of the WebRequestInformation class contain information that is obtained using the <xref:System.Web.Management.WebRequestEvent>, <xref:System.Web.Management.WebAuditEvent>, <xref:System.Web.Management.WebErrorEvent>, or <xref:System.Web.Management.WebRequestErrorEvent> types.  
-  
- Your application needs the appropriate permissions to access protected information provided by this type.  
-  
-> [!NOTE]
->  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom event class, see the example provided in this topic.  
-  
-   
-  
-## Examples  
- The following code example shows how to implement a custom event that uses the WebRequestInformation type.  
-  
- Also shown is an excerpt of the configuration file that enables ASP.NET to use this custom event.  
-  
- Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
-  
-```  
-<healthMonitoring  
-  heartBeatInterval="0" enabled="true">  
-  
-  <profiles>  
-    <add name="Custom"   
-      minInstances="1"   
-      maxLimit="Infinite"   
-      minInterval="00:00:00" />  
-  </profiles>  
-  
-  <eventMappings>  
-  
-    <add   
-      name="SampleWebRequestInformation"   
-      type="SamplesAspNet.SampleWebRequestInformation,webrequestinformation,Version=1.0.1782.28745, Culture=neutral, PublicKeyToken=79955d9b8521c250,processorArchitecture=MSIL" />  
-  
-  </eventMappings>  
-  
-  <rules>  
-  
-    <add name="Custom Web Request Info Event"   
-      eventName="SampleWebRequestInformation"   
-      provider="EventLogProvider"  
-      profile="Custom" />  
-  
-  </rules>  
-  
-</healthMonitoring>  
-```  
-  
- [!code-cs[System.Web.Management.WebRequestInformation#1](~/add/codesnippet/csharp/t-system.web.management._11_1.cs)]
- [!code-vb[System.Web.Management.WebRequestInformation#1](~/add/codesnippet/visualbasic/t-system.web.management._11_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FormatToString">
@@ -80,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,24 +31,9 @@
         <Parameter Name="formatter" Type="System.Web.Management.WebEventFormatter" />
       </Parameters>
       <Docs>
-        <param name="formatter">The <see cref="T:System.Web.Management.WebEventFormatter" /> that contains the tab and indentation settings used to format the Web health event information.</param>
-        <summary>Formats the Web-request information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FormatToString method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example shows how to format custom information.  
-  
- [!code-cs[System.Web.Management.WebRequestInformation#9](~/add/codesnippet/csharp/ca29f60b-9b94-4c78-a2ae-_1.cs)]
- [!code-vb[System.Web.Management.WebRequestInformation#9](~/add/codesnippet/visualbasic/ca29f60b-9b94-4c78-a2ae-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="formatter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Principal">
@@ -117,31 +43,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance of the managed-code principal associated with the Web request.</summary>
-        <value>The <see cref="T:System.Security.Principal.IPrincipal" /> instance that is associated with the request event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The principal refers to the authenticated entity that issued the Web request.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the principal associated with the Web request.  
-  
- [!code-cs[System.Web.Management.WebRequestInformation#8](~/add/codesnippet/csharp/p-system.web.management._39_1.cs)]
- [!code-vb[System.Web.Management.WebRequestInformation#8](~/add/codesnippet/visualbasic/p-system.web.management._39_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestPath">
@@ -151,26 +61,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the physical path of the Web request.</summary>
-        <value>The physical path of the request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get the Web-request path.  
-  
- [!code-cs[System.Web.Management.WebRequestInformation#5](~/add/codesnippet/csharp/p-system.web.management._0_1.cs)]
- [!code-vb[System.Web.Management.WebRequestInformation#5](~/add/codesnippet/visualbasic/p-system.web.management._0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestUrl">
@@ -180,26 +79,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the logical path of the request.</summary>
-        <value>The logical path of the request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following code example shows how to get the Web-request logical path.  
-  
- [!code-cs[System.Web.Management.WebRequestInformation#6](~/add/codesnippet/csharp/p-system.web.management._10_1.cs)]
- [!code-vb[System.Web.Management.WebRequestInformation#6](~/add/codesnippet/visualbasic/p-system.web.management._10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThreadAccountName">
@@ -209,23 +97,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string that represents the Windows logon name of the user on whose behalf the code is being run.</summary>
-        <value>The Windows logon name of the user on whose behalf the code is being run.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is determined by the current <xref:System.Security.Principal.WindowsIdentity> object's <xref:System.Security.Principal.WindowsIdentity.Name%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserHostAddress">
@@ -235,26 +115,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user host address.</summary>
-        <value>The user host address.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following code example shows how to get the user host address.  
-  
- [!code-cs[System.Web.Management.WebRequestInformation#7](~/add/codesnippet/csharp/p-system.web.management._4_1.cs)]
- [!code-vb[System.Web.Management.WebRequestInformation#7](~/add/codesnippet/visualbasic/p-system.web.management._4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

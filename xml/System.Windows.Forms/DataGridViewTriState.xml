@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTriState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values for specifying one of three possible states.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridViewTriState enumeration is useful whenever a third state is needed in addition to the two states of the <xref:System.Boolean> type. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A?displayProperty=fullName> property is of type DataGridViewTriState so that a <xref:System.Windows.Forms.DataGridViewCellStyle> object can indicate no preference in regards to the text wrapping of a cell value, and can instead indicate that the <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> value of a different <xref:System.Windows.Forms.DataGridViewCellStyle> object should be used.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#074](~/add/codesnippet/csharp/t-system.windows.forms.d_2_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#074](~/add/codesnippet/visualbasic/t-system.windows.forms.d_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="False">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property's state is <see langword="false" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property is not set and will behave in a default manner.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property's state is <see langword="true" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

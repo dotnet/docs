@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridItemEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,34 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" /> and <see cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" /> events of a <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is created.  
-  
- The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is bound to a data source.  
-  
- When you create a DataGridItemEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event to display the order in which items are created in the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
- [!code-vb[Classic DataGridItemEventArgs Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_60_1.aspx)]
- [!code-cs[Classic DataGridItemEventArgs Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_60_1.aspx)]  
-  
- [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_60_2.aspx)]
- [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_60_2.aspx)]  
-  
- [!code-vb[DataGridItemDataBound2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_60_3.aspx)]
- [!code-cs[DataGridItemDataBound2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_60_3.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

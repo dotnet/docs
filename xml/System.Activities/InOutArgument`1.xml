@@ -25,44 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">The data type of the InOutArgument(T).</typeparam>
-    <summary>A binding terminal that represents the flow of data into and out of an activity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this example, a custom `Square` activity has an InOutArgument(T) of type <xref:System.Int32> named `N1`. This argument is used to receive the value to be operated on and is also used to pass the result of the operation back out.  
-  
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
- In the following example, the `Square` activity is hosted in a workflow. A value is passed into the activity and the result is then displayed to the console window by a <xref:System.Activities.Statements.WriteLine> activity.  
-  
-```c#  
-Variable<int> n1 = new Variable<int>() { Default = 25 };  
-  
-Activity activity1 = new Sequence()  
-{  
-    Variables =   
-    {  
-        n1  
-    },  
-    Activities =   
-    {  
-        new Square()  
-        {  
-            N1 = new InOutArgument<int>(n1)  
-        },  
-        new WriteLine()  
-        {  
-            Text = new InArgument<string>(ctx => "Squared result: " + n1.Get(ctx))  
-        }  
-    }  
-};  
-  
-WorkflowInvoker.Invoke(activity1);  
-```  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,7 +41,7 @@ WorkflowInvoker.Invoke(activity1);
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InOutArgument%601" /> class using default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +58,8 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InOutArgument%601" /> class using the specified <see cref="System.Activities.Activity%601" />.</summary>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +76,8 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InOutArgument%601" /> class using the specified <see cref="T:System.Activities.Variable" />.</summary>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +94,8 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="variable" Type="System.Activities.Variable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="variable">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InOutArgument%601" /> class using the specified <see cref="System.Activities.Variable%601" />.</summary>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +112,8 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.InOutArgument%601" /> class using the specified expression.</summary>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +135,8 @@ WorkflowInvoker.Invoke(activity1);
         <ReturnType>System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="System.Activities.Activity%601" /> that represents the value of this <see cref="System.Activities.InOutArgument%601" />.</summary>
-        <value>The value of the argument.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +156,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.InOutArgument%601" /> constructed using the specified <see cref="System.Activities.Activity%601" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +178,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="variable" Type="System.Activities.Variable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="variable">The value of the argument.</param>
-        <summary>Initializes and returns a new <see cref="System.Activities.InOutArgument%601" /> constructed by using the specified <see cref="System.Activities.Variable%601" />.</summary>
-        <returns>The new argument.</returns>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,9 +200,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The activity context that contains the value of the argument.</param>
-        <summary>Gets the value of the <see cref="System.Activities.InOutArgument%601" /> using the specified <see cref="T:System.Activities.ActivityContext" />.</summary>
-        <returns>The value of the argument.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,9 +222,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The activity context that contains the location of the argument value.</param>
-        <summary>Gets the location of the value for the <see cref="System.Activities.InOutArgument%601" />.</summary>
-        <returns>A reference to the location where the value of the argument is stored.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,9 +289,9 @@ WorkflowInvoker.Invoke(activity1);
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <param name="value">The new value.</param>
-        <summary>Sets the value of the argument using the specified value.</summary>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlWriterState" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes possible writing states for a custom XAML writer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No existing [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] API uses this enumeration for its values. It could be used for a custom XAML writer.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Finished">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.XamlWriterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Markup.XamlWriter" /> has completed its operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Starting">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.XamlWriterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Markup.XamlWriter" /> has started its operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

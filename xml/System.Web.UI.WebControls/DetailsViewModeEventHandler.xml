@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewModeEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,31 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Web.UI.WebControls.DetailsViewModeEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DetailsView.ModeChanging" /> event of a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event is raised when a <xref:System.Web.UI.WebControls.DetailsView> control attempts to change between edit, insert, and read-only mode, but before the mode actually changes. This allows you to provide an event handler that performs a custom routine, such as configuring the <xref:System.Web.UI.WebControls.DetailsView> control for a specific mode or canceling the mode change, whenever this event occurs.  
-  
- When you create a DetailsViewModeEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically add a DetailsViewModeEventHandler delegate to the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
-  
- [!code-vb[DetailsViewModeEventHandlerInline#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_23_1.aspx)]
- [!code-cs[DetailsViewModeEventHandlerInline#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_23_1.aspx)]  
-  
- The following code example demonstrates how to declaratively add a DetailsViewModeEventHandler delegate to the <xref:System.Web.UI.WebControls.DetailsView.ModeChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
-  
- [!code-vb[DetailsViewModeEventHandler#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_23_2.aspx)]
- [!code-cs[DetailsViewModeEventHandler#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_23_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

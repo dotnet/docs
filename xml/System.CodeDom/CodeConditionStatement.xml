@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeConditionStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,26 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a conditional branch statement, typically represented as an <see langword="if" /> statement.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeConditionStatement can be used to represent code that consists of a conditional expression, a collection of statements to execute if the conditional expression evaluates to `true`, and an optional collection of statements to execute if the conditional expression evaluates to `false`. A CodeConditionStatement is generated in many languages as an `if` statement.  
-  
- The <xref:System.CodeDom.CodeConditionStatement.Condition%2A> property indicates the expression to test. The <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> property contains the statements to execute if the expression to test evaluates to `true`. The <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> property contains the statements to execute if the expression to test evaluates to `false`.  
-  
-   
-  
-## Examples  
- This example demonstrates using a CodeConditionStatement to represent an `if` statement with an `else` block.  
-  
- [!code-cpp[CodeConditionStatementExample#2](~/add/codesnippet/cpp/t-system.codedom.codecon_1_1.cpp)]
- [!code-cs[CodeConditionStatementExample#2](~/add/codesnippet/csharp/t-system.codedom.codecon_1_1.cs)]
- [!code-vb[CodeConditionStatementExample#2](~/add/codesnippet/visualbasic/t-system.codedom.codecon_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,9 +58,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="condition">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the expression to evaluate.</param>
-        <param name="trueStatements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements to execute if the condition is <see langword="true" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class using the specified condition and statements.</summary>
+        <param name="condition">To be added.</param>
+        <param name="trueStatements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +71,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -101,10 +79,10 @@
         <Parameter Name="falseStatements" Type="System.CodeDom.CodeStatement[]" />
       </Parameters>
       <Docs>
-        <param name="condition">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the condition to evaluate.</param>
-        <param name="trueStatements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements to execute if the condition is <see langword="true" />.</param>
-        <param name="falseStatements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements to execute if the condition is <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class using the specified condition and statements.</summary>
+        <param name="condition">To be added.</param>
+        <param name="trueStatements">To be added.</param>
+        <param name="falseStatements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,23 +93,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the expression to evaluate <see langword="true" /> or <see langword="false" />.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> to evaluate <see langword="true" /> or <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this conditional expression evaluates to `true`, the code contained in the <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> collection will be executed. If this conditional expression evaluates to `false` and the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection is not empty, the code contained in the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection will be executed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FalseStatements">
@@ -141,15 +111,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeStatementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of statements to execute if the conditional expression evaluates to <see langword="false" />.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> containing the statements to execute if the conditional expression evaluates to <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,15 +129,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeStatementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of statements to execute if the conditional expression evaluates to <see langword="true" />.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> containing the statements to execute if the conditional expression evaluates to <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

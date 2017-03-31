@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,35 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Transforms data in a Web Parts connection from a provider that implements the <see cref="T:System.Web.UI.WebControls.WebParts.IWebPartRow" /> interface to a consumer expecting data through the <see cref="T:System.Web.UI.WebControls.WebParts.IWebPartField" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Transformers are used to translate data between two Web Parts controls with incompatible connection points. A RowToFieldTransformer object transforms data from a provider implementing the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface to a consumer requiring data from the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface. The RowToFieldTransformer class allows controls with these incompatible connection points to be connected.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a RowToFieldTransformer object to connect a provider and consumer with incompatible connection points. The first section of the example shows a Web Parts control that serves as a provider. The provider class, named `RowProviderWebPart`, provides data through the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface.  
-  
- [!code-vb[WebParts_RowToFieldTransformer_Overview#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_160_1.vb)]
- [!code-cs[WebParts_RowToFieldTransformer_Overview#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_160_1.cs)]  
-  
- The second section of the example contains a Web Parts control that is a consumer of a Web Parts connection. The consumer class, named `FieldConsumerWebPart`, expects data from the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface.  
-  
- [!code-cs[WebParts_RowToFieldTransformer_Overview#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_160_2.cs)]
- [!code-vb[WebParts_RowToFieldTransformer_Overview#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_160_2.vb)]  
-  
- The third section of the example shows a page that contains the two controls and defines the RowToFieldTransformer object for connecting the two controls.  
-  
- [!code-cs[WebParts_RowToFieldTransformer_Overview#3](~/add/codesnippet/csharp/t-system.web.ui.webcontr_160_3.aspx)]
- [!code-vb[WebParts_RowToFieldTransformer_Overview#3](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_160_3.aspx)]  
-  
- The code example includes a user control that enables you to change display modes on a Web Parts page. The source code for the user control comes from another topic. You can obtain the .ascx file for the user control from [Walkthrough: Changing Display Modes on a Web Parts Page](../Topic/Walkthrough:%20Changing%20Display%20Modes%20on%20a%20Web%20Parts%20Page.md), and it must be placed in the same folder as the .aspx page.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.RowToFieldTransformer" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,18 +53,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays an ASP.NET control that configures a <see cref="T:System.Web.UI.WebControls.WebParts.RowToFieldTransformer" /> transformer in the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> zone.</summary>
-        <returns>An ASP.NET control that configures a <see cref="T:System.Web.UI.WebControls.WebParts.RowToFieldTransformer" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Web Parts connection can be established statically or dynamically. A static connection is defined within the `<StaticConnections>` tag. A user can define a dynamic connection when a connections zone is included in a web page and the user is in the connect mode. When establishing a dynamic connection, the user defines the connection through a configuration control. The CreateConfigurationControl method returns the control that the user interacts with to define the connection.  
-  
- The configuration control for a <xref:System.Web.UI.WebControls.WebParts.RowToFieldTransformer> object allows a user to connect or disconnect a provider and consumer, and select which field from the provider row to connect with the data field of the consumer. It is displayed in the connections zone. The user's configuration settings will be saved, and loaded on the next visit.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldName">
@@ -104,23 +65,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the value to transform.</summary>
-        <value>A <see cref="T:System.String" /> containing the name of the field to transform.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FieldName property represents the data from the provider row that will be transformed for the consumer. The FieldName property can be set by the user through the <xref:System.Web.UI.WebControls.WebParts.RowToFieldTransformer> configuration control, or set declaratively in the `<asp:RowToFieldTransformer FieldName="`*selectedField*`" />` tag, where *selectedField* contains the name of the field to transform.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationState">
@@ -130,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,18 +132,9 @@
         <Parameter Name="callback" Type="System.Web.UI.WebControls.WebParts.FieldCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">The delegate instance to be used when retrieving a value.</param>
-        <summary>Returns the value of the field that is being used by the interface as the basis of a connection between two Web Parts controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.RowToFieldTransformer> instance is cast to an <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="callback" /> equals <see langword="null" />.</exception>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IWebPartField.Schema">
@@ -203,23 +144,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the schema information for a data field that is used to share data between two Web Parts controls.</summary>
-        <value>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> describing the data schema.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.RowToFieldTransformer> instance is cast to an <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -229,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,17 +171,10 @@
         <Parameter Name="providerData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="providerData">The provider data to be transformed.</param>
-        <summary>Provides an object for transforming the data.</summary>
-        <returns>An <see cref="T:System.Object" /> representing the data to be transformed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Transform method provides an object for transforming the provider data from the type <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> to the type <xref:System.Web.UI.WebControls.WebParts.IWebPartField> so it can be used by the consumer.  
-  
- ]]></format>
-        </remarks>
+        <param name="providerData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

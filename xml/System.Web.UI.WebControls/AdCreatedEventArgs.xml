@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,53 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" /> event of the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event is raised when the <xref:System.Web.UI.WebControls.AdRotator> control displays an advertisement on the page.  
-  
- For a list of initial property values for an instance of AdCreatedEventArgs, see the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.%23ctor%2A> constructor.  
-  
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement when the <xref:System.Web.UI.WebControls.AdRotator> control gets created and displays it below the control. This example requires the XML file (Ads.xml) listed in the example below.  
-  
- [!code-vb[Classic AdCreatedEventArgs Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_242_1.aspx)]
- [!code-cs[Classic AdCreatedEventArgs Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_242_1.aspx)]  
-  
- The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
-  
-```  
-<Advertisements>  
- <Ad>  
- <ImageUrl>image1.jpg</ImageUrl>  
- <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
- <AlternateText>Microsoft Main Site</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic1</Keyword>  
- <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
- <ImageUrl>image2.jpg</ImageUrl>  
- <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
- <AlternateText>Wingtip Toys</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic2</Keyword>  
- <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
-</Advertisements>  
-```  
-  
- [!code-cs[AdCreatedEventHandler#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_242_2.aspx)]
- [!code-vb[AdCreatedEventHandler#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_242_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,32 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adProperties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="adProperties">A <see cref="T:System.Collections.IDictionary" /> containing the advertisement properties from the XML file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.AdCreatedEventArgs> class.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.AdCreatedEventArgs>.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A>|The value of the `adProperties` parameter if the `adProperties` parameter is not `null`; otherwise, an empty <xref:System.Collections.IDictionary?displayProperty=fullName>.|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the alternate text; otherwise, <xref:System.String.Empty?displayProperty=fullName>.|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the URL of the image to display; otherwise, <xref:System.String.Empty?displayProperty=fullName>.|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the URL to navigate to; otherwise, <xref:System.String.Empty?displayProperty=fullName>.|  
-  
- ]]></format>
-        </remarks>
+        <param name="adProperties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AdProperties">
@@ -103,59 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Collections.IDictionary" /> object that contains all the advertisement properties for the currently displayed advertisement.</summary>
-        <value>A <see cref="T:System.Collections.IDictionary" /> that contains a list of advertisement properties for the currently displayed advertisement. The default value is <see cref="F:System.String.Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AdProperties property to get a <xref:System.Collections.IDictionary?displayProperty=fullName> object that contains the advertisement properties for the currently displayed advertisement. The keys and values of the <xref:System.Collections.IDictionary?displayProperty=fullName> object are of type <xref:System.String?displayProperty=fullName>.  
-  
- The <xref:System.Web.UI.WebControls.AdRotator> control randomly selects an advertisement each time the control is displayed on the Web page. The attributes for the selected advertisement are extracted from the advertisement XML file and stored in a <xref:System.Collections.IDictionary?displayProperty=fullName> object. When the <xref:System.Web.UI.WebControls.AdRotator> control creates a new instance of the <xref:System.Web.UI.WebControls.AdCreatedEventArgs> class, the AdProperties property gets initialized with the <xref:System.Collections.IDictionary?displayProperty=fullName> object.  
-  
- Custom attributes about an advertisement, such as an advertisement caption, can also be included in the advertisement XML file. Use this property in the <xref:System.Web.UI.WebControls.AdRotator.OnAdCreated%2A> event handler to get the custom attributes.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the AdProperties property in the <xref:System.Web.UI.WebControls.AdRotator.OnAdCreated%2A> event handler to provide a custom caption.  
-  
- [!code-xml[Classic AdCreatedEventArgs.AdProperties Example#1](~/add/codesnippet/xml/p-system.web.ui.webcontr_40_1.xml)]
- [!code-cs[Classic AdCreatedEventArgs.AdProperties Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_40_1.aspx)]
- [!code-vb[Classic AdCreatedEventArgs.AdProperties Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_40_1.aspx)]  
-  
- The following code example demonstrates how to include custom attributes about an advertisement in the advertisement XML file. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
-  
-```  
-<Advertisements>  
- <Ad>  
- <ImageUrl>image1.jpg</ImageUrl>  
- <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
- <AlternateText>Microsoft Main Site</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic1</Keyword>  
- <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
- <ImageUrl>image2.jpg</ImageUrl>  
- <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
- <AlternateText>Wingtip Toys</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic2</Keyword>  
- <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
-</Advertisements>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternateText">
@@ -165,56 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alternate text displayed in the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control when the advertisement image is unavailable. Browsers that support the ToolTips feature display this text as a ToolTip for the advertisement.</summary>
-        <value>The text displayed in place of the advertisement image if the image is unavailable. The default value is <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AlternateText property to specify the text to display if the image specified in the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A> property is not available. In browsers that support the ToolTips feature, this text also appears as a ToolTip for the advertisement.  
-  
- A separate XML file contains the properties for the displayed advertisement. The <xref:System.Web.UI.WebControls.AdRotator> control automatically sets the AlternateText property with the corresponding alternate text entry in the XML file. This property can also be used to programmatically set the alternate text.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically set the AlternateText property.  
-  
- [!code-cs[AdCreatedEventArgsAlternateText#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_984_1.aspx)]
- [!code-vb[AdCreatedEventArgsAlternateText#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_984_1.aspx)]  
-  
- The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
-  
-```  
-<Advertisements>  
- <Ad>  
- <ImageUrl>image1.jpg</ImageUrl>  
- <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
- <AlternateText>Microsoft Main Site</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic1</Keyword>  
- <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
- <ImageUrl>image2.jpg</ImageUrl>  
- <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
- <AlternateText>Wingtip Toys</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic2</Keyword>  
- <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
-</Advertisements>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -224,59 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of an image to display in the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control.</summary>
-        <value>The URL of an image to display in the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control. The default value is <see cref="F:System.String.Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ImageUrl property to specify the URL of an image to display for an advertisement in the <xref:System.Web.UI.WebControls.AdRotator> control. You can use a relative or an absolute URL. A relative URL relates the location of the image to the location of the Web page or user control without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the image in code. An absolute URL provides the complete path, so moving the site to another directory requires updating the code.  
-  
- A separate XML file contains the properties for the displayed advertisement. The <xref:System.Web.UI.WebControls.AdRotator> control automatically sets the ImageUrl property with the corresponding image URL entry in the XML file containing the advertisement information. This property can also be used to programmatically set the image URL.  
-  
-> [!NOTE]
->  If you use an advertisement file and specify a relative URL for this property, the URL is relative to the directory that the advertisement file is located in. If you set this property directly with a relative URL, instead of using the advertisement file, the URL is relative to the directory of the page or user control that contains the <xref:System.Web.UI.WebControls.AdRotator> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically set the ImageUrl property.  
-  
- [!code-vb[AdCreatedEventArgsImageUrl#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_8_1.aspx)]
- [!code-cs[AdCreatedEventArgsImageUrl#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_8_1.aspx)]  
-  
- The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
-  
-```  
-<Advertisements>  
- <Ad>  
- <ImageUrl>image1.jpg</ImageUrl>  
- <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
- <AlternateText>Microsoft Main Site</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic1</Keyword>  
- <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
- <ImageUrl>image2.jpg</ImageUrl>  
- <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
- <AlternateText>Wingtip Toys</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic2</Keyword>  
- <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
-</Advertisements>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -286,59 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Web page to display when the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control is clicked.</summary>
-        <value>The Web page to display when the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control is clicked. The default value is <see cref="F:System.String.Empty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the NavigateUrl property to specify the Web page to display when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked. A common use for this property is to redirect the navigation, when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked, to a page that can count the number of times the user clicked the advertisement before proceeding to the destination URL.  
-  
- A separate XML file contains the properties for the displayed advertisement. The <xref:System.Web.UI.WebControls.AdRotator> control automatically sets the NavigateUrl property with the corresponding navigation URL entry in the XML file. This property can also be used to programmatically set the navigation URL.  
-  
-> [!NOTE]
->  If you use an advertisement file and specify a relative URL for this property, the URL is relative to the directory that the advertisement file is located in. If you set this property directly with a relative URL, instead of using the advertisement file, the URL is relative to the directory of the page or user control that contains the <xref:System.Web.UI.WebControls.AdRotator> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to programmatically set the NavigateUrl property.  
-  
- [!code-cs[AdCreatedEventArgsNavigateUrl#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1163_1.aspx)]
- [!code-vb[AdCreatedEventArgsNavigateUrl#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1163_1.aspx)]  
-  
- The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
-  
-```  
-<Advertisements>  
- <Ad>  
- <ImageUrl>image1.jpg</ImageUrl>  
- <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
- <AlternateText>Microsoft Main Site</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic1</Keyword>  
- <Caption>This is the caption for Ad#1</Caption>   
- </Ad>  
- <Ad>  
- <ImageUrl>image2.jpg</ImageUrl>  
- <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
- <AlternateText>Wingtip Toys</AlternateText>  
- <Impressions>80</Impressions>  
- <Keyword>Topic2</Keyword>  
- <Caption>This is the caption for Ad#2</Caption>   
- </Ad>  
-</Advertisements>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

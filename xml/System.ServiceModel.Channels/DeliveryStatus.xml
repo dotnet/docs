@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryStatus" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>An enumeration that specifies the delivery status of a message when the delivery of the message is in doubt, or when the message was not delivered.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message sent to a queue can land in a dead-letter queue because the message was not delivered or the Queue Manager is not sure of the delivery outcome. The `DeliveryStatus` is a way to get the status of message delivery when the message is read from a dead-letter queue.  
-  
-   
-  
-## Examples  
- The following example shows how to access the `DeliveryStatus` of a message within a service operation.  
-  
- [!code-vb[S_DeadLetter#0](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_10_1.vb)]
- [!code-cs[S_DeadLetter#0](~/add/codesnippet/csharp/t-system.servicemodel.ch_10_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="InDoubt">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The delivery of the message is in doubt.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotDelivered">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message was not delivered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

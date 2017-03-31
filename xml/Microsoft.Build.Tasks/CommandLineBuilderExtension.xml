@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineBuilderExtension extends Microsoft.Build.Utilities.CommandLineBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Comprises extended utility methods for constructing a command line.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,16 +21,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CommandLineBuilderExtension.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,17 +46,10 @@
         <Parameter Name="unquotedText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="unquotedText">The string to convert.</param>
-        <summary>Returns a quoted string appropriate for appending to a command line.</summary>
-        <returns>A string representing the new quoted string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Escapes any double quotes in the string.  
-  
- ]]></format>
-        </remarks>
+        <param name="unquotedText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

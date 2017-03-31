@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the type of change the entity will undergo when changes are submitted to the database.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use with `OnValidate()` in [!INCLUDE[vbtecdlinq](~/add/includes/vbtecdlinq-md.md)] applications to specify or omit validation based on the type of change being submitted.  
-  
-   
-  
-## Examples  
- [!code-cs[System.Data.Linq.ChangeAction#1](~/add/codesnippet/csharp/changeaction/Program.cs#1)]
- [!code-vb[System.Data.Linq.ChangeAction#1](~/add/codesnippet/visualbasic/change_action/Module1.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity will be deleted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity will be inserted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity will not be submitted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -86,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity will be updated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

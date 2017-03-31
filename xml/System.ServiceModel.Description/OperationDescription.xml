@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.OperationDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,27 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the description of a contract operation that provides a description of the messages that make up the operation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message forming a request/reply message exchange.  
-  
- A <xref:System.ServiceModel.Description.ContractDescription> object is used to describe contracts and their operations. Within a <xref:System.ServiceModel.Description.ContractDescription>, each contract operation has a corresponding OperationDescription that describes aspects of the operation, such as whether the operation is one-way or request/reply. Each OperationDescription also describes the messages that make up the operation using a collection of <xref:System.ServiceModel.Description.MessageDescription> objects. <xref:System.ServiceModel.Description.ContractDescription> contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute>, and its methods that correspond to endpoint operations are marked with <xref:System.ServiceModel.OperationContractAttribute>.  
-  
- Many of the properties on OperationDescription have corresponding properties in the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] programming model on <xref:System.ServiceModel.OperationContractAttribute>, for example, <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>.  
-  
-   
-  
-## Examples  
- The following example uses the OperationDescription returned from the collection returned by the <xref:System.ServiceModel.Description.ContractDescription.Operations%2A> property of the <xref:System.ServiceModel.Description.ContractDescription> class.  The code iterates through the collection of endpoints and prints each endpoint name, as well as the name of each operation in the endpoint.  
-  
- [!code-cs[DataContractSerializerOperationBehavior#2](~/add/codesnippet/csharp/t-system.servicemodel.de_42_1.cs)]
- [!code-vb[DataContractSerializerOperationBehavior#2](~/add/codesnippet/visualbasic/t-system.servicemodel.de_42_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -55,9 +36,9 @@
         <Parameter Name="declaringContract" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the operation description.</param>
-        <param name="declaringContract">The <see cref="T:System.ServiceModel.Description.ContractDescription" /> used to initialize the operation description.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationDescription" /> class with a specified name and contract description.</summary>
+        <param name="name">To be added.</param>
+        <param name="declaringContract">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,15 +49,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the begin method of the operation.</summary>
-        <value>The <see cref="T:System.Reflection.MethodInfo" /> that provides access to the attributes and metadata of the method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,28 +68,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IOperationBehavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the operation behaviors associated with the operation.</summary>
-        <value>A <see cref="System.Collections.Generic.KeyedByTypeCollection%601" /> that contains the <see cref="T:System.ServiceModel.Description.IOperationBehavior" /> objects associated with the operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Description.IOperationBehavior> interface is implemented to modify, examine, or extend some aspect of operation-wide execution at the application level for either client or service applications.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaringContract">
@@ -118,15 +87,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the contract to which the operation belongs.</summary>
-        <value>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,15 +106,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the end method of the operation.</summary>
-        <value>The <see cref="T:System.Reflection.MethodInfo" /> that provides access to the attributes and metadata of the method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,15 +125,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.FaultDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the descriptions of the faults associated with the operation description.</summary>
-        <value>The <see cref="T:System.ServiceModel.Description.FaultDescriptionCollection" /> that contains details about the faults associated with the operation description.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,28 +144,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the operation has had a protection level set.</summary>
-        <value>
-          <see langword="true" /> if the protection level has been set; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> is set, the HasProtectionLevel property is set to `true`.  
-  
- HasProtectionLevel corresponds to the <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel%2A> property in the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] programming model.  
-  
- Use the HasProtectionLevel property to indicate that a specific protection level is required by the messages of this operation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInitiating">
@@ -206,38 +163,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the method implements an operation that can initiate a session on the server (if such a session exists).</summary>
-        <value>
-          <see langword="true" /> if the operation is permitted to initiate a session on the server, otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property controls whether an operation can be the first operation called when a session is created.  
-  
-> [!NOTE]
->  The value of <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> must be `true` and the binding used must support sessions for the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to work properly.  
-  
- The default is `true`, which means that an operation can be the first one called on a channel. Subsequent calls to the initiating method have no effect, other than to call the method. No other sessions are created.  
-  
- Typically, you set <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> to `false` to force clients to call another method on the service before they can invoke this one.  
-  
- IsInitiating corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property in the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] programming model.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOneWay">
@@ -247,28 +182,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether an operation returns a reply message.</summary>
-        <value>
-          <see langword="true" /> if this method receives a request message and returns no reply message; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsOneWay property to indicate that an operation does not return a reply message. This type of operation is useful for notifications or event-style communication, especially in two-way communication.  
-  
- If the IsOneWay property is set to `false` (the default), even methods that return `void` result in a reply message. In this case, the infrastructure creates and sends an empty message to indicate to the caller that the method has returned.  
-  
- <xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A> corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property in the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] programming model.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTerminating">
@@ -278,31 +201,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the service operation causes the server to close the session after the reply message, if any, is sent.</summary>
-        <value>
-          <see langword="true" /> if the operation causes the server to close the session, otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsTerminating property to indicate that calling a service operation terminates the communication session.  
-  
- IsTerminating corresponds to the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property in the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] programming model.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KnownTypes">
@@ -312,23 +220,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the known types associated with the operation description.</summary>
-        <value>The collection of known types associated with the operation description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The *known types* are types which may be present in an object graph when serialization or deserialization occurs. For more information about known types, see [Data Contract Known Types](../Topic/Data%20Contract%20Known%20Types.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Messages">
@@ -338,15 +239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.MessageDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the descriptions of the messages that make up the operation.</summary>
-        <value>A <see cref="T:System.ServiceModel.Description.MessageDescriptionCollection" /> that contains descriptions of the messages that makes up the operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,23 +258,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the operation description.</summary>
-        <value>The name of the operation description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Name property overrides the <`operation`> element name in WSDL. The default operation name is the name of the implementing method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OperationBehaviors">
@@ -383,14 +277,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.Type,System.ServiceModel.Description.IOperationBehavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the set of behaviors for the operation.</summary>
-        <value>The set of behaviors for the operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,27 +296,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the protection level for the operation.</summary>
-        <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> for the operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProtectionLevel property controls whether the messages of an operation must be encrypted, signed, or both. The value set here is the default value for all messages specified for this operation unless a narrower scope overrides this value.  
-  
- ProtectionLevel corresponds to the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property in the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] programming model.  
-  
- When the ProtectionLevel is set, the <xref:System.ServiceModel.Description.OperationDescription.HasProtectionLevel%2A> property is set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeProtectionLevel">
@@ -438,9 +322,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,15 +334,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the service synchronization method of the operation description.</summary>
-        <value>The <see cref="T:System.Reflection.MethodInfo" /> that provides access the attributes and metadata of the method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,14 +353,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the method used for the task operation.</summary>
-        <value>The method used for the task operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -30,7 +30,7 @@
   </Attributes>
   <Docs>
     <typeparam name="TResult">To be added.</typeparam>
-    <summary>Specifies information about a C# reference.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="Microsoft.CSharp.Activities.CSharpReference%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
         <Parameter Name="expressionText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expressionText">The expression text.</param>
-        <summary>Initializes a new instance of the <see cref="Microsoft.CSharp.Activities.CSharpReference%601" /> class with specified expression text.</summary>
+        <param name="expressionText">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">The compiled metadata.</param>
-        <summary>Compiles a new metadata to the C# reference.</summary>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +104,9 @@
         <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The context.</param>
-        <summary>Executes the C# reference.</summary>
-        <returns>The executed reference.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the expression text for the reference.</summary>
-        <value>The expression text for the reference.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the expression tree for the C# reference.</summary>
-        <returns>The expression tree.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +165,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the language used for the reference.</summary>
-        <value>The language used for the reference.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +183,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the reference requires compilation.</summary>
-        <value>
-          <see langword="True" /> if the reference requires compilation; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

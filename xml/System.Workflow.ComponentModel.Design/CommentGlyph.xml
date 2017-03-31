@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CommentGlyph" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a glyph for an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to display when a user disables an activity at design time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Activity designers display CommentGlyph when a user sets the <xref:System.Workflow.ComponentModel.Activity.Enabled%2A> property to `false` at design time for the designer or its parent designer.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.CommentGlyph" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,19 +52,11 @@
         <Parameter Name="activated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> with which the comment glyph is associated.</param>
-        <param name="activated">
-          <see langword="true" /> to indicate whether the glyph appears on the activity designer surface; otherwise, <see langword="false" />.</param>
-        <summary>Returns the bounds for the current comment glyph on the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
-        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds for the glyph.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetBounds inflates the bounds of `designer` by the value held in <xref:System.Workflow.ComponentModel.Design.AmbientTheme.Margin%2A> and returns the resultant rectangle.  
-  
- ]]></format>
-        </remarks>
+        <param name="designer">To be added.</param>
+        <param name="activated">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -88,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,12 +78,11 @@
         <Parameter Name="designer" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to perform fill and drawing tasks.</param>
-        <param name="activated">
-          <see langword="true" /> to indicate that the glyph appears on the design surface; otherwise, <see langword="false" />.</param>
-        <param name="ambientTheme">The <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> to use to access ambient property settings.</param>
-        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> from which to obtain information about user actions.</param>
-        <summary>Performs any tasks required to render the comment glyph on the activity designer surface.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="activated">To be added.</param>
+        <param name="ambientTheme">To be added.</param>
+        <param name="designer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,23 +93,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the view priority of the glyph on the activity designer.</summary>
-        <value>An integer that represents the view priority of the glyph on the activity designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Priority helps determine the order in which the glyph is displayed on the activity designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

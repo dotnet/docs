@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsAuthenticationUserCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,28 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.FormsAuthenticationCredentials> uses the FormsAuthenticationUserCollection to programmatically access and modify the `users` element of the `credentials` section in the `forms` section of the `authorization` configuration section.  
-  
- This type is part of a group that includes the <xref:System.Web.Configuration.FormsAuthenticationConfiguration>, the <xref:System.Web.Configuration.FormsAuthenticationCredentials>, and the <xref:System.Web.Configuration.FormsAuthenticationUser> types.  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the FormsAuthenticationUserCollection object from the configuration file of an existing Web application.  
-  
-> [!NOTE]
->  If you use the `credentials` element be sure to follow the guidelines explained at [ASP.NET Authentication](../Topic/ASP.NET%20Authentication.md). For scalability and better security, it is recommended you use an external database to store the users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#1](~/add/codesnippet/visualbasic/t-system.web.configurati_77_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#1](~/add/codesnippet/csharp/t-system.web.configurati_77_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.FormsAuthenticationUserCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,25 +51,9 @@
         <Parameter Name="user" Type="System.Web.Configuration.FormsAuthenticationUser" />
       </Parameters>
       <Docs>
-        <param name="user">The <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection must not contain a <xref:System.Web.Configuration.FormsAuthenticationUser> object with the same name.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Add method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#6](~/add/codesnippet/visualbasic/0fcad255-48f7-4bb3-bd78-_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#6](~/add/codesnippet/csharp/0fcad255-48f7-4bb3-bd78-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object already exists in the collection, or the collection is read-only.</exception>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -102,31 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all the collection's keys.</summary>
-        <value>The <see langword="string" /> array containing the collection keys.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to access the <xref:System.Web.Configuration.FormsAuthenticationUser> objects contained in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the AllKeys property.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#17](~/add/codesnippet/visualbasic/p-system.web.configurati_78_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#17](~/add/codesnippet/csharp/p-system.web.configurati_78_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -136,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,24 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Clear method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#7](~/add/codesnippet/visualbasic/m-system.web.configurati_38_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#7](~/add/codesnippet/csharp/m-system.web.configurati_38_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The collection is read-only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -171,15 +99,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the <see cref="T:System.Web.Configuration.FormsAuthenticationUserCollection" />.</summary>
-        <value>The <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> of this collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,7 +136,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,20 +163,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The collection user's index.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> collection element at the specified index.</summary>
-        <returns>A <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> that contains the user name and password.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to access credentials of a user at the specified index.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#13](~/add/codesnippet/visualbasic/m-system.web.configurati_26_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#13](~/add/codesnippet/csharp/m-system.web.configurati_26_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -262,7 +176,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,20 +185,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user's name.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> collection element with the specified name.</summary>
-        <returns>A <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object that contains the user name and password.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to access credentials of a user with the specified name.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#12](~/add/codesnippet/visualbasic/m-system.web.configurati_76_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#12](~/add/codesnippet/csharp/m-system.web.configurati_76_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -295,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,7 +220,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,20 +229,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the collection.</param>
-        <summary>Gets the key at the specified <see cref="T:System.Web.Configuration.FormsAuthenticationUserCollection" /> collection index.</summary>
-        <returns>The key at the specified index of the <see cref="T:System.Web.Configuration.FormsAuthenticationUserCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the GetKey method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#14](~/add/codesnippet/visualbasic/683b114e-3ab8-4c6d-ae4c-_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#14](~/add/codesnippet/csharp/683b114e-3ab8-4c6d-ae4c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -351,7 +242,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -361,20 +251,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The collection user's index.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> at the specified index.</summary>
-        <value>A <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> that contains the user name and password.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to access the credentials of a user at the specified index.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#15](~/add/codesnippet/visualbasic/p-system.web.configurati_315_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#15](~/add/codesnippet/csharp/p-system.web.configurati_315_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -384,7 +264,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,20 +273,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user's name.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> with the specified name.</summary>
-        <value>A <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object that contains the user name and password.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to access the credentials of a user with the specified name.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#16](~/add/codesnippet/visualbasic/p-system.web.configurati_49_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#16](~/add/codesnippet/csharp/p-system.web.configurati_49_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -417,7 +286,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,7 +304,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -446,25 +313,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object to remove from the collection.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Remove method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#9](~/add/codesnippet/visualbasic/a95d8084-358e-4828-aa26-_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#9](~/add/codesnippet/csharp/a95d8084-358e-4828-aa26-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -474,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -484,25 +334,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object to remove from the collection.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object at the specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.FormsAuthenticationUserCollection.Remove%2A> method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#10](~/add/codesnippet/visualbasic/eb37188a-0b70-4544-9f7c-_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#10](~/add/codesnippet/csharp/eb37188a-0b70-4544-9f7c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object at the specified index in the collection, the element has already been removed, or the collection is read only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -512,7 +346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -522,19 +355,9 @@
         <Parameter Name="user" Type="System.Web.Configuration.FormsAuthenticationUser" />
       </Parameters>
       <Docs>
-        <param name="user">The <see cref="T:System.Web.Configuration.FormsAuthenticationUserCollection" /> object that must be changed.</param>
-        <summary>Modifies the specified <see cref="T:System.Web.Configuration.FormsAuthenticationUser" /> object contained in the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Set method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#11](~/add/codesnippet/visualbasic/7fc749bf-db85-4215-b7c1-_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#11](~/add/codesnippet/csharp/7fc749bf-db85-4215-b7c1-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnDuplicate">
@@ -544,7 +367,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

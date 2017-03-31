@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.TypedTableBaseExtensions" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains the extension methods for the <see cref="System.Data.TypedTableBase%601" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The class contains static extension methods that define the <xref:System.Data.TypedTableBaseExtensions.AsEnumerable%2A> method and standard query operations for typed data sets.  
-  
- This class cannot be instantiated.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AsEnumerable&lt;TRow&gt;">
@@ -32,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,10 +38,10 @@
         <Parameter Name="source" Type="System.Data.TypedTableBase&lt;TRow&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type to convert the elements of the source to.</typeparam>
-        <param name="source">The source <see cref="System.Data.TypedTableBase%601" /> to make enumerable.</param>
-        <summary>Enumerates the data row elements of the <see cref="System.Data.TypedTableBase%601" /> and returns an <see cref="System.Data.EnumerableRowCollection%601" /> object, where the generic parameter <paramref name="T" /> is <see cref="T:System.Data.DataRow" />. This object can be used in a [!INCLUDE[vbteclinq](~/add/includes/vbteclinq-md.md)] expression or method query.</summary>
-        <returns>An <see cref="System.Data.EnumerableRowCollection%601" /> object, where the generic parameter <paramref name="T" /> is <see cref="T:System.Data.DataRow" />.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,11 +69,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the elements or the row.</typeparam>
-        <param name="source">An enumerable object to return an element from.</param>
-        <param name="index">The zero-based index of the element to retrieve.</param>
-        <summary>Returns the element at a specified row in a sequence or a default value if the row is out of range.</summary>
-        <returns>The element at a specified row in a sequence.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,12 +102,12 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <param name="source">A <see cref="System.Data.TypedTableBase%601" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
-        <param name="keySelector">A function to extract a key from an element.</param>
-        <summary>Sorts the rows of a <see cref="System.Data.TypedTableBase%601" /> in ascending order according to the specified key.</summary>
-        <returns>An <see cref="System.Data.OrderedEnumerableRowCollection%601" /> whose elements are sorted by the specified key.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,13 +137,13 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <param name="source">A <see cref="System.Data.TypedTableBase%601" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
-        <param name="keySelector">A function to extract a key from an element.</param>
-        <param name="comparer">An <see cref="System.Collections.Generic.IComparer%601" /> to compare keys.</param>
-        <summary>Sorts the rows of a <see cref="System.Data.TypedTableBase%601" /> in ascending order according to the specified key and comparer.</summary>
-        <returns>An <see cref="System.Data.OrderedEnumerableRowCollection%601" /> whose elements are sorted by the specified key and comparer.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,12 +172,12 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <param name="source">A <see cref="System.Data.TypedTableBase%601" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
-        <param name="keySelector">A function to extract a key from an element.</param>
-        <summary>Sorts the rows of a <see cref="System.Data.TypedTableBase%601" /> in descending order according to the specified key.</summary>
-        <returns>An <see cref="System.Data.OrderedEnumerableRowCollection%601" /> whose elements are sorted by the specified key.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +188,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,13 +207,13 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <param name="source">A <see cref="System.Data.TypedTableBase%601" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
-        <param name="keySelector">A function to extract a key from an element.</param>
-        <param name="comparer">An <see cref="System.Collections.Generic.IComparer%601" /> to compare keys.</param>
-        <summary>Sorts the rows of a <see cref="System.Data.TypedTableBase%601" /> in descending order according to the specified key and comparer.</summary>
-        <returns>An <see cref="System.Data.OrderedEnumerableRowCollection%601" /> whose elements are sorted by the specified key and comparer.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,20 +242,13 @@
         <Parameter Name="selector" Type="System.Func&lt;TRow,S&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TRow">To be added.</typeparam>
         <typeparam name="S">To be added.</typeparam>
-        <param name="source">A <see cref="System.Data.TypedTableBase%601" /> that contains the <see cref="T:System.Data.DataRow" /> elements to invoke a transformation function upon.</param>
-        <param name="selector">A transformation function to apply to each element.</param>
-        <summary>Projects each element of a <see cref="System.Data.TypedTableBase%601" /> into a new form.</summary>
-        <returns>An <see cref="System.Data.EnumerableRowCollection%601" /> whose elements are the result of invoking the transformation function on each element of <paramref name="source" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This projection method requires the transformation function, `selector`, to produce one value for each value in the source sequence, `source`. If `selector` returns a value that is itself a collection, the consumer must traverse the sub-sequences manually.  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <param name="selector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Where&lt;TRow&gt;">
@@ -281,7 +258,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,11 +275,11 @@
         <Parameter Name="predicate" Type="System.Func&lt;TRow,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, <see cref="T:System.Data.DataRow" />.</typeparam>
-        <param name="source">A <see cref="System.Data.TypedTableBase%601" /> that contains the <see cref="T:System.Data.DataRow" /> elements to filter.</param>
-        <param name="predicate">A function to test each element for a condition.</param>
-        <summary>Filters a sequence of rows based on the specified predicate.</summary>
-        <returns>An <see cref="System.Data.OrderedEnumerableRowCollection%601" /> that contains rows from the input sequence that satisfy the condition.</returns>
+        <typeparam name="TRow">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

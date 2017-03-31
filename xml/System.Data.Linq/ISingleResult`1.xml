@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ISingleResult`1" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -22,35 +21,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">The type of the elements in the return sequence.</typeparam>
-    <summary>Represents the result of a mapped function that has a single return sequence.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example represents a stored procedure that returns rows of customers and uses an input parameter to return only those rows that list "London" as the customer city. The example assumes an enumerable `CustomersByCityResult` class.  
-  
-```  
-CREATE PROCEDURE [dbo].[Customers By City]  
-    (@param1 NVARCHAR(20))  
-AS  
-BEGIN  
-    -- SET NOCOUNT ON added to prevent extra result sets from  
-    -- interfering with SELECT statements.  
-    SET NOCOUNT ON;  
-    SELECT CustomerID, ContactName, CompanyName, City from Customers  
-        as c where c.City=@param1  
-END  
-```  
-  
-   
-  
-## Examples  
- [!code-vb[DLinqSprox#1](~/add/codesnippet/visualbasic/sprox/northwind-sprox.vb#1)]
- [!code-cs[DLinqSprox#1](~/add/codesnippet/csharp/sprox/northwind-sprox.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members />
 </Type>

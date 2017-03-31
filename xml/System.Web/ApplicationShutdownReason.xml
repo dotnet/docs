@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationShutdownReason" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies why the <see cref="T:System.AppDomain" /> class shut down.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ApplicationShutdownReason represents the possible values for the <xref:System.Web.Hosting.HostingEnvironment.ShutdownReason%2A> property of the <xref:System.Web.Hosting.HostingEnvironment> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BinDirChangeOrDirectoryRename">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the Bin folder or to files in it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowsersDirChangeOrDirectoryRename">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the App_Browsers folder or to files in it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuildManagerChange">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The compilation system shut the application domain. The BuildManagerChange member is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangeInGlobalAsax">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the Global.asax file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangeInSecurityPolicyFile">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made in the code access security policy file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CodeDirChangeOrDirectoryRename">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the App_Code folder or to files in it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConfigurationChange">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the application-level configuration file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostingEnvironment">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The hosting environment shut down the application domain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpRuntimeClose">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A call was made to <see cref="System.Web.HttpRuntime.Close%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IdleTimeout">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The maximum idle time limit was reached.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InitializationError">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An <see cref="T:System.AppDomain" /> initialization error occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxRecompilationsReached">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The maximum number of dynamic recompiles of resources was reached.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No shutdown reason was provided.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhysicalApplicationPathChanged">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the physical path of the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResourcesDirChangeOrDirectoryRename">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A change was made to the App_GlobalResources folder or to files in it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnloadAppDomainCalled">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A call was made to <see cref="System.Web.HttpRuntime.UnloadAppDomain%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

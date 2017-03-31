@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.SolidBrush" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a brush of a single color. Brushes are used to fill graphics shapes, such as rectangles, ellipses, pies, polygons, and paths. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class inherits from the <xref:System.Drawing.Brush> class.  
-  
-   
-  
-## Examples  
-  
--   The following code example adds a shadow to a <xref:System.Windows.Forms.ListBox> using a SolidBrush.  
-  
- This example is designed to be used with a Windows Form. To run this example, paste this code into a form and call the `AddShadow` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event. Make sure the form contains a <xref:System.Windows.Forms.ListBox> named `listBox1`.  
-  
- [!code-cs[System.Drawing.MiscExamples#3](~/add/codesnippet/csharp/t-system.drawing.solidbr_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#3](~/add/codesnippet/cpp/t-system.drawing.solidbr_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#3](~/add/codesnippet/visualbasic/t-system.drawing.solidbr_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,30 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="color" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="color">A <see cref="T:System.Drawing.Color" /> structure that represents the color of this brush.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.SolidBrush" /> object of the specified color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-  
--   The following code example adds a shadow to a <xref:System.Windows.Forms.ListBox> using a <xref:System.Drawing.SolidBrush>.  
-  
- This example is designed to be used with a Windows Form. To run this example, paste this code into a form and call the `AddShadow` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event. Make sure the form contains a <xref:System.Windows.Forms.ListBox> named `listBox1`.  
-  
- [!code-cs[System.Drawing.MiscExamples#3](~/add/codesnippet/csharp/m-system.drawing.solidbr_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#3](~/add/codesnippet/cpp/m-system.drawing.solidbr_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#3](~/add/codesnippet/visualbasic/m-system.drawing.solidbr_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -75,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an exact copy of this <see cref="T:System.Drawing.SolidBrush" /> object.</summary>
-        <returns>The <see cref="T:System.Drawing.SolidBrush" /> object that this method creates.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,17 +59,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of this <see cref="T:System.Drawing.SolidBrush" /> object.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> structure that represents the color of this brush.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The Color property is set on an immutable <see cref="T:System.Drawing.SolidBrush" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -115,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

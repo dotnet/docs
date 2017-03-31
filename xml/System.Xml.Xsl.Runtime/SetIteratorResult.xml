@@ -4,7 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.SetIteratorResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Sets iterators for combinations of elements by <see langword="Union" />, <see langword="Intersection" />, or <see langword="Difference" />, which use containment to control two nested iterators. This will return one of the enumeration values from <see cref="System.Xml.Xsl.Runtime.IdIterator.MoveNext%2A" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +30,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This iterator's <see cref="System.Xml.XPath.XPathNodeIterator.Current%2A" /> property is set to the next node in the iteration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InitRightIterator">
@@ -44,14 +50,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Initialize right-nested iterator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedLeftNode">
@@ -61,14 +70,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The next node needs to be fetched from the left-nested iterator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedRightNode">
@@ -78,14 +90,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The next node needs to be fetched from the right-nested iterator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMoreNodes">
@@ -95,14 +110,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Iteration is complete; there are no more nodes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

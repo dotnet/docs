@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.ActivatorLevel" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the appropriate position for a <see cref="T:System.Activator" /> in the chain of activators.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The design of activators allows for more than one activator to participate in the activation process, and additional activators can be added to the chain by using <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A?displayProperty=fullName>. Because each activator is responsible for calling the next one in the chain, an activator can position itself anywhere in the chain. The ActivatorLevel enumerator helps activators find the appropriate position in the chain.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AppDomain">
@@ -34,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Finds or creates a <see cref="T:System.AppDomain" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Construction">
@@ -51,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Constructs a blank object and runs the constructor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -68,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Finds or creates a suitable context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Machine">
@@ -85,14 +78,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Finds a suitable computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -102,14 +95,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Starts a process.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

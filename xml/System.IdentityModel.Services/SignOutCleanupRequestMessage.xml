@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Federation Sign-Out Cleanup message. The message is created when the received message has the action parameter (wa) set to “wsignoutcleanup1.0”.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[wif_wsfed_ref](~/add/includes/wif-wsfed-ref-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,16 +28,9 @@
         <Parameter Name="baseUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="baseUrl">The base URL to which this message applies.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" /> class with the specified base URL.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,23 +47,10 @@
         <Parameter Name="reply" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="baseUrl">The base URL to which this message applies.</param>
-        <param name="reply">The value of the wreply parameter. The URL to which the reply should be sent.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" /> class with the specified base URL and wreply parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="reply" /> is either empty or <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="reply" /> is not a valid URI.</exception>
+        <param name="baseUrl">To be added.</param>
+        <param name="reply">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -93,17 +66,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wreply parameter of the message.</summary>
-        <value>The value of the wreply parameter. This is the URL to which the reply should be sent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set to `null` or an empty string to remove the wreply parameter from the message.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid, absolute URI occurs.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -120,9 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Validates the current instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The wa parameter (the <see cref="System.IdentityModel.Services.WSFederationMessage.Action%2A" /> property) is not set to “wsignoutcleanup1.0”.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -141,18 +105,9 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The writer to which to write the message.</param>
-        <summary>Writes the message in query string form to the specified text writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the <xref:System.IdentityModel.Services.SignOutCleanupRequestMessage.Validate%2A> method before writing the message.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer" /> is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements the extrapolation of a manipulation's position, orientation, and average radius.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An InertiaProcessor2D object enables your application to extrapolate an element's location, orientation, and other properties by simulating real-world behavior.  
-  
- For instance, when a user moves an element and then releases it, the element can continue moving, decelerate, and then slowly stop. An inertia processor implements this behavior by causing the affine 2-D values (origin, scale, translation, and rotation) to change over a specified time at a specified deceleration rate.  
-  
- An inertia processor by itself does not cause an element to move and decelerate. Your application receives information from an inertia processor and applies the values as needed to an application-specific element. Typically, an application uses the information received from an inertia processor to change the location, size or orientation of an element.  
-  
- Inertia processing is typically used in conjunction with manipulation processing. For more information, see the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Manipulations.InertiaProcessor2D" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,26 +46,9 @@
         <Parameter Name="timestamp" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="timestamp">The timestamp to complete extrapolation, in 100-nanosecond ticks.</param>
-        <summary>Completes final extrapolation by using the specified timestamp and raises the <see cref="E:System.Windows.Input.Manipulations.InertiaProcessor2D.Completed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Timestamps are in 100-nanosecond units.  
-  
-   
-  
-## Examples  
- In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started?displayProperty=fullName> event checks to see if inertia processing is running and if so, stops it by calling the Complete method.  
-  
- [!code-cs[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
-  
- [!code-cs[ManipulationAPI#_ManipulationItem_Timestamp](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_timestamp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The timestamp parameter is less than the initial or previous timestamp.</exception>
+        <param name="timestamp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -94,7 +64,7 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when extrapolation has completed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,20 +81,8 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the extrapolation origin has changed or when translation, scaling, or rotation have occurred.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Delta event and the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta?displayProperty=fullName> event are the same type. Typically, you can use the same event handler for both events.  
-  
-   
-  
-## Examples  
- [!code-cs[ManipulationAPI#_ManipulationItem_OnManipulationOrInertiaDelta](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_onmanipulationorinertiadelta)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpansionBehavior">
@@ -140,8 +98,8 @@
         <ReturnType>System.Windows.Input.Manipulations.InertiaExpansionBehavior2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the expansion behavior of the inertia processor.</summary>
-        <value>The expansion behavior of the inertia processor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,18 +116,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the x-coordinate for the initial origin, in coordinate units.</summary>
-        <value>The x-coordinate for the initial origin, in coordinate units.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The origin point represented by the InitialOriginX and <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.InitialOriginY%2A> properties is the average position of all manipulators associated with an element.  
-  
- A valid value for InitialOriginX is any finite number. The default value is 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialOriginY">
@@ -185,18 +134,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the y-coordinate for the initial origin, in coordinate units.</summary>
-        <value>The y-coordinate for the initial origin, in coordinate units.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The origin point represented by the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.InitialOriginX%2A> and InitialOriginY properties is the average position of all manipulators associated with an element.  
-  
- A valid value for InitialOriginY is any finite number. The default value is 0.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRunning">
@@ -212,20 +152,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether inertia is currently in progress.</summary>
-        <value>A Boolean value indicating whether inertia is currently in progress.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started?displayProperty=fullName> event checks to see if inertia processing is running and, if so, stops it by calling the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Completed> method.  
-  
- [!code-cs[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
-  
- [!code-cs[ManipulationAPI#_ManipulationItem_Timestamp](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_timestamp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -244,18 +173,10 @@
         <Parameter Name="timestamp" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="timestamp">The timestamp to perform extrapolation, in 100-nanosecond ticks.</param>
-        <summary>Extrapolates the manipulation's position, orientation, and average radius at the specified time.</summary>
-        <returns>The manipulation's position, orientation, and average radius at the specified time. <see langword="true" /> if extrapolation is in progress; otherwise, <see langword="false" /> if extrapolation has completed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Timestamps are in 100-nanosecond units.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The timestamp parameter is less than the initial or previous timestamp.</exception>
+        <param name="timestamp">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationBehavior">
@@ -271,18 +192,9 @@
         <ReturnType>System.Windows.Input.Manipulations.InertiaRotationBehavior2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation behavior of the inertia processor.</summary>
-        <value>The rotation behavior of the inertia processor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, the <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation%2A> property is set to enable inertia processing to rotate an object three-and-one-half times from its starting orientation.  
-  
- [!code-cs[ManipulationAPI#_ManipulationItem_SetDesiredRotation](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_setdesiredrotation)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
@@ -306,8 +218,8 @@
         <Parameter Name="parameters" Type="System.Windows.Input.Manipulations.InertiaParameters2D" />
       </Parameters>
       <Docs>
-        <param name="parameters">Parameters to set.</param>
-        <summary>Sets parameters on the inertia processor.</summary>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +236,8 @@
         <ReturnType>System.Windows.Input.Manipulations.InertiaTranslationBehavior2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the translation behavior of the inertia processor.</summary>
-        <value>The translation behavior of the inertia processor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

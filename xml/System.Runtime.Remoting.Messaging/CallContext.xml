@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.CallContext" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,33 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a set of properties that are carried with the execution code path. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CallContext is a specialized collection object similar to a Thread Local Storage for method calls and provides data slots that are unique to each logical thread of execution. The slots are not shared across call contexts on other logical threads. Objects can be added to the CallContext as it travels down and back up the execution code path, and examined by various objects along the path.  
-  
- When a remote method call is made to an object in another <xref:System.AppDomain>, the CallContext class generates a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instance that travels along with the remote call. Only objects that expose the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface and are stored in the CallContext are propagated outside the <xref:System.AppDomain> in a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>. Objects that do not support this interface are not transmitted in <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instances with remote method calls.  
-  
-> [!NOTE]
->  All methods in CallContext are static and operate on the call context in the current <xref:System.Threading.Thread>.  
-  
-> [!NOTE]
->  This class makes a link demand. A `SecurityException` is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the CallContext class to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
-  
- [!code-cpp[CallContext#1](~/add/codesnippet/cpp/t-system.runtime.remotin_16_1.cpp)]
- [!code-cs[CallContext#1](~/add/codesnippet/csharp/t-system.runtime.remotin_16_1.cs)]
- [!code-vb[CallContext#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_16_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission Value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FreeNamedDataSlot">
@@ -56,7 +31,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -71,22 +46,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the data slot to empty.</param>
-        <summary>Empties a data slot with the specified name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows a client creating a named data slot, calling a method on the remote object that displays the value of the named data slot that was returned from the logical thread, and frees that named data slot.  
-  
- [!code-cpp[CallContext_GetHeaders#1](~/add/codesnippet/cpp/m-system.runtime.remotin_115_1.cpp)]
- [!code-cs[CallContext_GetHeaders#1](~/add/codesnippet/csharp/m-system.runtime.remotin_115_1.cs)]
- [!code-vb[CallContext_GetHeaders#1](~/add/codesnippet/visualbasic/m-system.runtime.remotin_115_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -96,7 +58,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -111,23 +73,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item in the call context.</param>
-        <summary>Retrieves an object with the specified name from the <see cref="T:System.Runtime.Remoting.Messaging.CallContext" />.</summary>
-        <returns>The object in the call context associated with the specified name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the GetData method to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
-  
- [!code-cpp[CallContext#3](~/add/codesnippet/cpp/m-system.runtime.remotin_58_1.cpp)]
- [!code-cs[CallContext#3](~/add/codesnippet/csharp/m-system.runtime.remotin_58_1.cs)]
- [!code-vb[CallContext#3](~/add/codesnippet/visualbasic/m-system.runtime.remotin_58_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHeaders">
@@ -137,7 +86,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -150,22 +99,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the headers that are sent along with the method call.</summary>
-        <returns>The headers that are sent along with the method call.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example sends headers to a remote method and prints the content of those headers to the console when the remote method returns.  
-  
- [!code-cpp[CallContext_GetHeaders#2](~/add/codesnippet/cpp/m-system.runtime.remotin_44_1.cpp)]
- [!code-cs[CallContext_GetHeaders#2](~/add/codesnippet/csharp/m-system.runtime.remotin_44_1.cs)]
- [!code-vb[CallContext_GetHeaders#2](~/add/codesnippet/visualbasic/m-system.runtime.remotin_44_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HostContext">
@@ -175,7 +111,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -190,11 +126,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the host context associated with the current thread.</summary>
-        <value>The host context associated with the current thread.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="LogicalGetData">
@@ -204,7 +138,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -219,12 +153,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item in the logical call context.</param>
-        <summary>Retrieves an object with the specified name from the logical call context.</summary>
-        <returns>The object in the logical call context associated with the specified name.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="LogicalSetData">
@@ -234,7 +166,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -250,12 +182,10 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name with which to associate the new item in the logical call context.</param>
-        <param name="data">The object to store in the logical call context, this object must be serializable.</param>
-        <summary>Stores a given object in the logical call context and associates it with the specified name.</summary>
+        <param name="name">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -265,7 +195,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -281,23 +211,10 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name with which to associate the new item in the call context.</param>
-        <param name="data">The object to store in the call context.</param>
-        <summary>Stores a given object and associates it with the specified name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the SetData method to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
-  
- [!code-cpp[CallContext#1](~/add/codesnippet/cpp/79526df4-afd7-4495-8bab-_1.cpp)]
- [!code-cs[CallContext#1](~/add/codesnippet/csharp/79526df4-afd7-4495-8bab-_1.cs)]
- [!code-vb[CallContext#1](~/add/codesnippet/visualbasic/79526df4-afd7-4495-8bab-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="name">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeaders">
@@ -307,7 +224,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -322,22 +239,9 @@
         <Parameter Name="headers" Type="System.Runtime.Remoting.Messaging.Header[]" />
       </Parameters>
       <Docs>
-        <param name="headers">A <see cref="T:System.Runtime.Remoting.Messaging.Header" /> array of the headers that are to be sent along with the method call.</param>
-        <summary>Sets the headers that are sent along with the method call.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example code shows the ease with which a header is put on the logical thread.  
-  
- [!code-cpp[CallContext_GetHeaders#3](~/add/codesnippet/cpp/8c77ae3c-b36c-42f8-9ac6-_1.cpp)]
- [!code-cs[CallContext_GetHeaders#3](~/add/codesnippet/csharp/8c77ae3c-b36c-42f8-9ac6-_1.cs)]
- [!code-vb[CallContext_GetHeaders#3](~/add/codesnippet/visualbasic/8c77ae3c-b36c-42f8-9ac6-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="headers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

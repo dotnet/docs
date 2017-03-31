@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.RenewedSecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,16 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="newSecurityToken">The renewed token.</param>
-    <param name="oldSecurityToken">The expired security token.</param>
-    <summary>The delegate when implemented is called before a renewed token is returned to the client.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The client makes renewal requests for a token when the token is about to expire. The delegate provides an extensibility point to inspect the token being renewed.  
-  
- ]]></format>
-    </remarks>
+    <param name="newSecurityToken">To be added.</param>
+    <param name="oldSecurityToken">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

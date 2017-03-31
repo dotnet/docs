@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies what should be done when a directory that is to be deleted contains files or directories.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used with the <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.DeleteDirectory%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DeleteAllContents">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.DeleteDirectoryOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Delete the contents of the directory along with the directory. Default.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfDirectoryNonEmpty">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.DeleteDirectoryOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Throw an <see cref="T:System.IO.IOException" /> if the directory is not empty. The <see langword="Data" /> property of the exception lists the file(s) that could not be deleted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

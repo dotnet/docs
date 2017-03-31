@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.AmbientProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the source of ambient theme settings for designer theme classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DesignerSize">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ambient theme settings are obtained from the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> class associated with the activity designer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OperatingSystemSetting">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ambient theme settings are obtained from the operating system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.CultureInfoIetfLanguageTagConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of <see cref="T:System.Globalization.CultureInfo" /> to and from other data types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class differs in two ways from <xref:System.ComponentModel.CultureInfoConverter>, the default type converter for the <xref:System.Globalization.CultureInfo> class.  
-  
--   Uses a string representation based on the <xref:System.Globalization.CultureInfo.IetfLanguageTag%2A> property rather than the <xref:System.Globalization.CultureInfo.Name%2A> property (i.e., RFC 3066 rather than RFC 1766).  
-  
--   When converting from a string, the properties of the resulting <xref:System.Globalization.CultureInfo> object depend only on the string and not on user overrides set in Control Panel. This makes it possible to create documents the appearance of which do not depend on local settings.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.CultureInfoIetfLanguageTagConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> value.</param>
-        <param name="sourceType">The <see cref="T:System.Type" /> being queried for conversion support.</param>
-        <summary>Determines whether <see cref="T:System.Windows.CultureInfoIetfLanguageTagConverter" /> can convert from a given type.</summary>
-        <returns>
-          <see langword="true" /> if <see cref="T:System.Windows.CultureInfoIetfLanguageTagConverter" /> can convert; otherwise, <see langword="false" />.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> value.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> being queried for conversion support.</param>
-        <summary>Determines whether <see cref="T:System.Windows.CultureInfoIetfLanguageTagConverter" /> can convert to a given type.</summary>
-        <returns>
-          <see langword="true" /> if <see cref="T:System.Windows.CultureInfoIetfLanguageTagConverter" /> can convert; otherwise, <see langword="false" />.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,11 +96,11 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> value.</param>
-        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> object whose value is respected during conversion.</param>
-        <param name="source">The <see cref="T:System.Type" /> being converted.</param>
-        <summary>Converts a given object type to a <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
-        <returns>A <see cref="T:System.Globalization.CultureInfo" /> object.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -147,12 +128,12 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> value.</param>
-        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> object whose value is respected during conversion.</param>
-        <param name="value">The object that represents the <see cref="T:System.Globalization.CultureInfo" /> to convert.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> of the returned converted object.</param>
-        <summary>Converts a <see cref="T:System.Globalization.CultureInfo" /> object to a given object type.</summary>
-        <returns>A converted CultureInfo object to a given object type.</returns>
+        <param name="typeDescriptorContext">To be added.</param>
+        <param name="cultureInfo">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

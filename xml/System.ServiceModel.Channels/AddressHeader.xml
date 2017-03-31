@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.AddressHeader" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a header that encapsulates an address information item used to identify or interact with an endpoint.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An AddressHeader is characterized by a name and namespace and has a value that contains optional information used to identify or interact with an endpoint. The name can be accessed by the <xref:System.ServiceModel.Channels.AddressHeader.Name%2A> property and the namespace by the <xref:System.ServiceModel.Channels.AddressHeader.Namespace%2A> property.  
-  
-   
-  
-## Examples  
- The following example shows how to create address headers, access their properties, add them to a service endpoint and host the service using the endpoint.  
-  
- [!code-cs[SL_AddressHeader#0](~/add/codesnippet/csharp/t-system.servicemodel.ch_7_1.cs)]
- [!code-cs[SL_AddressHeader#0](~/add/codesnippet/csharp/t-system.servicemodel.ch_7_1.cs)]
- [!code-vb[SL_AddressHeader#0](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_7_1.vb)]
- [!code-vb[SL_AddressHeader#0](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_7_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,20 +23,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader%2A> to create new <xref:System.ServiceModel.Channels.AddressHeader> objects.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAddressHeader">
@@ -63,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,22 +49,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The information item for the address header.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified value.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the <paramref name="value" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-cs[SL_AddressHeader#3](~/add/codesnippet/csharp/m-system.servicemodel.ch_41_1.cs)]
- [!code-cs[SL_AddressHeader#3](~/add/codesnippet/csharp/m-system.servicemodel.ch_41_1.cs)]
- [!code-vb[SL_AddressHeader#3](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_41_1.vb)]
- [!code-vb[SL_AddressHeader#3](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_41_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAddressHeader">
@@ -98,7 +62,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,24 +73,11 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <param name="value">The information item for the address header.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <c>value</c> parameter.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class using a specified formatter to serialize the information item from a specified object.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the value parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-cs[SL_AddressHeader#4](~/add/codesnippet/csharp/a6c4d0ba-aeff-4b5c-a948-_1.cs)]
- [!code-cs[SL_AddressHeader#4](~/add/codesnippet/csharp/a6c4d0ba-aeff-4b5c-a948-_1.cs)]
- [!code-vb[SL_AddressHeader#4](~/add/codesnippet/visualbasic/a6c4d0ba-aeff-4b5c-a948-_1.vb)]
- [!code-vb[SL_AddressHeader#4](~/add/codesnippet/visualbasic/a6c4d0ba-aeff-4b5c-a948-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="formatter" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAddressHeader">
@@ -136,7 +87,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,25 +99,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the address header.</param>
-        <param name="ns">The namespace of the address header.</param>
-        <param name="value">The information item for the address header.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified value, name and namespace.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-cs[SL_AddressHeader#5](~/add/codesnippet/csharp/c0aa89de-d761-4df9-a7e0-_1.cs)]
- [!code-cs[SL_AddressHeader#5](~/add/codesnippet/csharp/c0aa89de-d761-4df9-a7e0-_1.cs)]
- [!code-vb[SL_AddressHeader#5](~/add/codesnippet/visualbasic/c0aa89de-d761-4df9-a7e0-_1.vb)]
- [!code-vb[SL_AddressHeader#5](~/add/codesnippet/visualbasic/c0aa89de-d761-4df9-a7e0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" /> or <paramref name="name" />.Length == 0.</exception>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAddressHeader">
@@ -176,7 +114,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,27 +127,13 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the address header.</param>
-        <param name="ns">The namespace of the address header.</param>
-        <param name="value">The information item for the address header.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <c>value</c> parameter.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified name and namespace that uses a specified formatter to serialize the information item from a specified object.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-cs[SL_AddressHeader#6](~/add/codesnippet/csharp/a5ad3fbc-54a7-4fa1-97d8-_1.cs)]
- [!code-cs[SL_AddressHeader#6](~/add/codesnippet/csharp/a5ad3fbc-54a7-4fa1-97d8-_1.cs)]
- [!code-vb[SL_AddressHeader#6](~/add/codesnippet/visualbasic/a5ad3fbc-54a7-4fa1-97d8-_1.vb)]
- [!code-vb[SL_AddressHeader#6](~/add/codesnippet/visualbasic/a5ad3fbc-54a7-4fa1-97d8-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="serializer" /> is <see langword="null" /> or <paramref name="name" />.Length == 0.</exception>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -219,7 +143,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,25 +153,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to compare with the object contained in the current address header.</param>
-        <summary>Determines whether the information item in a specified object is equal to the object contained in the current address header.</summary>
-        <returns>
-          <see langword="true" /> if the information item in a specified <paramref name="obj" /> is equivalent to the information item contained in the current address header; otherwise, <see langword="false" />. In particular, returns <see langword="false" /> if <paramref name="obj" /> is <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Checks for equivalence of serialized canonical XML between the information items.  
-  
-   
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAddressHeaderReader">
@@ -257,7 +166,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,18 +174,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an XML reader that can serialize the current address header object.</summary>
-        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can serialize the current address header object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -286,7 +186,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,25 +194,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a unique hash code for an address header.</summary>
-        <returns>A unique hash code for the current address header.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the string-based implementation.  
-  
- GetHashCode is suitable for use in hashing algorithms and data structures like a hash table.  
-  
-   
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue&lt;T&gt;">
@@ -322,7 +206,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,29 +217,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A class of type <c>T</c> with its fields and properties set to the values supplied by the current address header object.</typeparam>
-        <summary>Deserializes the information item from the current address header to an object of a specified type.</summary>
-        <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
-  
- Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter.  
-  
-   
-  
-## Examples  
- The following example shows how to call this method.  
-  
- [!code-cs[SL_AddressHeader#10](~/add/codesnippet/csharp/m-system.servicemodel.ch_33_1.cs)]
- [!code-cs[SL_AddressHeader#10](~/add/codesnippet/csharp/m-system.servicemodel.ch_33_1.cs)]
- [!code-vb[SL_AddressHeader#10](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_33_1.vb)]
- [!code-vb[SL_AddressHeader#10](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue&lt;T&gt;">
@@ -365,7 +230,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,28 +243,11 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A class of type <c>T</c> with its fields and properties set to the values supplied by the current address header object.</typeparam>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to deserialize the information item from the current address header object.</param>
-        <summary>Deserializes the information item from the current address header to an object of a specified type that uses a specified formatter to serialize this information.</summary>
-        <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
-  
- Use this overload only if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
-  
-   
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="serializer" /> is <see langword="null" />.</exception>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -409,28 +257,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented, gets the name of the address header.</summary>
-        <value>The name of the address header.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to access this property.  
-  
- [!code-cs[SL_AddressHeader#1](~/add/codesnippet/csharp/p-system.servicemodel.ch_59_1.cs)]
- [!code-cs[SL_AddressHeader#1](~/add/codesnippet/csharp/p-system.servicemodel.ch_59_1.cs)]
- [!code-vb[SL_AddressHeader#1](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_59_1.vb)]
- [!code-vb[SL_AddressHeader#1](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_59_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -440,28 +276,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented, gets the namespace of the address header.</summary>
-        <value>The namespace of the address header.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to access this property.  
-  
- [!code-cs[SL_AddressHeader#2](~/add/codesnippet/csharp/p-system.servicemodel.ch_7_1.cs)]
- [!code-cs[SL_AddressHeader#2](~/add/codesnippet/csharp/p-system.servicemodel.ch_7_1.cs)]
- [!code-vb[SL_AddressHeader#2](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_7_1.vb)]
- [!code-vb[SL_AddressHeader#2](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnWriteAddressHeaderContents">
@@ -471,7 +295,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -481,8 +305,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header contents to a stream or file.</param>
-        <summary>When overridden in a derived class, is invoked when the address header contents are written to a stream or file.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,7 +317,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -503,8 +327,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header to a stream or file.</param>
-        <summary>When overridden in a derived class, is invoked when the address header contents begin to be written to a stream or file.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,7 +339,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -523,18 +347,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wraps the address header as a message header.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.MessageHeader" /> that wraps the current address header.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAddressHeader">
@@ -544,7 +359,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -554,26 +369,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header to a stream or file.</param>
-        <summary>Writes the address header to a stream or file using a specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload calls the abstract  
-  
- <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of that method to use this method.  
-  
-   
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAddressHeader">
@@ -583,7 +381,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -593,26 +391,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the address header to a stream or file.</param>
-        <summary>Writes the address header to a stream or file using a specified <see cref="T:System.Xml.XmlWriter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload wraps <xref:System.Xml.XmlWriter> as a <xref:System.Xml.XmlDictionaryWriter> and then the calls the abstract  
-  
- <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method. Users must provide an implementation for that abstract method to use this overload.  
-  
-   
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAddressHeaderContents">
@@ -622,7 +403,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -632,19 +413,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header contents to a stream or file.</param>
-        <summary>Writes the address header contents to a stream or file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteStartAddressHeader">
@@ -654,7 +425,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -664,19 +435,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header to a stream or file.</param>
-        <summary>Starts to write the address header contents to a stream or file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

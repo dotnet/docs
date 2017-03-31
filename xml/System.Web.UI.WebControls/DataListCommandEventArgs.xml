@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataListCommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,40 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />, <see cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />, <see cref="E:System.Web.UI.WebControls.DataList.EditCommand" />, <see cref="E:System.Web.UI.WebControls.DataList.ItemCommand" />, and <see cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" /> events of the <see cref="T:System.Web.UI.WebControls.DataList" /> control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DataList.CancelCommand> event is raised when the `Cancel` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
-  
- The <xref:System.Web.UI.WebControls.DataList.DeleteCommand> event is raised when the `Delete` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
-  
- The <xref:System.Web.UI.WebControls.DataList.EditCommand> event is raised when the `Edit` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
-  
- The <xref:System.Web.UI.WebControls.DataList.ItemCommand> event is raised when any button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked. This allows you to programmatically test for when a specific command button is clicked and take appropriate action. This event is commonly used to handle custom command buttons for the <xref:System.Web.UI.WebControls.DataList> control.  
-  
- The <xref:System.Web.UI.WebControls.DataList.UpdateCommand> event is raised when the `Update` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
-  
- For a list of initial property values for an instance of DataListCommandEventArgs, see the <xref:System.Web.UI.WebControls.DataListCommandEventArgs.%23ctor%2A> constructor.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to define event handlers for the <xref:System.Web.UI.WebControls.DataList.EditCommand>, <xref:System.Web.UI.WebControls.DataList.UpdateCommand>, <xref:System.Web.UI.WebControls.DataList.CancelCommand> and <xref:System.Web.UI.WebControls.DataList.DeleteCommand> events of a <xref:System.Web.UI.WebControls.DataList> control. This example specifies the event handlers declaratively, setting the event handler for each command property of the <xref:System.Web.UI.WebControls.DataList> control.  
-  
- [!code-cs[DataListEdit#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_297_1.aspx)]
- [!code-vb[DataListEdit#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_297_1.aspx)]  
-  
- The following example demonstrates how to specify the event handlers and programmatically add them to the events in the `Page_Load` method.  
-  
- [!code-vb[DataListEdit2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_297_2.aspx)]
- [!code-cs[DataListEdit2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_297_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,25 +30,11 @@
         <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="item">The selected item from the <see cref="T:System.Web.UI.WebControls.DataList" />.</param>
-        <param name="commandSource">The source of the command.</param>
-        <param name="originalArgs">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> that contains the original event data.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataListCommandEventArgs> class.  
-  
- When an instance of <xref:System.Web.UI.WebControls.DataListCommandEventArgs> is created by a call to this constructor, the following properties are initialized to the specified values.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|Item|The value of the `item` parameter.|  
-|CommandSource|The value of the `commandSource` parameter.|  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="commandSource">To be added.</param>
+        <param name="originalArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -92,31 +44,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the source of the command.</summary>
-        <value>The source of the command.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CommandSource property to determine the command source that raised the event. This property is commonly used to determine which command raises the event. You can then take appropriate action, based on the command.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CommandSource property to determine the command selected by the user. It then performs the appropriate action based, on the command.  
-  
- [!code-cs[Classic DataListCommandEventArgs.Item Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1087_1.aspx)]
- [!code-vb[Classic DataListCommandEventArgs.Item Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1087_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -126,31 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item containing the command source in the <see cref="T:System.Web.UI.WebControls.DataList" /> control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.DataListItem" /> object that represents the selected item in the <see cref="T:System.Web.UI.WebControls.DataList" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Item property to access information about the selected item in the <xref:System.Web.UI.WebControls.DataList> control.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the Item property to display information about the selected item in the <xref:System.Web.UI.WebControls.DataList> control.  
-  
- [!code-cs[DataListEdit#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1330_1.aspx)]
- [!code-vb[DataListEdit#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1330_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

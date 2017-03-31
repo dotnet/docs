@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MemoryProtectionScope" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the scope of memory protection to be applied by the <see cref="System.Security.Cryptography.ProtectedMemory.Protect%2A" /> method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used with the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> methods to protect data in memory.  
-  
-   
-  
-## Examples  
- The following code example shows how to use data protection.  
-  
- [!code-cs[Cryptography.MemoryProtectionSample#1](~/add/codesnippet/csharp/t-system.security.crypto_93_1.cs)]
- [!code-vb[Cryptography.MemoryProtectionSample#1](~/add/codesnippet/visualbasic/t-system.security.crypto_93_1.vb)]
- [!code-cpp[Cryptography.MemoryProtectionSample#1](~/add/codesnippet/cpp/t-system.security.crypto_93_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CrossProcess">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All code in any process can unprotect memory that was protected using the [System.Security.Cryptography.ProtectedMemory.Protect(System.Byte\<see cref="System.Security.Cryptography.ProtectedMemory.Protect%2A" /> method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SameLogon">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only code running in the same user context as the code that called the [System.Security.Cryptography.ProtectedMemory.Protect(System.Byte\<see cref="System.Security.Cryptography.ProtectedMemory.Protect%2A" /> method can unprotect memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SameProcess">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only code running in the same process as the code that called the [System.Security.Cryptography.ProtectedMemory.Protect(System.Byte\<see cref="System.Security.Cryptography.ProtectedMemory.Protect%2A" /> method can unprotect memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

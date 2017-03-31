@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the events: <see cref="E:System.Configuration.Install.Installer.BeforeInstall" />, <see cref="E:System.Configuration.Install.Installer.AfterInstall" />, <see cref="E:System.Configuration.Install.Installer.Committing" />, <see cref="E:System.Configuration.Install.Installer.Committed" />, <see cref="E:System.Configuration.Install.Installer.BeforeRollback" />, <see cref="E:System.Configuration.Install.Installer.AfterRollback" />, <see cref="E:System.Configuration.Install.Installer.BeforeUninstall" />, <see cref="E:System.Configuration.Install.Installer.AfterUninstall" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- InstallEventArgs contains an <xref:System.Collections.IDictionary> that holds information about the current state of the installation. The <xref:System.Configuration.Install.Installer.BeforeInstall>, <xref:System.Configuration.Install.Installer.AfterInstall>, <xref:System.Configuration.Install.Installer.Committing>, <xref:System.Configuration.Install.Installer.Committed>, <xref:System.Configuration.Install.Installer.BeforeRollback>, <xref:System.Configuration.Install.Installer.AfterRollback>, <xref:System.Configuration.Install.Installer.BeforeUninstall>, and <xref:System.Configuration.Install.Installer.AfterUninstall> event handlers use this information.  
-  
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallEventArgs.%23ctor%2A> constructors and the <xref:System.Configuration.Install.InstallEventArgs.SavedState%2A> property of the InstallEventArgs class.  
-  
- There are two new events called `BeforeCommit` and `AfterCommit`. The handlers of these events are invoked from the protected methods named `OnBeforeCommit` and `OnAfterCommit` respectively. These events are raised when the <xref:System.Configuration.Install.Installer.Commit%2A> method is called.  
-  
- [!code-cpp[InstallEventArgs#1](~/add/codesnippet/cpp/t-system.configuration.i_4_1.cpp)]
- [!code-vb[InstallEventArgs#1](~/add/codesnippet/visualbasic/t-system.configuration.i_4_1.vb)]
- [!code-cs[InstallEventArgs#1](~/add/codesnippet/csharp/t-system.configuration.i_4_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,26 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallEventArgs" /> class, and leaves the <see cref="System.Configuration.Install.InstallEventArgs.SavedState%2A" /> property empty.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the InstallEventArgs constructors and the <xref:System.Configuration.Install.InstallEventArgs.SavedState%2A> property of the <xref:System.Configuration.Install.InstallEventArgs> class.  
-  
- There are two new events called `BeforeCommit` and `AfterCommit`. The handlers of these events are invoked from the protected methods named `OnBeforeCommit` and `OnAfterCommit` respectively. These events are raised when the <xref:System.Configuration.Install.Installer.Commit%2A> method is called.  
-  
- [!code-cpp[InstallEventArgs#1](~/add/codesnippet/cpp/m-system.configuration.i_3_1.cpp)]
- [!code-vb[InstallEventArgs#1](~/add/codesnippet/visualbasic/m-system.configuration.i_3_1.vb)]
- [!code-cs[InstallEventArgs#1](~/add/codesnippet/csharp/m-system.configuration.i_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,29 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that represents the current state of the installation.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallEventArgs" /> class, and specifies the value for the <see cref="System.Configuration.Install.InstallEventArgs.SavedState%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallEventArgs.%23ctor%2A> constructors and the <xref:System.Configuration.Install.InstallEventArgs.SavedState%2A> property of the <xref:System.Configuration.Install.InstallEventArgs> class.  
-  
- There are two new events called `BeforeCommit` and `AfterCommit`. The handlers of these events are invoked from the protected methods named `OnBeforeCommit` and `OnAfterCommit` respectively. These events are raised when the <xref:System.Configuration.Install.Installer.Commit%2A> method is called.  
-  
- [!code-cpp[InstallEventArgs#1](~/add/codesnippet/cpp/047ca0c7-bdd6-4f0a-a40a-_1.cpp)]
- [!code-vb[InstallEventArgs#1](~/add/codesnippet/visualbasic/047ca0c7-bdd6-4f0a-a40a-_1.vb)]
- [!code-cs[InstallEventArgs#1](~/add/codesnippet/csharp/047ca0c7-bdd6-4f0a-a40a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SavedState">
@@ -102,29 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.IDictionary" /> that represents the current state of the installation.</summary>
-        <value>An <see cref="T:System.Collections.IDictionary" /> that represents the current state of the installation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallEventArgs.%23ctor%2A> constructors and the SavedState property of the <xref:System.Configuration.Install.InstallEventArgs> class.  
-  
- There are two new events called `BeforeCommit` and `AfterCommit`. The handlers of these events are invoked from the protected methods named `OnBeforeCommit` and `OnAfterCommit` respectively. These events are raised when the <xref:System.Configuration.Install.Installer.Commit%2A> method is called.  
-  
- [!code-cpp[InstallEventArgs#1](~/add/codesnippet/cpp/p-system.configuration.i_5_1.cpp)]
- [!code-vb[InstallEventArgs#1](~/add/codesnippet/visualbasic/p-system.configuration.i_5_1.vb)]
- [!code-cs[InstallEventArgs#1](~/add/codesnippet/csharp/p-system.configuration.i_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

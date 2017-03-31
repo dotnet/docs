@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebThreadInformation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,63 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about the state of a thread in an ASP.NET process.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- Instances of the WebThreadInformation class contain information that is obtained using either the <xref:System.Web.Management.WebErrorEvent> type or the <xref:System.Web.Management.WebRequestErrorEvent> type.  
-  
- Your application needs the appropriate permissions to access protected information provided by this type.  
-  
-> [!NOTE]
->  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom event class, see the example provided in this topic.  
-  
-   
-  
-## Examples  
- The following code example has two parts. The first is an excerpt of a configuration file that enables ASP.NET to use a custom event that uses the WebThreadInformation type. The second shows how to implement the custom event that uses the WebThreadInformation type.  
-  
- Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
-  
-```  
-<healthMonitoring  
-    heartBeatInterval="0" enabled="true">  
-  
-  <profiles>  
-    <add name="Custom"   
-      minInstances="1"   
-      maxLimit="Infinite"   
-      minInterval="00:00:00" />  
-  </profiles>  
-  
-  <eventMappings>  
-  
-    <add   
-      name="SampleWebThreadInformation"   
-type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0.1782.29648, Culture=neutral, PublicKeyToken=b3283a2de7dd3f27, processorArchitecture=MSIL" />  
-  
-  </eventMappings>  
-  
-  <rules>  
-  
-    <add name="Custom Web Thread Info Event"   
-      eventName="SampleWebThreadInformation"   
-      provider="EventLogProvider"  
-      profile="Custom" />  
-  
-  </rules>  
-  
-</healthMonitoring>  
-```  
-  
- [!code-cs[System.Web.Management.WebThreadInformation#1](~/add/codesnippet/csharp/t-system.web.management._17_1.cs)]
- [!code-vb[System.Web.Management.WebThreadInformation#1](~/add/codesnippet/visualbasic/t-system.web.management._17_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FormatToString">
@@ -78,7 +22,6 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,24 +31,9 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
         <Parameter Name="formatter" Type="System.Web.Management.WebEventFormatter" />
       </Parameters>
       <Docs>
-        <param name="formatter">The <see cref="T:System.Web.Management.WebEventFormatter" /> that contains the tab and indentation settings used to format the Web health event information.</param>
-        <summary>Formats thread-related information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FormatToString method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example shows how to format custom information.  
-  
- [!code-cs[System.Web.Management.WebThreadInformation#8](~/add/codesnippet/csharp/3f4138bf-4e4f-4608-8d65-_1.cs)]
- [!code-vb[System.Web.Management.WebThreadInformation#8](~/add/codesnippet/visualbasic/3f4138bf-4e4f-4608-8d65-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="formatter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsImpersonating">
@@ -115,27 +43,15 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current thread-impersonation mode.</summary>
-        <value>
-          <see langword="true" /> if the thread is executing in impersonation mode; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get the thread-impersonation mode.  
-  
- [!code-cs[System.Web.Management.WebThreadInformation#4](~/add/codesnippet/csharp/p-system.web.management._11_1.cs)]
- [!code-vb[System.Web.Management.WebThreadInformation#4](~/add/codesnippet/visualbasic/p-system.web.management._11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -145,26 +61,15 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current thread-managed stack trace.</summary>
-        <value>The thread-managed stack trace.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get the thread stack trace.  
-  
- [!code-cs[System.Web.Management.WebThreadInformation#5](~/add/codesnippet/csharp/p-system.web.management._22_1.cs)]
- [!code-vb[System.Web.Management.WebThreadInformation#5](~/add/codesnippet/visualbasic/p-system.web.management._22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThreadAccountName">
@@ -174,31 +79,15 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thread account name.</summary>
-        <value>The thread account name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The account returned by this property might be arbitrary if the thread is executing in impersonation mode.  
-  
-   
-  
-## Examples  
- The following code example shows how to get the thread account name.  
-  
- [!code-cs[System.Web.Management.WebThreadInformation#6](~/add/codesnippet/csharp/p-system.web.management._9_1.cs)]
- [!code-vb[System.Web.Management.WebThreadInformation#6](~/add/codesnippet/visualbasic/p-system.web.management._9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThreadID">
@@ -208,31 +97,15 @@ type="SamplesAspNet.SampleWebThreadInformation,webthreadinformation, Version=1.0
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current thread identifier.</summary>
-        <value>The current thread identifier.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Even if managed threads might not have direct mapping to the OS threads, for debugging purposes, it is always useful to isolate a specific thread where problems might exist.  
-  
-   
-  
-## Examples  
- The following code example shows how to get the thread identifier.  
-  
- [!code-cs[System.Web.Management.WebThreadInformation#7](~/add/codesnippet/csharp/p-system.web.management._54_1.cs)]
- [!code-vb[System.Web.Management.WebThreadInformation#7](~/add/codesnippet/visualbasic/p-system.web.management._54_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

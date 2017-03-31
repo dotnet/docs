@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ComboBox" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,56 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a selection control with a drop-down list that can be shown or hidden by clicking the arrow on the control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ComboBox allows the user to select an item from a drop-down list or optionally to enter new text in the text box of the control. ComboBox is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
-  
- The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> and <xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> properties specify how the ComboBox behaves when the user does one of the following:  
-  
--   Enters a string to select an item in the ComboBox.  
-  
--   Enters a string that does not correspond to an item in the ComboBox.  
-  
--   Selects part of the string that is in the text box.  
-  
--   Copies or pastes a value into the text box.  
-  
- The following table describes the actions the user can and cannot take, depending on the values of <xref:System.Windows.Controls.ComboBox.IsEditable%2A> and <xref:System.Windows.Controls.ComboBox.IsReadOnly%2A>.  
-  
-||<xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> is `true`|<xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> is `false`|  
-|-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `true`|-   Cannot select an item in the ComboBox by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the ComboBox.<br />-   Can select part of the string in the ComboBox text box.<br />-   Can copy the string in the ComboBox text box, but cannot paste a string into the ComboBox text box.|-   Can select an item in the ComboBox by entering a string.<br />-   Can enter a string that does not correspond to an item in the ComboBox.<br />-   Can select part of the string in the ComboBox text box.<br />-   Can copy or paste the string in the ComboBox text box.|  
-|<xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `false`|-   Can select an item in the ComboBox by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the ComboBox.<br />-   Cannot select part of the string in the ComboBox.<br />-   Cannot copy or paste the string in the ComboBox.|-   Can select an item in the ComboBox by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the ComboBox.<br />-   Cannot select part of the string in the ComboBox.<br />-   Cannot copy or paste the string in the ComboBox.|  
-  
- The <xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> property has an effect only if <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `true`.  
-  
- The ComboBox is an <xref:System.Windows.Controls.ItemsControl>, so it can display content other than simple strings.  For example, you can create a ComboBox that contains a list of images. When you have content other than strings in the ComboBox, a nonsensical string might appear in the ComboBox when the drop-down list is hidden. To display a string in the ComboBox when it contains non-string items, use the <xref:System.Windows.Controls.TextSearch.Text%2A?displayProperty=fullName> or <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=fullName>attached property.  
-  
-## Customizing the ComboBox Control  
- To apply the same property settings to multiple ComboBox controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the ComboBox, see [ComboBox Styles and Templates](../Topic/ComboBox%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in ComboBox control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example creates a ComboBox. The example populates the ComboBox by binding the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to a collection object of type `VacationSpots`. The example also creates a <xref:System.Windows.Controls.TextBlock> that displays the selected item of the ComboBox.  
-  
- [!code-xml[ComboBoxItems#ComboBoxClass](~/add/codesnippet/xaml/ComboBox_Index/Window1.xaml#comboboxclass)]  
-  
- The following example defines the collection object that the ComboBox in the preceding example binds to.  
-  
- [!code-cs[ComboBoxItems#Data](~/add/codesnippet/csharp/ComboBox_Index/Window1.xaml.cs#data)]
- [!code-vb[ComboBoxItems#Data](~/add/codesnippet/visualbasic/ComboBox_Index/Window1.xaml.vb#data)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,12 +36,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ComboBox" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,26 +51,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the drop-down list of the combo box closes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to assign event handlers and how to handle the <xref:System.Windows.Controls.ComboBox.DropDownOpened> and DropDownClosed events.  
-  
-  
- [!code-vb[ComboBoxSimple#ComboBoxEvents2](~/add/codesnippet/visualbasic/ComboBoxSimple/Pane1.xaml.vb#comboboxevents2)]
- [!code-cs[ComboBoxSimple#ComboBoxEvents2](~/add/codesnippet/csharp/ComboBoxSimple/Pane1.xaml.cs#comboboxevents2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownOpened">
@@ -130,26 +68,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the drop-down list of the combo box opens.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to assign event handlers and handle the DropDownOpened and <xref:System.Windows.Controls.ComboBox.DropDownClosed> events.  
-  
-  
- [!code-vb[ComboBoxSimple#ComboBoxEvents2](~/add/codesnippet/visualbasic/ComboBoxSimple/Pane1.xaml.vb#comboboxevents2)]
- [!code-cs[ComboBoxSimple#ComboBoxEvents2](~/add/codesnippet/csharp/ComboBoxSimple/Pane1.xaml.cs#comboboxevents2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContainerForItemOverride">
@@ -159,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,8 +92,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates or identifies the element used to display the specified item.</summary>
-        <returns>The element used to display the specified item.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,24 +104,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a combo box supports scrolling.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ComboBox" /> supports scrolling; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the control has a <xref:System.Windows.Controls.ScrollViewer> in its style and has a custom keyboard scrolling behavior, <xref:System.Windows.Controls.ListBox.HandlesScrolling%2A> should return `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasEffectiveKeyboardFocus">
@@ -212,9 +128,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.ComboBox" /> has focus.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ComboBox" /> has focus; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +140,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -243,31 +157,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the drop-down for a combo box is currently open.</summary>
-        <value>
-          <see langword="true" /> if the drop-down is open; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsDropDownOpen"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.IsDropDownOpenProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to use the IsDropDownOpen property to create a combo box with the drop down control opened when the combo box is initiated.  
-  
- [!code-xml[ComboBoxStyles#4](~/add/codesnippet/xaml/ComboBoxStyles/app.xaml#4)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDropDownOpenProperty">
@@ -277,14 +169,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.IsDropDownOpen%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,64 +186,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables editing of the text in text box of the <see cref="T:System.Windows.Controls.ComboBox" />.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ComboBox" /> can be edited; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsEditable and <xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> properties specify how the <xref:System.Windows.Controls.ComboBox> behaves when the user does one of the following:  
-  
--   Enters a string to select an item in the <xref:System.Windows.Controls.ComboBox>.  
-  
--   Enters a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.  
-  
--   Selects part of the string that is in the text box.  
-  
--   Copies or pastes a value into the text box.  
-  
- The following table describes the actions the user can and cannot take, depending on the values of IsEditable and <xref:System.Windows.Controls.ComboBox.IsReadOnly%2A>.  
-  
-||<xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> is `true`|<xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> is `false`|  
-|-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|IsEditable is `true`|-   Cannot select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Can select part of the string in the <xref:System.Windows.Controls.ComboBox> text box.<br />-   Can copy the string in the <xref:System.Windows.Controls.ComboBox> text box, but cannot paste a string into the <xref:System.Windows.Controls.ComboBox> text box.|-   Can select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Can enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Can select part of the string in the <xref:System.Windows.Controls.ComboBox> text box.<br />-   Can copy or paste the string in the <xref:System.Windows.Controls.ComboBox> text box.|  
-|IsEditable is `false`|-   Can select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot select part of the string in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot copy or paste the string in the <xref:System.Windows.Controls.ComboBox>.|-   Can select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot select part of the string in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot copy or paste the string in the <xref:System.Windows.Controls.ComboBox>.|  
-  
- When IsEditable is equal to `false`, the <xref:System.Windows.Controls.ComboBox> uses a <xref:System.Windows.Controls.ContentPresenter> to display the currently selected item; when IsEditable is equal to `true`, a <xref:System.Windows.Controls.TextBox> is used for this purpose instead. Note that a <xref:System.Windows.Controls.TextBox> only displays plain text, and that a <xref:System.Windows.Controls.ComboBoxItem> may include non-plain text content, such as images.  
-  
-<a name="dependencyPropertyInfo_IsEditable"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.IsEditableProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following examples create <xref:System.Windows.Controls.ComboBox> controls that contain images as items instead of text. If the IsEditable property is set to `true`, the <xref:System.Windows.Controls.TextBox> displays the value returned by the image's <xref:System.Object.ToString%2A> method. To avoid a <xref:System.Windows.Controls.TextBox> with unexpected text, use the <xref:System.Windows.Controls.TextSearch.Text%2A?displayProperty=fullName> and <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=fullName> properties to assign text to be displayed.  
-  
- [!code-xml[ComboBoxProps_snip#1](~/add/codesnippet/xaml/comboboxsimple/pane1.xaml#1)]  
-  
- [!code-xml[ComboBoxProps_snip#2](~/add/codesnippet/xaml/comboboxsimple/pane1.xaml#2)]  
-  
- Another solution is to use the <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A> property. The drop-down control of the <xref:System.Windows.Controls.ComboBox> will not display the images but will display the text you assigned.  
-  
- The following example shows how to use <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>.  
-  
- [!code-xml[ComboBoxProps_snip#3](~/add/codesnippet/xaml/comboboxsimple/pane1.xaml#3)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEditableProperty">
@@ -362,14 +204,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.IsEditable%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -390,10 +230,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">Specified item.</param>
-        <summary>Determines if the specified item is (or is eligible to be) its own <c>ItemContainer</c>.</summary>
-        <returns>
-          <see langword="true" /> if the item is its own <c>ItemContainer</c>; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,56 +243,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables selection-only mode, in which the contents of the combo box are selectable but not editable.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ComboBox" /> is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> and IsReadOnly properties specify how the <xref:System.Windows.Controls.ComboBox> behaves when the user does one of the following:  
-  
--   Enters a string to select an item in the <xref:System.Windows.Controls.ComboBox>.  
-  
--   Enters a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.  
-  
--   Selects part of the string that is in the text box.  
-  
--   Copies or pastes a value into the text box.  
-  
- The following table describes the actions the user can and cannot take, depending on the values of <xref:System.Windows.Controls.ComboBox.IsEditable%2A> and IsReadOnly.  
-  
-||IsReadOnly is `true`|IsReadOnly is `false`|  
-|-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `true`|-   Cannot select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Can select part of the string in the <xref:System.Windows.Controls.ComboBox> text box.<br />-   Can copy the string in the <xref:System.Windows.Controls.ComboBox> text box, but cannot paste a string into the <xref:System.Windows.Controls.ComboBox> text box.|-   Can select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Can enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Can select part of the string in the <xref:System.Windows.Controls.ComboBox> text box.<br />-   Can copy or paste the string in the <xref:System.Windows.Controls.ComboBox> text box.|  
-|<xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `false`|-   Can select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot select part of the string in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot copy or paste the string in the <xref:System.Windows.Controls.ComboBox>.|-   Can select an item in the <xref:System.Windows.Controls.ComboBox> by entering a string.<br />-   Cannot enter a string that does not correspond to an item in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot select part of the string in the <xref:System.Windows.Controls.ComboBox>.<br />-   Cannot copy or paste the string in the <xref:System.Windows.Controls.ComboBox>.|  
-  
- When <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is equal to `false`, the <xref:System.Windows.Controls.ComboBox> uses a <xref:System.Windows.Controls.ContentPresenter> to display the currently selected item; when <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is equal to `true`, a <xref:System.Windows.Controls.TextBox> is used for this purpose instead. Note that a <xref:System.Windows.Controls.TextBox> only displays plain text, and that a <xref:System.Windows.Controls.ComboBoxItem> may include non-plain text content, such as images.  
-  
-<a name="dependencyPropertyInfo_IsReadOnly"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.IsReadOnlyProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
-   
-  
-## Examples  
- The following example shows a <xref:System.Windows.Controls.ComboBox> with an editable <xref:System.Windows.Controls.TextBox>. The IsReadOnly property is set to `true`, so the user cannot enter text into the <xref:System.Windows.Controls.TextBox>.  
-  
- [!code-xml[ComboBoxItems#1](~/add/codesnippet/xaml/ComboBox_Index/Window1.xaml#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyProperty">
@@ -463,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.IsReadOnly%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,24 +278,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the <see cref="System.Windows.Controls.ComboBox.SelectionBoxItem%2A" /> is highlighted.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Controls.ComboBox.SelectionBoxItem%2A" /> is highlighted; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is a dependency property. However, the dependency property identifier field for IsSelectionBoxHighlighted is not public. Therefore, you cannot use the backing dependency property for property system operations that require the dependency property identifier, such as calls to <xref:System.Windows.DependencyObject.GetValue%2A>. However, you can still use IsSelectionBoxHighlighted as a property trigger.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxDropDownHeight">
@@ -508,7 +296,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -526,65 +313,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum height for a combo box drop-down.</summary>
-        <value>A double that represents the height that is retrieved or the height to set. The default value as defined to the property system is a calculated value based on taking a one-third fraction of the system max screen height parameters, but this default is potentially overridden by various control templates.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Auto sizing is not the default, and will result in the drop down size potentially exceeding the available size in the parent element. This is not typically desirable.  
-  
-<a name="dependencyPropertyInfo_MaxDropDownHeight"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.MaxDropDownHeightProperty>|  
-|Metadata properties set to `true`|None|  
-  
-<a name="xamlAttributeUsage_MaxDropDownHeight"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object MaxDropDownHeight="double"/>  
-- or –  
-<object MaxDropDownHeight ="qualifiedDouble"/>  
-- or -  
-<object MaxDropDownHeight ="Auto"/>  
-```  
-  
-<a name="xamlValues_MaxDropDownHeight"></a>   
-## XAML Values  
- *double*  
- <xref:System.Double>  
-  
- String representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/add/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
-  
- The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply.  
-  
- *qualifiedDouble*  
- A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- `cm` is centimeters; 1cm==(96/2.54) px  
-  
- `pt` is points; 1pt==(96/72) px  
-  
- `Auto`  
- Enables autosizing behavior. See Remarks.  
-  
-   
-  
-## Examples  
- The following example shows how to use the MaxDropDownHeight property to specify the height of the <xref:System.Windows.Controls.ComboBox> control's drop-down.  
-  
- [!code-xml[ComboBoxStyles#5](~/add/codesnippet/xaml/ComboBoxStyles/app.xaml#5)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxDropDownHeightProperty">
@@ -594,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.MaxDropDownHeight%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,7 +342,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,7 +349,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when <see cref="System.Windows.FrameworkElement.ApplyTemplate%2A" /> is called.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,7 +360,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -639,8 +367,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
-        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,7 +379,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -661,8 +388,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="E:System.Windows.Controls.ComboBox.DropDownClosed" /> event.</param>
-        <summary>Reports when a combo box's popup closes.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,7 +400,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -683,8 +409,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="E:System.Windows.Controls.ComboBox.DropDownOpened" /> event.</param>
-        <summary>Reports when a combo box's popup opens.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,7 +421,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -705,8 +430,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> event.</param>
-        <summary>Reports that the <see cref="System.Windows.ContentElement.IsKeyboardFocusWithin%2A" /> property changed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,7 +442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -727,8 +451,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.IsMouseCapturedChanged" /> event.</param>
-        <summary>Called when the <see cref="System.Windows.UIElement.IsMouseCaptured%2A" /> property changes.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,7 +463,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -749,8 +472,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Event data.</param>
-        <summary>Invoked when a <see cref="System.Windows.Input.Keyboard.KeyDown" /> attached routed event occurs.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -761,7 +484,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -771,8 +493,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> event.</param>
-        <summary>Called to report that the left mouse button was released.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +505,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,8 +514,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Event data.</param>
-        <summary>Invoked when a <see cref="System.Windows.Input.Keyboard.PreviewKeyDown" /> attached routed event occurs.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -805,7 +526,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -815,8 +535,8 @@
         <Parameter Name="e" Type="System.Windows.Controls.SelectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.Controls.SelectionChangedEventArgs" />.</param>
-        <summary>Responds to a <see cref="T:System.Windows.Controls.ComboBox" /> selection change by raising a <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -827,7 +547,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,17 +557,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">Element used to display the specified item.</param>
-        <param name="item">Specified item.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Preparing the element may involve applying styles, setting bindings, and so on.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItem">
@@ -858,45 +570,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item that is displayed in the selection box.</summary>
-        <value>The selected item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.ComboBox> uses this property to show the selected item in the <xref:System.Windows.Controls.ComboBox>.  To get the selected item of the <xref:System.Windows.Controls.ComboBox> outside of the <xref:System.Windows.Controls.ControlTemplate>, use the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A?displayProperty=fullName> property instead of this property.  
-  
-<a name="xamlAttributeUsage_SelectionBoxItem"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="{TemplateBinding SelectionBoxItem}"/>  
-```  
-  
-<a name="dependencyPropertyInfo_SelectionBoxItem"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.SelectionBoxItemProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example binds the <xref:System.Windows.Controls.ContentPresenter.Content%2A> property of a <xref:System.Windows.Controls.ContentPresenter> to the SelectionBoxItem property. The <xref:System.Windows.Controls.ContentPresenter> is part of the <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ComboBox>. For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
-  
- [!code-xml[ControlTemplateExamples#ComboBoxSelectionBox](~/add/codesnippet/xaml/controltemplateexamples/resources/combobox.xaml#comboboxselectionbox)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItemProperty">
@@ -906,14 +588,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.SelectionBoxItem%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,15 +605,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a composite string that specifies how to format the selected item in the selection box if it is displayed as a string.</summary>
-        <value>A composite string that specifies how to format the selected item in the selection box if it is displayed as a string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -943,14 +623,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.SelectionBoxItemStringFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,44 +640,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item template of the selection box content.</summary>
-        <value>An item template.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlAttributeUsage_SelectionBoxItemTemplate"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="{TemplateBinding SelectionBoxItemTemplate}"/>  
-```  
-  
-<a name="dependencyPropertyInfo_SelectionBoxItemTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.SelectionBoxItemTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example binds the <xref:System.Windows.Controls.ContentPresenter.Content%2A> property of a <xref:System.Windows.Controls.ContentPresenter> to the SelectionBoxItemTemplate property. The <xref:System.Windows.Controls.ContentPresenter> is part of the <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ComboBox>. For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
-  
- [!code-xml[ControlTemplateExamples#ComboBoxSelectionBox](~/add/codesnippet/xaml/controltemplateexamples/resources/combobox.xaml#comboboxselectionbox)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItemTemplateProperty">
@@ -1008,14 +658,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.SelectionBoxItemTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1032,25 +681,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ComboBox" /> keeps the user's input or replaces the input with a matching item.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ComboBox" /> keeps the user's input; <see langword="false" /> if the <see cref="T:System.Windows.Controls.ComboBox" /> replaces the input with a matching item The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, when the user types a string into the <xref:System.Windows.Controls.ComboBox> that matches one of its items, the item is selected and the text that the user typed is replaced.  This can cause the text that the user entered to change case. If the ShouldPreserveUserEnteredPrefix property is set to `true`, the <xref:System.Windows.Controls.ComboBox> selects the matching item, but preserves the text that the user entered.   For example, suppose that a <xref:System.Windows.Controls.ComboBox> contains the string, "Hello" (with a capital H) and the user enters "hello" (with a lowercase h).  If ShouldPreserveUserEnteredPrefix is `false`, the <xref:System.Windows.Controls.ComboBox> selects the matching item, "Hello," in its collection and populates its text box with that string.    If ShouldPreserveUserEnteredPrefix is `true`, "Hello" is selected from the collection, but the text box says "hello."  
-  
-<a name="dependencyPropertyInfo_ShouldPreserveUserEnteredPrefix"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.ShouldPreserveUserEnteredPrefixProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldPreserveUserEnteredPrefixProperty">
@@ -1066,7 +699,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.ShouldPreserveUserEnteredPrefix%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1077,38 +710,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether a <see cref="T:System.Windows.Controls.ComboBox" /> that is open and displays a drop-down control will remain open when a user clicks the <see cref="T:System.Windows.Controls.TextBox" />.</summary>
-        <value>
-          <see langword="true" /> to keep the drop-down control open when the user clicks on the text area to start editing; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_StaysOpenOnEdit"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.StaysOpenOnEditProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- This example shows how to use the StaysOpenOnEdit property to create a combo box whose drop-down control stays open while the user enters information into the text box.  
-  
- [!code-xml[ComboBoxItems#1](~/add/codesnippet/xaml/ComboBox_Index/Window1.xaml#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StaysOpenOnEditProperty">
@@ -1118,14 +728,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.StaysOpenOnEdit%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,38 +745,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the currently selected item.</summary>
-        <value>The string of the currently selected item. The default is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is `true`, setting this property places initial text entered in the text box. When <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `false`, setting this value has no effect.  
-  
-<a name="dependencyPropertyInfo_Text"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.ComboBox.TextProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
-  
-   
-  
-## Examples  
- This example shows how the Text property can be used to set text into the <xref:System.Windows.Controls.TextBox> before the user makes a selection.  
-  
- [!code-xml[ComboBoxItems#1](~/add/codesnippet/xaml/ComboBox_Index/Window1.xaml#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
@@ -1177,14 +763,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.ComboBox.Text%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

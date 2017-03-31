@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ErrorResponseException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ErrorResponseException class is an exception that occurs when the server returns an <see langword="&lt;errorResponse&gt;" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="response" Type="System.DirectoryServices.Protocols.DsmlErrorResponse" />
       </Parameters>
       <Docs>
-        <param name="response">The <see cref="T:System.DirectoryServices.Protocols.DsmlErrorResponse" /> object returned by the server that corresponds to the <see langword="&lt;errorResponse&gt;" />.</param>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class using the specified response object. The default message displayed to the client is "&lt;errorResponse&gt; returned".</summary>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +55,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message displayed to the client when the exception occurs.</param>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class using the specified message.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +73,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -85,9 +80,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="response">The <see cref="T:System.DirectoryServices.Protocols.DsmlErrorResponse" /> object returned by the server that corresponds to the <see langword="&lt;errorResponse&gt;" />.</param>
-        <param name="message">The message displayed to the client when the exception occurs.</param>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class using the specified response object and message.</summary>
+        <param name="response">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +93,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -106,9 +100,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">Data required to serialize the parameter.</param>
-        <param name="context">The source and destination of the serialized stream associated with the parameter.</param>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class using the specified serialization data and streaming context.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +113,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -127,9 +120,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The message displayed to the client when the exception occurs.</param>
-        <param name="inner">The <see cref="System.Exception.InnerException%2A" />, if any, that threw the exception.</param>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class using the specified message and inner exception.</summary>
+        <param name="message">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +133,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -149,10 +141,10 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="response">The <see cref="T:System.DirectoryServices.Protocols.DsmlErrorResponse" /> object returned by the server that corresponds to the <see langword="&lt;errorResponse&gt;" />.</param>
-        <param name="message">The message displayed to the client when the exception occurs.</param>
-        <param name="inner">The <see cref="System.Exception.InnerException%2A" />, if any, that threw the exception.</param>
-        <summary>The ErrorResponseException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ErrorResponseException" /> class using the specified response object, message, and inner exception.</summary>
+        <param name="response">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +155,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,9 +165,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">Data required to serialize the parameter.</param>
-        <param name="streamingContext">The source and destination of the serialized stream associated with the parameter.</param>
-        <summary>The GetObjectData method populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data required to serialize the parameter.</summary>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,15 +178,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DsmlErrorResponse</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Response property contains the <see cref="T:System.DirectoryServices.Protocols.DsmlErrorResponse" /> object that corresponds to the <see langword="&lt;errorResponse&gt;" />.</summary>
-        <value>The <see cref="T:System.DirectoryServices.Protocols.DsmlErrorResponse" /> object that corresponds to the <see langword="&lt;errorResponse&gt;" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

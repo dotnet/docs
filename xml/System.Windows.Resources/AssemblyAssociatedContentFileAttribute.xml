@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Resources.AssemblyAssociatedContentFileAttribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This attribute is interpreted during the [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] compilation process to associate loose content with a [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] application.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="relativeContentFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeContentFilePath">The path to the associated content.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Resources.AssemblyAssociatedContentFileAttribute" /> class.</summary>
+        <param name="relativeContentFilePath">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path to the associated content.</summary>
-        <value>The path, as declared in the attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

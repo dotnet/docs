@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TrustLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the mapping of specific security levels to named policy files. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can extend the security of your Web application by creating your own named TrustLevel object that is mapped to a file specified by the `policyFile` attribute.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TrustLevel type.  
-  
- [!code-cs[System.Web.Configuration.TrustLevel#1](~/add/codesnippet/csharp/t-system.web.configurati_38_1.cs)]
- [!code-vb[System.Web.Configuration.TrustLevel#1](~/add/codesnippet/visualbasic/t-system.web.configurati_38_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,25 +29,10 @@
         <Parameter Name="policyFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A named security level that is mapped to a policy file.</param>
-        <param name="policyFile">The configuration file that contains security policy settings for the named security level.</param>
-        <summary>Creates an instance of the <see cref="T:System.Web.Configuration.TrustLevel" /> class that is initialized based on the provided values, which define the mapping of specific security levels to named policy files.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TrustLevel constructor creates a <xref:System.Web.Configuration.TrustLevel> object by using the supplied parameters.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TrustLevel constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevel> class.  
-  
- [!code-cs[System.Web.Configuration.TrustLevel#4](~/add/codesnippet/csharp/m-system.web.configurati_43_1.cs)]
- [!code-vb[System.Web.Configuration.TrustLevel#4](~/add/codesnippet/visualbasic/m-system.web.configurati_43_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="policyFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -74,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -89,19 +56,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a named security level that is mapped to a policy file.</summary>
-        <value>The Name that is mapped to a policy file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Name property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevel> class.  
-  
- [!code-cs[System.Web.Configuration.TrustLevel#3](~/add/codesnippet/csharp/p-system.web.configurati_0_1.cs)]
- [!code-vb[System.Web.Configuration.TrustLevel#3](~/add/codesnippet/visualbasic/p-system.web.configurati_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PolicyFile">
@@ -111,7 +68,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -123,19 +79,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the configuration file reference that contains the security policy settings for the named security level.</summary>
-        <value>The configuration file reference that contains the security policy settings for the associated security level.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the PolicyFile property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevel> class.  
-  
- [!code-cs[System.Web.Configuration.TrustLevel#5](~/add/codesnippet/csharp/p-system.web.configurati_352_1.cs)]
- [!code-vb[System.Web.Configuration.TrustLevel#5](~/add/codesnippet/visualbasic/p-system.web.configurati_352_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -145,7 +91,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

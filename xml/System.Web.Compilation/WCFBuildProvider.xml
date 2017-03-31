@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.WCFBuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Generates proxy class code for Windows Communication Foundation (WCF) services</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WCFBuildProvider uses mapping files (.svcmap) at the root level of the Web application that contains WCF service references. The mapping files specify the services for which proxy class source code must be generated. The generated proxy class is then compiled with the other resources during the Web application compilation phase.  
-  
- The inherited <xref:System.Web.Compilation.BuildProvider.VirtualPath%2A> property is internally defined and points to the Web application root directory where the .svcmap files reside.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.WCFBuildProvider" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -68,16 +56,9 @@
         <Parameter Name="assemblyBuilder" Type="System.Web.Compilation.AssemblyBuilder" />
       </Parameters>
       <Docs>
-        <param name="assemblyBuilder">An instance of the <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object that the generated proxy code must be added to. This instance is provided by ASP.NET at run time.</param>
-        <summary>Generates the service proxy class source code and adds it to the specified assembly builder.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method searches for .svcmap files in the Web application root directory. If files are found, the method generates the source code of a proxy class for the related services into the specified `assemblyBuilder`.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyBuilder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

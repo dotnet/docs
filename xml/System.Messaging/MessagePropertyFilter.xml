@@ -1,19 +1,15 @@
 <Type Name="MessagePropertyFilter" FullName="System.Messaging.MessagePropertyFilter">
-  <TypeSignature Language="C#" Value="public class MessagePropertyFilter : ICloneable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePropertyFilter extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="C#" Value="public class MessagePropertyFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePropertyFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagePropertyFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ICloneable</InterfaceName>
-    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -21,32 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Controls and selects the properties that are retrieved when peeking or receiving messages from a message queue.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the MessagePropertyFilter on a <xref:System.Messaging.MessageQueue> instance controls the set of properties that are retrieved when peeking or receiving a message. The filter is set on the instance of <xref:System.Messaging.MessageQueue> that retrieves the message information. When you set a MessagePropertyFilter Boolean-valued member to `false`, you prevent the information of the associated <xref:System.Messaging.Message> property from being retrieved by the <xref:System.Messaging.MessageQueue>.  
-  
- There are several filter properties that are not Boolean values. They are integer values that get or set the default sizes of the <xref:System.Messaging.Message.Body%2A?displayProperty=fullName>, <xref:System.Messaging.Message.Extension%2A?displayProperty=fullName>, or <xref:System.Messaging.Message.Label%2A?displayProperty=fullName>.  
-  
- Retrieving a limited set of properties helps improve performance because smaller amounts of data are transferred from the queue.  
-  
- When setting a property on MessagePropertyFilter, you are only indicating whether that property is retrieved when a message is received or peeked. You are not changing the associated property value for the <xref:System.Messaging.Message>.  
-  
- The <xref:System.Messaging.MessagePropertyFilter.%23ctor%2A> constructor sets all filter properties to their default values, which for the Boolean values is `false`. See the constructor topic for the defaults assigned to the integer-valued properties.  
-  
-   
-  
-## Examples  
- The following code example sends two messages of different priorities to the queue, and retrieves them subsequently.  
-  
- [!code-cpp[Message.DefaultPropertiesToSend#1](~/add/codesnippet/cpp/t-system.messaging.messa_1_1.cpp)]
- [!code-vb[Message.DefaultPropertiesToSend#1](~/add/codesnippet/visualbasic/t-system.messaging.messa_1_1.vb)]
- [!code-cs[Message.DefaultPropertiesToSend#1](~/add/codesnippet/csharp/t-system.messaging.messa_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,34 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessagePropertyFilter" /> class and sets default values for all properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessagePropertyFilter constructor sets all Boolean values to `false` and sets the integer-valued properties to the default values shown in the following table.  
-  
-|Property|Default value|  
-|--------------|-------------------|  
-|<xref:System.Messaging.MessagePropertyFilter.DefaultBodySize%2A>|1024|  
-|<xref:System.Messaging.MessagePropertyFilter.DefaultExtensionSize%2A>|255|  
-|<xref:System.Messaging.MessagePropertyFilter.DefaultLabelSize%2A>|255|  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Messaging.MessagePropertyFilter> constructor.  
-  
- [!code-cpp[MessagePropertyFilter#40](~/add/codesnippet/cpp/m-system.messaging.messa_23_1.cpp)]
- [!code-cs[MessagePropertyFilter#40](~/add/codesnippet/csharp/m-system.messaging.messa_23_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AcknowledgeType">
@@ -93,7 +43,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -108,25 +57,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.AcknowledgeType%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.AcknowledgeType%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.AcknowledgeType%2A> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages requested by the sending application. The type of acknowledgment defines when acknowledgments are returned. Set the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=fullName> property before sending the message to request a specific type of acknowledgment.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the AcknowledgeType property.  
-  
- [!code-cpp[MessagePropertyFilter#1](~/add/codesnippet/cpp/p-system.messaging.messa_82_1.cpp)]
- [!code-cs[MessagePropertyFilter#1](~/add/codesnippet/csharp/p-system.messaging.messa_82_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Acknowledgment">
@@ -136,7 +69,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,30 +83,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Acknowledgment%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Acknowledgment%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages the system posts in the administration queue, which determines when acknowledgments are generated.  
-  
- Acknowledgments are returned from the destination queue and posted as messages to the <xref:System.Messaging.Message.AdministrationQueue%2A> specified by the original message. The type of acknowledgment generated depends on what was requested.  
-  
- Read the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property when receiving a message from an administration queue to verify the status of the message originally sent to the message queue.  
-  
-   
-  
-## Examples  
- The following code example sends and receives a message that contains an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
-  
- [!code-cs[Message.Acknowledgment#1](~/add/codesnippet/csharp/p-system.messaging.messa_20_1.cs)]
- [!code-cpp[Message.Acknowledgment#1](~/add/codesnippet/cpp/p-system.messaging.messa_20_1.cpp)]
- [!code-vb[Message.Acknowledgment#1](~/add/codesnippet/visualbasic/p-system.messaging.messa_20_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AdministrationQueue">
@@ -184,7 +95,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -199,25 +109,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.AdministrationQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.AdministrationQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.AdministrationQueue%2A> property of the <xref:System.Messaging.Message> class specifies the name of the queue that receives system-generated acknowledgments.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the AdministrationQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#2](~/add/codesnippet/cpp/p-system.messaging.messa_48_1.cpp)]
- [!code-cs[MessagePropertyFilter#2](~/add/codesnippet/csharp/p-system.messaging.messa_48_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppSpecific">
@@ -227,7 +121,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -242,25 +135,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.AppSpecific%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.AppSpecific%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.AppSpecific%2A> property of the <xref:System.Messaging.Message> class contains additional, application-specific information.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the AppSpecific property.  
-  
- [!code-cpp[MessagePropertyFilter#3](~/add/codesnippet/cpp/p-system.messaging.messa_69_1.cpp)]
- [!code-cs[MessagePropertyFilter#3](~/add/codesnippet/csharp/p-system.messaging.messa_69_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrivedTime">
@@ -270,7 +147,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -285,25 +161,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.ArrivedTime%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.ArrivedTime%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.ArrivedTime%2A> property of the <xref:System.Messaging.Message> class indicates when the message arrived at the destination queue. This is local time, adjusted from GMT, of the computer on which the message is retrieved.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the ArrivedTime property.  
-  
- [!code-cpp[MessagePropertyFilter#4](~/add/codesnippet/cpp/p-system.messaging.messa_96_1.cpp)]
- [!code-cs[MessagePropertyFilter#4](~/add/codesnippet/csharp/p-system.messaging.messa_96_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AttachSenderId">
@@ -313,7 +173,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -328,25 +187,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.AttachSenderId%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.AttachSenderId%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.AttachSenderId%2A> property of the <xref:System.Messaging.Message> class specifies whether the <xref:System.Messaging.Message.SenderId%2A?displayProperty=fullName> should be or has been attached to the message. The <xref:System.Messaging.Message.SenderId%2A?displayProperty=fullName> is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the AttachSenderId property.  
-  
- [!code-cpp[MessagePropertyFilter#5](~/add/codesnippet/cpp/p-system.messaging.messa_80_1.cpp)]
- [!code-cs[MessagePropertyFilter#5](~/add/codesnippet/csharp/p-system.messaging.messa_80_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Authenticated">
@@ -356,7 +199,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -371,27 +213,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Authenticated%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Authenticated%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Authenticated%2A> property of the <xref:System.Messaging.Message> class is used by the receiving application to determine if authentication was requested. If authentication was requested and the message is in the queue, then the message is authenticated.  
-  
- It is not possible to look at the properties of a message and determine whether a message failed authentication. Messages that fail authentication are discarded and are not delivered to the queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the Authenticated property.  
-  
- [!code-cpp[MessagePropertyFilter#6](~/add/codesnippet/cpp/p-system.messaging.messa_57_1.cpp)]
- [!code-cs[MessagePropertyFilter#6](~/add/codesnippet/csharp/p-system.messaging.messa_57_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationProviderName">
@@ -401,7 +225,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -416,27 +239,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.AuthenticationProviderName%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.AuthenticationProviderName%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.AuthenticationProviderName%2A> property of the <xref:System.Messaging.Message> class specifies the name of the cryptographic provider used to generate the digital signature of the message. <xref:System.Messaging.Message.AuthenticationProviderName%2A?displayProperty=fullName> is typically used when working with foreign queues.  
-  
- A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the AuthenticationProviderName property.  
-  
- [!code-cpp[MessagePropertyFilter#7](~/add/codesnippet/cpp/p-system.messaging.messa_70_1.cpp)]
- [!code-cs[MessagePropertyFilter#7](~/add/codesnippet/csharp/p-system.messaging.messa_70_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationProviderType">
@@ -446,7 +251,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -461,27 +265,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.AuthenticationProviderType%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.AuthenticationProviderType%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.AuthenticationProviderType%2A> property of the <xref:System.Messaging.Message> class specifies the type of cryptographic provider used to generate the digital signature of the message. <xref:System.Messaging.Message.AuthenticationProviderType%2A> is typically used when working with foreign queues.  
-  
- A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the AuthenticationProviderType property.  
-  
- [!code-cpp[MessagePropertyFilter#8](~/add/codesnippet/cpp/p-system.messaging.messa_38_1.cpp)]
- [!code-cs[MessagePropertyFilter#8](~/add/codesnippet/csharp/p-system.messaging.messa_38_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -491,7 +277,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -506,25 +291,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Body%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Body%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Body%2A> property of the <xref:System.Messaging.Message> class represents the serialized contents of the message. The body can contain up to 4 MB of data.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the Body property.  
-  
- [!code-cpp[MessagePropertyFilter#9](~/add/codesnippet/cpp/p-system.messaging.messa_91_1.cpp)]
- [!code-cs[MessagePropertyFilter#9](~/add/codesnippet/csharp/p-system.messaging.messa_91_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAll">
@@ -534,7 +303,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,25 +310,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets all Boolean filter values to <see langword="false" />, so that no message properties are retrieved when receiving a message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use ClearAll to set all <xref:System.Messaging.MessagePropertyFilter> Boolean properties to `false`. This causes no message properties to be retrieved when receiving messages. ClearAll does not affect the values for <xref:System.Messaging.MessagePropertyFilter.DefaultBodySize%2A>, <xref:System.Messaging.MessagePropertyFilter.DefaultExtensionSize%2A>, or <xref:System.Messaging.MessagePropertyFilter.DefaultLabelSize%2A>.  
-  
- After calling ClearAll, it is necessary to set at least one filter property to `true` in order to receive data related to a message. You can either set individual properties to `true`, or you can call <xref:System.Messaging.MessagePropertyFilter.SetDefaults%2A> or <xref:System.Messaging.MessagePropertyFilter.SetAll%2A>.  
-  
-   
-  
-## Examples  
- The following code example calls the ClearAll method.  
-  
- [!code-cpp[MessagePropertyFilter#37](~/add/codesnippet/cpp/m-system.messaging.messa_12_1.cpp)]
- [!code-cs[MessagePropertyFilter#37](~/add/codesnippet/csharp/m-system.messaging.messa_12_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -570,7 +321,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -578,8 +328,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a shallow copy of the object.</summary>
-        <returns>A <see cref="T:System.Object" /> that represents an instance of the <see cref="T:System.Messaging.MessagePropertyFilter" /> class.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,7 +340,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -605,29 +354,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.ConnectorType%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.ConnectorType%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.ConnectorType%2A> property of the <xref:System.Messaging.Message> class is required when an application sets a message property that is typically set by Message Queuing. It is used in the following two instances:  
-  
--   When a message is passed by a connector application, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=fullName> is required for the sending and receiving applications to interpret the security and acknowledgment properties of the message.  
-  
--   When sending application-encrypted messages, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=fullName> property informs Message Queuing to use the symmetric key.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the ConnectorType property.  
-  
- [!code-cpp[MessagePropertyFilter#10](~/add/codesnippet/cpp/p-system.messaging.messa_36_1.cpp)]
- [!code-cs[MessagePropertyFilter#10](~/add/codesnippet/csharp/p-system.messaging.messa_36_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrelationId">
@@ -637,7 +366,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -652,26 +380,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.CorrelationId%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.CorrelationId%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.CorrelationId%2A> property of the <xref:System.Messaging.Message> class specifies a message identifier that is used by acknowledgment and report messages to reference the original message. It provides an application-defined identifier that the receiving application can use to sort messages.  
-  
-   
-  
-## Examples  
- The following code example sends and receives a message containing an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
-  
- [!code-cs[Message.Acknowledgment#1](~/add/codesnippet/csharp/p-system.messaging.messa_81_1.cs)]
- [!code-cpp[Message.Acknowledgment#1](~/add/codesnippet/cpp/p-system.messaging.messa_81_1.cpp)]
- [!code-vb[Message.Acknowledgment#1](~/add/codesnippet/visualbasic/p-system.messaging.messa_81_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultBodySize">
@@ -681,7 +392,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -696,25 +406,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size, in bytes, of the default body buffer.</summary>
-        <value>The default body buffer size to create when the message is received. The default is 1024 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default body size specifies the number of bytes to allocate for the message's body contents. The <xref:System.Messaging.Message.Body%2A> property of the <xref:System.Messaging.Message> class represents the serialized contents of the message. The body can contain up to 4 MB of data. Restricting the body size can improve performance.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the DefaultBodySize property.  
-  
- [!code-cpp[MessagePropertyFilter#11](~/add/codesnippet/cpp/p-system.messaging.messa_83_1.cpp)]
- [!code-cs[MessagePropertyFilter#11](~/add/codesnippet/csharp/p-system.messaging.messa_83_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The assigned value is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultExtensionSize">
@@ -724,7 +418,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -739,25 +432,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size, in bytes, of the default extension buffer.</summary>
-        <value>The default extension buffer size to create when the message is received. The default is 255 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default extension size specifies the number of bytes to allocate for the message's extension. The <xref:System.Messaging.Message.Extension%2A> property of the <xref:System.Messaging.Message> class represents the additional, application-defined information associated with the message, such as a binary large object. It is the responsibility of the application to interpret the contents of the <xref:System.Messaging.Message.Extension%2A>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the DefaultExtensionSize property.  
-  
- [!code-cpp[MessagePropertyFilter#12](~/add/codesnippet/cpp/p-system.messaging.messa_94_1.cpp)]
- [!code-cs[MessagePropertyFilter#12](~/add/codesnippet/csharp/p-system.messaging.messa_94_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The assigned value is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultLabelSize">
@@ -767,7 +444,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -782,25 +458,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size, in bytes, of the default label buffer.</summary>
-        <value>The default label buffer size to create when the message is received. The default is 255 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default label size specifies the number of bytes to allocate for the message's label. The <xref:System.Messaging.Message.Label%2A> property of the <xref:System.Messaging.Message> class specifies the label of the message.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the DefaultLabelSize property.  
-  
- [!code-cpp[MessagePropertyFilter#13](~/add/codesnippet/cpp/p-system.messaging.messa_15_1.cpp)]
- [!code-cs[MessagePropertyFilter#13](~/add/codesnippet/csharp/p-system.messaging.messa_15_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The assigned value is negative.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DestinationQueue">
@@ -810,7 +470,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -825,25 +484,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.DestinationQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.DestinationQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.DestinationQueue%2A> property of the <xref:System.Messaging.Message> class identifies the original destination queue of the message. It is typically used to determine the original destination of a message that is in a journal or dead-letter queue. It can also be used when sending a response message back to a response queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the DestinationQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#14](~/add/codesnippet/cpp/p-system.messaging.messa_65_1.cpp)]
- [!code-cs[MessagePropertyFilter#14](~/add/codesnippet/csharp/p-system.messaging.messa_65_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DestinationSymmetricKey">
@@ -853,7 +496,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -868,27 +510,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.DestinationSymmetricKey%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.DestinationSymmetricKey%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.DestinationSymmetricKey%2A> property of the <xref:System.Messaging.Message> class specifies the symmetric key used to encrypt the message. It is required when you send application-encrypted messages, or when you send encrypted messages to a foreign queue.  
-  
- A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the DestinationSymmetricKey property.  
-  
- [!code-cpp[MessagePropertyFilter#15](~/add/codesnippet/cpp/p-system.messaging.messa_72_1.cpp)]
- [!code-cs[MessagePropertyFilter#15](~/add/codesnippet/csharp/p-system.messaging.messa_72_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DigitalSignature">
@@ -898,7 +522,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -913,25 +536,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.DigitalSignature%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.DigitalSignature%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.DigitalSignature%2A> property of the <xref:System.Messaging.Message> class specifies the digital signature used to authenticate the message. In most cases, it is generated and set by Message Queuing when the sending application requests authentication.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the DigitalSignature property.  
-  
- [!code-cpp[MessagePropertyFilter#16](~/add/codesnippet/cpp/p-system.messaging.messa_1_1.cpp)]
- [!code-cs[MessagePropertyFilter#16](~/add/codesnippet/csharp/p-system.messaging.messa_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptionAlgorithm">
@@ -941,7 +548,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -956,25 +562,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.EncryptionAlgorithm%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.EncryptionAlgorithm%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a message is private, it is encrypted before it is sent and decrypted when it is received. The <xref:System.Messaging.Message.EncryptionAlgorithm%2A> property of the <xref:System.Messaging.Message> class specifies the algorithm used to encrypt the message body of a private message.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the EncryptionAlgorithm property.  
-  
- [!code-cpp[MessagePropertyFilter#17](~/add/codesnippet/cpp/p-system.messaging.messa_27_1.cpp)]
- [!code-cs[MessagePropertyFilter#17](~/add/codesnippet/csharp/p-system.messaging.messa_27_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -984,7 +574,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -999,25 +588,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Extension%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Extension%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Extension%2A> property of the <xref:System.Messaging.Message> class provides for additional application-defined information that is associated with the message, like a large binary object. It is the responsibility of the receiving application to interpret the contents of the <xref:System.Messaging.Message.Extension%2A>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the Extension property.  
-  
- [!code-cpp[MessagePropertyFilter#18](~/add/codesnippet/cpp/p-system.messaging.messa_37_1.cpp)]
- [!code-cs[MessagePropertyFilter#18](~/add/codesnippet/csharp/p-system.messaging.messa_37_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">
@@ -1027,7 +600,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1042,25 +614,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.HashAlgorithm%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.HashAlgorithm%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.HashAlgorithm%2A> property of the <xref:System.Messaging.Message> class identifies the hashing algorithm Message Queuing uses when authenticating messages. The hashing algorithm is also used when creating a digital signature for a message.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the HashAlgorithm property.  
-  
- [!code-cpp[MessagePropertyFilter#19](~/add/codesnippet/cpp/p-system.messaging.messa_21_1.cpp)]
- [!code-cs[MessagePropertyFilter#19](~/add/codesnippet/csharp/p-system.messaging.messa_21_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -1070,12 +626,11 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MsgId")</AttributeName>
@@ -1085,25 +640,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Id%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Id%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Id%2A> property of the <xref:System.Messaging.Message> class indicates the Message Queuing-generated unique identifier of the message. This identifier is generated when the message is sent.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the Id property.  
-  
- [!code-cpp[MessagePropertyFilter#20](~/add/codesnippet/cpp/p-system.messaging.messa_6_1.cpp)]
- [!code-cs[MessagePropertyFilter#20](~/add/codesnippet/csharp/p-system.messaging.messa_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFirstInTransaction">
@@ -1113,7 +652,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1128,25 +666,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.IsFirstInTransaction%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.IsFirstInTransaction%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.IsFirstInTransaction%2A> property of the <xref:System.Messaging.Message> class is used by receiving applications to verify whether a message is the first message sent in a single transaction to a single queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the IsFirstInTransaction property.  
-  
- [!code-cpp[MessagePropertyFilter#50](~/add/codesnippet/cpp/p-system.messaging.messa_16_1.cpp)]
- [!code-cs[MessagePropertyFilter#50](~/add/codesnippet/csharp/p-system.messaging.messa_16_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLastInTransaction">
@@ -1156,7 +678,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1171,25 +692,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.IsLastInTransaction%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.IsLastInTransaction%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.IsLastInTransaction%2A> property of the <xref:System.Messaging.Message> class is used by receiving applications to verify whether a message is the last message sent from a single transaction to a single queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the IsLastInTransaction property.  
-  
- [!code-cpp[MessagePropertyFilter#51](~/add/codesnippet/cpp/p-system.messaging.messa_89_1.cpp)]
- [!code-cs[MessagePropertyFilter#51](~/add/codesnippet/csharp/p-system.messaging.messa_89_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -1199,7 +704,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1214,25 +718,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Label%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Label%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Label%2A> property of the <xref:System.Messaging.Message> class specifies the label of the message.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the Label property.  
-  
- [!code-cpp[MessagePropertyFilter#21](~/add/codesnippet/cpp/p-system.messaging.messa_99_1.cpp)]
- [!code-cs[MessagePropertyFilter#21](~/add/codesnippet/csharp/p-system.messaging.messa_99_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupId">
@@ -1242,7 +730,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1257,17 +744,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.LookupId%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.LookupId%2A" /> property information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.LookupId%2A> property of the <xref:System.Messaging.Message> class specifies the lookup identifier of the message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageType">
@@ -1277,7 +756,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1292,25 +770,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.MessageType%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.MessageType%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.MessageType%2A> property of the <xref:System.Messaging.Message> class identifies the type of the message. A message can be a normal message, a positive or negative acknowledgment message, or a report message.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the MessageType property.  
-  
- [!code-cpp[MessagePropertyFilter#22](~/add/codesnippet/cpp/p-system.messaging.messa_39_1.cpp)]
- [!code-cs[MessagePropertyFilter#22](~/add/codesnippet/csharp/p-system.messaging.messa_39_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -1320,7 +782,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1335,28 +796,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Priority%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Priority%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Priority%2A> property of the <xref:System.Messaging.Message> class affects how Message Queuing handles the message while it is en route, as well as where the message is placed in the queue when it reaches its destination.  
-  
- Message priority can only be set meaningfully for non-transactional messages. The priority for transactional messages is automatically set to zero, which causes transactional message priority to be ignored.  
-  
-   
-  
-## Examples  
- The following code example sends two messages of different priorities to the queue, and retrieves them subsequently.  
-  
- [!code-cpp[Message.DefaultPropertiesToSend#1](~/add/codesnippet/cpp/p-system.messaging.messa_49_1.cpp)]
- [!code-vb[Message.DefaultPropertiesToSend#1](~/add/codesnippet/visualbasic/p-system.messaging.messa_49_1.vb)]
- [!code-cs[Message.DefaultPropertiesToSend#1](~/add/codesnippet/csharp/p-system.messaging.messa_49_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Recoverable">
@@ -1366,7 +808,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1381,27 +822,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.Recoverable%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.Recoverable%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.Recoverable%2A> property of the <xref:System.Messaging.Message> class indicates whether delivery of a message is guaranteed, even if a computer crashes while the message is en route to the destination queue.  
-  
- If delivery of a message is guaranteed, the message is stored locally at every step until the message is successfully forwarded to the next computer. Setting <xref:System.Messaging.Message.Recoverable%2A?displayProperty=fullName> to `true` on the message could affect the throughput.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the Recoverable property.  
-  
- [!code-cpp[MessagePropertyFilter#23](~/add/codesnippet/cpp/p-system.messaging.messa_62_1.cpp)]
- [!code-cs[MessagePropertyFilter#23](~/add/codesnippet/csharp/p-system.messaging.messa_62_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResponseQueue">
@@ -1411,7 +834,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1426,27 +848,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.ResponseQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.ResponseQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.ResponseQueue%2A> property of the <xref:System.Messaging.Message> class identifies the queue that receives application-generated response messages that are sent back to the sending application by the receiving application. Response queues are specified by the sending application when the application sends its messages. Any available queue can be specified as a response queue.  
-  
- Messages returned to the response queue are application-specific. The application must define what is in the messages as well as what is to be done when a message is received.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the ResponseQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#24](~/add/codesnippet/cpp/p-system.messaging.messa_64_1.cpp)]
- [!code-cs[MessagePropertyFilter#24](~/add/codesnippet/csharp/p-system.messaging.messa_64_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCertificate">
@@ -1456,7 +860,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1471,25 +874,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.SenderCertificate%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.SenderCertificate%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.SenderCertificate%2A> property of the <xref:System.Messaging.Message> class specifies the security certificate used to authenticate messages.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the SenderCertificate property.  
-  
- [!code-cpp[MessagePropertyFilter#25](~/add/codesnippet/cpp/p-system.messaging.messa_60_1.cpp)]
- [!code-cs[MessagePropertyFilter#25](~/add/codesnippet/csharp/p-system.messaging.messa_60_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderId">
@@ -1499,7 +886,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1514,25 +900,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.SenderId%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.SenderId%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.SenderId%2A> property of the <xref:System.Messaging.Message> class is used primarily by the receiving queue manager when authenticating a message. The property is set by Message Queuing and is used by the queue manager to verify who sent the message and that the sender has access rights to the receiving queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the SenderId property.  
-  
- [!code-cpp[MessagePropertyFilter#26](~/add/codesnippet/cpp/p-system.messaging.messa_24_1.cpp)]
- [!code-cs[MessagePropertyFilter#26](~/add/codesnippet/csharp/p-system.messaging.messa_24_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderVersion">
@@ -1542,7 +912,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1557,27 +926,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.SenderVersion%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.SenderVersion%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.SenderVersion%2A> property of the <xref:System.Messaging.Message> class specifies the version of Message Queuing used to send the message. The property is important to be aware of when using features like transaction processing, which is only supported by Message Queuing version 2.0 and later, or digital signatures, which are used to authenticate messages sent by version 1.0.  
-  
- <xref:System.Messaging.Message.SenderVersion%2A?displayProperty=fullName> is set by the sending queue manager when the message is sent.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the SenderVersion property.  
-  
- [!code-cpp[MessagePropertyFilter#27](~/add/codesnippet/cpp/p-system.messaging.messa_102_1.cpp)]
- [!code-cs[MessagePropertyFilter#27](~/add/codesnippet/csharp/p-system.messaging.messa_102_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SentTime">
@@ -1587,7 +938,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1602,25 +952,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.SentTime%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.SentTime%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.SentTime%2A> property of the <xref:System.Messaging.Message> class indicates the sending machine's date and time when the message was sent by the source Queue Manager.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the SentTime property.  
-  
- [!code-cpp[MessagePropertyFilter#28](~/add/codesnippet/cpp/p-system.messaging.messa_97_1.cpp)]
- [!code-cs[MessagePropertyFilter#28](~/add/codesnippet/csharp/p-system.messaging.messa_97_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAll">
@@ -1630,7 +964,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1638,25 +971,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Specifies to retrieve all message properties when receiving a message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use SetAll to set all Boolean <xref:System.Messaging.MessagePropertyFilter> properties to `true`. This causes all message properties to be retrieved when receiving messages. SetAll does not affect the values for <xref:System.Messaging.MessagePropertyFilter.DefaultBodySize%2A>, <xref:System.Messaging.MessagePropertyFilter.DefaultExtensionSize%2A>, or <xref:System.Messaging.MessagePropertyFilter.DefaultLabelSize%2A>.  
-  
- After calling SetAll, you can set individual filter values to `false` in order to restrict the properties retrieved when the message is received.  
-  
-   
-  
-## Examples  
- The following code example calls the SetAll method.  
-  
- [!code-cpp[MessagePropertyFilter#39](~/add/codesnippet/cpp/m-system.messaging.messa_48_1.cpp)]
- [!code-cs[MessagePropertyFilter#39](~/add/codesnippet/csharp/m-system.messaging.messa_48_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDefaults">
@@ -1666,7 +982,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1674,55 +989,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the filter values of common Message Queuing properties to <see langword="true" /> and the integer-valued properties to their default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use SetDefaults to set the following <xref:System.Messaging.MessagePropertyFilter> Boolean-valued properties to `true`. These are the most common properties a <xref:System.Messaging.MessageQueue> will typically interact with the following:  
-  
--   <xref:System.Messaging.MessagePropertyFilter.AcknowledgeType%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.Acknowledgment%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.AdministrationQueue%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.Body%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.Id%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.Label%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.LookupId%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.MessageType%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.ResponseQueue%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.UseDeadLetterQueue%2A>  
-  
--   <xref:System.Messaging.MessagePropertyFilter.UseJournalQueue%2A>  
-  
- SetDefaults sets the properties in the following table to their default values.  
-  
-|Property|Default value|  
-|--------------|-------------------|  
-|<xref:System.Messaging.MessagePropertyFilter.DefaultBodySize%2A>|1024|  
-|<xref:System.Messaging.MessagePropertyFilter.DefaultExtensionSize%2A>|255|  
-|<xref:System.Messaging.MessagePropertyFilter.DefaultLabelSize%2A>|255|  
-  
- The <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A?displayProperty=fullName> property represents a <xref:System.Messaging.MessagePropertyFilter> on which SetDefaults has been called.  
-  
-   
-  
-## Examples  
- The following code example calls the SetDefaults method.  
-  
- [!code-cpp[MessagePropertyFilter#38](~/add/codesnippet/cpp/m-system.messaging.messa_45_1.cpp)]
- [!code-cs[MessagePropertyFilter#38](~/add/codesnippet/csharp/m-system.messaging.messa_45_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceMachine">
@@ -1732,7 +1000,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1747,25 +1014,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.SourceMachine%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.SourceMachine%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.SourceMachine%2A> property of the <xref:System.Messaging.Message> class specifies the computer where the message originated.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the SourceMachine property.  
-  
- [!code-cpp[MessagePropertyFilter#29](~/add/codesnippet/cpp/p-system.messaging.messa_40_1.cpp)]
- [!code-cs[MessagePropertyFilter#29](~/add/codesnippet/csharp/p-system.messaging.messa_40_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeToBeReceived">
@@ -1775,7 +1026,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1790,25 +1040,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.TimeToBeReceived%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.TimeToBeReceived%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.TimeToBeReceived%2A> property of the <xref:System.Messaging.Message> class specifies the total time in seconds for a sent message to be received from the destination queue. The time limit for the message to be retrieved from the target queue includes the time spent getting to the destination queue, plus the time spent waiting in the queue before the message is retrieved by an application.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the TimeToBeReceived property.  
-  
- [!code-cpp[MessagePropertyFilter#30](~/add/codesnippet/cpp/p-system.messaging.messa_0_1.cpp)]
- [!code-cs[MessagePropertyFilter#30](~/add/codesnippet/csharp/p-system.messaging.messa_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeToReachQueue">
@@ -1818,7 +1052,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1833,25 +1066,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.TimeToReachQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.TimeToReachQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.TimeToReachQueue%2A> property of the <xref:System.Messaging.Message> class specifies a time limit in seconds from the time the message is sent for it to reach the destination queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the TimeToReachQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#31](~/add/codesnippet/cpp/p-system.messaging.messa_51_1.cpp)]
- [!code-cs[MessagePropertyFilter#31](~/add/codesnippet/csharp/p-system.messaging.messa_51_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionId">
@@ -1861,7 +1078,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1876,25 +1092,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.TransactionId%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.TransactionId%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.TransactionId%2A> property of the <xref:System.Messaging.Message> class identifies the transaction that sent the message. Use this property within a receiving application to verify that a message was sent as part of a specific transaction.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the TransactionId property.  
-  
- [!code-cpp[MessagePropertyFilter#52](~/add/codesnippet/cpp/p-system.messaging.messa_46_1.cpp)]
- [!code-cs[MessagePropertyFilter#52](~/add/codesnippet/csharp/p-system.messaging.messa_46_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionStatusQueue">
@@ -1904,7 +1104,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1919,27 +1118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.TransactionStatusQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.TransactionStatusQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.TransactionStatusQueue%2A> property of the <xref:System.Messaging.Message> class identifies the transaction status queue on the source computer. The property is used for sending acknowledgment messages back to the sending application. The transaction status queue is used by connector applications when receiving transactional messages sent to a foreign queue.  
-  
- A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the TransactionStatusQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#53](~/add/codesnippet/cpp/p-system.messaging.messa_29_1.cpp)]
- [!code-cs[MessagePropertyFilter#53](~/add/codesnippet/csharp/p-system.messaging.messa_29_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAuthentication">
@@ -1949,7 +1130,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1964,27 +1144,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.UseAuthentication%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.UseAuthentication%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.UseAuthentication%2A> property of the <xref:System.Messaging.Message> class specifies whether the message needs to be authenticated.  
-  
- It is not possible to look at the properties of a message and determine whether a message failed authentication. Messages that fail authentication are discarded and are not delivered to the queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the UseAuthentication property.  
-  
- [!code-cpp[MessagePropertyFilter#32](~/add/codesnippet/cpp/p-system.messaging.messa_34_1.cpp)]
- [!code-cs[MessagePropertyFilter#32](~/add/codesnippet/csharp/p-system.messaging.messa_34_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDeadLetterQueue">
@@ -1994,7 +1156,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2009,25 +1170,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.UseDeadLetterQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.UseDeadLetterQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.UseDeadLetterQueue%2A> property of the <xref:System.Messaging.Message> class specifies whether a copy of a message that could not be delivered should be sent to a dead-letter queue.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the UseDeadLetterQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#33](~/add/codesnippet/cpp/p-system.messaging.messa_58_1.cpp)]
- [!code-cs[MessagePropertyFilter#33](~/add/codesnippet/csharp/p-system.messaging.messa_58_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseEncryption">
@@ -2037,7 +1182,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2052,25 +1196,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.UseEncryption%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.UseEncryption%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.UseEncryption%2A> property of the <xref:System.Messaging.Message> class specifies whether to encrypt a message.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the UseEncryption property.  
-  
- [!code-cpp[MessagePropertyFilter#34](~/add/codesnippet/cpp/p-system.messaging.messa_35_1.cpp)]
- [!code-cs[MessagePropertyFilter#34](~/add/codesnippet/csharp/p-system.messaging.messa_35_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -2080,7 +1208,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2095,25 +1222,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.UseJournalQueue%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.UseJournalQueue%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.UseJournalQueue%2A> property of the <xref:System.Messaging.Message> class specifies whether a copy of the message should be kept in a machine journal on the originating computer.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the UseJournalQueue property.  
-  
- [!code-cpp[MessagePropertyFilter#35](~/add/codesnippet/cpp/p-system.messaging.messa_44_1.cpp)]
- [!code-cs[MessagePropertyFilter#35](~/add/codesnippet/csharp/p-system.messaging.messa_44_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseTracing">
@@ -2123,7 +1234,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2138,27 +1248,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to retrieve <see cref="System.Messaging.Message.UseTracing%2A" /> property information when receiving or peeking a message.</summary>
-        <value>
-          <see langword="true" /> to receive <see cref="System.Messaging.Message.UseTracing%2A" /> information; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Messaging.Message.UseTracing%2A> property of the <xref:System.Messaging.Message> class specifies whether to track the route of a message as it moves toward its destination queue. If `true`, each time the original message passes through a Message Queuing routing server, a Message Queuing-generated report message is sent to the system report queue.  
-  
- Using tracing involves setting up Active Directory and specifying a report queue for the Message Queuing enterprise. These settings are configured by the administrator.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the UseTracing property.  
-  
- [!code-cpp[MessagePropertyFilter#36](~/add/codesnippet/cpp/p-system.messaging.messa_14_1.cpp)]
- [!code-cs[MessagePropertyFilter#36](~/add/codesnippet/csharp/p-system.messaging.messa_14_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

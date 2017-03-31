@@ -16,22 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Creates a timer for a specified duration, using a <see cref="T:System.Activities.Statements.TimerExtension" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the activity’s timer expires, the Delay activity completes its execution. If a workflow instance persists while a Delay activity has an outstanding timer, then an <xref:System.ServiceModel.Activities.Description.ITimerExpiredNotification> standard endpoint must be configured to receive notification that the timer has expired.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates creating a Delay activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,17 +31,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Delay" /> activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Delay> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md)sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -160,18 +137,9 @@
         <ReturnType>System.Activities.InArgument&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The duration of the timer that the <see cref="T:System.Activities.Statements.Delay" /> activity creates. If the duration is set to <see cref="System.TimeSpan.MaxValue%2A" />, the delay is infinite.</summary>
-        <value>The timer duration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates using Duration in a <xref:System.Activities.Statements.Delay> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
-  
- [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">

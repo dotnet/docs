@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBox" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Displays a message window, also known as a dialog box, which presents a message to the user. It is a modal window, blocking other actions in the application until the user closes it. A MessageBox can contain text, buttons, and symbols that inform and instruct the user.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create a new instance of the MessageBox class. To display a message box, call the `static` method <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. The title, message, buttons, and icons displayed in the message box are determined by parameters that you pass to this method.  
-  
-   
-  
-## Examples  
- The following code example shows how to use a MessageBox to inform the user of a missing entry in a <xref:System.Windows.Forms.TextBox>. This example requires that the method is called from an existing form with a <xref:System.Windows.Forms.TextBox> named **ServerName** on it.  
-  
- [!code-cs[MessageBox.Show Variations#1](~/add/codesnippet/csharp/t-system.windows.forms.m_16_1.cs)]
- [!code-cpp[MessageBox.Show Variations#1](~/add/codesnippet/cpp/t-system.windows.forms.m_16_1.cpp)]
- [!code-vb[MessageBox.Show Variations#1](~/add/codesnippet/visualbasic/t-system.windows.forms.m_16_1.vb)]  
-  
- The following code example shows how to ask the user a yes or no question and make a decision based on the response.  
-  
- [!code-cs[Classic MessageBox Example#1](~/add/codesnippet/csharp/t-system.windows.forms.m_16_2.cs)]
- [!code-cpp[Classic MessageBox Example#1](~/add/codesnippet/cpp/t-system.windows.forms.m_16_2.cpp)]
- [!code-vb[Classic MessageBox Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.m_16_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Show">
@@ -45,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,26 +31,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <summary>Displays a message box with specified text.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the message box displays an **OK** button. The message box does not contain a caption in the title.  
-  
-   
-  
-## Examples  
- The following code example displays a simple message box.  
-  
- [!code-cs[MessageBox.Show Variations#6](~/add/codesnippet/csharp/m-system.windows.forms.m_24_1.cs)]
- [!code-vb[MessageBox.Show Variations#6](~/add/codesnippet/visualbasic/m-system.windows.forms.m_24_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to set this property. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -84,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,19 +54,11 @@
         <Parameter Name="caption" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <summary>Displays a message box with specified text and caption.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the message box displays an **OK** button.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -117,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,21 +78,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <summary>Displays a message box in front of the specified object and with the specified text.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- By default, the message box displays an **OK** button. The message box does not contain a caption in the title.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -152,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,31 +103,12 @@
         <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <summary>Displays a message box with specified text, caption, and buttons.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#1](~/add/codesnippet/csharp/e3b03beb-cdf1-41be-a632-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#1](~/add/codesnippet/cpp/e3b03beb-cdf1-41be-a632-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#1](~/add/codesnippet/visualbasic/e3b03beb-cdf1-41be-a632-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="buttons" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -198,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,22 +129,12 @@
         <Parameter Name="caption" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <summary>Displays a message box in front of the specified object and with the specified text and caption.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- By default, the message box displays an **OK** button.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -235,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,36 +156,13 @@
         <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <summary>Displays a message box with specified text, caption, buttons, and icon.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates one of the <xref:System.Windows.Forms.MessageBox.Show%2A> methods when handling the <xref:System.Windows.Forms.ComboBox.DropDown?displayProperty=fullName> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method from the form's constructor or `Load` method.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/visualbasic/1b383f17-b2fa-4123-82d6-_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/cpp/1b383f17-b2fa-4123-82d6-_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/csharp/1b383f17-b2fa-4123-82d6-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="buttons" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- The <paramref name="icon" /> parameter specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -287,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,35 +184,13 @@
         <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <summary>Displays a message box in front of the specified object and with the specified text, caption, and buttons.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#5](~/add/codesnippet/csharp/acd3d103-3f60-470f-9c61-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#5](~/add/codesnippet/cpp/acd3d103-3f60-470f-9c61-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#5](~/add/codesnippet/visualbasic/acd3d103-3f60-470f-9c61-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -338,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -352,42 +213,14 @@
         <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, and default button.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#3](~/add/codesnippet/csharp/7f9fb4ed-34a6-408f-8645-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#3](~/add/codesnippet/cpp/7f9fb4ed-34a6-408f-8645-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#3](~/add/codesnippet/visualbasic/7f9fb4ed-34a6-408f-8645-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- <paramref name="defaultButton" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -397,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -411,40 +243,14 @@
         <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <summary>Displays a message box in front of the specified object and with the specified text, caption, buttons, and icon.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#4](~/add/codesnippet/csharp/77732831-cb10-4d94-a84c-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#4](~/add/codesnippet/cpp/77732831-cb10-4d94-a84c-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#4](~/add/codesnippet/visualbasic/77732831-cb10-4d94-a84c-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -454,7 +260,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,49 +274,15 @@
         <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, and options.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the <xref:System.Windows.Forms.MessageBoxOptions> member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#2](~/add/codesnippet/csharp/00008682-fe75-4d4c-9a47-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#2](~/add/codesnippet/cpp/00008682-fe75-4d4c-9a47-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#2](~/add/codesnippet/visualbasic/00008682-fe75-4d4c-9a47-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -521,7 +292,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,45 +306,15 @@
         <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <summary>Displays a message box in front of the specified object and with the specified text, caption, buttons, icon, and default button.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#2](~/add/codesnippet/csharp/5ccba85e-76f9-419d-8da2-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#2](~/add/codesnippet/cpp/5ccba85e-76f9-419d-8da2-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#2](~/add/codesnippet/visualbasic/5ccba85e-76f9-419d-8da2-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- <paramref name="defaultButton" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -584,7 +324,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -600,56 +339,16 @@
         <Parameter Name="displayHelpButton" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="displayHelpButton">
-          <see langword="true" /> to show the Help button; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- When the user clicks the Help button, the form that owns the message box (or the active form) receives the <xref:System.Windows.Forms.Control.HelpRequested> event. Handle the <xref:System.Windows.Forms.Control.HelpRequested> event to perform custom Help actions.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box with a Help button, handle the <xref:System.Windows.Forms.Control.HelpRequested?displayProperty=fullName> event, and show a custom help window in response to the event.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/7915bdc4-8eea-4026-9538-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/7915bdc4-8eea-4026-9538-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/7915bdc4-8eea-4026-9538-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#2](~/add/codesnippet/cpp/7915bdc4-8eea-4026-9538-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#2](~/add/codesnippet/visualbasic/7915bdc4-8eea-4026-9538-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#2](~/add/codesnippet/csharp/7915bdc4-8eea-4026-9538-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="displayHelpButton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -659,7 +358,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -675,59 +373,16 @@
         <Parameter Name="helpFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- When the user clicks Help button, the Help file specified in the `helpFilePath` parameter is opened. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/3f2aed34-f9ab-4de1-9887-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/3f2aed34-f9ab-4de1-9887-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/3f2aed34-f9ab-4de1-9887-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#3](~/add/codesnippet/cpp/3f2aed34-f9ab-4de1-9887-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#3](~/add/codesnippet/visualbasic/3f2aed34-f9ab-4de1-9887-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#3](~/add/codesnippet/csharp/3f2aed34-f9ab-4de1-9887-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -737,7 +392,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -753,56 +407,16 @@
         <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values the specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <summary>Displays a message box in front of the specified object and with the specified text, caption, buttons, icon, default button, and options.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner. A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- You can have a maximum of three buttons on the message box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#2](~/add/codesnippet/csharp/6237ea06-df1b-4c68-89c7-_1.cs)]
- [!code-cpp[MessageBox.Show Variations#2](~/add/codesnippet/cpp/6237ea06-df1b-4c68-89c7-_1.cpp)]
- [!code-vb[MessageBox.Show Variations#2](~/add/codesnippet/visualbasic/6237ea06-df1b-4c68-89c7-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- <paramref name="defaultButton" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="options" /> specified <see cref="T:System.Windows.Forms.MessageBoxOptions" /> or <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and specified a value in the <paramref name="owner" /> parameter. These two options should be used only if you invoke the version of this method that does not take an <paramref name="owner" /> parameter.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -812,7 +426,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -829,58 +442,17 @@
         <Parameter Name="keyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <param name="keyword">The Help keyword to display when the user clicks the Help button.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and Help keyword.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help keyword topic identified by the `keyword` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the topic identified by the `mspaint.chm::/paint_brush.htm` keyword is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/9f3c3f3b-2966-4e88-9c17-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/9f3c3f3b-2966-4e88-9c17-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/9f3c3f3b-2966-4e88-9c17-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#9](~/add/codesnippet/cpp/9f3c3f3b-2966-4e88-9c17-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#9](~/add/codesnippet/visualbasic/9f3c3f3b-2966-4e88-9c17-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#9](~/add/codesnippet/csharp/9f3c3f3b-2966-4e88-9c17-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="keyword">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -890,7 +462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -907,62 +478,17 @@
         <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and <see langword="HelpNavigator" />.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- When the user clicks the Help button, the help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/5873cecf-5724-4803-8b65-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/5873cecf-5724-4803-8b65-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/5873cecf-5724-4803-8b65-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#5](~/add/codesnippet/cpp/5873cecf-5724-4803-8b65-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#5](~/add/codesnippet/visualbasic/5873cecf-5724-4803-8b65-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#5](~/add/codesnippet/csharp/5873cecf-5724-4803-8b65-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -972,7 +498,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -989,60 +514,17 @@
         <Parameter Name="helpFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
-  
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box that parented to the main form. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/02b527de-a449-4be2-8947-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/02b527de-a449-4be2-8947-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/02b527de-a449-4be2-8947-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#4](~/add/codesnippet/cpp/02b527de-a449-4be2-8947-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#4](~/add/codesnippet/visualbasic/02b527de-a449-4be2-8947-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#4](~/add/codesnippet/csharp/02b527de-a449-4be2-8947-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1052,7 +534,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1070,65 +551,18 @@
         <Parameter Name="param" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
-        <param name="param">The numeric ID of the Help topic to display when the user clicks the Help button.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file, <see langword="HelpNavigator" />, and Help topic.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur.  
-  
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box with a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab and the topic identified by the `ovals` keyword are displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/ff859817-4d08-4dcf-9e86-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/ff859817-4d08-4dcf-9e86-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/ff859817-4d08-4dcf-9e86-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#7](~/add/codesnippet/cpp/ff859817-4d08-4dcf-9e86-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#7](~/add/codesnippet/visualbasic/ff859817-4d08-4dcf-9e86-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#7](~/add/codesnippet/csharp/ff859817-4d08-4dcf-9e86-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1138,7 +572,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1156,59 +589,18 @@
         <Parameter Name="keyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <param name="keyword">The Help keyword to display when the user clicks the Help button.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and Help keyword.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level owner.  
-  
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help keyword topic identified by the `keyword` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the topic identified by the `mspaint.chm::/paint_brush.htm` keyword is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/7759fcea-b7f2-4cd5-ac2e-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/7759fcea-b7f2-4cd5-ac2e-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/7759fcea-b7f2-4cd5-ac2e-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#10](~/add/codesnippet/cpp/7759fcea-b7f2-4cd5-ac2e-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#10](~/add/codesnippet/visualbasic/7759fcea-b7f2-4cd5-ac2e-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#10](~/add/codesnippet/csharp/7759fcea-b7f2-4cd5-ac2e-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="keyword">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1218,7 +610,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1236,63 +627,18 @@
         <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and <see langword="HelpNavigator" />.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
-  
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab is displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/b95a4f80-42d1-48b7-bfda-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/b95a4f80-42d1-48b7-bfda-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/b95a4f80-42d1-48b7-bfda-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#6](~/add/codesnippet/cpp/b95a4f80-42d1-48b7-bfda-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#6](~/add/codesnippet/visualbasic/b95a4f80-42d1-48b7-bfda-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#6](~/add/codesnippet/csharp/b95a4f80-42d1-48b7-bfda-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -1302,7 +648,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1321,66 +666,19 @@
         <Parameter Name="param" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="owner">An implementation of <see cref="T:System.Windows.Forms.IWin32Window" /> that will own the modal dialog box.</param>
-        <param name="text">The text to display in the message box.</param>
-        <param name="caption">The text to display in the title bar of the message box.</param>
-        <param name="buttons">One of the <see cref="T:System.Windows.Forms.MessageBoxButtons" /> values that specifies which buttons to display in the message box.</param>
-        <param name="icon">One of the <see cref="T:System.Windows.Forms.MessageBoxIcon" /> values that specifies which icon to display in the message box.</param>
-        <param name="defaultButton">One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" /> values that specifies the default button for the message box.</param>
-        <param name="options">One of the <see cref="T:System.Windows.Forms.MessageBoxOptions" /> values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
-        <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
-        <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
-        <param name="param">The numeric ID of the Help topic to display when the user clicks the Help button.</param>
-        <summary>Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file, <see langword="HelpNavigator" />, and Help topic.</summary>
-        <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message box is a modal dialog box, which means no input (keyboard or mouse click) can occur except to objects on the modal form. The program must hide or close a modal form (typically in response to some user action) before input to another form can occur. You can use the `owner` parameter to specify a particular object, which implements the <xref:System.Windows.Forms.IWin32Window> interface, that will serve as the dialog box's top-level window and owner.  
-  
- When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
-  
- Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
-  
- You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
-  
- The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to show a message box parented to the main window. The message box displays a Help button. When the user clicks the Help button, the `Mspaint.chm` Help file is opened and the Help index tab and the topic identified by the `ovals` keyword are displayed. The example requires that the `Mspaint.chm` Help file is installed.  
-  
- [!code-cpp[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/cpp/bfc745af-b1e8-438d-84eb-_1.cpp)]
- [!code-vb[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/visualbasic/bfc745af-b1e8-438d-84eb-_1.vb)]
- [!code-cs[System.Windows.Forms.MessageBox with Help#1](~/add/codesnippet/csharp/bfc745af-b1e8-438d-84eb-_1.cs)]  
-[!code-cpp[System.Windows.Forms.MessageBox with Help#8](~/add/codesnippet/cpp/bfc745af-b1e8-438d-84eb-_2.cpp)]
-[!code-vb[System.Windows.Forms.MessageBox with Help#8](~/add/codesnippet/visualbasic/bfc745af-b1e8-438d-84eb-_2.vb)]
-[!code-cs[System.Windows.Forms.MessageBox with Help#8](~/add/codesnippet/csharp/bfc745af-b1e8-438d-84eb-_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="buttons" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.  
-  
- -or-  
-  
- <paramref name="icon" /> is not a member of <see cref="T:System.Windows.Forms.MessageBoxIcon" />.  
-  
- -or-  
-  
- The <paramref name="defaultButton" /> specified is not a member of <see cref="T:System.Windows.Forms.MessageBoxDefaultButton" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt was made to display the <see cref="T:System.Windows.Forms.MessageBox" /> in a process that is not running in User Interactive mode. This is specified by the <see cref="System.Windows.Forms.SystemInformation.UserInteractive%2A" /> property.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="options" /> specified both <see cref="T:System.Windows.Forms.MessageBoxOptions" /> and <see cref="T:System.Windows.Forms.MessageBoxOptions" />.  
-  
- -or-  
-  
- <paramref name="buttons" /> specified an invalid combination of <see cref="T:System.Windows.Forms.MessageBoxButtons" />.</exception>
-        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
-        <permission cref="T:System.Net.WebPermission">to access a HTML help file through a HTTP request. Associated enumeration: <see cref="T:System.Net.NetworkAccess" /></permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to access a HTML help file not served from a HTTP server. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

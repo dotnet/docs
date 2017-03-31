@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SpecialSetting" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the special setting category of a application settings property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SpecialSetting enumeration defines a set of special categories that are applied to application settings properties with the ttribute class.  
-  
-> [!CAUTION]
->  The default settings provider, <xref:System.Configuration.LocalFileSettingsProvider>, does not encrypt or otherwise protect connection strings. It simple stores this type of settings in a separate `<connectionstrings>` section in the appropriate configuration file.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ConnectionString">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SpecialSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration property represents a connection string, typically for a data store or network resource.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WebServiceUrl">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SpecialSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration property represents a Uniform Resource Locator (URL) to a Web service.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

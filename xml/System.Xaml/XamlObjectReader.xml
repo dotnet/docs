@@ -11,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a <see cref="T:System.Xaml.XamlReader" /> implementation that reads object graphs and generates a XAML node stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the XamlObjectReader in scenarios where you want to process an object graph, which is typically the object graph of an application that is originally generated from a XAML source. You might use the XamlObjectReaderwhere a round trip is made from a XAML start point to a XAML end point. Or you might run a XamlObjectReader over the object graph; process the intermediate XAML node stream, if it is required, by using APIs on <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>; and then use <xref:System.Xaml.XamlXmlWriter> to serialize XAML nodes to XML.  
-  
- More advanced scenarios might supply a <xref:System.Xaml.XamlXmlWriter> override and a specific XAML schema context that the XamlObjectReader uses and then passes to the writer override.  
-  
- Typical scenarios for using XamlObjectReader call the members that XamlObjectReader implements; they also call <xref:System.Xaml.XamlReader.Close%2A>, <xref:System.Xaml.XamlReader.ReadSubtree%2A>, and <xref:System.Xaml.XamlReader.Skip%2A> from the <xref:System.Xaml.XamlReader> base class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,16 +28,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">The root of the object tree / object graph to read.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial settings of a default <xref:System.Xaml.XamlObjectReaderSettings>object and the initial context of a default <xref:System.Xaml.XamlSchemaContext>.  
-  
- ]]></format>
-        </remarks>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,19 +47,10 @@
         <Parameter Name="settings" Type="System.Xaml.XamlObjectReaderSettings" />
       </Parameters>
       <Docs>
-        <param name="instance">The root of the object tree to read.</param>
-        <param name="settings">A settings object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class with the specified reader settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The settings object specifies rules for reader operations, such as line number processing, error handling behavior, and so on. For more information, see <xref:System.Xaml.XamlObjectReaderSettings>.  
-  
- If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial context of a default <xref:System.Xaml.XamlSchemaContext>.  
-  
- ]]></format>
-        </remarks>
+        <param name="instance">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,19 +67,10 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="instance">The root of the object tree to read.</param>
-        <param name="schemaContext">The schema context for the reader to use.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class with the specified schema context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial settings of a default <xref:System.Xaml.XamlObjectReaderSettings> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+        <param name="instance">To be added.</param>
+        <param name="schemaContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,20 +88,11 @@
         <Parameter Name="settings" Type="System.Xaml.XamlObjectReaderSettings" />
       </Parameters>
       <Docs>
-        <param name="instance">The root of the object tree to read.</param>
-        <param name="schemaContext">The schema context for the reader to use.</param>
-        <param name="settings">A settings object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class with the specified schema context and reader settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The settings object specifies rules for reader operations, such as line number processing and error handling behavior. For more information, see <xref:System.Xaml.XamlObjectReaderSettings>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+        <param name="instance">To be added.</param>
+        <param name="schemaContext">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -153,8 +108,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object instance that is available at the current reader position.</summary>
-        <value>The object instance at the current reader position; or <see langword="null" /> if the reader position is not on an object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +126,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that reports whether the reader position is at the end of the file.</summary>
-        <value>
-          <see langword="true" /> if the reader position is at the end of the file; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +144,8 @@
         <ReturnType>System.Xaml.XamlMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current <see cref="T:System.Xaml.XamlMember" /> at the reader position, if the reader position is on a <see cref="T:System.Xaml.XamlNodeType" />.</summary>
-        <value>The current member; or <see langword="null" /> if the reader position is not on a member.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,16 +162,9 @@
         <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the XAML namespace declaration from the current reader position.</summary>
-        <value>The XAML namespace declaration if the reader is positioned on a <see cref="T:System.Xaml.XamlNodeType" />; otherwise, <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType>. It does not infer a namespace that is based on the context of other node types, such as an object in that namespace.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -233,16 +180,9 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the current node.</summary>
-        <value>The type of the current node.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using the <xref:System.Xaml.XamlObjectReader> APIs, you typically check the NodeType property after every operation that potentially advances the reader position, such as the <xref:System.Xaml.XamlObjectReader.Read%2A>, <xref:System.Xaml.XamlReader.ReadSubtree%2A>, or <xref:System.Xaml.XamlReader.Skip%2A> methods. NodeType indicates the information that you can obtain from the current reader position and the methods that you call next. For example, you might access the <xref:System.Xaml.XamlObjectReader.Member%2A>, <xref:System.Xaml.XamlObjectReader.Type%2A>, <xref:System.Xaml.XamlObjectReader.Value%2A>, or <xref:System.Xaml.XamlObjectReader.Instance%2A> properties; or you might call the <xref:System.Xaml.XamlReader.Skip%2A> method if you are not interested in the contents of the current node type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -259,17 +199,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides the next XAML node from the source object graph, if a node is available.</summary>
-        <returns>
-          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After you call the Read method and obtain a `true` result, you typically access the node properties. Depending on the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property, you can access the <xref:System.Xaml.XamlObjectReader.Member%2A>, <xref:System.Xaml.XamlObjectReader.Type%2A>, <xref:System.Xaml.XamlObjectReader.Value%2A>, or <xref:System.Xaml.XamlObjectReader.Instance%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaContext">
@@ -285,16 +217,9 @@
         <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that provides schema information for the information set.</summary>
-        <value>An object that provides schema information for the information set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The schema context is a conceptual intermediary between a schema in the conventional sense, and the handling of XAML schema concepts by particular XAML processors (parsing, reading, and writing operations).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -310,16 +235,9 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the object at the current reader position.</summary>
-        <value>The <see cref="T:System.Xaml.XamlType" /> of the object at the current reader position; or <see langword="null" /> if the position is not on an object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -335,8 +253,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the node at the current reader position.</summary>
-        <value>The value of the current node; or <see langword="null" />, if the reader position is not on a <see cref="T:System.Xaml.XamlNodeType" /> node type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

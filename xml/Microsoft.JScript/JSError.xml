@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSError" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the JScript error messages. This class belongs to the compilation and run-time state category.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An abstract method cannot be private.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbstractCannotBeStatic">
@@ -47,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static methods cannot be abstract.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbstractWithBody">
@@ -64,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An abstract function cannot have a body.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActionNotSupported">
@@ -81,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The object does not support this action.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AmbiguousBindingBecauseOfEval">
@@ -98,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The presence of <see cref="T:Microsoft.JScript.Eval" /> has made the use of this name ambiguous.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AmbiguousBindingBecauseOfWith">
@@ -115,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Microsoft.JScript.With" /> statement has made the use of this name ambiguous.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AmbiguousConstructorCall">
@@ -132,14 +125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>More than one constructor matches this parameter list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AmbiguousMatch">
@@ -149,14 +141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>More than one method or property matches this parameter list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArrayLengthAssignIncorrect">
@@ -166,14 +157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Array length must be assigned a finite positive number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArrayLengthConstructIncorrect">
@@ -183,14 +173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Array length must be a finite positive integer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArrayMayBeCopied">
@@ -200,14 +189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Assigning a JScript array to a <see cref="T:System.Array" /> may cause the array to be copied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssemblyAttributesMustBeGlobal">
@@ -217,14 +205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Assembly custom attributes cannot be part of another construct.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssignmentToReadOnly">
@@ -234,14 +221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot assign to read-only field or property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadBreak">
@@ -251,14 +237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot have <see langword="break" /> outside the loop.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadContinue">
@@ -268,14 +253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot have <see langword="continue" /> outside the loop.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadFunctionDeclaration">
@@ -285,14 +269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Possible invalid function declaration, function missing, or unrecognized syntax error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadHexDigit">
@@ -302,14 +285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected hexadecimal digit.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadLabel">
@@ -319,14 +301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is already a label that has that name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadModifierInInterface">
@@ -336,14 +317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This modifier cannot be used on an interface member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadOctalLiteral">
@@ -353,14 +333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Malformed octal literal treated as decimal literal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadPropertyDeclaration">
@@ -370,14 +349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invalid property declaration. The <see langword="get" /> accessor must not have arguments and the <see langword="set" /> accessor must have one argument.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadReturn">
@@ -387,14 +365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Return statement cannot appear outside the function.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSwitch">
@@ -404,14 +381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Missing <see langword="case" /> or <see langword="default" /> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadThrow">
@@ -421,14 +397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see langword="throw" /> statement must have an argument unless it is inside the <see langword="catch" /> block of a <see langword="try" /> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadVariableDeclaration">
@@ -438,14 +413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Possible invalid variable declaration, <see langword="var" /> missing, or unrecognized syntax error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadWayToLeaveFinally">
@@ -455,14 +429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>It is slow and potentially confusing to leave a <see langword="finally" /> block this way.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BaseClassIsExpandoAlready">
@@ -472,14 +445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A base class is already marked <see cref="T:Microsoft.JScript.Expando" />; current specification will be ignored.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BooleanExpected">
@@ -489,14 +461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No Boolean value found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotAssignToFunctionResult">
@@ -506,14 +477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot assign to a function result.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeAbstract">
@@ -523,14 +493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot be abstract unless class is marked as abstract.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotCallSecurityMethodLateBound">
@@ -540,14 +509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Security.CodeAccessPermission.Deny%2A" />, <see cref="System.Security.CodeAccessPermission.PermitOnly%2A" />, and <see cref="System.Security.CodeAccessPermission.Assert%2A" /> security methods cannot be called using late binding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotChangeVisibility">
@@ -557,14 +525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot change visibility specification of a base method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotInstantiateAbstractClass">
@@ -574,14 +541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>It is not possible to construct an instance of an abstract class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotNestPositionDirective">
@@ -591,14 +557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Position directive must be ended before a new one can be started.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotReturnValueFromVoidFunction">
@@ -608,14 +573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot return a value from a void function or constructor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotUseNameOfClass">
@@ -625,14 +589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only a constructor function can have the same name as the class it appears in.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotUseStaticSecurityAttribute">
@@ -642,14 +605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>JScript does not support static security attributes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CantAssignThis">
@@ -659,14 +621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot assign to <see langword="this" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CantCreateObject">
@@ -676,14 +637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot create object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CcInvalidElif">
@@ -693,14 +653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unmatched <see langword="@elif" />; no <see langword="@if" /> defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CcInvalidElse">
@@ -710,14 +669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unmatched <see langword="@else" />; no <see langword="@if" /> defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CcInvalidEnd">
@@ -727,14 +685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unmatched <see langword="@end" />; no <see langword="@if" /> defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CcInvalidInDebugger">
@@ -744,14 +701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Conditional compilation directives and variables cannot be used in the debugger.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CcOff">
@@ -761,14 +717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Conditional compilation is turned off.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CircularDefinition">
@@ -778,14 +733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Circular definition.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClashWithProperty">
@@ -795,14 +749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the field conflicts with the name of the property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClassNotAllowed">
@@ -812,14 +765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Class definition not allowed in this context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConstructorMayNotHaveReturnType">
@@ -829,14 +781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A constructor cannot have a return type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CustomAttributeUsedMoreThanOnce">
@@ -846,14 +797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This type of attribute must be unique.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateExpected">
@@ -863,14 +813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date object expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DelegatesShouldNotBeExplicitlyConstructed">
@@ -880,14 +829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Delegates should not be explicitly constructed; simply use the method name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deprecated">
@@ -897,14 +845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified type is deprecated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DifferentReturnTypeFromBase">
@@ -914,14 +861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Method in base has a different return type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoesNotHaveAnAddress">
@@ -931,14 +877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expression does not have an address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DupDefault">
@@ -948,15 +893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="default" /> can appear only once in a <see langword="switch" /> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateMethod">
@@ -966,14 +909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This method has the same name, parameter types, and return type as another method in this class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateName">
@@ -983,14 +925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifier already in use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateNamedParameter">
@@ -1000,14 +941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Duplicate named parameter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DupVisibility">
@@ -1017,14 +957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Visibility modifier already defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnumeratorExpected">
@@ -1034,14 +973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enumerator object expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnumNotAllowed">
@@ -1051,15 +989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="enum" /> definition not allowed in this context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ErrEOF">
@@ -1069,14 +1005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expecting more source characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExceptionFromHResult">
@@ -1086,14 +1021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Exception from HRESULT.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExecutablesCannotBeLocalized">
@@ -1103,14 +1037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Executables cannot be localized; <see cref="System.Reflection.AssemblyCultureAttribute.Culture%2A" /> should always be empty.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandoClassShouldNotImpleEnumerable">
@@ -1120,15 +1053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="T:Microsoft.JScript.Expando" /> classes should not implement <see cref="T:System.Collections.IEnumerable" />. The interface is implicitly defined on <see cref="T:Microsoft.JScript.Expando" /> classes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandoMustBePublic">
@@ -1138,15 +1069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="T:Microsoft.JScript.Expando" /> methods must be public.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandoPrecludesAbstract">
@@ -1156,15 +1085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="T:Microsoft.JScript.Expando" /> methods cannot be abstract.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandoPrecludesOverride">
@@ -1174,15 +1101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="T:Microsoft.JScript.Expando" /> methods cannot override base class methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandoPrecludesStatic">
@@ -1192,15 +1117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="T:Microsoft.JScript.Expando" /> methods cannot be static.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpectedAssembly">
@@ -1210,14 +1133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected assembly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpressionExpected">
@@ -1227,14 +1149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected expression.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileNotFound">
@@ -1244,14 +1165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>File not found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FinalPrecludesAbstract">
@@ -1261,15 +1181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="final" /> and <see langword="abstract" /> cannot be used together.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FractionOutOfRange">
@@ -1279,14 +1197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The number of fractional digits is out of range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalAborted">
@@ -1296,14 +1213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation was aborted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalBadLocation">
@@ -1313,14 +1229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation cannot be done when stopped at this point in the program.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalBadThreadNotStarted">
@@ -1330,14 +1245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation failed and the thread has not started.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalBadThreadState">
@@ -1347,14 +1261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation failed. The thread can contain incorrect data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalThreadSleepWaitJoin">
@@ -1364,14 +1277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation failed. The thread is sleeping, waiting for an object, or waiting for another thread to finish.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalThreadSuspended">
@@ -1381,14 +1293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation failed. The thread is suspended.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalTimedout">
@@ -1398,14 +1309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation timed out.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FuncEvalWebMethod">
@@ -1415,14 +1325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot call a Web method in the debugger.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FunctionExpected">
@@ -1432,14 +1341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A function was expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GetAndSetAreInconsistent">
@@ -1449,14 +1357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see langword="get" /> and <see langword="set" /> methods of this property do not match each other.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HidesAbstractInBase">
@@ -1466,14 +1373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Method hides <see langword="abstract" /> in a <see langword="base" /> class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HidesParentMember">
@@ -1483,15 +1389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="base" /> class already contains a member by this name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalAssignment">
@@ -1501,14 +1405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invalid assignment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalChar">
@@ -1518,14 +1421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invalid character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalEval">
@@ -1535,14 +1437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An <see cref="T:Microsoft.JScript.Eval" /> cannot be called by an alias.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalParamArrayAttribute">
@@ -1552,14 +1453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A variable argument list must be of an array type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalUseOfSuper">
@@ -1569,14 +1469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>It is not valid to use the base class in this way.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalUseOfThis">
@@ -1586,14 +1485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>It is not valid to use <see langword="this" /> in the current context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalVisibility">
@@ -1603,14 +1501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invalid visibility modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImplicitlyReferencedAssemblyNotFound">
@@ -1620,14 +1517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A referenced assembly depends on another assembly that is not referenced or could not be found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImpossibleConversion">
@@ -1637,14 +1533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified conversion or coercion is not possible.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompatibleAssemblyReference">
@@ -1654,14 +1549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The assembly referenced is incompatible.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompatibleVisibility">
@@ -1671,14 +1565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Incompatible visibility modifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncorrectNumberOfIndices">
@@ -1688,14 +1581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The number of indices does not match the dimension of the array.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstanceNotAccessibleFromStatic">
@@ -1705,14 +1597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A non-static member is not accessible from a <see langword="static" /> scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIllegalInInterface">
@@ -1722,14 +1613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interfaces cannot be declared in an <see langword="interface" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalError">
@@ -1739,14 +1629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An internal error has been thrown.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidAssemblyKeyFile">
@@ -1756,14 +1645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An invalid assembly key file has been used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidBaseTypeForEnum">
@@ -1773,15 +1661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="enum" /> base type must be a primitive integral type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCall">
@@ -1791,14 +1677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invalid procedure call or argument.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttribute">
@@ -1808,14 +1693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A custom attribute class must derive from <see cref="T:System.Attribute" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttributeArgument">
@@ -1825,14 +1709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only primitive types are allowed in a custom attribute constructor arguments list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttributeClassOrCtor">
@@ -1842,14 +1725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unknown custom attribute class or constructor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttributeTarget">
@@ -1859,14 +1741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This attribute is not valid for this type of declaration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidDebugDirective">
@@ -1876,14 +1757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invalid debug directive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidElse">
@@ -1893,14 +1773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unmatched <see langword="else" />; no <see langword="if" /> defined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidImport">
@@ -1910,14 +1789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see langword="import" /> statement is not valid in this context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLanguageOption">
@@ -1927,14 +1805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Must specify either "fast" or "versionSafe" language option.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPositionDirective">
@@ -1944,14 +1821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unknown position directive was discovered.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPrototype">
@@ -1961,14 +1837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This function does not have a valid prototype object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidResource">
@@ -1978,14 +1853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This is not a valid .resources file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ItemNotAllowedOnExpandoClass">
@@ -1995,14 +1869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot define the property Item on an <see cref="T:Microsoft.JScript.Expando" /> class. This Item is reserved for the <see cref="T:Microsoft.JScript.Expando" /> fields.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeywordUsedAsIdentifier">
@@ -2012,14 +1885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You cannot use a reserved word as an identifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberInitializerCannotContainFuncExpr">
@@ -2029,14 +1901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A member initializer cannot contain a function expression.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberTypeCLSCompliantMismatch">
@@ -2046,14 +1917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Class member cannot be marked Common Language Specification (CLS) compliant because the class is not marked CLS compliant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodClashOnExpandoSuperClass">
@@ -2063,14 +1933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot create the <see cref="T:Microsoft.JScript.Expando" /> class because a property named <c>Item</c> is already defined in the class hierarchy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodInBaseIsNotVirtual">
@@ -2080,14 +1949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A method in a base class that is <see langword="final" /> or not <see langword="virtual" /><see langword="override" /> is ignored. Specify <see langword="hide" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodNotAllowedOnExpandoClass">
@@ -2097,14 +1965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot define a property named <c>Item</c> on an <see cref="T:Microsoft.JScript.Expando" /> class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingConstructForAttributes">
@@ -2114,14 +1981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The list of attributes does not apply to the current context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingNameParameter">
@@ -2131,14 +1997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified named parameter name is not one of the formal parameters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MoreNamedParametersThanArguments">
@@ -2148,14 +2013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Too few arguments specified. The number of named parameter names cannot exceed the number of arguments passed in.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MustBeEOL">
@@ -2165,14 +2029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Directive cannot be followed by other code on the same line.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MustImplementMethod">
@@ -2182,14 +2045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The class must provide an implementation of the method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MustProvideNameForNamedParameter">
@@ -2199,14 +2061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot provide null or empty named parameter name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedArrayObject">
@@ -2216,14 +2077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A "|" is not an array object. Array object expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedCompileTimeConstant">
@@ -2233,14 +2093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An expression must be a compile-time constant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedInstance">
@@ -2250,14 +2109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An instance is expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedInterface">
@@ -2267,14 +2125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An interface name is expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedObject">
@@ -2284,14 +2141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An object is required.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedType">
@@ -2301,14 +2157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A type name is expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NestedInstanceTypeCannotBeExtendedByStatic">
@@ -2318,14 +2173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A non-static nested type can be extended only by a non-static type nested in the same class.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NewNotSpecifiedInMethodDeclaration">
@@ -2335,14 +2189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A method matches a method in a base class. Must specify <see langword="override" /> or <see langword="hide" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAt">
@@ -2352,14 +2205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected <see langword="@" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoCatch">
@@ -2369,14 +2221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected <see langword="catch" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoCcEnd">
@@ -2386,14 +2237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected <see langword="@end" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoColon">
@@ -2403,14 +2253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected ":".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoComma">
@@ -2420,14 +2269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected ",".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoCommaOrTypeDefinitionError">
@@ -2437,14 +2285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "," or invalid type declaration; write "&lt;Identifier&gt; : &lt;Type&gt;" not "&lt;Type&gt; &lt;Identifier&gt;".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoCommentEnd">
@@ -2454,14 +2301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Comment not terminated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoConstructor">
@@ -2471,14 +2317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No such constructor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoEqual">
@@ -2488,14 +2333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "=".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoError">
@@ -2505,14 +2349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No error. This is the default (0) value for the enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFuncEvalAllowed">
@@ -2522,14 +2365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Function evaluation aborted. To turn on property evaluation, click **Options** on the **Tools** menu and then select the **Debugging** in the tree view.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoIdentifier">
@@ -2539,14 +2381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected identifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoLabel">
@@ -2556,14 +2397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Label not found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoLeftCurly">
@@ -2573,14 +2413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "{".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoLeftParen">
@@ -2590,14 +2429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "(".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMemberIdentifier">
@@ -2607,14 +2445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected identifier or <see langword="string" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMethodInBaseToNew">
@@ -2624,14 +2461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is no member in a base class to <see langword="hide" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMethodInBaseToOverride">
@@ -2641,14 +2477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is no member in a base class to <see langword="override" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonCLSCompliantMember">
@@ -2658,14 +2493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified member is not CLS compliant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonCLSCompliantType">
@@ -2675,14 +2509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified type is not CLS compliant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonClsException">
@@ -2692,14 +2525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A target threw a non-CLS exception.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonStaticWithTypeName">
@@ -2709,14 +2541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A non-static member cannot be accessed with the class name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonSupportedInDebugger">
@@ -2726,14 +2557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The expression cannot be evaluated in the debugger.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRightBracket">
@@ -2743,14 +2573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "]".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRightBracketOrComma">
@@ -2760,14 +2589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "," or "]".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRightCurly">
@@ -2777,14 +2605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "}".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRightParen">
@@ -2794,14 +2621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected ")".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRightParenOrComma">
@@ -2811,14 +2637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected "," or ")".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoSemicolon">
@@ -2828,14 +2653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected ";".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoSuchMember">
@@ -2845,14 +2669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Objects of this type do not have such a member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoSuchStaticMember">
@@ -2862,14 +2685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type does not have such a <see langword="static" /> member.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoSuchType">
@@ -2879,14 +2701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type could not be found. An assembly reference might be missing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAccessible">
@@ -2896,14 +2717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The object or member is not accessible from this scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAllowedInSuperConstructorCall">
@@ -2913,14 +2733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Object or member is not allowed in a call to the base class constructor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAnExpandoFunction">
@@ -2930,14 +2749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Class members used as constructors should be marked as <see cref="T:Microsoft.JScript.Expando" /> functions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotCollection">
@@ -2947,14 +2765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This object is not a collection.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotConst">
@@ -2964,14 +2781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected constant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotDeletable">
@@ -2981,14 +2797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The object or member cannot be deleted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotIndexable">
@@ -2998,14 +2813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Objects of this type are not indexable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotInsideClass">
@@ -3015,14 +2829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Valid only inside a class definition.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotMeantToBeCalledDirectly">
@@ -3032,14 +2845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You cannot call this method directly. If possible, use property accessors instead.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotOKToCallSuper">
@@ -3049,14 +2861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>It is not valid to call a base class constructor from this location.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotValidForConstructor">
@@ -3066,14 +2877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not valid for a constructor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotValidVersionString">
@@ -3083,14 +2893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not a valid version string.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotYetImplemented">
@@ -3100,14 +2909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not yet implemented.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoVarInEnum">
@@ -3117,15 +2925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="enum" /> member declarations should not use the <see langword="var" /> keyword.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoWhile">
@@ -3135,14 +2941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected <see langword="while" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberExpected">
@@ -3152,14 +2957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected a number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ObjectExpected">
@@ -3169,14 +2973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expected an object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OctalLiteralsAreDeprecated">
@@ -3186,14 +2989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Octal literals are deprecated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OLENoPropOrMethod">
@@ -3203,14 +3005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Object does not support this property or method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnlyClassesAllowed">
@@ -3220,14 +3021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only classes are allowed inside a <see langword="package" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnlyClassesAndPackagesAllowed">
@@ -3237,14 +3037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only classes and packages are allowed inside a library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfMemory">
@@ -3254,14 +3053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Out of memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfStack">
@@ -3271,14 +3069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Out of stack space.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideAndHideUsedTogether">
@@ -3288,14 +3085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cannot use <see langword="override" /> and <see langword="hide" /> together in a member declaration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PackageExpected">
@@ -3305,14 +3101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Package name expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PackageInWrongContext">
@@ -3322,14 +3117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Package definition is not allowed in this context.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParamListNotLast">
@@ -3339,14 +3133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A variable argument list must be the last argument.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PossibleBadConversion">
@@ -3356,14 +3149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This conversion may fail at runtime.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PossibleBadConversionFromString">
@@ -3373,14 +3165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Converting a string to a number or Boolean is slow and may fail at run time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrecisionOutOfRange">
@@ -3390,14 +3181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The precision is out of range.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyLevelAttributesMustBeOnGetter">
@@ -3407,14 +3197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An attribute that targets the property must be specified on the <see langword="get" /> accessor, if the <see langword="get" /> accessor is present.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RefParamsNonSupportedInDebugger">
@@ -3424,14 +3213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Methods with <see langword="ref" /> parameters cannot be called in the debugger.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegExpExpected">
@@ -3441,15 +3229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="T:Microsoft.JScript.RegExpObject" /> object expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegExpSyntax">
@@ -3459,14 +3245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Syntax error in regular expression.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShouldBeAbstract">
@@ -3476,14 +3261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A function without a body should be <see langword="abstract" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SideEffectsDisallowed">
@@ -3493,14 +3277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The expression causes side effects and will not be evaluated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticIsAlreadyFinal">
@@ -3510,14 +3293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static methods cannot be <see langword="final" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticMethodsCannotHide">
@@ -3527,14 +3309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static methods cannot hide base class methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticMethodsCannotOverride">
@@ -3544,14 +3325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static methods cannot override base class methods.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticMissingInStaticInit">
@@ -3561,14 +3341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static initializer must specify the <see langword="static" /> keyword.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticRequiresTypeName">
@@ -3578,14 +3357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A static member must be accessed by the class name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticVarNotAvailable">
@@ -3595,14 +3373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A static variable is not available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringConcatIsSlow">
@@ -3612,14 +3389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The plus operator is a slow way to concatenate strings. Consider using <see cref="T:System.Text.StringBuilder" /> instead.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringExpected">
@@ -3629,14 +3405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>String expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuperClassConstructorNotAccessible">
@@ -3646,14 +3421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Base class constructor is not accessible from this scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuspectAssignment">
@@ -3663,15 +3437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="If" /> condition cannot contain an assignment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuspectLoopCondition">
@@ -3681,14 +3453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Loop condition cannot contain a function call.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuspectSemicolon">
@@ -3698,14 +3469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Empty statement found in <see langword="if" /> statement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
@@ -3715,14 +3485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Discovered syntax error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooFewParameters">
@@ -3732,14 +3501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not all required parameters have been supplied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooManyParameters">
@@ -3749,14 +3517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There are too many actual parameters. The excess parameters will be ignored.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooManyTokensSkipped">
@@ -3766,14 +3533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Too many errors. The file might not be a JScript file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeAssemblyCLSCompliantMismatch">
@@ -3783,14 +3549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type cannot be marked CLS compliant because the assembly is not marked as CLS compliant.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeCannotBeExtended">
@@ -3800,14 +3565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type cannot be extended.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeMismatch">
@@ -3817,14 +3581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Type mismatch.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeNameTooLong">
@@ -3834,14 +3597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The fully qualified type name is too long. It must be less than 1,024 characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeObjectNotAvailable">
@@ -3851,14 +3613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type object for this type is not available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UncaughtException">
@@ -3868,14 +3629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Exception thrown and not caught.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UndeclaredVariable">
@@ -3885,14 +3645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Variable has not been declared.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UndefinedIdentifier">
@@ -3902,14 +3661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Undefined identifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnexpectedSemicolon">
@@ -3919,14 +3677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unexpected ";".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnreachableCatch">
@@ -3936,14 +3693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Catch clause will never be reached.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnterminatedString">
@@ -3953,14 +3709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>String constant not terminated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="URIDecodeError">
@@ -3970,14 +3725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The URI to be decoded is not a valid encoding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="URIEncodeError">
@@ -3987,14 +3741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The URI to be encoded contains an invalid character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UselessAssignment">
@@ -4004,14 +3757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An assignment creates an <see cref="T:Microsoft.JScript.Expando" /> property that is immediately thrown away.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UselessExpression">
@@ -4021,14 +3773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Expression has no effect.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VariableLeftUninitialized">
@@ -4038,14 +3789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Uninitialized variables are dangerous and slow to use. Did you intend to leave it uninitialized?</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VariableMightBeUnitialized">
@@ -4055,14 +3805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Variable might not be initialized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VarIllegalInInterface">
@@ -4072,14 +3821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Variables cannot be declared in an interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VBArrayExpected">
@@ -4089,14 +3837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A VBArray is expected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteOnlyProperty">
@@ -4106,14 +3853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property is write-only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WrongDirective">
@@ -4123,14 +3869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wrong debugger directive or wrong position for the directive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WrongUseOfAddressOf">
@@ -4140,14 +3885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The address of operator can be used only in a list of arguments.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

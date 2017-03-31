@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionReflector" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a managed way of dynamically viewing, creating or invoking types supported by an XML Web service.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,19 +47,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> of the class or interface to reflect.</param>
-        <param name="url">The address (URL) of the XML Web service.</param>
-        <summary>Creates a <see cref="T:System.Web.Services.Description.ServiceDescription" /> including the specified <see cref="T:System.Type" /> for the XML Web service at the specified URL.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method examines the metadata for the XML Web service at the specified URL. If the specified <xref:System.Type> is not supported, it modifies the Web Services Description Language (WSDL) file corresponding to the <xref:System.Web.Services.Description.ServiceDescription> describing the XML Web service, in order to include that type.  
-  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Schemas">
@@ -72,25 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlSchemas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Xml.Serialization.XmlSchemas" /> associated with the XML Web service.</summary>
-        <value>An <see cref="T:System.Xml.Serialization.XmlSchemas" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is initialized with a <xref:System.Collections.CollectionBase.Count%2A> of zero. Any members must be explicitly added using the collection's <xref:System.Xml.Serialization.XmlSchemas.Add%2A> method.  
-  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceDescriptions">
@@ -100,25 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> associated with the XML Web service.</summary>
-        <value>A reference to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> associated with the XML Web service.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is initialized with a <xref:System.Collections.CollectionBase.Count%2A> of zero. Any members must be explicitly added using the collection's <xref:System.Web.Services.Description.ServiceDescriptionCollection.Add%2A> method.  
-  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

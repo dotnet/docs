@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The SecurityProtocol enumeration is used to specify the security protocol used by a connection.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the client is using the PCT1 protocol. The value is equal to 2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pct1Server">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the server is using the PCT1 protocol. The value is equal to 1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ssl2Client">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the client is using the SSL2 protocol. The value is equal to 8.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ssl2Server">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the server is using the SSL2 protocol. The value is equal to 4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ssl3Client">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the client is using the SSL3 protocol. The value is equal to 32.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ssl3Server">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the server is using the SSL3 protocol. The value is equal to 16.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tls1Client">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the client is using the TLS1 protocol. The value is equal to 128.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tls1Server">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the server is using the TLS1 protocol. The value is equal to 64.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

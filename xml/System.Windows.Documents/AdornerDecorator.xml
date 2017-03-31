@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.AdornerDecorator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides an <see cref="T:System.Windows.Documents.AdornerLayer" /> for the child elements in the visual tree.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- AdornerDecorator can contain only one child element. That element can contain multiple elements that can be adorned.  
-  
- The AdornerDecorator specifies the position of the <xref:System.Windows.Documents.AdornerLayer> in the visual tree.  It is typically used in a <xref:System.Windows.Controls.ControlTemplate> for a control that might host <xref:System.Windows.Documents.Adorner> objects. For example, the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Window> contains an AdornerDecorator so that the child elements of the window can be adorned. The <xref:System.Windows.Documents.AdornerLayer.GetAdornerLayer%2A> method returns `null` if you pass in an element that does not have an AdornerDecorator as an ancestor in its visual tree.  
-  
- For more information about adorners and visual trees, see [Adorners Overview](../Topic/Adorners%20Overview.md) and [Trees in WPF](../Topic/Trees%20in%20WPF.md).  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Window>.  The example adds a <xref:System.Windows.Controls.ContentPresenter> as the child element of an AdornerDecorator. The logical child elements of the window can be adorned because the AdornerDecorator is in their visual tree.  
-  
- [!code-xml[ControlTemplateExamples#Window](~/add/codesnippet/xaml/controltemplateexamples/resources/window.xaml#window)]  
-  
- ]]></format>
-    </remarks>
-    <exception cref="T:System.ArgumentException">An attempt is made to add more than a single child to the AdornerDecorator.</exception>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.AdornerDecorator" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.AdornerLayer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Documents.AdornerLayer" /> associated with this <see cref="T:System.Windows.Documents.AdornerDecorator" />.</summary>
-        <value>The <see cref="T:System.Windows.Documents.AdornerLayer" /> associated with this adorner decorator.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,17 +64,10 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The size reserved for this element by its parent.</param>
-        <summary>Positions child elements and determines a size for the <see cref="T:System.Windows.Documents.AdornerDecorator" />.</summary>
-        <returns>The actual size needed by the element.  This return value is typically the same as the value passed to *finalSize*.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -107,23 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the single child of an <see cref="T:System.Windows.Documents.AdornerDecorator" />.</summary>
-        <value>The single child of an <see cref="T:System.Windows.Documents.AdornerDecorator" />. This property has no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Documents.AdornerDecorator> can contain only one child, which is the parent element for the visual tree below the <xref:System.Windows.Documents.AdornerDecorator>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -133,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +104,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position of the wanted <see cref="T:System.Windows.Media.Visual" /> child.</param>
-        <summary>Gets a <see cref="T:System.Windows.Media.Visual" /> child at the specified <paramref name="index" /> position.</summary>
-        <returns>A <see cref="T:System.Windows.Media.Visual" /> child of the parent <see cref="T:System.Windows.Controls.Viewbox" /> element.</returns>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,17 +126,10 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">A size to constrain the <see cref="T:System.Windows.Documents.AdornerDecorator" /> to.</param>
-        <summary>Measures the size required for child elements and determines a size for the <see cref="T:System.Windows.Documents.AdornerDecorator" />.</summary>
-        <returns>A <see cref="T:System.Windows.Size" /> object representing the amount of layout space needed by the <see cref="T:System.Windows.Documents.AdornerDecorator" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualChildrenCount">
@@ -186,15 +139,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of child <see cref="T:System.Windows.Media.Visual" /> objects in this instance of <see cref="T:System.Windows.Documents.AdornerDecorator" />.</summary>
-        <value>Either returns <c>2</c> (one for the <see cref="T:System.Windows.Documents.AdornerLayer" /> and one for the <see cref="System.Windows.Documents.AdornerDecorator.Child%2A" />) or the property returns <c>0</c> if the <see cref="T:System.Windows.Documents.AdornerDecorator" /> has no child.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

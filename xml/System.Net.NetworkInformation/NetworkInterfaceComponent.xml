@@ -3,32 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkInterfaceComponent extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInterfaceComponent" />
   <AssemblyInfo>
+    <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the Internet Protocol versions that are supported by a network interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The values in this enumeration are used by the <xref:System.Net.NetworkInformation.NetworkInterface.Supports%2A> method to specify the Internet Protocol version supported by a network interface.  
-  
-   
-  
-## Examples  
- The following code example checks whether a network interface supports IPv4.  
-  
- [!code-cs[NclNetInfo2#48](~/add/codesnippet/csharp/t-system.net.networkinfo_21_1.cs)]
- [!code-vb[NclNetInfo2#48](~/add/codesnippet/visualbasic/t-system.net.networkinfo_21_1.vb)]
- [!code-cpp[NclNetInfo2#48](~/add/codesnippet/cpp/t-system.net.networkinfo_21_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="IPv4">
@@ -37,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceComponent.IPv4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Internet Protocol version 4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6">
@@ -54,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceComponent.IPv6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Internet Protocol version 6.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

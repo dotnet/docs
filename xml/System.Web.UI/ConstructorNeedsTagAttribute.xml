@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ConstructorNeedsTagAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,21 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that a server control needs a tag name in its constructor.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For background information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- [!code-vb[ConstructorNeedsTagAttribute_Sample1#1](~/add/codesnippet/visualbasic/t-system.web.ui.construc_1.vb)]
- [!code-cs[ConstructorNeedsTagAttribute_Sample1#1](~/add/codesnippet/csharp/t-system.web.ui.construc_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,21 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ConstructorNeedsTagAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ConstructorNeedsTagAttribute_Sample2#1](~/add/codesnippet/csharp/m-system.web.ui.construc_1_1.cs)]
- [!code-vb[ConstructorNeedsTagAttribute_Sample2#1](~/add/codesnippet/visualbasic/m-system.web.ui.construc_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,59 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="needsTag" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="needsTag">
-          <see langword="true" /> to add a tag to a control; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ConstructorNeedsTagAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a simple custom control whose tag name is defined at run time. The following is the command line used to build the executable.  
-  
-```vb#  
-vbc /r:System.dll /r:System.Web.dll /t:library /out:myWebAppPath/Bin/vb_myconstructorNeedsTagAtt.dll constructNeedsTagAtt.vb  
-```  
-  
-```c#  
-csc /t:library /out:myWebAppPath/Bin/cs_myConstructorNeedsTagAtt.dll constructorNeedsTagAtt.cs  
-```  
-  
- [!code-vb[SystemWebUI_ConstructorNeedsTagAttribute#1](~/add/codesnippet/visualbasic/m-system.web.ui.construc_0_1.vb)]
- [!code-cs[SystemWebUI_ConstructorNeedsTagAttribute#1](~/add/codesnippet/csharp/m-system.web.ui.construc_0_1.cs)]  
-  
- The following code example uses the previous custom control. Notice that the values shown in the `Register` directive reflect the previous command line.  
-  
-```vb#  
-<%@ Register TagPrefix='MyCurrentUserControl' Namespace='MyUserControl' Assembly='vb_myConstructorNeedsTagAtt'%>  
- <html>  
-  <body>  
-  <form method="POST" runat="server">  
-  <MyCurrentUserControl:Simple runat="server" />  
-  </form>  
-  </body>  
- </html>  
-```  
-  
-```c#  
-<%@ Register TagPrefix='MyCurrentUserControl' Namespace='MyUserControl' Assembly='cs_myConstructorNeedsTagAtt'%>  
- <html>  
-  <body>  
-  <form method="POST" runat="server">  
-  <MyCurrentUserControl:Simple runat="server" />  
-  </form>  
-  </body>  
- </html>  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="needsTag">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NeedsTag">
@@ -127,25 +60,15 @@ csc /t:library /out:myWebAppPath/Bin/cs_myConstructorNeedsTagAtt.dll constructor
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether a control needs a tag name in its constructor. This property is read-only.</summary>
-        <value>
-          <see langword="true" /> if the control needs a tag in its constructor. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-vb[ConstructorNeedsTagAttribute_Sample1#1](~/add/codesnippet/visualbasic/p-system.web.ui.construc_1.vb)]
- [!code-cs[ConstructorNeedsTagAttribute_Sample1#1](~/add/codesnippet/csharp/p-system.web.ui.construc_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

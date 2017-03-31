@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Maintains the registration of all access keys and the handling of interop keyboard commands between [!INCLUDE[TLA#tla_winforms](~/add/includes/tlasharptla-winforms-md.md)], [!INCLUDE[TLA#tla_win32](~/add/includes/tlasharptla-win32-md.md)], and [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An AccessKeyManager object is created on demand with one per <xref:System.Windows.Threading.Dispatcher>.  
-  
- The AccessKeyManager is attached as an event handler for <xref:System.Windows.Input.InputManager.PostProcessInput> and exposes methods to <xref:System.Windows.Input.AccessKeyManager.Register%2A> and <xref:System.Windows.Input.AccessKeyManager.Unregister%2A> access keys.  
-  
- When the registered access key is pressed, the AccessKeyManager calls the <xref:System.Windows.UIElement.OnAccessKey%2A> method on the target element.  
-  
- An element can be associated with any number of access keys.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AccessKeyPressedEvent">
@@ -36,14 +22,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +39,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,9 +49,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.AccessKeyPressedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see cref="System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> attached event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,11 +72,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="scope">The presentation source to query for <c>key</c>.</param>
-        <param name="key">The key to query.</param>
-        <summary>Indicates whether the specified key is registered as an access keys in the specified scope.</summary>
-        <returns>
-          <see langword="true" /> if the key is registered; otherwise, <see langword="false" />.</returns>
+        <param name="scope">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -121,12 +102,11 @@
         <Parameter Name="isMultiple" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="scope">The scope for the access key.</param>
-        <param name="key">The access key.</param>
-        <param name="isMultiple">Indicates if <c>key</c> has multiple matches.</param>
-        <summary>Processes the specified access keys as if a <see cref="E:System.Windows.UIElement.KeyDown" /> event for the key was passed to the <see cref="T:System.Windows.Input.AccessKeyManager" />.</summary>
-        <returns>
-          <see langword="true" /> if there are more keys that match; otherwise, <see langword="false" />.</returns>
+        <param name="scope">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="isMultiple">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,19 +127,10 @@
         <Parameter Name="element" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="key">The access key.</param>
-        <param name="element">The element to associate <c>key</c> with.</param>
-        <summary>Associates the specified access keys with the specified element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the access keys is pressed, the  <xref:System.Windows.UIElement.OnAccessKey%2A> method of `element` is called.  
-  
- An element can be associated with any number of access keys.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAccessKeyPressedHandler">
@@ -170,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,9 +150,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.AccessKeyPressedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
-        <param name="handler">The event handler to be removed.</param>
-        <summary>Removes the specified <see cref="System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> event handler from the specified object.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,9 +173,9 @@
         <Parameter Name="element" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="key">The access key.</param>
-        <param name="element">The element from which to disassociate <c>key</c>.</param>
-        <summary>Disassociates the specified access keys from the specified element.</summary>
+        <param name="key">To be added.</param>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

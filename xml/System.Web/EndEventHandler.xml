@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.EndEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,25 +16,8 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="ar">The <see cref="T:System.IAsyncResult" /> that is the result of the <see cref="T:System.Web.BeginEventHandler" /> operation.</param>
-    <summary>Represents the method that handles asynchronous events such as application events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This delegate is called by the event source when completion of the asynchronous operation is signaled by a callback to the <xref:System.Web.BeginEventHandler> delegate.  
-  
- When you create an EndEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example uses the EndEventHandler delegate to register a handler for an asynchronous page.  
-  
- [!code-vb[PageAddOnPreRenderCompleteAsync#1](~/add/codesnippet/visualbasic/t-system.web.endeventhan_1.aspx)]
- [!code-cs[PageAddOnPreRenderCompleteAsync#1](~/add/codesnippet/csharp/t-system.web.endeventhan_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="ar">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

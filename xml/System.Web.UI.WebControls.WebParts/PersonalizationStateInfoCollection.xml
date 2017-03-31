@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a collection of <see cref="T:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo" /> and <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PersonalizationStateInfoCollection class provides a collection-based wrapper over a set of <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> and <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances. These instances are retrieved by iterating sequentially over the collection, by ordinal index or by key value.  
-  
- Instances are indexed on a combination of path and user name. This is necessary because <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> instances representing shared data are indexed according to <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> object, whereas <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instances are indexed according to both a <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> object and a <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.Username%2A> object.  
-  
- The information objects are maintained in the collection in the order in which they were received from the provider. The collection does not attempt to change the order of the instances or maintain a specific sort order within the collection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes an empty collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -61,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,19 +50,9 @@
         <Parameter Name="data" Type="System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />
       </Parameters>
       <Docs>
-        <param name="data">The <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />-derived instance to be added.</param>
-        <summary>Adds a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />-derived instance to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method adds a <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived instance to the end of the collection. Internally, the count of the collection is incremented by one. Any enumerators currently active against the collection are invalidated.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The collection was marked as read-only.</exception>
-        <exception cref="T:System.ArgumentException">An attempt was made to add an object to the collection when an instance of the same shared or per-user state already exists in the collection.</exception>
-        <exception cref="T:System.ArgumentNullException">The data parameter is null.</exception>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -93,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,16 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection of all items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any enumerators currently active against the collection are invalidated.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The collection was marked as read-only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -120,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,17 +90,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array the elements in the collection are copied into.</param>
-        <param name="index">The location at which to start the copy operation.</param>
-        <summary>Copies the elements of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> collection into a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> array, starting at the specified position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method if you want to create a <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> array. This method simply calls the <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> method and passes the `array` and `index` parameters.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -151,30 +103,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in a collection.</summary>
-        <value>The number of items in a collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The count of the items in the collection can be used to iterate through the collection, as shown in the example.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Count property.  
-  
- [!code-cs[WebParts_PersAdmin#3](~/add/codesnippet/csharp/p-system.web.ui.webcontr_61_1.ascx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -184,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,24 +128,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a standard enumerator capable of iterating over the collection. This method cannot be inherited.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position. At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>. For more information on enumerators, see <xref:System.Collections.IEnumerator>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -219,26 +140,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="true" /> if access to the collection is synchronized; otherwise, <see langword="false" />. The value is always <see langword="false" /> for <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> objects created by the Web Parts control set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.SyncRoot%2A> property returns an object, which can be used to synchronize access to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -248,7 +158,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,23 +167,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The ordinal index of the object to be retrieved.</param>
-        <summary>Gets a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> instance located at the specified ordinal index in the collection.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> instance located at the specified ordinal index in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property retrieves the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> instance located at the specified ordinal index in the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- \- or -  
-  
- <paramref name="index" /> is greater than <see cref="System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -284,7 +180,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,22 +190,11 @@
         <Parameter Name="username" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The relative application path of the personalization state object to be retrieved.</param>
-        <param name="username">The user name of the <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> object to be retrieved.</param>
-        <summary>Gets an element from the collection based on the specified parameters.</summary>
-        <value>An element from the collection based on the specified parameters.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is the default indexer for the collection. If only `path` is provided, the property returns a <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> instance. If both `path` and `username` are provided, the property returns a <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instance for the combination of `path` and `username`.  
-  
- If `path` (in the case that `username` is set to `null`) does not exist, or if `username` and `path` do not exist, `null` is returned.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
+        <param name="path">To be added.</param>
+        <param name="username">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -320,7 +204,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,29 +214,10 @@
         <Parameter Name="username" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The relative application path of the personalization state object to be removed.</param>
-        <param name="username">The user name of the <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" />-derived object to be removed.</param>
-        <summary>Removes a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />-derived object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method removes a <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived instance from the collection. Any elements after the removed instance are moved up to occupy the vacant position. Internally, the count of the collection is decremented by one. Any enumerators currently active against the collection are invalidated.  
-  
- If only `path` is provided, then the <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo> instance for that path is removed. If both `path` and `username` are provided, then the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo> instance for the combination of `path` and `username` is removed.  
-  
-> [!NOTE]
->  You can try to remove a non-existing item from the collection; this action will not raise an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The collection was marked as read-only.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is null.  
-  
- \- or -  
-  
- both parameters are null.</exception>
+        <param name="path">To be added.</param>
+        <param name="username">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetReadOnly">
@@ -363,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -371,18 +234,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Marks the collection as read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Methods that attempt to modify a read-only collection, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.Add%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.Remove%2A>, throw a <xref:System.NotSupportedException> exception.  
-  
-> [!NOTE]
->  You can call the SetReadOnly method multiple times on the collection; this will not raise an exception.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -392,25 +245,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" /> instance.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" />. The Web Parts control set returns a reference to the current collection object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- Derived classes can provide their own synchronized versions of the collection using the SyncRoot property. The synchronizing code must perform operations on the SyncRoot of the collection, not directly on the collection itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -420,7 +263,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -431,17 +273,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array into which a collection of <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> objects will be copied.</param>
-        <param name="index">The point in <c>array</c> at which to start copying the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> objects.</param>
-        <summary>Implements the base <see cref="System.Collections.ICollection.CopyTo%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method, like the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.CopyTo%2A> method, simply calls the <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> method and passes the `array` and `index` parameters.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

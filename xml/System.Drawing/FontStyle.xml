@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies style information applied to text.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to set the <xref:System.Drawing.Font> property of a button to a new bold-style font using the FontStyle enumeration. This example is designed to be used with Windows Forms. Create a form containing a button named Button1 and paste the following code into it. Associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.MiscExamples#11](~/add/codesnippet/csharp/t-system.drawing.fontstyle_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#11](~/add/codesnippet/cpp/t-system.drawing.fontstyle_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#11](~/add/codesnippet/visualbasic/t-system.drawing.fontstyle_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bold">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bold text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Italic text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Regular">
@@ -72,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Normal text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strikeout">
@@ -89,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Text with a line through the middle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -106,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Underlined text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

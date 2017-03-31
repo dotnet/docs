@@ -3,23 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpServerUtilityWrapper extends System.Web.HttpServerUtilityBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpServerUtilityWrapper" />
   <AssemblyInfo>
-    <AssemblyName>System.Web.Abstractions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Web.HttpServerUtilityBase</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Abstractions, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>Encapsulates the HTTP intrinsic object that provides helper methods for processing Web requests.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpServerUtilityWrapper class derives from the <xref:System.Web.HttpServerUtilityBase> class and serves as a wrapper for the <xref:System.Web.HttpServerUtility> class. This class exposes the functionality of the <xref:System.Web.HttpServerUtility> class while also exposing the <xref:System.Web.HttpServerUtilityBase> type. The <xref:System.Web.HttpServerUtilityBase> class enables you to replace the original implementation of the <xref:System.Web.HttpServerUtility> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,17 +26,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.#ctor(System.Web.HttpServerUtility)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpServerUtility" Type="System.Web.HttpServerUtility" />
       </Parameters>
       <Docs>
-        <param name="httpServerUtility">The object that this wrapper class provides access to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpServerUtilityWrapper" /> class.</summary>
+        <param name="httpServerUtility">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="httpServerUtility" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClearError">
@@ -47,15 +44,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.ClearError" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the most recent exception.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +62,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.CreateObject(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -75,11 +72,10 @@
         <Parameter Name="progID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="progID">The class or type of object to create an instance of.</param>
-        <summary>Creates a server instance of a COM object that is identified by the object's programmatic identifier (ProgID).</summary>
-        <returns>The new object.</returns>
+        <param name="progID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">An instance of the object could not be created.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -88,8 +84,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.CreateObject(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -98,9 +94,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">A type that represents the object to create.</param>
-        <summary>Creates a server instance of a COM object that is identified by the object's type.</summary>
-        <returns>The new object.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +106,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.CreateObjectFromClsid(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -120,11 +116,10 @@
         <Parameter Name="clsid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clsid">The class identifier of the object to create an instance of.</param>
-        <summary>Creates a server instance of a COM object that is identified by the object's class identifier (CLSID).</summary>
-        <returns>The new object.</returns>
+        <param name="clsid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">An instance of the object cannot be created.</exception>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -133,8 +128,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -143,20 +138,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the handler to execute.</param>
-        <summary>Executes the handler for the specified virtual path in the context of the current process.</summary>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> object is <see langword="null" />.  
-  
- \- or -  
-  
- An error occurred when the handler specified by <paramref name="path" /> was executed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="path" /> is not a virtual path.</exception>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -165,8 +149,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -176,22 +160,10 @@
         <Parameter Name="preserveForm" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the handler to execute.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <summary>Executes the handler for the specified virtual path in the context of the current process and specifies whether to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</summary>
+        <param name="path">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> object is <see langword="null" />.  
-  
- \- or -  
-  
- An error occurred when the handler specified by <paramref name="path" /> was executed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="path" /> is not a virtual path.</exception>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -200,8 +172,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String,System.IO.TextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -211,28 +183,10 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the handler to execute.</param>
-        <param name="writer">An object to capture the output.</param>
-        <summary>Executes the handler for the specified virtual path in the context of the current process, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the executed handler.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `writer` parameter is passed by reference to the Execute method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `writer` object. For an example, see Execute.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.  
-  
- \- or -  
-  
- An error occurred when the handler specified by <paramref name="path" /> was executed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="path" /> is not a virtual path.</exception>
+        <param name="path">To be added.</param>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -241,8 +195,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String,System.IO.TextWriter,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -253,25 +207,11 @@
         <Parameter Name="preserveForm" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the handler to execute.</param>
-        <param name="writer">The object to capture the output.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <summary>Executes the handler for the specified virtual path in the context of the current request, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the page and a value that indicates whether to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</summary>
+        <param name="path">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> instance is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="path" /> ends with a period (.).  
-  
- \- or -  
-  
- An error occurred when the handler specified by <paramref name="path" /> was executed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path" /> is not a virtual path.</exception>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -280,8 +220,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.Web.IHttpHandler,System.IO.TextWriter,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -292,14 +232,11 @@
         <Parameter Name="preserveForm" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="handler">The HTTP handler that implements the interface to transfer the current request to.</param>
-        <param name="writer">The object to capture the output.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <summary>Executes the specified handler in the context of the current process, using a <see cref="T:System.IO.TextWriter" /> instance to capture output from the executed handler and a value that specifies whether to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</summary>
+        <param name="handler">To be added.</param>
+        <param name="writer">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">An error occurred when the handler specified by <paramref name="handler" /> was executed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetLastError">
@@ -308,16 +245,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.GetLastError" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the most recent exception.</summary>
-        <returns>The previous exception that was thrown.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,8 +264,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlDecode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -337,9 +274,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The HTML string to decode.</param>
-        <summary>Decodes an HTML-encoded string and returns the decoded string.</summary>
-        <returns>The decoded text.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,8 +286,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlDecode(System.String,System.IO.TextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -360,17 +297,10 @@
         <Parameter Name="output" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="s">The HTML string to decode.</param>
-        <param name="output">The stream to contain the decoded string.</param>
-        <summary>Decodes an HTML-encoded string and returns the results in a stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `output` parameter is passed by reference to the HtmlDecode method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see HtmlDecode.  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -379,8 +309,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlEncode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -389,9 +319,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The string to encode.</param>
-        <summary>HTML-encodes a string and returns the encoded string.</summary>
-        <returns>The HTML-encoded text.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,8 +331,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlEncode(System.String,System.IO.TextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -412,17 +342,10 @@
         <Parameter Name="output" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="s">The string to encode.</param>
-        <param name="output">The stream to contain the encoded string.</param>
-        <summary>HTML-encodes a string and sends the resulting output to an output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `output` parameter is passed by reference to the HtmlEncode method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see HtmlEncode.  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -431,17 +354,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpServerUtilityWrapper.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the server's computer name.</summary>
-        <value>The name of the server computer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">The computer name cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapPath">
@@ -450,8 +372,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.MapPath(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -460,11 +382,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The virtual path to get the physical path for.</param>
-        <summary>Returns the physical file path that corresponds to the specified virtual path on the Web server.</summary>
-        <returns>The physical file path that corresponds to <paramref name="path" />.</returns>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> object is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ScriptTimeout">
@@ -473,18 +394,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpServerUtilityWrapper.ScriptTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the request time-out value in seconds.</summary>
-        <value>The time-out value for requests.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> object is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The time-out period is <see langword="null" /> or otherwise cannot be set.</exception>
       </Docs>
     </Member>
     <Member MemberName="Transfer">
@@ -493,8 +412,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Transfer(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -503,8 +422,8 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the page or handler to execute.</param>
-        <summary>Terminates execution of the current process and starts execution of a page or handler that is specified with a URL.</summary>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,8 +433,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Transfer(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -525,12 +444,10 @@
         <Parameter Name="preserveForm" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the page or handler to execute.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <summary>Terminates execution of the current page and starts execution of a different page or handler by using the specified URL and a value that specifies whether to clear the <see cref="System.Web.HttpRequestBase.QueryString%2A" /> and <see cref="System.Web.HttpRequestBase.Form%2A" /> collections.</summary>
+        <param name="path">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ApplicationException">The current page request is a callback.</exception>
       </Docs>
     </Member>
     <Member MemberName="Transfer">
@@ -539,8 +456,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Transfer(System.Web.IHttpHandler,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -550,12 +467,10 @@
         <Parameter Name="preserveForm" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="handler">The HTTP handler to transfer the current request to.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <summary>Terminates execution of the current process and starts execution of a new request, using a custom HTTP handler and a value that specifies whether to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</summary>
+        <param name="handler">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ApplicationException">The current page request is a callback.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransferRequest">
@@ -564,8 +479,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -574,13 +489,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the page or handler to execute.</param>
-        <summary>Asynchronously executes the end point at the specified URL.</summary>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.PlatformNotSupportedException">The request requires the integrated pipeline mode of [!INCLUDE[iisver](~/add/includes/iisver-md.md)].</exception>
-        <exception cref="T:System.Web.HttpException">The server is not available to handle the request.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="path" /> parameter is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransferRequest">
@@ -589,8 +500,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -600,15 +511,10 @@
         <Parameter Name="preserveForm" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the page to execute.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <summary>Asynchronously executes the endpoint at the specified URL and specifies whether to clear the <see cref="System.Web.HttpRequestBase.QueryString%2A" /> and <see cref="System.Web.HttpRequestBase.Form%2A" /> collections.</summary>
+        <param name="path">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.PlatformNotSupportedException">The request requires the integrated pipeline mode of [!INCLUDE[iisver](~/add/includes/iisver-md.md)].</exception>
-        <exception cref="T:System.Web.HttpException">The server is not available to handle the request.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="path" /> parameter is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransferRequest">
@@ -617,8 +523,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String,System.Boolean,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -630,17 +536,41 @@
         <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="path">The URL of the page or handler to execute.</param>
-        <param name="preserveForm">
-          <see langword="true" /> to preserve the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections; <see langword="false" /> to clear the <see cref="System.Web.HttpRequest.QueryString%2A" /> and <see cref="System.Web.HttpRequest.Form%2A" /> collections.</param>
-        <param name="method">The HTTP method (<see langword="GET" />, <see langword="POST" />, and so on) to use for the new request. If <see langword="null" />, the HTTP method of the original request is used.</param>
-        <param name="headers">A collection of request headers for the new request.</param>
-        <summary>Asynchronously executes the endpoint at the specified URL by using the specified HTTP method and headers.</summary>
+        <param name="path">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <param name="method">To be added.</param>
+        <param name="headers">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.PlatformNotSupportedException">The request requires [!INCLUDE[iisver](~/add/includes/iisver-md.md)] running in integrated mode.</exception>
-        <exception cref="T:System.Web.HttpException">The server is not available to handle the request.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="path" /> parameter is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferRequest">
+      <MemberSignature Language="C#" Value="public override void TransferRequest (string path, bool preserveForm, string method, System.Collections.Specialized.NameValueCollection headers, bool preserveUser);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransferRequest(string path, bool preserveForm, string method, class System.Collections.Specialized.NameValueCollection headers, bool preserveUser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String,System.Boolean,System.String,System.Collections.Specialized.NameValueCollection,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="method" Type="System.String" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="preserveUser" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="preserveForm">To be added.</param>
+        <param name="method">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="preserveUser">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -649,8 +579,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlDecode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -659,9 +589,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The string to decode.</param>
-        <summary>Decodes a URL-encoded string and returns the decoded string.</summary>
-        <returns>The decoded text.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,8 +601,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlDecode(System.String,System.IO.TextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -682,17 +612,10 @@
         <Parameter Name="output" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="s">The HTML string to decode.</param>
-        <param name="output">The stream to contain the decoded string.</param>
-        <summary>Decodes a URL-encoded string and sends the resulting output to a stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `output` parameter is passed by reference to the UrlDecode method. To retrieve the output from the handler after the method completes, you use the properties and methods of the `output` object. For an example, see <xref:System.Web.HttpServerUtility.HtmlDecode%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
@@ -701,8 +624,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlEncode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -711,9 +634,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The text to URL-encode.</param>
-        <summary>URL-encodes a string and returns the encoded string.</summary>
-        <returns>The URL-encoded text.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,8 +646,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlEncode(System.String,System.IO.TextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -734,9 +657,9 @@
         <Parameter Name="output" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="s">The string to encode.</param>
-        <param name="output">The stream to contain the encoded string.</param>
-        <summary>URL-encodes a string and sends the resulting output to a stream.</summary>
+        <param name="s">To be added.</param>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,8 +669,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlPathEncode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -756,9 +679,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The string to URL-encode.</param>
-        <summary>URL-encodes the path section of a URL string.</summary>
-        <returns>The URL-encoded text.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -768,8 +691,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlTokenDecode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -778,11 +701,10 @@
         <Parameter Name="input" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="input">The URL string token to decode.</param>
-        <summary>Decodes a URL string token into an equivalent byte array by using base64 digits.</summary>
-        <returns>The byte array that contains the decoded URL string token.</returns>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="UrlTokenEncode">
@@ -791,8 +713,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlTokenEncode(System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -801,11 +723,10 @@
         <Parameter Name="input" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="input">The byte array to encode.</param>
-        <summary>Encodes a byte array into an equivalent string representation by using base64 digits, which makes it usable for transmission on the URL.</summary>
-        <returns>The string that contains the encoded array if the length of <paramref name="input" /> is greater than 1; otherwise, an empty string ("").</returns>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WsiProfilesElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a strongly typed collection of <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WsiProfilesElementCollection class is used to work with a collection of <xref:System.Web.Services.Configuration.WsiProfilesElement> objects.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Web.Services.Configuration.WsiProfilesElementCollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,8 +51,8 @@
         <Parameter Name="element" Type="System.Web.Services.Configuration.WsiProfilesElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to add.</param>
-        <summary>Adds a <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to the collection.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> objects from the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,10 +90,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to find in the collection.</param>
-        <summary>Returns a <see cref="T:System.Boolean" /> that indicates whether a <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> with the specified key exists in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains a <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> with the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,9 +113,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to which to copy the contents of the collection.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the elements from the collection to an array, starting at a specified index of the array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +126,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,9 +176,9 @@
         <Parameter Name="element" Type="System.Web.Services.Configuration.WsiProfilesElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to find in the collection.</param>
-        <summary>Returns the zero-based index of a specified <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> in the collection.</summary>
-        <returns>The zero-based index of the specified <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" />, or -1 if the element was not found in the collection.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +189,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,9 +198,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index into the collection.</param>
-        <summary>Gets or sets the element at a specified index in the collection.</summary>
-        <value>The <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> that exists at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,7 +211,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,11 +220,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to get or set in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> that has the specified key in the collection.</summary>
-        <value>The <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> with the specified key.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> with the specified key was not found in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -253,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,8 +242,8 @@
         <Parameter Name="element" Type="System.Web.Services.Configuration.WsiProfilesElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to remove from the collection.</param>
-        <summary>Removes a specified <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> from the collection.</summary>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +254,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,8 +263,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to remove from the collection.</param>
-        <summary>Removes the element at the specified index in the collection.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,7 +275,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,8 +284,8 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> to be removed from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> with the specified key from the collection.</summary>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

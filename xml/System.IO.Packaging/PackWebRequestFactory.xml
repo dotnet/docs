@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackWebRequestFactory" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the class that is invoked when an instance of a pack URI <see cref="T:System.IO.Packaging.PackWebRequest" /> is created.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Packaging.PackWebRequestFactory" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -61,17 +58,10 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">The [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] to create the Web request.</param>
-        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  Use the type-safe <see cref="T:System.IO.Packaging.PackUriHelper" /> method instead.</summary>
-        <returns>The pack URI Web request.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a pack URI Web request from a given [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <param name="uri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

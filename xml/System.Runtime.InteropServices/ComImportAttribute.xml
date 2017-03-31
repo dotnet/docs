@@ -3,9 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComImportAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComImportAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,29 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that the attributed type was previously defined in COM.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to classes or interfaces, although the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) typically applies it for you when it imports a type library.  
-  
- ComImportAttribute is a pseudo-custom attribute that indicates that a type has been defined in a previously published type library. The common language runtime treats these types differently when activating, exporting, coercing, and so on.  
-  
-> [!NOTE]
->  All base COM types that are inherited by a managed object must aggregate the Free Threaded Marshaller (FTM).  COM types that do not aggregate the FTM can't be inherited by managed objects.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to apply the ComImportAttribute to a managed interface declaration. You apply this attribute only when generating an interop assembly manually in source code, and want to simulate the metadata produced by Tlbimp.exe.  
-  
- [!code-cpp[ImprovedInteropSnippets#2](~/add/codesnippet/cpp/t-system.runtime.interop_7_1.cpp)]
- [!code-vb[ImprovedInteropSnippets#2](~/add/codesnippet/visualbasic/t-system.runtime.interop_7_1.vb)]
- [!code-cs[ImprovedInteropSnippets#2](~/add/codesnippet/csharp/t-system.runtime.interop_7_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,13 +42,25 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComImportAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComImportAttribute" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

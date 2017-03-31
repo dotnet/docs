@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementHostingModel" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values that specify the hosting model for the provider.  
-  
- Note: the WMI .NET libraries are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries. The [MI APIs](https://msdn.microsoft.com/en-us/library/jj152383%28v=vs.80%29.aspx) should be used for all new development.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To learn more about WMI provider hosting models, see the Provider Hosting and Security topic on MSDN online.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Decoupled">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Activates the provider as a decoupled provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalService">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Activates the provider in the provider host process that is running under the LocalService account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalSystem">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Activates the provider in the provider host process that is running under the LocalSystem account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetworkService">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Activates the provider in the provider host process that is running under the NetworkService account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

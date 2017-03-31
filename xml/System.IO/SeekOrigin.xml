@@ -3,9 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SeekOrigin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.SeekOrigin" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,23 +26,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the position in a stream to use for seeking.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SeekOrigin is used by the `Seek` methods of <xref:System.IO.Stream>, <xref:System.IO.BufferedStream>, <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, <xref:System.IO.BinaryWriter>, and other classes. The `Seek` methods take an offset parameter that is relative to the position specified by SeekOrigin.  
-  
-   
-  
-## Examples  
- The following example shows how to read backwards starting at the end of the stream, and how to read from a specified point in the stream.  
-  
- [!code-vb[System.IO.FileStream.Seek#1](~/add/codesnippet/visualbasic/t-system.io.seekorigin_1.vb)]
- [!code-cs[System.IO.FileStream.Seek#1](~/add/codesnippet/csharp/t-system.io.seekorigin_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Begin">
@@ -41,15 +36,25 @@
       <MemberSignature Language="DocId" Value="F:System.IO.SeekOrigin.Begin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.SeekOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the beginning of a stream.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -58,15 +63,25 @@
       <MemberSignature Language="DocId" Value="F:System.IO.SeekOrigin.Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.SeekOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the current position within a stream.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -75,15 +90,25 @@
       <MemberSignature Language="DocId" Value="F:System.IO.SeekOrigin.End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.SeekOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the end of a stream.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.InterpolationMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The InterpolationMode enumeration specifies the algorithm that is used when images are scaled or rotated.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies bicubic interpolation. No prefiltering is done. This mode is not suitable for shrinking an image below 25 percent of its original size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bilinear">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies bilinear interpolation. No prefiltering is done. This mode is not suitable for shrinking an image below 50 percent of its original size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies default mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies high quality interpolation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighQualityBicubic">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies high-quality, bicubic interpolation. Prefiltering is performed to ensure high-quality shrinking. This mode produces the highest quality transformed images.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighQualityBilinear">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies high-quality, bilinear interpolation. Prefiltering is performed to ensure high-quality shrinking.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Equivalent to the <see cref="T:System.Drawing.Drawing2D.QualityMode" /> element of the <see cref="T:System.Drawing.Drawing2D.QualityMode" /> enumeration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies low quality interpolation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NearestNeighbor">
@@ -158,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.InterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies nearest-neighbor interpolation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriterAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the HTML attributes that an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object writes to the opening tag of an HTML element when a Web request is processed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is commonly used with the following methods of the <xref:System.Web.UI.HtmlTextWriter> class: <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A>, <xref:System.Web.UI.HtmlTextWriter.GetAttributeName%2A>, <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A>, <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A>.  
-  
-   
-  
-## Examples  
- The following example uses the HtmlTextWriterAttribute enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method to add an `Onclick` attribute to an HTML element and sets its value to ECMAScript code.  
-  
- [!code-vb[System.Web.UI.HtmlTextWriter#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmltext_0_1.vb)]
- [!code-cs[System.Web.UI.HtmlTextWriter#1](~/add/codesnippet/csharp/t-system.web.ui.htmltext_0_1.cs)]
- [!code-cpp[System.Web.UI.HtmlTextWriter#1](~/add/codesnippet/cpp/t-system.web.ui.htmltext_0_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Abbr">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="abbr" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Accesskey">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="accesskey" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="align" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Alt">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="alt" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AutoComplete">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="autocomplete" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Axis">
@@ -123,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="axis" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -140,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="background" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bgcolor">
@@ -157,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="bgcolor" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -174,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="border" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bordercolor">
@@ -191,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="bordercolor" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cellpadding">
@@ -208,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="cellpadding" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cellspacing">
@@ -225,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="cellspacing" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -242,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="checked" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -259,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="class" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cols">
@@ -276,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="cols" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Colspan">
@@ -293,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="colspan" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -310,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="content" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Coords">
@@ -327,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="coords" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DesignerRegion">
@@ -344,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="designerregion" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dir">
@@ -361,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="dir" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -378,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="disabled" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -395,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="for" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -412,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="headers" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -429,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="height" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Href">
@@ -446,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="href" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -463,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="id" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Longdesc">
@@ -480,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="longdesc" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Maxlength">
@@ -497,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="maxlength" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Multiple">
@@ -514,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="multiple" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -531,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="name" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nowrap">
@@ -548,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="nowrap" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Onchange">
@@ -565,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="onchange" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Onclick">
@@ -582,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="onclick" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -599,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="readonly" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rel">
@@ -616,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="rel" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -633,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="rows" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rowspan">
@@ -650,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="rowspan" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rules">
@@ -667,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="rules" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -684,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="scope" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -701,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="selected" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -718,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="shape" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -735,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="size" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Src">
@@ -752,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="src" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -769,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="style" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tabindex">
@@ -786,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="tabindex" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -803,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="target" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -820,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="title" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -837,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="type" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Usemap">
@@ -854,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="usemap" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valign">
@@ -871,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="valign" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -888,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="value" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VCardName">
@@ -905,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="vcardname" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -922,14 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="width" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -939,14 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the HTML <see langword="wrap" /> attribute be written to the tag.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

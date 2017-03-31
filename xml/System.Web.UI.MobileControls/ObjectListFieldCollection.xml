@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,20 +26,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> objects. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class object provides the container for the fields of an <xref:System.Web.UI.MobileControls.ObjectList>. Accessing the <xref:System.Web.UI.MobileControls.ObjectList.Fields%2A> property of an <xref:System.Web.UI.MobileControls.ObjectList> retrieves an ObjectListFieldCollection object.  
-  
- The properties and methods of the ObjectListFieldCollection class are a superset of the <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface. All properties and methods of that interface, including those that it inherits from the ASP.NET <xref:System.Collections.ICollection> interface, are applicable here. This class provides additional properties and methods to modify the collection. These properties and methods provide standard collection management capability, such as adding, removing, and clearing the collection.  
-  
- If you change the collection by calling the methods <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.Add%2A>, <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.AddAt%2A>, <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove%2A>, or <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.RemoveAt%2A> during Page_Init, the view state for the <xref:System.Web.UI.MobileControls.ObjectList.Fields%2A>, <xref:System.Web.UI.MobileControls.ObjectList.Items%2A>, and <xref:System.Web.UI.MobileControls.ObjectList.ViewMode%2A> properties of the object list is ignored.  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -50,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,16 +46,9 @@
         <Parameter Name="field" Type="System.Web.UI.MobileControls.ObjectListField" />
       </Parameters>
       <Docs>
-        <param name="field">The <see cref="T:System.Web.UI.MobileControls.ObjectListField" /> to add to the end of the collection.</param>
-        <summary>Adds a field to the end of the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not available in the read-only <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface. Adding a field to the field collection of an object list changes the data-binding behavior of the control and requires you to bind data to the control again.  
-  
- ]]></format>
-        </remarks>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -79,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,19 +68,10 @@
         <Parameter Name="field" Type="System.Web.UI.MobileControls.ObjectListField" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the collection at which to add the field.</param>
-        <param name="field">The field to add at the specified location in the collection.</param>
-        <summary>Adds a field at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A value of -1 for the `index` parameter specifies that the field is added to the end of the collection.  
-  
- Adding a field to the fields of an object list changes the data-binding behavior of the control, and requires you to bind data to the control again.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -112,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,19 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not available in the read-only <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface.  
-  
- You can use the Clear method for all the classes where this method applies. For example, the Clear method for a <xref:System.Web.UI.MobileControls.StyleSheet> collection clears all the styles in the collection; or for the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection>, it clears all the choices in the collection.  
-  
- Adding a field to the fields of an object list changes the data-binding behavior of the control, and requires you to bind data to the control again.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -142,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,8 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>The items in the specified collection as a single array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,17 +127,10 @@
         <Parameter Name="fieldIDOrName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fieldIDOrName">A string to compare with the <see cref="System.Web.UI.MobileControls.ObjectListField.Title%2A" /> or <see cref="System.Web.UI.MobileControls.ObjectListField.DataField%2A" /> property.</param>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>The index of the specified field.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the second version of this method, it searches for a field with the <xref:System.Web.UI.MobileControls.ObjectListField.Title%2A> property `fieldId` and returns the first matching field. If no match is found, it searches for a field with the <xref:System.Web.UI.MobileControls.ObjectListField.DataField%2A> property's `fieldID` parameter and returns the first matching field. Otherwise, it returns -1.  
-  
- ]]></format>
-        </remarks>
+        <param name="fieldIDOrName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -192,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,17 +149,10 @@
         <Parameter Name="field" Type="System.Web.UI.MobileControls.ObjectListField" />
       </Parameters>
       <Docs>
-        <param name="field">A field to search for in the specified collection.</param>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>The index of the specified field.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the first version of this method, it returns the index of the specified field. If the specified field is not in the collection, it returns -1.  
-  
- ]]></format>
-        </remarks>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -222,16 +162,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the collection tracking its view state changes. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>
-          <see langword="true" /> if tracking its view state changes; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +180,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,9 +189,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item to retrieve.</param>
-        <summary>The default indexer for the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" /> class, allows the lookup of arbitrary capability values by index. Any of the properties can be accessed by name. However, the returned value will always be a string (or <see langword="null" /> if not defined), rather than a type-safe value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>A string representing the value of the field at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,8 +211,8 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">The object containing the view-state information to be loaded.</param>
-        <summary>Loads the previously saved view state to the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +223,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,18 +232,9 @@
         <Parameter Name="field" Type="System.Web.UI.MobileControls.ObjectListField" />
       </Parameters>
       <Docs>
-        <param name="field">The field to remove.</param>
-        <summary>Removes the specified field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Not available in the <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface.  
-  
- Removing a field from the fields of an object list changes the data-binding behavior of the control, and requires you to bind data to the control again.  
-  
- ]]></format>
-        </remarks>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -318,7 +244,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,8 +253,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index number of the item to remove.</param>
-        <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,7 +265,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -348,8 +272,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes to a server control's view state to a <see cref="T:System.Object" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>A <see cref="T:System.Object" /> that contains the view-state information.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,8 +293,8 @@
         <Parameter Name="value" Type="System.Web.UI.MobileControls.ObjectListField[]" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> array.</param>
-        <summary>Sets the array of <see cref="T:System.Web.UI.MobileControls.ObjectListItem" /> objects as the <see cref="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,23 +305,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IStateManager.IsTrackingViewState%2A" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -408,7 +323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,16 +332,9 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">The object containing the view state to load.</param>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IStateManager.LoadViewState%2A" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -437,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -445,16 +351,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IStateManager.SaveViewState%2A" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>Returns either an object containing the ViewState changes or <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -464,7 +363,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,15 +370,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IStateManager.TrackViewState%2A" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -490,7 +381,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -498,15 +388,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Instructs the collection to track changes to its view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After this method has been called, the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection.IsTrackingViewState%2A> property will return `true`.  Also, the <xref:System.Web.UI.IStateManager.IsTrackingViewState%2A> property of the <xref:System.Web.UI.IStateManager> objects in the <xref:System.Web.UI.MobileControls.MobileListItemCollection> will be set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

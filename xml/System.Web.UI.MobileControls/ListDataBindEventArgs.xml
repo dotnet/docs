@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListDataBindEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides parameters for an <see cref="E:System.Web.UI.MobileControls.List.ItemDataBind" /> event. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event to get the starting totals of status settings for the list. This code is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
-  
- [!code-vb[MobileListSample#4](~/add/codesnippet/visualbasic/t-system.web.ui.mobileco_7_1.aspx)]
- [!code-cs[MobileListSample#4](~/add/codesnippet/csharp/t-system.web.ui.mobileco_7_1.aspx)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,17 +34,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">Initializes <see cref="System.Web.UI.MobileControls.ListDataBindEventArgs.ListItem%2A" />.</param>
-        <param name="dataItem">Initializes <see cref="System.Web.UI.MobileControls.ListDataBindEventArgs.DataItem%2A" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListDataBindEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor creates a new <xref:System.Web.UI.MobileControls.ListDataBindEventArgs> object. The constructor initializes the <xref:System.Web.UI.MobileControls.ListDataBindEventArgs.ListItem%2A> and <xref:System.Web.UI.MobileControls.ListDataBindEventArgs.DataItem%2A> properties with the values of `listItem` and `dataItem`, respectively.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -67,15 +47,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the specified data object of the list item that is being bound. This property is available only on a request where the list item is data bound; on subsequent postbacks, it is always <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The specified data object for the list item that is being bound.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobileListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the current <see cref="T:System.Web.UI.WebControls.ListItem" /> that is being bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.ListItem" /> being bound.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

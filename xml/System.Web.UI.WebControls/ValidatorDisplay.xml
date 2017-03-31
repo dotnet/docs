@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidatorDisplay" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the display behavior of error messages in validation controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValidatorDisplay enumeration represents the different display behaviors of error messages in validation controls.  
-  
- None specifies that you only want to display the error message in a <xref:System.Web.UI.WebControls.ValidationSummary> control. The error message will not display in the validation control.  
-  
- Static specifies that you don't want the layout of the Web page to change when validator controls display error messages. Space on the page is allocated for the error messages when displaying the page. The validator contents are physically part of the page; therefore, multiple validators for the same input control must occupy different locations on the page.  
-  
- Dynamic specifies that you want to dynamically place error messages on the Web page when validation fails. Space for the validation content is not allocated on the page; therefore, the page dynamically changes to display the error message. This allows multiple validators to share the same physical location on the page. In order to keep the page layout from changing when an error message is displayed, the HTML element containing the validator must be sized large enough to accommodate the maximum size of the validator.  
-  
-## Accessibility  
- For information about how to configure validation controls so that they generate markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dynamic">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validator content dynamically added to the page when validation fails.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validator content never displayed inline.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Validator content physically part of the page layout.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

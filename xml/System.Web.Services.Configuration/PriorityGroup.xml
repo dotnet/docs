@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.PriorityGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the values that can be used to set the priority and group attributes for a SOAP extension in the Web Services configuration file.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.PriorityGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the value 1. Indicates that the SOAP extension executes in the group of SOAP extensions with the highest priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.PriorityGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the value 0. Indicates that the SOAP extension executes in the group of SOAP extensions with the lowest priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StagingAreaInputItem" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates an input event when it is being processed by the input manager.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StagingAreaInputItem class provides a dictionary-based storage of the listeners of the input manager events.  
-  
- The input staging area processes raw input into [!INCLUDE[TLA2#tla_wpf](~/add/includes/tla2sharptla-wpf-md.md)] events.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetData">
@@ -32,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,11 +31,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">An arbitrary key for the data. This cannot be <see langword="null" />.</param>
-        <summary>Gets the input data associated with the specified key.</summary>
-        <returns>The data for this key, or <see langword="null" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for calling this method.  Associated enumerations:  <see cref="T:System.Security.Permissions.PermissionState" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -56,7 +44,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -68,8 +55,8 @@
         <ReturnType>System.Windows.Input.InputEventArgs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the input event data associated with this <see cref="T:System.Windows.Input.StagingAreaInputItem" /> object</summary>
-        <value>The event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -96,18 +82,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">An arbitrary key for the data. This cannot be <see langword="null" />.</param>
-        <param name="value">The data to set for this key. This can be <see langword="null" />.</param>
-        <summary>Creates a dictionary entry by using the specified key and the specified data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This data is used during the processing of this input event.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for calling this method.  Associated enumerations:  <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

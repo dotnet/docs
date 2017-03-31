@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an awaitable object that asynchronously yields control back to the current dispatcher and provides an opportunity for the dispatcher to process other events</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Threading.Dispatcher.Yield%2A?displayProperty=fullName> method returns a DispatcherPriorityAwaitable.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetAwaiter">
@@ -36,8 +29,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an object that waits for the completion of an asynchronous task.</summary>
-        <returns>An object that waits for the completion of an asynchronous task.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

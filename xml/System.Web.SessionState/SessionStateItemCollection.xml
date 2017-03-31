@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,23 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A collection of objects stored in session state. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SessionStateItemCollection class is used to manage session-state variable values indexed by a variable name or by numerical index. The session-state variables are exposed to ASP.NET application code using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessed using the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page>. The <xref:System.Web.SessionState.HttpSessionState> class calls the <xref:System.Web.SessionState.HttpSessionStateContainer> class, which manages session-state variable values using the SessionStateItemCollection.  
-  
-   
-  
-## Examples  
- The following code example creates a new SessionStateItemCollection object and sets and gets values in the collection by name.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/csharp/t-system.web.sessionstat_7_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/visualbasic/t-system.web.sessionstat_7_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,28 +29,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new, empty <see cref="T:System.Web.SessionState.SessionStateItemCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.SessionState.SessionStateItemCollection> class is used to manage session-state variable values indexed by a variable name or by numerical index. The session-state variables are exposed to ASP.NET application code using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessed using the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page>. The <xref:System.Web.SessionState.HttpSessionState> class calls the <xref:System.Web.SessionState.HttpSessionStateContainer> class, which manages session-state variable values using the <xref:System.Web.SessionState.SessionStateItemCollection> collection.  
-  
-   
-  
-## Examples  
- The following code example creates a new <xref:System.Web.SessionState.SessionStateItemCollection> object and sets and gets values in the collection by name.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/csharp/m-system.web.sessionstat_4_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/visualbasic/m-system.web.sessionstat_4_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -76,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,7 +51,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all values and keys from the session-state collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,28 +71,10 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> used to read the serialized collection from a stream or encoded string.</param>
-        <summary>Creates a <see cref="T:System.Web.SessionState.SessionStateItemCollection" /> collection from a storage location that is written to using the <see cref="System.Web.SessionState.SessionStateItemCollection.Serialize%2A" /> method.</summary>
-        <returns>A <see cref="T:System.Web.SessionState.SessionStateItemCollection" /> collection populated with the contents from a storage location that is written to using the <see cref="System.Web.SessionState.SessionStateItemCollection.Serialize%2A" /> method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Deserialize method can be used to read the contents of a <xref:System.Web.SessionState.SessionStateItemCollection> collection from the session store.  
-  
- To write the contents of a <xref:System.Web.SessionState.SessionStateItemCollection> object to the session store, use the <xref:System.Web.SessionState.SessionStateItemCollection.Serialize%2A> method.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Web.SessionState.SessionStateItemCollection> collection from a file that was created using the <xref:System.Web.SessionState.SessionStateItemCollection.Serialize%2A> method.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#4](~/add/codesnippet/csharp/78282571-fa03-4b90-a3df-_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#4](~/add/codesnippet/visualbasic/78282571-fa03-4b90-a3df-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">The session state information is invalid or corrupted</exception>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dirty">
@@ -136,30 +84,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the collection has been marked as changed.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.SessionState.SessionStateItemCollection" /> contents have been changed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Dirty property is used to indicate whether the contents of the <xref:System.Web.SessionState.SessionStateItemCollection> collection have changed.  
-  
- The Dirty property is set to `true` when an object value is set or added to the collection using the <xref:System.Web.SessionState.SessionStateItemCollection.Item%2A> property and when one or more object values are removed from the collection using the <xref:System.Web.SessionState.SessionStateItemCollection.Remove%2A>, <xref:System.Web.SessionState.SessionStateItemCollection.RemoveAt%2A>, or <xref:System.Web.SessionState.SessionStateItemCollection.Clear%2A> methods.  
-  
- The Dirty property is also set to `true` when a mutable object is retrieved from the collection using the <xref:System.Web.SessionState.SessionStateItemCollection.Item%2A> property.  
-  
- Calling the <xref:System.Web.SessionState.SessionStateItemCollection.Deserialize%2A> method to populate a <xref:System.Web.SessionState.SessionStateItemCollection> collection results in the Dirty property being set to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -169,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,19 +109,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to read all the key names in the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can iterate through the variable names in the session-state collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example gets the variable names in a <xref:System.Web.SessionState.SessionStateItemCollection> collection using the GetEnumerator method.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/csharp/m-system.web.sessionstat_7_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/visualbasic/m-system.web.sessionstat_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -199,7 +121,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,20 +130,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The numerical index of the value in the collection.</param>
-        <summary>Gets or sets a value in the collection by numerical index.</summary>
-        <value>The value in the collection stored at the specified index. If the specified key is not found, attempting to get it returns <see langword="null" />, and attempting to set it creates a new element using the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example sets and gets values in a <xref:System.Web.SessionState.SessionStateItemCollection> collection by numerical index.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#2](~/add/codesnippet/csharp/p-system.web.sessionstat_10_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#2](~/add/codesnippet/visualbasic/p-system.web.sessionstat_10_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -232,7 +143,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,20 +152,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The key name of the value in the collection.</param>
-        <summary>Gets or sets a value in the collection by name.</summary>
-        <value>The value in the collection with the specified name. If the specified key is not found, attempting to get it returns <see langword="null" />, and attempting to set it creates a new element using the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example sets and gets values in a <xref:System.Web.SessionState.SessionStateItemCollection> collection by name.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/csharp/p-system.web.sessionstat_0_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/visualbasic/p-system.web.sessionstat_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -265,31 +165,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the variable names for all values stored in the collection.</summary>
-        <value>The <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> collection that contains all the collection keys.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each key is a string that represents a variable name for a value stored in the collection.  
-  
-   
-  
-## Examples  
- The following code example gets the variable names in a <xref:System.Web.SessionState.SessionStateItemCollection> collection using the variable names returned by the Keys property.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/csharp/p-system.web.sessionstat_5_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#1](~/add/codesnippet/visualbasic/p-system.web.sessionstat_5_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -299,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,16 +192,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the item to delete from the collection.</param>
-        <summary>Deletes an item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.SessionState.SessionStateItemCollection> collection does not contain an element with the specified `name`, the collection remains unchanged. No exception is thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -328,7 +204,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,22 +213,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item to remove from the collection.</param>
-        <summary>Deletes an item at a specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.SessionState.SessionStateItemCollection> collection does not contain an element with the specified `name`, the collection remains unchanged. No exception is thrown.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- \- or -  
-  
- <paramref name="index" /> is equal to or greater than <see cref="System.Collections.ICollection.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -363,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,26 +234,9 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> used to write the serialized collection to a stream or encoded string.</param>
-        <summary>Writes the contents of the collection to a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Serialize method can be used to write the contents of a <xref:System.Web.SessionState.SessionStateItemCollection> collection to the session store.  
-  
- To retrieve a serialized <xref:System.Web.SessionState.SessionStateItemCollection> object from the session store, use the <xref:System.Web.SessionState.SessionStateItemCollection.Deserialize%2A> method.  
-  
-   
-  
-## Examples  
- The following code example creates and populates a <xref:System.Web.SessionState.SessionStateItemCollection> collection and writes the contents to a file using the Serialize method.  
-  
- [!code-cs[System.Web.SessionState.SessionStateItemCollection#3](~/add/codesnippet/csharp/5b039a26-e8db-4d6c-ae38-_1.aspx)]
- [!code-vb[System.Web.SessionState.SessionStateItemCollection#3](~/add/codesnippet/visualbasic/5b039a26-e8db-4d6c-ae38-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

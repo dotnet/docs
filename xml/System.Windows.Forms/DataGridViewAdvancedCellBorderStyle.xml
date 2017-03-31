@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the border styles that can be applied to the cells of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control returns an object of type <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle>, which has properties of type DataGridViewAdvancedCellBorderStyle.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A?displayProperty=fullName> property to customize the borders of the upper-left cell. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/add/codesnippet/csharp/t-system.windows.forms.d_55_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/add/codesnippet/visualbasic/t-system.windows.forms.d_55_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Inset">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single-line sunken border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsetDouble">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A double-line sunken border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No borders.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The border is not set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Outset">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single-line raised border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutsetDouble">
@@ -122,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A double-line raised border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutsetPartial">
@@ -139,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single-line border containing a raised portion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -156,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A single-line border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ControlParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,25 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Binds the value of a property of a <see cref="T:System.Web.UI.Control" /> to a parameter object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the ControlParameter class to bind the value of a <xref:System.Web.UI.Control> property, such as <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> or <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A>, to a parameter that is used in a parameterized SQL query, business object method, or filtering expression.  
-  
- The ControlParameter class provides two properties in addition to those inherited from the <xref:System.Web.UI.WebControls.Parameter> class: <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A>. The <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> property identifies which <xref:System.Web.UI.Control> instance to bind to and the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> property identifies the public property of the <xref:System.Web.UI.Control> from which the ControlParameter class retrieves a value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a ControlParameter object to bind data displayed in a <xref:System.Web.UI.WebControls.ListBox> control to the selected value of a <xref:System.Web.UI.WebControls.DropDownList> control in a declarative scenario. The ControlParameter object is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection of the <xref:System.Web.UI.WebControls.SqlDataSource> control on the form, and corresponds to the "@Title" placeholder text in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property.  
-  
- [!code-cs[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_269_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_269_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,28 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new unnamed instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.UI.WebControls.ControlParameter> object that is created with the ControlParameter constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties are initialized to <xref:System.String.Empty?displayProperty=fullName>. In addition, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
-  
-   
-  
-## Examples  
- The following code shows how to create a <xref:System.Web.UI.WebControls.ControlParameter> object with the ControlParameter constructor. The <xref:System.Web.UI.WebControls.ControlParameter> object binds the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of a <xref:System.Web.UI.WebControls.DropDownList> control to a parameterized SQL query that retrieves data that is displayed in a <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
- [!code-vb[System.Web.UI.WebControls.Parameter_3#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_108_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.Parameter_3#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_108_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,23 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="original" Type="System.Web.UI.WebControls.ControlParameter" />
       </Parameters>
       <Docs>
-        <param name="original">A <see cref="T:System.Web.UI.WebControls.ControlParameter" /> instance from which the current instance is initialized.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class with values from the specified instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ControlParameter constructor is a protected copy constructor that is used to clone a <xref:System.Web.UI.WebControls.ControlParameter> instance. The values of the <xref:System.Web.UI.WebControls.ControlParameter> object, including the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A>, <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A>, <xref:System.Web.UI.WebControls.Parameter.Name%2A>, and <xref:System.Web.UI.WebControls.Parameter.Type%2A> properties, are all transferred to the new instance.  
-  
- ]]></format>
-        </remarks>
+        <param name="original">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -110,17 +67,10 @@
         <Parameter Name="controlID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter.</param>
-        <param name="controlID">The name of the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <summary>Initializes a new named instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class, using the specified control name to identify which control to bind to.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.UI.WebControls.ControlParameter> object that is created with the ControlParameter constructor is initialized with the specified parameter name and <xref:System.Web.UI.Control> name, which identifies the <xref:System.Web.UI.Control> that the parameter binds to. Other properties, including <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A>, are initialized with default values.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="controlID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,7 +80,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -139,26 +88,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter.</param>
-        <param name="controlID">The name of the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <param name="propertyName">The name of the property on the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <summary>Initializes a new named instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class, using the specified property name and control name to identify which control to bind to.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.UI.WebControls.ControlParameter> object that is created with the ControlParameter constructor is initialized with the specified parameter name, <xref:System.Web.UI.Control> name, and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> property, which identifies the <xref:System.Web.UI.Control> that the parameter binds to. Other properties, including <xref:System.Web.UI.WebControls.Parameter.Type%2A>, <xref:System.Web.UI.WebControls.Parameter.Direction%2A>, and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A>, are initialized with default values.  
-  
-   
-  
-## Examples  
- The following code shows how to create <xref:System.Web.UI.WebControls.ControlParameter> objects by using the ControlParameter constructor. The parameters bind to the values of <xref:System.Web.UI.WebControls.TextBox> and <xref:System.Web.UI.WebControls.DropDownList> controls to enter data in a database from a Web Forms page.  
-  
- [!code-vb[System.Web.UI.WebControls.AccessDataSource_3#2](~/add/codesnippet/visualbasic/c988babb-8ac3-4f61-8005-_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.AccessDataSource_3#2](~/add/codesnippet/csharp/c988babb-8ac3-4f61-8005-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="controlID">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,7 +102,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -178,11 +111,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter.</param>
-        <param name="dbType">The data type of the parameter.</param>
-        <param name="controlID">The name of the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <param name="propertyName">The name of the property of the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class by using the specified parameter name, database type, control ID, and property name.</summary>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="controlID">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +126,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -203,27 +135,12 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter.</param>
-        <param name="type">The type that the parameter represents. The default is <see cref="T:System.TypeCode" />.</param>
-        <param name="controlID">The name of the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <param name="propertyName">The name of the property of the control that the parameter is bound to. The default is <see cref="T:System.String" />.</param>
-        <summary>Initializes a new named and strongly typed instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class, using the specified property name and control name to identify which control to bind to.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.UI.WebControls.ControlParameter> object that is created with the ControlParameter constructor is initialized with the specified parameter name, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, <xref:System.Web.UI.Control> name, and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> property. Only the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> properties are initialized with default values.  
-  
-   
-  
-## Examples  
- The following code shows how to use the ControlParameter constructor to create two <xref:System.Web.UI.WebControls.ControlParameter> objects and associate them with a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
-  
- [!code-vb[System.Web.UI.WebControls.ControlParameter_3#2](~/add/codesnippet/visualbasic/a845f601-c31e-4031-aa1d-_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.ControlParameter_3#2](~/add/codesnippet/csharp/a845f601-c31e-4031-aa1d-_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="controlID">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -233,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,16 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.ControlParameter" /> instance.</summary>
-        <returns>A <see cref="T:System.Web.UI.WebControls.ControlParameter" /> that is an exact duplicate of the current one.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Clone method calls the <xref:System.Web.UI.WebControls.ControlParameter.%23ctor%2A> copy constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ControlParameter> class with the values of the current instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlID">
@@ -260,7 +169,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -281,31 +189,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the name of the control that the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> object binds to.</summary>
-        <value>A <see langword="string" /> that represents the name of a Web server control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ControlID property is a required property that identifies the <xref:System.Web.UI.Control> instance that the <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time.  
-  
- Typically, the ControlID and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties are set for the <xref:System.Web.UI.WebControls.ControlParameter.Evaluate%2A> method to correctly bind to a control. If you do not set the ControlID property, the <xref:System.Web.UI.WebControls.ControlParameter.Evaluate%2A> method throws an <xref:System.ArgumentException> exception when called.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.ControlParameter> object to bind data displayed in a <xref:System.Web.UI.WebControls.ListBox> control to the selected value of a <xref:System.Web.UI.WebControls.DropDownList> control in a declarative scenario. The <xref:System.Web.UI.WebControls.ControlParameter> object is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection of the <xref:System.Web.UI.WebControls.SqlDataSource> control on the form, and corresponds to the "@Title" placeholder text in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property.  
-  
- [!code-cs[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_360_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_360_1.aspx)]  
-  
- The following code example demonstrates how to set the ControlID and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties to identify the control that a <xref:System.Web.UI.WebControls.ControlParameter> object is bound to. The example populates a <xref:System.Web.UI.WebControls.ListBox> control with values. The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the <xref:System.Web.UI.WebControls.ListBox> control is used to filter data retrieved by a <xref:System.Web.UI.WebControls.SqlDataSource> control and displayed by a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- [!code-cs[System.Web.UI.WebControls.ControlParameter_2#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_360_2.aspx)]
- [!code-vb[System.Web.UI.WebControls.ControlParameter_2#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_360_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -315,7 +201,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -326,34 +211,11 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="context">The current <see cref="T:System.Web.HttpContext" /> of the request.</param>
-        <param name="control">The <see cref="T:System.Web.UI.Control" /> that the parameter is bound to.</param>
-        <summary>Updates and returns the value of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> object.</summary>
-        <returns>An <see cref="T:System.Object" /> that represents the updated and current value of the parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.ControlParameter> object attempts to bind to the <xref:System.Web.UI.Control> object and property every time the Evaluate method is called. The Evaluate method returns the value of the control's property that is identified by the combination of the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties.  
-  
- The <xref:System.Web.UI.WebControls.ControlParameter> class never uses the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property, which is inherited from <xref:System.Web.UI.WebControls.Parameter>, when binding to a control's property value.  
-  
-> [!NOTE]
->  In this implementation of the method, the `context` parameter is ignored. If the `control` parameter is `null`, `null` is returned.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Web.UI.WebControls.ControlParameter.ControlID%2A" /> property is not set.  
-  
- \- or -  
-  
- The <see cref="System.Web.UI.WebControls.ControlParameter.PropertyName%2A" /> property is not set and the <see cref="T:System.Web.UI.Control" /> identified by the <see cref="System.Web.UI.WebControls.ControlParameter.ControlID%2A" /> property is not decorated with a <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> attribute.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Web.UI.Control.FindControl%2A" /> does not return the specified control.  
-  
- \- or -  
-  
- The control identified by the <see cref="System.Web.UI.WebControls.ControlParameter.ControlID%2A" /> property does not support the property named by <see cref="System.Web.UI.WebControls.ControlParameter.PropertyName%2A" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -363,7 +225,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -378,47 +239,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the property name of the control identified by the <see cref="System.Web.UI.WebControls.ControlParameter.ControlID%2A" /> property that the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> object binds to.</summary>
-        <value>A <see langword="string" /> that represents the name of a control's property that the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> binds to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PropertyName property identifies the public property of the <xref:System.Web.UI.Control> object identified by the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> property that the <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. PropertyName can be set to a simple string, such as "SelectedValue", or an expression using <xref:System.Web.UI.DataBinder.Eval%2A> syntax to identify complex control properties.  
-  
- While the PropertyName property is optional, typically both <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and PropertyName properties are set for the <xref:System.Web.UI.WebControls.ControlParameter.Evaluate%2A> method to correctly bind to a control. If you set the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> property but not the PropertyName property, the <xref:System.Web.UI.WebControls.ControlParameter.Evaluate%2A> method attempts to use the <xref:System.Web.UI.ControlValuePropertyAttribute> attribute to identify a default PropertyName property. (It is the responsibility of control authors to specify this attribute.) If this fails, <xref:System.Web.UI.WebControls.ControlParameter.Evaluate%2A> throws an <xref:System.ArgumentException> exception.  
-  
- The following table identifies which ASP.NET controls decorate properties with the <xref:System.Web.UI.ControlValuePropertyAttribute> attribute.  
-  
-|Control|Property|  
-|-------------|--------------|  
-|<xref:System.Web.UI.WebControls.Calendar>|<xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A>|  
-|<xref:System.Web.UI.WebControls.CheckBox>|<xref:System.Web.UI.WebControls.CheckBox.Checked%2A>|  
-|<xref:System.Web.UI.WebControls.DataList>|<xref:System.Web.UI.WebControls.DataList.SelectedValue%2A>|  
-|<xref:System.Web.UI.WebControls.DetailsView>|<xref:System.Web.UI.WebControls.DetailsView.SelectedValue%2A>|  
-|<xref:System.Web.UI.WebControls.FormView>|<xref:System.Web.UI.WebControls.FormView.SelectedValue%2A>|  
-|<xref:System.Web.UI.WebControls.GridView>|<xref:System.Web.UI.WebControls.GridView.SelectedValue%2A>|  
-|<xref:System.Web.UI.WebControls.Label>|<xref:System.Web.UI.WebControls.Label.Text%2A>|  
-|<xref:System.Web.UI.WebControls.ListControl>|<xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A>|  
-|<xref:System.Web.UI.WebControls.Menu>|<xref:System.Web.UI.WebControls.Menu.SelectedValue%2A>|  
-|<xref:System.Web.UI.WebControls.TextBox>|<xref:System.Web.UI.WebControls.TextBox.Text%2A>|  
-|<xref:System.Web.UI.WebControls.TreeView>|<xref:System.Web.UI.WebControls.TreeView.SelectedValue%2A>|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.ControlParameter> object to bind data displayed in a <xref:System.Web.UI.WebControls.ListBox> control to the selected value of a <xref:System.Web.UI.WebControls.DropDownList> control in a declarative scenario. The <xref:System.Web.UI.WebControls.DropDownList> control derives from the <xref:System.Web.UI.WebControls.ListControl> control. The <xref:System.Web.UI.WebControls.ControlParameter> object is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection of the <xref:System.Web.UI.WebControls.SqlDataSource> control on the form, and corresponds to the "@Title" placeholder text in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property.  
-  
- [!code-cs[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_946_1.aspx)]
- [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_946_1.aspx)]  
-  
- The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and PropertyName properties to identify the control that a <xref:System.Web.UI.WebControls.ControlParameter> object is bound to. The example populates a <xref:System.Web.UI.WebControls.ListBox> control with values. The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the <xref:System.Web.UI.WebControls.ListBox> control is used to filter data retrieved by a <xref:System.Web.UI.WebControls.SqlDataSource> control and displayed by a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- [!code-cs[System.Web.UI.WebControls.ControlParameter_2#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_946_2.aspx)]
- [!code-vb[System.Web.UI.WebControls.ControlParameter_2#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_946_2.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

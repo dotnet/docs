@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.DashStyles" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements a set of predefined <see cref="T:System.Windows.Media.DashStyle" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
-<a name="xamlTextUsage_DashStyles"></a>   
-## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)].  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dash">
@@ -36,29 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.DashStyle" /> with a <see cref="System.Windows.Media.DashStyle.Dashes%2A" /> property equal to <c>2</c>,<c>2</c>.</summary>
-        <value>A dash sequence of 2,2, which describes a sequence composed of a dash that is twice as long as the pen <see cref="System.Windows.Media.Pen.Thickness%2A" /> followed by a space that is twice as long as the <see cref="System.Windows.Media.Pen.Thickness%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
-<a name="xamlAttributeUsage_Dash"></a>   
-## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.Dash`}"/>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DashDot">
@@ -68,29 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.DashStyle" /> with a <see cref="System.Windows.Media.DashStyle.Dashes%2A" /> property equal to <c>2</c>,<c>2</c>,<c>0</c>,<c>2</c>.</summary>
-        <value>A dash sequence of <c>2</c>,<c>2</c>,<c>0</c>,<c>2</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
-<a name="xamlAttributeUsage_DashDot"></a>   
-## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.DashDot`}"/>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DashDotDot">
@@ -100,29 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.DashStyle" /> with a <see cref="System.Windows.Media.DashStyle.Dashes%2A" /> property equal to <c>2</c>,<c>2</c>,<c>0</c>,<c>2</c>,<c>0</c>,<c>2</c>.</summary>
-        <value>A dash sequence of <c>2</c>,<c>2</c>,<c>0</c>,<c>2</c>,<c>0</c>,<c>2</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
-<a name="xamlAttributeUsage_DashDotDot"></a>   
-## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.DashDotDot`}"/>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dot">
@@ -132,29 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.DashStyle" /> with a <see cref="System.Windows.Media.DashStyle.Dashes%2A" /> property equal to <c>0</c>,<c>2</c>.</summary>
-        <value>A dash sequence of <c>0</c>,<c>2</c>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
-<a name="xamlAttributeUsage_Dot"></a>   
-## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.Dot`}"/>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -164,31 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.DashStyle" /> with an empty <see cref="System.Windows.Media.DashStyle.Dashes%2A" /> property.</summary>
-        <value>A dash sequence with no dashes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property produces a solid line and is equivalent to not defining a dash sequence.  
-  
- The following illustration shows examples of different dash styles applied to an underline.  
-  
- ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
-  
-<a name="xamlAttributeUsage_Solid"></a>   
-## XAML Attribute Usage  
- <*object* *property* ="{ `DashStyles.Solid`}"/>  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

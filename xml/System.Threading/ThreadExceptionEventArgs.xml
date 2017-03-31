@@ -4,35 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Application.ThreadException" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ThreadExceptionEventArgs is created by a thread when an unhandled exception occurs. ThreadExceptionEventArgs contains the <xref:System.Exception> that occurred.  
-  
-   
-  
-## Examples  
- The following example allows you to raise a <xref:System.Windows.Forms.Application.ThreadException> event by clicking `button1` on a form. The example creates two classes. The `ErrorHandler` class creates the form and the button that raises the event. The `CustomExceptionHandler` class provides the methods to handle the exception.  
-  
- In `Main` in the `ErrorHandler` class, the code creates a new instance of the exception handling class, that is, an instance of the `CustomExceptionHandler`. Then the instance is added to the event, and the application is run.  
-  
- In the `OnThreadException` method in the `CustomExceptionHandler` class, the example uses a `try...catch...finally` statement to process the exception. The `ShowThreadExceptionDialog` method creates the message to display, and displays it in a message box.  
-  
- [!code-vb[Classic ThreadExceptionEventArgs Example#1](~/add/codesnippet/visualbasic/t-system.threading.threa_1_1.vb)]
- [!code-cs[Classic ThreadExceptionEventArgs Example#1](~/add/codesnippet/csharp/t-system.threading.threa_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,30 +27,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="t" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="t">The <see cref="T:System.Exception" /> that occurred.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadExceptionEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example allows you to raise a <xref:System.Windows.Forms.Application.ThreadException> event by clicking `button1` on a form. The example creates two classes. The `ErrorHandler` class creates the form and the button that raises the event. The `CustomExceptionHandler` class provides the methods to handle the exception.  
-  
- In `Main` in the `ErrorHandler` class, the code creates a new instance of the exception handling class, that is, an instance of the `CustomExceptionHandler`. Then the instance is added to the event, and the application is run.  
-  
- In the `OnThreadException` method in the `CustomExceptionHandler` class, the example uses a `try...catch...finally` statement to process the exception. The `ShowThreadExceptionDialog` method creates the message to display, and displays it in a message box.  
-  
- [!code-vb[Classic ThreadExceptionEventArgs Example#1](~/add/codesnippet/visualbasic/m-system.threading.threa_30_1.vb)]
- [!code-cs[Classic ThreadExceptionEventArgs Example#1](~/add/codesnippet/csharp/m-system.threading.threa_30_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -75,30 +50,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Exception" /> that occurred.</summary>
-        <value>The <see cref="T:System.Exception" /> that occurred.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example allows you to raise a <xref:System.Windows.Forms.Application.ThreadException> event by clicking `button1` on a form. The example creates two classes. The `ErrorHandler` class creates the form and the button that raises the event. The `CustomExceptionHandler` class provides the methods to handle the exception.  
-  
- In `Main` in the `ErrorHandler` class, the code creates a new instance of the exception handling class, that is, an instance of the `CustomExceptionHandler`. Then the instance is added to the event, and the application is run.  
-  
- In the `OnThreadException` method in the `CustomExceptionHandler` class, the example uses a `try...catch...finally` statement to process the exception. The `ShowThreadExceptionDialog` method creates the message to display, and displays it in a message box.  
-  
- [!code-vb[Classic ThreadExceptionEventArgs Example#1](~/add/codesnippet/visualbasic/p-system.threading.threa_9_1.vb)]
- [!code-cs[Classic ThreadExceptionEventArgs Example#1](~/add/codesnippet/csharp/p-system.threading.threa_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

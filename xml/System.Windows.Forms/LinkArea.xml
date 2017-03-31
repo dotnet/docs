@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkArea" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,26 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an area within a <see cref="T:System.Windows.Forms.LinkLabel" /> control that represents a hyperlink within the control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are two ways to add a hyperlink to the text of a <xref:System.Windows.Forms.LinkLabel> control. You can access the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection> class through the <xref:System.Windows.Forms.LinkLabel.Links%2A> property of the <xref:System.Windows.Forms.LinkLabel> to add multiple hyperlinks to the control's text. If you only need to add a single hyperlink to the text of the control, you can use the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property of the <xref:System.Windows.Forms.LinkLabel>. This property accepts a LinkArea that defines the location of the hyperlink within the control's text. When a hyperlink is specified using the LinkArea property, the link area is then added to the <xref:System.Windows.Forms.LinkLabel.LinkCollection> in the same manner as adding the link using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method of the <xref:System.Windows.Forms.LinkLabel.LinkCollection>.  
-  
- The <xref:System.Windows.Forms.LinkArea.Length%2A> property specifies the number of characters within the text of the <xref:System.Windows.Forms.LinkLabel> to include in the link area. The <xref:System.Windows.Forms.LinkArea.Start%2A> property specifies the first character in the control text to include in the hyperlink. If you want to determine whether a specific LinkArea is empty, you can use the <xref:System.Windows.Forms.LinkArea.IsEmpty%2A> property instead of checking the values of the <xref:System.Windows.Forms.LinkArea.Start%2A> and <xref:System.Windows.Forms.LinkArea.Length%2A> properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple LinkArea sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first LinkArea is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
-  
- [!code-cs[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/csharp/t-system.windows.forms.l_3_1.cs)]
- [!code-cpp[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/cpp/t-system.windows.forms.l_3_1.cpp)]
- [!code-vb[System.Windows.Forms.LinkLabel#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_3_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -54,9 +34,9 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">The zero-based starting location of the link area within the text of the <see cref="T:System.Windows.Forms.LinkLabel" />.</param>
-        <param name="length">The number of characters, after the starting character, to include in the link area.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkArea" /> class.</summary>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,10 +56,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to compare to this <see cref="T:System.Windows.Forms.LinkArea" />.</param>
-        <summary>Determines whether this <see cref="T:System.Windows.Forms.LinkArea" /> is equal to the specified object.</summary>
-        <returns>
-          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Windows.Forms.LinkArea" />; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,8 +76,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +88,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -126,17 +102,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.LinkArea" /> is empty.</summary>
-        <value>
-          <see langword="true" /> if the specified start and length return an empty link area; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to determine whether a valid link area has been specified in this object instead of evaluating the values of the <xref:System.Windows.Forms.LinkArea.Length%2A> and <xref:System.Windows.Forms.LinkArea.Start%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -146,23 +114,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of characters in the link area.</summary>
-        <value>The number of characters, including spaces, in the link area.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To specify text from the <xref:System.Windows.Forms.LinkLabel> to display as a link, set the <xref:System.Windows.Forms.LinkArea.Start%2A> property to the location in the text to start creating the link. After the <xref:System.Windows.Forms.LinkArea.Start%2A> property is set, set the value of the Length property to the number of characters, including the character position specified in the <xref:System.Windows.Forms.LinkArea.Start%2A> property, that you want to make the link text. For example, if you want to make the first word of the text "The quick brown fox" a link, you set the <xref:System.Windows.Forms.LinkArea.Start%2A> property to zero (0) and the Length property to three (3).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -172,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,11 +142,10 @@
         <Parameter Name="linkArea2" Type="System.Windows.Forms.LinkArea" />
       </Parameters>
       <Docs>
-        <param name="linkArea1">A <see cref="T:System.Windows.Forms.LinkArea" /> to compare.</param>
-        <param name="linkArea2">A <see cref="T:System.Windows.Forms.LinkArea" /> to compare.</param>
-        <summary>Returns a value indicating whether two instances of the <see cref="T:System.Windows.Forms.LinkArea" /> class are equal.</summary>
-        <returns>
-          <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.LinkArea" /> class are equal; otherwise, <see langword="false" />.</returns>
+        <param name="linkArea1">To be added.</param>
+        <param name="linkArea2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,11 +166,10 @@
         <Parameter Name="linkArea2" Type="System.Windows.Forms.LinkArea" />
       </Parameters>
       <Docs>
-        <param name="linkArea1">A <see cref="T:System.Windows.Forms.LinkArea" /> to compare.</param>
-        <param name="linkArea2">A <see cref="T:System.Windows.Forms.LinkArea" /> to compare.</param>
-        <summary>Returns a value indicating whether two instances of the <see cref="T:System.Windows.Forms.LinkArea" /> class are not equal.</summary>
-        <returns>
-          <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.LinkArea" /> class are not equal; otherwise, <see langword="false" />.</returns>
+        <param name="linkArea1">To be added.</param>
+        <param name="linkArea2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,23 +180,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting location of the link area within the text of the <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-        <value>The location within the text of the <see cref="T:System.Windows.Forms.LinkLabel" /> control where the link starts.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To specify text from the <xref:System.Windows.Forms.LinkLabel> to display as a link, set the Start property to the location in the text to start creating the link. After the Start property is set, set the value of the <xref:System.Windows.Forms.LinkArea.Length%2A> property to the number of characters, including the character position specified in the Start property, that you want to make the link text. For example, if you want to make the first word of the text "The quick brown fox" a link, you set the Start property to zero (0) and the <xref:System.Windows.Forms.LinkArea.Length%2A> property to three (3).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -250,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,8 +205,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the fully qualified type name of this instance.</summary>
-        <returns>A <see cref="T:System.String" /> containing a fully qualified type name.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

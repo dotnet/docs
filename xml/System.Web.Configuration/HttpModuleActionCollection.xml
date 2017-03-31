@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModuleActionCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,33 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.HttpModuleAction" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpModuleActionCollection collection allows access to the <xref:System.Web.Configuration.HttpModuleAction> elements of the <xref:System.Web.Configuration.HttpModulesSection> section.  
-  
-   
-  
-## Examples  
- The following example shows how to use the HttpModuleActionCollection class.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_71_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#1](~/add/codesnippet/csharp/t-system.web.configurati_71_1.cs)]  
-  
- The following example is an excerpt of the configuration file that enables ASP.NET to use a custom module. For a complete example of how to build and configure an HTTP module, see the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/en-us/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3).  
-  
-```  
-<httpModules>  
-  <add name="TimerModule"   
-    type="Samples.AspNet.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
-    PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
-</httpModules>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,28 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpModuleActionCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor creates a non-initialized instance of the <xref:System.Web.Configuration.HttpModuleActionCollection> object.  
-  
-   
-  
-## Examples  
- The following example shows how to create an <xref:System.Web.Configuration.HttpModuleActionCollection> object.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#2](~/add/codesnippet/visualbasic/m-system.web.configurati_35_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#2](~/add/codesnippet/csharp/m-system.web.configurati_35_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -84,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,25 +51,9 @@
         <Parameter Name="httpModule" Type="System.Web.Configuration.HttpModuleAction" />
       </Parameters>
       <Docs>
-        <param name="httpModule">The <see cref="T:System.Web.Configuration.HttpModuleAction" /> module to add to the collection.</param>
-        <summary>Adds an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Adds an <xref:System.Web.Configuration.HttpModuleAction> object to the collection.  
-  
-   
-  
-## Examples  
- The following example shows how to create an <xref:System.Web.Configuration.HttpModuleAction> object and add it to the collection.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#3](~/add/codesnippet/visualbasic/cf12bb1f-ee6a-48b7-bd2b-_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#3](~/add/codesnippet/csharp/cf12bb1f-ee6a-48b7-bd2b-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">An attempt was made to add an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object that already exists in the collection.</exception>
+        <param name="httpModule">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -122,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,23 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Configuration.HttpModuleAction" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
-  
-   
-  
-## Examples  
- The following example shows how to clear the <xref:System.Web.Configuration.HttpModuleAction> modules contained in the collection.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#8](~/add/codesnippet/visualbasic/m-system.web.configurati_16_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#8](~/add/codesnippet/csharp/m-system.web.configurati_16_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -156,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,25 +131,10 @@
         <Parameter Name="action" Type="System.Web.Configuration.HttpModuleAction" />
       </Parameters>
       <Docs>
-        <param name="action">The <see cref="T:System.Web.Configuration.HttpModuleAction" /> module for which to get the collection index.</param>
-        <summary>Gets the collection index of the specified <see cref="T:System.Web.Configuration.HttpModuleAction" /> module.</summary>
-        <returns>The collection index value for the specified module.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before using this method, you must identify an <xref:System.Web.Configuration.HttpModuleAction> module with the proper name and type. You can then use this module object to get its collection index.  
-  
-   
-  
-## Examples  
- The following example shows how to obtain an <xref:System.Web.Configuration.HttpModuleAction> module collection index.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#4](~/add/codesnippet/visualbasic/af38de29-879a-4b70-8e4c-_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#4](~/add/codesnippet/csharp/af38de29-879a-4b70-8e4c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsElementRemovable">
@@ -237,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,17 +175,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">Module collection index.</param>
-        <summary>Gets or sets an item in this collection.</summary>
-        <value>The item at the specified <paramref name="index" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is intended for internal use only.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -290,7 +188,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,25 +215,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The key that identifies the <see cref="T:System.Web.Configuration.HttpModuleAction" /> object to remove from the collection.</param>
-        <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#6](~/add/codesnippet/visualbasic/m-system.web.configurati_8_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#6](~/add/codesnippet/csharp/m-system.web.configurati_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.HttpModuleAction" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -347,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,25 +236,9 @@
         <Parameter Name="action" Type="System.Web.Configuration.HttpModuleAction" />
       </Parameters>
       <Docs>
-        <param name="action">The <see cref="T:System.Web.Configuration.HttpModuleAction" /> module to remove.</param>
-        <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#5](~/add/codesnippet/visualbasic/da47cdce-437d-423e-8ba9-_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#5](~/add/codesnippet/csharp/da47cdce-437d-423e-8ba9-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The passed <see cref="T:System.Web.Configuration.HttpModuleAction" /> object does not exist in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -385,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,25 +257,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.HttpModuleAction" /> module to remove.</param>
-        <summary>Removes an <see cref="T:System.Web.Configuration.HttpModuleAction" /> module at the specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `<remove>` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following example shows how to remove an <xref:System.Web.Configuration.HttpModuleAction> module from the collection.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleActionCollection#7](~/add/codesnippet/visualbasic/m-system.web.configurati_18_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleActionCollection#7](~/add/codesnippet/csharp/m-system.web.configurati_18_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.HttpModuleAction" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

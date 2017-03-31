@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.EventHandlerService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a systematic way to manage event handlers for the current document.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Developers may want to be able to write code in one place that handles events of a certain type.  
-  
- Also, developers may need to globally change the behavior of the handlers for specific events or types of events, which may be distributed among designer components.  
-  
- The designers for a typical project are many different objects so it can be useful to list and store reference to these events from a common place.  
-  
- This service implements an "event stack" that contains the current set of event handlers. The stack may have a variety of different types of handlers on the stack.  
-  
- For example, a designer might push, or add, a keyboard handler and a mouse handler onto the stack. When a designer requests an event handler, the service will find the topmost handler on the stack that matches the class you requested.  
-  
- This way the service can be extended to any eventing scheme, and it also allows specific types of event handlers to be replaced. For example, you can replace mouse event handlers without affecting menu event handlers or keyboard event handlers.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="focusWnd" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="focusWnd">The <see cref="T:System.Windows.Forms.Control" /> which is being designed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.EventHandlerService" /> class.</summary>
+        <param name="focusWnd">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,14 +40,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fires an OnEventHandlerChanged event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,15 +57,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control to which event handlers are attached.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Control" /> which was attached through the constructor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +75,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,17 +84,10 @@
         <Parameter Name="handlerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="handlerType">The type of the handler to get.</param>
-        <summary>Gets the currently active event handler of the specified type.</summary>
-        <returns>An instance of the handler, or <see langword="null" /> if there is no handler of the requested type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should never cache this value because other components are free to change it. This call is fairly quick, however, especially for cases when you are always asking for the same type of handler.  
-  
- ]]></format>
-        </remarks>
+        <param name="handlerType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PopHandler">
@@ -126,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,16 +106,9 @@
         <Parameter Name="handler" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">The handler to remove from the stack.</param>
-        <summary>Pops the given handler off of the stack.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the handler is not the topmost component on the stack, this will pop all handlers up to and including handler.  
-  
- ]]></format>
-        </remarks>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PushHandler">
@@ -155,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,16 +127,9 @@
         <Parameter Name="handler" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">The handler to add to the stack.</param>
-        <summary>Pushes a new event handler on the stack.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This handler will be used by all components that request a compatible handler type. If this handler does not support the requested type, the next handler on the stack will be used.  
-  
- ]]></format>
-        </remarks>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

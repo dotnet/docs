@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeThisReferenceExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a reference to the current local class instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This can represent the class object that is referenced by "this" or "me".  
-  
-   
-  
-## Examples  
- The following example code demonstrates use of a CodeThisReferenceExpression to refer to the current object.  
-  
- [!code-cs[CodeMethodReferenceExample#3](~/add/codesnippet/csharp/t-system.codedom.codethi_1.cs)]
- [!code-vb[CodeMethodReferenceExample#3](~/add/codesnippet/visualbasic/t-system.codedom.codethi_1.vb)]
- [!code-cpp[CodeMethodReferenceExample#3](~/add/codesnippet/cpp/t-system.codedom.codethi_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThisReferenceExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

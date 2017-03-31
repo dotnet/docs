@@ -4,36 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.Schema.XmlSchemaType</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the <see langword="simpleType" /> element for simple content from XML Schema as specified by the World Wide Web Consortium (W3C). This class defines a simple type. Simple types can specify information and constraints for the value of attributes or elements with text-only content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Simple types are defined by deriving them from existing simple types (built-in data types and derived simple types). A simple type cannot contain elements and cannot have attributes.  
-  
-   
-  
-## Examples  
- The following example shows the use of the `XmlSchemaSimpleType` class.  
-  
- [!code-cs[Classic WebData XmlSchemaSimpleType Example#1](~/add/codesnippet/csharp/t-system.xml.schema.xmls_5_1.cs)]
- [!code-cpp[Classic WebData XmlSchemaSimpleType Example#1](~/add/codesnippet/cpp/t-system.xml.schema.xmls_5_1.cpp)]
- [!code-vb[Classic WebData XmlSchemaSimpleType Example#1](~/add/codesnippet/visualbasic/t-system.xml.schema.xmls_5_1.vb)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaSimpleType Example#2](~/add/codesnippet/xml/t-system.xml.schema.xmls_5_2.xml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +47,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -77,22 +69,9 @@
         <ReturnType>System.Xml.Schema.XmlSchemaSimpleTypeContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets one of <see cref="T:System.Xml.Schema.XmlSchemaSimpleTypeUnion" />, <see cref="T:System.Xml.Schema.XmlSchemaSimpleTypeList" />, or <see cref="T:System.Xml.Schema.XmlSchemaSimpleTypeRestriction" />.</summary>
-        <value>One of <see langword="XmlSchemaSimpleTypeUnion" />, <see langword="XmlSchemaSimpleTypeList" />, or <see langword="XmlSchemaSimpleTypeRestriction" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the ways in which simple types can be defined.  
-  
-|Simple type|Description|  
-|-----------------|-----------------|  
-|`Restriction`|Restricts the range of values for the simple type to a subset of those for the inherited simple type.|  
-|`List`|Defines a simple type that contains a white space-separated list of values of an inherited simple type.|  
-|`Union`|Defines a simple type that contains a union of the values of two or more inherited simple types.|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

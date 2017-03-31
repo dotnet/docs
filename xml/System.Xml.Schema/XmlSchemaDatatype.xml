@@ -4,31 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaDatatype" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The XmlSchemaDatatype class is an abstract class for mapping XML Schema definition language (XSD) types to Common Language Runtime (CLR) types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows use of the XmlSchemaDatatype class.  
-  
- [!code-cpp[Classic Webdata XmlSchemaDatatype Example#1](~/add/codesnippet/cpp/t-system.xml.schema.xmls_40_1.cpp)]
- [!code-cs[Classic Webdata XmlSchemaDatatype Example#1](~/add/codesnippet/csharp/t-system.xml.schema.xmls_40_1.cs)]
- [!code-vb[Classic Webdata XmlSchemaDatatype Example#1](~/add/codesnippet/visualbasic/t-system.xml.schema.xmls_40_1.vb)]  
-  
- The following XML file is used for the preceding code example.  
-  
- [!code-xml[Classic Webdata XmlSchemaDatatype Example#2](~/add/codesnippet/xml/t-system.xml.schema.xmls_40_2.xsd)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,20 +27,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is called by derived class constructors to initialize state in this type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeType">
@@ -61,8 +47,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -72,20 +62,11 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="value">The input value to convert to the specified type.</param>
-        <param name="targetType">The target type to convert the input value to.</param>
-        <summary>Converts the value specified, whose type is one of the valid Common Language Runtime (CLR) representations of the XML schema type represented by the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" />, to the CLR type specified.</summary>
-        <returns>The converted input value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> classes and conversion of XML data types, see the [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md) topic.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Object" /> or <see cref="T:System.Type" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidCastException">The type represented by the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> does not support a conversion from type of the value specified to the type specified.</exception>
+        <param name="value">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeType">
@@ -95,8 +76,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -107,21 +92,12 @@
         <Parameter Name="namespaceResolver" Type="System.Xml.IXmlNamespaceResolver" />
       </Parameters>
       <Docs>
-        <param name="value">The input value to convert to the specified type.</param>
-        <param name="targetType">The target type to convert the input value to.</param>
-        <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> used for resolving namespace prefixes. This is only of use if the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> represents the xs:QName type or a type derived from it.</param>
-        <summary>Converts the value specified, whose type is one of the valid Common Language Runtime (CLR) representations of the XML schema type represented by the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" />, to the CLR type specified using the <see cref="T:System.Xml.IXmlNamespaceResolver" /> if the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> represents the xs:QName type or a type derived from it.</summary>
-        <returns>The converted input value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> classes and conversion of XML data types, see the [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md) topic.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Object" /> or <see cref="T:System.Type" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidCastException">The type represented by the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> does not support a conversion from type of the value specified to the type specified.</exception>
+        <param name="value">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <param name="namespaceResolver">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDerivedFrom">
@@ -131,8 +107,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -141,9 +121,9 @@
         <Parameter Name="datatype" Type="System.Xml.Schema.XmlSchemaDatatype" />
       </Parameters>
       <Docs>
-        <param name="datatype">The <see cref="T:System.Xml.Schema.XmlSchemaDatatype" />.</param>
-        <summary>The IsDerivedFrom method always returns <see langword="false" />.</summary>
-        <returns>Always returns <see langword="false" />.</returns>
+        <param name="datatype">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +134,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -166,44 +150,12 @@
         <Parameter Name="nsmgr" Type="System.Xml.IXmlNamespaceResolver" />
       </Parameters>
       <Docs>
-        <param name="s">The <see langword="string" /> to validate against the simple type.</param>
-        <param name="nameTable">The <see cref="T:System.Xml.XmlNameTable" /> to use for atomization while parsing the <see langword="string" /> if this <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> object represents the xs:NCName type.</param>
-        <param name="nsmgr">The <see cref="T:System.Xml.IXmlNamespaceResolver" /> object to use while parsing the <see langword="string" /> if this <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> object represents the xs:QName type.</param>
-        <summary>When overridden in a derived class, validates the <see langword="string" /> specified against a built-in or user-defined simple type.</summary>
-        <returns>An <see cref="T:System.Object" /> that can be cast safely to the type returned by the <see cref="System.Xml.Schema.XmlSchemaDatatype.ValueType%2A" /> property.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseValue method validates the `string` specified against a built-in or user-defined simple type. For example, if this <xref:System.Xml.Schema.XmlSchemaDatatype> represents the type xs:date, then an instance of <xref:System.DateTime> is returned.  
-  
- The following are the steps performed during the ParseValue method's validation process.  
-  
-1.  Convert the value specified as a `string` to its corresponding Common Language Runtime (CLR) type.  
-  
-2.  Verify that the value does not violate any facets defined for the simple type.  
-  
- The converted value is then returned as an <xref:System.Object> and can be cast safely to the type returned by the <xref:System.Xml.Schema.XmlSchemaDatatype.ValueType%2A> property.  
-  
- When the <xref:System.Xml.Schema.XmlSchemaDatatype> object represents a list type, the input `string` value is converted to a list of one or more objects. When the <xref:System.Xml.Schema.XmlSchemaDatatype> object represents a list type, an attempt is made to parse the input value as a member type of the union. If the parse attempt fails, then the conversion is attempted with the next member of the union until the parse is successful or there are no other member types to parse. If the parse is unsuccessful, an exception is thrown.  
-  
-   
-  
-## Examples  
- The following example retrieves the `LotteryNumber` simple type from the example.xsd file as an <xref:System.Xml.Schema.XmlSchemaSimpleType> and then validates the `string` value of `5` using the ParseValue method.  
-  
- [!code-cpp[Classic Webdata XmlSchemaDatatype Example#1](~/add/codesnippet/cpp/b4af643f-b5cd-41ee-8b57-_1.cpp)]
- [!code-cs[Classic Webdata XmlSchemaDatatype Example#1](~/add/codesnippet/csharp/b4af643f-b5cd-41ee-8b57-_1.cs)]
- [!code-vb[Classic Webdata XmlSchemaDatatype Example#1](~/add/codesnippet/visualbasic/b4af643f-b5cd-41ee-8b57-_1.vb)]  
-  
- The following XML file is used for the preceding code example.  
-  
- [!code-xml[Classic Webdata XmlSchemaDatatype Example#2](~/add/codesnippet/xml/b4af643f-b5cd-41ee-8b57-_2.xsd)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The input value is not a valid instance of this W3C XML Schema type.</exception>
-        <exception cref="T:System.ArgumentNullException">The value to parse cannot be <see langword="null" />.</exception>
+        <param name="s">To be added.</param>
+        <param name="nameTable">To be added.</param>
+        <param name="nsmgr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TokenizedType">
@@ -213,41 +165,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the type for the <see langword="string" /> as specified in the World Wide Web Consortium (W3C) XML 1.0 specification.</summary>
-        <value>An <see cref="T:System.Xml.XmlTokenizedType" /> value for the <see langword="string" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Allows the `string` to be read as a particular XML type, for example, a CDATA section type.  
-  
- The following table shows the token types.  
-  
-|XmlTokenizedType|Description|  
-|----------------------|-----------------|  
-|`CDATA`|CDATA type|  
-|`ID`|ID type|  
-|`IDREF`|IDREF type|  
-|`IDREFS`|IDREFS type|  
-|`ENTITY`|ENTITY type|  
-|`ENTITIES`|ENTITIES type|  
-|`NMTOKEN`|NMTOKEN type|  
-|`NMTOKENS`|NMTOKENS type|  
-|`NOTATION`|NOTATION type|  
-|`ENUMERATION`|ENUMERATION type|  
-|`QName`|QName type|  
-|`NCName`|NCName type|  
-|`None`|No type|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeCode">
@@ -257,31 +188,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xml.Schema.XmlTypeCode" /> value for the simple type.</summary>
-        <value>The <see cref="T:System.Xml.Schema.XmlTypeCode" /> value for the simple type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- W3C XML Schema list types such as xs:ENTITIES, xs:NMTOKENS and xs:IDREFS are not represented by the <xref:System.Xml.Schema.XmlTypeCode> enumeration. Instead they are represented by the <xref:System.Xml.Schema.XmlTypeCode> values for the xs:ENTITY, xs:NMTOKEN and xs:IDREF types with the <xref:System.Xml.Schema.XmlSchemaDatatype.Variety%2A> property of the <xref:System.Xml.Schema.XmlSchemaDatatype> object set to <xref:System.Xml.Schema.XmlSchemaDatatypeVariety>.  
-  
-> [!NOTE]
->  Both the xs:anySimpleType and xs:anyType types are not represented by <xref:System.Xml.Schema.XmlTypeCode> enumeration. These are represented in an <xref:System.Xml.Schema.XmlSchemaDatatype> object with an <xref:System.Xml.Schema.XmlTypeCode> whose value is <xref:System.Xml.Schema.XmlTypeCode> for xs:anySimpleType or <xref:System.Xml.Schema.XmlTypeCode> for xs:anyType.  
-  
-   
-  
-## Examples  
- For an example of the TypeCode property, see <xref:System.Xml.Schema.XmlSchemaDatatype>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -291,30 +211,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the Common Language Runtime (CLR) type of the item.</summary>
-        <value>The Common Language Runtime (CLR) type of the item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ValueType property gets the CLR type of the item. For example, an element of type `xs:int` would have a ValueType of <xref:System.Int32> by default. However, the ValueType could be any one of the valid types that can be mapped to `xs:int`, such as <xref:System.Int16> or <xref:System.Double>.  
-  
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
-  
-   
-  
-## Examples  
- For an example of the ValueType property, see <xref:System.Xml.Schema.XmlSchemaDatatype>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Variety">
@@ -324,15 +234,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaDatatypeVariety</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchemaDatatypeVariety" /> value for the simple type.</summary>
-        <value>The <see cref="T:System.Xml.Schema.XmlSchemaDatatypeVariety" /> value for the simple type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

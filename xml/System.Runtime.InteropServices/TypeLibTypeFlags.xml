@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibTypeFlags" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,17 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the original settings of the <see cref="T:System.Runtime.InteropServices.TYPEFLAGS" /> in the COM type library from which the type was imported.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `TypeLibTypeFlags` is used along with the <xref:System.Runtime.InteropServices.TypeLibTypeAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
-  
- For more information, see `TYPEFLAGS` in the MSDN library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FAggregatable">
@@ -39,14 +30,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The class supports aggregation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FAppObject">
@@ -56,14 +47,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A type description that describes an <see langword="Application" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FCanCreate">
@@ -73,14 +64,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Instances of the type can be created by <see langword="ITypeInfo::CreateInstance" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FControl">
@@ -90,14 +81,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type is a control from which other types will be derived, and should not be displayed to users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FDispatchable">
@@ -107,14 +98,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the interface derives from <see langword="IDispatch" />, either directly or indirectly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FDual">
@@ -124,14 +115,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The interface supplies both <see langword="IDispatch" /> and V-table binding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FHidden">
@@ -141,14 +132,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type should not be displayed to browsers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FLicensed">
@@ -158,14 +149,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type is licensed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FNonExtensible">
@@ -175,14 +166,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The interface cannot add members at run time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FOleAutomation">
@@ -192,14 +183,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The types used in the interface are fully compatible with Automation, including vtable binding support.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FPreDeclId">
@@ -209,14 +200,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type is predefined. The client application should automatically create a single instance of the object that has this attribute. The name of the variable that points to the object is the same as the class name of the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FReplaceable">
@@ -226,14 +217,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The object supports <see langword="IConnectionPointWithDefault" />, and has default behaviors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FRestricted">
@@ -243,14 +234,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This flag is intended for system-level types or types that type browsers should not display.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FReverseBind">
@@ -260,14 +251,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates base interfaces should be checked for name resolution before checking child interfaces. This is the reverse of the default behavior.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

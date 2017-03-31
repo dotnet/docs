@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DESCKIND" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +12,12 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.DESCKIND instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
+      <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.DESCKIND" /> instead.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the `DESCKIND` enumeration, see the MSDN Library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DESCKIND_FUNCDESC">
@@ -34,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see cref="T:System.Runtime.InteropServices.FUNCDESC" /> was returned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_IMPLICITAPPOBJ">
@@ -51,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an <see langword="IMPLICITAPPOBJ" /> was returned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_MAX">
@@ -68,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an end of enumeration marker.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_NONE">
@@ -85,14 +78,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that no match was found.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_TYPECOMP">
@@ -102,14 +95,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see langword="TYPECOMP" /> was returned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_VARDESC">
@@ -119,14 +112,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a <see langword="VARDESC" /> was returned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

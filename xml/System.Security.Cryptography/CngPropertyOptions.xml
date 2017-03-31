@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngPropertyOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngPropertyOptions" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,17 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies Cryptography Next Generation (CNG) key property options.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These options are used to initialize <xref:System.Security.Cryptography.CngProperty> objects, which are then used in <xref:System.Security.Cryptography.CngKey.SetProperty%2A> calls. You also use these options when you query for the value of properties with the <xref:System.Security.Cryptography.CngKey.GetProperty%2A> method.  
-  
- Properties must be queried with the CngPropertyOptions they are stored with. Otherwise, they will not be found.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CustomProperty">
@@ -35,15 +34,23 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.CustomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property is not specified by CNG. Use this option to avoid future name conflicts with CNG properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -52,15 +59,23 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The referenced property has no options.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persist">
@@ -69,15 +84,23 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.Persist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property should be persisted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

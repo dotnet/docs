@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionFlowAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,100 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether a service operation accepts incoming transactions from a client.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TransactionFlowAttribute is an attribute used declaratively to associate a specific transaction flow policy with a service operation. The <xref:System.ServiceModel.TransactionFlowOption> property of this attribute specifies whether the respective operation accepts a transaction flowed from the client, or if the operation requires the client to always flow a transaction. The TransactionFlowAttribute can also be used as an operation behavior to programmatically associate a transaction flow policy with a specific operation. In this case, it should be added to the `Behaviors` collection on the operation’s description.  
-  
-> [!NOTE]
->  The `OperationContract` for each method that uses the TransactionFlowAttribute must provide a fully-qualified `Action` string. A value of "*" is not supported.  
-  
-   
-  
-## Examples  
- The following code example shows the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
-  
-```  
-using System;  
-using System.ServiceModel;  
-using System.Transactions;  
-  
-namespace Microsoft.WCF.Documentation  
-{  
-  [ServiceContract(  
-    Namespace="http://microsoft.wcf.documentation",   
-    SessionMode=SessionMode.Required  
-  )]  
-  public interface IBehaviorService  
-  {  
-    [OperationContract]  
-    [TransactionFlow(TransactionFlowOption.Mandatory)]  
-    string TxWork(string message);  
-  }  
-  
-  // Note: To use the TransactionIsolationLevel property, you   
-  // must add a reference to the System.Transactions.dll assembly.  
-  /* The following service implementation:  
-   *   -- Processes messages on one thread at a time  
-   *   -- Creates one service object per session  
-   *   -- Releases the service object when the transaction commits  
-   */  
-  [ServiceBehavior(  
-    ConcurrencyMode=ConcurrencyMode.Single,  
-    InstanceContextMode=InstanceContextMode.PerSession,  
-    ReleaseServiceInstanceOnTransactionComplete=true  
-  )]  
-  public class BehaviorService : IBehaviorService, IDisposable  
-  {  
-    Guid myID;  
-  
-    public BehaviorService()  
-    {  
-      myID = Guid.NewGuid();  
-      Console.WriteLine(  
-        "Object "  
-        + myID.ToString()  
-        + " created.");  
-    }  
-  
-    /*  
-    / * The following operation-level behaviors are specified:  
-    / * Always executes under a transaction scope.  
-    / * The transaction scope is completed when the operation  
-    / * terminates without an unhandled exception.  
-    /*  
-    [OperationBehavior(  
-      TransactionAutoComplete = true,  
-      TransactionScopeRequired = true  
-    )]  
-    public string TxWork(string message)  
-    {  
-      // Do some transactable work.  
-      Console.WriteLine("TxWork called with: " + message);  
-      // Display transaction information.  
-  
-      TransactionInformation info = Transaction.Current.TransactionInformation;  
-      Console.WriteLine("The distributed tx ID: {0}.", info.DistributedIdentifier);  
-      Console.WriteLine("The tx status: {0}.", info.Status);  
-      return String.Format("Hello. This was object {0}.",myID.ToString()) ;  
-    }  
-  
-    public void Dispose()  
-    {  
-      Console.WriteLine(  
-        "Service "  
-        + myID.ToString()  
-        + " is being recycled."  
-      );  
-    }  
-  }  
-}  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,26 +31,15 @@ namespace Microsoft.WCF.Documentation
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transactions" Type="System.ServiceModel.TransactionFlowOption" />
       </Parameters>
       <Docs>
-        <param name="transactions">A <see cref="T:System.ServiceModel.TransactionFlowOption" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.TransactionFlowAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
-  
- [!code-cs[OperationBehaviorAttribute1#2](~/add/codesnippet/csharp/operationbehaviorattribute1.client/services.cs#2)]
- [!code-vb[OperationBehaviorAttribute1#2](~/add/codesnippet/visualbasic/operationbehaviorattribute1.client/services.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <param name="transactions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.AddBindingParameters">
@@ -153,7 +49,6 @@ namespace Microsoft.WCF.Documentation
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,17 +59,10 @@ namespace Microsoft.WCF.Documentation
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">The operation description for which the attribute adds extra functionality.</param>
-        <param name="parameters">The collection of parameter objects on the binding context.</param>
-        <summary>Adds extra parameters (settings) to the binding context to support this operation’s behavior. This method cannot be inherited.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides a binding context with the extra parameters (settings) to support the required behavior for this operation. It is called internally by the infrastructure when a service is created.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior">
@@ -184,7 +72,6 @@ namespace Microsoft.WCF.Documentation
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,17 +82,10 @@ namespace Microsoft.WCF.Documentation
         <Parameter Name="proxy" Type="System.ServiceModel.Dispatcher.ClientOperation" />
       </Parameters>
       <Docs>
-        <param name="description">The operation to which the attribute attaches functionality.</param>
-        <param name="proxy">The <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> object that represents the current operation.</param>
-        <summary>Attaches the attribute functionality to the <see langword="ProxyOperation" /> object for the method that the attribute marks. This method cannot be inherited.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to view, modify, or add custom extensions to the client runtime across all messages, or for a specific operation. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service proxy is created.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="proxy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior">
@@ -215,7 +95,6 @@ namespace Microsoft.WCF.Documentation
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,17 +105,10 @@ namespace Microsoft.WCF.Documentation
         <Parameter Name="dispatch" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
       </Parameters>
       <Docs>
-        <param name="description">The description for this operation.</param>
-        <param name="dispatch">The <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> object for this operation.</param>
-        <summary>Attaches the attribute functionality to the <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> object for the method that the attribute marks. This method cannot be inherited.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows you to view, modify, or add custom extensions to the client runtime across all messages, or for a specific operation. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service is created.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="dispatch">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.Validate">
@@ -246,7 +118,6 @@ namespace Microsoft.WCF.Documentation
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,16 +127,9 @@ namespace Microsoft.WCF.Documentation
         <Parameter Name="description" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="description">The operation to validate.</param>
-        <summary>Verifies that the operation can support this behavior. This method cannot be inherited.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method verifies whether the operation description is sufficient to support the transaction flow behavior. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service is created.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Transactions">
@@ -275,15 +139,14 @@ namespace Microsoft.WCF.Documentation
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the incoming transaction is supported.</summary>
-        <value>A <see cref="T:System.ServiceModel.TransactionFlowOption" /> that indicates whether the incoming transaction is supported.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Used to invoke the <see cref="System.Web.UI.Page.UpdateModel%2A" /> or <see cref="System.Web.UI.Page.TryUpdateModel%2A" /> method when the <see cref="T:System.Web.UI.Page" /> object is not directly accessible.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, a custom class can define the methods referred to by the `SelectMethod`, `UpdateMethod`, `DeleteMethod`, and `InsertMethod` properties for data binding, and those methods can have a parameter of this type and use it to invoke the <xref:System.Web.UI.Page.UpdateModel%2A> method. Alternatively, instead of a method parameter, the <xref:System.Web.UI.WebControls.ModelMethodContext.Current%2A> property can be used within a method to invoke the <xref:System.Web.UI.Page.UpdateModel%2A> method.  
-  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,17 +28,9 @@
         <Parameter Name="page" Type="System.Web.UI.Page" />
       </Parameters>
       <Docs>
-        <param name="page">The page object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="page" /> parameter is <see langword="null" />.</exception>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -63,16 +46,9 @@
         <ReturnType>System.Web.UI.WebControls.ModelMethodContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> object that corresponds to the <see cref="T:System.Web.UI.Page" /> object that is in the <see cref="System.Web.HttpContext.Current%2A" /> property.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> object., or <see langword="null" /> if the current request is not for a page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelState">
@@ -88,16 +64,9 @@
         <ReturnType>System.Web.ModelBinding.ModelStateDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the model state.</summary>
-        <value>The model state.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryUpdateModel&lt;TModel&gt;">
@@ -123,19 +92,11 @@
         <Parameter Name="model" Type="TModel" />
       </Parameters>
       <Docs>
-        <typeparam name="TModel">The type of the model.</typeparam>
-        <param name="model">The model.</param>
-        <summary>Updates the specified model instance using values from a value provider.</summary>
-        <returns>
-          <see langword="true" /> if model binding is successful; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TModel">To be added.</typeparam>
+        <param name="model">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryUpdateModel&lt;TModel&gt;">
@@ -162,20 +123,12 @@
         <Parameter Name="valueProvider" Type="System.Web.ModelBinding.IValueProvider" />
       </Parameters>
       <Docs>
-        <typeparam name="TModel">The type of the model.</typeparam>
-        <param name="model">The model.</param>
-        <param name="valueProvider">The value provider.</param>
-        <summary>Updates the specified model instance using values from the specified value provider.</summary>
-        <returns>
-          <see langword="true" /> if model binding is successful; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TModel">To be added.</typeparam>
+        <param name="model">To be added.</param>
+        <param name="valueProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateModel&lt;TModel&gt;">
@@ -201,17 +154,10 @@
         <Parameter Name="model" Type="TModel" />
       </Parameters>
       <Docs>
-        <typeparam name="TModel">The type of the model.</typeparam>
-        <param name="model">The model.</param>
-        <summary>Updates the specified model instance using values from a value provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TModel">To be added.</typeparam>
+        <param name="model">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateModel&lt;TModel&gt;">
@@ -238,18 +184,11 @@
         <Parameter Name="valueProvider" Type="System.Web.ModelBinding.IValueProvider" />
       </Parameters>
       <Docs>
-        <typeparam name="TModel">The type of the model.</typeparam>
-        <param name="model">The model.</param>
-        <param name="valueProvider">The value provider.</param>
-        <summary>Updates the specified model instance using values from the specified value provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="TModel">To be added.</typeparam>
+        <param name="model">To be added.</param>
+        <param name="valueProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

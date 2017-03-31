@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SourceChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the SourceChanged event, used for interoperation. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SourceChanged event is a routed event where the event identifier is not publicly exposed. This is because this event plays a potentially critical part in interoperation and should not be allowed to be raised arbitrarily by any other source than the internal implementation of a known <xref:System.Windows.PresentationSource> subclass (currently, the only such class is <xref:System.Windows.Interop.HwndSource>). When implementing an interoperation solution, you can attach or remove handlers for the event (by calling <xref:System.Windows.PresentationSource.AddSourceChangedHandler%2A> and <xref:System.Windows.PresentationSource.RemoveSourceChangedHandler%2A>, respectively) but you cannot perform other operations normally available to routed events such as class handling, adding owners, or raising the event from an arbitrary element source.  
-  
- This class overrides the <xref:System.Windows.RoutedEventArgs> virtual method <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A?displayProperty=fullName>, in order to return a type-specific handler when requested by the event system. This SourceChangedEventArgs override does not appear in the class members table in this [!INCLUDE[TLA2#tla_sdk](~/add/includes/tla2sharptla-sdk-md.md)] documentation because it is a protected member implemented by a sealed class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,9 +34,9 @@
         <Parameter Name="newSource" Type="System.Windows.PresentationSource" />
       </Parameters>
       <Docs>
-        <param name="oldSource">The old <see cref="T:System.Windows.PresentationSource" /> that this handler is being notified about.</param>
-        <param name="newSource">The new <see cref="T:System.Windows.PresentationSource" /> that this handler is being notified about.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.SourceChangedEventArgs" /> class, using supplied information for the old and new sources.</summary>
+        <param name="oldSource">To be added.</param>
+        <param name="newSource">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +47,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -73,11 +61,11 @@
         <Parameter Name="oldParent" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="oldSource">The old <see cref="T:System.Windows.PresentationSource" /> that this handler is being notified about.</param>
-        <param name="newSource">The new <see cref="T:System.Windows.PresentationSource" /> that this handler is being notified about.</param>
-        <param name="element">The element whose parent changed causing the source to change.</param>
-        <param name="oldParent">The old parent of the element whose parent changed causing the source to change.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.SourceChangedEventArgs" /> class, using supplied information for the old and new sources, the element that this change effects, and the previous reported parent of that element.</summary>
+        <param name="oldSource">To be added.</param>
+        <param name="newSource">To be added.</param>
+        <param name="element">To be added.</param>
+        <param name="oldParent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element whose parent change causing the presentation source information to change.</summary>
-        <value>The element that is reporting the change.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,7 +117,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -143,10 +128,9 @@
         <ReturnType>System.Windows.PresentationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new source involved in this source change.</summary>
-        <value>The new <see cref="T:System.Windows.PresentationSource" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to get this value. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OldParent">
@@ -156,15 +140,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous parent of the element whose parent change causing the presentation source information to change.</summary>
-        <value>The previous parent element source.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +158,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -187,10 +169,9 @@
         <ReturnType>System.Windows.PresentationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the old source involved in this source change.</summary>
-        <value>The old <see cref="T:System.Windows.PresentationSource" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">to get this value. Associated enumeration: <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
   </Members>

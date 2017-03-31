@@ -3,14 +3,23 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketState" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
+    <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the different states a WebSockets instance can be in.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,14 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -36,14 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the WebSocket close handshake completed gracefully.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CloseReceived">
@@ -52,14 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.CloseReceived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A close message was received from the remote endpoint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CloseSent">
@@ -68,14 +104,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.CloseSent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A close message was sent to the remote endpoint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connecting">
@@ -84,14 +129,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Connecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The connection is negotiating the handshake with the remote endpoint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -100,14 +154,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -116,14 +179,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The initial state after the HTTP handshake has been completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

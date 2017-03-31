@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageFile" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.IO.IsolatedStorage.IsolatedStorage</BaseTypeName>
@@ -21,30 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an isolated storage area containing files and directories.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This object corresponds to a specific isolated storage scope, where files represented by <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> objects exist. Applications can use isolated storage to save data in their own isolated portion of the file system, without having to specify a particular path within the file system. Since isolated stores are scoped to particular assemblies, most other managed code will not be able to access your code's data (highly trusted managed code and administration tools can access stores from other assemblies). Unmanaged code can access any isolated stores.  
-  
- For more information, see [Isolated Storage](../Topic/Isolated%20Storage.md).  
-  
- This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
-> [!IMPORTANT]
->  Isolated storage is not available for [!INCLUDE[win8_appname_long](~/add/includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](http://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
-  
-   
-  
-## Examples  
- The following code example illustrates how to create files and directories in an isolated store. First, a store that is isolated by user, domain, and assembly is retrieved and placed in the `isoStore` variable. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method is then called to create directories, and two instances of the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> class create files in these directories.  
-  
- [!code-cs[Conceptual.IsolatedStorage#1](~/add/codesnippet/csharp/t-system.io.isolatedstor_1_1.cs)]
- [!code-vb[Conceptual.IsolatedStorage#1](~/add/codesnippet/visualbasic/t-system.io.isolatedstor_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AvailableFreeSpace">
@@ -54,30 +36,25 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that represents the amount of free space available for isolated storage.</summary>
-        <value>The available free space for isolated storage, in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The isolated store is closed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -87,33 +64,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes a store previously opened with <see cref="System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A" />, <see cref="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A" />, or <see cref="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Close method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_2_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/cpp/m-system.io.isolatedstor_2_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/csharp/m-system.io.isolatedstor_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -123,7 +87,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,40 +107,10 @@
         <Parameter Name="destinationFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceFileName">The name of the file to copy.</param>
-        <param name="destinationFileName">The name of the destination file. This cannot be a directory or an existing file.</param>
-        <summary>Copies an existing file to a new file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `sourceFileName` and `destinationFileName` must specify different file names. Use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to overwrite an existing file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.  
-  
- -or-  
-  
- <paramref name="destinationFileName" /> exists.  
-  
- -or-  
-  
- An I/O error has occurred.</exception>
+        <param name="sourceFileName">To be added.</param>
+        <param name="destinationFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFile">
@@ -181,14 +120,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -200,38 +141,11 @@
         <Parameter Name="overwrite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sourceFileName">The name of the file to copy.</param>
-        <param name="destinationFileName">The name of the destination file. This cannot be a directory.</param>
-        <param name="overwrite">
-          <see langword="true" /> if the destination file can be overwritten; otherwise, <see langword="false" />.</param>
-        <summary>Copies an existing file to a new file, and optionally overwrites an existing file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `sourceFileName` and `destinationFileName` can have the same file name if `overwrite` is `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.  
-  
- -or-  
-  
- An I/O error has occurred.</exception>
+        <param name="sourceFileName">To be added.</param>
+        <param name="destinationFileName">To be added.</param>
+        <param name="overwrite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDirectory">
@@ -241,14 +155,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -256,29 +169,9 @@
         <Parameter Name="dir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dir">The relative path of the directory to create within the isolated storage scope.</param>
-        <summary>Creates a directory in the isolated storage scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The created directory initially contains no files. If the directory already exists, the CreateDirectory method returns without creating a new directory. The [How to: Create Files and Directories in Isolated Storage](../Topic/How%20to:%20Create%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the CreateDirectory method  
-  
-   
-  
-## Examples  
- The following code example demonstrates the CreateDirectory method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#7](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_7_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#7](~/add/codesnippet/cpp/m-system.io.isolatedstor_7_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#7](~/add/codesnippet/csharp/m-system.io.isolatedstor_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The current code has insufficient permissions to create isolated storage directory.</exception>
-        <exception cref="T:System.ArgumentNullException">The directory path is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for accessing the isolated storage scope.</permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="dir">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFile">
@@ -288,7 +181,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -302,28 +200,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The relative path of the file to create.</param>
-        <summary>Creates a file in the isolated store.</summary>
-        <returns>A new isolated storage file.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path" /> is malformed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentSize">
@@ -333,49 +213,28 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("IsolatedStorageFile.CurrentSize has been deprecated because it is not CLS Compliant.  To get the current size use IsolatedStorageFile.UsedSize")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current size of the isolated storage.</summary>
-        <value>The total number of bytes of storage currently in use within the isolated storage scope.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Represents the total usage of all files and directories within the isolated storage scope.  
-  
- The current size cannot be accurately determined for stores that are participating in a roaming user profile. Because roaming profiles are often cached on multiple client machines and later synchronized with a server, quotas cannot be enforced for such stores and the current size is not reported.  
-  
- The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](../Topic/How%20to:%20Anticipate%20Out-of-Space%20Conditions%20with%20Isolated%20Storage.md) example demonstrates the use of the CurrentSize property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the CurrentSize property. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#5](~/add/codesnippet/visualbasic/p-system.io.isolatedstor_5_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#5](~/add/codesnippet/cpp/p-system.io.isolatedstor_5_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#5](~/add/codesnippet/csharp/p-system.io.isolatedstor_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The property is unavailable. The current store has a roaming scope or is not open.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object size is undefined.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteDirectory">
@@ -385,14 +244,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -400,29 +258,9 @@
         <Parameter Name="dir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dir">The relative path of the directory to delete within the isolated storage scope.</param>
-        <summary>Deletes a directory in the isolated storage scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A directory must be empty before it is deleted. The deleted directory cannot be recovered once deleted.  
-  
- The [How to: Delete Files and Directories in Isolated Storage](../Topic/How%20to:%20Delete%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the DeleteDirectory method.  
-  
-   
-  
-## Examples  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#8](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_6_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#8](~/add/codesnippet/cpp/m-system.io.isolatedstor_6_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#8](~/add/codesnippet/csharp/m-system.io.isolatedstor_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The directory could not be deleted.</exception>
-        <exception cref="T:System.ArgumentNullException">The directory path was <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for accessing the isolated storage scope.</permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="dir">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteFile">
@@ -432,14 +270,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -447,31 +284,9 @@
         <Parameter Name="file" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="file">The relative path of the file to delete within the isolated storage scope.</param>
-        <summary>Deletes a file in the isolated storage scope.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The deleted file cannot be recovered once deleted.  
-  
- The [How to: Delete Files and Directories in Isolated Storage](../Topic/How%20to:%20Delete%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the DeleteFile method.  
-  
-   
-  
-## Examples  
- The following code example uses the DeleteFile method to delete a number of files in isolated storage.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#6](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_11_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#6](~/add/codesnippet/cpp/m-system.io.isolatedstor_11_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#6](~/add/codesnippet/csharp/m-system.io.isolatedstor_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The target file is open or the path is incorrect.</exception>
-        <exception cref="T:System.ArgumentNullException">The file path is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for accessing files in the isolated storage scope.</permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="file">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectoryExists">
@@ -481,14 +296,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -498,20 +315,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to test.</param>
-        <summary>Determines whether the specified path refers to an existing directory in the isolated store.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="path" /> refers to an existing directory in the isolated store and is not <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store is closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -521,36 +328,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call `Dispose` when you are finished using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile>. The `Dispose` method leaves the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> so the garbage collector can reclaim the memory that <xref:System.IO.IsolatedStorage.IsolatedStorageFile> was occupying.  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.IO.IsolatedStorage.IsolatedStorageFile>. Otherwise, the resources the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> is using will not be freed until garbage collection calls the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> object's <xref:System.Object.Finalize%2A> method.  
-  
-   
-  
-## Examples  
- The following code example opens an isolated storage file, uses it to write information to a stream, closes the file, and then uses the Dispose method to release all resources.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_9_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/cpp/m-system.io.isolatedstor_9_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/csharp/m-system.io.isolatedstor_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileExists">
@@ -560,14 +351,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -577,16 +370,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path and file name to test.</param>
-        <summary>Determines whether the specified path refers to an existing file in the isolated store.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="path" /> refers to an existing file in the isolated store and is not <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store is closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -596,7 +383,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,7 +391,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,14 +402,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -632,28 +421,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the file or directory for which to obtain creation date and time information.</param>
-        <summary>Returns the creation date and time of a specified file or directory.</summary>
-        <returns>The creation date and time for the specified file or directory. This value is expressed in local time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the file described by path does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryNames">
@@ -663,7 +434,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -675,21 +451,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enumerates the directories at the root of an isolated store.</summary>
-        <returns>An array of relative paths of directories at the root of the isolated store. A zero-length array specifies that there are no directories at the root.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%28System.String%29?displayProperty=fullName> method with "*" specified for the search pattern.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store is closed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Caller does not have permission to enumerate directories.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">One or more directories are not found.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryNames">
@@ -699,14 +463,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -714,40 +477,10 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">A search pattern. Both single-character ("?") and multi-character ("*") wildcards are supported.</param>
-        <summary>Enumerates the directories in an isolated storage scope that match a given search pattern.</summary>
-        <returns>An array of the relative paths of directories in the isolated storage scope that match <paramref name="searchPattern" />. A zero-length array specifies that there are no directories that match.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Wildcard characters must only be in the final element of a `searchPattern`. For instance, "directory1/*etc\*" is a valid search string, but "\*etc\*/directory" is not.  
-  
- The `searchPattern` "Project\Data*" will give all subdirectories of Project beginning with Data in the isolated storage scope. The `searchPattern` "\*" will return all directories located in the root. For complete description of search string criteria, see the <xref:System.IO.Directory> class.  
-  
- For information on getting file names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
-  
- The [How to: Find Existing Files and Directories in Isolated Storage](../Topic/How%20to:%20Find%20Existing%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the GetDirectoryNames method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the GetDirectoryNames method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_14_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/cpp/m-system.io.isolatedstor_14_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/csharp/m-system.io.isolatedstor_14_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="searchPattern" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store is closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Caller does not have permission to enumerate directories resolved from <paramref name="searchPattern" />.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The directory or directories specified by <paramref name="searchPattern" /> are not found.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="searchPattern">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -757,14 +490,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -772,19 +504,10 @@
         <Parameter Name="scope" Type="System.IO.IsolatedStorage.IsolatedStorageScope" />
       </Parameters>
       <Docs>
-        <param name="scope">Represents the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" /> for which to return isolated stores. <see langword="User" /> and <see langword="User|Roaming" /> are the only <see langword="IsolatedStorageScope" /> combinations supported.</param>
-        <summary>Gets the enumerator for the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> stores within an isolated storage scope.</summary>
-        <returns>Enumerator for the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> stores within the specified isolated storage scope.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [How to: Enumerate Stores for Isolated Storage](../Topic/How%20to:%20Enumerate%20Stores%20for%20Isolated%20Storage.md) example demonstrates the use of the GetEnumerator method.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileNames">
@@ -794,7 +517,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -806,19 +534,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enumerates the file names at the root of an isolated store.</summary>
-        <returns>An array of relative paths of files at the root of the isolated store.  A zero-length array specifies that there are no files at the root.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%28System.String%29?displayProperty=fullName> method with "*" specified for the search pattern.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">File paths from the isolated store root cannot be determined.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileNames">
@@ -828,14 +546,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -843,36 +560,10 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">A search pattern. Both single-character ("?") and multi-character ("*") wildcards are supported.</param>
-        <summary>Gets the file names that match a search pattern.</summary>
-        <returns>An array of relative paths of files in the isolated storage scope that match <paramref name="searchPattern" />. A zero-length array specifies that there are no files that match.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `searchPattern` "Project\Data*.txt" will give all ".txt" files beginning with Data in the Project directory of the isolated storage scope. For complete description of search pattern strings, see <xref:System.IO.Directory?displayProperty=fullName>.  
-  
- For information about how to find directory names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
-  
- The [How to: Find Existing Files and Directories in Isolated Storage](../Topic/How%20to:%20Find%20Existing%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the GetFileNames method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the GetFileNames method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_3_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/cpp/m-system.io.isolatedstor_3_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/csharp/m-system.io.isolatedstor_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="searchPattern" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The file path specified by <paramref name="searchPattern" /> cannot be found.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="searchPattern">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTime">
@@ -882,14 +573,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -899,28 +592,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the file or directory for which to obtain last access date and time information.</param>
-        <summary>Returns the date and time a specified file or directory was last accessed.</summary>
-        <returns>The date and time that the specified file or directory was last accessed. This value is expressed in local time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the file described by `path` does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTime">
@@ -930,14 +605,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -947,28 +624,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the file or directory for which to obtain last write date and time information.</param>
-        <summary>Returns the date and time a specified file or directory was last written to.</summary>
-        <returns>The date and time that the specified file or directory was last written to. This value is expressed in local time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the file described by `path` does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMachineStoreForApplication">
@@ -978,42 +637,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains machine-scoped isolated storage corresponding to the calling code's application identity.</summary>
-        <returns>An object corresponding to the isolated storage scope based on the calling code's application identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All assemblies associated with an application use the same isolated store when using this method.  
-  
- GetMachineStoreForApplication is functionally equivalent to the following code:  
-  
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#18](~/add/codesnippet/csharp/m-system.io.isolatedstor_5_1.cs)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#18](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_5_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#18](~/add/codesnippet/cpp/m-system.io.isolatedstor_5_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The application identity of the caller could not be determined.  
-  
- -or-  
-  
- The granted permission set for the application domain could not be determined.  
-  
- -or-  
-  
- An isolated storage location cannot be initialized.</exception>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMachineStoreForAssembly">
@@ -1023,37 +661,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains machine-scoped isolated storage corresponding to the calling code's assembly identity.</summary>
-        <returns>An object corresponding to the isolated storage scope based on the calling code's assembly identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The same assembly within different applications always uses the same isolated store when using this method.  
-  
- GetMachineStoreForAssembly is functionally equivalent to the following code:  
-  
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#19](~/add/codesnippet/csharp/m-system.io.isolatedstor_12_1.cs)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#19](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_12_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#19](~/add/codesnippet/cpp/m-system.io.isolatedstor_12_1.cpp)]  
-  
-> [!NOTE]
->  Different assemblies running within the same application domain always have distinct isolated stores.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.</exception>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMachineStoreForDomain">
@@ -1063,60 +685,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains machine-scoped isolated storage corresponding to the application domain identity and the assembly identity.</summary>
-        <returns>An object corresponding to the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, based on a combination of the application domain identity and the assembly identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The same assembly code will use different isolated stores when used in the context of different applications.  
-  
- GetMachineStoreForDomain is functionally equivalent to the following code:  
-  
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#20](~/add/codesnippet/csharp/m-system.io.isolatedstor_0_1.cs)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#20](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_0_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#20](~/add/codesnippet/cpp/m-system.io.isolatedstor_0_1.cpp)]  
-  
- Different assemblies running within the same application domain always have distinct isolated stores.  
-  
-> [!NOTE]
->  <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota if the application domain into which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_0_2.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/cpp/m-system.io.isolatedstor_0_2.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/csharp/m-system.io.isolatedstor_0_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The store failed to open.  
-  
- -or-  
-  
- The assembly specified has insufficient permissions to create isolated stores.  
-  
- -or-  
-  
- The permissions for the application domain cannot be determined.  
-  
- -or-  
-  
- An isolated storage location cannot be initialized.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPermission">
@@ -1126,7 +709,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1149,14 +732,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1165,38 +747,11 @@
         <Parameter Name="applicationIdentity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="scope">A bitwise combination of the enumeration values.</param>
-        <param name="applicationIdentity">An object that contains evidence for the application identity.</param>
-        <summary>Obtains isolated storage corresponding to the given application identity.</summary>
-        <returns>An object that represents the parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope?displayProperty=fullName> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.ArgumentNullException">The  <paramref name="applicationIdentity" /> identity has not been passed in.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="scope" /> is invalid.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the enumeration value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the application identity of the caller cannot be determined,because the <see cref="System.AppDomain.ActivationContext%2A" /> for  the current application domain returned <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the application domain cannot be determined.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the calling assembly cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <param name="applicationIdentity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1206,14 +761,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1222,38 +776,11 @@
         <Parameter Name="applicationEvidenceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="scope">A bitwise combination of the enumeration values.</param>
-        <param name="applicationEvidenceType">An object that contains the application identity.</param>
-        <summary>Obtains isolated storage corresponding to the isolation scope and the application identity object.</summary>
-        <returns>An object that represents the parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.ArgumentNullException">The   <paramref name="applicationEvidence" /> identity has not been passed in.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="scope" /> is invalid.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the enumeration value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the application identity of the caller cannot be determined, because the <see cref="System.AppDomain.ActivationContext%2A" /> for  the current application domain returned <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the application domain cannot be determined.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the calling assembly cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <param name="applicationEvidenceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1263,14 +790,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1280,44 +806,12 @@
         <Parameter Name="assemblyIdentity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="scope">A bitwise combination of the enumeration values.</param>
-        <param name="domainIdentity">An object that contains evidence for the application domain identity.</param>
-        <param name="assemblyIdentity">An object that contains evidence for the code assembly identity.</param>
-        <summary>Obtains the isolated storage corresponding to the given application domain and assembly evidence objects.</summary>
-        <returns>An object that represents the parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This form of `GetStore` is most useful for administrative code that needs to open a store as if it were another assembly. The store is opened for the evidence provided and not for the currently executing assembly.  
-  
-> [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.ArgumentNullException">Neither <paramref name="domainIdentity" /> nor <paramref name="assemblyIdentity" /> has been passed in. This verifies that the correct constructor is being used.  
-  
- -or-  
-  
- Either <paramref name="domainIdentity" /> or <paramref name="assemblyIdentity" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="scope" /> is invalid.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the enumeration value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the application identity of the caller cannot be determined, because the <see cref="System.AppDomain.ActivationContext%2A" /> for  the current application domain returned <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the application domain cannot be determined.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the calling assembly cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <param name="domainIdentity">To be added.</param>
+        <param name="assemblyIdentity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1327,14 +821,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1344,54 +837,12 @@
         <Parameter Name="assemblyEvidenceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="scope">A bitwise combination of the enumeration values.</param>
-        <param name="domainEvidenceType">The type of the <see cref="T:System.Security.Policy.Evidence" /> that you can chose from the list of <see cref="T:System.Security.Policy.Evidence" /> present in the domain of the calling application. <see langword="null" /> lets the <see cref="T:System.IO.IsolatedStorage.IsolatedStorage" /> object choose the evidence.</param>
-        <param name="assemblyEvidenceType">The type of the <see cref="T:System.Security.Policy.Evidence" /> that you can chose from the list of <see cref="T:System.Security.Policy.Evidence" /> present in the domain of the calling application. <see langword="null" /> lets the <see cref="T:System.IO.IsolatedStorage.IsolatedStorage" /> object choose the evidence.</param>
-        <summary>Obtains isolated storage corresponding to the isolated storage scope given the application domain and assembly evidence types.</summary>
-        <returns>An object that represents the parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the overload of GetStore most likely to be called from application code.  
-  
- This overload of GetStore opens an isolated store for the evidence types that are passed in.  
-  
-> [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the GetStore method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the GetStore method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#15](~/add/codesnippet/visualbasic/ab394268-92aa-40b0-bda7-_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#15](~/add/codesnippet/cpp/ab394268-92aa-40b0-bda7-_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#15](~/add/codesnippet/csharp/ab394268-92aa-40b0-bda7-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="scope" /> is invalid.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The evidence type provided is missing in the assembly evidence list.  
-  
- -or-  
-  
- An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the enumeration value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the application identity of the caller cannot be determined, because the <see cref="System.AppDomain.ActivationContext%2A" /> for  the current application domain returned <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the application domain cannot be determined.  
-  
- -or-  
-  
- <paramref name="scope" /> contains <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the calling assembly cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <param name="domainEvidenceType">To be added.</param>
+        <param name="assemblyEvidenceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStore">
@@ -1401,14 +852,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1420,49 +866,14 @@
         <Parameter Name="assemblyEvidenceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="scope">A bitwise combination of the enumeration values.</param>
-        <param name="domainEvidence">An object that contains the application domain identity.</param>
-        <param name="domainEvidenceType">The identity type to choose from the application domain evidence.</param>
-        <param name="assemblyEvidence">An object that contains the code assembly identity.</param>
-        <param name="assemblyEvidenceType">The identity type to choose from the application code assembly evidence.</param>
-        <summary>Obtains isolated storage corresponding to the given application domain and the assembly evidence objects and types.</summary>
-        <returns>An object that represents the parameters.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
-   
-  
-## Examples  
- The following code example obtains storage based on publisher evidence.  
-  
- [!code-vb[System.IO.IsolatedStorage.GetStore#1](~/add/codesnippet/visualbasic/1751b0ac-9718-419a-882a-_1.vb)]
- [!code-cs[System.IO.IsolatedStorage.GetStore#1](~/add/codesnippet/csharp/1751b0ac-9718-419a-882a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="domainEvidence" /> or <paramref name="assemblyEvidence" /> identity has not been passed in.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="scope" /> is invalid.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the enumeration value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the application identity of the caller cannot be determined, because the <see cref="System.AppDomain.ActivationContext%2A" /> for  the current application domain returned <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the application domain cannot be determined.  
-  
- -or-  
-  
- <paramref name="scope" /> contains the value <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, but the permissions for the calling assembly cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <param name="domainEvidence">To be added.</param>
+        <param name="domainEvidenceType">To be added.</param>
+        <param name="assemblyEvidence">To be added.</param>
+        <param name="assemblyEvidenceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForApplication">
@@ -1472,44 +883,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains user-scoped isolated storage corresponding to the calling code's application identity.</summary>
-        <returns>An object corresponding to the isolated storage scope based on the calling code's assembly identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All assemblies associated with an application use the same isolated store when using this method. This method can be used only when the application identity can be determined - for example, when the application is published through ClickOnce deployment or is a Silverlight-based application. If you attempt to use this method outside a ClickOnce or Silverlight-based application, you will receive an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception, because the application identity of the caller cannot be determined.  
-  
- GetUserStoreForApplication is functionally equivalent to the following code:  
-  
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#21](~/add/codesnippet/csharp/m-system.io.isolatedstor_10_1.cs)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#21](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_10_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#21](~/add/codesnippet/cpp/m-system.io.isolatedstor_10_1.cpp)]  
-  
- In this code, the `applicationIdentity` parameter for `GetStore(IsolatedStorageScope scope, Object applicationIdentity)` is `null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- The application identity of the caller cannot be determined, because the <see cref="System.AppDomain.ActivationContext%2A" /> property returned <see langword="null" />.  
-  
- -or-  
-  
- The permissions for the application domain cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForAssembly">
@@ -1519,41 +907,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains user-scoped isolated storage corresponding to the calling code's assembly identity.</summary>
-        <returns>An object corresponding to the isolated storage scope based on the calling code's assembly identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The same assembly within different applications always uses the same isolated store when using this method.  
-  
- GetUserStoreForAssembly is functionally equivalent to the following code:  
-  
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#22](~/add/codesnippet/csharp/m-system.io.isolatedstor_15_1.cs)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#22](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_15_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#22](~/add/codesnippet/cpp/m-system.io.isolatedstor_15_1.cpp)]  
-  
-> [!NOTE]
->  Different assemblies running within the same application domain always have distinct isolated stores.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- The permissions for the calling assembly cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForDomain">
@@ -1563,60 +931,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains user-scoped isolated storage corresponding to the application domain identity and assembly identity.</summary>
-        <returns>An object corresponding to the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" />, based on a combination of the application domain identity and the assembly identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The same assembly code will use different isolated stores when used in the context of different applications.  
-  
- GetUserStoreForDomain is functionally equivalent to the following code:  
-  
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#23](~/add/codesnippet/csharp/m-system.io.isolatedstor_1_1.cs)]
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#23](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_1_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#23](~/add/codesnippet/cpp/m-system.io.isolatedstor_1_1.cpp)]  
-  
- Different assemblies running within the same application domain always have distinct isolated stores.  
-  
-> [!NOTE]
->  GetUserStoreForDomain will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota if the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the GetUserStoreForDomain method. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_1_2.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/cpp/m-system.io.isolatedstor_1_2.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#10](~/add/codesnippet/csharp/m-system.io.isolatedstor_1_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">Sufficient isolated storage permissions have not been granted.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The store failed to open.  
-  
- -or-  
-  
- The assembly specified has insufficient permissions to create isolated stores.  
-  
- -or-  
-  
- An isolated storage location cannot be initialized.  
-  
- -or-  
-  
- The permissions for the application domain cannot be determined.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUserStoreForSite">
@@ -1626,7 +955,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1638,16 +972,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtains a user-scoped isolated store for use by applications in a virtual host domain.</summary>
-        <returns>The isolated storage file that corresponds to the isolated storage scope based on the calling code's application identity.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is supported only in Silverlight-based applications.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncreaseQuotaTo">
@@ -1657,14 +984,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1674,38 +1003,10 @@
         <Parameter Name="newQuotaSize" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="newQuotaSize">The requested size, in bytes.</param>
-        <summary>Enables an application to explicitly request a larger quota size, in bytes.</summary>
-        <returns>
-          <see langword="true" /> if the new quota is accepted; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IncreaseQuotaTo method enables an application to explicitly request a larger quota size in bytes. The new quota size must not be smaller than the current quota size, because only quota increases are allowed.  
-  
- Whenever the IncreaseQuotaTo method is called, isolated storage calls the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method.  
-  
- You can implement policy decisions by creating a custom <xref:System.AppDomainManager> object that overrides the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method so that the object can perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object.  
-  
- If there is no custom <xref:System.AppDomainManager> object, the quota increase request is denied, because the default implementation for <xref:System.AppDomainManager.CheckSecuritySettings%2A> returns `false`.  
-  
- Currently, none of the hosts in the .NET Framework provide this customization, so IncreaseQuotaTo always returns `false`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="newQuotaSize" /> is less than current quota size.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="newQuotaSize" /> is less than zero, or less than or equal to the current quota size.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.NotSupportedException">The current scope is not for an application user.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
+        <param name="newQuotaSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -1715,7 +1016,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1726,17 +1032,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether isolated storage is enabled.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Isolated storage for full .NET Framework applications is always enabled.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumSize">
@@ -1746,44 +1044,28 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("IsolatedStorageFile.MaximumSize has been deprecated because it is not CLS Compliant.  To get the maximum size use IsolatedStorageFile.Quota")</AttributeName>
+          <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value representing the maximum amount of space available for isolated storage within the limits established by the quota.</summary>
-        <value>The limit of isolated storage space in bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The number of bytes available is constrained by the isolated storage quota set by the administrator. Quota is configured in security policy on the basis of evidence, so the same code can receive a different quota if it is run with different evidence. For example, an application that is run locally and also from a share on an intranet would likely receive different quotas.  
-  
- The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](../Topic/How%20to:%20Anticipate%20Out-of-Space%20Conditions%20with%20Isolated%20Storage.md) example demonstrates the use of the MaximumSize property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the MaximumSize property. For the complete context of this example, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> overview.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#5](~/add/codesnippet/visualbasic/p-system.io.isolatedstor_2_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#5](~/add/codesnippet/cpp/p-system.io.isolatedstor_2_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#5](~/add/codesnippet/csharp/p-system.io.isolatedstor_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The property is unavailable. MaximumSize cannot be determined without evidence from the assembly's creation. The evidence could not be determined when the object was created.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">An isolated storage error occurred.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveDirectory">
@@ -1793,14 +1075,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1811,38 +1095,10 @@
         <Parameter Name="destinationDirectoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceDirectoryName">The name of the directory to move.</param>
-        <param name="destinationDirectoryName">The path to the new location for <c>sourceDirectoryName</c>. This cannot be the path to an existing directory.</param>
-        <summary>Moves a specified directory and its contents to a new location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `sourceFileName` and `destinationFileName` must specify different directory names.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceDirectoryName" /> does not exist.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.  
-  
- -or-  
-  
- <paramref name="destinationDirectoryName" /> already exists.  
-  
- -or-  
-  
- <paramref name="sourceDirectoryName" /> and <paramref name="destinationDirectoryName" /> refer to the same directory.</exception>
+        <param name="sourceDirectoryName">To be added.</param>
+        <param name="destinationDirectoryName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveFile">
@@ -1852,14 +1108,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1870,30 +1128,10 @@
         <Parameter Name="destinationFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceFileName">The name of the file to move.</param>
-        <param name="destinationFileName">The path to the new location for the file. If a file name is included, the moved file will have that name.</param>
-        <summary>Moves a specified file to a new location, and optionally lets you specify a new file name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not throw an exception if `sourceFileName` and `destinationFileName` are the same.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="System.IO.Path.GetInvalidPathChars%2A" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName" /> was not found.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
+        <param name="sourceFileName">To be added.</param>
+        <param name="destinationFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -1903,7 +1141,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1918,30 +1161,11 @@
         <Parameter Name="mode" Type="System.IO.FileMode" />
       </Parameters>
       <Docs>
-        <param name="path">The relative path of the file within the isolated store.</param>
-        <param name="mode">One of the enumeration values that specifies how to open the file.</param>
-        <summary>Opens a file in the specified mode.</summary>
-        <returns>A file that is opened in the specified mode, with read/write access, and is unshared.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path" /> is malformed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">No file was found and the <paramref name="mode" /> is set to <see cref="T:System.IO.FileMode" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -1951,7 +1175,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1967,31 +1196,12 @@
         <Parameter Name="access" Type="System.IO.FileAccess" />
       </Parameters>
       <Docs>
-        <param name="path">The relative path of the file within the isolated store.</param>
-        <param name="mode">One of the enumeration values that specifies how to open the file.</param>
-        <param name="access">One of the enumeration values that specifies whether the file will be opened with read, write, or read/write access.</param>
-        <summary>Opens a file in the specified mode with the specified read/write access.</summary>
-        <returns>A file that is opened in the specified mode and access, and is unshared.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path" /> is malformed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">No file was found and the <paramref name="mode" /> is set to <see cref="T:System.IO.FileMode" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -2001,7 +1211,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2018,32 +1233,13 @@
         <Parameter Name="share" Type="System.IO.FileShare" />
       </Parameters>
       <Docs>
-        <param name="path">The relative path of the file within the isolated store.</param>
-        <param name="mode">One of the enumeration values that specifies how to open or create the file.</param>
-        <param name="access">One of the enumeration values that specifies whether the file will be opened with read, write, or read/write access</param>
-        <param name="share">A bitwise combination of enumeration values that specify the type of access other <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> objects have to this file.</param>
-        <summary>Opens a file in the specified mode, with the specified read/write access and sharing permission.</summary>
-        <returns>A file that is opened in the specified mode and access, and with the specified sharing options.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is equivalent to using the <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29?displayProperty=fullName> constructor.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path" /> is malformed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The directory in <paramref name="path" /> does not exist.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">No file was found and the <paramref name="mode" /> is set to <see cref="System.IO.FileInfo.Open%2A" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
+        <param name="path">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="share">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Quota">
@@ -2053,29 +1249,25 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that represents the maximum amount of space available for isolated storage.</summary>
-        <value>The limit of isolated storage space, in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
-  
- -or-  
-  
- Isolated storage is disabled.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2085,43 +1277,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the isolated storage scope and all its contents.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  This method irrevocably removes the entire scope and all contained directories and files.  
-  
- If any of the directories or files in the store are in use, the removal attempt for the store fails and the store is marked for removal. Any subsequent attempts to modify the store throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
-   
-  
-## Examples  
- The following code example uses the Remove method to delete the isolated storage file after its contents have been emptied. The [How to: Delete Stores in Isolated Storage](../Topic/How%20to:%20Delete%20Stores%20in%20Isolated%20Storage.md) example also demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method.  
-  
- [!code-vb[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/visualbasic/m-system.io.isolatedstor_4_1.vb)]
- [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/cpp/m-system.io.isolatedstor_4_1.cpp)]
- [!code-cs[System.IO.IsolatedStorage.IsolatedStorage#16](~/add/codesnippet/csharp/m-system.io.isolatedstor_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be deleted.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2131,14 +1300,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2146,23 +1314,9 @@
         <Parameter Name="scope" Type="System.IO.IsolatedStorage.IsolatedStorageScope" />
       </Parameters>
       <Docs>
-        <param name="scope">A bitwise combination of the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageScope" /> values.</param>
-        <summary>Removes the specified isolated storage scope for all identities.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  This method irrevocably removes the entire scope and all contained directories and files.  
-  
- If any of the directories or files in the store are in use, the removal attempt for the store fails and the store is marked for removal. Any subsequent attempts to modify the store throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be removed.</exception>
-        <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /></permission>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="System.Type.InvokeMember%2A" />. Associated enumeration: <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /></permission>
+        <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsedSize">
@@ -2172,23 +1326,25 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that represents the amount of the space used for isolated storage.</summary>
-        <value>The used isolated storage space, in bytes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
-        <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.</exception>
-        <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

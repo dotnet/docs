@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StructLayoutAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.StructLayoutAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,28 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Lets you control the physical layout of the data fields of a class or structure in memory.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can apply this attribute to classes or structures.  
-  
- The common language runtime controls the physical layout of the data fields of a class or structure in managed memory. However, if you want to pass the type to unmanaged code, you can use the StructLayoutAttribute attribute to control the unmanaged layout of the type. Use the attribute with <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> to force the members to be laid out sequentially in the order they appear. For , <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> controls both the layout in managed memory and the layout in unmanaged memory. For non-blittable types, it controls the layout when the class or structure is marshaled to unmanaged code, but does not control the layout in managed memory. Use the attribute with <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> to control the precise position of each data member. This affects both managed and unmanaged layout, for both blittable and non-blittable types. Using <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> requires that you use the <xref:System.Runtime.InteropServices.FieldOffsetAttribute> attribute to indicate the position of each field within the type.  
-  
- C#, Visual Basic, and C++ compilers apply the <xref:System.Runtime.InteropServices.LayoutKind> layout value to structures by default. For classes, you must apply the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> value explicitly. The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) also applies the StructLayoutAttribute attribute; it always applies the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> value when it imports a type library.  
-  
-   
-  
-## Examples  
- The following example demonstrates a managed declaration of the `GetSystemTime` function and defines `MySystemTime` class with <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> layout. `GetSystemTime` gets the system time and prints to the console.  
-  
- [!code-cs[StructLayoutAttribute#1](~/add/codesnippet/csharp/t-system.runtime.interop_32_1.cs)]
- [!code-vb[StructLayoutAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_32_1.vb)]
- [!code-cpp[StructLayoutAttribute#1](~/add/codesnippet/cpp/t-system.runtime.interop_32_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,23 +42,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="layoutKind" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="layoutKind">A 16-bit integer that represents one of the <see cref="T:System.Runtime.InteropServices.LayoutKind" /> values that specifes how the class or structure should be arranged.</param>
-        <summary>Initalizes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.LayoutKind" /> enumeration member.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor takes an underlying 16-bit integer that represents each <xref:System.Runtime.InteropServices.LayoutKind> enumeration member. The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) uses this constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="layoutKind">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,24 +64,28 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="layoutKind" Type="System.Runtime.InteropServices.LayoutKind" />
       </Parameters>
       <Docs>
-        <param name="layoutKind">One of the enumeration values that specifes how the class or structure should be arranged.</param>
-        <summary>Initalizes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.LayoutKind" /> enumeration member.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For readable code that is less prone to error, always use this constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="layoutKind">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CharSet">
@@ -102,23 +94,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.StructLayoutAttribute.CharSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CharSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether string data fields within the class should be marshaled as <see langword="LPWSTR" /> or <see langword="LPSTR" /> by default.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `CharSet` field is set to <xref:System.Runtime.InteropServices.CharSet?displayProperty=fullName>, all string arguments are converted to Unicode characters (`LPWSTR`) before they are passed to the unmanaged implementation. If the field is set to <xref:System.Runtime.InteropServices.CharSet?displayProperty=fullName>, the strings are converted to ANSI strings (`LPSTR`). If the `CharSet` field is set to <xref:System.Runtime.InteropServices.CharSet?displayProperty=fullName>, the conversion is platform-dependent (ANSI on Windows 98 and Windows Me, and Unicode on later versions).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pack">
@@ -127,70 +123,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.StructLayoutAttribute.Pack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Controls the alignment of data fields of a class or structure in memory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Pack field controls the alignment of a type's fields in memory.  It affects both <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> and <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>. By default, the value is 0, indicating the default packing size for the current platform. The value of Pack must be 0, 1, 2, 4, 8, 16, 32, 64, or 128:  
-  
- The fields of a type instance are aligned by using the following rules:  
-  
--   The alignment of the type is the size of its largest element (1, 2, 4, 8, etc., bytes) or the specified packing size, whichever is smaller.  
-  
--   Each field must align with fields of its own size (1, 2, 4, 8, etc., bytes) or the alignment of the type, whichever is smaller.  Because the default alignment of the type is the size of its largest element, which is greater than or equal to all other field lengths, this usually means that fields are aligned by their size. For example, even if the largest field in a type is a 64-bit (8-byte) integer or the Pack field is set to 8, <xref:System.Byte> fields align on 1-byte boundaries, <xref:System.Int16> fields align on 2-byte boundaries, and <xref:System.Int32> fields align on 4-byte boundaries.  
-  
--   Padding is added between fields to satisfy the alignment requirements.  
-  
- For example, consider the following structure, which consists of two <xref:System.Byte> fields and one <xref:System.Int32> field, when it is used with various values for the Pack field.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#1](~/add/codesnippet/csharp/f-system.runtime.interop_3_1.cs)]  
-  
-> [!IMPORTANT]
->  To successfully compile the C# examples, you must specify the `/unsafe` compiler switch.  
-  
- If you specify the default packing size, the size of the structure is 8 bytes. The two bytes occupy the first two bytes of memory, because bytes must align on one-byte boundaries. Because the default alignment of the type is 4 bytes, which is the size of its largest fields, `i3`, there are two bytes of padding followed by the integer field.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#2](~/add/codesnippet/csharp/f-system.runtime.interop_3_2.cs)]  
-  
- If Pack is set to 2, the size of the structure is 6 bytes. As before, the two bytes occupy the first two bytes of memory. Because fields now align on 2-byte boundaries, there is no padding between the second byte and the integer.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#3](~/add/codesnippet/csharp/f-system.runtime.interop_3_3.cs)]  
-  
- If Pack is set to 4, the size of the structure is the same as in the default case, where the type's alignment was defined by the size of its largest field, `i3`, which is 4.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#4](~/add/codesnippet/csharp/f-system.runtime.interop_3_4.cs)]  
-  
- If Pack is set to 8, the size of the structure is the still same as in the default case, because the `i3` field aligns on a 4-byte boundary, which is smaller than the 8-byte boundary specified by the Pack field.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#5](~/add/codesnippet/csharp/f-system.runtime.interop_3_5.cs)]  
-  
- To take another example, consider the following structure, which consists of two byte fields, one 32-bit signed integer field, one single-element byte array, and a decimal value. With the default packing size, the size of the structure is 28 bytes. The two bytes occupy the first two bytes of memory, followed by two bytes of padding, followed by the integer. Next is the one-byte array, followed by three bytes of padding. Finally, the <xref:System.Decimal> field, d5, aligns on a 4-byte boundary because a decimal value consists of four <xref:System.Int32> fields, so its alignment is based on the size of the largest of its fields rather than on the size of the <xref:System.Decimal> structure as a whole.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#6](~/add/codesnippet/csharp/f-system.runtime.interop_3_6.cs)]  
-  
- If Pack is set to 2, the size of the structure is 24 bytes. In comparison with the default alignment, the two bytes of padding between the two bytes and the integer have been removed because the type's alignment is now 4 rather than 2. And the three bytes of padding after `a4` have been replaced by one byte of padding, since `d5` now aligns on a 2-byte boundary rather than a 4-byte boundary.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#7](~/add/codesnippet/csharp/f-system.runtime.interop_3_7.cs)]  
-  
- If Pack is set to 8, the size of the structure is the same as in the default case, because all the alignment requirements in this structure are less than 8.  
-  
- [!code-cs[System.Runtime.InteropServices.StructLayoutAttribute.Pack#8](~/add/codesnippet/csharp/f-system.runtime.interop_3_8.cs)]  
-  
- The Pack field is frequently used when structures are exported during disk and network write operations. The field is also frequently used during platform invoke and interop operations.  
-  
- Occasionally, the field is used to reduce memory requirements by producing a tighter packing size. However, this usage requires careful consideration of actual hardware constraints, and may actually degrade performance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -199,23 +152,27 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.StructLayoutAttribute.Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the absolute size of the class or structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This field must be equal or greater than the total size, in bytes, of the members of the class or structure. This field is primarily for compiler writers who want to extend the memory occupied by a structure for direct, unmanaged access. For example, you can use this field when working with unions that are not represented in metadata directly.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -224,16 +181,27 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.StructLayoutAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.LayoutKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Runtime.InteropServices.LayoutKind" /> value that specifies how the class or structure is arranged.</summary>
-        <value>One of the enumeration values that specifies how the class or structure is arranged.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

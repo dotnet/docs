@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewLinkCell" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a cell that contains a link.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridViewLinkCell class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display links.  
-  
- The <xref:System.Windows.Forms.DataGridViewLinkColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new DataGridViewLinkCell. To pattern the cells within a column after an existing DataGridViewLinkCell, set the column's <xref:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate%2A> property to the cell to use as a pattern.  
-  
- The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewCell> as a template for a <xref:System.Windows.Forms.DataGridViewColumn>. Style changes made to any cell in the column affect all of the column's cells. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/add/codesnippet/cpp/t-system.windows.forms.d_97_1.cpp)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#120](~/add/codesnippet/visualbasic/t-system.windows.forms.d_97_1.vb)]
- [!code-cs[System.Windows.Forms.DataGridView.ButtonDemos#120](~/add/codesnippet/csharp/t-system.windows.forms.d_97_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewLinkCell" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,32 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used to display an active link.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to display a link that is being selected. The default value is the user's Internet Explorer setting for the color of links in the hover state.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor%2A> property of the owning column also sets the ActiveLinkColor property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/cpp/p-system.windows.forms.d_3_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/csharp/p-system.windows.forms.d_3_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/visualbasic/p-system.windows.forms.d_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -94,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,16 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an exact copy of this cell.</summary>
-        <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewLinkCell" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the Clone method whenever you derive from <xref:System.Windows.Forms.DataGridViewLinkCell> and add new properties to the derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -121,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,19 +81,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessible object for the <see cref="T:System.Windows.Forms.DataGridViewLinkCell" />.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" /> for the <see cref="T:System.Windows.Forms.DataGridViewLinkCell" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you do not explicitly call the CreateAccessibilityInstance method, it will be called when the <xref:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject> property is referenced.  
-  
-> [!NOTE]
->  To get or set <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditType">
@@ -151,23 +93,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the cell's hosted editing control.</summary>
-        <value>Always <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- As implemented in this class, this property always returns `null` because a <xref:System.Windows.Forms.DataGridViewLinkCell> cannot be edited.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -177,26 +111,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the display <see cref="T:System.Type" /> of the cell value.</summary>
-        <value>The display <see cref="T:System.Type" /> of the cell value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewSelectionSum#10](~/add/codesnippet/csharp/p-system.windows.forms.d_9_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -206,7 +129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,11 +140,11 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="graphics">The graphics context for the cell.</param>
-        <param name="cellStyle">The <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> to be applied to the cell.</param>
-        <param name="rowIndex">The index of the cell's parent row.</param>
-        <summary>Returns the bounding rectangle that encloses the cell's content area, which is calculated using the specified <see cref="T:System.Drawing.Graphics" /> and cell style.</summary>
-        <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
+        <param name="graphics">To be added.</param>
+        <param name="cellStyle">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,7 +155,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,11 +166,11 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="graphics">The graphics context for the cell.</param>
-        <param name="cellStyle">The <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> to be applied to the cell.</param>
-        <param name="rowIndex">The index of the cell's parent row.</param>
-        <summary>Returns the bounding rectangle that encloses the cell's error icon, if one is displayed.</summary>
-        <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="T:System.Drawing.Rectangle" />.</returns>
+        <param name="graphics">To be added.</param>
+        <param name="cellStyle">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,12 +193,12 @@
         <Parameter Name="constraintSize" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to draw the cell.</param>
-        <param name="cellStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents the style of the cell.</param>
-        <param name="rowIndex">The zero-based row index of the cell.</param>
-        <param name="constraintSize">The cell's maximum allowable size.</param>
-        <summary>Calculates the preferred size, in pixels, of the cell.</summary>
-        <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
+        <param name="graphics">To be added.</param>
+        <param name="cellStyle">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <param name="constraintSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +209,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,9 +218,9 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The index of the cell's parent row.</param>
-        <summary>Gets the value of the cell.</summary>
-        <returns>The value contained in the <see cref="T:System.Windows.Forms.DataGridViewCell" />.</returns>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,7 +231,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,21 +241,11 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains data about the key press.</param>
-        <param name="rowIndex">The index of the row containing the cell.</param>
-        <summary>Indicates whether the row containing the cell will be unshared when a key is released and the cell has focus.</summary>
-        <returns>
-          <see langword="true" /> if the SPACE key was released, the <see cref="System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState%2A" /> property is <see langword="true" />, the <see cref="System.Windows.Forms.DataGridViewLinkCell.LinkVisited%2A" /> property is <see langword="false" />, and the CTRL, ALT, and SHIFT keys are not pressed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- KeyUpUnsharesRow is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkBehavior">
@@ -347,7 +255,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -359,28 +266,9 @@
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the behavior of a link.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.LinkBehavior" /> values. The default is <see cref="T:System.Windows.Forms.LinkBehavior" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Examples of link behavior include whether the link always displays an underline or the link only displays an underline when the mouse pointer moves over it, and whether a double click or a single click activates a link.  
-  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior%2A> property of the owning column also sets the LinkBehavior property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/cpp/p-system.windows.forms.d_372_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/csharp/p-system.windows.forms.d_372_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/visualbasic/p-system.windows.forms.d_372_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.LinkBehavior" /> value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkColor">
@@ -390,32 +278,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used to display an inactive and unvisited link.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to initially display a link. The default value is the user's Internet Explorer setting for the link color.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkColor%2A> property of the owning column also sets the LinkColor property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.LinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/cpp/p-system.windows.forms.d_198_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/csharp/p-system.windows.forms.d_198_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/visualbasic/p-system.windows.forms.d_198_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkVisited">
@@ -425,26 +296,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the link was visited.</summary>
-        <value>
-          <see langword="true" /> if the link has been visited; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState%2A> property is set to `true`, the LinkVisited property is automatically set when the link is visited.  
-  
- A link is visited if it has been activated by selecting it with the mouse or keyboard.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDownUnsharesRow">
@@ -454,7 +314,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,20 +323,10 @@
         <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains data about the mouse click.</param>
-        <summary>Indicates whether the row containing the cell will be unshared when the mouse button is pressed while the pointer is over the cell.</summary>
-        <returns>
-          <see langword="true" /> if the mouse pointer is over the link; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MouseDownUnsharesRow is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveUnsharesRow">
@@ -487,7 +336,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,20 +345,10 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The index of the row containing the cell.</param>
-        <summary>Indicates whether the row containing the cell will be unshared when the mouse pointer leaves the cell.</summary>
-        <returns>
-          <see langword="true" /> if the link displayed by the cell is not in the normal state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MouseLeaveUnsharesRow is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A>. MouseLeaveUnsharesRow must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseMoveUnsharesRow">
@@ -520,7 +358,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,20 +367,10 @@
         <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains data about the mouse click.</param>
-        <summary>Indicates whether the row containing the cell will be unshared when the mouse pointer moves over the cell.</summary>
-        <returns>
-          <see langword="true" /> if the mouse pointer is over the link and the link is has not yet changed color to reflect the hover state; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseMoveUnsharesRow method is called just before the <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUpUnsharesRow">
@@ -553,7 +380,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -563,20 +389,10 @@
         <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains data about the mouse click.</param>
-        <summary>Indicates whether the row containing the cell will be unshared when the mouse button is released while the pointer is over the cell.</summary>
-        <returns>
-          <see langword="true" /> if the mouse pointer is over the link; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MouseUpUnsharesRow is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
-  
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -586,7 +402,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -597,9 +412,9 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <param name="rowIndex">The index of the cell's parent row.</param>
-        <summary>Called when a character key is released while the focus is on a cell.</summary>
+        <param name="e">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,7 +425,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,8 +434,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains the event data.</param>
-        <summary>Called when the user holds down a mouse button while the pointer is on a cell.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -632,7 +446,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -642,8 +455,8 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowIndex">The index of the cell's parent row.</param>
-        <summary>Called when the mouse pointer leaves the cell.</summary>
+        <param name="rowIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,7 +467,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -664,8 +476,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains the event data.</param>
-        <summary>Called when the mouse pointer moves within a cell.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -676,7 +488,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -686,8 +497,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains the event data.</param>
-        <summary>Called when the user releases a mouse button while the pointer is on a cell.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -698,7 +509,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -718,18 +528,18 @@
         <Parameter Name="paintParts" Type="System.Windows.Forms.DataGridViewPaintParts" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to paint the <see cref="T:System.Windows.Forms.DataGridViewCell" />.</param>
-        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be repainted.</param>
-        <param name="cellBounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the bounds of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being painted.</param>
-        <param name="rowIndex">The row index of the cell that is being painted.</param>
-        <param name="cellState">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that specifies the state of the cell.</param>
-        <param name="value">The data of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being painted.</param>
-        <param name="formattedValue">The formatted data of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being painted.</param>
-        <param name="errorText">An error message that is associated with the cell.</param>
-        <param name="cellStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that contains formatting and style information about the cell.</param>
-        <param name="advancedBorderStyle">A <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> that contains border styles for the cell that is being painted.</param>
-        <param name="paintParts">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values that specifies which parts of the cell need to be painted.</param>
-        <summary>Paints the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="clipBounds">To be added.</param>
+        <param name="cellBounds">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <param name="cellState">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="formattedValue">To be added.</param>
+        <param name="errorText">To be added.</param>
+        <param name="cellStyle">To be added.</param>
+        <param name="advancedBorderStyle">To be added.</param>
+        <param name="paintParts">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,7 +550,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -748,8 +557,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that describes the current object.</summary>
-        <returns>A string that represents the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -760,7 +569,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -772,28 +580,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the link changes color when it is visited.</summary>
-        <value>
-          <see langword="true" /> if the link changes color when it is selected; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `false`, the <xref:System.Windows.Forms.DataGridViewLinkCell.LinkVisited%2A> property will not be automatically set to `true` when visited.  
-  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState%2A> property of the owning column also sets the TrackVisitedState property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/cpp/p-system.windows.forms.d_353_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/csharp/p-system.windows.forms.d_353_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/visualbasic/p-system.windows.forms.d_353_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseColumnTextForLinkValue">
@@ -803,7 +592,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -815,26 +603,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the column <see cref="System.Windows.Forms.DataGridViewLinkColumn.Text%2A" /> property value is displayed as the link text.</summary>
-        <value>
-          <see langword="true" /> if the column <see cref="System.Windows.Forms.DataGridViewLinkColumn.Text%2A" /> property value is displayed as the link text; <see langword="false" /> if the cell <see cref="System.Windows.Forms.DataGridViewCell.FormattedValue%2A" /> property value is displayed as the link text. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue%2A> property of the owning column also sets the UseColumnTextForLinkValue property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/cpp/p-system.windows.forms.d_420_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/csharp/p-system.windows.forms.d_420_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/visualbasic/p-system.windows.forms.d_420_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -844,15 +615,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data type of the values in the cell.</summary>
-        <value>A <see cref="T:System.Type" /> representing the data type of the value in the cell.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,32 +633,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color used to display a link that has been previously visited.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to display a link that has been visited. The default value is the user's Internet Explorer setting for the visited link color.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the <xref:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor%2A> property of the owning column also sets the VisitedLinkColor property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
-  
- [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/cpp/p-system.windows.forms.d_409_1.cpp)]
- [!code-cs[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/csharp/p-system.windows.forms.d_409_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#70](~/add/codesnippet/visualbasic/p-system.windows.forms.d_409_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a date/time interval that determines the ranges that will be filtered when you invoke one of the <c>Filter</c> method definitionsfound in the <see cref="T:System.Web.UI.DataVisualization.Charting.DataManipulator" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DateRangeType enumeration is passed in the `DateRange` parameter of some `Filter` methods, which combined with the `rangeElements` parameter determines the date/time ranges that are filtered.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DayOfMonth">
@@ -34,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date/time interval is days of the month.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DayOfWeek">
@@ -50,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date/time interval is days of the week.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hour">
@@ -66,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date/time interval is hours.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minute">
@@ -82,7 +75,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date/time interval is minutes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -98,7 +91,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date/time interval is months.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -114,7 +107,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Date/time interval is years.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

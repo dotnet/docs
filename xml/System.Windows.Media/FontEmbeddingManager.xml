@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontEmbeddingManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides functionality for physical and composite font embedding.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.FontEmbeddingManager" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -54,11 +51,10 @@
         <Parameter Name="glyphTypeface" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="glyphTypeface">A <see cref="T:System.Uri" /> value that represents the location of the glyph typeface containing the glyphs.</param>
-        <summary>Retrieves the list of glyphs used by the glyph typeface.</summary>
-        <returns>A collection of <see cref="T:System.UInt16" /> values that represent the glyphs.</returns>
+        <param name="glyphTypeface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="glyphTypeface" /> value does not reference a previously recorded glyph typeface.</exception>
       </Docs>
     </Member>
     <Member MemberName="GlyphTypefaceUris">
@@ -68,7 +64,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -80,8 +75,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the collection of glyph typefaces used by the <see cref="T:System.Windows.Media.GlyphRun" /> specified in the <see cref="System.Windows.Media.FontEmbeddingManager.RecordUsage%2A" /> method.</summary>
-        <value>A collection of <see cref="T:System.Uri" /> values that represent glyph typefaces.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,16 +96,9 @@
         <Parameter Name="glyphRun" Type="System.Windows.Media.GlyphRun" />
       </Parameters>
       <Docs>
-        <param name="glyphRun">The <see cref="T:System.Windows.Media.GlyphRun" /> whose usage information is collected.</param>
-        <summary>Initiates the collection of usage information about the glyph typeface and indices used by a specified <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Windows.Media.FontEmbeddingManager.GlyphTypefaceUris%2A> property to return the collection of glyph typefaces used by `glyphRun`.  
-  
- ]]></format>
-        </remarks>
+        <param name="glyphRun">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

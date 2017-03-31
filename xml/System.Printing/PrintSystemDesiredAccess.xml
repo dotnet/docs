@@ -1,0 +1,98 @@
+<Type Name="PrintSystemDesiredAccess" FullName="System.Printing.PrintSystemDesiredAccess">
+  <TypeSignature Language="C#" Value="public enum PrintSystemDesiredAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintSystemDesiredAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemDesiredAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdministratePrinter">
+      <MemberSignature Language="C#" Value="AdministratePrinter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess AdministratePrinter = int32(983052)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.AdministratePrinter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AdministrateServer">
+      <MemberSignature Language="C#" Value="AdministrateServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess AdministrateServer = int32(983041)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.AdministrateServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateServer">
+      <MemberSignature Language="C#" Value="EnumerateServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess EnumerateServer = int32(131074)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.EnumerateServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePrinter">
+      <MemberSignature Language="C#" Value="UsePrinter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess UsePrinter = int32(131080)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

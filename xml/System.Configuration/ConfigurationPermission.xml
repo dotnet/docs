@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a permission structure that allows methods or classes to access configuration files.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConfigurationPermission class provides a permission structure that allows methods or classes to access configuration files. Also, ConfigurationPermission provides ways to resolve multiple permissions values through such methods as <xref:System.Configuration.ConfigurationPermission.Union%2A> and <xref:System.Configuration.ConfigurationPermission.Intersect%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,17 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">The permission level to grant.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationPermission" /> class.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The value of <paramref name="state" /> is neither <see cref="T:System.Security.Permissions.PermissionState" /> nor <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -54,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Configuration.ConfigurationPermission" /> object with the same permission level.</summary>
-        <returns>A new <see cref="T:System.Configuration.ConfigurationPermission" /> with the same permission level.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,12 +72,9 @@
         <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="securityElement">The configuration element from which the permission state is read.</param>
-        <summary>Reads the value of the permission state from XML.</summary>
+        <param name="securityElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="securityElement" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see langword="unrestricted" /> attribute for the given <paramref name="securityElement" /> is neither <see langword="true" /> nor <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -99,7 +84,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,19 +93,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">The object containing the permissions to perform the intersection with.</param>
-        <summary>Returns the logical intersection between the <see cref="T:System.Configuration.ConfigurationPermission" /> object and a given object that implements the <see cref="T:System.Security.IPermission" /> interface.</summary>
-        <returns>The logical intersection between the <see cref="T:System.Configuration.ConfigurationPermission" /> and a given object that implements <see cref="T:System.Security.IPermission" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not typed as <see cref="T:System.Configuration.ConfigurationPermission" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -131,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,22 +115,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">The object to compare to.</param>
-        <summary>Compares the <see cref="T:System.Configuration.ConfigurationPermission" /> object with an object implementing the <see cref="T:System.Security.IPermission" /> interface.</summary>
-        <returns>
-          <see langword="true" /> if the permission state is equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
-  
- If the object referenced by the `target` parameter is `null`, the comparison is done between the permission state of the <xref:System.Configuration.ConfigurationPermission> object and the <xref:System.Security.Permissions.PermissionState> value of the <xref:System.Security.Permissions.PermissionState> enumeration.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not typed as <see cref="T:System.Configuration.ConfigurationPermission" />.</exception>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -166,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,9 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the permission state for the <see cref="T:System.Configuration.ConfigurationPermission" /> object is the <see cref="T:System.Security.Permissions.PermissionState" /> value of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</summary>
-        <returns>
-          <see langword="true" /> if the permission state for the <see cref="T:System.Configuration.ConfigurationPermission" /> is the <see cref="T:System.Security.Permissions.PermissionState" /> value of <see cref="T:System.Security.Permissions.PermissionState" />; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,8 +154,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Security.SecurityElement" /> object with attribute values based on the current <see cref="T:System.Configuration.ConfigurationPermission" /> object.</summary>
-        <returns>A <see cref="T:System.Security.SecurityElement" /> with attribute values based on the current <see cref="T:System.Configuration.ConfigurationPermission" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,12 +175,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">The object to perform the union with.</param>
-        <summary>Returns the logical union of the <see cref="T:System.Configuration.ConfigurationPermission" /> object and an object that implements the <see cref="T:System.Security.IPermission" /> interface.</summary>
-        <returns>The logical union of the <see cref="T:System.Configuration.ConfigurationPermission" /> and an object that implements <see cref="T:System.Security.IPermission" />.</returns>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not typed as <see cref="T:System.Configuration.ConfigurationPermission" />.</exception>
       </Docs>
     </Member>
   </Members>

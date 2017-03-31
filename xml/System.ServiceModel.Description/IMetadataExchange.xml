@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IMetadataExchange" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,23 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Exposes methods used to return metadata about a service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When programming [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] services, it is useful to publish metadata about the service. For example, metadata can be a Web Services Description Language (WSDL) document that describes all of the methods and data types employed by a service. Returning metadata about an [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service allows consumers of a service to easily create clients for the service. For more information about [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] metadata endpoints, see [Metadata](../Topic/Metadata.md).  
-  
- Services implemented using [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] publish metadata by exposing one or more metadata endpoints. Metadata endpoints in [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] have an address, a binding and a contract like any other endpoint.  The <xref:System.ServiceModel.Description.MetadataReference> interface specifies the service contract implemented by all metadata endpoints in [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)].  
-  
- There is no need to implement the <xref:System.ServiceModel.Description.MetadataReference> contract in your service implementation.  Instead, add the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> to the service description.  
-  
- Or, when using configuration, set the `contract` attribute of the endpoint element to `IMetadataExchange`. For an example, see [How to: Publish Metadata for a Service Using a Configuration File](../Topic/How%20to:%20Publish%20Metadata%20for%20a%20Service%20Using%20a%20Configuration%20File.md).  
-  
- For details on publishing metadata in [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] see [Publishing Metadata](../Topic/Publishing%20Metadata.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginGet">
@@ -40,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -57,11 +40,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that should be processed to determine the metadata to return.</param>
-        <param name="callback">An <see cref="T:System.AsyncCallback" /> that points to the method that will process the metadata.</param>
-        <param name="state">Any data which allows the caller to determine which asynchronous call is being returned.</param>
-        <summary>Starts an asynchronous retrieval of metadata.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that can be passed to the <see cref="System.ServiceModel.Description.IMetadataExchange.EndGet%2A" /> method.</returns>
+        <param name="request">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,9 +64,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">An <see cref="T:System.IAsyncResult" /> that contains data used to further process the metadata.</param>
-        <summary>Concludes the retrieval of metadata.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> containing the processed metadata.</returns>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -110,9 +91,9 @@
         <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request for metadata.</param>
-        <summary>Returns the service metadata.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> containing the metadata.</returns>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

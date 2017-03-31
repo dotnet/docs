@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CombineMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how different clipping regions can be combined.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the existing region is replaced by the result of the existing region being removed from the new region. Said differently, the existing region is excluded from the new region.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the existing region is replaced by the result of the new region being removed from the existing region. Said differently, the new region is excluded from the existing region.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Two clipping regions are combined by taking their intersection.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>One clipping region is replaced by another.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Two clipping regions are combined by taking the union of both.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Two clipping regions are combined by taking only the areas enclosed by one or the other region, but not both.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

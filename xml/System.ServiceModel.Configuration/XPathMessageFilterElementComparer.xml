@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.XPathMessageFilterElementComparer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides functionality to compare two <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" /> instances.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElementComparer" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,48 +51,11 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">A <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" />.</param>
-        <param name="y">A <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" />.</param>
-        <summary>Compare two <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" /> instances.</summary>
-        <returns>The following table shows the possible values.  
-  
- <list type="table">  
-<listheader>  
-<term> Value  
-  
- </term>  
-<description> Condition  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="x" /> is less than <paramref name="y" />.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="x" /> is equal to <paramref name="y" />.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="x" /> is greater than <paramref name="y" />.  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The XPath filter specified by <paramref name="x" /> or <paramref name="y" /> cannot be parsed.</exception>
-        <exception cref="T:System.IndexOutOfRangeException">The XPath namespace prefix specified by <paramref name="x" /> or <paramref name="y" />.cannot be found.</exception>
       </Docs>
     </Member>
   </Members>

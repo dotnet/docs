@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityBind" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,23 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Binds an activity's property to a property, field, indexer, method, event, or another activity's property. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ActivityBind allows data to flow from one activity to another activity within a workflow. ActivityBind is a declarative way of doing what otherwise must be accomplished using code, and therefore is a key element of most workflows that are written entirely in XAML markup.  
-  
- ActivityBind represents a bind expression that has an <xref:System.Workflow.ComponentModel.Activity> member as a target. The target activity member can be a property, an event, or a field. An <xref:System.Workflow.ComponentModel.Activity> property or method can use ActivityBind to bind to another <xref:System.Workflow.ComponentModel.Activity> member.  
-  
- For example, if activity1 has property1 set to some value and if activity2 has its property1 set to ActivityBind with Name="activity1" and Path="property1", at run time the activity2.property1 gets its value from activity1.property1.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,25 +39,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind>.  
-  
- This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- [!code-cs[WF_Samples#178](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#178)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,15 +54,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class with the <paramref name="name" /> parameter.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +72,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -110,22 +79,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <param name="path">The path of the new <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class with <paramref name="name" /> and <paramref name="path" /> parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example illustrates creating and using <xref:System.Workflow.ComponentModel.ActivityBind>.  
-  
- The code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- [!code-cs[WF_Samples#178](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#178)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeValue">
@@ -135,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,12 +101,10 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns this bind.</param>
-        <summary>Gets the <see cref="T:System.Object" /> representing the run-time value of this <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</summary>
-        <returns>The <see cref="T:System.Object" /> representing the run-time value of this <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</returns>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeValue">
@@ -160,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,13 +124,11 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns this bind.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> of the object if a <see cref="T:System.Delegate" />; otherwise a null reference (<see langword="Nothing" /> in Visual Basic). <c>activity</c> is null.</param>
-        <summary>Gets the <see cref="T:System.Object" /> representing the run-time value of this <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</summary>
-        <returns>The <see cref="T:System.Object" /> representing the run-time value of this <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</returns>
+        <param name="activity">To be added.</param>
+        <param name="targetType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -187,7 +138,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -202,19 +152,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> points to.</summary>
-        <value>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> points to.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind> and also of setting the Name.  
-  
- This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Data.ReadOnlyException">Occurs when you attempt to set this value when the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> is not in design mode.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -224,7 +164,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -239,26 +178,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path for a member of the target activity. The value can use dotted notation to indicate a path to a nested value. For example, a path of "A.B.C" indicates that the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> is to a field or property named 'C', which is a member of the field or property 'B', which in turn is a field or property 'A', which is a member of the target activity.</summary>
-        <value>The path of the data item of interest on the chosen <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  This property cannot be set at run time.  
-  
-   
-  
-## Examples  
- This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind>, and also setting the <xref:System.Workflow.ComponentModel.ActivityBind.Name%2A> and Path.  
-  
- This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Data.ReadOnlyException">Occurs when you attempt to set this value when the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> is not in design mode.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">
@@ -268,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,9 +199,9 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.IServiceProvider" />.</param>
-        <summary>Returns the current instance of this class.</summary>
-        <returns>The current instance of this class.</returns>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,12 +222,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> owning this bind.</param>
-        <param name="value">The <see cref="T:System.Object" /> to set the run-time value to.</param>
-        <summary>Sets the run-time value.</summary>
+        <param name="activity">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -317,7 +235,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,8 +242,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calculates and returns a combination of the <see cref="System.Workflow.ComponentModel.ActivityBind.Name%2A" /> and <see cref="System.Workflow.ComponentModel.ActivityBind.Path%2A" /> property strings.</summary>
-        <returns>A combination of the <see cref="System.Workflow.ComponentModel.ActivityBind.Name%2A" /> and <see cref="System.Workflow.ComponentModel.ActivityBind.Path%2A" /> property strings.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +254,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -352,8 +268,8 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.IDictionary" /> of user data relating to this instance.</summary>
-        <value>An <see cref="T:System.Collections.IDictionary" /> of user data relating to this instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.WrapMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a texture or gradient is tiled when it is smaller than the area being filled.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Brushes use this enumeration to determine how shapes are filled. To see examples of the effects the WrapMode enumeration values have on a tiled image, see [How to: Tile a Shape with an Image](../Topic/How%20to:%20Tile%20a%20Shape%20with%20an%20Image.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush> and the WrapMode enumeration. This example is designed to be used with Windows Forms. Create a form containing a button named `Button2`. Paste the code into the form and associate the `Button2_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.ImageExample#2](~/add/codesnippet/csharp/t-system.drawing.drawing_5_1.cs)]
- [!code-cpp[System.Drawing.ImageExample#2](~/add/codesnippet/cpp/t-system.drawing.drawing_5_1.cpp)]
- [!code-vb[System.Drawing.ImageExample#2](~/add/codesnippet/visualbasic/t-system.drawing.drawing_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Clamp">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The texture or gradient is not tiled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tiles the gradient or texture.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipX">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reverses the texture or gradient horizontally and then tiles the texture or gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipXY">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reverses the texture or gradient horizontally and vertically and then tiles the texture or gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipY">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reverses the texture or gradient vertically and then tiles the texture or gradient.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

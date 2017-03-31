@@ -3,11 +3,11 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SyndicationFeedFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,22 +16,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An abstract class used as a base class for other formatters, (for example <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" />).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is abstract and cannot be instantiated directly.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,16 +30,16 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,27 +49,20 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.#ctor(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="feedToWrite" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> to write.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> must have a <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with it. The <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> can then write out the <xref:System.ServiceModel.Syndication.SyndicationFeed> to an <xref:System.Xml.XmlReader>. The only way to associate a <xref:System.ServiceModel.Syndication.SyndicationFeed> with a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> is by using this constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="feedToWrite">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -88,11 +71,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,18 +85,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">An XML reader to check.</param>
-        <summary>Verifies whether the specified <see cref="T:System.Xml.XmlReader" /> contains a valid syndication feed.</summary>
-        <returns>
-          <see langword="true" />, if the XML reader contains a valid syndication feed, otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method verifies whether the start element name and namespace match the start element name and namespace of the RSS 2.0 or Atom 1.0 specification.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCategory">
@@ -122,11 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreateCategory(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,17 +111,10 @@
         <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> used to create the new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationCategory> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="feed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCategory">
@@ -155,11 +123,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreateCategory(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,17 +137,10 @@
         <Parameter Name="item" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> used to create the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationCategory> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFeedInstance">
@@ -188,11 +149,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreateFeedInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,16 +161,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -218,11 +172,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreateItem(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,17 +186,10 @@
         <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> used to create the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="feed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateLink">
@@ -251,11 +198,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreateLink(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,17 +212,10 @@
         <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> to use to create the new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="feed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateLink">
@@ -284,11 +224,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreateLink(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -298,17 +238,10 @@
         <Parameter Name="item" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to use to create the new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePerson">
@@ -317,11 +250,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreatePerson(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,17 +264,10 @@
         <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance used to create the new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationPerson> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="feed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePerson">
@@ -350,11 +276,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.CreatePerson(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,17 +290,10 @@
         <Parameter Name="item" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance used to create the new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</param>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationPerson> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Feed">
@@ -383,27 +302,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeedFormatter.Feed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> associated with the formatter.</summary>
-        <value>The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> associated with the formatter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Syndication.SyndicationFeed> is associated with the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> by passing in a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadElementExtensions">
@@ -412,11 +324,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationCategory,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,18 +340,11 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="category">The <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> to load the element extensions into.</param>
-        <param name="maxExtensionSize">The maximum allowable size for an element extension (in bytes).</param>
-        <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="category">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadElementExtensions">
@@ -448,11 +353,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationFeed,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,18 +369,11 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> to load the element extensions into.</param>
-        <param name="maxExtensionSize">The maximum allowable size for an element extension (in bytes).</param>
-        <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="feed">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadElementExtensions">
@@ -484,11 +382,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationItem,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -500,18 +398,11 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to load the element extensions into.</param>
-        <param name="maxExtensionSize">The maximum allowable size for an element extension (in bytes).</param>
-        <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadElementExtensions">
@@ -520,11 +411,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationLink,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,18 +427,11 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="link">The <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> to load the element extensions into.</param>
-        <param name="maxExtensionSize">The maximum allowable size for an element extension (in bytes).</param>
-        <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="link">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadElementExtensions">
@@ -556,11 +440,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.LoadElementExtensions(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationPerson,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -572,18 +456,11 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="person">The <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> to load the element extensions into.</param>
-        <param name="maxExtensionSize">The maximum allowable size for an element extension (in bytes).</param>
-        <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="person">To be added.</param>
+        <param name="maxExtensionSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadFrom">
@@ -592,11 +469,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -606,17 +483,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <summary>Reads in a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Creates a new <xref:System.ServiceModel.Syndication.SyndicationFeed>, associates it with the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> and reads the feed into the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFeed">
@@ -625,11 +494,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.SetFeed(System.ServiceModel.Syndication.SyndicationFeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -639,16 +508,9 @@
         <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> to associate with the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" />.</param>
-        <summary>Associates a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance with the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is protected and cannot be called from user code. To associate a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance with a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>, either create a new <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance and pass the constructor a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance or load a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance into the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> by calling the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="feed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -657,11 +519,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -669,8 +531,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string representation of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" /> instance.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,11 +542,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.SyndicationCategory,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -698,22 +560,14 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="category">The <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="category">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
@@ -722,11 +576,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.SyndicationFeed,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -740,22 +594,14 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="feed">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
@@ -764,11 +610,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.SyndicationItem,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -782,22 +628,14 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
@@ -806,11 +644,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.SyndicationLink,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -824,22 +662,14 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="link">The <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="link">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
@@ -848,11 +678,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseAttribute(System.String,System.String,System.String,System.ServiceModel.Syndication.SyndicationPerson,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -866,22 +696,14 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="person">The <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="person">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseContent">
@@ -890,11 +712,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseContent(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationItem,System.String,System.String,System.ServiceModel.Syndication.SyndicationContent@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -908,24 +730,14 @@
         <Parameter Name="content" Type="System.ServiceModel.Syndication.SyndicationContent&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to use.</param>
-        <param name="contentType">The content type.</param>
-        <param name="version">The syndication version to use while parsing.</param>
-        <param name="content">The content to parse.</param>
-        <summary>Attempts to parse syndication item content using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the content was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how syndication content is parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the  
-  
- <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseContent%28System.Xml.XmlReader%2CSystem.String%2CSystem.String%2CSystem.ServiceModel.Syndication.SyndicationContent%40%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
@@ -934,11 +746,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationCategory,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -950,20 +762,12 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="category">The <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="category">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
@@ -972,11 +776,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationFeed,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -988,20 +792,12 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="feed">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
@@ -1010,11 +806,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationItem,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1026,20 +822,12 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
@@ -1048,11 +836,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationLink,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1064,20 +852,12 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="link">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="link">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
@@ -1086,11 +866,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.TryParseElement(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationPerson,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1102,20 +882,12 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="person">The <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to use.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an element extension using the specified <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</summary>
-        <returns>
-          <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="reader">To be added.</param>
+        <param name="person">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -1124,27 +896,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeedFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the syndication version of the formatter.</summary>
-        <value>The syndication version of the formatter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] supports the RSS 2.0 and Atom 1.0 specifications.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
@@ -1153,11 +918,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationCategory,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1169,18 +934,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="category">The <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance that contains the attribute extensions to be written.</param>
-        <param name="version">The syndication version to write the attribute extensions in.</param>
-        <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationCategory>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="category">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
@@ -1189,11 +947,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationFeed,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1205,18 +963,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance that contains the attribute extensions to be written.</param>
-        <param name="version">The syndication version to write the attribute extensions in.</param>
-        <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationFeed>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="feed">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
@@ -1225,11 +976,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationItem,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1241,18 +992,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance that contains the attribute extensions to be written.</param>
-        <param name="version">The syndication version to write the attribute extensions in.</param>
-        <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationItem>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
@@ -1261,11 +1005,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationLink,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1277,18 +1021,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="link">The <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance that contains the attribute extensions to be written.</param>
-        <param name="version">The syndication version to write the attribute extensions in.</param>
-        <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationLink>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="link">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
@@ -1297,11 +1034,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationPerson,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1313,18 +1050,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="person">The <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance that contains the attribute extensions to be written.</param>
-        <param name="version">The syndication version to write the attribute extensions in.</param>
-        <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationPerson>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="person">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
@@ -1333,11 +1063,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationCategory,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1349,18 +1079,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="category">The <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance that contains the element extensions to be written.</param>
-        <param name="version">The syndication version the extensions are written in.</param>
-        <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationCategory>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="category">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
@@ -1369,11 +1092,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationFeed,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1385,18 +1108,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="feed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance that contains the element extensions to be written.</param>
-        <param name="version">The syndication version the extensions are written in.</param>
-        <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationFeed>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="feed">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
@@ -1405,11 +1121,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationItem,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1421,18 +1137,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance that contains the element extensions to be written.</param>
-        <param name="version">The syndication version the extensions are written in.</param>
-        <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationItem>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
@@ -1441,11 +1150,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationLink,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1457,18 +1166,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="link">The <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance that contains the element extensions to be written.</param>
-        <param name="version">The syndication version the extensions are written in.</param>
-        <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationLink>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="link">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
@@ -1477,11 +1179,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteElementExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.SyndicationPerson,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1493,18 +1195,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the extensions to.</param>
-        <param name="person">The <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance that contains the element extensions to be written.</param>
-        <param name="version">The syndication version the extensions are written in.</param>
-        <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationPerson>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="person">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -1513,11 +1208,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeedFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1527,8 +1222,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> to.</param>
-        <summary>Writes the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> to the specified <see cref="T:System.Xml.XmlWriter" /> instance.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

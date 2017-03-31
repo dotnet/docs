@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagationFilter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the base class for peer channel message filters.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implementations of filters for messages transmitted over a peer channel must be derived from this class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerMessagePropagationFilter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,10 +47,10 @@
         <Parameter Name="origination" Type="System.ServiceModel.PeerMessageOrigination" />
       </Parameters>
       <Docs>
-        <param name="message">The message to evaluate for propagation.</param>
-        <param name="origination">A <see cref="T:System.ServiceModel.PeerMessageOrigination" /> enumeration value that specifies the origin (local or remote) of the message under evaluation.</param>
-        <summary>Returns whether or not a message received on a peer channel should be propagated, and if so, the destination of the message.</summary>
-        <returns>A <see cref="T:System.ServiceModel.PeerMessagePropagation" /> enumeration value that indicates the destination of the message (local, remote, both, or no propagation at all).</returns>
+        <param name="message">To be added.</param>
+        <param name="origination">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

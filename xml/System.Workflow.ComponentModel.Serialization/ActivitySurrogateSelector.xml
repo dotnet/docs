@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.ActivitySurrogateSelector" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Selects the surrogate that can be used to serialize an <see cref="T:System.Workflow.ComponentModel.Activity" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- A serialization surrogate gives you an object that can handle the serialization requirements of a different object and, if necessary, can transform the serialized data.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ActivitySurrogateSelector" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Serialization.ActivitySurrogateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default <see cref="T:System.Workflow.ComponentModel.Serialization.ActivitySurrogateSelector" />. This property is read-only.</summary>
-        <value>The default <see cref="T:System.Workflow.ComponentModel.Serialization.ActivitySurrogateSelector" /> that can be used to serialize an <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,21 +71,12 @@
         <Parameter Name="selector" Type="System.Runtime.Serialization.ISurrogateSelector&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> for which to obtain a surrogate.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that serves as the source or destination context for the current serialization.</param>
-        <param name="selector">When this method returns, contains an <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> that holds a reference to the surrogate selector where the appropriate surrogate was found. This parameter is passed uninitialized.</param>
-        <summary>Finds the surrogate that represents the specified type, starting with the specified surrogate selector for the specified serialization context.</summary>
-        <returns>The appropriate surrogate for the specified type and context.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type of surrogate returned is dependent upon what type is assignable from `type`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="type">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="selector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

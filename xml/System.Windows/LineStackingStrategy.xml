@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LineStackingStrategy" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes a mechanism by which a line box is determined for each line.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of MaxHeight and the second <xref:System.Windows.Controls.TextBlock> has a value of BlockLineHeight.  
-  
- [!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
-  
- The following illustration shows the result of the code above.  
-  
- ![Screenshot: Compare LineStackingStrategy values](~/add/media/flow-linestackingstrategy.gif "Screenshot: Compare LineStackingStrategy values")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BlockLineHeight">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The stack height is determined by the block element line-height property value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxHeight">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The stack height is the smallest value that containing all the inline elements on that line when those elements are properly aligned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

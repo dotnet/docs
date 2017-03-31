@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Raises an <see cref="T:System.Exception" /> if the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> value is not valid.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web-site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,25 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="itemName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemName">A String that represents the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] Web-site project.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="itemName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

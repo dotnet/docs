@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelationshipManager" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Used to track relationships between objects in the object context.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RelationshipManager is used to track relationships between objects in an object context. There is one instance of the RelationshipManager class for each relationship tracked in the object context. Relationships are defined by associations in a conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
-  
-   
-  
-## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new `SalesOrderHeader` entities to the `Contact` entity. Then it gets all related ends from the `Contact` entity and displays the relationship name, source role name, and target role name for each related end.  
-  
- [!code-vb[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/visualbasic/objectservicesconceptsvb/Source.vb#irelatedend)]
- [!code-cs[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/csharp/objectservicesconceptscs/Source.cs#irelatedend)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -38,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,17 +31,10 @@
         <Parameter Name="owner" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="owner">Reference to the entity that is calling this method.</param>
-        <summary>Creates a new <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> object.</summary>
-        <returns>The requested <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Create method is used by objects that implement <xref:System.Data.Objects.DataClasses.IEntityWithRelationships>. When Object Services requests the <xref:System.Data.Objects.DataClasses.RelationshipManager> property of an object that implements <xref:System.Data.Objects.DataClasses.IEntityWithRelationships>, the Create method is called if the relationship manager does not already exist for the object.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAllRelatedEnds">
@@ -68,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -81,24 +56,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumeration of all the related ends managed by the relationship manager.</summary>
-        <returns>An <see cref="System.Collections.Generic.IEnumerable%601" /> of objects that implement <see cref="T:System.Data.Objects.DataClasses.IRelatedEnd" />. An empty enumeration is returned when the relationships have not yet been populated.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetAllRelatedEnds method returns an enumeration of <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> objects. <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> are concrete types that derive from <xref:System.Data.Objects.DataClasses.RelatedEnd>. The <xref:System.Data.Objects.DataClasses.RelatedEnd> abstract class implements the <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
-  
-   
-  
-## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new `SalesOrderHeader` entities to the `Contact` entity. Then it gets all related ends from the `Contact` entity and displays relationship name, source role name, and target role name for each related end,  
-  
- [!code-vb[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/visualbasic/objectservicesconceptsvb/Source.vb#irelatedend)]
- [!code-cs[DP ObjectServices Concepts#IRelatedEnd](~/add/codesnippet/csharp/objectservicesconceptscs/Source.cs#irelatedend)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelatedCollection&lt;TTargetEntity&gt;">
@@ -108,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,7 +77,6 @@
         <TypeParameter Name="TTargetEntity">
           <Constraints>
             <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.Data.Objects.DataClasses.IEntityWithRelationships</InterfaceName>
           </Constraints>
         </TypeParameter>
       </TypeParameters>
@@ -127,22 +85,12 @@
         <Parameter Name="targetRoleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TTargetEntity">The type of the returned <see cref="System.Data.Objects.DataClasses.EntityCollection%601" />.</typeparam>
-        <param name="relationshipName">Name of the relationship to navigate. The relationship name is not namespace qualified.</param>
-        <param name="targetRoleName">Name of the target role for the navigation. Indicates the direction of navigation across the relationship.</param>
-        <summary>Gets an <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> of related objects with the specified relationship name and target role name.</summary>
-        <returns>The <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> of related objects.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gets an <xref:System.Data.Objects.DataClasses.EntityCollection%601> of related objects that have the specified relationship name and target role name.  
-  
- The relationship name should not be namespace qualified. An error occurs when you prepend the namespace to the relationship name.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The specified role returned an <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> instead of an <see cref="System.Data.Objects.DataClasses.EntityCollection%601" />.</exception>
+        <typeparam name="TTargetEntity">To be added.</typeparam>
+        <param name="relationshipName">To be added.</param>
+        <param name="targetRoleName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelatedEnd">
@@ -152,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,30 +110,11 @@
         <Parameter Name="targetRoleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relationshipName">Name of the relationship in which <c>targetRoleName</c> is defined. The relationship name is not namespace qualified.</param>
-        <param name="targetRoleName">Target role to use to retrieve the other end of <c>relationshipName</c>.</param>
-        <summary>Returns either an <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> or <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> of the correct type for the specified target role in a relationship.</summary>
-        <returns>
-          <see cref="T:System.Data.Objects.DataClasses.IRelatedEnd" /> representing the <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> or <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> that was retrieved.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended to be used in scenarios where the user does not have full metadata, including the static type information for both ends of the relationship. This metadata is specified in the <xref:System.Data.Objects.DataClasses.EdmRelationshipAttribute> object on each entity type in the relationship, so the metadata system can retrieve it based on the supplied relationship name and target role name.  
-  
- The relationship name should not be namespace qualified. An error occurs when you prepend the namespace to the relationship name.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="relationshipName" /> or <paramref name="targetRoleName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The source type does not match the type of the owner.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="targetRoleName" /> is invalid.  
-  
- -or-  
-  
- Unable to find the relationship type in the metadata.</exception>
+        <param name="relationshipName">To be added.</param>
+        <param name="targetRoleName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelatedReference&lt;TTargetEntity&gt;">
@@ -196,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,7 +133,6 @@
         <TypeParameter Name="TTargetEntity">
           <Constraints>
             <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.Data.Objects.DataClasses.IEntityWithRelationships</InterfaceName>
           </Constraints>
         </TypeParameter>
       </TypeParameters>
@@ -215,20 +141,12 @@
         <Parameter Name="targetRoleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TTargetEntity">The type of the returned <see cref="System.Data.Objects.DataClasses.EntityReference%601" />.</typeparam>
-        <param name="relationshipName">Name of the relationship to navigate. The relationship name is not namespace qualified.</param>
-        <param name="targetRoleName">Name of the target role for the navigation. Indicates the direction of navigation across the relationship.</param>
-        <summary>Gets the <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> for a related object by using the specified combination of relationship name and target role name.</summary>
-        <returns>The <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> of a related object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The relationship name should not be namespace qualified. An error occurs when you prepend the namespace to the relationship name.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The specified role returned an <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> instead of an <see cref="System.Data.Objects.DataClasses.EntityReference%601" />.</exception>
+        <typeparam name="TTargetEntity">To be added.</typeparam>
+        <param name="relationshipName">To be added.</param>
+        <param name="targetRoleName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeRelatedCollection&lt;TTargetEntity&gt;">
@@ -238,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -256,7 +173,6 @@
         <TypeParameter Name="TTargetEntity">
           <Constraints>
             <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.Data.Objects.DataClasses.IEntityWithRelationships</InterfaceName>
           </Constraints>
         </TypeParameter>
       </TypeParameters>
@@ -266,30 +182,12 @@
         <Parameter Name="entityCollection" Type="System.Data.Objects.DataClasses.EntityCollection&lt;TTargetEntity&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TTargetEntity">The type of the <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> being initialized.</typeparam>
-        <param name="relationshipName">The relationship name.</param>
-        <param name="targetRoleName">The role name of the related end.</param>
-        <param name="entityCollection">The <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> to initialize.</param>
-        <summary>Initializes an existing <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> that was created by using the default constructor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InitializeRelatedCollection(TTargetEntity) method initializes an existing <xref:System.Data.Objects.DataClasses.EntityCollection%601> that was created by using the default constructor. The <xref:System.Data.Objects.DataClasses.EntityCollection%601> is initialized by using the provided relationship and target role names.  
-  
- The InitializeRelatedCollection(TTargetEntity) method is used during deserialization only.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When the provided <see cref="System.Data.Objects.DataClasses.EntityCollection%601" /> is already initialized.  
-  
- -or-  
-  
- When the relationship manager is already attached to an <see cref="T:System.Data.Objects.ObjectContext" />.  
-  
- -or-  
-  
- When the relationship manager already contains a relationship with this name and target role.</exception>
+        <typeparam name="TTargetEntity">To be added.</typeparam>
+        <param name="relationshipName">To be added.</param>
+        <param name="targetRoleName">To be added.</param>
+        <param name="entityCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeRelatedReference&lt;TTargetEntity&gt;">
@@ -299,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -317,7 +214,6 @@
         <TypeParameter Name="TTargetEntity">
           <Constraints>
             <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.Data.Objects.DataClasses.IEntityWithRelationships</InterfaceName>
           </Constraints>
         </TypeParameter>
       </TypeParameters>
@@ -327,30 +223,12 @@
         <Parameter Name="entityReference" Type="System.Data.Objects.DataClasses.EntityReference&lt;TTargetEntity&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TTargetEntity">The type of the <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> being initialized.</typeparam>
-        <param name="relationshipName">The relationship name.</param>
-        <param name="targetRoleName">The role name of the related end.</param>
-        <param name="entityReference">The <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> to initialize.</param>
-        <summary>Initializes an existing <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> that was created by using the default constructor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InitializeRelatedReference(TTargetEntity) method initializes an existing <xref:System.Data.Objects.DataClasses.EntityReference%601> that was created by using the default constructor. The <xref:System.Data.Objects.DataClasses.EntityReference%601> is initialized by using the provided relationship and target role names.  
-  
- The InitializeRelatedReference(TTargetEntity) method is used during deserialization only.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When the provided <see cref="System.Data.Objects.DataClasses.EntityReference%601" /> is already initialized.  
-  
- -or-  
-  
- When the relationship manager is already attached to an <see cref="T:System.Data.Objects.ObjectContext" />.  
-  
- -or-  
-  
- When the relationship manager already contains a relationship with this name and target role.</exception>
+        <typeparam name="TTargetEntity">To be added.</typeparam>
+        <param name="relationshipName">To be added.</param>
+        <param name="targetRoleName">To be added.</param>
+        <param name="entityReference">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeserialized">
@@ -380,8 +258,8 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="context">The serialized stream.</param>
-        <summary>Used internally to deserialize entity objects along with the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> instances.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -413,16 +290,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the source and destination of a given serialized stream, and provides an additional caller-defined context.</param>
-        <summary>Called by Object Services to prepare an <see cref="T:System.Data.EntityKey" /> for binary serialization with a serialized relationship.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Serialization of relationships is only supported for binary serialization. Complete object graphs, including relationships, is not supported for Windows Communication Foundation and XML serialization. For more information, see [Serializing Objects](http://msdn.microsoft.com/en-us/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

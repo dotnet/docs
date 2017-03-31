@@ -4,49 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebPartTable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines a provider interface for connecting two server controls using an entire table of data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is designed to be used with Web Parts connections. In a Web Parts connection, two server controls that reside in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone establish a connection and share data, with one control acting as the consumer and the other control acting as a provider. The mechanism for sharing data in a Web Parts connection is an interface instance, which the provider serves to the consumer by means of a callback method. To establish a connection, the consumer and provider must both work with the same interface type for sharing data. If the consumer does not recognize the interface type sent by the provider, it is still possible to connect the controls by means of a transformer (a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object) that translates the interface instance sent by the provider into a type that the consumer recognizes. For details on connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and [Web Parts Connections Overview](../Topic/Web%20Parts%20Connections%20Overview.md).  
-  
- The IWebPartTable interface is a provider interface included with the Web Parts control set as a standard interface for creating connections based on a data table. You can also create custom interfaces to use with Web Parts connections, but in many data-driven Web applications, it is useful to create connections based on a common field (for details, see the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface), row (for details, see the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface), or table from the data source. In a typical connection, a <xref:System.Web.UI.WebControls.WebParts.WebPart> control acting as a provider would implement the IWebPartTable interface and provide an instance of the interface to consumers in a special callback method. For example, the provider might implement an IWebPartTable interface for a table that contains financial performance data. Another <xref:System.Web.UI.WebControls.WebParts.WebPart> control acting as a consumer would define a special method to receive the interface instance, and could then extract the data and render a chart to display the resulting information.  
-  
- The IWebPartTable interface has two exposed members. The <xref:System.Web.UI.WebControls.WebParts.IWebPartTable.Schema%2A> property returns schema information about the data table encapsulated in a <xref:System.ComponentModel.PropertyDescriptorCollection> object. The <xref:System.Web.UI.WebControls.WebParts.IWebPartTable.GetTableData%2A> method declares a method that an implementer (such as a provider control) uses to retrieve the interface instance's table data when the callback method is invoked.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a static connection between two controls using the IWebPartTable interface. The code example has three parts:  
-  
--   Source code for two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that can form a connection using the IWebPartTable interface, with one control acting as the provider and the other acting as the consumer.  
-  
--   A Web page that hosts the controls and declares the static connection in persistence format.  
-  
--   A description of what happens when the example code runs.  
-  
- The first part of the code example is the source code for the two custom controls. First is the code for the provider, which implements the IWebPartTable interface. For simplicity in the example, the provider creates a table with some data rather than connecting to a database. The `GetConnectionInterface` method serves as the provider's connection point, the callback method that returns the interface instance to the consumer. As for the consumer, it retrieves the interface instance from the provider in its method named `SetConnectionInterface`, which is marked with a `ConnectionConsumer` attribute. After retrieving the instance of the interface, the consumer, in its `OnPreRender` method, calls the implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable.GetTableData%2A> method in the provider, to retrieve the actual data and write it to the page.  
-  
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](../Topic/Walkthrough:%20Developing%20and%20Using%20a%20Custom%20Web%20Server%20Control.md).  
-  
- [!code-cs[WebParts_IWebPartTable_Overview#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_209_1.cs)]
- [!code-vb[WebParts_IWebPartTable_Overview#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_209_1.vb)]  
-  
- The second part of the code example is the Web page that declares the static connection and hosts the controls. Near the top of the page is a `Register` directive that declares the namespace of the source code contained in the App_Code directory. The connection is declared using an `<asp:webpartconnection>` element. The custom consumer and provider controls are declared in a `<zonetemplate>` element within an `<asp:webpartzone>` element, which is required for them to be able to connect (they must reside within a zone that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class).  
-  
- [!code-vb[WebParts_IWebPartRow_Overview#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_209_2.aspx)]
- [!code-cs[WebParts_IWebPartRow_Overview#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_209_2.aspx)]  
-  
- Load the page in a browser. The consumer control displays the data provided from the specified table, which the provider makes available through an instance of the IWebPartTable interface.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetTableData">
@@ -56,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,24 +28,9 @@
         <Parameter Name="callback" Type="System.Web.UI.WebControls.WebParts.TableCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">A <see cref="T:System.Web.UI.WebControls.WebParts.TableCallback" /> delegate that contains the address of a method that receives the data.</param>
-        <summary>Returns the data for the table that is being used by the interface as the basis of a connection between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to retrieve the data table values passed by the interface. The provider implements this method, and the consumer invokes it at the point when the consumer is ready to process or render data.  
-  
-   
-  
-## Examples  
- The following code example shows the implementation and use of the GetTableData method. The complete example is shown in the class overview for the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable> interface. The provider control implements the GetTableData method, returning the data in the specified table. The consumer control calls the GetTableData method in its `OnPreRender` method, so that the value of the data can be written to the page.  
-  
- [!code-cs[WebParts_IWebPartTable_Overview#2](~/add/codesnippet/csharp/dd87fd75-1dde-4c55-8fa1-_1.cs)]
- [!code-vb[WebParts_IWebPartTable_Overview#2](~/add/codesnippet/visualbasic/dd87fd75-1dde-4c55-8fa1-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -93,31 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the schema information for a data table that is used to share data between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
-        <value>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> describing the data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property provides property information on the data in an <xref:System.Web.UI.WebControls.WebParts.IWebPartTable> instance. There is an implicit contract between the schema referenced by the Schema property and the data in the table. The contract is that for each <xref:System.ComponentModel.PropertyDescriptor> object in the Schema property, you can call <xref:System.ComponentModel.PropertyDescriptor.GetValue%2A> on an element of the table data to get the value in a column or a row of the table.  
-  
-   
-  
-## Examples  
- The following code example shows the implementation and use of the Schema property. The complete example is shown in the class overview for the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable> interface. The provider control implements the Schema property. Then the consumer control, in its `RenderContents` method, queries the Schema property to retrieve information about the table as it writes the table data to the page.  
-  
- [!code-cs[WebParts_IWebPartTable_Overview#2](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1346_1.cs)]
- [!code-vb[WebParts_IWebPartTable_Overview#2](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1346_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

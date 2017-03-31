@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UnderstoodHeaders" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,25 +16,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of message headers that are understood. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class contains a collection of message headers that are understood. SOAP processors at various layers (Security, Reliability, Transaction and application dispatcher) must add their MustUnderstand headers to this collection after processing the headers. The dispatcher throws a `MessageHeader` fault if a header exists in the `Message.Headers` collection that must be understood, but is not found in this collection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.ServiceModel.Channels.MessageHeaderInfo headerInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.ServiceModel.Channels.MessageHeaderInfo headerInfo) cil managed" />
+      <MemberSignature Language="C#" Value="public void Add (System.ServiceModel.Channels.MessageHeaderInfo header);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.ServiceModel.Channels.MessageHeaderInfo header) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.Add(System.ServiceModel.Channels.MessageHeaderInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,19 +37,19 @@
         <Parameter Name="headerInfo" Type="System.ServiceModel.Channels.MessageHeaderInfo" />
       </Parameters>
       <Docs>
-        <param name="headerInfo">Contains additional information regarding a message header.</param>
-        <summary>Adds the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> to this collection. This implies that the specific header has been understood.</summary>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
-      <MemberSignature Language="C#" Value="public bool Contains (System.ServiceModel.Channels.MessageHeaderInfo headerInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ServiceModel.Channels.MessageHeaderInfo headerInfo) cil managed" />
+      <MemberSignature Language="C#" Value="public bool Contains (System.ServiceModel.Channels.MessageHeaderInfo header);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ServiceModel.Channels.MessageHeaderInfo header) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.Contains(System.ServiceModel.Channels.MessageHeaderInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,10 +59,9 @@
         <Parameter Name="headerInfo" Type="System.ServiceModel.Channels.MessageHeaderInfo" />
       </Parameters>
       <Docs>
-        <param name="headerInfo">Contains additional information regarding a message header.</param>
-        <summary>Verifies whether the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> is present in this collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> is present in this collection; otherwise, <see langword="false" />.</returns>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +72,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,19 +80,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
-      <MemberSignature Language="C#" Value="public void Remove (System.ServiceModel.Channels.MessageHeaderInfo headerInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ServiceModel.Channels.MessageHeaderInfo headerInfo) cil managed" />
+      <MemberSignature Language="C#" Value="public void Remove (System.ServiceModel.Channels.MessageHeaderInfo header);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ServiceModel.Channels.MessageHeaderInfo header) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.Remove(System.ServiceModel.Channels.MessageHeaderInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,8 +102,8 @@
         <Parameter Name="headerInfo" Type="System.ServiceModel.Channels.MessageHeaderInfo" />
       </Parameters>
       <Docs>
-        <param name="headerInfo">Contains additional information regarding a message header.</param>
-        <summary>Removes the specified <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> from this collection.</summary>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +114,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,8 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

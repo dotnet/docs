@@ -3,8 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractClassAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -22,23 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that a separate type contains the code contracts for this type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Types that are marked with this attribute have code contracts that are included in a separate type. The type that contains the contracts is specified in the constructor.  
-  
-   
-  
-## Examples  
- The following example shows how to use the ContractClassAttribute attribute to specify that the contracts for the `IArray` interface are contained in the `IArrayContracts` class.  
-  
- [!code-vb[ContractExample#1](~/add/codesnippet/visualbasic/t-system.diagnostics.con_3_1.vb)]
- [!code-cs[ContractExample#1](~/add/codesnippet/csharp/t-system.diagnostics.con_3_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,26 +41,25 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractClassAttribute.#ctor(System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="typeContainingContracts" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeContainingContracts">The type that contains the code contracts for this type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractClassAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the ContractClassAttribute constructor to specify that the contracts for the `IArray` interface are contained in the `IArrayContracts` class.  
-  
- [!code-vb[ContractExample#1](~/add/codesnippet/visualbasic/m-system.diagnostics.con_1_1.vb)]
- [!code-cs[ContractExample#1](~/add/codesnippet/csharp/m-system.diagnostics.con_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="typeContainingContracts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeContainingContracts">
@@ -75,15 +68,24 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractClassAttribute.TypeContainingContracts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type that contains the code contracts for this type.</summary>
-        <value>The type that contains the code contracts for this type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

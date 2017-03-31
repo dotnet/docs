@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewItemEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,36 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.DrawItem" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event enables you to customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing.  
-  
- The <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event is raised by a <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=fullName> property is set to `true`. The DrawListViewItemEventArgs passed to the event handler contains information about the <xref:System.Windows.Forms.ListViewItem> to draw and also provides methods to help you draw the item.  
-  
- Use the <xref:System.Windows.Forms.DrawListViewItemEventArgs.State%2A> or <xref:System.Windows.Forms.DrawListViewItemEventArgs.Item%2A> properties to retrieve information about the item to draw. Use the <xref:System.Windows.Forms.DrawListViewItemEventArgs.ItemIndex%2A?displayProperty=fullName> property to retrieve the index of the item.  
-  
- Use the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Graphics%2A> property to do the actual drawing within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. To draw standard <xref:System.Windows.Forms.ListView> elements that do not need customization, use the <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawBackground%2A>, <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A>, and <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawFocusRectangle%2A> methods.  
-  
-> [!NOTE]
->  To avoid issues with graphics flickering when owner drawing, override the <xref:System.Windows.Forms.ListView> control and set the <xref:System.Windows.Forms.ListView.DoubleBuffered%2A> property to `true`. This feature is available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to provide custom drawing for a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView> control in the example has a gradient background. Subitems with negative values have a red foreground and a black background.  
-  
- A handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. A handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the text values and both the text and background for subitems that have negative values. A handler for the <xref:System.Windows.Forms.ListView.DrawColumnHeader> event draws each column header.  
-  
- A <xref:System.Windows.Forms.ContextMenu> component provides a way to switch between the details view and the list view. In the list view, only the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event is fired. In this case, the text and background are both drawn in the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event handler.  
-  
- [!code-cs[ListViewOwnerDraw#1](~/add/codesnippet/csharp/t-system.windows.forms.d_5_1.cs)]
- [!code-vb[ListViewOwnerDraw#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -62,12 +32,12 @@
         <Parameter Name="state" Type="System.Windows.Forms.ListViewItemStates" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw.</param>
-        <param name="item">The <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> within which to draw.</param>
-        <param name="itemIndex">The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="System.Windows.Forms.ListView.Items%2A" /> collection.</param>
-        <param name="state">A bitwise combination of <see cref="T:System.Windows.Forms.ListViewItemStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawListViewItemEventArgs" /> class.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="itemIndex">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,35 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The location specified by this property is relative to the upper left corner of the <xref:System.Windows.Forms.ListView> control.  
-  
- To retrieve the bounds for specific portions of a <xref:System.Windows.Forms.ListViewItem>, use the <xref:System.Windows.Forms.ListViewItem.GetBounds%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Bounds property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. In all views except the details view, this handler also draws the foreground text. In the details view, the foreground text is drawn in the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- For the complete example, see the <xref:System.Windows.Forms.DrawListViewItemEventArgs> overview reference topic.  
-  
- [!code-cs[ListViewOwnerDraw#3](~/add/codesnippet/csharp/p-system.windows.forms.d_405_1.cs)]
- [!code-vb[ListViewOwnerDraw#3](~/add/codesnippet/visualbasic/p-system.windows.forms.d_405_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBackground">
@@ -116,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,15 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current background color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to draw a standard background that uses the current value of the <xref:System.Windows.Forms.ListViewItem.BackColor%2A?displayProperty=fullName> property. The background is drawn to fill the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawDefault">
@@ -142,34 +84,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a property indicating whether the <see cref="T:System.Windows.Forms.ListView" /> control will use the default drawing for the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
-        <value>
-          <see langword="true" /> if the system draws the item; <see langword="false" /> if the event handler draws the item. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set this property to `true` when the item does not require custom drawing. This is useful when you need to customize only certain items within the control, such as selected items.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#471](~/add/codesnippet/csharp/p-system.windows.forms.d_20_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#471](~/add/codesnippet/visualbasic/p-system.windows.forms.d_20_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawFocusRectangle">
@@ -179,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,27 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws a focus rectangle for the <see cref="T:System.Windows.Forms.ListViewItem" /> if it has focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to draw a standard focus rectangle around the item. The focus rectangle is normally drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. If the control is in the details view and the <xref:System.Windows.Forms.ListView.FullRowSelect%2A?displayProperty=fullName> property value is `false`, however, the focus rectangle is drawn around the default text area for the first column of the item.  
-  
- The focus rectangle is drawn only when the item has focus, so you do not need to check the focus state of the item before you call this method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the DrawFocusRectangle method in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. In all views except the details view, this handler also draws the foreground text. In the details view, the foreground text is drawn in the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- For the complete example, see the <xref:System.Windows.Forms.DrawListViewItemEventArgs> overview reference topic.  
-  
- [!code-cs[ListViewOwnerDraw#3](~/add/codesnippet/csharp/m-system.windows.forms.d_53_1.cs)]
- [!code-vb[ListViewOwnerDraw#3](~/add/codesnippet/visualbasic/m-system.windows.forms.d_53_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -217,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,27 +127,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current foreground color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to draw the item text using the current values of the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.Font%2A?displayProperty=fullName> properties. The text is drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. You can also draw the text manually using the <xref:System.Drawing.Graphics> retrieved through the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Graphics%2A> property.  
-  
- The <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method is most useful when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=fullName>. In the details view, this method draws the text for the <xref:System.Windows.Forms.ListViewItem>, but does not draw the text for subitems. Therefore, in the details view, it is generally more convenient to draw all of the <xref:System.Windows.Forms.ListView> text in a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. In all views except the details view, this handler also draws the foreground text. In the details view, the foreground text is drawn in the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- For the complete example, see the <xref:System.Windows.Forms.DrawListViewItemEventArgs> overview reference topic.  
-  
- [!code-cs[ListViewOwnerDraw#3](~/add/codesnippet/csharp/m-system.windows.forms.d_102_1.cs)]
- [!code-vb[ListViewOwnerDraw#3](~/add/codesnippet/visualbasic/m-system.windows.forms.d_102_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -255,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,18 +147,9 @@
         <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
       </Parameters>
       <Docs>
-        <param name="flags">A bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current foreground color and formatting it with the specified <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to draw the item text using the current values of the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.Font%2A?displayProperty=fullName> properties. The <xref:System.Windows.Forms.TextFormatFlags> values specified in the `flags` parameter let you provide formatting properties for the node label, such as text alignment. The text is drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. You can also draw the text manually using the <xref:System.Drawing.Graphics> retrieved through the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Graphics%2A> property.  
-  
- The <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method is most useful when the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=fullName>. In the details view, this method draws the text for the <xref:System.Windows.Forms.ListViewItem>, but does not draw the text for subitems. Therefore, in the details view, it is generally more convenient to draw all of the <xref:System.Windows.Forms.ListView> text in a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -286,33 +159,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
-        <value>A <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Graphics> class provides properties and methods useful for drawing on the display device.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Graphics property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. In all views except the details view, this handler also draws the foreground text. In the details view, the foreground text is drawn in the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- For the complete example, see the <xref:System.Windows.Forms.DrawListViewItemEventArgs> overview reference topic.  
-  
- [!code-cs[ListViewOwnerDraw#3](~/add/codesnippet/csharp/p-system.windows.forms.d_248_1.cs)]
- [!code-vb[ListViewOwnerDraw#3](~/add/codesnippet/visualbasic/p-system.windows.forms.d_248_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -322,33 +177,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to access the <xref:System.Windows.Forms.ListViewItem> to draw. This is useful when the <xref:System.Windows.Forms.DrawListViewItemEventArgs.State%2A> property does not provide adequate information to meet your needs. The <xref:System.Windows.Forms.DrawListViewItemEventArgs.State%2A> property provides only basic state information that you can use, for example, to determine whether an item is selected, checked, or focused. The Item property, on the other hand, allows you to access all members of the <xref:System.Windows.Forms.ListViewItem>. You must access the item directly, for example, to draw the <xref:System.Windows.Forms.ListViewItem.Text%2A?displayProperty=fullName> value yourself rather than using the <xref:System.Windows.Forms.DrawListViewItemEventArgs.DrawText%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Item property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. In all views except the details view, this handler also draws the foreground text. In the details view, the foreground text is drawn in the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- For the complete example, see the <xref:System.Windows.Forms.DrawListViewItemEventArgs> overview reference topic.  
-  
- [!code-cs[ListViewOwnerDraw#3](~/add/codesnippet/csharp/p-system.windows.forms.d_398_1.cs)]
- [!code-vb[ListViewOwnerDraw#3](~/add/codesnippet/visualbasic/p-system.windows.forms.d_398_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -358,28 +195,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="System.Windows.Forms.ListView.Items%2A" /> collection of the containing <see cref="T:System.Windows.Forms.ListView" />.</summary>
-        <value>The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="System.Windows.Forms.ListView.Items%2A" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#471](~/add/codesnippet/csharp/p-system.windows.forms.d_168_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#471](~/add/codesnippet/visualbasic/p-system.windows.forms.d_168_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -389,33 +213,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</summary>
-        <value>A bitwise combination of <see cref="T:System.Windows.Forms.ListViewItemStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to check whether the <xref:System.Windows.Forms.ListViewItem> to draw is in a particular state. This property provides only basic state information about the item. You can use this property, for example, to determine whether an item is selected, checked, or focused. If you need to know more, retrieve the item through the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Item%2A> property and check its properties directly.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the State property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. In all views except the details view, this handler also draws the foreground text. In the details view, the foreground text is drawn in the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
-  
- For the complete example, see the <xref:System.Windows.Forms.DrawListViewItemEventArgs> overview reference topic.  
-  
- [!code-cs[ListViewOwnerDraw#3](~/add/codesnippet/csharp/p-system.windows.forms.d_100_1.cs)]
- [!code-vb[ListViewOwnerDraw#3](~/add/codesnippet/visualbasic/p-system.windows.forms.d_100_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

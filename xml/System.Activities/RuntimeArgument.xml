@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Describes the characteristics of an argument of an activity to the runtime.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="direction" Type="System.Activities.ArgumentDirection" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="argumentType">The type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="direction">The direction of data flow through an argument.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class using a name, data type, and argument direction.</summary>
+        <param name="name">To be added.</param>
+        <param name="argumentType">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,12 +53,11 @@
         <Parameter Name="isRequired" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="argumentType">The data type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="direction">The direction of data flow through an argument.</param>
-        <param name="isRequired">
-          <see langword="true" /> to indicate that the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value; otherwise <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class using a name, data type, argument direction, and a value that indicates whether the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value.</summary>
+        <param name="name">To be added.</param>
+        <param name="argumentType">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="isRequired">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,11 +77,11 @@
         <Parameter Name="overloadGroupNames" Type="System.Collections.Generic.List&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="argumentType">The data type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="direction">The direction of data flow through an argument.</param>
-        <param name="overloadGroupNames">The overload groups that apply to this <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class using a name, data type, argument direction, and a list of overload group names.</summary>
+        <param name="name">To be added.</param>
+        <param name="argumentType">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="overloadGroupNames">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,25 +102,13 @@
         <Parameter Name="overloadGroupNames" Type="System.Collections.Generic.List&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="argumentType">The data type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <param name="direction">The direction of data flow through an argument.</param>
-        <param name="isRequired">
-          <see langword="true" /> to indicate that the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value; otherwise <see langword="false" />.</param>
-        <param name="overloadGroupNames">The names of the overload groups that apply to this <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class with a name, data type, argument direction, whether the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value, and a list of overload group names.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Required arguments that are unbound result in validation errors that are displayed at design time.  
-  
- The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=fullName> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=fullName> is applied to an argument.  
-  
- Overload groups can be set on arguments through the <xref:System.Activities.OverloadGroupAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="argumentType">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="isRequired">To be added.</param>
+        <param name="overloadGroupNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -137,8 +124,8 @@
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the direction of the data flow through this <see cref="T:System.Activities.RuntimeArgument" />.</summary>
-        <value>The direction of data flow through an argument.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,9 +145,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <summary>Gets the value of the <see cref="T:System.Activities.RuntimeArgument" /> using the specified activity context.</summary>
-        <returns>The value of the <see cref="T:System.Activities.RuntimeArgument" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,10 +170,10 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The return value type.</typeparam>
-        <param name="context">The current activity context.</param>
-        <summary>Gets the strongly-typed value of the <see cref="T:System.Activities.RuntimeArgument" /> using the specified activity context.</summary>
-        <returns>The value of the <see cref="T:System.Activities.RuntimeArgument" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +193,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">The argument location.</param>
-        <summary>Returns the <see cref="T:System.Activities.Location" /> for this <see cref="T:System.Activities.RuntimeArgument" />.</summary>
-        <returns>The location of the <see cref="T:System.Activities.RuntimeArgument" />.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,17 +212,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an argument is required and not bound to a value a <xref:System.Activities.ValidationException> is thrown when the containing activity is prepared for execution, unless overload groups are used and the required arguments of an overload group are bound. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)]<xref:System.Activities.RuntimeArgument.OverloadGroupNames%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NameCore">
@@ -269,22 +248,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of the overload groups that this <see cref="T:System.Activities.RuntimeArgument" /> belongs to.</summary>
-        <value>A list of overload group names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Arguments can be grouped together to form valid overload groups. OverloadGroupNames identifies the overload groups to which this argument belongs. An overload group cannot be a subset or an equivalent set of another overload group. The only exception to this rule is a subset that contains only arguments where <xref:System.Activities.RuntimeArgument.IsRequired%2A> is `false`. Overload groups can overlap but it is an error if the intersection of the groups contains all the required arguments of one or both the overload groups.  
-  
- An overload group is considered bound if all the <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments in the group are bound. If a group has zero <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments and at least one argument bound, then the group is considered bound. It is an error if none of the groups are bound unless one overload group has no <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments in it. Binding <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments from more than one overload group is not permitted. It is an error to have more than one overload group bound, that is, all required arguments in one overload group are bound and any argument in another overload group is also bound.  
-  
- Any violation of the preceding rules results in a <xref:System.Activities.ValidationException> being thrown when the containing activity is prepared for execution.  
-  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.Activities.OverloadGroupAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -304,9 +270,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity context.</param>
-        <param name="value">The new value for the <see cref="T:System.Activities.RuntimeArgument" />.</param>
-        <summary>Sets the value of the <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

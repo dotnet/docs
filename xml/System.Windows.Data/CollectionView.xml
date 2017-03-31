@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionView" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,31 +24,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a view for grouping, sorting, filtering, and navigating a data collection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should not create objects of this class in your code. To create a collection view for a collection that only implements <xref:System.Collections.IEnumerable>, create a <xref:System.Windows.Data.CollectionViewSource> object, add your collection to the <xref:System.Windows.Data.CollectionViewSource.Source%2A> property, and get the collection view from the <xref:System.Windows.Data.CollectionViewSource.View%2A> property.  
-  
- You can think of a collection view as a layer on top of a binding source collection that allows you to navigate and display the collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes that raise the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
-  
- Because a view does not change the underlying source collection, a source collection can have multiple views associated with it. By using views, you can display the same data in different ways. For example, you can use two views on a collection of `Task` objects to show tasks sorted by priority on one part of the page and grouped by area on another part of the page.  
-  
- In [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=fullName> method. An internal class based on CollectionView is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
-  
- Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] representation of the CollectionView class. For an example, see [How to: Sort and Group Data Using a View in XAML](../Topic/How%20to:%20Sort%20and%20Group%20Data%20Using%20a%20View%20in%20XAML.md).  
-  
- For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- To set a view in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], use the <xref:System.Windows.Data.CollectionViewSource> class. <xref:System.Windows.Data.CollectionViewSource> is the [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] representation of the CollectionView class, and it exposes the most commonly used members of the CollectionView class.  
-  
-<a name="xamlTextUsage_CollectionView"></a>   
-## XAML Text Usage  
- See Remarks  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,23 +35,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="collection" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="collection">The underlying collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.CollectionView" /> class that represents a view of the specified collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The instance of <xref:System.Windows.Data.CollectionView> is bound to the [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] thread dispatcher of the caller of this constructor.  
-  
- ]]></format>
-        </remarks>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowsCrossThreadChanges">
@@ -91,9 +59,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a thread other than the one that created the <see cref="T:System.Windows.Data.CollectionView" /> can change the <see cref="System.Windows.Data.CollectionView.SourceCollection%2A" />.</summary>
-        <value>
-          <see langword="true" /> if a thread other than the one that created the <see cref="T:System.Windows.Data.CollectionView" /> can change the <see cref="System.Windows.Data.CollectionView.SourceCollection%2A" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,24 +71,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the view supports filtering.</summary>
-        <value>
-          <see langword="true" /> if the view supports filtering; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property returns `false`, setting the <xref:System.Windows.Data.CollectionView.Filter%2A> property throws an exception.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGroup">
@@ -131,24 +89,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the view supports grouping.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>. Derived classes override this property to indicate whether they support grouping.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -158,24 +107,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the view supports sorting.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>. Derived classes override this property to indicate whether they support sorting.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearChangeLog">
@@ -185,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -198,7 +137,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears any pending changes from the change log.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +155,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears unprocessed changed to the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,14 +166,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the view has changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,15 +183,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IComparer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an object that you can use to compare items in the view.</summary>
-        <value>An <see cref="T:System.Collections.IComparer" /> object that you can use to compare items in the view.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +201,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,18 +210,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The object to check.</param>
-        <summary>Returns a value that indicates whether the specified item belongs to the view.</summary>
-        <returns>
-          <see langword="true" /> if the item belongs to the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not make any assumptions about whether the item belongs to the underlying collection. If the caller knows that the item belongs to the underlying collection, it is more efficient to call the <xref:System.Windows.Data.CollectionView.PassesFilter%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -295,23 +223,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of records in the view.</summary>
-        <value>The number of records in the view, or –1 if the number of records is unknown.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a filter is set, this property value only includes items that pass the filter. If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation. This value is cached until the collection changes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -321,7 +241,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -333,8 +252,8 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the culture information to use during sorting.</summary>
-        <value>The culture information to use during sorting.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,14 +264,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> has changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,14 +281,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CurrentChangingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is changing.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,27 +298,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current item in the view.</summary>
-        <value>The current item of the view. By default, the first item of the collection starts as the current item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
-  
- Note that moving the current record pointer has some interactions with any sorting or filtering that is applied to the collection. Sorting preserves the current record pointer on the last record selected, but the collection view is restructured around it. (Perhaps the selected record was at the beginning of the list before, but now the selected record might be somewhere in the middle.) Filtering preserves the selected record if that selection remains in view after the filtering. Otherwise, the current record pointer is set to the first record of the filtered collection view.  
-  
- The current item of the collection is bound to automatically if the target of a binding is a singleton value. If the target is an <xref:System.Windows.Controls.ItemsControl>, the current item is synchronized with the selected item. For example, if a list box is bound to a collection, the CurrentItem is synchronized with the currently selected item.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentPosition">
@@ -411,15 +316,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal position of the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> within the (optionally sorted and filtered) view.</summary>
-        <value>The ordinal position of the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> within the (optionally sorted and filtered) view.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,7 +334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -438,16 +341,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enters a defer cycle that you can use to merge changes to the view and delay automatic refresh.</summary>
-        <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The typical usage is to create a `using` scope with this method and then place multiple view-changing calls within the scope. This delays automatic refresh until the defer cycle is exited.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DetachFromSourceCollection">
@@ -464,15 +360,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the reference to the underlying collection from the <see cref="T:System.Windows.Data.CollectionView" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to unsubscribe to events on the underlying collection and allow the <xref:System.Windows.Data.CollectionView> to be garbage collected.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -482,24 +371,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Predicate&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a method used to determine if an item is suitable for inclusion in the view.</summary>
-        <value>A delegate that represents the method used to determine if an item is suitable for inclusion in the view.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Simpler implementations do not support filtering and throw a <xref:System.NotSupportedException>. Use the <xref:System.Windows.Data.CollectionView.CanFilter%2A> property to test if filtering is supported before assigning this property with a non-null value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The current implementation does not support filtering.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -509,7 +389,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -517,8 +396,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an object that you can use to enumerate the items in the view.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -529,7 +408,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,21 +417,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to retrieve.</param>
-        <summary>Retrieves the item at the specified zero-based index in the view.</summary>
-        <returns>The item at the specified zero-based index in the view.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method evaluates the index with any <xref:System.Windows.Data.CollectionView.SortDescriptions%2A> or <xref:System.Windows.Data.CollectionView.Filter%2A> property values that are set on the view.  
-  
- If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupDescriptions">
@@ -563,24 +430,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describes how the items in the collection are grouped in the view.</summary>
-        <value>
-          <see langword="null" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -590,24 +448,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the top-level groups that is constructed based on the <see cref="System.Windows.Data.CollectionView.GroupDescriptions%2A" /> property.</summary>
-        <value>
-          <see langword="null" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -617,7 +466,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -627,19 +475,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to locate.</param>
-        <summary>Returns the index at which the specified item is located.</summary>
-        <returns>The index at which the specified item is located, or –1 if the item is unknown.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this method returns an index other than -1, it must always be true that view[index-1] < item <= view[index], where the comparisons are done using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method of the view, if one exists.  
-  
- This particular behavior of the method is used by some <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event handlers to speed up reaction to insertion and deletion. If the derived class does not override this method, a listener does a binary search using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentAfterLast">
@@ -649,24 +488,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> of the view is beyond the end of the collection.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentBeforeFirst">
@@ -676,24 +506,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> of the view is before the beginning of the collection.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> of the view is before the beginning of the collection; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentInSync">
@@ -703,16 +524,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is at the <see cref="System.Windows.Data.CollectionView.CurrentPosition%2A" />.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is in the view and at the <see cref="System.Windows.Data.CollectionView.CurrentPosition%2A" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,16 +542,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the underlying collection provides change notifications.</summary>
-        <value>
-          <see langword="true" /> if the underlying collection provides change notifications; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,16 +560,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the resulting (filtered) view is empty.</summary>
-        <value>
-          <see langword="true" /> if the resulting view is empty; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,9 +584,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether any object is subscribing to the events of this <see cref="T:System.Windows.Data.CollectionView" />.</summary>
-        <value>
-          <see langword="true" /> if any object is subscribing to the events of this <see cref="T:System.Windows.Data.CollectionView" />; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -782,16 +596,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether there is an outstanding <see cref="System.Windows.Data.CollectionView.DeferRefresh%2A" /> in use.</summary>
-        <value>
-          <see langword="true" /> if there is an outstanding <see cref="System.Windows.Data.CollectionView.DeferRefresh%2A" /> in use; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -802,7 +614,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -812,30 +623,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to set as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</param>
-        <summary>Sets the specified item to be the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> in the view.</summary>
-        <returns>
-          <see langword="true" /> if the resulting <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is within the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified item is not found, the method returns `false` and the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is positioned before the beginning of the collection in the view.  
-  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- For more information about the current item of a view, see <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-cs[Colors#NewColor](~/add/codesnippet/csharp/Colors/Colors.xaml.cs#newcolor)]
- [!code-vb[Colors#NewColor](~/add/codesnippet/visualbasic/colors/colors.xaml.vb#newcolor)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToFirst">
@@ -845,7 +636,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -853,17 +643,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the first item in the view as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the resulting <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is an item within the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToLast">
@@ -873,7 +655,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -881,17 +662,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the last item in the view as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the resulting <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is an item within the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToNext">
@@ -901,7 +674,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -909,17 +681,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the item after the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> in the view as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the resulting <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is an item within the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToPosition">
@@ -929,7 +693,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -939,18 +702,10 @@
         <Parameter Name="position" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">The index to set the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> to.</param>
-        <summary>Sets the item at the specified index to be the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> in the view.</summary>
-        <returns>
-          <see langword="true" /> if the resulting <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is an item within the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToPrevious">
@@ -960,7 +715,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -968,17 +722,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the item before the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> in the view as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the resulting <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> is an item within the view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NeedsRefresh">
@@ -988,24 +734,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the view needs to be refreshed.</summary>
-        <value>
-          <see langword="true" /> if the view needs to be refreshed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates if the internal state of the view has changed and requires a <xref:System.Windows.Data.CollectionView.Refresh%2A> method call. The typical scenario is if a <xref:System.ComponentModel.SortDescription> or similar has been added to the view while the view is in a deferred refresh cycle (see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>). In this scenario, no explicit call to <xref:System.Windows.Data.CollectionView.Refresh%2A> is needed; as soon as the deferred refresh cycle ends, the view calls refresh automatically.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewItemPlaceholder">
@@ -1015,25 +752,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that is in the collection to represent a new item.</summary>
-        <value>The object that is in the collection to represent a new item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Windows.Data.CollectionView> that implements <xref:System.ComponentModel.IEditableCollectionView> has <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, the NewItemPlaceholder is added to the collection.  The NewItemPlaceholder always appears in the collection; it does not participate in grouping, sorting, or filtering.  
-  
- The <xref:System.Windows.Data.CollectionView.CurrentItem%2A> cannot be the NewItemPlaceholder. Methods that perform relative navigation, such as the <xref:System.Windows.Data.CollectionView.MoveCurrentToNext%2A>, skip the NewItemPlaceholder.  <xref:System.Windows.Data.CollectionView.MoveCurrentToFirst%2A> and <xref:System.Windows.Data.CollectionView.MoveCurrentToLast%2A> skip the NewItemPlaceholder if <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> is set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, respectively. Methods that perform absolute navigation, such as <xref:System.Windows.Data.CollectionView.MoveCurrentToPosition%2A>, do nothing if the NewItemPlaceholder would be the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OKToChangeCurrent">
@@ -1043,7 +770,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1051,9 +777,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the view can change which item is the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</summary>
-        <returns>
-          <see langword="false" /> if a listener cancels the change; otherwise, <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1071,7 +796,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Data.CollectionView.AllowsCrossThreadChanges%2A" /> property changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1082,7 +807,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1097,11 +821,9 @@
         <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object that is added to the change log.</param>
-        <summary>Called by the base class to notify the derived class that an <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event has been posted to the message queue.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="args" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
@@ -1111,7 +833,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1121,16 +842,9 @@
         <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object to pass to the event handler.</param>
-        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Take any sorting, filtering, or grouping criteria into consideration before calling this method to raise the <xref:System.Windows.Data.CollectionView.CollectionChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
@@ -1140,7 +854,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1151,17 +864,10 @@
         <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The sender of the event.</param>
-        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object to pass to the event handler.</param>
-        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.Windows.Data.CollectionView.ProcessCollectionChanged%2A> if it is on the correct [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] thread dispatcher and has never been updated from a different thread, or posts the change to the dispatcher to process it on the correct thread.  
-  
- ]]></format>
-        </remarks>
+        <param name="sender">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCurrentChanged">
@@ -1171,7 +877,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1179,7 +884,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CurrentChanged" /> event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1190,7 +895,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1198,15 +902,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises a <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event that is not cancelable.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method sets <xref:System.Windows.Data.CollectionView.CurrentPosition%2A> to –1. This method is called by collection changes that affect the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCurrentChanging">
@@ -1216,7 +913,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1226,8 +922,8 @@
         <Parameter Name="args" Type="System.ComponentModel.CurrentChangingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">Information about the event.</param>
-        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event with the specified arguments.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1238,7 +934,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1248,8 +943,8 @@
         <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments of the event being raised.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event using the specified arguments.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1260,7 +955,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1270,18 +964,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to check.</param>
-        <summary>Returns a value that indicates whether the specified item in the underlying collection belongs to the view.</summary>
-        <returns>
-          <see langword="true" /> if the specified item belongs to the view or if there is not filter set on the collection view; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unlike the <xref:System.Windows.Data.CollectionView.Contains%2A> method, this method assumes that the specified item belongs to the underlying collection. This method takes filters into account. Typically, you use this method during collection-changed notifications to determine if the added or removed item requires processing.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCollectionChanged">
@@ -1291,7 +977,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1301,8 +986,8 @@
         <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object to process.</param>
-        <summary>When overridden in a derived class, processes a single change on the [!INCLUDE[TLA2#tla_ui](~/add/includes/tla2sharptla-ui-md.md)] thread.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1320,7 +1005,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ensures that all pending changes to the collection have been committed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1331,14 +1016,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a property value has changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1349,7 +1033,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1357,17 +1040,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Re-creates the view.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set  the <xref:System.Windows.Data.CollectionView.Filter%2A>, <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>, or <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A> property; a refresh occurs.  You do not have to call the Refresh method immediately after you set one of those properties. For information about how to delay automatic refresh, see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>.  
-  
- Derived classes use the protected <xref:System.Windows.Data.CollectionView.RefreshOverride%2A> method to override the behavior of this method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshOrDefer">
@@ -1377,7 +1051,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1385,7 +1058,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes the view or specifies that the view needs to be refreshed when the defer cycle completes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1396,7 +1069,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1404,7 +1076,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Re-creates the view.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1415,7 +1087,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1426,9 +1097,9 @@
         <Parameter Name="newPosition" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="newItem">The item to set as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</param>
-        <param name="newPosition">The value to set as the <see cref="System.Windows.Data.CollectionView.CurrentPosition%2A" /> property value.</param>
-        <summary>Sets the specified item and index as the values of the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> and <see cref="System.Windows.Data.CollectionView.CurrentPosition%2A" /> properties.</summary>
+        <param name="newItem">To be added.</param>
+        <param name="newPosition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1439,7 +1110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1451,20 +1121,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="newItem">The item to set as the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" />.</param>
-        <param name="newPosition">The value to set as the <see cref="System.Windows.Data.CollectionView.CurrentPosition%2A" /> property value.</param>
-        <param name="count">The number of items in the <see cref="T:System.Windows.Data.CollectionView" />.</param>
-        <summary>Sets the specified item and index as the values of the <see cref="System.Windows.Data.CollectionView.CurrentItem%2A" /> and <see cref="System.Windows.Data.CollectionView.CurrentPosition%2A" /> properties. This method can be called from a constructor of a derived class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this overload from constructor of a derived class.  Do not pass the <xref:System.Windows.Data.CollectionView.Count%2A> property, which is a virtual property, as `count`. Instead, pass the count of the internal <xref:System.Collections.IList> that represents the collection.  
-  
- SetCurrent is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="newItem">To be added.</param>
+        <param name="newPosition">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">
@@ -1474,23 +1135,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.ComponentModel.SortDescription" /> structures that describes how the items in the collection are sorted in the view.</summary>
-        <value>An empty <see cref="T:System.ComponentModel.SortDescriptionCollection" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot add a <xref:System.ComponentModel.SortDescription> to the returned (empty) collection because the base class <xref:System.Windows.Data.CollectionView> does not support sorting. Instead, use the derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> that do support sorting. Also, check the <xref:System.Windows.Data.CollectionView.CanSort%2A> property before adding or removing <xref:System.ComponentModel.SortDescription> objects to avoid an exception.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceCollection">
@@ -1500,15 +1153,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the underlying unfiltered collection.</summary>
-        <value>An <see cref="T:System.Collections.IEnumerable" /> object that is the underlying collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1519,7 +1171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1527,8 +1178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1539,16 +1190,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether it has been necessary to update the change log because a <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> notification has been received on a different thread without first entering the [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] thread dispatcher.</summary>
-        <value>
-          <see langword="true" /> if it has been necessary to update the change log because a <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> notification has been received on a different thread without first entering the [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] thread dispatcher; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

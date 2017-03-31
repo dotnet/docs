@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.XhtmlConformanceMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the authentication mode to use in a Web application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XhtmlConformanceMode enumeration applies to the `mode` attribute in the `xhtmlConformance` tag. It specifies the XHTML rendering modalities for an ASP.NET application. The mode can assume one of the values listed next. The default is `Transitional` (XHTML 1.0 Transitional).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Legacy">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XHTML 1.0 Transitional</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strict">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XHTML 1.0 Strict conformance</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transitional">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reverts a number of rendering changes made for conformance to the v1.1 rendering behavior.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

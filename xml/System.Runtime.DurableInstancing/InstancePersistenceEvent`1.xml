@@ -19,8 +19,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the event.</typeparam>
-    <summary>Represents an event that an instance store raises to notify hosts about a change. This is a generic class.  Classes such as <see cref="T:System.Activities.DurableInstancing.HasRunnableWorkflowEvent" /> and <see cref="T:System.Activities.DurableInstancing.HasActivatableWorkflowEvent" /> derive from this class.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,8 +37,8 @@
         <Parameter Name="name" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <param name="name">XName (namespace combined with name) of the event.</param>
-        <summary>Initializes an instance of the <see cref="System.Runtime.DurableInstancing.InstancePersistenceEvent%601" /> class using the XName parameter.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the instance of the actual event object (for example: <see cref="T:System.Activities.DurableInstancing.HasRunnableWorkflowEvent" />).</summary>
-        <value>The event object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

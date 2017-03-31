@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewContentAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines constants that indicate the alignment of content within a <see cref="T:System.Windows.Forms.DataGridView" /> cell.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A?displayProperty=fullName> property.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type. For more information, see [How to: Format Data in the Windows Forms DataGridView Control](../Topic/How%20to:%20Format%20Data%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#072](~/add/codesnippet/csharp/t-system.windows.forms.d_31_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#072](~/add/codesnippet/visualbasic/t-system.windows.forms.d_31_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BottomCenter">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the bottom and horizontally at the center of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the bottom and horizontally at the left of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the bottom and horizontally at the right of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleCenter">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned at the vertical and horizontal center of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleLeft">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the middle and horizontally at the left of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleRight">
@@ -122,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the middle and horizontally at the right of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -139,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The alignment is not set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopCenter">
@@ -156,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the top and horizontally at the center of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -173,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the top and horizontally at the left of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -190,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The content is aligned vertically at the top and horizontally at the right of a cell.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

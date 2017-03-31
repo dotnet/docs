@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ExpandCollapseState" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,15 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains values that specify the ExpandCollapseState of a UI Automation element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ExpandCollapseState refers to the visibility of immediate child objects only; it does not refer to the visibility of all descendant objects.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Collapsed">
@@ -37,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No child nodes, controls, or content of the UI Automation element are displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expanded">
@@ -54,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All child nodes, controls or content of the UI Automation element are displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeafNode">
@@ -71,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UI Automation element has no child nodes, controls, or content to display.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartiallyExpanded">
@@ -88,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Some, but not all, child nodes, controls, or content of the UI Automation element are displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

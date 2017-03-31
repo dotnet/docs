@@ -3,15 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FormattableStringFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.FormattableStringFactory" />
   <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a static method to create a <see cref="T:System.FormattableString" /> object from a composite format string and its arguments.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,8 +31,18 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.FormattableStringFactory.Create(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.FormattableString</ReturnType>
@@ -38,17 +58,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string.</param>
-        <param name="arguments">The arguments whose string representations are to be inserted in the result string.</param>
-        <summary>Creates a <see cref="T:System.FormattableString" /> instance from a composite format string and its arguments.</summary>
-        <returns>The object that represents the composite format string and its arguments.</returns>
+        <param name="format">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="format" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="arguments" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

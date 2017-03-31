@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopeNameConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,16 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of <see cref="T:System.Windows.Input.InputScopeName" /> to and from other data types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_InputScopeNameConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopeNameConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="sourceType">The source <see cref="T:System.Type" /> that is being queried for conversion support.</param>
-        <summary>Indicates whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Input.InputScopeName" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="sourceType" /> is type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="destinationType">The desired type this <see cref="T:System.Windows.Input.InputScopeName" /> is being evaluated to be converted to.</param>
-        <summary>Determines whether instances of <see cref="T:System.Windows.Input.InputScopeName" /> can be converted to the specified type.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="destinationType" /> is type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,11 +96,11 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="source">The object being converted.</param>
-        <summary>Converts the specified object to a <see cref="T:System.Windows.Input.InputScopeName" />.</summary>
-        <returns>The <see cref="T:System.Windows.Input.InputScopeName" /> created from converting <paramref name="source" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,20 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="value">The <see cref="T:System.Windows.Input.InputScopeName" /> to convert.</param>
-        <param name="destinationType">The type to convert the <see cref="T:System.Windows.Input.InputScopeName" /> to.</param>
-        <summary>Converts the specified <see cref="T:System.Windows.Input.InputScopeName" /> to the specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Input.InputScopeName" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

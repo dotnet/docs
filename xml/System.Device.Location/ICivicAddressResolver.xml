@@ -8,15 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides a method that when implemented, resolves a latitude/longitude location to a civic address.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To resolve a <xref:System.Device.Location.GeoCoordinate> to a <xref:System.Device.Location.CivicAddress> asynchronously, implement <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync%2A>, and provide the civic address data to the <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted> event.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ResolveAddress">
@@ -35,20 +28,10 @@
         <Parameter Name="coordinate" Type="System.Device.Location.GeoCoordinate" />
       </Parameters>
       <Docs>
-        <param name="coordinate">The latitude/longitude location to resolve to an address.</param>
-        <summary>Resolves a <see cref="T:System.Device.Location.GeoCoordinate" /> to a civic address synchronously.</summary>
+        <param name="coordinate">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call ResolveAddress.  
-  
- [!code-cs[System.Device.Location.ResolveCivicAddressSync#1](~/add/codesnippet/csharp/resolveaddresssync/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/add/codesnippet/visualbasic/resolvecivicaddresssync/resolvecivicaddresssync.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveAddressAsync">
@@ -67,19 +50,9 @@
         <Parameter Name="coordinate" Type="System.Device.Location.GeoCoordinate" />
       </Parameters>
       <Docs>
-        <param name="coordinate">The latitude/longitude location to resolve to an address.</param>
-        <summary>Initiates a request to resolve a latitude/longitude location to an address.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call ResolveAddressAsync.  
-  
- [!code-cs[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/csharp/resolveaddressasync/resolvecivicaddressasync.cs#2)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/visualbasic/resolvecivicaddressasync/resolvecivicaddressasync.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <param name="coordinate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveAddressCompleted">
@@ -95,18 +68,8 @@
         <ReturnType>System.EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an asynchronous request using <see cref="System.Device.Location.ICivicAddressResolver.ResolveAddressAsync%2A" /> to resolve a latitude/longitude to a civic address is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to call <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync%2A> and handle the ResolveAddressCompleted event.  
-  
- [!code-cs[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/csharp/resolveaddressasync/resolvecivicaddressasync.cs#2)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/visualbasic/resolvecivicaddressasync/resolvecivicaddressasync.vb#2)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameType" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the type of <see cref="T:System.Net.PeerToPeer.PeerName" /> to create. A peer name is either secured or unsecured. A secured peer name provides a proof of ownership of the name. An unsecured peer name has no identity associated.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A node must have access to the private key associated with the public key, used in creating the secured <xref:System.Net.PeerToPeer.PeerName>, in order to prove ownership. The node does not have a relationship to a public key.  
-  
- The format of a peer name is: *Authority.Classifier*. The value of <xref:System.Net.PeerToPeer.PeerName.Authority%2A> depends on whether the name is a secured peer name or an unsecured peer name. The <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> part of the name can be set to any string that contains 15 or fewer Unicode characters, including the `null` terminator. Once the <xref:System.Net.PeerToPeer.PeerName.Authority%2A>, <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> and security level of a peer have been established, a peer can also be referred to with a relative name or a host name.  
-  
- Only the owner, or peer host, can register a secure peer name with the [PNRP Namespace Provider API](http://go.microsoft.com/fwlink?LinkID=92731). Any node can claim ownership to any unsecured <xref:System.Net.PeerToPeer.PeerName>.  
-  
- **Note** Using a secured <xref:System.Net.PeerToPeer.PeerName> does not ensure the overall security of a networking application. Security of the application is implementation-dependent.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Secured">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.PeerNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Create a secured <see cref="T:System.Net.PeerToPeer.PeerName" /> using the identity of current user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unsecured">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.PeerNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Create an unsecured <see cref="T:System.Net.PeerToPeer.PeerName" /> using the identity of current user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

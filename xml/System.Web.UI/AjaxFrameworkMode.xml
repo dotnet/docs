@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how client scripts of the [!INCLUDE[ajax_current_ext](~/add/includes/ajax-current-ext-md.md)] client library are included on the client.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that all [!INCLUDE[ajax_current_ext](~/add/includes/ajax-current-ext-md.md)] script features are disabled and that the <see cref="T:System.Web.UI.ScriptManager" /> control does not reference any scripts automatically.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Web.UI.ScriptManager" /> control automatically includes the MicrosoftAjax.js script file, which is a combined script file of every core framework script (legacy behavior).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Explicit">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.UI.AjaxFrameworkMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that you will explicitly include script references to individual framework core script file that your page requires, and that you will include references to the dependencies that each script file requires.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

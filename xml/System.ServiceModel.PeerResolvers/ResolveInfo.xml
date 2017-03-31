@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.ResolveInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the information for the endpoint resolution of a registration entry by a peer resolver service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class represents information sent from a peer node to a peer resolver service when requesting the endpoints for a specific peer node registered with the service.  
-  
- Instances of this class are primarily used to pass endpoint resolution information to the resolver service from a network client of that service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.ResolveInfo" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -62,13 +50,10 @@
         <Parameter Name="maxAddresses" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="clientId">
-          <see cref="T:System.Guid" /> that contains a unique ID for the client for which endpoints are to be resolved.</param>
-        <param name="meshId">
-          <see cref="T:System.String" /> that contains the ID of the mesh in which the client is participating.</param>
-        <param name="maxAddresses">
-          <see cref="T:System.Int32" /> that contains the maximum number of client endpoint addresses to be returned by the resolve operation.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.ResolveInfo" /> class with the provided client ID and mesh ID, as well as the maximum number of endpoint addresses to return.</summary>
+        <param name="clientId">To be added.</param>
+        <param name="meshId">To be added.</param>
+        <param name="maxAddresses">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,16 +64,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID for the registration entry to resolve.</summary>
-        <value>
-          <see cref="T:System.Guid" /> that contains the unique ID for a registration entry.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
-        <returns>True if the resolve request information message body is correctly formed by the sender (the service client); false if it is not.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,16 +101,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum number of client endpoint addresses to be returned by the resolve operation.</summary>
-        <value>
-          <see cref="T:System.Int32" /> that contains the maximum number of client endpoint addresses to be returned by the resolve operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,16 +119,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the mesh ID for the entry whose endpoint addresses will be resolved.</summary>
-        <value>
-          <see cref="T:System.String" /> that contains the ID of the mesh in which the client is participating.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

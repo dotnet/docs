@@ -14,46 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of non-selectable dates in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CalendarBlackoutDatesCollection contains <xref:System.Windows.Controls.CalendarDateRange> objects that specify multiple dates that cannot be selected by a user. To make all past dates not selectable, you can use the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method.  
-  
-<a name="xamlPropertyElementUsage_CalendarBlackoutDatesCollection"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.property>  
-    oneOrMoreCalendarDateRanges  
-  </object.property>  
-</object>  
-  
-```  
-  
-<a name="xamlValues_CalendarBlackoutDatesCollection"></a>   
-## XAML Values  
- *oneOrMoreCalendarDateRanges*  
- One or more object elements of type <xref:System.Windows.Controls.CalendarDateRange>.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> in code and markup that has some dates that cannot be selected.  
-  
- [!code-cs[CalendarSnippets#3](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#3)]
- [!code-xml[CalendarSnippets#3](~/add/codesnippet/xaml/calendarsnippets_xaml/window1.xaml#3)]
- [!code-vb[CalendarSnippets#3](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#3)]  
-  
- The preceding example produces output that is similar to the following illustration.  
-  
- ![Calendar with dates that cannot be selected.](~/add/media/ndp-calendarblackout.png "Calendar with dates that cannot be selected.")  
-Calendar with dates that cannot be selected  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,8 +31,8 @@ Calendar with dates that cannot be selected
         <Parameter Name="owner" Type="System.Windows.Controls.Calendar" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Controls.Calendar" /> whose dates this object represents.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.CalendarBlackoutDatesCollection" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,27 +50,8 @@ Calendar with dates that cannot be selected
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds all dates before <see cref="System.DateTime.Today%2A" /> to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to prevent users from selecting dates that are in the past.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Controls.Calendar> that includes a <xref:System.Windows.FrameworkElement.Loaded> event handler.  
-  
- [!code-xml[CalendarSnippets#6](~/add/codesnippet/xaml/calendarsnippets_xaml/window1.xaml#6)]  
-  
- The following example shows the <xref:System.Windows.FrameworkElement.Loaded> event handler. The event handler calls the AddDatesInPast method to make only future dates selectable.  
-  
- [!code-cs[CalendarSnippets#7](~/add/codesnippet/csharp/calendarsnippets/window1.xaml.cs#7)]
- [!code-vb[CalendarSnippets#7](~/add/codesnippet/visualbasic/calendarsnippets_vb/window1.xaml.vb#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -145,10 +88,9 @@ Calendar with dates that cannot be selected
         <Parameter Name="date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="date">The date to search for.</param>
-        <summary>Returns a value that represents whether this collection contains the specified date.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified date; otherwise, <see langword="false" />.</returns>
+        <param name="date">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,11 +111,10 @@ Calendar with dates that cannot be selected
         <Parameter Name="end" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="start">The start of the date range.</param>
-        <param name="end">The end of the date range.</param>
-        <summary>Returns a value that represents whether this collection contains the specified range of dates.</summary>
-        <returns>
-          <see langword="true" /> if all dates in the range are contained in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,10 +134,9 @@ Calendar with dates that cannot be selected
         <Parameter Name="range" Type="System.Windows.Controls.CalendarDateRange" />
       </Parameters>
       <Docs>
-        <param name="range">The range of dates to search for.</param>
-        <summary>Returns a value that represents whether this collection contains any dates in the specified range of dates.</summary>
-        <returns>
-          <see langword="true" /> if any dates in the range are contained in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

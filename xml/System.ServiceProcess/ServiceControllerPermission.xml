@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermission" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Allows control of code access security permissions for service controllers.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,17 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified access to resources.</summary>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -59,18 +55,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="permissionAccessEntries" Type="System.ServiceProcess.ServiceControllerPermissionEntry[]" />
       </Parameters>
       <Docs>
-        <param name="permissionAccessEntries">An array of <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects. The <see cref="System.ServiceProcess.ServiceControllerPermission.PermissionEntries%2A" /> property is set to this value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified permission entries.</summary>
+        <param name="permissionAccessEntries">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="permissionAccessEntries " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -80,7 +73,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -89,10 +81,10 @@
         <Parameter Name="serviceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">One of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" /> values.</param>
-        <param name="machineName">The name of the computer on which the service resides.</param>
-        <param name="serviceName">The short name that identifies the service to the system.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified permission access levels, the name of the computer on which the service resides, and the short name that identifies the service to the system.</summary>
+        <param name="permissionAccess">To be added.</param>
+        <param name="machineName">To be added.</param>
+        <param name="serviceName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,15 +95,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionEntryCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of permission entries for this permissions request.</summary>
-        <value>A <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" /> that contains the permission entries for this permissions request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

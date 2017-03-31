@@ -3,15 +3,23 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ApplicationIntent extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.ApplicationIntent" />
   <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies a value for <see cref="System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A" />. Possible values are <see langword="ReadWrite" /> and <see langword="ReadOnly" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.ApplicationIntent.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The application workload type when connecting to a server is read only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -38,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.ApplicationIntent.ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The application workload type when connecting to a server is read write.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

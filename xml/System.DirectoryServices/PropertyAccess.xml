@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.PropertyAccess" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The PropertyAccess enumeration is used with the ule and <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> classes to indicate the type of access that is applied to an Active Directory property or property set.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.PropertyAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates permission to read properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.PropertyAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates permission to write properties.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

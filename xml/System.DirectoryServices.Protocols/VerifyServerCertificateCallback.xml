@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.VerifyServerCertificateCallback" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,11 +17,10 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="connection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection.</param>
-    <param name="certificate">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object that specifies the server certificate.</param>
-    <summary>The VerifyServerCertificateCallback delegate gets or sets the default callback function used to verify server certificates when establishing an SSL connection.</summary>
-    <returns>
-      <see langword="true" /> if the client approves the server certificate; otherwise <see langword="false" />.</returns>
+    <param name="connection">To be added.</param>
+    <param name="certificate">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

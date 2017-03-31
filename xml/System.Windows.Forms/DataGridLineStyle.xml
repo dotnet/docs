@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridLineStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the style of gridlines in a <see cref="T:System.Windows.Forms.DataGrid" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.GridLineStyle%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> class. The default is `Solid`.  
-  
-   
-  
-## Examples  
- The following example sets the <xref:System.Windows.Forms.DataGrid.GridLineStyle%2A> property to `DataGridLineStyle.None`.  
-  
- [!code-cpp[Classic DataGridLineStyle Example#1](~/add/codesnippet/cpp/t-system.windows.forms.d_87_1.cpp)]
- [!code-cs[Classic DataGridLineStyle Example#1](~/add/codesnippet/csharp/t-system.windows.forms.d_87_1.cs)]
- [!code-vb[Classic DataGridLineStyle Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_87_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No gridlines between cells.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Solid gridlines between cells.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

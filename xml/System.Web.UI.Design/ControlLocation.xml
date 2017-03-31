@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlLocation" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the possible locations for adding a control in a container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ControlLocation enumeration is used by the <xref:System.Web.UI.Design.WebFormsRootDesigner.AddControlToDocument%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="After">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Adds the control after the current selection or current control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Before">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Adds the control before the current selection or current control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Adds the control at the start of the document.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Adds the control as the first child of the selected control, if the selected control is a container control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Adds the control at the end of the document.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastChild">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Adds the control as the last child of the selected control, if the selected control is a container control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModuleAction" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures the <see cref="T:System.Web.Configuration.HttpModulesSection" /> modules. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpModuleAction class provides a way to programmatically access and modify the `add` element of the `httpModules` section of a configuration file.  
-  
- The HttpModuleAction type is part of a group that includes the <xref:System.Web.Configuration.HttpModuleActionCollection>, collection, and the <xref:System.Web.Configuration.HttpModulesSection> types.  
-  
-   
-  
-## Examples  
- This example demonstrates how to specify values declaratively for several attributes of the `add` element of the `httpModules` section, which can also be accessed as members of the HttpModuleAction class.  
-  
- The following configuration file example shows how to specify values declaratively for the `httpModules` section.  
-  
- Refer to the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/en-us/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3) to see how to build and configure an HTTP module.  
-  
-```  
-<httpModules>  
-    <add name="TimerModule"   
-      type="Samples.Aspnet.Configuration.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
-      PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
-</httpModules>  
-```  
-  
- The following code example shows how to use the HttpModuleAction class.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleAction#1](~/add/codesnippet/visualbasic/t-system.web.configurati_4_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleAction#1](~/add/codesnippet/csharp/t-system.web.configurati_4_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -62,25 +29,10 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The module name.</param>
-        <param name="type">A comma-separated list containing the module type name and the assembly information.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpModuleAction" /> class using the passed parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The module name is an alias you can use to associate event handlers with the module events. ASP.NET searches for the assembly DLL first in the application's private \bin directory and then in the Global Assembly Cache (GAC).  
-  
-   
-  
-## Examples  
- The following code example shows how to create an <xref:System.Web.Configuration.HttpModuleAction> object.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleAction#3](~/add/codesnippet/visualbasic/4b984f09-d70f-4524-b4ce-_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleAction#3](~/add/codesnippet/csharp/4b984f09-d70f-4524-b4ce-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -90,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -124,24 +74,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the module name.</summary>
-        <value>The module name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The module name is used to identify this <xref:System.Web.Configuration.HttpModuleAction> object.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Name property.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleAction#4](~/add/codesnippet/visualbasic/p-system.web.configurati_193_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleAction#4](~/add/codesnippet/csharp/p-system.web.configurati_193_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -151,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,7 +104,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -182,24 +115,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the module type.</summary>
-        <value>A comma-separated list containing the module type name and the assembly information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To find the assembly defined by the Type, ASP.NET searches for the assembly DLL first in the application's private \bin directory, and then in the system assembly cache.  
-  
-   
-  
-## Examples  
- The following code example shows how to access the Type property.  
-  
- [!code-vb[System.Web.Configuration.HttpModuleAction#5](~/add/codesnippet/visualbasic/p-system.web.configurati_200_1.vb)]
- [!code-cs[System.Web.Configuration.HttpModuleAction#5](~/add/codesnippet/csharp/p-system.web.configurati_200_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

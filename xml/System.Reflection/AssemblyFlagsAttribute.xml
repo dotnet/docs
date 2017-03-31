@@ -3,9 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyFlagsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyFlagsAttribute" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -20,28 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies a bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags for an assembly, describing just-in-time (JIT) compiler options, whether the assembly is retargetable, and whether it has a full or tokenized public key. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Reflection.AssemblyNameFlags> enumeration describes the assembly characteristics that can be set using this attribute.  
-  
- To access the flags that have been specified for an assembly, use the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyName> object, then use the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyNameFlags> value.  
-  
- To specify <xref:System.Reflection.AssemblyNameFlags> flags for a dynamic assembly, set the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> object that you pass to the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code example shows how to apply the AssemblyFlagsAttribute to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the AssemblyFlagsAttribute to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
-  
- [!code-cpp[AssemblyFlagsAttribute#1](~/add/codesnippet/cpp/t-system.reflection.asse_2_1.cpp)]
- [!code-cs[AssemblyFlagsAttribute#1](~/add/codesnippet/csharp/t-system.reflection.asse_2_1.cs)]
- [!code-vb[AssemblyFlagsAttribute#1](~/add/codesnippet/visualbasic/t-system.reflection.asse_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +42,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -63,16 +58,9 @@
         <Parameter Name="assemblyFlags" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="assemblyFlags">A bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags, cast as an integer value, representing just-in-time (JIT) compiler options, longevity, whether an assembly is retargetable, and whether it has a full or tokenized public key.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class with the specified combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags, cast as an integer value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This untyped constructor is now obsolete. Do not use.  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,28 +69,28 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyFlagsAttribute.#ctor(System.Reflection.AssemblyNameFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="assemblyFlags" Type="System.Reflection.AssemblyNameFlags" />
       </Parameters>
       <Docs>
-        <param name="assemblyFlags">A bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags representing just-in-time (JIT) compiler options, longevity, whether an assembly is retargetable, and whether it has a full or tokenized public key.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class with the specified combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
-  
- [!code-cpp[AssemblyFlagsAttribute#1](~/add/codesnippet/cpp/36b91d62-468a-4b8e-8035-_1.cpp)]
- [!code-cs[AssemblyFlagsAttribute#1](~/add/codesnippet/csharp/36b91d62-468a-4b8e-8035-_1.cs)]
- [!code-vb[AssemblyFlagsAttribute#1](~/add/codesnippet/visualbasic/36b91d62-468a-4b8e-8035-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="assemblyFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,8 +100,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,17 +119,9 @@
         <Parameter Name="flags" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="flags">A bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags, cast as an unsigned integer value, representing just-in-time (JIT) compiler options, longevity, whether an assembly is retargetable, and whether it has a full or tokenized public key.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class with the specified combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags, cast as an unsigned integer value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This untyped constructor is now obsolete. Do not use.  
-  
- ]]></format>
-        </remarks>
-        <altCompliant cref="M:System.Reflection.AssemblyFlagsAttribute.#ctor(System.Reflection.AssemblyNameFlags)" />
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyFlags">
@@ -146,33 +130,28 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an integer value representing the combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags specified when this attribute instance was created.</summary>
-        <value>An integer value representing a bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns an integer for backward compatibility. Cast the value to the <xref:System.Reflection.AssemblyNameFlags> type before using it.  
-  
-   
-  
-## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the AssemblyFlags property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
-  
- [!code-cpp[AssemblyFlagsAttribute#1](~/add/codesnippet/cpp/p-system.reflection.asse_10_1.cpp)]
- [!code-cs[AssemblyFlagsAttribute#1](~/add/codesnippet/csharp/p-system.reflection.asse_10_1.cs)]
- [!code-vb[AssemblyFlagsAttribute#1](~/add/codesnippet/visualbasic/p-system.reflection.asse_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flags">
@@ -182,8 +161,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -197,17 +180,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an unsigned integer value representing the combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags specified when this attribute instance was created.</summary>
-        <value>An unsigned integer value representing a bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns an integer for backward compatibility. Cast the value to the <xref:System.Reflection.AssemblyNameFlags> type before using it.  
-  
- ]]></format>
-        </remarks>
-        <altCompliant cref="P:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags" />
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

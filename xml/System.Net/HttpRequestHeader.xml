@@ -3,23 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpRequestHeader extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpRequestHeader" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The HTTP headers that may be specified in a client request.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The appropriate contents of various headers are described in detail in the HTTP/1.1 specification, available at [rfc2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -28,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Accept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Accept header, which specifies the MIME types that are acceptable for the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AcceptCharset">
@@ -45,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.AcceptCharset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Accept-Charset header, which specifies the character sets that are acceptable for the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AcceptEncoding">
@@ -62,15 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.AcceptEncoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Accept-Encoding header, which specifies the content encodings that are acceptable for the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AcceptLanguage">
@@ -79,15 +104,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.AcceptLanguage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Accept-Langauge header, which specifies that natural languages that are preferred for the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Allow">
@@ -96,15 +129,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Allow header, which specifies the set of HTTP methods supported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Authorization">
@@ -113,15 +154,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Authorization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Authorization header, which specifies the credentials that the client presents in order to authenticate itself to the server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CacheControl">
@@ -130,15 +179,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.CacheControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Cache-Control header, which specifies directives that must be obeyed by all cache control mechanisms along the request/response chain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -147,15 +204,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Connection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Connection header, which specifies options that are desired for a particular connection.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
@@ -164,15 +229,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentEncoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-Encoding header, which specifies the encodings that have been applied to the accompanying body data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentLanguage">
@@ -181,15 +254,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentLanguage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-Langauge header, which specifies the natural language(s) of the accompanying body data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -198,15 +279,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-Length header, which specifies the length, in bytes, of the accompanying body data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentLocation">
@@ -215,15 +304,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-Location header, which specifies a URI from which the accompanying body may be obtained.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentMd5">
@@ -232,15 +329,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentMd5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-MD5 header, which specifies the MD5 digest of the accompanying body data, for the purpose of providing an end-to-end message integrity check.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentRange">
@@ -249,15 +354,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-Range header, which specifies where in the full body the accompanying partial body data should be applied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -266,15 +379,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Content-Type header, which specifies the MIME type of the accompanying body data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cookie">
@@ -283,15 +404,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Cookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Cookie header, which specifies cookie data presented to the server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -300,15 +429,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Date header, which specifies the date and time at which the request originated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expect">
@@ -317,15 +454,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Expect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Expect header, which specifies particular server behaviors that are required by the client.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expires">
@@ -334,15 +479,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Expires" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Expires header, which specifies the date and time after which the accompanying body data should be considered stale.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -351,15 +504,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.From" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The From header, which specifies an Internet E-mail address for the human user who controls the requesting user agent.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -368,15 +529,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Host" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Host header, which specifies the host name and port number of the resource being requested.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IfMatch">
@@ -385,15 +554,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.IfMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The If-Match header, which specifies that the requested operation should be performed only if the client's cached copy of the indicated resource is current.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IfModifiedSince">
@@ -402,15 +579,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.IfModifiedSince" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The If-Modified-Since header, which specifies that the requested operation should be performed only if the requested resource has been modified since the indicated data and time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IfNoneMatch">
@@ -419,15 +604,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.IfNoneMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The If-None-Match header, which specifies that the requested operation should be performed only if none of client's cached copies of the indicated resources are current.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IfRange">
@@ -436,15 +629,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.IfRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The If-Range header, which specifies that only the specified range of the requested resource should be sent, if the client's cached copy is current.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IfUnmodifiedSince">
@@ -453,15 +654,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.IfUnmodifiedSince" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The If-Unmodified-Since header, which specifies that the requested operation should be performed only if the requested resource has not been modified since the indicated date and time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeepAlive">
@@ -470,15 +679,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.KeepAlive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Keep-Alive header, which specifies a parameter used into order to maintain a persistent connection.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastModified">
@@ -487,15 +704,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.LastModified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Last-Modified header, which specifies the date and time at which the accompanying body data was last modified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxForwards">
@@ -504,15 +729,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.MaxForwards" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Max-Forwards header, which specifies an integer indicating the remaining number of times that this request may be forwarded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pragma">
@@ -521,15 +754,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Pragma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Pragma header, which specifies implementation-specific directives that might apply to any agent along the request/response chain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxyAuthorization">
@@ -538,15 +779,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.ProxyAuthorization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Proxy-Authorization header, which specifies the credentials that the client presents in order to authenticate itself to a proxy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -555,15 +804,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Range" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Range header, which specifies the the sub-range(s) of the response that the client requests be returned in lieu of the entire response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Referer">
@@ -572,15 +829,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Referer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Referer header, which specifies the URI of the resource from which the request URI was obtained.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Te">
@@ -589,15 +854,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Te" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The TE header, which specifies the transfer encodings that are acceptable for the response.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Trailer">
@@ -606,15 +879,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Trailer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Trailer header, which specifies the header fields present in the trailer of a message encoded with chunked transfer-coding.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransferEncoding">
@@ -623,15 +904,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.TransferEncoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Transfer-Encoding header, which specifies what (if any) type of transformation that has been applied to the message body.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Translate">
@@ -640,15 +929,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Translate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Translate header, a Microsoft extension to the HTTP specification used in conjunction with WebDAV functionality.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Upgrade">
@@ -657,15 +954,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Upgrade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Upgrade header, which specifies additional communications protocols that the client supports.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserAgent">
@@ -674,15 +979,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.UserAgent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The User-Agent header, which specifies information about the client agent.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Via">
@@ -691,15 +1004,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Via" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Via header, which specifies intermediate protocols to be used by gateway and proxy agents.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -708,15 +1029,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpRequestHeader.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Warning header, which specifies additional information about that status or transformation of a message that might not be reflected in the message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

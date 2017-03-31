@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityMasks" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The SecurityMasks enumeration specifies various security descriptor options.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The discretionary access control list (DACL) security descriptor flag. The value is equal to 4 or 0x4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The primary group security descriptor flag. The value is equal to 2 or 0x2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No security descriptor flag is set. The value is equal to 0 or 0x0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The owner security descriptor flag. The value is equal to 1 or 0x1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sacl">
@@ -95,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system access control list (SACL) security descriptor flag.  The value is equal to 8 or 0x8.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

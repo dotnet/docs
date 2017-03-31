@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IISAPIRuntime" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the methods that are used to create <see cref="T:System.Web.HttpWorkerRequest" /> objects in the .NET Framework.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -36,7 +34,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Forces garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +45,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,12 +55,10 @@
         <Parameter Name="useProcessModel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ecb">An ISAPI extension control block.</param>
-        <param name="useProcessModel">
-          <see langword="0" /> to create an out-of-process request; otherwise, an in-process request is created.</param>
-        <summary>Creates a new <see cref="T:System.Web.HttpWorkerRequest" /> object to process the current request.</summary>
-        <returns>
-          <see langword="0" /> if <see cref="T:System.Web.HttpWorkerRequest" /> was created successfully; otherwise, <see langword="1" />.</returns>
+        <param name="ecb">To be added.</param>
+        <param name="useProcessModel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,7 +76,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts processing all items in the worker process pipeline.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,7 +94,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops processing the items in the worker process pipeline.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

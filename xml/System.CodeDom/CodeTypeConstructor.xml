@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeConstructor" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,27 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a static constructor for a class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeTypeConstructor can be used to represent the static constructor for a class. A static constructor is called once when the type is loaded.  
-  
-> [!NOTE]
->  Not all languages support static constructors. Support for static constructors can be checked by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag to determine if static constructors are supported by the code generator for a particular language.  
-  
-   
-  
-## Examples  
- The following example demonstrates use of a CodeTypeConstructor to declare a static constructor for a type.  
-  
- [!code-cpp[CodeTypeConstructorExample#2](~/add/codesnippet/cpp/t-system.codedom.codetyp_2_1.cpp)]
- [!code-cs[CodeTypeConstructorExample#2](~/add/codesnippet/csharp/t-system.codedom.codetyp_2_1.cs)]
- [!code-vb[CodeTypeConstructorExample#2](~/add/codesnippet/visualbasic/t-system.codedom.codetyp_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeConstructor" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

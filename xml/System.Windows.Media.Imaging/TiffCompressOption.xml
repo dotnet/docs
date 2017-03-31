@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.TiffCompressOption" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the possible compression schemes for [!INCLUDE[TLA#tla_tiff](~/add/includes/tlasharptla-tiff-md.md)] bitmap images.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Ccitt3, Ccitt4, and Rle require that the <xref:System.Windows.Media.PixelFormat> value be set to <xref:System.Windows.Media.PixelFormats.BlackWhite%2A>. Setting the <xref:System.Windows.Media.PixelFormat> to any other value resets the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property value to Default.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property.  
-  
- [!code-cs[tiffbitmapdecoderencoder#3](~/add/codesnippet/csharp/TiffEncoderDecoder/TiffEncoderDecoder.cs#3)]
- [!code-cpp[tiffbitmapdecoderencoder#3](~/add/codesnippet/cpp/tiffencoderdecoder/TiffEncoderDecoder.cpp#3)]
- [!code-vb[tiffbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/TiffEncoderDecoder/TiffEncoderDecoder.vb#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ccitt3">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CCITT3 compression schema is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ccitt4">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CCITT4 compression schema is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Media.Imaging.TiffBitmapEncoder" /> encoder attempts to save the bitmap with the best possible compression schema.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lzw">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The LZW compression schema is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The [!INCLUDE[TLA#tla_tiff](~/add/includes/tlasharptla-tiff-md.md)] image is not compressed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rle">
@@ -123,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The RLE compression schema is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zip">
@@ -140,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zip compression schema is used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

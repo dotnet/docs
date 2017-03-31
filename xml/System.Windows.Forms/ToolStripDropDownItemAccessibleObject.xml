@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownItemAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information that accessibility applications use to adjust the user interface of a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> for users with impairments.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="item" Type="System.Windows.Forms.ToolStripDropDownItem" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> that owns this <see cref="T:System.Windows.Forms.ToolStripDropDownItemAccessibleObject" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownItemAccessibleObject" /> class with the specified <see cref="T:System.Windows.Forms.ToolStripDropDownItem" />.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,15 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs the default action associated with this accessible object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Clients can retrieve the object's default action by inspecting an object's <xref:System.Windows.Forms.AccessibleObject.DefaultAction%2A> property. A client can use automation (if supported) instead of <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> to perform an object's default action. However, <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> provides an easy way to perform an object's most commonly used action.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChild">
@@ -68,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,23 +67,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the accessible child control.</param>
-        <summary>Retrieves the accessible child control corresponding to the specified index.</summary>
-        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child control corresponding to the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from <xref:System.Windows.Forms.Control.ControlAccessibleObject>, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Therefore, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/visualbasic/38af3f82-2188-4a2e-b543-_1.vb)]
- [!code-cs[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/csharp/38af3f82-2188-4a2e-b543-_1.cs)]
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/cpp/38af3f82-2188-4a2e-b543-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -104,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,22 +87,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the number of children belonging to an accessible object.</summary>
-        <returns>The number of children belonging to an accessible object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from <xref:System.Windows.Forms.Control.ControlAccessibleObject>, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Therefore, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/visualbasic/m-system.windows.forms.t_57_1.vb)]
- [!code-cs[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/csharp/m-system.windows.forms.t_57_1.cs)]
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/add/codesnippet/cpp/m-system.windows.forms.t_57_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -137,23 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the role of this accessible object.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The role of the object helps describe the function of the object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.UpdateSourceTrigger" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the timing of binding source updates.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -29,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Data.UpdateSourceTrigger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default UpdateSourceTrigger value of the binding target property. The default value for most dependency properties is PropertyChanged, while the <see cref="System.Windows.Controls.TextBox.Text%2A" /> property has a default value of LostFocus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A programmatic way to determine the default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of a dependency property is to get the property metadata of the property using <xref:System.Windows.DependencyProperty.GetMetadata%2A> and then check the value of the <xref:System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Explicit">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Data.UpdateSourceTrigger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Updates the binding source only when you call the <see cref="System.Windows.Data.BindingExpression.UpdateSource%2A" /> method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Data.UpdateSourceTrigger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Updates the binding source whenever the binding target element loses focus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Data.UpdateSourceTrigger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Updates the binding source immediately whenever the binding target property changes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

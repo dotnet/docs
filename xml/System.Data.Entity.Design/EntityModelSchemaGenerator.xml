@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityModelSchemaGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The class creates a default CCMapping between an EntityContainer in S space and an EntityContainer in C space. The Mapping will be created based on the declared types of extents. So Inheritance does not work.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No content here will be updated; please do not add material here.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storeEntityContainer" Type="System.Data.Metadata.Edm.EntityContainer" />
       </Parameters>
       <Docs>
-        <param name="storeEntityContainer">The storage model EntityContainer from which conceptual and mapping metadata is created.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityModelSchemaGenerator" /> class.</summary>
+        <param name="storeEntityContainer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -58,10 +48,10 @@
         <Parameter Name="modelEntityContainerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storeEntityContainer">The storage model EntityContainer from which conceptual and mapping metadata is created.</param>
-        <param name="namespaceName">The name for the conceptual model namespace. If this value is null, the storeEntityContainer name is used for the namespace name.</param>
-        <param name="modelEntityContainerName">The EntityContainer name declared in the conceptual model.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityModelSchemaGenerator" /> class.</summary>
+        <param name="storeEntityContainer">To be added.</param>
+        <param name="namespaceName">To be added.</param>
+        <param name="modelEntityContainerName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,10 +75,10 @@
         <Parameter Name="modelEntityContainerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storeItemCollection">The StoreItemCollection that contains an EntityContainer and other items to create the Model Metadata from.</param>
-        <param name="namespaceName">The name to give the namespace. If null, the name of the storeEntityContainer will be used.</param>
-        <param name="modelEntityContainerName">The name to give the Model EntityContainer. If null, a modified version of the namespace of the of a type referenced in storeEntityContainer will be used.</param>
-        <summary>Constructs an EntityModelGenerator</summary>
+        <param name="storeItemCollection">To be added.</param>
+        <param name="namespaceName">To be added.</param>
+        <param name="modelEntityContainerName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +89,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -111,8 +100,8 @@
         <ReturnType>System.Data.Metadata.Edm.EdmItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the EdmItemCollection that was created by the GenerateMetadata method.</summary>
-        <value>An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> object that contains the conceptual schema definition language (CSDL).</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,15 +112,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EntityContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the conceptual model EntityContainer that was created by the GenerateMetadata method.</summary>
-        <value>An <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object that contains the conceptual model EntityContainer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +136,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag for generating foreign key properties in a conceptual model.</summary>
-        <value>If the value of this property is set to <see langword="true" /> then foreign key properties are generated in the conceptual model; otherwise foreign key properties are not generated in the conceptual model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,8 +155,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates the conceptual model metadata information and returns any schema errors.</summary>
-        <returns>A collection of schema error objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +176,9 @@
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="targetEntityFrameworkVersion">The property of EntityFrameworkVersions that corresponds to the targeted version of the Entity Framework.</param>
-        <summary>Generates the conceptual model metadata information and returns any schema errors.</summary>
-        <returns>A collection of schema error objects.</returns>
+        <param name="targetEntityFrameworkVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +195,8 @@
         <ReturnType>System.Data.Entity.Design.PluralizationServices.PluralizationService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the PluralizationService value that indicates the service used when generating a model.</summary>
-        <value>The <see cref="T:System.Data.Entity.Design.PluralizationServices.PluralizationService" /> value that indicates the service used when generating a model.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,8 +216,8 @@
         <Parameter Name="outputFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="outputFileName">The name of the output file.</param>
-        <summary>Writes the generated conceptual schema definition language (CSDL) to the specified file.</summary>
+        <param name="outputFileName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,8 +237,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The XmlWriter to which the CSDL is written.</param>
-        <summary>Writes the generated conceptual schema definition language (CSDL) to an XmlWriter object.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,8 +258,8 @@
         <Parameter Name="outputFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="outputFileName">The name of the output file.</param>
-        <summary>Writes the generated mapping specification language (MSL) to the specified file.</summary>
+        <param name="outputFileName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +270,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,8 +279,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The XmlWriter to which the MSL is written.</param>
-        <summary>Writes the generated mapping specification language (MSL) to an XmlWriter object.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

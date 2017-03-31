@@ -1,22 +1,27 @@
 <Type Name="SqlClientFactory" FullName="System.Data.SqlClient.SqlClientFactory">
-  <TypeSignature Language="C#" Value="public sealed class SqlClientFactory : System.Data.Common.DbProviderFactory, IServiceProvider" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlClientFactory extends System.Data.Common.DbProviderFactory implements class System.IServiceProvider" />
+  <TypeSignature Language="C#" Value="public sealed class SqlClientFactory : System.Data.Common.DbProviderFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlClientFactory extends System.Data.Common.DbProviderFactory" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientFactory" />
   <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DbProviderFactory</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.IServiceProvider</InterfaceName>
-    </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a set of methods for creating instances of the <see cref="N:System.Data.SqlClient" /> provider's implementation of the data source classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,32 +32,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns <see langword="true" /> if a <see cref="T:System.Data.Sql.SqlDataSourceEnumerator" /> can be created; otherwise <see langword="false" /> .</summary>
-        <value>
-          <see langword="true" /> if a <see cref="T:System.Data.Sql.SqlDataSourceEnumerator" /> can be created; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.Common.DbProviderFactory> class provides the <xref:System.Data.Common.DbProviderFactory.CanCreateDataSourceEnumerator%2A> property so that inheritors can indicate whether they can provide a data source enumerator. The <xref:System.Data.SqlClient.SqlClientFactory> displays this property, but its value is always `true`.  
-  
-   
-  
-## Examples  
- The following example displays a list of all available SQL Server data sources, using code that could enumerate data sources for any provider.  
-  
- [!code-vb[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/add/codesnippet/visualbasic/p-system.data.sqlclient._6_1.vb)]
- [!code-cs[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/add/codesnippet/csharp/p-system.data.sqlclient._6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCommand">
@@ -61,35 +50,26 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateCommand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbCommand</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbCommand" /> instance.</summary>
-        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbCommand = newFactory.CreateCommand()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbCommand cmd = newFactory.CreateCommand();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCommandBuilder">
@@ -99,7 +79,7 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,26 +87,9 @@ DbCommand cmd = newFactory.CreateCommand();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbCommandBuilder" /> instance.</summary>
-        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommandBuilder> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbCommandBuilder = newFactory.CreateCommandBuilder()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbCommandBuilder cmd = newFactory.CreateCommandBuilder();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnection">
@@ -135,36 +98,26 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateConnection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbConnection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbConnection" /> instance.</summary>
-        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnection> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbConnection = newFactory.CreateConnection()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbConnection cmd = newFactory.CreateConnection();  
-  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnectionStringBuilder">
@@ -173,37 +126,26 @@ DbConnection cmd = newFactory.CreateConnection();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateConnectionStringBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbConnectionStringBuilder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> instance.</summary>
-        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnectionStringBuilder> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbConnectionStringBuilder = _  
-    newFactory.CreateConnectionStringBuilder()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbConnectionStringBuilder cmd =   
-    newFactory.CreateConnectionStringBuilder();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDataAdapter">
@@ -213,7 +155,7 @@ DbConnectionStringBuilder cmd =
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,26 +163,9 @@ DbConnectionStringBuilder cmd =
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbDataAdapter" /> instance.</summary>
-        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbDataAdapter> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbDataAdapter = newFactory.CreateDataAdapter()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbDataAdapter cmd = newFactory.CreateDataAdapter();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceEnumerator">
@@ -250,7 +175,7 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,19 +183,9 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Data.Sql.SqlDataSourceEnumerator" />.</summary>
-        <returns>A new data source enumerator.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example displays a list of all available SQL Server data sources, using code that could enumerate data sources for any provider.  
-  
- [!code-vb[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/add/codesnippet/visualbasic/m-system.data.sqlclient._2_1.vb)]
- [!code-cs[DataWorks SqlClientFactory.DataSourceEnumerator#1](~/add/codesnippet/csharp/m-system.data.sqlclient._2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateParameter">
@@ -279,35 +194,26 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlClientFactory.CreateParameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbParameter</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbParameter" /> instance.</summary>
-        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment returns a strongly typed <xref:System.Data.Common.DbParameter> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbParameter = newFactory.CreateParameter()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbParameter cmd = newFactory.CreateParameter();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">
@@ -317,7 +223,7 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,9 +233,9 @@ DbParameter cmd = newFactory.CreateParameter();
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">A member of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
-        <summary>Returns a new <see cref="T:System.Security.CodeAccessPermission" />.</summary>
-        <returns>A strongly typed instance of <see cref="T:System.Security.CodeAccessPermission" />.</returns>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,33 +245,24 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientFactory.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlClientFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an instance of the <see cref="T:System.Data.SqlClient.SqlClientFactory" />. This can be used to retrieve strongly typed data objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code fragment uses the Instance property to retrieve a **SqlClientFactory** instance, and then return a strongly typed <xref:System.Data.Common.DbCommand> instance:  
-  
-```vb#  
-Dim newFactory As SqlClientFactory = SqlClientFactory.Instance  
-Dim cmd As DbCommand = newFactory.CreateCommand()  
-```  
-  
-```c#  
-SqlClientFactory newFactory = SqlClientFactory.Instance;  
-DbCommand cmd = newFactory.CreateCommand();  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IServiceProvider.GetService">
@@ -375,7 +272,6 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,9 +281,9 @@ DbCommand cmd = newFactory.CreateCommand();
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">An object that specifies the type of service object to get.</param>
-        <summary>For a description of this member, see <see cref="System.IServiceProvider.GetService%2A" />.</summary>
-        <returns>A service object.</returns>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

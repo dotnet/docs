@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.BooleanProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the Boolean properties of a visual style element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BooleanProperty enumeration represents a set of Boolean properties that describe visual style elements. The BooleanProperty values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBoolean%2A> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysShowSizingBar">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The sizing handle will always be displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The width of nonclient captions varies with the extent of the text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackgroundFill">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The background of a fixed-size element is a filled rectangle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderOnly">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only the border of an image is drawn.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Composited">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The control will handle composite drawing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphOnly">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only the glyph should be drawn, not the background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphTransparent">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The glyph has transparent areas.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntegralSizing">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scaling factor must be an integer for fixed-size elements.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MirrorImage">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The image is mirrored in right-to-left display modes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceGrow">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The source image will scale larger when needed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceShrink">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The source image will scale smaller when needed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transparent">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The image has transparent areas.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UniformSizing">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BooleanProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The height and width must be sized equally.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

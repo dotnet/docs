@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.SmoothingMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether smoothing (antialiasing) is applied to lines and curves and the edges of filled areas.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Default, None, and HighSpeed are equivalent and specify rendering without smoothing applied.  
-  
- AntiAlias and HighQuality are equivalent and specify rendering with smoothing applied.  
-  
-> [!NOTE]
->  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the SmoothingMode enumeration, it does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Graphics.TextRenderingHint%2A?displayProperty=fullName> property and the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
-  
-> [!NOTE]
->  When the<xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the SmoothingMode enumeration, it does not affect areas filled by a path gradient brush. Areas filled by using a <xref:System.Drawing.Drawing2D.PathGradientBrush> object are rendered the same way (aliased) regardless of the setting for the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AntiAlias">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies antialiased rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no antialiasing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighQuality">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies antialiased rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighSpeed">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no antialiasing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies an invalid mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -122,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no antialiasing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

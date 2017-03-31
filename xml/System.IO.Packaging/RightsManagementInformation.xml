@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.RightsManagementInformation" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents Digital Rights Management (DRM) information that is stored in an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RightsManagementInformation provides access to the <xref:System.Security.RightsManagement.PublishLicense> and <xref:System.Security.RightsManagement.UseLicense> data stored in a rights managed protected <xref:System.IO.Packaging.Package>.  
-  
-   
-  
-## Examples  
- The following example shows how to initialize a RightsManagementInformation object for encryption.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- The following example shows how to initialize a RightsManagementInformation object for decryption.  
-  
- [!code-vb[RightsManagedPackageViewer#RmPkgViewOpenPkg](~/add/codesnippet/visualbasic/rmpackageviewer/window1.xaml.vb#rmpkgviewopenpkg)]
- [!code-cs[RightsManagedPackageViewer#RmPkgViewOpenPkg](~/add/codesnippet/csharp/RmPackageViewer/Window1.xaml.cs#rmpkgviewopenpkg)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CryptoProvider">
@@ -43,31 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.CryptoProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Security.RightsManagement.CryptoProvider" /> for accessing the package's encrypted rights management data stream.</summary>
-        <value>The <see cref="T:System.Security.RightsManagement.CryptoProvider" /> for accessing the rights management information.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the CryptoProvider property.  
-  
- [!code-vb[RightsManagedPackageViewer#RmPkgViewBind](~/add/codesnippet/visualbasic/rmpackageviewer/window1.xaml.vb#rmpkgviewbind)]
- [!code-cs[RightsManagedPackageViewer#RmPkgViewBind](~/add/codesnippet/csharp/RmPackageViewer/Window1.xaml.cs#rmpkgviewbind)]  
-  
- The following example shows how to access the CryptoProvider property.  
-  
- [!code-vb[RightsManagedPackageViewer#RmPkgViewDecrypt](~/add/codesnippet/visualbasic/rmpackageviewer/window1.xaml.vb#rmpkgviewdecrypt)]
- [!code-cs[RightsManagedPackageViewer#RmPkgViewDecrypt](~/add/codesnippet/csharp/RmPackageViewer/Window1.xaml.cs#rmpkgviewdecrypt)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteUseLicense">
@@ -77,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,8 +49,8 @@
         <Parameter Name="userKey" Type="System.Security.RightsManagement.ContentUser" />
       </Parameters>
       <Docs>
-        <param name="userKey">The user of the <see cref="T:System.Security.RightsManagement.UseLicense" /> to be deleted.</param>
-        <summary>Deletes the <see cref="T:System.Security.RightsManagement.UseLicense" /> for a specified user from the encrypted rights management data stream.</summary>
+        <param name="userKey">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,16 +68,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a dictionary collection of user and <see cref="T:System.Security.RightsManagement.UseLicense" /> key/value pairs from the encrypted rights management data stream.</summary>
-        <returns>A collection of user and <see cref="T:System.Security.RightsManagement.UseLicense" /> key/value pairs that are contained in the rights managed protected package.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetEmbeddedUseLicenses only returns those use licenses that are currently embedded in the package.  It does not include any other use licenses that the application might have acquired separately from a rights management server but that are not yet embedded in the package.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPublishLicense">
@@ -126,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,20 +87,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the embedded <see cref="T:System.Security.RightsManagement.PublishLicense" /> from the encrypted rights management data stream.</summary>
-        <returns>The embedded <see cref="T:System.Security.RightsManagement.PublishLicense" />; or <see langword="null" />, if the package does not contain a <see cref="T:System.Security.RightsManagement.PublishLicense" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the LoadPublishLicense method.  
-  
- [!code-vb[RightsManagedPackageViewer#RmPkgViewOpenPkg](~/add/codesnippet/visualbasic/rmpackageviewer/window1.xaml.vb#rmpkgviewopenpkg)]
- [!code-cs[RightsManagedPackageViewer#RmPkgViewOpenPkg](~/add/codesnippet/csharp/RmPackageViewer/Window1.xaml.cs#rmpkgviewopenpkg)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.FileFormatException">The rights management information in this package cannot be read by the current version of this class.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadUseLicense">
@@ -157,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,22 +108,10 @@
         <Parameter Name="userKey" Type="System.Security.RightsManagement.ContentUser" />
       </Parameters>
       <Docs>
-        <param name="userKey">The user or user group to return the <see cref="T:System.Security.RightsManagement.UseLicense" /> for.</param>
-        <summary>Returns a specified user's embedded <see cref="T:System.Security.RightsManagement.UseLicense" /> from the encrypted rights management data stream.</summary>
-        <returns>The <see cref="T:System.Security.RightsManagement.UseLicense" /> for the specified user; or <see langword="null" />, if the package does not contain a <see cref="T:System.Security.RightsManagement.UseLicense" /> that matches the given <paramref name="userKey" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the LoadUseLicense method.  
-  
- [!code-vb[RightsManagedPackageViewer#RmPkgViewOpenPkg](~/add/codesnippet/visualbasic/rmpackageviewer/window1.xaml.vb#rmpkgviewopenpkg)]
- [!code-cs[RightsManagedPackageViewer#RmPkgViewOpenPkg](~/add/codesnippet/csharp/RmPackageViewer/Window1.xaml.cs#rmpkgviewopenpkg)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="userKey" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileFormatException">The rights management information in this package cannot be read by the current version of this class.</exception>
+        <param name="userKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SavePublishLicense">
@@ -192,7 +121,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,18 +130,9 @@
         <Parameter Name="publishLicense" Type="System.Security.RightsManagement.PublishLicense" />
       </Parameters>
       <Docs>
-        <param name="publishLicense">The publish license to store and embed in the package.</param>
-        <summary>Saves a given <see cref="T:System.Security.RightsManagement.PublishLicense" /> to the encrypted rights management data stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each <xref:System.IO.Packaging.EncryptedPackageEnvelope> can contain only one <xref:System.Security.RightsManagement.PublishLicense>.  Each call to SavePublishLicense will overwrite any prior <xref:System.Security.RightsManagement.PublishLicense> contained in the <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="publishLicense" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileFormatException">The rights management information in this package cannot be read by the current version of this class.</exception>
+        <param name="publishLicense">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveUseLicense">
@@ -223,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,29 +152,10 @@
         <Parameter Name="useLicense" Type="System.Security.RightsManagement.UseLicense" />
       </Parameters>
       <Docs>
-        <param name="userKey">The user of the <see cref="T:System.Security.RightsManagement.UseLicense" />.</param>
-        <param name="useLicense">The use license to store and embed in the package.</param>
-        <summary>Saves a given <see cref="T:System.Security.RightsManagement.UseLicense" /> for a specified user to the encrypted rights management data stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After the <xref:System.Security.RightsManagement.UseLicense> for the specified user has been saved, it can be retrieved through the <xref:System.IO.Packaging.RightsManagementInformation.LoadUseLicense%2A> method and from the collection returned by <xref:System.IO.Packaging.RightsManagementInformation.GetEmbeddedUseLicenses%2A>.  
-  
- A <xref:System.IO.Packaging.Package> can store the <xref:System.Security.RightsManagement.UseLicense> rights information for multiple content users.  Each ContentUser can have at most one <xref:System.Security.RightsManagement.UseLicense>.  If SaveUseLicense is called to store a new <xref:System.Security.RightsManagement.UseLicense> for a <xref:System.Security.RightsManagement.ContentUser> that already has a <xref:System.Security.RightsManagement.UseLicense>, the previous license will be overwritten with the new license.  
-  
-   
-  
-## Examples  
- The following example shows how to use of the SaveUseLicense method.  
-  
- [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubencrypt)]
- [!code-cs[RightsManagedPackagePublish#RmPkgPubEncrypt](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubencrypt)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Either the <paramref name="userKey" /> or <paramref name="useLicense" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileFormatException">The rights management information in this package cannot be read by the current version of this class.</exception>
+        <param name="userKey">To be added.</param>
+        <param name="useLicense">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

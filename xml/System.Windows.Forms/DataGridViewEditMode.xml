@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewEditMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a user starts cell editing in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control.  
-  
- All DataGridViewEditMode values except for EditProgrammatically allow a user to double-click a cell to begin editing it.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type. For more information, see [How to: Specify the Edit Mode for the Windows Forms DataGridView Control](../Topic/How%20to:%20Specify%20the%20Edit%20Mode%20for%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#067](~/add/codesnippet/csharp/t-system.windows.forms.d_10_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#067](~/add/codesnippet/visualbasic/t-system.windows.forms.d_10_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EditOnEnter">
@@ -39,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Editing begins when the cell receives focus. This mode is useful when pressing the TAB key to enter values across a row, or when pressing the ENTER key to enter values down a column.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditOnF2">
@@ -56,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Editing begins when F2 is pressed while the cell has focus. This mode places the selection point at the end of the cell contents.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditOnKeystroke">
@@ -73,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Editing begins when any alphanumeric key is pressed while the cell has focus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditOnKeystrokeOrF2">
@@ -90,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Editing begins when any alphanumeric key or F2 is pressed while the cell has focus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditProgrammatically">
@@ -107,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Editing begins only when the <see cref="System.Windows.Forms.DataGridView.BeginEdit%2A" /> method is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermissionFlags" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the permitted access to X.509 certificate stores.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Many of these access permissions pose potential security and privacy threats. Great care should be taken in granting access to stores. A brief description of the type of threat exposed by an access can be found in the summary for the access.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the StorePermissionFlags enumeration.  
-  
- [!code-cpp[System.Security.Permissions.StorePermission#2](~/add/codesnippet/cpp/t-system.security.permis_4_1.cpp)]
- [!code-cs[System.Security.Permissions.StorePermission#2](~/add/codesnippet/csharp/t-system.security.permis_4_1.cs)]
- [!code-vb[System.Security.Permissions.StorePermission#2](~/add/codesnippet/visualbasic/t-system.security.permis_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddToStore">
@@ -43,22 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to add a certificate to a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For security reasons, this ability should be granted only to highly trusted code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllFlags">
@@ -68,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to perform all certificate and store operations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateStore">
@@ -85,22 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to create a new store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- New stores are created by calling the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteStore">
@@ -110,22 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to delete a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is not exposed by the <xref:System.Security.Cryptography.X509Certificates.X509Store> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnumerateCertificates">
@@ -135,22 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to enumerate the certificates in a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For privacy reasons, this ability should be granted only to fully trusted code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnumerateStores">
@@ -160,22 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to enumerate the stores on a computer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is not exposed by the <xref:System.Security.Cryptography.X509Certificates.X509Store> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -185,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permission is not given to perform any certificate or store operations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OpenStore">
@@ -202,22 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to open a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ability to open a store does not include the ability to enumerate certificates (which raises privacy concerns) or to add or remove certificates (which raises security concerns).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveFromStore">
@@ -227,22 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to remove a certificate from a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This ability should be granted only to highly trusted code because removing a certificate can result in a denial of service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

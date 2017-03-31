@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.InheritanceMappingAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,40 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Maps an inheritance hierarchy in a [!INCLUDE[vbtecdlinq](~/add/includes/vbtecdlinq-md.md)] application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- One InheritanceMappingAttribute is specified per mapped class.  
-  
- Note the following when you map inheritance hierarchies:  
-  
--   All classes in a hierarchy must be mapped to a single table.  
-  
--   The table for an inheritance hierarchy must be declared on the mapped type that is at the top of the hierarchy. You cannot specify the table or mapping attributes in a class that is derived from the top class.  
-  
--   You can use an interface in a hierarchy, but [!INCLUDE[vbteclinq](~/add/includes/vbteclinq-md.md)] does not map it.  
-  
--   You can skip a class in the hierarchy when you map classes, but you can query against mapped classes only.  
-  
- For correct materialization, discriminator code values must be unique and match the values in the database. A row with a discriminator code value that does not exactly match (even by casing) instantiates the class by using <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> set to `true`.  
-  
-   
-  
-## Examples  
- This example shows inheritance mapping for a hierarchy where the top, mapped class (`Shape`) is abstract.  
-  
- [!code-cs[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/add/codesnippet/csharp/inherit/Program.cs#1)]
- [!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/add/codesnippet/visualbasic/inherit/Module1.vb#1)]  
-  
- The following example shows the inclusion of unmapped classes. You can put unmapped classes anywhere in the hierarchy.  
-  
- [!code-cs[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/add/codesnippet/csharp/inherit/Program.cs#2)]
- [!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/add/codesnippet/visualbasic/inherit/Module1.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.InheritanceMappingAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the discriminator code value in a mapped inheritance hierarchy.</summary>
-        <value>Must be user-specified. There is no default value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether an object of this type in instantiated when the discriminator value does not match a specified value.</summary>
-        <value>Default = <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Exactly one of the <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> attributes must be declared with IsDefault as `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -121,23 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of the class in the hierarchy.</summary>
-        <value>Must be user-specified. There is no default value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use any non-abstract type in the inheritance hierarchy, including the root type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

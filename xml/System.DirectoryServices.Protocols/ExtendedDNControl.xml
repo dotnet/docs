@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ExtendedDNControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ExtendedDNControl class requests an extended form of the distinguished name of an Active Directory Domain Services object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The ExtendedDNControl constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="flag" Type="System.DirectoryServices.Protocols.ExtendedDNFlag" />
       </Parameters>
       <Docs>
-        <param name="flag">A value of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> enumeration that specifies the format of the extended distinguished name.</param>
-        <summary>The ExtendedDNControl constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class using the specified flag.</summary>
+        <param name="flag">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +55,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ExtendedDNFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Flag property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> that specifies the format of the extended distinguished name.</summary>
-        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> that specifies the format of the extended distinguished name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The GetValue method returns the format of the extended distinguished name.</summary>
-        <returns>The format of the extended distinguished name.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

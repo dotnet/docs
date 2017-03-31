@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyTranslator" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,17 +18,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="host">The host control whose property is being mapped. The host control is either a <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> or an <see cref="T:System.Windows.Forms.Integration.ElementHost" />.</param>
-    <param name="propertyName">The name of the property being translated.</param>
-    <param name="value">The new value of the property.</param>
-    <summary>Provides a translation function for a mapped property of the host control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PropertyTranslator delegate is used by the <xref:System.Windows.Forms.Integration.PropertyMap> class to implement property mapping between [!INCLUDE[TLA#tla_winforms](~/add/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)]. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
-  
- ]]></format>
-    </remarks>
+    <param name="host">To be added.</param>
+    <param name="propertyName">To be added.</param>
+    <param name="value">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualPathProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,138 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a set of methods that enable a Web application to retrieve resources from a virtual file system.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The VirtualPathProvider class provides a set of methods for implementing a virtual file system for a Web application. In a virtual file system, the files and directories are managed by a data store other than the file system provided by the server's operating system. For example, you can use a virtual file system to store content in a SQL Server database.  
-  
- You can store any file that is processed on request in a virtual file system. This includes:  
-  
--   ASP.NET pages, master pages, user controls, and other objects.  
-  
--   Standard Web pages with extensions such as .htm and .jpg.  
-  
--   Any custom extension mapped to a <xref:System.Web.Compilation.BuildProvider> instance.  
-  
--   Any named theme in the `App_Theme` folder.  
-  
- You cannot store ASP.NET application folders or files that generate application-level assemblies in a virtual file system. This includes:  
-  
--   The Global.asax file.  
-  
--   Web.config files.  
-  
--   Site map data files used by the <xref:System.Web.XmlSiteMapProvider>.  
-  
--   Directories that contain application assemblies or that generate application assemblies: `Bin`, `App_Code`, `App_GlobalResources`, any `App_LocalResources`.  
-  
--   The application data folder, `App_Data`.  
-  
-> [!NOTE]
->  If a Web site is precompiled for deployment, content provided by a VirtualPathProvider instance is not compiled, and no VirtualPathProvider instances are used by the precompiled site.  
-  
-## Registering a VirtualPathProvider  
- A custom VirtualPathProvider instance should be registered with the ASP.NET compilation system by using the <xref:System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider%2A?displayProperty=fullName> method before any page parsing or compilation is performed by the Web application.  
-  
- Typically, a VirtualPathProvider instance is registered in an `AppInitialize` method defined in the `App_Code` directory, or during the `Application_Start` event in the `Global.asax` file. For an example of registering a VirtualPathProvider instance in an `AppInitialize` method, see the Example section.  
-  
- You can register a VirtualPathProvider instance during other events, but pages compiled and cached before the VirtualPathProvider instance is registered will not be invalidated, even if the new VirtualPathProvider instance would now provide the source for the previously compiled page.  
-  
-   
-  
-## Examples  
- The following code example is a VirtualPathProvider class implementation that creates a virtual file system using information stored in a <xref:System.Data.DataSet> object. The code example works with the code examples for the <xref:System.Web.Hosting.VirtualFile> and <xref:System.Web.Hosting.VirtualDirectory> classes to provide virtual resources from a data store that is loaded into a <xref:System.Data.DataSet> object.  
-  
- This example has four parts: the VirtualPathProvider class implementation, an XML data file used to populate the <xref:System.Data.DataSet> object, an `AppStart` object that contains an `AppInitialize` method used to register the VirtualPathProvider class with the compilation system, and an ASP.NET page that provides links to the virtual files.  
-  
- To use this sample code in an application, follow these steps.  
-  
-1.  Create a sample application on your Web server.  
-  
-2.  Copy the source code for the custom VirtualPathProvider object (see below) into a file in the application's `App_Code` directory.  
-  
-3.  Copy the source code for the custom <xref:System.Web.Hosting.VirtualDirectory> object (see the Example section in the <xref:System.Web.Hosting.VirtualDirectory> class overview topic) into a file in the application's `App_Code` directory.  
-  
-4.  Copy the source code for the custom <xref:System.Web.Hosting.VirtualFile> object (see the Example section in the <xref:System.Web.Hosting.VirtualFile> class overview topic) into a file in the application's `App_Code` directory.  
-  
-5.  Copy the source code for the `AppStart` object (see below) into a file in the application's `App_Code` directory.  
-  
-6.  Copy the XML data (see below) into a file named `XMLData.xml` into a file in the application's `App_Data` directory.  
-  
-7.  Copy the `default.aspx` file (see below) into the root directory of the sample application. Use a Web browser to open the `default.aspx` file, and then click the links on the page to see the contents of the virtual files.  
-  
- The first example is a custom VirtualPathProvider class. The <xref:System.Web.Hosting.VirtualPathProvider.DirectoryExists%2A> and <xref:System.Web.Hosting.VirtualPathProvider.FileExists%2A> methods are overridden to indicate whether a requested directory is present in the virtual file system. The <xref:System.Web.Hosting.VirtualPathProvider.GetDirectory%2A> and <xref:System.Web.Hosting.VirtualPathProvider.GetFile%2A> methods are overridden to return custom <xref:System.Web.Hosting.VirtualDirectory> and <xref:System.Web.Hosting.VirtualFile> instances containing information from the virtual file system.  
-  
- The class also provides a `GetVirtualData` method used by the <xref:System.Web.Hosting.VirtualDirectory> and <xref:System.Web.Hosting.VirtualFile> classes to access the <xref:System.Data.DataSet> object containing the virtual file system data. In a production implementation, this method would typically be implemented in a business object responsible for interacting with the data store.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#20](~/add/codesnippet/csharp/t-system.web.hosting.vir_1_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#20](~/add/codesnippet/visualbasic/t-system.web.hosting.vir_1_1.vb)]  
-  
- The second example is the XML data file used to populate the <xref:System.Data.DataSet> object returned by the custom VirtualPathProvider object. This XML data is used to demonstrate using the VirtualPathProvider, <xref:System.Web.Hosting.VirtualDirectory>, and <xref:System.Web.Hosting.VirtualFile> objects to retrieve data from external data and is not intended to represent a production-quality data store.  
-  
-```  
-<?xml version="1.0" encoding="utf-8" ?>  
-  <resource type="dir"   
-    path="/vrDir"   
-    parentPath=""   
-    content="">  
-    <resource type="file"   
-      path="/vrDir/Level1FileA.vrf"  
-      parentPath="/vrDir"   
-      content="This is the content of file Level1FileA.">  
-    </resource>  
-    <resource type="file"   
-      path="/vrDir/Level1FileB.vrf"  
-      parentPath="/vrDir"   
-      content="This is the content of file Level1FileB.">  
-    </resource>  
-    <resource type="dir"   
-      path="/vrDir/Level2DirA"   
-      parentPath="/vrDir"   
-      content="">  
-    <resource type="file"   
-      path="/vrDir/Level2DirA/Level2FileA.vrf"   
-      parentPath="/vrDir/Level2DirA"   
-      content="This is the content of file Level2FileA.">  
-    </resource>  
-    <resource type="file"   
-      path="/vrDir/Level2DirA/Level2FileB.vrf"  
-      parentPath="/vrDir/Level2DirA"   
-      content="This is the content of file Level2FileB.">  
-    </resource>  
-  </resource>  
-  <resource type="dir"   
-    path="/vrDir/Level2DirB"   
-    parentPath="/vrDir"   
-    content="">  
-    <resource type="file"   
-      path="/vrDir/Level2DirB/Level2FileA.vrf"   
-      parentPath="/vrDir/Level2DirB"   
-      content="This is the content of file Level2FileA.">  
-    </resource>  
-    <resource type="file"   
-      path="/vrDir/Level2DirB/Level2FileB.vrf"  
-      parentPath="/vrDir/Level2DirB"   
-      content="This is the content of file Level2FileB.">  
-    </resource>  
-  </resource>  
-</resource>  
-```  
-  
- The third example provides an `AppStart` object that contains an `AppInitialize` method. This method is called during the initialization of an ASP.NET application to perform any custom initialization required. In this case, it registers the custom VirtualPathProvider object with the ASP.NET build system.  
-  
- [!code-vb[System.Web.Hosting.VirtualPathProvider#10](~/add/codesnippet/visualbasic/t-system.web.hosting.vir_1_2.vb)]
- [!code-cs[System.Web.Hosting.VirtualPathProvider#10](~/add/codesnippet/csharp/t-system.web.hosting.vir_1_2.cs)]  
-  
- The last example is an ASP.NET page that contains links to the virtual files contained in the virtual file system.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#1](~/add/codesnippet/csharp/t-system.web.hosting.vir_1_3.aspx)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#1](~/add/codesnippet/visualbasic/t-system.web.hosting.vir_1_3.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,28 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes the class for use by an inherited class instance. This constructor can be called only by an inherited class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When overriding the VirtualPathProvider constructor, defer any initialization that must occur after the <xref:System.Web.Hosting.VirtualPathProvider> object is registered to the <xref:System.Web.Hosting.VirtualPathProvider.Initialize%2A> method.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the VirtualPathProvider constructor that initializes a custom <xref:System.Web.Hosting.VirtualPathProvider> class. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#25](~/add/codesnippet/csharp/m-system.web.hosting.vir_4_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#25](~/add/codesnippet/visualbasic/m-system.web.hosting.vir_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CombineVirtualPaths">
@@ -184,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,20 +47,11 @@
         <Parameter Name="relativePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="basePath">The base path for the application.</param>
-        <param name="relativePath">The path to the virtual resource, relative to the base path.</param>
-        <summary>Combines a base path with a relative path to return a complete path to a virtual resource.</summary>
-        <returns>The complete path to a virtual resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CombineVirtualPaths method to inspect the contents of a relative path to a virtual resource and perform any modifications required.  
-  
- The default implementation combines the `basePath` and `relativePath` parameters according to standard ASP.NET path processing.  
-  
- ]]></format>
-        </remarks>
+        <param name="basePath">To be added.</param>
+        <param name="relativePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectoryExists">
@@ -218,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,31 +70,10 @@
         <Parameter Name="virtualDir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDir">The path to the virtual directory.</param>
-        <summary>Gets a value that indicates whether a directory exists in the virtual file system.</summary>
-        <returns>
-          <see langword="true" /> if the directory exists in the virtual file system; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the DirectoryExists method to indicate to the compilation system that the resource represented by `virtualDir` exists in the virtual file system provided by this <xref:System.Web.Hosting.VirtualPathProvider> instance.  
-  
- If your custom <xref:System.Web.Hosting.VirtualPathProvider> class does not support directories, the DirectoryExists method should return `false`.  
-  
-> [!NOTE]
->  If your virtual file system will contain themes for the Web site (by creating a virtual `App_Themes` directory), your custom <xref:System.Web.Hosting.VirtualPathProvider> class must support directories.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the DirectoryExists method in a custom <xref:System.Web.Hosting.VirtualPathProvider> class. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#22](~/add/codesnippet/csharp/m-system.web.hosting.vir_5_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#22](~/add/codesnippet/visualbasic/m-system.web.hosting.vir_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualDir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileExists">
@@ -262,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,26 +92,10 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The path to the virtual file.</param>
-        <summary>Gets a value that indicates whether a file exists in the virtual file system.</summary>
-        <returns>
-          <see langword="true" /> if the file exists in the virtual file system; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the FileExists method to indicate to the compilation system that the resource represented by `virtualPath` exists in the virtual file system provided by this <xref:System.Web.Hosting.VirtualPathProvider> instance.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the FileExists method in a custom <xref:System.Web.Hosting.VirtualPathProvider> class. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#21](~/add/codesnippet/csharp/m-system.web.hosting.vir_6_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#21](~/add/codesnippet/visualbasic/m-system.web.hosting.vir_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCacheDependency">
@@ -301,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,27 +116,12 @@
         <Parameter Name="utcStart" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The path to the primary virtual resource.</param>
-        <param name="virtualPathDependencies">An array of paths to other resources required by the primary virtual resource.</param>
-        <param name="utcStart">The UTC time at which the virtual resources were read.</param>
-        <summary>Creates a cache dependency based on the specified virtual paths.</summary>
-        <returns>A <see cref="T:System.Web.Caching.CacheDependency" /> object for the specified virtual resources.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation of the GetCacheDependency method returns `null`. To cache virtual resources for later use you must override either the GetCacheDependency method or the <xref:System.Web.Hosting.VirtualPathProvider.GetFileHash%2A> method.  
-  
-   
-  
-## Examples  
- The following code example implements the GetCacheDependency method for a custom <xref:System.Web.Hosting.VirtualPathProvider> class. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#28](~/add/codesnippet/csharp/a8fb412c-a81c-4f3f-b624-_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#28](~/add/codesnippet/visualbasic/a8fb412c-a81c-4f3f-b624-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualPath">To be added.</param>
+        <param name="virtualPathDependencies">To be added.</param>
+        <param name="utcStart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCacheKey">
@@ -343,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,17 +140,10 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The path to the virtual resource.</param>
-        <summary>Returns a cache key to use for the specified virtual path.</summary>
-        <returns>A cache key for the specified virtual resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetCacheKey method to provide a custom cache key for virtual resources. If you do not override the GetCacheKey method, the virtual path is used for the cache key.  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDirectory">
@@ -373,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -383,30 +162,10 @@
         <Parameter Name="virtualDir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDir">The path to the virtual directory.</param>
-        <summary>Gets a virtual directory from the virtual file system.</summary>
-        <returns>A descendent of the <see cref="T:System.Web.Hosting.VirtualDirectory" /> class that represents a directory in the virtual file system.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetDirectory method returns a descendent of the <xref:System.Web.Hosting.VirtualDirectory> class that contains the file and directories contained in the directory specified in the `virtualDir` parameter.  
-  
- If your custom <xref:System.Web.Hosting.VirtualPathProvider> class does not support directories, the GetDirectory method should return `null`.  
-  
-> [!NOTE]
->  If your virtual file system will contain themes for the Web site (by creating a virtual `App_Themes` directory), your custom <xref:System.Web.Hosting.VirtualPathProvider> class must support directories.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the GetDirectory method in a custom <xref:System.Web.Hosting.VirtualPathProvider> class. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#24](~/add/codesnippet/csharp/m-system.web.hosting.vir_8_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#24](~/add/codesnippet/visualbasic/m-system.web.hosting.vir_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualDir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFile">
@@ -416,7 +175,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,25 +184,10 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The path to the virtual file.</param>
-        <summary>Gets a virtual file from the virtual file system.</summary>
-        <returns>A descendent of the <see cref="T:System.Web.Hosting.VirtualFile" /> class that represents a file in the virtual file system.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetFile method returns a descendent of the <xref:System.Web.Hosting.VirtualFile> class that represents the file specified by the `virtualPath` parameter.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the GetFile method in a custom <xref:System.Web.Hosting.VirtualPathProvider> class. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#23](~/add/codesnippet/csharp/m-system.web.hosting.vir_3_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#23](~/add/codesnippet/visualbasic/m-system.web.hosting.vir_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileHash">
@@ -454,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,18 +207,11 @@
         <Parameter Name="virtualPathDependencies" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The path to the primary virtual resource.</param>
-        <param name="virtualPathDependencies">An array of paths to other virtual resources required by the primary virtual resource.</param>
-        <summary>Returns a hash of the specified virtual paths.</summary>
-        <returns>A hash of the specified virtual paths.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetFileHash method to provide a hash of the dependencies for a virtual-file-system resource.  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualPath">To be added.</param>
+        <param name="virtualPathDependencies">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -486,7 +221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,23 +228,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the <see cref="T:System.Web.Hosting.VirtualPathProvider" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Initialize method is called after the provider is registered with the ASP.NET compilation system. The Initialize method is used to provide any initialization required after the <xref:System.Web.Hosting.VirtualPathProvider> instance is placed into the environment the application occupies.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the Initialize method that sets the path to a data file from the application's <xref:System.Web.Hosting.HostingEnvironment> instance. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#26](~/add/codesnippet/csharp/m-system.web.hosting.vir_0_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#26](~/add/codesnippet/visualbasic/m-system.web.hosting.vir_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -520,7 +239,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -528,16 +246,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gives the <see cref="T:System.Web.Hosting.VirtualPathProvider" /> object an infinite lifetime by preventing a lease from being created.</summary>
-        <returns>Always <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the <xref:System.Web.Hosting.VirtualPathProvider> object's lifetime.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -547,7 +258,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -557,17 +267,10 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The path to the virtual file.</param>
-        <summary>Returns a stream from a virtual file.</summary>
-        <returns>A read-only <see cref="T:System.IO.Stream" /> object for the specified virtual file or resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OpenFile method is a convenience method that enables you to get a stream from a virtual file without creating a <xref:System.Web.Hosting.VirtualPathProvider> instance.  
-  
- ]]></format>
-        </remarks>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -577,33 +280,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Hosting.VirtualPathProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a previously registered <see cref="T:System.Web.Hosting.VirtualPathProvider" /> object in the compilation system.</summary>
-        <value>The next <see cref="T:System.Web.Hosting.VirtualPathProvider" /> object in the compilation system.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Web.Hosting.VirtualPathProvider> object is registered with the ASP.NET compilation system, it is added to a chain of providers. Use the Previous property to hand processing off to the previous <xref:System.Web.Hosting.VirtualPathProvider> object in the chain if the requested path is not provided by this <xref:System.Web.Hosting.VirtualPathProvider> instance.  
-  
- The chain of path providers always ends with the default ASP.NET provider, which serves files from the file system.  
-  
-   
-  
-## Examples  
- The following code example is an implementation of the <xref:System.Web.Hosting.VirtualPathProvider.GetFile%2A> method. If the requested virtual directory does not begin with the string `"/vrdir"`, the method uses the Previous property to pass the request to the next <xref:System.Web.Hosting.VirtualPathProvider> object in the chain. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview topic.  
-  
- [!code-cs[System.Web.Hosting.VirtualPathProvider#23](~/add/codesnippet/csharp/p-system.web.hosting.vir_1.cs)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#23](~/add/codesnippet/visualbasic/p-system.web.hosting.vir_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

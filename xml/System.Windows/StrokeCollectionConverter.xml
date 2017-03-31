@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.StrokeCollectionConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts a <see cref="T:System.Windows.Ink.StrokeCollection" /> to a string.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StrokeCollectionConverter converts a <xref:System.Windows.Ink.StrokeCollection> to a string that represents the <xref:System.Windows.Ink.StrokeCollection> in base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
-  
-<a name="XAMLTextUsage_StrokeCollectionConverter"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following example demonstrates how to convert a base-64, encoded ISF string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-cs[InkEraser#8](~/add/codesnippet/csharp/MyInkEraser/InkEraser.cs#8)]
- [!code-vb[InkEraser#8](~/add/codesnippet/visualbasic/MyInkEraser/InkEraser.vb#8)]  
-[!code-cs[InkEraser#3](~/add/codesnippet/csharp/MyInkEraser/InkEraser.cs#3)]
-[!code-vb[InkEraser#3](~/add/codesnippet/visualbasic/MyInkEraser/InkEraser.vb#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.StrokeCollectionConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides the format context.</param>
-        <param name="sourceType">The <see cref="T:System.Type" /> to convert from.</param>
-        <summary>Returns a value that indicates whether the <see cref="T:System.Windows.StrokeCollectionConverter" /> can convert an object of a specified type to a <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.StrokeCollectionConverter" /> can convert an object of type <paramref name="sourceType" /> to a <see cref="T:System.Windows.Ink.StrokeCollection" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides the format context.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> to convert to.</param>
-        <summary>Returns a value that indicates whether the <see cref="T:System.Windows.StrokeCollectionConverter" /> can convert a <see cref="T:System.Windows.Ink.StrokeCollection" /> to the specified type.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Windows.StrokeCollectionConverter" /> can convert a <see cref="T:System.Windows.Ink.StrokeCollection" /> to the <paramref name="sourceType" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,29 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
-        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>Converts the specified object to a <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
-        <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> converted from <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConvertFrom method returns `null` if `value` is not a <xref:System.String>.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to convert a base-64, encoded Ink Serialized Format (ISF) string to a <xref:System.Windows.Ink.StrokeCollection>. This assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-cs[InkEraser#8](~/add/codesnippet/csharp/MyInkEraser/InkEraser.cs#8)]
- [!code-vb[InkEraser#8](~/add/codesnippet/visualbasic/MyInkEraser/InkEraser.vb#8)]  
-[!code-cs[InkEraser#3](~/add/codesnippet/csharp/MyInkEraser/InkEraser.cs#3)]
-[!code-vb[InkEraser#3](~/add/codesnippet/visualbasic/MyInkEraser/InkEraser.vb#3)]  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -154,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -172,24 +128,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
-        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> to convert to.</param>
-        <summary>Converts a <see cref="T:System.Windows.Ink.StrokeCollection" /> to a string.</summary>
-        <returns>An object that represents the specified <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ConvertTo method returns `null` if `value` is not a <xref:System.Windows.Ink.StrokeCollection>, or if `destinationType` is not <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
-  
- The ConvertTo method returns a base-64, encoded Ink Serialized Format (ISF). It is useful to store ink data as base-64, encoded ISF when it is not possible to store raw byte data, such as in Web pages.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -199,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,10 +153,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Returns whether this object supports a standard set of values that can be picked from a list, using the specified context.</summary>
-        <returns>
-          <see langword="false" /> in all cases.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

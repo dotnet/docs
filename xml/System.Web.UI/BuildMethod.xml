@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BuildMethod" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,15 +14,8 @@
     <ReturnType>System.Web.UI.Control</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>Represents the method that is used to build a control.</summary>
-    <returns>The built control.</returns>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BuildMethod delegate passes the information that is required to build ASP.NET server controls. The information is defined by the <xref:System.Web.UI.TemplateControl> class or a class that is derived from the <xref:System.Web.UI.TemplateControl> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

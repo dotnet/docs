@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,14 +21,14 @@
     <ReturnType>System.DirectoryServices.Protocols.LdapConnection</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="primaryConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the primary connection.</param>
-    <param name="referralFromConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection that provides the referral.</param>
-    <param name="newDistinguishedName">A <see cref="T:System.String" /> object that specifies the distinguished name (DN) of the desired entry in the referred server.</param>
-    <param name="identifier">A <see cref="T:System.DirectoryServices.Protocols.LdapDirectoryIdentifier" /> object that specifies the identifier for the referred LDAP directory.</param>
-    <param name="credential">A <see cref="T:System.Net.NetworkCredential" /> object that specifies the credentials to pass to the referred server.</param>
-    <param name="currentUserToken">The LUID for the current user.</param>
-    <summary>The QueryForConnectionCallback delegate determines whether there is a cached connection available for use.</summary>
-    <returns>A cached <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> is returned, if there is one available. If no cached connection is available, <see langword="NULL" /> is returned.</returns>
+    <param name="primaryConnection">To be added.</param>
+    <param name="referralFromConnection">To be added.</param>
+    <param name="newDistinguishedName">To be added.</param>
+    <param name="identifier">To be added.</param>
+    <param name="credential">To be added.</param>
+    <param name="currentUserToken">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

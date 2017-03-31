@@ -4,29 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.CurrentValueRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Objects.DbUpdatableDataRecord</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces />
   <Docs>
-    <summary>Provides access to the current values of object data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A CurrentValueRecord object contains a <xref:System.Data.Common.DBDataRecord> view of the object or relationship tracked by an <xref:System.Data.Objects.ObjectStateEntry>.  
-  
- CurrentValueRecord implements <xref:System.Data.IExtendedDataRecord>, which provides read-only access to the current values of entities, relationships, and metadata.  
-  
- Implements methods that allow updates to the current values.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
-  <Members>
-  </Members>
+  <Members />
 </Type>

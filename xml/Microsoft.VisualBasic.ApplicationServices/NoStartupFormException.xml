@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,18 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This exception is thrown by the Visual Basic Application Model when the <see cref="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A" /> property has not been set.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Visual Basic Application Model requires that the application set the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property before running the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A> method. If the property is not set, the Visual Basic Application Model raises this exception. For more information, see [Extending the Visual Basic Application Model](../Topic/Extending%20the%20Visual%20Basic%20Application%20Model.md).  
-  
-> [!NOTE]
->  For information about how to set the startup form by using the **Project Designer**, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,28 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Visual Basic Application Model requires that the application set the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property before running the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A> method. If the property is not set, the Visual Basic Application Model raises this exception. For more information, see [Extending the Visual Basic Application Model](../Topic/Extending%20the%20Visual%20Basic%20Application%20Model.md).  
-  
- The following table shows the initial property values for an instance of <xref:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException>.  
-  
-|||  
-|-|-|  
-|Property|Value|  
-|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
-|<xref:System.Exception.Message%2A>|The localized error-message string.|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,31 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">A message that describes the error.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" /> class with a specified error message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- <xref:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException> inherits from <xref:System.Exception>. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
-  
-|||  
-|-|-|  
-|Property|Value|  
-|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
-|<xref:System.Exception.Message%2A>|The `message` string.|  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -116,17 +72,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that holds the serialized object data about the exception being thrown.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that contains contextual information about the source or destination.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" /> class with serialized data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,7 +85,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -144,27 +92,10 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">A <see cref="T:System.String" /> object describing the error.</param>
-        <param name="inner">The <see cref="T:System.Exception" /> object that is the cause of the current exception. If the <see cref="System.Exception.InnerException%2A" /> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.ApplicationException>.  
-  
-|||  
-|-|-|  
-|Property|Value|  
-|<xref:System.Exception.InnerException%2A>|The `inner` reference.|  
-|<xref:System.Exception.Message%2A>|The `message` string.|  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

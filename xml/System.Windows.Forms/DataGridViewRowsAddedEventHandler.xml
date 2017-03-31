@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowsAddedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,27 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewRowsAddedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.RowsAdded" /> event of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView.RowsAdded> event occurs when rows are added to a <xref:System.Windows.Forms.DataGridView> control.  
-  
- When you create a DataGridViewRowsAddedEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example uses a DataGridViewRowsAddedEventHandler in virtual mode to store the fact that a row has been added. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> reference topic.  
-  
- [!code-cs[System.Windows.Forms.DataGridView._Virtual#30](~/add/codesnippet/csharp/t-system.windows.forms.d_131_1.cs)]
- [!code-cpp[System.Windows.Forms.DataGridView._Virtual#30](~/add/codesnippet/cpp/t-system.windows.forms.d_131_1.cpp)]
- [!code-vb[System.Windows.Forms.DataGridView._Virtual#30](~/add/codesnippet/visualbasic/t-system.windows.forms.d_131_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

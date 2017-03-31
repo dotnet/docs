@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.InternalDataCollectionBase</BaseTypeName>
@@ -16,37 +20,15 @@
       <AttributeName>System.ComponentModel.DefaultEvent("CollectionChanged")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.TablesCollectionEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.TablesCollectionEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of tables for the <see cref="T:System.Data.DataSet" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataTableCollection contains all the <xref:System.Data.DataTable> objects for a particular <xref:System.Data.DataSet>. To access the DataTableCollection of a <xref:System.Data.DataSet>, use the <xref:System.Data.DataSet.Tables%2A> property.  
-  
- The DataTableCollection uses methods such as <xref:System.Data.DataTableCollection.Add%2A>, <xref:System.Data.DataTableCollection.Clear%2A>, and <xref:System.Data.DataTableCollection.Remove%2A> to manage the items in the collection.  
-  
- Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a particular table (specified by either index or name) is in the collection.  
-  
- To navigate from one table to another, use the <xref:System.Data.DataTable.ChildRelations%2A> or <xref:System.Data.DataTable.ParentRelations%2A> property of the <xref:System.Data.DataTable> to access its collection of <xref:System.Data.DataRelation> objects. You can also use the <xref:System.Data.DataSet.Relations%2A> property to navigate through the parent/child relationships of the `DataTables` in a particular <xref:System.Data.DataSet> collection.  
-  
-   
-  
-## Examples  
- The first procedure in this example retrieves the DataTableCollection of a <xref:System.Data.DataSet> and prints the value of each column, in each row, of each table. The second procedure creates a new <xref:System.Data.DataTable> with two columns, and adds it to the DataTableCollection.  
-  
- [!code-cs[Classic WebData DataTableCollection Example#1](~/add/codesnippet/csharp/t-system.data.datatablec_1.cs)]
- [!code-vb[Classic WebData DataTableCollection Example#1](~/add/codesnippet/visualbasic/t-system.data.datatablec_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -56,34 +38,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Data.DataTable" /> object by using a default name and adds it to the collection.</summary>
-        <returns>The newly created <see cref="T:System.Data.DataTable" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because no name is specified, the `DataTable` is created by using a default name, relative to its order of addition. The default name is "Table1."  
-  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully added to the collection.  
-  
-   
-  
-## Examples  
- The following example adds three new <xref:System.Data.DataTable> objects to the <xref:System.Data.DataTableCollection> using the <xref:System.Data.DataTableCollection.Add%2A> method without arguments.  
-  
- [!code-cs[Classic WebData DataTableCollection.Add2 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_8_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Add2 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -93,8 +62,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -103,26 +76,9 @@
         <Parameter Name="table" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="table">The <see langword="DataTable" /> object to add.</param>
-        <summary>Adds the specified <see langword="DataTable" /> to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully added to the collection.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.DataTable> and adds it to the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>.  
-  
- [!code-cs[Classic WebData DataTableCollection.Add Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value specified for the table is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The table already belongs to this collection, or belongs to another collection.</exception>
-        <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. The comparison is not case sensitive.</exception>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -132,8 +88,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -142,28 +102,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name to give the created <see cref="T:System.Data.DataTable" />.</param>
-        <summary>Creates a <see cref="T:System.Data.DataTable" /> object by using the specified name and adds it to the collection.</summary>
-        <returns>The newly created <see cref="T:System.Data.DataTable" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If either `null` or an empty string ("") is passed in, a default name is given to the newly created `DataTable`. This name is based on the order in which the table was added ("Table1", "Table2", and so on).  
-  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs if the table is successfully added to the collection.  
-  
-   
-  
-## Examples  
- The following example adds a <xref:System.Data.DataTable> with the given name to the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.Add1 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_9_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Add1 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. (The comparison is not case sensitive.)</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -173,8 +115,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -184,29 +130,11 @@
         <Parameter Name="tableNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name to give the created <see cref="T:System.Data.DataTable" />.</param>
-        <param name="tableNamespace">The namespace to give the created <see cref="T:System.Data.DataTable" />.</param>
-        <summary>Creates a <see cref="T:System.Data.DataTable" /> object by using the specified name and adds it to the collection.</summary>
-        <returns>The newly created <see cref="T:System.Data.DataTable" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If either `null` or an empty string ("") is passed in, a default name is given to the newly created `DataTable`. This name is based on the order in which the table was added ("Table1", "Table2", and so on).  
-  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs if the table is successfully added to the collection.  
-  
-   
-  
-## Examples  
- The following example adds a <xref:System.Data.DataTable> with the given name to the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.Add1 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_1_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Add1 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Data.DuplicateNameException">A table in the collection has the same name. (The comparison is not case sensitive.)</exception>
+        <param name="name">To be added.</param>
+        <param name="tableNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -216,8 +144,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -226,19 +158,9 @@
         <Parameter Name="tables" Type="System.Data.DataTable[]" />
       </Parameters>
       <Docs>
-        <param name="tables">The array of <see cref="T:System.Data.DataTable" /> objects to add to the collection.</param>
-        <summary>Copies the elements of the specified <see cref="T:System.Data.DataTable" /> array to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates two <xref:System.Data.DataTable> objects and adds them to the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>.  
-  
- [!code-vb[Classic WebData DataTableCollection.AddRange Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_2_1.vb)]
- [!code-cs[Classic WebData DataTableCollection.AddRange Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="tables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRemove">
@@ -248,8 +170,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -258,21 +184,10 @@
         <Parameter Name="table" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="table">The <see langword="DataTable" /> in the collection to perform the check against.</param>
-        <summary>Verifies whether the specified <see cref="T:System.Data.DataTable" /> object can be removed from the collection.</summary>
-        <returns>
-          <see langword="true" /> if the table can be removed; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the CanRemove to test whether each table can be removed from a <xref:System.Data.DataSet>. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-vb[Classic WebData DataTableCollection.CanRemove Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_5_1.vb)]
- [!code-cs[Classic WebData DataTableCollection.CanRemove Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -282,31 +197,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection of all <see cref="T:System.Data.DataTable" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To remove a particular `DataTable` from the collection, use the <xref:System.Data.DataTableCollection.Remove%2A> method.  
-  
-   
-  
-## Examples  
- The following example gets the <xref:System.Data.DataTableCollection> of a <xref:System.Data.DataSet>, and then clears the collection of all tables.  
-  
- [!code-cs[Classic WebData DataTableCollection.Clear Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_10_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Clear Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -316,30 +220,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the <see cref="T:System.Data.DataTableCollection" /> is changed because of <see cref="T:System.Data.DataTable" /> objects being added or removed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CollectionChanged event.  
-  
- [!code-vb[Classic WebData DataTableCollection.CollectionChanged Example#1](~/add/codesnippet/visualbasic/e-system.data.datatablec_0_1.vb)]
- [!code-cs[Classic WebData DataTableCollection.CollectionChanged Example#1](~/add/codesnippet/csharp/e-system.data.datatablec_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanging">
@@ -349,30 +242,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs while the <see cref="T:System.Data.DataTableCollection" /> is changing because of <see cref="T:System.Data.DataTable" /> objects being added or removed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CollectionChanging event.  
-  
- [!code-cs[Classic WebData DataTableCollection.CollectionChanging Example#1](~/add/codesnippet/csharp/e-system.data.datatablec_1_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.CollectionChanging Example#1](~/add/codesnippet/visualbasic/e-system.data.datatablec_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -382,8 +264,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -392,31 +278,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Data.DataTable" /> to find.</param>
-        <summary>Gets a value that indicates whether a <see cref="T:System.Data.DataTable" /> object with the specified name exists in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified table exists; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property. If you add a <xref:System.Data.DataTable> to the collection with the <xref:System.Data.DataTableCollection.Add%2A> method, passing no arguments, the table is given a default name, based on the order in which the table was added ("Table1", "Table2", and so on).  
-  
- To get the index of a <xref:System.Data.DataTable>, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method.  
-  
-> [!NOTE]
->  Returns `false` when two or more tables have the same name but different namespaces. The call does not succeed if there is any ambiguity when matching a table name to exactly one table.  
-  
-   
-  
-## Examples  
- The following example tests whether a table with the name "Suppliers" exists in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.Contains Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_14_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Contains Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -426,8 +291,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -437,32 +306,11 @@
         <Parameter Name="tableNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Data.DataTable" /> to find.</param>
-        <param name="tableNamespace">The name of the <see cref="T:System.Data.DataTable" /> namespace to look in.</param>
-        <summary>Gets a value that indicates whether a <see cref="T:System.Data.DataTable" /> object with the specified name and table namespace exists in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified table exists; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property. If you add a <xref:System.Data.DataTable> to the collection with the <xref:System.Data.DataTableCollection.Add%2A> method, passing no arguments, the table is given a default name, based on the order in which the table was added ("Table1", "Table2", and so on).  
-  
-> [!NOTE]
->  Returns `false` when two or more tables have the same name but different namespaces. The call does not succeed if there is any ambiguity when matching a table name to exactly one table.  
-  
- To get the index of a <xref:System.Data.DataTable>, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method.  
-  
-   
-  
-## Examples  
- The following example tests whether a table with the name "Suppliers" exists in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.Contains Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_6_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Contains Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="tableNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -472,8 +320,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -483,17 +335,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> to copy the current <see cref="T:System.Data.DataTableCollection" /> object's elements into.</param>
-        <param name="index">The destination <see cref="T:System.Array" /> index to start copying into.</param>
-        <summary>Copies all the elements of the current <see cref="T:System.Data.DataTableCollection" /> to a one-dimensional <see cref="T:System.Array" />, starting at the specified destination array index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be overridden by a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -503,8 +348,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -513,27 +362,10 @@
         <Parameter Name="table" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="table">The <see langword="DataTable" /> to search for.</param>
-        <summary>Gets the index of the specified <see cref="T:System.Data.DataTable" /> object.</summary>
-        <returns>The zero-based index of the table, or -1 if the table is not found in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IndexOf method to determine the exact index of a given table.  
-  
- Before calling IndexOf, you can test for the existence of a table (specified by either index or name) by using the <xref:System.Data.DataTableCollection.Contains%2A> method.  
-  
-   
-  
-## Examples  
- The following example returns the index of each table in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.IndexOf Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_3_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.IndexOf Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -543,8 +375,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -553,30 +389,10 @@
         <Parameter Name="tableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tableName">The name of the <see langword="DataTable" /> object to look for.</param>
-        <summary>Gets the index in the collection of the <see cref="T:System.Data.DataTable" /> object with the specified name.</summary>
-        <returns>The zero-based index of the <see langword="DataTable" /> with the specified name, or -1 if the table does not exist in the collection.  
-  
- <block subset="none" type="note">  
- Returns -1 when two or more tables have the same name but different namespaces. The call does not succeed if there is any ambiguity when matching a table name to exactly one table.  
-  
-</block></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You specify the name of the `DataTable` object by using the <xref:System.Data.DataTable.TableName%2A> property.  
-  
-   
-  
-## Examples  
- The following example returns the index of a named table in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.IndexOf1 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_12_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.IndexOf1 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="tableName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -586,8 +402,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -597,26 +417,11 @@
         <Parameter Name="tableNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tableName">The name of the <see cref="T:System.Data.DataTable" /> object to look for.</param>
-        <param name="tableNamespace">The name of the <see cref="T:System.Data.DataTable" /> namespace to look in.</param>
-        <summary>Gets the index in the collection of the specified <see cref="T:System.Data.DataTable" /> object.</summary>
-        <returns>The zero-based index of the <see cref="T:System.Data.DataTable" /> with the specified name, or -1 if the table does not exist in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You specify the name of the <xref:System.Data.DataTable> object by using the <xref:System.Data.DataTable.TableName%2A> property.  
-  
-   
-  
-## Examples  
- The following example returns the index of a named table in the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.IndexOf1 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_11_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.IndexOf1 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="tableName">To be added.</param>
+        <param name="tableNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -626,8 +431,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -636,28 +445,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Data.DataTable" /> to find.</param>
-        <summary>Gets the <see cref="T:System.Data.DataTable" /> object at the specified index.</summary>
-        <value>A <see cref="T:System.Data.DataTable" />with the specified index; otherwise <see langword="null" /> if the <see cref="T:System.Data.DataTable" /> does not exist.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a table with a specific index exists.  
-  
- If you have the name of a table, but not its index, use the <xref:System.Data.DataTableCollection.IndexOf%2A> method to return the index.  
-  
-   
-  
-## Examples  
- The following example retrieves a <xref:System.Data.DataTable> by its index.  
-  
- [!code-cs[Classic WebData DataTableCollection.this Example#1](~/add/codesnippet/csharp/p-system.data.datatablec_1_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.this Example#1](~/add/codesnippet/visualbasic/p-system.data.datatablec_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The index value is greater than the number of items in the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -667,8 +458,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -677,27 +472,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="DataTable" /> to find.</param>
-        <summary>Gets the <see cref="T:System.Data.DataTable" /> object with the specified name.</summary>
-        <value>A <see cref="T:System.Data.DataTable" /> with the specified name; otherwise <see langword="null" /> if the <see cref="T:System.Data.DataTable" /> does not exist.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a <xref:System.Data.DataTable> name exists that matches the case of the search string, it is returned. Otherwise a case-insensitive search is performed, and if a <xref:System.Data.DataTable> name is found that matches this search, it is returned.  
-  
- Use the <xref:System.Data.DataTableCollection.Contains%2A> method to determine whether a table with a specific name or index exists.  
-  
-   
-  
-## Examples  
- The following example retrieves a single table by name from the <xref:System.Data.DataTableCollection>.  
-  
- [!code-cs[Classic WebData DataTableCollection.this1 Example#1](~/add/codesnippet/csharp/p-system.data.datatablec_0_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.this1 Example#1](~/add/codesnippet/visualbasic/p-system.data.datatablec_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -707,8 +485,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -718,10 +500,10 @@
         <Parameter Name="tableNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="DataTable" /> to find.</param>
-        <param name="tableNamespace">The name of the <see cref="T:System.Data.DataTable" /> namespace to look in.</param>
-        <summary>Gets the <see cref="T:System.Data.DataTable" /> object with the specified name in the specified namespace.</summary>
-        <value>A <see cref="T:System.Data.DataTable" /> with the specified name; otherwise <see langword="null" /> if the <see cref="T:System.Data.DataTable" /> does not exist.</value>
+        <param name="name">To be added.</param>
+        <param name="tableNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,8 +514,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
@@ -751,8 +537,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -761,32 +551,9 @@
         <Parameter Name="table" Type="System.Data.DataTable" />
       </Parameters>
       <Docs>
-        <param name="table">The <see langword="DataTable" /> to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Data.DataTable" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
-  
- To determine whether a given table exists and can be removed before invoking Remove, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.CanRemove%2A> method to test whether each table can be removed from a <xref:System.Data.DataSet>. If so, the Remove method is called to remove the table.  
-  
- [!code-cs[Classic WebData DataTableCollection.Remove Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_0_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Remove Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value specified for the table is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The table does not belong to this collection.  
-  
- -or-  
-  
- The table is part of a relationship.</exception>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -796,8 +563,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -806,27 +577,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Data.DataTable" /> object to remove.</param>
-        <summary>Removes the <see cref="T:System.Data.DataTable" /> object with the specified name from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
-  
- To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a named table exists and can be removed. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-cs[Classic WebData DataTableCollection.Remove1 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_7_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Remove1 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The collection does not have a table with the specified name.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -836,8 +589,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -847,28 +604,10 @@
         <Parameter Name="tableNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Data.DataTable" /> object to remove.</param>
-        <param name="tableNamespace">The name of the <see cref="T:System.Data.DataTable" /> namespace to look in.</param>
-        <summary>Removes the <see cref="T:System.Data.DataTable" /> object with the specified name from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
-  
- To determine whether a given table exists and can be removed before invoking <xref:System.Data.DataTableCollection.Remove%2A>, use the <xref:System.Data.DataTableCollection.Contains%2A> and the <xref:System.Data.DataTableCollection.CanRemove%2A> methods.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a named table exists and can be removed. If so, the <xref:System.Data.DataTableCollection.Remove%2A> method is called to remove the table.  
-  
- [!code-cs[Classic WebData DataTableCollection.Remove1 Example#1](~/add/codesnippet/csharp/m-system.data.datatablec_13_1.cs)]
- [!code-vb[Classic WebData DataTableCollection.Remove1 Example#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_13_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The collection does not have a table with the specified name.</exception>
+        <param name="name">To be added.</param>
+        <param name="tableNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -878,8 +617,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -888,25 +631,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see langword="DataTable" /> to remove.</param>
-        <summary>Removes the <see cref="T:System.Data.DataTable" /> object at the specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTableCollection.CollectionChanged> event occurs when a table is successfully removed.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Data.DataTableCollection.Contains%2A> and <xref:System.Data.DataTableCollection.CanRemove%2A> methods to test whether a table exists with the index 10. If so, the RemoveAt method is called to remove the table.  
-  
- [!code-vb[Classic WebData DataTableCollection.RemoveAt#1](~/add/codesnippet/visualbasic/m-system.data.datatablec_15_1.vb)]
- [!code-cs[Classic WebData DataTableCollection.RemoveAt#1](~/add/codesnippet/csharp/m-system.data.datatablec_15_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The collection does not have a table at the specified index.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

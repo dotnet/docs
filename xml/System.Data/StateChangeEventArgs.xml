@@ -3,32 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.StateChangeEventArgs" />
   <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the state change event of a .NET Framework data provider.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The data is used by the `StateChange` property of the <xref:System.Data.OleDb.OleDbConnection> and the `StateChange` property of the <xref:System.Data.SqlClient.SqlConnection>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the `StateChange` event within the <xref:System.Data.SqlClient.SqlConnection> class.  
-  
- [!code-vb[Classic WebData StateChangeEventArgs Example#1](~/add/codesnippet/visualbasic/t-system.data.statechang_1.vb)]
- [!code-cs[Classic WebData StateChangeEventArgs Example#1](~/add/codesnippet/csharp/t-system.data.statechang_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,18 +30,26 @@
       <MemberSignature Language="DocId" Value="M:System.Data.StateChangeEventArgs.#ctor(System.Data.ConnectionState,System.Data.ConnectionState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="originalState" Type="System.Data.ConnectionState" />
         <Parameter Name="currentState" Type="System.Data.ConnectionState" />
       </Parameters>
       <Docs>
-        <param name="originalState">One of the <see cref="T:System.Data.ConnectionState" /> values.</param>
-        <param name="currentState">One of the <see cref="T:System.Data.ConnectionState" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.StateChangeEventArgs" /> class, when given the original state and the current state of the object.</summary>
+        <param name="originalState">To be added.</param>
+        <param name="currentState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,16 +59,24 @@
       <MemberSignature Language="DocId" Value="P:System.Data.StateChangeEventArgs.CurrentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new state of the connection. The connection object will be in the new state already when the event is fired.</summary>
-        <value>One of the <see cref="T:System.Data.ConnectionState" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,16 +86,24 @@
       <MemberSignature Language="DocId" Value="P:System.Data.StateChangeEventArgs.OriginalState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the original state of the connection.</summary>
-        <value>One of the <see cref="T:System.Data.ConnectionState" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

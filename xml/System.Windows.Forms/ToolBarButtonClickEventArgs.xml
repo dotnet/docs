@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolBar.ButtonClick" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The event occurs whenever the user clicks on a button on a <xref:System.Windows.Forms.ToolBar> control. The <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property contains the <xref:System.Windows.Forms.ToolBarButton> wiith the information about the button that was clicked.  
-  
-   
-  
-## Examples  
- The following example instantiates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the ToolBarButtonClickEventArgs is evaluated, and the appropriate dialog opened. This code assumes that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been instantiated.  
-  
- [!code-cpp[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/cpp/t-system.windows.forms.t_52_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_52_1.vb)]
- [!code-cs[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/csharp/t-system.windows.forms.t_52_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
       </Parameters>
       <Docs>
-        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> that was clicked.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property is set equal to the `button` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Button">
@@ -65,32 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolBarButton" /> that was clicked.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ToolBarButton" /> that was clicked.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Button property is initially set equal to the `button` parameter of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following example instantiates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the Button property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog opened. This code assumes that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been instantiated.  
-  
- [!code-cpp[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_11_1.cpp)]
- [!code-vb[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_11_1.vb)]
- [!code-cs[Classic ToolBar.ToolBar Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

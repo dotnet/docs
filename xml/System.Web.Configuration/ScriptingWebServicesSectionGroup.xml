@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a group of related sections in a configuration file.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ScriptingWebServicesSectionGroup class to programmatically set and retrieve the values of the `webServices` section of the configuration file.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -58,16 +48,9 @@
         <ReturnType>System.Web.Configuration.ScriptingAuthenticationServiceSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="authenticationService" /> section that is contained in the configuration file.</summary>
-        <value>A <see cref="T:System.Web.Configuration.ScriptingAuthenticationServiceSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> object refers to the `authenticationService` section of the configuration file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="JsonSerialization">
@@ -77,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -89,16 +71,9 @@
         <ReturnType>System.Web.Configuration.ScriptingJsonSerializationSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="jsonSerialization" /> section that is contained in the configuration file.</summary>
-        <value>A <see cref="T:System.Web.Configuration.ScriptingJsonSerializationSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.ScriptingJsonSerializationSection> object refers to the `jsonSerialization` section of the configuration file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProfileService">
@@ -108,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -120,16 +94,9 @@
         <ReturnType>System.Web.Configuration.ScriptingProfileServiceSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="profileService" /> section that is contained in the configuration file.</summary>
-        <value>A <see cref="T:System.Web.Configuration.ScriptingProfileServiceSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.ScriptingProfileServiceSection> object refers to the `profileService` section of the configuration file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RoleService">
@@ -139,7 +106,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,16 +117,9 @@
         <ReturnType>System.Web.Configuration.ScriptingRoleServiceSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="roleService" /> section that is contained in the configuration file.</summary>
-        <value>A <see cref="T:System.Web.Configuration.ScriptingRoleServiceSection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.ScriptingRoleServiceSection> object refers to the `roleService` section of the configuration file.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.TextQuality" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the text rendering settings for the AmbientTheme class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- TextQuality allows users to determine whether the text displayed on a workflow design surface, and all its child designers, is antialiased or aliased. Antialiased text provides higher quality text display, while aliased text requires fewer resources to maintain.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Aliased">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ambient text quality setting is aliased.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AntiAliased">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ambient text quality setting is antialiased.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

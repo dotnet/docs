@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the caches that are configured to detect replayed tokens and to cache session tokens. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gets and sets the configured <xref:System.IdentityModel.Tokens.TokenReplayCache> and <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>. The `Caches` property of the <xref:System.IdentityModel.Configuration.IdentityConfiguration> class and of the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerConfiguration> class is an instance of IdentityModelCaches.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityModelCaches" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +43,9 @@
         <ReturnType>System.IdentityModel.Tokens.SessionSecurityTokenCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" /> that is used to cache the <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</summary>
-        <value>The configured session token cache.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="TokenReplayCache">
@@ -69,10 +61,9 @@
         <ReturnType>System.IdentityModel.Tokens.TokenReplayCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.IdentityModel.Tokens.TokenReplayCache" /> that is used to determine whether tokens are replayed.</summary>
-        <value>The configured token replay cache.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
   </Members>

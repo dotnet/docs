@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridResizeDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a <see cref="T:System.Windows.Controls.GridSplitter" /> control redistributes space between rows or between columns.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this enumeration to set the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> property of the <xref:System.Windows.Controls.GridSplitter> control.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -29,41 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Space is redistributed based on the values of the <see cref="System.Windows.FrameworkElement.HorizontalAlignment%2A" />, <see cref="System.Windows.FrameworkElement.VerticalAlignment%2A" />, <see cref="System.Windows.FrameworkElement.ActualWidth%2A" />, and <see cref="System.Windows.FrameworkElement.ActualHeight%2A" /> properties of the <see cref="T:System.Windows.Controls.GridSplitter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
--   If the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> is not set to <xref:System.Windows.HorizontalAlignment.Stretch>, space is redistributed between columns.  
-  
--   If the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> is set to <xref:System.Windows.HorizontalAlignment.Stretch> and the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> is not set to <xref:System.Windows.VerticalAlignment.Stretch>, space is redistributed between rows.  
-  
--   If the following conditions are true, space is redistributed between columns:  
-  
-    -   The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> is set to <xref:System.Windows.HorizontalAlignment.Stretch>.  
-  
-    -   The <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> is set to <xref:System.Windows.VerticalAlignment.Stretch>.  
-  
-    -   The <xref:System.Windows.FrameworkElement.ActualWidth%2A> is less than or equal to the <xref:System.Windows.FrameworkElement.ActualHeight%2A>.  
-  
--   If the following conditions are true, space is redistributed between rows:  
-  
-    -   <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> is set to <xref:System.Windows.HorizontalAlignment.Stretch>.  
-  
-    -   <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> is set to <xref:System.Windows.VerticalAlignment.Stretch>.  
-  
-    -   <xref:System.Windows.FrameworkElement.ActualWidth%2A> is greater than the <xref:System.Windows.FrameworkElement.ActualHeight%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -73,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Space is redistributed between columns.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -90,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.GridResizeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Space is redistributed between rows.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

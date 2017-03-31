@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ExternalProjectStartedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,13 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectStartedEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -41,8 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,12 +47,12 @@
         <Parameter Name="targetNames" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <param name="projectFile">The project file name.</param>
-        <param name="targetNames">The names of the targets to build in the external project. This can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if the external project is being built with the default targets.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs" /> class, with the specified values.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,13 +74,13 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <param name="projectFile">The project file name.</param>
-        <param name="targetNames">The names of the targets to build in the external project. This can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if the external project is being built with the default targets.</param>
-        <param name="eventTimestamp">The date and time to associate with the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs" /> class, with the specified values.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,16 +91,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the project file that raised the event.</summary>
-        <value>The project file that raised the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,16 +109,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the target names that are being built in the project.</summary>
-        <value>The names of the targets being built in the external project. This can be a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]) if the external project is being built with the default target.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

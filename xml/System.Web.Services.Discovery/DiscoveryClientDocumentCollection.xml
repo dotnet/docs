@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of documents discovered during XML Web services discovery that have been downloaded to the client. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> property of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> is of type DiscoveryClientDocumentCollection.  
-  
-   
-  
-## Examples  
- The following code example enacts XML Web service discovery and downloads the discovered documents to the client. The names of the discovery documents within the DiscoveryClientDocumentCollection are output to the console.  
-  
- [!code-cs[DiscoveryClientDocumentCollection2#1](~/add/codesnippet/csharp/t-system.web.services.di_2_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection2#1](~/add/codesnippet/cpp/t-system.web.services.di_2_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection2#1](~/add/codesnippet/visualbasic/t-system.web.services.di_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,24 +50,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the document to add to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</param>
-        <param name="value">A discovered document to add to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</param>
-        <summary>Adds an object with the specified URL to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example adds two discovery documents to a <xref:System.Web.Services.Discovery.DiscoveryClientDocumentCollection>.  
-  
- [!code-cs[DiscoveryClientDocumentCollection_ctor#2](~/add/codesnippet/csharp/bfe423a2-971d-4bfa-8059-_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection_ctor#2](~/add/codesnippet/cpp/bfe423a2-971d-4bfa-8059-_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection_ctor#2](~/add/codesnippet/visualbasic/bfe423a2-971d-4bfa-8059-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An entry with a key of <paramref name="url" /> already exists in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</exception>
+        <param name="url">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -93,7 +63,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,24 +73,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the document to locate within the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</param>
-        <summary>Determines if the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" /> contains an object with the specified URL.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" /> contains an object with the specified URL; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example calls the Contains method to determine if the discovery document contains a member with the URL stored in the `StringUrl` variable.  
-  
- [!code-cs[DiscoveryClientDocumentCollection_Keys#3](~/add/codesnippet/csharp/d81ba2c3-f5a6-47ee-b67e-_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection_Keys#3](~/add/codesnippet/cpp/d81ba2c3-f5a6-47ee-b67e-_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection_Keys#3](~/add/codesnippet/visualbasic/d81ba2c3-f5a6-47ee-b67e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -130,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,23 +96,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL of the discovery document to get or set from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</param>
-        <summary>Gets or sets a client discovery document object from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" /> with the specified URL.</summary>
-        <value>An <see cref="T:System.Object" /> representing the document discovered and downloaded to the client. The underlying type of the object can be a <see cref="T:System.Web.Services.Description.ServiceDescription" />, <see cref="T:System.Xml.Schema.XmlSchema" />, or <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example outputs to the console the type of the discovery document in the <xref:System.Web.Services.Discovery.DiscoveryClientDocumentCollection> that has a URL matching the value of the `myStringUrl` variable.  
-  
- [!code-cs[DiscoveryClientDocumentCollection_ctor#4](~/add/codesnippet/csharp/fc90d7cf-0e94-4275-9a01-_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection_ctor#4](~/add/codesnippet/cpp/fc90d7cf-0e94-4275-9a01-_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection_ctor#4](~/add/codesnippet/visualbasic/fc90d7cf-0e94-4275-9a01-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -166,27 +109,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object with all the keys in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example outputs the keys within the <xref:System.Web.Services.Discovery.DiscoveryClientDocumentCollection> to the console.  
-  
- [!code-cs[DiscoveryClientDocumentCollection_Keys#1](~/add/codesnippet/csharp/p-system.web.services.di_12_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection_Keys#1](~/add/codesnippet/cpp/p-system.web.services.di_12_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection_Keys#1](~/add/codesnippet/visualbasic/p-system.web.services.di_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -196,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,22 +138,9 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the discovered document to remove from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</param>
-        <summary>Removes an object with the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example removes the discovery document with a URL of `http://www.contoso.com/service1.disco` from the <xref:System.Web.Services.Discovery.DiscoveryClientDocumentCollection>.  
-  
- [!code-cs[DiscoveryClientDocumentCollection_ctor#3](~/add/codesnippet/csharp/a0b39cc5-6df2-4250-a20a-_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection_ctor#3](~/add/codesnippet/cpp/a0b39cc5-6df2-4250-a20a-_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection_ctor#3](~/add/codesnippet/visualbasic/a0b39cc5-6df2-4250-a20a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -231,27 +150,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object with all the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example outputs the values within the <xref:System.Web.Services.Discovery.DiscoveryClientDocumentCollection> to the console.  
-  
- [!code-cs[DiscoveryClientDocumentCollection_Keys#2](~/add/codesnippet/csharp/p-system.web.services.di_15_1.cs)]
- [!code-cpp[DiscoveryClientDocumentCollection_Keys#2](~/add/codesnippet/cpp/p-system.web.services.di_15_1.cpp)]
- [!code-vb[DiscoveryClientDocumentCollection_Keys#2](~/add/codesnippet/visualbasic/p-system.web.services.di_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

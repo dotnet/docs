@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxStreamType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the types of input and output streams used to load and save data in the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration when calling the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> and <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> methods of the <xref:System.Windows.Forms.RichTextBox> control.  
-  
-   
-  
-## Examples  
- The following example saves the contents of the <xref:System.Windows.Forms.RichTextBox> into an ASCII text file. The example uses the <xref:System.Windows.Forms.SaveFileDialog> class to display a dialog to request the path and file name from the user. The code then saves the contents of the control to that file. The example uses this version of the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> method to specify that the file be saved as an ASCII text file instead of the standard Rich Text Format. This example assumes that the code is placed in a <xref:System.Windows.Forms.Form> class that has a <xref:System.Windows.Forms.RichTextBox> control named `richTextBox1`.  
-  
- [!code-cs[Classic RichTextBox.SaveFile1 Example#1](~/add/codesnippet/csharp/t-system.windows.forms.r_3_1.cs)]
- [!code-vb[Classic RichTextBox.SaveFile1 Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.r_3_1.vb)]
- [!code-cpp[Classic RichTextBox.SaveFile1 Example#1](~/add/codesnippet/cpp/t-system.windows.forms.r_3_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="PlainText">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A plain text stream that includes spaces in places of Object Linking and Embedding (OLE) objects.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RichNoOleObjs">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Rich Text Format (RTF) stream with spaces in place of OLE objects. This value is only valid for use with the <see cref="System.Windows.Forms.RichTextBox.SaveFile%2A" /> method of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RichText">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Rich Text Format (RTF) stream.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextTextOleObjs">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A plain text stream with a textual representation of OLE objects. This value is only valid for use with the <see cref="System.Windows.Forms.RichTextBox.SaveFile%2A" /> method of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnicodePlainText">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A text stream that contains spaces in place of Object Linking and Embedding (OLE) objects. The text is encoded in Unicode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

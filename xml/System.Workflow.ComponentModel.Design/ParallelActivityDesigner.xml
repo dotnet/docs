@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods and properties for all activity designers that display parallel vertical layouts on a workflow design surface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- An activity designer that displays a parallel vertical layout represents an activity on the workflow design surface that has two code paths that a workflow can follow. For example, the designer used for the <xref:System.Workflow.Activities.IfElseActivity> activity displays the <xref:System.Workflow.Activities.IfElseActivity> activity on the workflow design surface and has a parallel vertical layout. Each branch of the parallel layout visually represents an <xref:System.Workflow.Activities.IfElseBranchActivity> activity contained in the <xref:System.Workflow.Activities.IfElseActivity> activity.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,22 +52,11 @@
         <Parameter Name="activitiesToMove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="moveLocation">The <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that describes the location to move the activities to.</param>
-        <param name="activitiesToMove">The <see cref="T:System.Workflow.ComponentModel.Activity" /> read-only collection that contains the activities to move.</param>
-        <summary>Returns a value that indicates whether child activities of the activity associated with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" /> can be moved.</summary>
-        <returns>
-          <see langword="true" /> if the activities can be moved from the parent activity; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the CanMoveActivities method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.ParallelActivityDesigner>.  
-  
- [!code-cs[WF_Samples#26](~/add/codesnippet/csharp/wf_snippets/snippets.cs#26)]
- [!code-vb[WF_Samples#26](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#26)]  
-  
- ]]></format>
-        </remarks>
+        <param name="moveLocation">To be added.</param>
+        <param name="activitiesToMove">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRemoveActivities">
@@ -91,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,21 +75,10 @@
         <Parameter Name="activitiesToRemove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="activitiesToRemove">The read-only collection of activities to remove.</param>
-        <summary>Returns a value that indicates whether child activities of the activity associated with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" /> can be deleted.</summary>
-        <returns>
-          <see langword="true" /> if the activities can be deleted from the parent activity; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the CanRemoveActivities method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.ParallelActivityDesigner>.  
-  
- [!code-cs[WF_Samples#27](~/add/codesnippet/csharp/wf_snippets/snippets.cs#27)]
- [!code-vb[WF_Samples#27](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#27)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activitiesToRemove">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstSelectableObject">
@@ -125,23 +88,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <value>An <see cref="T:System.Object" /> that is the first selectable object in the designer navigation order.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the designer's <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Expanded%2A> property or the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsVisible%2A> property is set to `false`, FirstSelectableObject returns a null reference (`Nothing` in Visual Basic). If the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A> property count is greater than 0, FirstSelectableObject returns the <xref:System.Workflow.ComponentModel.Activity> associated with the first activity designer in the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDropTargets">
@@ -151,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,9 +115,9 @@
         <Parameter Name="dropPoint" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="dropPoint">The <see cref="T:System.Drawing.Point" /> that defines the x- and y-coordinates for the drop target.</param>
-        <summary>Returns array of rectangles that represent the valid drop locations within the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Rectangle" /> array that represents the valid drop locations within the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</returns>
+        <param name="dropPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,10 +138,10 @@
         <Parameter Name="direction" Type="System.Workflow.ComponentModel.Design.DesignerNavigationDirection" />
       </Parameters>
       <Docs>
-        <param name="obj">The current <see cref="T:System.Object" /> in the navigation order.</param>
-        <param name="direction">A <see cref="T:System.Workflow.ComponentModel.Design.DesignerNavigationDirection" /> enumeration value that determines the navigation order of the designer.</param>
-        <summary>Returns the first selectable object that follows the specified object in the navigation order of the current <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <returns>An <see cref="T:System.Object" /> that follows the specified object.</returns>
+        <param name="obj">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,23 +152,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <value>The <see cref="T:System.Object" /> that is the last selectable object in the designer navigation order.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the designer's <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Expanded%2A> or <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsVisible%2A> property is set to `false`, LastSelectableObject returns a null reference (`Nothing` in Visual Basic). If <xref:System.Workflow.ComponentModel.Design.ParallelActivityDesigner> contains child activity designers, LastSelectableObject returns the last selectable object associated with the first child activity designer. If the child activity designer is collapsed, LastSelectableObject returns the <xref:System.Workflow.ComponentModel.Activity> associated with the first activity designer in the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A> collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateNewBranch">
@@ -225,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,8 +177,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates that the user has created a new branch activity on the activity associated with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that was added as the new branch of the activity associated with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,7 +189,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -255,11 +198,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the layout arguments.</param>
-        <summary>Performs layout tasks to position visual cues and child designers on the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnLayoutSize">
@@ -269,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -279,9 +219,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the layout arguments.</param>
-        <summary>Sets the size of the visual cues on the designers contained within the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Size" /> that contains the new size settings for the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</returns>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +232,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,8 +241,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the drawing arguments.</param>
-        <summary>Draws the visual representation of the activity associated with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" /> at design time.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,33 +253,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of designer verbs to be associated with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" /> that contains the designer verbs to associate with the <see cref="T:System.Workflow.ComponentModel.Design.ParallelActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Verbs property determines the commands that are displayed on the <xref:System.Workflow.ComponentModel.Design.ParallelActivityDesigner> context menu.  
-  
- The verb collection includes any designer verbs <xref:System.Workflow.ComponentModel.Design.ParallelActivityDesigner> inherits from the designer classes it extends.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.Verbs%2A> property to insert custom verb actions for a <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>. The `CreateActivityVerbs` creates a new <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> named `"Add New Parallel Branch"` and associates an event handler named `OnAddParallelBranch`. When the verb is clicked in the workflow designer, the event handler is called.  
-  
- [!code-cs[WF_Samples#73](~/add/codesnippet/csharp/wf_snippets/snippets.cs#73)]
- [!code-vb[WF_Samples#73](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#73)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

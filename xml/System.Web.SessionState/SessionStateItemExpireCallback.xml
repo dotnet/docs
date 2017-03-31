@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateItemExpireCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,18 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="id">The <see cref="System.Web.SessionState.HttpSessionState.SessionID%2A" /> parameter of the session that is ending.</param>
-    <param name="item">A <see cref="T:System.Web.SessionState.SessionStateStoreData" /> object containing the session-state data for the session that is ending.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Web.SessionState.SessionStateModule.End" /> event of a session-state module.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SessionStateItemExpireCallback delegate is used to enable a <xref:System.Web.SessionState.SessionStateStoreProviderBase> implementation to call the `Session_OnEnd` event from the Global.asax file.  
-  
- For more information, see the remarks provided for the <xref:System.Web.SessionState.SessionStateStoreProviderBase.SetItemExpireCallback%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <param name="id">To be added.</param>
+    <param name="item">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

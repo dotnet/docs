@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CommandBindingCollection" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,27 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Input.CommandBinding" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All objects which derive from <xref:System.Windows.UIElement> have a CommandBindingCollection named  
-  
- <xref:System.Windows.UIElement.CommandBindings%2A>.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Input.CommandBinding> and adds it to the CommandBindingCollection of a <xref:System.Windows.Window>.  
-  
- [!code-xml[commandingoverviewsnippets#CommandingOverviewWindowCommandBindingXAML](~/add/codesnippet/xaml/CommandingOverviewSnippets/Window1.xaml#commandingoverviewwindowcommandbindingxaml)]  
-  
- [!code-cs[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/add/codesnippet/csharp/CommandingOverviewSnippets/Window1.xaml.cs#commandingoverviewcustomcommandbindingcodebehind)]
- [!code-vb[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/add/codesnippet/visualbasic/commandingoverviewsnippets/window1.xaml.vb#commandingoverviewcustomcommandbindingcodebehind)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBindingCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,15 +41,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="commandBindings" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="commandBindings">The collection whose items are copied to the new <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBindingCollection" /> class using the items in the specified <see cref="T:System.Collections.IList" />.</summary>
+        <param name="commandBindings">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,24 +68,10 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="commandBinding">The binding to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.Input.CommandBinding" /> to this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <returns>0, if the operation was successful (note that this is not the index of the added item).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Windows.Input.CommandBinding> and adds it to the <xref:System.Windows.Input.CommandBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-xml[commandingoverviewsnippets#CommandingOverviewWindowCommandBindingXAML](~/add/codesnippet/xaml/CommandingOverviewSnippets/Window1.xaml#commandingoverviewwindowcommandbindingxaml)]  
-  
- [!code-cs[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/add/codesnippet/csharp/CommandingOverviewSnippets/Window1.xaml.cs#commandingoverviewcustomcommandbindingcodebehind)]
- [!code-vb[commandingoverviewsnippets#CommandingOverviewCustomCommandBindingCodeBehind](~/add/codesnippet/visualbasic/commandingoverviewsnippets/window1.xaml.vb#commandingoverviewcustomcommandbindingcodebehind)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="commandBinding" /> is **null**.</exception>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -118,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,10 +90,9 @@
         <Parameter Name="collection" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="collection">The collection of items to add to the end of this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <summary>Adds the items of the specified <see cref="T:System.Collections.ICollection" /> to the end of this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The collection to add is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -141,7 +102,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,7 +109,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,9 +129,9 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="commandBinding">The binding to locate in the collection.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Input.CommandBinding" /> is in this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <returns>**true** if the specified <see cref="T:System.Windows.Input.CommandBinding" /> is in the collection; otherwise, **false**.</returns>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,14 +152,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="commandBindings">The array into which the collection is copied.</param>
-        <param name="index">The index position in <c>commandBindings</c> at which copying starts.</param>
-        <summary>Copies all of the items in the <see cref="T:System.Windows.Input.CommandBindingCollection" /> to the specified one-dimensional array, starting at the specified index of the target array.</summary>
+        <param name="commandBindings">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="commandBindings" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -211,15 +165,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of <see cref="T:System.Windows.Input.CommandBinding" /> items in this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <value>The number of bindings in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,8 +190,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumerator that iterates through this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <returns>The enumerator for this collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,9 +211,9 @@
         <Parameter Name="value" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="value">The binding to locate in the collection.</param>
-        <summary>Searches for the first occurrence of the specified <see cref="T:System.Windows.Input.CommandBinding" /> in this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <returns>The index of the first occurrence of <paramref name="value" />, if found; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,12 +234,10 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>commandBinding</c></param>
-        <param name="commandBinding">The binding to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.Windows.Input.CommandBinding" /> into this <see cref="T:System.Windows.Input.CommandBindingCollection" /> at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="commandBinding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -299,23 +247,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this <see cref="T:System.Windows.Input.CommandBindingCollection" /> has a fixed size.</summary>
-        <value>**true** if the collection has a fixed size; otherwise, **false**.  The default value is **false**.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Input.CommandBindingCollection> is never a fixed size; therefore, IsFixedSize will always return **false**.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -325,24 +265,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this <see cref="T:System.Windows.Input.CommandBindingCollection" /> is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Input.CommandBindingCollection> is never read-only; therefore, IsReadOnly will always return `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -352,24 +283,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to this <see cref="T:System.Windows.Input.CommandBindingCollection" /> is synchronized (thread-safe).</summary>
-        <value>
-          <see langword="true" /> if the collection is thread-safe; otherwise, <see langword="false" />.  The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Input.CommandBindingCollection.SyncRoot%2A> can be used to synchronize access to the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -379,7 +301,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -389,9 +310,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The position in the collection.</param>
-        <summary>Gets or sets the <see cref="T:System.Windows.Input.CommandBinding" /> at the specified index.</summary>
-        <value>The binding at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,7 +323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,8 +332,8 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="commandBinding">The binding to remove.</param>
-        <summary>Removes the first occurrence of the specified <see cref="T:System.Windows.Input.CommandBinding" /> from this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,8 +353,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Windows.Input.CommandBinding" /> to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Windows.Input.CommandBinding" /> at the specified index of this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,15 +365,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,7 +383,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -476,17 +393,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.CopyTo%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -496,7 +406,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,17 +415,10 @@
         <Parameter Name="commandBinding" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="commandBinding">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Add%2A" />.</summary>
-        <returns>The position into which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -526,7 +428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,18 +437,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Media.TextEffectCollection" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Contains%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Input.CommandBindingCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -557,7 +450,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -567,17 +459,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.IndexOf%2A" />.</summary>
-        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -587,7 +472,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -598,17 +482,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <see cref="T:System.Object" />.</param>
-        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Insert%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -618,7 +495,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -628,17 +504,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Item%2A" />.</summary>
-        <value>The element at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -648,7 +517,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -658,16 +526,9 @@
         <Parameter Name="commandBinding" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="commandBinding">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Input.CommandBindingCollection" />.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.IList.Remove%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.CommandBindingCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

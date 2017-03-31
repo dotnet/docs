@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Controls how Unicode characters are output by the <see cref="System.Net.WebUtility.HtmlEncode%2A" /> methods.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information on how Unicode characters are supposed to be encoded in HTML, see [Using character escapes in markup and CSS](http://go.microsoft.com/fwlink/?LinkId=256607).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -34,7 +27,7 @@
         <ReturnType>System.Net.Configuration.UnicodeEncodingConformance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use automatic behavior. The Unicode encoding behavior is determined by current application's target Framework. For [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)] and later, the Unicode encoding behavior is strict.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Compat">
@@ -50,7 +43,7 @@
         <ReturnType>System.Net.Configuration.UnicodeEncodingConformance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use compatible behavior. Specifies that individual UTF-16 surrogate code points are output as-is when one of <see cref="System.Net.WebUtility.HtmlEncode%2A" /> methods is called. For example, given a string "\uD84C\uDFB4" (or "\U000233B4"), the output of <see cref="System.Net.WebUtility.HtmlEncode%2A" /> is "\uD84C\uDFB4" (the input is not encoded).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strict">
@@ -66,9 +59,7 @@
         <ReturnType>System.Net.Configuration.UnicodeEncodingConformance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use strict behavior. Specifies that individual UTF-16 surrogate code points are combined into a single code point when one of the <see cref="System.Net.WebUtility.HtmlEncode%2A" /> methods is called. For example, given the input string "\uD84C\uDFB4" (or "\U000233B4"), the output of the <see cref="System.Net.WebUtility.HtmlEncode%2A" /> methods is "&amp;#144308;".  
-  
- If the input is a malformed UTF-16 string (it contains unpaired surrogates, for example), the bad code points will be replaced with U+FFFD (Unicode replacement char) before being HTML-encoded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

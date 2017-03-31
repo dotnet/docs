@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextEffectTarget" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Result from using <see cref="T:System.Windows.Documents.TextEffectResolver" /> to set an effect on text. This consists of the <see cref="T:System.Windows.Media.TextEffect" /> created and the <see cref="T:System.Windows.DependencyObject" /> to which the <see cref="T:System.Windows.Media.TextEffect" /> should be set.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-cs[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/add/codesnippet/csharp/flowmiscsnippets_snip/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Disable">
@@ -36,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,21 +29,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disables the <see cref="T:System.Windows.Media.TextEffect" /> on the effect target.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-cs[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/add/codesnippet/csharp/flowmiscsnippets_snip/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -68,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> that the <see cref="T:System.Windows.Media.TextEffect" /> is targeting.</summary>
-        <value>The <see cref="T:System.Windows.DependencyObject" /> that the <see cref="T:System.Windows.Media.TextEffect" /> is targeting.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,26 +65,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enables the <see cref="T:System.Windows.Media.TextEffect" /> on the target text.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Windows.Media.TextEffect> is already enabled, the method will be a no-op (no operation).  
-  
-   
-  
-## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-cs[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/add/codesnippet/csharp/flowmiscsnippets_snip/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -124,15 +76,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that determines whether the text effect is enabled on the target element</summary>
-        <value>**true** if the <see cref="T:System.Windows.Media.TextEffect" />is enabled on the target; otherwise, **false**.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,15 +94,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Media.TextEffect" /> of the <see cref="T:System.Windows.Documents.TextEffectTarget" />.</summary>
-        <value>The <see cref="T:System.Windows.Media.TextEffect" /> of the <see cref="T:System.Windows.Documents.TextEffectTarget" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

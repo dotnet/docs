@@ -4,32 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ImpersonationOption" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the impersonation behavior for a service operation on a service instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ImpersonationOption enumeration to control impersonation in [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] applications.  
-  
- This setting interacts with a configuration property on <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement.ImpersonateCallerForAllOperations%2A> in the following table.  
-  
-   
-  
-## Examples  
- The following code example on the service shows how to have a method impersonate the caller by using the <xref:System.ServiceModel.OperationBehaviorAttribute> to set the impersonation level.  
-  
- [!code-vb[S_Basic_Service_Behaviors_Security_Impersonation#2](~/add/codesnippet/visualbasic/t-system.servicemodel.im_1.vb)]
- [!code-cs[S_Basic_Service_Behaviors_Security_Impersonation#2](~/add/codesnippet/csharp/t-system.servicemodel.im_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Allowed">
@@ -39,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ImpersonationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Impersonation is performed if credentials are available and <see cref="System.ServiceModel.Configuration.ServiceAuthorizationElement.ImpersonateCallerForAllOperations%2A" /> is equal to <see langword="true" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAllowed">
@@ -56,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ImpersonationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Impersonation is not performed. If <see cref="System.ServiceModel.Configuration.ServiceAuthorizationElement.ImpersonateCallerForAllOperations%2A" /> is equal to <see langword="true" />, a validation exception occurs at service startup time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -73,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ImpersonationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Impersonation is required.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

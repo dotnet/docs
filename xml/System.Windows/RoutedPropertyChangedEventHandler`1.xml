@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutedPropertyChangedEventHandler`1" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -21,32 +20,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="T">The type of the property value where changes in value are reported.</typeparam>
-    <param name="sender">The object where the event handler is attached.</param>
-    <param name="e">The event data. Specific event definitions will constrain <see cref="System.Windows.RoutedPropertyChangedEventArgs%601" /> to a type, with the type parameter of the constraint matching the type parameter constraint of a delegate implementation.</param>
-    <summary>Represents methods that will handle various routed events that track property value changes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Examples of events that use type-constrained delegates based on RoutedPropertyChangedEventHandler(T) include <xref:System.Windows.Controls.TreeView.SelectedItemChanged?displayProperty=fullName> and <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following example defines and attaches a handler method for the <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged> event.  
-  
- The handler is based on RoutedPropertyChangedEventHandler(T), and is defined in the second segment of the code example, with the type parameter of the generic constrained to <xref:System.Double>.  
-  
- [!code-cs[AutoGrid#2](~/add/codesnippet/csharp/autogrid/Window1.xaml.cs#2)]
- [!code-vb[AutoGrid#2](~/add/codesnippet/visualbasic/autogrid/window1.xaml.vb#2)]  
-  
- [!code-cs[AutoGrid#RoutedPropertyChangedEvent](~/add/codesnippet/csharp/autogrid/Window1.xaml.cs#routedpropertychangedevent)]
- [!code-vb[AutoGrid#RoutedPropertyChangedEvent](~/add/codesnippet/visualbasic/autogrid/window1.xaml.vb#routedpropertychangedevent)]  
-  
- This particular example does not use the routed-event characteristic of the event; the event is handled on the same element that it is raised on. This is not always the case. For a routed event, it is possible that the source of the event is a different object than the object where the handler is attached.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

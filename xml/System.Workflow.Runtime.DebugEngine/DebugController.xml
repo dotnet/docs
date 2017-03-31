@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.DebugController" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Relays workflow instance creation, execution and termination events to the debugger process. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- An instance of this class runs in the workflow host application. It is created by <xref:System.Workflow.Runtime.WorkflowRuntime> if workflow debugging is enabled.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AttachToConduit">
@@ -39,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,8 +36,8 @@
         <Parameter Name="url" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="url">A <see cref="T:System.Uri" /> of the remoting object running in the debugger process with which the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> communicates.</param>
-        <summary>Establishes the communication channel between the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object running in the workflow host application and the debugger process.</summary>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,16 +55,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Establishes a lifetime lease for the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object.</summary>
-        <returns>An <see cref="T:System.Object" /> that implements <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> and is used to control the lifetime policy for the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The return value is set to `null` unless this method is overridden in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

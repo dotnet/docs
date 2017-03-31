@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,17 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.AddIn.Contract.RemoteArgument" /> objects that are stored as key/value pairs.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each element in an IRemoteArgumentDictionaryContract is a key/value pair that is stored in a <xref:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry> object. Each key/value pair must have a unique key.  
-  
- The IRemoteArgumentDictionaryContract interface enables the contained keys and values to be enumerated, but it does not imply any particular sort order.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -33,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,11 +33,10 @@
         <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to use as the key of the element to add.</param>
-        <param name="value">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to use as the value of the element to add.</param>
-        <summary>Adds an element with a specified key and value to the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -58,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,7 +53,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all elements from the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,10 +73,9 @@
         <Parameter Name="key" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">The key to locate in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</param>
-        <summary>Indicates whether the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> contains an element with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,16 +93,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" /> that can be used to iterate through the elements in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" /> that can be used to iterate through the elements in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItem">
@@ -128,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,9 +114,9 @@
         <Parameter Name="key" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to return.</param>
-        <summary>Returns the value of the element with the specified key.</summary>
-        <returns>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> with the specified key.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,8 +134,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" /> that contains the keys of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> object.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" /> that contains the keys of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,8 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" /> that contains the values of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> object.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" /> that contains the values of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,10 +174,9 @@
         <Parameter Name="key" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the element to remove.</param>
-        <summary>Removes the element with the specified key from the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
-        <returns>
-          <see langword="true" /> if the element is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if <paramref name="key" /> is not found in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +187,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,9 +197,9 @@
         <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to replace.</param>
-        <param name="value">The new value of the specified element.</param>
-        <summary>Replaces the value of an element.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

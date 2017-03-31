@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ResourceScope" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies the scope of a sharable resource.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource is an object that holds state. Examples of resources include a file on disk, a message queue for a process, and a named <xref:System.Threading.Mutex>. Knowing an object is a resource does not indicate its appropriate use; the important property of a resource is the scope of the resource. The scope includes both the type and the visibility of the resource. The resource type specifies whether the resource is a machine-level resource, such as a file on disk, a process-wide resource, such as a block of non-shared memory, or an application domain-level resource, such as a lock on an instance of a non-marshal by reference object.  The visibility scopes are Assembly and Private, the default is `Public`, which is implicit if Private or Assembly are not indicated.  There is no enumeration value for `Public`.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AppDomain">
@@ -34,14 +31,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The state is shared by objects within an <see cref="T:System.AppDomain" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -51,14 +52,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The resource is visible at an assembly scope.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Library">
@@ -68,14 +73,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The state is shared by objects within a library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Machine">
@@ -85,14 +94,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The state is shared by objects within the machine.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -102,14 +115,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is no shared state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -119,14 +136,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The resource is visible to only the type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -136,14 +157,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The state is shared within a process.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

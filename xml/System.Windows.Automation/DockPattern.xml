@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents controls that expose their dock properties within a docking container.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
-  
- Controls are docked relative to each other based on their current z-order; the higher their z-order placement, the further they are placed from the specified edge of the docking container.  
-  
- See [Control Pattern Mapping for UI Automation Clients](../Topic/Control%20Pattern%20Mapping%20for%20UI%20Automation%20Clients.md) for examples of controls that can implement this control pattern.  
-  
- DockPattern does not support any properties of the docking container or any properties of controls that might be docked adjacent to the current control within the docking container.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -36,26 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPattern+DockPatternInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cached [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.DockPattern" />.</summary>
-        <value>A structure containing the cached [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.DockPattern.Current%2A> to get the current value of a property.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.DockPattern.DockPatternInformation>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -65,25 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPattern+DockPatternInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.DockPattern" />.</summary>
-        <value>A structure containing the current [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.DockPattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.DockPattern.DockPatternInformation>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DockPositionProperty">
@@ -93,36 +58,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.DockPatternIdentifiers>.  
-  
- This property can also be retrieved from the <xref:System.Windows.Automation.DockPattern.Current%2A> or <xref:System.Windows.Automation.DockPattern.Cached%2A> properties.  
-  
- The default value is <xref:System.Windows.Automation.DockPosition>.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.DockPosition> value is obtained representing the current dock position for a control that supports <xref:System.Windows.Automation.DockPattern>.  
-  
- [!code-cs[UIADockPattern_snip#100](~/add/codesnippet/csharp/UIADockPattern_snip/UIADockPattern_snippets.cs#100)]
- [!code-vb[UIADockPattern_snip#100](~/add/codesnippet/visualbasic/UIADockPattern_snip/UIADockPattern_snippets.vb#100)]  
-[!code-cs[UIADockPattern_snip#102](~/add/codesnippet/csharp/UIADockPattern_snip/UIADockPattern_snippets.cs#102)]
-[!code-vb[UIADockPattern_snip#102](~/add/codesnippet/visualbasic/UIADockPattern_snip/UIADockPattern_snippets.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -132,32 +75,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="T:System.Windows.Automation.DockPattern" /> control pattern.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.DockPatternIdentifiers>.  
-  
- The pattern [!INCLUDE[TLA#tla_id](~/add/includes/tlasharptla-id-md.md)] is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.DockPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-cs[UIADockPattern_snip#101](~/add/codesnippet/csharp/UIADockPattern_snip/UIADockPattern_snippets.cs#101)]
- [!code-vb[UIADockPattern_snip#101](~/add/codesnippet/visualbasic/UIADockPattern_snip/UIADockPattern_snippets.vb#101)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDockPosition">
@@ -167,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,27 +101,9 @@
         <Parameter Name="dockPosition" Type="System.Windows.Automation.DockPosition" />
       </Parameters>
       <Docs>
-        <param name="dockPosition">The dock position relative to the boundaries of the docking container and other elements within the container.</param>
-        <summary>Docks the <see cref="T:System.Windows.Automation.AutomationElement" /> at the requested <see cref="T:System.Windows.Automation.DockPosition" /> within a docking container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
-  
-   
-  
-## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> representing a control that supports the DockPattern control pattern has its `dockPosition` modified.  
-  
- [!code-cs[UIADockPattern_snip#101](~/add/codesnippet/csharp/UIADockPattern_snip/UIADockPattern_snippets.cs#101)]
- [!code-vb[UIADockPattern_snip#101](~/add/codesnippet/visualbasic/UIADockPattern_snip/UIADockPattern_snippets.vb#101)]  
-[!code-cs[UIADockPattern_snip#103](~/add/codesnippet/csharp/UIADockPattern_snip/UIADockPattern_snippets.cs#103)]
-[!code-vb[UIADockPattern_snip#103](~/add/codesnippet/visualbasic/UIADockPattern_snip/UIADockPattern_snippets.vb#103)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">When a control is not able to execute the requested dock style.</exception>
+        <param name="dockPosition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

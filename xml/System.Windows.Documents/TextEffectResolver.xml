@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextEffectResolver" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A helper class that sets text effects in a text container</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-cs[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/add/codesnippet/csharp/flowmiscsnippets_snip/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Resolve">
@@ -36,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,30 +33,12 @@
         <Parameter Name="effect" Type="System.Windows.Media.TextEffect" />
       </Parameters>
       <Docs>
-        <param name="startPosition">The starting text pointer</param>
-        <param name="endPosition">The end text pointer</param>
-        <param name="effect">The effect to apply on the text</param>
-        <summary>Resolves text effect on a text range to a list of text effect targets.</summary>
-        <returns>Collection of <see cref="T:System.Windows.Documents.TextEffectTarget" /> objects corresponding to the text range.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For each continuous block of text, this method creates a text effect targeting the scoping (parent) element.  
-  
-   
-  
-## Examples  
- The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
-  
- [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/add/codesnippet/xaml/flowmiscsnippets_snip/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
-  
- Below is the code behind for the example.  
-  
- [!code-cs[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/add/codesnippet/csharp/flowmiscsnippets_snip/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
-  
- ]]></format>
-        </remarks>
+        <param name="startPosition">To be added.</param>
+        <param name="endPosition">To be added.</param>
+        <param name="effect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

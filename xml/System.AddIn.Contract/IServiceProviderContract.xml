@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IServiceProviderContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,15 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines a mechanism for retrieving a service contract from a component.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IServiceProviderContract interface defines a contract that enables a component to obtain a custom service that is defined by another component. A component that implements IServiceProviderContract is known as a service provider. Service providers implement the <xref:System.AddIn.Contract.IServiceProviderContract.QueryService%2A> method to return an <xref:System.AddIn.Contract.IContract> that implements a service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="QueryService">
@@ -31,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,18 +33,11 @@
         <Parameter Name="serviceContractIdentifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceIdentifier">The name of the service that is being requested.</param>
-        <param name="serviceContractIdentifier">The service contract that is being requested.</param>
-        <summary>Returns a service contract that is implemented by this <see cref="T:System.AddIn.Contract.IServiceProviderContract" />.</summary>
-        <returns>An <see cref="T:System.AddIn.Contract.IContract" /> that represents a service contract that a client is requesting from the <see cref="T:System.AddIn.Contract.IServiceProviderContract" />; <see langword="null" /> if the <see cref="T:System.AddIn.Contract.IServiceProviderContract" /> does not implement the requested contract.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The formats of the strings that identify services and service contracts are defined by the <xref:System.AddIn.Contract.IServiceProviderContract> implementation. It is recommended that <xref:System.AddIn.Contract.IServiceProviderContract> implementations identify a service contract by the <xref:System.Type.AssemblyQualifiedName%2A> property of the type that implements the service contract.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceIdentifier">To be added.</param>
+        <param name="serviceContractIdentifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

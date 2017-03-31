@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripRenderEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="System.Windows.Forms.ToolStripRenderer.OnRenderImageMargin%2A" />, <see cref="System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A" />, and <see cref="System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground%2A" /> methods.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToolStripRenderEventArgs class also provides data for the <xref:System.Windows.Forms.ToolStripRenderer.DrawImageMargin%2A>, <xref:System.Windows.Forms.ToolStripRenderer.DrawToolStripBorder%2A>, and <xref:System.Windows.Forms.ToolStripRenderer.DrawToolStripBackground%2A> methods.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A> method to draw a custom border around a <xref:System.Windows.Forms.ToolStrip> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/visualbasic/t-system.windows.forms.t_78_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/csharp/t-system.windows.forms.t_78_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,9 +29,9 @@
         <Parameter Name="toolStrip" Type="System.Windows.Forms.ToolStrip" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to use for painting.</param>
-        <param name="toolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> to paint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.ToolStrip" /> and using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
+        <param name="g">To be added.</param>
+        <param name="toolStrip">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -69,11 +51,11 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to use for painting.</param>
-        <param name="toolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> to paint.</param>
-        <param name="affectedBounds">The <see cref="T:System.Drawing.Rectangle" /> representing the bounds of the area to be painted.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> that the background of the <see cref="T:System.Windows.Forms.ToolStrip" /> is painted with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.ToolStrip" />, using the specified <see cref="T:System.Drawing.Graphics" /> to paint the specified bounds with the specified <see cref="T:System.Drawing.Color" />.</summary>
+        <param name="g">To be added.</param>
+        <param name="toolStrip">To be added.</param>
+        <param name="affectedBounds">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,26 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> representing the bounds of the area to be painted.</summary>
-        <value>The <see cref="T:System.Drawing.Rectangle" /> representing the bounds of the area to be painted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A> method to draw a custom border around a <xref:System.Windows.Forms.ToolStrip> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/visualbasic/p-system.windows.forms.t_275_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/csharp/p-system.windows.forms.t_275_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -113,28 +84,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Color" /> that the background of the <see cref="T:System.Windows.Forms.ToolStrip" /> is painted with.</summary>
-        <value>The <see cref="T:System.Drawing.Color" /> that the background of the <see cref="T:System.Windows.Forms.ToolStrip" /> is painted with.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#584](~/add/codesnippet/csharp/p-system.windows.forms.t_90_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#584](~/add/codesnippet/visualbasic/p-system.windows.forms.t_90_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectedArea">
@@ -144,33 +102,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> representing the overlap area between a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> and its <see cref="System.Windows.Forms.ToolStripDropDown.OwnerItem%2A" />.</summary>
-        <value>The <see cref="T:System.Drawing.Rectangle" /> representing the overlap area between a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> and its <see cref="System.Windows.Forms.ToolStripDropDown.OwnerItem%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Windows.Forms.ToolStrip> is not a <xref:System.Windows.Forms.ToolStripDropDown> or the <xref:System.Windows.Forms.ToolStripDropDown.OwnerItem%2A?displayProperty=fullName> is `null`, the ConnectedArea property returns an empty <xref:System.Drawing.Rectangle>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#584](~/add/codesnippet/csharp/p-system.windows.forms.t_134_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#584](~/add/codesnippet/visualbasic/p-system.windows.forms.t_134_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -180,26 +120,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to paint.</summary>
-        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A> method to draw a custom border around a <xref:System.Windows.Forms.ToolStrip> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/visualbasic/p-system.windows.forms.t_138_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#12](~/add/codesnippet/csharp/p-system.windows.forms.t_138_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolStrip">
@@ -209,26 +138,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStrip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStrip" /> to be painted.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ToolStrip" /> to be painted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground%2A> method to paint a gradient in the background of a <xref:System.Windows.Forms.ToolStrip> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#13](~/add/codesnippet/visualbasic/p-system.windows.forms.t_29_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#13](~/add/codesnippet/csharp/p-system.windows.forms.t_29_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

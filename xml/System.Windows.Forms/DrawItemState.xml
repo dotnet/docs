@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,24 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the state of an item that is being drawn.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
-  
- [!code-vb[MeasureItemEventArgs#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_34_1.vb)]
- [!code-cpp[MeasureItemEventArgs#1](~/add/codesnippet/cpp/t-system.windows.forms.d_34_1.cpp)]
- [!code-cs[MeasureItemEventArgs#1](~/add/codesnippet/csharp/t-system.windows.forms.d_34_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Checked">
@@ -43,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is checked. Only menu controls use this value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComboBoxEdit">
@@ -60,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is the editing portion of a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -77,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is in its default visual state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -94,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is unavailable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -111,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item has focus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Grayed">
@@ -128,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is grayed. Only menu controls use this value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HotLight">
@@ -145,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is being hot-tracked, that is, the item is highlighted as the mouse pointer passes over it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -162,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is inactive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAccelerator">
@@ -179,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item displays without a keyboard accelerator.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFocusRect">
@@ -196,14 +170,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item displays without the visual cue that indicates it has focus.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -213,14 +186,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item currently has no state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -230,14 +202,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The item is selected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

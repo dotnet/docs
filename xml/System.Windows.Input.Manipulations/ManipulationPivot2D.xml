@@ -11,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents pivot information used by a manipulation processor for single-manipulator rotations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a ManipulationPivot2D object is assigned to the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Pivot%2A> property of a <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D> object, it affects how the manipulation processor calculates rotational changes to an element when the element is being manipulated by a single manipulator. If more than one manipulator is being applied to the element during manipulation, the Pivot property is ignored.  
-  
- In a single-manipulator scenario, an element can rotate as it is being dragged. The <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.X%2A> and <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.Y%2A> properties of the ManipulationPivot2D object determine what position the element rotates around, and the <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.Radius%2A> property is used by the manipulation processor to calculate the amount of rotational change.  
-  
- For instance, if the single manipulator is near the outer edge of the pivot point, the rotational change to the element as it is being dragged will be fairly large (depending upon the size of the element). If the manipulator is close to the center of the pivot point, very little (if any) rotation will occur.  
-  
- Typically, the <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.X%2A> and <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.Y%2A> properties represent the center of the element that is being manipulated, and the <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.Radius%2A> property represents the distance from the center of the element to its farthest edge.  
-  
- As the element moves, the <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.X%2A> and <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.Y%2A> properties of the ManipulationPivot2D object need to be updated so that rotation will continue to occur around the proper point.  
-  
-   
-  
-## Examples  
- The following code example shows how the <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.X%2A> and <xref:System.Windows.Input.Manipulations.ManipulationPivot2D.Y%2A> properties for a pivot point are updated to match the center of the element that is being manipulated.  
-  
- [!code-cs[ManipulationAPI#_ManipulationItem_ManipulationProcessor2D](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_manipulationprocessor2d)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Manipulations.ManipulationPivot2D" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,18 +43,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the distance from the pivot point to the edge of the manipulatable region.</summary>
-        <value>The distance from the pivot point to the edge of the manipulatable region.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Radius property must be a positive, finite value that is greater than or equal to 1.0, or `NaN`. `NaN` indicates that there is no limit. The default value is `NaN`.  
-  
- In practice, the pivot point is typically the center of the object that is being manipulated, and the Radius value is the distance from the pivot point to the farthest edge of the object. Any pivoting that occurs within the Radius distance is dampened. See <xref:System.Windows.Input.Manipulations.ManipulationPivot2D> for more information.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -92,16 +61,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X position of the pivot.</summary>
-        <value>The X position of the pivot.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The X property must be a finite value or `NaN`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -117,16 +79,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y position of the pivot.</summary>
-        <value>The Y position of the pivot.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Y property must be a finite value or `NaN`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

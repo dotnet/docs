@@ -16,39 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides methods and properties that manage axes in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class encapsulates all the functionality for axes in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, and is exposed by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX2%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY2%2A> properties of <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> objects.  
-  
- For all charts—except bar, stacked bar, pie and doughnut—the primary and secondary axes are as follows:  
-  
-|Axis Type|Description|  
-|---------------|-----------------|  
-|Primary X-Axis|Bottom horizontal axis.|  
-|Secondary X-Axis|Top horizontal axis.|  
-|Primary Y-Axis|Left vertical axis.|  
-|Secondary Y-Axis|Right vertical axis.|  
-  
- Bar and stacked-bar charts have their axes rotated 90 degrees clockwise, so the primary X axis for these two chart types is the left-vertical axis.  
-  
- **Note** There can be only one set of axes—two vertical and two horizontal—for each <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object.  
-  
- The Axis class also contains several methods that can be used to convert axis values to absolute pixel coordinates, which are useful for 2D custom drawing, or to relative coordinates, which are useful for 3D custom drawing. Absolute and relative coordinates can also be converted to axis values.  
-  
- The following are the most important axis elements exposed by the Axis class:  
-  
-|Axis Element|Description|  
-|------------------|-----------------|  
-|Axis Labels|The labels of an axis, and their associated properties.|  
-|Grid Lines|The major and minor grid lines of an axis.|  
-|Tick Marks|The major and minor tick marks of an axis.|  
-|Strip Lines|Strip lines.|  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +49,9 @@
         <Parameter Name="axisTypeName" Type="System.Windows.Forms.DataVisualization.Charting.AxisName" />
       </Parameters>
       <Docs>
-        <param name="chartArea">The chart area.</param>
-        <param name="axisTypeName">The axis name.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> class with the specified <paramref name="chartArea" /> and <paramref name="axisTypeName" /> values.</summary>
+        <param name="chartArea">To be added.</param>
+        <param name="axisTypeName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +79,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the arrow style of a 2D axis; this style is not applied to 3D chart areas.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle" /> enumeration value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +111,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the axis, which can be either X, Y, X2 or Y2.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisName" /> enumeration value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,28 +143,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location at which an axis is crossed by its associated axis.</summary>
-        <value>A <see langword="double" /> value that represents where an axis is crossed by its associated axis. The default value is <see cref="T:System.Double" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property for a primary axis will determine where the other primary axis crosses it, and similarly setting it for a secondary axis will determine where the other secondary axis crosses it. For example, setting the Crossing property of the primary X-axis determines where the primary Y-axis will cross it.  
-  
- Four modes can be used for the Crossing property of an axis:  
-  
--   "Auto", which means that the crossing value will be set to the minimum or maximum value for the relevant axis. If the axis is primary, the value will be its minimum value, if the axis is secondary it will its maximum value. To set to "Auto" at run time, use a <xref:System.Double> value.  
-  
--   "Minimum", which means the crossing value of the axis will be its minimum value. To set to "Minimum" at run-time use a <xref:System.Double> value.  
-  
--   "Maximum", which means the crossing value of the axis will be its maximum value. To set to "Maximum" at run-time use a <xref:System.Double> value.  
-  
--   A specified `double` value that is between the minimum and maximum values for the relevant axis. If the crossing value is less then minimum value, or the crossing value is greater than maximum value, an exception will be thrown.  
-  
- When a non-default crossing value is used, the labels and tick marks of the axis may or may not follow the crossing axis, depending on the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsMarksNextToAxis%2A> property setting. By default they will move with the crossing axis.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLabels">
@@ -222,20 +172,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" /> object used to store <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> objects.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to add or remove custom labels for an axis. Using <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects enables the developer to arbitrarily set the text for axis labels.  
-  
- Only custom labels can be used in the second row of labels. Also, if a custom label is used in the first label row, then all labels in this first row must be custom labels.  
-  
- Labels can also be set from the data points, or generated automatically from the axis scale.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -254,9 +193,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases unmanaged and, optionally, managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,23 +222,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisEnabled</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether an axis is enabled.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisEnabled" /> enumeration value. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisEnabled" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an axis is not enabled, the axis, along with its attributes (tick marks, strip lines, labels, and so forth), will not be displayed.  
-  
- If an axis is enabled, the axis, along with all its attributes (tick marks, strip lines, labels, and so forth), will be displayed regardless of whether or not it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>.  
-  
- If a value of <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled> is used, an axis may or may not be displayed, depending on whether it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>. The axes that are used to plot data are determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Series.YAxisType%2A> property settings.  
-  
-> [!NOTE]
->  If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the Enabled property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>, but the axis is not being used to plot data; the grid line of an adjacent axis will be drawn instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPosition">
@@ -319,9 +243,9 @@
         <Parameter Name="axisValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="axisValue">The axis value.</param>
-        <summary>Converts an axis value to a relative position (0-100%). If an axis is logarithmic, the value is converted to a linear scale.</summary>
-        <returns>A <see langword="double" /> value that represents the relative position (0-100%).</returns>
+        <param name="axisValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,18 +279,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of interlaced strip lines.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> object that represents the color of interlaced strip lines.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to specify the color of interlaced strip lines that are displayed when you invoke the InterlacedColor property.  
-  
- To specify the border color of the interlaced strip lines, you must display the strips using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.StripLines%2A> collection property instead of the InterlacedColor property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Interval">
@@ -396,24 +311,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval of an axis.</summary>
-        <value>A <see langword="double" /> value that represents the interval of an axis. The default value is "Auto", which is represented by a value of zero (0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines how often the labels and major tick marks and grid lines associated with the axis are drawn if the `Interval` property value of a label, tick mark, or grid line is set to <xref:System.Double>, which signifies that it is not set.  
-  
- The `Interval` property of a major tick mark, grid line or label of the axis has priority over the Interval property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
-  
- A value of zero represents an "Auto" value. This Interval property cannot be set to <xref:System.Double.NaN>. If you assign this property a value of <xref:System.Double.NaN>, a value of zero will be used instead.  
-  
- **Note** The minor grid lines and tick marks of an axis never use this property for their interval.  
-  
- The interval type of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalAutoMode">
@@ -434,16 +334,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that determines if a fixed number of intervals is used on the axis, or if the number of intervals depends on the axis size.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode" /> enumeration value. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property is set to "Auto", the IntervalAutoMode property determines how many intervals should be calculated. If your chart is resized or redrawn often, you can set the IntervalAutoMode property to <xref:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode>, in which case the chart will dynamically calculate axis intervals. This is especially useful in situations where the chart intervals are displayed differently, depending on their data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalOffset">
@@ -473,24 +366,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval offset of an axis.</summary>
-        <value>A <see langword="double" /> value that represents the interval offset of an axis. The default value is "Auto", which is represented by a value of zero (0).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IntervalOffset property determines the interval offset of an axis. This value is used as the interval offset of an axis' labels and the major tick marks and grid lines associated with the axis if the `IntervalOffset` property value of the labels, tick marks, or grid lines is not set, which is represented by a value of <xref:System.Double>.  
-  
- The IntervalOffset property of the tick marks, labels and grid lines of an axis has priority over the IntervalOffset property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
-  
- A value of zero represents an "Auto" value. Also, <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> cannot be set to not set (that is, a <xref:System.Double.NaN>). If you assign <xref:System.Double.NaN>, a value of "Auto"—that is, a value of zero—will be used instead.  
-  
- **Note** The minor grid lines and tick marks of an axis never use this property for their interval offset.  
-  
- The interval offset type of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalOffsetType">
@@ -517,23 +395,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval offset type of an axis.</summary>
-        <value>The interval offset type of an axis. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the interval offset type of an axis, and is used for the interval offset type of an axis' labels, and major tick marks or grid lines if the axis element's own `IntervalOffsetType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
-  
- Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> being used (only the axis elements such as major grid lines, etc. can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>).  
-  
-> [!NOTE]
->  The minor grid lines and tick marks of an axis never use this property for their interval offset type.  
-  
- The interval of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalType">
@@ -560,25 +424,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval type of an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> that represents the interval type of an axis. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the interval type of an axis, and is used for the interval type of an axis' labels, major tick marks, or major grid lines if the axis element's own `IntervalType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
-  
- Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> being used. Only the axis elements, such as grid lines, can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
-  
- **Note** The minor grid lines and tick marks of an axis never use this property for their interval type.  
-  
- The interval of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property.  
-  
-> [!IMPORTANT]
->  If the axis interval type is represented by a time such as hours, minutes, and so forth, then in order for zooming to function correctly, the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> must be set to a time value as well. For example, if ChartArea1.AxisX.IntervalType is set to hours, then ChartArea1.CursorX.IntervalType could be set to minutes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInterlaced">
@@ -605,9 +453,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that determines if interlaced strip lines are displayed for an axis.</summary>
-        <value>
-          <see langword="True" /> if interlaced strip lines are displayed for an axis; otherwise, <see langword="False" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,9 +485,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that determines whether axis labels are automatically fitted.</summary>
-        <value>
-          <see langword="True" /> if axis labels are automatically fitted; otherwise, <see langword="False" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,9 +514,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag which indicates whether the axis is logarithmic. Zeros or negative data values are not allowed on logarithmic charts.</summary>
-        <value>
-          <see langword="True" /> if the axis is logarithmic; otherwise, <see langword="False" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -698,9 +543,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that determines whether to add a margin to the axis.</summary>
-        <value>
-          <see langword="True" /> if a space is added between the first or last data point and the border of chart area.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,9 +572,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that determines whether tick marks and axis labels move with an axis if the crossing point of an axis changes.</summary>
-        <value>
-          <see langword="True" /> if tick marks and axis labels move with an axis when the crossing point of an axis changes; otherwise, <see langword="False" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -758,17 +601,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag which indicates whether the axis is reversed.</summary>
-        <value>
-          <see langword="True" /> if the axis is reversed; otherwise, <see langword="False" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If set to reversed, the values on the axis are in reversed sort order and the direction of values on the axis is flipped.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsStartedFromZero">
@@ -795,9 +630,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag which indicates whether the minimum value of the axis will be automatically set to zero if all data point values are positive. If there are negative data point values, the minimum value of the data points will be used.</summary>
-        <value>
-          <see langword="True" /> if the minimum value of the axis is automatically set to zero when all data point values are positive; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -828,16 +662,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum font size that can be used by the label auto-fitting algorithm.</summary>
-        <value>An <see langword="integer" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The font size cannot be less than 5.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelAutoFitMinFontSize">
@@ -867,8 +694,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum font size that can be used by the label auto-fitting algorithm.</summary>
-        <value>An <see langword="integer" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -899,16 +726,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the allowable label changes that can be made to enable the label to be fit along an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles" /> enumeration value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property must be set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -938,20 +758,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelStyle" /> properties of an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelStyle" /> object, which defines the axis label style.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to specify the style, formatting, and so forth, of axis labels.  
-  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property is `true`, the font size, font angle and the use of offset labels are determined automatically. If you set any one of the LabelStyle.Font.Size, <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.Angle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.IsStaggered%2A> properties, the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property will be set to `false`.  
-  
- Note that if a format that consists of a date without a time is used for labels, and the <xref:System.DateTime> data point values that are used specify times, the times will affect the positions of the data points, even though they are not displayed due to the label formatting.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineColor">
@@ -984,18 +793,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line color of an axis.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> object that represents the line color used to draw the axis. The default is <see cref="System.Drawing.Color.Black%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the LineColor property to specify the line color of an axis.  
-  
- **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineDashStyle">
@@ -1022,18 +822,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line style of an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LineDashStyle property determines the line style used for an axis. The line can be solid, dotted, and so forth.  
-  
- **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
@@ -1060,18 +851,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line width of an axis, in pixels.</summary>
-        <value>An <see langword="integer" /> value that represents the width of an axis line. The default value is one (1) pixel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LineWidth property gets or sets the width of an axis line, in pixels. If the width is set to zero (0), the line will not be displayed.  
-  
- **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LogarithmBase">
@@ -1098,18 +880,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value for the logarithm base for the logarithmic axis.</summary>
-        <value>A <see langword="double" /> value. The default value is base 10.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property only has an effect when the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLogarithmic%2A> property is set to `true`.  
-  
- Note that this property is only applicable to value axes, which are used to plot data. Setting this property for a categorical axis will result in an exception being thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorGrid">
@@ -1139,18 +912,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Grid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to set the major grid line properties for an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to get or set the major grid properties of an axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Major grid lines are always drawn in conjunction with a data point. That is, they will occur at the same point along an axis as a data point, for categorical axis tick marks. For value axes, major grid lines by default are drawn wherever labels occur.  
-  
- You can use this property to change major grid line frequency, color, and so forth.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorTickMark">
@@ -1180,18 +944,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TickMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used to set the major tick mark properties of an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used to set the properties of a major tick mark of an axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Major tick marks are always drawn in conjunction with a data point. Categorical axis tick marks will occur at the same point along an axis as a data point. For value axes, major tick marks are drawn by default wherever labels occur.  
-  
- You can use this property to change the major tick mark properties such as frequency, color, or size.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -1221,16 +976,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum value of an axis.</summary>
-        <value>A <see langword="double" /> value that represents the maximum value of an axis. The default value is <see cref="T:System.Double" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To automatically round the maximum and minimum axis values call the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues%2A> method. The Maximum value must be greater than the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Minimum%2A> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumAutoSize">
@@ -1251,8 +999,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</summary>
-        <value>A <see langword="float " />value that represents the maximum size of the axis.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1283,18 +1031,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum value of an axis.</summary>
-        <value>A <see langword="double" /> value that represents the minimum value of an axis. The default value is <see cref="T:System.Double" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that if you set this value explicitly, the X-values of data elements must be taken into account. If all data points have X-values of zero, the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control will assume the first data point occurs at zero. Also, if the Minimum value is explicitly set, the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsStartedFromZero%2A> property will be ignored. The Minimum value must be less than the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Maximum%2A> value.  
-  
- To automatically round the maximum and minimum axis values. call the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorGrid">
@@ -1324,18 +1063,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Grid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to specify the minor grid lines attributes of an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to get or set the attributes of the minor grid lines of an axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Minor grid lines are drawn in between the major grid lines.  
-  
- Use this property to change the attributes of a minor grid line, such as frequency, color, and so forth.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorTickMark">
@@ -1365,18 +1095,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TickMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used to set the minor tick mark properties of an axis.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used for the minor tick mark properties of an axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Minor tick marks should be drawn between major tick marks, where labels usually occur.  
-  
- Use this property to change the minor tick mark frequency, color, and so forth.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1406,8 +1127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the axis.</summary>
-        <value>A <see langword="string" /> value that represents the text name of the axis.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1427,9 +1148,9 @@
         <Parameter Name="position" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="position">The pixel position.</param>
-        <summary>Converts an absolute pixel position along an axis to an axis value. This method only works in paint events.</summary>
-        <returns>A <see langword="double" /> value that represents the axis value.</returns>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1449,9 +1170,9 @@
         <Parameter Name="position" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="position">The relative position (0-100%).</param>
-        <summary>Converts a relative coordinate along an axis to an axis value. This method only works in paint events.</summary>
-        <returns>A <see langword="double" /> value that represents the axis value.</returns>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1469,15 +1190,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Automatically rounds axis values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call the RoundAxisValues method to round the values of an axis. Note that the interval used for the axis will not be changed when this method is called. This method is only supported for the X and X2 axes. The Y and Y2 axes values are rounded by default.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleBreakStyle">
@@ -1504,8 +1218,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the axis scale break style.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle" /> object, which represents the scale break style of the chart axis.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1533,8 +1247,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisScaleView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the view of an axis.</summary>
-        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleView" /> object, which represents the scale view of an axis.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1562,18 +1276,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisScrollBar</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an axis scrollbar.</summary>
-        <value>An <see cref="System.Windows.Forms.DataVisualization.Charting.AxisScrollbar" /> object, which represents the scrollbar of an axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to manipulate the scrollbar of an axis.  
-  
- For further details, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollbar> class documentation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StripLines">
@@ -1600,18 +1305,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.StripLinesCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" /> collection object.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" /> collection object, which stores all <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLine" /> objects for an axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Strip lines are used to draw rectangular strips across a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object, and are always drawn across the entire \<A href="">area.  
-  
- These strip lines are not related to the grid lines.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextOrientation">
@@ -1638,8 +1334,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the orientation of the text in the axis title.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TextOrientation" /> enumeration value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1667,20 +1363,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the title of the axis.</summary>
-        <value>A <see langword="string" /> value that represents the title of the axis.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gets or sets the title of the axis.  
-  
- You can set the font properties of the title using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.TitleFont%2A> property.  
-  
- You can set the color of the title using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.TitleForeColor%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleAlignment">
@@ -1707,20 +1392,9 @@
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of an axis title.</summary>
-        <value>A <see cref="T:System.Drawing.StringAlignment" /> enumeration value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Possible alignment values are <xref:System.Drawing.StringAlignment>, <xref:System.Drawing.StringAlignment>, and <xref:System.Drawing.StringAlignment>. A value of <xref:System.Drawing.StringAlignment> equates to an alignment to the top or the right, depending on the orientation of the axis or strip line. In the same manner, a value of <xref:System.Drawing.StringAlignment> equates to an alignment to the bottom or the right.  
-  
- If you want more control over the positioning of an axis title, you must perform custom drawing using the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> or <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> event.  
-  
- You can further align and position the titles of <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects by using their <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.TextLineAlignment%2A> and TitleAngle properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleFont">
@@ -1747,18 +1421,9 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the title font properties of an axis.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> object used for the font properties of a title.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gets or sets title font properties such as face or size.  
-  
- To set font properties at run time, a new <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Font%2A> object must be created. Any attempt to change the properties of the current <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Font%2A> object at run time will result in a compilation error.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleForeColor">
@@ -1791,18 +1456,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text color of the axis title.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> structure. The default color is <see cref="System.Drawing.Color.Black%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gets or sets the text color of an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object title.  
-  
- You can use any valid ARGB (alpha, red, green, blue) color.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1826,8 +1482,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the tooltip used for the axis.</summary>
-        <value>A <see langword="string" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1847,9 +1503,9 @@
         <Parameter Name="axisValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="axisValue">The axis value.</param>
-        <summary>Converts an axis value to an absolute coordinate along an axis. Measured in pixels. This method only works in paint events.</summary>
-        <returns>A <see langword="double" /> value that represents the pixel position.</returns>
+        <param name="axisValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1869,9 +1525,9 @@
         <Parameter Name="axisValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="axisValue">The axis value.</param>
-        <summary>Converts an axis value to its relative position (0-100%). If an axis has a logarithmic scale, the value is converted to a linear scale. This method only works in paint events.</summary>
-        <returns>A <see langword="double" /> value that represents the relative position (0-100%).</returns>
+        <param name="axisValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

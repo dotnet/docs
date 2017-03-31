@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowLayoutPanel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,30 +35,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a panel that dynamically lays out its contents horizontally or vertically.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FlowLayoutPanel control arranges its contents in a horizontal or vertical flow direction. Its contents can be wrapped from one row to the next, or from one column to the next. Alternatively, its contents can be clipped instead of wrapped.  
-  
- You can specify the flow direction by setting the value of the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property. The FlowLayoutPanel control correctly reverses its flow direction in right-to-left (RTL) layouts. You can also specify whether the contents of the FlowLayoutPanel control are wrapped or clipped by setting the value of the <xref:System.Windows.Forms.FlowLayoutPanel.WrapContents%2A> property.  
-  
- Any Windows Forms control, including other instances of FlowLayoutPanel, can be a child of the FlowLayoutPanel control. With this capability, you can construct sophisticated layouts that adapt to your form's dimensions at run time.  
-  
- Docking and anchoring behaviors of child controls differ from the behaviors in other container controls. Both docking and anchoring are relative to the largest control in the flow direction. For more information, see [How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control](../Topic/How%20to:%20Anchor%20and%20Dock%20Child%20Controls%20in%20a%20FlowLayoutPanel%20Control.md).  
-  
-   
-  
-## Examples  
- The following example shows how to set the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> and <xref:System.Windows.Forms.FlowLayoutPanel.WrapContents%2A> properties on a FlowLayoutPanel control. Paste the code into the Form1 source file. If your project contains a file named Form1.Designer.cs or Form1.Designer.vb, remove that file from the project. You may need to click the **Show All Files** button in Solution Explorer to see the designer file.  
-  
- [!code-cs[System.Windows.Forms.FlowLayoutPanel#1](~/add/codesnippet/csharp/t-system.windows.forms.f_5_1.cs)]
- [!code-cpp[System.Windows.Forms.FlowLayoutPanel#1](~/add/codesnippet/cpp/t-system.windows.forms.f_5_1.cpp)]
- [!code-vb[System.Windows.Forms.FlowLayoutPanel#1](~/add/codesnippet/visualbasic/t-system.windows.forms.f_5_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,20 +46,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FlowLayoutPanel" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> and <xref:System.Windows.Forms.FlowLayoutPanel.WrapContents%2A> properties to their default values: <xref:System.Windows.Forms.FlowDirection> and `true`, respectively.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -92,7 +61,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -107,25 +75,9 @@
         <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the flow direction of the <see cref="T:System.Windows.Forms.FlowLayoutPanel" /> control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.FlowDirection" /> values indicating the direction of consecutive placement of controls in the panel. The default is <see cref="T:System.Windows.Forms.FlowDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FlowDirection property is the default property for the <xref:System.Windows.Forms.FlowLayoutPanel> class.  
-  
-   
-  
-## Examples  
- The following code example sets the value of FlowDirection depending on the selected <xref:System.Windows.Forms.RadioButton>.  
-  
- [!code-cs[System.Windows.Forms.FlowLayoutPanel#4](~/add/codesnippet/csharp/p-system.windows.forms.f_45_1.cs)]
- [!code-cpp[System.Windows.Forms.FlowLayoutPanel#4](~/add/codesnippet/cpp/p-system.windows.forms.f_45_1.cpp)]
- [!code-vb[System.Windows.Forms.FlowLayoutPanel#4](~/add/codesnippet/visualbasic/p-system.windows.forms.f_45_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFlowBreak">
@@ -135,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -153,10 +104,9 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The child control.</param>
-        <summary>Returns a value that represents the flow-break setting of the <see cref="T:System.Windows.Forms.FlowLayoutPanel" /> control.</summary>
-        <returns>
-          <see langword="true" /> if the flow break is set; otherwise, <see langword="false" />.</returns>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,15 +117,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Layout.LayoutEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a cached instance of the panel's layout engine.</summary>
-        <value>The <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> for the panel's contents.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -202,9 +150,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="control">The child control.</param>
-        <param name="value">The flow-break value to set.</param>
-        <summary>Sets the value that represents the flow-break setting of the <see cref="T:System.Windows.Forms.FlowLayoutPanel" /> control.</summary>
+        <param name="control">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,18 +172,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to receive the extender properties.</param>
-        <summary>For a description of this member, see <see cref="System.ComponentModel.IExtenderProvider.CanExtend%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if this object can provide extender properties to the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.FlowLayoutPanel> instance is cast to an <xref:System.ComponentModel.IExtenderProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapContents">
@@ -246,7 +185,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -261,28 +199,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.FlowLayoutPanel" /> control should wrap its contents or let the contents be clipped.</summary>
-        <value>
-          <see langword="true" /> if the contents should be wrapped; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the area of the panel is too small to contain all its child controls, at least one child control will be clipped regardless of the wrapping mode.  
-  
- Subsequent resizing of the panel will reapply the layout to the contained controls.  
-  
-   
-  
-## Examples  
- The following code example sets the value of the WrapContents property depending on the <xref:System.Windows.Forms.CheckBox.Checked%2A> value of a <xref:System.Windows.Forms.CheckBox> control.  
-  
- [!code-cs[System.Windows.Forms.FlowLayoutPanel#3](~/add/codesnippet/csharp/p-system.windows.forms.f_50_1.cs)]
- [!code-cpp[System.Windows.Forms.FlowLayoutPanel#3](~/add/codesnippet/cpp/p-system.windows.forms.f_50_1.cpp)]
- [!code-vb[System.Windows.Forms.FlowLayoutPanel#3](~/add/codesnippet/visualbasic/p-system.windows.forms.f_50_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

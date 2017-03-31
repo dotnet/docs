@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Orientation" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the different orientations that a control or layout can have.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to use an Orientation enumeration value to make a vertical <xref:System.Windows.Controls.Primitives.ScrollBar>.  
-  
- [!code-xml[ScrollBarSnips#OrientatonEnum](~/add/codesnippet/xaml/ScrollBarSnips/Window1.xaml#orientatonenum)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Horizontal">
@@ -36,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Control or layout should be horizontally oriented.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -53,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Control or layout should be vertically oriented.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

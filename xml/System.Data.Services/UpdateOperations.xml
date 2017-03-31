@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.UpdateOperations" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An enumeration used to specify the update operations that were performed on an entity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used on interceptors to determine what kind of changes were performed on entities before they were saved.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity was added.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Change">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity was modified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The entity was deleted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No operations were performed on the resource.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

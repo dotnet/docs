@@ -8,20 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Represents an expression editor instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a detailed description of an expression editor instance, see <xref:System.Activities.Presentation.View.IExpressionEditorService>.  
-  
-   
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptsReturn">
@@ -37,9 +25,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the expression editor instance accepts the RETURN key.</summary>
-        <value>
-          <see langword="true" /> if the expression editor accepts the RETURN key; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +43,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the expression editor instance accepts the TAB key.</summary>
-        <value>
-          <see langword="true" /> if the expression editor accepts the TAB key; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can complete the string being typed by the user.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can be closed.</summary>
-        <returns>
-          <see langword="true" /> if the expression editor instance can be closed; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression can be cut.</summary>
-        <returns>
-          <see langword="true" /> if the expression can be cut; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +119,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the filter level can be decreased when using Intellisense filtering.</summary>
-        <returns>
-          <see langword="true" /> if the filter level can be decreased; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +138,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve global IntelliSense on the expression.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the filter level can be increased when using Intellisense filtering.</summary>
-        <returns>
-          <see langword="true" /> if the filter level can be increased; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,8 +176,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve parameter information on the expression.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +195,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression can be pasted.</summary>
-        <returns>
-          <see langword="true" /> if the expression can be pasted; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,8 +214,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve type information to be shown in an IntelliSense quick info tool tip.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,9 +233,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the system can redo the operation.</summary>
-        <returns>
-          <see langword="true" /> if the system can redo the operation; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +252,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the system can undo the operation.</summary>
-        <returns>
-          <see langword="true" /> if the system can undo the operation; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +271,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the selection in the editor instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +289,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes and purges the editor items. This will close the specific expression editor instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,7 +306,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the expression editor instance is closing.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,9 +324,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the expression editor instance can provide a list of completions for the partial word typed by the user. For example, member, argument, and method names can be shown to the user in an attempt to help them complete the word they are typing.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,9 +343,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copies the active expression.</summary>
-        <returns>
-          <see langword="true" /> if the copy is successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,9 +362,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cuts the active expression.</summary>
-        <returns>
-          <see langword="true" /> if the cut is successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +381,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Decreases the filter level to show all items in the Intellisense filter list and returns a value that indicates whether this operation was successful.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,7 +400,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets focus on the editor instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,8 +418,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the text used to generate an expression.</summary>
-        <returns>Returns a <see cref="T:System.String" /> that contains the text used to generate an expression.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,9 +437,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves global IntelliSense on the expression in the expression editor and returns a value that indicates whether this operation was successful.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,7 +455,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the expression editor instance has aggregate focus.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,17 +472,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the instance has aggregate focus.</summary>
-        <value>
-          <see langword="true" /> if the editor instance has aggregate focus; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The instance has aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> or any other control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> has focus.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibility">
@@ -524,8 +490,8 @@
         <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the horizontal scrollbar is visible.</summary>
-        <value>Returns <see cref="T:System.Windows.Controls.ScrollBarVisibility" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,8 +508,8 @@
         <ReturnType>System.Windows.Controls.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Controls.Control" /> instance that can be used to display in the <see langword="ExpressionTextBox" />.</summary>
-        <value>Returns <see cref="T:System.Windows.Controls.Control" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,9 +527,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Increases the filter level to show common items in the Intellisense filter list and returns a value that indicates whether this operation was successful.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,15 +545,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an event that is raised when the expression editor instance loses aggregate focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The instance loses aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> and every control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> loose focus.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLines">
@@ -604,16 +562,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control when growing to fit.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> that containing the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxHeight%2A> is set, it will override `MaxLines`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinLines">
@@ -629,16 +580,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control.</summary>
-        <value>Returns an<see cref="T:System.Int32" /> that contains the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinHeight%2A> is set, then it will override MinLines.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterInfo">
@@ -655,9 +599,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves parameter information on the expression in the expression editor and returns a value that indicates whether this operation was successful.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -675,9 +618,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Pastes the active expression.</summary>
-        <returns>
-          <see langword="true" /> if the paste is successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,9 +637,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether type information to be shown in an IntelliSense quick info tool tip.</summary>
-        <returns>
-          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,9 +656,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reapplies the last operation that was undone in the editor, that is, reverse the effects of the undo operation.</summary>
-        <returns>
-          <see langword="true" /> if the redo is successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -734,8 +674,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the text.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -752,7 +692,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an event that is raised when the text in an expression editor instance is changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,9 +710,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Undoes the last operation in the editor.</summary>
-        <returns>
-          <see langword="true" /> if the undo is successful; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -789,8 +728,8 @@
         <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the vertical scrollbar is visible.</summary>
-        <value>Returns <see cref="T:System.Windows.Controls.ScrollBarVisibility" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

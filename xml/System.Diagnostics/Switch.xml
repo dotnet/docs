@@ -3,72 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Switch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Switch" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides an abstract base class to create new debugging and tracing switches.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A switch provides an efficient mechanism for controlling tracing and debugging output at run time using external settings. The Switch class implements default behavior for switches, allowing you to change the switch level at run time.  
-  
- This class is the base class for the <xref:System.Diagnostics.BooleanSwitch>, <xref:System.Diagnostics.SourceSwitch> and the <xref:System.Diagnostics.TraceSwitch> classes. These switches meet most debugging and tracing needs. For more information about trace switches, see [Trace Switches](../Topic/Trace%20Switches.md).  
-  
- You must enable tracing or debugging to use a switch. The following syntax is compiler specific. If you use compilers other than C# or Visual Basic, refer to the documentation for your compiler.  
-  
--   To enable debugging in C#, add the `/d:DEBUG` flag to the compiler command line when you compile your code, or you can add `#define DEBUG` to the top of your file. In Visual Basic, add the `/d:DEBUG=True` flag to the compiler command line.  
-  
--   To enable tracing using in C#, add the `/d:TRACE` flag to the compiler command line when you compile your code, or add `#define TRACE` to the top of your file. In Visual Basic, add the `/d:TRACE=True` flag to the compiler command line.  
-  
- To set the level of your switch, edit the configuration file that corresponds to the name of your application. Within this file, you can add a switch and set its value, remove a switch, or clear all the switches previously set by the application. The configuration file should be formatted like the following example:  
-  
-```  
-<configuration>  
-  <system.diagnostics>  
-    <switches>  
-      <add name="mySwitch" value="true" />  
-    </switches>  
-  </system.diagnostics>  
-</configuration>  
-```  
-  
- This example configuration section defines a <xref:System.Diagnostics.BooleanSwitch> with the <xref:System.Diagnostics.Switch.DisplayName%2A> property set to `mySwitch` and the <xref:System.Diagnostics.BooleanSwitch.Enabled%2A> value set to `true`. Within your application, you can use the configured switch value by creating a <xref:System.Diagnostics.BooleanSwitch> with the same name, as shown in the following code example.  
-  
- [!code-cpp[Classic Switch Example#4](~/add/codesnippet/cpp/t-system.diagnostics.swi_0_1.cpp)]
- [!code-cs[Classic Switch Example#4](~/add/codesnippet/csharp/t-system.diagnostics.swi_0_1.cs)]  
-  
-   
-  
-## Examples  
- The following example shows how to define a new Switch class with four levels of tracing that can be used to trace a call stack. You can use the switch to instrument your application to log each time the method is entered or exited.  
-  
- The first example creates the enumeration used to set the level of the switch.  
-  
- [!code-cpp[Classic Switch Example#1](~/add/codesnippet/cpp/t-system.diagnostics.swi_0_2.cpp)]
- [!code-cs[Classic Switch Example#1](~/add/codesnippet/csharp/t-system.diagnostics.swi_0_2.cs)]
- [!code-vb[Classic Switch Example#1](~/add/codesnippet/visualbasic/t-system.diagnostics.swi_0_2.vb)]  
-  
- The following example creates the new switch. The code implements a `Level` property to set the value of the new switch. `Level` calls the protected property <xref:System.Diagnostics.Switch.SwitchSetting%2A> that assigns the value to the new switch. This example also implements two assessor properties to get the assigned value of the switch.  
-  
- [!code-cpp[Classic Switch Example#2](~/add/codesnippet/cpp/t-system.diagnostics.swi_0_3.cpp)]
- [!code-cs[Classic Switch Example#2](~/add/codesnippet/csharp/t-system.diagnostics.swi_0_3.cs)]
- [!code-vb[Classic Switch Example#2](~/add/codesnippet/visualbasic/t-system.diagnostics.swi_0_3.vb)]  
-  
- The following example creates a new switch in `Main`. It creates a new switch and assigns it a value. Then, depending on the switch settings, it outputs debugging messages for entering and leaving the method.  
-  
- [!code-cpp[Classic Switch Example#3](~/add/codesnippet/cpp/t-system.diagnostics.swi_0_4.cpp)]
- [!code-cs[Classic Switch Example#3](~/add/codesnippet/csharp/t-system.diagnostics.swi_0_4.cs)]
- [!code-vb[Classic Switch Example#3](~/add/codesnippet/visualbasic/t-system.diagnostics.swi_0_4.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,41 +30,27 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">The name of the switch.</param>
-        <param name="description">The description for the switch.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Switch" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create a new <xref:System.Diagnostics.Switch> object, the value of the `displayName` parameter is used to find initial switch settings. The default value is an empty string ("").  
-  
- Within the XML configuration file, you can add a switch and set its value, remove a switch, or clear all the switches previously set by the application. Dynamic changes to the configuration file are not detected while the application is executing. You must stop and restart an application before changes to the configuration file take effect. The configuration file should be formatted like the following example:  
-  
-```  
-<configuration>  
-  <system.diagnostics>  
-    <switches>  
-      <add name="mySwitch" value="10" />  
-      <add name="myNewSwitch" value="20" />  
-      <remove name="mySwitch" />  
-      <clear/>  
-    </switches>  
-  </system.diagnostics>  
-</configuration>  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="displayName">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,9 +59,17 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
@@ -130,18 +77,11 @@
         <Parameter Name="defaultSwitchValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">The name of the switch.</param>
-        <param name="description">The description of the switch.</param>
-        <param name="defaultSwitchValue">The default value for the switch.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Switch" /> class, specifying the display name, description, and default value for the switch.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `displayName` parameter is used to set the value of the <xref:System.Diagnostics.Switch.DisplayName%2A> property, and the `description` parameter is use to set the value of the <xref:System.Diagnostics.Switch.Description%2A> property. The `defaultSwitchValue` parameter is the value for the switch if the <xref:System.Diagnostics.Switch.Value%2A> property is not set by code or by the configuration file attribute. See the <xref:System.Diagnostics.Switch.%23ctor%28System.String%2CSystem.String%29> overload for additional information.  
-  
- ]]></format>
-        </remarks>
+        <param name="displayName">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="defaultSwitchValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -151,8 +91,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -163,24 +107,9 @@
         <ReturnType>System.Collections.Specialized.StringDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the custom switch attributes defined in the application configuration file.</summary>
-        <value>A <see cref="T:System.Collections.Specialized.StringDictionary" /> containing the case-insensitive custom attributes for the trace switch.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Attributes property identifies the custom attributes referenced in the application's configuration file. Unreferenced custom attributes are not enumerated. Classes that inherit from the <xref:System.Diagnostics.Switch> class can add custom attributes by overriding the <xref:System.Diagnostics.Switch.GetSupportedAttributes%2A> method and returning a string array of custom attribute names.  
-  
-   
-  
-## Examples  
- The following code sample shows how to display the unrecognized attributes for a custom switch.  
-  
- [!code-cs[System.Diagnostics.TraceSource#15](~/add/codesnippet/csharp/p-system.diagnostics.swi_1_1.cs)]
- [!code-vb[System.Diagnostics.TraceSource#15](~/add/codesnippet/visualbasic/p-system.diagnostics.swi_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -189,24 +118,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a description of the switch.</summary>
-        <value>The description of the switch. The default value is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property should indicate the function of the switch; for example, "Enables tracing for a directory watcher component." The value is set by the `descriptor` parameter in the <xref:System.Diagnostics.Switch.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -215,32 +145,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a name used to identify the switch.</summary>
-        <value>The name used to identify the switch. The default value is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you create a new <xref:System.Diagnostics.Switch> object, the DisplayName finds initial switch settings. For more information, see the <xref:System.Diagnostics.Switch.%23ctor%2A> constructor and [How to: Create, Initialize and Configure Trace Switches](../Topic/How%20to:%20Create,%20Initialize%20and%20Configure%20Trace%20Switches.md) in the Visual Studio documentation.  
-  
-   
-  
-## Examples  
- The following code example displays the display name for the switch in use by a trace source.  This code example is part of a larger example that can be found in the <xref:System.Diagnostics.TraceSource> class summary.  
-  
- [!code-cs[System.Diagnostics.TraceSource#10](~/add/codesnippet/csharp/p-system.diagnostics.swi_0_1.cs)]
- [!code-vb[System.Diagnostics.TraceSource#10](~/add/codesnippet/visualbasic/p-system.diagnostics.swi_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSupportedAttributes">
@@ -250,32 +173,21 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the custom attributes supported by the switch.</summary>
-        <returns>A string array that contains the names of the custom attributes supported by the switch, or <see langword="null" /> if there no custom attributes are supported.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation for the GetSupportedAttributes method returns `null`. If a switch is added in a configuration file and custom attributes are specified that are not included in the string array returned by GetSupportedAttributes, a <xref:System.Configuration.ConfigurationException> is thrown when the switch is loaded.  
-  
-   
-  
-## Examples  
- The following code sample shows an override of the GetSupportedAttributes method for a custom switch.  
-  
- [!code-cs[System.Diagnostics.TraceSource#34](~/add/codesnippet/csharp/m-system.diagnostics.swi_1_1.cs)]
- [!code-vb[System.Diagnostics.TraceSource#34](~/add/codesnippet/visualbasic/m-system.diagnostics.swi_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSwitchSettingChanged">
@@ -284,24 +196,25 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.OnSwitchSettingChanged" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invoked when the <see cref="System.Diagnostics.Switch.SwitchSetting%2A" /> property is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnSwitchSettingChanged is invoked the first time a switch reads the <xref:System.Diagnostics.Switch.SwitchSetting%2A> value from the configuration file and is invoked again each time the switch's value is changed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -310,24 +223,25 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.OnValueChanged" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invoked when the <see cref="System.Diagnostics.Switch.Value%2A" /> property is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation parses the new value of the <xref:System.Diagnostics.Switch.Value%2A> property to an integer value which it uses to set the <xref:System.Diagnostics.Switch.SwitchSetting%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SwitchSetting">
@@ -336,16 +250,24 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.SwitchSetting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current setting for this switch.</summary>
-        <value>The current setting for this switch. The default is zero.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,33 +277,25 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the switch.</summary>
-        <value>A string representing the value of the switch.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Diagnostics.Switch.OnValueChanged%2A> method is called when the value of the Value property is changed. The <xref:System.Diagnostics.Switch.OnValueChanged%2A> method parses the value of this property and converts it to an integer value, which is then used to set the <xref:System.Diagnostics.Switch.SwitchSetting%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The value is <see langword="null" />.  
-  
- -or-  
-  
- The value does not consist solely of an optional negative sign followed by a sequence of digits ranging from 0 to 9.  
-  
- -or-  
-  
- The value represents a number less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

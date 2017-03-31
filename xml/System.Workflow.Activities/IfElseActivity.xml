@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,31 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Conditionally runs one of two or more activities of type <see cref="T:System.Workflow.Activities.IfElseBranchActivity" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- This activity provides semantics similar to two `If-ElseIf` statements.  
-  
- IfElseActivity contains an ordered set of <xref:System.Workflow.Activities.IfElseBranchActivity> classes and runs the first branch when the condition evaluates to `true`. The final branch is not required to have a condition, in which case it always evaluates to `true`.  
-  
- A IfElseActivity can complete without having run any child activity, if no conditions are satisfied.  
-  
-   
-  
-## Examples  
- The following code example shows how to create a new instance of the IfElseActivity class and add two <xref:System.Workflow.Activities.IfElseBranchActivity> classes to it. This code example is part of the SequentialWorkflowWithParameters SDK Sample from the SequentialWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Sequential Workflow With Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
-  
- [!code-cs[wf_samples#194](~/add/codesnippet/csharp/wf_snippets/snippets19.cs#194)]
- [!code-vb[wf_samples#194](~/add/codesnippet/visualbasic/wf_snippets/snippets19.vb#194)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,23 +43,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseActivity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.IfElseActivity> class and add two <xref:System.Workflow.Activities.IfElseBranchActivity> classes to it. This code example is part of the SequentialWorkflowWithParameters SDK sample from the SequentialWorkflow.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Sequential Workflow With Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
-  
- [!code-cs[wf_samples#296](~/add/codesnippet/csharp/wf_snippets/snippets24.cs#296)]
- [!code-vb[wf_samples#296](~/add/codesnippet/visualbasic/wf_snippets/snippets24.vb#296)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,15 +58,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The user-defined name of the activity.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseActivity" /> class using the name of the activity.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,9 +85,9 @@
         <Parameter Name="activities" Type="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="activities">A collection of activities to add to the new branch.</param>
-        <summary>Adds a new branch to the <see cref="T:System.Workflow.Activities.IfElseActivity" /> using a collection of new activities to add to the new branch.</summary>
-        <returns>The updated <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> with the new branches.</returns>
+        <param name="activities">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,10 +108,10 @@
         <Parameter Name="branchCondition" Type="System.Workflow.ComponentModel.ActivityCondition" />
       </Parameters>
       <Docs>
-        <param name="activities">A collection of activities to add to the new branch.</param>
-        <param name="branchCondition">An <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that determines whether the branch should be run.</param>
-        <summary>Adds a new branch to the <see cref="T:System.Workflow.Activities.IfElseActivity" /> using a collection of new activities to add to the new branch.</summary>
-        <returns>The updated <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> with the new branches.</returns>
+        <param name="activities">To be added.</param>
+        <param name="branchCondition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +122,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,9 +176,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The object that raised the event.</param>
-        <param name="e">The previously typed event arguments.</param>
-        <summary>Defines the processing procedure when a change the activity execution status occurs.</summary>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

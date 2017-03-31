@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBar" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,32 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows status bar control. Although <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> replaces and adds functionality to the StatusBar control of previous versions, StatusBar is retained for both backward compatibility and future use if you choose.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, a StatusBar control consists of <xref:System.Windows.Forms.StatusBarPanel> objects, each of which displays text and/or an icon. You can also provide owner-drawn panels to provide custom panels such as a progress bar or a series of images that displays the state of your application. A StatusBar control typically displays information about an object being viewed on a <xref:System.Windows.Forms.Form>, the object's components, or contextual information that relates to that object's operation within your application.  
-  
- The StatusBar control provides properties that enable you to customize the appearance of the control. If the StatusBar is displayed on a form that can be resized, you can use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to display a sizing grip in the lower-right corner of the form to indicate to users that the form can be resized. The <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property enables you to display panels within your StatusBar or to display only the value of the <xref:System.Windows.Forms.Control.Text%2A> property of the control.  
-  
- The default StatusBar has no panels. To add panels to a StatusBar you can use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class that is accessible through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of the control. You can also use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> object provided through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to remove panels from the control and access a specific <xref:System.Windows.Forms.StatusBarPanel> to manipulate the panel.  
-  
- If you want to determine when a <xref:System.Windows.Forms.StatusBarPanel> object within a StatusBar control is clicked, you can create an event handler for the <xref:System.Windows.Forms.StatusBar.PanelClick> event. To perform owner-draw operations on a panel, you can create an event handler for the <xref:System.Windows.Forms.StatusBar.DrawItem> event. The event data passed to the event handler provides information on the panel to draw and a <xref:System.Drawing.Graphics> object to use to perform drawing tasks.  
-  
- When you create an instance of StatusBar, the read/write properties are set to initial values. For a list of these values, see the <xref:System.Windows.Forms.StatusBar.%23ctor%2A> constructor.  
-  
-   
-  
-## Examples  
- The following code example creates a StatusBar control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the StatusBar. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/cpp/t-system.windows.forms.s_14_1.cpp)]
- [!code-cs[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/csharp/t-system.windows.forms.s_14_1.cs)]
- [!code-vb[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.s_14_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,41 +39,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBar" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default <xref:System.Windows.Forms.StatusBar> has no panels.  
-  
- When you create an instance of <xref:System.Windows.Forms.StatusBar>, the following read/write properties are set to initial values.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Windows.Forms.Control.Dock%2A>|<xref:System.Windows.Forms.DockStyle>|  
-|<xref:System.Windows.Forms.StatusBar.ShowPanels%2A>|`false`|  
-|<xref:System.Windows.Forms.StatusBar.SizingGrip%2A>|`true`|  
-  
- You can change the value for any of these properties through a separate call to the property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to construct a <xref:System.Windows.Forms.StatusBar> and use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
-  
- To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/csharp/m-system.windows.forms.s_0_1.cs)]
- [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/visualbasic/m-system.windows.forms.s_0_1.vb)]
- [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/cpp/m-system.windows.forms.s_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -108,7 +54,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -123,16 +68,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the <see cref="T:System.Windows.Forms.StatusBar" />.</summary>
-        <value>The <see cref="T:System.Drawing.Color" /> that is the background color of the control</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is an ambient property and will always return a non-null value. This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColorChanged">
@@ -142,7 +80,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -157,7 +94,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.StatusBar.BackColor%2A" /> property changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +105,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,16 +119,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image for the <see cref="T:System.Windows.Forms.StatusBar" />.</summary>
-        <value>An <see cref="T:System.Drawing.Image" /> that is the background image for the <see cref="T:System.Windows.Forms.StatusBar" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the background image for a <xref:System.Windows.Forms.StatusBar> has no effect on the appearance of the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -202,7 +131,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -217,15 +145,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.StatusBar.BackgroundImage%2A" /> property is changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md). This event is not relevant for this class. This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -235,7 +156,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -250,16 +170,9 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the layout of the background image of the <see cref="T:System.Windows.Forms.StatusBar" />.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImageLayout" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the BackgroundImageLayout has no effect on the appearance of the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -269,7 +182,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -284,15 +196,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.StatusBar.BackgroundImageLayout%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md). This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -302,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,7 +214,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Overrides <see cref="System.Windows.Forms.Control.CreateHandle%2A" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,15 +225,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.CreateParams" /> used to create the handle for this control.</summary>
-        <value>The <see cref="T:System.Windows.Forms.CreateParams" /> used to create the handle for this control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,23 +243,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default Input Method Editor (IME) mode supported by this control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -366,15 +261,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,7 +279,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,19 +288,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.StatusBar" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.StatusBar> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -417,7 +300,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -432,8 +314,8 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the docking behavior of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see langword="Bottom" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,7 +326,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -456,17 +337,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker, however this property has no effect on the <see cref="T:System.Windows.Forms.StatusBar" /> control</summary>
-        <value>
-          <see langword="true" /> if the control has a secondary buffer; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property has no effect on the <xref:System.Windows.Forms.StatusBar> control, therefore it is not shown in the designer or by IntelliSense.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItem">
@@ -476,33 +349,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarDrawItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a visual aspect of an owner-drawn status bar control changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle>.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a custom background and the current date. This example requires that you have connected the DrawItem event of a <xref:System.Windows.Forms.StatusBar> control to the event handler defined in the example.  
-  
- [!code-cs[StatusBar.DrawItem#1](~/add/codesnippet/csharp/e-system.windows.forms.s_5_1.cs)]
- [!code-cpp[StatusBar.DrawItem#1](~/add/codesnippet/cpp/e-system.windows.forms.s_5_1.cpp)]
- [!code-vb[StatusBar.DrawItem#1](~/add/codesnippet/visualbasic/e-system.windows.forms.s_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -512,7 +366,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -524,8 +377,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font the <see cref="T:System.Windows.Forms.StatusBar" /> control will use to display information.</summary>
-        <value>The <see cref="T:System.Drawing.Font" /> of the text. The default is the font of the container, unless you override it.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,7 +389,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -551,8 +403,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the forecolor for the control.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the forecolor of the control. The default is <see langword="Empty" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,7 +415,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -578,7 +429,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.StatusBar.ForeColor%2A" /> property changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,7 +440,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -604,8 +454,8 @@
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Input Method Editor (IME) mode supported by this control.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,7 +466,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -631,7 +480,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.StatusBar.ImeMode%2A" /> property changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -642,7 +491,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -652,27 +500,9 @@
         <Parameter Name="sbdievent" Type="System.Windows.Forms.StatusBarDrawItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sbdievent">A <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the OnDrawItem event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnDrawItem method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a custom background and the current date. This example requires that you have connected the <xref:System.Windows.Forms.StatusBar.DrawItem> event of a <xref:System.Windows.Forms.StatusBar> control to the event handler defined in the example.  
-  
- [!code-cs[StatusBar.DrawItem#1](~/add/codesnippet/csharp/1877c4fe-ba5c-4870-adb5-_1.cs)]
- [!code-cpp[StatusBar.DrawItem#1](~/add/codesnippet/cpp/1877c4fe-ba5c-4870-adb5-_1.cpp)]
- [!code-vb[StatusBar.DrawItem#1](~/add/codesnippet/visualbasic/1877c4fe-ba5c-4870-adb5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="sbdievent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -682,7 +512,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -692,19 +521,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-> [!NOTE]
->  When overriding OnHandleCreated in a derived class, be sure to call the base class's <xref:System.Windows.Forms.Control.OnHandleCreated%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -714,7 +533,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,16 +542,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -743,7 +554,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -753,16 +563,9 @@
         <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="levent">A <see langword="LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see langword="Layout" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="levent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -772,7 +575,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -782,16 +584,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the OnMouseDown event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPanelClick">
@@ -801,7 +596,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -811,18 +605,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.StatusBarPanelClickEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" /> that contains the event data.</param>
-        <summary>Raises the OnPanelClick event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnPanelClick method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -832,7 +617,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -842,16 +626,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the OnResize event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -861,7 +638,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -876,7 +652,7 @@
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.StatusBar" /> control is redrawn.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -887,35 +663,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.Windows.Forms.StatusBarPanel" /> object on a <see cref="T:System.Windows.Forms.StatusBar" /> control is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this event to perform tasks when a panel within a <xref:System.Windows.Forms.StatusBar> control is clicked. The data provided to the event through the <xref:System.Windows.Forms.StatusBarPanelClickEventArgs> passed as a parameter to the event handler enables you to determine the <xref:System.Windows.Forms.StatusBarPanel> that was clicked by the user in order to perform tasks on the selected panel.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the PanelClick event.  
-  
- To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/csharp/e-system.windows.forms.s_2_1.cs)]
- [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/visualbasic/e-system.windows.forms.s_2_1.vb)]
- [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/cpp/e-system.windows.forms.s_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Panels">
@@ -925,7 +680,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -943,25 +697,9 @@
         <ReturnType>System.Windows.Forms.StatusBar+StatusBarPanelCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="T:System.Windows.Forms.StatusBar" /> panels contained within the control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> containing the <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.StatusBar> control can display a number of panels to provide information to the user of your application. For example, a panel could display the current time or the progress of a file download. Each panel displayed by the <xref:System.Windows.Forms.StatusBar> control is an instance of the <xref:System.Windows.Forms.StatusBarPanel> class. The Panels property enables you to obtain a reference to the collection of <xref:System.Windows.Forms.StatusBarPanel> objects that are currently stored in the <xref:System.Windows.Forms.StatusBar> control. With this reference, you can add panels, remove panels, access a specific panel within the collection, and obtain a count of the panels in the <xref:System.Windows.Forms.StatusBar> control. For more information on the tasks that can be performed with the panel collection, see the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class reference topics.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel> object, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the Panels property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_163_1.cpp)]
- [!code-cs[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_163_1.cs)]
- [!code-vb[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_163_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPanels">
@@ -971,7 +709,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -983,26 +720,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether any panels that have been added to the control are displayed.</summary>
-        <value>
-          <see langword="true" /> if panels are displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, the <xref:System.Windows.Forms.StatusBar> control displays the value of its <xref:System.Windows.Forms.Control.Text%2A> property without any panels. When `ShowPanels` is set to `true`, any <xref:System.Windows.Forms.StatusBarPanel> objects specified in the <xref:System.Windows.Forms.StatusBar> control are displayed. No panels are initially created when you create an instance of the <xref:System.Windows.Forms.StatusBar> class. You can add panels to a <xref:System.Windows.Forms.StatusBar> control by using the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class. This collection class can be accessed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of <xref:System.Windows.Forms.StatusBar>.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the ShowPanels property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example requires that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
-  
- [!code-cpp[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_107_1.cpp)]
- [!code-cs[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_107_1.cs)]
- [!code-vb[StatusBar and StatusBarPanel Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_107_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizingGrip">
@@ -1012,7 +732,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1024,28 +743,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a sizing grip is displayed in the lower-right corner of the control.</summary>
-        <value>
-          <see langword="true" /> if a sizing grip is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to display a sizing grip to provide an indication to the user when a form is resizable. If the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property of your <xref:System.Windows.Forms.Form> is set to a border style that is not resizable, such as<xref:System.Windows.Forms.FormBorderStyle> or <xref:System.Windows.Forms.FormBorderStyle>, you should set the SizingGrip property to `false` to prevent the user from thinking that the form can be resized.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the SizingGrip, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
-  
- To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
-  
- [!code-cs[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/csharp/p-system.windows.forms.s_166_1.cs)]
- [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_166_1.vb)]
- [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/add/codesnippet/cpp/p-system.windows.forms.s_166_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1055,7 +755,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1067,9 +766,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user will be able to tab to the <see cref="T:System.Windows.Forms.StatusBar" />.</summary>
-        <value>
-          <see langword="true" /> if the tab key moves focus to the <see cref="T:System.Windows.Forms.StatusBar" />; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1080,7 +778,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1092,28 +789,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text associated with the <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
-        <value>The text associated with the <see cref="T:System.Windows.Forms.StatusBar" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property represents the text displayed by the control.  
-  
-> [!CAUTION]
->  The <xref:System.Windows.Forms.StatusBar> control displays only the first 127 characters of a string.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Text property. To run the example, paste the following code in a form. Call the `InitializeSimpleStatusBar` method in the form's constructor or `Load` method.  
-  
- [!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/add/codesnippet/cpp/p-system.windows.forms.s_92_1.cpp)]
- [!code-cs[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/add/codesnippet/csharp/p-system.windows.forms.s_92_1.cs)]
- [!code-vb[System.Windows.Forms.StatusBarDrawItemEventHandler#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_92_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1123,7 +801,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1131,8 +808,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation for this control.</summary>
-        <returns>String</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1143,7 +820,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1153,8 +829,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

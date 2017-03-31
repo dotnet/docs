@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ReflectionPermissionFlag" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,37 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the permitted use of the <see cref="N:System.Reflection" /> and <see cref="N:System.Reflection.Emit" /> namespaces.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Security.Permissions.ReflectionPermission> and <xref:System.Security.Permissions.ReflectionPermissionAttribute> classes. If no <xref:System.Security.Permissions.ReflectionPermission> is granted, reflection is allowed on all types and members, but invocation operations are allowed only on visible types and members. For more information, see [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).  
-  
-> [!CAUTION]
->  Because <xref:System.Security.Permissions.ReflectionPermission> can provide access to private class members, we recommend that you grant <xref:System.Security.Permissions.ReflectionPermission> to Internet code only with the RestrictedMemberAccess flag, and not with any other flags.  
-  
- The RestrictedMemberAccess flag is introduced in the [!INCLUDE[net_v20SP1_short](~/add/includes/net-v20sp1-short-md.md)]. To use this flag, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-> [!IMPORTANT]
->  AllFlags does not include the RestrictedMemberAccess flag. To get a mask that includes all flags in this enumeration, you must use the combination of AllFlags with RestrictedMemberAccess.  
-  
- Starting with the [!INCLUDE[net_v20SP1_short](~/add/includes/net-v20sp1-short-md.md)], the ReflectionEmit flag is no longer required to emit code, unless debug symbols are emitted. To use this feature, your application should target the [!INCLUDE[net_v35_short](~/add/includes/net-v35-short-md.md)] or later.  
-  
- Starting with the [!INCLUDE[dnprdnlong](~/add/includes/dnprdnlong-md.md)], the TypeInformation flag is no longer required to reflect on nonpublic types and members; the flag has been marked obsolete.  
-  
-   
-  
-## Examples  
- The following example shows how to use the ReflectionPermissionFlag enumeration to initialize a new instance of the <xref:System.Security.Permissions.ReflectionPermission> class that represents the right to perform restricted member access. This example is part of a larger example that is provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
-  
- For an example that shows how to use the RestrictedMemberAccess flag with Internet code, see [Walkthrough: Emitting Code in Partial Trust Scenarios](../Topic/Walkthrough:%20Emitting%20Code%20in%20Partial%20Trust%20Scenarios.md).  
-  
- [!code-vb[System.Security.Permissions.ReflectionPermission#8](~/add/codesnippet/visualbasic/t-system.security.permis_18_1.vb)]
- [!code-cs[System.Security.Permissions.ReflectionPermission#8](~/add/codesnippet/csharp/t-system.security.permis_18_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllFlags">
@@ -59,20 +30,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This permission has been deprecated. Use PermissionState.Unrestricted to get full access.")</AttributeName>
+          <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.ReflectionPermissionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see langword="TypeInformation" /> , <see langword="MemberAccess" />, and <see langword="ReflectionEmit" /> are set. AllFlags does not include RestrictedMemberAccess.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberAccess">
@@ -82,14 +52,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.ReflectionPermissionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invocation operations on all members are allowed, regardless of grant set. If this flag is not set, invocation operations are allowed only on visible members.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -99,14 +69,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.ReflectionPermissionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enumeration of types and members is allowed. Invocation operations are allowed on visible types and members.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReflectionEmit">
@@ -116,19 +86,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This permission is no longer used by the CLR.")</AttributeName>
+          <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.ReflectionPermissionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Emitting debug symbols is allowed. Beginning with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this flag is no longer required to emit code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictedMemberAccess">
@@ -138,7 +108,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -150,7 +120,7 @@
         <ReturnType>System.Security.Permissions.ReflectionPermissionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Restricted member access is provided for partially trusted code. Partially trusted code can access nonpublic types and members, but only if the grant set of the partially trusted code includes all permissions in the grant set of the assembly that contains the nonpublic types and members being accessed. This flag is new in the [!INCLUDE[net_v20SP1_short](~/add/includes/net-v20sp1-short-md.md)].</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeInformation">
@@ -160,19 +130,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This API has been deprecated. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+          <AttributeName>System.Obsolete("not used anymore")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.ReflectionPermissionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This flag is obsolete. No flags are necessary to enumerate types and members and to examine their metadata. Use NoFlags instead.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

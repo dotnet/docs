@@ -3,9 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DefaultParameterValueAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DefaultParameterValueAttribute" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,26 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Sets the default value of a parameter when called from a language that supports default parameters. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DefaultParameterValueAttribute attribute allows you to specify a default parameter value in a language that does not otherwise support default parameters.  After you apply this attribute to your code, languages that support default parameters can use the specified value as a default parameter.  
-  
- Note that the DefaultParameterValueAttribute does not add support for default parameters to languages that do not support this feature.  For example, if you use the DefaultParameterValueAttribute with a method written in C#, which does not support default parameters, you cannot use the default parameter when calling the method from C#.  You can use the default parameter only when calling the method in a language such as C++ that does support the feature.  
-  
- The DefaultParameterValueAttribute is particularly useful to specify default parameters for methods of a COM interop interface.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the DefaultParameterValueAttribute attribute to a parameter of a method written in C#.  
-  
- [!code-cs[System.Runtime.InteropServices.DefaultParameterValueAttribute#1](~/add/codesnippet/csharp/t-system.runtime.interop_29_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,31 +39,29 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.DefaultParameterValueAttribute.#ctor(System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">An object that represents the default value of a parameter.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.DefaultParameterValueAttribute" /> class with the default value of a parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to apply the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> attribute to a parameter written in a language such as Microsoft Visual C# that does not support default parameters.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> attribute to a parameter of a method written in C#.  
-  
- [!code-cs[System.Runtime.InteropServices.DefaultParameterValueAttribute#1](~/add/codesnippet/csharp/69bae44f-b04a-4750-893f-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -78,16 +70,28 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.DefaultParameterValueAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default value of a parameter.</summary>
-        <value>An object that represents the default value of a parameter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationStep" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies when a <see cref="T:System.Windows.Controls.ValidationRule" /> runs.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses a <xref:System.Windows.Controls.ValidationRule> named `ValidateDateAndPrice`. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> for this rule is set to ConvertedProposedValue so that when it runs, the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method has access to values that are of the source property's type.  
-  
- When the `PriceIsAPositiveNumber` and `FutureDateRule` rules run, the values in each <xref:System.Windows.Controls.ValidationRule.Validate%2A> method are strings because the default value of <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is RawProposedValue. Therefore, the rules run before the values are converted to their respective types.  
-  
- [!code-xml[BindingGroupSnippets#WindowLayout](~/add/codesnippet/xaml/BindingGroupSnippets/Window1.xaml#windowlayout)]  
-  
- The following example shows the `ValidateDateAndPrice`<xref:System.Windows.Controls.ValidationRule>. In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, the `Price` property is of type <xref:System.Double> and the `OfferExpires` property is of type <xref:System.DateTime>. The strings have been converted to their respective types by the time the <xref:System.Windows.Controls.ValidationRule> runs.  
-  
- [!code-cs[BindingGroupSnippets#ValidateObject](~/add/codesnippet/csharp/BindingGroupSnippets/Data.cs#validateobject)]
- [!code-vb[BindingGroupSnippets#ValidateObject](~/add/codesnippet/visualbasic/bindinggroupsnippets/data.vb#validateobject)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CommittedValue">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the value has been committed to the source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConvertedProposedValue">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the value is converted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RawProposedValue">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> before any conversion occurs.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdatedValue">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the source is updated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

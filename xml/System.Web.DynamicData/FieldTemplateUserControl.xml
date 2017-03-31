@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FieldTemplateUserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,80 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the base class for all field template controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET Dynamic Data field templates are ASP.NET user controls that map data controls to data types in a data model. Field templates derive from FieldTemplateUserControl, the class that enables access to data fields, data columns, and metadata in data models. Dynamic Data projects provide field templates by default. You can modify the field templates provided by default or create custom field templates.  
-  
- This class inherits from the <xref:System.Web.UI.UserControl> Class.  
-  
-   
-  
-## Examples  
- The following code example creates a field template that displays data fields that have a many-to-one relationship and renders a <xref:System.Web.UI.WebControls.HyperLink> control that redirects the user to the relationship page.  
-  
- The following example shows the code file for the ForeignKey.ascx user control.  
-  
-```vb#  
-Public Partial Class ForeignKeyField   
-    Inherits System.Web.DynamicData.FieldTemplateUserControl   
-  
-    Protected Function GetDisplayString() As String   
-        Return FormatFieldValue( _  
-            ForeignKeyColumn.ParentTable.GetDisplayString(FieldValue))   
-    End Function   
-  
-    Public Overloads Overrides ReadOnly Property DataControl() As Control   
-        Get   
-            Return HyperLink1   
-        End Get   
-    End Property   
-End Class   
-```  
-  
-```c#  
-public partial class ForeignKeyField :   
-                        System.Web.DynamicData.FieldTemplateUserControl   
-{  
-    protected string GetDisplayString()   
-    {  
-       Return         FormatFieldValue(ForeignKeyColumn.ParentTable.GetDisplayString(FieldValue));  
-  
-    public override Control DataControl   
-    {  
-        get   
-        {  
-          return HyperLink1;  
-    }  
-}  
-```  
-  
- The following example shows the ForeignKey.aspx file.  
-  
-```vb#  
-<%@ Control Language="VB" CodeFile="ForeignKey.ascx.vb" Inherits="ForeignKeyField" %>  
-  
-<asp:HyperLink ID="HyperLink1" runat="server"  
-    Text="<%# GetDisplayString() %>" />  
-```  
-  
-```c#  
-<%@ Control Language="C#" CodeFile="ForeignKey.ascx.cs" Inherits="ForeignKeyField" %>  
-  
-<asp:HyperLink ID="HyperLink1" runat="server"  
-    Text="<%# GetDisplayString() %>" />  
-```  
-  
- To compile the example code, you need the following:  
-  
--   [!INCLUDE[vs_dev10_long](~/add/includes/vs-dev10-long-md.md)] or [!INCLUDE[vwd_exp_dev10_long](~/add/includes/vwd-exp-dev10-long-md.md)].  
-  
--   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](../Topic/Walkthrough:%20Creating%20a%20New%20Dynamic%20Data%20Web%20Site%20Using%20Scaffolding.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,12 +29,11 @@ public partial class ForeignKeyField :
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.FieldTemplateUserControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +44,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,17 +53,10 @@ public partial class ForeignKeyField :
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to override.</param>
-        <summary>Gets the URL that links to the page that displays the list of children entities and allows the path to be overridden.</summary>
-        <returns>The URL that links the displayed page to the children page.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is similar to <xref:System.Web.DynamicData.FieldTemplateUserControl.ChildrenPath%2A>, except that it allows the path part of the URL to be overridden. This method is used if the pages are not located in the DynamicData\CustomPages folder of the Dynamic Data project. This method applies to Children columns only.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildForeignKeyPath">
@@ -148,7 +66,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,17 +75,10 @@ public partial class ForeignKeyField :
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to override.</param>
-        <summary>Get the URL that links the current page to the page that displays the details of the foreign key entity and allows the path to be overridden.</summary>
-        <returns>The URL that links to the page that displays the details of the foreign key page.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is similar to <xref:System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyPath%2A> except that it allows the path of the URL to be overridden. This property is used if the page is not located in the DynamicData\CustomPages folder your the Dynamic Data project.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildrenColumn">
@@ -178,7 +88,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -190,17 +99,9 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.MetaChildrenColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaChildrenColumn" /> object associated with a field template.</summary>
-        <value>A column that represents a one-to-many relationship.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property casts a <xref:System.Web.DynamicData.MetaColumn> to a <xref:System.Web.DynamicData.MetaChildrenColumn>. If the <xref:System.Web.DynamicData.MetaColumn> class is not a children column, this property throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">ChildrenColumn is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildrenPath">
@@ -210,23 +111,15 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URL that links to a page that displays a list of children entities.</summary>
-        <value>The URL that links the displayed page to the children entities.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns a URL that links to a page that displays a list of children entities. For example, the products column in the ProductCategories table in the AdventureWorksLT sample database has URLs that link to the list of product that are in the selected category. This property only applies to children columns.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -236,7 +129,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -248,8 +140,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaColumn" /> associated with a field template.</summary>
-        <value>An object that represents a database column.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +163,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.ContainerType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the data-bound control that contains the <see cref="T:System.Web.DynamicData.FieldTemplateUserControl" /> class.</summary>
-        <value>The container control type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,7 +175,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,17 +184,10 @@ public partial class ForeignKeyField :
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The input value.</param>
-        <summary>Gets either an input value or <see langword="null" /> based on <see cref="System.Web.DynamicData.MetaColumn.ConvertEmptyStringToNull%2A" /> and <see cref="System.Web.DynamicData.DynamicField.NullDisplayText%2A" />.</summary>
-        <returns>The converted value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns <xref:System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull%2A> property and <xref:System.Web.DynamicData.DynamicField.NullDisplayText%2A> property which can be set via metadata or the <xref:System.Web.DynamicData.DynamicField> class or <xref:System.Web.DynamicData.DynamicControl>.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataControl">
@@ -313,7 +197,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -325,8 +208,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data control that handles the data field in a field template.</summary>
-        <value>A data control that handles the data field in a field template.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +220,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -348,17 +230,10 @@ public partial class ForeignKeyField :
         <Parameter Name="selectedValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dictionary">The dictionary that contains all the new values.</param>
-        <param name="selectedValue">The value to save.</param>
-        <summary>Saves the value of foreign keys.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used when saving foreign key columns. The value of the foreign key is selected from the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of a drop down list.  
-  
- ]]></format>
-        </remarks>
+        <param name="dictionary">To be added.</param>
+        <param name="selectedValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtractValues">
@@ -368,7 +243,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,16 +252,9 @@ public partial class ForeignKeyField :
         <Parameter Name="dictionary" Type="System.Collections.Specialized.IOrderedDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">The dictionary that contains all the new values.</param>
-        <summary>Provides dictionary access to all data in the current row.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method implements the <xref:System.Web.UI.IBindableControl.ExtractValues%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldValue">
@@ -397,7 +264,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -409,8 +275,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of a column in a current row.</summary>
-        <value>An object that represents the value of the column in the current row.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,7 +287,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -433,16 +298,9 @@ public partial class ForeignKeyField :
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the string representation of the value of a column in the current row when the row is in edit mode.</summary>
-        <value>The value of the column in the row that is edited.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If formatting is enabled the string is formatted after editing.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldValueString">
@@ -452,7 +310,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -464,8 +321,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the formatted string representation of the value of a column in the current row.</summary>
-        <value>The formatted value of the column in the current row.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,7 +333,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -486,9 +342,9 @@ public partial class ForeignKeyField :
         <Parameter Name="columnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="columnName">The data column the field template renders.</param>
-        <summary>Determines the field template that is used to render a specified data column.</summary>
-        <returns>The field template that is used to render a specified data column.</returns>
+        <param name="columnName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,7 +355,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -511,17 +366,9 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.MetaForeignKeyColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaForeignKeyColumn" /> that is associated with a foreign key column.</summary>
-        <value>A column that represents a many-to-one relationship.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class converts the <xref:System.Web.DynamicData.MetaColumn> to a <xref:System.Web.DynamicData.MetaForeignKeyColumn>. The class throws an exception if <xref:System.Web.DynamicData.MetaColumn> is not a foreign key column.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Exception">If the <see cref="T:System.Web.DynamicData.MetaForeignKeyColumn" /> is not a foreign key column.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeignKeyPath">
@@ -531,23 +378,15 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the URL that links the current page to the page that displays the details of the foreign key entity.</summary>
-        <value>The URL that links to the details of the foreign key data.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the data column has a many-to-one relationship, this property returns a URL that links to the page that displays the details of the foreign key entity. For example, in the Category column of the Product table in the Northwind Database, this method can return a link that goes to the details of the category that the product belongs to. This property applies to foreign key columns only.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FormatFieldValue">
@@ -557,7 +396,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -567,9 +405,9 @@ public partial class ForeignKeyField :
         <Parameter Name="fieldValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fieldValue">The value from the data field to format.</param>
-        <summary>Applies HTML encoding and formatting to a string that will be displayed.</summary>
-        <returns>The formatted value.</returns>
+        <param name="fieldValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,7 +418,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -592,8 +429,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.IFieldFormattingOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the HTML encoding and formatting options to apply to a field template.</summary>
-        <value>The interface that exposes the HTML encoding and formatting options to apply to a field template.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,7 +441,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -614,9 +450,9 @@ public partial class ForeignKeyField :
         <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
       </Parameters>
       <Docs>
-        <param name="column">The column to get the value from.</param>
-        <summary>Gets the value of a specified column in the current row.</summary>
-        <returns>An object that represents the value of a specified column in the current row.</returns>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,16 +470,9 @@ public partial class ForeignKeyField :
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of the column's value.</summary>
-        <returns>If the column's current value is a foreign-key column or an enumeration column, a string representation of the selected value; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetSelectedValueString method is used to return a string representation of foreign-key or enumeration column types.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -653,7 +482,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -665,8 +493,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.IFieldTemplateHost</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the host that provides context to this <see cref="T:System.Web.DynamicData.FieldTemplateUserControl" /> class.</summary>
-        <value>The object that provides context to this field template class.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,7 +505,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -687,16 +514,9 @@ public partial class ForeignKeyField :
         <Parameter Name="attributeType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="attributeType">The attribute to ignore.</param>
-        <summary>Allows a <see cref="T:System.Web.DynamicData.DynamicValidator" /> to ignore a specific type of model validation attribute.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method allows a <xref:System.Web.DynamicData.DynamicValidator> to ignore a specific type of model Validation attributes. This method is called when the attribute type is already handled by an ASP.NET validation controls. Without this call, the validation can occur two times, resulting in a duplicate error message.  
-  
- ]]></format>
-        </remarks>
+        <param name="attributeType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataAttributes">
@@ -706,7 +526,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -718,8 +537,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of metadata attributes that apply to the current column.</summary>
-        <value>The collection of metadata attributes that apply to the column.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -730,7 +549,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -742,16 +560,9 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the mode a field template uses.</summary>
-        <value>The current mode of the field template.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DataBoundControlMode> that field templates uses include `Insert`, `Edit`, and `ReadOnly`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PopulateListControl">
@@ -761,7 +572,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -771,16 +581,9 @@ public partial class ForeignKeyField :
         <Parameter Name="listControl" Type="System.Web.UI.WebControls.ListControl" />
       </Parameters>
       <Docs>
-        <param name="listControl">The list control to populate.</param>
-        <summary>Populates a list control with all the values from a parent table.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method works with only foreign key columns.  
-  
- ]]></format>
-        </remarks>
+        <param name="listControl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -790,7 +593,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -802,16 +604,9 @@ public partial class ForeignKeyField :
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current data row object.</summary>
-        <value>The current data row object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object returned by this the property and the <xref:System.Web.UI.Page.GetDataItem%2A> method are equivalent. This property uses the `Page.GetDataItem` method to return the data row object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUpValidator">
@@ -821,7 +616,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -831,16 +625,9 @@ public partial class ForeignKeyField :
         <Parameter Name="validator" Type="System.Web.UI.WebControls.BaseValidator" />
       </Parameters>
       <Docs>
-        <param name="validator">The validation control to set up.</param>
-        <summary>Sets up a <see cref="System.Web.DynamicData.IFieldTemplateHost.ValidationGroup%2A" /> on all validation controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method performs additional logic for specific validation control such as the <xref:System.Web.UI.WebControls.RangeValidator> and sets up a <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> on all validation controls.  
-  
- ]]></format>
-        </remarks>
+        <param name="validator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUpValidator">
@@ -850,7 +637,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -861,19 +647,10 @@ public partial class ForeignKeyField :
         <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
       </Parameters>
       <Docs>
-        <param name="validator">The type of validator to set up.</param>
-        <param name="column">The column for which to validator is set.</param>
-        <summary>Sets up a <see cref="T:System.Web.DynamicData.DynamicValidator" /> using the type of validator and the column to validate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method used to set up <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> on all validators.  
-  
- It performs additional logic for specific validator types in this method. For example, if range values exit in the data model this method sets up <xref:System.Web.UI.WebControls.RangeValidator>.  
-  
- ]]></format>
-        </remarks>
+        <param name="validator">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.DynamicData.IFieldTemplate.SetHost">
@@ -883,7 +660,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -893,16 +669,9 @@ public partial class ForeignKeyField :
         <Parameter Name="host" Type="System.Web.DynamicData.IFieldTemplateHost" />
       </Parameters>
       <Docs>
-        <param name="host">The object that hosts the field template class. Controls the use of the field template.</param>
-        <summary>Associates a field template with the object that controls how the field template is used.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method implements the <xref:System.Web.DynamicData.IFieldTemplate.SetHost%2A> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IBindableControl.ExtractValues">
@@ -912,7 +681,6 @@ public partial class ForeignKeyField :
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -922,8 +690,8 @@ public partial class ForeignKeyField :
         <Parameter Name="dictionary" Type="System.Collections.Specialized.IOrderedDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">The dictionary that contains name/values pairs.</param>
-        <summary>Retrieves a set of name/value pairs to implement two-way data-binding in field template controls.</summary>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -934,7 +702,6 @@ public partial class ForeignKeyField :
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -946,8 +713,8 @@ public partial class ForeignKeyField :
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaTable" /> that a column of a field template belongs to.</summary>
-        <value>The table that the column that is associated with the field template belongs to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

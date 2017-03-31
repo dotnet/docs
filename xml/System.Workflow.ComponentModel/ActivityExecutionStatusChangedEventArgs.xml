@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Holds information relating to the change of execution status event for an <see cref="T:System.Workflow.ComponentModel.Activity" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Activity">
@@ -37,15 +27,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Activity" /> that raised the event.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> that raised the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,15 +45,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionResult" /> of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that raised the event corresponding to the value when the event occurred.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionResult" /> of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that raised the event corresponding to the value when the event occurred.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that raised the event corresponding to the value when the event occurred.</summary>
-        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that raised the event corresponding to the value when the event occurred.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,24 +88,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a <see cref="T:System.String" /> representing the current instance.</summary>
-        <returns>A <see cref="T:System.String" /> representing the current instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Contains the following strings in the order of description:  
-  
--   The <xref:System.Workflow.ComponentModel.Activity.QualifiedName%2A> of the originating <xref:System.Workflow.ComponentModel.Activity>.  
-  
--   The <xref:System.Workflow.ComponentModel.ActivityExecutionStatus> as an enumeration converted to string, of the originating <xref:System.Workflow.ComponentModel.Activity>.  
-  
--   The <xref:System.Workflow.ComponentModel.ActivityExecutionResult> as an enumeration converted to string, of the originating <xref:System.Workflow.ComponentModel.Activity>.  
-  
--  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

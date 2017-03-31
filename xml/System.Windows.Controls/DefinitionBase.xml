@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DefinitionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the functionality required to support a shared-size group that is used by the <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> and <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> classes. This is an abstract class.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,41 +27,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that identifies a <see cref="T:System.Windows.Controls.ColumnDefinition" /> or <see cref="T:System.Windows.Controls.RowDefinition" /> as a member of a defined group that shares sizing properties.</summary>
-        <value>A <see cref="T:System.String" /> that identifies a shared-size group.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Columns and rows that participate in size-sharing do not respect <xref:System.Windows.GridUnitType> sizing. In the size-sharing scenario, <xref:System.Windows.GridUnitType> sizing is treated as <xref:System.Windows.GridUnitType>.  
-  
- <xref:System.Windows.Controls.Grid> size-sharing does not work if you set <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A> to `true` within a resource template and you define SharedSizeGroup as outside that template.  
-  
- The SharedSizeGroup property value must satisfy the following rules:  
-  
--   Must not be empty.  
-  
--   Must only consist of letters, digits, and underscore characters.  
-  
--   Must not start with a numeric value.  
-  
-<a name="dependencyPropertyInfo_SharedSizeGroup"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.DefinitionBase.SharedSizeGroupProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SharedSizeGroupProperty">
@@ -72,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

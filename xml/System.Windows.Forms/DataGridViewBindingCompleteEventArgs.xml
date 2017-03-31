@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewBindingCompleteEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.DataBindingComplete" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event is raised when the contents of the data source change or when the value of the <xref:System.Windows.Forms.DataGridView.DataSource%2A>, <xref:System.Windows.Forms.DataGridView.DataMember%2A>, or <xref:System.Windows.Forms.Control.BindingContext%2A> property of the <xref:System.Windows.Forms.DataGridView> control changes.  
-  
- This class describes the change made by the <xref:System.Windows.Forms.CurrencyManager> to its underlying list.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#333](~/add/codesnippet/csharp/t-system.windows.forms.d_88_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#333](~/add/codesnippet/visualbasic/t-system.windows.forms.d_88_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="listChangedType" Type="System.ComponentModel.ListChangedType" />
       </Parameters>
       <Docs>
-        <param name="listChangedType">One of the <see cref="T:System.ComponentModel.ListChangedType" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewBindingCompleteEventArgs" /> class.</summary>
+        <param name="listChangedType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,28 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value specifying how the list changed.</summary>
-        <value>One of the <see cref="T:System.ComponentModel.ListChangedType" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#333](~/add/codesnippet/csharp/p-system.windows.forms.d_11_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#333](~/add/codesnippet/visualbasic/p-system.windows.forms.d_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

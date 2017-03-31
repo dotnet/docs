@@ -11,45 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an easing function that creates an animation that accelerates and/or decelerates using the formula *f*(*t*) = *t*<sup>2</sup></summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can control whether the animation accelerates, decelerates, or both by specifying the <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>. The following graph below demonstrates the different values of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>, where *f*(*t*) represents the animation progress and *t* represents time.  
-  
- ![QuadraticEase with graphs of different easingmodes](~/add/media/quadraticease-graph.png "QuadraticEase with graphs of different easingmodes")  
-  
- The formula used for this function is the following.  
-  
- *f*(*t*) = *t*<sup>2</sup>  
-  
-> [!NOTE]
->  You can use <xref:System.Windows.Media.Animation.PowerEase> to create the same behavior as <xref:System.Windows.Media.Animation.CubicEase>, QuadraticEase, <xref:System.Windows.Media.Animation.QuarticEase>, and <xref:System.Windows.Media.Animation.QuinticEase> by using the <xref:System.Windows.Media.Animation.PowerEase.Power%2A> property. For example, if you want to use <xref:System.Windows.Media.Animation.PowerEase> to substitute for <xref:System.Windows.Media.Animation.CubicEase>, specify a <xref:System.Windows.Media.Animation.PowerEase.Power%2A> value of 3.  
-  
- There are several other easing functions besides QuadraticEase which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
- In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
-  
-<a name="xamlObjectElementUsage_QuadraticEase"></a>   
-## XAML Object Element Usage  
-  
-```  
-<QuadraticEase .../>  
-```  
-  
-   
-  
-## Examples  
- The following example applies a QuadraticEase easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
-  
- [!code-xml[QuadraticEase#QuadraticEase](~/add/codesnippet/xaml/quadraticease/window1.xaml#quadraticease)]
- [!code-xml[QuadraticEase#QuadraticEase](~/add/codesnippet/xaml/t-system.windows.media.a_14_1.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.QuadraticEase" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,24 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Windows.Freezable" /> derived class. When creating a derived class, you must override this method.</summary>
-        <returns>The new instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
-  
-   
-  
-## Examples  
- The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
-  
- [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/add/codesnippet/visualbasic/freezablesample_visualbasic/freezablesample.vb#createinstancecoreexample)]
- [!code-cs[freezablesample_procedural#CreateInstanceCoreExample](~/add/codesnippet/csharp/freezablesample_csharp/freezablesample.cs#createinstancecoreexample)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EaseInCore">
@@ -117,19 +65,10 @@
         <Parameter Name="normalizedTime" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="normalizedTime">Normalized time (progress) of the animation.</param>
-        <summary>Provides the logic portion of the easing function that you can override to produce the <see cref="T:System.Windows.Media.Animation.EasingMode" /> mode of the custom easing function.</summary>
-        <returns>A double that represents the transformed progress.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
-  
- You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
-  
- ]]></format>
-        </remarks>
+        <param name="normalizedTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

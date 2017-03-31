@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ClockCollection" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Animation.Clock" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +29,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,8 +38,8 @@
         <Parameter Name="item" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="item">The object to add.</param>
-        <summary>Adds a new <see cref="T:System.Windows.Media.Animation.Clock" /> object to the end of this <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +50,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,7 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from this <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +77,9 @@
         <Parameter Name="item" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="item">The object to locate.</param>
-        <summary>Indicates whether the <see cref="T:System.Windows.Media.Animation.ClockCollection" /> contains the specified <see cref="T:System.Windows.Media.Animation.Clock" /> object.</summary>
-        <returns>**true** if <paramref name="item" /> is found; otherwise, **false**.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,9 +100,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The destination array.</param>
-        <param name="index">The zero-based index position where copying begins.</param>
-        <summary>Copies the <see cref="T:System.Windows.Media.Animation.Clock" /> objects of this <see cref="T:System.Windows.Media.Animation.ClockCollection" /> to an array of Clocks, starting at the specified index position.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,15 +113,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items contained in this <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
-        <value>The number of items contained in this instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,9 +140,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare with this instance.</param>
-        <summary>Indicates whether this instance is equal to the specified object.</summary>
-        <returns>**true** if <paramref name="obj" /> is equal to this instance; otherwise **false**.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,11 +163,10 @@
         <Parameter Name="objB" Type="System.Windows.Media.Animation.ClockCollection" />
       </Parameters>
       <Docs>
-        <param name="objA">The first value to compare.</param>
-        <param name="objB">The second value to compare.</param>
-        <summary>Indicates whether the two specified <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections are equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="objA" /> and <paramref name="objB" /> are equal; otherwise, <see langword="false" />.</returns>
+        <param name="objA">To be added.</param>
+        <param name="objB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +177,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,8 +184,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a 32-bit signed integer hash code representing this instance.</summary>
-        <returns>A 32-bit signed integer.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,15 +196,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Media.Animation.ClockCollection" /> is read-only.</summary>
-        <value>**true** if this instance is read-only; otherwise **false**.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +214,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,9 +223,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position to access.</param>
-        <summary>Gets the <see cref="T:System.Windows.Media.Animation.Clock" /> at the specified index position.</summary>
-        <value>The <see cref="T:System.Windows.Media.Animation.Clock" /> object at the specified <paramref name="index" /> position.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,10 +246,10 @@
         <Parameter Name="objB" Type="System.Windows.Media.Animation.ClockCollection" />
       </Parameters>
       <Docs>
-        <param name="objA">The first object to compare.</param>
-        <param name="objB">The second object to compare.</param>
-        <summary>Overloaded operator that compares two <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections for equality.</summary>
-        <returns>**true** if <paramref name="objA" /> and <paramref name="objB" /> are equal; otherwise **false**.</returns>
+        <param name="objA">To be added.</param>
+        <param name="objB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +260,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,10 +270,10 @@
         <Parameter Name="objB" Type="System.Windows.Media.Animation.ClockCollection" />
       </Parameters>
       <Docs>
-        <param name="objA">The first object to compare.</param>
-        <param name="objB">The second object to compare.</param>
-        <summary>Overloaded operator that compares two <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections for inequality.</summary>
-        <returns>**true** if <paramref name="objA" /> and <paramref name="objB" /> are not equal; otherwise **false**.</returns>
+        <param name="objA">To be added.</param>
+        <param name="objB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +284,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,9 +293,9 @@
         <Parameter Name="item" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="item">The object to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Windows.Media.Animation.Clock" /> from the <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
-        <returns>**true** if <paramref name="item" /> was successfully removed; otherwise, **false**.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +306,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -329,16 +313,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.Generic.IEnumerable%601.GetEnumerator%2A" />.</summary>
-        <returns>An <see cref="System.Collections.Generic.IEnumerator%601" /> object that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -348,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,18 +332,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IEnumerable.GetEnumerator%2A" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- Example  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

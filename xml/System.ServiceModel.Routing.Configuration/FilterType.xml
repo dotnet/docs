@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of filter to use when routing messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] using FilterType, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Action">
@@ -34,7 +27,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" /> to filter on an action.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="And">
@@ -50,7 +43,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.StrictAndMessageFilter" /> to filter on two message filters, ANDed together.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -66,7 +59,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use a user-defined filter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndpointAddress">
@@ -82,7 +75,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" /> with <see cref="System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison%2A" /> set to **false** to filter on the address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndpointName">
@@ -98,7 +91,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the <see cref="T:System.ServiceModel.Dispatcher.EndpointNameMessageFilter" /> to filter on the name of the service endpoint.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MatchAll">
@@ -114,7 +107,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the <see cref="T:System.ServiceModel.Dispatcher.MatchAllMessageFilter" /> to match all messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrefixEndpointAddress">
@@ -130,7 +123,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter" /> with <see cref="System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison%2A" /> set to **false** to filter on the address using longest prefix matching.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -146,7 +139,7 @@
         <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> to filter on an XPath expression.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

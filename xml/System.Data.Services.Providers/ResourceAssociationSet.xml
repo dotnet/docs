@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceAssociationSet" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes an association between two resource sets.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -37,12 +35,10 @@
         <Parameter Name="end2" Type="System.Data.Services.Providers.ResourceAssociationSetEnd" />
       </Parameters>
       <Docs>
-        <param name="name">Name of the association set.</param>
-        <param name="end1">
-          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the source end of the association set.</param>
-        <param name="end2">
-          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the target end of the association set.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Providers.ResourceAssociationSet" /> class.</summary>
+        <param name="name">To be added.</param>
+        <param name="end1">To be added.</param>
+        <param name="end2">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +49,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -65,9 +60,8 @@
         <ReturnType>System.Data.Services.Providers.ResourceAssociationSetEnd</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the source end of the association set.</summary>
-        <value>
-          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the source end of the association set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +72,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -90,9 +83,8 @@
         <ReturnType>System.Data.Services.Providers.ResourceAssociationSetEnd</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the target end of the association set.</summary>
-        <value>
-          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the target end of the association set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +95,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -115,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the association set.</summary>
-        <value>The name of the association set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

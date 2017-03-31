@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlTypeResolver" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IXamlTypeResolver" />
   <AssemblyInfo>
-    <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -17,19 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a service that resolves from named elements in XAML markup to the appropriate CLR type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IXamlTypeResolver class is used primarily by <xref:System.ComponentModel.TypeConverter> and <xref:System.Windows.Markup.MarkupExtension> authors as a service to determine the XAML-to-CLR type mapping that is necessary for constructing a CLR object.  
-  
- Type converters and markup extensions can query for IXamlTypeResolver as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md) and [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
-  
- In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)], IXamlTypeResolver is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Resolve">
@@ -37,10 +22,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type Resolve(string qualifiedTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IXamlTypeResolver.Resolve(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,9 +33,9 @@
         <Parameter Name="qualifiedTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="qualifiedTypeName">The XAML type name to resolve. The type name is optionally qualified by the prefix for a XML namespace. Otherwise the current default XML namespace is assumed.</param>
-        <summary>Resolves a named XAML type to the corresponding CLR <see cref="T:System.Type" />.</summary>
-        <returns>The <see cref="T:System.Type" /> that <paramref name="qualifiedTypeName" /> resolves to</returns>
+        <param name="qualifiedTypeName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

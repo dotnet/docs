@@ -4,36 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TabItemState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the visual state of a tab item that is drawn with visual styles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TabItemState values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItem>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemLeftEdge>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItem>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemLeftEdge>  
-  
--   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge>  
-  
- The TabItemState values are also used as an argument in the <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -43,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tab item is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hot">
@@ -60,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tab item is hot.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -77,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tab item is normal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -94,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tab item is selected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

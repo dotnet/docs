@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationComponent" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Represents a component that is used to authorize users.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Authorization policies and authorization contexts, which implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface and derive from the <xref:System.IdentityModel.Policy.AuthorizationContext> class, respectively, implement the IAuthorizationComponent interface. The IAuthorizationComponent interface defines a unique identifier for authorization components with the <xref:System.IdentityModel.Policy.IAuthorizationComponent.Id%2A> property, which is generally used for auditing.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Id">
@@ -27,23 +19,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string that identifies this authorization component.</summary>
-        <value>A string that identifies this authorization component.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of the Id property must be unique for all objects in the Identity Model.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

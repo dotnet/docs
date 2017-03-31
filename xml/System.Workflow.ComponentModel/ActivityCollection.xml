@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,30 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Models a strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- This class is used to represent the list of child activities for a <xref:System.Workflow.ComponentModel.CompositeActivity>.  
-  
-> [!NOTE]
->  Only call methods derived from <xref:System.Collections.Generic.IList%601> and not <xref:System.Collections.Generic.List%601>, such as using <xref:System.Workflow.ComponentModel.ActivityCollection.Add%2A> to add activities instead of <xref:System.Collections.Generic.List%601.AddRange%2A>. Calling methods derived from <xref:System.Collections.Generic.List%601> will have unexpected consequences.  
-  
-   
-  
-## Examples  
- The following example shows access of the ActivityCollection which is the member of a composite activity class containing all child activities. This code example is part of the Using Throw SDK Sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- [!code-cs[WF_Samples#179](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#179)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,27 +43,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Workflow.ComponentModel.Activity" /> designated as owning this instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" /> class, initializing an owner <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Example  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="owner" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="owner" /> is not a descendent of <see cref="T:System.Workflow.ComponentModel.Activity" />.</exception>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -96,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,19 +70,9 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Workflow.ComponentModel.Activity" /> to be added to the <see cref="T:System.Collections.ICollection" />.</param>
-        <summary>Adds the <see cref="T:System.Workflow.ComponentModel.Activity" /> to the <see cref="T:System.Collections.ICollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This example illustrates the use of Add. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- [!code-cs[WF_Samples#179](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#179)]  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -128,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,7 +89,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes every <see cref="T:System.Workflow.ComponentModel.Activity" /> from the <see cref="T:System.Collections.ICollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,18 +109,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Workflow.ComponentModel.Activity" /> being tested for membership.</param>
-        <summary>Provides a test for membership of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Activity" /> belongs to the <see cref="T:System.Collections.ICollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This <xref:System.Collections.ICollection> is type-safe. A run-time exception is raised if the item is not of type <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -178,15 +122,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of members of the <see cref="T:System.Collections.ICollection" />.</summary>
-        <value>The number of members of the <see cref="T:System.Collections.ICollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,28 +147,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Implements an enumeration interface to the <see cref="T:System.Collections.ICollection" />.</summary>
-        <returns>Returns an enumerator that can iterate through the <see cref="T:System.Collections.ReadOnlyCollectionBase" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerators only enable reading the data in the collection. You cannot use enumerators to modify the underlying collection.  
-  
- To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A>raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- After the end of the collection is passed, the enumerator is positioned after the last element in the collection, and calling <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> raises an exception.  
-  
- To set `Current` to the first element of the collection again, you can call `Reset` followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting elements, the enumerator is irreversibly invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or `Reset` raises an <xref:System.InvalidOperationException> . If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> will return the element that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection. This causes the enumerator to raise an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -236,7 +159,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,17 +168,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The activity for which to acquire the index.</param>
-        <summary>Gets the index of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" />.</summary>
-        <returns>The index of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" />. Otherwise -1 (if <see cref="T:System.Workflow.ComponentModel.Activity" /> is not in the <see cref="T:System.Collections.ICollection" />).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This collection is type-safe. A run-time exception will be raised if an item is not of type <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -266,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,17 +191,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="index">Zero-based index of the collection at which to insert the item.</param>
-        <param name="item">The <see cref="T:System.Workflow.ComponentModel.Activity" /> to be inserted into the collection.</param>
-        <summary>Inserts the item at the index in the <see cref="T:System.Collections.ICollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This <xref:System.Collections.ICollection> is type safe. A run-time exception is raised if an item is not of type <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -297,7 +204,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,14 +213,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">Zero-based index into the <see cref="T:System.Collections.ICollection" />.</param>
-        <summary>Gets or sets the activity in the <see cref="T:System.Collections.ICollection" /> based on the index.</summary>
-        <value>A member activity of the <see cref="T:System.Collections.ICollection" />, whose index in the <see cref="T:System.Collections.ICollection" /> was specified in the call.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is not a valid index in <see cref="T:System.Collections.IList" />.</exception>
-        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.IList" /> is read-only.</exception>
-        <exception cref="T:System.Exception">An attempt to set to an <see cref="T:System.Object" /> that is not an <see cref="T:System.Workflow.ComponentModel.Activity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -324,7 +226,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -334,17 +235,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">Unique identifier for activity in the <see cref="T:System.Collections.ICollection" />.</param>
-        <summary>Gets the activity in the <see cref="T:System.Collections.ICollection" /> based on the string which is a unique key.</summary>
-        <value>A member <see cref="T:System.Workflow.ComponentModel.Activity" /> of the <see cref="T:System.Collections.ICollection" />; the key in the <see cref="T:System.Collections.ICollection" /> which was specified in the call.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If there is no <xref:System.Workflow.ComponentModel.Activity> in the <xref:System.Collections.ICollection> with specified key, an exception is raised.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListChanged">
@@ -354,24 +248,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Raised whenever a change is made to the contents of this <see cref="T:System.Collections.ICollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this context, adding or removing members raises the event. Modifying a member does not raise this event.  
-  
- When you create an <xref:System.Workflow.ComponentModel.ActivityCollection> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -381,7 +265,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -391,18 +274,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The activity to remove from the <see cref="T:System.Collections.ICollection" />.</param>
-        <summary>Removes the activity specified in the call from the <see cref="T:System.Collections.ICollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the operation succeeded; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This <xref:System.Collections.ICollection> is type safe. A run-time exception is raised if an item is not of type <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -412,7 +287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,16 +296,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">Position in a zero-based index to remove the activity from the collection.</param>
-        <summary>Removes the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" /> at the specified <paramref name="index" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A run-time exception occurs if the index is not valid (out of range).  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Add">
@@ -441,7 +308,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,16 +317,9 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Adds an object to the <see cref="T:System.Collections.IList" /> at the end of the <see cref="T:System.Collections.IList" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raises an exception with the error message "Error_InvalidListItem" if the <xref:System.Object> is not of type <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Clear">
@@ -470,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,15 +336,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all activities from the <see cref="T:System.Collections.IList" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Collections.CollectionBase.Count%2A> property is zero after this operation is finished.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Contains">
@@ -496,7 +347,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,18 +356,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Object" /> is a member of the collection.</summary>
-        <returns>
-          <see langword="true" /> if value is in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raises an exception with the error message "Error_InvalidListItem" if the <xref:System.Object> is not of type <xref:System.Workflow.ComponentModel.Activity>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.CopyTo">
@@ -527,7 +369,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,21 +379,10 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> which is the target of the copy operation.</param>
-        <param name="arrayIndex">The zero-based index within the <see cref="T:System.Collections.ICollection" /> where the copy starts.</param>
-        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> is multidimensional.  
-  
- <paramref name="index" /> is equal to or greater than the length of <paramref name="array" />.  
-  
- The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
-        <exception cref="T:System.InvalidCastException">The type <see cref="T:System.Workflow.ComponentModel.Activity" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Count">
@@ -562,15 +392,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of elements contained in the <see cref="System.Collections.Generic.ICollection%601" />.</summary>
-        <value>The number of elements contained in the <see cref="System.Collections.Generic.ICollection%601" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,24 +410,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IList" /> is read-only.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;.Remove">
@@ -608,7 +428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -618,21 +437,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The object to remove from the <see cref="System.Collections.Generic.ICollection%601" />.</param>
-        <summary>Removes the first occurrence of a specific object from the <see cref="System.Collections.Generic.ICollection%601" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="item" /> was successfully removed from the <see cref="System.Collections.Generic.ICollection%601" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the original <see cref="System.Collections.Generic.ICollection%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A>, whereas, <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see langword="ICollection" /> is read-only.</exception>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Activity&gt;.GetEnumerator">
@@ -642,7 +450,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -650,30 +457,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An <see cref="System.Collections.Generic.IEnumerator%601" /> that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `foreach` statement of the C# language (`for``each` in C++, `For``Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
-  
- <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns false. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return false. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned false, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- Default implementations of collections in the <xref:System.Collections.Generic> namespace are not synchronized.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;.IndexOf">
@@ -683,7 +469,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -693,17 +478,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="item">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Determines the index of a specific item in the <see cref="T:System.Collections.IList" />.</summary>
-        <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an object occurs multiple times in the list, the `IndexOf` method always returns the first instance found.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;.Insert">
@@ -713,7 +491,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,17 +501,10 @@
         <Parameter Name="item" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based position of the insertion.</param>
-        <param name="item">The object to insert. It must be of type <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Inserts an <see cref="T:System.Object" /> into the <see cref="T:System.Collections.IList" /> at the zero-based index specified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Object> cannot be cast to an <xref:System.Workflow.ComponentModel.Activity>, a custom <xref:System.Exception> is raised.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;.Item">
@@ -744,7 +514,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -754,22 +523,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the element at the specified index.</summary>
-        <value>The <see cref="T:System.Object" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: myCollection[index].  
-  
- The C# language uses the `this` keyword to define the indexers instead of implementing the `Item` property. Visual Basic implements `Item` as a default property, which provides the same indexing functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see langword="ICollection" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;.RemoveAt">
@@ -779,7 +536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -789,19 +545,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see langword="ICollection" /> is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -811,7 +557,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -822,9 +567,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The <see cref="T:System.Array" /> which is the target of the copy operation.</param>
-        <param name="index">The zero-based index within the <see cref="T:System.Collections.ICollection" /> where the copy starts.</param>
-        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -835,28 +580,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether access to the <see cref="System.Collections.Generic.ICollection%601" /> is synchronized, that is thread-safe.</summary>
-        <value>
-          <see langword="true" /> if access to the <see cref="System.Collections.Generic.ICollection%601" /> is synchronized, that is, thread-safe; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.Generic.ICollection%601>.  
-  
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -866,25 +598,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="System.Collections.Generic.ICollection%601" />.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="System.Collections.Generic.ICollection%601" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection <xref:System.Collections.ICollection.SyncRoot%2A> property.  
-  
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Workflow.ComponentModel.ActivityCollection.System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Workflow.ComponentModel.ActivityCollection.System.Collections.ICollection.SyncRoot%2A> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -894,7 +616,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -902,16 +623,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the underlying <see cref="T:System.Collections.IList" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Collections.IEnumerator> only allows for reading the data in the collection. You cannot use an <xref:System.Collections.IEnumerator> to modify the underlying collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -921,7 +635,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -931,11 +644,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Adds an object to the <see cref="T:System.Collections.IList" /> at the end of the <see cref="T:System.Collections.IList" />.</summary>
-        <returns>Returns <see cref="T:System.Int32" />.  
-  
- The zero-based index of the <see cref="T:System.Object" /> that was just added.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -946,7 +657,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -954,7 +664,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Workflow.ComponentModel.Activity" /> from the <see cref="T:System.Collections.ICollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -965,7 +675,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -975,9 +684,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Object" /> is a member of the collection.</summary>
-        <returns>Returns <see cref="T:System.Boolean" /><see langword="true" /> if <paramref name="value" /> is in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -988,7 +697,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -998,11 +706,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to be indexed.</param>
-        <summary>Gets the zero-based index of the <see cref="T:System.Object" /> in the underlying activities collection.</summary>
-        <returns>The zero-based index of the <paramref name="value" /> in the underlying activities collection or -1 if not found in the collection.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is not of type <see cref="T:System.Workflow.ComponentModel.Activity" /> and the exception object contains "Error_InvalidListItem" error message.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1012,7 +719,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1023,9 +729,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based position of the insertion.</param>
-        <param name="value">The object to insert. It must be of type <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
-        <summary>Inserts an <see cref="T:System.Object" /> into the <see cref="T:System.Collections.IList" /> at the zero-based index specified.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1036,24 +742,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -1063,15 +760,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="System.Collections.Generic.ICollection%601" /> is read-only.</summary>
-        <value>Returns <see cref="T:System.Boolean" /><see langword="true" /> if the <see cref="System.Collections.Generic.ICollection%601" /> is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1082,7 +778,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1092,9 +787,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">Zero-based index into the <see cref="T:System.Collections.ICollection" />.</param>
-        <summary>Gets or sets the activity in the <see cref="T:System.Collections.ICollection" /> based on the index.</summary>
-        <value>Returns <see cref="T:System.Object" />, a member activity of the <see cref="T:System.Collections.ICollection" />, whose index in the <see cref="T:System.Collections.ICollection" /> was specified in the call.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1105,7 +800,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1115,19 +809,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The elements that follow the removed element move up to occupy the vacated spot.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.IList" /> is read-only.  
-  
- <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

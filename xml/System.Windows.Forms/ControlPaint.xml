@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlPaint" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to paint common Windows controls and their elements. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The methods contained in the ControlPaint class enable you to draw your own controls or elements of controls. You can control the drawing of your own controls if the <xref:System.Windows.Forms.ControlStyles> bit is set to `true` for the control. You can get or set the style bits by calling the <xref:System.Windows.Forms.Control.GetStyle%2A> or <xref:System.Windows.Forms.Control.SetStyle%2A> methods. You can set multiple style bits for any control. The <xref:System.Windows.Forms.ControlStyles> enumeration members can be combined with bitwise operations.  
-  
-   
-  
-## Examples  
- The following code example uses one of the ControlPaint constructors to draw a flat <xref:System.Windows.Forms.Button> control.  
-  
- [!code-cs[ButtonState#2](~/add/codesnippet/csharp/t-system.windows.forms.c_15_1.cs)]
- [!code-vb[ButtonState#2](~/add/codesnippet/visualbasic/t-system.windows.forms.c_15_1.vb)]
- [!code-cpp[ButtonState#2](~/add/codesnippet/cpp/t-system.windows.forms.c_15_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ContrastControlDark">
@@ -39,23 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the color to use as the <see cref="System.Drawing.SystemColors.ControlDark%2A" /> color.</summary>
-        <value>The <see cref="T:System.Drawing.Color" /> to use as the <see cref="System.Drawing.SystemColors.ControlDark%2A" /> color.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the user has enabled the <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> mode, this property is set to <xref:System.Drawing.SystemColors.WindowFrame%2A?displayProperty=fullName>; otherwise, it is set to <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHBitmap16Bit">
@@ -65,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,10 +50,10 @@
         <Parameter Name="background" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="bitmap">The <see cref="T:System.Drawing.Bitmap" /> to create.</param>
-        <param name="background">The <see cref="T:System.Drawing.Color" /> of the background.</param>
-        <summary>Creates a 16-bit color bitmap.</summary>
-        <returns>An <see cref="T:System.IntPtr" /> representing the handle to the bitmap.</returns>
+        <param name="bitmap">To be added.</param>
+        <param name="background">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,18 +74,11 @@
         <Parameter Name="monochromeMask" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="bitmap">The <see cref="T:System.Drawing.Bitmap" /> to create.</param>
-        <param name="monochromeMask">A pointer to the monochrome mask.</param>
-        <summary>Creates a Win32 <see langword="HBITMAP" /> out of the image.</summary>
-        <returns>An <see cref="T:System.IntPtr" /> representing the handle to the bitmap.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You are responsible for de-allocating the `HBITMAP`. If the image uses transparency, the background will be filled with the specified color.  
-  
- ]]></format>
-        </remarks>
+        <param name="bitmap">To be added.</param>
+        <param name="monochromeMask">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHBitmapTransparencyMask">
@@ -122,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,17 +97,10 @@
         <Parameter Name="bitmap" Type="System.Drawing.Bitmap" />
       </Parameters>
       <Docs>
-        <param name="bitmap">The <see cref="T:System.Drawing.Bitmap" /> to create the transparency mask for.</param>
-        <summary>Creates a color mask for the specified bitmap that indicates which color should be displayed as transparent.</summary>
-        <returns>The handle to the <see cref="T:System.Drawing.Bitmap" /> mask.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You are responsible for de-allocating the bitmap.  
-  
- ]]></format>
-        </remarks>
+        <param name="bitmap">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dark">
@@ -152,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,17 +119,10 @@
         <Parameter Name="baseColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="baseColor">The <see cref="T:System.Drawing.Color" /> to be darkened.</param>
-        <summary>Creates a new dark color object for the control from the specified color.</summary>
-        <returns>A <see cref="T:System.Drawing.Color" /> that represents the dark color on the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dark">
@@ -182,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,18 +142,11 @@
         <Parameter Name="percOfDarkDark" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="baseColor">The <see cref="T:System.Drawing.Color" /> to be darkened.</param>
-        <param name="percOfDarkDark">The percentage to darken the specified <see cref="T:System.Drawing.Color" />.</param>
-        <summary>Creates a new dark color object for the control from the specified color and darkens it by the specified percentage.</summary>
-        <returns>A <see cref="T:System.Drawing.Color" /> that represent the dark color on the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseColor">To be added.</param>
+        <param name="percOfDarkDark">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkDark">
@@ -214,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,17 +165,10 @@
         <Parameter Name="baseColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="baseColor">The <see cref="T:System.Drawing.Color" /> to be darkened.</param>
-        <summary>Creates a new dark color object for the control from the specified color.</summary>
-        <returns>A <see cref="T:System.Drawing.Color" /> that represents the dark color on the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to the <xref:System.Drawing.SystemColors.ControlDarkDark%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is increased.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder">
@@ -244,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,23 +190,12 @@
         <Parameter Name="style" Type="System.Windows.Forms.ButtonBorderStyle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the border.</param>
-        <param name="color">The <see cref="T:System.Drawing.Color" /> of the border.</param>
-        <param name="style">One of the <see cref="T:System.Windows.Forms.ButtonBorderStyle" /> values that specifies the style of the border.</param>
-        <summary>Draws a border with the specified style and color, on the specified graphics surface, and within the specified bounds on a button-style control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/cc6d0e3e-2961-4c4b-9743-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/cc6d0e3e-2961-4c4b-9743-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/cc6d0e3e-2961-4c4b-9743-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder">
@@ -283,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,33 +227,22 @@
         <Parameter Name="bottomStyle" Type="System.Windows.Forms.ButtonBorderStyle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the border.</param>
-        <param name="leftColor">The <see cref="T:System.Drawing.Color" /> of the left of the border.</param>
-        <param name="leftWidth">The width of the left border.</param>
-        <param name="leftStyle">One of the <see cref="T:System.Windows.Forms.ButtonBorderStyle" /> values that specifies the style of the left border.</param>
-        <param name="topColor">The <see cref="T:System.Drawing.Color" /> of the top of the border.</param>
-        <param name="topWidth">The width of the top border.</param>
-        <param name="topStyle">One of the <see cref="T:System.Windows.Forms.ButtonBorderStyle" /> values that specifies the style of the top border.</param>
-        <param name="rightColor">The <see cref="T:System.Drawing.Color" /> of the right of the border.</param>
-        <param name="rightWidth">The width of the right border.</param>
-        <param name="rightStyle">One of the <see cref="T:System.Windows.Forms.ButtonBorderStyle" /> values that specifies the style of the right border.</param>
-        <param name="bottomColor">The <see cref="T:System.Drawing.Color" /> of the bottom of the border.</param>
-        <param name="bottomWidth">The width of the bottom border.</param>
-        <param name="bottomStyle">One of the <see cref="T:System.Windows.Forms.ButtonBorderStyle" /> values that specifies the style of the bottom border.</param>
-        <summary>Draws a border on a button-style control with the specified styles, colors, and border widths; on the specified graphics surface; and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/64eea492-703b-4fc4-9757-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/64eea492-703b-4fc4-9757-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/64eea492-703b-4fc4-9757-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="leftColor">To be added.</param>
+        <param name="leftWidth">To be added.</param>
+        <param name="leftStyle">To be added.</param>
+        <param name="topColor">To be added.</param>
+        <param name="topWidth">To be added.</param>
+        <param name="topStyle">To be added.</param>
+        <param name="rightColor">To be added.</param>
+        <param name="rightWidth">To be added.</param>
+        <param name="rightStyle">To be added.</param>
+        <param name="bottomColor">To be added.</param>
+        <param name="bottomWidth">To be added.</param>
+        <param name="bottomStyle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -342,7 +252,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,26 +262,10 @@
         <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the border.</param>
-        <summary>Draws a three-dimensional style border on the specified graphics surface and within the specified bounds on a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Border3DStyle?displayProperty=fullName> style is used by default to draw the border.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of one of the DrawBorder3D methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/b906e340-a237-41a6-b278-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/b906e340-a237-41a6-b278-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/b906e340-a237-41a6-b278-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -382,7 +275,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,22 +286,11 @@
         <Parameter Name="style" Type="System.Windows.Forms.Border3DStyle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the border.</param>
-        <param name="style">One of the <see cref="T:System.Windows.Forms.Border3DStyle" /> values that specifies the style of the border.</param>
-        <summary>Draws a three-dimensional style border with the specified style, on the specified graphics surface, and within the specified bounds on a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/85d5ee3c-d367-492f-8b37-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/85d5ee3c-d367-492f-8b37-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/85d5ee3c-d367-492f-8b37-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -419,7 +300,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -432,23 +312,12 @@
         <Parameter Name="sides" Type="System.Windows.Forms.Border3DSide" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the border.</param>
-        <param name="style">One of the <see cref="T:System.Windows.Forms.Border3DStyle" /> values that specifies the style of the border.</param>
-        <param name="sides">One of the <see cref="T:System.Windows.Forms.Border3DSide" /> values that specifies the side of the rectangle to draw the border on.</param>
-        <summary>Draws a three-dimensional style border with the specified style, on the specified graphics surface and sides, and within the specified bounds on a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/d65a87bc-f407-4afc-b213-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/d65a87bc-f407-4afc-b213-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/d65a87bc-f407-4afc-b213-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="sides">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -458,7 +327,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,29 +340,13 @@
         <Parameter Name="height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the top left of the border rectangle.</param>
-        <param name="y">The y-coordinate of the top left of the border rectangle.</param>
-        <param name="width">The width of the border rectangle.</param>
-        <param name="height">The height of the border rectangle.</param>
-        <summary>Draws a three-dimensional style border on the specified graphics surface and within the specified bounds on a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Border3DStyle?displayProperty=fullName> style is used by default to draw the border.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/d991b3c5-c5fb-4e0b-a08a-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/d991b3c5-c5fb-4e0b-a08a-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/d991b3c5-c5fb-4e0b-a08a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -504,7 +356,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -519,25 +370,14 @@
         <Parameter Name="style" Type="System.Windows.Forms.Border3DStyle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the top left of the border rectangle.</param>
-        <param name="y">The y-coordinate of the top left of the border rectangle.</param>
-        <param name="width">The width of the border rectangle.</param>
-        <param name="height">The height of the border rectangle.</param>
-        <param name="style">One of the <see cref="T:System.Windows.Forms.Border3DStyle" /> values that specifies the style of the border.</param>
-        <summary>Draws a three-dimensional style border with the specified style, on the specified graphics surface, and within the specified bounds on a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/a6b15ad3-2d4f-400c-addf-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/a6b15ad3-2d4f-400c-addf-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/a6b15ad3-2d4f-400c-addf-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBorder3D">
@@ -547,7 +387,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -563,26 +402,15 @@
         <Parameter Name="sides" Type="System.Windows.Forms.Border3DSide" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the top left of the border rectangle.</param>
-        <param name="y">The y-coordinate of the top left of the border rectangle.</param>
-        <param name="width">The width of the border rectangle.</param>
-        <param name="height">The height of the border rectangle.</param>
-        <param name="style">One of the <see cref="T:System.Windows.Forms.Border3DStyle" /> values that specifies the style of the border.</param>
-        <param name="sides">The <see cref="T:System.Windows.Forms.Border3DSide" /> of the rectangle to draw the border on.</param>
-        <summary>Draws a three-dimensional style border with the specified style, on the specified graphics surface and side, and within the specified bounds on a control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of one of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> methods. To run this example, paste the following code in a form that imports the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/cpp/583dbfc9-5548-498e-b2d2-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/visualbasic/583dbfc9-5548-498e-b2d2-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#2](~/add/codesnippet/csharp/583dbfc9-5548-498e-b2d2-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="sides">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawButton">
@@ -592,7 +420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,10 +431,10 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the button.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the button in.</param>
-        <summary>Draws a button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,7 +445,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -633,23 +459,14 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the button.</param>
-        <param name="height">The height of the button.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the button in.</param>
-        <summary>Draws a button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ButtonState#2](~/add/codesnippet/csharp/a2ff305b-bc06-44a2-8b27-_1.cs)]
- [!code-vb[ButtonState#2](~/add/codesnippet/visualbasic/a2ff305b-bc06-44a2-8b27-_1.vb)]
- [!code-cpp[ButtonState#2](~/add/codesnippet/cpp/a2ff305b-bc06-44a2-8b27-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCaptionButton">
@@ -659,7 +476,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,23 +488,12 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the caption button.</param>
-        <param name="button">One of the <see cref="T:System.Windows.Forms.CaptionButton" /> values that specifies the type of caption button to draw.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the button in.</param>
-        <summary>Draws the specified caption button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the DrawCaptionButton method and the <xref:System.Windows.Forms.CaptionButton> enumeration. To run this example, paste the following code in a form containing a Button named `Button1`. The form should import the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the button's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/cpp/557d559e-60e6-477f-98b7-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/visualbasic/557d559e-60e6-477f-98b7-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/csharp/557d559e-60e6-477f-98b7-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCaptionButton">
@@ -698,7 +503,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -714,26 +518,15 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the top left of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the top left of the drawing rectangle.</param>
-        <param name="width">The width of the drawing rectangle.</param>
-        <param name="height">The height of the drawing rectangle.</param>
-        <param name="button">One of the <see cref="T:System.Windows.Forms.CaptionButton" /> values that specifies the type of caption button to draw.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the button in.</param>
-        <summary>Draws the specified caption button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A> method and the <xref:System.Windows.Forms.CaptionButton> enumeration. To run this example, paste the following code in a form containing a <xref:System.Windows.Forms.Button> named `Button1`. The form should import the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the button's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/cpp/7e5c38fb-727e-4f02-85c3-_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/visualbasic/7e5c38fb-727e-4f02-85c3-_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/csharp/7e5c38fb-727e-4f02-85c3-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCheckBox">
@@ -743,7 +536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -755,10 +547,10 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the check box.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the check box in.</param>
-        <summary>Draws a check box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,7 +561,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -784,13 +575,13 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the check box.</param>
-        <param name="height">The height of the check box.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the check box in.</param>
-        <summary>Draws a check box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -801,7 +592,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -813,10 +603,10 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the combo box.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the combo box in.</param>
-        <summary>Draws a drop-down button on a combo box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -827,7 +617,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -842,13 +631,13 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the top left of the border rectangle.</param>
-        <param name="y">The y-coordinate of the top left of the border rectangle.</param>
-        <param name="width">The width of the combo box.</param>
-        <param name="height">The height of the combo box.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the combo box in.</param>
-        <summary>Draws a drop-down button on a combo box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -859,7 +648,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -870,17 +658,10 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the grab handle glyph.</param>
-        <summary>Draws a container control grab handle glyph on the specified graphics surface and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Grab handles are used by containers to indicate to the user that the user can directly manipulate the containers. The manipulation can consist of actions such as sizing and moving.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawFocusRectangle">
@@ -890,7 +671,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -901,26 +681,10 @@
         <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the grab handle glyph.</param>
-        <summary>Draws a focus rectangle on the specified graphics surface and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A focus rectangle is a dotted rectangle that Windows uses to indicate what control has the current keyboard focus.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the DrawFocusRectangle method and the <xref:System.Windows.Forms.Control.Handle%2A?displayProperty=fullName> property. To run this example, paste the following code in a form. Add two buttons named `Button1` and `Button2` to the form and ensure all events are connected to their event handlers.  
-  
- [!code-vb[System.Windows.Forms.ControlPaint1#2](~/add/codesnippet/visualbasic/36084c50-977a-4441-b9ae-_1.vb)]
- [!code-cpp[System.Windows.Forms.ControlPaint1#2](~/add/codesnippet/cpp/36084c50-977a-4441-b9ae-_1.cpp)]
- [!code-cs[System.Windows.Forms.ControlPaint1#2](~/add/codesnippet/csharp/36084c50-977a-4441-b9ae-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawFocusRectangle">
@@ -930,7 +694,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -943,28 +706,12 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the grab handle glyph.</param>
-        <param name="foreColor">The <see cref="T:System.Drawing.Color" /> that is the foreground color of the object to draw the focus rectangle on.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> that is the background color of the object to draw the focus rectangle on.</param>
-        <summary>Draws a focus rectangle on the specified graphics surface and within the specified bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A focus rectangle is a dotted rectangle that Windows uses to indicate what control has the current keyboard focus.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawFocusRectangle%2A> method and the <xref:System.Windows.Forms.Control.Handle%2A?displayProperty=fullName> property. To run this example, paste the following code in a form. Add two buttons named `Button1` and Button2 to the form and ensure all events are connected to their event handlers.  
-  
- [!code-vb[System.Windows.Forms.ControlPaint1#2](~/add/codesnippet/visualbasic/a69c559a-f64e-4e3f-94ab-_1.vb)]
- [!code-cpp[System.Windows.Forms.ControlPaint1#2](~/add/codesnippet/cpp/a69c559a-f64e-4e3f-94ab-_1.cpp)]
- [!code-cs[System.Windows.Forms.ControlPaint1#2](~/add/codesnippet/csharp/a69c559a-f64e-4e3f-94ab-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawGrabHandle">
@@ -974,7 +721,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -987,21 +733,12 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the grab handle glyph.</param>
-        <param name="primary">
-          <see langword="true" /> to draw the handle as a primary grab handle; otherwise, <see langword="false" />.</param>
-        <param name="enabled">
-          <see langword="true" /> to draw the handle in an enabled state; otherwise, <see langword="false" />.</param>
-        <summary>Draws a standard selection grab handle glyph on the specified graphics surface, within the specified bounds, and in the specified state and style.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Grab handles are used by objects to indicate to the user that the user can directly manipulate the object. The manipulation can consist of actions such as sizing and moving.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="primary">To be added.</param>
+        <param name="enabled">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawGrid">
@@ -1011,7 +748,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1024,19 +760,12 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="area">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the grid.</param>
-        <param name="pixelsBetweenDots">The <see cref="T:System.Drawing.Size" /> that specified the height and width between the dots of the grid.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background behind the grid.</param>
-        <summary>Draws a grid of one-pixel dots with the specified spacing, within the specified bounds, on the specified graphics surface, and in the specified color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `backColor` parameter is used to calculate the fill color of the dots so that the grid is always visible against the background.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="area">To be added.</param>
+        <param name="pixelsBetweenDots">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawImageDisabled">
@@ -1046,7 +775,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1060,20 +788,13 @@
         <Parameter Name="background" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw.</param>
-        <param name="x">The x-coordinate of the top left of the border image.</param>
-        <param name="y">The y-coordinate of the top left of the border image.</param>
-        <param name="background">The <see cref="T:System.Drawing.Color" /> of the background behind the image.</param>
-        <summary>Draws the specified image in a disabled state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `background` parameter is used to calculate the fill color of the disabled image so that it is always visible against the background.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="background">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawLockedFrame">
@@ -1083,7 +804,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1095,11 +815,10 @@
         <Parameter Name="primary" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the frame.</param>
-        <param name="primary">
-          <see langword="true" /> to draw this frame with the colors used for the primary selection; otherwise, <see langword="false" />.</param>
-        <summary>Draws a locked selection frame on the screen within the specified bounds and on the specified graphics surface. Specifies whether to draw the frame with the primary selected colors.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="primary">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1110,7 +829,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1122,18 +840,11 @@
         <Parameter Name="glyph" Type="System.Windows.Forms.MenuGlyph" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the glyph.</param>
-        <param name="glyph">One of the <see cref="T:System.Windows.Forms.MenuGlyph" /> values that specifies the image to draw.</param>
-        <summary>Draws the specified menu glyph on a menu item control within the specified bounds and on the specified surface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawMenuGlyph">
@@ -1143,7 +854,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1157,20 +867,13 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the glyph.</param>
-        <param name="glyph">One of the <see cref="T:System.Windows.Forms.MenuGlyph" /> values that specifies the image to draw.</param>
-        <param name="foreColor">The color that replaces <see cref="System.Drawing.Color.White%2A" /> as the foreground color.</param>
-        <param name="backColor">The color that replaces <see cref="System.Drawing.Color.Black%2A" /> as the background color.</param>
-        <summary>Draws the specified menu glyph on a menu item control within the specified bounds and on the specified surface, replacing <see cref="System.Drawing.Color.White%2A" /> with the color specified in the <paramref name="backColor" /> parameter and replacing <see cref="System.Drawing.Color.Black%2A" /> with the color specified in the <paramref name="foreColor" /> parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawMenuGlyph">
@@ -1180,7 +883,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1195,21 +897,14 @@
         <Parameter Name="glyph" Type="System.Windows.Forms.MenuGlyph" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the menu glyph.</param>
-        <param name="height">The height of the menu glyph.</param>
-        <param name="glyph">One of the <see cref="T:System.Windows.Forms.MenuGlyph" /> values that specifies the image to draw.</param>
-        <summary>Draws the specified menu glyph on a menu item control with the specified bounds and on the specified surface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to true, you call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawMenuGlyph">
@@ -1219,7 +914,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1236,23 +930,16 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the menu glyph.</param>
-        <param name="height">The height of the menu glyph.</param>
-        <param name="glyph">One of the <see cref="T:System.Windows.Forms.MenuGlyph" /> values that specifies the image to draw.</param>
-        <param name="foreColor">The color that replaces <see cref="System.Drawing.Color.White%2A" /> as the foreground color.</param>
-        <param name="backColor">The color that replaces <see cref="System.Drawing.Color.Black%2A" /> as the background color.</param>
-        <summary>Draws the specified menu glyph on a menu item control within the specified coordinates, height, and width on the specified surface, replacing <see cref="System.Drawing.Color.White%2A" /> with the color specified in the <paramref name="backColor" /> parameter and replacing <see cref="System.Drawing.Color.Black%2A" /> with the color specified in the <paramref name="foreColor" /> parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawMixedCheckBox">
@@ -1262,7 +949,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1274,10 +960,10 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the check box.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the check box in.</param>
-        <summary>Draws a three-state check box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1288,7 +974,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1303,13 +988,13 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the check box.</param>
-        <param name="height">The height of the check box.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the check box in.</param>
-        <summary>Draws a three-state check box control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1320,7 +1005,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1332,10 +1016,10 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the radio button.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the radio button in.</param>
-        <summary>Draws a radio button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1346,7 +1030,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1361,13 +1044,13 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the radio button.</param>
-        <param name="height">The height of the radio button.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the radio button in.</param>
-        <summary>Draws a radio button control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1378,7 +1061,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1390,29 +1072,11 @@
         <Parameter Name="style" Type="System.Windows.Forms.FrameStyle" />
       </Parameters>
       <Docs>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the rectangle to draw, in screen coordinates.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background behind the frame.</param>
-        <param name="style">One of the <see cref="T:System.Windows.Forms.FrameStyle" /> values that specifies the style of the frame.</param>
-        <summary>Draws a reversible frame on the screen within the specified bounds, with the specified background color, and in the specified state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `backColor` parameter is used to calculate the fill color of the frame so that it is always visible against the background.  
-  
- The results of this method can be reversed by drawing the same frame again. Drawing a frame using this method is similar to inverting a region of the screen, except that it provides better performance for a wider variety of colors.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.RectangleToScreen%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.PointToScreen%2A?displayProperty=fullName>, and the DrawReversibleFrame members. To run the example, paste the following code in a form called `Form1` containing several controls. This example requires that the mouse events are connected to the event handlers defined in the example.  
-  
- [!code-cs[System.Windows.Forms.RectangleToScreen#2](~/add/codesnippet/csharp/6607ae2e-2ccb-4180-80fa-_1.cs)]
- [!code-cpp[System.Windows.Forms.RectangleToScreen#2](~/add/codesnippet/cpp/6607ae2e-2ccb-4180-80fa-_1.cpp)]
- [!code-vb[System.Windows.Forms.RectangleToScreen#2](~/add/codesnippet/visualbasic/6607ae2e-2ccb-4180-80fa-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rectangle">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawReversibleLine">
@@ -1422,7 +1086,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1434,29 +1097,11 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="start">The starting <see cref="T:System.Drawing.Point" /> of the line, in screen coordinates.</param>
-        <param name="end">The ending <see cref="T:System.Drawing.Point" /> of the line, in screen coordinates.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background behind the line.</param>
-        <summary>Draws a reversible line on the screen within the specified starting and ending points and with the specified background color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `backColor` parameter is used to calculate the fill color of the line so that it is always visible against the background.  
-  
- The results of this method can be reversed by drawing the same line again. Drawing a line using this method is similar to inverting a region of the screen, except that it provides better performance for a wider variety of colors.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the DrawReversibleLine and <xref:System.Windows.Forms.Control.PointToScreen%2A?displayProperty=fullName> methods. To run the example, paste the following code in a form. Add a button named `Button3` to the form and ensure all events are connected to their event handlers.  
-  
- [!code-vb[System.Windows.Forms.ControlPaint1#3](~/add/codesnippet/visualbasic/0bedfc01-f152-4be8-90d9-_1.vb)]
- [!code-cpp[System.Windows.Forms.ControlPaint1#3](~/add/codesnippet/cpp/0bedfc01-f152-4be8-90d9-_1.cpp)]
- [!code-cs[System.Windows.Forms.ControlPaint1#3](~/add/codesnippet/csharp/0bedfc01-f152-4be8-90d9-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawScrollButton">
@@ -1466,7 +1111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1479,11 +1123,11 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the glyph.</param>
-        <param name="button">One of the <see cref="T:System.Windows.Forms.ScrollButton" /> values that specifies the type of scroll arrow to draw.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the scroll button in.</param>
-        <summary>Draws the specified scroll button on a scroll bar control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1494,7 +1138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1510,14 +1153,14 @@
         <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="x">The x-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="y">The y-coordinate of the upper left corner of the drawing rectangle.</param>
-        <param name="width">The width of the scroll button.</param>
-        <param name="height">The height of the scroll button.</param>
-        <param name="button">One of the <see cref="T:System.Windows.Forms.ScrollButton" /> values that specifies the type of scroll arrow to draw.</param>
-        <param name="state">A bitwise combination of the <see cref="T:System.Windows.Forms.ButtonState" /> values that specifies the state to draw the scroll button in.</param>
-        <summary>Draws the specified scroll button on a scroll bar control in the specified state, on the specified graphics surface, and within the specified bounds.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1528,7 +1171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1542,25 +1184,13 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="active">
-          <see langword="true" /> to draw the selection frame in an active state; otherwise, <see langword="false" />.</param>
-        <param name="outsideRect">The <see cref="T:System.Drawing.Rectangle" /> that represents the outer boundary of the selection frame.</param>
-        <param name="insideRect">The <see cref="T:System.Drawing.Rectangle" /> that represents the inner boundary of the selection frame.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background behind the frame.</param>
-        <summary>Draws a standard selection frame in the specified state, on the specified graphics surface, with the specified inner and outer dimensions, and with the specified background color.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A selection frame is a frame that is drawn around a selected component at design time.  
-  
- The `backColor` parameter is used to calculate the fill color of the frame so that it is always visible against the background.  
-  
- If the `active` parameter is set to `true`, the selection frame is drawn as a set of hatch marks indicating that the component has been activated; otherwise, the selection frame is drawn with a dotted pattern or nothing, depending on the implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="active">To be added.</param>
+        <param name="outsideRect">To be added.</param>
+        <param name="insideRect">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawSizeGrip">
@@ -1570,7 +1200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1582,20 +1211,11 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background used to determine the colors of the size grip.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the size grip.</param>
-        <summary>Draws a size grip on a form with the specified bounds and background color and on the specified graphics surface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `backColor` parameter is used to calculate the color of the size grip so that it is always visible against the background.  
-  
- When you define a sizable window, you can include a size grip. A size grip is a special handle that enables the user to resize a window.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawSizeGrip">
@@ -1605,7 +1225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1620,23 +1239,14 @@
         <Parameter Name="height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background used to determine the colors of the size grip.</param>
-        <param name="x">The x-coordinate of the upper left corner of the size grip.</param>
-        <param name="y">The y-coordinate of the upper left corner of the size grip.</param>
-        <param name="width">The width of the size grip.</param>
-        <param name="height">The height of the size grip.</param>
-        <summary>Draws a size grip on a form with the specified bounds and background color and on the specified graphics surface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `backColor` parameter is used to calculate the color of the size grip so that it is always visible against the background.  
-  
- When you define a sizable window, you can include a size grip. A size grip is a special handle that enables the user to resize a window.  
-  
- ]]></format>
-        </remarks>
+        <param name="graphics">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawStringDisabled">
@@ -1646,7 +1256,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1661,13 +1270,13 @@
         <Parameter Name="format" Type="System.Drawing.StringFormat" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="s">The string to draw.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to draw the string with.</param>
-        <param name="color">The <see cref="T:System.Drawing.Color" /> of the background behind the string.</param>
-        <param name="layoutRectangle">The <see cref="T:System.Drawing.RectangleF" /> that represents the dimensions of the string.</param>
-        <param name="format">The <see cref="T:System.Drawing.StringFormat" /> to apply to the string.</param>
-        <summary>Draws the specified string in a disabled state on the specified graphics surface; within the specified bounds; and in the specified font, color, and format.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="s">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="layoutRectangle">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1678,7 +1287,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1693,13 +1301,13 @@
         <Parameter Name="format" Type="System.Windows.Forms.TextFormatFlags" />
       </Parameters>
       <Docs>
-        <param name="dc">The GDI-based <see cref="T:System.Windows.Forms.TextRenderer" />.</param>
-        <param name="s">The string to draw.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to draw the string with.</param>
-        <param name="color">The <see cref="T:System.Drawing.Color" /> of the background behind the string.</param>
-        <param name="layoutRectangle">The <see cref="T:System.Drawing.RectangleF" /> that represents the dimensions of the string.</param>
-        <param name="format">The <see cref="T:System.Drawing.StringFormat" /> to apply to the string.</param>
-        <summary>Draws the specified string in a disabled state on the specified graphics surface, within the specified bounds, and in the specified font, color, and format, using the specified GDI-based <see cref="T:System.Windows.Forms.TextRenderer" />.</summary>
+        <param name="dc">To be added.</param>
+        <param name="s">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="layoutRectangle">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1710,7 +1318,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1721,9 +1328,9 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the border.</param>
-        <summary>Draws a border in the style appropriate for disabled items.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1734,7 +1341,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1745,28 +1351,10 @@
         <Parameter Name="backColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of the rectangle to fill, in screen coordinates.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the background behind the fill.</param>
-        <summary>Draws a filled, reversible rectangle on the screen.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `backColor` parameter is used to calculate the fill color of the rectangle so that it is always visible against the background.  
-  
- The results of this method can be reversed by drawing the same rectangle again. Drawing a rectangle using this method is similar to inverting a region of the screen, except that it provides better performance for a wider variety of colors.  
-  
-   
-  
-## Examples  
- The following code example demonstrates using the FillReversibleRectangle method. To run the example, paste the following code in a form. Add a button named `Button2` to the form and ensure all events are connected to their event handlers.  
-  
- [!code-vb[System.Windows.Forms.ControlPaint1#1](~/add/codesnippet/visualbasic/b8d430b4-e39e-4a64-a0d6-_1.vb)]
- [!code-cpp[System.Windows.Forms.ControlPaint1#1](~/add/codesnippet/cpp/b8d430b4-e39e-4a64-a0d6-_1.cpp)]
- [!code-cs[System.Windows.Forms.ControlPaint1#1](~/add/codesnippet/csharp/b8d430b4-e39e-4a64-a0d6-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rectangle">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Light">
@@ -1776,7 +1364,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1786,17 +1373,10 @@
         <Parameter Name="baseColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="baseColor">The <see cref="T:System.Drawing.Color" /> to be lightened.</param>
-        <summary>Creates a new light color object for the control from the specified color.</summary>
-        <returns>A <see cref="T:System.Drawing.Color" /> that represents the light color on the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlLight%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Light">
@@ -1806,7 +1386,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1817,18 +1396,11 @@
         <Parameter Name="percOfLightLight" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="baseColor">The <see cref="T:System.Drawing.Color" /> to be lightened.</param>
-        <param name="percOfLightLight">The percentage to lighten the specified <see cref="T:System.Drawing.Color" />.</param>
-        <summary>Creates a new light color object for the control from the specified color and lightens it by the specified percentage.</summary>
-        <returns>A <see cref="T:System.Drawing.Color" /> that represents the light color on the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlLight%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseColor">To be added.</param>
+        <param name="percOfLightLight">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LightLight">
@@ -1838,7 +1410,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1848,17 +1419,10 @@
         <Parameter Name="baseColor" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="baseColor">The <see cref="T:System.Drawing.Color" /> to be lightened.</param>
-        <summary>Creates a new light color object for the control from the specified color.</summary>
-        <returns>A <see cref="T:System.Drawing.Color" /> that represents the light color on the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to the <xref:System.Drawing.SystemColors.ControlLightLight%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is increased.  
-  
- ]]></format>
-        </remarks>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

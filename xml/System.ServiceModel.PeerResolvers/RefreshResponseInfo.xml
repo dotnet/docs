@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RefreshResponseInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains response information returned as a result of a registration lookup table refresh operation on the peer resolver.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh%28System.ServiceModel.PeerResolvers.RefreshInfo%29> or an implementation of  <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh%28System.ServiceModel.PeerResolvers.RefreshInfo%29> is called, this object is returned to the client. It contains the refreshed registration entry with the new expiry timestamp, and is returned when a previous <xref:System.ServiceModel.PeerResolvers.RefreshInfo> instance is sent to the peer resolver as part of a request to update the expiry of a registration entry.  
-  
- Instances of this class are primarily used to pass information from the resolver service to a network client of that service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.RefreshResponseInfo" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,11 +49,9 @@
         <Parameter Name="result" Type="System.ServiceModel.PeerResolvers.RefreshResult" />
       </Parameters>
       <Docs>
-        <param name="registrationLifetime">
-          <see cref="T:System.TimeSpan" /> that specifies the new lifetime of the peer's registration.</param>
-        <param name="result">
-          <see cref="T:System.ServiceModel.PeerResolvers.RefreshResult" /> that specifies the result of the refresh.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.RefreshResponseInfo" /> class with the provided registration lifetime and refresh results.</summary>
+        <param name="registrationLifetime">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
-        <returns>True if the refresh response information body is correctly-formed by the sender; false if it is not.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,16 +81,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets amount of time before a registration expires and is removed by the resolver service.</summary>
-        <value>
-          <see cref="T:System.TimeSpan" /> that specifies the new amount of time before the registration entry expires and is removed by the resolver service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,16 +99,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.RefreshResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the result of a refresh operation.</summary>
-        <value>
-          <see cref="T:System.ServiceModel.PeerResolvers.RefreshResult" /> enumeration value that indicates the result of a refresh operation on the peer resolver.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

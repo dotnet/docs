@@ -3,23 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadWaitReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ThreadWaitReason" />
   <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Process</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the reason a thread is waiting.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The thread wait reason is only valid when the <xref:System.Diagnostics.ThreadState> is <xref:System.Diagnostics.ThreadState>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EventPairHigh">
@@ -28,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.EventPairHigh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for event pair high.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EventPairLow">
@@ -45,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.EventPairLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for event pair low.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExecutionDelay">
@@ -62,15 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.ExecutionDelay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Thread execution is delayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Executive">
@@ -79,15 +104,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.Executive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for the scheduler.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FreePage">
@@ -96,15 +129,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.FreePage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for a free virtual memory page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LpcReceive">
@@ -113,15 +154,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.LpcReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for a local procedure call to arrive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LpcReply">
@@ -130,15 +179,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.LpcReply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for reply to a local procedure call to arrive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageIn">
@@ -147,15 +204,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.PageIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for a virtual memory page to arrive in memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageOut">
@@ -164,15 +229,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.PageOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for a virtual memory page to be written to disk.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspended">
@@ -181,15 +254,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.Suspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Thread execution is suspended.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAllocation">
@@ -198,15 +279,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.SystemAllocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for system allocation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -215,15 +304,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for an unknown reason.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserRequest">
@@ -232,15 +329,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.UserRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for a user request.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VirtualMemory">
@@ -249,15 +354,23 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.VirtualMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ThreadWaitReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thread is waiting for the system to allocate virtual memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

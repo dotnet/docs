@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Cryptography.AsymmetricKeyExchangeDeformatter</BaseTypeName>
@@ -17,28 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Decrypts Optimal Asymmetric Encryption Padding (OAEP) key exchange data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Key exchange allows a sender to create secret information, for example, random data that can be used as a key in a symmetric encryption algorithm, and use encryption to send it to the intended recipient.  
-  
- Use <xref:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter> to create the key exchange message with the <xref:System.Security.Cryptography.RSA> algorithm.  
-  
-> [!CAUTION]
->  It is highly recommended that you not attempt to create your own key exchange method from the basic functionality provided, because many details of the operation must be performed carefully in order for the key exchange to be successful.  
-  
-   
-  
-## Examples  
- The following example shows how to use the RSAOAEPKeyExchangeDeformatter class to recreate an exchange key to be used to decrypt a message.  
-  
- [!code-vb[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#1](~/add/codesnippet/visualbasic/t-system.security.crypto_125_1.vb)]
- [!code-cs[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#1](~/add/codesnippet/csharp/t-system.security.crypto_125_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,20 +32,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.SetKey%2A> to establish the key before calling <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.DecryptKeyExchange%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,18 +52,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">The instance of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm that holds the private key.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter" /> class with the specified key.</summary>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptKeyExchange">
@@ -92,8 +75,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -107,27 +94,10 @@
         <Parameter Name="rgbData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbData">The key exchange data within which the secret information is hidden.</param>
-        <summary>Extracts secret information from the encrypted key exchange data.</summary>
-        <returns>The secret information derived from the key exchange data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must specify a key before calling this method.  
-  
-   
-  
-## Examples  
- The following example shows how to use the DecryptKeyExchange method to recreate an exchange key from a message sender. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter> class.  
-  
- [!code-vb[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#3](~/add/codesnippet/visualbasic/d7ac00c5-9e22-4131-86c1-_1.vb)]
- [!code-cs[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#3](~/add/codesnippet/csharp/d7ac00c5-9e22-4131-86c1-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The key exchange data verification has failed.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The key is missing.</exception>
+        <param name="rgbData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -137,27 +107,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parameters for the Optimal Asymmetric Encryption Padding (OAEP) key exchange.</summary>
-        <value>An XML string containing the parameters of the OAEP key exchange operation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to call the Parameters property to retrieve an XML representation of the parameters. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter> class.  
-  
- [!code-cpp[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter#12](~/add/codesnippet/cpp/p-system.security.crypto_28_1.cpp)]
- [!code-cs[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter#12](~/add/codesnippet/csharp/p-system.security.crypto_28_1.cs)]
- [!code-vb[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter#12](~/add/codesnippet/visualbasic/p-system.security.crypto_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -167,8 +130,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -177,18 +144,9 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">The instance of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm that holds the private key.</param>
-        <summary>Sets the private key to use for decrypting the secret information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must set a key before calling <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.DecryptKeyExchange%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" />.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RefreshInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the information for the refresh of a registration entry by a peer resolver service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a peer resolver service refreshes an entry, it sets a new expiry on that entry. An instance of this object must be supplied to the peer resolver service for each peer node that should have its expiration refreshed; otherwise, the entry is marked as stale and will be deleted after a specific interval for cleanup has passed.  
-  
- Instances of this class are primarily used to pass information to the resolver service from a network client of that service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.RefreshInfo" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,9 +49,9 @@
         <Parameter Name="regId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="meshId">A <see cref="T:System.String" /> that identifies the mesh in which the peer node participates.</param>
-        <param name="regId">A <see cref="T:System.Guid" /> that uniquely identifies the registration entry for the peer node.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.RefreshInfo" /> class with the provided mesh ID and unique registration ID.</summary>
+        <param name="meshId">To be added.</param>
+        <param name="regId">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
-        <returns>True if the refresh information message body is correctly formed by the sender (the service client); false if it is not.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,16 +81,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the mesh ID of the registration entry to refresh.</summary>
-        <value>
-          <see cref="T:System.String" /> that contains the mesh ID of the registration entry that will be refreshed in the peer resolver registration lookup table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,16 +99,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unique registration ID of the registration entry to refresh.</summary>
-        <value>
-          <see cref="T:System.Guid" /> that contains the registration ID of the peer node whose entry will be refreshed in the peer resolver registration lookup table.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

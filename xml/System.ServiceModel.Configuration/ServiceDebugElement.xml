@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceDebugElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a configuration element that specifies debugging and help information features for a [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] service. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set the <xref:System.ServiceModel.Configuration.ServiceDebugElement.IncludeExceptionDetailInFaults%2A> property to `true` programmatically, you can enable the flow of managed exception information to the client for debugging purposes, as well as the publication of HTML information files for users browsing the service in Web browsers.  
-  
-> [!CAUTION]
->  Returning managed exception information to services can be a security risk. This is because exception details expose information about the internal client implementation that could be used by unauthorized services.  
-  
- The <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageEnabled%2A> and <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageEnabled%2A> properties instruct the service to publish HTML help files when the service is viewed using an HTML browser.  
-  
- The <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl%2A> and <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl%2A> properties control the location of the HTML help page that is viewed.  
-  
- To enable or disable one of the ServiceDebugElement features using a configuration file, you must:  
-  
-1.  Add a `behaviorConfiguration` attribute to the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element for your [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service. (Endpoint behaviors are configured on `<endpoint>` elements; service behaviors on [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) elements.)  
-  
-2.  Add to or create a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) section and add a [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. (Endpoint behaviors are configured using an [\&lt;endpointBehaviors\&gt;](../Topic/%3CendpointBehaviors%3E.md) element; service behaviors are configured using a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) element.  
-  
-3.  Add a [\&lt;serviceDebug\&gt;](../Topic/%3CserviceDebug%3E.md) element to the [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element from step 2 and enable or disable the various properties appropriate to your scenario.  
-  
- For a specific example, see the Example section.  
-  
-   
-  
-## Examples  
- The following code example shows how to use a configuration file to enable the HTML help page feature and return exception information inside a SOAP fault back to the client for debugging purposes (in addition to enabling metadata support).  
-  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceDebugElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,15 +37,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of this behavior element.</summary>
-        <value>The type of the behavior.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,8 +64,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">The configuration element to be copied.</param>
-        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
+        <param name="from">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,7 +95,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -146,16 +109,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string value that specifies the binding to be used when HTTP is utilized to access the service help page.</summary>
-        <value>The binding to be used when HTTP is utilized to access the service help page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is not set, the default binding (HttpTransportBindingElement) is used for service help page access as appropriate.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpHelpPageBindingConfiguration">
@@ -165,7 +121,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -180,8 +135,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string that points to an XML section defining additional configuration information for the binding specified in <see cref="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageBinding%2A" />.</summary>
-        <value>An XML section defining additional configuration information for the binding specified in <see cref="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageBinding%2A" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +147,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -204,25 +158,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] publishes an HTML help page at the address specified by the <see cref="System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if WCF publishes an HTML help page; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property to `false` to disable the publication of an HTML help page visible to HTML browsers.  
-  
- To ensure the HTML help page is published at the location controlled by the <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl%2A> property, you must set this property to `true`. In addition, one of the following conditions must also be met:  
-  
--   The <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl%2A> property is an absolute address that supports the HTTP protocol scheme.  
-  
--   There is a base address for the service that supports the HTTP protocol scheme.  
-  
- Although an exception is thrown if an absolute address that does not support the HTTP protocol scheme is assigned to the <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageUrl%2A> property, any other scenario in which neither of the preceding criteria is met results in no exception and no HTML help page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpHelpPageUrl">
@@ -232,7 +170,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -244,24 +181,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location at which the HTML help file is published.</summary>
-        <value>The relative or absolute HTTP-based URL of the custom HTML help file the user sees when the endpoint is viewed using an HTML browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to enable the use of a custom HTML help file that is returned from an HTTP/Get request, for example, from an HTML browser. The location of the HTML help file is resolved as follows.  
-  
-1.  If the value of this property is a relative address, the location of the HTML help file is the value of the service base address that supports HTTP requests, plus this property value.  
-  
-2.  If the value of this property is an absolute address and supports HTTP requests, the location of the HTML help file is the value of this property.  
-  
-3.  If the value of this property is absolute but does not support HTTP requests, an exception is thrown.  
-  
- This property is valid only when the <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpHelpPageEnabled%2A> property is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsHelpPageBinding">
@@ -271,7 +193,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -286,16 +207,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string value that specifies the binding to be used when HTTPS is utilized to access the service help page.</summary>
-        <value>The binding to be used when HTTPS is utilized to access the service help page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is not set, the default binding (HttpsTransportBindingElement) is used for service help page access as appropriate.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsHelpPageBindingConfiguration">
@@ -305,7 +219,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -320,8 +233,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string that points to an XML section defining additional configuration information for the binding specified in <see cref="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageBinding%2A" />.</summary>
-        <value>An XML section defining additional configuration information for the binding specified in <see cref="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageBinding%2A" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +245,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -344,25 +256,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] returns an HTML help file over HTTPS at the address specified by the <see cref="System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if an HTML help file is returned to clients making an HTTPS/GET request, for example, from an HTML browser; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property to `false` to disable the publication of an HTML help page visible to HTML browsers.  
-  
- To ensure the HTML help page is published at the location controlled by the <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl%2A> property, you must set this property to `true`. In addition, one of the following conditions must also be met:  
-  
--   The <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl%2A> property is an absolute address that supports the HTTPS protocol scheme.  
-  
--   There is a base address for the service that supports the HTTPS protocol scheme.  
-  
--   Although an exception is thrown if an absolute address that does not support the HTTPS protocol scheme is assigned to the <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageUrl%2A> property, any other scenario in which neither of the preceding criteria is met results in no exception and no HTML help page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsHelpPageUrl">
@@ -372,7 +268,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -384,24 +279,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location at which an HTML help file is published for retrieval using HTTPS.</summary>
-        <value>The relative or absolute HTTPS-based URL of the custom HTML help file the user sees when the endpoint is viewed using an HTML browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to enable the use of a custom HTML help file that is returned from an HTTPS/Get request, for example, from an HTML browser. The location of the HTML help file is resolved as follows.  
-  
-1.  If the value of this property is a relative address, the location of the HTML help file is the value of the service base address that supports HTTPS requests, plus this property value.  
-  
-2.  If the value of this property is an absolute address and supports HTTPS requests, the location of the HTML help file is the value of this property.  
-  
-3.  If the value of this property is absolute but does not support HTTPS requests, an exception is thrown.  
-  
- This property is valid only when the <xref:System.ServiceModel.Configuration.ServiceDebugElement.HttpsHelpPageEnabled%2A> property is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeExceptionDetailInFaults">
@@ -411,7 +291,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -423,20 +302,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to include managed exception information in the detail of SOAP faults returned to the client for debugging purposes.</summary>
-        <value>
-          <see langword="true" /> if [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] returns managed exception information in the SOAP faults for client-side debugging purposes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you set the IncludeExceptionDetailInFaults property to `true` programmatically, you can enable the flow of managed exception information to the client for debugging purposes, as well as the publication of HTML information files for users browsing the service in Web browsers.  
-  
-> [!CAUTION]
->  Returning managed exception information to services can be a security risk. This is because exception details expose information about the internal client implementation that could be used by unauthorized services.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -446,7 +314,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleBoolean" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the value returned from a database comparison operation between Oracle data types, and exposes methods used to perform data type conversions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The key difference between an OracleBoolean structure and a standard **Boolean** value is that, where a standard `Boolean` has two possible values, `true` and `false`, an OracleBoolean structure has three possible values, <xref:System.Data.OracleClient.OracleBoolean.True>, <xref:System.Data.OracleClient.OracleBoolean.False>, or <xref:System.Data.OracleClient.OracleBoolean.Null>.  
-  
- An OracleBoolean structure does not map to an Oracle `Boolean` data type; it is exposed as a convenience support class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The <see langword="Boolean" /> to be used as the initial value of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure using the specified <see langword="Boolean" />.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,23 +44,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">The <see langword="integer" /> to be used as the initial value of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure using the specified integer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `value` is 0, the <xref:System.Data.OracleClient.OracleBoolean> is `false`; otherwise it is `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="And">
@@ -81,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,90 +72,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Computes the bitwise AND of two specified <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
-        <returns>The result of the logical AND operation as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
-  
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,56 +95,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An object to compare, or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
-        <summary>Compares this <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure to a specified object and returns an indication of their relative values.</summary>
-        <returns>A signed number indicating the relative values of the instance and value.  
-  
- <list type="table">  
-<listheader>  
-<term> Value  
-  
- </term>  
-<description> Description  
-  
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer  
-  
- </term>  
-<description> This instance is less than <paramref name="value" />.  
-  
- </description>  
-</item>  
-<item>  
-<term> Zero  
-  
- </term>  
-<description> This instance is equal to <paramref name="value" />.  
-  
- </description>  
-</item>  
-<item>  
-<term> A positive integer  
-  
- </term>  
-<description> This instance is greater than <paramref name="value" />.  
-  
- -or-  
-  
- <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any instance of <xref:System.Data.OracleClient.OracleBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -255,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,10 +117,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to be compared.</param>
-        <summary>Compares the supplied object parameter to the <see cref="T:System.Data.OracleClient.OracleBoolean" />.</summary>
-        <returns>
-          <see langword="true" /> if object is an instance of <see cref="T:System.Data.OracleClient.OracleBoolean" /> and the two are equal; otherwise <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,10 +140,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures to determine if they are equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleBoolean" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,22 +154,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a false value that can be assigned to the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The False field is an <xref:System.Data.OracleClient.OracleBoolean> structure constant.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -329,7 +171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -337,8 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,24 +190,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the current <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.False" />.</summary>
-        <value>
-          <see langword="true" /> if <see langword="Value" /> is <see langword="False" />, otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Data.OracleClient.OracleBoolean.Value%2A> is <xref:System.Data.OracleClient.OracleBoolean.Null>, this property still is `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -376,16 +208,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether or not the value of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure is null.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Data.OracleClient.OracleBoolean" /> value of the structure is **Null**, otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,24 +226,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the current <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.True" />.</summary>
-        <value>
-          <see langword="true" /> if <see langword="Value" /> is <see langword="True" />, otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Data.OracleClient.OracleBoolean.Value%2A> is <xref:System.Data.OracleClient.OracleBoolean.Null>, this property still is `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -423,7 +244,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,10 +254,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleBoolean" /> to determine if they are not equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleBoolean" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,22 +268,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a null value that can be assigned to the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Null field is an <xref:System.Data.OracleClient.OracleBoolean> structure constant.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -473,22 +285,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a value of one that can be assigned to the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The One field is an <xref:System.Data.OracleClient.OracleBoolean> structure constant.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnesComplement">
@@ -498,7 +302,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,9 +311,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Performs a ones complement operation on the supplied <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
-        <returns>The one's complement of the supplied <see cref="T:System.Data.OracleClient.OracleBoolean" />. If the <see langword="Boolean" /> contains a null value the result also is a null value.</returns>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,7 +324,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,90 +334,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Computes the bitwise AND of two specified <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
-        <returns>The result of the logical AND operation as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
-  
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -626,7 +348,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -637,90 +358,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Computes the bitwise OR of its two <see cref="T:System.Data.OracleClient.OracleBoolean" /> operands.</summary>
-        <returns>The result of the bitwise OR operation as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
-  
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -731,7 +372,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -742,10 +382,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" />.</param>
-        <summary>Compares two instances of an <see cref="T:System.Data.OracleClient.OracleBoolean" /> for equality.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleBoolean" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,7 +396,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -767,90 +406,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Performs a bitwise exclusive-OR operation on the supplied <see cref="T:System.Data.OracleClient.OracleBoolean" /> parameters.</summary>
-        <returns>The results of the bitwise XOR operation as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
-  
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,7 +420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -884,7 +442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -907,7 +464,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -930,7 +486,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -940,10 +495,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">The <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure to be tested.</param>
-        <summary>Used to test the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> to determine whether it is false.</summary>
-        <returns>
-          <see langword="true" /> if the supplied parameter <see cref="T:System.Data.OracleClient.OracleBoolean" /> is false; otherwise <see langword="false" />.</returns>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -954,7 +508,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -977,7 +530,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -988,10 +540,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" />.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleBoolean" /> for inequality.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleBoolean" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1002,7 +554,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1012,9 +563,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">The <see cref="T:System.Data.OracleClient.OracleBoolean" /> on which the NOT operation is performed.</param>
-        <summary>Performs a NOT operation on an <see cref="T:System.Data.OracleClient.OracleBoolean" />.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> with the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /><see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if argument was true, <see cref="F:System.Data.OracleClient.OracleBoolean.Null" /> if argument was null, and <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> otherwise.</returns>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1025,7 +576,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1035,9 +585,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Performs a one's complement operation on the specified <see cref="T:System.Data.OracleClient.OracleBoolean" />.</summary>
-        <returns>The one's complement of the specified <see cref="T:System.Data.OracleClient.OracleBoolean" />.</returns>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1048,7 +598,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1058,10 +607,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">The <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure to be tested.</param>
-        <summary>Used to test the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> to determine whether it is true.</summary>
-        <returns>
-          <see langword="true" /> if the supplied parameter <see cref="T:System.Data.OracleClient.OracleBoolean" /> is true; otherwise <see langword="false" />.</returns>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1072,7 +620,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1083,90 +630,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Performs a bitwise OR operation on the two specified <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
-        <returns>The result of the bitwise OR operation as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
-  
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1177,7 +644,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1187,9 +653,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The <see cref="T:System.String" /> to be converted.</param>
-        <summary>Converts the specified <see cref="T:System.String" /> representation of a logical value to its <see cref="T:System.Data.OracleClient.OracleBoolean" /> equivalent.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure containing the parsed value.</returns>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1200,7 +666,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1208,8 +673,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the current <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> to a string.</summary>
-        <returns>A string containing the value of the <see cref="T:System.Data.OracleClient.OracleBoolean" />. If the value is null, the string contains a null value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1220,22 +685,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a true value that can be assigned to the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The True field is an <xref:System.Data.OracleClient.OracleBoolean> structure constant.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1245,16 +702,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure's value. This property is read-only.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.True" />; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1265,7 +720,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1276,90 +730,10 @@
         <Parameter Name="y" Type="System.Data.OracleClient.OracleBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</param>
-        <summary>Performs a bitwise exclusive-OR operation on the supplied parameters.</summary>
-        <returns>The results of the logical XOR operation as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
-  
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1370,22 +744,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a value of zero that can be assigned to the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Zero field is an <xref:System.Data.OracleClient.OracleBoolean> structure constant.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

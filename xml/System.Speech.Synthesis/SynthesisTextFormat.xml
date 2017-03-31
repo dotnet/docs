@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisTextFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates the types of text formats that may be used to construct a <see cref="T:System.Speech.Synthesis.Prompt" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Synthesis.Prompt.%23ctor%2A> constructor uses SynthesisTextFormat to indicate the format of the text that its `textToSpeak` parameter contains.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ssml">
@@ -29,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisTextFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the text format is SSML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See <xref:System.Speech.Synthesis.Prompt.%23ctor%2A> for an example.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisTextFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the text format is Text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

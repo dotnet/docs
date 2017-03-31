@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollEventType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of action used to raise the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.ScrollEventArgs.Type%2A?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EndScroll">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box has stopped moving.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box was moved to the <see cref="System.Windows.Forms.ScrollBar.Minimum%2A" /> position.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeDecrement">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box moved a large distance. The user clicked the scroll bar to the left(horizontal) or above(vertical) the scroll box, or pressed the PAGE UP key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIncrement">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box moved a large distance. The user clicked the scroll bar to the right(horizontal) or below(vertical) the scroll box, or pressed the PAGE DOWN key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -102,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box was moved to the <see cref="System.Windows.Forms.ScrollBar.Maximum%2A" /> position.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDecrement">
@@ -119,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box was moved a small distance. The user clicked the left(horizontal) or top(vertical) scroll arrow, or pressed the UP ARROW key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIncrement">
@@ -136,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box was moved a small distance. The user clicked the right(horizontal) or bottom(vertical) scroll arrow, or pressed the DOWN ARROW key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbPosition">
@@ -153,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box was moved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbTrack">
@@ -170,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll box is currently being moved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Region" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,28 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Describes the interior of a graphics shape composed of rectangles and paths. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A region is scalable because its coordinates are specified in world coordinates. On a drawing surface, however, its interior is dependent on the size and shape of the pixels representing it. An application can use regions to clip the output of drawing operations. These regions are called clipping regions. For more information on using regions for clipping, see [How to: Use Clipping with a Region](../Topic/How%20to:%20Use%20Clipping%20with%20a%20Region.md).  
-  
- An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](../Topic/How%20to:%20Use%20Hit%20Testing%20with%20a%20Region.md).  
-  
- An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=fullName> method and a  <xref:System.Drawing.Brush> object.  
-  
-   
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  The code example demonstrates how to use the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> from one <xref:System.Drawing.Drawing2D.RegionData> object to set the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> for another <xref:System.Drawing.Drawing2D.RegionData>.  
-  
- [!code-cs[System.Drawing.MiscExamples#13](~/add/codesnippet/csharp/t-system.drawing.region_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#13](~/add/codesnippet/cpp/t-system.drawing.region_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#13](~/add/codesnippet/visualbasic/t-system.drawing.region_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes a new <xref:System.Drawing.Region> with an infinite interior.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,25 +41,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
       </Parameters>
       <Docs>
-        <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that defines the new <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" /> with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.Drawing.Region> with a <xref:System.Drawing.Drawing2D.GraphicsPath>. The new region is defined as the interior of the <xref:System.Drawing.Drawing2D.GraphicsPath> specified by the `path` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,25 +59,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rgnData" Type="System.Drawing.Drawing2D.RegionData" />
       </Parameters>
       <Docs>
-        <param name="rgnData">A <see cref="T:System.Drawing.Drawing2D.RegionData" /> that defines the interior of the new <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from the specified data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.Drawing.Region> with an interior defined by an existing <xref:System.Drawing.Region>. The `rgnData` parameter is an array that contains the definition of an existing <xref:System.Drawing.Region>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="rgnData" /> is <see langword="null" />.</exception>
+        <param name="rgnData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,32 +77,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">A <see cref="T:System.Drawing.Rectangle" /> structure that defines the interior of the new <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.Drawing.Region> with a rectangular interior. The interior is defined by the `rect` parameter.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Region constructor and <xref:System.Drawing.Region.MakeEmpty%2A> method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.MiscExamples#7](~/add/codesnippet/csharp/m-system.drawing.region._13_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#7](~/add/codesnippet/cpp/m-system.drawing.region._13_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#7](~/add/codesnippet/visualbasic/m-system.drawing.region._13_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -161,23 +95,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">A <see cref="T:System.Drawing.RectangleF" /> structure that defines the interior of the new <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.Drawing.Region> with a rectangular interior. The interior is defined by the `rect` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -187,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,8 +120,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an exact copy of this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>The <see cref="T:System.Drawing.Region" /> that this method creates.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,36 +141,9 @@
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> to complement this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a rectangle and draws it to the screen in black.  
-  
--   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
--   Creates a region using the first rectangle.  
-  
--   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath>, and adds the second rectangle to it.  
-  
--   Gets the complement of the region when combined with the <xref:System.Drawing.Drawing2D.GraphicsPath>.  
-  
--   Fills the complement area with blue and draws it to the screen.  
-  
- Notice that the area of the <xref:System.Drawing.Drawing2D.GraphicsPath> that does not intersect with the region is colored blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#1](~/add/codesnippet/csharp/m-system.drawing.region._7_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#1](~/add/codesnippet/visualbasic/m-system.drawing.region._7_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#1](~/add/codesnippet/cpp/m-system.drawing.region._7_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complement">
@@ -256,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,16 +162,9 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to complement this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.Rectangle" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For an example, see the <xref:System.Drawing.Region.Complement%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complement">
@@ -285,7 +174,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,32 +183,9 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to complement this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a rectangle and draws it to the screen in black.  
-  
--   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
--   Creates a region using the first rectangle.  
-  
--   Gets the complement of that region combined with the second rectangle.  
-  
--   Fills the complement area with blue and draws it to the screen.  
-  
- Notice that the area of the second rectangle that does not intersect with the region is colored blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#2](~/add/codesnippet/csharp/m-system.drawing.region._3_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#2](~/add/codesnippet/visualbasic/m-system.drawing.region._3_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#2](~/add/codesnippet/cpp/m-system.drawing.region._3_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complement">
@@ -330,7 +195,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,34 +204,9 @@
         <Parameter Name="region" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Drawing.Region" /> object to complement this <see cref="T:System.Drawing.Region" /> object.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain the portion of the specified <see cref="T:System.Drawing.Region" /> that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a rectangle and draws it to the screen in black  
-  
--   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
--   Creates one region using the first rectangle and creates a second region using the second rectangle.  
-  
--   Gets the complement of that first region when combined with the second region.  
-  
--   Fills the complement area with blue and draws it to the screen.  
-  
- Notice that the area of the second region that does not intersect with the first region is colored blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#3](~/add/codesnippet/csharp/m-system.drawing.region._1_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#3](~/add/codesnippet/visualbasic/m-system.drawing.region._1_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#3](~/add/codesnippet/cpp/m-system.drawing.region._1_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="region" /> is <see langword="null" />.</exception>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -377,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,31 +223,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by this <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling Dispose allows the resources used by this <xref:System.Drawing.Region> to be reallocated for other purposes.  
-  
- Call Dispose when you are finished using the <xref:System.Drawing.Region>. The Dispose method leaves the <xref:System.Drawing.Region> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Drawing.Region> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Region> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call Dispose before you release your last reference to the <xref:System.Drawing.Region>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Region> object's `Finalize` method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the <xref:System.Drawing.Region.%23ctor%2A> constructor and the <xref:System.Drawing.Region.Exclude%2A> and Dispose methods.  
-  
- This example is designed to be used with Windows Forms. Paste the code into a form and call the `FillRegionExcludingPath` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.GraphicsProperties#1](~/add/codesnippet/cpp/m-system.drawing.region._9_1.cpp)]
- [!code-vb[System.Drawing.GraphicsProperties#1](~/add/codesnippet/visualbasic/m-system.drawing.region._9_1.vb)]
- [!code-cs[System.Drawing.GraphicsProperties#1](~/add/codesnippet/csharp/m-system.drawing.region._9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -419,7 +234,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,21 +244,11 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Drawing.Region" /> to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a drawing surface.</param>
-        <summary>Tests whether the specified <see cref="T:System.Drawing.Region" /> is identical to this <see cref="T:System.Drawing.Region" /> on the specified drawing surface.</summary>
-        <returns>
-          <see langword="true" /> if the interior of region is identical to the interior of this region when the transformation associated with the <paramref name="g" /> parameter is applied; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context `g` is used to compute the region interiors on the drawing surface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="g" /> or <paramref name="region" /> is <see langword="null" />.</exception>
+        <param name="region">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -454,7 +258,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,24 +267,9 @@
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> to exclude from this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the <xref:System.Drawing.Region.%23ctor%2A> constructor and the Exclude and <xref:System.Drawing.Region.Dispose%2A> methods.  
-  
- This example is designed to be used with Windows Forms. Paste the code into a form and call the `FillRegionExcludingPath` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.GraphicsProperties#1](~/add/codesnippet/cpp/m-system.drawing.region._12_1.cpp)]
- [!code-vb[System.Drawing.GraphicsProperties#1](~/add/codesnippet/visualbasic/m-system.drawing.region._12_1.vb)]
- [!code-cs[System.Drawing.GraphicsProperties#1](~/add/codesnippet/csharp/m-system.drawing.region._12_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -491,7 +279,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -501,16 +288,9 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to exclude from this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -520,7 +300,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,32 +309,9 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to exclude from this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a rectangle and draws it to the screen in black  
-  
--   Creates a second rectangle that intersects with the first and draws it to the screen in red.  
-  
--   Creates a region using the first rectangle.  
-  
--   Gets the nonexcluded area of the region when combined with the second rectangle.  
-  
--   Fills the nonexcluded area with blue and draws it to the screen.  
-  
- Notice that the area of the area of the region that does not intersect with the rectangle is colored blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#4](~/add/codesnippet/csharp/m-system.drawing.region._16_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#4](~/add/codesnippet/visualbasic/m-system.drawing.region._16_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#4](~/add/codesnippet/cpp/m-system.drawing.region._16_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -565,7 +321,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -575,18 +330,9 @@
         <Parameter Name="region" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Drawing.Region" /> to exclude from this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to contain only the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For code examples, see the <xref:System.Drawing.Region.Exclude%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Region%29> methods.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="region" /> is <see langword="null" />.</exception>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -596,7 +342,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,7 +349,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,7 +360,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -625,18 +369,10 @@
         <Parameter Name="hrgn" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hrgn">A handle to an existing <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" /> from a handle to the specified existing [!INCLUDE[ndptecgdi](~/add/includes/ndptecgdi-md.md)] region.</summary>
-        <returns>The new <see cref="T:System.Drawing.Region" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.Drawing.Region> with an interior defined by the existing <xref:System.Drawing.Region> referred to by the handle in the `hrgn` parameter.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing unmanaged code. Related enumeration <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="hrgn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -646,7 +382,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,38 +391,10 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> on which this <see cref="T:System.Drawing.Region" /> is drawn.</param>
-        <summary>Gets a <see cref="T:System.Drawing.RectangleF" /> structure that represents a rectangle that bounds this <see cref="T:System.Drawing.Region" /> on the drawing surface of a <see cref="T:System.Drawing.Graphics" /> object.</summary>
-        <returns>A <see cref="T:System.Drawing.RectangleF" /> structure that represents the bounding rectangle for this <see cref="T:System.Drawing.Region" /> on the specified drawing surface.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior on the drawing surface. The bounding rectangle is not always the smallest possible bounding rectangle depending on the current transformation.  
-  
-   
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> and adds an ellipse to it.  
-  
--   Fills the path with blue and draws it to the screen.  
-  
--   Creates a region that uses the <xref:System.Drawing.Drawing2D.GraphicsPath>.  
-  
--   Gets the nonexcluded area of the region when combined with the second rectangle.  
-  
--   Gets the bounding rectangle for the region and draws it to the screen in red.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#5](~/add/codesnippet/csharp/m-system.drawing.region._4_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#5](~/add/codesnippet/visualbasic/m-system.drawing.region._4_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#5](~/add/codesnippet/cpp/m-system.drawing.region._4_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="g" /> is <see langword="null" />.</exception>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHrgn">
@@ -697,7 +404,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -707,12 +413,10 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> on which this <see cref="T:System.Drawing.Region" /> is drawn.</param>
-        <summary>Returns a Windows handle to this <see cref="T:System.Drawing.Region" /> in the specified graphics context.</summary>
-        <returns>A Windows handle to this <see cref="T:System.Drawing.Region" />.</returns>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="g" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRegionData">
@@ -722,7 +426,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -730,25 +433,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Drawing.Drawing2D.RegionData" /> that represents the information that describes this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>A <see cref="T:System.Drawing.Drawing2D.RegionData" /> that represents the information that describes this <see cref="T:System.Drawing.Region" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Region> class allows you to define a custom shape. The shape can be made up of lines, polygons, and curves. GetRegionData describes the  shape contained in this <xref:System.Drawing.Region>.  
-  
-   
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  The code example demonstrates how to use the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> from one <xref:System.Drawing.Drawing2D.RegionData> object to set the <xref:System.Drawing.Drawing2D.RegionData.Data%2A> for another <xref:System.Drawing.Drawing2D.RegionData>.  
-  
- [!code-cs[System.Drawing.MiscExamples#13](~/add/codesnippet/csharp/m-system.drawing.region._15_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#13](~/add/codesnippet/cpp/m-system.drawing.region._15_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#13](~/add/codesnippet/visualbasic/m-system.drawing.region._15_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRegionScans">
@@ -758,7 +445,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -768,12 +454,10 @@
         <Parameter Name="matrix" Type="System.Drawing.Drawing2D.Matrix" />
       </Parameters>
       <Docs>
-        <param name="matrix">A <see cref="T:System.Drawing.Drawing2D.Matrix" /> that represents a geometric transformation to apply to the region.</param>
-        <summary>Returns an array of <see cref="T:System.Drawing.RectangleF" /> structures that approximate this <see cref="T:System.Drawing.Region" /> after the specified matrix transformation is applied.</summary>
-        <returns>An array of <see cref="T:System.Drawing.RectangleF" /> structures that approximate this <see cref="T:System.Drawing.Region" /> after the specified matrix transformation is applied.</returns>
+        <param name="matrix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="matrix" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -783,7 +467,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,16 +476,9 @@
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> to intersect with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For code examples, see the <xref:System.Drawing.RectangleF.Intersect%28System.Drawing.RectangleF%29?displayProperty=fullName> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -812,7 +488,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -822,16 +497,9 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to intersect with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Intersect%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -841,7 +509,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -851,32 +518,9 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to intersect with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates the first rectangle and draws it to the screen in black.  
-  
--   Creates the second rectangle and draws it to the screen in red.  
-  
--   Creates a region from the first rectangle.  
-  
--   Gets the area of intersection for the region when combined with the second rectangle.  
-  
--   Fills the area of intersection with blue and draws it to the screen.  
-  
- Notice that only the overlapped area for the region and rectangle is blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#7](~/add/codesnippet/csharp/m-system.drawing.region._2_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#7](~/add/codesnippet/visualbasic/m-system.drawing.region._2_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#7](~/add/codesnippet/cpp/m-system.drawing.region._2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -886,7 +530,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -896,16 +539,9 @@
         <Parameter Name="region" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Drawing.Region" /> to intersect with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For code examples, see the <xref:System.Drawing.Region.Intersect%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> method`.`  
-  
- ]]></format>
-        </remarks>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -915,7 +551,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -925,20 +560,10 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a drawing surface.</param>
-        <summary>Tests whether this <see cref="T:System.Drawing.Region" /> has an empty interior on the specified drawing surface.</summary>
-        <returns>
-          <see langword="true" /> if the interior of this <see cref="T:System.Drawing.Region" /> is empty when the transformation associated with <paramref name="g" /> is applied; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context `g` is used to compute the region interior on the drawing surface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="g" /> is <see langword="null" />.</exception>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInfinite">
@@ -948,7 +573,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -958,20 +582,10 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a drawing surface.</param>
-        <summary>Tests whether this <see cref="T:System.Drawing.Region" /> has an infinite interior on the specified drawing surface.</summary>
-        <returns>
-          <see langword="true" /> if the interior of this <see cref="T:System.Drawing.Region" /> is infinite when the transformation associated with <paramref name="g" /> is applied; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context `g` is used to compute the region interior on the drawing surface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="g" /> is <see langword="null" />.</exception>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -981,7 +595,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -991,18 +604,10 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.Point" /> structure to test.</param>
-        <summary>Tests whether the specified <see cref="T:System.Drawing.Point" /> structure is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1012,7 +617,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1022,18 +626,10 @@
         <Parameter Name="point" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.PointF" /> structure to test.</param>
-        <summary>Tests whether the specified <see cref="T:System.Drawing.PointF" /> structure is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1043,7 +639,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1053,17 +648,10 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to test.</param>
-        <summary>Tests whether any portion of the specified <see cref="T:System.Drawing.Rectangle" /> structure is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>This method returns <see langword="true" /> when any portion of <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1073,7 +661,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1083,34 +670,10 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to test.</param>
-        <summary>Tests whether any portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>
-          <see langword="true" /> when any portion of <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates the first rectangle and draws it to the screen in blue.  
-  
--   Creates the second rectangle and draws it to the screen in red.  
-  
--   Creates a region from the first rectangle.  
-  
--   Determines if any portion of the rectangle intersects with the region.  
-  
--   Displays the `true` or `false` result on the screen.  
-  
- Notice that the rectangle intersects the region, so the result is `true`.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#8](~/add/codesnippet/csharp/m-system.drawing.region._5_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#8](~/add/codesnippet/visualbasic/m-system.drawing.region._5_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#8](~/add/codesnippet/cpp/m-system.drawing.region._5_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1120,7 +683,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1131,24 +693,11 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.Point" /> structure to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether the specified <see cref="T:System.Drawing.Point" /> structure is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1158,7 +707,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1169,24 +717,11 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.PointF" /> structure to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether the specified <see cref="T:System.Drawing.PointF" /> structure is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="point" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1196,7 +731,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1207,24 +741,11 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether any portion of the specified <see cref="T:System.Drawing.Rectangle" /> structure is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when any portion of the <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1234,7 +755,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1245,24 +765,11 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether any portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="rect" /> is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1272,7 +779,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1283,19 +789,11 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the point to test.</param>
-        <param name="y">The y-coordinate of the point to test.</param>
-        <summary>Tests whether the specified point is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>
-          <see langword="true" /> when the specified point is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1305,7 +803,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1317,25 +814,12 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the point to test.</param>
-        <param name="y">The y-coordinate of the point to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether the specified point is contained within this <see cref="T:System.Drawing.Region" /> object when drawn using the specified <see cref="T:System.Drawing.Graphics" /> object.</summary>
-        <returns>
-          <see langword="true" /> when the specified point is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1345,7 +829,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1357,25 +840,12 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the point to test.</param>
-        <param name="y">The y-coordinate of the point to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether the specified point is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when the specified point is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the point coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1385,7 +855,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1398,21 +867,13 @@
         <Parameter Name="height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="y">The y-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="width">The width of the rectangle to test.</param>
-        <param name="height">The height of the rectangle to test.</param>
-        <summary>Tests whether any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>
-          <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1422,7 +883,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1435,21 +895,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="y">The y-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="width">The width of the rectangle to test.</param>
-        <param name="height">The height of the rectangle to test.</param>
-        <summary>Tests whether any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-        <returns>
-          <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" /> object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1459,7 +911,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1473,27 +924,14 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="y">The y-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="width">The width of the rectangle to test.</param>
-        <param name="height">The height of the rectangle to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1503,7 +941,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1517,27 +954,14 @@
         <Parameter Name="g" Type="System.Drawing.Graphics" />
       </Parameters>
       <Docs>
-        <param name="x">The x-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="y">The y-coordinate of the upper-left corner of the rectangle to test.</param>
-        <param name="width">The width of the rectangle to test.</param>
-        <param name="height">The height of the rectangle to test.</param>
-        <param name="g">A <see cref="T:System.Drawing.Graphics" /> that represents a graphics context.</param>
-        <summary>Tests whether any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" /> when drawn using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
-        <returns>
-          <see langword="true" /> when any portion of the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The current transformation of the graphics context is used to compute the region interior and the rectangle coordinates on the drawing surface.  
-  
-   
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.IsVisible%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="g">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeEmpty">
@@ -1547,7 +971,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1555,19 +978,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes this <see cref="T:System.Drawing.Region" /> to an empty interior.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Region.%23ctor%2A> constructor and MakeEmpty method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.MiscExamples#7](~/add/codesnippet/csharp/m-system.drawing.region._10_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#7](~/add/codesnippet/cpp/m-system.drawing.region._10_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#7](~/add/codesnippet/visualbasic/m-system.drawing.region._10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeInfinite">
@@ -1577,7 +989,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1585,19 +996,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes this <see cref="T:System.Drawing.Region" /> object to an infinite interior.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the MakeInfinite method. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `FillEmptyRegion` method in the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.MiscExamples#8](~/add/codesnippet/csharp/m-system.drawing.region._11_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#8](~/add/codesnippet/cpp/m-system.drawing.region._11_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#8](~/add/codesnippet/visualbasic/m-system.drawing.region._11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseHrgn">
@@ -1607,7 +1007,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1617,12 +1016,9 @@
         <Parameter Name="regionHandle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="regionHandle">The handle to the <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Releases the handle of the <see cref="T:System.Drawing.Region" />.</summary>
+        <param name="regionHandle">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="regionHandle" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1632,7 +1028,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1642,34 +1037,9 @@
         <Parameter Name="matrix" Type="System.Drawing.Drawing2D.Matrix" />
       </Parameters>
       <Docs>
-        <param name="matrix">The <see cref="T:System.Drawing.Drawing2D.Matrix" /> by which to transform this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Transforms this <see cref="T:System.Drawing.Region" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a rectangle and draws it to the screen in blue.  
-  
--   Creates a region from the rectangle.  
-  
--   Creates a transformation matrix and sets it to 45 degrees.  
-  
--   Applies the transformation to the region.  
-  
--   Fills the transformed region with red and draws the transformed region to the screen in red.  
-  
- Notice that the red rectangle is rotated 45 degrees from the original rectangle, shown in blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#9](~/add/codesnippet/csharp/m-system.drawing.region._8_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#9](~/add/codesnippet/visualbasic/m-system.drawing.region._8_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#9](~/add/codesnippet/cpp/m-system.drawing.region._8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="matrix" /> is <see langword="null" />.</exception>
+        <param name="matrix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Translate">
@@ -1679,7 +1049,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1690,31 +1059,10 @@
         <Parameter Name="dy" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dx">The amount to offset this <see cref="T:System.Drawing.Region" /> horizontally.</param>
-        <param name="dy">The amount to offset this <see cref="T:System.Drawing.Region" /> vertically.</param>
-        <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates a rectangle and draws it to the screen in blue.  
-  
--   Creates a region from the rectangle.  
-  
--   Applies the translation to the region.  
-  
--   Fills the translated region with red and draws the translated region to the screen in red.  
-  
- Notice that the red rectangle is shifted down and to the right from the original rectangle, shown in blue.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#10](~/add/codesnippet/csharp/m-system.drawing.region._6_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#10](~/add/codesnippet/visualbasic/m-system.drawing.region._6_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#10](~/add/codesnippet/cpp/m-system.drawing.region._6_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Translate">
@@ -1724,7 +1072,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1735,17 +1082,10 @@
         <Parameter Name="dy" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="dx">The amount to offset this <see cref="T:System.Drawing.Region" /> horizontally.</param>
-        <param name="dy">The amount to offset this <see cref="T:System.Drawing.Region" /> vertically.</param>
-        <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see theTranslate method.  
-  
- ]]></format>
-        </remarks>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1755,7 +1095,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1765,18 +1104,9 @@
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> to unite with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1786,7 +1116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1796,16 +1125,9 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to unite with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1815,7 +1137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1825,32 +1146,9 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to unite with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`. The code performs the following actions:  
-  
--   Creates the first rectangle and draws it to the screen in black.  
-  
--   Creates a second rectangle and draws it to the screen in red.  
-  
--   Creates a region using the first rectangle.  
-  
--   Gets the area of union for `myRegion` when combined with `complementRect`.  
-  
--   Fills the fills the area of union with blue and draws it to the screen.  
-  
- Notice that both rectangles are filled with blue, including the area of overlap.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#11](~/add/codesnippet/csharp/m-system.drawing.region._0_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#11](~/add/codesnippet/visualbasic/m-system.drawing.region._0_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#11](~/add/codesnippet/cpp/m-system.drawing.region._0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1860,7 +1158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1870,18 +1167,9 @@
         <Parameter Name="region" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Drawing.Region" /> to unite with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Union%28System.Drawing.RectangleF%29> and <xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="region" /> is <see langword="null" />.</exception>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -1891,7 +1179,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1901,18 +1188,9 @@
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
       </Parameters>
       <Docs>
-        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> to <see cref="System.Drawing.Region.Xor%2A" /> with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.</exception>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -1922,7 +1200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1932,16 +1209,9 @@
         <Parameter Name="rect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> structure to <see cref="System.Drawing.Region.Xor%2A" /> with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -1951,7 +1221,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1961,32 +1230,9 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">The <see cref="T:System.Drawing.RectangleF" /> structure to <see cref="System.Drawing.Region.Xor%2A" /> with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
--   Creates the first rectangle and draws it to the screen in black.  
-  
--   Creates a second rectangle and draws it to the screen in red.  
-  
--   Creates a region using the first rectangle.  
-  
--   Gets the <xref:System.Drawing.Region.Xor%2A> area for `myRegion` when combined with `complementRect`.  
-  
--   Fills the <xref:System.Drawing.Region.Xor%2A> area with blue and draws it to the screen.  
-  
- Notice that both rectangles are filled with blue, except for the area of overlap.  
-  
- [!code-cs[System.Drawing.ClassicRegionExamples#12](~/add/codesnippet/csharp/m-system.drawing.region._14_1.cs)]
- [!code-vb[System.Drawing.ClassicRegionExamples#12](~/add/codesnippet/visualbasic/m-system.drawing.region._14_1.vb)]
- [!code-cpp[System.Drawing.ClassicRegionExamples#12](~/add/codesnippet/cpp/m-system.drawing.region._14_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -1996,7 +1242,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2006,18 +1251,9 @@
         <Parameter Name="region" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="region">The <see cref="T:System.Drawing.Region" /> to <see cref="System.Drawing.Region.Xor%2A" /> with this <see cref="T:System.Drawing.Region" />.</param>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For a code example, see the <xref:System.Drawing.Region.Xor%28System.Drawing.RectangleF%29> and<xref:System.Drawing.Region.Complement%28System.Drawing.Drawing2D.GraphicsPath%29> methods.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="region" /> is <see langword="null" />.</exception>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,26 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqEncryptionAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Contains the set of encryption algorithms that can be used to encrypt messages on the wire.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing (MSMQ) can encrypt messages on the wire when transferring queued messages between queue managers. MsmqEncryptionAlgorithm is an enumeration that contains the set of encryption algorithms that can be used to encrypt messages on the wire.  
-  
- For encryption to work, the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must be set to <xref:System.Net.Security.ProtectionLevel>.  
-  
- Only RC4Stream is supported on [!INCLUDE[ws2003](~/add/includes/ws2003-md.md)] and [!INCLUDE[wxp](~/add/includes/wxp-md.md)].  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Aes">
@@ -33,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqEncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Advanced Encryption Standard (AES) defined by the National Institute of Standards and Technology (NIST).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RC4Stream">
@@ -50,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqEncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A stream cipher defined by [RSA Security](http://go.microsoft.com/fwlink/?LinkId=95942).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

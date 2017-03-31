@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The DirectoryControlCollection class manages a collection of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The DirectoryControlCollection constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,12 +46,10 @@
         <Parameter Name="control" Type="System.DirectoryServices.Protocols.DirectoryControl" />
       </Parameters>
       <Docs>
-        <param name="control">The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object to add.</param>
-        <summary>The Add method adds a new <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object to the collection.</summary>
-        <returns>The index of the <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object has been added.</returns>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="control" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -64,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,12 +68,9 @@
         <Parameter Name="controls" Type="System.DirectoryServices.Protocols.DirectoryControl[]" />
       </Parameters>
       <Docs>
-        <param name="controls">An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects to add to the collection.</param>
-        <summary>The AddRange method adds an array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects to the collection.</summary>
+        <param name="controls">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="controls" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">A member of the array is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -89,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,11 +89,9 @@
         <Parameter Name="controlCollection" Type="System.DirectoryServices.Protocols.DirectoryControlCollection" />
       </Parameters>
       <Docs>
-        <param name="controlCollection">The <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object to add to this collection.</param>
-        <summary>The AddRange method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object to the current collection.</summary>
+        <param name="controlCollection">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="controlCollection" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -113,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,10 +110,9 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryControl" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object for which to search.</param>
-        <summary>The Contains method determines whether this <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object contains a specified <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object is part of the collection; <see langword="false" />, otherwise.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,21 +133,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object.</param>
-        <param name="index">The zero-based index of <c>array</c> where copying begins.</param>
-        <summary>The CopyTo method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="array" /> is multidimensional  
-  
- -or-  
-  
- The number of elements in the source <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
-        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -172,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,9 +155,9 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryControl" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object for which the index is returned.</param>
-        <summary>The IndexOf method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object in the <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" />.</summary>
-        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object, if found; otherwise, -1.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +168,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,16 +178,10 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryControl" />
       </Parameters>
       <Docs>
-        <param name="index">The index in the collection at which to insert the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object.</param>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object to be inserted into the collection.</param>
-        <summary>The Insert method inserts the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object into the <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> at the specified index.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero, or <paramref name="index" /> is greater than the number of elements in the <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> is read-only, or <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -225,7 +191,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,11 +200,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index value of the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object.</param>
-        <summary>The Item property contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object at the specified index.</summary>
-        <value>Contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">There was an attempt to set the property to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -249,7 +213,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,20 +222,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to evaluate.</param>
-        <summary>The OnValidate method verifies that <paramref name="value" /> is a <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does not return a value. Instead, an exception is thrown if the specified object is null or is not a valid <xref:System.DirectoryServices.Protocols.DirectoryControl> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="value" /> is not a <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -282,7 +234,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,11 +243,9 @@
         <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryControl" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object to remove.</param>
-        <summary>The Remove method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object from the collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">
-          <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> is read-only, or <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> has a fixed size.</exception>
       </Docs>
     </Member>
   </Members>

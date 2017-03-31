@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ProfileServiceManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,33 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Configures a set of preloaded profile properties and the location of a custom implementation of the profile service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProfileServiceManager class corresponds to the <xref:System.Web.UI.ScriptManager.ProfileService%2A> property that can be added to the <xref:System.Web.UI.ScriptManager> or <xref:System.Web.UI.ScriptManagerProxy> control.  
-  
- You can use ProfileServiceManager to specify a set of profile properties that will be preloaded when the page is rendered and will be available to client script. Also, instead of using the built-in profile Web service provided by AJAX features of ASP.NET, you can use this class to provide the path of an alternative implementation of the Web service that will be used for loading or saving profile properties from script.  
-  
- To use the profile service in your application, you must enable it in the configuration file. If you use the built-in profile Web service and do not have to preload properties, you do not have to explicitly declare the profile service manager on the page.  
-  
- To declaratively specify a set of preloaded properties, or a custom profile Web service, include a `<ProfileService>` element inside the `<asp:ScriptManager>` element on the page, as shown in the following example.  
-  
-```  
-<asp:ScriptManager ID="SM1" runat="server">  
-  <ProfileService LoadProperties="propertyA,propertyB" Path="MyProfileService.asmx" />  
-</asp:ScriptManager>  
-```  
-  
- You can also programmatically configure the profile service to preload properties or to use a custom profile Web service.  
-  
- The following example shows the basic class structure that must be implemented in a custom profile Web service.  
-  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ProfileServiceManager" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +45,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -93,24 +65,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an array that contains the profile properties that will be made available to client script.</summary>
-        <value>A string array that contains the names of the profile properties that will be preloaded and made available to client script. The default is an empty array.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If LoadProperties contains at least one string that corresponds to the name of a profile property, then the built-in profile service in the Web application retrieves the current user's profile data for each of the specified profile properties. The profile property values are serialized and then made available to client script through the [properties Field](../Topic/Sys.Services%20ProfileService%20properties%20Field.md) collection.  
-  
-> [!NOTE]
->  To set this property declaratively, use a comma-separated list of property names. For grouped property values, use the syntax *GroupName*.*PropertyName*.  
-  
- When LoadProperties is an empty array, no profile data is preloaded.  
-  
- The LoadProperties property can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. When LoadProperties is set on both the <xref:System.Web.UI.ScriptManager> control and on one or more <xref:System.Web.UI.ScriptManagerProxy> controls, the set of properties is determined by merging all the specified properties. Duplicate properties are ignored.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The LoadProperties property includes property names that are not in the current application’s profile schema.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -120,7 +77,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -141,25 +97,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path of a custom implementation of the profile Web service.</summary>
-        <value>The path of a custom implementation of the profile Web service.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Relative virtual paths, absolute virtual paths, and fully-qualified paths are allowed.  
-  
- If the Path property is not set, the return value is <xref:System.String>. In this case, the AJAX features of ASP.NET will then use the built-in profile Web service that corresponds to the following internal default path: ~/ScriptServices_ProfileService.asmx. The same behavior occurs if you set Path to be an empty value or `null`.  
-  
- Path can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. When Path is set at the <xref:System.Web.UI.ScriptManagerProxy> level, the following caveats apply:  
-  
--   If there are multiple proxies in the control hierarchy, Path does not have to be set on each proxy instance.  
-  
--   If Path is explicitly set on a proxy instance, the value must be the same for all other proxies on which this property is explicitly set.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">More than one unique path was set in the control hierarchy.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

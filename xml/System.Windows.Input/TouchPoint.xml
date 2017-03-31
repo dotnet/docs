@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a single touch point from a multitouch message source.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,20 +35,12 @@
         <Parameter Name="action" Type="System.Windows.Input.TouchAction" />
       </Parameters>
       <Docs>
-        <param name="device">The touch device that generated this <see cref="T:System.Windows.Input.TouchPoint" />.</param>
-        <param name="position">The location of the touch point.</param>
-        <param name="bounds">The bounds of the area that the finger has in contact with the screen.</param>
-        <param name="action">The last action that occurred by this device at this location.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TouchPoint" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The coordinate space of this `position` and `bounds` should be consistent.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="device" /> is <see langword="null" />.</exception>
+        <param name="device">To be added.</param>
+        <param name="position">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -64,8 +56,8 @@
         <ReturnType>System.Windows.Input.TouchAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last action that occurred at this location.</summary>
-        <value>The last action that occurred at this location.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,16 +74,9 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounds of the area that the finger has in contact with the screen.</summary>
-        <value>The bounds of the area that the finger has in contact with the screen.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The coordinate space is defined by the provider of this object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -107,8 +92,8 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location of the touch point.</summary>
-        <value>The location of the touch point.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +110,8 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the <see cref="System.Windows.Input.TouchPoint.Bounds%2A" /> property.</summary>
-        <value>The size of the <see cref="System.Windows.Input.TouchPoint.Bounds%2A" /> property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,10 +131,9 @@
         <Parameter Name="other" Type="System.Windows.Input.TouchPoint" />
       </Parameters>
       <Docs>
-        <param name="other">An object to compare with this object.</param>
-        <summary>Indicates whether the current object is equal to another <see cref="T:System.Windows.Input.TouchPoint" />.</summary>
-        <returns>
-          <see langword="true" /> if the current object is equal to the other parameter; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +150,8 @@
         <ReturnType>System.Windows.Input.TouchDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the touch device that generated this <see cref="T:System.Windows.Input.TouchPoint" />.</summary>
-        <value>The touch device that generated this <see cref="T:System.Windows.Input.TouchPoint" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

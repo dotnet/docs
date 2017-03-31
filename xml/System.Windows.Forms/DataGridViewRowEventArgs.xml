@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,47 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for row-related <see cref="T:System.Windows.Forms.DataGridView" /> events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DataGridViewRowEventArgs class provides data for the following <xref:System.Windows.Forms.DataGridView> events:  
-  
--   <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded>  
-  
--   <xref:System.Windows.Forms.DataGridView.NewRowNeeded>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowDefaultCellStyleChanged>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowErrorTextChanged>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowHeaderCellChanged>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowHeightChanged>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowMinimumHeightChanged>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowUnshared>  
-  
--   <xref:System.Windows.Forms.DataGridView.UserAddedRow>  
-  
--   <xref:System.Windows.Forms.DataGridView.UserDeletedRow>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowContextMenuStripChanged>  
-  
--   <xref:System.Windows.Forms.DataGridView.RowDividerHeightChanged>  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#120](~/add/codesnippet/csharp/t-system.windows.forms.d_91_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#120](~/add/codesnippet/visualbasic/t-system.windows.forms.d_91_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,25 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewRow">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> that the event occurred for.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewRowEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor uses the `dataGridViewRow` parameter value to initialize the <xref:System.Windows.Forms.DataGridViewRowEventArgs.Row%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridViewRow" /> is <see langword="null" />.</exception>
+        <param name="dataGridViewRow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -90,26 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridViewRow" /> associated with the event.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> associated with the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewMisc#120](~/add/codesnippet/csharp/p-system.windows.forms.d_401_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#120](~/add/codesnippet/visualbasic/p-system.windows.forms.d_401_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

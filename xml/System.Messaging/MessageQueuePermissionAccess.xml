@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,18 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines access levels used by <see cref="N:System.Messaging" /> permission classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses MessageQueuePermissionAccess in creating a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-cs[MessageQueuePermissionAccess#0](~/add/codesnippet/csharp/t-system.messaging.messa_9_1.cs)]
- [!code-cpp[MessageQueuePermissionAccess#0](~/add/codesnippet/cpp/t-system.messaging.messa_9_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Administer">
@@ -37,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available, read the messages in the queue, and send and receive messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Browse">
@@ -54,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -71,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Messaging.MessageQueue" /> has no permissions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -88,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available and read the messages in the queue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -105,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available, read the messages in the queue, and receive messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -122,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available and send messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

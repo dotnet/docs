@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanelCellPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,18 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a cell in a <see cref="T:System.Windows.Forms.TableLayoutPanel" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use TableLayoutPanelCellPosition to set the position of a child control in a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](../Topic/How%20to:%20Implement%20a%20Custom%20ToolStripRenderer.md).  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/add/codesnippet/visualbasic/t-system.windows.forms.t_55_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#2](~/add/codesnippet/csharp/t-system.windows.forms.t_55_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,20 +34,10 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="column">The column position of the cell.</param>
-        <param name="row">The row position of the cell.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use <xref:System.Windows.Forms.TableLayoutPanelCellPosition> to set the position of a child control in a <xref:System.Windows.Forms.TableLayoutPanel> control. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](../Topic/How%20to:%20Implement%20a%20Custom%20ToolStripRenderer.md).  
-  
- [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#2](~/add/codesnippet/visualbasic/e722b0af-6c7b-4548-8e26-_1.vb)]
- [!code-cs[System.Windows.Forms.ToolStrip.GridStrip#2](~/add/codesnippet/csharp/e722b0af-6c7b-4548-8e26-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="column">To be added.</param>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -69,15 +47,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the column number of the current <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</summary>
-        <value>The column number of the current <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +65,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,10 +74,9 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">The <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> to test.</param>
-        <summary>Specifies whether this <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> contains the same row and column as the specified <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> and has the same row and column as the specified <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +87,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,8 +94,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash code for this <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</summary>
-        <returns>An integer value that specifies a hash value for this <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,11 +116,10 @@
         <Parameter Name="p2" Type="System.Windows.Forms.TableLayoutPanelCellPosition" />
       </Parameters>
       <Docs>
-        <param name="p1">A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> to compare.</param>
-        <param name="p2">A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> objects. The result specifies whether the values of the <see cref="System.Windows.Forms.TableLayoutPanelCellPosition.Row%2A" /> and <see cref="System.Windows.Forms.TableLayoutPanelCellPosition.Column%2A" /> properties of the two <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="p1" /> and <paramref name="p2" /> are equal; otherwise, <see langword="false" />.</returns>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,7 +130,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,11 +140,10 @@
         <Parameter Name="p2" Type="System.Windows.Forms.TableLayoutPanelCellPosition" />
       </Parameters>
       <Docs>
-        <param name="p1">A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> to compare.</param>
-        <param name="p2">A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> to compare.</param>
-        <summary>Compares two <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> objects. The result specifies whether the values of the <see cref="System.Windows.Forms.TableLayoutPanelCellPosition.Row%2A" /> and <see cref="System.Windows.Forms.TableLayoutPanelCellPosition.Column%2A" /> properties of the two <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> objects are unequal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="p1" /> and <paramref name="p2" /> differ; otherwise, <see langword="false" />.</returns>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,15 +154,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the row number of the current <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</summary>
-        <value>The row number of the current <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,8 +179,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts this <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> to a human readable string.</summary>
-        <returns>A string that represents this <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

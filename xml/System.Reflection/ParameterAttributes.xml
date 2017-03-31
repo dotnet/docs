@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ParameterAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.ParameterAttributes" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -19,26 +27,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the attributes that can be associated with a parameter. These are defined in CorHdr.h.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get the `ParameterAttributes` value, first get the `Type`. From the `Type`, get the `ParameterInfo` array. The `ParameterAttributes` value is within the array.  
-  
- These enumerator values are dependent on optional metadata. Not all attributes are available from all compilers. See the appropriate compiler instructions to determine which enumerated values are available.  
-  
-   
-  
-## Examples  
- The following example displays the attributes of the specified parameter.  
-  
- [!code-cpp[Classic ParameterAttributes Example#1](~/add/codesnippet/cpp/t-system.reflection.para_1_1.cpp)]
- [!code-vb[Classic ParameterAttributes Example#1](~/add/codesnippet/visualbasic/t-system.reflection.para_1_1.vb)]
- [!code-cs[Classic ParameterAttributes Example#1](~/add/codesnippet/csharp/t-system.reflection.para_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="HasDefault">
@@ -47,15 +37,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.HasDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter has a default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasFieldMarshal">
@@ -64,15 +62,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.HasFieldMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter has field marshaling information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="In">
@@ -81,15 +87,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter is an input parameter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lcid">
@@ -98,15 +112,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Lcid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter is a locale identifier (lcid).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -115,15 +137,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that there is no parameter attribute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -132,15 +162,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter is optional.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -149,15 +187,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter is an output parameter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved3">
@@ -167,14 +213,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved4">
@@ -184,14 +234,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reserved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReservedMask">
@@ -201,14 +255,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter is reserved.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Retval">
@@ -217,15 +275,23 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ParameterAttributes.Retval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the parameter is a return value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

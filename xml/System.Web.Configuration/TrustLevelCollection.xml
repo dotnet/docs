@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TrustLevelCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Web.Configuration.TrustLevel" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.Configuration.TrustLevel> objects are used to map specific security levels to named policy files.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the TrustLevelCollection class.  
-  
- [!code-vb[System.Web.Configuration.TrustLevelCollection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_69_1.vb)]
- [!code-cs[System.Web.Configuration.TrustLevelCollection#1](~/add/codesnippet/csharp/t-system.web.configurati_69_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,19 +51,9 @@
         <Parameter Name="trustLevel" Type="System.Web.Configuration.TrustLevel" />
       </Parameters>
       <Docs>
-        <param name="trustLevel">The <see cref="T:System.Web.Configuration.TrustLevel" /> to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.TrustLevel" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-vb[System.Web.Configuration.TrustLevelCollection#2](~/add/codesnippet/visualbasic/fe482214-a0ad-46e8-bff6-_1.vb)]
- [!code-cs[System.Web.Configuration.TrustLevelCollection#2](~/add/codesnippet/csharp/fe482214-a0ad-46e8-bff6-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="trustLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -91,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,15 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Configuration.TrustLevel" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Web.Configuration.TrustLevelCollection> entries exist in the local node collection, all entries are deleted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -117,15 +81,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object.</summary>
-        <value>A value from the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> enumeration representing the type of the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,7 +118,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,7 +136,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,20 +145,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.TrustLevel" /> object at the specified index.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.TrustLevel" /> at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Get method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-vb[System.Web.Configuration.TrustLevelCollection#4](~/add/codesnippet/visualbasic/m-system.web.configurati_45_1.vb)]
- [!code-cs[System.Web.Configuration.TrustLevelCollection#4](~/add/codesnippet/csharp/m-system.web.configurati_45_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -208,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,7 +180,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,7 +202,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,17 +211,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The numeric index of the <see cref="T:System.Web.Configuration.TrustLevel" />.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.TrustLevel" /> item at the specified index within the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object.</summary>
-        <value>A <see cref="T:System.Web.Configuration.TrustLevel" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a <xref:System.Web.Configuration.TrustLevel> object exists at the specified index, the <xref:System.Web.Configuration.TrustLevel> object is removed and a new one is added. If no <xref:System.Web.Configuration.TrustLevel> object exists at the index, a new one is added.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -284,7 +224,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,17 +233,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The index of the <see cref="T:System.Web.Configuration.TrustLevel" />.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.TrustLevel" /> object at the specified index.</summary>
-        <value>A <see cref="T:System.Web.Configuration.TrustLevel" /> that exists at the specified index of the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.Configuration.TrustLevel> object must exist at the specified index within the <xref:System.Web.Configuration.TrustLevelCollection> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -314,7 +246,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,7 +264,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,16 +273,9 @@
         <Parameter Name="trustLevel" Type="System.Web.Configuration.TrustLevel" />
       </Parameters>
       <Docs>
-        <param name="trustLevel">The <see cref="T:System.Web.Configuration.TrustLevel" /> to remove from the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.TrustLevel" /> object from the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Configuration.TrustLevel> object does not exist in the local node collection, no error is raised.  
-  
- ]]></format>
-        </remarks>
+        <param name="trustLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -362,7 +285,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -372,8 +294,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index location of the <see cref="T:System.Web.Configuration.TrustLevel" /> to remove from the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.TrustLevel" /> object at the specified index location from the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,7 +306,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,20 +316,10 @@
         <Parameter Name="trustLevel" Type="System.Web.Configuration.TrustLevel" />
       </Parameters>
       <Docs>
-        <param name="index">The index location of the <see cref="T:System.Web.Configuration.TrustLevel" /> to be set within the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</param>
-        <param name="trustLevel">The <see cref="T:System.Web.Configuration.TrustLevel" /> to be set within the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Configuration.TrustLevel" /> object to the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the Set method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-vb[System.Web.Configuration.TrustLevelCollection#3](~/add/codesnippet/visualbasic/fb1c8f27-bc63-412b-b818-_1.vb)]
- [!code-cs[System.Web.Configuration.TrustLevelCollection#3](~/add/codesnippet/csharp/fb1c8f27-bc63-412b-b818-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="trustLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnDuplicate">
@@ -418,7 +329,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

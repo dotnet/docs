@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagedDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,19 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Encapsulates the paging-related properties of a data-bound control (such as <see cref="T:System.Web.UI.WebControls.DataGrid" />, <see cref="T:System.Web.UI.WebControls.GridView" />, <see cref="T:System.Web.UI.WebControls.DetailsView" />, and <see cref="T:System.Web.UI.WebControls.FormView" />) that allow it to perform paging. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PagedDataSource class encapsulates the properties that allow data-source controls, such as the <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>, to perform paging. This class is used by control developers when providing paging support to a custom data-bound control.  
-  
- This class uses the best available method to enumerate over the data belonging to the current page. If the underlying data source supports indexed access (such as <xref:System.Array?displayProperty=fullName> and <xref:System.Collections.IList?displayProperty=fullName>), this class uses it. Otherwise, it uses the enumerator created by the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
-  
- For a list of initial property values for an instance of PagedDataSource, see the <xref:System.Web.UI.WebControls.PagedDataSource.%23ctor%2A> constructor.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,31 +29,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PagedDataSource" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.PagedDataSource> class.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.PagedDataSource>.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A>|`false`|  
-|<xref:System.Web.UI.WebControls.PagedDataSource.AllowPaging%2A>|`false`|  
-|<xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A>|`false`|  
-|<xref:System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex%2A>|0|  
-|<xref:System.Web.UI.WebControls.PagedDataSource.PageSize%2A>|10|  
-|<xref:System.Web.UI.WebControls.PagedDataSource.VirtualCount%2A>|0|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowCustomPaging">
@@ -75,26 +44,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether custom paging is enabled in a data-bound control.</summary>
-        <value>
-          <see langword="true" /> if custom paging is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AllowCustomPaging property to indicate whether custom paging is enabled. Custom paging is an optional type of paging provided specifically by the <xref:System.Web.UI.WebControls.DataGrid> control. ASP.NET version 2.0 data-bound control (such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>) uses server-side paging and does not support custom paging. Custom paging and server-side paging are mutually exclusive. If you set AllowCustomPaging to `true`, be sure that <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A> is set to `false`.  
-  
- For more information about custom paging, see <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -104,26 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether paging is enabled in a data-bound control.</summary>
-        <value>
-          <see langword="true" /> if paging is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AllowPaging property to specify whether a data-bound control has paging enabled. ASP.NET version 2.0 data-bound controls (such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>) also use server-side paging to provide automatic paging functionality. For more information on server-side paging, see <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A>. When using the <xref:System.Web.UI.WebControls.DataGrid> control, you can also provide your own custom paging logic. For more information on custom paging, see <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A?displayProperty=fullName>.  
-  
- For more information about paging support for data-bound controls, see the `AllowPaging` property of the data-bound control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowServerPaging">
@@ -133,27 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether server-side paging is enabled.</summary>
-        <value>
-          <see langword="true" /> if server-side paging is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET version 2.0 data-bound controls (such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.FormView>) provide automatic paging functionality through server-side paging. When using an ASP.NET 2.0 data-bound control, set this property to `true`.  
-  
-> [!NOTE]
->  Server-side paging and custom paging are mutually exclusive. If you set AllowServerPaging to `true`, be sure that <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A> is set to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -163,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,17 +108,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the data source.</param>
-        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
-        <summary>Copies all the items from the data source to the specified <see cref="T:System.Array" />, starting at the specified index in the <see cref="T:System.Array" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to copy the contents of the data source into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index. The <xref:System.Array?displayProperty=fullName> is often used to iterate through the items in the data source.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -194,34 +121,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items to be used from the data source.</summary>
-        <value>The number of items to be used from the data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Count property to determine the number of items to be used from the data source. The value returned depends on whether paging is enabled and whether custom paging is used.  
-  
--   If paging is disabled (by setting the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> property to `false`), the value of the <xref:System.Web.UI.WebControls.PagedDataSource.DataSourceCount%2A> property is returned.  
-  
--   If paging is enabled (by setting the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> property to `true`) and custom paging is enabled (by setting the <xref:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled%2A> property set to `true`), the value of the <xref:System.Web.UI.WebControls.PagedDataSource.PageSize%2A> property is returned.  
-  
--   If paging is enabled (by setting the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> property to `true`) and the <xref:System.Web.UI.WebControls.PagedDataSource.IsLastPage%2A> property is set to `false`, the value of the <xref:System.Web.UI.WebControls.PagedDataSource.PageSize%2A> property is returned.  
-  
--   If paging is enabled (by setting the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> property to `true`), custom paging is disabled (by setting the <xref:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled%2A> property `false`), and the <xref:System.Web.UI.WebControls.PagedDataSource.IsLastPage%2A> property is set to `true`, the value of the <xref:System.Web.UI.WebControls.PagedDataSource.DataSourceCount%2A> property is subtracted from the value of the <xref:System.Web.UI.WebControls.PagedDataSource.FirstIndexInPage%2A> property before it is returned.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property contains `null`, 0 is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentPageIndex">
@@ -231,23 +139,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the current page.</summary>
-        <value>The index of the current page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CurrentPageIndex property to specify or determine the index of the current page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -257,23 +157,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data source.</summary>
-        <value>A <see cref="T:System.Collections.IEnumerable" /> implemented object that represents the data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DataSource property to specify or determine the data source being paged.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSourceCount">
@@ -283,27 +175,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the data source.</summary>
-        <value>The number of items in the data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DataSourceCount property to determine the number of items in the data source. If custom paging or server-side paging is used, the value of the <xref:System.Web.UI.WebControls.PagedDataSource.VirtualCount%2A> property is returned; otherwise, the total number of items in the data source is returned.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property contains `null`, 0 is returned.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">The data source is not an <see cref="T:System.Collections.ICollection" /> implemented object.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstIndexInPage">
@@ -313,26 +193,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the first record displayed on the page.</summary>
-        <value>The index of the first record displayed on the page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the FirstIndexInPage property to determine the index of the first item on the current page.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> property is set to `false`, or the <xref:System.Web.UI.WebControls.PagedDataSource.IsCustomPagingEnabled%2A> or <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A> properties are set to `true`, or the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property contains `null`, 0 is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -342,7 +211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,19 +218,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Collections.IEnumerator" /> implemented object that contains all items in the data source.</summary>
-        <returns>A <see cref="T:System.Collections.IEnumerator" /> implemented object that contains all items in the data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> that can be iterated through to get each item in the data source. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
-  
-> [!NOTE]
->  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -372,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,17 +239,10 @@
         <Parameter Name="listAccessors" Type="System.ComponentModel.PropertyDescriptor[]" />
       </Parameters>
       <Docs>
-        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that contains the list name returned. This can be <see langword="null" />.</param>
-        <summary>Returns the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the properties on each item used to bind data.</summary>
-        <returns>The <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the properties on each item used to bind data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the GetItemProperties method to create a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> that represents the properties on each item used to bind data. If the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property is `null` or is not a <xref:System.ComponentModel.ITypedList?displayProperty=fullName> implemented object, `null` is returned. For more information on the GetItemProperties method, see <xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="listAccessors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -402,7 +252,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,18 +261,10 @@
         <Parameter Name="listAccessors" Type="System.ComponentModel.PropertyDescriptor[]" />
       </Parameters>
       <Docs>
-        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that contains the list name returned. This can be <see langword="null" />.</param>
-        <summary>Returns the name of the list. This method does not apply to this class.</summary>
-        <returns>
-          <see cref="T:System.String" /> for all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is inherited from <xref:System.ComponentModel.ITypedList?displayProperty=fullName> and is not applicable to this class. It has been implemented to return <xref:System.String.Empty?displayProperty=fullName> for all cases.  
-  
- ]]></format>
-        </remarks>
+        <param name="listAccessors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCustomPagingEnabled">
@@ -433,27 +274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether custom paging is enabled.</summary>
-        <value>
-          <see langword="true" /> if custom paging is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsCustomPagingEnabled property to determine whether custom paging is enabled.  
-  
-> [!NOTE]
->  Both the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> and <xref:System.Web.UI.WebControls.PagedDataSource.AllowCustomPaging%2A> properties must be `true` for this property to return `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFirstPage">
@@ -463,24 +292,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current page is the first page.</summary>
-        <value>
-          <see langword="true" /> if the current page is the first page; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsFirstPage property to determine whether the current page is the first page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLastPage">
@@ -490,24 +310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current page is the last page.</summary>
-        <value>
-          <see langword="true" /> if the current page is the last page; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsLastPage property to determine whether the current page is the last page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPagingEnabled">
@@ -517,27 +328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether paging is enabled.</summary>
-        <value>
-          <see langword="true" /> if paging is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IsPagingEnabled property to determine whether paging is enabled.  
-  
-> [!NOTE]
->  The <xref:System.Web.UI.WebControls.PagedDataSource.AllowPaging%2A> property must be `true` and the <xref:System.Web.UI.WebControls.PagedDataSource.PageSize%2A> property cannot be set to 0 for this property to return `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -547,24 +346,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the data source is read-only.</summary>
-        <value>
-          <see langword="false" /> for all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is implemented to always return `false`, which indicates that the data source can be modified in all cases.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsServerPagingEnabled">
@@ -574,24 +364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether server-side paging support is enabled.</summary>
-        <value>
-          <see langword="true" /> if paging is enabled and server-side paging is indicated using the <see cref="System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A" /> property; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Server-side paging is enabled when the <xref:System.Web.UI.WebControls.PagedDataSource.AllowPaging%2A> and <xref:System.Web.UI.WebControls.PagedDataSource.AllowServerPaging%2A> properties are both set to `true`, and the amount of data retrieved by the data source cannot be displayed in a single page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -601,26 +382,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the data source is synchronized (thread-safe).</summary>
-        <value>
-          <see langword="false" /> for all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false` to indicate that this class is not thread-safe.  
-  
- For more information on the IsSynchronized property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -630,26 +400,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of pages necessary to display all items in the data source.</summary>
-        <value>The number of pages necessary to display all items in the data source.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the PageCount property to determine the number of pages necessary to display all items in the data source.  
-  
-> [!NOTE]
->  If the <xref:System.Web.UI.WebControls.PagedDataSource.DataSource%2A> property is `null`, 0 is returned. If the <xref:System.Web.UI.WebControls.PagedDataSource.IsPagingEnabled%2A> property is set to `false` or the <xref:System.Web.UI.WebControls.PagedDataSource.DataSourceCount%2A> property is set to 0 or less, 1 is returned.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -659,23 +418,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of items to display on a single page.</summary>
-        <value>The number of items to display on a single page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the PageSize property to specify or determine the number of items to display on a single page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -685,25 +436,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that can be used to synchronize access to the collection.</summary>
-        <value>An object that can be used to synchronize access to the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object returned in this implementation is the <xref:System.Web.UI.WebControls.PagedDataSource> object itself.  
-  
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VirtualCount">
@@ -713,23 +454,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the virtual number of items in the data source when custom paging is used.</summary>
-        <value>The virtual number of items in the data source when custom paging is used.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the VirtualCount property when custom paging or server-side paging is used to determine the virtual number of items in the data source. For more information on the VirtualCount property, see <xref:System.Web.UI.WebControls.DataGrid.VirtualItemCount%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

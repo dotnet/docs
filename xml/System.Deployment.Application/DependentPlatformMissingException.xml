@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DependentPlatformMissingException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that is thrown when the platform dependency is not found during activation of the ClickOnce deployment and the deployment will not run.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This exception is thrown when there is a mismatch between the platform requested in the deployment manifest and the platform that ClickOnce is trying to run the application on. In this context, "platform" can refer to the operating system, the installed versions of the common language runtime, or a previously installed assembly. For example, if the ClickOnce application asserts that it requires Windows XP and the user is trying to run the application on Windows 2000, this exception will occur.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,27 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.DependentPlatformMissingException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "DefaultMessageDisplayedByParameterlessCtorWriterMustSupply". This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Exception.InnerException%2A>|`null`.|  
-|<xref:System.Exception.Message%2A>|The localized error message string.|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,28 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.DependentPlatformMissingException" /> class with a specified message that describes the error.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Deployment.Application.DependentPlatformMissingException>.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Exception.InnerException%2A>|`null`.|  
-|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,7 +55,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -99,17 +62,10 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">The object that holds the serialized object data.</param>
-        <param name="streamingContext">The contextual information about the source or destination.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.DependentPlatformMissingException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,7 +75,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -127,24 +82,10 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
-        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.DependentPlatformMissingException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed to the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Deployment.Application.DependentPlatformMissingException>.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Exception.InnerException%2A>|`null`.|  
-|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
-  
- ]]></format>
-        </remarks>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,7 +95,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -162,9 +102,9 @@
         <Parameter Name="supportUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message.</param>
-        <param name="supportUrl">The URL to visit for product support information.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.DependentPlatformMissingException" /> class.</summary>
+        <param name="message">To be added.</param>
+        <param name="supportUrl">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +115,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,9 +125,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The object that holds the serialized object data.</param>
-        <param name="context">The contextual information about the source or destination.</param>
-        <summary>Gets the object data.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +144,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a URI that indicates where support can be found for the problem encountered.</summary>
-        <value>A URI that indicates where support can be found for the problem encountered.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

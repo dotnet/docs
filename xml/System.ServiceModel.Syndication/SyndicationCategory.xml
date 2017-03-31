@@ -3,40 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyndicationCategory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationCategory" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>A class that represents the category of a syndication feed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A category allows you to assign one or more keywords that can be used to search for information.  
-  
-   
-  
-## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and add a <xref:System.ServiceModel.Syndication.SyndicationItem> with a SyndicationCategory.  
-  
- [!code-cs[SyndicationCategory#0](~/add/codesnippet/csharp/t-system.servicemodel.sy_4_1.cs)]
- [!code-vb[SyndicationCategory#0](~/add/codesnippet/visualbasic/t-system.servicemodel.sy_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,16 +25,16 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,19 +44,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor(System.ServiceModel.Syndication.SyndicationCategory)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationCategory" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to initialize the new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,30 +66,20 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the category.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class with the given name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and add a <xref:System.ServiceModel.Syndication.SyndicationItem> with a <xref:System.ServiceModel.Syndication.SyndicationCategory>.  
-  
- [!code-cs[SyndicationCategory#0](~/add/codesnippet/csharp/m-system.servicemodel.sy_12_1.cs)]
- [!code-vb[SyndicationCategory#0](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,11 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -131,21 +101,11 @@
         <Parameter Name="label" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the category.</param>
-        <param name="scheme">A Uniform Resource Identifier (URI) that represents the categorization scheme to which this category belongs.</param>
-        <param name="label">A human-readable attribute that describes the category.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class with the specified name, scheme, and label.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code demonstrates how to call this constructor.  
-  
- [!code-cs[SyndicationCategory#2](~/add/codesnippet/csharp/59804385-2a5c-4538-932f-_1.cs)]
- [!code-vb[SyndicationCategory#2](~/add/codesnippet/visualbasic/59804385-2a5c-4538-932f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="scheme">To be added.</param>
+        <param name="label">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AttributeExtensions">
@@ -154,27 +114,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.AttributeExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the attribute extensions for this category.</summary>
-        <value>The attribute extensions for this category.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationCategory> instance. Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -183,11 +136,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,8 +148,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of a <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,41 +159,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.ElementExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element extensions for this category.</summary>
-        <value>A collection of element extensions.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specification. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
-  
-   
-  
-## Examples  
- The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationCategory> with a custom element is serialized to Atom 1.0.  
-  
-```  
-<category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme">  
-    <customCategoryElement xmlns="">Some text</customCategoryElement>  
-</category>  
-```  
-  
-> [!NOTE]
->  Custom elements within <xref:System.ServiceModel.Syndication.SyndicationCategory> instances are not serialized to RSS 2.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -249,36 +181,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the label of the category.</summary>
-        <value>The label of the category.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When serialized to Atom 1.0, the Label is written to the `label` attribute of the <`category`> element. Label is not serialized to RSS 2.0.  
-  
-   
-  
-## Examples  
- The following XML shows how the Label property is serialized to Atom 1.0.  
-  
-```  
-<category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -287,36 +203,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the name of the category.</summary>
-        <value>The name of the category.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When serialized to Atom 1.0, the Name is written to the `term` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
-  
-   
-  
-## Examples  
- The following XML shows how the Name property is serialized to Atom 1.0.  
-  
-```  
-<category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme"/>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -325,44 +225,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the scheme of the category.</summary>
-        <value>The scheme of the category.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When serialized to Atom 1.0, the Scheme property is written to the `scheme` attribute of the <`category`> element.  
-  
- When serialized to RSS 2.0, the Scheme property is written to the `domain` attribute of the <`category`> element.  
-  
-   
-  
-## Examples  
- The following XML shows how the Scheme property is serialized to Atom 1.0.  
-  
-```  
-<category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme"/>  
-```  
-  
- The following XML shows how the Scheme property is serialized to RSS 2.0.  
-  
-```  
-<category customAttribute="value" domain="CategoryScheme">FeedCategory</category>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
@@ -371,11 +247,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -388,21 +264,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element.</param>
-        <param name="ns">The namespace of the element.</param>
-        <param name="value">The attribute to parse.</param>
-        <param name="version">The syndication version to use when parsing.</param>
-        <summary>Attempts to parse an attribute extension.</summary>
-        <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
@@ -411,11 +279,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,19 +294,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <param name="version">The syndication version to use while parsing.</param>
-        <summary>Attempts to parse an element extension.</summary>
-        <returns>A value that specifies whether the element extension has been parsed successfully.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
+        <param name="reader">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
@@ -447,11 +307,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,17 +322,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="version">The syndication version to use while writing.</param>
-        <summary>Writes the attribute extensions to the specified writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
@@ -481,11 +334,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -496,17 +349,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <param name="version">The syndication version to use while writing.</param>
-        <summary>Writes the element extensions to the specified writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specification. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized element extensions.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.IInstanceTable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,17 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Reserved for future use.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetActivity">
@@ -34,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,10 +34,10 @@
         <Parameter Name="activityName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">Unique identifier of the workflow containing the activity</param>
-        <param name="activityName">Name of the <see cref="T:System.Workflow.ComponentModel.Activity" /></param>
-        <summary>Reserved for future use.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.Activity" /> specified by <paramref name="activityName" /> in the workflow with an id of <paramref name="instanceId" />.</returns>
+        <param name="instanceId">To be added.</param>
+        <param name="activityName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

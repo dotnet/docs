@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the style for a <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> object. This class is used primarily by control developers.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerAutoFormatStyle class encapsulates the properties that control the appearance of a Web server control for automatic formatting at design time. You can specify the background color, font color, and the vertical alignment of a control by setting the <xref:System.Web.UI.WebControls.Style.BackColor%2A>, <xref:System.Web.UI.WebControls.Style.ForeColor%2A>, and <xref:System.Web.UI.Design.DesignerAutoFormatStyle.VerticalAlign%2A> properties, respectively.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" /> class using default values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,31 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the vertical alignment of the contents for the associated control.</summary>
-        <value>One of the <see cref="T:System.Web.UI.WebControls.VerticalAlign" /> values. The default is <see langword="NotSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Web.UI.WebControls.VerticalAlign> property to specify the vertical alignment of the contents for the associated control. If the <xref:System.Web.UI.WebControls.VerticalAlign> property does not apply to an associated control, the setting is ignored. For the defined values for the vertical alignment enumeration, see <xref:System.Web.UI.WebControls.VerticalAlign>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use a <xref:System.Web.UI.Design.DesignerAutoFormat> object and the <xref:System.Web.UI.Design.DesignerAutoFormat.Style%2A> property to apply formatting to a control.  
-  
- [!code-vb[DesignerAutoFormat#3](~/add/codesnippet/visualbasic/p-system.web.ui.design.d_4_1.vb)]
- [!code-cs[DesignerAutoFormat#3](~/add/codesnippet/csharp/p-system.web.ui.design.d_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

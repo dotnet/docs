@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Cursor" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,34 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the image used for the mouse pointer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.Cursors> class contains a set of default cursors.  
-  
- When running in Partial Trust, only the default cursors defined in the <xref:System.Windows.Input.Cursors> class are allowed.  
-  
-<a name="xamlAttributeUsage_Cursor"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="cursorName"/>  
-```  
-  
-<a name="xamlValues_Cursor"></a>   
-## XAML Values  
- *cursorName*  
- The name of one of the predefined cursors in the <xref:System.Windows.Input.Cursors> class.  
-  
-   
-  
-## Examples  
- [How to: Change the Cursor Type](../Topic/How%20to:%20Change%20the%20Cursor%20Type.md)  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,26 +34,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cursorStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="cursorStream">The <see cref="T:System.IO.Stream" /> that contains the cursor.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Cursor" /> class from the specified <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a <xref:System.IO.Stream>, WPF writes the data to a temporary file and then loads the <xref:System.Windows.Input.Cursor> from the file.  If this constructor is unable to create a temporary file, an <xref:System.IO.IOException> might be thrown.  For example, an <xref:System.IO.IOException> might be thrown if a unique temporary file is not available.  To resolve this error, try deleting unneeded temporary files.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="cursorStream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.IOException">This constructor was unable to create a temporary file.</exception>
+        <param name="cursorStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,20 +52,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cursorFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cursorFile">The file that contains the cursor.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Cursor" /> class from the specified *.ani* or a *.cur* file.</summary>
+        <param name="cursorFile">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="cursorFile" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="cursorFile" /> is not an *.ani* or *.cur* file name.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,10 +77,9 @@
         <Parameter Name="scaleWithDpi" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="cursorStream">The <see cref="T:System.IO.Stream" /> that contains the cursor.</param>
-        <param name="scaleWithDpi">
-          <see langword="true" /> if to scale with dpi; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Cursor" /> class.</summary>
+        <param name="cursorStream">To be added.</param>
+        <param name="scaleWithDpi">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +97,9 @@
         <Parameter Name="scaleWithDpi" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="cursorFile">The <see cref="T:System.IO.Stream" /> that contains the cursor.</param>
-        <param name="scaleWithDpi">
-          <see langword="true" /> if to scale with dpi; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Cursor" /> class.</summary>
+        <param name="cursorFile">To be added.</param>
+        <param name="scaleWithDpi">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,15 +117,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Windows.Input.Cursor" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After Dispose is called, the cursor object is no longer valid.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -181,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,7 +135,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Finalizes the object to free resources and perform other cleanup operations.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +146,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,8 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of the <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <returns>The name of the cursor.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

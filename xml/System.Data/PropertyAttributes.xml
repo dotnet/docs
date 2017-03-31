@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.PropertyAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the attributes of a property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,14 +33,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The property is not supported by the provider.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -50,14 +50,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user does not need to specify a value for this property before the data source is initialized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -67,14 +67,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can read the property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -84,14 +84,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user must specify a value for this property before the data source is initialized.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -101,14 +101,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user can write to the property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

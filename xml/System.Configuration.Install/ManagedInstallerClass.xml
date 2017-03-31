@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.ManagedInstallerClass" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a managed install.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.ManagedInstallerClass" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,8 +58,8 @@
         <Parameter Name="args" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="args">The arguments passed to the Installer Tool.</param>
-        <summary>Handles the functionality of the [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md).</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +70,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,18 +80,11 @@
         <Parameter Name="hInstall" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="argString">The command line to install.</param>
-        <param name="hInstall">The handle to the installation.</param>
-        <summary>For a description of this member, see <see cref="System.Configuration.Install.IManagedInstaller.ManagedInstall%2A" />.</summary>
-        <returns>The return code for installutil.exe. A successful installation returns 0. Other values indicate failure.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Install.ManagedInstallerClass> instance is cast to an <xref:System.Configuration.Install.IManagedInstaller> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="argString">To be added.</param>
+        <param name="hInstall">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

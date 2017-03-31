@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ArrayEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a user interface for editing arrays at design time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This editor can be used to edit arrays within the design-time environment.  
-  
-   
-  
-## Examples  
- The following code example demonstrates applying the <xref:System.ComponentModel.EditorAttribute?displayProperty=fullName> to a property.  
-  
- [!code-cs[ArrayEditorExample#1](~/add/codesnippet/csharp/t-system.componentmodel._65_1.cs)]
- [!code-vb[ArrayEditorExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._65_1.vb)]
- [!code-cpp[ArrayEditorExample#1](~/add/codesnippet/cpp/t-system.componentmodel._65_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The data type of the items in the array.</param>
-        <summary>Initializes a new instance of <see cref="T:System.ComponentModel.Design.ArrayEditor" /> using the specified data type for the array.</summary>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,16 +47,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the data type that this collection is designed to contain.</summary>
-        <returns>A <see cref="T:System.Type" /> that indicates the data type that the collection is designed to contain.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation returns the item type of the array.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItems">
@@ -85,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,9 +68,9 @@
         <Parameter Name="editValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="editValue">The array from which to retrieve the items.</param>
-        <summary>Gets the items in the array.</summary>
-        <returns>An array consisting of the items within the specified array. If the object specified in the <paramref name="editValue" /> parameter is not an array, a new empty object is returned.</returns>
+        <param name="editValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,10 +91,10 @@
         <Parameter Name="value" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="editValue">The array to set the items to.</param>
-        <param name="value">The array of objects to set as the items of the array.</param>
-        <summary>Sets the items in the array.</summary>
-        <returns>An instance of the new array. If the object specified by the <paramref name="editValue" /> parameter is not an array, the object specified by the <paramref name="editValue" /> parameter is returned.</returns>
+        <param name="editValue">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

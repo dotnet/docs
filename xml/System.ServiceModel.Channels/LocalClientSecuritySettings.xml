@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.LocalClientSecuritySettings" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies local client security settings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class contains the local security settings used by the <xref:System.ServiceModel.Channels.SecurityBindingElement> (and classes derived from it) to build the security channel. These settings are local to the client and are not determined from the service's security policy.  
-  
-   
-  
-## Examples  
- This example shows how to use the LocalClientSecuritySettings class.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#15](~/add/codesnippet/csharp/t-system.servicemodel.ch_0_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#15](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,23 +23,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.LocalClientSecuritySettings" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to use the default constructor.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#1](~/add/codesnippet/csharp/m-system.servicemodel.ch_24_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#1](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_24_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheCookies">
@@ -64,27 +39,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether secure conversation cookies are cached.</summary>
-        <value>
-          <see langword="true" /> if cookies are cached; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to set secure conversation cookies to be cached.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#2](~/add/codesnippet/csharp/p-system.servicemodel.ch_29_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#2](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_29_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -94,7 +57,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,19 +65,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of this class, which is a copy or clone of the current instance.</summary>
-        <returns>A new instance of <see cref="T:System.ServiceModel.Channels.LocalClientSecuritySettings" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to create a copy from an existing instance of the class.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#14](~/add/codesnippet/csharp/m-system.servicemodel.ch_25_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#14](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_25_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CookieRenewalThresholdPercentage">
@@ -124,32 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the threshold percentage for renewal of secure conversation cookies.</summary>
-        <value>The threshold percentage for renewing secure conversation cookies. The default is 60 percent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The client caches secure conversation cookies and when a cached cookie is going to expire in the near future, the client automatically gets a new cookie from the service. The value of this property determines what percentage of the cached cookie's validity period must be over before getting a new cookie. For example, if the value of this property is 60, and the client has a secure conversation cookie that is valid for 100 minutes, it reuses the cached cookie for 60 minutes, after which it gets a new cookie from the service.  
-  
-   
-  
-## Examples  
- This example shows how to set the `CookieRenewalThresholdPercentage` member.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#3](~/add/codesnippet/csharp/55f3ffd1-42b9-44ef-b139-_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#3](~/add/codesnippet/visualbasic/55f3ffd1-42b9-44ef-b139-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0 or greater than 100.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DetectReplays">
@@ -159,27 +95,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether replay detection is enabled on messages the client receives from the service.</summary>
-        <value>
-          <see langword="true" /> if replay detection is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to enable replay detection on messages received from the service.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#4](~/add/codesnippet/csharp/p-system.servicemodel.ch_31_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#4](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IdentityVerifier">
@@ -189,31 +113,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.IdentityVerifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the identity verifier.</summary>
-        <value>An instance of an implementation of the abstract class <see cref="T:System.ServiceModel.Security.IdentityVerifier" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to verify that the remote endpoint that the client channel is communicating with matches the identity specified in the <xref:System.ServiceModel.EndpointAddress> that the channel is targeted for.  
-  
-   
-  
-## Examples  
- This example shows how to return an instance of an implementation of the abstract class.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#5](~/add/codesnippet/csharp/p-system.servicemodel.ch_55_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#5](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_55_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxClockSkew">
@@ -223,36 +131,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum allowable time difference between the system clocks of the two parties that are communicating.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the maximum allowable time difference between the system clocks of the two parties that are communicating. The default is 5 minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Messages between systems whose clocks' difference exceeds the value specified in this property are rejected.  
-  
- This property is used in conjunction with the message time stamp verification and the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings.ReplayWindow%2A> property.  
-  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] [How to: Set a Max Clock Skew](../Topic/How%20to:%20Set%20a%20Max%20Clock%20Skew.md).  
-  
-   
-  
-## Examples  
- This example shows how to get the MaxClockSkew value.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#6](~/add/codesnippet/csharp/p-system.servicemodel.ch_27_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#6](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_27_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxCookieCachingTime">
@@ -262,27 +150,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum caching time for secure conversation cookies.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the maximum caching time for secure conversation cookies. The default is 10675199 days.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to get the MaxCookieCachingTimevalue.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#7](~/add/codesnippet/csharp/p-system.servicemodel.ch_33_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#7](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NonceCache">
@@ -298,8 +174,8 @@
         <ReturnType>System.ServiceModel.Security.NonceCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cache for the local client security settings.</summary>
-        <value>The cache for the local client security settings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,32 +186,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether security sessions attempt to reconnect after transport failures.</summary>
-        <value>
-          <see langword="true" /> if security sessions attempt to reconnect after transport failures; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this flag is set to `true`, the client tries to send messages that correspond to a single security session over multiple transport connections. It establishes a new transport connection if the previous connection fails. This is useful in the case of secure WS-ReliableMessaging because the client requires the session to tolerate transient transport failures.  
-  
-   
-  
-## Examples  
- This example shows how to get a value that indicates whether security sessions attempt to reconnect after transport failures.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#8](~/add/codesnippet/csharp/2ed8b4c8-ec88-49e7-83e3-_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#8](~/add/codesnippet/visualbasic/2ed8b4c8-ec88-49e7-83e3-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplayCacheSize">
@@ -345,33 +204,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of cached nonces used for replay detection.</summary>
-        <value>The number of cached nonces used for replay detection. The default is 900000.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A *nonce* is a "number used once", often a random number used in an authentication protocol to ensure that old communications cannot be used in an attack by using replays.  
-  
- If the nonce count is exceeded, the incoming message is rejected and a <xref:System.ServiceModel.Security.MessageSecurityException> is thrown. Old nonces are removed in a timely manner.  
-  
-   
-  
-## Examples  
- This example shows how to get the number of cached nonces to use for replay detection.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#9](~/add/codesnippet/csharp/p-system.servicemodel.ch_61_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#9](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_61_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplayWindow">
@@ -381,32 +222,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum time that a message nonce is valid.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the maximum time that a message nonce is valid. The default is five minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A *nonce* is a "number used once", often a random number used in an authentication protocol to ensure that old communications cannot be used in an attack by using replays.  
-  
-   
-  
-## Examples  
- This example shows how to get this property.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#10](~/add/codesnippet/csharp/p-system.servicemodel.ch_1_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#10](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionKeyRenewalInterval">
@@ -416,46 +241,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time span after which the initiator renews the key for the security session.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the time span after which the initiator renews the key for the security session. The default is 10 hours.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Session settings such as this one are applicable under any of the following conditions:  
-  
--   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
-  
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
-  
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A> = `true`.  
-  
- Session settings such as this one are not applicable under any of the following conditions:  
-  
--   For <xref:System.ServiceModel.BasicHttpBinding>.  
-  
--   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
-  
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
-  
-   
-  
-## Examples  
- This example shows how to get this property.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#11](~/add/codesnippet/csharp/0571d73d-0f8f-4d45-afc0-_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#11](~/add/codesnippet/visualbasic/0571d73d-0f8f-4d45-afc0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionKeyRolloverInterval">
@@ -465,48 +259,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time interval for which the previous session key is valid on incoming messages during a key renewal.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the time interval for which the previous session key is valid on incoming messages after a key renewal. The default is 5 minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After key renewal, the client and the server should always send messages using the most current available key. Both parties can accept incoming messages secured with the previous session key until the rollover time expires.  
-  
- Session settings such as this one are applicable under any of the following conditions:  
-  
--   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
-  
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
-  
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.windows%2A> = `true`.  
-  
- Session settings such as this one are not applicable under any of the following conditions:  
-  
--   For <xref:System.ServiceModel.BasicHttpBinding>.  
-  
--   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
-  
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
-  
-   
-  
-## Examples  
- This example shows how to get this property.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#12](~/add/codesnippet/csharp/175848ee-a08c-423f-8f7a-_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#12](~/add/codesnippet/visualbasic/175848ee-a08c-423f-8f7a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TimestampValidityDuration">
@@ -516,27 +277,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum duration that the messages are valid when sent by the client. If a message is received by the service after this duration, it should discard the message.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the maximum duration that the messages are valid when sent by the client. The default is 5 minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to get this property.  
-  
- [!code-cs[S_UELocalClientSecuritySettings#13](~/add/codesnippet/csharp/b8ab27e6-f01c-4542-94fa-_1.cs)]
- [!code-vb[S_UELocalClientSecuritySettings#13](~/add/codesnippet/visualbasic/b8ab27e6-f01c-4542-94fa-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlXapResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The XmlXapResolver type is used to resolve resources in the Silverlight application’s XAP package.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -42,7 +44,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlXapResolver" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,6 +55,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -69,11 +72,11 @@
         <Parameter Name="ofObjectToReturn" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="absoluteUri">The URI returned from <see cref="System.Xml.XmlResolver.ResolveUri%2A" />.</param>
-        <param name="role">The current version does not use this parameter when resolving URIs. This is provided for future extensibility purposes. For example, this can be mapped to the xlink: role and used as an implementation specific argument in other scenarios.</param>
-        <param name="ofObjectToReturn">The type of object to return. The current version only returns <see cref="T:System.IO.Stream" /> objects.</param>
-        <summary>Maps a URI to an object containing the actual resource.</summary>
-        <returns>A <see cref="T:System.IO.Stream" /> object. If the stream is not found, an exception is thrown.</returns>
+        <param name="absoluteUri">To be added.</param>
+        <param name="role">To be added.</param>
+        <param name="ofObjectToReturn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,6 +87,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -101,8 +105,8 @@
         <Parameter Name="appStreamResolver" Type="System.Xml.IApplicationResourceStreamResolver" />
       </Parameters>
       <Docs>
-        <param name="appStreamResolver">An application resource resolver to register.</param>
-        <summary>Registers a resource stream resolver for the application.</summary>
+        <param name="appStreamResolver">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

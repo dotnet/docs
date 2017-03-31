@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.TriState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates a Boolean value or whether the default should be used when calling number-formatting functions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="False">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>False. The numeric value of this member is 0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True. The numeric value of this member is -1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseDefault">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default setting. The numeric value of this member is -2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

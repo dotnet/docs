@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter" />
       </Parameters>
       <Docs>
-        <param name="owner">The element associated with this automation peer.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,21 +153,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="startAfter">The item in the container after which to begin the search.</param>
-        <param name="propertyId">The property that contains the value to retrieve.</param>
-        <param name="value">The value to retrieve.</param>
-        <summary>Retrieves an element with the specified property value.</summary>
-        <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="startAfter">To be added.</param>
+        <param name="propertyId">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

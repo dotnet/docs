@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ChannelProtectionRequirements" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Describes encryption and signature requirements that apply to different parts of messages that are transmitted on this channel.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When extending the <xref:System.ServiceModel.Channels.BindingElement> class, you must implement the <xref:System.ServiceModel.Channels.BindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> so that it returns an instance of this class corresponding to the binding element.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,28 +23,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This default constructor sets the following properties to a new instance of <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, which is a class that specifies which parts are included in a message:  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts%2A>,  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingSignatureParts%2A>,  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingEncryptionParts%2A>, and  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingSignatureParts%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,33 +39,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="System.ServiceModel.Security.ChannelProtectionRequirements" />
       </Parameters>
       <Docs>
-        <param name="other">The other instance of <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> class from another instance of this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the following properties to a new instance of <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, using the <xref:System.ServiceModel.Security.ScopedMessagePartSpecification.%23ctor%2A> constructor, with `other` as the input parameter. <xref:System.ServiceModel.Security.ScopedMessagePartSpecification> is a class that specifies which parts are included in a message:  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts%2A>,  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingSignatureParts%2A>,  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingEncryptionParts%2A>, and  
-  
--   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingSignatureParts%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="other" /> is <see langword="null" />.</exception>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -97,7 +58,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,8 +68,8 @@
         <Parameter Name="protectionRequirements" Type="System.ServiceModel.Security.ChannelProtectionRequirements" />
       </Parameters>
       <Docs>
-        <param name="protectionRequirements">The specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" />.</param>
-        <summary>Adds the parts collections in the specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> to the current instance of this class.</summary>
+        <param name="protectionRequirements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +80,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,9 +91,9 @@
         <Parameter Name="channelScopeOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="protectionRequirements">The specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" />.</param>
-        <param name="channelScopeOnly">Specifies whether the scope is channel-only.</param>
-        <summary>Adds the various parts collections in the specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> to the current instance of this class.</summary>
+        <param name="protectionRequirements">To be added.</param>
+        <param name="channelScopeOnly">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +104,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,16 +112,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of this class with incoming and outgoing parts reversed.</summary>
-        <returns>A new instance of this class with incoming and outgoing parts reversed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Incoming parts of the current instance of this class become outgoing parts of the new instance. Outgoing parts of the current instance of this class become incoming parts of the new instance.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingEncryptionParts">
@@ -170,23 +124,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.ScopedMessagePartSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of message parts that are encrypted for messages from client to server.</summary>
-        <value>A <see cref="T:System.ServiceModel.Security.ScopedMessagePartSpecification" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set in the constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingSignatureParts">
@@ -196,23 +143,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.ScopedMessagePartSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of message parts that are signed for messages from client to server.</summary>
-        <value>A <see cref="T:System.ServiceModel.Security.ScopedMessagePartSpecification" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set in the constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -222,16 +162,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this instance of the class is read-only.</summary>
-        <value>
-          <see langword="true" /> if this instance of the class is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +181,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,15 +189,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets this class and its part collections to read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.Security.ChannelProtectionRequirements.IsReadOnly%2A> is set to true, as are the corresponding properties on the parts collections.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingEncryptionParts">
@@ -268,23 +200,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.ScopedMessagePartSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of message parts that are encrypted for messages from server to client.</summary>
-        <value>A <see cref="T:System.ServiceModel.Security.ScopedMessagePartSpecification" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set in the constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingSignatureParts">
@@ -294,23 +219,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.ScopedMessagePartSpecification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of message parts that are signed for messages from server to client.</summary>
-        <value>A <see cref="T:System.ServiceModel.Security.ScopedMessagePartSpecification" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set in the constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

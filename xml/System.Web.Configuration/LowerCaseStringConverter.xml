@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.LowerCaseStringConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides support to convert an object to a lowercase string. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LowerCaseStringConverter class allows an object to be converted to a lowercase string. This class also provides support to verify that an object type can be converted to a lowercase string before the conversion is made.  
-  
- The methods of LowerCaseStringConverter take as a parameter an object that implements the <xref:System.ComponentModel.ITypeDescriptorContext> interface. This interface provides contextual information about a component. Typically, this interface is used at design time to provide information about a design-time container. The <xref:System.ComponentModel.ITypeDescriptorContext> is commonly used in type conversion.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,23 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Web.Configuration.LowerCaseStringConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the LowerCaseStringConverter constructor.  
-  
- [!code-vb[System.Web.Configuration.LowerCaseStringConverter#2](~/add/codesnippet/visualbasic/m-system.web.configurati_75_1.vb)]
- [!code-cs[System.Web.Configuration.LowerCaseStringConverter#2](~/add/codesnippet/csharp/m-system.web.configurati_75_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -58,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,27 +47,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">An object that implements the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.</param>
-        <param name="type">The type of object to convert.</param>
-        <summary>Determines whether an object can be converted to a lowercase string based on the specified parameters.</summary>
-        <returns>
-          <see langword="true" /> if the parameters describe an object that can be converted to a lowercase string object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses an object that implements the <xref:System.ComponentModel.ITypeDescriptorContext> interface as the `ctx` parameter. This interface provides contextual information about a component. Typically, this interface is used at design time to provide information about a design-time container. The <xref:System.ComponentModel.ITypeDescriptorContext> is commonly used in type conversion. Override this method in a derived class if custom behavior is required.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use this method.  
-  
- [!code-vb[System.Web.Configuration.LowerCaseStringConverter#3](~/add/codesnippet/visualbasic/c6c18555-9d5f-471e-b3ee-_1.vb)]
- [!code-cs[System.Web.Configuration.LowerCaseStringConverter#3](~/add/codesnippet/csharp/c6c18555-9d5f-471e-b3ee-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -99,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,27 +71,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">An object that implements the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.</param>
-        <param name="type">The type of object to convert.</param>
-        <summary>Determines whether an object can be converted to a lowercase string based on the specified parameters.</summary>
-        <returns>
-          <see langword="true" /> if the parameters describe an object that can be converted to a lowercase string object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses an object that implements the <xref:System.ComponentModel.ITypeDescriptorContext> interface as the `ctx` parameter. This interface provides contextual information about a component. Typically, this interface is used at design time to provide information about a design-time container. The <xref:System.ComponentModel.ITypeDescriptorContext> is commonly used in type conversion. Override this method in a derived class if custom behavior is required.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use this method.  
-  
- [!code-vb[System.Web.Configuration.LowerCaseStringConverter#4](~/add/codesnippet/visualbasic/f17031b6-6d75-467d-836e-_1.vb)]
- [!code-cs[System.Web.Configuration.LowerCaseStringConverter#4](~/add/codesnippet/csharp/f17031b6-6d75-467d-836e-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -140,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,27 +96,12 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ctx">An object that implements the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.</param>
-        <param name="ci">An object that implements the <see cref="T:System.Globalization.CultureInfo" /> class.</param>
-        <param name="data">The object to convert.</param>
-        <summary>Converts an object from its original value to a lowercase string based on the specified parameters.</summary>
-        <returns>A lowercase string object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses an object that implements the <xref:System.ComponentModel.ITypeDescriptorContext> interface as the `ctx` parameter. This interface provides contextual information about a component. Typically, this interface is used at design time to provide information about a design-time container. The <xref:System.ComponentModel.ITypeDescriptorContext> is commonly used in type conversion. The `ci` parameter object provides the culture-related information. The `data` parameter object acts as both the object to convert and the resulting object once the method is complete. Override this method in a derived class if custom behavior is required.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use this method.  
-  
- [!code-vb[System.Web.Configuration.LowerCaseStringConverter#5](~/add/codesnippet/visualbasic/3d9704d9-bdf4-4372-8dbd-_1.vb)]
- [!code-cs[System.Web.Configuration.LowerCaseStringConverter#5](~/add/codesnippet/csharp/3d9704d9-bdf4-4372-8dbd-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="ci">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -182,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,28 +123,13 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">An object that implements the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface.</param>
-        <param name="ci">An object that implements the <see cref="T:System.Globalization.CultureInfo" /> class.</param>
-        <param name="value">The object to convert.</param>
-        <param name="type">The type of object to convert.</param>
-        <summary>Converts an object to a lowercase string based on the specified parameters.</summary>
-        <returns>A lowercase string object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses an object that implements the <xref:System.ComponentModel.ITypeDescriptorContext> interface as the `ctx` parameter. This interface provides contextual information about a component. Typically, this interface is used at design time to provide information about a design-time container. The <xref:System.ComponentModel.ITypeDescriptorContext> is commonly used in type conversion. The `ci` parameter object provides the culture-related information. The `value` object acts as both the object to convert and the resulting object once the method is complete. Override this method in a derived class if custom behavior is required.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use this method.  
-  
- [!code-vb[System.Web.Configuration.LowerCaseStringConverter#6](~/add/codesnippet/visualbasic/864450b6-a613-4626-bf2a-_1.vb)]
- [!code-cs[System.Web.Configuration.LowerCaseStringConverter#6](~/add/codesnippet/csharp/864450b6-a613-4626-bf2a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="ci">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

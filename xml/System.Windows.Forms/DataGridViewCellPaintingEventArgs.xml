@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.CellPainting" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView.CellPainting> event is raised for each <xref:System.Windows.Forms.DataGridViewCell> that is visible on a <xref:System.Windows.Forms.DataGridView>. To improve performance, set the properties in a DataGridViewCellPaintingEventArgs to change the appearance of the cell instead of directly accessing a cell in the <xref:System.Windows.Forms.DataGridView>. If you manually paint the cell, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. If you do not set <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> to `true`, the cell will paint over your customizations.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of this type. For more information, see [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Cells%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/t-system.windows.forms.d_1_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/t-system.windows.forms.d_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,33 +40,21 @@
         <Parameter Name="paintParts" Type="System.Windows.Forms.DataGridViewPaintParts" />
       </Parameters>
       <Docs>
-        <param name="dataGridView">The <see cref="T:System.Windows.Forms.DataGridView" /> that contains the cell to be painted.</param>
-        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to paint the <see cref="T:System.Windows.Forms.DataGridViewCell" />.</param>
-        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be repainted.</param>
-        <param name="cellBounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the bounds of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being painted.</param>
-        <param name="rowIndex">The row index of the cell that is being painted.</param>
-        <param name="columnIndex">The column index of the cell that is being painted.</param>
-        <param name="cellState">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that specifies the state of the cell.</param>
-        <param name="value">The data of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being painted.</param>
-        <param name="formattedValue">The formatted data of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being painted.</param>
-        <param name="errorText">An error message that is associated with the cell.</param>
-        <param name="cellStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that contains formatting and style information about the cell.</param>
-        <param name="advancedBorderStyle">A <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> that contains border styles for the cell that is being painted.</param>
-        <param name="paintParts">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values specifying the parts to paint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" /> class.</summary>
+        <param name="dataGridView">To be added.</param>
+        <param name="graphics">To be added.</param>
+        <param name="clipBounds">To be added.</param>
+        <param name="cellBounds">To be added.</param>
+        <param name="rowIndex">To be added.</param>
+        <param name="columnIndex">To be added.</param>
+        <param name="cellState">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="formattedValue">To be added.</param>
+        <param name="errorText">To be added.</param>
+        <param name="cellStyle">To be added.</param>
+        <param name="advancedBorderStyle">To be added.</param>
+        <param name="paintParts">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dataGridView" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="graphics" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="cellStyle" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="paintParts" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="AdvancedBorderStyle">
@@ -93,33 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the border style of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> that represents the border style of the <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Change the borders of the current <xref:System.Windows.Forms.DataGridViewCell> by setting the properties of the AdvancedBorderStyle property to one of the <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle> values.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#302](~/add/codesnippet/csharp/p-system.windows.forms.d_404_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#302](~/add/codesnippet/visualbasic/p-system.windows.forms.d_404_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellBounds">
@@ -129,26 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the bounds of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example illustrates the use of this property. For more information, see [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Cells%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/p-system.windows.forms.d_191_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_191_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellStyle">
@@ -158,31 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cell style of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that contains the cell style of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Change the appearance of the current <xref:System.Windows.Forms.DataGridViewCell> by setting the properties of the CellStyle property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/p-system.windows.forms.d_190_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_190_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClipBounds">
@@ -192,33 +118,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be repainted.</summary>
-        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be repainted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClipBounds property represents the area of the <xref:System.Windows.Forms.DataGridView> that needs to be repainted. For example, if a user covers the entire <xref:System.Windows.Forms.DataGridView> with another window, and then uncovers it, then ClipBounds represents the entire <xref:System.Windows.Forms.DataGridView>. If a user covers a small area of the <xref:System.Windows.Forms.DataGridView>, and then uncovers it, then ClipBounds represents the small area that was covered.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#302](~/add/codesnippet/csharp/p-system.windows.forms.d_137_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#302](~/add/codesnippet/visualbasic/p-system.windows.forms.d_137_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -228,31 +136,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column index of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>The column index of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ColumnIndex property returns -1 when a row header cell is being painted.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/p-system.windows.forms.d_280_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_280_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorText">
@@ -262,33 +154,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string that represents an error message for the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>A string that represents an error message for the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the current <xref:System.Windows.Forms.DataGridViewCell> is a row header cell, the ErrorText property is the same as the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.DataGridViewRow>. When the current cell is a data cell, ErrorText is the same as the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.DataGridViewCell>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#302](~/add/codesnippet/csharp/p-system.windows.forms.d_166_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#302](~/add/codesnippet/visualbasic/p-system.windows.forms.d_166_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FormattedValue">
@@ -298,33 +172,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the formatted value of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>The formatted value of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The FormattedValue property contains the value of the cell after the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> or <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property has been applied to it, and after the <xref:System.Windows.Forms.DataGridView.CellFormatting> event has been handled.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#302](~/add/codesnippet/csharp/p-system.windows.forms.d_17_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#302](~/add/codesnippet/visualbasic/p-system.windows.forms.d_17_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -334,26 +190,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to paint the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/p-system.windows.forms.d_227_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_227_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -363,7 +208,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,16 +218,10 @@
         <Parameter Name="paintParts" Type="System.Windows.Forms.DataGridViewPaintParts" />
       </Parameters>
       <Docs>
-        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area of the <see cref="T:System.Windows.Forms.DataGridView" /> to be painted.</param>
-        <param name="paintParts">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values specifying the parts to paint.</param>
-        <summary>Paints the specified parts of the cell for the area in the specified bounds.</summary>
+        <param name="clipBounds">To be added.</param>
+        <param name="paintParts">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Windows.Forms.DataGridViewCellPaintingEventArgs.RowIndex%2A" /> is less than -1 or greater than or equal to the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control.  
-  
- -or-  
-  
- <see cref="System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex%2A" /> is less than -1 or greater than or equal to the number of columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
       </Docs>
     </Member>
     <Member MemberName="PaintBackground">
@@ -393,7 +231,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -404,17 +241,10 @@
         <Parameter Name="cellsPaintSelectionBackground" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area of the <see cref="T:System.Windows.Forms.DataGridView" /> to be painted.</param>
-        <param name="cellsPaintSelectionBackground">
-          <see langword="true" /> to paint the background of the specified bounds with the color of the <see cref="System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor%2A" /> property of the <see cref="System.Windows.Forms.DataGridViewCell.InheritedStyle%2A" />; <see langword="false" /> to paint the background of the specified bounds with the color of the <see cref="System.Windows.Forms.DataGridViewCellStyle.BackColor%2A" /> property of the <see cref="System.Windows.Forms.DataGridViewCell.InheritedStyle%2A" />.</param>
-        <summary>Paints the cell background for the area in the specified bounds.</summary>
+        <param name="clipBounds">To be added.</param>
+        <param name="cellsPaintSelectionBackground">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Windows.Forms.DataGridViewCellPaintingEventArgs.RowIndex%2A" /> is less than -1 or greater than or equal to the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control.  
-  
- -or-  
-  
- <see cref="System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex%2A" /> is less than -1 or greater than or equal to the number of columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
       </Docs>
     </Member>
     <Member MemberName="PaintContent">
@@ -424,7 +254,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,15 +263,9 @@
         <Parameter Name="clipBounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area of the <see cref="T:System.Windows.Forms.DataGridView" /> to be painted.</param>
-        <summary>Paints the cell content for the area in the specified bounds.</summary>
+        <param name="clipBounds">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Windows.Forms.DataGridViewCellPaintingEventArgs.RowIndex%2A" /> is less than -1 or greater than or equal to the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control.  
-  
- -or-  
-  
- <see cref="System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex%2A" /> is less than -1 or greater than or equal to the number of columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
       </Docs>
     </Member>
     <Member MemberName="PaintParts">
@@ -452,28 +275,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The cell parts that are to be painted.</summary>
-        <value>A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values specifying the parts to be painted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#302](~/add/codesnippet/csharp/p-system.windows.forms.d_139_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#302](~/add/codesnippet/visualbasic/p-system.windows.forms.d_139_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -483,31 +293,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the row index of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>The row index of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RowIndex property returns -1 when a column header is being painted.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/p-system.windows.forms.d_83_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_83_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -517,28 +311,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that specifies the state of the cell.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#302](~/add/codesnippet/csharp/p-system.windows.forms.d_63_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#302](~/add/codesnippet/visualbasic/p-system.windows.forms.d_63_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -548,31 +329,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
-        <value>The value of the current <see cref="T:System.Windows.Forms.DataGridViewCell" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Value property contains the value of the cell before any formatting occurs.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cs[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/csharp/p-system.windows.forms.d_87_1.cs)]
- [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/add/codesnippet/visualbasic/p-system.windows.forms.d_87_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

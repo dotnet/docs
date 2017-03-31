@@ -3,14 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentWrapperAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ContentWrapperAttribute" />
   <AssemblyInfo>
-    <AssemblyName>PresentationBuildTasks</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -27,19 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies one or more types on the associated collection type that will be used to wrap foreign content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Foreign content refers to cases where the type system constraints on the type of the content property do not capture all of the possible content cases that XAML usage for the owning type would support. For example, XAML support for content of a particular type might support strings in a strongly typed generic <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- <xref:System.Windows.Documents.InlineCollection> is an example of a [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] class that has the ContentWrapperAttribute attribute applied. In this case there are two separate attributed wrapper classes.  
-  
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)], ContentWrapperAttribute is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,14 +29,6 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ContentWrapperAttribute.#ctor(System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>PresentationBuildTasks</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -63,8 +36,8 @@
         <Parameter Name="contentWrapper" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contentWrapper">The <see cref="T:System.Type" /> that is declared as a content wrapper for the collection type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> class.</summary>
+        <param name="contentWrapper">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,14 +47,6 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ContentWrapperAttribute.ContentWrapper" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>PresentationBuildTasks</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -89,8 +54,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type that is declared as a content wrapper for the collection type associated with this attribute.</summary>
-        <value>The type that is declared as a content wrapper for the collection type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,14 +64,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ContentWrapperAttribute.Equals(System.Object)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>PresentationBuildTasks</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,10 +75,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> to compare.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> is equivalent this <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> by comparing the <see cref="System.Windows.Markup.ContentWrapperAttribute.ContentWrapper%2A" /> properties.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.Windows.Markup.ContentWrapperAttribute.ContentWrapper%2A" /> properties are equal; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,14 +87,6 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ContentWrapperAttribute.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>PresentationBuildTasks</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -147,8 +95,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a hash code for this instance.</summary>
-        <returns>An integer hash code</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,14 +106,6 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ContentWrapperAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>PresentationBuildTasks</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -173,8 +113,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique identifier for this attribute.</summary>
-        <value>A unique identifier for the attribute.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

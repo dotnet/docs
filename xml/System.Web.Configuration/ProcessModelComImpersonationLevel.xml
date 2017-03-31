@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelComImpersonationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the authentication level for COM security.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ProcessModelComImpersonationLevel class enumerates the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.ComImpersonationLevel%2A> property.  
-  
- The default value is Impersonate.  
-  
-   
-  
-## Examples  
- The following code example shows how to access the <xref:System.Web.Configuration.ProcessModelSection.ComImpersonationLevel%2A> property.  
-  
- [!code-cs[System.Web.Configuration.ProcessModelSection#22](~/add/codesnippet/csharp/t-system.web.configurati_52_1.cs)]
- [!code-vb[System.Web.Configuration.ProcessModelSection#22](~/add/codesnippet/visualbasic/t-system.web.configurati_52_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Anonymous">
@@ -39,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the client is anonymous to the server. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The server can impersonate the client, but the impersonation token will not contain any information.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -64,22 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that DCOM determines the impersonation level. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM determines the impersonation level, using its normal security-negotiation algorithm.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -89,22 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the server process can impersonate the client's security context while acting on behalf of the client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The server process can make outgoing calls to other servers while acting on behalf of the client, using cloaking. The server can use the client's security context on other computers to access local and remote resources as the client. When the process is impersonating the client at this level, the impersonation token can be passed across any number of computer boundaries.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Identify">
@@ -114,22 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the server can obtain the client's identity. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The server can impersonate the client for access control list (ACL) checking, but it cannot access system objects as the client.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Impersonate">
@@ -139,22 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the server process can impersonate the client's security context while acting on behalf of the client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This level of impersonation can be used to access local resources such as files. When the process is impersonating the client at this level, the impersonation token can be passed across only one computer boundary.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

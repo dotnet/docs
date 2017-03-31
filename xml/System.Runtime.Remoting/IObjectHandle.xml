@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IObjectHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,17 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the interface for unwrapping marshal-by-value objects from indirection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Marshal-by-value objects can be returned through an indirection, allowing the caller to control when the object is loaded into their domain. The caller can unwrap the object from the indirection through this interface.  
-  
- The class implementing the IObjectHandle interface can be used to pass an object (in a wrapped state) between multiple application domains without loading the metadata for the wrapped object in each <xref:System.AppDomain> through which the IObjectHandle travels. Thus, the IObjectHandle class gives the caller control of when the <xref:System.Type> of the remote object is loaded into their domain.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Unwrap">
@@ -40,7 +31,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,8 +39,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Unwraps the object.</summary>
-        <returns>The unwrapped object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

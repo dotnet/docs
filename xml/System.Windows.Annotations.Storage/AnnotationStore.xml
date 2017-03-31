@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.AnnotationStore" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>When overridden in a derived class, represents a data store for writing and reading user annotations.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,21 +50,9 @@
         <Parameter Name="newAnnotation" Type="System.Windows.Annotations.Annotation" />
       </Parameters>
       <Docs>
-        <param name="newAnnotation">The annotation to add to the store.</param>
-        <summary>Adds a new <see cref="T:System.Windows.Annotations.Annotation" /> to the store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a new <xref:System.Windows.Annotations.Annotation> is added to the store its [!INCLUDE[TLA#tla_guid](~/add/includes/tlasharptla-guid-md.md)] <xref:System.Windows.Annotations.Annotation.Id%2A> property is set to a new value.  When AddAnnotation is called, its <xref:System.Windows.Annotations.Annotation.Id%2A> property is checked to see if the <xref:System.Windows.Annotations.Annotation> already has been added to the store.  If the <xref:System.Windows.Annotations.Annotation> already has been added and exists in the store (as determined by its <xref:System.Windows.Annotations.Annotation.Id%2A> property) an <xref:System.ArgumentException> error is thrown.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="newAnnotation" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An <see cref="T:System.Windows.Annotations.Annotation" /> with the same <see cref="System.Windows.Annotations.Annotation.Id%2A" /> property value already exists in the store.</exception>
-        <exception cref="T:System.ObjectDisposedException">
-          <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called on the store.</exception>
+        <param name="newAnnotation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorChanged">
@@ -77,22 +62,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationResourceChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an anchor on any <see cref="T:System.Windows.Annotations.Annotation" /> in the store changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AnchorChanged event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Anchors%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthorChanged">
@@ -102,22 +79,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAuthorChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an author on any <see cref="T:System.Windows.Annotations.Annotation" /> in the store changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged> event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Authors%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -127,26 +96,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether data in annotation buffers is to be written immediately to the physical data store.</summary>
-        <value>
-          <see langword="true" /> if data in annotation buffers is to be written immediately to the physical data store for each operation; otherwise, <see langword="false" /> if data in the annotation buffers is to be written when the application explicitly calls <see cref="System.Windows.Annotations.Storage.AnnotationStore.Flush%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Applications that use an explicit-save model can set AutoFlush to `false` and call <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> directly when appropriate.  
-  
- Applications that use an implicit-save model can set AutoFlush to `true` to cause <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> to be called automatically after every store operation (add, delete, or modify).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CargoChanged">
@@ -156,22 +114,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationResourceChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a cargo on any <see cref="T:System.Windows.Annotations.Annotation" /> in the store changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CargoChanged event can be used to monitor changes to the annotation <xref:System.Windows.Annotations.Annotation.Cargos%2A> contained in the store without the need to register on each <xref:System.Windows.Annotations.Annotation> individually.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAnnotation">
@@ -181,7 +131,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,21 +140,10 @@
         <Parameter Name="annotationId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="annotationId">The [!INCLUDE[TLA#tla_guid](~/add/includes/tlasharptla-guid-md.md)] <see cref="System.Windows.Annotations.Annotation.Id%2A" /> property of the annotation to be deleted.</param>
-        <summary>Deletes the annotation with the specified <see cref="System.Windows.Annotations.Annotation.Id%2A" /> from the store.</summary>
-        <returns>The annotation that was deleted; otherwise, <see langword="null" /> if an annotation with the specified <paramref name="annotationId" /> was not found in the store.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows use of the DeleteAnnotation and <xref:System.Windows.Annotations.Storage.AnnotationStore.Flush%2A> methods.  
-  
- [!code-cs[DocumentSerialize#DocSerDelete](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserdelete)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">
-          <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called on the store.</exception>
+        <param name="annotationId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -215,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,20 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all managed and unmanaged resources used by the store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Applications should call Dispose when finished with the <xref:System.Windows.Annotations.Storage.AnnotationStore>.  After calling Dispose the application can release all references to the <xref:System.Windows.Annotations.Storage.AnnotationStore> to allow the garbage collector to reclaim the memory that the <xref:System.Windows.Annotations.Storage.AnnotationStore> was occupying.  For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
- The public Dispose method calls the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter of `true` to release all managed and unmanaged resources.  
-  
-> [!NOTE]
->  Call Dispose before the last reference to the <xref:System.Windows.Annotations.Storage.AnnotationStore> is released.  If Dispose is not called, <xref:System.Windows.Annotations.Storage.AnnotationStore> resources will not be freed until the garbage collector calls the store's <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -246,7 +171,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,19 +180,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the store and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This protected Dispose method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected Dispose`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes Dispose with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, Dispose releases all resources held by any managed objects that the <xref:System.Windows.Annotations.Storage.AnnotationStore> references.  Dispose also invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -278,7 +192,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,17 +199,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Guarantees that <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> will eventually be called for this store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides base <xref:System.Object.Finalize%2A> method.  The application program should not call Finalize directly.  Finalize is automatically invoked during garbage collection unless disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -306,7 +210,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,31 +217,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Forces any annotation data retained in internal buffers to be written to the underlying storage device.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Applications that use an explicit-save model can set <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `false` and call Flush directly when appropriate.  
-  
- Applications that use an implicit-save model can set the <xref:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush%2A> to `true` to cause Flush to be called automatically after every store operation (add, delete, or modify).  
-  
-   
-  
-## Examples  
- The following example shows how to use the Flush method when the application closes the <xref:System.Windows.Annotations.AnnotationService>.  
-  
- [!code-cs[DocViewerAnnotationsXps#StopAnnotations](~/add/codesnippet/csharp/DocViewerAnnotationsXps/AnnotationsHelperXps.cs#stopannotations)]
- [!code-vb[DocViewerAnnotationsXps#StopAnnotations](~/add/codesnippet/visualbasic/docviewerannotationsxps/annotationshelperxps.vb#stopannotations)]  
-  
- The following example shows use of the <xref:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation%2A> and Flush methods.  
-  
- [!code-cs[DocumentSerialize#DocSerDelete](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserdelete)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">
-          <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called on the store.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAnnotation">
@@ -348,7 +228,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -358,12 +237,10 @@
         <Parameter Name="annotationId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="annotationId">The [!INCLUDE[TLA#tla_guid](~/add/includes/tlasharptla-guid-md.md)] <see cref="System.Windows.Annotations.Annotation.Id%2A" /> property of the annotation to be returned.</param>
-        <summary>Returns the annotation with the specified <see cref="System.Windows.Annotations.Annotation.Id%2A" /> from the store.</summary>
-        <returns>The annotation with the given <paramref name="annotationId" />; or <see langword="null" />, if an annotation with the specified <paramref name="annotationId" /> was not found in the store.</returns>
+        <param name="annotationId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">
-          <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called on the store.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetAnnotations">
@@ -373,7 +250,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,20 +257,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a list of all the annotations in the store.</summary>
-        <returns>The list of all annotations currently contained in the store.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the GetAnnotations method to determine if there are any annotations contained in the store.  
-  
- [!code-cs[DocumentSerialize#DocSerCloseFile](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserclosefile)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">
-          <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called on the store.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAnnotations">
@@ -404,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -414,17 +278,10 @@
         <Parameter Name="anchorLocator" Type="System.Windows.Annotations.ContentLocator" />
       </Parameters>
       <Docs>
-        <param name="anchorLocator">The starting <see cref="T:System.Windows.Annotations.ContentLocatorPart" /> sequence to return matching annotations for.</param>
-        <summary>Returns a list of annotations that have <see cref="System.Windows.Annotations.Annotation.Anchors%2A" /> with locators that begin with a matching <see cref="T:System.Windows.Annotations.ContentLocatorPart" /> sequence.</summary>
-        <returns>The list of annotations that have <see cref="System.Windows.Annotations.Annotation.Anchors%2A" /> with locators that start and match the given <paramref name="anchorLocator" />; otherwise, <see langword="null" /> if no matching annotations were found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This GetAnnotations method internally uses the <xref:System.Windows.Annotations.ContentLocator.StartsWith%2A> method of the <xref:System.Windows.Annotations.ContentLocator> class to search and match for the annotations to return.  
-  
- ]]></format>
-        </remarks>
+        <param name="anchorLocator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -434,16 +291,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A" /> has been called; otherwise, <see langword="false" />.  The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,7 +309,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,8 +318,8 @@
         <Parameter Name="args" Type="System.Windows.Annotations.AnnotationResourceChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" /> event.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,7 +330,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -486,8 +339,8 @@
         <Parameter Name="args" Type="System.Windows.Annotations.AnnotationAuthorChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" /> event.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,7 +351,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,8 +360,8 @@
         <Parameter Name="args" Type="System.Windows.Annotations.AnnotationResourceChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" /> event.</summary>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,7 +372,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,8 +381,8 @@
         <Parameter Name="e" Type="System.Windows.Annotations.Storage.StoreContentChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,28 +393,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.Storage.StoreContentChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an <see cref="T:System.Windows.Annotations.Annotation" /> is added to or deleted from the store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add an event delegate for the StoreContentChanged event.  
-  
- [!code-cs[DocumentSerialize#DocSerEnableAnn](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docserenableann)]  
-  
- The following example shows operation of the StoreContentChanged event delegate.  
-  
- [!code-cs[DocumentSerialize#DocSerContentChanged](~/add/codesnippet/csharp/DocumentSerialize/ThumbViewer.cs#docsercontentchanged)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -573,15 +410,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object to use as a synchronization lock for <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" /> critical sections.</summary>
-        <value>The object to use as a synchronization lock for <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" /> critical sections.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

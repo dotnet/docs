@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangeLevel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the scope of a <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingProgressChanged" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WritingProgressChangeLevel enumeration is used to specify <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property of the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="FixedDocumentSequenceWritingProgress">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output progress of a multiple document sequence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDocumentWritingProgress">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output progress of a single document.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedPageWritingProgress">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output progress of a single page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The output progress is unspecified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

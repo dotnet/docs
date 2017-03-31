@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BuildProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,70 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.BuildProvider" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BuildProviderCollection is used to compile custom resource files. You can have any number of build providers. The BuildProviderCollection does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
-  
-   
-  
-## Examples  
- This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the BuildProviderCollection class. The second demonstrates how to use members of the BuildProviderCollection class.  
-  
- The following configuration file example shows how to declaratively specify values for several properties of the BuildProviderCollection class.  
-  
-```  
-<system.web>  
-  <compilation>   
-    <buildProviders>  
-      <add extension=".aspx"   
-        type="System.Web.Compilation.PageBuildProvider"  
-         />  
-      <add extension=".ascx"   
-        type="System.Web.Compilation.UserControlBuildProvider"  
-         />  
-      <add extension=".master"   
-        type="System.Web.Compilation.MasterPageBuildProvider"  
-         />  
-      <add extension=".asix"   
-        type="System.Web.Compilation.ImageGeneratorBuildProvider"  
-         />  
-      <add extension=".asmx"   
-        type="System.Web.Compilation.WebServiceBuildProvider"  
-         />  
-      <add extension=".ashx"   
-        type="System.Web.Compilation.WebHandlerBuildProvider"  
-         />  
-      <add extension=".soap"   
-        type="System.Web.Compilation.WebServiceBuildProvider"  
-         />  
-      <add extension=".resx"   
-        type="System.Web.Compilation.ResXBuildProvider"  
-        appliesTo="Resources" />  
-      <add extension=".resources"   
-        type="System.Web.Compilation.ResourcesBuildProvider"  
-        appliesTo="Code, Resources" />  
-      <add extension=".wsdl"   
-        type="System.Web.Compilation.WsdlBuildProvider"  
-        appliesTo="Code" />  
-      <add extension=".xsd"   
-        type="System.Web.Compilation.XsdBuildProvider"  
-        appliesTo="Code" />  
-    </buildProviders>  
-  </compilation>  
-</system.web>  
-  
-```  
-  
- The following code example demonstrates how to use members of the BuildProviderCollection class.  
-  
- [!code-vb[System.Web.Configuration.BuildProviderCollection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_30_1.vb)]
- [!code-cs[System.Web.Configuration.BuildProviderCollection#1](~/add/codesnippet/csharp/t-system.web.configurati_30_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BuildProviderCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,24 +51,9 @@
         <Parameter Name="buildProvider" Type="System.Web.Configuration.BuildProvider" />
       </Parameters>
       <Docs>
-        <param name="buildProvider">A <see cref="T:System.Web.Configuration.BuildProvider" /> object.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.BuildProvider" /> object to the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Configuration.BuildProvider> object already exists in the collection, the build provider is ignored.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Add method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-vb[System.Web.Configuration.BuildProviderCollection#4](~/add/codesnippet/visualbasic/05796077-482b-4f7b-8d2a-_1.vb)]
- [!code-cs[System.Web.Configuration.BuildProviderCollection#4](~/add/codesnippet/csharp/05796077-482b-4f7b-8d2a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="buildProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -143,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all <see cref="T:System.Web.Configuration.BuildProvider" /> objects from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,7 +122,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,9 +131,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value specifying a particular <see cref="T:System.Web.Configuration.BuildProvider" /> object within the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.BuildProvider" /> object at the specified index of the collection.</summary>
-        <value>A <see cref="T:System.Web.Configuration.BuildProvider" /> object.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +144,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,9 +153,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.BuildProvider" /> object to return from the collection.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.BuildProvider" /> collection element based on the specified name.</summary>
-        <value>A <see cref="T:System.Web.Configuration.BuildProvider" /> object.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,24 +193,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A string value specifying the <see cref="T:System.Web.Configuration.BuildProvider" /> reference.</param>
-        <summary>Removes a <see cref="T:System.Web.Configuration.BuildProvider" /> object from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.Configuration.BuildProvider> does not exist in the collection, the build provider is ignored.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Remove method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-vb[System.Web.Configuration.BuildProviderCollection#5](~/add/codesnippet/visualbasic/m-system.web.configurati_72_1.vb)]
- [!code-cs[System.Web.Configuration.BuildProviderCollection#5](~/add/codesnippet/csharp/m-system.web.configurati_72_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -307,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,24 +214,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">An integer value specifying the location of a specific <see cref="T:System.Web.Configuration.BuildProvider" /> object within the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.BuildProvider" /> object at the specified index from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the index does not specify a <xref:System.Web.Configuration.BuildProvider> in the collection, an out-of-range exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the RemoveAt method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-vb[System.Web.Configuration.BuildProviderCollection#6](~/add/codesnippet/visualbasic/m-system.web.configurati_56_1.vb)]
- [!code-cs[System.Web.Configuration.BuildProviderCollection#6](~/add/codesnippet/csharp/m-system.web.configurati_56_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

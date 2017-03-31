@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.RegiisUtility" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides authorization utilities to support specific Web-application configuration, assembly registration, and assembly-key container manipulation. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RegiisUtility class provides utility functions that support the `system.web` assembly registration.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,20 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.RegiisUtility" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RegiisUtility constructor is not intended to be used directly from your code. It is based on the <xref:System.Web.Management.IRegiisUtility> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectedConfigAction">
@@ -57,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,24 +58,17 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="options">The type of action to perform.</param>
-        <param name="firstArgument">A configuration section or assembly-key container name.</param>
-        <param name="secondArgument">The configuration file name or account name.</param>
-        <param name="providerName">The provider name.</param>
-        <param name="appPath">The application path.</param>
-        <param name="site">The site reference.</param>
-        <param name="cspOrLocation">The configuration location.</param>
-        <param name="keySize">The size of the key.</param>
-        <param name="exception">The exception to display.</param>
-        <summary>Allows specific manipulation of configuration sections and assembly-key containers based on the supplied parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The  ProtectedConfigAction method is used internally to protect and unprotect sections within the configuration. The ProtectedConfigAction method also supports assembly-key container manipulation.  
-  
- ]]></format>
-        </remarks>
+        <param name="options">To be added.</param>
+        <param name="firstArgument">To be added.</param>
+        <param name="secondArgument">To be added.</param>
+        <param name="providerName">To be added.</param>
+        <param name="appPath">To be added.</param>
+        <param name="site">To be added.</param>
+        <param name="cspOrLocation">To be added.</param>
+        <param name="keySize">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterAsnetMmcAssembly">
@@ -102,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,19 +90,12 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="doReg">0 indicates that the assembly should be unregistered; otherwise, the assembly should be registered.</param>
-        <param name="typeName">The type of the assembly.</param>
-        <param name="binaryDirectory">The path of the binary directory.</param>
-        <param name="exception">The exception to display.</param>
-        <summary>Allows the executing Microsoft Management Console (MMC) assembly to be registered or unregistered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used internally to register or unregister the executing MMC assembly.  
-  
- ]]></format>
-        </remarks>
+        <param name="doReg">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <param name="binaryDirectory">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterSystemWebAssembly">
@@ -137,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,17 +115,10 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="doReg">0 indicates that the assembly should be unregistered; otherwise, the assembly should be registered.</param>
-        <param name="exception">The exception to display.</param>
-        <summary>Allows the executing Web assembly to be registered or unregistered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used to register or unregister the executing Web assembly.  
-  
- ]]></format>
-        </remarks>
+        <param name="doReg">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveBrowserCaps">
@@ -168,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,8 +137,8 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="exception">The exception to display.</param>
-        <summary>Allows the browser-capabilities code generator to be uninstalled.</summary>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

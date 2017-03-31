@@ -14,17 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Shell.ThumbButtonInfo" /> objects that are associated with a <see cref="T:System.Windows.Window" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ThumbButtonInfoCollection is a strongly-typed <xref:System.Windows.FreezableCollection%601> that is used to support declarations in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
-  
- The [!INCLUDE[win7](~/add/includes/win7-md.md)] shell allows a maximum of seven buttons in the taskbar preview. If more than seven <xref:System.Windows.Shell.ThumbButtonInfo> objects are added to the ThumbButtonInfoCollection, the additional objects are treated as overflow. When a button is <xref:System.Windows.Visibility>, it does not have any visible elements and no space is reserved for it. In this case, additional buttons from the ThumbButtonInfoCollection overflow are displayed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.ThumbButtonInfoCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the collection.</summary>
-        <returns>The new instance of the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

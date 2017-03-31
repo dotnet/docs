@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the data sent by the workflow runtime to tracking participants when <see cref="System.Activities.ActivityExecutionContext.CancelChild%2A" /> or <see cref="System.Activities.ActivityExecutionContext.CancelChildren%2A" /> is called.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,11 +36,11 @@
         <Parameter Name="child" Type="System.Activities.Tracking.ActivityInfo" />
       </Parameters>
       <Docs>
-        <param name="instanceId">The instance ID of the activity that generated the event.</param>
-        <param name="recordNumber">A sequence that defines the order of generated tracking events.</param>
-        <param name="activity">The activity issuing the cancellation request.</param>
-        <param name="child">The activity to be canceled.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.CancelRequestedRecord" /> class using the specified instance ID, record number, activity and child activity.</summary>
+        <param name="instanceId">To be added.</param>
+        <param name="recordNumber">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> of the activity requesting the cancellation.</summary>
-        <value>The activity information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> of the activity to be canceled.</summary>
-        <value>The activity information.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Activities.Tracking.CancelRequestedRecord" /> object.</summary>
-        <returns>The tracking data.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

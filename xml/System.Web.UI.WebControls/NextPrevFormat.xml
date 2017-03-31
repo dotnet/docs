@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.NextPrevFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents the display format for the previous and next month navigation controls within the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NextPrevFormat enumeration represents the different styles for the next and previous month buttons on the <xref:System.Web.UI.WebControls.Calendar>.  
-  
- CustomText allows the programmer to specify custom text for the navigation controls.  
-  
- ShortMonth displays a three-letter abbreviation for the month.  
-  
- FullMonth displays the entire month name.  
-  
-   
-  
-## Examples  
- [!code-vb[CalendarNextPrevFormat#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_320_1.aspx)]
- [!code-cs[CalendarNextPrevFormat#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_320_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CustomText">
@@ -41,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Custom text format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullMonth">
@@ -58,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Full month name format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />. For example, "January".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShortMonth">
@@ -75,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abbreviated month name format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />. For example, "Jan".</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

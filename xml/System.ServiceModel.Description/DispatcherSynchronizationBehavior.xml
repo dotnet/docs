@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DispatcherSynchronizationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>An endpoint behavior that enables a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service to send replies asynchronously.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.DispatcherSynchronizationBehavior" /> class</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +48,9 @@
         <Parameter Name="maxPendingReceives" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="asynchronousSendEnabled">A value that specifies whether an asynchronous send behavior is enabled.</param>
-        <param name="maxPendingReceives">A value that specifies the maximum number of pending receives.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.DispatcherSynchronizationBehavior" /> class.</summary>
+        <param name="asynchronousSendEnabled">To be added.</param>
+        <param name="maxPendingReceives">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +67,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether asynchronous send behavior is enabled.</summary>
-        <value>
-          <see langword="true" /> if asynchronous send behavior is enabled; otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,15 +79,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of receives that can be processed at one time.</summary>
-        <value>The maximum number of receives that can be processed at one time.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,9 +107,9 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to modify.</param>
-        <param name="parameters">The parameters that the binding elements require to implement the behavior.</param>
-        <summary>Passes data at runtime to enable bindings to support the asynchronous send behavior.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,9 +130,9 @@
         <Parameter Name="behavior" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to be modified.</param>
-        <param name="behavior">The client runtime to be modified.</param>
-        <summary>Implements a modification or extension of the client across an endpoint that enables the asynchronous send behavior.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,9 +153,9 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint that exposes the contract.</param>
-        <param name="endpointDispatcher">The endpoint dispatcher to be modified or extended.</param>
-        <summary>Implements a modification or extension of the service across an endpoint that enables the asynchronous send behavior.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="endpointDispatcher">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +166,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,8 +175,8 @@
         <Parameter Name="serviceEndpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to validate.</param>
-        <summary>Validates that the endpoint meets the criteria required to enable the asynchronous send behavior.</summary>
+        <param name="serviceEndpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

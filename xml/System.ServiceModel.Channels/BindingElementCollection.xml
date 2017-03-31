@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the collection of binding elements used in a binding.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,12 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,18 +42,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.BindingElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="elements">The <see cref="System.Collections.Generic.IEnumerable%601" /> of generic type <see cref="T:System.ServiceModel.Channels.BindingElement" /> used to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class from an enumerable set of binding elements.</summary>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="elements" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,18 +61,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="elements" Type="System.ServiceModel.Channels.BindingElement[]" />
       </Parameters>
       <Docs>
-        <param name="elements">The <see cref="T:System.Array" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> used to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class from an array of binding elements.</summary>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="elements" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -84,7 +80,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,11 +96,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="elements">The <see cref="T:System.Array" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> to be added to the collection.</param>
-        <summary>Adds binding elements from an array to the collection of binding elements.</summary>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="elements" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -114,7 +108,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,8 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the binding element collection.</summary>
-        <returns>A copy of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,13 +138,10 @@
         <Parameter Name="bindingElementType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="bindingElementType">The type of binding element being tested for inclusion in the collection.</param>
-        <summary>Returns a value that indicates whether a specified type of binding element belongs to the collection of binding elements.</summary>
-        <returns>
-          <see langword="true" /> if the type of binding element specified is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <param name="bindingElementType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="bindingElementType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Find&lt;T&gt;">
@@ -160,7 +151,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,9 +162,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
-        <summary>Returns the first item of a specified type from the collection of binding elements.</summary>
-        <returns>The item of type <see cref="T:System.Type" /> if found; if not found, 0 if <paramref name="T" /> is a value type and <see langword="null" /> if <paramref name="T" /> is a reference type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +175,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,9 +186,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
-        <summary>Returns all of the items of a specified type from the collection of binding elements.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.Collection%601" /> of all of the items of type <see cref="T:System.Type" /> if found; if none are found, 0 if <paramref name="T" /> is a value type and <see langword="null" /> if <paramref name="T" /> is a reference type.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +199,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,12 +210,10 @@
         <Parameter Name="item" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="index">The location at which to insert the binding element in the collection.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Channels.BindingElement" /> to be inserted.</param>
-        <summary>Inserts a binding element at a specified location within a collection of binding elements.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove&lt;T&gt;">
@@ -234,7 +223,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,9 +234,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
-        <summary>Removes a binding element of a specified type from the collection of binding elements.</summary>
-        <returns>The item of type <see cref="T:System.Type" /> removed.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,7 +247,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,9 +258,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
-        <summary>Removes all of the binding elements of a specified type from the collection of binding elements.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.Collection%601" /> of all of the items of type <see cref="T:System.Type" /> found.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +271,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,12 +282,10 @@
         <Parameter Name="item" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace.</param>
-        <param name="item">The new value for <see cref="T:System.ServiceModel.Channels.BindingElement" /> item at the specified <c>index</c>.</param>
-        <summary>Replaces a binding element at the specified index in the collection of binding elements.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

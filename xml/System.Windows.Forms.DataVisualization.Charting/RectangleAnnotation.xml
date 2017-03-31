@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a rectangle annotation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A rectangle annotation can display text inside the rectangle, in addition to being displayed as a rectangle only. So you can annotate using a rectangle or a rectangle with text inside it.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPoint" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,16 +57,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the annotation type.</summary>
-        <value>The annotation type.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For internal use, should not be used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -106,8 +92,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the annotation.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,16 +124,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the gradient style of the annotation.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw an annotation background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two colors are used to draw the gradient, a primary color that is specified the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> and a secondary color that is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackSecondaryColor%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -177,16 +156,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the hatch style of an annotation background.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the background.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Two colors are used to draw the hatching, a primary color that is specified the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> property, and a secondary color that is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -219,16 +191,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the secondary color for an annotation background.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background with hatching or gradient fill.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This color is used with <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackColor%2A> when the <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation.BackGradientStyle%2A> property is used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineColor">
@@ -258,8 +223,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line color of an annotation.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation line.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,8 +249,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line style of an annotation.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> value used to draw the line style of an annotation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,8 +275,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the line width, in pixels, of an annotation.</summary>
-        <value>An <see langword="integer" /> value that represents the line width, in pixels.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

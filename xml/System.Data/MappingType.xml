@@ -4,30 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MappingType" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a <see cref="T:System.Data.DataColumn" /> is mapped.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MappingType enumeration is used when getting or setting the <xref:System.Data.DataColumn.ColumnMapping%2A> property of the <xref:System.Data.DataColumn>. The property determines how a column's values will be written when the <xref:System.Data.DataSet.WriteXml%2A> method is called on a <xref:System.Data.DataSet> to write the data and schema out as an XML document.  
-  
-   
-  
-## Examples  
- The following example returns the <xref:System.Data.DataColumn.ColumnMapping%2A> property value for each column in a table.  
-  
- [!code-cs[Classic WebData MappingType Example#1](~/add/codesnippet/csharp/t-system.data.mappingtype_1.cs)]
- [!code-vb[Classic WebData MappingType Example#1](~/add/codesnippet/visualbasic/t-system.data.mappingtype_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Attribute">
@@ -37,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column is mapped to an XML attribute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -54,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column is mapped to an XML element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -71,14 +68,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column is mapped to an internal structure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SimpleContent">
@@ -88,14 +89,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The column is mapped to an <see cref="T:System.Xml.XmlText" /> node.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,28 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Drawing.Printing.PaperSize" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PrinterSettings.PaperSizeCollection contains <xref:System.Drawing.Printing.PaperSize> instances that represents the paper sizes through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
-  
- Typically, you set a page's paper size through the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PaperSize> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A> collection.  
-  
- See the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to find out how you can specify a custom paper size.  
-  
-   
-  
-## Examples  
- The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that provides the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
-  
- [!code-cs[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/csharp/t-system.drawing.printin_6_1.cs)]
- [!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/cpp/t-system.drawing.printin_6_1.cpp)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/visualbasic/t-system.drawing.printin_6_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,15 +26,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="System.Drawing.Printing.PaperSize[]" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.Drawing.Printing.PaperSize" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" /> class.</summary>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -81,9 +58,9 @@
         <Parameter Name="paperSize" Type="System.Drawing.Printing.PaperSize" />
       </Parameters>
       <Docs>
-        <param name="paperSize">The <see cref="T:System.Drawing.Printing.PaperSize" /> to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Drawing.Printing.PrinterResolution" /> to the end of the collection.</summary>
-        <returns>The zero-based index of the newly added item.</returns>
+        <param name="paperSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,9 +81,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="paperSizes">A zero-based array that receives the items copied from the <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" />.</param>
-        <param name="index">The index at which to start copying items.</param>
-        <summary>Copies the contents of the current <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" /> to the specified array, starting at the specified index.</summary>
+        <param name="paperSizes">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,27 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of different paper sizes in the collection.</summary>
-        <value>The number of different paper sizes in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that provides the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
-  
- [!code-cs[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/csharp/p-system.drawing.printin_8_1.cs)]
- [!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/cpp/p-system.drawing.printin_8_1.cpp)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/visualbasic/p-system.drawing.printin_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -148,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,20 +119,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method instantiates an enumerator that takes a snapshot of the current state of the collection. The enumerator does not have exclusive access to the collection, so multiple enumerators can have access to the same collection at the same time. Therefore, any changes made to the collection, either directly or through another enumerator, can cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
-  
- Two enumerators instantiated from the same collection at the same time can contain different snapshots of the collection.  
-  
- Removing objects from the enumerator also removes them from the collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -179,7 +131,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,21 +140,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Drawing.Printing.PaperSize" /> to get.</param>
-        <summary>Gets the <see cref="T:System.Drawing.Printing.PaperSize" /> at a specified index.</summary>
-        <value>The <see cref="T:System.Drawing.Printing.PaperSize" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example populates the `comboPaperSize` combo box with the printer's supported paper sizes. In addition, a custom paper size is created and added to the combo box. The <xref:System.Drawing.Printing.PaperSize.PaperName%2A> is identified as the property that provides the display string for the item being added through the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property of the combo box. The example requires that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
-  
- [!code-cs[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/csharp/p-system.drawing.printin_14_1.cs)]
- [!code-cpp[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/cpp/p-system.drawing.printin_14_1.cpp)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#1](~/add/codesnippet/visualbasic/p-system.drawing.printin_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -213,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,17 +163,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A zero-based array that receives the items copied from the collection.</param>
-        <param name="index">The index at which to start copying items.</param>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.CopyTo%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -244,23 +176,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.Count%2A" />.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -270,23 +194,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.IsSynchronized%2A" />.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -296,23 +212,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.ICollection.SyncRoot%2A" />.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -322,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,16 +237,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see <see cref="System.Collections.IEnumerable.GetEnumerator%2A" />.</summary>
-        <returns>An enumerator associated with the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

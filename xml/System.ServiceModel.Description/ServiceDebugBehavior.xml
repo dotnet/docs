@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceDebugBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,55 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Enables debugging and help information features for a [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ServiceDebugBehavior properties from a configuration file or programmatically to enable the flow of managed exception information to the client for debugging purposes as well as the publication of HTML information files for users browsing the service in Web browsers.  
-  
- Set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` to instruct [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to return managed exception information in SOAP faults to clients for debugging purposes.  
-  
-> [!CAUTION]
->  Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. In addition, although the ServiceDebugBehavior properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> when deploying.  
-  
- Because of the security issues involved, it is strongly recommended that:  
-  
--   You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
-  
--   You only do so only in controlled debugging scenarios.  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the security issues related to managed exception information, see [Specifying and Handling Faults in Contracts and Services](../Topic/Specifying%20and%20Handling%20Faults%20in%20Contracts%20and%20Services.md).  
-  
- The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageEnabled%2A> and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageEnabled%2A> properties instruct the service to publish HTML help files when the service is viewed using an HTML browser.  
-  
- The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl%2A> and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> properties control the location of the HTML help page that is viewed.  
-  
- To enable or disable one of the ServiceDebugBehavior features using a configuration file:  
-  
-1.  Add a `behaviorConfiguration` attribute to the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element for your [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service. Endpoint behaviors are configured on [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) elements; service behaviors on [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) elements.  
-  
-2.  Add to or create a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) section and add a [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. Endpoint behaviors are configured using an [\&lt;endpointBehaviors\&gt;](../Topic/%3CendpointBehaviors%3E.md) element; service behaviors are configured using a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) element.  
-  
-3.  Add a [\&lt;serviceDebug\&gt;](../Topic/%3CserviceDebug%3E.md) element to the [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element from step 2 and enable or disable the various properties appropriate to your scenario.  
-  
- For a specific example, see the Example section.  
-  
-   
-  
-## Examples  
- The following code example shows how to use a configuration file to enable the HTML help page feature and return exception information inside a SOAP fault back to the client for debugging purposes, in addition to enabling metadata support. This configuration file shows the following basic steps to adding support for the ServiceDebugBehavior features:  
-  
--   Because the ServiceDebugBehavior type is an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> implementation, the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element that represents the service type has a behavior configuration identifier of `behaviorConfiguration="metadataAndDebug"`.  
-  
--   Because the ServiceDebugBehavior type is an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> implementation a [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element is added to a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) section. Set the `name` attribute of the [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element the value of which is the identifier of the `behaviorConfiguration` attribute of the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element. In this case, the value is `metadataAndDebug`.  
-  
--   Add a [\&lt;serviceDebug\&gt;](../Topic/%3CserviceDebug%3E.md) element with the various attributes set to the desired configuration. In this case, the `httpHelpPageEnabled` and `includeExceptionDetailInFaults` attribute values are set to `true`.  
-  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,30 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceDebugBehavior" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructor creates a <xref:System.ServiceModel.Description.ServiceDebugBehavior> object with the following defaults:  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property is `false`.  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageEnabled%2A> property is `true`.  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageEnabled%2A> property is `true`.  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl%2A> property is the base address of the service that supports HTTP requests.  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> is the base address of the service that supports HTTPS requests.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpHelpPageBinding">
@@ -107,15 +41,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets high-level access to the definition of a binding.</summary>
-        <value>A channel binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +59,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -138,38 +70,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls whether [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] publishes an HTML help page at the address controlled by the <see cref="System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageUrl%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] publishes an HTML help page; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the HttpHelpPageEnabled property to `false` to disable the publication of an HTML help page visible to HTML browsers.  
-  
- To ensure the HTML help page is published at the location controlled by the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> property, you must set this property to `true` and then one of the following conditions must also be true:  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> property is an absolute address that supports the HTTP protocol scheme.  
-  
--   There is a base address for the service that supports the HTTP protocol scheme.  
-  
- Although an exception is thrown if an absolute address that does not support the HTTP protocol scheme is assigned to the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> property, any other scenario in which neither of the preceding criteria is met results in no exception and no HTML help page.  
-  
-   
-  
-## Examples  
- The following code example shows how to use a configuration file to enable the HTML help page feature and return exception information inside a SOAP fault back to the client for debugging purposes. This configuration file shows the following basic steps to adding support for the <xref:System.ServiceModel.Description.ServiceDebugBehavior> features:  
-  
--   Because the <xref:System.ServiceModel.Description.ServiceDebugBehavior> type is a <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> implementation, the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element that represents the service type has a behavior configuration identifier of `behaviorConfiguration="metadataAndDebug"`.  
-  
--   Again, because the <xref:System.ServiceModel.Description.ServiceDebugBehavior> type is an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> implementation a [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element is added to a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) section. The `name` attribute of the [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element the value of which is the identifier of the `behaviorConfiguration` attribute of the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element. In this case, the value is `metadataAndDebug`.  
-  
--   Add a [\&lt;serviceDebug\&gt;](../Topic/%3CserviceDebug%3E.md) element with the various attributes set to the desired configuration. In this case, the `httpHelpPageEnabled` and `includeExceptionDetailInFaults` attribute values are set to `true`.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpHelpPageUrl">
@@ -179,7 +82,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -194,24 +96,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location at which the HTML help file is published.</summary>
-        <value>The relative or absolute HTTP-based URL of the custom HTML help file that the user sees when the endpoint is viewed using an HTML browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HttpHelpPageUrl property to enable the use of a custom HTML help file that is returned from an HTTP/Get request such as that of an HTML browser. The location of the HTML help file is resolved as follows:  
-  
--   If the value of this property is a relative address, then the location of the HTML help file is the value of the service base address that supports HTTP requests plus this property value.  
-  
--   If the value of this property is an absolute address and supports HTTP requests, then the location of the HTML help file is the value of this property.  
-  
--   If the value of this property is absolute but does not support HTTP requests, an exception is thrown.  
-  
- This property is applied only in the case that the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageEnabled%2A> property is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsHelpPageBinding">
@@ -221,15 +108,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets high-level access to the definition of a binding.</summary>
-        <value>A channel binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +126,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -252,25 +137,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] returns an HTML help file over HTTPS at the address controlled by the <see cref="System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A" /> property.</summary>
-        <value>
-          <see langword="true" /> if an HTML help file is returned to clients making an HTTPS/GET request such as that of an HTML browser; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the HttpsHelpPageEnabled property to `false` to disable the publication of an HTML help page visible to HTML browsers.  
-  
- To ensure the HTML help page is published at the location controlled by the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> property, you must set this property to `true` and then one of the following conditions must also be true:  
-  
--   The <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> property is an absolute address that supports the HTTPS protocol scheme.  
-  
--   There is a base address for the service that supports the HTTPS protocol scheme.  
-  
- Although an exception is thrown if an absolute address that does not support the HTTPS protocol scheme is assigned to the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageUrl%2A> property, any other scenario in which neither of the preceding criteria is met results in no exception and no HTML help page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsHelpPageUrl">
@@ -280,7 +149,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -295,26 +163,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location at which an HTML file is published for retrieval using HTTPS.</summary>
-        <value>The relative or absolute HTTPS-based URL of the custom HTML help file that the user sees when the endpoint is viewed using an HTML browser.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the HttpsHelpPageUrl property to enable the use of a custom HTML help file that is returned from an HTTPS/Get request such as that of an HTML browser.  
-  
- The location of the HTML help file is resolved as follows:  
-  
--   If the value of this property is a relative address, then the location of the HTML help file is the value of the service base address that supports HTTPS requests plus this property value.  
-  
--   If the value of this property is an absolute address and supports HTTPS requests, then the location of the HTML help file is the value of this property.  
-  
--   If the value of this property is absolute but does not support HTTPS requests, an exception is thrown.  
-  
- This property is applied only in the case that the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageEnabled%2A> property is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeExceptionDetailInFaults">
@@ -324,7 +175,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -336,41 +186,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to include managed exception information in the detail of SOAP faults returned to the client for debugging purposes.</summary>
-        <value>
-          <see langword="true" /> if [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] returns managed exception information in the SOAP faults for client debugging purposes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the IncludeExceptionDetailInFaults property to `true` to instruct [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to return managed exception information to the client in SOAP faults to ease debugging.  
-  
-> [!CAUTION]
->  Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. In addition, although the <xref:System.ServiceModel.Description.ServiceDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable IncludeExceptionDetailInFaults when deploying.  
-  
- Because of the security issues involved, it is strongly recommended that:  
-  
--   You use an application configuration file to set the value of the IncludeExceptionDetailInFaults property to `true`.  
-  
--   You only do so only in controlled debugging scenarios.  
-  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] [Specifying and Handling Faults in Contracts and Services](../Topic/Specifying%20and%20Handling%20Faults%20in%20Contracts%20and%20Services.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to use a configuration file to enable the HTML help page feature and return exception information inside a SOAP fault back to the client for debugging purposes. This configuration file shows the following basic steps to adding support for the <xref:System.ServiceModel.Description.ServiceDebugBehavior> features:  
-  
--   Because the <xref:System.ServiceModel.Description.ServiceDebugBehavior> type is an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> implementation, the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element that represents the service type has a behavior configuration identifier of `behaviorConfiguration="metadataAndDebug"`.  
-  
--   Again, because the <xref:System.ServiceModel.Description.ServiceDebugBehavior> type is an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> implementation a [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element is added to a [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) section. Set the `name` attribute of the [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element the value of which is the identifier of the `behaviorConfiguration` attribute of the [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) element. In this case, the value is `metadataAndDebug`.  
-  
--   Add a [\&lt;serviceDebug\&gt;](../Topic/%3CserviceDebug%3E.md) element with the various attributes set to the desired configuration. In this case, the `httpHelpPageEnabled` and `includeExceptionDetailInFaults` attribute values are set to `true`.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters">
@@ -380,7 +198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,19 +210,12 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <param name="endpoints">The endpoints for the service.</param>
-        <param name="parameters">The binding parameters that support modifying the bindings.</param>
-        <summary>Implements the <see cref="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A" /> method to support the behavior.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Modifies the bindings to support the behavior. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] the <xref:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <param name="endpoints">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
@@ -415,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,9 +235,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="description">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <summary>Implements the <see cref="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A" /> method to support the behavior.</summary>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -439,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,9 +258,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="description">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <summary>Implements the <see cref="System.ServiceModel.Description.IServiceBehavior.Validate%2A" /> method to support the behavior.</summary>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

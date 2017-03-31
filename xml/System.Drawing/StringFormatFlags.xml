@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringFormatFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,43 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the display and layout information for text strings.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- StringFormatFlags is used by the <xref:System.Drawing.StringFormat> class.  
-  
-> [!NOTE]
->  The FitBlackBox field was misnamed and its behavior is similar to the `NoFitBlackBox` field in the original GDI+ implementation.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the following members:  
-  
--   <xref:System.Drawing.Rectangle.%23ctor%2A>  
-  
--   <xref:System.Drawing.StringFormat.%23ctor%2A>  
-  
--   <xref:System.Drawing.StringFormat.%23ctor%2A>  
-  
--   <xref:System.Drawing.StringFormat.Alignment%2A>  
-  
--   <xref:System.Drawing.StringFormat.LineAlignment%2A>  
-  
--   <xref:System.Drawing.StringAlignment>  
-  
--   StringFormatFlags  
-  
- This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineAndAlignment` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.Misc2#1](~/add/codesnippet/csharp/t-system.drawing.stringf_1.cs)]
- [!code-vb[System.Drawing.Misc2#1](~/add/codesnippet/visualbasic/t-system.drawing.stringf_1.vb)]
- [!code-cpp[System.Drawing.Misc2#1](~/add/codesnippet/cpp/t-system.drawing.stringf_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DirectionRightToLeft">
@@ -62,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Text is displayed from right to left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DirectionVertical">
@@ -79,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Text is vertically aligned.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormatControl">
@@ -96,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Control characters such as the left-to-right mark are shown in the output with a representative glyph.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FitBlackBox">
@@ -113,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Parts of characters are allowed to overhang the string's layout rectangle. By default, characters are repositioned to avoid any overhang.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LineLimit">
@@ -130,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Only entire lines are laid out in the formatting rectangle. By default layout continues until the end of the text, or until no more lines are visible as a result of clipping, whichever comes first. Note that the default settings allow the last line to be partially obscured by a formatting rectangle that is not a whole multiple of the line height. To ensure that only whole lines are seen, specify this value and be careful to provide a formatting rectangle at least as tall as the height of one line.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MeasureTrailingSpaces">
@@ -147,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Includes the trailing space at the end of each line. By default the boundary rectangle returned by the <see cref="System.Drawing.Graphics.MeasureString%2A" /> method excludes the space at the end of each line. Set this flag to include that space in measurement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoClip">
@@ -164,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overhanging parts of glyphs, and unwrapped text reaching outside the formatting rectangle are allowed to show. By default all text and glyph parts reaching outside the formatting rectangle are clipped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFontFallback">
@@ -181,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fallback to alternate fonts for characters not supported in the requested font is disabled. Any missing characters are displayed with the fonts missing glyph, usually an open square.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoWrap">
@@ -198,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Text wrapping between lines when formatting within a rectangle is disabled. This flag is implied when a point is passed instead of a rectangle, or when the specified rectangle has a zero line length.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LoginStatusDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,33 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.LoginStatus" /> Web server control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.LoginStatus> control renders a button that automatically checks the authentication status of the user and displays the appropriate login or logout option.  
-  
- In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.LoginStatus> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The LoginStatusDesigner class provides design-time support for the <xref:System.Web.UI.WebControls.LoginStatus> control.  
-  
- The <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class for each level in the inheritance tree of the designer. The <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.UsePreviewControl%2A> property always returns `true`, indicating that the designer creates a temporary copy of the associated <xref:System.Web.UI.WebControls.LoginStatus> to generate the design-time markup, since the user authentication status is not available at design time.  
-  
- The <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml%2A> method returns the markup that is used to render the associated <xref:System.Web.UI.WebControls.LoginStatus> at design time. The <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.Initialize%2A> method prepares the designer to view, edit, and design the associated <xref:System.Web.UI.WebControls.LoginStatus>.  
-  
-   
-  
-## Examples  
- The following code example shows how to extend the LoginStatusDesigner class to change the appearance of controls that are derived from the <xref:System.Web.UI.WebControls.LoginStatus> control at design time.  
-  
- The example derives the `MyLoginStatus` control from the <xref:System.Web.UI.WebControls.LoginStatus>. The `MyLoginStatus` is a copy of the <xref:System.Web.UI.WebControls.LoginStatus> control. The example also derives the `MyLoginStatusDesigner` class from LoginStatusDesigner, and then applies a <xref:System.ComponentModel.DesignerAttribute> attribute for the `MyLoginStatusDesigner` on the `MyLoginStatus` control.  
-  
- The `MyLoginStatusDesigner` overrides the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml%2A> method to draw a blue, dashed border around the control to make it more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the `MyLoginStatus` is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.LoginStatusDesigner#1](~/add/codesnippet/csharp/t-system.web.ui.design.w_1_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.LoginStatusDesigner#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LoginStatusDesigner" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.LoginStatus> control or a copy of that control on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -71,23 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the designer action list collection for this designer.</summary>
-        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ActionLists property creates a <xref:System.ComponentModel.Design.DesignerActionList> object for the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner> class, adds it to the <xref:System.ComponentModel.Design.DesignerActionListCollection> that is obtained from the ActionLists base property, and then returns the <xref:System.ComponentModel.Design.DesignerActionListCollection> collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -97,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,24 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the markup that is used to render the associated control at design time.</summary>
-        <returns>A string containing the markup used to render the <see cref="T:System.Web.UI.WebControls.LoginStatus" /> at design time.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Web.UI.WebControls.LoginStatus.LogoutText%2A> or <xref:System.Web.UI.WebControls.LoginStatus.LoginText%2A> property (depending on whether the user is logged in), is `null`, an empty string (""), or a single space (" "), the GetDesignTimeHtml method sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutText%2A> or <xref:System.Web.UI.WebControls.LoginStatus.LoginText%2A> property, as appropriate, to the <xref:System.Web.UI.Control.ID%2A> property, enclosed in brackets ("[ ]"). Then, regardless of the setting of the <xref:System.Web.UI.WebControls.LoginStatus.LoginText%2A> or <xref:System.Web.UI.WebControls.LoginStatus.LogoutText%2A>, the GetDesignTimeHtml method calls the <xref:System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml%2A> base method to generate the markup for the design-time rendering of the <xref:System.Web.UI.WebControls.LoginStatus> control.  
-  
-   
-  
-## Examples  
- The following code example shows how to override the GetDesignTimeHtml method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner> class to change the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.LoginStatus> class at design time. The example draws a blue, dashed border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
-  
- [!code-cs[System.Web.UI.Design.WebControls.LoginStatusDesigner#2](~/add/codesnippet/csharp/m-system.web.ui.design.w_3_1.cs)]
- [!code-vb[System.Web.UI.Design.WebControls.LoginStatusDesigner#2](~/add/codesnippet/visualbasic/m-system.web.ui.design.w_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -132,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,18 +83,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">A <see cref="T:System.Web.UI.WebControls.LoginStatus" />, which implements an <see cref="T:System.ComponentModel.IComponent" />.</param>
-        <summary>Prepares the designer to view, edit, and design the associated control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The visual designer calls the Initialize method when it is ready to use the designer to render the <xref:System.Web.UI.WebControls.LoginStatus> control. The Initialize and its base methods configure properties and set up events that are necessary for the operation of the designer.  
-  
- The `component` parameter is the <xref:System.Web.UI.WebControls.LoginStatus> control that is associated with this designer or a copy of the <xref:System.Web.UI.WebControls.LoginStatus> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -163,25 +95,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the designer should use a temporary copy rather than the actual control that is associated with the designer to generate the design-time markup.</summary>
-        <value>Always <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the UsePreviewControl property is always `true`, the designer <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property returns a copy of the associated <xref:System.Web.UI.WebControls.LoginStatus> control to generate the design-time markup. The <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property creates the copy by persisting the actual <xref:System.Web.UI.WebControls.LoginStatus> control, then parsing the persisted control string. The copied control does not affect any persistence for the actual <xref:System.Web.UI.WebControls.LoginStatus>.  
-  
- If the UsePreviewControl property has been overridden to return `false`, the designer will use the associated <xref:System.Web.UI.WebControls.LoginStatus> itself to generate the design-time markup, and design-time changes to the control will persist to the page markup source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

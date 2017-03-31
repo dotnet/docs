@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit OrderedDictionary extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.Collections.Specialized.IOrderedDictionary, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.OrderedDictionary" />
   <AssemblyInfo>
+    <AssemblyName>System.Collections.Specialized</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,34 +33,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of key/value pairs that are accessible by the key or index.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
-  
- The elements of an OrderedDictionary are not sorted by the key, unlike the elements of a <xref:System.Collections.Generic.SortedDictionary%602> class. You can access elements either by the key or by the index.  
-  
- The `foreach` statement of the C# language (`For Each` in Visual Basic) returns objects that are of the type of each element in the collection. Since each element of the OrderedDictionary collection is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. The following code shows C#, Visual Basic and C++ syntax.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#06](~/add/codesnippet/cpp/t-system.collections.spe_6_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#06](~/add/codesnippet/csharp/t-system.collections.spe_6_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#06](~/add/codesnippet/visualbasic/t-system.collections.spe_6_1.vb)]  
-  
- The `foreach` statement is a wrapper around the enumerator, which only allows reading from, not writing to, the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation, population and modification of an OrderedDictionary collection, as well as two techniques to display the contents of the OrderedDictionary: one using the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> and <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> properties and the other creating an enumerator through the <xref:System.Collections.Specialized.OrderedDictionary.GetEnumerator%2A> method.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#00](~/add/codesnippet/cpp/t-system.collections.spe_6_2.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#00](~/add/codesnippet/csharp/t-system.collections.spe_6_2.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#00](~/add/codesnippet/visualbasic/t-system.collections.spe_6_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,30 +43,22 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation and population of an <xref:System.Collections.Specialized.OrderedDictionary> collection. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/cpp/m-system.collections.spe_42_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/csharp/m-system.collections.spe_42_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/visualbasic/m-system.collections.spe_42_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,30 +67,25 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.#ctor(System.Collections.IEqualityComparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
       </Parameters>
       <Docs>
-        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> to use to determine whether two keys are equal.  
-  
- -or-  
-  
- <see langword="null" /> to use the default comparer, which is each key's implementation of <see cref="System.Object.Equals%2A" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> class using the specified comparer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
-  
- ]]></format>
-        </remarks>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,24 +94,25 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">The initial number of elements that the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection can contain.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> class using the specified initial capacity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -151,32 +121,27 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.#ctor(System.Int32,System.Collections.IEqualityComparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
         <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
       </Parameters>
       <Docs>
-        <param name="capacity">The initial number of elements that the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection can contain.</param>
-        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> to use to determine whether two keys are equal.  
-  
- -or-  
-  
- <see langword="null" /> to use the default comparer, which is each key's implementation of <see cref="System.Object.Equals%2A" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> class using the specified initial capacity and comparer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
-  
- ]]></format>
-        </remarks>
+        <param name="capacity">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -186,25 +151,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object containing the information required to serialize the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object containing the source and destination of the serialized stream associated with the <see cref="T:System.Collections.Specialized.OrderedDictionary" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> class that is serializable using the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -213,9 +175,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.Add(System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -225,29 +195,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the entry to add.</param>
-        <param name="value">The value of the entry to add. This value can be <see langword="null" />.</param>
-        <summary>Adds an entry with the specified key and value into the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection with the lowest available index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A key cannot be `null`, but a value can be.  
-  
- You can also use the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Specialized.OrderedDictionary> collection; however, if the specified key already exists in the <xref:System.Collections.Specialized.OrderedDictionary>, setting the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property overwrites the old value. In contrast, the Add method does not modify existing elements.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation and population of an <xref:System.Collections.Specialized.OrderedDictionary> collection. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/cpp/039b9599-9399-4061-ac28-_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/csharp/039b9599-9399-4061-ac28-_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/visualbasic/039b9599-9399-4061-ac28-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AsReadOnly">
@@ -256,25 +207,26 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.AsReadOnly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.OrderedDictionary</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a read-only copy of the current <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <returns>A read-only copy of the current <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AsReadOnly method creates a read-only wrapper around the current <xref:System.Collections.Specialized.OrderedDictionary> collection. Changes made to the <xref:System.Collections.Specialized.OrderedDictionary> collection are reflected in the read-only copy.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -283,34 +235,25 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all elements from the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After calling the Clear method, the <xref:System.Collections.Specialized.OrderedDictionary.Count%2A> property is set to zero and references to other objects from elements of the collection are also released. The capacity is not changed as a result of calling this method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the Clear method is used to empty the <xref:System.Collections.Specialized.OrderedDictionary>, and then the <xref:System.Collections.Specialized.OrderedDictionary> is repopulated. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#03](~/add/codesnippet/cpp/m-system.collections.spe_1_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#03](~/add/codesnippet/csharp/m-system.collections.spe_1_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#03](~/add/codesnippet/visualbasic/m-system.collections.spe_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -319,9 +262,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.Contains(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -330,29 +281,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key to locate in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</param>
-        <summary>Determines whether the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection contains a specific key.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection contains an element with the specified key; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using the <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> property can return a null value if the key does not exist or if the key is `null`. Use the Contains method to determine if a specific key exists in the <xref:System.Collections.Specialized.OrderedDictionary> collection.  
-  
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the Contains method is used to determine if an entry exists before attempting to remove it. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/m-system.collections.spe_29_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/m-system.collections.spe_29_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/m-system.collections.spe_29_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -361,9 +293,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -373,17 +313,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> object that is the destination of the <see cref="T:System.Collections.DictionaryEntry" /> objects copied from <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
-        <summary>Copies the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> elements to a one-dimensional <see cref="T:System.Array" /> object at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CopyTo method is not guaranteed to preserve the order of the elements in the <xref:System.Collections.Specialized.OrderedDictionary> collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -392,28 +325,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of key/values pairs contained in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <value>The number of key/value pairs contained in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the Count property is used to remove the last item in the <xref:System.Collections.Specialized.OrderedDictionary>. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/p-system.collections.spe_10_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/p-system.collections.spe_10_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/p-system.collections.spe_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -422,50 +352,26 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IDictionaryEnumerator" /> object that iterates through the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [Visual Basic, C#]  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- This method is an O(1) operation.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the GetEnumerator method to display the contents of the <xref:System.Collections.Specialized.OrderedDictionary> collection to the console. In this example, the GetEnumerator method is used to obtain an <xref:System.Collections.IDictionaryEnumerator> object that is passed to a method that displays the contents. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#03](~/add/codesnippet/cpp/m-system.collections.spe_30_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#03](~/add/codesnippet/csharp/m-system.collections.spe_30_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#03](~/add/codesnippet/visualbasic/m-system.collections.spe_30_1.vb)]  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#05](~/add/codesnippet/cpp/m-system.collections.spe_30_2.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#05](~/add/codesnippet/csharp/m-system.collections.spe_30_2.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#05](~/add/codesnippet/visualbasic/m-system.collections.spe_30_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -475,8 +381,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -486,13 +396,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object containing the information required to serialize the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</param>
-        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object containing the source and destination of the serialized stream associated with the <see cref="T:System.Collections.Specialized.OrderedDictionary" />.</param>
-        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="info" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /> Security action: Link Demand for permission to link to this class.</permission>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -501,9 +408,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.Insert(System.Int32,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -514,32 +429,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which the element should be inserted.</param>
-        <param name="key">The key of the entry to add.</param>
-        <param name="value">The value of the entry to add. The value can be <see langword="null" />.</param>
-        <summary>Inserts a new entry into the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection with the specified key and value at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `index` parameter is equal to the number of entries in the <xref:System.Collections.Specialized.OrderedDictionary> collection, the `key` and `value` parameters are appended to the end of the collection.  
-  
- Entries that follow the insertion point move down to accommodate the new entry and the indexes of the moved entries are also updated.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the Insert method is used to add a new entry to the beginning of the <xref:System.Collections.Specialized.OrderedDictionary>, moving the rest of the entries down. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/56e5bd9c-eb97-4216-b76d-_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/56e5bd9c-eb97-4216-b76d-_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/56e5bd9c-eb97-4216-b76d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is out of range.</exception>
-        <exception cref="T:System.NotSupportedException">This collection is read-only.</exception>
+        <param name="index">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -548,36 +442,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- A collection that is read-only is simply a collection with a wrapper that prevents modification of the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the IsReadOnly property is used to determine whether the <xref:System.Collections.Specialized.OrderedDictionary> can be modified. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/p-system.collections.spe_7_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/p-system.collections.spe_7_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/p-system.collections.spe_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -586,9 +469,17 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -597,26 +488,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the value to get or set.</param>
-        <summary>Gets or sets the value at the specified index.</summary>
-        <value>The value of the item at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property allows you to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
- The C# language uses the  keyword to define the indexers instead of implementing the Item property. Visual Basic implements <xref:System.Collections.Specialized.OrderedDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The property is being set and the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="index" /> is equal to or greater than <see cref="System.Collections.Specialized.OrderedDictionary.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -625,9 +500,17 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.Item(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -636,31 +519,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to get or set.</param>
-        <summary>Gets or sets the value with the specified key.</summary>
-        <value>The value associated with the specified key. If the specified key is not found, attempting to get it returns <see langword="null" />, and attempting to set it creates a new element using the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property allows you to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
-  
- You can also use the Item property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Specialized.OrderedDictionary> collection (for example, `myCollection["myNonexistentKey"] = myValue`). However, if the specified key already exists in the <xref:System.Collections.Specialized.OrderedDictionary>, setting the Item property overwrites the old value. In contrast, the <xref:System.Collections.Specialized.OrderedDictionary.Add%2A> method does not modify existing elements.  
-  
- A key cannot be `null`, but a value can be. To distinguish between `null` that is returned because the specified key is not found and `null` that is returned because the value of the specified key is `null`, use the <xref:System.Collections.Hashtable.Contains%2A> method to determine if the key exists in the <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the Item property is used to modify the dictionary entry with the key `"testKey2"`. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/p-system.collections.spe_24_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/p-system.collections.spe_24_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/p-system.collections.spe_24_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The property is being set and the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -669,37 +531,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object containing the keys in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> object containing the keys in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Collections.ICollection> object is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the keys in the original <xref:System.Collections.Specialized.OrderedDictionary> collection. Therefore, changes to the <xref:System.Collections.Specialized.OrderedDictionary> continue to be reflected in the <xref:System.Collections.ICollection>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation and population of an <xref:System.Collections.Specialized.OrderedDictionary> collection, and then prints the contents to the console. In this example, the Keys and <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> properties are passed to a method that displays the contents. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/cpp/p-system.collections.spe_19_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/csharp/p-system.collections.spe_19_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/visualbasic/p-system.collections.spe_19_1.vb)]  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#04](~/add/codesnippet/cpp/p-system.collections.spe_19_2.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#04](~/add/codesnippet/csharp/p-system.collections.spe_19_2.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#04](~/add/codesnippet/visualbasic/p-system.collections.spe_19_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeserialization">
@@ -709,8 +559,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -719,17 +573,9 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the deserialization event.</param>
-        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and is called back by the deserialization event when deserialization is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be overridden.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is invalid.</exception>
+        <param name="sender">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -738,9 +584,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.Remove(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -749,30 +603,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the entry to remove.</param>
-        <summary>Removes the entry with the specified key from the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The entries that follow the removed entry move up to occupy the vacated spot and the indexes of the entries that move are also updated.  
-  
- If the <xref:System.Collections.Specialized.OrderedDictionary> collection does not contain an entry with the specified key, the <xref:System.Collections.Specialized.OrderedDictionary> remains unchanged and no exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the Remove method is used to remove the entry with the key `"keyToDelete"` from the <xref:System.Collections.Specialized.OrderedDictionary>. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/m-system.collections.spe_36_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/m-system.collections.spe_36_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/m-system.collections.spe_36_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> is <see langword="null" />.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -781,9 +614,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.RemoveAt(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -792,32 +633,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the entry to remove.</param>
-        <summary>Removes the entry at the specified index from the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The entries that follow the removed entry move up to occupy the vacated spot and the indexes of the entries that move are also updated.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the modification of an <xref:System.Collections.Specialized.OrderedDictionary> collection. In this example, the RemoveAt method is used with the <xref:System.Collections.Specialized.OrderedDictionary.Count%2A> property to remove the last entry from the <xref:System.Collections.Specialized.OrderedDictionary>. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/cpp/m-system.collections.spe_33_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/csharp/m-system.collections.spe_33_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#02](~/add/codesnippet/visualbasic/m-system.collections.spe_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection is read-only.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero.  
-  
- \- or -  
-  
- <paramref name="index" /> is equal to or greater than <see cref="System.Collections.Specialized.OrderedDictionary.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -826,16 +644,24 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.System#Collections#ICollection#IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> object is synchronized (thread-safe).</summary>
-        <value>This method always returns <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -845,16 +671,24 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.System#Collections#ICollection#SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> object.</summary>
-        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -864,17 +698,24 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.System#Collections#IDictionary#IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> has a fixed size.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> has a fixed size; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -884,17 +725,25 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.OrderedDictionary.System#Collections#IEnumerable#GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IDictionaryEnumerator" /> object that iterates through the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -905,8 +754,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -915,8 +768,8 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the deserialization event.</param>
-        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and is called back by the deserialization event when deserialization is complete.</summary>
+        <param name="sender">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -926,37 +779,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.OrderedDictionary.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Collections.ICollection> object is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the values in the original <xref:System.Collections.Specialized.OrderedDictionary> collection. Therefore, changes to the <xref:System.Collections.Specialized.OrderedDictionary> continue to be reflected in the <xref:System.Collections.ICollection>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the creation and population of an <xref:System.Collections.Specialized.OrderedDictionary> collection, and then prints the contents to the console. In this example, the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> and Values properties are passed to a method that displays the contents. This code is part of a larger code example that can be viewed at <xref:System.Collections.Specialized.OrderedDictionary>.  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/cpp/p-system.collections.spe_21_1.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/csharp/p-system.collections.spe_21_1.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#01](~/add/codesnippet/visualbasic/p-system.collections.spe_21_1.vb)]  
-  
- [!code-cpp[System.Collections.Specialized.OrderedDictionary1#04](~/add/codesnippet/cpp/p-system.collections.spe_21_2.cpp)]
- [!code-cs[System.Collections.Specialized.OrderedDictionary1#04](~/add/codesnippet/csharp/p-system.collections.spe_21_2.cs)]
- [!code-vb[System.Collections.Specialized.OrderedDictionary1#04](~/add/codesnippet/visualbasic/p-system.collections.spe_21_2.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

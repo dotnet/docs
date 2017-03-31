@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Management.AuthenticationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the authentication level to be used to connect to WMI. This is used for the COM connection to WMI.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Call-level COM authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Connect-level COM authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default COM authentication level. WMI uses the default Windows Authentication setting.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No COM authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Packet">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Packet-level COM authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PacketIntegrity">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Packet Integrity-level COM authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PacketPrivacy">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Packet Privacy-level COM authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unchanged">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication level should remain as it was before.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

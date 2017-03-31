@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowRole" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The abstract base class from which workflow roles are derived.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- You can derive classes from the WorkflowRole class in order to implement role-based access to your workflows and their activities. The <xref:System.Workflow.Activities.WebWorkflowRole> class and the <xref:System.Workflow.Activities.ActiveDirectoryRole> class derive from the WorkflowRole class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowRole" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class gets the identities contained by this <see cref="T:System.Workflow.Activities.WorkflowRole" />.</summary>
-        <returns>A list of the names of the identities contained by this <see cref="T:System.Workflow.Activities.WorkflowRole" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,10 +70,9 @@
         <Parameter Name="identity" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identity">The name of the identity for which to test.</param>
-        <summary>When implemented in a derived class, returns a value that indicates whether this role contains the specified identity.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="identity" /> is included in this <see cref="T:System.Workflow.Activities.WorkflowRole" />; otherwise, <see langword="false" />.</returns>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,15 +83,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented in a derived class, gets or sets the name of this <see cref="T:System.Workflow.Activities.WorkflowRole" />.</summary>
-        <value>The name of the <see cref="T:System.Workflow.Activities.WorkflowRole" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

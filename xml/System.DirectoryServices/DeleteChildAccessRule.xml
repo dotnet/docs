@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DeleteChildAccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The DeleteChildAccessRule class represents a specific type of access rule that is used to allow or deny an Active Directory Domain Services object the right to delete child objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,17 +29,10 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference and access control type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you use this constructor, it creates a delete child access rule that applies to all child types.  
-  
- ]]></format>
-        </remarks>
+        <param name="identity">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -60,18 +50,11 @@
         <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, and Active Directory Domain Services security inheritance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you use this constructor, it creates a delete child access rule that applies to all child types.  
-  
- ]]></format>
-        </remarks>
+        <param name="identity">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,7 +64,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -90,10 +72,10 @@
         <Parameter Name="childType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="childType">The schema GUID of the type of child objects that can or cannot be deleted. If this is <see cref="T:System.Guid" />, then the access rule applies to all child types.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, and child type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="childType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +86,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -114,19 +95,12 @@
         <Parameter Name="inheritedObjectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <param name="inheritedObjectType">The schema GUID of the child object type that can inherit this access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, Active Directory Domain Services security inheritance, and inherited object type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you use this constructor, it creates a delete child access rule that applies to all child types.  
-  
- ]]></format>
-        </remarks>
+        <param name="identity">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <param name="inheritedObjectType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,7 +110,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -146,11 +119,11 @@
         <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="childType">The schema GUID of the type of child objects that can or cannot be deleted. If this is <see cref="T:System.Guid" />, then the access rule applies to all child types.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, child type, and Active Directory Domain Services security inheritance.</summary>
+        <param name="identity">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="childType">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +134,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -172,12 +144,12 @@
         <Parameter Name="inheritedObjectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
-        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
-        <param name="childType">The schema GUID of the type of child objects that can or cannot be deleted. If this is <see cref="T:System.Guid" />, then the access rule applies to all child types.</param>
-        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
-        <param name="inheritedObjectType">The schema GUID of the child object type that can inherit this access rule.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteChildAccessRule" /> class with the specified identity reference, access control type, child type, Active Directory Domain Services security inheritance, and inherited object type.</summary>
+        <param name="identity">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="childType">To be added.</param>
+        <param name="inheritanceType">To be added.</param>
+        <param name="inheritedObjectType">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

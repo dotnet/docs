@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Abstract base class for timer extensions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A timer extension is used by activities such as <xref:System.Activities.Statements.Delay> to manage timers.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +46,8 @@
         <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="bookmark">The bookmark associated with the timer.</param>
-        <summary>Removes a timer.</summary>
+        <param name="bookmark">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +67,8 @@
         <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="bookmark">The bookmark associated with the timer.</param>
-        <summary>Called by the <see cref="System.Activities.Statements.TimerExtension.CancelTimer%2A" /> method.</summary>
+        <param name="bookmark">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +89,9 @@
         <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="timeout">The duration of the timer.</param>
-        <param name="bookmark">The bookmark associated with the timer, to be resumed when the timer expires.</param>
-        <summary>Called by the <see cref="System.Activities.Statements.TimerExtension.RegisterTimer%2A" /> method.</summary>
+        <param name="timeout">To be added.</param>
+        <param name="bookmark">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +112,9 @@
         <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="timeout">The duration of the timer.</param>
-        <param name="bookmark">The bookmark associated with the timer, to be resumed when the timer expires.</param>
-        <summary>Creates a timer with the specified duration and associated.</summary>
+        <param name="timeout">To be added.</param>
+        <param name="bookmark">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

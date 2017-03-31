@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Expander" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,42 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the control that displays a header that has a collapsible window that displays content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Expander is a <xref:System.Windows.Controls.HeaderedContentControl>, which means its <xref:System.Windows.Controls.ContentControl.Content%2A> and <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> properties can be of any type (such as string, image, or panel).  For more information, see the <xref:System.Windows.Controls.HeaderedContentControl> class.  
-  
- The following illustration shows an Expander control.  
-  
- ![Expander example](~/add/media/expanderexample.JPG "Expander example")  
-  
- If the content of the expanded window is too large for the window, you can wrap the content of the Expander in a <xref:System.Windows.Controls.ScrollViewer> control to provide scrollable content. Scrolling capability is not automatically provided by the Expander control.  
-  
- For an Expander to work correctly, do not specify a <xref:System.Windows.FrameworkElement.Height%2A> on the Expander control when the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property is set to <xref:System.Windows.Controls.ExpandDirection> or <xref:System.Windows.Controls.ExpandDirection>. Similarly, do not specify a <xref:System.Windows.FrameworkElement.Width%2A> on the Expander control when the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property is set to <xref:System.Windows.Controls.ExpandDirection> or <xref:System.Windows.Controls.ExpandDirection>. When you set a size on the Expander control in the direction that the expanded content is displayed, the area that is defined by the size parameter is displayed with a border around it. This area displays even when the window is collapsed. To set the size of the expanded window, set size dimensions on the content of the Expander control or the <xref:System.Windows.Controls.ScrollViewer> that encloses the content.  
-  
- When an Expander control is the last element in a <xref:System.Windows.Controls.DockPanel>, the Expander is sized to fill the remaining area of the <xref:System.Windows.Controls.DockPanel>. To prevent this, set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property on the <xref:System.Windows.Controls.DockPanel> to `false`, or make sure that the Expander is not the last element in a <xref:System.Windows.Controls.DockPanel>.  
-  
- The alignment of Expander content can be defined by setting the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties on the control. These properties are applied to the header and to the contents of the expanded window.  
-  
-## Customizing the Expander Control  
- To apply the same property settings to multiple Expander controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the Expander, see [Expander Styles and Templates](../Topic/Expander%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in Expander control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example shows how to create a simple Expander control.  
-  
- [!code-xml[ExpanderExample#2](~/add/codesnippet/xaml/ExpanderExample/Page1.xaml#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Expander" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,45 +42,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the content window of an <see cref="T:System.Windows.Controls.Expander" /> control closes and only the <see cref="System.Windows.Controls.HeaderedContentControl.Header%2A" /> is visible.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Collapsed event occurs when the <xref:System.Windows.Controls.Expander.IsExpanded%2A> property changes from `true` to `false`.  
-  
-<a name="routedEventInfo_Collapsed"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Expander.CollapsedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example shows how to specify the event handler for the Collapsed event.  
-  
- [!code-cs[ExpanderSnips#Collapsed](~/add/codesnippet/csharp/ExpanderSnips/Window1.xaml.cs#collapsed)]
- [!code-vb[ExpanderSnips#Collapsed](~/add/codesnippet/visualbasic/expandersnips/window1.xaml.vb#collapsed)]
- [!code-xml[ExpanderSnips#Collapsed](~/add/codesnippet/xaml/ExpanderSnips/Window1.xaml#collapsed)]  
-  
- The following example shows how to define the event handler.  
-  
- [!code-cs[ExpanderSnips#CollapsedHandler](~/add/codesnippet/csharp/ExpanderSnips/Window1.xaml.cs#collapsedhandler)]
- [!code-vb[ExpanderSnips#CollapsedHandler](~/add/codesnippet/visualbasic/expandersnips/window1.xaml.vb#collapsedhandler)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapsedEvent">
@@ -126,14 +59,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.Expander.Collapsed" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +76,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -159,32 +90,9 @@
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the direction in which the <see cref="T:System.Windows.Controls.Expander" /> content window opens.</summary>
-        <value>One of the <see cref="T:System.Windows.Controls.ExpandDirection" /> values that defines which direction the content window opens. The default is <see cref="T:System.Windows.Controls.ExpandDirection" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ExpandDirection"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Expander.ExpandDirectionProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the ExpandDirection property.  
-  
- [!code-cs[ExpanderSnips#ExpandDirection](~/add/codesnippet/csharp/ExpanderSnips/Window1.xaml.cs#expanddirection)]
- [!code-vb[ExpanderSnips#ExpandDirection](~/add/codesnippet/visualbasic/expandersnips/window1.xaml.vb#expanddirection)]
- [!code-xml[ExpanderSnips#ExpandDirection](~/add/codesnippet/xaml/ExpanderSnips/Window1.xaml#expanddirection)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandDirectionProperty">
@@ -194,14 +102,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Expander.ExpandDirection%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,45 +119,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the content window of an <see cref="T:System.Windows.Controls.Expander" /> control opens to display both its header and content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Expanded event occurs when the <xref:System.Windows.Controls.Expander.IsExpanded%2A> property changes from `false` to `true`.  
-  
-<a name="routedEventInfo_Expanded"></a>   
-## Routed Event Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Expander.ExpandedEvent>|  
-|Routing strategy|Bubbling|  
-|Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
-   
-  
-## Examples  
- The following example shows how to specify the event handler for the Expanded event.  
-  
- [!code-cs[ExpanderSnips#Expanded](~/add/codesnippet/csharp/ExpanderSnips/Window1.xaml.cs#expanded)]
- [!code-vb[ExpanderSnips#Expanded](~/add/codesnippet/visualbasic/expandersnips/window1.xaml.vb#expanded)]
- [!code-xml[ExpanderSnips#Expanded](~/add/codesnippet/xaml/ExpanderSnips/Window1.xaml#expanded)]  
-  
- The following example shows how to define the event handler.  
-  
- [!code-cs[ExpanderSnips#ExpandedHandler](~/add/codesnippet/csharp/ExpanderSnips/Window1.xaml.cs#expandedhandler)]
- [!code-vb[ExpanderSnips#ExpandedHandler](~/add/codesnippet/visualbasic/expandersnips/window1.xaml.vb#expandedhandler)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandedEvent">
@@ -260,14 +136,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="E:System.Windows.Controls.Expander.Expanded" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +153,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -293,33 +167,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the <see cref="T:System.Windows.Controls.Expander" /> content window is visible.</summary>
-        <value>
-          <see langword="true" /> if the content window is expanded; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsExpanded"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Expander.IsExpandedProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to set the IsExpanded property.  
-  
- [!code-cs[ExpanderSnips#IsExpanded](~/add/codesnippet/csharp/ExpanderSnips/Window1.xaml.cs#isexpanded)]
- [!code-vb[ExpanderSnips#IsExpanded](~/add/codesnippet/visualbasic/expandersnips/window1.xaml.vb#isexpanded)]
- [!code-xml[ExpanderSnips#IsExpanded](~/add/codesnippet/xaml/ExpanderSnips/Window1.xaml#isexpanded)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsExpandedProperty">
@@ -329,14 +179,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Expander.IsExpanded%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,7 +203,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="E:System.Windows.Controls.Expander.Collapsed" /> event when the <see cref="System.Windows.Controls.Expander.IsExpanded%2A" /> property changes from <see langword="true" /> to <see langword="false" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,7 +214,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,8 +221,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the implementation of <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Expander" /> control.</summary>
-        <returns>A new <see cref="T:System.Windows.Automation.Peers.ExpanderAutomationPeer" /> for this <see cref="T:System.Windows.Controls.Expander" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,7 +240,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="E:System.Windows.Controls.Expander.Expanded" /> event when the <see cref="System.Windows.Controls.Expander.IsExpanded%2A" /> property changes from <see langword="false" /> to <see langword="true" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,11 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WrappedKeySecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,21 +10,9 @@
     <BaseTypeName>System.IdentityModel.Tokens.SecurityToken</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Represents a security token whose key is wrapped inside another token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class represents an encrypted key that comes over the wire. The encrypted key is a symmetric key that is encrypted for the receiving party using the receiving party’s public key. When such a key is received, the receiver’s security token is resolved, the symmetric key is decrypted, and an instance of this class is created that contains these two pieces of information.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,11 +20,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, unsigned int8[] keyToWrap, string wrappingAlgorithm, class System.IdentityModel.Tokens.SecurityToken wrappingToken, class System.IdentityModel.Tokens.SecurityKeyIdentifier wrappingTokenReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.#ctor(System.String,System.Byte[],System.String,System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,12 +32,12 @@
         <Parameter Name="wrappingTokenReference" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Parameters>
       <Docs>
-        <param name="id">The ID of the key token.</param>
-        <param name="keyToWrap">The key to be wrapped.</param>
-        <param name="wrappingAlgorithm">The algorithm used to do the wrapping.</param>
-        <param name="wrappingToken">A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the wrapping token.</param>
-        <param name="wrappingTokenReference">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents a reference to the wrapping token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken" /> class.</summary>
+        <param name="id">To be added.</param>
+        <param name="keyToWrap">To be added.</param>
+        <param name="wrappingAlgorithm">To be added.</param>
+        <param name="wrappingToken">To be added.</param>
+        <param name="wrappingTokenReference">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,11 +46,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.CanCreateKeyIdentifierClause``1" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,10 +62,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />.</typeparam>
-        <summary>Gets a value that indicates whether the token can create a key identifier clause.</summary>
-        <returns>
-          <see langword="true" /> if the token can create a key identifier clause; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,11 +73,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.CreateKeyIdentifierClause``1" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,9 +89,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />.</typeparam>
-        <summary>Create a key identifier clause.</summary>
-        <returns>The type of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,11 +101,6 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.GetWrappedKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -147,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the wrapped key.</summary>
-        <returns>The wrapped key.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,11 +120,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -170,8 +127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the token ID.</summary>
-        <value>The token ID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,11 +137,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -196,10 +148,9 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">The specified security key identifier clause.</param>
-        <summary>Compares the current security key identifier clause to a specified one for equality.</summary>
-        <returns>
-          <see langword="true" /> if the current security key identifier clause equals the specified one; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <param name="keyIdentifierClause">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,11 +160,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -221,8 +167,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of security keys.</summary>
-        <value>A collection of <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,11 +178,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -244,8 +185,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the token effective start date.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the token effective start date.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,11 +196,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -267,8 +203,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the token expiration date.</summary>
-        <value>A <see cref="T:System.DateTime" /> that represents the token expiration date.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,11 +214,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.WrappingAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -290,8 +221,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the wrapping algorithm.</summary>
-        <value>A <see cref="T:System.String" /> that specifies the wrapping algorithm or the algorithm used to encrypt the symmetric key.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,11 +232,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.WrappingToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -313,8 +239,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the wrapping token.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the wrapping token.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,11 +250,6 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken.WrappingTokenReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -336,8 +257,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the wrapping token reference.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents a reference to the wrapping token.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

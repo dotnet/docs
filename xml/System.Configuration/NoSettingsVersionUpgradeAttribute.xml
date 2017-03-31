@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.NoSettingsVersionUpgradeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,20 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that a settings provider should disable any logic that gets invoked when an application upgrade is detected. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To create a fully featured application settings provider that supports application versioning, the provider must implement the <xref:System.Configuration.IApplicationSettingsProvider> interface. One of the members in this interface, the <xref:System.Configuration.IApplicationSettingsProvider.Upgrade%2A> method, is called to notify the provider that a new version of the application has been installed. In response, the provider is expected to perform an appropriate action, typically migrating past application settings.  
-  
- The NoSettingsVersionUpgradeAttribute informs the provider to suppress the upgrade logic associated with the current settings class. Therefore, the value of the previous version of this property group should not be migrated to the new installation.  
-  
-> [!NOTE]
->  This attribute can only be applied to individual application settings properties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.NoSettingsVersionUpgradeAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the compiler-supplied default constructor for the <xref:System.Configuration.NoSettingsVersionUpgradeAttribute> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

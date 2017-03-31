@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of an item in a list control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ListItemType enumeration represents the different items that can be included in a list control, such as the <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.Repeater> controls. A typical list control consists of cells that contain elements represented by this enumeration.  
-  
-   
-  
-## Examples  
- [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_403_1.aspx)]
- [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_403_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlternatingItem">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An item in alternating (zero-based even-indexed) cells. It is data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditItem">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An item in a list control currently in edit mode. It is data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Footer">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A footer for the list control. It is not data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -86,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A header for the list control. It is not data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -103,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An item in the list control. It is data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pager">
@@ -120,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A pager that displays the controls to navigate to different pages associated with the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. It is not data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -137,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A selected item in the list control. It is data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -154,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A separator between items in a list control. It is not data-bound.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

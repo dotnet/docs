@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ProtocolReflector" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides common functionality across communication protocols for creating <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects from classes that are identified as Web services.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The abstract ProtocolReflector class and its concrete derived classes create <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services with the <xref:System.Web.Services.WebServiceAttribute> attribute. Each concrete ProtocolReflector-derived class generates <xref:System.Web.Services.Description.ServiceDescription> objects according to a specified communication protocol; ProtocolReflector provides common functionality regardless of the protocol.  
-  
- An output <xref:System.Web.Services.Description.ServiceDescription> instance can be used to generate a Web Services Description Language (WSDL) document with the <xref:System.Web.Services.Description.ServiceDescription.Write%2A> method or one of the available overloads. The <xref:System.Web.Services.Description.ServiceDescription> instance can also be used by the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class and related classes to generate client proxy code or abstract server code.  
-  
- The ProtocolReflector class uses the <xref:System.Web.Services.WebServiceBindingAttribute> to create a <xref:System.Web.Services.Description.ServiceDescription> for each binding it identifies in the Web service class. If that attribute is not present, the ProtocolReflector class creates a single binding for the entire class. For each Web service method (a method in the Web service class appearing with the <xref:System.Web.Services.WebMethodAttribute>) belonging to a binding, a class derived from ProtocolReflector generates an operation and associated messages that are added to the <xref:System.Web.Services.Description.ServiceDescription> object.  
-  
- Typically, a developer uses these classes indirectly through the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class, instead of directly invoking classes derived from ProtocolReflector.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.ProtocolReflector" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, performs processing before <see cref="T:System.Web.Services.Description.ProtocolReflector" /> calls the <see cref="System.Web.Services.Description.ProtocolReflector.ReflectMethod%2A" /> method for each of the methods for a binding.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,15 +55,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) binding currently being generated and added to the associated <see cref="T:System.Web.Services.Description.ServiceDescription" />.</summary>
-        <value>The Web Services Description Language (WSDL) binding currently being generated and added to the associated <see cref="T:System.Web.Services.Description.ServiceDescription" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,15 +73,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default namespace, as identified by the associated <see cref="T:System.Web.Services.Description.ServiceDescription" /> object's <see cref="F:System.Web.Services.Description.ServiceDescription.Namespace" /> property.</summary>
-        <value>The default namespace, as identified by the associated <see cref="T:System.Web.Services.Description.ServiceDescription" /> object's <see cref="F:System.Web.Services.Description.ServiceDescription.Namespace" /> property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +91,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,7 +98,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, performs processing after [ProtocolReflector](assetId:///ProtocolReflector?qualifyHint=False&amp;autoUpgrade=True) has called the <see cref="System.Web.Services.Description.ProtocolReflector.ReflectMethod%2A" /> method for each of the methods for a binding.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,17 +118,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ns">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> instance obtained subsequently gets populated with objects that correspond to Web Services Description Language (WSDL) entities that are reflected from the input Web service class.</param>
-        <summary>Gets a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object for a given XML namespace and the applicable communication protocol.</summary>
-        <returns>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> object for a given XML namespace and the applicable communication protocol.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.ServiceDescription> instance obtained subsequently gets populated with objects that correspond to WSDL entities that are reflected from the input Web service class.  
-  
- ]]></format>
-        </remarks>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderMessages">
@@ -158,15 +131,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.MessageCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets SOAP header message definitions to be added to the associated <see cref="T:System.Web.Services.Description.ServiceDescription" /> object.</summary>
-        <value>SOAP header message definitions to be added to the associated <see cref="T:System.Web.Services.Description.ServiceDescription" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,15 +149,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Message</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) input message for the abstract operation that the protocol reflector is currently generating from a Web service method.</summary>
-        <value>The Web Services Description Language (WSDL) input message for the abstract operation that the protocol reflector is currently generating from a Web service method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,15 +167,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web service method that the protocol reflector is currently processing to generate a Web Services Description Language (WSDL) operation to be placed in the generated <see cref="T:System.Web.Services.Description.ServiceDescription" />.</summary>
-        <value>The Web service method that the protocol reflector is currently processing to generate a Web Services Description Language (WSDL) operation to be placed in the generated <see cref="T:System.Web.Services.Description.ServiceDescription" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,15 +185,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.WebMethodAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.WebMethodAttribute" /> for the method that the protocol reflector is currently processing to generate a Web Services Description Language (WSDL) operation to be placed in the generated <see cref="T:System.Web.Services.Description.ServiceDescription" />.</summary>
-        <value>The <see cref="T:System.Web.Services.WebMethodAttribute" /> for the method that the protocol reflector is currently processing to generate a Web Services Description Language (WSDL) operation to be placed in the generated <see cref="T:System.Web.Services.Description.ServiceDescription" /></value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,23 +203,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodInfo[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web service methods belonging to the Web service class, as identified by the associated <see cref="T:System.Web.Services.Description.ProtocolReflector" /> object's Methods property.</summary>
-        <value>The Web service methods belonging to the Web service class, as identified by the associated <see cref="T:System.Web.Services.Description.ProtocolReflector" /> object's Methods property.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Operation">
@@ -260,23 +221,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Operation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the abstract Web Services Description Language (WSDL) operation that the protocol reflector is currently generating from a Web service method.</summary>
-        <value>The abstract Web Services Description Language (WSDL) operation that the protocol reflector is currently generating from a Web service method</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The operation appears as a child of the `portType` element in a WSDL document. Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OperationBinding">
@@ -286,23 +239,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.OperationBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) operation binding that the protocol importer is currently generating from a Web service method.</summary>
-        <value>The Web Services Description Language (WSDL) operation binding that the protocol importer is currently generating from a Web service method.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputMessage">
@@ -312,15 +257,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Message</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) output message for the abstract operation that the protocol reflector is currently generating from a Web service method.</summary>
-        <value>The Web Services Description Language (WSDL) output message for the abstract operation that the protocol reflector is currently generating from a Web service method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,15 +275,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Port</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) port that the protocol reflector is currently generating to contain a reference to the binding being generated.</summary>
-        <value>The Web Services Description Language (WSDL) port that the protocol reflector is currently generating to contain a reference to the binding being generated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,15 +293,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.PortType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) <see langword="portType" /> that the protocol reflector is currently generating to be implemented by the binding being generated.</summary>
-        <value>The Web Services Description Language (WSDL) <see langword="portType" /> that the protocol reflector is currently generating to be implemented by the binding being generated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,15 +311,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the name of the protocol being used.</summary>
-        <value>The name of the protocol being used.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -396,7 +336,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, generates service-specific description information that gets placed in a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object that corresponds to a binding.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,15 +347,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlReflectionImporter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> instance being used by the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</summary>
-        <value>The <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> instance being used by the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -426,7 +365,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,16 +372,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, generates method-specific information that gets placed in a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object corresponding to a binding.</summary>
-        <returns>Method-specific information that gets placed in a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object corresponding to a binding.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An implementation of the ReflectMethod method should generate information such as operation binding, abstract operation, and messages.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReflectMethodBinding">
@@ -453,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -461,8 +391,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, returns the name of the binding that a method belongs to.</summary>
-        <returns>The name of the binding that a method belongs to.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,15 +403,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlSchemaExporter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlSchemaExporter" /> instance being used by the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</summary>
-        <value>The <see cref="T:System.Xml.Serialization.XmlSchemaExporter" /> instance being used by the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -492,15 +421,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlSchemas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the XML schemas being generated by the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</summary>
-        <value>The XML schemas being generated by the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,15 +439,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.Service</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web Services Description Language (WSDL) service that the protocol reflector is currently generating to contain a reference to the binding being generated.</summary>
-        <value>The Web Services Description Language (WSDL) service that the protocol reflector is currently generating to contain a reference to the binding being generated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,15 +457,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescription" /> object currently being created to contain the binding being generated.</summary>
-        <value>The <see cref="T:System.Web.Services.Description.ServiceDescription" /> object currently being created to contain the binding being generated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,23 +475,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects that have so far been created and added to the corresponding to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> obtained through the <see cref="System.Web.Services.Description.ServiceDescriptionReflector.ServiceDescriptions%2A" /> property of the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</summary>
-        <value>The <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects that have so far been created and added to the corresponding to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> obtained through the <see cref="System.Web.Services.Description.ServiceDescriptionReflector.ServiceDescriptions%2A" /> property of the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.ProtocolReflector> class creates a <xref:System.Web.Services.Description.ServiceDescription> object for each binding, with a distinct namespace, that it finds in a Web service class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceType">
@@ -575,23 +493,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the Web service class being reflected to produce <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects.</summary>
-        <value>The type of the Web service class being reflected to produce <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A Web service class is identified by the <xref:System.Web.Services.WebServiceAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceUrl">
@@ -601,15 +511,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the endpoint of the associated Web service as a Uniform Resource Locator (URL), obtained from the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> object.</summary>
-        <value>The endpoint of the associated Web service as a Uniform Resource Locator (URL), obtained from the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNamedNodeMap extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNamedNodeMap" />
   <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,21 +24,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of nodes that can be accessed by name or index.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `XmlNamedNodeMap` is returned by the following three properties.  
-  
--   <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=fullName> - Returns <xref:System.Xml.XmlAttributeCollection>, a class which inherits from `XmlNamedNodeMap`.  
-  
--   <xref:System.Xml.XmlDocumentType.Entities%2A?displayProperty=fullName> - Returns an `XmlNamedNodeMap` containing <xref:System.Xml.XmlEntity> objects. The `XmlNamedNodeMap` is read-only.  
-  
--   <xref:System.Xml.XmlDocumentType.Notations%2A?displayProperty=fullName> - Returns an `XmlNamedNodeMap` containing <xref:System.Xml.XmlNotation> objects. The `XmlNamedNodeMap` is read-only.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -39,28 +34,25 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNamedNodeMap.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of nodes in the <see langword="XmlNamedNodeMap" />.</summary>
-        <value>The number of nodes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the <xref:System.Xml.XmlAttributeCollection> class (which inherits from `XmlNamedNodeMap`) to display all the attributes of a book.  
-  
- [!code-cpp[Classic WebData XmlNamedNodeMap.Count Example#1](~/add/codesnippet/cpp/p-system.xml.xmlnamednod_1.cpp)]
- [!code-vb[Classic WebData XmlNamedNodeMap.Count Example#1](~/add/codesnippet/visualbasic/p-system.xml.xmlnamednod_1.vb)]
- [!code-cs[Classic WebData XmlNamedNodeMap.Count Example#1](~/add/codesnippet/csharp/p-system.xml.xmlnamednod_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -69,29 +61,26 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides support for the "foreach" style iteration over the collection of nodes in the <see langword="XmlNamedNodeMap" />.</summary>
-        <returns>An enumerator object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example displays all attributes in the collection.  
-  
- [!code-cpp[Classic WebData XmlNamedNodeMap.GetEnumerator Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnamednod_1_1.cpp)]
- [!code-cs[Classic WebData XmlNamedNodeMap.GetEnumerator Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnamednod_1_1.cs)]
- [!code-vb[Classic WebData XmlNamedNodeMap.GetEnumerator Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnamednod_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNamedItem">
@@ -100,9 +89,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -111,21 +108,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the node to retrieve. It is matched against the <see cref="System.Xml.XmlNode.Name%2A" /> property of the matching node.</param>
-        <summary>Retrieves an <see cref="T:System.Xml.XmlNode" /> specified by name.</summary>
-        <returns>An <see langword="XmlNode" /> with the specified name or <see langword="null" /> if a matching node is not found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the <xref:System.Xml.XmlAttributeCollection> class (which inherits from `XmlNamedNodeMap`) to modify an attribute.  
-  
- [!code-cs[Classic WebData XmlNamedNodeMap.GetNamedItem Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnamednod_4_1.cs)]
- [!code-cpp[Classic WebData XmlNamedNodeMap.GetNamedItem Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnamednod_4_1.cpp)]
- [!code-vb[Classic WebData XmlNamedNodeMap.GetNamedItem Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnamednod_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNamedItem">
@@ -134,9 +120,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.GetNamedItem(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -146,10 +140,10 @@
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the node to retrieve.</param>
-        <param name="namespaceURI">The namespace Uniform Resource Identifier (URI) of the node to retrieve.</param>
-        <summary>Retrieves a node with the matching <see cref="System.Xml.XmlNode.LocalName%2A" /> and <see cref="System.Xml.XmlNode.NamespaceURI%2A" />.</summary>
-        <returns>An <see cref="T:System.Xml.XmlNode" /> with the matching local name and namespace URI or <see langword="null" /> if a matching node was not found.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +153,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.Item(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -170,21 +172,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position of the node to retrieve from the <see langword="XmlNamedNodeMap" />. The index is zero-based; therefore, the index of the first node is 0 and the index of the last node is <see cref="System.Xml.XmlNamedNodeMap.Count%2A" /> -1.</param>
-        <summary>Retrieves the node at the specified index in the <see langword="XmlNamedNodeMap" />.</summary>
-        <returns>The <see cref="T:System.Xml.XmlNode" /> at the specified index. If <paramref name="index" /> is less than 0 or greater than or equal to the <see cref="System.Xml.XmlNamedNodeMap.Count%2A" /> property, <see langword="null" /> is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the <xref:System.Xml.XmlAttributeCollection> class (which inherits from `XmlNamedNodeMap`) to display all the attributes of a book.  
-  
- [!code-cpp[Classic WebData XmlNamedNodeMap.Count Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnamednod_3_1.cpp)]
- [!code-vb[Classic WebData XmlNamedNodeMap.Count Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnamednod_3_1.vb)]
- [!code-cs[Classic WebData XmlNamedNodeMap.Count Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnamednod_3_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveNamedItem">
@@ -193,9 +184,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -204,21 +203,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the node to remove. The name is matched against the <see cref="System.Xml.XmlNode.Name%2A" /> property of the matching node.</param>
-        <summary>Removes the node from the <see langword="XmlNamedNodeMap" />.</summary>
-        <returns>The <see langword="XmlNode" /> removed from this <see langword="XmlNamedNodeMap" /> or <see langword="null" /> if a matching node was not found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the <xref:System.Xml.XmlAttributeCollection> class (which inherits from `XmlNamedNodeMap`) to remove an attribute.  
-  
- [!code-cs[Classic WebData XmlNamedNodeMap.RemoveNamedItem1 Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnamednod_0_1.cs)]
- [!code-cpp[Classic WebData XmlNamedNodeMap.RemoveNamedItem1 Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnamednod_0_1.cpp)]
- [!code-vb[Classic WebData XmlNamedNodeMap.RemoveNamedItem1 Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnamednod_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveNamedItem">
@@ -227,9 +215,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -239,10 +235,10 @@
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the node to remove.</param>
-        <param name="namespaceURI">The namespace URI of the node to remove.</param>
-        <summary>Removes a node with the matching <see cref="System.Xml.XmlNode.LocalName%2A" /> and <see cref="System.Xml.XmlNode.NamespaceURI%2A" />.</summary>
-        <returns>The <see cref="T:System.Xml.XmlNode" /> removed or <see langword="null" /> if a matching node was not found.</returns>
+        <param name="localName">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,9 +248,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -263,22 +267,10 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="node">An <see langword="XmlNode" /> to store in the <see langword="XmlNamedNodeMap" />. If a node with that name is already present in the map, it is replaced by the new one.</param>
-        <summary>Adds an <see cref="T:System.Xml.XmlNode" /> using its <see cref="System.Xml.XmlNode.Name%2A" /> property.</summary>
-        <returns>If the <paramref name="node" /> replaces an existing node with the same name, the old node is returned; otherwise, <see langword="null" /> is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the <xref:System.Xml.XmlAttributeCollection> class (which inherits from `XmlNamedNodeMap`) to add an attribute to the collection.  
-  
- [!code-cs[Classic WebData XmlNamedNodeMap.SetNamedItem Example#1](~/add/codesnippet/csharp/m-system.xml.xmlnamednod_2_1.cs)]
- [!code-cpp[Classic WebData XmlNamedNodeMap.SetNamedItem Example#1](~/add/codesnippet/cpp/m-system.xml.xmlnamednod_2_1.cpp)]
- [!code-vb[Classic WebData XmlNamedNodeMap.SetNamedItem Example#1](~/add/codesnippet/visualbasic/m-system.xml.xmlnamednod_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="node" /> was created from a different <see cref="T:System.Xml.XmlDocument" /> than the one that created the <see langword="XmlNamedNodeMap" />; or the <see langword="XmlNamedNodeMap" /> is read-only.</exception>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

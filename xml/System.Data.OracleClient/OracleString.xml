@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleString" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,62 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a variable-length stream of characters to be stored in or retrieved from the database.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To obtain an OracleString object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleString%2A> method.  
-  
-   
-  
-## Examples  
-  
-```  
-using System;  
-using System.Data.OracleClient;  
-public class Class1 {  
-   public static void Main() {  
-      OracleString oraclestring1 = new OracleString("MyOracleString1");  
-      OracleString oraclestring2 = new OracleString("MyOracleString2");  
-      OracleString oraclestring3 = new OracleString("MyOracleString1");  
-  
-      // Type: System.Data.OracleClient.OracleString  
-      Console.WriteLine("Type: " + oraclestring1.GetType());  
-  
-      // Length: 15  
-      Console.WriteLine("Length: " + oraclestring1.Length);  
-  
-      // False  
-      Console.WriteLine(oraclestring1.IsNull);  
-  
-      // -1  
-      Console.WriteLine(oraclestring1.CompareTo(oraclestring2));  
-  
-      // 0  
-      Console.WriteLine(oraclestring1.CompareTo(oraclestring3));  
-  
-      // 1  
-      Console.WriteLine(oraclestring2.CompareTo(oraclestring3));  
-  
-      // False  
-      Console.WriteLine(oraclestring1.Equals(oraclestring2));  
-  
-      // True  
-      Console.WriteLine(oraclestring1.Equals(oraclestring3));  
-  
-      // MyOracleString1  
-      Console.WriteLine(oraclestring1.Value);  
-  
-      // MyOracleString2  
-      Console.WriteLine(oraclestring2.ToString());  
-   }  
-}  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,15 +29,14 @@ public class Class1 {
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The string to store.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleString" /> class and specifies the string to store.</summary>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +47,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,48 +56,9 @@ public class Class1 {
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to be compared.</param>
-        <summary>Compares this instance of <see cref="T:System.Data.OracleClient.OracleString" /> to the supplied object and returns an indication of their relative values.</summary>
-        <returns>A signed number indicating the relative values of the instance and the object.  
-  
- <list type="table">  
-<listheader>  
-<term> Return Value  
-  
- </term>  
-<description> Condition  
-  
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
-  
- </term>  
-<description> This instance is less than object.  
-  
- </description>  
-</item>  
-<item>  
-<term> Zero  
-  
- </term>  
-<description> This instance is the same as object.  
-  
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
-  
- </term>  
-<description> This instance is greater than object  
-  
- -or-  
-  
- object is a null reference (<see langword="Nothing" />)  
-  
- </description>  
-</item>  
-</list></returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +69,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,10 +79,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Concatenates the two specified <see cref="T:System.Data.OracleClient.OracleString" /> structures.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleString" /> containing the newly concatenated value representing the contents of the two <see cref="T:System.Data.OracleClient.OracleString" /> parameters.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,14 +93,13 @@ public class Class1 {
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleString</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an empty string that can be assigned to the <see cref="System.Data.OracleClient.OracleString.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleString" /> structure.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +110,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,9 +119,9 @@ public class Class1 {
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to be compared.</param>
-        <summary>Compares the supplied object parameter to the <see cref="System.Data.OracleClient.OracleString.Value%2A" /> property of the <see cref="T:System.Data.OracleClient.OracleString" /> object.</summary>
-        <returns>Equals will return <see langword="true" /> if the object is an instance of <see cref="T:System.Data.OracleClient.OracleString" /> and the two are equal; otherwise <see langword="false" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +132,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,10 +142,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if they are equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +156,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,8 +163,8 @@ public class Class1 {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +175,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,10 +185,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is greater than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,7 +199,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,10 +209,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is greater than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,16 +223,14 @@ public class Class1 {
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the <see cref="System.Data.OracleClient.OracleString.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleString" /> is <see cref="F:System.Data.OracleClient.OracleString.Null" />.</summary>
-        <value>
-          <see langword="true" /> if <see cref="System.Data.OracleClient.OracleString.Value%2A" /> is <see cref="F:System.Data.OracleClient.OracleString.Null" />, otherwise <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,7 +241,6 @@ public class Class1 {
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,21 +250,10 @@ public class Class1 {
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The position of the byte to be retrieved.</param>
-        <summary>Gets the single byte from the <see langword="Value" /> property located at the position indicated by the integer parameter, <paramref name="index" />.</summary>
-        <value>The byte located at the position indicated by the integer parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `index` indicates a position beyond the end of the byte array, an exception is raised.  
-  
- To avoid raising an exception, always check the <xref:System.Data.OracleClient.OracleString.IsNull%2A> property and the `Length` property before reading `this`.  
-  
- This property is read-only.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -380,15 +263,14 @@ public class Class1 {
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the string that is stored in this <see cref="T:System.Data.OracleClient.OracleString" /> structure.</summary>
-        <value>The length of the string that is stored.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,7 +281,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,10 +291,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is less than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,7 +305,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -435,10 +315,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is less than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,7 +329,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,10 +339,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if they are not equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,22 +353,14 @@ public class Class1 {
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OracleClient.OracleString</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a null value that can be assigned to the <see cref="System.Data.OracleClient.OracleString.Value%2A" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleString" /> structure.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Null` functions as a constant for the `OracleString` structure.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -499,7 +370,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -510,10 +380,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Concatenates the two specified <see cref="T:System.Data.OracleClient.OracleString" /> structures.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleString" /> containing the newly concatenated value representing the contents of the two <see cref="T:System.Data.OracleClient.OracleString" /> parameters.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,7 +394,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,10 +404,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if they are equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,7 +418,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -572,7 +440,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -583,10 +450,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is greater than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,7 +464,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -608,10 +474,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is greater than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,7 +488,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -645,7 +510,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,10 +520,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if they are equal.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are not equal or <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,7 +534,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -681,10 +544,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is less than the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,7 +558,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -706,10 +568,10 @@ public class Class1 {
         <Parameter Name="y" Type="System.Data.OracleClient.OracleString" />
       </Parameters>
       <Docs>
-        <param name="x">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <param name="y">An <see cref="T:System.Data.OracleClient.OracleString" />.</param>
-        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleString" /> operands to determine if the first is less than or equal to the second.</summary>
-        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="T:System.Data.OracleClient.OracleBoolean" /> if the first instance is less than or equal to the second instance, otherwise <see cref="T:System.Data.OracleClient.OracleBoolean" />. If either instance of <see cref="T:System.Data.OracleClient.OracleString" /> is null, the <see cref="System.Data.OracleClient.OracleBoolean.Value%2A" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,7 +582,6 @@ public class Class1 {
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -728,8 +589,8 @@ public class Class1 {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts an <see langword="OracleString" /> object to a <see langword="String" />.</summary>
-        <returns>A <see langword="String" /> with the same value as this <see langword="OracleString" /> structure.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,17 +601,14 @@ public class Class1 {
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the string that is stored in the <see cref="T:System.Data.OracleClient.OracleString" /> structure.</summary>
-        <value>The string that is stored.  
-  
- This property is read-only.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

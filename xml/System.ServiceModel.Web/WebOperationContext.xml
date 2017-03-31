@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebOperationContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,47 +16,37 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A helper class that provides easy access to contextual properties of Web requests and responses.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to retrieve the <xref:System.UriTemplateMatch> instance associated with the Web operation context of the current call. The code also shows how to set the HTTP status for the outgoing response.  
-  
- [!code-cs[AdvancedWebProgramming#0](~/add/codesnippet/csharp/t-system.servicemodel.we_1_1.cs)]
- [!code-vb[AdvancedWebProgramming#0](~/add/codesnippet/visualbasic/t-system.servicemodel.we_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebOperationContext (System.ServiceModel.OperationContext operationContext);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.OperationContext operationContext) cil managed" />
+      <MemberSignature Language="C#" Value="public WebOperationContext (System.ServiceModel.OperationContext operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.OperationContext operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="operationContext">The operation context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebOperationContext" /> class with the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
-      <MemberSignature Language="C#" Value="public void Attach (System.ServiceModel.OperationContext owner);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(class System.ServiceModel.OperationContext owner) cil managed" />
+      <MemberSignature Language="C#" Value="public void Attach (System.ServiceModel.OperationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(class System.ServiceModel.OperationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,8 +56,8 @@
         <Parameter Name="owner" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.ServiceModel.OperationContext" /> to attach to.</param>
-        <summary>Attaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance to the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +77,9 @@
         <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="document">The content to write to the message.</param>
-        <summary>Creates a message formatted according to the Atom 1.0 specification with the specified content.</summary>
-        <returns>A message in Atom 1.0 format.</returns>
+        <param name="document">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +99,9 @@
         <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feed">The content to write to the message.</param>
-        <summary>Creates a message formatted according to the Atom 1.0 specification with the specified content.</summary>
-        <returns>A message in Atom 1.0 format.</returns>
+        <param name="feed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +121,9 @@
         <Parameter Name="item" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="item">The content to write to the message.</param>
-        <summary>Creates a message formatted according to the Atom 1.0 specification with the specified content.</summary>
-        <returns>A message in Atom 1.0 format.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,10 +146,10 @@
         <Parameter Name="instance" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object to write to the message.</typeparam>
-        <param name="instance">The object to write to the message.</param>
-        <summary>Creates a JSON formatted message.</summary>
-        <returns>A JSON formatted message.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,11 +173,11 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.Json.DataContractJsonSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object to write to the message.</typeparam>
-        <param name="instance">The object to write to the message.</param>
-        <param name="serializer">The serializer to use.</param>
-        <summary>Creates a JSON formatted message.</summary>
-        <returns>A JSON formatted message.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="instance">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +198,10 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="streamWriter">The stream writer containg the data to write to the stream.</param>
-        <param name="contentType">The content type for the message.</param>
-        <summary>Creates a stream formatted message.</summary>
-        <returns>A stream formatted message.</returns>
+        <param name="streamWriter">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,10 +222,10 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stream">The stream containing the data to write to the stream.</param>
-        <param name="contentType">The content type of the message.</param>
-        <summary>Creates a stream formatted message.</summary>
-        <returns>A stream formatted message.</returns>
+        <param name="stream">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,10 +246,10 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bodyWriter">The stream body writer containing the data to write to the message..</param>
-        <param name="contentType">The content type of the message</param>
-        <summary>Creates a stream formatted message.</summary>
-        <returns>A stream formatted message.</returns>
+        <param name="bodyWriter">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,9 +269,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to write to the message.</param>
-        <summary>Creates a text formatted response message.</summary>
-        <returns>A text formatted message.</returns>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,10 +292,10 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textWriter">A delegate that writes the text data.</param>
-        <param name="contentType">The content type for the message.</param>
-        <summary>Creates a text formatted message</summary>
-        <returns>A text formatted message.</returns>
+        <param name="textWriter">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,10 +316,10 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to write to the message.</param>
-        <param name="contentType">The content type of the message.</param>
-        <summary>Creates a text formatted message.</summary>
-        <returns>A text formatted message.</returns>
+        <param name="text">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,11 +341,11 @@
         <Parameter Name="encoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="textWriter">A delegate that writes the text data.</param>
-        <param name="contentType">The content type of the message.</param>
-        <param name="encoding">The encoding to use.</param>
-        <summary>Creates a text formatted message</summary>
-        <returns>A text formatted message.</returns>
+        <param name="textWriter">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,11 +367,11 @@
         <Parameter Name="encoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="text">The text to write to the message.</param>
-        <param name="contentType">The content type of the message.</param>
-        <param name="encoding">The encoding to use.</param>
-        <summary>Creates a text formatted message.</summary>
-        <returns>A text formatted message.</returns>
+        <param name="text">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,9 +391,9 @@
         <Parameter Name="document" Type="System.Xml.Linq.XDocument" />
       </Parameters>
       <Docs>
-        <param name="document">The data to write to the message.</param>
-        <summary>Creates an XML formatted message.</summary>
-        <returns>An XML formatted message.</returns>
+        <param name="document">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,9 +413,9 @@
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">The data to write to the message.</param>
-        <summary>Creates an XML formatted message.</summary>
-        <returns>An XML formatted message.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,10 +438,10 @@
         <Parameter Name="instance" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object to write to the message.</typeparam>
-        <param name="instance">The object to write to write to the message.</param>
-        <summary>Creates an XML formatted message.</summary>
-        <returns>An XML formatted message.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,11 +465,11 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object to write to the message.</typeparam>
-        <param name="instance">The object to write to the message.</param>
-        <param name="serializer">The serializer to use.</param>
-        <summary>Creates an XML formatted message.</summary>
-        <returns>An XML formatted message.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="instance">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,11 +493,11 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of object to write to the message.</typeparam>
-        <param name="instance">The object to write to the message.</param>
-        <param name="serializer">The serializer to use.</param>
-        <summary>Creates an XML formatted message.</summary>
-        <returns>An XML formatted message.</returns>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="instance">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,36 +508,25 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebOperationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current Web operation context.</summary>
-        <value>A <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to access the current <xref:System.ServiceModel.Web.WebOperationContext> instance.  
-  
- [!code-cs[AdvancedWebProgramming#2](~/add/codesnippet/csharp/p-system.servicemodel.we_9_1.cs)]
- [!code-vb[AdvancedWebProgramming#2](~/add/codesnippet/visualbasic/p-system.servicemodel.we_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
-      <MemberSignature Language="C#" Value="public void Detach (System.ServiceModel.OperationContext owner);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Detach(class System.ServiceModel.OperationContext owner) cil managed" />
+      <MemberSignature Language="C#" Value="public void Detach (System.ServiceModel.OperationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Detach(class System.ServiceModel.OperationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -557,8 +536,8 @@
         <Parameter Name="owner" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.ServiceModel.OperationContext" /> to detach from.</param>
-        <summary>Detaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance from the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,9 +557,9 @@
         <Parameter Name="operationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operationName">The operation.</param>
-        <summary>Gets the URI template associated with the specified operation.</summary>
-        <returns>A URI template.</returns>
+        <param name="operationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -591,26 +570,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.IncomingWebRequestContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web request context for the request being received.</summary>
-        <value>An <see cref="T:System.ServiceModel.Web.IncomingWebRequestContext" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to use the IncomingRequest property to access the headers in the incoming HTTP request.  
-  
- [!code-cs[AdvancedWebProgramming#2](~/add/codesnippet/csharp/p-system.servicemodel.we_4_1.cs)]
- [!code-vb[AdvancedWebProgramming#2](~/add/codesnippet/visualbasic/p-system.servicemodel.we_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingResponse">
@@ -620,26 +588,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.IncomingWebResponseContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web response context for the request being received.</summary>
-        <value>An <see cref="T:System.ServiceModel.Web.IncomingWebResponseContext" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to get the content length, content type, and status code from the IncomingResponse property.  
-  
- [!code-cs[AdvancedWebProgramming#3](~/add/codesnippet/csharp/p-system.servicemodel.we_12_1.cs)]
- [!code-vb[AdvancedWebProgramming#3](~/add/codesnippet/visualbasic/p-system.servicemodel.we_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingRequest">
@@ -649,26 +607,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.OutgoingWebRequestContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web request context for the request being sent.</summary>
-        <value>An <see cref="T:System.ServiceModel.Web.OutgoingWebRequestContext" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to set the method, content type and add a header to the outgoing request.  
-  
- [!code-cs[AdvancedWebProgramming#4](~/add/codesnippet/csharp/p-system.servicemodel.we_7_1.cs)]
- [!code-vb[AdvancedWebProgramming#4](~/add/codesnippet/visualbasic/p-system.servicemodel.we_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingResponse">
@@ -678,26 +626,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.OutgoingWebResponseContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Web response context for the response being sent.</summary>
-        <value>An <see cref="T:System.ServiceModel.Web.OutgoingWebResponseContext" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows how to set the status of the outgoing response.  
-  
- [!code-cs[AdvancedWebProgramming#0](~/add/codesnippet/csharp/p-system.servicemodel.we_8_1.cs)]
- [!code-vb[AdvancedWebProgramming#0](~/add/codesnippet/visualbasic/p-system.servicemodel.we_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

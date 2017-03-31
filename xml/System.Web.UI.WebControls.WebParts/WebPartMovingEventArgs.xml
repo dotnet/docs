@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised when a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control is being moved within its own zone, or to another zone. This can occur both when a user drags a control, and when there is a programmatic move.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving%2A> method, and it provides an opportunity to cancel the moving process before it is complete or to track the user action. If the move is completed and the control placed in a new position, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event.  
-  
- The WebPartMovingEventArgs class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event. It provides access to the Web Parts control that is being moved and the zone it is being moved to.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -43,10 +30,10 @@
         <Parameter Name="zoneIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="webPart">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server control being moved.</param>
-        <param name="zone">The target <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> to which <c>webPart</c> is being moved.</param>
-        <param name="zoneIndex">An integer that indicates the index of <c>webPart</c> relative to other controls within <c>zone</c>.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs" /> class.</summary>
+        <param name="webPart">To be added.</param>
+        <param name="zone">To be added.</param>
+        <param name="zoneIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,15 +44,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartZoneBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Web Parts zone to which the Web Parts control is being moved.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> to which the Web Parts control is being moved.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,26 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index position of a Web Parts control within its zone.</summary>
-        <value>The numerical order of a control within its zone. The first control in a zone has an index value of zero.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ZoneIndex property indicates the numerical order (or ordinal position) within the zone for the Web Parts control being moved in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses this property to track and manage its collection of Web Parts controls on a Web page.  
-  
-> [!IMPORTANT]
->  The value of the ZoneIndex property for a control might not equal the index value for the same control within the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts%2A> collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

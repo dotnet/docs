@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.Interop.BaseDevModeType" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure to use as the base [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) for conversions of managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structures.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use a value of this enumeration primarily as a parameter in the <xref:System.Printing.Interop.PrintTicketConverter.ConvertPrintTicketToDevMode%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="PrinterDefault">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.Interop.BaseDevModeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The printer's default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserDefault">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.Interop.BaseDevModeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user's default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

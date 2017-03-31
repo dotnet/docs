@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MasterPage" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,234 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Acts as a template and merging container for pages that are composed only of <see cref="T:System.Web.UI.WebControls.Content" /> controls and their respective child controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A master page functions as a template container and merging page for content pages in your ASP.NET Web application. Master pages provide a convenient way to share structure and content across a set of content pages. You use content placeholders to define the sections of the master page to replace with content from the content pages.  
-  
- When you use a master page and its related content pages, you add the required XHTML document tags (such as `html`, `head`, and `body`) only to the master page and no longer create your other .aspx files (ASP.NET pages) as stand-alone Web pages. The content pages define the content to insert into the placeholders in the master page.  
-  
- When an HTTP request is made for a page at run time, the master page and content pages are combined into a single class with the same name as the content pages. The resulting compiled, merged class derives from the <xref:System.Web.UI.Page> class.  
-  
- A master page can contain direct markup and server controls, as well as container controls. Every element that is placed in the master page outside of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control is rendered on all pages that result from merging the master page and content pages.  
-  
- Each content page that is related to the master page must reference the master page in a `MasterPageFile` attribute of its  directive. Content pages can contain only a `@ Page` directive and one or more <xref:System.Web.UI.WebControls.Content> controls. All of your page text, markup, and server controls must be placed within <xref:System.Web.UI.WebControls.Content> controls. You identify the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control of a master page that a <xref:System.Web.UI.WebControls.Content> control is associated with by setting the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of the <xref:System.Web.UI.WebControls.Content> control.  
-  
- At run time, the dynamic content from each <xref:System.Web.UI.WebControls.Content> control in the requested page is merged with the master page in the exact location of the related <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. Any other markup and controls in the master page are unaffected. Event handlers can be defined in both the master class and on the content page. For more information, see [Events in ASP.NET Master and Content Pages](../Topic/Events%20in%20ASP.NET%20Master%20and%20Content%20Pages.md).  
-  
- The MasterPage class is associated with files that have a .master extension. These files are compiled at run time as MasterPage objects and are cached in server memory.  
-  
- The master page is made available to the content page through the <xref:System.Web.UI.Page.Master%2A> property of the base <xref:System.Web.UI.Page> class. The <xref:System.Web.UI.Page.Master%2A> property returns the instance of the master page; however, it is typed as the base MasterPage class. To access controls, properties, and functions of the master page, the <xref:System.Web.UI.Page.Master%2A> property can be cast to a MasterPage object. The class name of the master page is defined using the `ClassName` attribute of the  directive.  
-  
-> [!NOTE]
->  Files with .master extensions are not served to a browser.  
-  
- The directives that are valid on a master page are the same as those that are available on a <xref:System.Web.UI.UserControl> object. They can include the following attributes:  
-  
--   `AutoEventWireup`  
-  
--   `ClassName`  
-  
--   `CodeFile`  
-  
--   `CompilerMode`  
-  
--   `CompilerOptions`  
-  
--   `Debug`  
-  
--   `Description`  
-  
--   `EnableTheming`  
-  
--   `EnableViewState`  
-  
--   `Explicit`  
-  
--   `Inherits`  
-  
--   `Language`  
-  
--   `LinePragmas`  
-  
--   `MasterPageFile`  
-  
--   `Src`  
-  
--   `Strict`  
-  
--   `WarningLevel`  
-  
- Master page directives do not override the directives on individual content pages.  
-  
- Master pages are most often created declaratively. If you want to create a master page programmatically, derive directly from the MasterPage class. In addition to extending the MasterPage class, you must create the .master file to visually display the user interface (UI) that is associated with the classes that you have invoked in your source file.  
-  
-> [!NOTE]
->  When you create a master page by creating your own class first, you must include all namespaces that are required for the classes that are used by the page.  
-  
- For more information about master pages, see [ASP.NET Master Pages](../Topic/ASP.NET%20Master%20Pages.md).  
-  
-   
-  
-## Examples  
- This section contains four code examples:  
-  
--   The first code example demonstrates how to create a master page declaratively.  
-  
--   The second code example represents the content page that is associated with the master page that was created in the first code example.  
-  
--   The third code example demonstrates how to add a property to a master page.  
-  
--   The fourth code example demonstrates how to use a content page to access a public property on the master page.  
-  
- The following example demonstrates how to create a master page declaratively and to add some content to it using a content page. The first Web page is the .master page named `MasterPageSample_1.master`.  
-  
-```c#  
-<%@ Master Language="C#" %>  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
-<html >  
-<head runat="server">  
-    <title>MasterPage Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
-```vb#  
-<%@ Master Language="VB" %>  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
-<html >  
-<head runat="server">  
-    <title>MasterPage Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
- The following example represents the content page that is associated with `MasterPageSample_1.master`. It contains a <xref:System.Web.UI.WebControls.Content> control and identifies the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control that the content is associated with by using the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property.  
-  
-```c#  
-<%@ Page Language="C#" MasterPageFile="~/MasterPageSample_1cs.master" Title="Content Page"%>  
-  
-<asp:content   
-    runat="server"  
-    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
-```  
-  
-```vb#  
-<%@ Page Language="VB" MasterPageFile="~/MasterPageSample_1vb.master" Title="Content Page"%>  
-  
-<asp:content   
-    runat="server"  
-    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
-```  
-  
- The following example demonstrates how to add a property to a master page. The `ClassName` attribute is used to name the master page.  
-  
-```c#  
-<%@ Master Language="C#" ClassName="MasterExample" %>  
-  
-<script runat="server">  
-        public string SiteName  
-        {  
-            get { return "My Site Name"; }  
-        }  
-</script>  
-  
-<html >  
-<head runat="server">  
-    <title>MasterPage Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
-```vb#  
-<%@ Master Language="VB" ClassName="MasterExample" %>  
-  
-<script runat="server">  
-  Public ReadOnly Property SiteName() As String  
-    Get  
-      Return "My Site Name"  
-    End Get  
-  End Property  
-  
-</script>  
-  
-<html >  
-<head runat="server">  
-    <title>MasterPage Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
- The following example shows how to use a content page to access the public property `SiteName` on the master page in the preceding code example.  
-  
-```c#  
-<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" Title="MasterPage Example" %>  
-  
-<script runat="server">  
-  protected void Page_Load(object sender, EventArgs e)  
-  {  
-    MasterExample m = (MasterExample)Page.Master;  
-    mylabel.Text = m.SiteName;  
-  }  
-</script>  
-  
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">  
-    Hello, Master Pages!  
-    <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
-</asp:Content>  
-```  
-  
-```vb#  
-<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" Title="MasterPage Example" %>  
-  
-<script runat="server">  
-  
-  Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)  
-    Dim m As MasterExample = CType(Page.Master, MasterPage)  
-    mylabel.Text = m.SiteName  
-  End Sub  
-</script>  
-  
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">  
-    Hello, Master Pages!  
-    <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
-</asp:Content>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -260,12 +33,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MasterPage" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -292,18 +63,10 @@
         <Parameter Name="template" Type="System.Web.UI.ITemplate" />
       </Parameters>
       <Docs>
-        <param name="templateName">A unique name for the <see cref="T:System.Web.UI.WebControls.Content" />.</param>
-        <param name="template">The <see cref="T:System.Web.UI.WebControls.Content" />.</param>
-        <summary>Adds a <see cref="T:System.Web.UI.WebControls.Content" /> control to the <see cref="System.Web.UI.MasterPage.ContentTemplates%2A" /> dictionary.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived master page classes can add <xref:System.Web.UI.WebControls.Content> controls to the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> dictionary using the AddContentTemplate method. Derived types do not typically override the AddContentTemplate method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Web.HttpException">A <see cref="T:System.Web.UI.WebControls.Content" /> control with the same name already exists in the <see cref="System.Web.UI.MasterPage.ContentTemplates%2A" /> dictionary.</exception>
+        <param name="templateName">To be added.</param>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentPlaceHolders">
@@ -313,7 +76,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -328,16 +90,9 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> controls that the master page uses to define different content regions.</summary>
-        <value>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> controls that the master page uses as placeholders for <see cref="T:System.Web.UI.WebControls.Content" /> controls found in content pages.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived master page classes access the ContentPlaceHolders property to list the current <xref:System.Web.UI.WebControls.ContentPlaceHolder> controls that are contained by the master. Derived types do not typically override the ContentPlaceHolders property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplates">
@@ -347,7 +102,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -362,16 +116,9 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of content controls that are associated with the master page.</summary>
-        <value>An <see cref="T:System.Collections.IList" /> of content controls associated with the master page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived master page classes access the ContentTemplates property to retrieve the current <xref:System.Web.UI.WebControls.Content> controls, as defined by associated content pages. Derived types do not typically override the ContentTemplates property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstantiateInContentPlaceHolder">
@@ -391,9 +138,9 @@
         <Parameter Name="template" Type="System.Web.UI.ITemplate" />
       </Parameters>
       <Docs>
-        <param name="contentPlaceHolder">The control that represents the container of the content.</param>
-        <param name="template">The <see cref="T:System.Web.UI.WebControls.Content" /> instance to use.</param>
-        <summary>Provides a method to set the current template control to a page that owns the master page.</summary>
+        <param name="contentPlaceHolder">To be added.</param>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +151,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -419,109 +165,9 @@
         <ReturnType>System.Web.UI.MasterPage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent master page of the current master in nested master pages scenarios.</summary>
-        <value>The master page that is the parent of the current master page; otherwise, <see langword="null" />, if the current master page has no parent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Master property is read-only, because master page hierarchies cannot be built at run time.  
-  
-   
-  
-## Examples  
- This section contains three code examples. The first code example demonstrates how to create a nested master page`.` The second code example demonstrates how to reference the master page that was created in the first code example. The third code example demonstrates how to use a content page to reference the master page that was created in the second code example.  
-  
- The following code example demonstrates how to create a nested master page and represents the parent master page named `ParentMasterPage_1`.  
-  
-```c#  
-<%@ Master Language="C#" %>  
-  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
-  
-<html >  
-<head runat="server">  
-    <title>Nested Master Page Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <h1>This is content in the parent master page.</h1>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
-```vb#  
-<%@ Master Language="VB" %>  
-  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
-  
-<html >  
-<head runat="server">  
-    <title>Nested Master Page Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <h1>This is content in the parent master page.</h1>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
- The following code example demonstrates how to use a nested master page named `ChildMasterPage_1` that references the master page that was created in the preceding code example.  
-  
-```c#  
-<%@ Master Language="C#" MasterPageFile="~/ParentMasterPage_1cs.master" %>  
-  
-<asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-    <h2>This is the content of a nested Master Page.</h2>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-</asp:Content>  
-```  
-  
-```vb#  
-<%@ Master Language="VB" MasterPageFile="~/ParentMasterPage_1vb.master" %>  
-  
-<asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-    <h2>This is the content of a nested Master Page.</h2>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-</asp:Content>  
-```  
-  
- The following code example demonstrates how to use a content page named `ContentPage` that references the `ChildMasterPage_1` that was created in the preceding code example.  
-  
-```c#  
-<%@ Page Language="C#" MasterPageFile="~/ChildMasterPage_1cs.master" Title="Untitled Page"%>  
-  
-<asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
-This is the content of a Content control.  
-</asp:content>  
-```  
-  
-```vb#  
-<%@ Page Language="VB" MasterPageFile="~/ChildMasterPage_1vb.master" Title="Untitled Page"%>  
-  
-<asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
-This is the content of a Content control.  
-</asp:content>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -531,7 +177,6 @@ This is the content of a Content control.
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -543,105 +188,9 @@ This is the content of a Content control.
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the master page that contains the current content.</summary>
-        <value>The name of the master page that is the parent of the current master page; otherwise, <see langword="null" />, if the current master page has no parent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This section contains three code examples. The first code example demonstrates how to create a nested master page`.` The second code example demonstrates how to reference the master page that was created in the first code example. The third code example demonstrates how to use a content page to reference the master page that was created in the second code example.  
-  
- The following code example demonstrates how to create a nested master page and represents the parent master page named `ParentMasterPage_1`.  
-  
-```c#  
-<%@ Master Language="C#" %>  
-  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
-  
-<html >  
-<head runat="server">  
-    <title>Nested Master Page Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <h1>This is content in the parent master page.</h1>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
-```vb#  
-<%@ Master Language="VB" %>  
-  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
-  
-<html >  
-<head runat="server">  
-    <title>Nested Master Page Example</title>  
-</head>  
-<body>  
-    <form id="form1" runat="server">  
-    <h1>This is content in the parent master page.</h1>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-    </form>  
-</body>  
-</html>  
-```  
-  
- The following code example demonstrates how to use a nested master page named `ChildMasterPage_1` that references the master page that was created in the preceding code example.  
-  
-```c#  
-<%@ Master Language="C#" MasterPageFile="~/ParentMasterPage_1cs.master" %>  
-  
-<asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-    <h2>This is the content of a nested Master Page.</h2>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-</asp:Content>  
-```  
-  
-```vb#  
-<%@ Master Language="VB" MasterPageFile="~/ParentMasterPage_1vb.master" %>  
-  
-<asp:Content Runat="Server" ContentPlaceHolderID="ContentPlaceHolder1">  
-    <h2>This is the content of a nested Master Page.</h2>  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">  
-        </asp:contentplaceholder>  
-    </div>  
-</asp:Content>  
-```  
-  
- The following code example demonstrates how to use a content page named `ContentPage` that references the `ChildMasterPage_1` that was created in the preceding code example.  
-  
-```c#  
-<%@ Page Language="C#" MasterPageFile="~/ChildMasterPage_1cs.master" Title="Untitled Page"%>  
-  
-<asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
-This is the content of a Content control.  
-</asp:content>  
-```  
-  
-```vb#  
-<%@ Page Language="VB" MasterPageFile="~/ChildMasterPage_1vb.master" Title="Untitled Page"%>  
-  
-<asp:content runat="server" contentplaceholderid="ContentPlaceHolder2">  
-This is the content of a Content control.  
-</asp:content>  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The MasterPageFile property can only be set in or before the <see cref="E:System.Web.UI.Page.PreInit" /> event.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

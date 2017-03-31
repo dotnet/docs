@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,21 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Exposes a generic <see cref="System.Collections.Generic.List%601" /> of designer glyphs associated with an activity designer.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ActivityDesignerGlyphCollection contains all designer glyphs that appear on the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class with which the collection is associated.  
-  
- You can access the contents of the ActivityDesignerGlyphCollection through the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Glyphs%2A> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that is empty and has the default initial capacity.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,15 +45,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="glyphs" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Design.DesignerGlyph&gt;" />
       </Parameters>
       <Docs>
-        <param name="glyphs">Enumerable generic collection containing <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that contains elements copied from the specified generic collection of <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />, and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <param name="glyphs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,15 +63,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="glyphs" Type="System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" />
       </Parameters>
       <Docs>
-        <param name="glyphs">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> from which to copy collection elements.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that contains elements copied from the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <param name="glyphs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

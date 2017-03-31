@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BasePartialCachingControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the base functionality for the <see cref="T:System.Web.UI.StaticPartialCachingControl" /> and <see cref="T:System.Web.UI.PartialCachingControl" /> classes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BasePartialCachingControl class represents a user control that has output caching enabled in programmatic scenarios. ASP.NET provides several ways to enable output caching for a control. The following list describes methods you can use to enable output caching:  
-  
--   Use the `@ OutputCache` directive to enable output caching in declarative scenarios.  
-  
--   Use the <xref:System.Web.UI.PartialCachingAttribute> class to enable caching for a user control in a code-behind file.  
-  
--   Use the <xref:System.Web.UI.ControlCachePolicy> class to specify cache settings in programmatic scenarios in which you are working with BasePartialCachingControl instances.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a reference to the BasePartialCachingControl class and sets it to the value of the <xref:System.Web.UI.Control.Parent%2A> property. The code then sets the <xref:System.Web.UI.BasePartialCachingControl.Dependency%2A> property to a <xref:System.Web.Caching.CacheDependency> object that makes the control dependent on a text file.  
-  
- [!code-cs[BasePartialCachingControl#1](~/add/codesnippet/csharp/t-system.web.ui.basepart_1.ascx)]
- [!code-vb[BasePartialCachingControl#1](~/add/codesnippet/visualbasic/t-system.web.ui.basepart_1.ascx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.BasePartialCachingControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,51 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.ControlCachePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.UI.ControlCachePolicy" /> object that is associated with the wrapped user control.</summary>
-        <value>A <see cref="T:System.Web.UI.ControlCachePolicy" /> that stores output caching-related properties of the wrapped user control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CachePolicy property enables programmatic access to the <xref:System.Web.UI.ControlCachePolicy> object associated with the user control contained by the <xref:System.Web.UI.BasePartialCachingControl> instance. The <xref:System.Web.UI.ControlCachePolicy> object can be programmatically manipulated to influence a user control's caching behavior and settings.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how a user control can be loaded dynamically and manipulated programmatically at run time. This example has three parts:  
-  
--   A partial class, `LogOnControl`, that inherits from the <xref:System.Web.UI.UserControl> base class and to which the <xref:System.Web.UI.PartialCachingAttribute> attribute is applied.  
-  
--   A user control that is used with the `LogOnControl` partial class.  
-  
--   A Web Forms page that hosts the user control.  
-  
- To run this example successfully, make sure the user control file (.ascx), its code-behind file (.cs or .vb), and the Web Forms page that hosts the user control (.aspx) are in the same directory.  
-  
- The first part of the example demonstrates how the <xref:System.Web.UI.PartialCachingAttribute> is applied to a user control named `LogOnControl`, which means the user control is wrapped by a <xref:System.Web.UI.PartialCachingControl> control at run time. The `LogOnControl` object's caching settings can be programmatically manipulated through its associated <xref:System.Web.UI.ControlCachePolicy> object, which is available through a reference to the <xref:System.Web.UI.PartialCachingControl> that wraps it. In this example, caching settings are examined during page initialization and changed if some conditions are met.  
-  
- [!code-cs[System.Web.UI.ControlCachePolicy#2](~/add/codesnippet/csharp/p-system.web.ui.basepart_1_1.cs)]
- [!code-vb[System.Web.UI.ControlCachePolicy#2](~/add/codesnippet/visualbasic/p-system.web.ui.basepart_1_1.vb)]  
-  
- The second part of the example shows a user control that is used with the previous example to demonstrate user control caching.  
-  
- [!code-cs[System.Web.UI.ControlCachePolicy#3](~/add/codesnippet/csharp/p-system.web.ui.basepart_1_2.ascx)]
- [!code-vb[System.Web.UI.ControlCachePolicy#3](~/add/codesnippet/visualbasic/p-system.web.ui.basepart_1_2.ascx)]  
-  
- The third part of the example demonstrates using the `LogOnControl` user control from a Web Forms page.  
-  
- [!code-vb[System.Web.UI.ControlCachePolicy#1](~/add/codesnippet/visualbasic/p-system.web.ui.basepart_1_3.aspx)]
- [!code-cs[System.Web.UI.ControlCachePolicy#1](~/add/codesnippet/csharp/p-system.web.ui.basepart_1_3.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dependency">
@@ -119,31 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheDependency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class associated with the cached user control output.</summary>
-        <value>The <see cref="T:System.Web.Caching.CacheDependency" /> associated with the server control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property allows you to remove user control output from the output cache when the associated cache dependency changes.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the Dependency property to a <xref:System.Web.Caching.CacheDependency> object that makes the control dependent on a text file. This code example is part of a larger example provided for the <xref:System.Web.UI.BasePartialCachingControl> class.  
-  
- [!code-cs[BasePartialCachingControl#2](~/add/codesnippet/csharp/p-system.web.ui.basepart_0_1.ascx)]
- [!code-vb[BasePartialCachingControl#2](~/add/codesnippet/visualbasic/p-system.web.ui.basepart_0_1.ascx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -153,7 +78,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Web.UI.BasePartialCachingControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,8 +105,8 @@
         <Parameter Name="output" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that writes the cached control to the page.</param>
-        <summary>Outputs the user control's content to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> output stream.</summary>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

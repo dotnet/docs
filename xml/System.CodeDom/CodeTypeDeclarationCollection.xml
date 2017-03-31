@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeDeclarationCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeTypeDeclaration" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CodeTypeDeclarationCollection class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeDeclaration> objects.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CodeTypeDeclarationCollection class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#1](~/add/codesnippet/cpp/t-system.codedom.codetyp_3_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#1](~/add/codesnippet/csharp/t-system.codedom.codetyp_3_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#1](~/add/codesnippet/visualbasic/t-system.codedom.codetyp_3_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,24 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an empty instance of the <xref:System.CodeDom.CodeTypeDeclarationCollection> class.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#2](~/add/codesnippet/cpp/m-system.codedom.codetyp_5_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#2](~/add/codesnippet/csharp/m-system.codedom.codetyp_5_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#2](~/add/codesnippet/visualbasic/m-system.codedom.codetyp_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,15 +45,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeTypeDeclaration" /> objects with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> class that contains the specified array of <see cref="T:System.CodeDom.CodeTypeDeclaration" /> objects.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,15 +63,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> class that contains the elements of the specified source collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,21 +90,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to add.</param>
-        <summary>Adds the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to the collection.</summary>
-        <returns>The index at which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Add method to add a <xref:System.CodeDom.CodeTypeDeclaration> object to a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#3](~/add/codesnippet/cpp/293b1457-6934-4392-a37a-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#3](~/add/codesnippet/csharp/293b1457-6934-4392-a37a-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#3](~/add/codesnippet/visualbasic/293b1457-6934-4392-a37a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -146,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,22 +112,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.CodeDom.CodeTypeDeclaration" /> that contains the objects to add to the collection.</param>
-        <summary>Copies the elements of the specified array to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add an array of <xref:System.CodeDom.CodeTypeDeclaration> objects to a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#4](~/add/codesnippet/cpp/5c7fb527-45a1-45bc-96b2-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#4](~/add/codesnippet/csharp/5c7fb527-45a1-45bc-96b2-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#4](~/add/codesnippet/visualbasic/5c7fb527-45a1-45bc-96b2-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -181,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,22 +133,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclarationCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object that contains the objects to add to the collection.</param>
-        <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add <xref:System.CodeDom.CodeTypeDeclaration> objects from one <xref:System.CodeDom.CodeTypeDeclarationCollection> to another <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#4](~/add/codesnippet/cpp/ab70ce92-f857-469c-aa8b-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#4](~/add/codesnippet/csharp/ab70ce92-f857-469c-aa8b-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#4](~/add/codesnippet/visualbasic/ab70ce92-f857-469c-aa8b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -216,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,22 +154,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to search for in the collection.</param>
-        <summary>Gets a value that indicates whether the collection contains the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Contains method to find a <xref:System.CodeDom.CodeTypeDeclaration> object in a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#5](~/add/codesnippet/cpp/a45885c8-009d-4ef8-a042-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#5](~/add/codesnippet/csharp/a45885c8-009d-4ef8-a042-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#5](~/add/codesnippet/visualbasic/a45885c8-009d-4ef8-a042-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -251,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,28 +177,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
-        <param name="index">The index of the array at which to begin inserting.</param>
-        <summary>Copies the elements in the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object to a one-dimensional <see cref="T:System.Array" /> instance, starting at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the CopyTo method to copy the contents of a <xref:System.CodeDom.CodeTypeDeclarationCollection> object to an array, starting at the specified index value.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#6](~/add/codesnippet/cpp/b28818fd-71fa-4835-9811-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#6](~/add/codesnippet/csharp/b28818fd-71fa-4835-9811-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#6](~/add/codesnippet/visualbasic/b28818fd-71fa-4835-9811-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -293,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,21 +199,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to locate in the collection.</param>
-        <summary>Gets the index of the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object in the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" />, if it exists in the collection.</summary>
-        <returns>The index of the specified object, if it is found, in the collection; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example retrieves <xref:System.CodeDom.CodeTypeDeclaration> entries from a <xref:System.CodeDom.CodeTypeDeclarationCollection> object and displays their names and indexes returned by the IndexOf method.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#5](~/add/codesnippet/cpp/419b2394-abbb-4926-8802-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#5](~/add/codesnippet/csharp/419b2394-abbb-4926-8802-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#5](~/add/codesnippet/visualbasic/419b2394-abbb-4926-8802-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -327,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,21 +222,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the specified object should be inserted.</param>
-        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Insert method to insert a <xref:System.CodeDom.CodeTypeDeclaration> object into a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#8](~/add/codesnippet/cpp/4359bf6b-f0c3-48d3-be38-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#8](~/add/codesnippet/csharp/4359bf6b-f0c3-48d3-be38-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#8](~/add/codesnippet/visualbasic/4359bf6b-f0c3-48d3-be38-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -362,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -372,18 +244,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the collection to access.</param>
-        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object at the specified index in the collection.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> at each valid index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -393,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -403,21 +266,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Remove method to delete a <xref:System.CodeDom.CodeTypeDeclaration> object from a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
-  
- [!code-cpp[CodeTypeDeclarationCollectionExample#9](~/add/codesnippet/cpp/d0b9b6a4-a870-4dfa-b860-_1.cpp)]
- [!code-cs[CodeTypeDeclarationCollectionExample#9](~/add/codesnippet/csharp/d0b9b6a4-a870-4dfa-b860-_1.cs)]
- [!code-vb[CodeTypeDeclarationCollectionExample#9](~/add/codesnippet/visualbasic/d0b9b6a4-a870-4dfa-b860-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

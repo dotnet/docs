@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.SystemGesture" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the available system gestures.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the operating system recognizes system gestures, the <xref:System.Windows.UIElement.StylusSystemGesture> event occurs. Many of the gestures map to traditional mouse events. For example, the Tap system gesture mimics a single left-click on a mouse.  
-  
-   
-  
-## Examples  
- The following example determines which type of system gesture that raised the SystemGesture event. This example assumes that there is a <xref:System.Windows.Controls.InkCanvas> called `inkcanvas1` and that SystemGesture is connected to the event handler below.  
-  
- [!code-cs[PacketSpy#15](~/add/codesnippet/csharp/PacketSpy/Window1.xaml.cs#15)]
- [!code-vb[PacketSpy#15](~/add/codesnippet/visualbasic/PacketSpy/Window1.xaml.vb#15)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Drag">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a left drag on a mouse.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Flick">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs with a short, quick stroke that translates into a specific command. The action taken by a flick is set system-wide. An application can listen for a Flick and prevent it from becoming one of the standard <see cref="T:System.Windows.Input.ApplicationCommands" /> by setting the <see cref="System.Windows.RoutedEventArgs.Handled%2A" /> property to true in the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event. Only Windows Vista supports flicks.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoldEnter">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that press and hold has occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoldLeave">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not implemented.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoverEnter">
@@ -105,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a mouse hover. This can be used to show ToolTip rollover effects, or other mouse hover behaviors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoverLeave">
@@ -122,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a mouse leaving a hover. This can be used to end ToolTip rollover effects or other mouse hover behaviors.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -139,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No system gesture.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightDrag">
@@ -156,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a right drag on a mouse. This can be used to drag an object or selection to a different area and is followed by the appearance of the shortcut menu which provides options for moving the object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightTap">
@@ -173,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a right-click on a mouse. This can be used to show a shortcut menu.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tap">
@@ -190,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a left-click on a mouse. This can be used to choose a command from the menu or toolbar, take action if a command is chosen, set an insertion point, or show selection feedback.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwoFingerTap">
@@ -213,7 +187,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Maps to a double-click of a mouse.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlPageAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,9 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a <see cref="T:System.Web.UI.MobileControls.MobilePage" /> adapter for the Wireless Markup Language (WML) device adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,25 +46,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a list of any additional HTTP headers by which caching is varied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>A list of any additional HTTP headers by which caching is varied.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> classes inherit this property from the <xref:System.Web.UI.MobileControls.IPageAdapter> interface. These implementations return `null`.  
-  
- For more information, see the "Output Caching" section in [Mobile Text Writer Rendering Best Practices](http://msdn.microsoft.com/en-us/28893297-2c45-4c57-a2b3-9cdd5898f988).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CookielessDataDictionary">
@@ -77,23 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets persisted data between requests through the use of the URL query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>Data persisted between requests through the use of the URL query string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is populated when a valid <xref:System.Collections.IDictionary> type is configured as an attribute of the `< mobileControls >` configuration element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -103,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,9 +91,9 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The text writer.</param>
-        <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>A text writer suitable for the given adapters.</returns>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,24 +116,13 @@
         <Parameter Name="baseCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="request">An <see cref="T:System.Web.HttpRequest" /> object that contains request information, such as HTTP headers.</param>
-        <param name="postEventSourceID">Source identifier for the event.</param>
-        <param name="postEventArgumentID">Argument identifier for the event.</param>
-        <param name="baseCollection">Collection of postback data from the request object.</param>
-        <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>The modified postback data collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because some devices handle postback differently from others, this method allows the adapter to modify the collection.  
-  
- The <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> implementations of this method gather control data if the post originated from a different page.  
-  
- The <xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter> implementation performs CHTML-specific handling of postback data.  
-  
- ]]></format>
-        </remarks>
+        <param name="request">To be added.</param>
+        <param name="postEventSourceID">To be added.</param>
+        <param name="postEventArgumentID">To be added.</param>
+        <param name="baseCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceQualifies">
@@ -166,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,23 +141,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">The current request context.</param>
-        <summary>Evaluates whether the device adapter set applies to the specified request. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="true" /> if the device adapter set applies to the specified request; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-|Class|Returns|Preferred rendering type|Check value of JavaScript property|  
-|-----------|-------------|------------------------------|----------------------------------------|  
-|<xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|The <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property returns `true`.|  
-|<xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|<xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property returns `false`.|  
-|<xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml11> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml12>.|Not applicable.|  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HandleError">
@@ -202,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,23 +164,11 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="e">System exception object.</param>
-        <param name="writer">The text writer</param>
-        <summary>Called if an unhandled exception occurs during the life cycle of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="true" /> in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An adapter can choose to handle the exception and render an error message. The method returns `true` if it handles the error.  
-  
- For the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> class, this implementation does nothing and returns `false`.  
-  
- For the <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> class, this implementation formats the error for WML and returns `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HandlePagePostBackEvent">
@@ -239,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,21 +188,11 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventSource">Source identifier for the event.</param>
-        <param name="eventArgument">Name of the event.</param>
-        <summary>Returns <see langword="true" /> if it handles the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="false" /> in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called during postback. It allows a page adapter to handle a postback event by itself.  
-  
- Both the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.HandlePagePostBackEvent%2A?displayProperty=fullName> and HandlePagePostBackEvent methods return false.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventSource">To be added.</param>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFormRendered">
@@ -274,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,20 +211,10 @@
         <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
       </Parameters>
       <Docs>
-        <param name="form">Programmatic name of the form.</param>
-        <summary>Returns whether or not the specified form is to be rendered as part of the current request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="true" /> if the specified form is to be rendered as part of the current request; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> class, only the active form is rendered for each request.  
-  
- For the <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> class, multiple forms can be combined as cards into a single deck, if size permits.  
-  
- ]]></format>
-        </remarks>
+        <param name="form">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OptimumPageWeight">
@@ -307,15 +224,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a page weight, based on the device's screen size, which is appropriate for the target device. This property is used in form pagination. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>A page weight, based on the device's screen size, which is appropriate for the target device.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,15 +242,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The page associated with the device adapter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,24 +260,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or returns whether items from the <see cref="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary%2A" /> property are persisted in the query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>
-          <see langword="true" /> if items from the <see cref="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary%2A" /> property are persisted in the query string; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, this value is `true` if the `CookielessDataDictionaryType` entry in the `MobileControls` configuration section of Web.config is set to a valid dictionary type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -372,7 +278,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,8 +287,8 @@
         <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The text writer to receive output.</param>
-        <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +299,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -405,9 +309,9 @@
         <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
       </Parameters>
       <Docs>
-        <param name="writer">The text writer.</param>
-        <param name="form">The form to render.</param>
-        <summary>Renders the given form. This method is called by the form adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="writer">To be added.</param>
+        <param name="form">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,9 +329,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> is rendering multiple forms as cards of the same deck. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <returns>
-          <see langword="true" /> if the page is rendering multiple forms as cards of the same deck; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

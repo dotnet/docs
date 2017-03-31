@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequest" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents request objects submitted as a batch to [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a group of queries submitted as a batch to the data service, the queries are specified as DataServiceRequest instances. A <xref:System.Data.Services.Client.DataServiceResponse> is returned that represents the response of the batch request as a whole. Individual query responses are represented as <xref:System.Data.Services.Client.QueryOperationResponse> objects, derived from <xref:System.Data.Services.Client.OperationResponse>, that are accessible by enumerating the <xref:System.Data.Services.Client.DataServiceResponse> instance.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ElementType">
@@ -30,15 +23,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of object submitted as a batch to the data service.</summary>
-        <value>Type object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,15 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URI of the request object submitted to a data service.</summary>
-        <value>URI of the request object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +61,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,16 +69,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Represents the URI of the query to the data service.</summary>
-        <returns>The requested URI as a <see cref="T:System.String" /> value.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Overrides the <xref:System.Object.ToString> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

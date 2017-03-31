@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContributeObjectSink" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,17 +14,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contributes an object-specific interception sink on the server end of a remoting call.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IContributeObjectSink interface is implemented by context properties in a <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an object-specific interception sink on the server end of a remoting call.  
-  
- The server object chain is composed from those context properties in the server object's context that implement IContributeObjectSink. [&#91;\<topic://cpconjust-in-timeactivation>&#93;](http://msdn.microsoft.com/en-us/6f7a7912-93cd-4c94-824f-42554c17c8d4) is an example of such a property; that is, the message sink would activate the object after the call arrives, and then pass the message on to the object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetObjectSink">
@@ -34,14 +25,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
       </ReturnValue>
@@ -50,10 +36,10 @@
         <Parameter Name="nextSink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
       </Parameters>
       <Docs>
-        <param name="obj">The server object which provides the message sink that is to be chained in front of the given chain.</param>
-        <param name="nextSink">The chain of sinks composed so far.</param>
-        <summary>Chains the message sink of the provided server object in front of the given sink chain.</summary>
-        <returns>The composite sink chain.</returns>
+        <param name="obj">To be added.</param>
+        <param name="nextSink">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

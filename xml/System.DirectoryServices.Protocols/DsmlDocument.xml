@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlDocument" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The DsmlDocument class is an abstract class to construct or manipulate a DSML document. It is the base class for both <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> and <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />. DsmlDocument supports collections and indexes. Each item in its collection is an object derived from <see cref="T:System.DirectoryServices.Protocols.DirectoryOperation" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>The DsmlDocument constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The ToXml method transforms this <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> object into a <see cref="T:System.Xml.XmlDocument" /> object.</summary>
-        <returns>The transformed <see cref="T:System.Xml.XmlDocument" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.IApplicationTrustManager" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -18,25 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Determines whether an application should be executed and which set of permissions should be granted to it.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Trust managers must implement the IApplicationTrustManager interface. The host calls the <xref:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust%2A?displayProperty=fullName> method to determine whether an application should be executed and which permissions should be granted to the application.  
-  
- In the [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)] and later, there is only one trust manager, which can be a custom implementation of the IApplicationTrustManager interface. The default trust manager implementation prompts the user for permission to install the application and to elevate the permissions granted to the application. Other trust manager implementations might provide different user experiences. For example, an implementation might check an enterprise list for trusted applications instead of prompting the user for that information.  
-  
-   
-  
-## Examples  
- The following example shows a simple implementation of IApplicationTrustManager.  
-  
- [!code-cs[System.Security.Policy.IApplicationTrustManager#1](~/add/codesnippet/csharp/t-system.security.policy_3_1.cs)]
- [!code-vb[System.Security.Policy.IApplicationTrustManager#1](~/add/codesnippet/visualbasic/t-system.security.policy_3_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DetermineApplicationTrust">
@@ -46,7 +29,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,26 +40,11 @@
         <Parameter Name="context" Type="System.Security.Policy.TrustManagerContext" />
       </Parameters>
       <Docs>
-        <param name="activationContext">The activation context for the application.</param>
-        <param name="context">The trust manager context for the application.</param>
-        <summary>Determines whether an application should be executed and which set of permissions should be granted to it.</summary>
-        <returns>An object that contains security decisions about the application.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DetermineApplicationTrust method is called by the host to determine whether an application should be executed and which set of permissions it should be granted. DetermineApplicationTrust returns an <xref:System.Security.Policy.ApplicationTrust> object with a <xref:System.Security.Policy.ApplicationTrust.DefaultGrantSet%2A> property that contains a permission set representing the permissions to be granted to each assembly executing within the context of the application. The granted permissions do not apply to assemblies in the global assembly cache. The <xref:System.Security.Policy.ApplicationTrust> object also has an <xref:System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun%2A> property that the trust manager sets to indicate whether the application should be trusted. If the trust manager indicates that the application can be trusted, the host activates the application and grants its assemblies the set of permissions provided in the <xref:System.Security.Policy.ApplicationTrust> collection.  
-  
-   
-  
-## Examples  
- The following example shows an implementation of the DetermineApplicationTrust method for a custom trust manager. This code example is part of a larger example provided for the <xref:System.Security.Policy.IApplicationTrustManager> interface.  
-  
- [!code-cs[System.Security.Policy.IApplicationTrustManager#2](~/add/codesnippet/csharp/24b6db65-f82b-47e4-ac93-_1.cs)]
- [!code-vb[System.Security.Policy.IApplicationTrustManager#2](~/add/codesnippet/visualbasic/24b6db65-f82b-47e4-ac93-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activationContext">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

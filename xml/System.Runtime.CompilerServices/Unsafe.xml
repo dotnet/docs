@@ -1,0 +1,404 @@
+<Type Name="Unsafe" FullName="System.Runtime.CompilerServices.Unsafe">
+  <TypeSignature Language="C#" Value="public static class Unsafe" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Unsafe extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.Unsafe" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Add&lt;T&gt; (ref T source, int elementOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T source, int32 elementOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T&amp;" RefType="ref" />
+        <Parameter Name="elementOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="elementOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreSame&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool AreSame&lt;T&gt; (ref T left, ref T right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreSame&lt;T&gt;(!!T left, !!T right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="left" Type="T&amp;" RefType="ref" />
+        <Parameter Name="right" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="As&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T As&lt;T&gt; (object o) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T As&lt;class T&gt;(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.As``1(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="As&lt;TFrom,TTo&gt;">
+      <MemberSignature Language="C#" Value="public static TTo As&lt;TFrom,TTo&gt; (ref TFrom source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TTo As&lt;TFrom, TTo&gt;(!!TFrom source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.As``2(``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TTo@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFrom" />
+        <TypeParameter Name="TTo" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="TFrom&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFrom">To be added.</typeparam>
+        <typeparam name="TTo">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsPointer&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void* AsPointer&lt;T&gt; (ref T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* AsPointer&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void*</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsRef&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T AsRef&lt;T&gt; (void* source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;T&gt;(void* source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Void*" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Copy&lt;T&gt; (void* destination, ref T source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(void* destination, !!T source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Void*" />
+        <Parameter Name="source" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="destination">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Copy&lt;T&gt; (ref T destination, void* source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(!!T destination, void* source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="destination" Type="T&amp;" RefType="ref" />
+        <Parameter Name="source" Type="System.Void*" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="destination">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyBlock">
+      <MemberSignature Language="C#" Value="public static void CopyBlock (void* destination, void* source, uint byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlock(void* destination, void* source, unsigned int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Void*" />
+        <Parameter Name="source" Type="System.Void*" />
+        <Parameter Name="byteCount" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitBlock">
+      <MemberSignature Language="C#" Value="public static void InitBlock (void* startAddress, byte value, uint byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlock(void* startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startAddress" Type="System.Void*" />
+        <Parameter Name="value" Type="System.Byte" />
+        <Parameter Name="byteCount" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="startAddress">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Read&lt;T&gt; (void* source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Read&lt;T&gt;(void* source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Void*" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int SizeOf&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 SizeOf&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.SizeOf``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Subtract&lt;T&gt; (ref T source, int elementOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T source, int32 elementOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T&amp;" RefType="ref" />
+        <Parameter Name="elementOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="elementOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (void* destination, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;T&gt;(void* destination, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Void*" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="destination">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -24,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.CalendarDayButton" /> and <see cref="T:System.Windows.Controls.Primitives.CalendarButton" /> types to UI Automation.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -329,9 +329,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">The type of pattern implemented by the element to retrieve.</param>
-        <summary>Gets the control pattern implementation for this <see cref="T:System.Windows.Automation.Peers.DateTimeAutomationPeer" />.</summary>
-        <returns>The object that implements the pattern interface, or <see langword="null" /> if the specified pattern interface is not implemented by this peer.</returns>
+        <param name="patternInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,16 +518,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal number of the column that contains the cell or item.</summary>
-        <value>A zero-based ordinal number that identifies the column containing the cell or item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan">
@@ -543,16 +536,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of columns spanned by a cell or item.</summary>
-        <value>The number of columns spanned.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid">
@@ -568,16 +554,9 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> and represents the container of the cell or item.</summary>
-        <value>A UI Automation provider that represents the cell or item container.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.Row">
@@ -593,16 +572,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ordinal number of the row that contains the cell or item.</summary>
-        <value>A zero-based ordinal number that identifies the row containing the cell or item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.RowSpan">
@@ -618,16 +590,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of rows spanned by a cell or item.</summary>
-        <value>The number of rows spanned.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IInvokeProvider.Invoke">
@@ -644,15 +609,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sends a request to activate a control and initiate its single, unambiguous action.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection">
@@ -669,15 +627,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds the current element to the collection of selected items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected">
@@ -693,17 +644,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an item is selected.</summary>
-        <value>
-          <see langword="true" /> if the element is selected; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection">
@@ -720,15 +663,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the current element from the collection of selected items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.Select">
@@ -745,15 +681,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears any selected items and then selects the current element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer">
@@ -769,16 +698,9 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
-        <value>The provider that acts as the container for the calling object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems">
@@ -795,16 +717,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of UI Automation providers that represents all the column headers associated with a table item or cell.</summary>
-        <returns>A collection of UI Automation providers.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems">
@@ -821,16 +736,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a collection of UI Automation providers that represents all the row headers associated with a table item or cell.</summary>
-        <returns>A collection of UI Automation providers.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize">
@@ -847,15 +755,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Makes the virtual item fully accessible as a UI Automation element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DateTimeAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IVirtualizedItemProvider> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

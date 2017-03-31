@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserEncryptionLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants that define the encryption methods used by documents displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.WebBrowser.EncryptionLevel%2A?displayProperty=fullName> property to indicate the encryption used by a document displayed in the <xref:System.Windows.Forms.WebBrowser> control.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bit128">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>128-bit security encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bit40">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>40-bit security encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bit56">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>56-bit security encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fortezza">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fortezza security encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insecure">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No security encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mixed">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Multiple security encryption methods in different Web page frames.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unknown security encryption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

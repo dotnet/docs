@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how visual styles are applied to the current application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.Application.VisualStyleState%2A?displayProperty=fullName> property to specify whether visual styles are applied to client or nonclient areas of application windows.  
-  
-   
-  
-## Examples  
- The following code example is a simple program that applies visual styles in each of the four areas specified by the VisualStyleState values. To enable visual styles in a certain area, click the option button (also known as a radio button) that represents the area you want to enable, and click the **Update VisualStyleState** button to observe the changes in the window.  
-  
- [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/add/codesnippet/cpp/t-system.windows.forms.v_2_1.cpp)]
- [!code-cs[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/add/codesnippet/csharp/t-system.windows.forms.v_2_1.cs)]
- [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/add/codesnippet/visualbasic/t-system.windows.forms.v_2_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ClientAndNonClientAreasEnabled">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Visual styles are applied to client and nonclient areas.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientAreaEnabled">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Visual styles are applied only to the client area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonClientAreaEnabled">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Visual styles are applied only to the nonclient area.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoneEnabled">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Visual styles are not applied to the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

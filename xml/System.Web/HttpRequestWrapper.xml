@@ -3,23 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpRequestWrapper extends System.Web.HttpRequestBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRequestWrapper" />
   <AssemblyInfo>
-    <AssemblyName>System.Web.Abstractions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Web.HttpRequestBase</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Abstractions, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>Encapsulates the HTTP intrinsic object that enables ASP.NET to read the HTTP values that are sent by a client during a Web request.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpRequestWrapper class derives from the <xref:System.Web.HttpRequestBase> class and serves as a wrapper for the <xref:System.Web.HttpRequest> class. This class exposes the functionality of the <xref:System.Web.HttpRequest> class and exposes the <xref:System.Web.HttpRequestBase> type. The <xref:System.Web.HttpRequestBase> class enables you to replace the original implementation of the <xref:System.Web.HttpRequest> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,18 +26,34 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.#ctor(System.Web.HttpRequest)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpRequest" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="httpRequest">The object that this wrapper class provides access to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpRequestWrapper" /> class by using the specified request object.</summary>
+        <param name="httpRequest">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="httpRequest" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public override void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AcceptTypes">
@@ -48,15 +62,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.AcceptTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of client-supported MIME accept types.</summary>
-        <value>An array of client-supported MIME accept types.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,15 +80,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.AnonymousID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the anonymous identifier for the user, if it is available.</summary>
-        <value>The current anonymous user identifier.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,15 +98,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ApplicationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the root of the ASP.NET application on the server.</summary>
-        <value>The virtual root path of the current application.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,15 +116,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.AppRelativeCurrentExecutionFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the application root and makes it relative by using the tilde (~) notation for the application root (as in "~/page.aspx").</summary>
-        <value>The virtual path of the application root for the current request with the tilde operator added.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +134,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.BinaryRead(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -130,16 +144,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">The number of bytes to read.</param>
-        <summary>Performs a binary read of a specified number of bytes from the current input stream.</summary>
-        <returns>An array that contains the binary data.</returns>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is less than 0.  
-  
- \- or -  
-  
- <paramref name="count" /> is greater than the number of bytes available.</exception>
       </Docs>
     </Member>
     <Member MemberName="Browser">
@@ -148,15 +156,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Browser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpBrowserCapabilitiesBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about the requesting client's browser capabilities.</summary>
-        <value>An object that represents the capabilities of the client browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,15 +174,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ClientCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpClientCertificate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current request's client security certificate.</summary>
-        <value>The client's security certificate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,15 +192,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the character set of the data that was provided by the client.</summary>
-        <value>The client's character set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,15 +210,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length, in bytes, of content that was sent by the client.</summary>
-        <value>The length, in bytes, of content that was sent by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,15 +228,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the MIME content type of the request.</summary>
-        <value>The MIME content type of the request, such as "text/html".</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,15 +246,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of cookies that were sent by the client.</summary>
-        <value>The client's cookies.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,25 +264,34 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.CurrentExecutionFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the current request.</summary>
-        <value>The virtual path of the page handler that is currently executing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CurrentExecutionFilePath property returns the file path of the currently executing page handler.  
-  
- When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=fullName> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=fullName> method, the CurrentExecutionFilePath property returns the path of the page that you are redirecting to (the child page).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentExecutionFilePathExtension">
+      <MemberSignature Language="C#" Value="public override string CurrentExecutionFilePathExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentExecutionFilePathExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.CurrentExecutionFilePathExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilePath">
@@ -283,15 +300,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.FilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the current request.</summary>
-        <value>The virtual path of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,15 +318,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpFileCollectionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of files that were uploaded by the client, in multipart MIME format.</summary>
-        <value>The files that were uploaded by the client. The items in the <see cref="T:System.Web.HttpFileCollection" /> object are of type <see cref="T:System.Web.HttpPostedFile" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,15 +336,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the filter to use when the current input stream is being read.</summary>
-        <value>An object to use as the filter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,15 +354,75 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of form variables that were sent by the client.</summary>
-        <value>The form variables.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBufferedInputStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetBufferedInputStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetBufferedInputStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.GetBufferedInputStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBufferlessInputStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetBufferlessInputStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetBufferlessInputStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.GetBufferlessInputStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBufferlessInputStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetBufferlessInputStream (bool disableMaxRequestLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetBufferlessInputStream(bool disableMaxRequestLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.GetBufferlessInputStream(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disableMaxRequestLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disableMaxRequestLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,15 +432,33 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of HTTP headers that were sent by the client.</summary>
-        <value>The request headers.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpChannelBinding">
+      <MemberSignature Language="C#" Value="public override System.Security.Authentication.ExtendedProtection.ChannelBinding HttpChannelBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ChannelBinding HttpChannelBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.HttpChannelBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.ExtendedProtection.ChannelBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,15 +468,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.HttpMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the HTTP data-transfer method (such as <see langword="GET" />, <see langword="POST" />, or <see langword="HEAD" />) that was used by the client.</summary>
-        <value>The HTTP data-transfer method that was used by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,15 +486,58 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.InputStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the contents of the incoming HTTP entity body.</summary>
-        <value>The contents of the incoming HTTP content body.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEntityBody">
+      <MemberSignature Language="C#" Value="public override void InsertEntityBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InsertEntityBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.InsertEntityBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEntityBody">
+      <MemberSignature Language="C#" Value="public override void InsertEntityBody (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InsertEntityBody(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.InsertEntityBody(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,16 +547,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the request has been authenticated.</summary>
-        <value>
-          <see langword="true" /> if the request has been authenticated; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,16 +565,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.IsLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the request is from the local computer.</summary>
-        <value>
-          <see langword="true" /> if the request is from the local computer; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,16 +583,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.IsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the HTTP connection uses secure sockets (HTTPS protocol).</summary>
-        <value>
-          <see langword="true" /> if the connection is an SSL connection that uses HTTPS protocol; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,8 +601,8 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -476,9 +611,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the collection member to get.</param>
-        <summary>Gets the specified object from the <see cref="System.Web.HttpRequest.Cookies%2A" />, <see cref="System.Web.HttpRequest.Form%2A" />, <see cref="System.Web.HttpRequest.QueryString%2A" />, or <see cref="System.Web.HttpRequest.ServerVariables%2A" /> collections.</summary>
-        <value>The <see cref="System.Web.HttpRequest.QueryString%2A" />, <see cref="System.Web.HttpRequest.Form%2A" />, <see cref="System.Web.HttpRequest.Cookies%2A" />, or <see cref="System.Web.HttpRequest.ServerVariables%2A" /> collection member that is specified by <paramref name="key" />. If the specified <paramref name="key" /> value is not found, <see langword="null" /> is returned.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,15 +623,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.LogonUserIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Security.Principal.WindowsIdentity" /> type for the current user.</summary>
-        <value>The identity for the current user.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,8 +641,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.MapImageCoordinates(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32[]</ReturnType>
@@ -516,9 +651,9 @@
         <Parameter Name="imageFieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="imageFieldName">The name of the image map.</param>
-        <summary>Maps an incoming image-field form parameter to appropriate x-coordinate and y-coordinate values.</summary>
-        <returns>A two-dimensional array of integers.</returns>
+        <param name="imageFieldName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,8 +663,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.MapPath(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -538,9 +673,9 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
-        <summary>Maps the specified virtual path to a physical path on the server.</summary>
-        <returns>The physical path on the server that is specified by <paramref name="virtualPath" />.</returns>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,8 +685,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.MapPath(System.String,System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -562,14 +697,34 @@
         <Parameter Name="allowCrossAppMapping" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
-        <param name="baseVirtualDir">The virtual base directory path that is used for relative resolution.</param>
-        <param name="allowCrossAppMapping">
-          <see langword="true" /> to indicate that <c>virtualPath</c> can belong to another application; otherwise, <see langword="false" />.</param>
-        <summary>Maps the specified virtual path to a physical path on the server.</summary>
-        <returns>The physical path on the server.</returns>
+        <param name="virtualPath">To be added.</param>
+        <param name="baseVirtualDir">To be added.</param>
+        <param name="allowCrossAppMapping">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MapRawImageCoordinates">
+      <MemberSignature Language="C#" Value="public override double[] MapRawImageCoordinates (string imageFieldName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64[] MapRawImageCoordinates(string imageFieldName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.MapRawImageCoordinates(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageFieldName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="imageFieldName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Params">
@@ -578,15 +733,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Params" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a combined collection of <see cref="System.Web.HttpRequest.QueryString%2A" />, <see cref="System.Web.HttpRequest.Form%2A" />, <see cref="System.Web.HttpRequest.ServerVariables%2A" />, and <see cref="System.Web.HttpRequest.Cookies%2A" /> items.</summary>
-        <value>The collection of combined values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,15 +751,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the current request.</summary>
-        <value>The virtual path of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -614,23 +769,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.PathInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets additional path information for a resource that has a URL extension.</summary>
-        <value>The additional path information for the resource.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the URL Http://www.contoso.com/virdir/page.html/tail, the PathInfo value is /tail.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PhysicalApplicationPath">
@@ -639,15 +787,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.PhysicalApplicationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the physical file-system path of the current application's root directory.</summary>
-        <value>The file-system path of the current application's root directory.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,15 +805,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.PhysicalPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the physical file-system path of the requested resource.</summary>
-        <value>The file-system path of the requested resource.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -675,15 +823,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.QueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of HTTP query-string variables.</summary>
-        <value>The query-string variables that were sent by the client in the URL of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,15 +841,51 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.RawUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the complete URL of the current request.</summary>
-        <value>The complete URL of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntityBodyMode">
+      <MemberSignature Language="C#" Value="public override System.Web.ReadEntityBodyMode ReadEntityBodyMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ReadEntityBodyMode ReadEntityBodyMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ReadEntityBodyMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestContext">
+      <MemberSignature Language="C#" Value="public override System.Web.Routing.RequestContext RequestContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RequestContext RequestContext" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.RequestContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RequestContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,15 +895,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.RequestType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the HTTP data-transfer method (<see langword="GET" /> or <see langword="POST" />) that was used by the client.</summary>
-        <value>The HTTP data-transfer method type that was used by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,8 +913,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.SaveAs(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -740,9 +924,9 @@
         <Parameter Name="includeHeaders" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">The physical drive path.</param>
-        <param name="includeHeaders">A value that specifies whether to save HTTP headers to disk.</param>
-        <summary>Saves an HTTP request to disk.</summary>
+        <param name="filename">To be added.</param>
+        <param name="includeHeaders">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -752,15 +936,51 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.ServerVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of Web server variables.</summary>
-        <value>The server variables.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimedOutToken">
+      <MemberSignature Language="C#" Value="public override System.Threading.CancellationToken TimedOutToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken TimedOutToken" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.TimedOutToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.CancellationToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlsTokenBindingInfo">
+      <MemberSignature Language="C#" Value="public override System.Web.ITlsTokenBindingInfo TlsTokenBindingInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ITlsTokenBindingInfo TlsTokenBindingInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.TlsTokenBindingInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ITlsTokenBindingInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,15 +990,33 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.TotalBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of bytes in the current input stream.</summary>
-        <value>The number of bytes in the input stream.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unvalidated">
+      <MemberSignature Language="C#" Value="public override System.Web.UnvalidatedRequestValuesBase Unvalidated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UnvalidatedRequestValuesBase Unvalidated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Unvalidated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UnvalidatedRequestValuesBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,15 +1026,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about the URL of the current request.</summary>
-        <value>An object that contains information about the URL of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -806,15 +1044,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.UrlReferrer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about the URL of the client request that linked to the current URL.</summary>
-        <value>The URL of the page that linked to the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -824,15 +1062,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the complete user-agent string of the client.</summary>
-        <value>The complete user-agent string of the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -842,15 +1080,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.UserHostAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the IP host address of the client.</summary>
-        <value>The IP address of the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -860,15 +1098,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.UserHostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the DNS name of the client.</summary>
-        <value>The DNS name of the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -878,15 +1116,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestWrapper.UserLanguages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a sorted array of client language preferences.</summary>
-        <value>A sorted array of client language preferences, or <see langword="null" /> if the array is empty.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -896,23 +1134,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestWrapper.ValidateInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes validation to occur for the collections that are accessed through the <see cref="System.Web.HttpRequest.Cookies%2A" />, <see cref="System.Web.HttpRequest.Form%2A" />, and <see cref="System.Web.HttpRequest.QueryString%2A" /> properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpRequest> class uses input validation flags to determine whether to perform validation on the request collections that are accessed through the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, and <xref:System.Web.HttpRequest.QueryString%2A> properties. The ValidateInput method sets these flags so that when the `get` accessors of the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, or <xref:System.Web.HttpRequest.QueryString%2A> properties are invoked, input validation is performed. Validation works by checking all input data against a hard-coded list of potentially dangerous data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

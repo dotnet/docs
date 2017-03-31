@@ -15,21 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Processes XAML in optimized BAML form and produces a XAML node stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BAML form is an optimized form of XAML used by the WPF XAML implementation. It is optimized in the sense that it uses internal lookups and tokens for commonly used types or members. The optimization is useful as an implementation detail that addresses packaging size and load time for WPF application scenarios that involve XAML. The Baml2006Reader reader class constitutes much of the public API surface that a WPF application developer has for interacting with BAML.  
-  
- The XAML optimized to BAML form may need to be localized. Localization of XAML and possible tools pathways for doing so is not discussed in this topic. See [Globalization for WPF](../Topic/Globalization%20for%20WPF.md).  
-  
- Baml2006Reader uses an internally implemented XAML schema context. This schema context provides the logic necessary for looking up the types in BAML form, including referencing the optimizations and tokens that are inherent in BAML.  
-  
- The main scenario for Baml2006Reader is to use it as the <xref:System.Xaml.XamlReader> implementation that you pass to a call to <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,11 +32,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">Input stream of source BAML.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class based on an input stream.</summary>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,11 +50,9 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">String that declares a file path to the file that contains BAML to read.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class, based on the file name of a local file to read.</summary>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="fileName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,19 +69,10 @@
         <Parameter Name="xamlReaderSettings" Type="System.Xaml.XamlReaderSettings" />
       </Parameters>
       <Docs>
-        <param name="stream">Input stream of source BAML.</param>
-        <param name="xamlReaderSettings">Reader settings. See Remarks.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> class based on an input stream and reader settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Baml2006.Baml2006Reader> uses an internal settings class override. However you can pass the information that is permitted by the <xref:System.Xaml.XamlReaderSettings> base class, and your passed settings are internally upgraded to or merged into the internal settings. Passing `null` for `xamlReaderSettings` of this signature throws an exception. If you have no special settings to report, use the <xref:System.Windows.Baml2006.Baml2006Reader.%23ctor%28System.IO.Stream%29> signature.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> or <paramref name="xamlReaderSettings" /> is <see langword="null" />.</exception>
+        <param name="stream">To be added.</param>
+        <param name="xamlReaderSettings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -117,9 +91,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Baml2006.Baml2006Reader" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +109,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that reports whether the reader position is at the end of file.</summary>
-        <value>
-          <see langword="true" /> if the reader position is at the end of the file; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +127,8 @@
         <ReturnType>System.Xaml.XamlMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current member at the reader position, if the reader position is on a <see cref="T:System.Xaml.XamlNodeType" />.</summary>
-        <value>The current member, or <see langword="null" /> if the position is not on a member.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +145,8 @@
         <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the XAML namespace from the current node.</summary>
-        <value>The XAML namespace if available, otherwise <see langword="null" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,8 +163,8 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the current node.</summary>
-        <value>A value of the enumeration.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,18 +182,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides the next XAML node from the source BAML, if a node is available.</summary>
-        <returns>
-          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns `false` for cases where the reader reports <xref:System.Windows.Baml2006.Baml2006Reader.IsEof%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">Reader was disposed during traversal.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaContext">
@@ -237,8 +200,8 @@
         <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that provides schema context information for the information set.</summary>
-        <value>An object that provides schema context information for the information set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +218,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Xaml.IXamlLineInfo.HasLineInfo%2A" />.</summary>
-        <value>
-          <see langword="true" /> if line information is available; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +236,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Xaml.IXamlLineInfo.LineNumber%2A" />.</summary>
-        <value>The line number to report.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,8 +254,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>See <see cref="System.Xaml.IXamlLineInfo.LinePosition%2A" />.</summary>
-        <value>The line position to report.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,8 +272,8 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the current node.</summary>
-        <value>The <see cref="T:System.Xaml.XamlType" /> of the current node, or <see langword="null" /> if the position is not on an object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,8 +290,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the current node.</summary>
-        <value>The value of the current node, or <see langword="null" /> if the position is not on a <see cref="T:System.Xaml.XamlNodeType" /> node type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

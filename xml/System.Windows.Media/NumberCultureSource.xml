@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.NumberCultureSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how the culture for numbers in a text run is determined.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.NumberSubstitution> class uses the enumerated values of the NumberCultureSource class to determine how numbers are displayed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Override">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Number culture is derived from the <see cref="System.Windows.Media.NumberSubstitution.CultureOverride%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default. Number culture is derived from the value of the <see cref="System.Windows.Media.TextFormatting.TextRunProperties.CultureInfo%2A" /> property, which is the culture of the text run. In markup, this is represented by the <c>xml:lang</c> attribute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Number culture is derived from the culture value of the current thread, which by default is the user default culture.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

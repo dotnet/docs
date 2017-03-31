@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines access levels used by <see cref="T:System.ServiceProcess.ServiceController" /> permission classes.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.ServiceProcess.ServiceController" /> can connect to, but not control, existing services.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.ServiceProcess.ServiceController" /> can connect to and control existing services.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.ServiceProcess.ServiceController" /> has no permissions.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

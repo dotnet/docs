@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SiteMapSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,43 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines configuration settings that are used to support the infrastructure for configuring, storing, and rendering site navigation. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SiteMapSection class provides a way to programmatically access and modify the content of the configuration file `siteMap` section.  
-  
-   
-  
-## Examples  
- This example demonstrates how to specify values declaratively for several attributes of the `siteMap` section, which can also be accessed as members of the SiteMapSection class.  
-  
- The following configuration file example shows how to specify values declaratively for the `siteMap` section.  
-  
-```  
-<system.web>  
-  <siteMap defaultProvider="XmlSiteMapReader" enabled="true">  
-    <providers>  
-      <clear />  
-      <add   
-        name="XmlSiteMapReader"  
-        type="XmlSiteMapProvider, System.Web, Version=1.1.3300.0,  
-              Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
-        siteMapFile="my.sitemap"   
-        description="XmlSiteMapProvider that loads my.sitemap"/>  
-    </providers>  
-  </siteMap>  
-</system.web>  
-```  
-  
- The following code example demonstrates how to use the SiteMapSection class.  
-  
- [!code-vb[System.Web.Configuration.SiteMapSection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_8_1.vb)]
- [!code-cs[System.Web.Configuration.SiteMapSection#1](~/add/codesnippet/csharp/t-system.web.configurati_8_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SiteMapSection" /> class by using default settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SiteMapSection constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SiteMapSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProvider">
@@ -81,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -96,24 +51,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the default navigation provider.</summary>
-        <value>The name of a provider in the <see cref="System.Web.Configuration.SiteMapSection.Providers%2A" /> property or a <see cref="F:System.String.Empty" /> field. The default is <see langword="&quot;AspNetXmlSiteMapProvider&quot;" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Navigation providers expose an API for manipulating navigation values in a common fashion. You can specify navigation providers in the `providers` subsection of the `siteMap` section of a configuration file.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the DefaultProvider property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SiteMapSection> class.  
-  
- [!code-vb[System.Web.Configuration.SiteMapSection#2](~/add/codesnippet/visualbasic/p-system.web.configurati_66_1.vb)]
- [!code-cs[System.Web.Configuration.SiteMapSection#2](~/add/codesnippet/csharp/p-system.web.configurati_66_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -123,7 +63,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,25 +74,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ASP.NET site map feature is enabled.</summary>
-        <value>
-          <see langword="true" /> if the ASP.NET site map feature is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Enabled property returns a Boolean value indicating whether or not the ASP.NET navigation feature can be accessed at run time.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Enabled property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SiteMapSection> class.  
-  
- [!code-vb[System.Web.Configuration.SiteMapSection#3](~/add/codesnippet/visualbasic/p-system.web.configurati_360_1.vb)]
- [!code-cs[System.Web.Configuration.SiteMapSection#3](~/add/codesnippet/csharp/p-system.web.configurati_360_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -163,7 +86,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,7 +104,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -194,26 +115,9 @@
         <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
-        <value>A <see cref="T:System.Configuration.ProviderSettingsCollection" /> that contains the providers settings defined within the <see langword="providers" /> subsection of the <see langword="siteMap" /> section of the configuration file.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Site map providers are components that provide access to the navigation structure for a site. You can specify site map providers in the `providers` subsection of the `siteMap` section of a configuration file.  
-  
- The <xref:System.Web.Configuration.SiteMapSection.DefaultProvider%2A> property names which provider is used by default.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the Providers property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SiteMapSection> class.  
-  
- [!code-vb[System.Web.Configuration.SiteMapSection#4](~/add/codesnippet/visualbasic/p-system.web.configurati_273_1.vb)]
- [!code-cs[System.Web.Configuration.SiteMapSection#4](~/add/codesnippet/csharp/p-system.web.configurati_273_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

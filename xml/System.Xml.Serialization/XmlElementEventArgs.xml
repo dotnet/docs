@@ -4,44 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlElementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownElement" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115) and [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs only when you call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
-  
-   
-  
-## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-  <GroupName>MyGroup</GroupName>  
-  <GroupSize>Large</GroupSize>  
-  <GroupNumber>444</GroupNumber>  
-  <GroupBase>West</GroupBase>  
-</Group>  
-```  
-  
- [!code-cs[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/csharp/t-system.xml.serializati_29_1.cs)]
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/cpp/t-system.xml.serializati_29_1.cpp)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/visualbasic/t-system.xml.serializati_29_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Element">
@@ -51,37 +27,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that represents the unknown XML element.</summary>
-        <value>The object that represents the unknown XML element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-  <GroupName>MyGroup</GroupName>  
-  <GroupSize>Large</GroupSize>  
-  <GroupNumber>444</GroupNumber>  
-  <GroupBase>West</GroupBase>  
-</Group>  
-```  
-  
- [!code-cs[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/csharp/p-system.xml.serializati_28_1.cs)]
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/cpp/p-system.xml.serializati_28_1.cpp)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/visualbasic/p-system.xml.serializati_28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpectedElements">
@@ -91,15 +50,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a comma-delimited list of XML element names expected to be in an XML document instance.</summary>
-        <value>A comma-delimited list of XML element names. Each name is in the following format: <paramref name="namespace" />:<paramref name="name" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,42 +73,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the line number where the unknown element was encountered if the XML reader is an <see cref="T:System.Xml.XmlTextReader" />.</summary>
-        <value>The line number where the unknown element was encountered if the XML reader is an <see cref="T:System.Xml.XmlTextReader" />; otherwise, -1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LineNumber property returns a value only if the underlying XML reader is an <xref:System.Xml.XmlTextReader>.  
-  
-   
-  
-## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-  <GroupName>MyGroup</GroupName>  
-  <GroupSize>Large</GroupSize>  
-  <GroupNumber>444</GroupNumber>  
-  <GroupBase>West</GroupBase>  
-</Group>  
-```  
-  
- [!code-cs[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/csharp/p-system.xml.serializati_73_1.cs)]
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/cpp/p-system.xml.serializati_73_1.cpp)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/visualbasic/p-system.xml.serializati_73_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinePosition">
@@ -155,37 +96,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the place in the line where the unknown element occurs if the XML reader is an <see cref="T:System.Xml.XmlTextReader" />.</summary>
-        <value>The number in the line where the unknown element occurs if the XML reader is an <see cref="T:System.Xml.XmlTextReader" />; otherwise, -1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-  <GroupName>MyGroup</GroupName>  
-  <GroupSize>Large</GroupSize>  
-  <GroupNumber>444</GroupNumber>  
-  <GroupBase>West</GroupBase>  
-</Group>  
-```  
-  
- [!code-cs[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/csharp/p-system.xml.serializati_21_1.cs)]
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/cpp/p-system.xml.serializati_21_1.cpp)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/add/codesnippet/visualbasic/p-system.xml.serializati_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectBeingDeserialized">
@@ -195,35 +119,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object the <see cref="T:System.Xml.Serialization.XmlSerializer" /> is deserializing.</summary>
-        <value>The object that is being deserialized by the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-  <GroupName>MyGroup</GroupName>  
-  <GroupSize>Large</GroupSize>  
-  <GroupNumber>444</GroupNumber>  
-  <GroupBase>West</GroupBase>  
-</Group>  
-```  
-  
- XmlSerializer.UnknownElement Example#1  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,28 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.GraphicsUnit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the unit of measure for the given data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to load a bitmap from an <xref:System.Drawing.Icon> handle, using the GraphicsUnit enumeration, and the use of the <xref:System.Drawing.Rectangle.Round%2A> method to draw the rectangle bounds of a bitmap.  
-  
- This example is designed to be used with Windows Forms. Create a form that contains a button named Button2. Paste the code into the form and associate this method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cs[System.Drawing.BitmapMembers#1](~/add/codesnippet/csharp/t-system.drawing.graphic_1.cs)]
- [!code-vb[System.Drawing.BitmapMembers#1](~/add/codesnippet/visualbasic/t-system.drawing.graphic_1.vb)]
- [!code-cpp[System.Drawing.BitmapMembers#1](~/add/codesnippet/cpp/t-system.drawing.graphic_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Display">
@@ -35,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the unit of measure of the display device. Typically pixels for video displays, and 1/100 inch for printers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -52,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the document unit (1/300 inch) as the unit of measure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inch">
@@ -69,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the inch as the unit of measure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Millimeter">
@@ -86,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the millimeter as the unit of measure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -103,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a device pixel as the unit of measure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -120,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a printer's point (1/72 inch) as the unit of measure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="World">
@@ -137,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the world coordinate system unit as the unit of measure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

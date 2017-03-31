@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PixelOffsetMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how pixels are offset during rendering.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By offsetting pixels during rendering, you can improve render quality at the cost of render speed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the default mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Half">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that pixels are offset by -.5 units, both horizontally and vertically, for high speed antialiasing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighQuality">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies high quality, low speed rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighSpeed">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies high speed, low quality rendering.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies an invalid mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no pixel offset.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

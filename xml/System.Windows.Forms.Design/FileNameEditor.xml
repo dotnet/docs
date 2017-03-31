@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FileNameEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a user interface for selecting a file name.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- FileNameEditor provides a file selection dialog box for file name selection and editing.  
-  
-   
-  
-## Examples  
- The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the FileNameEditor with a property.  
-  
- [!code-cpp[EditorAttributesExample#5](~/add/codesnippet/cpp/t-system.windows.forms.d_100_1.cpp)]
- [!code-vb[EditorAttributesExample#5](~/add/codesnippet/visualbasic/t-system.windows.forms.d_100_1.vb)]
- [!code-cs[EditorAttributesExample#5](~/add/codesnippet/csharp/t-system.windows.forms.d_100_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.FileNameEditor" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,19 +48,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <param name="provider">A service provider object through which editing services may be obtained.</param>
-        <param name="value">An instance of the value being edited.</param>
-        <summary>Edits the specified object using the editor style provided by the <see cref="System.Windows.Forms.Design.FileNameEditor.GetEditStyle%2A" /> method.</summary>
-        <returns>The new value of the object. If the value of the object hasn't changed, this should return the same object it was passed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A service provider is provided so that any required editing services can be obtained.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="provider">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -89,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,17 +72,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editing style used by the <see cref="System.Windows.Forms.Design.FileNameEditor.EditValue%2A" /> method.</summary>
-        <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the provided editing style.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Windows.Forms.Design.FileNameEditor.EditValue%2A> method is not supported, this method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeDialog">
@@ -119,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,16 +94,9 @@
         <Parameter Name="openFileDialog" Type="System.Windows.Forms.OpenFileDialog" />
       </Parameters>
       <Docs>
-        <param name="openFileDialog">The <see cref="T:System.Windows.Forms.OpenFileDialog" /> to use to select a file name.</param>
-        <summary>Initializes the open file dialog when it is created.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method configures the dialog box with a generic file filter and title.  
-  
- ]]></format>
-        </remarks>
+        <param name="openFileDialog">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintingPermissionLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of printing that code is allowed to do.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Drawing.Printing.PrintingPermission> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllPrinting">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides full access to all printers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultPrinting">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides printing programmatically to the default printer, along with safe printing through semirestricted dialog box. DefaultPrinting is a subset of AllPrinting.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoPrinting">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Prevents access to printers. NoPrinting is a subset of SafePrinting.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SafePrinting">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides printing only from a restricted dialog box. SafePrinting is a subset of DefaultPrinting.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

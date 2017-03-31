@@ -15,18 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains the value returned by an XPath query.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a message and XPath message queries. The queries are evaluated by the <xref:System.ServiceModel.XPathMessageQuery> objects contained in an <xref:System.ServiceModel.Dispatcher.XPathMessageQueryCollection> object. The results of each query are tested using the <xref:System.ServiceModel.Dispatcher.XPathResult.ResultType%2A> property of the XPathResult class.  
-  
- [!code-vb[XPathMessageQuery#0](~/add/codesnippet/visualbasic/t-system.servicemodel.di_3_1.vb)]
- [!code-cs[XPathMessageQuery#0](~/add/codesnippet/csharp/t-system.servicemodel.di_3_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -43,7 +33,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources owed by the object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the result of the XPath query as a Boolean value.</summary>
-        <returns>
-          <see cref="T:System.Boolean" />
-        </returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,19 +70,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the result of the XPath query as an enumerable set of nodes.</summary>
-        <returns>
-          <see cref="T:System.Xml.XPath.XPathNodeIterator" />  
-  
- A collection of XPath nodes that can be iterated over.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Xml.XPath.XPathNodeIterator.MoveNext%2A> method of the <xref:System.Xml.XPath.XPathNodeIterator> class within a loop to see the value of each node.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResultAsNumber">
@@ -111,10 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the result of the XPath query as a number.</summary>
-        <returns>
-          <see cref="T:System.Double" />
-        </returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the result of the XPath query as a string.</summary>
-        <returns>Returns <see cref="T:System.String" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,11 +126,8 @@
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the type of the value returned by the XPath query.</summary>
-        <value>
-          <see cref="T:System.Xml.XPath.XPathResultType" />  
-  
- One of the enumeration values. To get the actual result, use the corresponding method. For example, if the value is <see cref="T:System.Xml.XPath.XPathResultType" />, use the <see cref="System.ServiceModel.Dispatcher.XPathResult.GetResultAsNumber%2A" /> method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

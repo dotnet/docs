@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides common designer loader functionality that can be used to implement custom workflow designer loaders.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Designer loader classes are used to load the designer and save any changes to the state of the designer when the user so instructs. The WorkflowDesignerLoader class can be implemented to support custom loading of a workflow designer and workflow designer components. A workflow designer loader is also responsible for writing changes to an open document back to the storage the loader used when loading the document after the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> method is called.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,23 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to create a new instance of a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> object. In this case, the `WorkflowLoader` class is derived from <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>. When the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> is created, a <xref:System.ComponentModel.Design.DesignSurface> is also created and associated with the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> using the `BeginLoad` method.  
-  
- [!code-cs[WF_Samples#47](~/add/codesnippet/csharp/wf_snippets/snippets.cs#47)]
- [!code-vb[WF_Samples#47](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#47)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddActivityToDesigner">
@@ -65,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,20 +51,9 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">
-          <see cref="T:System.Workflow.ComponentModel.Activity" /> to add.</param>
-        <summary>Adds an activity to the designer host after it has been added to the parent activities collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to add a <xref:System.Workflow.Activities.CodeActivity> to the designer. Before the activity is added to the designer using the AddActivityToDesigner method, it is first added to the Activities collection of the root activity within the workflow.  
-  
- [!code-cs[WF_Samples#55](~/add/codesnippet/csharp/wf_snippets/snippets.cs#55)]
- [!code-vb[WF_Samples#55](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#55)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -98,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,23 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Dispose releases all services used by the designer host, but it does not write pending changes to the designer loader. If you want to save any pending changes prior to releasing all resources, call <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> before you call Dispose.  
-  
-   
-  
-## Examples  
- The following example demonstrates an implementation of the Dispose method. In this implementation, various services that have been added to the LoaderHost object are removed in preparation for closing the application. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-cs[WF_Samples#121](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#121)]
- [!code-vb[WF_Samples#121](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#121)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -132,26 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the file name of the designer to load.</summary>
-        <value>A string that contains the file name of the designer to load.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the FileName property to return the path of the currently loaded workflow file used by the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>.  
-  
- [!code-cs[WF_Samples#32](~/add/codesnippet/csharp/wf_snippets/snippets.cs#32)]
- [!code-vb[WF_Samples#32](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#32)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -161,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,18 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Writes pending changes to the location that the designer was loaded from.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to override the Flush method to serialize a workflow using the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>. In this example, the overridden Flush delegates to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformFlush%2A> method defined in the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> derived class.  
-  
- [!code-cs[WF_Samples#35](~/add/codesnippet/csharp/wf_snippets/snippets.cs#35)]
- [!code-vb[WF_Samples#35](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#35)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForceReload">
@@ -190,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,7 +124,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, causes <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> to reload the designer.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,20 +144,10 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filePath">A string that contains a path to the file to read from.</param>
-        <summary>When overridden in a derived class, retrieves an object that <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> uses to read from the specified file.</summary>
-        <returns>A <see cref="T:System.IO.TextReader" /> to read the specified file.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create and return a `TextReader` object when the GetFileReader overloaded method is called.  
-  
- [!code-cs[WF_Samples#33](~/add/codesnippet/csharp/wf_snippets/snippets.cs#33)]
- [!code-vb[WF_Samples#33](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#33)]  
-  
- ]]></format>
-        </remarks>
+        <param name="filePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileWriter">
@@ -242,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,20 +166,10 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filePath">A string that contains the path to the file to write to.</param>
-        <summary>When overridden in a derived class, gets an object that the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> uses to write to the specified file.</summary>
-        <returns>A <see cref="T:System.IO.TextWriter" /> to write to the file.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows how to create and return a `TextWriter` object when the GetFileWriter overloaded method is called.  
-  
- [!code-cs[WF_Samples#34](~/add/codesnippet/csharp/wf_snippets/snippets.cs#34)]
- [!code-vb[WF_Samples#34](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#34)]  
-  
- ]]></format>
-        </remarks>
+        <param name="filePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InDebugMode">
@@ -275,27 +179,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the workflow should be loaded in debug mode.</summary>
-        <value>
-          <see langword="true" /> if the workflow should be loaded in debug mode; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following method determines whether the workflow designer is locked by the debugger if the InDebugMode property of the current `WorkflowDesignerLoader` returns `true`.  
-  
- [!code-cs[WF_Samples#54](~/add/codesnippet/csharp/wf_snippets/snippets.cs#54)]
- [!code-vb[WF_Samples#54](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#54)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -305,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,18 +204,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> with any services required by the designer loader host.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the Initialize method in a derived class to add the services needed for the designer. The services can vary based on the level of service support required by your application.  
-  
- [!code-cs[WF_Samples#31](~/add/codesnippet/csharp/wf_snippets/snippets.cs#31)]
- [!code-vb[WF_Samples#31](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#31)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadDesignerLayout">
@@ -334,7 +215,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,20 +225,10 @@
         <Parameter Name="layoutLoadErrors" Type="System.Collections.IList&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="layoutReader">An <see cref="T:System.Xml.XmlReader" /> that is created for the serialized layout.</param>
-        <param name="layoutLoadErrors">List of errors that occurred during the deserialization.</param>
-        <summary>Applies the serialized layout to the root designer in the current designer host.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to load the layout for a specific workflow definition using the LoadDesignerLayout method. An <xref:System.Xml.XmlReader> object is created using the file name of a designer layout file that was created using <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A>. When the layout has finished loading, any errors that might have occurred are displayed to the user.  
-  
- [!code-cs[WF_Samples#39](~/add/codesnippet/csharp/wf_snippets/snippets.cs#39)]
- [!code-vb[WF_Samples#39](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#39)]  
-  
- ]]></format>
-        </remarks>
+        <param name="layoutReader">To be added.</param>
+        <param name="layoutLoadErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadDesignerLayoutFromResource">
@@ -368,7 +238,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -380,11 +249,10 @@
         <Parameter Name="errors" Type="System.Collections.IList&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="type">
-          <see cref="T:System.Type" /> that the resource is associated with.</param>
-        <param name="manifestResourceName">Name of the resource.</param>
-        <param name="errors">Errors encountered during the call to <see cref="System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A" />.</param>
-        <summary>Retrieves the specified resource and calls the <see cref="System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A" /> method that applies the serialized layout to the root designer in the current designer host.</summary>
+        <param name="type">To be added.</param>
+        <param name="manifestResourceName">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,7 +263,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,21 +273,10 @@
         <Parameter Name="errors" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="successful">
-          <see langword="true" /> if load operation is successful; otherwise, <see langword="false" />.</param>
-        <param name="errors">Contains the load errors.</param>
-        <summary>Called when loading of the designer is completed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to override the OnEndLoad method to display errors that might have occurred during the loading of a workflow.  
-  
- [!code-cs[WF_Samples#36](~/add/codesnippet/csharp/wf_snippets/snippets.cs#36)]
- [!code-vb[WF_Samples#36](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#36)]  
-  
- ]]></format>
-        </remarks>
+        <param name="successful">To be added.</param>
+        <param name="errors">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformFlush">
@@ -430,7 +286,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -440,19 +295,9 @@
         <Parameter Name="serializationManager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">Class that implements the <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> interface, which manages design-time serialization.</param>
-        <summary>Writes cached changes to the location that the designer was loaded from.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to override the PerformFlush method to serialize the workflow using the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>.  
-  
- [!code-cs[WF_Samples#35](~/add/codesnippet/csharp/wf_snippets/snippets.cs#35)]
- [!code-vb[WF_Samples#35](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#35)]  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationManager">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformLoad">
@@ -462,7 +307,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,19 +316,9 @@
         <Parameter Name="serializationManager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">Class that implements the <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> interface, which manages design-time serialization.</param>
-        <summary>Loads the designer from a design document.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to override the `PerformLoad` method to deserialize a workflow and load it in the designer using the `AddObjectGraphToDesignerHost` helper method.  
-  
- [!code-cs[WF_Samples#37](~/add/codesnippet/csharp/wf_snippets/snippets.cs#37)]
- [!code-vb[WF_Samples#37](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#37)]  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationManager">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveActivityFromDesigner">
@@ -494,7 +328,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -504,19 +337,9 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">Activity to be removed from the designer.</param>
-        <summary>Removes an activity from the designer host after it has been added to the parent activities collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to remove an activity from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>. Before the last child activity in the workflow is removed from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>, it is first removed from the workflow <xref:System.Workflow.ComponentModel.CompositeActivity.Activities%2A> collection.  
-  
- [!code-cs[WF_Samples#40](~/add/codesnippet/csharp/wf_snippets/snippets.cs#40)]
- [!code-vb[WF_Samples#40](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#40)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveDesignerLayout">
@@ -526,7 +349,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,22 +360,11 @@
         <Parameter Name="layoutSaveErrors" Type="System.Collections.IList&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="layoutWriter">
-          <see langword="XmlWriter" /> that is used to serialize the layout into.</param>
-        <param name="rootDesigner">Root activity from which you get the layout information.</param>
-        <param name="layoutSaveErrors">Errors encountered during serialization.</param>
-        <summary>Serializes the designer layout.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to save the design layout information of a workflow using the SaveDesignerLayout method. After the <xref:System.Xml.XmlWriter> object is created, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> for the `RootComponent` of the workflow is retrieved and passed to the SaveDesignerLayout method. To load the layout file that is generated by this method, see <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A>.  
-  
- [!code-cs[WF_Samples#38](~/add/codesnippet/csharp/wf_snippets/snippets.cs#38)]
- [!code-vb[WF_Samples#38](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#38)]  
-  
- ]]></format>
-        </remarks>
+        <param name="layoutWriter">To be added.</param>
+        <param name="rootDesigner">To be added.</param>
+        <param name="layoutSaveErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkTypeDescriptionProvider">
@@ -569,8 +380,8 @@
         <ReturnType>System.ComponentModel.TypeDescriptionProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ComponentModel.TypeDescriptor" /> metadata of the target [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)].</summary>
-        <value>The <see cref="T:System.ComponentModel.TypeDescriptor" /> metadata of the target [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

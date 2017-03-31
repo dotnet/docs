@@ -16,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Declares the identifier and the prefix of a XAML namespace by storing these string values as separate properties.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- NamespaceDeclaration represents XAML namespace information as part of a XAML node stream. The NamespaceDeclaration class is a node type that is not truly an object or member; instead, it is a discrete node type.  
-  
- In the XAML node stream, a NamespaceDeclaration is encountered just prior to the object or member to which that XAML namespace applies.  
-  
- By convention, the identifier of a XAML namespace resembles a Uniform Resource Identifier (URI). However, the <xref:System.Xaml.NamespaceDeclaration.Namespace%2A> property of NamespaceDeclaration is of type <xref:System.String>. The APIs of .NET Framework XAML Services usually treat XAML namespace identifiers as strings. The relative versus absolute distinctions in the true <xref:System.Uri> type are irrelevant for identifying a XAML (or XML) namespace. The URI-as-namespace convention is also typical in XML.  
-  
- Objects of this type are used as input for the <xref:System.Xaml.XamlObjectWriter.WriteNamespace%2A?displayProperty=fullName> method when writing XAML node stream information into an object graph. Objects of this type are used as input for the <xref:System.Xaml.XamlXmlWriter.WriteNamespace%2A?displayProperty=fullName> method when writing XAML node stream information as XML for serialization.  
-  
- A namespace declaration may have a <xref:System.String.Empty?displayProperty=fullName> value for the prefix. A <xref:System.String.Empty?displayProperty=fullName> prefix represents a declaration of the default XAML namespace.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,17 +34,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ns">The XAML namespace identifier, as a string.</param>
-        <param name="prefix">The string prefix that is used for the namespace in prefix mappings.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.NamespaceDeclaration" /> class using initial property values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initialization of <xref:System.Xaml.NamespaceDeclaration> does not attempt to validate values. To correctly use a XAML writer, do not use null values. A namespace declaration may have a <xref:System.String.Empty?displayProperty=fullName> value for the prefix. A <xref:System.String.Empty?displayProperty=fullName> prefix represents a declaration of the default XAML namespace.  
-  
- ]]></format>
-        </remarks>
+        <param name="ns">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -75,16 +53,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the identifier component of a <see cref="T:System.Xaml.NamespaceDeclaration" />.</summary>
-        <value>The identifier of the XAML namespace declaration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By convention, the identifier for a XAML namespace resembles a Uniform Resource Identifier (URI). The APIs of .NET Framework XAML Services usually treat XAML namespace identifiers as strings. The relative versus absolute distinctions in the true <xref:System.Uri> type are irrelevant for identifying a XAML (or XML) namespace. The URI-as-namespace convention is also typical in XML.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -100,16 +71,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the prefix that is used as the XAML namespace mapping prefix for a <see cref="T:System.Xaml.NamespaceDeclaration" />.</summary>
-        <value>The prefix string for this <see cref="T:System.Xaml.NamespaceDeclaration" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A namespace declaration may have a <xref:System.String.Empty?displayProperty=fullName> value for the prefix. A <xref:System.String.Empty?displayProperty=fullName> prefix represents a declaration of the default XAML namespace.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

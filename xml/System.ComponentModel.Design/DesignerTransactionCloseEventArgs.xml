@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -17,25 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> and <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> event occurs when a designer finalizes a transaction.  
-  
-   
-  
-## Examples  
- The following code example demonstrates creating a DesignerTransactionCloseEventArgs.  
-  
- [!code-vb[DesignerTransactionCloseEventArgsExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._167_1.vb)]
- [!code-cs[DesignerTransactionCloseEventArgsExample#1](~/add/codesnippet/csharp/t-system.componentmodel._167_1.cs)]
- [!code-cpp[DesignerTransactionCloseEventArgsExample#1](~/add/codesnippet/cpp/t-system.componentmodel._167_1.cpp)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,8 +32,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -57,10 +48,9 @@
         <Parameter Name="commit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="commit">A value indicating whether the transaction was committed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class, using the specified value that indicates whether the designer called <see cref="System.ComponentModel.Design.DesignerTransaction.Commit%2A" /> on the transaction.</summary>
+        <param name="commit">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,27 +60,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="commit" Type="System.Boolean" />
         <Parameter Name="lastTransaction" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="commit">A value indicating whether the transaction was committed.</param>
-        <param name="lastTransaction">
-          <see langword="true" /> if this is the last transaction to close; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `commit` is `true`, the <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction%2A> property defaults to `true`.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+        <param name="commit">To be added.</param>
+        <param name="lastTransaction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastTransaction">
@@ -100,18 +85,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this is the last transaction to close.</summary>
-        <value>
-          <see langword="true" />, if this is the last transaction to close; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="TransactionCommitted">
@@ -121,18 +108,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the designer called <see cref="System.ComponentModel.Design.DesignerTransaction.Commit%2A" /> on the transaction.</summary>
-        <value>
-          <see langword="true" /> if the designer called <see cref="System.ComponentModel.Design.DesignerTransaction.Commit%2A" /> on the transaction; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
       </Docs>
     </Member>
   </Members>

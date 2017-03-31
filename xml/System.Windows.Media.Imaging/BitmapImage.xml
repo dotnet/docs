@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapImage" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,30 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a specialized <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that is optimized for loading images using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BitmapImage primarily exists to support [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] syntax and introduces additional properties for bitmap loading that are not defined by <xref:System.Windows.Media.Imaging.BitmapSource>.  
-  
- BitmapImage implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
-  
- BitmapImage objects created using the <xref:System.Windows.Media.Imaging.BitmapImage.%23ctor%2A> constructor are automatically initialized and property changes are ignored.  
-  
-   
-  
-## Examples  
- The following code examples demonstrate how to use a BitmapImage in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[ImageElementExample#SimpleXAML2](~/add/codesnippet/xaml/ImageElementExample.ImageElementExample/SimpleImageExample.xaml#simplexaml2)]
- [!code-xml[ImageElementExample#SimpleXAML2](~/add/codesnippet/xaml/ImageElementExample.ImageElementExample/SimpleImageExample.xaml#simplexaml2)]  
-  
- [!code-cs[ImageElementExample#SimpleCSharp1](~/add/codesnippet/csharp/ImageElementExample.ImageElementExample/SimpleImageExample.xaml.cs#simplecsharp1)]
- [!code-vb[ImageElementExample#SimpleCSharp1](~/add/codesnippet/visualbasic/ImageElementExample.ImageElementExample/SimpleImageExample.xaml.vb#simplecsharp1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,20 +29,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.BitmapImage> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,25 +44,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="uriSource" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uriSource">The <see cref="T:System.Uri" /> to use as the source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class by using the supplied <see cref="T:System.Uri" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="uriSource" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">The file specified by the <paramref name="uriSource" /> parameter is not found.</exception>
+        <param name="uriSource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,7 +62,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,21 +69,10 @@
         <Parameter Name="uriCachePolicy" Type="System.Net.Cache.RequestCachePolicy" />
       </Parameters>
       <Docs>
-        <param name="uriSource">The <see cref="T:System.Uri" /> to use as the source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</param>
-        <param name="uriCachePolicy">The <see cref="T:System.Net.Cache.RequestCachePolicy" /> that specifies the caching requirements for images that are obtained using HTTP.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class with an image whose source is a <see cref="T:System.Uri" />, and is cached according to the provided <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
- BitmapImage is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="uriSource" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">The file specified by the <paramref name="uriSource" /> parameter is not found.</exception>
+        <param name="uriSource">To be added.</param>
+        <param name="uriCachePolicy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -135,15 +82,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the base <see cref="T:System.Uri" /> of the current <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> context.</summary>
-        <value>The base <see cref="T:System.Uri" /> of the current context.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,28 +107,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the start of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Property initialization must be done between BeginInit and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.BitmapImage> has been initialized, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.BitmapImage> with a set of properties by using the BeginInit and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> methods.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> is currently being initialized. BeginInit has already been called.  
-  
- -or-  
-  
- The <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> has already been initialized.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheOption">
@@ -193,39 +118,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> to use for this instance of <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</summary>
-        <value>The <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> being used for the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the CacheOption to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
-  
-<a name="dependencyPropertyInfo_CacheOption"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.CacheOptionProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the CacheOption of a <xref:System.Windows.Media.Imaging.BitmapImage> by using code.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheOptionProperty">
@@ -235,14 +136,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.CacheOption%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,20 +160,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.BitmapImage" />, making deep copies of this object's values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property is <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property is <see langword="true." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -284,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,7 +193,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,18 +200,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property is <see langword="false" /> even if the source's <see cref="System.Windows.Freezable.IsFrozen%2A" /> property is <see langword="true" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -335,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -377,38 +252,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCreateOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> for a <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</summary>
-        <value>The <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> used for this <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_CreateOptions"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.CreateOptionsProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the CreateOptions of a <xref:System.Windows.Media.Imaging.BitmapImage> by using code.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOptionsProperty">
@@ -418,14 +270,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.CreateOptions%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,41 +287,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height, in pixels, that the image is decoded to.</summary>
-        <value>The height, in pixels, that the image is decoded to. The default value is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> is not set, the aspect ratio remains the same.  
-  
- The [!INCLUDE[TLA#tla_jpeg](~/add/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/add/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
-  
-<a name="dependencyPropertyInfo_DecodePixelHeight"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeightProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the DecodePixelHeight property by using code.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecodePixelHeightProperty">
@@ -480,14 +305,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,41 +322,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width, in pixels, that the image is decoded to.</summary>
-        <value>The width, in pixels, that the image is decoded to. The default value is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
-  
- The [!INCLUDE[TLA#tla_jpeg](~/add/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/add/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
-  
-<a name="dependencyPropertyInfo_DecodePixelWidth"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidthProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to set the DecodePixelWidth property by using code.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecodePixelWidthProperty">
@@ -542,14 +340,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,7 +357,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -568,28 +364,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the end of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and EndInit calls. Once the <xref:System.Windows.Media.Imaging.BitmapImage> has been initialized, property changes are ignored.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.BitmapImage> with a set of properties by using the <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and EndInit methods.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Windows.Media.Imaging.BitmapImage.UriSource%2A" /> or <see cref="System.Windows.Media.Imaging.BitmapImage.StreamSource%2A" /> properties are <see langword="null" />.  
-  
- -or-  
-  
- The EndInit method is called without first calling <see cref="System.Windows.Media.Imaging.BitmapImage.BeginInit%2A" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -599,7 +375,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -621,7 +396,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -643,27 +417,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> is currently downloading content.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> is downloading content; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to check the value of the IsDownloading property by using code. The value of the property is emitted to a <xref:System.Windows.MessageBox> as a <xref:System.String>.  
-  
- [!code-cs[BitmapImageProps#1](~/add/codesnippet/csharp/BitmapImageProps/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/add/codesnippet/visualbasic/BitmapImageProps/BitmapImageProps.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -673,17 +435,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.ImageMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not supported. <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> does not support the Metadata property and will throw a <see cref="T:System.NotSupportedException" />.</summary>
-        <value>Not supported.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">An attempt to read the Metadata occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -693,41 +453,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the angle that this <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> is rotated to.</summary>
-        <value>The rotation that is used for the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="T:System.Windows.Media.Imaging.Rotation" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rotation is performed after scaling. This means that an image that has a Rotation of <xref:System.Windows.Media.Imaging.Rotation>, a <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> of 10, and <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> of 5 will result in an image that has a width of 5 and a height of 10.  
-  
-<a name="dependencyPropertyInfo_Rotation"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.RotationProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to rotate an image by using [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[ImageElementExample#TransformedXAML2](~/add/codesnippet/xaml/ImageElementExample.ImageElementExample/TransformedImageExample.xaml#transformedxaml2)]  
-  
- [!code-cs[ImageElementExample#TransformedCSharp1](~/add/codesnippet/csharp/ImageElementExample.ImageElementExample/TransformedImageExample.xaml.cs#transformedcsharp1)]
- [!code-vb[ImageElementExample#TransformedCSharp1](~/add/codesnippet/visualbasic/ImageElementExample.ImageElementExample/TransformedImageExample.xaml.vb#transformedcsharp1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationProperty">
@@ -737,14 +471,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.Rotation%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -755,30 +488,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Int32Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rectangle that is used as the source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</summary>
-        <value>The rectangle that is used as the source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="System.Windows.Int32Rect.Empty%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_SourceRect"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.SourceRectProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceRectProperty">
@@ -788,14 +506,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.SourceRect%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -806,7 +523,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -818,26 +534,9 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the stream source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</summary>
-        <value>The stream source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If StreamSource and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the StreamSource value is ignored.  
-  
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
-  
-<a name="dependencyPropertyInfo_StreamSource"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.StreamSourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StreamSourceProperty">
@@ -847,14 +546,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.StreamSource%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -865,7 +563,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -877,16 +574,9 @@
         <ReturnType>System.Net.Cache.RequestCachePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the caching policy for images that come from an HTTP source.</summary>
-        <value>The base <see cref="T:System.Net.Cache.RequestCachePolicy" /> of the current context. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UriCachePolicy is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UriCachePolicyProperty">
@@ -896,22 +586,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.UriCachePolicy%2A" /> dependency property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UriCachePolicyProperty is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UriSource">
@@ -921,42 +603,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Uri" /> source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />.</summary>
-        <value>The <see cref="T:System.Uri" /> source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and UriSource are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
-  
-<a name="dependencyPropertyInfo_IsDownloading"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.UriSourceProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example demonstrates the use the UriSource property in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[imageelementexample#SimpleXAML2](~/add/codesnippet/xaml/ImageElementExample.ImageElementExample/SimpleImageExample.xaml#simplexaml2)]
- [!code-xml[imageelementexample#SimpleXAML2](~/add/codesnippet/xaml/ImageElementExample.ImageElementExample/SimpleImageExample.xaml#simplexaml2)]  
-  
- [!code-cs[imageelementexample#SimpleCSharp1](~/add/codesnippet/csharp/ImageElementExample.ImageElementExample/SimpleImageExample.xaml.cs#simplecsharp1)]
- [!code-vb[imageelementexample#SimpleCSharp1](~/add/codesnippet/visualbasic/ImageElementExample.ImageElementExample/SimpleImageExample.xaml.vb#simplecsharp1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UriSourceProperty">
@@ -966,14 +621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Media.Imaging.BitmapImage.UriSource%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConsoleModifiers extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ConsoleModifiers" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,26 +24,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the SHIFT, ALT, and CTRL modifier keys on a keyboard.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No distinction is made between the left or right SHIFT, ALT, and CTRL keys.  
-  
- The ConsoleModifiers enumeration is used in conjunction with the <xref:System.ConsoleKeyInfo> type.  
-  
-   
-  
-## Examples  
- The following code example reads a key and determines whether one or more modifier keys was pressed.  
-  
- [!code-cs[console.readkey1#1](~/add/codesnippet/csharp/t-system.consolemodifiers_1.cs)]
- [!code-cpp[console.readkey1#1](~/add/codesnippet/cpp/t-system.consolemodifiers_1.cpp)]
- [!code-vb[console.readkey1#1](~/add/codesnippet/visualbasic/t-system.consolemodifiers_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Alt">
@@ -44,15 +34,23 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left or right ALT modifier key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -61,15 +59,23 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left or right CTRL modifier key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shift">
@@ -78,15 +84,23 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left or right SHIFT modifier key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

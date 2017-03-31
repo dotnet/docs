@@ -4,35 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltArgumentList" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a variable number of arguments which are either XSLT parameters or extension objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used by the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. It allows parameters and extension objects to be invoked from within the style sheet.  
-  
- When the parameters and objects are added to the XsltArgumentList, they are associated with a namespace qualified name and a namespace URI, respectively.  
-  
- The following are advantages to passing an object rather than using an embedded script such as `<msxsl:script>`:  
-  
--   Provides better encapsulation and reuse of classes.  
-  
--   Allows style sheets to be smaller and more easily maintained.  
-  
--   Supports passing node fragments (through the <xref:System.Xml.XPath.XPathNavigator>) to the style sheet.  
-  
- For more information about using the XsltArgumentList, see [XSLT Extension Objects](../Topic/XSLT%20Extension%20Objects.md) and [XSLT Parameters](../Topic/XSLT%20Parameters.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Implements a new instance of the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +47,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -69,39 +62,10 @@
         <Parameter Name="extension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="namespaceUri">The namespace URI to associate with the object. To use the default namespace, specify an empty string.</param>
-        <param name="extension">The object to add to the list.</param>
-        <summary>Adds a new object to the <see cref="T:System.Xml.Xsl.XsltArgumentList" /> and associates it with the namespace URI.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `params` keyword, which allows an unspecified number of parameters to be passed, is currently not supported. XSLT style sheets that utilize methods defined with the `params` keyword does not work correctly. For more information, see [params](../Topic/params%20\(C%23%20Reference\).md).  
-  
-   
-  
-## Examples  
- In the following example, the style sheet uses an XSLT extension object to convert the book price.  
-  
- [!code-vb[XsltArgumentList.AddExtensionObject#1](~/add/codesnippet/visualbasic/207575d1-290f-43a6-bf00-_1.vb)]
- [!code-cs[XsltArgumentList.AddExtensionObject#1](~/add/codesnippet/csharp/207575d1-290f-43a6-bf00-_1.cs)]  
-  
- The example uses the following data files as input.  
-  
- `books.xml`  
-  
- [!code-xml[XsltArgumentList.AddExtensionObject#2](~/add/codesnippet/xml/207575d1-290f-43a6-bf00-_2.xml)]  
-  
- `prices.xsl`  
-  
- [!code-xml[XsltArgumentList.AddExtensionObject#3](~/add/codesnippet/xml/207575d1-290f-43a6-bf00-_3.xsl)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="namespaceUri" /> is either <see langword="null" /> or http://www.w3.org/1999/XSL/Transform  
-  
- The <paramref name="namespaceUri" /> already has an extension object associated with it.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have sufficient permissions to call this method.</exception>
+        <param name="namespaceUri">To be added.</param>
+        <param name="extension">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddParam">
@@ -111,8 +75,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -123,62 +91,11 @@
         <Parameter Name="parameter" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name to associate with the parameter.</param>
-        <param name="namespaceUri">The namespace URI to associate with the parameter. To use the default namespace, specify an empty string.</param>
-        <param name="parameter">The parameter value or object to add to the list.</param>
-        <summary>Adds a parameter to the <see cref="T:System.Xml.Xsl.XsltArgumentList" /> and associates it with the namespace qualified name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `parameter` should correspond to a W3C type. The following table shows the W3C types, either XPath or XSLT, and the corresponding.NET class.  
-  
-|W3C Type|Equivalent.NET Class (Type)|  
-|--------------|-----------------------------------|  
-|`String` (XPath)|<xref:System.String>|  
-|`Boolean` (XPath)|<xref:System.Boolean>|  
-|`Number` (XPath)|<xref:System.Double>|  
-|`Result Tree Fragment` (XSLT)|<xref:System.Xml.XPath.XPathNavigator>|  
-|`Node Set` (XPath)|<xref:System.Xml.XPath.XPathNodeIterator><br /><br /> `XPathNavigator[]`|  
-|`Node`* (XPath)|<xref:System.Xml.XPath.XPathNavigator>|  
-  
- *This is equivalent to a node set that contains a single node.  
-  
- If the parameter object being invoked from within the style sheet  is not one of the above, it is converted according to the following rules:  
-  
--   CLR numeric types are converted to <xref:System.Double>.  
-  
--   The <xref:System.DateTime> type is converted to <xref:System.String>.  
-  
--   <xref:System.Xml.XPath.IXPathNavigable> types are converted to <xref:System.Xml.XPath.XPathNavigator>. `XPathNavigator[]` is converted to <xref:System.Xml.XPath.XPathNodeIterator>.  
-  
- All other types throw an error.  
-  
-   
-  
-## Examples  
- The following example uses the AddParam method to create a parameter representing the current date and time.  
-  
- [!code-vb[XsltArgumentList.AddParam#1](~/add/codesnippet/visualbasic/8ec8daf9-d9bd-4ab5-82ff-_1.vb)]
- [!code-cs[XsltArgumentList.AddParam#1](~/add/codesnippet/csharp/8ec8daf9-d9bd-4ab5-82ff-_1.cs)]  
-  
- The example uses the following two data files as input.  
-  
- `order.xml`  
-  
- [!code-xml[XsltArgumentList.AddParam#2](~/add/codesnippet/xml/8ec8daf9-d9bd-4ab5-82ff-_2.xml)]  
-  
- `order.xsl`  
-  
- [!code-xml[XsltArgumentList.AddParam#3](~/add/codesnippet/xml/8ec8daf9-d9bd-4ab5-82ff-_3.xsl)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="namespaceUri" /> is either <see langword="null" /> or http://www.w3.org/1999/XSL/Transform.  
-  
- The <paramref name="name" /> is not a valid name according to the W3C XML specification.  
-  
- The <paramref name="namespaceUri" /> already has a parameter associated with it.</exception>
+        <param name="name">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -188,15 +105,19 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all parameters and extension objects from the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +128,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -217,9 +142,9 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="namespaceUri">The namespace URI of the object.</param>
-        <summary>Gets the object associated with the given namespace.</summary>
-        <returns>The namespace URI object or <see langword="null" /> if one was not found.</returns>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +155,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -241,10 +170,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter. <see cref="T:System.Xml.Xsl.XsltArgumentList" /> does not check to ensure the name passed is a valid local name; however, the name cannot be <see langword="null" />.</param>
-        <param name="namespaceUri">The namespace URI associated with the parameter.</param>
-        <summary>Gets the parameter associated with the namespace qualified name.</summary>
-        <returns>The parameter object or <see langword="null" /> if one was not found.</returns>
+        <param name="name">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +184,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -265,9 +198,9 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="namespaceUri">The namespace URI associated with the object to remove.</param>
-        <summary>Removes the object with the namespace URI from the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
-        <returns>The object with the namespace URI or <see langword="null" /> if one was not found.</returns>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,8 +211,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -289,10 +226,10 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter to remove. <see cref="T:System.Xml.Xsl.XsltArgumentList" /> does not check to ensure the name passed is a valid local name; however, the name cannot be <see langword="null" />.</param>
-        <param name="namespaceUri">The namespace URI of the parameter to remove.</param>
-        <summary>Removes the parameter from the <see cref="T:System.Xml.Xsl.XsltArgumentList" />.</summary>
-        <returns>The parameter object or <see langword="null" /> if one was not found.</returns>
+        <param name="name">To be added.</param>
+        <param name="namespaceUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,22 +240,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.XsltMessageEncounteredEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a message is specified in the style sheet by the <c>xsl:message</c> element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the event is not registered, all messages are piped to standard out.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

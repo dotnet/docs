@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlWindowCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the windows contained within another <see cref="T:System.Windows.Forms.HtmlWindow" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An HTML document may consist of a `FRAMESET` that defines multiple fixed `FRAME` objects, each of which contains its own HTML page. Alternatively, a document may contain a number of `IFRAME` objects, which can position documents arbitrarily inside of other documents. `FRAME` objects and `IFRAME` objects are represented at their top-most level by an HtmlWindowCollection, which contains elements of type <xref:System.Windows.Forms.HtmlWindow>.  
-  
- HtmlWindowCollection supports the <xref:System.Collections.IEnumerator> interface so that it can be used in loop constructs. It also defines an Item method, which allows access to the elements of the collection either via a method call or using standard array syntax.  
-  
- If you create new windows with the <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods, and the documents hosted by these windows contain `FRAME` or `IFRAME` elements, that these elements will appear in the HtmlWindowCollection of the parent page.  
-  
- For more information on frames, see the documentation for the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> property.  
-  
-   
-  
-## Examples  
- The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
-  
- [!code-vb[System.Windows.Forms.HtmlWindow#2](~/add/codesnippet/visualbasic/HtmlWindowProject/Form1.vb#2)]
- [!code-cs[System.Windows.Forms.HtmlWindow#2](~/add/codesnippet/csharp/HtmlWindowProjectCSharp/Form1.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -48,15 +26,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of elements in the collection.</summary>
-        <value>The number of <see cref="T:System.Windows.Forms.HtmlWindow" /> objects in the current <see cref="T:System.Windows.Forms.HtmlWindowCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through all elements in the <see cref="T:System.Windows.Forms.HtmlWindowCollection" />.</summary>
-        <returns>The <see cref="T:System.Collections.IEnumerator" /> that enables enumeration of this collection's elements.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +63,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,21 +72,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The position of the <see cref="T:System.Windows.Forms.HtmlWindow" /> within the collection.</param>
-        <summary>Retrieves a frame window by supplying the frame's position in the collection.</summary>
-        <value>The <see cref="T:System.Windows.Forms.HtmlWindow" /> corresponding to the requested frame.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Forms.HtmlWindowCollection> is a zero-based collection. If there are *N* elements in the collection, valid arguments to Item are the integers from 0 to *N*-1.  
-  
- Windows are not laid out in <xref:System.Windows.Forms.HtmlWindowCollection> in any predetermined order.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is greater than the number of items in the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -121,7 +85,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,19 +94,10 @@
         <Parameter Name="windowId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="windowId">The name of the <see cref="T:System.Windows.Forms.HtmlWindow" /> to retrieve.</param>
-        <summary>Retrieves a frame window by supplying the frame's name.</summary>
-        <value>The <see cref="T:System.Windows.Forms.HtmlWindow" /> element corresponding to the supplied name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Item will return a single element whose <xref:System.Windows.Forms.HtmlElement.Name%2A> property corresponds to `elementId`. If the document contains multiple elements with the same name, Item will return only the first one in the collection. If you need to retrieve all elements with a <xref:System.Windows.Forms.HtmlElement.Name%2A> property of `windowId`, use the <xref:System.Windows.Forms.HtmlElementCollection.GetElementsByName%2A> method instead.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="windowId" /> is not the name of a <see langword="Frame" /> object in the current document or in any of its children.</exception>
+        <param name="windowId">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -153,7 +107,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,9 +117,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from collection. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <see langword="Array" /> at which copying begins.</param>
-        <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,16 +130,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,15 +148,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
-        <value>An object that can be used to synchronize access to the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

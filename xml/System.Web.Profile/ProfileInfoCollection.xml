@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileInfoCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,25 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A collection of <see cref="T:System.Web.Profile.ProfileInfo" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ProfileInfoCollection object contains <xref:System.Web.Profile.ProfileInfo> objects that represent user profiles from a data source. A ProfileInfoCollection is returned from the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of a <xref:System.Web.Profile.ProfileProvider>.  
-  
- A ProfileInfoCollection can be supplied to the <xref:System.Web.Profile.ProfileProvider.DeleteProfiles%2A> method to delete profile information and properties from the data source.  
-  
-   
-  
-## Examples  
- The following code example allows a user to search for profiles using the <xref:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName%2A> and <xref:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName%2A> methods. The user can pass the ProfileInfoCollection returned by the `find` methods to the <xref:System.Web.Profile.SqlProfileProvider.DeleteProfiles%2A> method to delete the associated profiles from the data source.  
-  
- [!code-vb[System.Web.Profile.SqlProfileProvider#4](~/add/codesnippet/visualbasic/t-system.web.profile.pro_3_1.aspx)]
- [!code-cs[System.Web.Profile.SqlProfileProvider#4](~/add/codesnippet/csharp/t-system.web.profile.pro_3_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,25 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new, empty <see cref="T:System.Web.Profile.ProfileInfoCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.Profile.ProfileInfoCollection> is constructed by profile provider implementers and returned from the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
-  
-   
-  
-## Examples  
- For an example of a <xref:System.Web.Profile.ProfileProvider> implementation that creates a <xref:System.Web.Profile.ProfileInfoCollection> for user profiles in a data store, see [Implementing a Profile Provider](../Topic/Implementing%20a%20Profile%20Provider.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -72,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,29 +50,9 @@
         <Parameter Name="profileInfo" Type="System.Web.Profile.ProfileInfo" />
       </Parameters>
       <Docs>
-        <param name="profileInfo">A <see cref="T:System.Web.Profile.ProfileInfo" /> object to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Profile.ProfileInfo" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Add method is commonly used by profile-provider implementers to populate a <xref:System.Web.Profile.ProfileInfoCollection> to return from the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, or <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> method of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
-  
-   
-  
-## Examples  
- For an example of a <xref:System.Web.Profile.ProfileProvider> implementation that creates a <xref:System.Web.Profile.ProfileInfoCollection> for user profiles in a data store, see [Implementing a Profile Provider](../Topic/Implementing%20a%20Profile%20Provider.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
-        <exception cref="T:System.ArgumentException">A <see cref="T:System.Web.Profile.ProfileInfo" /> object with the same <see cref="System.Web.Profile.ProfileInfo.UserName%2A" /> value as <paramref name="profileInfo" /> already exists in the collection.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="profileInfo" /> is <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="System.Web.Profile.ProfileInfo.UserName%2A" /> property of <paramref name="profileInfo" /> is <see langword="null" />.</exception>
+        <param name="profileInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -114,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,9 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Web.Profile.ProfileInfo" /> objects from the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -134,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,17 +90,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Web.Profile.ProfileInfoCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in array at which copying begins.</param>
-        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy <xref:System.Web.Profile.ProfileInfo> objects to the specified <xref:System.Array>.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -165,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,17 +113,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">A one-dimensional array of type <see cref="T:System.Web.Profile.ProfileInfo" /> that is the destination of the elements copied from the <see cref="T:System.Web.Profile.ProfileInfoCollection" />. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in the <c>array</c> at which copying begins.</param>
-        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array of type <see cref="T:System.Web.Profile.ProfileInfo" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy <xref:System.Web.Profile.ProfileInfo> objects to the specified array.  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -196,15 +126,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of <see cref="T:System.Web.Profile.ProfileInfo" /> objects in the collection.</summary>
-        <value>The number of <see cref="T:System.Web.Profile.ProfileInfo" /> objects in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +144,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,16 +151,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumerator that can iterate through the <see cref="T:System.Web.Profile.ProfileInfoCollection" />.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:System.Web.Profile.ProfileInfoCollection" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection. For more information, see <xref:System.Collections.IEnumerator>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -242,23 +163,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the profile info collection is thread safe.</summary>
-        <value>Always <see langword="false" />, because thread-safe profile info collections are not supported.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Application code does not normally use this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -268,7 +181,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,9 +190,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The <see cref="System.Web.Profile.ProfileInfo.UserName%2A" /> of the <see cref="T:System.Web.Profile.ProfileInfo" /> object to retrieve from the collection.</param>
-        <summary>Gets the <see cref="T:System.Web.Profile.ProfileInfo" /> object in the collection, referenced by the specified <see cref="System.Web.Profile.ProfileInfo.UserName%2A" />.</summary>
-        <value>A <see cref="T:System.Web.Profile.ProfileInfo" /> object for the specified user name. If name is not found in the collection, <see langword="null" /> is returned.</value>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,10 +212,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The <see cref="System.Web.Profile.ProfileInfo.UserName%2A" /> of the <see cref="T:System.Web.Profile.ProfileInfo" /> object to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Profile.ProfileInfo" /> object with the specified user name from the collection.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetReadOnly">
@@ -314,7 +224,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,15 +231,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Makes the contents of the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SetReadOnly method marks the <xref:System.Web.Profile.ProfileInfoCollection> as read-only so that <xref:System.Web.Profile.ProfileInfo> objects cannot be added to or removed from the collection. After calling the SetReadOnly method, you cannot change the <xref:System.Web.Profile.ProfileInfoCollection> back to read/write.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -340,23 +242,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the synchronization root.</summary>
-        <value>Always <see langword="this" /> (<see langword="Me" /> in Visual Basic), because synchronization of <see cref="T:System.Web.Profile.ProfileInfoCollection" /> objects is not supported.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Application code does not normally use this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

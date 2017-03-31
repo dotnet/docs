@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.FlowControl" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides services to the Visual Basic compiler for compiling <see langword="For...Next" /> and <see langword="For Each" /> loops.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CheckForSyncLockOnValueType">
@@ -35,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,16 +36,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The data type for which to check for synchronization lock.</param>
-        <summary>Checks for a synchronization lock on the specified type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForEachInArr">
@@ -64,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,17 +57,10 @@
         <Parameter Name="ary" Type="System.Array" />
       </Parameters>
       <Docs>
-        <param name="ary">An array being iterated over in a <see langword="For Each" /> loop.</param>
-        <summary>Gets the enumerator for an array being iterated over in a <see langword="For Each" /> loop.</summary>
-        <returns>The enumerator for <paramref name="ary" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="ary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForEachInObj">
@@ -94,7 +70,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,17 +79,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An object being iterated over in a <see langword="For Each" /> loop.</param>
-        <summary>Gets the enumerator for an object being iterated over in a <see langword="For Each" /> loop.</summary>
-        <returns>The enumerator for <paramref name="obj" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForEachNextObj">
@@ -124,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,19 +102,11 @@
         <Parameter Name="enumerator" Type="System.Collections.IEnumerator" />
       </Parameters>
       <Docs>
-        <param name="obj">The range variable of the <see langword="For Each" /> loop.</param>
-        <param name="enumerator">The <see cref="T:System.Collections.IEnumerator" /> of the object being iterated over in the <see langword="For Each" /> loop.</param>
-        <summary>Sets a reference to the next object in a <see langword="For Each" /> loop.</summary>
-        <returns>
-          <see langword="True" /> if <paramref name="obj" /> refers to the next object; <see langword="False" /> if there are no more objects and <paramref name="obj" /> is <see langword="Nothing" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <param name="enumerator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForLoopInitObj">
@@ -157,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,23 +130,15 @@
         <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Counter">The loop counter variable.</param>
-        <param name="Start">The initial value of the loop counter.</param>
-        <param name="Limit">The value of the <see langword="To" /> option.</param>
-        <param name="StepValue">The value of the <see langword="Step" /> option.</param>
-        <param name="LoopForResult">An object that contains verified values for loop values.</param>
-        <param name="CounterResult">The counter value for the next loop iteration.</param>
-        <summary>Initializes a <see langword="For...Next" /> loop.</summary>
-        <returns>
-          <see langword="False" /> if the loop has terminated; otherwise, <see langword="True" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="Counter">To be added.</param>
+        <param name="Start">To be added.</param>
+        <param name="Limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <param name="LoopForResult">To be added.</param>
+        <param name="CounterResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckDec">
@@ -198,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,20 +159,12 @@
         <Parameter Name="StepValue" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="count">Required. A <see langword="Decimal" /> value that represents the initial value passed for the loop counter variable.</param>
-        <param name="limit">Required. A <see langword="Decimal" /> value that represents the value passed by using the <see langword="To" /> keyword.</param>
-        <param name="StepValue">Required. A <see langword="Decimal" /> value that represents the value passed by using the <see langword="Step" /> keyword.</param>
-        <summary>Checks for valid values for the loop counter, <see langword="Step" />, and <see langword="To" /> values.</summary>
-        <returns>
-          <see langword="True" /> if <paramref name="StepValue" /> is greater than zero and <paramref name="count" /> is less than or equal to <paramref name="limit" />, or if <paramref name="StepValue" /> is less than or equal to zero and <paramref name="count" /> is greater than or equal to <paramref name="limit" />; otherwise, <see langword="False" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="count">To be added.</param>
+        <param name="limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckObj">
@@ -233,7 +174,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,20 +185,12 @@
         <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Counter">The loop counter variable.</param>
-        <param name="LoopObj">An object that contains verified values for loop values.</param>
-        <param name="CounterResult">The counter value for the next loop iteration.</param>
-        <summary>Increments a <see langword="For...Next" /> loop.</summary>
-        <returns>
-          <see langword="False" /> if the loop has terminated; otherwise, <see langword="True" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="Counter">To be added.</param>
+        <param name="LoopObj">To be added.</param>
+        <param name="CounterResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckR4">
@@ -268,7 +200,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,20 +211,12 @@
         <Parameter Name="StepValue" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="count">Required. A <see langword="Single" /> value that represents the initial value passed for the loop counter variable.</param>
-        <param name="limit">Required. A <see langword="Single" /> value that represents the value passed by using the <see langword="To" /> keyword.</param>
-        <param name="StepValue">Required. A <see langword="Single" /> value that represents the value passed by using the <see langword="Step" /> keyword.</param>
-        <summary>Checks for valid values for the loop counter, <see langword="Step" />, and <see langword="To" /> values.</summary>
-        <returns>
-          <see langword="True" /> if <paramref name="StepValue" /> is greater than zero and <paramref name="count" /> is less than or equal to <paramref name="limit" />, or if <paramref name="StepValue" /> is less than or equal to zero and <paramref name="count" /> is greater than or equal to <paramref name="limit" />; otherwise, <see langword="False" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="count">To be added.</param>
+        <param name="limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForNextCheckR8">
@@ -303,7 +226,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -315,20 +237,12 @@
         <Parameter Name="StepValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="count">Required. A <see langword="Double" /> value that represents the initial value passed for the loop counter variable.</param>
-        <param name="limit">Required. A <see langword="Double" /> value that represents the value passed by using the <see langword="To" /> keyword.</param>
-        <param name="StepValue">Required. A <see langword="Double" /> value that represents the value passed by using the <see langword="Step" /> keyword.</param>
-        <summary>Checks for valid values for the loop counter, <see langword="Step" />, and <see langword="To" /> values.</summary>
-        <returns>
-          <see langword="True" /> if <paramref name="StepValue" /> is greater than zero and <paramref name="count" /> is less than or equal to <paramref name="limit" />, or if <paramref name="StepValue" /> is less than or equal to zero and <paramref name="count" /> is greater than or equal to <paramref name="limit" />; otherwise, <see langword="False" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
+        <param name="count">To be added.</param>
+        <param name="limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

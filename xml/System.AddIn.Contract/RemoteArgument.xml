@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.RemoteArgument" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,31 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an instance of a type that can be passed across process and application domain boundaries.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the RemoteArgument structure to pass arguments of types that are not determined until run time across process and application domain boundaries. The purpose of RemoteArgument is similar to that of the `VARIANT` type in COM.  
-  
- You can use RemoteArgument to pass the following types and values as remote arguments:  
-  
--   <xref:System.Type.Missing?displayProperty=fullName>.  
-  
--   <xref:System.AddIn.Contract.IContract>.  
-  
--   Intrinsic data types.  
-  
--   Arrays that contain elements of intrinsic data types.  
-  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
- RemoteArgument provides constructors for each of the types that it supports. You can also use the <xref:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument%2A> methods to create RemoteArgument objects. The <xref:System.AddIn.Contract.RemoteArgument.CreateRemoteArgument%2A> methods automatically call the appropriate <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor for your argument type.  
-  
- If you create a RemoteArgument using the default parameterless constructor, the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property is set to the value <xref:System.AddIn.Contract.RemoteArgumentKind?displayProperty=fullName> and the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property is set to the value <xref:System.TypeCode?displayProperty=fullName>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.AddIn.Contract.IContract" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.AddIn.Contract.IContract" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.AddIn.Contract.IContract" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,26 +40,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="System.Array" />
       </Parameters>
       <Docs>
-        <param name="array">An <see cref="T:System.Array" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Array" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to the type code of the array element type, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The array element type is not a base type (that is, the <see cref="System.Type.GetTypeCode%2A" /> method for the array element type returns <see cref="T:System.TypeCode" />).</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,23 +58,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Boolean" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Boolean" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -127,23 +76,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Byte" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Byte" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,23 +94,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Char" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Char" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,23 +112,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.DateTime" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DateTime" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -205,23 +130,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.DBNull" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.DBNull" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DBNull" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -231,23 +148,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Decimal" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Decimal" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -257,23 +166,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Double" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Double" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -283,23 +184,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Int16" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int16" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,23 +202,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Int32" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int32" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -335,23 +220,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Int64" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int64" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -361,7 +238,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -373,16 +249,9 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.SByte" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.SByte" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -392,23 +261,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Single" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Single" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -418,23 +279,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.String" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.String" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -444,7 +297,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -456,16 +308,9 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.UInt16" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt16" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -475,7 +320,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -487,16 +331,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.UInt32" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt32" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -506,7 +343,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -518,16 +354,9 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.UInt64" /> argument that can be passed across process or application domain boundaries.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt64" /> argument.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -537,7 +366,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -545,18 +373,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.AddIn.Contract.IContract" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.AddIn.Contract.IContract" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -566,7 +386,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -574,29 +393,10 @@
         <Parameter Name="typeCode" Type="System.TypeCode" />
       </Parameters>
       <Docs>
-        <param name="remoteArgKind">One of the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> values that indicates whether the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic type, an array of intrinsic types, an <see cref="T:System.AddIn.Contract.IContract" />, or the <see cref="F:System.Type.Missing" /> value.</param>
-        <param name="typeCode">A <see cref="T:System.TypeCode" /> that specifies the base type of the remote argument.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class using the specified <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <see cref="T:System.TypeCode" /> for an argument that is not passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor assigns the default value of the data type specified by the `typeCode` parameter to the <xref:System.AddIn.Contract.RemoteArgument>.  
-  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="remoteArgKind" /> is <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> or <see cref="T:System.AddIn.Contract.RemoteArgumentKind" />, and <paramref name="typeCode" /> is <see cref="T:System.TypeCode" /> or <see cref="T:System.TypeCode" />.  
-  
- -or-  
-  
- <paramref name="remoteArgKind" /> is <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <paramref name="typeCode" /> is not <see cref="T:System.TypeCode" />.  
-  
- -or-  
-  
- <paramref name="remoteArgKind" /> is <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <paramref name="typeCode" /> is not <see cref="T:System.TypeCode" />.</exception>
+        <param name="remoteArgKind">To be added.</param>
+        <param name="typeCode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -606,7 +406,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -614,21 +413,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="array">An <see cref="T:System.Array" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>array</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Array" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to the type code of the array element type, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The array element type is not a base type (that is, the <see cref="System.Type.GetTypeCode%2A" /> method returns <see cref="T:System.TypeCode" /> for the array element type).</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
+        <param name="array">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -638,7 +426,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -646,18 +433,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Boolean" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Boolean" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -667,7 +446,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -675,18 +453,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Byte" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Byte" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -696,7 +466,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -704,18 +473,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Char" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Char" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -725,7 +486,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -733,18 +493,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.DateTime" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DateTime" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -754,7 +506,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -762,18 +513,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.DBNull" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DBNull" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -783,7 +526,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -791,18 +533,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Decimal" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Decimal" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -812,7 +546,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -820,18 +553,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Double" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Double" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -841,7 +566,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -849,18 +573,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Int16" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int16" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -870,7 +586,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -878,18 +593,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Int32" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int32" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -899,7 +606,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -907,18 +613,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.Int64" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int64" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -928,7 +626,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -941,18 +638,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An <see cref="T:System.SByte" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.SByte" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -962,7 +651,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -970,18 +658,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Single" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Single" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -991,7 +671,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -999,18 +678,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.String" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.String" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1020,7 +691,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1033,18 +703,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.UInt16" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt16" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1054,7 +716,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1067,18 +728,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.UInt32" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt32" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1088,7 +741,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1101,18 +753,10 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.UInt64" /> argument that can be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt64" /> argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A> property to <xref:System.AddIn.Contract.RemoteArgumentKind>, the <xref:System.AddIn.Contract.RemoteArgument.TypeCode%2A> property to <xref:System.TypeCode?displayProperty=fullName>, and the <xref:System.AddIn.Contract.RemoteArgument.IsByRef%2A> property to the value of the `isByRef` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1122,7 +766,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -1131,33 +774,11 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="remoteArgKind">One of the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> values that indicates whether the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic type, an array of intrinsic types, an <see cref="T:System.AddIn.Contract.IContract" />, or the <see cref="F:System.Type.Missing" /> value.</param>
-        <param name="typeCode">A <see cref="T:System.TypeCode" /> that specifies the base type of the remote argument.</param>
-        <param name="isByRef">
-          <see langword="true" /> if the remote argument is passed by reference; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class using the specified <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <see cref="T:System.TypeCode" /> for an argument that can be passed by reference.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor assigns the default value of the data type specified by the `typeCode` parameter to the <xref:System.AddIn.Contract.RemoteArgument>.  
-  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="remoteArgKind" /> is <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> or <see cref="T:System.AddIn.Contract.RemoteArgumentKind" />, and <paramref name="typeCode" /> is <see cref="T:System.TypeCode" /> or <see cref="T:System.TypeCode" />.  
-  
- -or-  
-  
- <paramref name="remoteArgKind" /> is <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <paramref name="typeCode" /> is not <see cref="T:System.TypeCode" />.  
-  
- -or-  
-  
- <paramref name="remoteArgKind" /> is <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> and <paramref name="typeCode" /> is not <see cref="T:System.TypeCode" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="remoteArgKind" /> is not a valid <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.</exception>
+        <param name="remoteArgKind">To be added.</param>
+        <param name="typeCode">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrayValue">
@@ -1167,25 +788,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Array</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Array" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Array" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see langword="null" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BooleanValue">
@@ -1195,25 +806,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Boolean" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Boolean" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see langword="false" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ByteValue">
@@ -1223,25 +824,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Byte" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Byte" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CharValue">
@@ -1251,25 +842,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Char" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Char" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see cref="F:System.Char.MinValue" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContractValue">
@@ -1279,25 +860,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.IContract</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.AddIn.Contract.IContract" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.AddIn.Contract.IContract" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see langword="null" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRemoteArgument">
@@ -1307,7 +878,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1317,32 +887,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The argument that will be passed across process or application domain boundaries.</param>
-        <summary>Creates a <see cref="T:System.AddIn.Contract.RemoteArgument" /> for an argument that is not passed by reference.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="T:System.TypeCode" /> and <paramref name="value" /> is not an <see cref="T:System.AddIn.Contract.IContract" />.  
-  
- -or-  
-  
- The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="T:System.TypeCode" /> and <paramref name="value" /> is not set to <see cref="F:System.Reflection.Missing.Value" />.  
-  
- -or-  
-  
- <paramref name="value" /> does not implement the <see cref="T:System.IConvertible" /> interface and <paramref name="value" /> is not an <see cref="T:System.Array" />.  
-  
- -or-  
-  
- <paramref name="value" /> is an <see cref="T:System.Array" /> that contains elements with a <see cref="T:System.TypeCode" /> value of <see cref="T:System.TypeCode" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRemoteArgument">
@@ -1352,7 +900,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1363,34 +910,11 @@
         <Parameter Name="isByRef" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The argument that will be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> to pass the <c>value</c> argument by reference; otherwise, <see langword="false" />.</param>
-        <summary>Creates a <see cref="T:System.AddIn.Contract.RemoteArgument" /> for an argument that can be passed by reference.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="T:System.TypeCode" /> and <paramref name="value" /> is not an <see cref="T:System.AddIn.Contract.IContract" />.  
-  
- -or-  
-  
- The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="T:System.TypeCode" /> and <paramref name="value" /> is not set to <see cref="F:System.Reflection.Missing.Value" />.  
-  
- -or-  
-  
- <paramref name="value" /> does not implement the <see cref="T:System.IConvertible" /> interface and <paramref name="value" /> is not an <see cref="T:System.Array" />.  
-  
- -or-  
-  
- <paramref name="value" /> is an <see cref="T:System.Array" /> that contains elements with a <see cref="T:System.TypeCode" /> value of <see cref="T:System.TypeCode" />.</exception>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRemoteArgument">
@@ -1400,7 +924,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1412,38 +935,12 @@
         <Parameter Name="typeCodeToUse" Type="System.TypeCode" />
       </Parameters>
       <Docs>
-        <param name="value">The argument that will be passed across process or application domain boundaries.</param>
-        <param name="isByRef">
-          <see langword="true" /> to pass the argument by reference; otherwise, <see langword="false" />.</param>
-        <param name="typeCodeToUse">A <see cref="T:System.TypeCode" /> that indicates the type code of <c>value</c>, if <c>value</c> is not an <see cref="T:System.Array" />. Otherwise, a <see cref="T:System.TypeCode" /> that indicates the type code of the elements in <c>value</c>.</param>
-        <summary>Creates a <see cref="T:System.AddIn.Contract.RemoteArgument" /> for an argument that has the specified type code and that can be passed by reference.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the <xref:System.AddIn.Contract.RemoteArgument.%23ctor%2A> constructor that applies to the type of the `value` parameter.  
-  
- You cannot use this method to create a <xref:System.AddIn.Contract.RemoteArgument> that represents a `null` array that contains elements of intrinsic data types. An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="T:System.TypeCode" />, <paramref name="value" /> is not an <see cref="T:System.AddIn.Contract.IContract" />, and <paramref name="value" /> is not <see langword="null" />.  
-  
- -or-  
-  
- The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is <see cref="T:System.TypeCode" /> and <paramref name="value" /> is not <see cref="F:System.Reflection.Missing.Value" />.  
-  
- -or-  
-  
- <paramref name="value" /> does not implement the <see cref="T:System.IConvertible" /> interface, <paramref name="value" /> is not <see langword="null" />, and <paramref name="value" /> is not an <see cref="T:System.Array" />.  
-  
- -or-  
-  
- <paramref name="value" /> is an <see cref="T:System.Array" /> that contains elements with a <see cref="T:System.TypeCode" /> value of <see cref="T:System.TypeCode" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <see cref="T:System.TypeCode" /> of <paramref name="value" /> is not <see cref="T:System.TypeCode" /> and <paramref name="typeCodeToUse" /> is <see cref="T:System.TypeCode" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="typeCodeToUse" /> does not specify a valid <see cref="T:System.TypeCode" /> value.</exception>
+        <param name="value">To be added.</param>
+        <param name="isByRef">To be added.</param>
+        <param name="typeCodeToUse">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DateTimeValue">
@@ -1453,25 +950,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.DateTime" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.DateTime" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see cref="F:System.DateTime.MinValue" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DBNullValue">
@@ -1481,25 +968,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DBNull</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.DBNull" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.DBNull" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see langword="null" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecimalValue">
@@ -1509,25 +986,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Decimal" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Decimal" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DoubleValue">
@@ -1537,25 +1004,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Double" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Double" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0.0 if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Int16Value">
@@ -1565,25 +1022,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Int16" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Int16" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Int32Value">
@@ -1593,25 +1040,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Int32" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Int32" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Int64Value">
@@ -1621,25 +1058,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Int64" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Int64" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsByRef">
@@ -1649,16 +1076,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an argument that is passed by reference.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an argument that is passed by reference; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1669,21 +1094,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Missing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="F:System.Type.Missing" /> value.</summary>
-        <value>The <see cref="F:System.Type.Missing" /> value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- This property value is retrieved while the <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoteArgumentKind">
@@ -1693,23 +1112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> that indicates the kind of argument that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>One of the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> values that indicates whether the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic type, an array of intrinsic types, an <see cref="T:System.AddIn.Contract.IContract" />, or the <see cref="F:System.Type.Missing" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SByteValue">
@@ -1719,7 +1130,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1731,18 +1141,9 @@
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.SByte" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.SByte" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SingleValue">
@@ -1752,25 +1153,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Single" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.Single" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0.0 if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="StringValue">
@@ -1780,25 +1171,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.String" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.String" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; <see langword="null" /> if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TypeCode">
@@ -1808,15 +1189,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.TypeCode" /> that indicates the base type of the argument that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>A <see cref="T:System.TypeCode" /> that indicates the base type of the argument that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1827,7 +1207,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1839,18 +1218,9 @@
         <ReturnType>System.UInt16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.UInt16" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.UInt16" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="UInt32Value">
@@ -1860,7 +1230,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1872,18 +1241,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.UInt32" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.UInt32" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="UInt64Value">
@@ -1893,7 +1253,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1905,18 +1264,9 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.UInt64" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
-        <value>The <see cref="T:System.UInt64" /> that the <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents; 0 (zero) if the value of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> has not yet been specified.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A" /> property is not set to the <see cref="T:System.AddIn.Contract.RemoteArgumentKind" /> value.  
-  
- -or-  
-  
- The <see cref="System.AddIn.Contract.RemoteArgument.TypeCode%2A" /> property is not set to the <see cref="T:System.TypeCode" /> value.  
-  
- -or-  
-  
- This property is set while the <see cref="System.AddIn.Contract.RemoteArgument.IsByRef%2A" /> property is <see langword="false" />.</exception>
       </Docs>
     </Member>
   </Members>

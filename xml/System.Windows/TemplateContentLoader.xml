@@ -11,16 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements <see cref="T:System.Xaml.XamlDeferringLoader" /> in order to defer loading of the XAML content that is defined for a template in WPF XAML.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_TemplateContentLoader"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateContentLoader" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,22 +47,11 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">The initiating reader that is then returned on calls to <see cref="System.Windows.TemplateContentLoader.Save%2A" />.</param>
-        <param name="serviceProvider">Service provider for required services.</param>
-        <summary>Loads XAML content in a deferred mode, based on a <see cref="T:System.Xaml.XamlReader" /> and certain required services from a service provider.</summary>
-        <returns>The root object for the node stream of the input <see cref="T:System.Xaml.XamlReader" />. Specifically, this is a <see cref="T:System.Windows.TemplateContent" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Xaml.IXamlObjectWriterFactory> is a required service, it must be available on the passed `serviceProvider`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="xamlReader" /> or <paramref name="serviceProvider" /> are <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="serviceProvider" /> does not provide a required service.</exception>
+        <param name="xamlReader">To be added.</param>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -90,19 +71,11 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="value">The input value to commit for deferred loading.</param>
-        <param name="serviceProvider">Service provider for required services.</param>
-        <summary>Do not use; always throws an exception. See Remarks.</summary>
-        <returns>Always throws an exception. See Remarks.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The purpose of <xref:System.Windows.TemplateContentLoader> is to load the XAML and invoke an object factory metaphor, a `Save` path is not part of its intended design. The <xref:System.Xaml.IXamlObjectWriterFactory> passed as a service for <xref:System.Windows.TemplateContentLoader.Load%2A> provides support for all further operations involving XAML and the template.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
+        <param name="value">To be added.</param>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates that a string should be treated as if it were fixed length.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Visual Basic strings are of variable length by default. This attribute is useful when using Visual Basic file input and output functions such as `FileGet` and `FilePut` that require fixed length strings.  
-  
-   
-  
-## Examples  
- [!code-vb[VbCnAttributes#23](~/add/codesnippet/visualbasic/VbCnAttributes/Class2.vb#23)]  
-  
-> [!NOTE]
->  The `VBFixedStringAttribute` is informational and cannot be used to convert a variable length string to a fixed string. The purpose of this attribute is to modify how strings in structures and non-local variables are used by methods or API calls that recognize the `VBFixedStringAttribute`. Keep in mind that this attribute does not change the actual length of the string itself.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,23 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="Length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Length">The length of the fixed string.</param>
-        <summary>Initializes the value of the <see langword="SizeConst" /> field.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructor runs when the `VBFixedStringAttribute` attribute is applied to a string.  
-  
- ]]></format>
-        </remarks>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -69,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the string.</summary>
-        <value>Returns the length of the string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructor for this attribute sets this property when the `VBFixedStringAttribute` is applied to a string.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

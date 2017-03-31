@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that is generated when a warning or error is returned by an Oracle database or the .NET Framework Data Provider for Oracle. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is created whenever the <xref:System.Data.OracleClient.OracleDataAdapter> encounters a situation that it cannot handle.  
-  
- If the severity of the error is too great, the server may close the <xref:System.Data.OracleClient.OracleConnection>. However, the user can reopen the connection and continue.  
-  
-   
-  
-## Examples  
- The following example generates an OracleException due to a missing database, and then displays the exception.  
-  
- [!code-cs[Classic WebData OracleException#1](~/add/codesnippet/csharp/t-system.data.oracleclie_0_1.cs)]
- [!code-vb[Classic WebData OracleException#1](~/add/codesnippet/visualbasic/t-system.data.oracleclie_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Code">
@@ -40,15 +22,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the code portion of the error as an integer.</summary>
-        <value>The code portion of the error as an integer.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,9 +50,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
-        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
+        <param name="si">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

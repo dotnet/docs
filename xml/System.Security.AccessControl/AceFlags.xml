@@ -3,8 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AceFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AceFlags" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the inheritance and auditing behavior of an access control entry (ACE).</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +30,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.AuditFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All access attempts are audited.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContainerInherit">
@@ -43,15 +51,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.ContainerInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The access mask is propagated to child container objects.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FailedAccess">
@@ -60,15 +72,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.FailedAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Failed access attempts are audited.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InheritanceFlags">
@@ -77,15 +93,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.InheritanceFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A logical <see langword="OR" /> of ObjectInherit, ContainerInherit, NoPropagateInherit, and InheritOnly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherited">
@@ -94,15 +114,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An ACE is inherited from a parent container rather than being explicitly set for an object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InheritOnly">
@@ -111,15 +135,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.InheritOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The access mask is propagated only to child objects. This includes both container and leaf child objects.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -128,15 +156,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No ACE flags are set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoPropagateInherit">
@@ -145,15 +177,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.NoPropagateInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The access checks do not apply to the object; they only apply to its children.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ObjectInherit">
@@ -162,15 +198,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.ObjectInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The access mask is propagated onto child leaf objects.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuccessfulAccess">
@@ -179,15 +219,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.SuccessfulAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Successful access attempts are audited.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

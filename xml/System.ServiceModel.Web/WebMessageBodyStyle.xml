@@ -4,24 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebMessageBodyStyle" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>An enumeration that specifies whether to wrap parameter and return values.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the service or client serializes parameters and return values to a message, it writes them within infrastructure-provided XML elements and are *wrapped*. Sometimes developers do not want the service to write these extra XML elements. The WebMessageBodyStyle enumeration specifies whether to wrap parameters and return values.  
-  
- This enumeration is used with the <xref:System.ServiceModel.Web.WebGetAttribute> and the <xref:System.ServiceModel.Web.WebInvokeAttribute> to control how the data passed to and from a service operation appears on the wire. Both attributes default to Bare.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bare">
@@ -31,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both requests and responses are not wrapped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wrapped">
@@ -48,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Both requests and responses are wrapped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WrappedRequest">
@@ -65,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Requests are wrapped, responses are not wrapped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WrappedResponse">
@@ -82,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Responses are wrapped, requests are not wrapped.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

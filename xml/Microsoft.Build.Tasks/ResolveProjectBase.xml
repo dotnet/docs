@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResolveProjectBase extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveProjectBase" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the base class for <see cref="T:Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput" /> and <see cref="T:Microsoft.Build.Tasks.AssignProjectConfiguration" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,16 +21,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveProjectBase.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveProjectBase" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +46,8 @@
         <Parameter Name="currentProjectAbsolutePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="currentProjectAbsolutePath">The absolute path of the current project.</param>
-        <summary>Helper method for retrieving the extra “project references” passed in the solution blob. These come from dependencies expressed in the solution file itself.</summary>
+        <param name="currentProjectAbsolutePath">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +67,9 @@
         <Parameter Name="projectRef" Type="Microsoft.Build.Framework.ITaskItem" />
       </Parameters>
       <Docs>
-        <param name="projectRef">The project reference item.</param>
-        <summary>Retrieves the XML element representing the given project.</summary>
-        <returns>Returns the project element.</returns>
+        <param name="projectRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +78,6 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetProjectItem(class Microsoft.Build.Framework.ITaskItem projectRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveProjectBase.GetProjectItem(Microsoft.Build.Framework.ITaskItem)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,9 +89,9 @@
         <Parameter Name="projectRef" Type="Microsoft.Build.Framework.ITaskItem" />
       </Parameters>
       <Docs>
-        <param name="projectRef">A project reference that contains a project GUID attribute.</param>
-        <summary>Retrieves the XML contents of the project element of the specified project.</summary>
-        <returns>The XML contents of the project element of the specified project.</returns>
+        <param name="projectRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,10 +100,6 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ProjectReferences" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveProjectBase.ProjectReferences" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,8 +113,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the project references.</summary>
-        <value>The project references.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

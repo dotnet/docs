@@ -3,12 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotifyCollectionChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
   <AssemblyInfo>
-    <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyName>System.ObjectModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -20,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,19 +36,25 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This must be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,21 +64,27 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="changedItems" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, or <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="changedItems">The items that are affected by the change.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item change.</summary>
+        <param name="action">To be added.</param>
+        <param name="changedItems">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,23 +94,28 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
         <Parameter Name="changedItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, or <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="changedItem">The item that is affected by the change.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item change.</summary>
+        <param name="action">To be added.</param>
+        <param name="changedItem">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Reset, Add, or Remove, or if <paramref name="action" /> is Reset and <paramref name="changedItem" /> is not null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,12 +124,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -114,13 +143,11 @@
         <Parameter Name="oldItems" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can only be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="newItems">The new items that are replacing the original items.</param>
-        <param name="oldItems">The original items that are replaced.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="newItems">To be added.</param>
+        <param name="oldItems">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
-        <exception cref="T:System.ArgumentNullException">If <paramref name="oldItems" /> or <paramref name="newItems" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,12 +156,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -142,13 +175,11 @@
         <Parameter Name="startingIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, or <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="changedItems">The items affected by the change.</param>
-        <param name="startingIndex">The index where the change occurred.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item change or a <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="changedItems">To be added.</param>
+        <param name="startingIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Reset, Add, or Remove, if <paramref name="action" /> is Reset and either <paramref name="changedItems" /> is not null or <paramref name="startingIndex" /> is not -1, or if action is Add or Remove and <paramref name="startingIndex" /> is less than -1.</exception>
-        <exception cref="T:System.ArgumentNullException">If <paramref name="action" /> is Add or Remove and <paramref name="changedItems" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,12 +188,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -170,12 +207,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, or <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="changedItem">The item that is affected by the change.</param>
-        <param name="index">The index where the change occurred.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item change.</summary>
+        <param name="action">To be added.</param>
+        <param name="changedItem">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Reset, Add, or Remove, or if <paramref name="action" /> is Reset and either <paramref name="changedItems" /> is not null or <paramref name="index" /> is not -1.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -184,12 +220,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -197,12 +239,11 @@
         <Parameter Name="oldItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can only be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="newItem">The new item that is replacing the original item.</param>
-        <param name="oldItem">The original item that is replaced.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="newItem">To be added.</param>
+        <param name="oldItem">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,12 +252,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -225,14 +272,12 @@
         <Parameter Name="startingIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can only be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="newItems">The new items that are replacing the original items.</param>
-        <param name="oldItems">The original items that are replaced.</param>
-        <param name="startingIndex">The index of the first item of the items that are being replaced.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="newItems">To be added.</param>
+        <param name="oldItems">To be added.</param>
+        <param name="startingIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
-        <exception cref="T:System.ArgumentNullException">If <paramref name="oldItems" /> or <paramref name="newItems" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -241,12 +286,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -255,13 +306,12 @@
         <Parameter Name="oldIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can only be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="changedItems">The items affected by the change.</param>
-        <param name="index">The new index for the changed items.</param>
-        <param name="oldIndex">The old index for the changed items.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="changedItems">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="oldIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Move or <paramref name="index" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -270,12 +320,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -284,13 +340,12 @@
         <Parameter Name="oldIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can only be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="changedItem">The item affected by the change.</param>
-        <param name="index">The new index for the changed item.</param>
-        <param name="oldIndex">The old index for the changed item.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="changedItem">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="oldIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Move or <paramref name="index" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -299,12 +354,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
@@ -313,13 +374,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">The action that caused the event. This can be set to <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />.</param>
-        <param name="newItem">The new item that is replacing the original item.</param>
-        <param name="oldItem">The original item that is replaced.</param>
-        <param name="index">The index of the item being replaced.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> change.</summary>
+        <param name="action">To be added.</param>
+        <param name="newItem">To be added.</param>
+        <param name="oldItem">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -328,19 +388,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the action that caused the event.</summary>
-        <value>A <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> value that describes the action that caused the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,19 +416,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of new items involved in the change.</summary>
-        <value>The list of new items involved in the change.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,19 +444,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index at which the change occurred.</summary>
-        <value>The zero-based index at which the change occurred.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,19 +472,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of items affected by a <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, Remove, or Move action.</summary>
-        <value>The list of items affected by a <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, Remove, or Move action.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -416,19 +500,25 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index at which a <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, Remove, or Replace action occurred.</summary>
-        <value>The zero-based index at which a <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" />, Remove, or Replace action occurred.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

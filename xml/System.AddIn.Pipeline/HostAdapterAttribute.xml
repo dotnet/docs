@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.HostAdapterAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,25 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies an object as a host-side adapter segment of the pipeline.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify a host-side adapter.  
-  
- This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
-  
-   
-  
-## Examples  
- The following example identifies a host-side adapter.  
-  
- [!code-vb[AddInP1HostSideAdapters#2](~/add/codesnippet/visualbasic/Calc1HostSideSideAdapter/Calc1ContractToViewHostSideAdapter.vb#2)]
- [!code-cs[AddInP1HostSideAdapters#2](~/add/codesnippet/csharp/Calc1HostSideAdapter/Calc1ContractToViewHostSideAdapter.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Pipeline.HostAdapterAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

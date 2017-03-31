@@ -3,9 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryReader extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.BinaryReader" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,28 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Reads primitive data types as binary values in a specific encoding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BinaryReader class provides methods that simplify reading primitive data types from a stream. For example, you can use the <xref:System.IO.BinaryReader.ReadBoolean%2A> method to read the next byte as a Boolean value and advance the current position in the stream by one byte. The class includes read methods that support different data types.  
-  
- When you create a new instance of the BinaryReader class, you provide the stream to read from, and optionally specify the type of encoding and whether to leave the stream open after disposing the BinaryReader object. If you do not specify an encoding type, UTF-8 is used.  
-  
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#1](~/add/codesnippet/csharp/t-system.io.binaryreader_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/add/codesnippet/visualbasic/t-system.io.binaryreader_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,33 +41,27 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="input" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="input">The input stream.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryReader" /> class based on the specified stream and using UTF-8 encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#1](~/add/codesnippet/csharp/m-system.io.binaryreader_5_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The stream does not support reading, is <see langword="null" />, or is already closed.</exception>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,29 +70,29 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="input" Type="System.IO.Stream" />
         <Parameter Name="encoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="input">The input stream.</param>
-        <param name="encoding">The character encoding to use.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryReader" /> class based on the specified stream and character encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The stream does not support reading, is <see langword="null" />, or is already closed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <param name="input">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,8 +101,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="input" Type="System.IO.Stream" />
@@ -126,15 +121,11 @@
         <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="input">The input stream.</param>
-        <param name="encoding">The character encoding to use.</param>
-        <param name="leaveOpen">
-          <see langword="true" /> to leave the stream open after the <see cref="T:System.IO.BinaryReader" /> object is disposed; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryReader" /> class based on the specified stream and character encoding, and optionally leaves the stream open.</summary>
+        <param name="input">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="leaveOpen">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The stream does not support reading, is <see langword="null" />, or is already closed.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="encoding" /> or <paramref name="input" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -143,37 +134,27 @@
       <MemberSignature Language="DocId" Value="P:System.IO.BinaryReader.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Exposes access to the underlying stream of the <see cref="T:System.IO.BinaryReader" />.</summary>
-        <value>The underlying stream associated with the <see langword="BinaryReader" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  Using the underlying stream while reading or while using the `BinaryReader` can cause data loss and corruption. For example, the same bytes might be read more than once, bytes might be skipped, or character reading might become unpredictable.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to read and write `Double` data to memory by using the `BinaryReader` and <xref:System.IO.BinaryWriter> classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/add/codesnippet/cpp/p-system.io.binaryreader_1.cpp)]
- [!code-cs[System.IO.BinaryReaderWriter.RWDouble#1](~/add/codesnippet/csharp/p-system.io.binaryreader_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/add/codesnippet/visualbasic/p-system.io.binaryreader_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -183,25 +164,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the current reader and the underlying stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation of `Close` calls the <xref:System.IO.BinaryReader.Dispose%2A> method passing a `true` value.  
-  
- Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.Stream.Flush%2A> or `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -210,28 +186,27 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.IO.BinaryReader" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call `Dispose` when you are finished using the <xref:System.IO.BinaryReader>. The `Dispose` method leaves the <xref:System.IO.BinaryReader> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.IO.BinaryReader> so the garbage collector can reclaim the memory that the <xref:System.IO.BinaryReader> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
-  
-> [!NOTE]
->  Always call `Dispose` before you release your last reference to the <xref:System.IO.BinaryReader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.BinaryReader> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -240,9 +215,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -251,19 +236,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.BinaryReader" /> class and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by `Dispose` and <xref:System.Object.Finalize%2A>. By default, this method specifies the `disposing` parameter as `true`. <xref:System.Object.Finalize%2A> specifies the `disposing` parameter as `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.BinaryReader> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillBuffer">
@@ -272,9 +247,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.FillBuffer(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -283,21 +268,9 @@
         <Parameter Name="numBytes" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="numBytes">The number of bytes to be read.</param>
-        <summary>Fills the internal buffer with the specified number of bytes read from the stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The internal buffer size is the larger value between 16 and the value returned by <xref:System.Text.Encoding.GetMaxByteCount%2A> for the specified encoding.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached before <paramref name="numBytes" /> could be read.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">Requested <paramref name="numBytes" /> is larger than the internal buffer size.</exception>
+        <param name="numBytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PeekChar">
@@ -306,29 +279,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.PeekChar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the next available character and does not advance the byte or character position.</summary>
-        <returns>The next available character, or -1 if no more characters are available or the stream does not support seeking.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If surrogate characters can be expected in the stream use the <xref:System.IO.BinaryReader.ReadChars%2A> method, then set the stream back to the original position.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ArgumentException">The current character cannot be decoded into the internal character buffer by using the <see cref="T:System.Text.Encoding" /> selected for the stream.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -337,38 +309,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads characters from the underlying stream and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and the specific character being read from the stream.</summary>
-        <returns>The next character from the input stream, or -1 if no characters are currently available.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following example shows how to read and write data using memory as a backing store. This example displays a list of invalid file path characters to the console. Although the code tries to display a list of all invalid file path characters, not all of the characters are within the displayable set of characters. Because the list of invalid characters can vary based on the system, output for this code may also vary.  
-  
- [!code-cs[System.IO.BinaryReaderWriter.RWChar2#1](~/add/codesnippet/csharp/m-system.io.binaryreader_8_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChar2#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_8_1.vb)]
- [!code-cpp[System.IO.BinaryReaderWriter.RWChar2#1](~/add/codesnippet/cpp/m-system.io.binaryreader_8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -377,9 +339,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -390,45 +362,12 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">The buffer to read data into.</param>
-        <param name="index">The starting point in the buffer at which to begin reading into the buffer.</param>
-        <param name="count">The number of bytes to read.</param>
-        <summary>Reads the specified number of bytes from the stream, starting from a specified point in the byte array.</summary>
-        <returns>The number of bytes read into <paramref name="buffer" />. This might be less than the number of bytes requested if that many bytes are not available, or it might be zero if the end of the stream is reached.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following example shows how to write binary data by using memory as a backing store. It displays a message to the console that indicates whether the data was written correctly.  
-  
- [!code-cs[System.IO.BinaryReaderWriter.RWBytes2#1](~/add/codesnippet/csharp/m-system.io.binaryreader_0_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter.RWBytes2#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_0_1.vb)]  
-  
- This example reads the contents of a file and displays each byte's numeric value in 16-column format. The end of the file that is being read is detected when the Read method returns zero bytes.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#6](~/add/codesnippet/csharp/m-system.io.binaryreader_0_2.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#6](~/add/codesnippet/visualbasic/m-system.io.binaryreader_0_2.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.  
-  
- -or-  
-  
- The number of decoded characters to read is greater than <paramref name="count" />. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -437,9 +376,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -455,41 +404,12 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">The buffer to read data into.</param>
-        <param name="index">The starting point in the buffer at which to begin reading into the buffer.</param>
-        <param name="count">The number of characters to read.</param>
-        <summary>Reads the specified number of characters from the stream, starting from a specified point in the character array.</summary>
-        <returns>The total number of characters read into the buffer. This might be less than the number of characters requested if that many characters are not currently available, or it might be zero if the end of the stream is reached.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following example shows how to read and write data using memory as a backing store. This example displays a list of invalid file path characters to the console. Although the code tries to display a list of all invalid file path characters, not all of the characters are within the displayable set of characters. Because the list of invalid characters can vary based on the system, output for this code may also vary.  
-  
- [!code-cs[System.IO.BinaryReaderWriter.RWChars2#1](~/add/codesnippet/csharp/m-system.io.binaryreader_1_1.cs)]
- [!code-cpp[System.IO.BinaryReaderWriter.RWChars2#1](~/add/codesnippet/cpp/m-system.io.binaryreader_1_1.cpp)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChars2#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.  
-  
- -or-  
-  
- The number of decoded characters to read is greater than <paramref name="count" />. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read7BitEncodedInt">
@@ -498,33 +418,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read7BitEncodedInt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads in a 32-bit integer in compressed format.</summary>
-        <returns>A 32-bit integer in compressed format.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- If the integer will fit in seven bits, the integer takes only one byte of space. The integer is expected to have been written through <xref:System.IO.BinaryWriter.Write7BitEncodedInt%2A?displayProperty=fullName>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.FormatException">The stream is corrupted.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadBoolean">
@@ -533,39 +448,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadBoolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a <see langword="Boolean" /> value from the current stream and advances the current position of the stream by one byte.</summary>
-        <returns>
-          <see langword="true" /> if the byte is nonzero; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#1](~/add/codesnippet/csharp/m-system.io.binaryreader_7_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadByte">
@@ -574,47 +478,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadByte" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads the next byte from the current stream and advances the current position of the stream by one byte.</summary>
-        <returns>The next byte read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- Because of data formatting conflicts, using this method with the following encodings is not recommended:  
-  
--   UTF-7  
-  
--   ISO-2022-JP  
-  
--   ISCII  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWByte#1](~/add/codesnippet/cpp/m-system.io.binaryreader_11_1.cpp)]
- [!code-cs[System.IO.BinaryReaderWriter.RWByte#1](~/add/codesnippet/csharp/m-system.io.binaryreader_11_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter.RWByte#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadBytes">
@@ -623,9 +508,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadBytes(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -634,38 +529,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">The number of bytes to read. This value must be 0 or a non-negative number or an exception will occur.</param>
-        <summary>Reads the specified number of bytes from the current stream into a byte array and advances the current position by that number of bytes.</summary>
-        <returns>A byte array containing data read from the underlying stream. This might be less than the number of bytes requested if the end of the stream is reached.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWBytes1#1](~/add/codesnippet/cpp/m-system.io.binaryreader_3_1.cpp)]
- [!code-vb[System.IO.BinaryReaderWriter.RWBytes1#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_3_1.vb)]
- [!code-cs[System.IO.BinaryReaderWriter.RWBytes1#1](~/add/codesnippet/csharp/m-system.io.binaryreader_3_1.cs)]  
-  
- This example reads the contents of a file and displays it to the console as dump text. The end of the file that is being read is detected when the length of the <xref:System.Byte> array returned from ReadBytes is zero.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#6](~/add/codesnippet/csharp/m-system.io.binaryreader_3_2.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#6](~/add/codesnippet/visualbasic/m-system.io.binaryreader_3_2.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The number of decoded characters to read is greater than <paramref name="count" />. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is negative.</exception>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadChar">
@@ -674,48 +541,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadChar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads the next character from the current stream and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and the specific character being read from the stream.</summary>
-        <returns>A character read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the ReadChar method attempts to read a surrogate character in the stream an exception will be raised and the position in the stream will advance. The position is restored to the original location before ReadChar was called if the stream is seekable; however, if the stream is unseekable, the position will not be corrected. If surrogate characters can be expected in the stream, use the <xref:System.IO.BinaryReader.ReadChars%2A> method instead.  
-  
- Because of data formatting conflicts, using this method with the following encodings is not recommended:  
-  
--   UTF-7  
-  
--   ISO-2022-JP  
-  
--   ISCII  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to read and write data using memory as a backing store.  
-  
- [!code-cs[System.IO.BinaryReaderWriter.RWChar1#1](~/add/codesnippet/csharp/m-system.io.binaryreader_6_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChar1#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_6_1.vb)]
- [!code-cpp[System.IO.BinaryReaderWriter.RWChar1#1](~/add/codesnippet/cpp/m-system.io.binaryreader_6_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ArgumentException">A surrogate character was read.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadChars">
@@ -724,9 +571,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadChars(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -740,33 +597,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">The number of characters to read.</param>
-        <summary>Reads the specified number of characters from the current stream, returns the data in a character array, and advances the current position in accordance with the <see langword="Encoding" /> used and the specific character being read from the stream.</summary>
-        <returns>A character array containing data read from the underlying stream. This might be less than the number of characters requested if the end of the stream is reached.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
-  
- When reading from network streams, in some rare cases, the ReadChars method might read an extra character from the stream if the <xref:System.IO.BinaryReader> was constructed with Unicode encoding. If this occurs, you can use the <xref:System.IO.BinaryReader.ReadBytes%2A> method to read a fixed-length byte array, and then pass that array to the ReadChars method.  
-  
-   
-  
-## Examples  
- The following code example shows how to read and write data using memory as a backing store.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWChars1#1](~/add/codesnippet/cpp/m-system.io.binaryreader_2_1.cpp)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChars1#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_2_1.vb)]
- [!code-cs[System.IO.BinaryReaderWriter.RWChars1#1](~/add/codesnippet/csharp/m-system.io.binaryreader_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The number of decoded characters to read is greater than <paramref name="count" />. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is negative.</exception>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDecimal">
@@ -775,30 +609,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadDecimal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a decimal value from the current stream and advances the current position of the stream by sixteen bytes.</summary>
-        <returns>A decimal value read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDouble">
@@ -807,9 +639,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadDouble" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -821,32 +663,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads an 8-byte floating point value from the current stream and advances the current position of the stream by eight bytes.</summary>
-        <returns>An 8-byte floating point value read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example shows how to read and write `Double` data to memory by using the `BinaryReader` and <xref:System.IO.BinaryWriter> classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/add/codesnippet/cpp/m-system.io.binaryreader_9_1.cpp)]
- [!code-cs[System.IO.BinaryReaderWriter.RWDouble#1](~/add/codesnippet/csharp/m-system.io.binaryreader_9_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt16">
@@ -855,32 +674,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt16" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a 2-byte signed integer from the current stream and advances the current position of the stream by two bytes.</summary>
-        <returns>A 2-byte signed integer read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt32">
@@ -889,40 +704,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt32" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a 4-byte signed integer from the current stream and advances the current position of the stream by four bytes.</summary>
-        <returns>A 4-byte signed integer read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- <xref:System.IO.BinaryReader> reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#1](~/add/codesnippet/csharp/m-system.io.binaryreader_12_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt64">
@@ -931,32 +734,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt64" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads an 8-byte signed integer from the current stream and advances the current position of the stream by eight bytes.</summary>
-        <returns>An 8-byte signed integer read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadSByte">
@@ -965,9 +764,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadSByte" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -979,21 +788,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a signed byte from this stream and advances the current position of the stream by one byte.</summary>
-        <returns>A signed byte read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadSingle">
@@ -1002,9 +799,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadSingle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1016,31 +823,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a 4-byte floating point value from the current stream and advances the current position of the stream by four bytes.</summary>
-        <returns>A 4-byte floating point value read from the current stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#1](~/add/codesnippet/csharp/m-system.io.binaryreader_10_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadString">
@@ -1049,38 +834,28 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a string from the current stream. The string is prefixed with the length, encoded as an integer seven bits at a time.</summary>
-        <returns>The string being read.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to store and retrieve application settings in a file.  
-  
- [!code-cs[System.IO.BinaryReaderWriter#1](~/add/codesnippet/csharp/m-system.io.binaryreader_4_1.cs)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/add/codesnippet/visualbasic/m-system.io.binaryreader_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt16">
@@ -1089,9 +864,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt16" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1103,23 +888,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a 2-byte unsigned integer from the current stream using little-endian encoding and advances the position of the stream by two bytes.</summary>
-        <returns>A 2-byte unsigned integer read from this stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt32">
@@ -1128,9 +899,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt32" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1142,23 +923,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads a 4-byte unsigned integer from the current stream and advances the position of the stream by four bytes.</summary>
-        <returns>A 4-byte unsigned integer read from this stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadUInt64">
@@ -1167,9 +934,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt64" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1181,23 +958,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight bytes.</summary>
-        <returns>An 8-byte unsigned integer read from this stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
-  
- `BinaryReader` reads this data type in little-endian format.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

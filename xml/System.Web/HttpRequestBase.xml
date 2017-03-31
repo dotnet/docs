@@ -3,25 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpRequestBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRequestBase" />
   <AssemblyInfo>
-    <AssemblyName>System.Web.Abstractions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Abstractions, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>Serves as the base class for classes that enable ASP.NET to read the HTTP values sent by a client during a Web request.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpRequestBase class is an abstract class that contains the same members as the <xref:System.Web.HttpRequest> class. The HttpRequestBase class enables you to create derived classes that are like the <xref:System.Web.HttpRequest> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members that have customized behavior that fulfills the scenario that you are testing.  
-  
- The <xref:System.Web.HttpRequestWrapper> class derives from the HttpRequestBase class. The <xref:System.Web.HttpRequestWrapper> class serves as a wrapper for the <xref:System.Web.HttpRequest> class. At run time, you typically use an instance of the <xref:System.Web.HttpRequestWrapper> class to invoke members of the <xref:System.Web.HttpRequest> object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +26,30 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public virtual void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,17 +59,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.AcceptTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets an array of client-supported MIME accept types.</summary>
-        <value>An array of client-supported MIME accept types.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AnonymousID">
@@ -64,17 +77,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.AnonymousID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the anonymous identifier for the user, if it is available.</summary>
-        <value>The current anonymous user identifier.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplicationPath">
@@ -83,17 +95,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ApplicationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the virtual root path of the ASP.NET application on the server.</summary>
-        <value>The virtual path of the current application.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppRelativeCurrentExecutionFilePath">
@@ -102,17 +113,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.AppRelativeCurrentExecutionFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the virtual path of the application root and makes it relative by using the tilde (~) notation for the application root (as in "~/page.aspx").</summary>
-        <value>The virtual path of the application root for the current request with the tilde operator (~) added.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinaryRead">
@@ -121,8 +131,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.BinaryRead(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -131,11 +141,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">The number of bytes to read.</param>
-        <summary>When overridden in a derived class, performs a binary read of a specified number of bytes from the current input stream.</summary>
-        <returns>An array that contains the binary data.</returns>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Browser">
@@ -144,17 +153,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Browser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpBrowserCapabilitiesBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets information about the requesting client's browser capabilities.</summary>
-        <value>An object that represents the capabilities of the client browser.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClientCertificate">
@@ -163,17 +171,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ClientCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpClientCertificate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the current request's client security certificate.</summary>
-        <value>The client's security certificate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
@@ -182,17 +189,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the character set of the data that is provided by the client.</summary>
-        <value>The client's character set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -201,17 +207,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the length, in bytes, of content that was sent by the client.</summary>
-        <value>The length, in bytes, of content that was sent by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -220,17 +225,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the MIME content type of the request.</summary>
-        <value>The MIME content type of the request, such as "text/html".</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -239,17 +243,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of cookies that were sent by the client.</summary>
-        <value>The client's cookies.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CurrentExecutionFilePath">
@@ -258,26 +261,34 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.CurrentExecutionFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the virtual path of the current request.</summary>
-        <value>The virtual path of the page handler that is currently executing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CurrentExecutionFilePath property returns the file path of the currently executing page handler.  
-  
- When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=fullName> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=fullName> method, the CurrentExecutionFilePath property returns the path of the page that you are redirecting to (the child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequestBase.FilePath%2A> property returns the path to the original page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentExecutionFilePathExtension">
+      <MemberSignature Language="C#" Value="public virtual string CurrentExecutionFilePathExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentExecutionFilePathExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.CurrentExecutionFilePathExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilePath">
@@ -286,17 +297,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.FilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the virtual path of the current request.</summary>
-        <value>The virtual path of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -305,17 +315,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpFileCollectionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of files that were uploaded by the client, in multipart MIME format.</summary>
-        <value>The files that were uploaded by the client. The items in the <see cref="T:System.Web.HttpFileCollection" /> object are of type <see cref="T:System.Web.HttpPostedFile" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -324,17 +333,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the filter to use when the current input stream is being read.</summary>
-        <value>An object to use as the filter.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -343,17 +351,76 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of form variables that were sent by the client.</summary>
-        <value>The form variables.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBufferedInputStream">
+      <MemberSignature Language="C#" Value="public virtual System.IO.Stream GetBufferedInputStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetBufferedInputStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.GetBufferedInputStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBufferlessInputStream">
+      <MemberSignature Language="C#" Value="public virtual System.IO.Stream GetBufferlessInputStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetBufferlessInputStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.GetBufferlessInputStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBufferlessInputStream">
+      <MemberSignature Language="C#" Value="public virtual System.IO.Stream GetBufferlessInputStream (bool disableMaxRequestLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetBufferlessInputStream(bool disableMaxRequestLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.GetBufferlessInputStream(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disableMaxRequestLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disableMaxRequestLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -362,17 +429,34 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of HTTP headers that were sent by the client.</summary>
-        <value>The request headers.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpChannelBinding">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Authentication.ExtendedProtection.ChannelBinding HttpChannelBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ChannelBinding HttpChannelBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.HttpChannelBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.ExtendedProtection.ChannelBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpMethod">
@@ -381,17 +465,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.HttpMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the HTTP data-transfer method (such as <see langword="GET" />, <see langword="POST" />, or <see langword="HEAD" />) that was used by the client.</summary>
-        <value>The HTTP data-transfer method that was used by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="InputStream">
@@ -400,17 +483,59 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.InputStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the contents of the incoming HTTP entity body.</summary>
-        <value>The contents of the incoming HTTP entity body.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEntityBody">
+      <MemberSignature Language="C#" Value="public virtual void InsertEntityBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertEntityBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.InsertEntityBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEntityBody">
+      <MemberSignature Language="C#" Value="public virtual void InsertEntityBody (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertEntityBody(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.InsertEntityBody(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -419,18 +544,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the request has been authenticated.</summary>
-        <value>
-          <see langword="true" /> if the request has been authenticated; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsLocal">
@@ -439,18 +562,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.IsLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the request is from the local computer.</summary>
-        <value>
-          <see langword="true" /> if the request is from the local computer; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSecureConnection">
@@ -459,18 +580,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.IsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the HTTP connection uses secure sockets (HTTPS protocol).</summary>
-        <value>
-          <see langword="true" /> if the connection is an SSL connection that uses HTTPS protocol; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -479,8 +598,8 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -489,11 +608,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the collection member to get.</param>
-        <summary>When overridden in a derived class, gets the specified object from the <see cref="System.Web.HttpRequestBase.Cookies%2A" />, <see cref="System.Web.HttpRequestBase.Form%2A" />, <see cref="System.Web.HttpRequestBase.QueryString%2A" />, or <see cref="System.Web.HttpRequestBase.ServerVariables%2A" /> collections.</summary>
-        <value>The <see cref="System.Web.HttpRequestBase.QueryString%2A" />, <see cref="System.Web.HttpRequestBase.Form%2A" />, <see cref="System.Web.HttpRequestBase.Cookies%2A" />, or <see cref="System.Web.HttpRequestBase.ServerVariables%2A" /> collection member that is specified by <paramref name="key" />. If the specified <paramref name="key" /> value is not found, <see langword="null" /> is returned.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="LogonUserIdentity">
@@ -502,17 +620,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.LogonUserIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the <see cref="T:System.Security.Principal.WindowsIdentity" /> type for the current user.</summary>
-        <value>The identity for the current user.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapImageCoordinates">
@@ -521,8 +638,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapImageCoordinates(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32[]</ReturnType>
@@ -531,11 +648,10 @@
         <Parameter Name="imageFieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="imageFieldName">The name of the image map.</param>
-        <summary>When overridden in a derived class, maps an incoming image-field form parameter to appropriate x-coordinate and y-coordinate values.</summary>
-        <returns>A two-dimensional array of integers.</returns>
+        <param name="imageFieldName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapPath">
@@ -544,8 +660,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapPath(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -554,11 +670,10 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
-        <summary>When overridden in a derived class, maps the specified virtual path to a physical path on the server.</summary>
-        <returns>The physical path on the server that is specified by <paramref name="virtualPath" />.</returns>
+        <param name="virtualPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapPath">
@@ -567,8 +682,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapPath(System.String,System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -579,14 +694,34 @@
         <Parameter Name="allowCrossAppMapping" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
-        <param name="baseVirtualDir">The virtual base directory path that is used for relative resolution.</param>
-        <param name="allowCrossAppMapping">
-          <see langword="true" /> to indicate that <c>virtualPath</c> can belong to another application; otherwise, <see langword="false" />.</param>
-        <summary>When overridden in a derived class, maps the specified virtual path to a physical path on the server.</summary>
-        <returns>The physical path on the server.</returns>
+        <param name="virtualPath">To be added.</param>
+        <param name="baseVirtualDir">To be added.</param>
+        <param name="allowCrossAppMapping">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MapRawImageCoordinates">
+      <MemberSignature Language="C#" Value="public virtual double[] MapRawImageCoordinates (string imageFieldName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64[] MapRawImageCoordinates(string imageFieldName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapRawImageCoordinates(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageFieldName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="imageFieldName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Params">
@@ -595,17 +730,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Params" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a combined collection of <see cref="System.Web.HttpRequest.QueryString%2A" />, <see cref="System.Web.HttpRequest.Form%2A" />, <see cref="System.Web.HttpRequest.ServerVariables%2A" />, and <see cref="System.Web.HttpRequest.Cookies%2A" /> items.</summary>
-        <value>The collection of combined values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -614,17 +748,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the virtual path of the current request.</summary>
-        <value>The virtual path of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="PathInfo">
@@ -633,24 +766,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.PathInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets additional path information for a resource that has a URL extension.</summary>
-        <value>The additional path information for the resource.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the URL Http://www.contoso.com/virdir/page.html/tail, the PathInfo value is /tail.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PhysicalApplicationPath">
@@ -659,17 +784,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.PhysicalApplicationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the physical file-system path of the current application's root directory.</summary>
-        <value>The file-system path of the current application's root directory.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="PhysicalPath">
@@ -678,17 +802,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.PhysicalPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the physical file-system path of the requested resource.</summary>
-        <value>The file-system path of the requested resource.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="QueryString">
@@ -697,17 +820,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.QueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of HTTP query-string variables.</summary>
-        <value>The query-string variables that were sent by the client in the URL of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RawUrl">
@@ -716,17 +838,52 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.RawUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the complete URL of the current request.</summary>
-        <value>The complete URL of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntityBodyMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.ReadEntityBodyMode ReadEntityBodyMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ReadEntityBodyMode ReadEntityBodyMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ReadEntityBodyMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestContext">
+      <MemberSignature Language="C#" Value="public virtual System.Web.Routing.RequestContext RequestContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RequestContext RequestContext" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.RequestContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RequestContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestType">
@@ -735,17 +892,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.RequestType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets the HTTP data-transfer method (<see langword="GET" /> or <see langword="POST" />) that was used by the client.</summary>
-        <value>The HTTP data-transfer method type that was used by the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
@@ -754,8 +910,8 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.SaveAs(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -765,11 +921,10 @@
         <Parameter Name="includeHeaders" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">The physical drive path.</param>
-        <param name="includeHeaders">A value that specifies whether to save HTTP headers to disk.</param>
-        <summary>When overridden in a derived class, saves an HTTP request to disk.</summary>
+        <param name="filename">To be added.</param>
+        <param name="includeHeaders">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ServerVariables">
@@ -778,17 +933,52 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ServerVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a collection of Web server variables.</summary>
-        <value>The server variables.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TimedOutToken">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.CancellationToken TimedOutToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken TimedOutToken" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.TimedOutToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.CancellationToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlsTokenBindingInfo">
+      <MemberSignature Language="C#" Value="public virtual System.Web.ITlsTokenBindingInfo TlsTokenBindingInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ITlsTokenBindingInfo TlsTokenBindingInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.TlsTokenBindingInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ITlsTokenBindingInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TotalBytes">
@@ -797,17 +987,34 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.TotalBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the number of bytes in the current input stream.</summary>
-        <value>The number of bytes in the input stream.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Unvalidated">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UnvalidatedRequestValuesBase Unvalidated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UnvalidatedRequestValuesBase Unvalidated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Unvalidated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UnvalidatedRequestValuesBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -816,17 +1023,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets information about the URL of the current request.</summary>
-        <value>An object that contains information about the URL of the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="UrlReferrer">
@@ -835,17 +1041,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UrlReferrer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets information about the URL of the client request that linked to the current URL.</summary>
-        <value>The URL of the page that linked to the current request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="UserAgent">
@@ -854,17 +1059,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the complete user-agent string of the client.</summary>
-        <value>The complete user-agent string of the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="UserHostAddress">
@@ -873,17 +1077,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserHostAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the IP host address of the client.</summary>
-        <value>The IP address of the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="UserHostName">
@@ -892,17 +1095,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserHostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the DNS name of the client.</summary>
-        <value>The DNS name of the client.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="UserLanguages">
@@ -911,17 +1113,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserLanguages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a sorted array of client language preferences.</summary>
-        <value>A sorted array of client language preferences, or <see langword="null" /> if the array is empty.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateInput">
@@ -930,24 +1131,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.ValidateInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Web.Abstractions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, causes validation to occur for the collections that are accessed through the <see cref="System.Web.HttpRequestBase.Cookies%2A" />, <see cref="System.Web.HttpRequestBase.Form%2A" />, and <see cref="System.Web.HttpRequestBase.QueryString%2A" /> properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpRequestBase> class uses input validation flags to determine whether to perform validation on the request collections that are accessed through the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, and <xref:System.Web.HttpRequest.QueryString%2A> properties. The ValidateInput method sets these flags so that when the `get` accessors of the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, or <xref:System.Web.HttpRequest.QueryString%2A> properties are invoked, input validation is performed. Validation works by checking all input data against a hard-coded list of potentially dangerous data.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">Always.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

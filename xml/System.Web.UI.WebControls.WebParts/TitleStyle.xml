@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies the style characteristics for the title bars of Web Parts controls within a zone.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TitleStyle class is used with zones to specify common style characteristics that apply to the title bars of Web Parts controls within the zones. The <xref:System.Web.UI.WebControls.WebParts.WebZone.PartTitleStyle%2A> property contains a reference to a TitleStyle object for each zone.  
-  
- A title bar for a control is rendered at run time as an HTML table cell. Because the TitleStyle class inherits from the <xref:System.Web.UI.WebControls.TableItemStyle> class, it allows you to set stylistic attributes for a title bar similar to the attributes for any table cell.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the declarative use of the TitleStyle class. In the code for the following page, an `<asp:calendar>` element and an `<asp:label>` element appear within a zone, giving the corresponding controls genuine Web Parts functionality at run time. Notice that the `<parttitlestyle>` element, which contains several style attributes, applies to the title bars of both Web Parts controls contained within the zone.  
-  
- [!code-cs[WebParts_PartTitleStyle_Overview#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_312_1.aspx)]
- [!code-vb[WebParts_PartTitleStyle_Overview#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_312_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TitleStyle" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class. The constructor sets the value of the <xref:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -63,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -75,27 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the contents of the title bar for a part control wrap in the title bar.</summary>
-        <value>
-          <see langword="true" /> if the contents of a title bar wrap in the title bar; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.TitleStyle> class overrides the base <xref:System.Web.UI.WebControls.TableItemStyle.Wrap%2A> property so that it can set the value to `false`. The <xref:System.Web.UI.WebControls.WebParts.TitleStyle.%23ctor%2A> sets the Wrap property to `false`, so that by default, a title bar for a part control does not allow its contents to wrap.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the declarative use of the Wrap property. In the code for the following page, an `<asp:calendar>` element and an `<asp:label>` element appear within a zone, which gives the corresponding controls genuine Web Parts functionality at run time.  
-  
- Notice that the `<parttitlestyle>` element, which contains several style attributes, applies to the title bars of both Web Parts controls contained within the zone. Notice also that the `<parttitlestyle>` element has `wrap` and `width` attributes. Because the Wrap property value is set to `true`, and the text in the title bars of the two controls is wider than the value assigned to the `width` attribute, the title bar text of each control wraps when the page is loaded in a browser.  
-  
- [!code-vb[WebParts_PartTitleStyle_Wrap#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1292_1.aspx)]
- [!code-cs[WebParts_PartTitleStyle_Wrap#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1292_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

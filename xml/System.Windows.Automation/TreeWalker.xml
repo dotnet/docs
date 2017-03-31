@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TreeWalker" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods and properties used to navigate the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- UI Automation clients view the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements on the desktop as a set of <xref:System.Windows.Automation.AutomationElement> objects arranged in a tree structure.  
-  
- Using the TreeWalker class, a client application can navigate the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree by selecting a view of the tree and stepping from one <xref:System.Windows.Automation.AutomationElement> to another in a specified direction using the <xref:System.Windows.Automation.TreeWalker.GetFirstChild%2A>, <xref:System.Windows.Automation.TreeWalker.GetLastChild%2A>, <xref:System.Windows.Automation.TreeWalker.GetPreviousSibling%2A>, <xref:System.Windows.Automation.TreeWalker.GetNextSibling%2A>, and <xref:System.Windows.Automation.TreeWalker.GetParent%2A> methods.  
-  
- Navigating the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] tree using TreeWalker can result in cross-process calls and is not as efficient as locating an element using the <xref:System.Windows.Automation.AutomationElement.FindAll%2A> or <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> methods.  
-  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,33 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="condition" Type="System.Windows.Automation.Condition" />
       </Parameters>
       <Docs>
-        <param name="condition">The view of the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element tree that <see cref="T:System.Windows.Automation.TreeWalker" /> will navigate.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.TreeWalker" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements that do not match `condition` are skipped over when <xref:System.Windows.Automation.TreeWalker> is used to navigate the element tree.  
-  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
-   
-  
-## Examples  
- The following example shows how you can construct a <xref:System.Windows.Automation.TreeWalker> that navigates only among enabled elements.  
-  
- [!code-vb[UIAClient_snip#174](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#174)]
- [!code-cs[UIAClient_snip#174](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#174)]  
-  
- ]]></format>
-        </remarks>
+        <param name="condition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -72,15 +40,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Condition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that defines the view for the <see cref="T:System.Windows.Automation.TreeWalker" /> object.</summary>
-        <value>The condition that defines the view. This is the value that was passed to the constructor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,30 +58,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.TreeWalker</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a predefined <see cref="T:System.Windows.Automation.TreeWalker" /> containing a view of elements in the tree that are marked as content controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
-   
-  
-## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for ContentViewWalker is identical.  
-  
- [!code-vb[UIAClient_snip#171](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#171)]
- [!code-cs[UIAClient_snip#171](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#171)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlViewWalker">
@@ -124,30 +75,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.TreeWalker</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a predefined <see cref="T:System.Windows.Automation.TreeWalker" /> containing a view of elements in the tree that are marked as controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
-   
-  
-## Examples  
- The following example shows ControlViewWalker being used to construct a tree view of elements in a subtree.  
-  
- [!code-vb[UIAClient_snip#171](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#171)]
- [!code-cs[UIAClient_snip#171](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#171)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFirstChild">
@@ -157,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,27 +101,10 @@
         <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the first child.</param>
-        <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The first child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
-  
-   
-  
-## Examples  
- The following example shows GetFirstChild being used to construct a tree view of elements in a subtree.  
-  
- [!code-vb[UIAClient_snip#171](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#171)]
- [!code-cs[UIAClient_snip#171](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#171)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFirstChild">
@@ -197,7 +114,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,20 +124,11 @@
         <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the first child.</param>
-        <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
-        <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The first child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLastChild">
@@ -231,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,19 +147,10 @@
         <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the last child.</param>
-        <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.AutomationElement" /> that is the last child element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLastChild">
@@ -263,7 +160,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,20 +170,11 @@
         <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the last child.</param>
-        <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
-        <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The last element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextSibling">
@@ -297,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,27 +193,10 @@
         <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.Automation.AutomationElement" /> from which to retrieve the next sibling.</param>
-        <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
-  
-   
-  
-## Examples  
- The following example shows GetNextSibling being used to construct a tree view of elements in a subtree.  
-  
- [!code-vb[UIAClient_snip#171](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#171)]
- [!code-cs[UIAClient_snip#171](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#171)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextSibling">
@@ -337,7 +206,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -348,20 +216,11 @@
         <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the next sibling.</param>
-        <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
-        <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The next sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -371,7 +230,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,20 +239,10 @@
         <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element whose parent is to be returned.</param>
-        <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The parent element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if the specified element is the root element in the tree, or if the parent element is not visible in the current view.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows GetParent being used to find the window element that contains a specified element.  
-  
- [!code-cs[UIAFocusTracker_snip#102](~/add/codesnippet/csharp/FocusTracker/FocusTracker.cs#102)]
- [!code-vb[UIAFocusTracker_snip#102](~/add/codesnippet/visualbasic/FocusTrackerVB/FocusTracker.vb#102)]  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -404,7 +252,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,18 +262,11 @@
         <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
       </Parameters>
       <Docs>
-        <param name="element">The element whose parent is to be returned.</param>
-        <param name="request">A cache request object specifying members on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
-        <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The parent element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if the specified element is the root element in the tree, or the parent element is not visible in this view.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousSibling">
@@ -436,7 +276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -446,19 +285,10 @@
         <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the previous sibling.</param>
-        <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousSibling">
@@ -468,7 +298,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,20 +308,11 @@
         <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to retrieve the previous sibling.</param>
-        <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
-        <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" /> and caches properties and patterns.</summary>
-        <returns>The previous sibling element, or a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]) if there is no such element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Normalize">
@@ -502,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -512,19 +331,10 @@
         <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to start the normalization.</param>
-        <summary>Retrieves the node itself, if it satisfies the <see cref="System.Windows.Automation.TreeWalker.Condition%2A" />, or the nearest parent or ancestor node that satisfies the <see cref="System.Windows.Automation.TreeWalker.Condition%2A" />.</summary>
-        <returns>The nearest <see cref="T:System.Windows.Automation.AutomationElement" /> in the current view. If the navigation up the ancestor chain reaches the root element, the root element is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
-  
- This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use Normalize to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Normalize">
@@ -534,7 +344,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -545,20 +354,11 @@
         <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which to start the normalization.</param>
-        <param name="request">A cache request object specifying properties and patterns on the returned <see cref="T:System.Windows.Automation.AutomationElement" /> to cache.</param>
-        <summary>Retrieves the node itself, if it satisfies the <see cref="System.Windows.Automation.TreeWalker.Condition%2A" />, or the nearest parent or ancestor node that satisfies the <see cref="System.Windows.Automation.TreeWalker.Condition%2A" />, and caches properties and patterns.</summary>
-        <returns>The nearest <see cref="T:System.Windows.Automation.AutomationElement" /> in the current view. If the navigation up the ancestor chain reaches the root element, the root element is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
-  
- This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RawViewWalker">
@@ -568,30 +368,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.TreeWalker</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a predefined <see cref="T:System.Windows.Automation.TreeWalker" /> containing a view of all the elements in the tree.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
-  
-   
-  
-## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for RawViewWalker is identical.  
-  
- [!code-vb[UIAClient_snip#171](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#171)]
- [!code-cs[UIAClient_snip#171](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#171)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

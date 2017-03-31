@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.TypedDataSetGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.TypedDataSetGenerator> class takes information provided (for example, an XML schema) and creates a typed dataset class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Generate">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,19 +33,12 @@
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
       </Parameters>
       <Docs>
-        <param name="dataSet">The source <see cref="T:System.Data.DataSet" /> that specifies the metadata for the typed <see cref="T:System.Data.DataSet" />.</param>
-        <param name="codeNamespace">The namespace that provides the target namespace for the typed <see cref="T:System.Data.DataSet" />.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on an existing <see cref="T:System.Data.DataSet" />.</summary>
-        <returns>A strongly typed <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Generates a strongly typed <xref:System.Data.DataSet>. The dataset is created in the namespace indicated in the `codeNamespace` parameter, and the dataset is generated in the managed programming language indicated in the `codeProvider` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="dataSet">To be added.</param>
+        <param name="codeNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -64,7 +48,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,24 +60,13 @@
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <returns>A strongly typed <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -104,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,24 +89,13 @@
         <Parameter Name="customDBProviders" Type="System.Collections.Hashtable" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="customDBProviders">A HashTable that maps connections to specific providers in the typed dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="customDBProviders">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -145,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,24 +118,13 @@
         <Parameter Name="specifiedFactory" Type="System.Data.Common.DbProviderFactory" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="specifiedFactory">The <see cref="T:System.Data.Common.DbProviderFactory" /> to use to override the provider contained in the <c>inputFileContent</c>.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="specifiedFactory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -186,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,25 +147,14 @@
         <Parameter Name="option" Type="System.Data.Design.TypedDataSetGenerator+GenerateOption" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="option">The <see cref="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" /> that determines what (if any) additional components and methods to create when generating a typed dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <returns>A strongly typed <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="option">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -228,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,25 +178,14 @@
         <Parameter Name="option" Type="System.Data.Design.TypedDataSetGenerator+GenerateOption" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="customDBProviders">A HashTable that maps connections to specific providers in the typed dataset.</param>
-        <param name="option">The <see cref="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" /> that determines what (if any) additional components and methods to create when generating a typed dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="customDBProviders">To be added.</param>
+        <param name="option">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -271,7 +195,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,26 +209,15 @@
         <Parameter Name="dataSetNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="option">The <see cref="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" /> that determines what (if any) additional components and methods to create when generating a typed dataset.</param>
-        <param name="dataSetNamespace">A string that contains the namespace of the generated dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <returns>A strongly typed <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="option">To be added.</param>
+        <param name="dataSetNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -315,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,26 +242,15 @@
         <Parameter Name="dataSetNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="customDBProviders">A HashTable that maps connections to specific providers in the typed dataset.</param>
-        <param name="option">The <see cref="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" /> that determines what (if any) additional components and methods to create when generating a typed dataset.</param>
-        <param name="dataSetNamespace">A string that contains the namespace of the generated dataset.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="customDBProviders">To be added.</param>
+        <param name="option">To be added.</param>
+        <param name="dataSetNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -375,27 +275,16 @@
         <Parameter Name="basePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="option">The <see cref="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" /> that determines what (if any) additional components and methods to create when generating a typed dataset.</param>
-        <param name="dataSetNamespace">A string that contains the namespace of the generated dataset.</param>
-        <param name="basePath">A string that represents the path to the schema based on the relative path of the dataset input file.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <returns>A strongly typed <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="option">To be added.</param>
+        <param name="dataSetNamespace">To be added.</param>
+        <param name="basePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -421,27 +310,16 @@
         <Parameter Name="basePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
-        <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
-        <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="customDBProviders">A HashTable that maps connections to specific providers in the typed dataset.</param>
-        <param name="option">The <see cref="T:System.Data.Design.TypedDataSetGenerator.GenerateOption" /> that determines what (if any) additional components and methods to create when generating a typed dataset.</param>
-        <param name="dataSetNamespace">A string that contains the namespace of the generated dataset.</param>
-        <param name="basePath">A string that represents the path to the schema based on the relative path of the dataset input file.</param>
-        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Generates a strongly typed <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="compileUnit">To be added.</param>
+        <param name="mainNamespace">To be added.</param>
+        <param name="codeProvider">To be added.</param>
+        <param name="customDBProviders">To be added.</param>
+        <param name="option">To be added.</param>
+        <param name="dataSetNamespace">To be added.</param>
+        <param name="basePath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProviderName">
@@ -451,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -461,21 +338,10 @@
         <Parameter Name="inputFileContent" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <summary>Returns the first provider name found in the provided input file.</summary>
-        <returns>A string that represents the specific provider for this <see cref="T:System.Data.DataSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- This method returns the first provider name in the specified `inputFileContent`.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProviderName">
@@ -485,7 +351,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -496,22 +361,11 @@
         <Parameter Name="tableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
-        <param name="tableName">A string that represents the name of the table to return the provider name from.</param>
-        <summary>Returns the provider name for the <paramref name="tableName" /> in the input file.</summary>
-        <returns>A string that represents the provider name for the specific table passed in to the <paramref name="tableName" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- Returns the provider name for the given `tableName` in the <xref:System.Data.DataSet>.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputFileContent">To be added.</param>
+        <param name="tableName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReferencedAssemblies">
@@ -521,23 +375,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of assemblies referenced in a typed dataset.</summary>
-        <value>A collection containing all referenced assemblies in the dataset.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The generator iterates over this list and adds the assemblies to your project.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

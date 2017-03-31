@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.PropertyValueOrigin" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the level in the configuration hierarchy where a configuration property value originated.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration property value originates from the <see cref="System.Configuration.ConfigurationProperty.DefaultValue%2A" /> property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherited">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration property value is inherited from a parent level in the configuration.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetHere">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration property value is defined at the current level of the hierarchy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

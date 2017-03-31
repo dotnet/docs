@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.AssemblyInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Loads an assembly, and runs all the installers in it.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an AssemblyInstaller is created by invoking the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor. The properties of this object are set and the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> and <xref:System.Configuration.Install.AssemblyInstaller.Commit%2A> methods are called to install the `MyAssembly.exe` assembly.  
-  
- [!code-cs[AssemblyInstaller#1](~/add/codesnippet/csharp/t-system.configuration.i_11_1.cs)]
- [!code-cpp[AssemblyInstaller#1](~/add/codesnippet/cpp/t-system.configuration.i_11_1.cpp)]
- [!code-vb[AssemblyInstaller#1](~/add/codesnippet/visualbasic/t-system.configuration.i_11_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,26 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.AssemblyInstaller" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the AssemblyInstaller constructor and the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> and <xref:System.Configuration.Install.AssemblyInstaller.Commit%2A> methods of the <xref:System.Configuration.Install.AssemblyInstaller> class.  
-  
- An <xref:System.Configuration.Install.AssemblyInstaller> is created by invoking the AssemblyInstaller constructor. The properties of this object are set and the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> and <xref:System.Configuration.Install.AssemblyInstaller.Commit%2A> methods are called to install the `MyAssembly_Install.exe` assembly.  
-  
- [!code-cs[AssemblyInstaller_Install#2](~/add/codesnippet/csharp/m-system.configuration.i_9_1.cs)]
- [!code-vb[AssemblyInstaller_Install#2](~/add/codesnippet/visualbasic/m-system.configuration.i_9_1.vb)]
- [!code-cpp[AssemblyInstaller_Install#2](~/add/codesnippet/cpp/m-system.configuration.i_9_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -71,9 +44,9 @@
         <Parameter Name="commandLine" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="assembly">The <see cref="T:System.Reflection.Assembly" /> to install.</param>
-        <param name="commandLine">The command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation. Can be a null value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.AssemblyInstaller" /> class, and specifies both the assembly to install and the command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object.</summary>
+        <param name="assembly">To be added.</param>
+        <param name="commandLine">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +57,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -92,21 +64,10 @@
         <Parameter Name="commandLine" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="fileName">The file name of the assembly to install.</param>
-        <param name="commandLine">The command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation. Can be a null value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.AssemblyInstaller" /> class, and specifies both the file name of the assembly to install and the command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Configuration.Install.AssemblyInstaller> is created by invoking the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor with the assembly to install and the command line argument array as parameters.  
-  
- [!code-cs[AssemblyInstaller_Uninstall#1](~/add/codesnippet/csharp/3b13fe45-0de3-4bd6-bd46-_1.cs)]
- [!code-cpp[AssemblyInstaller_Uninstall#1](~/add/codesnippet/cpp/3b13fe45-0de3-4bd6-bd46-_1.cpp)]
- [!code-vb[AssemblyInstaller_Uninstall#1](~/add/codesnippet/visualbasic/3b13fe45-0de3-4bd6-bd46-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="fileName">To be added.</param>
+        <param name="commandLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -116,17 +77,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the assembly to install.</summary>
-        <value>An <see cref="T:System.Reflection.Assembly" /> that defines the assembly to install.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The property value is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CheckIfInstallable">
@@ -136,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,39 +104,9 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The assembly in which to search for installers.</param>
-        <summary>Checks to see if the specified assembly can be installed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CheckIfInstallable method determines whether the specified assembly can be installed. To avoid an exception being thrown, the file must meet the following criteria:  
-  
--   The file exists.  
-  
--   The file is a .NET Framework assembly.  
-  
--   The public types can be read from the file.  
-  
--   There is at least one public, non abstract class that extends the <xref:System.Configuration.Install.Installer> class and contains the <xref:System.ComponentModel.RunInstallerAttribute.Yes> attribute.  
-  
--   An instance of each installer can be created.  
-  
-> [!NOTE]
->  If the assembly is valid but contains no installers, an exception is thrown. This behavior differs from that at install time, when it is not an error to install an empty assembly.  
-  
-   
-  
-## Examples  
- In the following example, the CheckIfInstallable method is applied to both an existent and nonexistent assembly and the results of the call are displayed to the console.  
-  
- [!code-cpp[AssemblyInstaller_CheckIfInstallable#1](~/add/codesnippet/cpp/e5260558-85d4-42b6-9d54-_1.cpp)]
- [!code-vb[AssemblyInstaller_CheckIfInstallable#1](~/add/codesnippet/visualbasic/e5260558-85d4-42b6-9d54-_1.vb)]
- [!code-cs[AssemblyInstaller_CheckIfInstallable#1](~/add/codesnippet/csharp/e5260558-85d4-42b6-9d54-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Exception">The specified assembly cannot be installed.</exception>
+        <param name="assemblyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandLine">
@@ -188,27 +116,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation.</summary>
-        <value>An array of type <see cref="T:System.String" /> that represents the command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, the CommandLine property of an <xref:System.Configuration.Install.AssemblyInstaller> is set to the logfile name.  
-  
- [!code-cs[AssemblyInstaller_Rollback#3](~/add/codesnippet/csharp/p-system.configuration.i_13_1.cs)]
- [!code-cpp[AssemblyInstaller_Rollback#3](~/add/codesnippet/cpp/p-system.configuration.i_13_1.cpp)]
- [!code-vb[AssemblyInstaller_Rollback#3](~/add/codesnippet/visualbasic/p-system.configuration.i_13_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -218,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,56 +143,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after all the installers in the installer collection have run.</param>
-        <summary>Completes the installation transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called only if the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> succeed. This method then calls the Commit method of each installer in the collection.  
-  
- Store any information that you might need to do a correct uninstall operation in the saved-state <xref:System.Collections.IDictionary>, which is passed to the <xref:System.Configuration.Install.AssemblyInstaller.Uninstall%2A> method.  
-  
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor and the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> and Commit methods of the <xref:System.Configuration.Install.AssemblyInstaller> class.  
-  
- An <xref:System.Configuration.Install.AssemblyInstaller> class is created by invoking the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor. The properties of this object are set and the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> and Commit methods are called to install the `MyAssembly_Install.exe` assembly.  
-  
- [!code-cs[AssemblyInstaller_Install#2](~/add/codesnippet/csharp/1a78872c-c18f-4fcc-962b-_1.cs)]
- [!code-vb[AssemblyInstaller_Install#2](~/add/codesnippet/visualbasic/1a78872c-c18f-4fcc-962b-_1.vb)]
- [!code-cpp[AssemblyInstaller_Install#2](~/add/codesnippet/cpp/1a78872c-c18f-4fcc-962b-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.  
-  
- -or-  
-  
- A file could not be found.</exception>
-        <exception cref="T:System.Exception">An error occurred in the <see cref="E:System.Configuration.Install.Installer.Committing" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An error occurred in the <see cref="E:System.Configuration.Install.Installer.Committed" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An exception occurred during the Commit phase of the installation. The exception is ignored and the installation continues. However, the application might not function correctly after installation completes.  
-  
- -or-  
-  
- Installer types were not found in one of the assemblies.  
-  
- -or-  
-  
- An instance of one of the installer types could not be created.</exception>
-        <exception cref="T:System.Configuration.Install.InstallException">An exception occurred during the Commit phase of the installation. The exception is ignored and the installation continues. However, the application might not function correctly after installation completes.</exception>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -287,32 +155,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the help text for all the installers in the installer collection.</summary>
-        <value>The help text for all the installers in the installer collection, including the description of what each installer does and the command-line options (for the installation program) that can be passed to and understood by each installer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An example of an installation program is the InstallUtil.exe utility.  
-  
-   
-  
-## Examples  
- In the following sample, the HelpText property of an <xref:System.Configuration.Install.AssemblyInstaller> is displayed to the console.  
-  
- [!code-cpp[AssemblyInstaller_HelpText#2](~/add/codesnippet/cpp/p-system.configuration.i_8_1.cpp)]
- [!code-cs[AssemblyInstaller_HelpText#2](~/add/codesnippet/csharp/p-system.configuration.i_8_1.cs)]
- [!code-vb[AssemblyInstaller_HelpText#2](~/add/codesnippet/visualbasic/p-system.configuration.i_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -322,7 +173,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,45 +182,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> used to save information needed to perform a commit, rollback, or uninstall operation.</param>
-        <summary>Performs the installation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the Install method of each installer contained in the <xref:System.Configuration.Install.Installer.Installers%2A> property of this instance. The <xref:System.Collections.IDictionary> object specified by the `savedState` parameter is updated to reflect the status of the installation after the contained installers have run. If all the Install methods succeed, the <xref:System.Configuration.Install.AssemblyInstaller.Commit%2A> method is called. Otherwise, the <xref:System.Configuration.Install.AssemblyInstaller.Rollback%2A> method is called.  
-  
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor and the Install and <xref:System.Configuration.Install.AssemblyInstaller.Commit%2A> methods of the <xref:System.Configuration.Install.AssemblyInstaller> class.  
-  
- An object of the <xref:System.Configuration.Install.AssemblyInstaller> class is created by invoking the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor. The properties of this object are set and the Install and <xref:System.Configuration.Install.AssemblyInstaller.Commit%2A> methods are called to install the 'MyAssembly_Install.exe' assembly.  
-  
- [!code-cs[AssemblyInstaller_Install#2](~/add/codesnippet/csharp/8e7aa37f-ec2e-44d8-9565-_1.cs)]
- [!code-vb[AssemblyInstaller_Install#2](~/add/codesnippet/visualbasic/8e7aa37f-ec2e-44d8-9565-_1.vb)]
- [!code-cpp[AssemblyInstaller_Install#2](~/add/codesnippet/cpp/8e7aa37f-ec2e-44d8-9565-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- A file could not be found.</exception>
-        <exception cref="T:System.Exception">An exception occurred in the <see cref="E:System.Configuration.Install.Installer.BeforeInstall" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An exception occurred in the <see cref="E:System.Configuration.Install.Installer.AfterInstall" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- Installer types were not found in one of the assemblies.  
-  
- -or-  
-  
- An instance of one of the installer types could not be created.</exception>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -380,27 +194,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path of the assembly to install.</summary>
-        <value>The path of the assembly to install.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, an <xref:System.Configuration.Install.AssemblyInstaller> is created by invoking the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor. The Path properties of this object are set.  
-  
- [!code-cs[AssemblyInstaller_Rollback#2](~/add/codesnippet/csharp/p-system.configuration.i_4_1.cs)]
- [!code-cpp[AssemblyInstaller_Rollback#2](~/add/codesnippet/cpp/p-system.configuration.i_4_1.cpp)]
- [!code-vb[AssemblyInstaller_Rollback#2](~/add/codesnippet/visualbasic/p-system.configuration.i_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -410,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -420,52 +221,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the pre-installation state of the computer.</param>
-        <summary>Restores the computer to the state it was in before the installation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A rollback restores the computer to the state it was in before the installation occurred. The Rollback method is called if the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> method of this <xref:System.Configuration.Install.Installer> instance or of any installer in the installer collection fails to run correctly. Any exceptions generated by calling the Rollback method of an installer in the collection are ignored, and the rollback of the other installers continues.  
-  
-   
-  
-## Examples  
- In the following sample, the Rollback method is called to undo the install process on the specified assembly.  
-  
- [!code-cs[AssemblyInstaller_Rollback#1](~/add/codesnippet/csharp/bc53a39c-e214-4f79-a081-_1.cs)]
- [!code-cpp[AssemblyInstaller_Rollback#1](~/add/codesnippet/cpp/bc53a39c-e214-4f79-a081-_1.cpp)]
- [!code-vb[AssemblyInstaller_Rollback#1](~/add/codesnippet/visualbasic/bc53a39c-e214-4f79-a081-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.  
-  
- -or-  
-  
- A file could not be found.</exception>
-        <exception cref="T:System.Exception">An exception occurred in the <see cref="E:System.Configuration.Install.Installer.BeforeRollback" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An exception occurred in the <see cref="E:System.Configuration.Install.Installer.AfterRollback" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An exception occurred during the Rollback phase of the installation. The exception is ignored and the rollback continues. However, the computer might not be fully reverted to its initial state after the rollback completes.  
-  
- -or-  
-  
- Installer types were not found in one of the assemblies.  
-  
- -or-  
-  
- An instance of one of the installer types could not be created.</exception>
-        <exception cref="T:System.Configuration.Install.InstallException">An exception occurred during the Rollback phase of the installation. The exception is ignored and the rollback continues. However, the computer might not be fully reverted to its initial state after the rollback completes.</exception>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -475,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -485,55 +242,9 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the post-installation state of the computer.</param>
-        <summary>Removes an installation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method to remove a previously completed installation. If the <xref:System.Configuration.Install.Installer.Uninstall%2A> method fails for one of the installers in the collection, it is still called for the remaining installers. A failed uninstallation does not roll back the computer to its pre-uninstallation state.  
-  
-> [!NOTE]
->  Although the <xref:System.Configuration.Install.Installer.Install%2A> and <xref:System.Configuration.Install.Installer.Commit%2A> methods save the state of the computer after the installations, the file containing the <xref:System.Collections.IDictionary> from the `savedState` parameter might have been deleted at some point after the installation was complete. If the file is deleted, the `savedState` parameter is `null`.  
-  
-   
-  
-## Examples  
- In the following sample, the Uninstall method is called after installing and committing the assembly passed as the parameter to the constructor.  
-  
- [!code-cs[AssemblyInstaller_Uninstall#2](~/add/codesnippet/csharp/bca960bf-b3ff-465a-8389-_1.cs)]
- [!code-cpp[AssemblyInstaller_Uninstall#2](~/add/codesnippet/cpp/bca960bf-b3ff-465a-8389-_1.cpp)]
- [!code-vb[AssemblyInstaller_Uninstall#2](~/add/codesnippet/visualbasic/bca960bf-b3ff-465a-8389-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.  
-  
- -or-  
-  
- A file could not be found.</exception>
-        <exception cref="T:System.Exception">An error occurred in the <see cref="E:System.Configuration.Install.Installer.BeforeUninstall" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An error occurred in the <see cref="E:System.Configuration.Install.Installer.AfterUninstall" /> event handler of one of the installers in the collection.  
-  
- -or-  
-  
- An exception occurred while uninstalling. The exception is ignored and the uninstall continues. However, the application might not be fully uninstalled after the uninstall completes.  
-  
- -or-  
-  
- Installer types were not found in one of the assemblies.  
-  
- -or-  
-  
- An instance of one of the installer types could not be created.  
-  
- -or-  
-  
- A file could not be deleted.</exception>
-        <exception cref="T:System.Configuration.Install.InstallException">An exception occurred while uninstalling. The exception is ignored and the uninstall continues. However, the application might not be fully uninstalled after the uninstall completes.</exception>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseNewContext">
@@ -543,33 +254,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to create a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation.</summary>
-        <value>
-          <see langword="true" /> if a new <see cref="T:System.Configuration.Install.InstallContext" /> object should be created for the assembly's installation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting this property to `true` creates a new file named "{Assembly name}.InstallLog" to log messages for this assembly. Setting UseNewContext to `false` prevents the new file from being created.  
-  
-   
-  
-## Examples  
- In the following example, an <xref:System.Configuration.Install.AssemblyInstaller> is created by invoking the <xref:System.Configuration.Install.AssemblyInstaller.%23ctor%2A> constructor. The UseNewContext property of this object is set to `true` and the <xref:System.Configuration.Install.AssemblyInstaller.Install%2A> method is invoked on the `MyAssembly_HelpText.exe` assembly. Due to this, the log messages are displayed on the console.  
-  
- [!code-cpp[AssemblyInstaller_HelpText#1](~/add/codesnippet/cpp/p-system.configuration.i_11_1.cpp)]
- [!code-cs[AssemblyInstaller_HelpText#1](~/add/codesnippet/csharp/p-system.configuration.i_11_1.cs)]
- [!code-vb[AssemblyInstaller_HelpText#1](~/add/codesnippet/visualbasic/p-system.configuration.i_11_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

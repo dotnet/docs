@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.GroupDescription" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides an abstract base class for types that describe how to divide the items in a collection into groups.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.GroupDescription" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,18 +47,9 @@
         <ReturnType>System.Collections.IComparer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a custom comparer that sorts groups using an object that implements <see cref="T:System.Collections.IComparer" />.</summary>
-        <value>A custom comparer that sorts groups using an object that implements <see cref="T:System.Collections.IComparer" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Setting the custom comparer object will clear previously set <xref:System.ComponentModel.GroupDescription.SortDescriptions%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupNameFromItem">
@@ -70,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,11 +70,11 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="item">The item to return group names for.</param>
-        <param name="level">The level of grouping.</param>
-        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to supply to the converter.</param>
-        <summary>Returns the group name(s) for the given item.</summary>
-        <returns>The group name(s) for the given item.</returns>
+        <param name="item">To be added.</param>
+        <param name="level">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,23 +85,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of names that are used to initialize a group with a set of subgroups with the given names.</summary>
-        <value>The collection of names that are used to initialize a group with a set of subgroups with the given names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can add additional subgroups later if there are items that do not match any of the given names.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NamesMatch">
@@ -123,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,11 +113,10 @@
         <Parameter Name="itemName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="groupName">The name of the group to check.</param>
-        <param name="itemName">The name of the item to check.</param>
-        <summary>Returns a value that indicates whether the group name and the item name match such that the item belongs to the group.</summary>
-        <returns>
-          <see langword="true" /> if the names match and the item belongs to the group; otherwise, <see langword="false" />.</returns>
+        <param name="groupName">To be added.</param>
+        <param name="itemName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,16 +136,9 @@
         <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Arguments of the event being raised.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.GroupDescription.PropertyChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Subclasses need to call this method to raise the <xref:System.ComponentModel.GroupDescription.PropertyChanged> event.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -178,14 +148,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a property value changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +165,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -209,8 +177,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether serialization processes should serialize the effective value of the <see cref="System.ComponentModel.GroupDescription.GroupNames%2A" /> property on instances of this class.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="System.ComponentModel.GroupDescription.GroupNames%2A" /> property value should be serialized; otherwise, false.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +201,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns whether serialization processes should serialize the effective value of the <see cref="System.ComponentModel.GroupDescription.SortDescriptions%2A" /> property on instances of this class.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ComponentModel.GroupDescription.SortDescriptions%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,8 +219,8 @@
         <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of sort criteria in which to sort the groups.</summary>
-        <value>The collection of sort criteria in which to sort the groups.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

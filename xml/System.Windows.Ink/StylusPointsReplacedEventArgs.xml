@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StylusPointsReplacedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Ink.Stroke.StylusPointsReplaced" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,9 +29,9 @@
         <Parameter Name="previousStylusPoints" Type="System.Windows.Input.StylusPointCollection" />
       </Parameters>
       <Docs>
-        <param name="newStylusPoints">The new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</param>
-        <param name="previousStylusPoints">The replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.StylusPointsReplacedEventArgs" /> class.</summary>
+        <param name="newStylusPoints">To be added.</param>
+        <param name="previousStylusPoints">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
-        <value>The new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
-        <value>The replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

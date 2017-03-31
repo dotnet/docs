@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CharacterHit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents information about a character hit within a glyph run.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CharacterHit structure provides information about the index of the first character that got hit as well as information about leading or trailing edge.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,9 +33,9 @@
         <Parameter Name="trailingLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="firstCharacterIndex">Index of the first character that got hit.</param>
-        <param name="trailingLength">In the case of a leading edge, this value is 0. In the case of a trailing edge, this value is the number of code points until the next valid caret position.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> structure.</summary>
+        <param name="firstCharacterIndex">To be added.</param>
+        <param name="trailingLength">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,10 +55,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare with the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</param>
-        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object; otherwise, <see langword="false" />. If <paramref name="obj" /> is not a <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object, <see langword="false" /> is returned.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,10 +77,9 @@
         <Parameter Name="obj" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> to compare with the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</param>
-        <summary>Determines whether the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,15 +90,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the first character that got hit.</summary>
-        <value>An <see cref="T:System.Int32" /> value that represents the index.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,8 +115,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" />. It is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
-        <returns>An <see cref="T:System.Int32" /> value that represents the hash code for the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,11 +137,10 @@
         <Parameter Name="right" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="left">The first instance of <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> to compare.</param>
-        <param name="right">The second instance of <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> to compare.</param>
-        <summary>Compare two <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> strings for equality.</summary>
-        <returns>
-          <see langword="true" /> when the values of <see cref="System.Windows.Media.TextFormatting.CharacterHit.FirstCharacterIndex%2A" /> and <see cref="System.Windows.Media.TextFormatting.CharacterHit.TrailingLength%2A" /> properties are equal for both objects; otherwise, <see langword="false" />.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,11 +161,10 @@
         <Parameter Name="right" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="left">The first instance of <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> to compare.</param>
-        <param name="right">The second instance of <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> to compare.</param>
-        <summary>Compare two <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> strings for inequality.</summary>
-        <returns>
-          <see langword="false" /> when the values of <see cref="System.Windows.Media.TextFormatting.CharacterHit.FirstCharacterIndex%2A" /> and <see cref="System.Windows.Media.TextFormatting.CharacterHit.TrailingLength%2A" /> properties are equal for both objects; otherwise, <see langword="true" />.</returns>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,23 +175,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the trailing length value for the character that got hit.</summary>
-        <value>An <see cref="T:System.Int32" /> value that represents the trailing length.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the case of a leading edge, this value is 0. In the case of a trailing edge, this value is the number of code points until the next valid caret position.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

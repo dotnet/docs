@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpApplicationState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Enables sharing of global information across multiple sessions and requests within an ASP.NET application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An ASP.NET application is the sum of all files, pages, handlers, modules, and code within the scope of a virtual directory and its subdirectories on a single Web server.  
-  
- A single instance of an HttpApplicationState class is created the first time a client requests any URL resource from within a particular ASP.NET application virtual directory. A separate single instance is created for each ASP.NET application on a Web server. A reference to each instance is then exposed via the intrinsic <xref:System.Web.HttpContext.Application%2A> object.  
-  
- Application state is not shared across either a Web farm (in which an application is hosted across multiple servers) or a Web garden (in which an application is hosted across multiple processes on the same computer).  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>This type is thread safe.</threadsafe>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -35,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,20 +32,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the object to be added to the collection.</param>
-        <param name="value">The value of the object.</param>
-        <summary>Adds a new object to the <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example adds two application variables named MyAppVar1 and MyAppVar2 to the Application collection.  
-  
- [!code-cs[Classic HttpApplicationState.Add Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_8_1.cs)]
- [!code-vb[Classic HttpApplicationState.Add Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -69,26 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the access keys in the <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <value>A string array of <see cref="T:System.Web.HttpApplicationState" /> object names.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example fills a string array with all the object names in the application state collection.  
-  
- [!code-cs[Classic HttpApplicationState.AllKeys Example#1](~/add/codesnippet/csharp/p-system.web.httpapplica_1_1.cs)]
- [!code-vb[Classic HttpApplicationState.AllKeys Example#1](~/add/codesnippet/visualbasic/p-system.web.httpapplica_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -98,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,18 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all objects from an <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example removes all <xref:System.Web.HttpApplicationState> variables from the collection.  
-  
- [!code-vb[Classic HttpApplicationState.Clear Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_0_1.vb)]
- [!code-cs[Classic HttpApplicationState.Clear Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -127,31 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpApplicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.HttpApplicationState" /> object.</summary>
-        <value>A reference to the <see cref="T:System.Web.HttpApplicationState" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property provides compatibility with earlier versions of ASP.  
-  
-   
-  
-## Examples  
- The following example creates a new <xref:System.Web.HttpApplicationState> object that is used to access the object names in the application state collection.  
-  
- [!code-cs[Classic HttpApplicationState.Contents Example#1](~/add/codesnippet/csharp/p-system.web.httpapplica_5_1.cs)]
- [!code-vb[Classic HttpApplicationState.Contents Example#1](~/add/codesnippet/visualbasic/p-system.web.httpapplica_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -161,26 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of objects in the <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <value>The number of item objects in the collection. The default is 0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example executes only if the number of objects in the collection exceeds five.  
-  
- [!code-cs[Classic HttpApplicationState.Count Example#1](~/add/codesnippet/csharp/p-system.web.httpapplica_3_1.cs)]
- [!code-vb[Classic HttpApplicationState.Count Example#1](~/add/codesnippet/visualbasic/p-system.web.httpapplica_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -190,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,20 +126,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the application state object.</param>
-        <summary>Gets an <see cref="T:System.Web.HttpApplicationState" /> object by numerical index.</summary>
-        <returns>The object referenced by <paramref name="index" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example returns the first object (index = 0) from the <xref:System.Web.HttpApplicationState> collection of the intrinsic <xref:System.Web.HttpContext.Application%2A> object and copies it to a new object variable.  
-  
- [!code-cs[Classic HttpApplicationState.Get1 Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_9_1.cs)]
- [!code-vb[Classic HttpApplicationState.Get1 Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -223,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,27 +148,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the object.</param>
-        <summary>Gets an <see cref="T:System.Web.HttpApplicationState" /> object by name.</summary>
-        <returns>The object referenced by <paramref name="name" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example returns an object named MyAppVar1 from the <xref:System.Web.HttpApplicationState> collection of the intrinsic <xref:System.Web.HttpContext.Application%2A> object and copies it to a new object variable.  
-  
-```vb#  
-Dim MyObject As Object  
-MyObject = Application.Get("MyAppVar1")  
-```  
-  
-```c#  
-Object MyObject;  
-MyObject = Application.Get("MyAppVar1");  
-```  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -263,7 +161,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,20 +170,10 @@ MyObject = Application.Get("MyAppVar1");
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the application state object.</param>
-        <summary>Gets an <see cref="T:System.Web.HttpApplicationState" /> object name by index.</summary>
-        <returns>The name under which the application state object was saved.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example returns the names of all the objects in the application state collection and stores the names in a string array.  
-  
- [!code-cs[Classic HttpApplicationState.GetKey Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_3_1.cs)]
- [!code-vb[Classic HttpApplicationState.GetKey Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -296,7 +183,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,20 +192,10 @@ MyObject = Application.Get("MyAppVar1");
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The numerical index of the object in the collection.</param>
-        <summary>Gets a single <see cref="T:System.Web.HttpApplicationState" /> object by index.</summary>
-        <value>The object referenced by <paramref name="index" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example returns the first object (index = 0) from the <xref:System.Web.HttpApplicationState> collection of the intrinsic <xref:System.Web.HttpContext.Application%2A> object and copies it to a new object variable.  
-  
- [!code-vb[Classic HttpApplicationState.this1 Example#1](~/add/codesnippet/visualbasic/p-system.web.httpapplica_4_1.vb)]
- [!code-cs[Classic HttpApplicationState.this1 Example#1](~/add/codesnippet/csharp/p-system.web.httpapplica_4_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -329,7 +205,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,20 +214,10 @@ MyObject = Application.Get("MyAppVar1");
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the object in the collection.</param>
-        <summary>Gets the value of a single <see cref="T:System.Web.HttpApplicationState" /> object by name.</summary>
-        <value>The object referenced by <paramref name="name" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example returns an object named `MyAppVar1` from the <xref:System.Web.HttpApplicationState> collection of the intrinsic <xref:System.Web.HttpContext.Application%2A> object and copies it to a new object variable.  
-  
- [!code-cs[Classic HttpApplicationState.this Example#1](~/add/codesnippet/csharp/p-system.web.httpapplica_0_1.cs)]
- [!code-vb[Classic HttpApplicationState.this Example#1](~/add/codesnippet/visualbasic/p-system.web.httpapplica_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -362,7 +227,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,23 +234,8 @@ MyObject = Application.Get("MyAppVar1");
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Locks access to an <see cref="T:System.Web.HttpApplicationState" /> variable to facilitate access synchronization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpApplicationState> class performs automatic locking and unlocking with the <xref:System.Web.HttpApplicationState.AllKeys%2A> and <xref:System.Web.HttpApplicationState.Count%2A> properties and the <xref:System.Web.HttpApplicationState.Add%2A>, <xref:System.Web.HttpApplicationState.Clear%2A>, <xref:System.Web.HttpApplicationState.Get%2A>, <xref:System.Web.HttpApplicationState.GetKey%2A>, <xref:System.Web.HttpApplicationState.Remove%2A>, <xref:System.Web.HttpApplicationState.RemoveAt%2A> and <xref:System.Web.HttpApplicationState.Set%2A> methods. However, explicitly using the Lock and <xref:System.Web.HttpApplicationState.UnLock%2A> methods when you have a series of operations may be more efficient.  
-  
-   
-  
-## Examples  
- The following example uses the Lock method and <xref:System.Web.HttpApplicationState.UnLock%2A> method to prevent other sessions from changing the value of two application variables until after the local session has changed them.  
-  
- [!code-cs[Classic HttpApplicationState.Lock Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_7_1.cs)]
- [!code-vb[Classic HttpApplicationState.Lock Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -396,7 +245,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,19 +254,9 @@ MyObject = Application.Get("MyAppVar1");
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the object to be removed from the collection.</param>
-        <summary>Removes the named object from an <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example removes one application state variable from the collection.  
-  
- [!code-vb[Classic HttpApplicationState.Remove Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_1_1.vb)]
- [!code-cs[Classic HttpApplicationState.Remove Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -428,7 +266,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,23 +273,8 @@ MyObject = Application.Get("MyAppVar1");
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all objects from an <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RemoveAll is an internal call to <xref:System.Web.HttpApplicationState.Clear%2A>.  
-  
-   
-  
-## Examples  
- The following example removes all <xref:System.Web.HttpApplicationState> variables from the collection.  
-  
- [!code-cs[Classic HttpApplicationState.RemoveAll Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_2_1.cs)]
- [!code-vb[Classic HttpApplicationState.RemoveAll Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -462,7 +284,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,19 +293,9 @@ MyObject = Application.Get("MyAppVar1");
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The position in the collection of the item to remove.</param>
-        <summary>Removes an <see cref="T:System.Web.HttpApplicationState" /> object from a collection by index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to insert two application variables into the collection, and then use the RemoveAt method to remove the first variable in a custom <xref:System.Web.HttpApplicationState> object.  
-  
- [!code-vb[HttpApplicationStateRemoveAt#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_4_1.aspx)]
- [!code-cs[HttpApplicationStateRemoveAt#1](~/add/codesnippet/csharp/m-system.web.httpapplica_4_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -494,7 +305,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -505,20 +315,10 @@ MyObject = Application.Get("MyAppVar1");
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the object to be updated.</param>
-        <param name="value">The updated value of the object.</param>
-        <summary>Updates the value of an object in an <see cref="T:System.Web.HttpApplicationState" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example updates the value of an existing application state variable.  
-  
- [!code-cs[Classic HttpApplicationState.Set Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_5_1.cs)]
- [!code-vb[Classic HttpApplicationState.Set Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -528,31 +328,15 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpStaticObjectsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all objects declared by an <see langword="&lt;object&gt;" /> tag where the scope is set to "Application" within the ASP.NET application.</summary>
-        <value>A collection of objects on the page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Application objects are defined in the Global.asax file inside the `<object runat="server" scope="Application"> </object>` tags.  
-  
-   
-  
-## Examples  
- The following example gets all application objects into a <xref:System.Web.HttpStaticObjectsCollection> variable and executes a routine only if the number of objects is greater than 0.  
-  
- [!code-cs[Classic HttpApplicationState.StaticObjects Example#1](~/add/codesnippet/csharp/p-system.web.httpapplica_2_1.cs)]
- [!code-vb[Classic HttpApplicationState.StaticObjects Example#1](~/add/codesnippet/visualbasic/p-system.web.httpapplica_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnLock">
@@ -562,7 +346,6 @@ MyObject = Application.Get("MyAppVar1");
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -570,23 +353,8 @@ MyObject = Application.Get("MyAppVar1");
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Unlocks access to an <see cref="T:System.Web.HttpApplicationState" /> variable to facilitate access synchronization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpApplicationState> class performs automatic locking and unlocking with the <xref:System.Web.HttpApplicationState.AllKeys%2A> and <xref:System.Web.HttpApplicationState.Count%2A> properties and the <xref:System.Web.HttpApplicationState.Add%2A>, <xref:System.Web.HttpApplicationState.Clear%2A>, <xref:System.Web.HttpApplicationState.Get%2A>, <xref:System.Web.HttpApplicationState.GetKey%2A>, <xref:System.Web.HttpApplicationState.Remove%2A>, <xref:System.Web.HttpApplicationState.RemoveAt%2A> and <xref:System.Web.HttpApplicationState.Set%2A> methods. However, explicitly using the <xref:System.Web.HttpApplicationState.Lock%2A> and UnLock methods when you have a series of operations may be more efficient.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Web.HttpApplicationState.Lock%2A> method and UnLock method to prevent other sessions from changing the value of two application variables until after the local session has changed them.  
-  
- [!code-cs[Classic HttpApplicationState.Lock Example#1](~/add/codesnippet/csharp/m-system.web.httpapplica_6_1.cs)]
- [!code-vb[Classic HttpApplicationState.Lock Example#1](~/add/codesnippet/visualbasic/m-system.web.httpapplica_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

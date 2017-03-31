@@ -1,36 +1,17 @@
 <Type Name="MessageQueueErrorCode" FullName="System.Messaging.MessageQueueErrorCode">
   <TypeSignature Language="C#" Value="public enum MessageQueueErrorCode" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageQueueErrorCode extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessageQueueErrorCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueErrorCode" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the source of an error that occurred within the Message Queuing application and generated a <see cref="T:System.Messaging.MessageQueueException" /> exception.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessageQueueErrorCode enumeration gives detailed information about an error condition during a messaging operation.  
-  
- The <xref:System.Messaging.MessageQueueException> uses the <xref:System.Messaging.MessageQueueException.MessageQueueErrorCode%2A> property to identify the nature of the Message Queuing error. The MessageQueueErrorCode value determines a text string to associate with the error.  
-  
-   
-  
-## Examples  
- The following code example verifies whether a Message Queuing queue exists, and then deletes it.  
-  
- [!code-vb[MessageQueue.ExistsDelete#1](~/add/codesnippet/visualbasic/t-system.messaging.messa_4_1.vb)]
- [!code-cs[MessageQueue.ExistsDelete#1](~/add/codesnippet/csharp/t-system.messaging.messa_4_1.cs)]
- [!code-cpp[MessageQueue.ExistsDelete#1](~/add/codesnippet/cpp/t-system.messaging.messa_4_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AccessDenied">
@@ -40,22 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Access is denied.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if access to the specified queue or computer is denied. If this error is returned, verify that you have access rights for the operation, such as creating, deleting, or setting properties for a queue. For information about changing access rights for a queue, see the <xref:System.Messaging.MessageQueueAccessRights> and <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> topics.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSecurityContext">
@@ -65,22 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Bad security context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the security context has become corrupted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Base">
@@ -90,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message Queuing does not return this error code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BufferOverflow">
@@ -107,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The buffer supplied to MQReceiveMessage for message body retrieval was too small. The message is not removed from the queue and part of the message body that fits in the buffer was copied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotCreateCertificateStore">
@@ -124,22 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to create a certificate store for the internal certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if you do not have permission to manipulate your own profile.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotCreateHashEx">
@@ -149,22 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to create a hash object for an authenticated message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.HashAlgorithm%2A> property for more information about hash algorithms.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotCreateOnGlobalCatalog">
@@ -174,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to create an object on a specified global catalog server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotGetDistinguishedName">
@@ -191,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to retrieve the distinguished name of local computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotGrantAddGuid">
@@ -208,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to grant the "Add Guid" permission to current user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotHashDataEx">
@@ -225,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to hash data for an authenticated message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotImpersonateClient">
@@ -242,22 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The RPC server cannot impersonate the client application, hence security credentials could not be verified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the directory service server cannot impersonate the client application. This is necessary to verify the security credentials.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotJoinDomain">
@@ -267,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to join Message Queuing enterprise on Windows 2000 domain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotLoadMsmqOcm">
@@ -284,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Cannot load the MSMQOCM.DLL library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotOpenCertificateStore">
@@ -301,22 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to open the certificates store for the internal certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if you do not have permission to manipulate your own profile.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotSetCryptographicSecurityDescriptor">
@@ -326,22 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to set the security descriptor for the cryptographic keys.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For information about cryptographic providers, see the <xref:System.Messaging.CryptographicProviderType> and <xref:System.Messaging.Message.AuthenticationProviderType%2A?displayProperty=fullName> topics.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotSignDataEx">
@@ -351,22 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to sign data before sending an authenticated message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.DigitalSignature%2A> property for more information about signing data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateNotProvided">
@@ -376,22 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: A user attempted to send an authenticated message without a certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the sending application attempts to use security context information to authenticate a message, and the security context does not include a certificate. For more information about certificates, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComputerDoesNotSupportEncryption">
@@ -401,22 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The computer does not support encryption operations.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see the <xref:System.Messaging.MessageQueue.EncryptionRequired%2A?displayProperty=fullName> and <xref:System.Messaging.Message.EncryptionAlgorithm%2A?displayProperty=fullName> topics.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CorruptedInternalCertificate">
@@ -426,22 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The internal Message Queuing certificate is corrupted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This error applies only to Message Queuing 1.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CorruptedPersonalCertStore">
@@ -451,22 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The personal certificate store is corrupted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error when the Microsoft Internet Explorer personal certificate store is corrupted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CorruptedQueueWasDeleted">
@@ -476,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The.ini file for the queue in LQS was deleted because it was corrupted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CorruptedSecurityData">
@@ -493,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: A cryptographic function has failed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotGetAccountInfo">
@@ -510,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Could not get the account information for the user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotGetUserSid">
@@ -527,22 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Could not get the SID information out of the thread token.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about sender identifiers, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderId%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteConnectedNetworkInUse">
@@ -552,22 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The connected network cannot be deleted; it is in use.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it cannot delete the specified connected network because the network is defined in at least one other computer. Remove the connected network from all connected network lists and try again to delete it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DependentClientLicenseOverflow">
@@ -577,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The number of dependent clients served by this Message Queuing server reached its upper limit.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DsError">
@@ -594,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Internal directory service error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DsIsFull">
@@ -611,22 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Directory service is full.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the information store is full. This error applies only to Message Queuing 1.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DtcConnect">
@@ -636,22 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Cannot connect to MS DTC.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it is unable to connect to the Microsoft Distributed Transaction Coordinator.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EncryptionProviderNotSupported">
@@ -661,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The Cryptographic Service Provider is not supported by Message Queuing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FailVerifySignatureEx">
@@ -678,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Signature of received message is not valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FormatNameBufferTooSmall">
@@ -695,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The format name buffer supplied to the API was too small to fit the format name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Generic">
@@ -712,22 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Generic Error.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it cannot identify a more specific source.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GuidNotMatching">
@@ -737,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to create Message Queuing configuration object with a GUID that matches the computer installation. You must uninstall Message Queuing and then reinstall it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalContext">
@@ -754,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid context parameter.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalCriteriaColumns">
@@ -771,22 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid MQCOLUMNS parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if you are using the `MessagePropertyFilter` class and have selected `false` for all Boolean values and zero (0) for all integer values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalCursorAction">
@@ -796,22 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: MQ_ACTION_PEEK_NEXT specified to MQReceiveMessage can not be used with the current cursor position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `System.Messaging.MessageEnumerator.MoveNext` cannot be used with the current cursor position.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalEnterpriseOperation">
@@ -821,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The operation is invalid for a Message Queuing services object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalFormatName">
@@ -838,22 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The given format name is invalid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For valid format name syntax options, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.FormatName%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalMessageProperties">
@@ -863,22 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Illegal MQQMPROPS parameter, either null or with zero properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Illegal message properties, either `null` or with zero properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalOperation">
@@ -888,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The operation is invalid on foreign message queuing systems.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalPrivateProperties">
@@ -905,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The private properties parameter value is invalid. This may be because it has a null value or has zero properties specified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalPropertyId">
@@ -922,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid property identifier value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalPropertySize">
@@ -939,22 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Illegal property buffer size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the specified buffer for the message identifier or correlation identifier is not the correct size. See the Message class's Message.Id and Message.CorrelationId properties for more information about message identifiers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalPropertyValue">
@@ -964,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid property value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalPropertyVt">
@@ -981,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid VARTYPE value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalQueuePathName">
@@ -998,22 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid queue path name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Path%2A> property for valid path syntax options.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalQueueProperties">
@@ -1023,24 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Illegal MQQUEUEPROPS parameter, either null or with zero properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Illegal Queue Properties, either `null` or with zero properties.  
-  
- Message Queuing returns this error if you are using the <xref:System.Messaging.MessageQueueCriteria> class and have called <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A> or have not specified any criteria to use when filtering queues. See the MessageQueueCriteria class or MessageQueue.GetPublicQueues for more information about filtering queue search criteria.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalRelation">
@@ -1050,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid relation value in restriction.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalRestrictionPropertyId">
@@ -1067,22 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid propid value in MQRESTRICTION parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Invalid property identifier value for restriction.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalSecurityDescriptor">
@@ -1092,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The specified security descriptor is not a valid security descriptor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalSort">
@@ -1109,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Illegal sort specified (for example, duplicate columns).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalSortPropertyId">
@@ -1126,22 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid propid value in MQSORTSET.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Invalid property identifier value in for sort.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalUser">
@@ -1151,22 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The user has an invalid user name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if your application is connecting to it through an invalid user name.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsufficientProperties">
@@ -1176,14 +885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Not all the required properties for the operation were specified in the input parameters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsufficientResources">
@@ -1193,22 +901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Insufficient resources to perform operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error, for example, if there is not enough memory to complete the operation. When this error is returned, the operation fails.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificate">
@@ -1218,22 +917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The user certificate is not valid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the security certificate specified in the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property is invalid, or if the certificate is not correctly placed in the Microsoft Internet Explorer personal certificate store.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidHandle">
@@ -1243,22 +933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: An invalid handle passed to a function.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the specified queue handle is not valid.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidOwner">
@@ -1268,22 +949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid object owner. For example CreateQueue failed because the Queue Manager object is invalid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error, for example, if your application attempts to create a queue on a computer on which Message Queuing is not installed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidParameter">
@@ -1293,22 +965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: An invalid parameter passed to a function.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if one of the parameters supplied by the operation is not valid.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IOTimeout">
@@ -1318,22 +981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The receive or peek message time-out has expired.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the time-out specified in a call to <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LabelBufferTooSmall">
@@ -1343,14 +997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The label buffer supplied to the API was too small.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MachineExists">
@@ -1360,14 +1013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Computer with the same name already exists in the site.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MachineNotFound">
@@ -1377,22 +1029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The specified computer could not be found.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it cannot find the queue's computer in the directory service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageAlreadyReceived">
@@ -1402,22 +1045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: A message that is currently pointed at by the cursor has been removed from the queue by another process or by another call to receive the message without the use of this cursor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <xref:System.Messaging.MessageEnumerator> class, such as the instance returned through a call to <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.GetEnumerator%2A?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageNotFound">
@@ -1427,22 +1061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The specified message could not be found.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it cannot find the specified message in the queue.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageStorageFailed">
@@ -1452,22 +1077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Could not store a recoverable or journal message. Message was not sent.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the local computer cannot store a recoverable message (one whose delivery is guaranteed in the case of a network problem) or a journal message. See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.Recoverable%2A> and <xref:System.Messaging.Message.UseJournalQueue%2A> properties for more information about these message sending options.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingConnectorType">
@@ -1477,22 +1093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Connector Type is mandatory when sending an Acknowledgment or secure message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error when the application sets a property typically set by Message Queuing, but does not specify the connector to use. For more information about connector types, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.ConnectorType%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MqisReadOnlyMode">
@@ -1502,14 +1109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: MQIS database is in read-only mode.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MqisServerEmpty">
@@ -1519,22 +1125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The list of MQIS servers (in registry) is empty.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This error applies only to Message Queuing 1.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoDs">
@@ -1544,22 +1141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: No connection with this site's controller(s).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the application cannot access the directory service. If this error is returned, verify permissions for accessing the directory service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoEntryPointMsmqOcm">
@@ -1569,14 +1157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Cannot locate an entry point in the MSMQOCM.DLL library.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoGlobalCatalogInDomain">
@@ -1586,14 +1173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to find Global Catalog servers in the specified domain.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoInternalUserCertificate">
@@ -1603,22 +1189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The internal Message Queuing certificate for the user does not exist.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if no internal certificate is registered or the registered certificate is corrupted.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMsmqServersOnDc">
@@ -1628,14 +1205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to find Message Queuing servers on domain controllers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMsmqServersOnGlobalCatalog">
@@ -1645,14 +1221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Failed to find Message Queuing servers on Global Catalog domain controllers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoResponseFromObjectServer">
@@ -1662,22 +1237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: No response from object owner.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if there is no response from the directory service server. When this error is returned, the status of the operation is unknown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ObjectServerNotAvailable">
@@ -1687,22 +1253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Object owner is not reachable.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the directory service server for the object is not available. When this error is returned, the operation fails.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OperationCanceled">
@@ -1712,14 +1269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The operation was canceled before it could be completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrivilegeNotHeld">
@@ -1729,14 +1285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Client does not have the required privileges to perform the operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -1746,14 +1301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: One or more of the passed properties are invalid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyNotAllowed">
@@ -1763,14 +1317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Invalid property for the requested operation</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderNameBufferTooSmall">
@@ -1780,22 +1333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The passed buffer for the Provider name property is too small.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the Message class's AuthenticationProviderName property for more information about provider names.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicKeyDoesNotExist">
@@ -1805,22 +1349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The public key for the computer does not exist.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it was able to query the directory service, but the enhanced key was not found. This error applies only to Message Queuing 2.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicKeyNotFound">
@@ -1830,22 +1365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Unable to find the public key for computer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error, for example, if you are trying to retrieve the computer properties of a computer running Message Queuing 1.0 or if you are trying to get remote computer properties while working offline. This error applies only to Message Queuing 2.0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QDnsPropertyNotSupported">
@@ -1855,22 +1381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>DNS property is not supported as criteria to locate queues.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot retrieve the DNS path name of a queue.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueDeleted">
@@ -1880,14 +1397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The queue was deleted. Messages cannot be received anymore using this queue instance. The queue should be closed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueExists">
@@ -1897,22 +1413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: A queue with the same pathname is already registered.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing registers public queues in the directory service, and registers private queues on the local computer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueNotAvailable">
@@ -1922,14 +1429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Error while reading from a queue residing on a remote computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueNotFound">
@@ -1939,22 +1445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The queue is not registered in the directory service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if it cannot find the queue. This includes public queues not registered in the directory service and Internet queues that do not exist in the Message Queuing namespace.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteMachineNotAvailable">
@@ -1964,14 +1461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The remote machine is not available.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResultBufferTooSmall">
@@ -1981,14 +1477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The supplied result buffer is too small.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SecurityDescriptorBufferTooSmall">
@@ -1998,22 +1493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The size of the buffer passed to MQGetQueueSecurity is too small.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the supplied security buffer is too small for the security descriptor.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SenderCertificateBufferTooSmall">
@@ -2023,22 +1509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The passed buffer for the user certificate property is too small.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the Message class's System.Messaging.Message.SenderCertificate property for more information about user certificates.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SenderIdBufferTooSmall">
@@ -2048,22 +1525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The passed buffer for the user identifier property is too small.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error when the supplied sender identification buffer is too small. See the Message class's System.Messaging.Message.SenderId property for more information about sender identifiers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceNotAvailable">
@@ -2073,22 +1541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The Message Queues service is not available.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the application is unable to connect to the Queue Manager.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SharingViolation">
@@ -2098,22 +1557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Sharing violation. The queue is already opened for exclusive receive.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if an application is trying to open an already opened queue that has exclusive read rights. For more information about receiving messages exclusively from a queue, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.DenySharedReceive%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignatureBufferTooSmall">
@@ -2123,22 +1573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The passed buffer for the Signature property is too small.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the Message class's DigitalSignature property for more information about signatures.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaleHandle">
@@ -2148,22 +1589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The Queue Manager service has been restarted. The queue handle is stale and should be closed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the specified handle was obtained in a previous session of the Queue Manager service.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SymmetricKeyBufferTooSmall">
@@ -2173,22 +1605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The passed buffer for the Symmetric key property is too small.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- See the Message class's DestinationSymmetricKey property for more information about symmetric keys.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransactionEnlist">
@@ -2198,14 +1621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Cannot enlist the transaction.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransactionImport">
@@ -2215,14 +1637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Cannot import the transaction.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransactionSequence">
@@ -2232,14 +1653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Wrong transaction operations sequence.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransactionUsage">
@@ -2249,22 +1669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Wrong transaction usage.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if an attempt was made to open a remote queue for read access from within a transaction, or an attempt was made to read a message from a non-transactional queue from within a transaction.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedAccessMode">
@@ -2274,22 +1685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The specified access mode is not supported.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error if the access mode specified when opening the queue is set to an invalid value, or the access mode and the share mode specified are not compatible.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedFormatNameOperation">
@@ -2299,22 +1701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The requested operation for the specified format name is not supported.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing returns this error when the requested operation is not supported for the specified format name. Operations include trying to open a queue to receive messages by specifying a direct format name.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedOperation">
@@ -2324,14 +1717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: The operation is not supported for a WORKGROUP installation computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserBufferTooSmall">
@@ -2341,14 +1733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Request failed because user buffer is too small to hold the returned information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WksCantServeClient">
@@ -2358,14 +1749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Message Queuing-independent clients cannot serve Message Queuing-dependent clients.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteNotAllowed">
@@ -2375,14 +1765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Message text: Another MQIS server is being installed; write operations to the database are not allowed at this time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of <see langword="&lt;identityConfiguration&gt;" /> elements in a configuration file. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A configuration file can have multiple `<identityConfiguration>` elements. Each identity configuration is identified by a unique name specified in its `name` attribute. Each `<identityConfiguration>` element is represented by an <xref:System.IdentityModel.Configuration.IdentityConfigurationElement> object. The [Name](assetId:///Name?qualifyHint=False&amp;autoUpgrade=True) property of each object contains the name of the identity configuration. The IdentityConfigurationElementCollection class wraps a collection that contains all of the `<identityConfiguration>` elements read from the file. The name of the identity configuration is used as a key to retrieve the corresponding <xref:System.IdentityModel.Configuration.IdentityConfigurationElement> when you call the <xref:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.GetElement%2A> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfigurationElementCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,13 +91,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the identityConfiguration element to retrieve. This corresponds to the value of the element’s <see cref="System.IdentityModel.Configuration.IdentityConfigurationElement.Name%2A" /> property.</param>
-        <summary>Retrieves the <see cref="T:System.IdentityModel.Configuration.IdentityConfigurationElement" /> that has the specified name.</summary>
-        <returns>The <see langword="&lt;identityConfiguration&gt;" /> element that has the specified name, or <see langword="null" /> if no matching element is found.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The default configuration was specified in the name parameter and a matching <see cref="T:System.IdentityModel.Configuration.IdentityConfigurationElement" /> could not be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">

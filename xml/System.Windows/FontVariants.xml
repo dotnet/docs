@@ -4,47 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontVariants" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Renders variant typographic glyph forms.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a specified font does not support a particular glyph set, the default glyphs are displayed.  
-  
-   
-  
-## Examples  
- The <xref:System.Windows.Documents.Typography.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
-  
- The following text displays superscripts for the Palatino Linotype font.  
-  
- ![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
-Example of superscripts  
-  
- The following code example shows how to define superscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
-  
- [!code-xml[OpenTypeFontSnippets#12](~/add/codesnippet/xaml/t-system.windows.fontvar_1.xaml)]
- [!code-xml[OpenTypeFontSnippets#12](~/add/codesnippet/xaml/t-system.windows.fontvar_1.xaml)]  
-  
- The following text displays subscripts for the Palatino Linotype font.  
-  
- ![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
-Example of subscripts  
-  
- The following code example shows how to define subscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
-  
- [!code-xml[OpenTypeFontSnippets#13](~/add/codesnippet/xaml/t-system.windows.fontvar_2.xaml)]
- [!code-xml[OpenTypeFontSnippets#13](~/add/codesnippet/xaml/t-system.windows.fontvar_2.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Inferior">
@@ -54,14 +21,13 @@ Example of subscripts
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontVariants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces a default glyph with an inferior glyph, or it may combine glyph substitution with positioning adjustments for proper placement. Inferior forms are typically used in chemical formulas or mathematical notation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -71,14 +37,13 @@ Example of subscripts
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontVariants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default font behavior. Font scaling and positioning is normal.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ordinal">
@@ -88,14 +53,13 @@ Example of subscripts
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontVariants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces a default glyph with an ordinal glyph, or it may combine glyph substitution with positioning adjustments for proper placement. Ordinal forms are normally associated with numeric notation of an ordinal word, such as "1st" for "first."</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ruby">
@@ -105,14 +69,13 @@ Example of subscripts
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontVariants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces a default glyph with a smaller Japanese Kana glyph. This is used to clarify the meaning of Kanji, which may be unfamiliar to the reader.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subscript">
@@ -122,14 +85,13 @@ Example of subscripts
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontVariants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces a default glyph with a subscript glyph.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Superscript">
@@ -139,14 +101,13 @@ Example of subscripts
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.FontVariants</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Replaces a default glyph with a superscript glyph. Superscript is commonly used for footnotes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

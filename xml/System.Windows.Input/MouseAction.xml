@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,27 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies constants that define actions performed by the mouse.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseAction enumeration specifies constants which correspond to actions performed by the mouse, such as RightClick and RightDoubleClick.  
-  
- MouseAction can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](../Topic/Commanding%20Overview.md).  
-  
-   
-  
-## Examples  
- The following example shows how to construct a <xref:System.Windows.Input.MouseGesture> using a MouseAction and how to bind the gesture to a <xref:System.Windows.Input.RoutedCommand> using a <xref:System.Windows.Input.MouseBinding>.  
-  
- [!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/add/codesnippet/xaml/CommandLibarySnippets/Window1.xaml#mousebindingmouseactionxaml)]  
-  
- [!code-cs[commandlibrarysnippets#MouseBindingMouseAction](~/add/codesnippet/csharp/CommandLibarySnippets/Window1.xaml.cs#mousebindingmouseaction)]
- [!code-vb[commandlibrarysnippets#MouseBindingMouseAction](~/add/codesnippet/visualbasic/commandlibarysnippets/window1.xaml.vb#mousebindingmouseaction)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LeftClick">
@@ -49,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A left mouse button click.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftDoubleClick">
@@ -66,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A left mouse button double-click.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleClick">
@@ -83,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A middle mouse button click.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleDoubleClick">
@@ -100,14 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A middle mouse button double-click.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -117,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No action.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightClick">
@@ -134,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A right mouse button click.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightDoubleClick">
@@ -151,14 +125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A right mouse button double-click.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WheelClick">
@@ -168,14 +141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A mouse wheel rotation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

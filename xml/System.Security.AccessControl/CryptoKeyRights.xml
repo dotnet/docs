@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CryptoKeyRights" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the cryptographic key operation for which an authorization rule controls access or auditing.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Change permissions for the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -44,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Delete the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullControl">
@@ -61,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Full control of the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericAll">
@@ -78,14 +78,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A combination of GenericRead and GenericWrite.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericExecute">
@@ -95,14 +95,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericRead">
@@ -112,14 +112,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the key data, extended attributes of the key, attributes of the key, and permissions for the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericWrite">
@@ -129,14 +129,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Write the key data, extended attributes of the key, attributes of the key, and permissions for the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadAttributes">
@@ -146,14 +146,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read attributes of the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadData">
@@ -163,14 +163,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read the key data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadExtendedAttributes">
@@ -180,14 +180,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read extended attributes of the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadPermissions">
@@ -197,14 +197,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Read permissions for the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Synchronize">
@@ -214,14 +214,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use the key for synchronization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -231,14 +231,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Take ownership of the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributes">
@@ -248,14 +248,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Write attributes of the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteData">
@@ -265,14 +265,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Write key data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteExtendedAttributes">
@@ -282,14 +282,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Write extended attributes of the key.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

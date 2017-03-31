@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsRuleScope" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates values for the scope of a <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsRuleScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The rule cannot be the target of a rule reference from an external grammar unless it is the root rule of its containing grammar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsRuleScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The rule can be the target of a rule reference from an external grammar, which can use the rule to perform recognition. A public rule can always be activated for recognition.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

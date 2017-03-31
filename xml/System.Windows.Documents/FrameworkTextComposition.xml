@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FrameworkTextComposition" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a composition during the text input events of a <see cref="T:System.Windows.Controls.TextBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.TextCompositionEventArgs.TextComposition%2A?displayProperty=fullName> property is a FrameworkTextComposition when the user enters text into a <xref:System.Windows.Controls.TextBox> by using an [!INCLUDE[TLA#tla_ime](~/add/includes/tlasharptla-ime-md.md)] and the <xref:System.Windows.Input.TextCompositionManager.TextInput>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, or <xref:System.Windows.Input.TextCompositionManager.TextInputStart> event occurs.  
-  
- FrameworkTextComposition is the base class of <xref:System.Windows.Documents.FrameworkRichTextComposition>. The <xref:System.Windows.Documents.FrameworkRichTextComposition> class defines properties that return <xref:System.Windows.Documents.TextPointer> objects to indicate the position of the text composition.  When the user enters text into a <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Input.TextCompositionEventArgs.TextComposition%2A?displayProperty=fullName> is a <xref:System.Windows.Documents.FrameworkRichTextComposition>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Complete">
@@ -32,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,7 +34,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Finalizes the composition.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,25 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the current composition in Unicode symbols.</summary>
-        <value>The length of the current composition in Unicode symbols.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CompositionLength property indicates how many characters have been entered since the last <xref:System.Windows.Input.TextCompositionManager.TextInput> event. This property is only meaningful when the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs.  When the <xref:System.Windows.Input.TextCompositionManager.TextInput> event occurs, CompositionLength is –1, and the <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> property indicates the length of the composition.  
-  
- CompositionLength is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompositionOffset">
@@ -84,25 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position at which the composition text occurs in the <see cref="T:System.Windows.Controls.TextBox" />.</summary>
-        <value>The position at which the composition text occurs in the <see cref="T:System.Windows.Controls.TextBox" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only meaningful when the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs.  When the <xref:System.Windows.Input.TextCompositionManager.TextInput> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> is –1, and the <xref:System.Windows.Documents.FrameworkTextComposition.ResultOffset%2A> property indicates the position of the composition text.  
-  
- CompositionOffset is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResultLength">
@@ -112,25 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the finalized text in Unicode symbols when the <see cref="System.Windows.Input.TextCompositionManager.TextInput" /> event occurs.</summary>
-        <value>The length of the finalized text in Unicode symbols when the <see cref="System.Windows.Input.TextCompositionManager.TextInput" /> event occurs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs, ResultLength is –1.  
-  
- ResultLength is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResultOffset">
@@ -140,25 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the offset of the finalized text when the <see cref="System.Windows.Input.TextCompositionManager.TextInput" /> event occurs.</summary>
-        <value>The offset of the finalized text when the <see cref="System.Windows.Input.TextCompositionManager.TextInput" /> event occurs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> is –1.  
-  
- ResultOffset is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

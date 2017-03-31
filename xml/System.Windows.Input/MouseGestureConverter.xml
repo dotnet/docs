@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseGestureConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts a <see cref="T:System.Windows.Input.MouseGesture" /> object to and from other types.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MouseGestureConverter class only converts an instance of <xref:System.Windows.Input.MouseGesture> to and from a <xref:System.String>.  
-  
- The MouseGestureConverter converts to and from a <xref:System.String> using the "+" character as the delimiter between the modifier keys and the mouse action.  For example, the string `Control+RightClick` would be converted into a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction>.  
-  
-<a name="xamlTextUsage_MouseGestureConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseGestureConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="sourceType">The type being evaluated for conversion.</param>
-        <summary>Determines whether an object of the specified type can be converted to an instance of <see cref="T:System.Windows.Input.MouseGesture" />, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="sourceType" /> is of type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="destinationType">The type being evaluated for conversion.</param>
-        <summary>Determines whether an instance of <see cref="T:System.Windows.Input.MouseGesture" /> can be converted to the specified type, using the specified context.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="destinationType" /> is of type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,21 +96,12 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="culture">Culture specific information.</param>
-        <param name="source">The object to convert.</param>
-        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Input.MouseGesture" />, using the specified context.</summary>
-        <returns>The converted object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter between the modifier keys and the mouse action.  For example, the string `Control+RightClick` would be converted into a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="source" /> cannot be converter.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -138,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,26 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="culture">A format context that provides information about the environment from which this converter is being invoked.</param>
-        <param name="value">The object to convert.</param>
-        <param name="destinationType">The type to convert the object to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Input.MouseGesture" /> to the specified type, using the specified context.</summary>
-        <returns>The converted object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
- The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter between the modifier keys and the mouse action.  For example, a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction> converts to the string `Control+RightClick`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destinationType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="value" /> cannot be converted.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

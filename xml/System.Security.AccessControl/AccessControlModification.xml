@@ -3,15 +3,19 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessControlModification extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlModification" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of access control modification to perform. This enumeration is used by methods of the <see cref="T:System.Security.AccessControl.ObjectSecurity" /> class and its descendents.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,15 +25,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlModification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Add the specified authorization rule to the access control list (ACL).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -38,15 +46,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlModification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove authorization rules that contain the same security identifier (SID) and access mask as the specified authorization rule from the ACL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -55,15 +67,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.RemoveAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlModification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove authorization rules that contain the same SID as the specified authorization rule from the ACL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveSpecific">
@@ -72,15 +88,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.RemoveSpecific" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlModification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove authorization rules that exactly match the specified authorization rule from the ACL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -89,15 +109,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlModification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove authorization rules that contain the same SID as the specified authorization rule from the ACL, and then add the specified authorization rule to the ACL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -106,15 +130,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Set" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlModification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Remove all authorization rules from the ACL, then add the specified authorization rule to the ACL.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

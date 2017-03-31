@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.ReservationCollection" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,67 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Manages the collection of space reservations made in a record sequence.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class represents a set of reservation areas that are made in a record sequence. Adding items to the collection allocates new reservations. Removing items from the collection frees those reservations.  
-  
- An application reserves space in the log when it has data that is to be written to the log in the future, but cannot write it immediately. Reservations provide a guarantee that the data can be written to the log when the data is available to be written. When using logs, applications often reserve one or more log records in a marshalling area. You must reserve records prior to appending them.  
-  
- Reservations can be used to guarantee that an operation can be completed before the data is committed; otherwise, the changes are rolled back. It can also be used to record an "undo action" in the log. During a rollback operation, a transactional resource manager (RM) must be able to recover its state if the RM is interrupted during the rollback operation. By using a reservation area, an RM can reserve space in a log before it is used.  
-  
- The <xref:System.IO.Log.IRecordSequence.ReserveAndAppend%2A> method can either reserve space or append data, or both, depending on the parameters that are specified when making the call. As work progresses in a transaction, an application can append the undo information and reserve space for compensation records. During a rollback operation, compensation records that are created indicate what has been undone on the disk. The records are appended using space that has been previously reserved. This guarantees that an RM does not run out of log space, which is a fatal condition, while performing a rollback operation. If a log fills up during a transaction, an application can safely roll back a transaction without corrupting durable data.  
-  
- CLFS is an ARIES-compliant logging system, meant for write-ahead logging. In write-ahead logging, an application writes an undo record before it performs the operation, reserving the amount of space it takes in the log to write a compensating record, which may be used during rollback. Later, the reserved space is used when the compensation record is actually written.  
-  
- Applications can either reserve or access long space at any given time (they are mutually exclusive operations). After a commit record is written to the log, an application can free up the reservations for the compensation records. This action can be done by calling either the <xref:System.IO.Log.ReservationCollection.FreeReservation%2A> or <xref:System.IO.Log.IRecordSequence.ReserveAndAppend%2A> method. Calling the <xref:System.IO.Log.IRecordSequence.ReserveAndAppend%2A> method guarantees that the operation is atomic, while calling the <xref:System.IO.Log.ReservationCollection.FreeReservation%2A> method does not.  
-  
- When you free records, you must free the same records that you reserved together in a previous call to the <xref:System.IO.Log.IRecordSequence.ReserveAndAppend%2A> method.  
-  
-> [!NOTE]
->  Your implementation of <xref:System.IO.Log.IRecordSequence> must implement the <xref:System.IO.Log.ReservationCollection.MakeReservation%2A> and <xref:System.IO.Log.ReservationCollection.FreeReservation%2A> methods to perform the actual reservation allocation and deallocation. In addition, your implementation must also call <xref:System.IO.Log.ReservationCollection.ReservationFreed%2A> when a record is written into a reserved space.  
-  
-   
-  
-## Examples  
- Reservations can be performed in two ways as shown in the following examples. You can adopt the practices in the samples for robust processing. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
-  
-```  
-//Using the ReserveAndAppend Method  
-ReservationCollection reservations = recordSequence.CreateReservationCollection();  
-long[] lengthOfUndoRecords = new long[] { 1000 };  
-recordSequence.ReserveAndAppend(recordData,  
-                                                     userSqn,  
-                                                     previousSqn,  
-                                                     RecordSequenceAppendOptions.None,  
-                                                     reservations,  
-                                                     lengthOfUndoRecords);  
-recordSequence.Append(undoRecordData,    // If necessary …  
-                                    userSqn,  
-                                    previousSqn,  
-                                    RecordSequenceAppendOptions.ForceFlush,  
-                                    reservations);  
-  
-// Using the Manual Approach  
-ReservationCollection reservations = recordSequence.CreateReservationCollection();  
-reservations.Add(lengthOfUndoRecord);  
-try  
-{  
-   recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
-}  
-catch (Exception)  
-{  
-   reservations.Remove(lengthOfUndoRecord);  
-   throw;  
-}  
-  
-recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,12 +29,11 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.ReservationCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +44,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,41 +53,9 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the requested reservation, in bytes.</param>
-        <summary>Allocates a reservation and adds it to the collection. This method cannot be inherited.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to manually make a reservation. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
-  
-```  
-ReservationCollection reservations = recordSequence.CreateReservationCollection();  
-reservations.Add(lengthOfUndoRecord);  
-try  
-{  
-   recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
-}  
-catch (Exception)  
-{  
-   reservations.Remove(lengthOfUndoRecord);  
-   throw;  
-}  
-  
-recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="archiveTail" /> is not between the base and last sequence numbers of this sequence.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="size" /> is invalid or exceeds maximum reservation size.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs when creating the archive snapshot.</exception>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
-        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -159,7 +65,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,15 +72,8 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all of the reservations in the collection. This method cannot be inherited.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="size" /> is invalid or exceeds maximum reservation size.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs when creating the archive snapshot.</exception>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -185,7 +83,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,14 +92,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size to locate in the collection.</param>
-        <summary>Determines whether a reservation of the specified size has been made. This method cannot be inherited.</summary>
-        <returns>
-          <see langword="true" /> if at least one reservation of the specified size has been made; otherwise, <see langword="false" />.</returns>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -212,7 +105,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,22 +115,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array that is the destination of the copy.</param>
-        <param name="arrayIndex">The zero-based index in the array at which copying begins.</param>
-        <summary>Copies the entire collection to a one-dimensional array, starting at the specified index of the target array. This method cannot be inherited.</summary>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> or <paramref name="arrayIndex" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="arrayIndex" /> is less than zero, or greater than or equal to the length of <paramref name="array" />.</exception>
-        <exception cref="T:System.ArgumentException">There is not enough space in the specified array to copy the data.  
-  
- -or-  
-  
- <paramref name="array" /> is not a single dimensional array, which is the only type supported for the requested action.</exception>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -248,15 +128,14 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of reservations in the collection.</summary>
-        <value>The number of reservations in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,7 +146,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,7 +153,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Allows the <see cref="T:System.IO.Log.ReservationCollection" /> to free resources before it is destroyed by the garbage collector.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +164,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,8 +173,8 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the reservation to release.</param>
-        <summary>When overridden in a derived class, releases a reservation of the specified size.</summary>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,7 +185,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,17 +194,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the reservation that must be fit.</param>
-        <summary>When overridden in a derived class, gets the best matching reservation for a given size.</summary>
-        <returns>A reservation from the collection that is greater than or equal to the specified size, or -1 if no such reservation exists.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is typically called when appending a record from reserved space to a record sequence. When it returns, a reservation of the returned size has been removed from the collection. If, for some reason, the reserved space is not actually accessed, the <xref:System.IO.Log.ReservationCollection.ReservationMade%2A> method should be called to ensure that the <xref:System.IO.Log.ReservationCollection> accurately represents the amount of reserved space in the record sequence.  
-  
- ]]></format>
-        </remarks>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -338,7 +207,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,19 +214,9 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through the <see cref="T:System.IO.Log.ReservationCollection" />. This method cannot be inherited.</summary>
-        <returns>An enumerator that can iterate through the <see cref="T:System.IO.Log.ReservationCollection" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The operation is invalid for one of the following reasons:  
-  
--   The enumeration has ended.  
-  
--   The collection has been modified.  
-  
--   The enumeration has not been started. A call to <see cref="System.Collections.IEnumerator.MoveNext%2A" /> must be made.</exception>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -368,23 +226,15 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection is read-only.</summary>
-        <value>This property always returns <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.IO.Log.ReservationCollection> is never read-only.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeReservation">
@@ -394,7 +244,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -404,8 +253,8 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the reservation to allocate.</param>
-        <summary>When overridden in a derived class, allocates a reservation of the specified size.</summary>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -416,7 +265,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,40 +274,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="item" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="item">The size of the reservation to release.</param>
-        <summary>Releases a reservation of the specified size, if one has been made. This method cannot be inherited.</summary>
-        <returns>
-          <see langword="true" /> if a reservation of the specified size was found and removed; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to manually make a reservation. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
-  
-```  
-ReservationCollection reservations = recordSequence.CreateReservationCollection();  
-reservations.Add(lengthOfUndoRecord);  
-try  
-{  
-   recordSequence.Append(recordData, userSqn, previousSqn, RecordAppendOptions.None);  
-}  
-catch (Exception)  
-{  
-   reservations.Remove(lengthOfUndoRecord);  
-   throw;  
-}  
-  
-recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">No reservation large enough to fit the provided record can be found in the specified reservation collection.</exception>
-        <exception cref="T:System.IO.IOException">An I/O error occurs when creating the archive snapshot.</exception>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReservationFreed">
@@ -469,7 +287,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,16 +296,9 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the reservation that has been released.</param>
-        <summary>When overridden in a derived class, indicates that a reservation has been released.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you inherit from <xref:System.IO.Log.ReservationCollection>, you must call this method when a reservation is released for a reason other than removing it from the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReservationMade">
@@ -498,7 +308,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,16 +317,9 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="size">The size of the reservation that has been made.</param>
-        <summary>When overridden in a derived class, indicates that a reservation has been made.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you inherit from <xref:System.IO.Log.ReservationCollection>, you must call this method when a reservation is made outside of a call to <xref:System.IO.Log.ReservationCollection.Add%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -527,7 +329,6 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,19 +336,9 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through the <see cref="T:System.IO.Log.ReservationCollection" />. This method cannot be inherited.</summary>
-        <returns>An enumerator that can iterate through the <see cref="T:System.IO.Log.ReservationCollection" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The operation is invalid for one of the following reasons:  
-  
--   The enumeration has ended.  
-  
--   The collection has been modified.  
-  
--   The enumeration has not been started. A call to <see cref="System.Collections.IEnumerator.MoveNext%2A" /> must be made.</exception>
-        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
-        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
       </Docs>
     </Member>
   </Members>

@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the serialization context for WS-Trust messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A container for objects used to serialize WS-Trust requests (RST) and responses (RSTR).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,11 +43,9 @@
         <Parameter Name="securityTokenHandlerCollectionManager" Type="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" />
       </Parameters>
       <Docs>
-        <param name="securityTokenHandlerCollectionManager">The <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> object that contains the set of <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> objects to use for serializing and validating tokens found in WS-Trust messages.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> class with the specified <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> object.</summary>
+        <param name="securityTokenHandlerCollectionManager">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="securityTokenHandlerCollectionManager" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,21 +63,11 @@
         <Parameter Name="useKeyTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="securityTokenHandlerCollectionManager">The <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> object that contains the set of <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> objects to use for serializing and validating tokens found in WS-Trust messages.</param>
-        <param name="securityTokenResolver">The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object to use to resolve security token references found in most elements of WS-Trust messages.</param>
-        <param name="useKeyTokenResolver">The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object to use to resolve security token references found in the wst:UseKey element of RST messages as well as the wst:RenewTarget element found in RST messages.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> class with the specified <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" />, <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />, and <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> objects.</summary>
+        <param name="securityTokenHandlerCollectionManager">To be added.</param>
+        <param name="securityTokenResolver">To be added.</param>
+        <param name="useKeyTokenResolver">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="securityTokenHandlerCollectionManager" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="securityTokenResolver" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="useKeyTokenResolver" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SecurityTokenHandlerCollectionManager">
@@ -102,8 +83,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> that contains the set of <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> objects used for serializing and validating tokens found in WS-Trust messages.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +101,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityTokenHandlerCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the collection of <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> objects used to serialize and validate security tokens found in WS-Trust messages.</summary>
-        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +119,8 @@
         <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object  used to resolve security token references found in most elements of WS-Trust messages.</summary>
-        <value>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +137,8 @@
         <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object used to resolve security token references found in the wst:UseKey element of RST messages as well as the wst:RenewTarget element found in RST messages.</summary>
-        <value>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

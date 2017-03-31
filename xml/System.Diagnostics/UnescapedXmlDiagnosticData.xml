@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.UnescapedXmlDiagnosticData" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides unescaped XML data for the logging of user-provided trace data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used by the <xref:System.Diagnostics.EventSchemaTraceListener.TraceData%2A> methods. It can also be used to pass XML data to the <xref:System.Diagnostics.EventSchemaTraceListener.TraceData%2A> methods.  
-  
-> [!NOTE]
->  The user-provided data is not checked for schema validity.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use UnescapedXmlDiagnosticData class. This code example is part of a larger example that is provided for the <xref:System.Diagnostics.EventSchemaTraceListener> class.  
-  
- [!code-cs[System.Diagnostics.EventSchemaTraceListener#11](~/add/codesnippet/csharp/t-system.diagnostics.une_1.cs)]
- [!code-vb[System.Diagnostics.EventSchemaTraceListener#11](~/add/codesnippet/visualbasic/t-system.diagnostics.une_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,34 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="xmlPayload" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlPayload">The XML data to be logged in the <see langword="UserData" /> node of the event schema.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.UnescapedXmlDiagnosticData" /> class by using the specified XML data string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want your code to be end-to-end schema-compliant, the `xmlPayload` parameter must be an XML fragment that can be validated against the end-to-end event schema. If `xmlPayload` is `null`, the <xref:System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml%2A> property is an empty string.  
-  
-> [!NOTE]
->  `xmlPayload` is not checked for XML validity.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the UnescapedXmlDiagnosticData constructor. This code example is part of a larger example that is provided for the <xref:System.Diagnostics.EventSchemaTraceListener> class.  
-  
- [!code-cs[System.Diagnostics.EventSchemaTraceListener#11](~/add/codesnippet/csharp/m-system.diagnostics.une_1.cs)]
- [!code-vb[System.Diagnostics.EventSchemaTraceListener#11](~/add/codesnippet/visualbasic/m-system.diagnostics.une_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="xmlPayload">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -78,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of the <see cref="T:System.Diagnostics.UnescapedXmlDiagnosticData" /> object.</summary>
-        <returns>A string representation of the <see cref="T:System.Diagnostics.UnescapedXmlDiagnosticData" /> object. If the object is <see langword="null" />, this method returns an empty string.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,23 +59,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unescaped XML data string.</summary>
-        <value>An unescaped XML string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want your code to be end-to-end schema-compliant, the UnescapedXml property value must be an XML fragment that can be validated against the end-to-end event schema.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TargetFinishedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Initializes a new instance of the TargetFinishedEventArgs class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,13 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetFinishedEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,14 +48,13 @@
         <Parameter Name="succeeded" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="targetName">The name of the target associated with the event.</param>
-        <param name="projectFile">The name of the project file associated with the event.</param>
-        <param name="targetFile">The name of the target file.</param>
-        <param name="succeeded">
-          <see langword="true" /> to indicate the build succeeded; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetFinishedEventArgs" /> class with the specified <see cref="Microsoft.Build.Framework.BuildEventArgs.Message%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.HelpKeyword%2A" />, <see cref="Microsoft.Build.Framework.TargetFinishedEventArgs.TargetName%2A" />, <see cref="Microsoft.Build.Framework.TargetFinishedEventArgs.ProjectFile%2A" />, and <see cref="Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded%2A" /> values.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="targetFile">To be added.</param>
+        <param name="succeeded">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,14 +77,14 @@
         <Parameter Name="targetOutputs" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="targetName">target name</param>
-        <param name="projectFile">project file</param>
-        <param name="targetFile">file in which the target is defined</param>
-        <param name="succeeded">true if target built successfully</param>
-        <param name="targetOutputs">Target output items for the target. If batching will be null for everything except for the last target in the batch</param>
-        <summary>This constructor allows event data to be initialized. Sender is assumed to be "MSBuild".</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="targetFile">To be added.</param>
+        <param name="succeeded">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,15 +108,15 @@
         <Parameter Name="targetOutputs" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="message">text message</param>
-        <param name="helpKeyword">help keyword</param>
-        <param name="targetName">target name</param>
-        <param name="projectFile">project file</param>
-        <param name="targetFile">file in which the target is defined</param>
-        <param name="succeeded">true if target built successfully</param>
-        <param name="eventTimestamp">Timestamp when the event was created</param>
-        <param name="targetOutputs">Target output items for the target. If batching will be null for everything except for the last target in the batch</param>
-        <summary>This constructor allows event data to be initialized including the timestamp when the event was created. Sender is assumed to be "MSBuild".</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <param name="projectFile">To be added.</param>
+        <param name="targetFile">To be added.</param>
+        <param name="succeeded">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <param name="targetOutputs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,16 +127,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the project file associated with the event.</summary>
-        <value>the name of the project file associated with the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,16 +145,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the build of the target succeeded.</summary>
-        <value>The value indicating whether the build of the target succeeded.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,16 +163,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the file that contains the implementation of this target.</summary>
-        <value>The name of the file that contains the implementation of this target.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,16 +181,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the target associated with the event.</summary>
-        <value>The name of the target associated with the event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +205,8 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an enumerator over all target outputs.</summary>
-        <value>Returns an enumerator over all target outputs.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

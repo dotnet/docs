@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Management.InvokeMethodOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies options for invoking a management method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The InvokeMethodOptions class is used to invoke the method.  
-  
- [!code-vb[wminet_InvokeMethodOptions#1](~/add/codesnippet/visualbasic/t-system.management.invo_1.vb)]
- [!code-cs[wminet_InvokeMethodOptions#1](~/add/codesnippet/csharp/t-system.management.invo_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,30 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.InvokeMethodOptions" /> class for the [InvokeMethod(String, Object\<see cref="System.Management.ManagementObject.InvokeMethod%28System.String%2CSystem.Object%5B%5D%29" /> operation, using default values. This is the default constructor.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The default constructor of the <xref:System.Management.InvokeMethodOptions> class is used.  
-  
- [!code-vb[wminet_InvokeMethodOptions()#1](~/add/codesnippet/visualbasic/m-system.management.invo_1.vb)]
- [!code-cs[wminet_InvokeMethodOptions()#1](~/add/codesnippet/csharp/m-system.management.invo_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -74,27 +44,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="context">A provider-specific, named-value pairs object to be passed through to the provider.</param>
-        <param name="timeout">The length of time to let the operation perform before it times out. The default value is <see cref="T:System.TimeSpan" />. Setting this parameter will invoke the operation semisynchronously.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.InvokeMethodOptions" /> class for an invoke operation using the specified values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
-   
-  
-## Examples  
- The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The <xref:System.Management.InvokeMethodOptions> class is used to invoke the method.  
-  
- [!code-cs[wminet_InvokeMethodOptions(2)#1](~/add/codesnippet/csharp/c4e43701-cf8d-4b81-bc50-_1.cs)]
- [!code-vb[wminet_InvokeMethodOptions(2)#1](~/add/codesnippet/visualbasic/c4e43701-cf8d-4b81-bc50-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -104,7 +57,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,18 +64,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a copy of the object.</summary>
-        <returns>The cloned object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

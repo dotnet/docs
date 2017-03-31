@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.Clone" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="targetElement" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="targetElement">The element to be cloned.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs" /> class.</summary>
+        <param name="targetElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cloned instance.</summary>
-        <value>The cloned instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element to be cloned.</summary>
-        <value>The element to be cloned.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,17 +86,10 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">The event handler to invoke.</param>
-        <param name="genericTarget">The target on which the handler is invoked.</param>
-        <summary>Invokes the specified event handler on the specified object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation casts the generic handler to a <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventHandler> instance and invokes it.  
-  
- ]]></format>
-        </remarks>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

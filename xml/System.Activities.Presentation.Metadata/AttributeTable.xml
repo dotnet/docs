@@ -11,22 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The attribute table is a read-only collection of metadata attributes that are associated with specific types, members, and dependencies.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This table is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
-  
- The AttributeTable is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
-  
-   
-  
-## Examples  
-   
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AttributedTypes">
@@ -42,16 +28,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an enumeration of all types that have attribute overrides, on a property, member, or the type itself.</summary>
-        <value>Returns <see cref="System.Collections.Generic.IEnumerable%601" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This can be used to determine what types will be refreshed when this attribute table is added to the metadata store.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsAttributes">
@@ -70,13 +49,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type to check for metadata.</param>
-        <summary>Determines whether this table contains metadata for the given type.</summary>
-        <returns>
-          <see langword="true" /> if the table contains metadata for the type at the class level or metadata associated with a <see langword="DependencyProperty" /> or <see langword="MemberDescriptor" />; otherwise, <see langword="false" />.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -95,12 +71,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type to get class-level attributes for.</param>
-        <summary>Returns an enumeration of all class-level attributes provided for the specified type.</summary>
-        <returns>An enumeration of attributes that match the criteria. This will never return a null enumeration.</returns>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -120,13 +94,11 @@
         <Parameter Name="descriptor" Type="System.ComponentModel.MemberDescriptor" />
       </Parameters>
       <Docs>
-        <param name="ownerType">The type that contains the member.</param>
-        <param name="descriptor">A member descriptor to get custom attributes for.</param>
-        <summary>Returns an enumeration of all attributes provided for the specified member of the specified type.</summary>
-        <returns>An enumeration of attributes that match the criteria. This will never return a null enumeration.</returns>
+        <param name="ownerType">To be added.</param>
+        <param name="descriptor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="ownerType" /> or <paramref name="descriptor" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -146,13 +118,11 @@
         <Parameter Name="member" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="ownerType">The type that contains the member.</param>
-        <param name="member">The member to provide attributes for.</param>
-        <summary>Returns an enumeration of all attributes provided for the specified member of the specified type.</summary>
-        <returns>An enumeration of attributes that match the criteria. This will never return a null enumeration.</returns>
+        <param name="ownerType">To be added.</param>
+        <param name="member">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="ownerType" /> or <paramref name="member" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -172,13 +142,11 @@
         <Parameter Name="memberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ownerType">The owner type of the dependency property.</param>
-        <param name="memberName">The name of the member to provide attributes for.</param>
-        <summary>Returns an enumeration of all attributes provided for the specified member of the specified type.</summary>
-        <returns>An enumeration of attributes that match the criteria. This will never return a null enumeration.</returns>
+        <param name="ownerType">To be added.</param>
+        <param name="memberName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="ownerType" /> or <paramref name="memberName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -198,13 +166,11 @@
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="ownerType">The owner type of the dependency property.</param>
-        <param name="dp">A dependency property to get custom attributes for.</param>
-        <summary>Returns an enumeration of all attributes provided for the specified dependency of the specified type.</summary>
-        <returns>An enumeration of attributes that match the criteria. This will never return a null enumeration.</returns>
+        <param name="ownerType">To be added.</param>
+        <param name="dp">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="ownerType" /> or <paramref name="dp" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

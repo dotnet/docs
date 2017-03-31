@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ResizeMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether a window can be resized and, if so, how it can be resized. Used by the <see cref="System.Windows.Window.ResizeMode%2A" /> property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A window can only be minimized and restored. The **Minimize** and **Maximize** buttons are both shown, but only the **Minimize** button is enabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CanResize">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A window can be resized. The **Minimize** and **Maximize** buttons are both shown and enabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CanResizeWithGrip">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A window can be resized. The **Minimize** and **Maximize** buttons are both shown and enabled. A resize grip appears in the bottom-right corner of the window.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoResize">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A window cannot be resized. The **Minimize** and **Maximize** buttons are not displayed in the title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

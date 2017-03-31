@@ -1,40 +1,17 @@
 <Type Name="MessagePriority" FullName="System.Messaging.MessagePriority">
   <TypeSignature Language="C#" Value="public enum MessagePriority" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessagePriority extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessagePriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagePriority" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the priority Message Queuing applies to a message while it is en route to a queue, and when inserting the message into the destination queue.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MessagePriority enumeration is used by the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.Priority%2A> property. This property affects how Message Queuing handles the message both while it is en route and once it reaches its destination. Higher-priority messages are given preference during routing and inserted toward the front of the destination queue. Messages with the same priority are placed in the queue according to their arrival time.  
-  
- When Message Queuing routes a message to a public queue, the priority level of the message is added to the priority level of the public queue (which you can access through the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.BasePriority%2A> property). The priority level of the queue has no effect on how messages are placed in the queue, only on how Message Queuing handles the message while en route.  
-  
- Base priority applies only to public queues. For a private queue, the base priority is always zero.  
-  
- You can set a meaningful priority only for non-transactional messages. Message Queuing automatically sets the priority for transactional messages to `Lowest`, which causes transactional message priority to be ignored.  
-  
-   
-  
-## Examples  
- The following example sends two messages of different priorities to the queue, and retrieves them subsequently.  
-  
- [!code-cpp[Message.DefaultPropertiesToSend#1](~/add/codesnippet/cpp/t-system.messaging.messa_0_1.cpp)]
- [!code-vb[Message.DefaultPropertiesToSend#1](~/add/codesnippet/visualbasic/t-system.messaging.messa_0_1.vb)]
- [!code-cs[Message.DefaultPropertiesToSend#1](~/add/codesnippet/csharp/t-system.messaging.messa_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AboveNormal">
@@ -44,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Between High and Normal message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -61,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>High message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Highest">
@@ -78,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Highest message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -95,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Low message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lowest">
@@ -112,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lowest message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -129,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Normal message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VeryHigh">
@@ -146,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Between <see langword="Highest" /> and <see langword="High" /> message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VeryLow">
@@ -163,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Between <see langword="Low" /> and <see langword="Lowest" /> message priority.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

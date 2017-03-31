@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListSource" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IListSource" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
@@ -20,36 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides functionality to an object to return a list that can be bound to a data source.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You typically use this interface to return a list that can be bound to a data source, from an object that does not implement <xref:System.Collections.IList> itself.  
-  
- Binding to data can occur at either run time or in a designer, but there are rules for each. At run time, you can bind to data in any of the following:  
-  
--   <xref:System.Array>  
-  
--   Implementer of <xref:System.Collections.IList>, provided the implementer has a strongly typed <xref:System.Collections.IList.Item%2A> property (that is, the <xref:System.Type> is anything but <xref:System.Object>). You can accomplish this by making the default implementation of <xref:System.Collections.IList.Item%2A> private. If you want to create an <xref:System.Collections.IList> that follows the rules of a strongly typed collection, you should derive from <xref:System.Collections.CollectionBase>.  
-  
--   Implementer of <xref:System.ComponentModel.ITypedList>.  
-  
- In a designer, you can initialize binding to <xref:System.ComponentModel.Component> objects by following the same rules.  
-  
-> [!NOTE]
->  Implementers of IListSource can return an <xref:System.Collections.IList> that contains a collection of <xref:System.Collections.IList> objects.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to implement the IListSource interface. A component named `EmployeeListSource` exposes an <xref:System.Collections.IList> for data binding by implementing the <xref:System.ComponentModel.IListSource.GetList%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](../Topic/How%20to:%20Implement%20the%20IListSource%20Interface.md).  
-  
- [!code-cs[System.ComponentModel.IListSource#1](~/add/codesnippet/csharp/t-system.componentmodel._73_1.cs)]
- [!code-vb[System.ComponentModel.IListSource#1](~/add/codesnippet/visualbasic/t-system.componentmodel._73_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ContainsListCollection">
@@ -58,33 +38,25 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is a collection of <see cref="T:System.Collections.IList" /> objects.</summary>
-        <value>
-          <see langword="true" /> if the collection is a collection of <see cref="T:System.Collections.IList" /> objects; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using this property in <xref:System.Data.DataSet> returns `true` because the <xref:System.Data.DataSet> class contains a collection of collections. Using this property in <xref:System.Data.DataTable> returns `false` because the <xref:System.Data.DataTable> class contains a collection of objects.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` indicates that it does not contain an <xref:System.Collections.IList> for data binding by returning `false` from the ContainsListCollection method. For a full code listing, see [How to: Implement the IListSource Interface](../Topic/How%20to:%20Implement%20the%20IListSource%20Interface.md).  
-  
- [!code-cs[System.ComponentModel.IListSource#3](~/add/codesnippet/csharp/p-system.componentmodel._24_1.cs)]
- [!code-vb[System.ComponentModel.IListSource#3](~/add/codesnippet/visualbasic/p-system.componentmodel._24_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetList">
@@ -93,28 +65,26 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IListSource.GetList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IList" /> that can be bound to a data source from an object that does not implement an <see cref="T:System.Collections.IList" /> itself.</summary>
-        <returns>An <see cref="T:System.Collections.IList" /> that can be bound to a data source from the object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` exposes an <xref:System.Collections.IList> for data binding by implementing the GetList method. For a full code listing, see [How to: Implement the IListSource Interface](../Topic/How%20to:%20Implement%20the%20IListSource%20Interface.md).  
-  
- [!code-cs[System.ComponentModel.IListSource#4](~/add/codesnippet/csharp/m-system.componentmodel._6_1.cs)]
- [!code-vb[System.ComponentModel.IListSource#4](~/add/codesnippet/visualbasic/m-system.componentmodel._6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

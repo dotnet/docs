@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LineCap" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the available cap styles with which a <see cref="T:System.Drawing.Pen" /> object can end a line.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can draw the start or end of a line in one of several shapes called line caps. [!INCLUDE[ndptecgdiplus](~/add/includes/ndptecgdiplus-md.md)] supports several line caps, such as round, square, diamond, and arrowhead. The following illustration shows a line with a round cap and an arrow cap.  
-  
- ![Pens](~/add/media/pens4.gif "Pens")  
-  
-   
-  
-## Examples  
- The following example draws a line with an arrowhead at one end and a round cap at the other end. To run this example, Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-vb[System.Drawing.UsingAPen#71](~/add/codesnippet/visualbasic/t-system.drawing.drawing_1_1.vb)]
- [!code-cs[System.Drawing.UsingAPen#71](~/add/codesnippet/csharp/t-system.drawing.drawing_1_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AnchorMask">
@@ -39,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a mask used to check whether a line cap is an anchor cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArrowAnchor">
@@ -56,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies an arrow-shaped anchor cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -73,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a custom line cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiamondAnchor">
@@ -90,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a diamond anchor cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Flat">
@@ -107,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a flat line cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAnchor">
@@ -124,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies no anchor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -141,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a round line cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundAnchor">
@@ -158,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a round anchor cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -175,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a square line cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SquareAnchor">
@@ -192,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a square anchor line cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Triangle">
@@ -209,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a triangular line cap.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

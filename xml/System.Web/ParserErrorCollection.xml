@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ParserErrorCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,39 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Manages a set of parser errors detected during parsing. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParserErrorCollection class provides methods and properties that you can use to manage a collection of <xref:System.Web.ParserError> objects. For example, you can add a set of parser errors to a collection upon parsing while using a custom <xref:System.Web.Compilation.BuildProvider> object to report all parse exceptions caught during parsing.  
-  
- To add parser errors to, remove them from, or locate them in a collection, use the following:  
-  
--   The <xref:System.Web.ParserErrorCollection.Add%2A> method to add a single <xref:System.Web.ParserError> object to the collection.  
-  
--   The <xref:System.Web.ParserErrorCollection.AddRange%2A> methods to add multiple <xref:System.Web.ParserError> objects to the collection.  
-  
--   Both the <xref:System.Web.ParserErrorCollection.Insert%2A> method and the <xref:System.Web.ParserErrorCollection.Item%2A> property, which is the ParserErrorCollection indexer, to add a single <xref:System.Web.ParserError> object to the collection at the specified index.  
-  
- Additionally, you can use the ParserErrorCollection class to do the following:  
-  
--   Remove <xref:System.Web.ParserError> objects with the <xref:System.Web.ParserErrorCollection.Remove%2A> method.  
-  
--   Check whether a particular <xref:System.Web.ParserError> is in the collection by using the <xref:System.Web.ParserErrorCollection.Contains%2A> method.  
-  
--   Find where a <xref:System.Web.ParserError> object is located in the collection by using the <xref:System.Web.ParserErrorCollection.IndexOf%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the ParserErrorCollection methods.  
-  
- [!code-vb[System.Web.ParserErrorCollection#1](~/add/codesnippet/visualbasic/t-system.web.parsererror_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#1](~/add/codesnippet/csharp/t-system.web.parsererror_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,23 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ParserErrorCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to initialize an instance of the <xref:System.Web.ParserErrorCollection> class.  
-  
- [!code-vb[System.Web.ParserErrorCollection#2](~/add/codesnippet/visualbasic/m-system.web.parsererror_8_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#2](~/add/codesnippet/csharp/m-system.web.parsererror_8_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -80,23 +37,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Web.ParserError[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.Web.ParserError" /> that specifies the errors to add to the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ParserErrorCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParserErrorCollection constructor adds an array of <xref:System.Web.ParserError> objects to the collection.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -106,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,27 +64,10 @@
         <Parameter Name="value" Type="System.Web.ParserError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.ParserError" /> value to add to the collection.</param>
-        <summary>Adds a value to the collection.</summary>
-        <returns>The index of the value within the collection; otherwise, -1 if the value is already in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Add method to add an existing <xref:System.Web.ParserError> object to the collection. You cannot add the same <xref:System.Web.ParserError> object to the collection more than once. When you call the Add method using a <xref:System.Web.ParserError> object that is already in the collection, the addition fails and -1 is returned.  
-  
- To add multiple objects to the collection, use the <xref:System.Web.ParserErrorCollection.AddRange%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add a <xref:System.Web.ParserError> object to a <xref:System.Web.ParserErrorCollection> object.  
-  
- [!code-vb[System.Web.ParserErrorCollection#3](~/add/codesnippet/visualbasic/m-system.web.parsererror_3_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#3](~/add/codesnippet/csharp/m-system.web.parsererror_3_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -146,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,26 +86,9 @@
         <Parameter Name="value" Type="System.Web.ParserError[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.Web.ParserError" /> that specifies the values to add to the collection.</param>
-        <summary>Adds an array of <see cref="T:System.Web.ParserError" /> objects to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AddRange method to add an array of <xref:System.Web.ParserError> objects to the collection. The AddRange method is useful when you create multiple <xref:System.Web.ParserError> objects and want to add them to the collection with a single method call. To add individual <xref:System.Web.ParserError> objects to the collection, use the <xref:System.Web.ParserErrorCollection.Add%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add a range of <xref:System.Web.ParserError> objects to a <xref:System.Web.ParserErrorCollection> object.  
-  
- [!code-vb[System.Web.ParserErrorCollection#4](~/add/codesnippet/visualbasic/m-system.web.parsererror_0_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#4](~/add/codesnippet/csharp/m-system.web.parsererror_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -185,7 +98,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,25 +107,9 @@
         <Parameter Name="value" Type="System.Web.ParserErrorCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.Web.ParserErrorCollection" /> containing the <see cref="T:System.Web.ParserError" /> objects to add to the collection.</param>
-        <summary>Adds the objects in an existing <see cref="T:System.Web.ParserErrorCollection" /> to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unlike the <xref:System.Web.ParserErrorCollection.Add%2A> method, the AddRange method does not have a return value that can be used to determine whether a <xref:System.Web.ParserError> object being added is already in the collection. If you need this information, use the <xref:System.Web.ParserErrorCollection.Contains%2A> method before using AddRange.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add a range of <xref:System.Web.ParserError> objects to a <xref:System.Web.ParserErrorCollection> object.  
-  
- [!code-vb[System.Web.ParserErrorCollection#4](~/add/codesnippet/visualbasic/m-system.web.parsererror_7_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#4](~/add/codesnippet/csharp/m-system.web.parsererror_7_1.aspx)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.ParserError" /> value is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -223,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,26 +128,10 @@
         <Parameter Name="value" Type="System.Web.ParserError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.ParserError" /> to locate in the collection.</param>
-        <summary>Determines whether the <see cref="T:System.Web.ParserError" /> object is located in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.ParserError" /> is in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot add the same <xref:System.Web.ParserError> object to the collection more than once. However, attempting to add a <xref:System.Web.ParserError> object more than once will not throw an exception. Instead, the addition will fail. In this case, the <xref:System.Web.ParserErrorCollection.Add%2A> method will return a value of –1. However, the <xref:System.Web.ParserErrorCollection.AddRange%2A> and <xref:System.Web.ParserErrorCollection.Insert%2A> methods do not have return values. When adding <xref:System.Web.ParserError> objects by using one of these methods, use the Contains method to determine whether a particular <xref:System.Web.ParserError> object is already in the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to search for an instance of a specified <xref:System.Web.ParserError> object in a <xref:System.Web.ParserErrorCollection> object.  
-  
- [!code-vb[System.Web.ParserErrorCollection#5](~/add/codesnippet/visualbasic/m-system.web.parsererror_6_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#5](~/add/codesnippet/csharp/m-system.web.parsererror_6_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -262,7 +141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,33 +151,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.Web.ParserError" /> to which the parser errors in the collection are copied.</param>
-        <param name="index">The first index within the array to which the <see cref="T:System.Web.ParserError" /> is copied.</param>
-        <summary>Copies the <see cref="T:System.Web.ParserError" /> objects in the collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the CopyTo method to copy the <xref:System.Web.ParserError> objects in a collection (including the item references they contain) to a compatible array, starting at a specified index. This is useful when you want to sort the <xref:System.Web.ParserError> objects in the collection by using the <xref:System.Array.Sort%2A> method. To do this:  
-  
-1.  Copy the <xref:System.Web.ParserError> objects into a compatible array.  
-  
-2.  Sort the array.  
-  
-3.  Use the <xref:System.Web.ParserErrorCollection.Remove%2A> method to remove all the <xref:System.Web.ParserError> objects from the collection.  
-  
-4.  Use the <xref:System.Web.ParserErrorCollection.AddRange%2A> method to add the sorted array back to the collection.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to copy the contents of a <xref:System.Web.ParserErrorCollection> object to the specified <xref:System.Web.ParserError> array.  
-  
- [!code-vb[System.Web.ParserErrorCollection#6](~/add/codesnippet/visualbasic/m-system.web.parsererror_1_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#6](~/add/codesnippet/csharp/m-system.web.parsererror_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -309,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,25 +173,10 @@
         <Parameter Name="value" Type="System.Web.ParserError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.ParserError" /> to locate in the collection.</param>
-        <summary>Gets the index of the specified <see cref="T:System.Web.ParserError" /> object in the collection.</summary>
-        <returns>The zero-based index of the <see cref="T:System.Web.ParserError" /> objects within the collection; otherwise, 1 if the <see cref="T:System.Web.ParserError" /> is not in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the IndexOf method to determine the index of a <xref:System.Web.ParserError> object within the collection. This is useful to determine the index of each <xref:System.Web.ParserError>when you iterate through the collection by using the <xref:System.Collections.IEnumerator> object returned by the <xref:System.Collections.CollectionBase.GetEnumerator%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to locate the index of a <xref:System.Web.ParserError> object at the specified index in a <xref:System.Web.ParserErrorCollection> collection.  
-  
- [!code-vb[System.Web.ParserErrorCollection#5](~/add/codesnippet/visualbasic/m-system.web.parsererror_5_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#5](~/add/codesnippet/csharp/m-system.web.parsererror_5_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -347,7 +186,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -358,27 +196,10 @@
         <Parameter Name="value" Type="System.Web.ParserError" />
       </Parameters>
       <Docs>
-        <param name="index">The index within the collection at which to insert the <see cref="T:System.Web.ParserError" />.</param>
-        <param name="value">The <see cref="T:System.Web.ParserError" /> object to insert into the collection.</param>
-        <summary>Inserts the specified <see cref="T:System.Web.ParserError" /> object into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Insert method to insert an existing <xref:System.Web.ParserError> object at a particular index within the collection.  
-  
- You cannot add the same <xref:System.Web.ParserError> object to the collection more than once. When you call the Insert method by using a <xref:System.Web.ParserError> that is already in the collection, the insertion fails. Use the <xref:System.Web.ParserErrorCollection.Contains%2A> method before the insertion to determine whether a particular <xref:System.Web.ParserError> is already in the collection. To reposition a <xref:System.Web.ParserError> within the collection, you must first remove it by using the <xref:System.Web.ParserErrorCollection.Remove%2A> method and then insert it at the desired index by using Insert.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to insert a <xref:System.Web.ParserError> object at the specified index in a <xref:System.Web.ParserErrorCollection> collection.  
-  
- [!code-vb[System.Web.ParserErrorCollection#8](~/add/codesnippet/visualbasic/m-system.web.parsererror_9_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#8](~/add/codesnippet/csharp/m-system.web.parsererror_9_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -388,7 +209,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,17 +218,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index within the collection of the <see cref="T:System.Web.ParserError" /> object to get or set.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.ParserError" /> object at the specified index within the collection.</summary>
-        <value>The <see cref="T:System.Web.ParserError" /> at the specified index within the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Item property to retrieve the <xref:System.Web.ParserError> object at the specified index within the collection. When you have a reference to the <xref:System.Web.ParserError> object and need the index, use the <xref:System.Web.ParserErrorCollection.IndexOf%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -418,7 +231,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,24 +240,9 @@
         <Parameter Name="value" Type="System.Web.ParserError" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.ParserError" /> to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.Web.ParserError" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Remove method to remove a <xref:System.Web.ParserError> object from the collection when you have a reference to the <xref:System.Web.ParserError>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to remove a <xref:System.Web.ParserError> from the specified index in a <xref:System.Web.ParserErrorCollection> object.  
-  
- [!code-vb[System.Web.ParserErrorCollection#8](~/add/codesnippet/visualbasic/m-system.web.parsererror_4_1.aspx)]
- [!code-cs[System.Web.ParserErrorCollection#8](~/add/codesnippet/csharp/m-system.web.parsererror_4_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

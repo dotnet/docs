@@ -1,0 +1,42 @@
+<Type Name="ISZArrayTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public interface ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISZArrayTypeProvider`1&lt;TType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISZArrayTypeProvider`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSZArrayType">
+      <MemberSignature Language="C#" Value="public TType GetSZArrayType (TType elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetSZArrayType(!TType elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISZArrayTypeProvider`1.GetSZArrayType(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="TType" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

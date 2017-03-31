@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>An enumeration that specifies the action to perform when an unhandled exception occurs within a workflow.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abandons the workflow instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbandonAndSuspend">
@@ -43,7 +43,7 @@
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Abandons the workflow instance and marks the last persisted state as suspended. If there is no last persisted instance can be found, the workflow instance is aborted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -59,7 +59,7 @@
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cancels the workflow instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminate">
@@ -75,7 +75,7 @@
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Terminates the workflow instance. The instance state is <see cref="T:System.Activities.Hosting.WorkflowInstanceState" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

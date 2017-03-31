@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.BlockUIContainer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,28 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A block-level flow content element which enables <see cref="T:System.Windows.UIElement" /> elements (i.e. a <see cref="T:System.Windows.Controls.Button" />) to be embedded (hosted) in flow content.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.UIElement> element (i.e. a <xref:System.Windows.Controls.Button>) may be embedded directly in flow content by enclosing it in a BlockUIContainer (see example below).  
-  
- An BlockUIContainer may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an BlockUIContainer may host children of its own.  
-  
-   
-  
-## Examples  
- The following example shows how to use the BlockUIContainer elements to host <xref:System.Windows.UIElement> elements within flow content.  
-  
- [!code-xml[SpanSnippets#_BlockUIXAML](~/add/codesnippet/xaml/SpanSnippets/Window1.xaml#_blockuixaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: UIElement embedded in flow content](~/add/media/blockuicontainer.png "Screenshot: UIElement embedded in flow content")  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.BlockUIContainer" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,26 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="uiElement" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="uiElement">An <see cref="T:System.Windows.UIElement" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.BlockUIContainer" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.BlockUIContainer" /> class, taking a specified <see cref="T:System.Windows.UIElement" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.BlockUIContainer" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-cs[SpanSnippets#_BlockUI_Const1](~/add/codesnippet/csharp/SpanSnippets/Window1.xaml.cs#_blockui_const1)]
- [!code-vb[SpanSnippets#_BlockUI_Const1](~/add/codesnippet/visualbasic/spansnippets/window1.xaml.vb#_blockui_const1)]  
-  
- ]]></format>
-        </remarks>
+        <param name="uiElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -93,41 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.BlockUIContainer" />.</summary>
-        <value>The <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.BlockUIContainer" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Documents.BlockUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.BlockUIContainer> may host children of its own.  
-  
- In [!INCLUDE[TLA#tla_titlexaml](~/add/includes/tlasharptla-titlexaml-md.md)], wrapping a <xref:System.Windows.UIElement> in an <xref:System.Windows.Documents.BlockUIContainer> is equivalent to setting that <xref:System.Windows.UIElement> as the value of the Child property.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.BlockUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
-  
- [!code-xml[SpanSnippets#_BlockUIXAML](~/add/codesnippet/xaml/SpanSnippets/Window1.xaml#_blockuixaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: UIElement embedded in flow content](~/add/media/blockuicontainer.png "Screenshot: UIElement embedded in flow content")  
-  
- The following example shows how to use the Child property programmatically.  
-  
- [!code-cs[spansnippets#_BlockUI_Child](~/add/codesnippet/csharp/SpanSnippets/Window1.xaml.cs#_blockui_child)]
- [!code-vb[spansnippets#_BlockUI_Child](~/add/codesnippet/visualbasic/spansnippets/window1.xaml.vb#_blockui_child)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriterStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the HTML styles available to an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object output stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.UI.HtmlTextWriter> and <xref:System.Web.UI.Html32TextWriter> objects use these enumeration values to register HTML strings to the proper HTML style.  
-  
-   
-  
-## Examples  
- The following example uses the HtmlTextWriterStyle enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a `color` style attribute to an HTML element and sets its value.  
-  
- [!code-vb[System.Web.UI.HtmlTextWriter#2](~/add/codesnippet/visualbasic/t-system.web.ui.htmltext_3_1.vb)]
- [!code-cs[System.Web.UI.HtmlTextWriter#2](~/add/codesnippet/csharp/t-system.web.ui.htmltext_3_1.cs)]
- [!code-cpp[System.Web.UI.HtmlTextWriter#2](~/add/codesnippet/cpp/t-system.web.ui.htmltext_3_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BackgroundColor">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="backgroundcolor" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="backgroundimage" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderCollapse">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="bordercollapse" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="bordercolor" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -106,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="borderstyle" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -123,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="borderwidth" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -140,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="color" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -157,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="cursor" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -174,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="direction" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -191,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="display" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -208,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="filter" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -225,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="fontfamily" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontSize">
@@ -242,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="fontsize" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -259,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="fontstyle" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontVariant">
@@ -276,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="fontvariant" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontWeight">
@@ -293,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="fontheight" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -310,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="height" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -327,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="left" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListStyleImage">
@@ -344,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="liststyleimage" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListStyleType">
@@ -361,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="liststyletype" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Margin">
@@ -378,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="margin" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -395,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="marginbottom" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginLeft">
@@ -412,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="marginleft" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginRight">
@@ -429,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="marginright" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginTop">
@@ -446,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="margintop" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Overflow">
@@ -463,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="overflow" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverflowX">
@@ -480,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="overflowx" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverflowY">
@@ -497,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="overflowy" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -514,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="padding" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingBottom">
@@ -531,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="paddingbottom" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingLeft">
@@ -548,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="paddingleft" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingRight">
@@ -565,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="paddingright" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingTop">
@@ -582,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="paddingtop" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -599,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="position" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -616,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="textalign" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextDecoration">
@@ -633,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="textdecoration" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextOverflow">
@@ -650,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="textoverflow" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -667,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="top" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -684,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="verticalalign" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visibility">
@@ -701,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="visibility" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WhiteSpace">
@@ -718,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="whitespace" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -735,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="width" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ZIndex">
@@ -752,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the HTML <see langword="zindex" /> style.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

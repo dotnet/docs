@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MatchAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,24 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the attributes of a match made using text pattern matching. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Text pattern matching allows an XML Web service to leverage existing HTML content by parsing it using regular expressions. an XML Web service specifies the content it wants to parse in a Service Description using match elements. These match elements specify several items: the regular expression for parsing the contents of an existing HTML page, whether the parsing must be case-insensitive, and how many instances of content that matches the regular expression should be returned. When a client builds a proxy class using the Wsdl.exe tool, methods of the proxy class include a MatchAttribute detailing the match elements found in the Service Description.  
-  
- For more information on text pattern matching, see [&#91;\<topic://cpconcreatingclientsthatparsecontentofotherwebpages>&#93;](http://msdn.microsoft.com/en-us/7a3be8ac-c770-43fa-8525-e318a1c9f0bf).  
-  
-   
-  
-## Examples  
- [!code-cs[MatchAttribute#1](~/add/codesnippet/csharp/t-system.web.services.pr_20_1.cs)]
- [!code-vb[MatchAttribute#1](~/add/codesnippet/visualbasic/t-system.web.services.pr_20_1.vb)]
- [!code-cpp[MatchAttribute#1](~/add/codesnippet/cpp/t-system.web.services.pr_20_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,36 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pattern">A string that represents the pattern to match.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.MatchAttribute" /> class with the specified pattern.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.Services.Protocols.MatchAttribute> class using the specified pattern.  
-  
- The following table shows the initial property value for an instance of <xref:System.Web.Services.Protocols.MatchAttribute>.  
-  
-|Property|Initial Value|  
-|--------------|-------------------|  
-|Pattern|The value of the `pattern` parameter.|  
-  
-   
-  
-## Examples  
- [!code-cs[MatchAttribute#2](~/add/codesnippet/csharp/m-system.web.services.pr_9_1.cs)]
- [!code-vb[MatchAttribute#2](~/add/codesnippet/visualbasic/m-system.web.services.pr_9_1.vb)]
- [!code-cpp[MatchAttribute#2](~/add/codesnippet/cpp/m-system.web.services.pr_9_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="pattern">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Capture">
@@ -83,25 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the index of a match within a grouping.</summary>
-        <value>A value that represents the index of a match within a grouping.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[MatchAttribute#5](~/add/codesnippet/csharp/p-system.web.services.pr_62_1.cs)]
- [!code-vb[MatchAttribute#5](~/add/codesnippet/visualbasic/p-system.web.services.pr_62_1.vb)]
- [!code-cpp[MatchAttribute#5](~/add/codesnippet/cpp/p-system.web.services.pr_62_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -111,30 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents a grouping of related matches.</summary>
-        <value>A value that represents a grouping of related matches</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Group property to specify a group that a match belongs to.  
-  
-   
-  
-## Examples  
- [!code-cs[MatchAttribute#6](~/add/codesnippet/csharp/p-system.web.services.pr_68_1.cs)]
- [!code-vb[MatchAttribute#6](~/add/codesnippet/visualbasic/p-system.web.services.pr_68_1.vb)]
- [!code-cpp[MatchAttribute#6](~/add/codesnippet/cpp/p-system.web.services.pr_68_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreCase">
@@ -144,26 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the pattern to match is case insensitive.</summary>
-        <value>
-          <see langword="true" /> if matching is case insensitive; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[MatchAttribute#3](~/add/codesnippet/csharp/p-system.web.services.pr_65_1.cs)]
- [!code-vb[MatchAttribute#3](~/add/codesnippet/visualbasic/p-system.web.services.pr_65_1.vb)]
- [!code-cpp[MatchAttribute#3](~/add/codesnippet/cpp/p-system.web.services.pr_65_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxRepeats">
@@ -173,30 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of values to return from the match.</summary>
-        <value>The maximum number of values to return from the match. The default value is -1, which refers to returning all values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A value of 1 returns only the first match. A value of -1 returns all matches. Additionally, a value of -1 equates to an '*' in a regular expression.  
-  
-   
-  
-## Examples  
- [!code-cs[MatchAttribute#7](~/add/codesnippet/csharp/p-system.web.services.pr_69_1.cs)]
- [!code-vb[MatchAttribute#7](~/add/codesnippet/visualbasic/p-system.web.services.pr_69_1.vb)]
- [!code-cpp[MatchAttribute#7](~/add/codesnippet/cpp/p-system.web.services.pr_69_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -206,30 +117,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a regular expression that represents the pattern to match.</summary>
-        <value>A regular expression that represents the pattern to match.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the Pattern property to specify a regular expression that represents the value to match.  
-  
-   
-  
-## Examples  
- [!code-cs[MatchAttribute#4](~/add/codesnippet/csharp/p-system.web.services.pr_47_1.cs)]
- [!code-vb[MatchAttribute#4](~/add/codesnippet/visualbasic/p-system.web.services.pr_47_1.vb)]
- [!code-cpp[MatchAttribute#4](~/add/codesnippet/cpp/p-system.web.services.pr_47_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

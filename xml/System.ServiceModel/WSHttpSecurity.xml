@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSHttpSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the security settings for the <see cref="T:System.ServiceModel.WSHttpBinding" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpSecurity" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,27 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.NonDualMessageSecurityOverHttp</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the message-level security settings for this binding.</summary>
-        <value>A <see cref="T:System.ServiceModel.NonDualMessageSecurityOverHttp" /> instance.  
-  
- The default value includes: <see cref="System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A" /> with default set to <see langword="true" />, <see cref="System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A" /> is <see cref="T:System.ServiceModel.MessageCredentialType" />, <see cref="System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A" /> is <see cref="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A" />, and <see cref="System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A" /> is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code illustrates use of this property.  
-  
- [!code-cs[c_CreateSecureSession#4](~/add/codesnippet/csharp/p-system.servicemodel.ws_20_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -75,31 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the message <see cref="T:System.ServiceModel.SecurityMode" /> for this binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.SecurityMode" /> for this binding. The default is <see cref="T:System.ServiceModel.SecurityMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines whether the settings from the <xref:System.ServiceModel.WSHttpSecurity.Transport%2A> and/or <xref:System.ServiceModel.WSHttpSecurity.Message%2A> property buckets may or may not become effective.  
-  
-   
-  
-## Examples  
- The following code sets this property.  
-  
- [!code-cs[c_CreateSecureSession#3](~/add/codesnippet/csharp/p-system.servicemodel.ws_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the Mode set is not defined.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMessage">
@@ -121,9 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSHttpSecurity.Message%2A" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSHttpSecurity.Message%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSHttpSecurity.Mode%2A" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSHttpSecurity.Mode%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +133,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.WSHttpSecurity.Transport%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.WSHttpSecurity.Transport%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,42 +145,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.HttpTransportSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that contains the transport-level security settings for this binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.HttpTransportSecurity" /> for this binding.  
-  
- The default value includes a <see cref="System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A" /> of <see cref="T:System.ServiceModel.HttpClientCredentialType" /> and a <see cref="System.ServiceModel.HttpTransportSecurity.ProxyCredentialType%2A" /> of <see cref="T:System.ServiceModel.HttpProxyCredentialType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the object returned by this property to set the transport security settings for the binding.  
-  
-   
-  
-## Examples  
- The following code sets the client credential type to Windows.  
-  
-```c#  
-// The code uses a shortcut to specify the security mode to Transport.  
-WSHttpBinding b = new WSHttpBinding(SecurityMode.Transport);  
-b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows;  
-```  
-  
-```vb#  
-' The code uses a shortcut to specify the security mode to Transport.  
-Dim b As WSHttpBinding = new WSHttpBinding(SecurityMode.Transport)  
-b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

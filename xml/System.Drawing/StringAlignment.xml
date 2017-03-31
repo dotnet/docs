@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the alignment of a text string relative to its layout rectangle.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When used with the <xref:System.Drawing.StringFormat.LineAlignment%2A> property, this enumeration sets the vertical alignment for a drawn string. When used with the <xref:System.Drawing.StringFormat.Alignment%2A> property, this enumeration sets the horizontal alignment.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.StringFormat.LineAlignment%2A> and <xref:System.Drawing.StringFormat.Alignment%2A> properties and the StringAlignment enumeration to align strings. This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineAndAlignment` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
-  
- [!code-cs[System.Drawing.Misc2#1](~/add/codesnippet/csharp/t-system.drawing.stringa_1.cs)]
- [!code-vb[System.Drawing.Misc2#1](~/add/codesnippet/visualbasic/t-system.drawing.stringa_1.vb)]
- [!code-cpp[System.Drawing.Misc2#1](~/add/codesnippet/cpp/t-system.drawing.stringa_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Center">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that text is aligned in the center of the layout rectangle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Far">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that text is aligned far from the origin position of the layout rectangle. In a left-to-right layout, the far position is right. In a right-to-left layout, the far position is left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Near">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the text be aligned near the layout. In a left-to-right layout, the near position is left. In a right-to-left layout, the near position is right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

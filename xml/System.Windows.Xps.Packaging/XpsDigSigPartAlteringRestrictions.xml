@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,29 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the parts of the [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] <see cref="T:System.IO.Packaging.Package" /> that are excluded from the range of a digital signature.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration has a FlagsAttribute that allows a bitwise combination of its member values.  
-  
- Parts that are specified as excluded from the digital signature can be modified without invalidating the signature.  For example, if a document is to be signed by more than one person, the SignatureOrigin part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the SignatureOrigin part is not excluded, any additional signatures invalidate the signature of the first signer.  
-  
- For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](http://go.microsoft.com/fwlink/?LinkId=74494).  
-  
- For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
-  
-   
-  
-## Examples  
- The following example shows how to use this enumeration to digitally sign an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-cs[XpsReadWriteSign#SignXpsDocument](~/add/codesnippet/csharp/XpsReadWriteSign/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
- [!code-vb[XpsReadWriteSign#SignXpsDocument](~/add/codesnippet/visualbasic/xpsreadwritesign/signaturedefinitionsandsigning.vb#signxpsdocument)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Annotations">
@@ -48,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Annotations part is excluded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CoreMetadata">
@@ -65,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Core Properties part is excluded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -82,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No parts are excluded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignatureOrigin">
@@ -99,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Signature Origin part is excluded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

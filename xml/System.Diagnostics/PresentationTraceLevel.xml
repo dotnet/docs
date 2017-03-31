@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PresentationTraceLevel" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the level of detail to trace about a particular object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- PresentationTraceLevel is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
-   
-  
-## Examples  
- If you run the application that contains the following [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] under a debugger, the output window provides lines of information describing the status and evaluation of the binding:  
-  
- [!code-xml[Debugging#1](~/add/codesnippet/xaml/Debugging.SimpleBinding/Page1.xaml#1)]  
-[!code-xml[Debugging#2](~/add/codesnippet/xaml/Debugging.SimpleBinding/Page1.xaml#2)]  
-[!code-xml[Debugging#3](~/add/codesnippet/xaml/Debugging.SimpleBinding/Page1.xaml#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="High">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Traces all additional information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Traces some additional information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Traces a medium amount of additional information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Traces no available additional information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

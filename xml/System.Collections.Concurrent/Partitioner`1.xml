@@ -3,8 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Partitioner`1&lt;TSource&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.Partitioner`1" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TSource" />
@@ -14,25 +24,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TSource">Type of the elements in the collection.</typeparam>
-    <summary>Represents a particular manner of splitting a data source into multiple partitions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
-  
-   
-  
-## Examples  
- The following example shows how to implement a partitioner that returns a single element at a time:  
-  
- [!code-cs[System.Collections.Concurrent.Partitioner#1](~/add/codesnippet/csharp/t-system.collections.con_7_1.cs)]
- [!code-vb[System.Collections.Concurrent.Partitioner#1](~/add/codesnippet/visualbasic/t-system.collections.con_7_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>The static methods on Partitioner(TSource) are all thread-safe and may be used concurrently from multiple threads. However, while a created partitioner is in use, the underlying data source should not be modified, whether from the same thread that is using a partitioner or from a separate thread.</threadsafe>
+    <typeparam name="TSource">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,12 +35,22 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new partitioner instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,27 +60,27 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TSource&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an object that can partition the underlying collection into a variable number of partitions.</summary>
-        <returns>An object that can create partitions over the underlying data source.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
-  
- The GetDynamicPartitions method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by the base class. You must implement it in a derived class.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPartitions">
@@ -85,8 +89,18 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;TSource&gt;&gt;</ReturnType>
@@ -95,17 +109,10 @@
         <Parameter Name="partitionCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="partitionCount">The number of partitions to create.</param>
-        <summary>Partitions the underlying collection into the given number of partitions.</summary>
-        <returns>A list containing <paramref name="partitionCount" /> enumerators.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A class that implements this method is expected to return exactly the number of partitions that are specified in `partitionCount`. If a partition contains no elements, then return an empty enumerator rather than null (Nothing in Visual Basic). For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="partitionCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsDynamicPartitions">
@@ -114,23 +121,26 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether additional partitions can be created dynamically.</summary>
-        <value>true if the <see cref="System.Collections.Concurrent.Partitioner%601" /> can create partitions dynamically as they are requested; false if the <see cref="System.Collections.Concurrent.Partitioner%601" /> can only allocate partitions statically.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a derived class does not override and implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, SupportsDynamicPartitions should return false. The value of SupportsDynamicPartitions should not vary over the lifetime of this instance. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

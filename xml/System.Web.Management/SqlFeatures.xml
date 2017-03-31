@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlFeatures" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the ASP.Net features to install or remove using the methods provided by the <see cref="T:System.Web.Management.SqlServices" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration has a <xref:System.FlagsAttribute>, which means you can select two or more features by combining them with the `&` (and) operator (the `And` operator in Visual Basic).  
-  
-   
-  
-## Examples  
- The following code example shows how to use the SqlFeatures enumeration with the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-cs[System.Web.Management.SqlServices#2](~/add/codesnippet/csharp/t-system.web.management._14_1.cs)]
- [!code-vb[System.Web.Management.SqlServices#2](~/add/codesnippet/visualbasic/t-system.web.management._14_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -42,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>All features.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Membership">
@@ -59,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The membership feature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -76,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No features.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Personalization">
@@ -93,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The personalization feature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -110,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The profile feature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoleManager">
@@ -127,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The role manager feature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SqlWebEventProvider">
@@ -144,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Web event provider feature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

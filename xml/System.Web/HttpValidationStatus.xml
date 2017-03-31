@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpValidationStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provides enumerated values that indicate cache validation status.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the request is treated as a cache miss and the page is executed. The cache is not invalidated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the cache is invalid. The item is evicted from the cache and the request is handled as a cache miss.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the cache is valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

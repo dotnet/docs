@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies information about the size and visibility of the images and label associated with a Ribbon control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Ribbon Layout and Resizing](../Topic/Ribbon%20Layout%20and%20Resizing.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> class.</summary>
-        <returns>The new instance of this class.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,24 +62,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates how to show the image on a control.</summary>
-        <value>One of the enumeration values that specify how to show the image on a control. The registered default is <see cref="T:System.Windows.Controls.Ribbon.RibbonImageSize" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, or the image can be <xref:System.Windows.Controls.Ribbon.RibbonImageSize>. If the control does not specify an image of the size that corresponds to the ImageSize setting, no image is displayed.  
-  
-<a name="dependencyPropertyInfo_ImageSize"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSizeProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageSizeProperty">
@@ -102,7 +80,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +97,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a control is collapsed.</summary>
-        <value>
-          <see langword="true" /> if a control is collapsed; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,7 +115,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsed%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,25 +132,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the control’s label is visible.</summary>
-        <value>
-          <see langword="true" /> if the control’s label is visible; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the label property of the control is not set, no label will be shown even if the IsLabelVisible property is `true`.  
-  
-<a name="dependencyPropertyInfo_IsLabelVisible"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisibleProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLabelVisibleProperty">
@@ -189,7 +150,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,24 +167,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum width constraint of a container control in a Ribbon.</summary>
-        <value>The maximum width of the control. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property only has an effect if the control is a container for other objects.  
-  
-<a name="dependencyPropertyInfo_MaxWidth"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidthProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxWidthProperty">
@@ -239,7 +185,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidth%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,24 +202,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum width constraint of a container control in a Ribbon.</summary>
-        <value>The minimum width of the control. The registered default is 0. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property only has an effect if the control is a container for other objects.  
-  
-<a name="dependencyPropertyInfo_MinWidth"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidthProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinWidthProperty">
@@ -289,7 +220,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidth%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,24 +237,9 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of a container control in a Ribbon.</summary>
-        <value>The width of the control. The registered default is <see cref="System.Windows.GridLength.Auto%2A" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property only has an effect if the control is a container for other objects.  
-  
-<a name="dependencyPropertyInfo_Width"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.WidthProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthProperty">
@@ -339,7 +255,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.Width%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

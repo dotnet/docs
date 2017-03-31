@@ -4,28 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IAttributeAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines methods used by ASP.NET server controls to provide programmatic access to any attribute declared in the opening tag of a server control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you author a custom server control that inherits from the <xref:System.Web.UI.WebControls.WebControl>, <xref:System.Web.UI.HtmlControls.HtmlControl>, or <xref:System.Web.UI.WebControls.ListItem> class, the .NET Framework automatically provides programmatic access to attributes because each of these classes implement the IAttributeAccessor interface.  
-  
- If you author a custom server control that does not inherit from one of these classes and plan to allow programmatic access to attributes that do not correspond with the control's strongly typed properties, be sure to implement the IAttributeAccessor interface.  
-  
-   
-  
-## Examples  
- [!code-vb[IAttributeAccessor_Sample#1](~/add/codesnippet/visualbasic/t-system.web.ui.iattribu_1.vb)]
- [!code-cs[IAttributeAccessor_Sample#1](~/add/codesnippet/csharp/t-system.web.ui.iattribu_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetAttribute">
@@ -35,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,20 +28,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A <see cref="T:System.String" /> that represents the name of the server control attribute.</param>
-        <summary>When implemented by a class, retrieves the specified attribute property from the server control.</summary>
-        <returns>The value of the specified attribute.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates an implementation of the GetAttribute method.  
-  
- [!code-vb[IAttributeAccessor_Sample#3](~/add/codesnippet/visualbasic/m-system.web.ui.iattribu_1_1.vb)]
- [!code-cs[IAttributeAccessor_Sample#3](~/add/codesnippet/csharp/m-system.web.ui.iattribu_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAttribute">
@@ -68,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,20 +51,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the attribute to be set.</param>
-        <param name="value">The value assigned to the attribute.</param>
-        <summary>When implemented by a class, designates an attribute and its value to assign to the ASP.NET server control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates a possible implementation of the SetAttribute method.  
-  
- [!code-vb[IAttributeAccessor_Sample#2](~/add/codesnippet/visualbasic/m-system.web.ui.iattribu_0_1.vb)]
- [!code-cs[IAttributeAccessor_Sample#2](~/add/codesnippet/csharp/m-system.web.ui.iattribu_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

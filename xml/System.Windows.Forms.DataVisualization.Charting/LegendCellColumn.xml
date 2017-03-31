@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a cell column in a legend, which is used to extend the functionality of the default legend.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any number of cell columns can be placed in any order, which gives you the flexibility to extend the abilities of the default legend entries.  
-  
- The legend cell columns are only applicable to items that are automatically generated from series or data points.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +45,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="headerText">The text for the legend cell column header.</param>
-        <param name="columnType">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType" /> enumeration value that represents the legend cell column type.</param>
-        <param name="text">The text for the legend cell column.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn" /> class with the specified header text, column type and column cell text.</summary>
+        <param name="headerText">To be added.</param>
+        <param name="columnType">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,11 +68,11 @@
         <Parameter Name="alignment" Type="System.Drawing.ContentAlignment" />
       </Parameters>
       <Docs>
-        <param name="headerText">The text for the legend cell column header.</param>
-        <param name="columnType">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType" /> enumeration value that represents the legend cell column type.</param>
-        <param name="text">The text for the legend cell column.</param>
-        <param name="alignment">The legend column content alignment.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn" /> class with the specified header text, column type, column cell text and content alignment.</summary>
+        <param name="headerText">To be added.</param>
+        <param name="columnType">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="alignment">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,16 +94,9 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the legend column content alignment.</summary>
-        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the alignment of the legend cell contents. The default value is <see cref="T:System.Drawing.ContentAlignment" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used to align text or series symbols within the legend cell column.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -139,18 +123,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the legend cell column.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the legend cell column background.  
-  
- The default value is <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property overrides the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.BackColor%2A> property of the legend that the legend cell column belongs to. It also overrides the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.InterlacedRows%2A> property of the legend.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnType">
@@ -174,20 +149,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the legend cell column type.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType" /> enumeration value that represents the legend cell column type. This value represents the type that will be used to define the legend cell column contents. The default value is <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property determines the type of content that will be displayed in each individual legend cell column. There are two possible values:  
-  
--   Text: By default, the #LEGENDTEXT keyword is used to place the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A> value in each cell column. However, you can use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.Text%2A> property to set any keyword(s) that will be replaced by a value of the corresponding series.  
-  
--   SeriesSymbol: The legend cell will contain a series symbol, such as a rectangle, line, line with marker, or marker, of the same fill color as its corresponding series.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -206,9 +170,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,18 +193,9 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font for the legend column text.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> object that specifies the font for the legend column text. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only applicable when the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>, and a `string` value is defined for the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.Text%2A> property. You can use the Font property to set font properties of the legend cell column.  
-  
- If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -268,16 +222,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text color of the legend cell column.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the legend cell column text. The default value is <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAlignment">
@@ -298,8 +245,8 @@
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal text alignment of the legend cell column header.</summary>
-        <value>A <see cref="T:System.Drawing.StringAlignment" /> enumeration value that specifies the horizontal text alignment of the legend cell column header.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,8 +274,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the legend cell column header.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the background of the legend cell column header. The default value is <see cref="T:System.Drawing.Color" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,18 +297,9 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font used in the legend column header.</summary>
-        <value>A <see cref="T:System.Drawing.Font" /> object that represents the font used in the legend column header. The default value is "Microsoft Sans Serif, 8pt, Bold".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be used to set font properties of the legend cell column header.  
-  
- If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderForeColor">
@@ -388,8 +326,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the legend column header text (<see cref="System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.HeaderText%2A" /> property).</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the color of the legend column header text.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -411,8 +349,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text for the legend cell column header.</summary>
-        <value>A <see langword="string" /> value that represents the legend cell column header text. The default value is a zero-length string.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,8 +375,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Legend</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the legend in which this legend cell column belongs.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> object that represents the legend which this legend cell column belongs to.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,16 +404,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Margins</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the margins of the legend cell column.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Margins" /> object that represents the top, bottom, left, and right values of the legend cell margins. The default values for top, bottom, left and right are "0,0,15,15".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is measured as a percentage of the legend font size.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumWidth">
@@ -499,8 +430,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum width of the legend cell column.</summary>
-        <value>An <see langword="integer" /> value that represents the maximum width of the legend cell column. The default value is minus one (-1), which means that the maximum width is automatically calculated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,8 +456,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum width of the legend cell column.</summary>
-        <value>An <see langword="integer" /> value that represents the minimum width of the legend cell column. The default value is minus one (-1), which means that the minimum width is automatically calculated.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,20 +474,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the legend cell column.</summary>
-        <value>A <see langword="string" /> value that represents the text name of the legend cell column.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The name of the legend cell must be unique; otherwise an exception will be thrown.  
-  
- The Name property can be used as the indexer when retrieving a <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn> object from the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection>.  
-  
- If you set this property to a zero-length string, an exception will be thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SeriesSymbolSize">
@@ -577,18 +497,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the series symbol displayed in a legend cell column.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> object that represents the size of the series symbol. The default values for the width and height of the symbol are 200 and 70, respectively.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The size of the series symbol is measured as a percentage of the legend font size.  
-  
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMargins">
@@ -610,9 +521,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the property should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if property should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -637,16 +547,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the legend cell column.</summary>
-        <value>A <see langword="string" /> value that represents the text for the legend cell column. The default value is a zero-length string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -670,18 +573,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the tooltip text for the legend cell column.</summary>
-        <value>A <see langword="string" /> value that represents the tooltip for the legend cell column. The default value is a zero-length string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the `ToolTip` property is set for both a legend item and a legend cell, the legend cell property has precedence.  
-  
- This property allows you to set special keywords to display different types of chart-related data.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

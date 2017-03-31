@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ServerProcessing" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,16 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates the status of the server message processing.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[ServerProcessing_LoggingSinks_Create#3](~/add/codesnippet/csharp/t-system.runtime.remotin_68_1.cs)]
- [!code-vb[ServerProcessing_LoggingSinks_Create#3](~/add/codesnippet/visualbasic/t-system.runtime.remotin_68_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Async">
@@ -35,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.ServerProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The call was dispatched asynchronously, which indicates that the sink must store response data on the stack for later processing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -52,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.ServerProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The server synchronously processed the message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneWay">
@@ -69,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.ServerProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message was dispatched and no response can be sent.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

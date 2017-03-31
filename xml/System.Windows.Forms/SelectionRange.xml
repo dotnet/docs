@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionRange" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,24 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a date selection range in a month calendar control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectionRange is the date or dates selected and highlighted on the <xref:System.Windows.Forms.MonthCalendar> control. If only one date is selected, the <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> property values will be equal. The SelectionRange can be changed by the user clicking a date while dragging the mouse pointer across the desired dates, or you can set the range in code. For example, you might want to have the user enter a date range into two <xref:System.Windows.Forms.TextBox> controls or two <xref:System.Windows.Forms.DateTimePicker> controls and set the SelectionRange based on those dates.  
-  
-   
-  
-## Examples  
- The following example sets the SelectionRange property of a <xref:System.Windows.Forms.MonthCalendar> control based on two dates entered into two <xref:System.Windows.Forms.TextBox> controls when a <xref:System.Windows.Forms.Button> is clicked. This code assumes new instances of a <xref:System.Windows.Forms.MonthCalendar> control, two <xref:System.Windows.Forms.TextBox> controls, and a <xref:System.Windows.Forms.Button> have been created on a <xref:System.Windows.Forms.Form>. You might consider adding code to validate the <xref:System.Windows.Forms.Control.Text%2A> assigned to the text boxes to verify that they contain valid dates.  
-  
- [!code-cpp[Classic SelectionRange.SelectionRange1 Example#1](~/add/codesnippet/cpp/t-system.windows.forms.s_12_1.cpp)]
- [!code-cs[Classic SelectionRange.SelectionRange1 Example#1](~/add/codesnippet/csharp/t-system.windows.forms.s_12_1.cs)]
- [!code-vb[Classic SelectionRange.SelectionRange1 Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.s_12_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,29 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> values are set to `null` when this constructor is used.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Forms.SelectionRange> object, sets its <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> properties, and assigns the <xref:System.Windows.Forms.SelectionRange> object to the <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A> property of the <xref:System.Windows.Forms.MonthCalendar> control. When the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event is raised, the <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> property values are displayed in the text boxes. This example assumes that you have a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.TextBox> controls, a <xref:System.Windows.Forms.Button>, and a <xref:System.Windows.Forms.MonthCalendar> control.  
-  
- [!code-cs[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/csharp/m-system.windows.forms.s_6_1.cs)]
- [!code-cpp[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/cpp/m-system.windows.forms.s_6_1.cpp)]
- [!code-vb[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/visualbasic/m-system.windows.forms.s_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,32 +42,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="range" Type="System.Windows.Forms.SelectionRange" />
       </Parameters>
       <Docs>
-        <param name="range">The existing <see cref="T:System.Windows.Forms.SelectionRange" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class with the specified selection range.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> property values are assigned the <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> property values of the assigned <xref:System.Windows.Forms.SelectionRange> object.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Forms.SelectionRange> object, sets its <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> properties, and assigns the <xref:System.Windows.Forms.SelectionRange> object to the <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A> property of the <xref:System.Windows.Forms.MonthCalendar> control. When the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event is raised, the <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> property values are displayed in the text boxes. This example assumes that you have a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.TextBox> controls, a <xref:System.Windows.Forms.Button>, and a <xref:System.Windows.Forms.MonthCalendar> control.  
-  
- [!code-cs[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/csharp/a9c8af93-aacf-47e9-a7b6-_1.cs)]
- [!code-cpp[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/cpp/a9c8af93-aacf-47e9-a7b6-_1.cpp)]
- [!code-vb[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/visualbasic/a9c8af93-aacf-47e9-a7b6-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,28 +67,10 @@
         <Parameter Name="upper" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="lower">The starting date in the <see cref="T:System.Windows.Forms.SelectionRange" />.</param>
-        <param name="upper">The ending date in the <see cref="T:System.Windows.Forms.SelectionRange" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class with the specified beginning and ending dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  If the `lower`<xref:System.DateTime> value is greater than the `upper`<xref:System.DateTime> value, the `lower` value will be assigned to the <xref:System.Windows.Forms.SelectionRange.End%2A> property instead of the <xref:System.Windows.Forms.SelectionRange.Start%2A> property.  
-  
-   
-  
-## Examples  
- The following example sets the <xref:System.Windows.Forms.SelectionRange> property of a <xref:System.Windows.Forms.MonthCalendar> control based on two dates entered into two <xref:System.Windows.Forms.TextBox> controls when a <xref:System.Windows.Forms.Button> is clicked. This code assumes new instances of a <xref:System.Windows.Forms.MonthCalendar> control, two <xref:System.Windows.Forms.TextBox> controls, and a <xref:System.Windows.Forms.Button> have been created on a <xref:System.Windows.Forms.Form>. You might consider adding code to validate the <xref:System.Windows.Forms.Control.Text%2A> assigned to the text boxes to verify that they contain valid dates.  
-  
- [!code-cpp[Classic SelectionRange.SelectionRange1 Example#1](~/add/codesnippet/cpp/m-system.windows.forms.s_2_1.cpp)]
- [!code-cs[Classic SelectionRange.SelectionRange1 Example#1](~/add/codesnippet/csharp/m-system.windows.forms.s_2_1.cs)]
- [!code-vb[Classic SelectionRange.SelectionRange1 Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.s_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -150,27 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ending date and time of the selection range.</summary>
-        <value>The ending <see cref="T:System.DateTime" /> value of the range.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Windows.Forms.SelectionRange> object, sets its <xref:System.Windows.Forms.SelectionRange.Start%2A> and End properties, and assigns the <xref:System.Windows.Forms.SelectionRange> object to the <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A> property of the <xref:System.Windows.Forms.MonthCalendar> control. When the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event is raised, the <xref:System.Windows.Forms.SelectionRange.Start%2A> and End property values are displayed in the text boxes. This example assumes that you have a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.TextBox> controls, a <xref:System.Windows.Forms.Button>, and a <xref:System.Windows.Forms.MonthCalendar> control.  
-  
- [!code-cs[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/csharp/p-system.windows.forms.s_94_1.cs)]
- [!code-cpp[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/cpp/p-system.windows.forms.s_94_1.cpp)]
- [!code-vb[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_94_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -180,27 +98,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting date and time of the selection range.</summary>
-        <value>The starting <see cref="T:System.DateTime" /> value of the range.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Windows.Forms.SelectionRange> object, sets its Start and <xref:System.Windows.Forms.SelectionRange.End%2A> properties, and assigns the <xref:System.Windows.Forms.SelectionRange> object to the <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A> property of the <xref:System.Windows.Forms.MonthCalendar> control. When the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event is raised, the Start and <xref:System.Windows.Forms.SelectionRange.End%2A> property values are displayed in the text boxes. This example assumes that you have a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.TextBox> controls, a <xref:System.Windows.Forms.Button>, and a <xref:System.Windows.Forms.MonthCalendar> control.  
-  
- [!code-cs[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/csharp/p-system.windows.forms.s_121_1.cs)]
- [!code-cpp[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/cpp/p-system.windows.forms.s_121_1.cpp)]
- [!code-vb[System.Windows.Forms.SelectionRange Members#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_121_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -210,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,16 +123,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.SelectionRange" />.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.SelectionRange" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ToString method returns a string that includes the values for the <xref:System.Windows.Forms.SelectionRange.Start%2A> and <xref:System.Windows.Forms.SelectionRange.End%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a means of getting or setting the value of the associated properties of the instance of the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> element.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,14 +22,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.AcceleratorKey%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -41,14 +39,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.AccessKey%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,14 +56,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.AutomationId%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,9 +82,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.AcceleratorKey%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A string that contains the accelerator key.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +95,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,9 +104,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.AccessKey%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The access key for the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,17 +126,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.AutomationId%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] identifier for the specified element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property isn't set, this method returns the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHelpText">
@@ -153,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,9 +148,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.HelpText%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A string containing the help text for the specified element. The string that is returned generally is the same text that is provided in the tooltip for the control.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +161,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,9 +170,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.IsColumnHeader%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A <see langword="boolean" /> that indicates whether the specified element is a <see cref="F:System.Windows.Automation.TablePattern.ColumnHeadersProperty" />.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +192,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.IsOffscreenBehavior%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A value that specifies how an element determines how the <see cref="System.Windows.Automation.Peers.AutomationPeer.IsOffscreen%2A" /> property is determined.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +205,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,9 +214,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.IsRequiredForForm%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A <see langword="boolean" /> that indicates whether the specified element is <see cref="System.Windows.Automation.AutomationElement.AutomationElementInformation.IsRequiredForForm%2A" />.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,9 +236,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.IsRowHeader%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A <see langword="boolean" /> that indicates whether the specified element is a <see cref="F:System.Windows.Automation.TablePattern.RowHeadersProperty" />.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,9 +258,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.ItemStatus%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The <see cref="System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemStatus%2A" /> of the given element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,7 +271,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,9 +280,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.ItemType%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The <see cref="System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemType%2A" /> of the given element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,7 +293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,9 +302,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.LabeledBy%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The element that is targeted by the label.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,7 +315,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,9 +324,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
-        <summary>Gets the <see cref="System.Windows.Automation.AutomationProperties.Name%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>The name of the specified element.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,14 +337,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.HelpText%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,14 +354,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.IsColumnHeader%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,7 +377,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.IsOffscreenBehavior%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,14 +388,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.IsRequiredForForm%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.IsRowHeader%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,14 +422,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.ItemStatus%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,14 +439,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.ItemType%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,14 +456,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.LabeledBy%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,14 +473,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Automation.AutomationProperties.Name%2A" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,7 +490,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -531,9 +500,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The accelerator key value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.AcceleratorKey%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -544,7 +513,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -555,9 +523,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The access key value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.AccessKey%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,7 +536,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -579,9 +546,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] identifier value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.AutomationId%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,7 +559,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -603,9 +569,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The help text value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.HelpText%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,7 +582,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -627,9 +592,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The value to set; <see langword="true" /> if the element is meant to be a column header, otherwise <see langword="false" /></param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.IsColumnHeader%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,9 +615,9 @@
         <Parameter Name="value" Type="System.Windows.Automation.IsOffscreenBehavior" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">A value that specifies how an element determines how the <see cref="System.Windows.Automation.Peers.AutomationPeer.IsOffscreen%2A" /> property is determined.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.IsOffscreenBehavior%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,7 +628,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,9 +638,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The value to set; <see langword="true" /> if the element is meant to be required to be filled out on a form, otherwise <see langword="false" />.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.IsRequiredForForm%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -687,7 +651,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -698,9 +661,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The value to set; <see langword="true" /> if the element is meant to be a row header, otherwise <see langword="false" />.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.IsRowHeader%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,7 +674,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -722,9 +684,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The item status value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.ItemStatus%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,7 +697,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -746,9 +707,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The item type value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.ItemType%2A" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,7 +720,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -770,9 +730,9 @@
         <Parameter Name="value" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The labeled by value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.LabeledBy%2A" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +743,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -794,9 +753,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
-        <param name="value">The name value to set.</param>
-        <summary>Sets the <see cref="System.Windows.Automation.AutomationProperties.Name%2A" /> attached property.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

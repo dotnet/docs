@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.StoryFragments" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,26 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a set of one or more <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> elements.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A StoryFragments element defines the structure and content of a <xref:System.Windows.Documents.FixedPage>.  
-  
- StoryFragments is the root of one or more <xref:System.Windows.Documents.DocumentStructures.StoryFragment> elements.  
-  
- For detailed information about the document structure of [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)], see Chapter 9 and Appendix E of the *XML Paper Specification (XPS)* that can be downloaded from the [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
-   
-  
-## Examples  
- The following example shows how to use of the StoryFragments element in an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-xml[DocumentStructure#DocStructStoryFrags1](~/add/codesnippet/xaml/DocumentStructure/Content/FixedPage1_structure.xaml#docstructstoryfrags1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,10 +58,9 @@
         <Parameter Name="storyFragment" Type="System.Windows.Documents.DocumentStructures.StoryFragment" />
       </Parameters>
       <Docs>
-        <param name="storyFragment">The <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> to add.</param>
-        <summary>Adds a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> to the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> collection.</summary>
+        <param name="storyFragment">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt;.GetEnumerator">
@@ -98,8 +77,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This API is not implemented.</summary>
-        <returns>This API is not implemented.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This API is not implemented.</summary>
-        <returns>This API is not implemented.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,18 +117,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The child object to add.</param>
-        <summary>Adds a child object to the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
- Only a <xref:System.Windows.Documents.DocumentStructures.StoryFragment> can be a child of <xref:System.Windows.Documents.DocumentStructures.StoryFragments> and there must be at least one child.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -160,7 +129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,16 +138,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to add to the object.</param>
-        <summary>Adds the text content of a node to the object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

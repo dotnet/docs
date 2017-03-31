@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines constants for supported well-known authentication methods. Defines constants for SAML authentication methods.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These constants define URIs for well-known authentication methods. These authentication methods map to well-known SAML authentication methods.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="HardwareToken">
@@ -35,7 +28,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using a hardware token, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/hardwaretoken.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +45,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using the Kerberos protocol, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/kerberos.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The namespace for the well-known authentication methods, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +79,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using a password, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +96,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using a key authenticated by a PGP web of trust, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/pgp.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +113,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using the Secure Remote Password protocol, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/secureremotepassword.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using an XML digital signature, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/signature.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +147,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using a smartcard, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/smartcard.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +164,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using a smartcard PKI, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/smartcardpki.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +181,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication on a key authenticated using an SPKI PKI, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/spki.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +198,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using either the SSL or TLS protocol with certificate-based client authentication, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/tlsclient.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,7 +215,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication by using an unspecified method, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/unspecified.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +232,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Windows authentication, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +249,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication on a key authenticated using an X.509 PKI, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +266,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication on a key authenticated using an XKMS trust service, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/xkms.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

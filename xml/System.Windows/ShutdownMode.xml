@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ShutdownMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how an application will shutdown. Used by the <see cref="System.Windows.Application.ShutdownMode%2A" /> property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An application shuts down only when <see cref="System.Windows.Application.Shutdown%2A" /> is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnLastWindowClose">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An application shuts down when either the last window closes, or <see cref="System.Windows.Application.Shutdown%2A" /> is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnMainWindowClose">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An application shuts down when either the main window closes, or <see cref="System.Windows.Application.Shutdown%2A" /> is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

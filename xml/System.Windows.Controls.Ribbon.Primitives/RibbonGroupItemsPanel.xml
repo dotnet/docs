@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a panel that arranges items in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The size that the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" /> needs to position its child elements.</param>
-        <summary>Positions and sizes the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" />.</summary>
-        <returns>The actual size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" />.</returns>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" />.</param>
-        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" /> in preparation of arranging them during the <see cref="System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel.ArrangeOverride%2A" /> pass.</summary>
-        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupItemsPanel" />.</returns>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +92,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invoked when a layout pass begins.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invoked when star layout space allocation is complete.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +127,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all possible star layout combinations.</summary>
-        <value>A collection of <see cref="T:System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo" /> objects representing the possible combinations.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +145,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.UIElement" /> object that this provider targets.</summary>
-        <value>The targeted element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.IMobileDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,15 +13,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the interface for all mobile control designers between the .NET framework and a design host such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)]. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface adds one method to the base designer interface: <xref:System.Web.UI.Design.MobileControls.IMobileDesigner.UpdateRendering%2A>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="UpdateRendering">
@@ -32,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,7 +31,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates design-time rendering for the container control that implements the <see cref="T:System.Web.UI.Design.MobileControls.IMobileDesigner" /> interface. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

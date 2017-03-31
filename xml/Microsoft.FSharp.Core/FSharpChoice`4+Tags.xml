@@ -1,0 +1,103 @@
+<Type Name="FSharpChoice&lt;T1,T2,T3,T4&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4&gt;+Tags">
+  <TypeSignature Language="C#" Value="public static class FSharpChoice&lt;T1,T2,T3,T4&gt;.Tags" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpChoice`4/Tags&lt;T1, T2, T3, T4&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpChoice`4.Tags" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Choice1Of4">
+      <MemberSignature Language="C#" Value="public const int Choice1Of4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice1Of4" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`4.Tags.Choice1Of4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choice2Of4">
+      <MemberSignature Language="C#" Value="public const int Choice2Of4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice2Of4" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`4.Tags.Choice2Of4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choice3Of4">
+      <MemberSignature Language="C#" Value="public const int Choice3Of4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice3Of4" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`4.Tags.Choice3Of4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choice4Of4">
+      <MemberSignature Language="C#" Value="public const int Choice4Of4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice4Of4" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`4.Tags.Choice4Of4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

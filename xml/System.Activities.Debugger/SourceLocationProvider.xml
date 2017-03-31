@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides <see cref="T:System.Activities.Debugger.SourceLocation" /> information for the mapping of a root activity and its descendants to their corresponding source locations.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,11 +39,11 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rootActivity1">A workflow element that represents an activity that is not mapped to a source location.</param>
-        <param name="rootActivity2">A workflow element that shadows <c>rootActivity1</c> but has specific source locations to which its members are mapped.</param>
-        <param name="mapping">A dictionary object that contains a root activity and its descendants, each mapped to a source location.</param>
-        <param name="path">The path of the source file to use.</param>
-        <summary>Creates to a dictionary type collection of mappings of the root activity and its descendants to their corresponding source locations.</summary>
+        <param name="rootActivity1">To be added.</param>
+        <param name="rootActivity2">To be added.</param>
+        <param name="mapping">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +64,10 @@
         <Parameter Name="symbol" Type="System.Activities.Debugger.Symbol.WorkflowSymbol" />
       </Parameters>
       <Docs>
-        <param name="rootActivity">A workflow element that represents the root activity from which to get the source locations.</param>
-        <param name="symbol">An object that contains the workflow symbols.</param>
-        <summary>Gets the source locations for the specified root activity and workflow symbols.</summary>
-        <returns>A <see cref="System.Collections.Generic.Dictionary%602" /> object that contains the source locations.</returns>
+        <param name="rootActivity">To be added.</param>
+        <param name="symbol">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +88,10 @@
         <Parameter Name="sourceLocations" Type="System.Collections.Generic.Dictionary&lt;System.Object,System.Activities.Debugger.SourceLocation&gt;" />
       </Parameters>
       <Docs>
-        <param name="rootActivity">A workflow element that represents the root activity from which to get the workflow symbols.</param>
-        <param name="sourceLocations">An object that contains the source locations.</param>
-        <summary>Gets the workflow symbols for the specified root activity and source locations.</summary>
-        <returns>An <see cref="System.Collections.Generic.ICollection%601" /> object that contains the workflow symbols.</returns>
+        <param name="rootActivity">To be added.</param>
+        <param name="sourceLocations">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

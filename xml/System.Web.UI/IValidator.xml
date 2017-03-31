@@ -4,34 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines the properties and methods that objects that participate in Web Forms validation must implement.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Classes that implement this interface represent a possible user input error. When the <xref:System.Web.UI.IValidator.Validate%2A> method is called, the class updates its <xref:System.Web.UI.IValidator.IsValid%2A> property to signify whether the error occurred. The <xref:System.Web.UI.IValidator.ErrorMessage%2A> property contains a text description of the error condition that you can display when the error occurs.  
-  
- The <xref:System.Web.UI.WebControls.BaseValidator> class implements this interface, and all other ASP.NET validation server control classes inherit from <xref:System.Web.UI.WebControls.BaseValidator>. For information on validation server controls and how they work, see [ASP.NET Validation Controls](../Topic/ASP.NET%20Validation%20Controls.md).  
-  
- For details on how to develop custom ASP.NET validation server controls, see [How to: Validate with a Custom Function for ASP.NET Server Controls](../Topic/How%20to:%20Validate%20with%20a%20Custom%20Function%20for%20ASP.NET%20Server%20Controls.md).  
-  
-   
-  
-## Examples  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[IValidator_IsValid_Resubmit#1](~/add/codesnippet/visualbasic/t-system.web.ui.ivalidator_1.aspx)]
- [!code-cs[IValidator_IsValid_Resubmit#1](~/add/codesnippet/csharp/t-system.web.ui.ivalidator_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ErrorMessage">
@@ -41,33 +19,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a class, gets or sets the error message text generated when the condition being validated fails.</summary>
-        <value>The error message to generate.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET developers access this property declaratively in the opening tag of a validation server control. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
-  
-   
-  
-## Examples  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[IValidator_IsValid_Resubmit#1](~/add/codesnippet/visualbasic/p-system.web.ui.ivalidat_1_1.aspx)]
- [!code-cs[IValidator_IsValid_Resubmit#1](~/add/codesnippet/csharp/p-system.web.ui.ivalidat_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -77,29 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a class, gets or sets a value indicating whether the user-entered content in the specified control passes validation.</summary>
-        <value>
-          <see langword="true" /> if the content is valid; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[IValidator_IsValid_Resubmit#1](~/add/codesnippet/visualbasic/p-system.web.ui.ivalidat_0_1.aspx)]
- [!code-cs[IValidator_IsValid_Resubmit#1](~/add/codesnippet/csharp/p-system.web.ui.ivalidat_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -109,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,20 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented by a class, evaluates the condition it checks and updates the <see cref="System.Web.UI.IValidator.IsValid%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-  
-> [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
-  
- [!code-vb[IValidator_IsValid_Resubmit#1](~/add/codesnippet/visualbasic/m-system.web.ui.ivalidat_1.aspx)]
- [!code-cs[IValidator_IsValid_Resubmit#1](~/add/codesnippet/csharp/m-system.web.ui.ivalidat_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

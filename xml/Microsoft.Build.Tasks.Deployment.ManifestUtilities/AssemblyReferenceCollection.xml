@@ -3,10 +3,6 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyReferenceCollection extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a collection for manifest assembly references.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +29,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Add(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Add(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,9 +40,9 @@
         <Parameter Name="assembly" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly reference to add.</param>
-        <summary>Adds the specified assembly reference to the collection.</summary>
-        <returns>Returns the added assembly reference instance.</returns>
+        <param name="assembly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,10 +51,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Add(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Add(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,9 +62,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path of the assembly to add.</param>
-        <summary>Adds the specified assembly reference to the collection.</summary>
-        <returns>Returns the added assembly reference instance.</returns>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +74,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -98,7 +82,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all objects from the collection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,10 +92,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -119,8 +99,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of objects contained in the collection.</summary>
-        <value>An integer indicating the number of objects contained in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,10 +109,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Find(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Find(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,9 +120,9 @@
         <Parameter Name="identity" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">The specified assembly identity.</param>
-        <summary>Finds an assembly reference in the collection by the specified assembly identity.</summary>
-        <returns>Returns the found assembly reference.</returns>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,10 +131,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Find(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Find(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -170,9 +142,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The specified assembly simple name.</param>
-        <summary>Finds an assembly reference in the collection by simple name.</summary>
-        <returns>Returns the found assembly reference.</returns>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +153,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference FindTargetPath(string targetPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.FindTargetPath(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -196,9 +164,9 @@
         <Parameter Name="targetPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetPath">The specified target path.</param>
-        <summary>Finds an assembly reference in the collection by the specified target path.</summary>
-        <returns>Returns the found assembly reference.</returns>
+        <param name="targetPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +176,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -220,8 +184,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through the collection.</summary>
-        <returns>Returns an enumerator (<see cref="T:System.Collections.IEnumerator" />).</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,10 +194,6 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -245,9 +205,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the entry to get.</param>
-        <summary>Gets the element at the specified index.</summary>
-        <value>Returns the assembly reference instance.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,10 +216,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference assemblyReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Remove(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -271,8 +227,8 @@
         <Parameter Name="assemblyReference" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" />
       </Parameters>
       <Docs>
-        <param name="assemblyReference">The specified assembly reference to remove.</param>
-        <summary>Removes the specified assembly reference from the collection.</summary>
+        <param name="assemblyReference">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

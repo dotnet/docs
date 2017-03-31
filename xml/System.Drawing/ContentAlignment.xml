@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.ContentAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies alignment of content on the drawing surface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.%23ctor%2A?displayProperty=fullName> and <xref:System.Drawing.Size.%23ctor%2A> constructors and the ContentAlignment enumeration. To run this example paste this code into a Windows Form that contains a label named `Label1` and call the `IntializeLabel1` method in the form's constructor.  
-  
- [!code-cs[System.Drawing.PointsAndSizes#7](~/add/codesnippet/csharp/t-system.drawing.content_1.cs)]
- [!code-cpp[System.Drawing.PointsAndSizes#7](~/add/codesnippet/cpp/t-system.drawing.content_1.cpp)]
- [!code-vb[System.Drawing.PointsAndSizes#7](~/add/codesnippet/visualbasic/t-system.drawing.content_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BottomCenter">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned at the bottom, and horizontally aligned at the center.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned at the bottom, and horizontally aligned on the left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -72,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned at the bottom, and horizontally aligned on the right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleCenter">
@@ -89,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned in the middle, and horizontally aligned at the center.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleLeft">
@@ -106,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned in the middle, and horizontally aligned on the left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleRight">
@@ -123,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned in the middle, and horizontally aligned on the right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopCenter">
@@ -140,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned at the top, and horizontally aligned at the center.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -157,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned at the top, and horizontally aligned on the left.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -174,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Content is vertically aligned at the top, and horizontally aligned on the right.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

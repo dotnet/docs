@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="System.Workflow.ComponentModel.Design.FreeFormActivityDesigner.ConnectorAdded" />, <see cref="System.Workflow.ComponentModel.Design.FreeFormActivityDesigner.ConnectorRemoved" />, and <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorChanged" /> events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Connector">
@@ -37,15 +27,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.Connector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the connector object that is passed as a part of <see cref="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" />.</summary>
-        <value>A <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> object passed as part of <see cref="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

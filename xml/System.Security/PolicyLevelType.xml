@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.PolicyLevelType" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of a managed code policy level.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The highest level of security policy is enterprise-wide. Successive lower levels of hierarchy represent further policy restrictions, but can never grant more permissions than allowed by higher levels. The policy levels in order are the following.  
-  
- 1. Enterprise  
-  
- 2. Machine  
-  
- 3. User  
-  
- 4. Application domain  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AppDomain">
@@ -42,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PolicyLevelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security policy for all managed code in an application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enterprise">
@@ -59,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PolicyLevelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security policy for all managed code in an enterprise.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Machine">
@@ -76,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PolicyLevelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security policy for all managed code that is run on the computer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -93,14 +78,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PolicyLevelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security policy for all managed code that is run by the user.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

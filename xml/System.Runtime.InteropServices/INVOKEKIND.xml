@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.INVOKEKIND" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +12,12 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Use System.Runtime.InteropServices.ComTypes.INVOKEKIND instead. http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
+      <AttributeName>System.Obsolete</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.INVOKEKIND" /> instead.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For additional information about `INVOKEKIND`, see the MSDN Library.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="INVOKE_FUNC">
@@ -34,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The member is called using a normal function invocation syntax.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="INVOKE_PROPERTYGET">
@@ -51,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The function is invoked using a normal property-access syntax.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="INVOKE_PROPERTYPUT">
@@ -68,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The function is invoked using a property value assignment syntax.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="INVOKE_PROPERTYPUTREF">
@@ -85,14 +78,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The function is invoked using a property reference assignment syntax.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

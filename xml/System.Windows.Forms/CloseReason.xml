@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CloseReason" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the reason that a form was closed.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Form.FormClosing> and <xref:System.Windows.Forms.Form.FormClosed> events are raised when a <xref:System.Windows.Forms.Form> is closed, either through user action or programmatically. Handlers for these events receive parameters of type <xref:System.Windows.Forms.FormClosingEventArgs> and <xref:System.Windows.Forms.FormClosedEventArgs>, respectively. Both of these event argument classes use the CloseReason enumeration.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationExitCall">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="System.Windows.Forms.Application.Exit%2A" /> method of the <see cref="T:System.Windows.Forms.Application" /> class was invoked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FormOwnerClosing">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The owner form is closing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MdiFormClosing">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parent form of this multiple document interface (MDI) form is closing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The cause of the closure was not defined or could not be determined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TaskManagerClosing">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Microsoft Windows Task Manager is closing the application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserClosing">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user is closing the form through the user interface (UI), for example by clicking the **Close** button on the form window, selecting **Close** from the window's control menu, or pressing ALT+F4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsShutDown">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The operating system is closing all applications before shutting down.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

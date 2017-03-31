@@ -3,32 +3,20 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSyndicationContent extends System.ServiceModel.Syndication.SyndicationContent" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.XmlSyndicationContent" />
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
-    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.Syndication.SyndicationContent</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Represents XML syndication content that is not intended to be displayed in a browser.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used to send serialized objects or other application state data as XML.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,19 +25,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.ServiceModel.Syndication.XmlSyndicationContent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.ServiceModel.Syndication.XmlSyndicationContent" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> with the specified <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,19 +47,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.Xml.XmlReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> class.</summary>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,11 +69,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.ServiceModel.Syndication.SyndicationElementExtension)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -93,9 +81,9 @@
         <Parameter Name="extension" Type="System.ServiceModel.Syndication.SyndicationElementExtension" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the content, typically expressed as a MIME content type, for example application/xml or application/xml+customer.</param>
-        <param name="extension">The <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> to place in the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> with the specified type and <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" />.</summary>
+        <param name="type">To be added.</param>
+        <param name="extension">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,11 +93,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -118,18 +106,11 @@
         <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <param name="type">The type of content.</param>
-        <param name="dataContractExtension">The data contract extension.</param>
-        <param name="dataContractSerializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> with the specified type, object, and <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Serialization.DataContractSerializer> is one subtype of <xref:System.Runtime.Serialization.XmlObjectSerializer>. If null is passed, a default instance of <xref:System.Runtime.Serialization.DataContractSerializer> is instantiated.  
-  
- ]]></format>
-        </remarks>
+        <param name="type">To be added.</param>
+        <param name="dataContractExtension">To be added.</param>
+        <param name="dataContractSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -138,11 +119,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.Object,System.Xml.Serialization.XmlSerializer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -151,10 +132,10 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <param name="type">The type of content.</param>
-        <param name="xmlSerializerExtension">The XML serializer extension.</param>
-        <param name="serializer">The <see cref="T:System.Xml.Serialization.XmlSerializer" /> to use.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> with the specified type, object and <see cref="T:System.Xml.Serialization.XmlSerializer" />.</summary>
+        <param name="type">To be added.</param>
+        <param name="xmlSerializerExtension">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,11 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the existing <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</summary>
-        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,29 +168,20 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlSyndicationContent.Extension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtension</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" />.</summary>
-        <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On the send/serialization side, this property represents the XML content that must be serialized.  
-  
- On the receive/deserialization side, this property is always `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReaderAtContent">
@@ -218,11 +190,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.GetReaderAtContent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,8 +202,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a reader from the content of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" />.</summary>
-        <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> from the content of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,11 +213,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,31 +228,23 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TContent">The type of content to read.</typeparam>
-        <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" />.</summary>
-        <returns>An object of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, a new instance of <xref:System.Runtime.Serialization.DataContractSerializer> is created and is used to deserialize the inner XML of the XML syndication content element into an instance of `TContent`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
+        <typeparam name="TContent">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadContent&lt;TContent&gt;">
-      <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Runtime.Serialization.XmlObjectSerializer dataContractSerializer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Runtime.Serialization.XmlObjectSerializer dataContractSerializer) cil managed" />
+      <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,19 +257,11 @@
         <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="TContent">The type of content to read.</typeparam>
-        <param name="dataContractSerializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
-        <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> using the specified serializer.</summary>
-        <returns>An object of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Runtime.Serialization.XmlObjectSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
+        <typeparam name="TContent">To be added.</typeparam>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadContent&lt;TContent&gt;">
@@ -314,11 +270,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Xml.Serialization.XmlSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,19 +287,11 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="TContent">The type of content to read.</typeparam>
-        <param name="serializer">The <see cref="T:System.Xml.Serialization.XmlSerializer" /> to use.</param>
-        <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> using the specified serializer.</summary>
-        <returns>An object of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Xml.Serialization.XmlSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The input XML cannot be deserialized into the requested type.</exception>
+        <typeparam name="TContent">To be added.</typeparam>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -352,19 +300,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlSyndicationContent.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the XML syndication content.</summary>
-        <value>The XML syndication content type.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,11 +322,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.WriteContentsTo(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -388,16 +336,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
-        <summary>Write the contents of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes the inner XML content of the <xref:System.ServiceModel.Syndication.XmlSyndicationContent> instance (for example, it does not write the top level start and end elements of the syndication content).  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

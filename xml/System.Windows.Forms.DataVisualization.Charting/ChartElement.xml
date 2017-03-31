@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Base class for all the chart elements. The ChartElement class represents the most basic element of the chart element hierarchy.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElement" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="True" /> to release both managed and unmanaged resources; <see langword="False" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElement" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +89,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElement" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElement" />.</summary>
-        <returns>
-          <see langword="True" /> if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElement" />; otherwise, <see langword="False" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a hash function for a particular type.</summary>
-        <returns>An <see langword="integer" /> value that represents the hash code for the current <see cref="T:System.Object" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,16 +138,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an object associated with this chart element.</summary>
-        <value>An <see cref="T:System.Object" /> associated with this chart element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Tag property can be used to store additional data with this chart element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -166,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Object" />.</summary>
-        <returns>A <see langword="string" /> value that represents the current <see cref="T:System.Object" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

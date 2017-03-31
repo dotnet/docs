@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates the value and location of a <see cref="T:System.Windows.Controls.DataGrid" /> cell for use when copying content to the Clipboard.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This structure is used by the <xref:System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,10 +30,10 @@
         <Parameter Name="content" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The data item for the row that contains the cell being copied.</param>
-        <param name="column">The column that contains the cell being copied.</param>
-        <param name="content">The text value of the cell being copied.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> structure.</summary>
+        <param name="item">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +50,8 @@
         <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the column that contains the cell being copied.</summary>
-        <value>The column that contains the cell being copied.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +68,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the text value of the cell being copied.</summary>
-        <value>The text value of the cell being copied.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,10 +89,9 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="data">The <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance to compare with the current <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance.</param>
-        <summary>Indicates whether the current and specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances are equivalent.</summary>
-        <returns>
-          <see langword="true" /> if the current and specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances have the same <see cref="System.Windows.Controls.DataGridClipboardCellContent.Item%2A" />, <see cref="System.Windows.Controls.DataGridClipboardCellContent.Column%2A" />, and <see cref="System.Windows.Controls.DataGridClipboardCellContent.Content%2A" /> property values; otherwise, <see langword="false" />.</returns>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,16 +109,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance.</summary>
-        <returns>The hash code for this <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The hash code is based on the <xref:System.Windows.Controls.DataGridClipboardCellContent.Item%2A>, <xref:System.Windows.Controls.DataGridClipboardCellContent.Column%2A>, and <xref:System.Windows.Controls.DataGridClipboardCellContent.Content%2A> property values.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -142,8 +127,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data item for the row that contains the cell being copied.</summary>
-        <value>The data item for the row that contains the cell being copied.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,11 +149,10 @@
         <Parameter Name="clipboardCellContent2" Type="System.Windows.Controls.DataGridClipboardCellContent" />
       </Parameters>
       <Docs>
-        <param name="clipboardCellContent1">The first <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance to be compared.</param>
-        <param name="clipboardCellContent2">The second <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance to be compared.</param>
-        <summary>Indicates whether the specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances are equivalent.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances have the same <see cref="System.Windows.Controls.DataGridClipboardCellContent.Item%2A" />, <see cref="System.Windows.Controls.DataGridClipboardCellContent.Column%2A" />, and <see cref="System.Windows.Controls.DataGridClipboardCellContent.Content%2A" /> property values; otherwise, <see langword="false" />.</returns>
+        <param name="clipboardCellContent1">To be added.</param>
+        <param name="clipboardCellContent2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,11 +173,10 @@
         <Parameter Name="clipboardCellContent2" Type="System.Windows.Controls.DataGridClipboardCellContent" />
       </Parameters>
       <Docs>
-        <param name="clipboardCellContent1">The first <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance to be compared.</param>
-        <param name="clipboardCellContent2">The second <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instance to be compared.</param>
-        <summary>Indicates whether the specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances are not equivalent.</summary>
-        <returns>
-          <see langword="true" /> if the current and specified <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> instances do not have the same <see cref="System.Windows.Controls.DataGridClipboardCellContent.Item%2A" />, <see cref="System.Windows.Controls.DataGridClipboardCellContent.Column%2A" />, and <see cref="System.Windows.Controls.DataGridClipboardCellContent.Content%2A" /> property values; otherwise, <see langword="false" />.</returns>
+        <param name="clipboardCellContent1">To be added.</param>
+        <param name="clipboardCellContent2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

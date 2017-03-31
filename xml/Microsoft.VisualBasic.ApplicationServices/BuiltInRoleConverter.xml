@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRoleConverter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,20 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter to convert <see cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" /> enumeration values to <see cref="T:System.Security.Principal.WindowsBuiltInRole" /> enumeration values.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type converter supports the Visual Basic <xref:Microsoft.VisualBasic.ApplicationServices.User> object.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
-  
-> [!CAUTION]
->  You should never create an instance of a BuiltInRoleConverter class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRoleConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type converter supports the Visual Basic <xref:Microsoft.VisualBasic.ApplicationServices.User> object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -58,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,20 +47,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that provides a format context.</param>
-        <param name="destinationType">A <see cref="T:System.Type" /> object that represents the type you wish to convert to.</param>
-        <summary>Gets a value indicating whether this converter can convert an object to the given destination type using the context.</summary>
-        <returns>A <see cref="T:System.Boolean" /> object that indicates whether this converter can perform the conversion.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `Nothing`, so always check. Also, properties on the context object can return `Nothing`.  
-  
- This type converter supports the Visual Basic <xref:Microsoft.VisualBasic.ApplicationServices.User> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -92,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,27 +73,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">A formatter context.</param>
-        <param name="culture">The culture into which <c>value</c> will be converted.</param>
-        <param name="value">The object to convert.</param>
-        <param name="destinationType">The type to convert the object to.</param>
-        <summary>Converts the given object to another type.</summary>
-        <returns>The converted object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The most common types to convert to and convert from are string objects. The default implementation makes a call to <xref:System.Object.ToString%2A> on the object if the object is valid and if the destination type is <xref:System.String>.  
-  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `Nothing`, so always check. Also, properties on the context object can return `Nothing`.  
-  
- This type converter supports the Visual Basic <xref:Microsoft.VisualBasic.ApplicationServices.User> object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="destinationType" /> is <see langword="Nothing" />.</exception>
-        <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

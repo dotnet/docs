@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindableAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,46 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether a member is typically used for binding. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can specify this attribute for multiple members, typically properties, on a control.  
-  
- If a property has been marked with the BindableAttribute set to `true`, then a property change notification should be raised for that property. This means that if the <xref:System.ComponentModel.BindableAttribute.Bindable%2A> property is <xref:System.ComponentModel.BindableAttribute.Yes>, then two-way data binding is supported. If <xref:System.ComponentModel.BindableAttribute.Bindable%2A> is <xref:System.ComponentModel.BindableAttribute.No>, you can still bind to the property, but it should not be shown in the default set of properties to bind to, because it might or might not raise a property change notification.  
-  
-> [!NOTE]
->  When you mark a property with <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
-  
-> [!CAUTION]
->  You can use this attribute at design time only. Nothing prevents you from binding to any property during run time.  
-  
- For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- The following code example marks a property as appropriate to bind data to.  
-  
- [!code-cs[Classic BindableAttribute Example#1](~/add/codesnippet/csharp/t-system.componentmodel._165_1.cs)]
- [!code-vb[Classic BindableAttribute Example#1](~/add/codesnippet/visualbasic/t-system.componentmodel._165_1.vb)]
- [!code-cpp[Classic BindableAttribute Example#1](~/add/codesnippet/cpp/t-system.componentmodel._165_1.cpp)]  
-  
- The next code example shows how to check the value of the BindableAttribute for `MyProperty`. First, the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next, the code indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyProperty`. Finally, the code returns the attributes for this property and saves them in the attributes variable. The code example presents two different ways to check the value of the BindableAttribute. In the second code fragment, the example calls the <xref:System.Object.Equals%2A> method. In the last code fragment, the example uses the <xref:System.ComponentModel.BindableAttribute.Bindable%2A> property to check the value.  
-  
- [!code-cs[Classic BindableAttribute Example#2](~/add/codesnippet/csharp/t-system.componentmodel._165_2.cs)]
- [!code-vb[Classic BindableAttribute Example#2](~/add/codesnippet/visualbasic/t-system.componentmodel._165_2.vb)]
- [!code-cpp[Classic BindableAttribute Example#2](~/add/codesnippet/cpp/t-system.componentmodel._165_2.cpp)]  
-  
- If you marked a class with the BindableAttribute, use the following code example to check the value.  
-  
- [!code-cs[Classic BindableAttribute Example#3](~/add/codesnippet/csharp/t-system.componentmodel._165_3.cs)]
- [!code-vb[Classic BindableAttribute Example#3](~/add/codesnippet/visualbasic/t-system.componentmodel._165_3.vb)]
- [!code-cpp[Classic BindableAttribute Example#3](~/add/codesnippet/cpp/t-system.componentmodel._165_3.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,33 +32,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bindable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="bindable">
-          <see langword="true" /> to use property for binding; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class with a Boolean value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example marks a property as appropriate to bind data to. This code example creates a new <xref:System.ComponentModel.BindableAttribute>, sets its value to <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName>, and binds it to the property.  
-  
- [!code-cs[Classic BindableAttribute.BindableAttribute Example#1](~/add/codesnippet/csharp/m-system.componentmodel._16_1.cs)]
- [!code-vb[Classic BindableAttribute.BindableAttribute Example#1](~/add/codesnippet/visualbasic/m-system.componentmodel._16_1.vb)]
- [!code-cpp[Classic BindableAttribute.BindableAttribute Example#1](~/add/codesnippet/cpp/m-system.componentmodel._16_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,32 +55,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="flags" Type="System.ComponentModel.BindableSupport" />
       </Parameters>
       <Docs>
-        <param name="flags">One of the <see cref="T:System.ComponentModel.BindableSupport" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class with one of the <see cref="T:System.ComponentModel.BindableSupport" /> values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
-  
-   
-  
-## Examples  
- The following code example marks a property as appropriate to bind data to. This code example creates a new <xref:System.ComponentModel.BindableAttribute>, sets its value to <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName>, and binds it to the property.  
-  
- [!code-cpp[Classic BindableAttribute.BindableAttribute1 Example#1](~/add/codesnippet/cpp/f23f7ef8-7d45-4e98-96fc-_1.cpp)]
- [!code-vb[Classic BindableAttribute.BindableAttribute1 Example#1](~/add/codesnippet/visualbasic/f23f7ef8-7d45-4e98-96fc-_1.vb)]
- [!code-cs[Classic BindableAttribute.BindableAttribute1 Example#1](~/add/codesnippet/csharp/f23f7ef8-7d45-4e98-96fc-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,18 +78,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bindable" Type="System.Boolean" />
         <Parameter Name="direction" Type="System.ComponentModel.BindingDirection" />
       </Parameters>
       <Docs>
-        <param name="bindable">
-          <see langword="true" /> to use property for binding; otherwise, <see langword="false" />.</param>
-        <param name="direction">One of the <see cref="T:System.ComponentModel.BindingDirection" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
+        <param name="bindable">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,17 +103,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="flags" Type="System.ComponentModel.BindableSupport" />
         <Parameter Name="direction" Type="System.ComponentModel.BindingDirection" />
       </Parameters>
       <Docs>
-        <param name="flags">One of the <see cref="T:System.ComponentModel.BindableSupport" /> values.</param>
-        <param name="direction">One of the <see cref="T:System.ComponentModel.BindingDirection" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
+        <param name="flags">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,40 +128,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating that a property is typically used for binding.</summary>
-        <value>
-          <see langword="true" /> if the property is typically used for binding; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example checks to see whether `MyProperty` is bindable. First the code gets the attributes for `MyProperty` by doing the following:  
-  
--   Retrieving a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object.  
-  
--   Indexing into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyProperty`.  
-  
--   Saving the attributes for this property in the attributes variable.  
-  
- Then, the code sets `myAttribute` to the value of the <xref:System.ComponentModel.BindableAttribute> in the <xref:System.ComponentModel.AttributeCollection> and checks whether the property is bindable.  
-  
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see  
-  
- [Assembly Names](../Topic/Assembly%20Names.md).  
-  
- [!code-cs[Classic BindableAttribute.Bindable Example#1](~/add/codesnippet/csharp/p-system.componentmodel._3_1.cs)]
- [!code-cpp[Classic BindableAttribute.Bindable Example#1](~/add/codesnippet/cpp/p-system.componentmodel._3_1.cpp)]
- [!code-vb[Classic BindableAttribute.Bindable Example#1](~/add/codesnippet/visualbasic/p-system.componentmodel._3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -223,22 +151,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the default value for the <see cref="T:System.ComponentModel.BindableAttribute" />, which is <see cref="F:System.ComponentModel.BindableAttribute.No" />. This field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you mark a property with this value, the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -248,15 +173,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the direction or directions of this property's data binding.</summary>
-        <value>The direction of this property’s data binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +196,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -277,10 +210,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare.</param>
-        <summary>Determines whether two <see cref="T:System.ComponentModel.BindableAttribute" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the specified <see cref="T:System.ComponentModel.BindableAttribute" /> is equal to the current <see cref="T:System.ComponentModel.BindableAttribute" />; <see langword="false" /> if it is not equal.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,16 +223,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
-        <returns>A hash code for the current <see cref="T:System.ComponentModel.BindableAttribute" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,17 +247,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines if this attribute is the default.</summary>
-        <returns>
-          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,24 +271,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a property is not typically used for binding. This field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The No field is the default setting for the <xref:System.ComponentModel.BindableAttribute>.  
-  
- When you mark a property with the <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> constructor of the value `false,` the value of this attribute is set to the constant member No. Therefore, to check whether the attribute is set to this value in your code, you must specify the attribute as No.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -359,22 +293,19 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a property is typically used for binding. This field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you mark a property with the <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> constructor of the value `true`, the value of the <xref:System.ComponentModel.BindableAttribute> is set to the constant member Yes. Therefore, to check whether the attribute is set to this value in your code, you must specify the attribute as Yes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

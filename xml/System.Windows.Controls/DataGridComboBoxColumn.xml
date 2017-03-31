@@ -11,62 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a <see cref="T:System.Windows.Controls.DataGrid" /> column that hosts <see cref="T:System.Windows.Controls.ComboBox" /> controls in its cells.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use DataGridComboBoxColumn to display data where there is a set of items to choose from, such as an enumeration. DataGridComboBoxColumn allows users to select an item from a drop-down list. The following illustration shows a DataGridComboBoxColumn.  
-  
- ![A DataGridComboBoxColumn](~/add/media/ndp-datagridcombobox.png "A DataGridComboBoxColumn")  
-  
- To populate the drop-down list, first set the <xref:System.Windows.Controls.DataGridComboBoxColumn.ItemsSource%2A> property for the <xref:System.Windows.Controls.ComboBox> by using one of the following options:  
-  
--   A static resource. For more information, see [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
-  
--   An x:Static code entity. For more information, see [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md).  
-  
--   An inline collection of <xref:System.Windows.Controls.ComboBoxItem> types.  
-  
- Once the <xref:System.Windows.Controls.DataGridComboBoxColumn.ItemsSource%2A> is set, bind the selected item in the <xref:System.Windows.Controls.ComboBox> to the data item for the row that the cell is in. You can set the binding by using one of the following properties:  
-  
-|Property|Description|  
-|--------------|-----------------|  
-|<xref:System.Windows.Controls.DataGridComboBoxColumn.TextBinding%2A>|Sets the binding path of the text for the currently selected item.|  
-|<xref:System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A>|Sets the binding path of the object that is currently selected.|  
-|<xref:System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding%2A>|Sets the binding path to the value of the selected item specified by the <xref:System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath%2A> property.|  
-  
- When the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A> property is set to `true`, users cannot edit the column and they will not be able to see the drop-down list.  
-  
- If you want to display other types of data, <xref:System.Windows.Controls.DataGrid> provides the following column types:  
-  
-|Column Type|Data Display|  
-|-----------------|------------------|  
-|<xref:System.Windows.Controls.DataGridHyperlinkColumn>|Use to display URI data.|  
-|<xref:System.Windows.Controls.DataGridCheckBoxColumn>|Use to display Boolean data.|  
-|<xref:System.Windows.Controls.DataGridTextColumn>|Use to display text.|  
-  
- If you want to use other controls in your <xref:System.Windows.Controls.DataGrid>, you can create your own column types by using <xref:System.Windows.Controls.DataGridTemplateColumn>.  
-  
-   
-  
-## Examples  
- The following example shows how to populate the drop-down list for each <xref:System.Windows.Controls.ComboBox> in the column with the values of an enumeration. The selected item in the drop-down list is bound by setting the <xref:System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A> property to the property of the object displayed in each row.  
-  
- [!code-xml[DataGrid_CustomColumns#ComboBox1](~/add/codesnippet/xaml/datagrid_customcolumns/window1.xaml#combobox1)]  
-[!code-xml[DataGrid_CustomColumns#ComboBox2](~/add/codesnippet/xaml/datagrid_customcolumns/window1.xaml#combobox2)]  
-  
- [!code-cs[DataGrid_CustomColumns#Top](~/add/codesnippet/csharp/datagrid_customcolumns/window1.xaml.cs#top)]
- [!code-vb[DataGrid_CustomColumns#Top](~/add/codesnippet/visualbasic/datagrid_customcolumns_vb/window1.xaml.vb#top)]  
-[!code-cs[DataGrid_CustomColumns#All2](~/add/codesnippet/csharp/datagrid_customcolumns/window1.xaml.cs#all2)]
-[!code-vb[DataGrid_CustomColumns#All2](~/add/codesnippet/visualbasic/datagrid_customcolumns_vb/window1.xaml.vb#all2)]  
-[!code-cs[DataGrid_CustomColumns#CustomerClass](~/add/codesnippet/csharp/datagrid_customcolumns/window1.xaml.cs#customerclass)]
-[!code-vb[DataGrid_CustomColumns#CustomerClass](~/add/codesnippet/visualbasic/datagrid_customcolumns_vb/window1.xaml.vb#customerclass)]  
-[!code-cs[DataGrid_CustomColumns#Enum](~/add/codesnippet/csharp/datagrid_customcolumns/window1.xaml.cs#enum)]
-[!code-vb[DataGrid_CustomColumns#Enum](~/add/codesnippet/visualbasic/datagrid_customcolumns_vb/window1.xaml.vb#enum)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridComboBoxColumn" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +47,9 @@
         <Parameter Name="uneditedValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
-        <param name="uneditedValue">The previous, unedited value in the cell being edited.</param>
-        <summary>Causes the column cell being edited to revert to the specified value.</summary>
+        <param name="editingElement">To be added.</param>
+        <param name="uneditedValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +66,8 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding object to use when getting or setting cell content for the clipboard.</summary>
-        <value>An object that represents the binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +87,9 @@
         <Parameter Name="editingElement" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
-        <summary>Performs any required validation before exiting the editing mode.</summary>
-        <returns>
-          <see langword="false" /> if validation fails; otherwise, <see langword="true" />.</returns>
+        <param name="editingElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,18 +106,9 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default value of the <see cref="System.Windows.Controls.DataGridComboBoxColumn.EditingElementStyle%2A" /> property.</summary>
-        <value>The default value of <see cref="System.Windows.Controls.DataGridComboBoxColumn.EditingElementStyle%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This style is the same as the <xref:System.Windows.Controls.DataGridComboBoxColumn.DefaultElementStyle%2A>.  
-  
- If you are creating new styles for cells and you want to inherit some of the existing style elements, base the new style on DefaultEditingElementStyle by using the <xref:System.Windows.Style.BasedOn%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultElementStyle">
@@ -188,16 +124,9 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default value of the <see cref="System.Windows.Controls.DataGridComboBoxColumn.ElementStyle%2A" />.</summary>
-        <value>The default value of the <see cref="System.Windows.Controls.DataGridComboBoxColumn.ElementStyle%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you are creating new styles and you want to inherit some of the existing style elements, base the new style on DefaultElementStyle by using the <xref:System.Windows.Style.BasedOn%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayMemberPath">
@@ -213,19 +142,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a path to a value on the source object to provide the visual representation of the object.</summary>
-        <value>The path to a value on the source object. The registered default is an empty string (""). For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to define a simple template that describes how to display the data objects. Setting the DisplayMemberPath property is equivalent to setting the <xref:System.Windows.Data.Binding.Path%2A> of the <xref:System.Windows.Controls.TextBlock.Text%2A?displayProperty=fullName> property binding in a template. The following template shows an example of the equivalent setting.  
-  
- [!code-xml[DataGrid_ComboBoxColumnSample2#1](~/add/codesnippet/xaml/comboboxcolumnsample2/window1.xaml#1)]
- [!code-xml[DataGrid_ComboBoxColumnSample2#1](~/add/codesnippet/xaml/p-system.windows.control_41_1.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayMemberPathProperty">
@@ -241,7 +160,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridComboBoxColumn.DisplayMemberPath%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,16 +177,9 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.</summary>
-        <value>The style that is used when rendering an editing element. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can reset the default EditingElementStyle by getting the <xref:System.Windows.Controls.DataGridComboBoxColumn.DefaultEditingElementStyle%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingElementStyleProperty">
@@ -283,7 +195,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridComboBoxColumn.EditingElementStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,16 +212,9 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.</summary>
-        <value>The style that is used when rendering a display-only element. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can reset the default ElementStyle by getting the <xref:System.Windows.Controls.DataGridComboBoxColumn.DefaultElementStyle%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementStyleProperty">
@@ -325,7 +230,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridComboBoxColumn.ElementStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,10 +251,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">The cell that will contain the generated element.</param>
-        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
-        <summary>Gets a combo box control that is bound to the column's <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A" />, <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding%2A" />, and <see cref="System.Windows.Controls.DataGridComboBoxColumn.TextBinding%2A" /> values.</summary>
-        <returns>A new combo box control that is bound to the column's <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A" />, <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding%2A" />, and <see cref="System.Windows.Controls.DataGridComboBoxColumn.TextBinding%2A" /> values.</returns>
+        <param name="cell">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,10 +275,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">The cell that will contain the generated element.</param>
-        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
-        <summary>Gets a read-only combo box control that is bound to the column's <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A" />, <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding%2A" />, and <see cref="System.Windows.Controls.DataGridComboBoxColumn.TextBinding%2A" /> values.</summary>
-        <returns>A new, read-only combo box control that is bound to the column's <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A" />, <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding%2A" />, and <see cref="System.Windows.Controls.DataGridComboBoxColumn.TextBinding%2A" /> values.</returns>
+        <param name="cell">To be added.</param>
+        <param name="dataItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,16 +295,9 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection that is used to generate the content of the combo box control.</summary>
-        <value>A collection that is used to generate the content of the combo box control. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property populates the drop-down list for all the combo boxes in the column. This is equivalent to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property on <xref:System.Windows.Controls.ItemsControl>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsSourceProperty">
@@ -415,7 +313,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridComboBoxColumn.ItemsSource%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,10 +333,9 @@
         <Parameter Name="baseValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="baseValue">The value that was passed to the delegate.</param>
-        <summary>Determines the value of the <see cref="System.Windows.Controls.DataGridColumn.IsReadOnly%2A" /> property based on property rules from the <see cref="T:System.Windows.Controls.DataGrid" /> that contains this column.</summary>
-        <returns>
-          <see langword="true" /> if the combo boxes in the column cannot be edited; otherwise, <see langword="false" />.</returns>
+        <param name="baseValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,9 +356,9 @@
         <Parameter Name="newBinding" Type="System.Windows.Data.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="oldBinding">The previous binding.</param>
-        <param name="newBinding">The binding that the column has been changed to.</param>
-        <summary>Notifies the <see cref="T:System.Windows.Controls.DataGrid" /> when the <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A" /> property changes.</summary>
+        <param name="oldBinding">To be added.</param>
+        <param name="newBinding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,9 +379,9 @@
         <Parameter Name="newBinding" Type="System.Windows.Data.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="oldBinding">The previous binding.</param>
-        <param name="newBinding">The binding that the column has been changed to.</param>
-        <summary>Notifies the <see cref="T:System.Windows.Controls.DataGrid" /> when the <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValueBinding%2A" /> property changes.</summary>
+        <param name="oldBinding">To be added.</param>
+        <param name="newBinding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,9 +402,9 @@
         <Parameter Name="newBinding" Type="System.Windows.Data.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="oldBinding">The previous binding.</param>
-        <param name="newBinding">The binding that the column has been changed to.</param>
-        <summary>Notifies the <see cref="T:System.Windows.Controls.DataGrid" /> when the <see cref="System.Windows.Controls.DataGridComboBoxColumn.TextBinding%2A" /> property changes.</summary>
+        <param name="oldBinding">To be added.</param>
+        <param name="newBinding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,10 +425,10 @@
         <Parameter Name="editingEventArgs" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
-        <param name="editingEventArgs">Information about the user gesture that is causing a cell to enter editing mode.</param>
-        <summary>Called when a cell in the column enters editing mode.</summary>
-        <returns>The unedited value.</returns>
+        <param name="editingElement">To be added.</param>
+        <param name="editingEventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,9 +449,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The cell to update.</param>
-        <param name="propertyName">The name of the column property that has changed.</param>
-        <summary>Refreshes the contents of a cell in the column in response to a binding change.</summary>
+        <param name="element">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,16 +468,9 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding for the currently selected item.</summary>
-        <value>The binding for the selected item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the SelectedItemBinding property is equivalent to setting the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> property of <xref:System.Windows.Controls.ComboBox>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedValueBinding">
@@ -596,16 +486,9 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the selected item, obtained by using <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath%2A" />.</summary>
-        <value>The binding for the selected value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The selected value is determined by the <xref:System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath%2A> property of the selected item. The selected value path is a property on the selected item object. Setting this property is equivalent to setting the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property of <xref:System.Windows.Controls.ComboBox>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePath">
@@ -621,16 +504,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path that is used to get the <see cref="System.Windows.Controls.Primitives.Selector.SelectedValue%2A" /> from the <see cref="System.Windows.Controls.Primitives.Selector.SelectedItem%2A" />.</summary>
-        <value>The path to get the selected value. The registered default is an empty string (""). For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectedValuePath property allows you to display a value of the selected item object by setting the path to that property. This is equivalent to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> property on <xref:System.Windows.Controls.Primitives.Selector>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePathProperty">
@@ -646,7 +522,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,16 +539,9 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding for the text in the text box portion of the <see cref="T:System.Windows.Controls.ComboBox" /> control.</summary>
-        <value>The binding for the text of the currently selected item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the TextBinding property is equivalent to setting the <xref:System.Windows.Controls.ComboBox.Text%2A> property of the <xref:System.Windows.Controls.ComboBox> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextBlockComboBoxStyleKey">
@@ -688,8 +557,8 @@
         <ReturnType>System.Windows.ComponentResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the resource key for the style to apply to a read-only combo box.</summary>
-        <value>The key for the style.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

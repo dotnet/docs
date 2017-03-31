@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputGesture" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Abstract class that describes input device gestures.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implementations of InputGesture in [!INCLUDE[TLA#tla_wpf](~/add/includes/tlasharptla-wpf-md.md)] are <xref:System.Windows.Input.KeyGesture> and <xref:System.Windows.Input.MouseGesture>.  
-  
- An input gesture can be associated with a command so that when the gesture is performed the command is invoked.  For more information, see <xref:System.Windows.Input.InputBinding> and the [Commanding Overview](../Topic/Commanding%20Overview.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputGesture" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,11 +47,10 @@
         <Parameter Name="inputEventArgs" Type="System.Windows.Input.InputEventArgs" />
       </Parameters>
       <Docs>
-        <param name="targetElement">The target of the command.</param>
-        <param name="inputEventArgs">The input event data to compare this gesture to.</param>
-        <summary>When overridden in a derived class, determines whether the specified <see cref="T:System.Windows.Input.InputGesture" /> matches the input associated with the specified <see cref="T:System.Windows.Input.InputEventArgs" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the gesture matches the input; otherwise, <see langword="false" />.</returns>
+        <param name="targetElement">To be added.</param>
+        <param name="inputEventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

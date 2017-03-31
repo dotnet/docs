@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackPointCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,19 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPoint" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- UserTrackPointCollection is used in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to maintain a list of <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> objects to match.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,20 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPointCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> to an empty list.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,25 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.UserTrackPoint&gt;" />
       </Parameters>
       <Docs>
-        <param name="points">An <see cref="System.Collections.Generic.IEnumerable%601" /> list of <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPoint" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPointCollection" /> class by using a list of user track points.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> objects specified in `points`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="points" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="points">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

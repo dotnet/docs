@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheProfileCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,28 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Web.Configuration.OutputCacheProfile" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OutputCacheProfileCollection allows to centralize the management of the output cache settings used by pages or user controls.  
-  
- It allows you to programmatically access and modify the <xref:System.Web.Configuration.OutputCacheProfile> objects it contains.  
-  
-> [!NOTE]
->  The <xref:System.Web.Configuration.OutputCacheProfile> can be applied to a page using the `CacheProfile` attribute of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive.  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the OutputCacheProfileCollection object.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#1](~/add/codesnippet/csharp/t-system.web.configurati_39_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_39_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,25 +51,9 @@
         <Parameter Name="name" Type="System.Web.Configuration.OutputCacheProfile" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object to the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The collection cannot contain a <xref:System.Web.Configuration.OutputCacheProfile> object with the same name.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Add method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#2](~/add/codesnippet/csharp/16286283-1f9a-4038-b5e0-_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#2](~/add/codesnippet/visualbasic/16286283-1f9a-4038-b5e0-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object already exists in the collection or the collection is read only.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -102,26 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> keys.</summary>
-        <value>The <see langword="string" /> array containing the collection keys.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the AllKeys property.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#9](~/add/codesnippet/csharp/p-system.web.configurati_191_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#9](~/add/codesnippet/visualbasic/p-system.web.configurati_191_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -131,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,24 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the  <see cref="T:System.Web.Configuration.OutputCacheProfile" /> objects from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method inserts a `clear` directive into the corresponding section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the corresponding section of the current configuration file are removed.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Clear method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#3](~/add/codesnippet/csharp/m-system.web.configurati_71_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#3](~/add/codesnippet/visualbasic/m-system.web.configurati_71_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The collection is read only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -166,7 +99,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,7 +118,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,20 +127,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> element.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element at the specified index.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Get method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#11](~/add/codesnippet/csharp/m-system.web.configurati_53_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#11](~/add/codesnippet/visualbasic/m-system.web.configurati_53_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -219,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,20 +149,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> element.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element with the specified name.</summary>
-        <returns>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element with the specified name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Get method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#11](~/add/codesnippet/csharp/m-system.web.configurati_29_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#11](~/add/codesnippet/visualbasic/m-system.web.configurati_29_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -252,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,20 +193,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> index of the key.</param>
-        <summary>Gets the key at the specified <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> index.</summary>
-        <returns>The key with the specified <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the GetKey method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#6](~/add/codesnippet/csharp/m-system.web.configurati_59_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#6](~/add/codesnippet/visualbasic/m-system.web.configurati_59_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -308,7 +206,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,20 +215,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The collection index of the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object at the specified index.</summary>
-        <value>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Item property.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#4](~/add/codesnippet/csharp/p-system.web.configurati_257_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#4](~/add/codesnippet/visualbasic/p-system.web.configurati_257_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -341,7 +228,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -351,20 +237,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object.</param>
-        <summary>Gets the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> with the specified name.</summary>
-        <value>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> with the specified name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Item property.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#5](~/add/codesnippet/csharp/p-system.web.configurati_114_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#5](~/add/codesnippet/visualbasic/p-system.web.configurati_114_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -374,7 +250,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,7 +268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -403,25 +277,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified name from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Remove method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Remove method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#8](~/add/codesnippet/csharp/m-system.web.configurati_54_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#8](~/add/codesnippet/visualbasic/m-system.web.configurati_54_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -431,7 +289,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -441,25 +298,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object at the specified index from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RemoveAt method inserts a `remove` element into the corresponding section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the corresponding section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the RemoveAt method.  
-  
- [!code-cs[System.Web.Configuration.OutputCacheProfileCollection#7](~/add/codesnippet/csharp/m-system.web.configurati_33_1.cs)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#7](~/add/codesnippet/visualbasic/m-system.web.configurati_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -469,7 +310,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -479,25 +319,9 @@
         <Parameter Name="user" Type="System.Web.Configuration.OutputCacheProfile" />
       </Parameters>
       <Docs>
-        <param name="user">The <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> element to set.</param>
-        <summary>Sets the specified <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Set method modifies an existing <xref:System.Web.Configuration.OutputCacheProfileCollection> element.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the Set method.  
-  
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#10](~/add/codesnippet/visualbasic/6a4cae6f-b06f-4473-92a7-_1.vb)]
- [!code-cs[System.Web.Configuration.FormsAuthenticationCredentials#10](~/add/codesnippet/csharp/6a4cae6f-b06f-4473-92a7-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> is read-only.</exception>
+        <param name="user">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

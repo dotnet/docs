@@ -3,38 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ByteConverter extends System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ByteConverter" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ComponentModel.BaseNumberConverter</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter to convert 8-bit unsigned integer objects to and from various other representations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This converter can only convert an 8-bit unsigned integer to and from a string.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
-  
-> [!NOTE]
->  You should never create an instance of a ByteConverter. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
-   
-  
-## Examples  
- The following code example declares and initializes an 8-bit unsigned integer and a string. The code then converts each of them to the other's type, respectively.  
-  
- [!code-cs[Converters#4](~/add/codesnippet/csharp/t-system.componentmodel._175_1.cs)]
- [!code-vb[Converters#4](~/add/codesnippet/visualbasic/t-system.componentmodel._175_1.vb)]
- [!code-cpp[Converters#4](~/add/codesnippet/cpp/t-system.componentmodel._175_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,13 +30,21 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ByteConverter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ByteConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

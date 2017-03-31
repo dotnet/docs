@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the state of model binding.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelStateDictionary" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,10 +53,9 @@
         <Parameter Name="dictionary" Type="System.Web.ModelBinding.ModelStateDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">The dictionary.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelStateDictionary" /> class using an existing dictionary collection.</summary>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="dictionary" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -75,8 +74,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Web.ModelBinding.ModelState&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The item.</param>
-        <summary>Adds the specified item to the dictionary.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +96,9 @@
         <Parameter Name="value" Type="System.Web.ModelBinding.ModelState" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <param name="value">The value.</param>
-        <summary>Adds an item that has the specified key and value to the dictionary.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,11 +119,10 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <param name="exception">The exception object.</param>
-        <summary>Adds a model error to the errors collection using the specified key and using the specified exception for the value.</summary>
+        <param name="key">To be added.</param>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddModelError">
@@ -144,11 +142,10 @@
         <Parameter Name="errorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <param name="errorMessage">The error message.</param>
-        <summary>Adds the specified model error to the errors collection using the specified key and using the specified error message string for the value.</summary>
+        <param name="key">To be added.</param>
+        <param name="errorMessage">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -165,7 +162,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the dictionary.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,10 +182,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Web.ModelBinding.ModelState&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The item to locate in the model-state dictionary.</param>
-        <summary>Determines whether the model-state dictionary contains a specific item.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="item" /> is found in the dictionary; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +204,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <summary>Determines whether the model-state dictionary contains the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the dictionary contains the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +227,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying starts.</param>
-        <summary>Copies the elements of the dictionary to an array, starting at a specified index.</summary>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +246,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of key/value pairs in the collection.</summary>
-        <value>The number of key/value pairs in the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,8 +265,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the dictionary.</summary>
-        <returns>An enumerator that can be used to iterate through the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +283,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
-        <value>
-          <see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,9 +301,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether there are any errors in any of the model state objects in the dictionary.</summary>
-        <value>
-          <see langword="false" /> if any errors were found; otherwise, <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,12 +322,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <summary>Determines whether there are any <see cref="T:System.Web.ModelBinding.ModelError" /> objects that are associated with the specified key or that are prefixed with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if any <see cref="T:System.Web.ModelBinding.ModelError" /> objects are associated with the specified key or prefixed with the specified key; otherwise, <see langword="false" />. If the key is not found in the dictionary, this method returns <see langword="true" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -353,9 +344,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <summary>Gets or sets the value that is associated with the specified key.</summary>
-        <value>The item.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,8 +363,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection that contains the keys of the dictionary.</summary>
-        <value>The keys of the dictionary.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,8 +384,8 @@
         <Parameter Name="dictionary" Type="System.Web.ModelBinding.ModelStateDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">The model-state dictionary to be merged into this one.</param>
-        <summary>Copies the values from the specified model-state dictionary object into this dictionary, overwriting existing values if the keys are the same.</summary>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,10 +405,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Web.ModelBinding.ModelState&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The item to remove.</param>
-        <summary>Removes the first occurrence of the specified item from the model-state dictionary.</summary>
-        <returns>
-          <see langword="true" /> if the item was successfully removed from the dictionary, or <see langword="false" /> if the item was not removed or was not found in the dictionary.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,10 +427,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the item to remove.</param>
-        <summary>Removes the item that has the specified key from the dictionary.</summary>
-        <returns>
-          <see langword="true" /> if the item was successfully removed from the dictionary, or <see langword="false" /> if the item was not removed or was not found in the dictionary.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,9 +450,9 @@
         <Parameter Name="value" Type="System.Web.ModelBinding.ValueProviderResult" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
-        <param name="value">The value.</param>
-        <summary>Sets the value for the specified key.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,16 +470,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the collection.</summary>
-        <returns>An enumerator that can be used to iterate through the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is an explicit interface member implementation. It can be used only when the <xref:System.Web.ModelBinding.ModelStateDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -510,11 +492,10 @@
         <Parameter Name="value" Type="System.Web.ModelBinding.ModelState&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to get.</param>
-        <param name="value">When this method returns, contains the value that is associated with the specified key, if the key was found; otherwise, contains the default value for the type of this parameter. This parameter is passed uninitialized.</param>
-        <summary>Attempts to gets the value that is associated with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the dictionary contains an item that has the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,8 +512,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.ModelState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection that contains the values of the dictionary.</summary>
-        <value>The values of the dictionary.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

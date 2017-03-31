@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Management.PutType" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Describes the possible effects of saving an object to WMI when using <see cref="M:System.Management.ManagementObject.Put" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Creates an object only; does not update an existing object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No change.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOnly">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Updates an existing object only; does not create a new object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOrCreate">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Saves the object, whether updating an existing object or creating a new object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

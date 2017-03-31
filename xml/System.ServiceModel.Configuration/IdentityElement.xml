@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IdentityElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a configuration element that enables the authentication of an endpoint by other endpoints exchanging messages with it. This class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.IdentityElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,20 +37,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("certificate")</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("certificate", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.CertificateElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration settings of an X.509 certificate.</summary>
-        <value>The configuration settings of an X.509 certificate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,20 +60,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("certificateReference")</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("certificateReference", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.CertificateReferenceElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration settings for X.509 certificate validation.</summary>
-        <value>A <see cref="T:System.ServiceModel.Configuration.CertificateReferenceElement" /> that defines configuration settings for X.509 certificate validation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,20 +83,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("dns")</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("dns", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.DnsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a DNS identity.</summary>
-        <value>A DNS identity.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,11 +115,9 @@
         <Parameter Name="identity" Type="System.ServiceModel.EndpointIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">The endpoint identity.</param>
-        <summary>Initializes this configuration element with the content of the specified object.</summary>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -135,7 +127,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,20 +145,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("rsa")</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("rsa", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.RsaElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an RSA identity.</summary>
-        <value>An RSA identity.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,20 +168,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("servicePrincipalName")</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("servicePrincipalName", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.ServicePrincipalNameElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a service principal name (SPN) identity.</summary>
-        <value>A service principal name (SPN) identity.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,20 +191,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("userPrincipalName")</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("userPrincipalName", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Configuration.UserPrincipalNameElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a user principal name (UPN) identity.</summary>
-        <value>A user principal name (UPN) identity.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

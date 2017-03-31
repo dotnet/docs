@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateTimePickerFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the date and time format the <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.DateTimePicker.Format%2A?displayProperty=fullName>.  
-  
-> [!NOTE]
->  The actual date/time formats are determined by the date, time, and regional settings set in the user's operating system.  
-  
-   
-  
-## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.DateTimePicker> object by setting the <xref:System.Windows.Forms.DateTimePicker.Format%2A> to a DateTimePickerFormat value. To run this example paste the following code in a form and call `InitializeDateTimePicker` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-vb[System.Windows.Forms.DateTimePicker#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_49_1.vb)]
- [!code-cpp[System.Windows.Forms.DateTimePicker#1](~/add/codesnippet/cpp/t-system.windows.forms.d_49_1.cpp)]
- [!code-cs[System.Windows.Forms.DateTimePicker#1](~/add/codesnippet/csharp/t-system.windows.forms.d_49_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Custom">
@@ -41,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in a custom format. For more information, see <see cref="System.Windows.Forms.DateTimePicker.CustomFormat%2A" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Long">
@@ -58,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in the long date format set by the user's operating system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Short">
@@ -75,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in the short date format set by the user's operating system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -92,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in the time format set by the user's operating system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

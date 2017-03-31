@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IEngine2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines extra functionality that is needed by an IActiveScript host. Implemented by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> engine.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,9 +36,9 @@
         <Parameter Name="domain" Type="System.AppDomain" />
       </Parameters>
       <Docs>
-        <param name="domain">The application domain in which to create the new engine.</param>
-        <summary>When implemented in a class, creates a new identical engine that runs in a new application domain, with the same compiled state and named items. This is not implemented in JScript.</summary>
-        <returns>The new engine.</returns>
+        <param name="domain">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,9 +56,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, triggers compilation of all the state currently in the engine. All references, code items, host items, and resources are run through the compiler.</summary>
-        <returns>
-          <see langword="true" /> if the compilation was successful, otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,7 +75,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, communicates to the engine that it can connect any registered event sources that have events to any global event handlers. This is not implemented in JScript.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,7 +93,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, directs the engine to unhook event sources from event handlers. This is not implemented in JScript.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,8 +111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, gets the compiled assembly that is produced by the compilation step.</summary>
-        <returns>The compiled assembly.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,8 +130,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, gets the global scope object.</summary>
-        <returns>The global scope object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,8 +149,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, gets the code module from the compiled assembly.</summary>
-        <returns>The code module from the compiled assembly.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +171,9 @@
         <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaSite" />
       </Parameters>
       <Docs>
-        <param name="rootMoniker">The root moniker of the script engine. For more information, see <see cref="Microsoft.Vsa.IVsaEngine.RootMoniker%2A" />.</param>
-        <param name="site">The host-implemented <see cref="T:Microsoft.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host. For more information, see <see cref="Microsoft.Vsa.IVsaEngine.Site%2A" />.</param>
-        <summary>When implemented in a class, initializes the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
+        <param name="rootMoniker">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,15 +191,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, calls <see cref="System.Threading.Thread.Abort%2A" /> on the thread that is running the script code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method should not be called on the thread that is used to run code. If you do this, you stop your own thread.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterEventSource">
@@ -218,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,8 +211,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of an added item that provides events.</param>
-        <summary>When implemented in a class, specifies the name of an item that is marked as an event source, so that the <see cref="Microsoft.JScript.IEngine2.ConnectEvents%2A" /> method can determine which events to connect. This is not implemented in JScript.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +223,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,7 +230,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, this method is called by the debugger when it has to reset the engine to a clean state before evaluating a new expression. The method resets the added items and the global scope back to their original state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,8 +250,8 @@
         <Parameter Name="domain" Type="System.AppDomain" />
       </Parameters>
       <Docs>
-        <param name="domain">The application domain in which to run the compiled code.</param>
-        <summary>When implemented in a class, runs the compiled code in the specified application domain. This is not implemented in JScript because managed engines do not support running code in user-provided application domains.</summary>
+        <param name="domain">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +262,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,7 +269,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a class, runs the compiled code in the current <see cref="T:System.AppDomain" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

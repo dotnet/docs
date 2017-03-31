@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.TimeSpanSecondsConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts a time span expressed in seconds.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
-  
- In particular, the TimeSpanSecondsConverter converts <xref:System.String> seconds, assigned to a configuration property, to <xref:System.TimeSpan> seconds and vice versa.  
-  
- The <xref:System.Configuration.TimeSpanMinutesConverter> persists values of type `long` that represent a number of seconds.  
-  
-   
-  
-## Examples  
- Refer to the code examples in <xref:System.Configuration.InfiniteTimeSpanConverter> and <xref:System.Configuration.TimeSpanMinutesConverter>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanSecondsConverter" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Normally, you use the converter types provided by the system. The only time you need to use the TimeSpanSecondsConverter constructor is when you create your own conversion type.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -62,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,21 +48,12 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
-        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
-        <param name="data">The <see cref="T:System.String" /> object to convert.</param>
-        <summary>Converts a <see cref="T:System.String" /> to a <see cref="T:System.TimeSpan" />.</summary>
-        <returns>The <see cref="T:System.TimeSpan" /> representing the <paramref name="data" /> parameter in seconds.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The system uses the ConvertFrom method when it reads from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="data" /> cannot be parsed as an integer value.</exception>
+        <param name="ctx">To be added.</param>
+        <param name="ci">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -98,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,20 +75,13 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
-        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
-        <param name="value">The value to convert to.</param>
-        <param name="type">The type to convert to.</param>
-        <summary>Converts a <see cref="T:System.TimeSpan" /> to a <see cref="T:System.String" />.</summary>
-        <returns>The <see cref="T:System.String" /> that represents the <paramref name="value" /> parameter in minutes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The system uses the ConvertTo method when it writes to a configuration file to convert a <xref:System.TimeSpan> to a <xref:System.String>.  
-  
- ]]></format>
-        </remarks>
+        <param name="ctx">To be added.</param>
+        <param name="ci">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

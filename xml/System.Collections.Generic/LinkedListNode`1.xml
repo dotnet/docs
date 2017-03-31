@@ -3,9 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LinkedListNode`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.LinkedListNode`1" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -20,25 +29,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">Specifies the element type of the linked list.</typeparam>
-    <summary>Represents a node in a <see cref="System.Collections.Generic.LinkedList%601" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each element of the <xref:System.Collections.Generic.LinkedList%601> collection is a LinkedListNode(T).  The LinkedListNode(T) contains a value, a reference to the <xref:System.Collections.Generic.LinkedList%601> that it belongs to, a reference to the next node, and a reference to the previous node.  
-  
-   
-  
-## Examples  
- The following code example creates a LinkedListNode(T), adds it to a <xref:System.Collections.Generic.LinkedList%601>, and tracks the values of its properties as the <xref:System.Collections.Generic.LinkedList%601> changes.  
-  
- [!code-vb[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/visualbasic/t-system.collections.gen_5_1.vb)]
- [!code-cs[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/csharp/t-system.collections.gen_5_1.cs)]
- [!code-cpp[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/cpp/t-system.collections.gen_5_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,33 +40,26 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedListNode`1.#ctor(`0)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">The value to contain in the <see cref="System.Collections.Generic.LinkedListNode%601" />.</param>
-        <summary>Initializes a new instance of the <see cref="System.Collections.Generic.LinkedListNode%601" /> class, containing the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Collections.Generic.LinkedListNode%601.List%2A>, <xref:System.Collections.Generic.LinkedListNode%601.Next%2A>, and <xref:System.Collections.Generic.LinkedListNode%601.Previous%2A> properties are set to `null`.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Collections.Generic.LinkedListNode%601>, adds it to a <xref:System.Collections.Generic.LinkedList%601>, and tracks the values of its properties as the <xref:System.Collections.Generic.LinkedList%601> changes.  
-  
- [!code-vb[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/visualbasic/m-system.collections.gen_47_1.vb)]
- [!code-cs[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/csharp/m-system.collections.gen_47_1.cs)]
- [!code-cpp[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/cpp/m-system.collections.gen_47_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -82,28 +68,26 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.LinkedList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="System.Collections.Generic.LinkedList%601" /> that the <see cref="System.Collections.Generic.LinkedListNode%601" /> belongs to.</summary>
-        <value>A reference to the <see cref="System.Collections.Generic.LinkedList%601" /> that the <see cref="System.Collections.Generic.LinkedListNode%601" /> belongs to, or <see langword="null" /> if the <see cref="System.Collections.Generic.LinkedListNode%601" /> is not linked.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Collections.Generic.LinkedListNode%601>, adds it to a <xref:System.Collections.Generic.LinkedList%601>, and tracks the values of its properties as the <xref:System.Collections.Generic.LinkedList%601> changes.  
-  
- [!code-vb[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/visualbasic/p-system.collections.gen_0_1.vb)]
- [!code-cs[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/csharp/p-system.collections.gen_0_1.cs)]
- [!code-cpp[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/cpp/p-system.collections.gen_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -112,28 +96,26 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.LinkedListNode&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next node in the <see cref="System.Collections.Generic.LinkedList%601" />.</summary>
-        <value>A reference to the next node in the <see cref="System.Collections.Generic.LinkedList%601" />, or <see langword="null" /> if the current node is the last element (<see cref="System.Collections.Generic.LinkedList%601.Last%2A" />) of the <see cref="System.Collections.Generic.LinkedList%601" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Collections.Generic.LinkedListNode%601>, adds it to a <xref:System.Collections.Generic.LinkedList%601>, and tracks the values of its properties as the <xref:System.Collections.Generic.LinkedList%601> changes.  
-  
- [!code-vb[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/visualbasic/p-system.collections.gen_23_1.vb)]
- [!code-cs[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/csharp/p-system.collections.gen_23_1.cs)]
- [!code-cpp[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/cpp/p-system.collections.gen_23_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -142,28 +124,26 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.LinkedListNode&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous node in the <see cref="System.Collections.Generic.LinkedList%601" />.</summary>
-        <value>A reference to the previous node in the <see cref="System.Collections.Generic.LinkedList%601" />, or <see langword="null" /> if the current node is the first element (<see cref="System.Collections.Generic.LinkedList%601.First%2A" />) of the <see cref="System.Collections.Generic.LinkedList%601" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.Collections.Generic.LinkedListNode%601>, adds it to a <xref:System.Collections.Generic.LinkedList%601>, and tracks the values of its properties as the <xref:System.Collections.Generic.LinkedList%601> changes.  
-  
- [!code-vb[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/visualbasic/p-system.collections.gen_13_1.vb)]
- [!code-cs[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/csharp/p-system.collections.gen_13_1.cs)]
- [!code-cpp[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/cpp/p-system.collections.gen_13_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -172,33 +152,26 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedListNode`1.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value contained in the node.</summary>
-        <value>The value contained in the node.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is set in the <xref:System.Collections.Generic.LinkedListNode%601.%23ctor%2A>.  
-  
-   
-  
-## Examples  
- The following code example creates a <xref:System.Collections.Generic.LinkedListNode%601>, adds it to a <xref:System.Collections.Generic.LinkedList%601>, and tracks the values of its properties as the <xref:System.Collections.Generic.LinkedList%601> changes.  
-  
- [!code-vb[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/visualbasic/p-system.collections.gen_12_1.vb)]
- [!code-cs[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/csharp/p-system.collections.gen_12_1.cs)]
- [!code-cpp[System.Collections.Generic.LinkedListNode#1](~/add/codesnippet/cpp/p-system.collections.gen_12_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

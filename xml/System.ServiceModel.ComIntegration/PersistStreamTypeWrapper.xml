@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Persists objects that implement <see langword="IPersistStream" /> (such as ADO Recordset) to a byte stream.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,12 +31,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +52,8 @@
         <ReturnType>System.Runtime.Serialization.ExtensionDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Runtime.Serialization.ExtensionDataObject" /> associated with the <see cref="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" />.</summary>
-        <value>An<see cref="T:System.Runtime.Serialization.ExtensionDataObject" />instance.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -84,9 +81,9 @@
         <Parameter Name="obj" Type="T&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The object type.</typeparam>
-        <param name="obj">An object into which the deserialized object will be placed.</param>
-        <summary>Uses the <see langword="IPersistStream" /> interface of the object to deserialize an object from a byte stream.</summary>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -115,17 +111,10 @@
         <Parameter Name="obj" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The object type.</typeparam>
-        <param name="obj">The object to be persisted to the byte stream.</param>
-        <summary>Uses the <see langword="IPersistStream" /> interface of the object to serialize that object to a byte stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The object to be persisted to the byte stream must be a COM object.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

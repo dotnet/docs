@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizableResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a localizable resource in a [!INCLUDE[TLA2#tla_baml](~/add/includes/tla2sharptla-baml-md.md)] stream.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BamlLocalizableResource class is the value component of the key-value pairs found in a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
-  
-<a name="xamlTextUsage_BamlLocalizableResource"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following example demonstrates how to use a BamlLocalizableResource.  
-  
- [!code-cs[GrabBaml#1](~/add/codesnippet/csharp/GrabBaml/GrabBaml.cs#1)]
- [!code-vb[GrabBaml#1](~/add/codesnippet/visualbasic/grabbaml/grabbaml.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizableResource" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,14 +47,12 @@
         <Parameter Name="readable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="content">The localizable value.</param>
-        <param name="comments">Comments used for localizing.</param>
-        <param name="category">The string category of the resource.</param>
-        <param name="modifiable">
-          <see langword="true" /> if the resource should be modifiable; otherwise, <see langword="false" />.</param>
-        <param name="readable">
-          <see langword="true" /> if the resource should be visible for translation purposes because it is potentially readable as text in the UI; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizableResource" /> class, with the specified localizable value, localization comments, resource category, localization lock status, and visibility of the resource.</summary>
+        <param name="content">To be added.</param>
+        <param name="comments">To be added.</param>
+        <param name="category">To be added.</param>
+        <param name="modifiable">To be added.</param>
+        <param name="readable">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,24 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the localization category of a resource.</summary>
-        <value>The localization category, as a value of the enumeration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Category"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Comments">
@@ -112,25 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the localization comments associated with a resource.</summary>
-        <value>The localization comment string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Localization comments are authored by the developer to provide rules or hints for localizers. The comments are free-form strings that are extracted from [!INCLUDE[TLA2#tla_baml](~/add/includes/tla2sharptla-baml-md.md)] or from localization comments files. To attach comments to an element in [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)], use the <xref:System.Windows.Localization.Comments%2A?displayProperty=fullName> attached property For more information on this attached property, see [Localization Attributes and Comments](../Topic/Localization%20Attributes%20and%20Comments.md).  
-  
-<a name="xamlTextUsage_Comments"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -140,27 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the localizable content.</summary>
-        <value>The localizable content string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Child elements by default are represented as placeholders. The placeholder starts with a "#" character, then the child element’s UID, then a ";". For example, "#TextBlock1;#TextBlock2;". Normal "#" and ";" characters inside the content are escaped with a "\\". This applies to the actual "\\" character itself. The removal of child placeholders in content is not allowed, because an element may be referenced in code, which could cause the localized application to fail at run time. However, it is allowed to reorder them in localizations.  
-  
- Child elements in the content can also be formatted as XML markup to improve readability. To do so, when <xref:System.Windows.Markup.Localizer.BamlLocalizer> queries the <xref:System.Windows.Markup.Localizer.ElementLocalizability> of a desired element, set the <xref:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag%2A> property to the desired tag name.  
-  
-<a name="xamlTextUsage_Content"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -170,7 +117,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,10 +126,9 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">The <see cref="T:System.Windows.Markup.Localizer.BamlLocalizableResource" /> object test for equality.</param>
-        <summary>Determines whether a specified <see cref="T:System.Windows.Markup.Localizer.BamlLocalizableResource" /> object is equal to this object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="other" /> is equal to this object; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,8 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an integer hash code representing this instance.</summary>
-        <returns>An integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,25 +158,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the localizable resource is modifiable.</summary>
-        <value>
-          <see langword="true" /> if the resource is modifiable; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Modifiable"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Readable">
@@ -242,30 +176,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the resource is visible for translation.</summary>
-        <value>
-          <see langword="true" /> if the resource is visible for translation; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Readable value serves as a recommendation to the localizer about whether the content of the localizable resource can be directly translated as plain strings.  
-  
- For example, when the string "Red" is used as a UI string, it can be directly translated to another language. In this case the Readable property should be set to `true`.  
-  
- When the string "Red" is used as a predefined color value of a <xref:System.Windows.Media.Brush>, it cannot be translated. Therefore the Readable property should be set to `false`.  
-  
-<a name="xamlTextUsage_Readable"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.RsaSecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Authenticates a <see cref="T:System.IdentityModel.Tokens.RsaSecurityToken" /> security token.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.RsaSecurityTokenAuthenticator" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,10 +46,9 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
-        <summary>Gets a value indicating whether the specified security token can be validated by this security token authenticator.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="token" /> is a <see cref="T:System.IdentityModel.Tokens.RsaSecurityToken" /> security token; otherwise, <see langword="false" />.</returns>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +59,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,17 +68,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
-        <summary>Authenticates the specified security token and returns the set of authorization policies for the security token.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method is called on the authorization policy that is returned from this method, a claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> is added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property of the <xref:System.IdentityModel.Policy.EvaluationContext> that is passed into the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

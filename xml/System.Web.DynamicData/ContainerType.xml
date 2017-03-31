@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the data-control container type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Item containers holds item containers that implement the <xref:System.Web.UI.WebControls.IDataBoundItemControl> interface, such as <xref:System.Web.UI.WebControls.DetailsView> or <xref:System.Web.UI.WebControls.FormView> controls. List containers hold list containers that implement the <xref:System.Web.UI.WebControls.IDataBoundListControl> interface, such as <xref:System.Web.UI.WebControls.ListView>, <xref:System.Web.UI.WebControls.GridView>, or <xref:System.Web.UI.WebControls.Repeater> controls.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Item">
@@ -34,7 +27,7 @@
         <ReturnType>System.Web.DynamicData.ContainerType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an item container that implements the <see cref="T:System.Web.UI.WebControls.IDataBoundItemControl" /> interface, such as a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control or a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -50,7 +43,7 @@
         <ReturnType>System.Web.DynamicData.ContainerType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a list container that implements the <see cref="T:System.Web.UI.WebControls.IDataBoundListControl" /> interface, such as a <see cref="T:System.Web.UI.WebControls.ListView" /> control, a <see cref="T:System.Web.UI.WebControls.GridView" /> control, or a <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

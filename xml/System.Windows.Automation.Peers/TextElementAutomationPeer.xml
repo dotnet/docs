@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Documents.TextElement" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Documents.TextElement" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -58,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Rect" /> representing the bounding rectangle of the <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Rect" /> that contains the coordinates of the element, or <see cref="System.Windows.Rect.Empty%2A" /> if the element is not a <see cref="T:System.Windows.Interop.HwndSource" /> and a <see cref="T:System.Windows.PresentationSource" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,17 +74,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A" />.</summary>
-        <returns>
-          <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because <xref:System.Windows.Automation.Peers.DocumentAutomationPeer> provides access to its content through <xref:System.Windows.Automation.TextPattern>, this method always returns `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -98,7 +86,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -114,8 +101,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Point" /> on the element that allows a click. The point values are (<see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />) if the element is not a <see cref="T:System.Windows.Interop.HwndSource" /> and a <see cref="T:System.Windows.PresentationSource" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,17 +120,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" /> is off of the screen. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.IsOffscreen%2A" />.</summary>
-        <returns>
-          <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property does not indicate whether the element is visible. In some circumstances, the element can be on the screen but still not be visible. An example is an element that is obscured by other elements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

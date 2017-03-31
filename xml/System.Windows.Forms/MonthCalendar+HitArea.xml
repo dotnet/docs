@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitArea" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines constants that represent areas in a <see cref="T:System.Windows.Forms.MonthCalendar" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration includes specific areas of the <xref:System.Windows.Forms.MonthCalendar> control as its enumerated values. The <xref:System.Windows.Forms.MonthCalendar.HitTestInfo.HitArea%2A> member of <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> is one of these enumerated values, and indicates which portion of a month calendar is under a specified point.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CalendarBackground">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is part of the calendar's background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is on a date within the calendar. The <see cref="System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to the date at the specified point.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DayOfWeek">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over a day abbreviation ("Fri", for example). The <see cref="System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to January 1, 0001.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NextMonthButton">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over the button at the upper-right corner of the control. If the user clicks here, the month calendar scrolls its display to the next month or set of months.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NextMonthDate">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over a date from the next month (partially displayed at the top of the currently displayed month). If the user clicks here, the month calendar scrolls its display to the next month or set of months.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nowhere">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is either not on the month calendar control, or it is in an inactive portion of the control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrevMonthButton">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over the button at the upper-left corner of the control. If the user clicks here, the month calendar scrolls its display to the previous month or set of months.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrevMonthDate">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over a date from the previous month (partially displayed at the top of the currently displayed month). If the user clicks here, the month calendar scrolls its display to the previous month or set of months.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleBackground">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over the background of a month's title.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleMonth">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is in a month's title bar, over a month name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleYear">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is in a month's title bar, over the year value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TodayLink">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is on the today link at the bottom of the month calendar control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WeekNumbers">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The specified point is over a week number. This occurs only if the <see cref="System.Windows.Forms.MonthCalendar.ShowWeekNumbers%2A" /> property of <see cref="T:System.Windows.Forms.MonthCalendar" /> is enabled. The <see cref="System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to the corresponding date in the leftmost column.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

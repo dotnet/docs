@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509AsymmetricSecurityKey" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an asymmetric key for X.509 certificates.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,18 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that represents the X.509 certificate.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509AsymmetricSecurityKey" /> class using the specified X.509 certificate.</summary>
+        <param name="certificate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificate" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
@@ -44,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,31 +50,11 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The cryptographic algorithm to decrypt the key.</param>
-        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the encrypted key.</param>
-        <summary>Decrypts the specified encrypted key using the specified cryptographic algorithm.</summary>
-        <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> or <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> fields to specify the algorithm.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor does not have a private key.  
-  
- -or-  
-  
- The X.509 certificate has a private key, but it was not generated using the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.  
-  
- -or-  
-  
- The X.509 certificate has a private key, it was generated using the <see cref="T:System.Security.Cryptography.RSA" /> algorithm, but the <see cref="System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm%2A" /> property is <see langword="null" />.  
-  
- -or-  
-  
- The <paramref name="algorithm" /> parameter is not supported. The supported algorithms are <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" /> and <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />.</exception>
+        <param name="algorithm">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
@@ -89,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,23 +74,11 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The cryptographic algorithm to encrypt the key.</param>
-        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the key to encrypt.</param>
-        <summary>Encrypts the specified encrypted key using the specified cryptographic algorithm.</summary>
-        <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> or <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> fields to specify the algorithm.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor has a public key that was not generated using the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.  
-  
- -or-  
-  
- The <paramref name="algorithm" /> parameter is not supported. The supported algorithms are <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" /> and <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />.</exception>
+        <param name="algorithm">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsymmetricAlgorithm">
@@ -126,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,33 +98,11 @@
         <Parameter Name="privateKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The asymmetric algorithm to create.</param>
-        <param name="privateKey">
-          <see langword="true" /> when a private key is required to create the algorithm; otherwise, <see langword="false" />.</param>
-        <summary>Gets the specified asymmetric cryptographic algorithm.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> that represents the specified asymmetric cryptographic algorithm.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="privateKey" /> is <see langword="true" /> and the X.509 certificate specified in the constructor does not have a private key.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" /> and the public or private key for the X.509 certificate specified in the constructor is not of type <see cref="T:System.Security.Cryptography.DSA" />.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" /> or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the public or private key for the X.509 certificate specified in the constructor is not of type <see cref="T:System.Security.Cryptography.RSA" />.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />.</exception>
+        <param name="algorithm">To be added.</param>
+        <param name="privateKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashAlgorithmForSignature">
@@ -173,7 +112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,19 +121,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The hash algorithm.</param>
-        <summary>Gets a cryptographic algorithm that generates a hash for a digital signature.</summary>
-        <returns>A <see cref="T:System.Security.Cryptography.HashAlgorithm" /> that generates hashes for digital signatures.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />.</exception>
+        <param name="algorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureDeformatter">
@@ -205,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,29 +143,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The de-formatter algorithm for the digital signature to get an instance of.</param>
-        <summary>Gets the de-formatter algorithm for the digital signature.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the de-formatter algorithm for the digital signature.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="algorithm" /> is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" /> and the public key for the X.509 certificate specified in the constructor is not of type <see cref="T:System.Security.Cryptography.DSA" />.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" /> or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the public key for the X.509 certificate specified in the constructor is not of type <see cref="T:System.Security.Cryptography.RSA" />.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />,  
-  
- <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />.</exception>
+        <param name="algorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureFormatter">
@@ -247,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,32 +165,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The formatter algorithm for the digital signature to get an instance of.</param>
-        <summary>Gets the formatter algorithm for the digital signature.</summary>
-        <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the formatter algorithm for the digital signature.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor does not have a private key.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" /> and the private key for the X.509 certificate specified in the constructor is not of type <see cref="T:System.Security.Cryptography.DSA" />.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" /> or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the private key for the X.509 certificate specified in the constructor is not of type <see cref="T:System.Security.Cryptography.RSA" />.  
-  
- -or-  
-  
- <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />,  
-  
- <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />.</exception>
+        <param name="algorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasPrivateKey">
@@ -292,7 +178,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,9 +185,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value that indicates whether the private key is a available.</summary>
-        <returns>
-          <see langword="true" /> when the private key is available; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,7 +197,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,10 +206,9 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The cryptographic algorithm.</param>
-        <summary>Gets a value that indicates whether the specified algorithm uses asymmetric keys.</summary>
-        <returns>
-          <see langword="true" /> when the specified algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.DsaSha1Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" />; otherwise, <see langword="false" />.</returns>
+        <param name="algorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +219,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -347,22 +228,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The cryptographic algorithm.</param>
-        <summary>Gets a value that indicates whether the specified algorithm is supported by this class.</summary>
-        <returns>
-          <see langword="true" /> when the specified algorithm is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the public key is of the right type; otherwise, <see langword="false" />. See the remarks for details.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsSupportedAlgorithm method returns `true` when one of the following is true:  
-  
--   The `algorithm` parameter is <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl> and the public key for the X.509 certificate specified in the constructor is of type <xref:System.Security.Cryptography.DSA>.  
-  
--   The `algorithm` parameter is <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> and the public key for the X.509 certificate specified in the constructor is of type <xref:System.Security.Cryptography.RSA>.  
-  
- ]]></format>
-        </remarks>
+        <param name="algorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSymmetricAlgorithm">
@@ -372,7 +241,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,10 +250,9 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">The cryptographic algorithm.</param>
-        <summary>Gets a value that indicates whether the specified algorithm uses symmetric keys.</summary>
-        <returns>
-          <see langword="true" /> when the specified algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation" />; otherwise, <see langword="false" />.</returns>
+        <param name="algorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,15 +263,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size, in bits, of the public key associated with the X.509 certificate.</summary>
-        <value>The size, in bits, of the public key associated with the X.509 certificate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

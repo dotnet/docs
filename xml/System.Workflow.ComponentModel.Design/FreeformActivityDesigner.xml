@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,22 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a customizable activity designer surface for users to visually modify on a workflow design surface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- The FreeformActivityDesigner allows users to modify how an activity appears on a workflow design surface. When you associate FreeformActivityDesigner with a custom activity class using the `Designer` attribute, the custom activity's appearance is different from other activities when a user drops the custom activity onto a design surface. Once FreeformActivityDesigner displays an activity on the design surface, users can draw connectors to other activity designers and resize the designer within the parameters defined by the design surface.  
-  
-> [!NOTE]
->  Users can only add connectors to the custom activity because the FreeformActivityDesigner is associated with the top-level activity in a workflow.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,28 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application UI for users who have impairments.</summary>
-        <value>The <see cref="T:System.Windows.Forms.AccessibleObject" /> associated with the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no `AccessibleObject` is currently assigned to the control, a new instance of one is created.  
-  
-> [!NOTE]
->  To get or set the `AccessibilityObject` property, you must add a reference to the Accessibility assembly installed with the .NET Framework.  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] accessible objects, see the Active Accessibility section of the MSDN Library.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddConnector">
@@ -92,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,30 +73,11 @@
         <Parameter Name="target" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> location to begin drawing the connector.</param>
-        <param name="target">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> location to finish drawing the connector.</param>
-        <summary>Adds a connector to the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> that was added to the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- AddConnector is called when a user adds a <xref:System.Workflow.ComponentModel.Design.Connector> to the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the `AddConnnector` method in a custom activity designer's `OnLayoutPosition` method.  
-  
- [!code-cs[FreeformActivityDesigner#0](~/add/codesnippet/csharp/freeformactivitydesigner/snippets.cs#0)]
- [!code-vb[FreeformActivityDesigner#0](~/add/codesnippet/visualbasic/freeformactivitydesigner/snippets.vb#0)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> or <paramref name="target" /> contains a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner%2A" /> property for <paramref name="source" /> or <paramref name="target" /> contains a <see langword="null" /> reference (<see langword="Nothing" />).</exception>
-        <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> is not the container for the connector to add.</exception>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -136,7 +87,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -148,17 +98,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> is resized automatically when a user resizes the designer's child designers.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> is resized automatically; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set AutoSize, the layout of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> is updated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeMargin">
@@ -168,27 +110,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the margin size to render around the child designers when the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> is automatically resized.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the margin to render around the child designers of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default size of AutoSizeMargin is a <xref:System.Drawing.Size> object with dimensions of 40 pixels by 40 pixels.  
-  
- If the <xref:System.Workflow.ComponentModel.Design.AmbientTheme.ShowGrid%2A?displayProperty=fullName> property associated with the current workflow theme is set to `true`, AutoSizeMargin settings are half the height and half the width of the grid size.  
-  
- When you set AutoSizeMargin, the layout of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> is updated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeMode">
@@ -198,7 +128,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -210,18 +139,9 @@
         <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.AutoSizeMode" /> settings for the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <value>The <see cref="T:System.Windows.Forms.AutoSizeMode" /> for the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />. The default setting is <see cref="T:System.Windows.Forms.AutoSizeMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default behavior of AutoSizeMode allows the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> to grow as necessary to fit its contents but does not shrink smaller than the value of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.MinimumSize%2A> property.  
-  
- When you set AutoSizeMode, the layout of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> is updated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BringToFront">
@@ -231,7 +151,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,22 +160,9 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to bring to the top of the z-order.</param>
-        <summary>Brings the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to the top of the z-order of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BringToFront modifies the z-order for the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> to display the specified <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> as its top visible child designer. You can use this method to display a designer at the top of the z-order when a user selects it.  
-  
- `containedDesigner` must be in a child of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> before you call BringToFront. If it is not, BringToFront throws an <xref:System.ArgumentException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="containedDesigner" /> contains a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="containedDesigner" /> is not found in the <see cref="System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A" /> collection.</exception>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConnectContainedDesigners">
@@ -266,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,11 +182,10 @@
         <Parameter Name="target" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> to check on the source activity designer.</param>
-        <param name="target">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> to check on the target activity designer.</param>
-        <summary>Returns a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> can create a connection between the specified connection point on a source child activity designer and the specified connection point on a target child activity designer.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> can draw a connector between source and target activity designers; otherwise, <see langword="false" />.</returns>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,24 +196,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> can be collapsed on a workflow design surface.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> can be collapsed; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CanExpandCollapse always returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanResizeContainedDesigner">
@@ -319,7 +214,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -329,18 +223,10 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to check.</param>
-        <summary>Returns a value that indicates whether a user can visually resize the specified child activity designer in the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <returns>
-          <see langword="true" /> if a user can visually resize the specified activity designer; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless overridden in a derived class, CanResizeContainedDesigner returns `true` if `containedDesigner` is a <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>. Other types of designers cannot be resized.  
-  
- ]]></format>
-        </remarks>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectorAdded">
@@ -350,22 +236,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ConnectorEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> is added to the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorAdded%2A> is the registered delegate event handler for the ConnectorAdded event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectorChanged">
@@ -375,24 +253,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ConnectorEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a user changes the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> locations associated with a <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> displayed by the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A connector is changed when a user changes the <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> locations at either end of a <xref:System.Workflow.ComponentModel.Design.Connector> object.  
-  
- <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorChanged%2A> is the registered delegate event handler for the ConnectorChanged event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectorRemoved">
@@ -402,22 +270,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ConnectorEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a user removes a connector from the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorRemoved%2A> is the registered delegate event handler for the ConnectorRemoved event.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Connectors">
@@ -427,23 +287,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.Connector&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read-only collection of connectors that are associated with the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <value>A read-only collection that contains all <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> objects associated with the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A connector is the line that appears on a workflow design surface that connects one activity designer to another.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnector">
@@ -453,7 +305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,10 +315,10 @@
         <Parameter Name="target" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> location to begin drawing the connector.</param>
-        <param name="target">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> location to finish drawing the connector.</param>
-        <summary>Creates a connector between the two specified connection points.</summary>
-        <returns>The <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> that was created.</returns>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -488,9 +338,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> if the designer is being disposed; <see langword="false" /> if the designer is being finalized.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +350,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -513,9 +361,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether users can drag and draw connectors on the free-form activity designer surface.</summary>
-        <value>
-          <see langword="true" /> if users can drag and draw connectors on the free-form activity designer surface; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,24 +373,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> can be visually resized on the workflow design surface.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> can be visually resized; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `true` and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is set to <xref:System.Windows.Forms.AutoSizeMode>, EnableVisualResizing returns `false`. In all other conditions EnableVisualResizing returns `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstSelectableObject">
@@ -553,23 +391,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <value>The first selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- FirstSelectableObject returns the first child designer in the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A> collection, or a `null` reference (`Nothing` in Visual Basic) if the collection count is zero.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextSelectableObject">
@@ -579,7 +409,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,10 +419,10 @@
         <Parameter Name="navigate" Type="System.Workflow.ComponentModel.Design.DesignerNavigationDirection" />
       </Parameters>
       <Docs>
-        <param name="current">The current <see cref="T:System.Object" /> in the navigation order.</param>
-        <param name="navigate">The <see cref="T:System.Workflow.ComponentModel.Design.DesignerNavigationDirection" /> enumeration value that determines the navigation order of the designer.</param>
-        <summary>Returns the first selectable object that follows the specified object in the navigation order of the current <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <returns>The first selectable <see cref="T:System.Object" /> that follows the <paramref name="obj" /> parameter in the navigation order.</returns>
+        <param name="current">To be added.</param>
+        <param name="navigate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,23 +433,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of glyphs that are displayed on the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> that contains the glyphs displayed on the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Glyphs returns a glyph for each connectable child designer found on the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -630,7 +451,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -640,17 +460,10 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Drawing.Point" /> that contains the coordinates on the workflow design surface from which to gather information.</param>
-        <summary>Returns information about the <see langword="FreeformActivityDesigner" /> at the specified coordinates on the workflow design surface.</summary>
-        <returns>A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that contains information about the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> at the specified coordinates</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- HitTest checks whether the location has occurred on a connector or one of the child activity designers. If the HitTest occurs on a child activity that is being dragged to another location, HitTest returns information about the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>, not the designer being moved.  
-  
- ]]></format>
-        </remarks>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -660,7 +473,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -670,16 +482,9 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> with which to initialize the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</param>
-        <summary>Initializes the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> by using the specified <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Initialize` adds a designer property extender to the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> for it to use until the design surface is destroyed.  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertActivities">
@@ -689,7 +494,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -700,9 +504,9 @@
         <Parameter Name="activitiesToInsert" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="insertLocation">The <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that specifies the location to add the activities.</param>
-        <param name="activitiesToInsert">The <see cref="T:System.Workflow.ComponentModel.Activity" /> read-only collection that contains the activities to add to the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</param>
-        <summary>Adds the specified read-only collection of activities to the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> at the specified location on the workflow design surface.</summary>
+        <param name="insertLocation">To be added.</param>
+        <param name="activitiesToInsert">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,23 +517,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <value>The <see cref="T:System.Object" /> that is the last selectable object in the designer navigation order.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- LastSelectableObject returns the last child designer in the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A> property or a `null` reference (`Nothing` in Visual Basic) if the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> does not contain any child designers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -739,23 +535,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> in logical coordinates.</summary>
-        <value>A <see langword="Point" /> that represents the location of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> in logical coordinates.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When Location is set due to a user resizing the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>, the designer maintains the relative positions of its child designers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumSize">
@@ -765,15 +553,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minimum size settings for the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the smallest possible size for the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -784,7 +571,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -795,9 +581,9 @@
         <Parameter Name="activitiesToMove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="moveLocation">Location to move activities to.</param>
-        <param name="activitiesToMove">Collection that contains the activities to move to <c>moveLocation.</c></param>
-        <summary>Moves activities to a specified location within the design surface.</summary>
+        <param name="moveLocation">To be added.</param>
+        <param name="activitiesToMove">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -808,7 +594,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -819,23 +604,10 @@
         <Parameter Name="newLocation" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to move.</param>
-        <param name="newLocation">The <see cref="T:System.Drawing.Point" /> that represents the designer's new location.</param>
-        <summary>Moves the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to the specified location.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MoveContainedDesigner sets new bounds for the moved designer and performs all required layout operations for the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> on the workflow design surface.  
-  
- `containedDesigner` must be in a child of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> before you call MoveContainedDesigner. If it is not, MoveContainedDesigner throws an <xref:System.ArgumentException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="containedDesigner" /> contains a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="containedDesigner" /> is not found in the <see cref="System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A" /> collection.</exception>
+        <param name="containedDesigner">To be added.</param>
+        <param name="newLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnConnectorAdded">
@@ -845,7 +617,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -855,8 +626,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ConnectorEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorAdded" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -867,7 +638,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -877,16 +647,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ConnectorEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A connector is changed when a user changes the <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> locations at either end of a <xref:System.Workflow.ComponentModel.Design.Connector> object.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnConnectorRemoved">
@@ -896,7 +659,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -906,8 +668,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ConnectorEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Workflow.ComponentModel.Design.ConnectorEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.ConnectorRemoved" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -918,7 +680,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -928,8 +689,8 @@
         <Parameter Name="listChangeArgs" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="listChangeArgs">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> that contains information about the added or removed activities.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> when a child activity is added or deleted from its <see langword="Activities" /> collection.</summary>
+        <param name="listChangeArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -940,7 +701,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -951,17 +711,10 @@
         <Parameter Name="target" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> location to begin drawing the connector.</param>
-        <param name="target">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> location to finish drawing the connector.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> when a connection has been established between two of its contained activity designers.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnContainedDesignersConnected is called when a <xref:System.Workflow.ComponentModel.Design.Connector> is drawn between the source on one of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> object's contained activity designers to target on a second contained activity designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDragDrop">
@@ -971,7 +724,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -981,8 +733,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDragEventArgs" /> that defines the operation event arguments.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> when a drag-drop operation is completed within the bounds of its design surface.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -993,7 +745,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1003,8 +754,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDragEventArgs" /> that defines the operation event arguments.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> when a drag-drop operation is in progress and the user's mouse cursor is inside the bounds of the designer.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,7 +766,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1025,8 +775,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Occurs when a key is pressed when the designer has the keyboard focus.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1037,7 +787,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1047,8 +796,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that defines the operation event arguments.</param>
-        <summary>Performs layout tasks to position visual cues and child designers on the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1059,7 +808,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1069,17 +817,10 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that defines the operation event arguments.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> when the size of the visual cues on the designers displayed by the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> have changed.</summary>
-        <returns>The <see cref="T:System.Drawing.Size" /> that represents the new size of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> on the workflow design surface.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnLayoutSize returns the size of the current bounding rectangle for the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> when <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `false`. If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `true` and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is set to <xref:System.Windows.Forms.AutoSizeMode?displayProperty=fullName>, OnLayoutSize calculates and returns new size settings for the bounding rectangle. If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to true and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is not set to <xref:System.Windows.Forms.AutoSizeMode?displayProperty=fullName>, OnLayoutSize returns <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.MinimumSize%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnResizing">
@@ -1089,7 +830,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1099,16 +839,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs" /> that defines the operation event arguments.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> when a user is visually resizing it at design time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `true` and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is set to <xref:System.Windows.Forms.AutoSizeMode?displayProperty=fullName>, OnResizing performs all resizing tasks on the workflow design surface. If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `true` and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is set to <xref:System.Windows.Forms.AutoSizeMode?displayProperty=fullName>, OnResizing performs layout tasks, but no resizing tasks. If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `false`, all contained designers retain their previous locations on the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnThemeChange">
@@ -1118,7 +851,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1128,18 +860,9 @@
         <Parameter Name="newTheme" Type="System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
       </Parameters>
       <Docs>
-        <param name="newTheme">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that contains the updated theme property settings.</param>
-        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> that its associated theme has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless overridden in a derived class, OnThemeChange always sets the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Text%2A> property to an empty string and the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> property to `null` (`Nothing` in Visual Basic).  
-  
- If <xref:System.Workflow.ComponentModel.Design.AmbientTheme.ShowGrid%2A> is set to `true`, the locations of each child designer in the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> is snapped to the nearest grid line.  
-  
- ]]></format>
-        </remarks>
+        <param name="newTheme">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveConnector">
@@ -1149,7 +872,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1159,18 +881,9 @@
         <Parameter Name="connector" Type="System.Workflow.ComponentModel.Design.Connector" />
       </Parameters>
       <Docs>
-        <param name="connector">The <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> from the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- RemoveConnector deletes the specified connector from the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.Connectors%2A> collection and calls the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.OnConnectorRemoved%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="connector" /> contains a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <param name="connector">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResizeContainedDesigner">
@@ -1180,7 +893,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1191,23 +903,10 @@
         <Parameter Name="newSize" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to resize.</param>
-        <param name="newSize">The <see cref="T:System.Drawing.Size" /> that represents the new dimensions of the designer.</param>
-        <summary>Resizes the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to the dimensions of specified size.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ResizeContainedDesigner sets new bounds for the resized designer and performs all required layout operations for the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> on the workflow design surface.  
-  
- `containedDesigner` must be in a child of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> before you call ResizeContainedDesigner. If it is not, ResizeContainedDesigner throws an <xref:System.ArgumentException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="containedDesigner" /> contains a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="containedDesigner" /> is not found in the <see cref="System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A" /> collection.</exception>
+        <param name="containedDesigner">To be added.</param>
+        <param name="newSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendToBack">
@@ -1217,7 +916,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1227,22 +925,9 @@
         <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="containedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to set to the back of the z-order.</param>
-        <summary>Sets the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to the bottom of the z-order of the <see langword="FreeformActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SendToBack modifies the z-order for the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> to display the specified <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> as the bottom visible designer on the design surface. You can use this method to display a designer at the bottom of the z-order when a user deselects it.  
-  
- `containedDesigner` must be in a child of the <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner> before you call SendToBack. If it is not, SendToBack throws an <xref:System.ArgumentException>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="containedDesigner" /> contains a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="containedDesigner" /> is not found in the <see cref="System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A" /> collection.</exception>
+        <param name="containedDesigner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowConnectorsInForeground">
@@ -1252,24 +937,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> draws connectors in the foreground of its design surface.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> draws connectors in the foreground of its design surface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless overridden in a class that derives from <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner>, ShowConnectorsInForeground always returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

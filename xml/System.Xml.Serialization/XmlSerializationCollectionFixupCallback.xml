@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationCollectionFixupCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -18,20 +22,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="collection">The collection into which the collection items array is copied.</param>
-    <param name="collectionItems">An array of items to be copied into the <c>object collection</c>.</param>
-    <summary>Delegate used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class for deserialization of SOAP-encoded XML data types that map to collections or enumerations.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the .NET Framework generates collection fix-up methods that use the XmlSerializationCollectionFixupCallback delegate. This occurs for SOAP-encoded arrays or SOAP-encoded, multi-reference elements whose data types, in either case, map to .NET Framework collections or enumerations. As necessary, the collection fix-up method is called during deserialization.  
-  
- You should not directly instantiate XmlSerializationCollectionFixupCallback.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
- ]]></format>
-    </remarks>
+    <param name="collection">To be added.</param>
+    <param name="collectionItems">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

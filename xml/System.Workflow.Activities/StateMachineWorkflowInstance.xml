@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateMachineWorkflowInstance" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a class that manages the current instance of a <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- This class also provides the query interface over the current instance of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. By using an instance of this class, you can make various queries on the StateMachineWorkflowInstance.  
-  
- Typical queries that can be made are as follows:  
-  
--   Current state of the state machine.  
-  
--   Possible transitions from the current state.  
-  
--   History of transitions for the state machine instance.  
-  
--   Enumeration of all the states in the state machine.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +27,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,25 +34,10 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="runtime">The current workflow runtime.</param>
-        <param name="instanceId">The <see cref="T:System.Guid" /> that indicates the instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create a new instance of a <xref:System.Workflow.Activities.StateMachineWorkflowInstance> object. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
-  
- [!code-cs[wf_samples#128](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#128)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="runtime" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
-  
- or  
-  
- <paramref name="instanceId" /> is an empty <see cref="T:System.Guid" />.</exception>
+        <param name="runtime">To be added.</param>
+        <param name="instanceId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentState">
@@ -85,15 +47,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.StateActivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the currently executing <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
-        <value>The current <see cref="T:System.Workflow.Activities.StateActivity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the current <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
-        <value>The name of the current <see cref="T:System.Workflow.Activities.StateActivity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,9 +93,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="queueName">The name of the workflow queue.</param>
-        <param name="item">The object to queue.</param>
-        <summary>Posts a message to the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" />.</summary>
+        <param name="queueName">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,11 +118,11 @@
         <Parameter Name="workItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="queueName">The name of the workflow queue.</param>
-        <param name="item">The object to queue.</param>
-        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when the item is delivered.</param>
-        <param name="workItem">An object to be passed to the <see cref="T:System.Workflow.Runtime.IPendingWork" /> methods.</param>
-        <summary>Posts a message to the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" />.</summary>
+        <param name="queueName">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="pendingWork">To be added.</param>
+        <param name="workItem">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,15 +133,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Guid" /> that indicates the current instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</summary>
-        <value>The <see cref="T:System.Guid" /> that indicates the current instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,15 +151,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of state transitions that the current <see cref="T:System.Workflow.Activities.StateActivity" /> can make.</summary>
-        <value>A collection of state transitions that the current <see cref="T:System.Workflow.Activities.StateActivity" /> can make.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,7 +169,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,12 +178,9 @@
         <Parameter Name="targetStateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetStateName">The name of the <see cref="T:System.Workflow.Activities.StateActivity" /> to transition to.</param>
-        <summary>Provides a transition to a specified <see cref="T:System.Workflow.Activities.StateActivity" /> using the name of the <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
+        <param name="targetStateName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="targetStateName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="T:System.Workflow.Activities.StateActivity" /> specified by <paramref name="targetStateName" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="SetState">
@@ -238,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,11 +199,9 @@
         <Parameter Name="targetState" Type="System.Workflow.Activities.StateActivity" />
       </Parameters>
       <Docs>
-        <param name="targetState">The <see cref="T:System.Workflow.Activities.StateActivity" /> to transition to.</param>
-        <summary>Provides a transition to a specified <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
+        <param name="targetState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="targetState" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="StateHistory">
@@ -262,23 +211,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of state activities that the state machine workflow instance has transitioned through.</summary>
-        <value>A collection of transitions that the <see cref="T:System.Workflow.Activities.StateActivity" /> has made.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property only returns the state history if the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is used. An `InvalidOperationException` occurs if the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is not installed.  If there is no state history for a newly created instance, state history is created without the instance being started.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StateMachineWorkflow">
@@ -288,24 +229,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.StateMachineWorkflowActivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the latest definition of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</summary>
-        <value>The latest definition of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property only returns a copy of the workflow definition and never the live instance tree. Therefore, the activity tree that is returned by this property cannot be used to query for run-time values.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">If the workflow has already completed, the current <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> cannot be retrieved, so the previous definition is retrieved.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="States">
@@ -315,17 +247,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Activities.StateActivity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of <see cref="T:System.Workflow.Activities.StateActivity" /> classes in the <see cref="System.Workflow.Activities.StateMachineWorkflowInstance.StateMachineWorkflow%2A" />.</summary>
-        <value>A list of <see cref="T:System.Workflow.Activities.StateActivity" /> classes in the <see cref="System.Workflow.Activities.StateMachineWorkflowInstance.StateMachineWorkflow%2A" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Workflow.Activities.StateMachineWorkflowInstance.StateMachineWorkflow%2A" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="WorkflowInstance">
@@ -335,15 +265,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.WorkflowInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current <see cref="T:System.Workflow.Runtime.WorkflowInstance" />.</summary>
-        <value>The current <see cref="T:System.Workflow.Runtime.WorkflowInstance" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

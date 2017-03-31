@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCookiesSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures properties for cookies used by a Web application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpCookiesSection class provides a way to programmatically access and modify the `httpCookies` section of a configuration file.  
-  
- It defines the settings applied by default to all cookies issued by the application, unless the code issuing the cookie overrides them.  
-  
- One objective of the `httpCookies` element is to support the use of `HttpOnly` cookies. `HttpOnly` cookies (cookies with the `HttpOnly` attribute) were introduced in Internet Explorer 6 to help mitigate the risk of cross-site scripting. The `HttpOnly` attribute prevents cookies from being accessed through client-side script. Any information contained in an `HttpOnly` cookie is less likely to be disclosed to a hacker or a malicious Web site. For more information, search MSDN (msdn.microsoft.com) for "HttpOnly."  
-  
-> [!NOTE]
->  The HttpCookiesSection can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
-  
-   
-  
-## Examples  
- The following code example shows how to obtain the HttpCookiesSection object from the configuration file of an existing Web application.  
-  
- [!code-vb[System.Web.Configuration.HttpCookiesSection#1](~/add/codesnippet/visualbasic/t-system.web.configurati_7_1.vb)]
- [!code-cs[System.Web.Configuration.HttpCookiesSection#1](~/add/codesnippet/csharp/t-system.web.configurati_7_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpCookiesSection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.HttpCookiesSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -68,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -80,19 +48,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the cookie domain name.</summary>
-        <value>The cookie domain name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the Domain property.  
-  
- [!code-vb[System.Web.Configuration.HttpCookiesSection#2](~/add/codesnippet/visualbasic/p-system.web.configurati_9_1.vb)]
- [!code-cs[System.Web.Configuration.HttpCookiesSection#2](~/add/codesnippet/csharp/p-system.web.configurati_9_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpOnlyCookies">
@@ -102,7 +60,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -114,25 +71,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the support for the browser's <see langword="HttpOnly" /> cookie is enabled.</summary>
-        <value>
-          <see langword="true" /> if support for the <see langword="HttpOnly" /> cookie is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `httpCookies` element supports the use of `HttpOnly` cookies. `HttpOnly` cookies (cookies with the `HttpOnly` attribute) were introduced in Internet Explorer 6 to help mitigate the risk of cross-site scripting. The `HttpOnly` attribute prevents cookies from being accessed through client-side script. Any information contained in an `HttpOnly` cookie is less likely to be disclosed to a hacker or a malicious Web site. For more information, search MSDN (msdn.microsoft.com) for "HttpOnly."  
-  
-   
-  
-## Examples  
- The following code example shows how to use the HttpOnlyCookies property.  
-  
- [!code-vb[System.Web.Configuration.HttpCookiesSection#4](~/add/codesnippet/visualbasic/p-system.web.configurati_227_1.vb)]
- [!code-cs[System.Web.Configuration.HttpCookiesSection#4](~/add/codesnippet/csharp/p-system.web.configurati_227_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -142,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,7 +101,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -173,25 +112,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether Secure Sockets Layer (SSL) communication is required.</summary>
-        <value>
-          <see langword="true" /> if SSL is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RequireSSL property enables or disables output of the secure cookie attribute as described in RFC 2109. When used by compliant browsers, the cookie will only be sent back over a connection using SSL/TLS. The default is `false`.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the RequireSSL property.  
-  
- [!code-vb[System.Web.Configuration.HttpCookiesSection#3](~/add/codesnippet/visualbasic/p-system.web.configurati_82_1.vb)]
- [!code-cs[System.Web.Configuration.HttpCookiesSection#3](~/add/codesnippet/csharp/p-system.web.configurati_82_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

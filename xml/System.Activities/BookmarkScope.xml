@@ -20,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Scopes a set of <see cref="T:System.Activities.Bookmark" /> objects that are categorized as operating under the same protocol.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a sealed class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +37,8 @@
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="id">A GUID scope identification number.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.BookmarkScope" /> class with the specified GUID scope identification number.</summary>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +55,8 @@
         <ReturnType>System.Activities.BookmarkScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default <see cref="T:System.Activities.BookmarkScope" />.</summary>
-        <value>The default <see cref="T:System.Activities.BookmarkScope" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +76,9 @@
         <Parameter Name="other" Type="System.Activities.BookmarkScope" />
       </Parameters>
       <Docs>
-        <param name="other">A bookmark scope object.</param>
-        <summary>Gets a value that indicates whether the current <see cref="T:System.Activities.BookmarkScope" /> and the specified <see cref="T:System.Activities.BookmarkScope" /> are the same.</summary>
-        <returns>
-          <see langword="true" /> if the bookmark scopes are the same; otherwise, <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates an identification number for the current <see cref="T:System.Activities.BookmarkScope" />.</summary>
-        <returns>A hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +114,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the GUID that identifies the current <see cref="T:System.Activities.BookmarkScope" />.</summary>
-        <value>A GUID.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +136,9 @@
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="context">The current activity execution environment.</param>
-        <param name="id">The GUID to assign to the <see cref="T:System.Activities.BookmarkScope" />.</param>
-        <summary>Initializes the current <see cref="T:System.Activities.BookmarkScope" /> using the specified GUID.</summary>
+        <param name="context">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +155,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current <see cref="T:System.Activities.BookmarkScope" /> has been initialized.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Activities.BookmarkScope" /> has been initialized; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

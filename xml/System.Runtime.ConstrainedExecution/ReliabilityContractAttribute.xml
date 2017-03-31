@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,26 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a contract for reliability between the author of some code, and the developers who have a dependency on that code.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ReliabilityContractAttribute attribute provides a mechanism for you to document your code, and to indicate what type of reliability guarantees you can make in the face of exceptional conditions that could potentially lead to an inconsistent state. In this context, exceptional conditions are defined as asynchronous exceptions that can be generated at run time by the common language runtime, such as aborted threads, out-of-memory situations, and stack overflows. You can apply the ReliabilityContractAttribute attribute to assemblies, types, and methods.  
-  
- Use this attribute with the <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration to define a reliability contract by documenting the level of reliability in a particular piece of code.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the ReliabilityContractAttribute attribute to document the level of reliability of an assembly.  
-  
- [!code-cpp[FxCop.Reliability.ReliabilityContract#1](~/add/codesnippet/cpp/t-system.runtime.constra_1_1.cpp)]
- [!code-cs[FxCop.Reliability.ReliabilityContract#1](~/add/codesnippet/csharp/t-system.runtime.constra_1_1.cs)]
- [!code-vb[FxCop.Reliability.ReliabilityContract#1](~/add/codesnippet/visualbasic/t-system.runtime.constra_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,28 +32,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="consistencyGuarantee" Type="System.Runtime.ConstrainedExecution.Consistency" />
         <Parameter Name="cer" Type="System.Runtime.ConstrainedExecution.Cer" />
       </Parameters>
       <Docs>
-        <param name="consistencyGuarantee">One of the <see cref="T:System.Runtime.ConstrainedExecution.Consistency" /> values.</param>
-        <param name="cer">One of the <see cref="T:System.Runtime.ConstrainedExecution.Cer" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute" /> class with the specified <see cref="T:System.Runtime.ConstrainedExecution.Consistency" /> guarantee and <see cref="T:System.Runtime.ConstrainedExecution.Cer" /> value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of the ReliabilityContractAttribute constructor to create a constrained execution region and a `finally` block that is guaranteed to execute.  
-  
- [!code-vb[System.Runtime.ConstrainedExecution#1](~/add/codesnippet/visualbasic/e6278308-6a8f-4839-9622-_1.vb)]
- [!code-cs[System.Runtime.ConstrainedExecution#1](~/add/codesnippet/csharp/e6278308-6a8f-4839-9622-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="consistencyGuarantee">To be added.</param>
+        <param name="cer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cer">
@@ -77,15 +57,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Cer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value that determines the behavior of a method, type, or assembly when called under a Constrained Execution Region (CER).</summary>
-        <value>One of the <see cref="T:System.Runtime.ConstrainedExecution.Cer" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,15 +80,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Consistency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the value of the <see cref="T:System.Runtime.ConstrainedExecution.Consistency" /> reliability contract.</summary>
-        <value>One of the <see cref="T:System.Runtime.ConstrainedExecution.Consistency" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

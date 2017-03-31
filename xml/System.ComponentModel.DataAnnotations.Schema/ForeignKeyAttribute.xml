@@ -3,7 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForeignKeyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Denotes a property used as a foreign key in a relationship. The annotation may be placed on the foreign key property and specify the associated navigation property name, or placed on a navigation property and specify the associated foreign key name.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +31,20 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">If you add the ForeigKey attribute to a foreign key property, you should specify the name of the associated navigation property. If you add the ForeigKey attribute to a navigation property, you should specify the name of the associated foreign key(s). If a navigation property has multiple foreign keys, use comma to separate the list of foreign key names. For more information, see [Code First Data Annotations](http://msdn.microsoft.com/data/jj591583#relationships).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" /> class.</summary>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,15 +54,20 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If you add the ForeigKey attribute to a foreign key property, you should specify the name of the associated navigation property. If you add the ForeigKey attribute to a navigation property, you should specify the name of the associated foreign key(s). If a navigation property has multiple foreign keys, use comma to separate the list of foreign key names. For more information, see [Code First Data Annotations](http://msdn.microsoft.com/data/jj591583#relationships).</summary>
-        <value>The name of the associated navigation property or the associated foreign key property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

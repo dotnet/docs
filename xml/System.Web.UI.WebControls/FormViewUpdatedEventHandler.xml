@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewUpdatedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,31 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Web.UI.WebControls.FormViewUpdatedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" /> event of a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.FormView> control raises the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event when an Update button (a button with its `CommandName` property set to "Update") within the control is clicked, but after the <xref:System.Web.UI.WebControls.FormView> control updates the record. This allows you to provide an event-handling method that performs a custom routine, such as checking the results of an update operation, whenever this event occurs.  
-  
- When you create a FormViewUpdatedEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following example demonstrates how to programmatically add a FormViewUpdatedEventHandler delegate to the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event of a <xref:System.Web.UI.WebControls.FormView> control.  
-  
- [!code-vb[FormViewUpdatedEventHandler#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_397_1.aspx)]
- [!code-cs[FormViewUpdatedEventHandler#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_397_1.aspx)]  
-  
- The following example demonstrates how to declaratively add a FormViewUpdatedEventHandler delegate to the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event of a <xref:System.Web.UI.WebControls.FormView> control.  
-  
- [!code-vb[FormViewUpdatedEventArgs#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_397_2.aspx)]
- [!code-cs[FormViewUpdatedEventArgs#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_397_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

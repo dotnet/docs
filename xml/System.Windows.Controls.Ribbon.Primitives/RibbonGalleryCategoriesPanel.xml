@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a panel that arranges <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> objects.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The size that the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" /> needs to position its child elements.</param>
-        <summary>Positions and sizes the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />.</summary>
-        <returns>The actual size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />.</returns>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,17 +77,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether scrolling on the horizontal axis is possible. <see langword="false" /> in all cases for <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />.</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When set, the value of this property is always coerced to `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanVerticallyScroll">
@@ -108,17 +100,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether scrolling on the vertical axis is possible. <see langword="true" /> in all cases for <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When set, the value of this property is always coerced to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentHeight">
@@ -134,8 +118,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The vertical size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +136,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The horizontal size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +159,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The horizontal offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +178,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content down by one line.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +196,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content left by one line.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +214,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content right by one line.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +232,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content up by one line.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,10 +253,10 @@
         <Parameter Name="rectangle" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="visual">The object to make visible.</param>
-        <param name="rectangle">A bounding rectangle that identifies the coordinate space to be made visible.</param>
-        <summary>Forces content to scroll until the coordinate space of a <see cref="T:System.Windows.Media.Visual" /> object is visible.</summary>
-        <returns>The rectangle that is visible.</returns>
+        <param name="visual">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +276,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />.</param>
-        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" /> in preparation of arranging them during the <see cref="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ArrangeOverride%2A" /> pass.</summary>
-        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />.</returns>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,7 +296,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content down the number of lines indicated by the <see cref="System.Windows.SystemParameters.WheelScrollLines%2A" /> property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +314,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content left the number of lines indicated by the <see cref="System.Windows.SystemParameters.WheelScrollLines%2A" /> property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,7 +332,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content right the number of lines indicated by the <see cref="System.Windows.SystemParameters.WheelScrollLines%2A" /> property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,7 +350,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content up the number of lines indicated by the <see cref="System.Windows.SystemParameters.WheelScrollLines%2A" /> property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,15 +368,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invoked when a layout pass begins.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method invalidates the measurements of elements in the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageDown">
@@ -409,7 +386,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content down by one page.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,7 +404,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content left by one page.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,7 +422,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content right by one page.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,7 +440,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the content up by one page.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,8 +462,8 @@
         <ReturnType>System.Windows.Controls.ScrollViewer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Controls.ScrollViewer" /> element that controls scrolling behavior.</summary>
-        <value>A <see cref="T:System.Windows.Controls.ScrollViewer" /> element that controls scrolling behavior.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,8 +483,8 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">The amount that content is horizontally offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
-        <summary>Sets the amount that content is horizontal offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,8 +504,8 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">The amount that content is vertically offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
-        <summary>Sets the amount that content is vertical offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,8 +522,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> that this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" /> hosts items for.</summary>
-        <value>The <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> that this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" /> hosts items for.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,8 +545,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The vertical offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -586,8 +563,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The vertical size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,8 +581,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The horizontal size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

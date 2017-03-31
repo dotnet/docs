@@ -10,15 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the button clicked by a user in the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ScrollBarButtonType enumeration is used with the <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ButtonType%2A> property, and allows the developer to determine what type of scrollbar button the end-user clicked on.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LargeDecrement">
@@ -34,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll view was decreased by a large decrement, by clicking the area beneath a scrolling thumb for a vertical scrollbar, or to the left of a scrolling thumb for a horizontal scrollbar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIncrement">
@@ -50,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The scroll view was increased by a large increment, by clicking the area above a scrolling thumb for a vertical scrollbar, or to the right of a scrolling thumb for a horizontal scrollbar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDecrement">
@@ -66,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A down or left arrow button was clicked to decrease the scroll view by a small decrement.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIncrement">
@@ -82,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An up or right arrow button was clicked to increase the scroll view by a small increment.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbTracker">
@@ -98,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The tracker button (also known as the scrollbar thumb) was clicked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ZoomReset">
@@ -114,7 +107,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The zoom or reset button was clicked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

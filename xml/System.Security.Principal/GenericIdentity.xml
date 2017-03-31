@@ -3,39 +3,30 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GenericIdentity extends System.Security.Claims.ClaimsIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.GenericIdentity" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.Claims</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Claims.ClaimsIdentity</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces />
   <Attributes>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a generic user.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An identity object represents the user on whose behalf the code is running.  
-  
-   
-  
-## Examples  
- The following example shows the use of members of the GenericIdentity class.  
-  
- [!code-cpp[System.Security.Principal.GenericIdentity2#1](~/add/codesnippet/cpp/t-system.security.princi_1_1.cpp)]
- [!code-cs[System.Security.Principal.GenericIdentity2#1](~/add/codesnippet/csharp/t-system.security.princi_1_1.cs)]
- [!code-vb[System.Security.Principal.GenericIdentity2#1](~/add/codesnippet/visualbasic/t-system.security.princi_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,15 +35,24 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.#ctor(System.Security.Principal.GenericIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="identity" Type="System.Security.Principal.GenericIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">The object from which to construct the new instance of <see cref="T:System.Security.Principal.GenericIdentity" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.GenericIdentity" /> class by using the specified <see cref="T:System.Security.Principal.GenericIdentity" /> object.</summary>
+        <param name="identity">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,17 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -75,21 +83,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the user on whose behalf the code is running.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.GenericIdentity" /> class representing the user with the specified name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the GenericIdentity constructor. This code example is part of a larger example provided for the <xref:System.Security.Principal.GenericIdentity> class.  
-  
- [!code-cpp[System.Security.Principal.GenericIdentity2#2](~/add/codesnippet/cpp/m-system.security.princi_0_1.cpp)]
- [!code-cs[System.Security.Principal.GenericIdentity2#2](~/add/codesnippet/csharp/m-system.security.princi_0_1.cs)]
- [!code-vb[System.Security.Principal.GenericIdentity2#2](~/add/codesnippet/visualbasic/m-system.security.princi_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,9 +94,17 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,26 +116,10 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the user on whose behalf the code is running.</param>
-        <param name="type">The type of authentication used to identify the user.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.GenericIdentity" /> class representing the user with the specified name and authentication type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the <xref:System.Security.Principal.GenericIdentity.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Principal.GenericIdentity> class.  
-  
- [!code-cpp[System.Security.Principal.GenericIdentity2#3](~/add/codesnippet/cpp/66b6ef1b-c011-4f9f-bbd5-_1.cpp)]
- [!code-cs[System.Security.Principal.GenericIdentity2#3](~/add/codesnippet/csharp/66b6ef1b-c011-4f9f-bbd5-_1.cs)]
- [!code-vb[System.Security.Principal.GenericIdentity2#3](~/add/codesnippet/visualbasic/66b6ef1b-c011-4f9f-bbd5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
@@ -140,28 +128,25 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of authentication used to identify the user.</summary>
-        <value>The type of authentication used to identify the user.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the AuthenticationType property. This code example is part of a larger example provided for the <xref:System.Security.Principal.GenericIdentity> class.  
-  
- [!code-cpp[System.Security.Principal.GenericIdentity2#5](~/add/codesnippet/cpp/p-system.security.princi_7_1.cpp)]
- [!code-cs[System.Security.Principal.GenericIdentity2#5](~/add/codesnippet/csharp/p-system.security.princi_7_1.cs)]
- [!code-vb[System.Security.Principal.GenericIdentity2#5](~/add/codesnippet/visualbasic/p-system.security.princi_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Claims">
@@ -170,15 +155,24 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.Claims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all claims for the user represented by this generic identity.</summary>
-        <value>A collection of claims for this <see cref="T:System.Security.Principal.GenericIdentity" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,16 +182,25 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Claims.ClaimsIdentity</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new object that is a copy of the current instance.</summary>
-        <returns>A copy of the current instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,17 +210,24 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user has been authenticated.</summary>
-        <value>
-          <see langword="true" /> if the user was has been authenticated; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,28 +237,25 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user's name.</summary>
-        <value>The name of the user on whose behalf the code is being run.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code shows the use of the Name property. This code example is part of a larger example provided for the <xref:System.Security.Principal.GenericIdentity> class.  
-  
- [!code-cpp[System.Security.Principal.GenericIdentity2#4](~/add/codesnippet/cpp/p-system.security.princi_10_1.cpp)]
- [!code-cs[System.Security.Principal.GenericIdentity2#4](~/add/codesnippet/csharp/p-system.security.princi_10_1.cs)]
- [!code-vb[System.Security.Principal.GenericIdentity2#4](~/add/codesnippet/visualbasic/p-system.security.princi_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

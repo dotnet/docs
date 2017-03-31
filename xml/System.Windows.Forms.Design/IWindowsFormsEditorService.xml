@@ -4,37 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IWindowsFormsEditorService" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an interface for a <see cref="T:System.Drawing.Design.UITypeEditor" /> to display Windows Forms or to display a control in a drop-down area from a property grid control in design mode.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IWindowsFormsEditorService is only available through the <xref:System.IServiceProvider.GetService%2A> method of the <xref:System.Windows.Forms.PropertyGrid> control.  
-  
- This service is typically used to display a form from the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method of a <xref:System.Drawing.Design.UITypeEditor>. When a <xref:System.Windows.Forms.PropertyGrid> invokes the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method of a <xref:System.Drawing.Design.UITypeEditor> to provide a user interface for editing the value of a property, the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method is passed a reference to an <xref:System.IServiceProvider> that can typically provide an instance of the IWindowsFormsEditorService. The methods of this service can be used to display dialog boxes and forms, or to show a <xref:System.Windows.Forms.Control> within a drop down container that is shown on top of the property grid near the area of the value field whose value is being edited.  
-  
-   
-  
-## Examples  
- The following example provides an example <xref:System.Drawing.Design.UITypeEditor> that uses an IWindowsFormsEditorService to display a <xref:System.Windows.Forms.Form> for user input.  
-  
- [!code-cs[WinFormsEditorServiceDialogExample#1](~/add/codesnippet/csharp/t-system.windows.forms.d_69_1.cs)]
- [!code-cpp[WinFormsEditorServiceDialogExample#1](~/add/codesnippet/cpp/t-system.windows.forms.d_69_1.cpp)]
- [!code-vb[WinFormsEditorServiceDialogExample#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_69_1.vb)]  
-  
- The following example provides an example <xref:System.Drawing.Design.UITypeEditor> that uses an IWindowsFormsEditorService to display a drop-down <xref:System.Windows.Forms.UserControl> for user input.  
-  
- [!code-cpp[WinFormsEditorServiceDropDownExample#1](~/add/codesnippet/cpp/t-system.windows.forms.d_69_2.cpp)]
- [!code-cs[WinFormsEditorServiceDropDownExample#1](~/add/codesnippet/csharp/t-system.windows.forms.d_69_2.cs)]
- [!code-vb[WinFormsEditorServiceDropDownExample#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_69_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CloseDropDown">
@@ -44,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,15 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes any previously opened drop down control area.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method closes the drop down container area for a control that has been shown using the <xref:System.Windows.Forms.Design.IWindowsFormsEditorService.DropDownControl%2A> method, and releases the drop down container's reference to the control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownControl">
@@ -70,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,18 +46,9 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">The drop down list <see cref="T:System.Windows.Forms.Control" /> to open.</param>
-        <summary>Displays the specified control in a drop down area below a value field of the property grid that provides this service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method of a <xref:System.Drawing.Design.UITypeEditor> can call this method to display a specified control in a drop down area over the property grid hosting the editor which uses this service.  
-  
- When possible, the dimensions of the control will be maintained. If this is not possible due to the screen layout, the control may be resized. To ensure that the control resizes neatly, you should implement docking and anchoring, and possibly any resize event-handler update code. If the user performs an action that causes the drop down to close, the control will be hidden and disposed by garbage collection if there is no other stored reference to the control.  
-  
- ]]></format>
-        </remarks>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -101,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,17 +67,10 @@
         <Parameter Name="dialog" Type="System.Windows.Forms.Form" />
       </Parameters>
       <Docs>
-        <param name="dialog">The <see cref="T:System.Windows.Forms.Form" /> to display.</param>
-        <summary>Shows the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
-        <returns>A <see cref="T:System.Windows.Forms.DialogResult" /> indicating the result code returned by the <see cref="T:System.Windows.Forms.Form" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method displays the specified form.  
-  
- ]]></format>
-        </remarks>
+        <param name="dialog">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

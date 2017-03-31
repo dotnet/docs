@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.OverrideMode" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the override behavior of a configuration element for configuration elements in child directories.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the OverrideMode enumeration values to set the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property of the <xref:System.Configuration.SectionInformation> class. You set this property in order to programmatically specify override behavior of a configuration element or group. To declaratively set the override behavior for all configuration elements inside a  element, use the `allowOverride` attribute. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property gives you more granular control over the elements inside a `location` element.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Allow">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.OverrideMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration setting of the element or group can be overridden by configuration settings that are in child directories.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deny">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.OverrideMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration setting of the element or group cannot be overridden by configuration settings that are in child directories.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.OverrideMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The configuration setting of the element or group will be overridden by configuration settings that are in child directories if explicitly allowed by a parent element of the current configuration element or group. Permission to override is specified by using the <see langword="OverrideMode" /> attribute.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

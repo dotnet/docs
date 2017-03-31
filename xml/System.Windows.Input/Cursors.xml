@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Cursors" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a set of default cursors.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static class defines a set of default cursors common to applications.  
-  
- The various static properties defining cursors are not directly usable in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)], but are indirectly used through two possible mechanisms:  
-  
--   The <xref:System.Windows.Input.Cursor> class performs type conversion on any [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] attribute that takes type <xref:System.Windows.Input.Cursor>, such that a value of the <xref:System.Windows.Input.CursorType> enumeration specified as the attribute value will evaluate to one of the static Cursors properties.  
-  
--   A static property value can be used through the [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AppStarting">
@@ -36,27 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Input.Cursor" /> that appears when an application is starting.</summary>
-        <value>The AppStarting cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AppStarting typically indicates that the system is loading information, but the user interface can handle input.  
-  
-<a name="xamlTextUsage_AppStarting"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Arrow">
@@ -66,27 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Arrow <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The arrow cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The arrow <xref:System.Windows.Input.Cursor> is typically the default cursor.  
-  
-<a name="xamlTextUsage_Arrow"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrowCD">
@@ -96,26 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the arrow with a compact disk <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The arrowCd cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ArrowCD"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cross">
@@ -125,27 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the crosshair <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The Crosshair cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This cursor typically appears over regions in which a drawing operation can be performed.  
-  
-<a name="xamlTextUsage_Cross"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -155,27 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a hand <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The hand cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The hand <xref:System.Windows.Input.Cursor> typically indicates the pointer is over a link.  
-  
-<a name="xamlTextUsage_Hand"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -185,27 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a help <see cref="T:System.Windows.Input.Cursor" /> which is a combination of an arrow and a question mark.</summary>
-        <value>The help cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, this cursor is displayed when context-sensitive help is available.  
-  
-<a name="xamlTextUsage_Help"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IBeam">
@@ -215,26 +130,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an I-beam <see cref="T:System.Windows.Input.Cursor" />, which is used to show where the text cursor appears when the mouse is clicked.</summary>
-        <value>The IBeam cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_IBeam"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -244,26 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Input.Cursor" /> with which indicates that a particular region is invalid for a given operation.</summary>
-        <value>The No cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_No"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -273,27 +166,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a special cursor that is invisible.</summary>
-        <value>The none cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The None cursor provides a means of hiding the cursor.  
-  
-<a name="xamlTextUsage_None"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pen">
@@ -303,26 +184,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a pen <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The pen cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Pen"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollAll">
@@ -332,26 +202,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll all <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The scroll all cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollAll"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollE">
@@ -361,26 +220,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll east <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A scroll east cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollE"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollN">
@@ -390,26 +238,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll north <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A scroll north cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollN"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollNE">
@@ -419,15 +256,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll northeast cursor.</summary>
-        <value>A scroll northeast <see cref="T:System.Windows.Input.Cursor" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,26 +274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll north/south cursor.</summary>
-        <value>A scroll north/south <see cref="T:System.Windows.Input.Cursor" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollNS"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollNW">
@@ -467,26 +292,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a scroll northwest cursor.</summary>
-        <value>The scroll northwest <see cref="T:System.Windows.Input.Cursor" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollNW"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollS">
@@ -496,26 +310,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll south <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The scroll south cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollS"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollSE">
@@ -525,26 +328,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a south/east scrolling <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The south/east scrolling cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollSE"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollSW">
@@ -554,26 +346,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll southwest <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The scroll southwest cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollSW"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollW">
@@ -583,26 +364,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scroll west <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>The scroll west cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollW"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollWE">
@@ -612,26 +382,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a west/east scrolling <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A west/east scrolling cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_ScrollWE"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeAll">
@@ -641,26 +400,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a four-headed sizing <see cref="T:System.Windows.Input.Cursor" />, which consists of four joined arrows that point north, south, east, and west.</summary>
-        <value>A four-headed sizing cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_SizeAll"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeNESW">
@@ -670,26 +418,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a two-headed northeast/southwest sizing <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A two-headed northeast/southwest sizing cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_SizeNESW"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeNS">
@@ -699,26 +436,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a two-headed north/south sizing <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A two-headed north/south sizing cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_SizeNS"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeNWSE">
@@ -728,26 +454,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a two-headed northwest/southeast sizing <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A two-headed northwest/southwest sizing cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_SizeNWSE"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeWE">
@@ -757,15 +472,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a two-headed west/east sizing <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A two-headed west/east sizing cursor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,26 +490,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an up arrow <see cref="T:System.Windows.Input.Cursor" />, which is typically used to identify an insertion point.</summary>
-        <value>An up arrow cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_UpArrow"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -805,27 +508,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a wait (or hourglass) <see cref="T:System.Windows.Input.Cursor" />.</summary>
-        <value>A wait cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This <xref:System.Windows.Input.Cursor> typically indicates that the application is busy performing an operation.  
-  
-<a name="xamlTextUsage_Wait"></a>   
-## XAML Text Usage  
- See Remark on <xref:System.Windows.Input.Cursors>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpRequestMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,43 +16,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides access to the HTTP request to access and respond to the additional information made available for requests over the HTTP protocol.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a general-purpose class that gives the developer direct access to the HTTP request information, which can be used for encapsulating HTTP-specific information. One example of the use of this class is to support services implemented in accordance with the Representational State Transfer (REST) architecture.  
-  
- This class enables support for the following scenarios:  
-  
--   Varies the HTTP verb used for each request.  
-  
--   Allows HTTP header (key, value) pairs to be set and queried by request.  
-  
--   Allows the query string to be specified for an HTTP request.  
-  
- This class can be used by <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and related classes.  
-  
- For incoming messages, this property is added to messages.  
-  
- For outgoing messages, this property causes the following to happen:  
-  
--   <xref:System.Net.HttpWebRequest.Method%2A> is set to <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.Method%2A>.  
-  
--   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString%2A> is appended to the <xref:System.Net.HttpWebRequest.RequestUri%2A>.  
-  
--   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.Headers%2A> is added to the HTTP headers set to be transmitted.  
-  
-   
-  
-## Examples  
- The following code shows how to set several of the properties in an instance of this class and incorporate the instance into a message.  
-  
- [!code-vb[S_Pox#3](~/add/codesnippet/visualbasic/t-system.servicemodel.ch_13_1.vb)]
- [!code-cs[S_Pox#3](~/add/codesnippet/csharp/t-system.servicemodel.ch_13_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,34 +27,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpRequestMessageProperty" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes the object as follows:  
-  
--   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.Method%2A> = `POST`.  
-  
--   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString%2A> is set to the empty string.  
-  
--   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody%2A> = `false`.  
-  
-   
-  
-## Examples  
- The following code shows how to instantiate this class from a message without explicitly calling the constructor.  
-  
- [!code-vb[S_Pox#0](~/add/codesnippet/visualbasic/m-system.servicemodel.ch_36_1.vb)]
- [!code-cs[S_Pox#0](~/add/codesnippet/csharp/m-system.servicemodel.ch_36_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -99,31 +43,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the HTTP headers from the HTTP request.</summary>
-        <value>Returns a <see cref="T:System.Net.WebHeaderCollection" /> that contains the HTTP headers in the HTTP request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are situations in which this property is not available and attempts to access it may cause an exception. This can happen when [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] is hosted in IIS, after the HTTP request is complete, especially in one-way scenarios where the reply is sent back before the message has become available.  
-  
-   
-  
-## Examples  
- The following code shows how to use this property to add custom headers to a message.  
-  
- [!code-vb[S_Pox#3](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_69_1.vb)]
- [!code-cs[S_Pox#3](~/add/codesnippet/csharp/p-system.servicemodel.ch_69_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -133,32 +62,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the HTTP verb for the HTTP request.</summary>
-        <value>The HTTP verb for the HTTP request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] uses the POST verb for HTTP messages. The GET verb is used by [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] to display help information when accessing a ServiceHost's base address. This is useful for checking whether a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service is active when using a Web browser. Other methods defined by the [HTTP RFC](http://go.microsoft.com/fwlink/?LinkId=96616) are PUT, DELETE, HEAD, OPTIONS, TRACE, and CONNECT. These methods have special behaviors when interoperating with other services.  
-  
-   
-  
-## Examples  
- The following code gets an instance of this class from the message and then dispatches to different methods based on this property.  
-  
- [!code-cs[PoxSample#0](~/add/codesnippet/csharp/p-system.servicemodel.ch_50_1.cs)]
- [!code-vb[PoxSample#0](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_50_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -168,15 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the message property associated with the <see cref="T:System.ServiceModel.Channels.HttpRequestMessageProperty" /> class.</summary>
-        <value>The value "httpRequest".</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,24 +100,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the query string for the HTTP request.</summary>
-        <value>The query string from the HTTP request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are many well-known security attacks based on an HTTP request's query string (for example, the SQL injection attack). Always rigorously validate the parameters contained in the query string. If you use the values without validation, a well-known security hole is open.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressEntityBody">
@@ -214,32 +119,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the body of the message is ignored and only the headers are sent.</summary>
-        <value>
-          <see langword="true" /> if the message body is suppressed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used for empty message requests: for example, a service that accepts a GET request without a message body. In this case, when building the <xref:System.ServiceModel.Channels.HttpRequestMessageProperty> object for the response message, set the SuppressEntityBody property to `true`.  
-  
- When interoperating with non-[!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] services, it is important to note that certain verbs are expected to contain a message body according to the HTTP standard; these include PUT and POST. Other verbs are expected to suppress the message body; these include GET and HEAD.  
-  
-   
-  
-## Examples  
- [!code-vb[S_Pox#2](~/add/codesnippet/visualbasic/p-system.servicemodel.ch_68_1.vb)]
- [!code-cs[S_Pox#2](~/add/codesnippet/csharp/p-system.servicemodel.ch_68_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Channels.IMessageProperty.CreateCopy">
@@ -249,6 +138,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,8 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns a copy of the current object.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.IMessageProperty" /> object that represents a copy of the current object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

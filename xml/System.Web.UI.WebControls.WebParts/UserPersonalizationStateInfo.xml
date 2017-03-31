@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the per-user personalization information for a page and a user. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class can be used on a per-user basis to determine statistical information about an individual user's personalization settings.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,36 +32,13 @@
         <Parameter Name="lastActivityDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="path">The page that the information applies to. <c>path</c> is an application-relative (using tilde syntax) virtual path.</param>
-        <param name="lastUpdatedDate">The last date and time that the user information for a page was updated.</param>
-        <param name="size">The size, in bytes, of the per-user state information for the page.</param>
-        <param name="username">The user to whom the personalization information for the page applies.</param>
-        <param name="lastActivityDate">The last time the user was active in the ASP.NET application.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `lastActivityDate` parameter indicates the last time the user was active in the ASP.NET application. This date can be updated by other ASP.NET features, such as Membership and Profile.  
-  
- `path` and `username` are trimmed if non-`null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="path" />, after trimming, is an empty string ("").  
-  
- \- or -  
-  
- <paramref name="username" />, after trimming, is an empty string ("").</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="path" /> is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="username" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="size" /> is negative.</exception>
+        <param name="path">To be added.</param>
+        <param name="lastUpdatedDate">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="username">To be added.</param>
+        <param name="lastActivityDate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -80,23 +48,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last time the user was active in the ASP.NET application associated with a page.</summary>
-        <value>The last time the user was active in the ASP.NET application associated with a page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be used as an indicator of whether a user is still active in the application as a whole. This date can be updated by other ASP.NET features, such as Membership and Profile.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Username">
@@ -106,23 +66,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the user name to which the personalization information for a page applies.</summary>
-        <value>The user name to which the personalization information for a page applies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the Username property to find statistical personalization state information for a given user.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

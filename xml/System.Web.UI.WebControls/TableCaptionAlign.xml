@@ -4,34 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableCaptionAlign" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the horizontal or vertical placement of the text to render as the HTML caption element.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TableCaptionAlign enumeration represents the horizontal or vertical placement of the HTML caption element in controls that can be rendered as tables, such as <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, or <xref:System.Web.UI.WebControls.Calendar>. For example, the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property uses these enumeration values to set the caption alignment in a <xref:System.Web.UI.WebControls.Table> control.  
-  
- If you specify NotSet, the browser in which the control is rendered determines where to align the caption.  
-  
- The <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property specifies the position of the caption element with respect to controls that can be rendered as tables. The <xref:System.Web.UI.WebControls.Table.Caption%2A> property specifies the text to display in the caption element. Assistive technology devices can use the description provided by the <xref:System.Web.UI.WebControls.Table.Caption%2A> property to make the control more accessible. For example, a screen reader device might read the caption to the user to provide them with a description of the table.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the TableCaptionAlign enumeration to set the <xref:System.Web.UI.WebControls.GridView.CaptionAlign%2A> property in a <xref:System.Web.UI.WebControls.Table> control. The <xref:System.Web.UI.WebControls.Table> control contains <xref:System.Web.UI.WebControls.TableRow> objects that display City and ZIP Code values.  
-  
- [!code-cs[TableCaptionAlignEnumeration#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_264_1.aspx)]
- [!code-vb[TableCaptionAlignEnumeration#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_264_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -41,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The caption element is aligned with the bottom of the table.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -58,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The caption element is aligned with the left side of the table.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -75,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The caption alignment is not set. The browser that renders the caption determines where to align the caption.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -92,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The caption element is aligned with the right side of the table.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -109,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The caption element is aligned with the top of the table.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

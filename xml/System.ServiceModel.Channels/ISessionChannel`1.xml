@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ISessionChannel`1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -16,18 +16,9 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="TSession">The type of <see cref="T:System.ServiceModel.Channels.ISession" /> associated with the cannel.</typeparam>
-    <summary>Defines the interface that associates a channel with a specific type of session.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ISessionChannel(TSession) interface is the base interface for session-based channels. It associates the type of session with the channel by setting the generic type parameter `TSession` to a type that implements the <xref:System.ServiceModel.Channels.ISession> interface in a way that reflects its role in the message exchange. For example, the `TSession` is set to <xref:System.ServiceModel.Channels.IInputSession> for an incoming session on the receiving side of a one-way communication, to <xref:System.ServiceModel.Channels.IOutputSession> for an outgoing session on the sending side of a one-way communication, and to <xref:System.ServiceModel.Channels.IDuplexSession> for a duplex session for a bi-directional communication pattern.  
-  
- The ISessionChannel(TSession) interface provides a <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property to retrieve the session with which the channel is associated.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TSession">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Session">
@@ -37,23 +28,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TSession</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of session associated with this channel.</summary>
-        <value>The type of <see cref="T:System.ServiceModel.Channels.ISession" /> associated with this channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This returns the generic parameter `TSession` used to define the interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,14 +3,23 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketCloseStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketCloseStatus" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
+    <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents well known WebSocket close codes as defined in [section 11.7](http://www.rfc-editor.org/rfc/rfc6455.txt) of the WebSocket protocol spec.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -20,14 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No error specified.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndpointUnavailable">
@@ -36,14 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.EndpointUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1001) Indicates an endpoint is being removed. Either the server or client will become unavailable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalServerError">
@@ -52,14 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InternalServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The connection will be closed by the server because of an error on the server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMessageType">
@@ -68,14 +104,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InvalidMessageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1003) The client or server is terminating the connection because it cannot accept the data type it received.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPayloadData">
@@ -84,14 +129,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InvalidPayloadData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1007) The client or server is terminating the connection because it has received data inconsistent with the message type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MandatoryExtension">
@@ -100,14 +154,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.MandatoryExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1010) The client is terminating the connection because it expected the server to negotiate an extension.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageTooBig">
@@ -116,14 +179,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.MessageTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1004) Reserved for future use.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NormalClosure">
@@ -132,14 +204,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.NormalClosure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1000) The connection has closed after the request was fulfilled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PolicyViolation">
@@ -148,14 +229,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.PolicyViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1008) The connection will be closed because an endpoint has received a message that violates its policy.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProtocolError">
@@ -164,14 +254,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.ProtocolError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(1002) The client or server is terminating the connection because of a protocol error.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,22 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageState" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the status of a message.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- As the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read/written/copied when in the Created state. Other states are Read, Written and Copied, which means that the respective action has been performed already once.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Closed">
@@ -29,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message has been closed and can no longer be accessed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Copied">
@@ -46,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message has been copied.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -63,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message has been created.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -80,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message is being read.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Written">
@@ -97,14 +90,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message has been written.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

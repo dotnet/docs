@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Flags for controlling the project load.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a "flags" enum, allowing future settings to be added in an additive, non breaking fashion.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -39,7 +32,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Normal load. This is the default.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreMissingImports">
@@ -55,7 +48,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ignore nonexistent targets files when evaluating the project.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RecordDuplicateButNotCircularImports">
@@ -71,7 +64,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that imports including duplicate, but not circular, imports on the <c>ImportsIncludingDuplicates</c> property should be recorded</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RejectCircularImports">
@@ -87,7 +80,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that an exception will be thrown if any circular imports are detected</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

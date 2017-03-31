@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TitleFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the title format for the displayed month in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TitleFormat enumeration represents the different title formats for the <xref:System.Web.UI.WebControls.Calendar> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to change the calendar title from the default format (`MonthYear`) to the `Month` format. To run the example, create a Web Forms page named `WebForm1`, and replace the `Page_load` method with the example code.  
-  
- [!code-cs[TitleFormat#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_374_1.cs)]
- [!code-vb[TitleFormat#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_374_1.vb)]  
-  
- [!code-vb[CalendarTitleFormat#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_374_2.aspx)]
- [!code-cs[CalendarTitleFormat#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_374_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Month">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TitleFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays the title with the month but not the year (for example, "January").</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MonthYear">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TitleFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Displays the title with both the month and the year (for example, "January 2000").</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

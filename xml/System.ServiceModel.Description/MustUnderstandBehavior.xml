@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MustUnderstandBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,17 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Instructs [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] to disable the mandatory processing of headers not in the <see cref="System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A" /> collection that must be understood according to the SOAP 1.1 and 1.2 specifications.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client or service runtime throws an exception when it encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=fullName> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=fullName> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=fullName> property for the message.  
-  
- To prevent this behavior, use the MustUnderstandBehavior and set the <xref:System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A> property to `false`. Typically, this is used in scenarios where the message content is meant to be relayed somewhere else and not processed, such as a router service.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,23 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="validate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="validate">A value that specifies whether to enforce validation of <see langword="mustUnderstand" /> headers.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MustUnderstandBehavior" /> class using the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Pass `false` as the `validate` parameter to this constructor to prevent an exception from being thrown when the runtime encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=fullName> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=fullName> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=fullName> property for the message.  
-  
- ]]></format>
-        </remarks>
+        <param name="validate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters">
@@ -62,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,17 +54,10 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to which the behavior applies.</param>
-        <param name="bindingParameters">The binding parameters for the behavior.</param>
-        <summary>Supports behavior functionality.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implements <xref:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters%2A> to support behavior functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="bindingParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior">
@@ -93,7 +67,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,17 +77,10 @@
         <Parameter Name="behavior" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to which the behavior applies.</param>
-        <param name="behavior">The client runtime to set.</param>
-        <summary>Assigns the value of <see cref="System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A" /> to the <see cref="System.ServiceModel.Dispatcher.ClientRuntime.ValidateMustUnderstand%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implements the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A> method to support behavior functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior">
@@ -124,7 +90,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,17 +100,10 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to which the behavior applies.</param>
-        <param name="endpointDispatcher">The dispatcher to set.</param>
-        <summary>Assigns the value of <see cref="System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand%2A" /> to the <see cref="System.ServiceModel.Dispatcher.DispatchRuntime.ValidateMustUnderstand%2A" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implements the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior%2A> to support behavior functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceEndpoint">To be added.</param>
+        <param name="endpointDispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.Validate">
@@ -155,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,16 +122,9 @@
         <Parameter Name="serviceEndpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">The endpoint to validate.</param>
-        <summary>Supports behavior functionality.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implements the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%2A> method to support behavior functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="serviceEndpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateMustUnderstand">
@@ -184,24 +134,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether to ensure that a header is understood according to the SOAP 1.1 and 1.2 specifications.</summary>
-        <value>
-          <see langword="true" /> if the header must be correctly processed or a fault is thrown; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set the ValidateMustUnderstand property to `false` to prevent an exception from being thrown when the runtime encounters a <xref:System.ServiceModel.Channels.MessageHeader?displayProperty=fullName> in a message for which the <xref:System.ServiceModel.Channels.MessageHeader.MustUnderstand%2A?displayProperty=fullName> property is `true` but the header is not in the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A?displayProperty=fullName> property for the message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

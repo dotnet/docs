@@ -4,27 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the <see langword="abstract" /> base class for implementing a license provider.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a licensed control using the <xref:System.ComponentModel.LicenseManager.Validate%2A> method. It uses a LicenseProvider that is implemented by the <xref:System.ComponentModel.LicFileLicenseProvider> class.  
-  
- [!code-cs[Classic LicenseManager Example#1](~/add/codesnippet/csharp/t-system.componentmodel._187_1.cs)]
- [!code-vb[Classic LicenseManager Example#1](~/add/codesnippet/visualbasic/t-system.componentmodel._187_1.vb)]
- [!code-cpp[Classic LicenseManager Example#1](~/add/codesnippet/cpp/t-system.componentmodel._187_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +27,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicenseProvider" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +47,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.License</ReturnType>
@@ -63,13 +64,12 @@
         <Parameter Name="allowExceptions" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.ComponentModel.LicenseContext" /> that specifies where you can use the licensed object.</param>
-        <param name="type">A <see cref="T:System.Type" /> that represents the component requesting the license.</param>
-        <param name="instance">An object that is requesting the license.</param>
-        <param name="allowExceptions">
-          <see langword="true" /> if a <see cref="T:System.ComponentModel.LicenseException" /> should be thrown when the component cannot be granted a license; otherwise, <see langword="false" />.</param>
-        <summary>When overridden in a derived class, gets a license for an instance or type of component, when given a context and whether the denial of a license throws an exception.</summary>
-        <returns>A valid <see cref="T:System.ComponentModel.License" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="instance">To be added.</param>
+        <param name="allowExceptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

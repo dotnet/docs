@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the standard event levels that are used in the Event Log service. The level defines the severity of the event. Custom event levels can be defined beyond these standard levels. For more information about levels, see <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This level corresponds to critical errors, which is a serious error that has caused a major failure.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This level corresponds to normal errors that signify a problem.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Informational">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This level corresponds to informational events or messages that are not errors. These events can help trace the progress or state of an application.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogAlways">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This value indicates that not filtering on the level is done during the event publishing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This level corresponds to lengthy events or messages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This level corresponds to warning events. For example, an event that gets published because a disk is nearing full capacity is a warning event.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

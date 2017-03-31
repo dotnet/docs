@@ -4,25 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectMethodType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Identifies the type of data operation performed by a method, as specified by the <see cref="T:System.ComponentModel.DataObjectMethodAttribute" /> applied to the method.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how you can apply the <xref:System.ComponentModel.DataObjectMethodAttribute> to a publicly exposed method and identify the type of data operation it performs as well as whether it is the type's default data method. In this example the `NorthwindEmployee` type exposes two different data methods: one to retrieve a set of data named `GetAllEmployees`, and one to delete data named `DeleteEmployeeByID`. The <xref:System.ComponentModel.DataObjectMethodAttribute> is applied to both methods.  
-  
- [!code-vb[System.ComponentModel.DataObjectMethodAttribute#3](~/add/codesnippet/visualbasic/t-system.componentmodel._18_1.vb)]
- [!code-cs[System.ComponentModel.DataObjectMethodAttribute#3](~/add/codesnippet/csharp/t-system.componentmodel._18_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -32,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a method is used for a data operation that deletes data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -49,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a method is used for a data operation that fills a <see cref="T:System.Data.DataSet" /> object.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -66,14 +68,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a method is used for a data operation that inserts data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -83,14 +89,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a method is used for a data operation that retrieves data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -100,14 +110,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a method is used for a data operation that updates data.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

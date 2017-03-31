@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeFieldReferenceExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,26 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a reference to a field.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeFieldReferenceExpression can be used to represent a reference to a field.  
-  
- The <xref:System.CodeDom.CodeFieldReferenceExpression.TargetObject%2A> property specifies the object that contains the field. The <xref:System.CodeDom.CodeFieldReferenceExpression.FieldName%2A> property specifies the name of the field to reference.  
-  
-   
-  
-## Examples  
- The following example demonstrates use of a CodeFieldReferenceExpression to reference a field.  
-  
- [!code-cpp[CodeReferenceExample#2](~/add/codesnippet/cpp/t-system.codedom.codefie_1.cpp)]
- [!code-cs[CodeReferenceExample#2](~/add/codesnippet/csharp/t-system.codedom.codefie_1.cs)]
- [!code-vb[CodeReferenceExample#2](~/add/codesnippet/visualbasic/t-system.codedom.codefie_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeFieldReferenceExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,9 +52,9 @@
         <Parameter Name="fieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object that contains the field.</param>
-        <param name="fieldName">The name of the field.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeFieldReferenceExpression" /> class using the specified target object and field name.</summary>
+        <param name="targetObject">To be added.</param>
+        <param name="fieldName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the field to reference.</summary>
-        <value>A string containing the field name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,15 +83,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that contains the field to reference.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object that contains the field to reference.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

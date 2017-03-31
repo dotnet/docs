@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a point associated with a set of workflow status events that are tracked in the potential execution path of a root workflow instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Whenever the status of the workflow instance changes, the workflow instance emits a workflow status event based on one of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values to the runtime tracking infrastructure. A WorkflowTrackPoint defines an interest in all the points during the execution of a workflow instance at which specific types of workflow status events occur. You can add a WorkflowTrackPoint to <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A?displayProperty=fullName> to instruct the runtime tracking infrastructure to send a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> to the tracking service when a specified set of workflow status events occur. A WorkflowTrackPoint may be matched at multiple points in the workflow instance.  
-  
- Set <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A> with an appropriately configured <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> to specify the types of workflow status events that the runtime tracking infrastructure uses to match the WorkflowTrackPoint. You can add to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations%2A> to specify additional information associated with the track point that should be sent by the runtime tracking infrastructure when the track point is matched.  
-  
- This class cannot be inherited.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,20 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> is initialized with no annotations and no <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A>. You must set a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A> for the track point.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Annotations">
@@ -66,25 +42,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of annotations associated with the track point.</summary>
-        <value>An <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations associated with the track point. The default is an empty collection; it specifies that no annotations are to be associated with the track point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can add to Annotations to specify annotations to be returned in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> sent to the tracking service when the track point is matched.  
-  
- Annotations are strings that you define that contain information to associate with the track point. For example, an annotation could contain information about the possible execution path the workflow can take from this track point, or it could contain information to be displayed in a user interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchingLocation">
@@ -94,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.WorkflowTrackingLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> that specifies the workflow status events that should be matched by the runtime tracking infrastructure for the track point.</summary>
-        <value>A <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> that specified the workflow status events that should be matched by the runtime tracking infrastructure for the track point.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must set a MatchingLocation for the track point. The MatchingLocation specifies one or more <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that are used by the runtime tracking infrastructure to match the track point.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

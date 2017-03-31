@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the items host for a <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is used by <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar> and is not intended to be used independently.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +46,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">The size that the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" /> needs to position its child elements.</param>
-        <summary>Positions and sizes the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" />.</summary>
-        <returns>The actual size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" />.</returns>
+        <param name="finalSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +68,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" />.</param>
-        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" /> in preparation of arranging them during the <see cref="System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel.ArrangeOverride%2A" /> pass.</summary>
-        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" />.</returns>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +91,9 @@
         <Parameter Name="args" Type="System.Windows.Controls.Primitives.ItemsChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The object that raised the event.</param>
-        <param name="args">Provides data for the event.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection of the <see cref="T:System.Windows.Controls.ItemsControl" /> associated with this object changes.</summary>
+        <param name="sender">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

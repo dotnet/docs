@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a menu that is displayed in the context of a particular control.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextMenu" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,17 +52,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Unloads the container for the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonContextMenu.PrepareContainerForItemOverride%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContainerForItemOverride">
@@ -79,8 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> object.</summary>
-        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> container object that is used to display an item from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,24 +90,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
-        <value>
-          <see langword="true" /> if at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_HasGallery"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonContextMenu.HasGalleryProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasGalleryProperty">
@@ -130,7 +108,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonContextMenu.HasGallery%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,10 +128,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">The item to test.</param>
-        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
-        <returns>
-          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" />, a <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +148,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer" /> object for this control.</summary>
-        <returns>A new automation peer object for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +169,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +191,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,11 +214,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">The container element.</param>
-        <param name="item">The item to display.</param>
-        <summary>Returns a value that indicates whether to apply the style from the <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyle%2A" /> or <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A" /> property to the container element of the specified item.</summary>
-        <returns>
-          <see langword="false" /> if <paramref name="container" /> is a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />, <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, the value returned by the base implementation.</returns>
+        <param name="container">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

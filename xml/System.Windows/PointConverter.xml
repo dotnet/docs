@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.PointConverter" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Point" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="XAMLTextUsage_PointConverter"></a>   
-## XAML Text Usage  
-   
-  
-## Examples  
- The following code example uses a PointConverter to convert a string into a <xref:System.Windows.Point>.  
-  
- [!code-cs[PointExamples_snip#PointConverterExample_csharp](~/add/codesnippet/csharp/PointExamples_snip/PointExample.cs#pointconverterexample_csharp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.PointConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
-        <summary>Determines whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Point" />.</summary>
-        <returns>
-          <see langword="true" /> if the type can be converted to a <see cref="T:System.Windows.Point" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="destinationType">The desired type this <see cref="T:System.Windows.Point" /> is being evaluated for conversion.</param>
-        <summary>Determines whether an instance of a <see cref="T:System.Windows.Point" /> can be converted to a different type.</summary>
-        <returns>
-          <see langword="true" /> if this <see cref="T:System.Windows.Point" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,20 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information required for conversion.</param>
-        <param name="culture">Cultural information to respect during conversion.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Point" />.</summary>
-        <returns>The <see cref="T:System.Windows.Point" /> created from converting <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.PointConverter.CanConvertFrom%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Thrown if the specified object is NULL or is a type that cannot be converted to a <see cref="T:System.Windows.Point" />.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -141,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,21 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information required for conversion.</param>
-        <param name="culture">Cultural information to respect during conversion.</param>
-        <param name="value">The <see cref="T:System.Windows.Point" /> to convert.</param>
-        <param name="destinationType">The type to convert this <see cref="T:System.Windows.Point" /> to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Point" /> to a specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Point" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.PointConverter.CanConvertTo%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Thrown if <paramref name="value" /> is <see langword="null" /> or is not a <see cref="T:System.Windows.Point" />, or if the <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

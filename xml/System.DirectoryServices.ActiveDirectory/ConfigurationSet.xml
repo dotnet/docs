@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,9 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The ConfigurationSet class represents a configuration set for one or more AD LDS instances.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
   </Docs>
   <Members>
     <Member MemberName="AdamInstances">
@@ -24,17 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamInstanceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read-only collection of AD LDS instances that are in the configuration set.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> objects that are in the configuration set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplicationPartitions">
@@ -44,17 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read-only collection of application partitions that are in the configuration set.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> objects that are in the configuration set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -64,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,7 +65,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all managed and unmanaged resources that are used by the object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,8 +85,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">A <see cref="T:System.Boolean" /> value that determines if the managed resources should be released. <see langword="true" /> if the managed resources should be released; <see langword="false" /> if only the unmanaged resources should be released.</param>
-        <summary>Releases the unmanaged resources that are used by the object and optionally releases managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +97,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,11 +104,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Finds an AD LDS instance in this configuration set.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents an AD LDS instance that was found.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">An AD LDS instance could be not found in this configuration set.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAdamInstance">
@@ -127,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,14 +125,10 @@
         <Parameter Name="partitionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionName">A <see cref="T:System.String" /> that specifies a partition in which to search.</param>
-        <summary>Finds an AD LDS instance in this configuration set for a given partition name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents an AD LDS instance that was found.</returns>
+        <param name="partitionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="partitionName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">An AD LDS instance for the specified <paramref name="partitionName" /> could not be found in this configuration set.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAdamInstance">
@@ -154,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,15 +148,11 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionName">A <see cref="T:System.String" /> that specifies a partition in which to search.</param>
-        <param name="siteName">A <see cref="T:System.String" /> that specifies a site in which to search.</param>
-        <summary>Finds an AD LDS instance in this configuration set for a given partition name and site name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents an AD LDS instance that was found.</returns>
+        <param name="partitionName">To be added.</param>
+        <param name="siteName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="siteName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">An AD LDS instance for the specified <paramref name="partitionName" /> and <paramref name="siteName" /> parameters could not be found in this configuration set.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllAdamInstances">
@@ -183,7 +162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,10 +169,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns all AD LDS instances in this configuration set.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> objects that were found.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllAdamInstances">
@@ -204,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,13 +190,10 @@
         <Parameter Name="partitionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionName">A <see cref="T:System.String" /> that specifies a partition in which to search.</param>
-        <summary>Returns all AD LDS instances in this configuration set for a given partition name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> objects that were found.</returns>
+        <param name="partitionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="partitionName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllAdamInstances">
@@ -230,7 +203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,14 +213,11 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionName">A <see cref="T:System.String" /> that specifies a partition in which to search.</param>
-        <param name="siteName">A <see cref="T:System.String" /> that specifies a partition in which to search.</param>
-        <summary>Returns all AD LDS instances in this configuration set for a given partition name and site name.</summary>
-        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> objects that are found.</returns>
+        <param name="partitionName">To be added.</param>
+        <param name="siteName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="siteName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetConfigurationSet">
@@ -258,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,15 +236,10 @@
         <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use to retrieve the object. The target of the context can be an AD LDS instance or keywords that are specified in the serviceConnectionPoint object in the current forest that can identify the configuration set.</param>
-        <summary>Returns an <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object for the specified directory context.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object that represents the configuration set for the specified context.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A target specified in the <paramref name="context" /> parameter could not be found.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="context" /> parameter is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -286,7 +249,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,8 +256,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.DirectoryServices.DirectoryEntry" /> object for the configuration partition.</summary>
-        <returns>The <see cref="T:System.DirectoryServices.DirectoryEntry" /> object for the configuration partition.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +268,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,8 +275,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the AD LDS replication security level.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" /> value that indicates  the current AD LDS replication authentication mode.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,17 +287,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</summary>
-        <value>A <see cref="T:System.String" /> that contains the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="NamingRoleOwner">
@@ -346,17 +305,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the AD LDS instance that is the current owner of the domain naming master role.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents the AD LDS instance that currently holds the domain naming master role.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -366,17 +323,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the schema object for the configuration set.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object that represents the schema for this configuration set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SchemaRoleOwner">
@@ -386,19 +341,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the AD LDS instance that is the current owner of the schema operations master role.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents the AD LDS+  
-  
- instance that currently holds the schema operations master role.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetSecurityLevel">
@@ -408,7 +359,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,11 +368,9 @@
         <Parameter Name="securityLevel" Type="System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" />
       </Parameters>
       <Docs>
-        <param name="securityLevel">The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" /> value to which to set the AD LDS replication authentication mode.</param>
-        <summary>Sets the AD LDS replication security level.</summary>
+        <param name="securityLevel">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="securityLevel" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sites">
@@ -432,17 +380,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a read-only collection of sites that are in the configuration set.</summary>
-        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" /> object that contains <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> objects that are in the configuration set.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -452,7 +398,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,8 +405,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</summary>
-        <returns>A <see cref="T:System.String" /> that contains the name of the current <see cref="T:System.DirectoryServices.ActiveDirectory.ConfigurationSet" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

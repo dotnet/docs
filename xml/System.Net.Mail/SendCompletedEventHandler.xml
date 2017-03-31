@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SendCompletedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -18,25 +22,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">An <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> containing event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Net.Mail.SmtpClient.SendCompleted" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SendCompletedEventHandler delegate is used to handle events that occur when the <xref:System.Net.Mail.SmtpClient> class finishes asynchronously sending an e-mail message using the <xref:System.Net.Mail.SmtpClient.SendAsync%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates sending an e-mail message asynchronously. It uses a SendCompletedEventHandler to invoke the `SendCompletedCallback` method to handle <xref:System.Net.Mail.SmtpClient.SendCompleted> events.  
-  
- [!code-cs[NclMailASync#1](~/add/codesnippet/csharp/t-system.net.mail.sendco_1.cs)]
- [!code-cpp[NclMailASync#1](~/add/codesnippet/cpp/t-system.net.mail.sendco_1.cpp)]
- [!code-vb[NclMailASync#1](~/add/codesnippet/visualbasic/t-system.net.mail.sendco_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

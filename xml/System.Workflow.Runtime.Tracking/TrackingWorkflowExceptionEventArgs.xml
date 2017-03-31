@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,34 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains data associated with an exception that occurs during the execution of a workflow instance.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- When an exception occurs during the execution of a workflow instance and a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> that is associated with the workflow instance includes a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> configured for a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent?displayProperty=fullName>, the workflow tracking infrastructure sets <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to an TrackingWorkflowExceptionEventArgs in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> that it sends to the tracking service.  
-  
-> [!NOTE]
->  TrackingWorkflowExceptionEventArgs is used only by the runtime tracking service to pass information in a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a method, named `WriteExceptionEventArgs`, which captures a TrackingWorkflowExceptionEventArgs. The code checks whether the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception%2A> property is `null` (`Nothing` in Visual Basic).  
-  
- If it is not, the code writes the message associated with the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception%2A> property to the console. In addition, the code converts the value of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.OriginalActivityPath%2A> property to a string and writes it to the console.  
-  
- This code example is part of the EventArgs Tracking SDK sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/en-us/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
-  
- [!code-cs[WF_Samples#289](~/add/codesnippet/csharp/wf_snippets/snippets24.cs#289)]
- [!code-vb[WF_Samples#289](~/add/codesnippet/visualbasic/wf_snippets/snippets24.vb#289)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ContextGuid">
@@ -54,15 +27,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context ID of the associated activity.</summary>
-        <value>A <see cref="T:System.Guid" /> that contains the context ID of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,23 +45,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="System.Workflow.ComponentModel.Activity.QualifiedName%2A" /> of the activity currently throwing the exception.</summary>
-        <value>The <see cref="System.Workflow.ComponentModel.Activity.QualifiedName%2A" /> of the activity currently throwing the exception.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Exceptions are passed up the chain of exception handler activities. An exception handler may choose to throw an exception again. When an exception handler throws the exception again, a new exception tracking event containing a new <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs> is raised to the runtime tracking infrastructure. CurrentActivityPath refers to the activity that is currently throwing the exception.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -99,28 +63,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Exception" /> that is being thrown by the workflow instance.</summary>
-        <value>The exception that is being thrown by the workflow instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates a method, named `WriteExceptionEventArgs`, which captures a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>. The code checks whether the Exception property is `null` (`Nothing` in Visual Basic). If it is not, the code writes the message associated with the Exception property to the console. If Exception is `null` (`Nothing`), the code converts the value of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.OriginalActivityPath%2A> property to a string and writes it to the console.  
-  
- This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/en-us/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
-  
- [!code-cs[WF_Samples#289](~/add/codesnippet/csharp/wf_snippets/snippets24.cs#289)]
- [!code-vb[WF_Samples#289](~/add/codesnippet/visualbasic/wf_snippets/snippets24.vb#289)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginalActivityPath">
@@ -130,33 +81,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="System.Workflow.ComponentModel.Activity.QualifiedName%2A" /> of the activity that originally threw the exception.</summary>
-        <value>The <see cref="System.Workflow.ComponentModel.Activity.QualifiedName%2A" /> of the activity that originally threw the exception.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Exceptions are passed up the chain of exception handler activities. An exception handler may choose to throw an exception again. When an exception handler throws an exception again, a new exception tracking event containing a new <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs> is raised to the runtime tracking infrastructure. OriginalActivityPath refers to the activity that originally threw the exception.  
-  
-   
-  
-## Examples  
- The following code example demonstrates a method, named `WriteExceptionEventArgs`, which captures a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>. The code checks whether the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception%2A> property is `null` (`Nothing` in Visual Basic). If it is not, the code writes the message associated with the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception%2A> property to the console. If <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs.Exception%2A> is `null` (`Nothing`), the code converts the value of the OriginalActivityPath property to a string and writes it to the console.  
-  
- This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/en-us/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
-  
- [!code-cs[WF_Samples#289](~/add/codesnippet/csharp/wf_snippets/snippets24.cs#289)]
- [!code-vb[WF_Samples#289](~/add/codesnippet/visualbasic/wf_snippets/snippets24.vb#289)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentContextGuid">
@@ -166,15 +99,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context ID of the parent activity.</summary>
-        <value>A <see cref="T:System.Guid" /> that contains the context ID of the parent <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

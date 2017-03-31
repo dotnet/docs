@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides functionality for managing Web events in an application. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the WebEventManager class to flush currently buffered events for providers that are contained in the `healthMonitoring` section of the configuration.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Flush">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,15 +29,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Flushes the event buffer for all providers that are in the <see langword="healthMonitoring" /> section.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Flush method flushes the event buffer for all providers that are in the `healthMonitoring` section of the configuration. If no providers exist, no events are ever buffered. However, if providers do exist, the event buffer for each provider in the `healthMonitoring` section is flushed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -56,7 +40,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,18 +49,9 @@
         <Parameter Name="providerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerName">The name of the provider.</param>
-        <summary>Flushes the event buffer for the specified provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Flush method flushes the event buffer for the specified provider. The `healthMonitoring` section of the configuration must contain the specified provider in order to flush the event buffer. If the provider name does not match any of the existing providers in the `healthMonitoring` section, an <xref:System.ArgumentException> exception is thrown.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="providerName" /> does not match any of the existing providers.</exception>
+        <param name="providerName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

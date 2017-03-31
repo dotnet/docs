@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SizeConverter" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from instances of the <see cref="T:System.Windows.Size" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SizeConverter class supports conversion of <xref:System.String> values and base values that the <xref:System.ComponentModel.TypeConverter> class supports.  
-  
-<a name="XAMLTextUsage_SizeConverter"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.SizeConverter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,11 +47,10 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information about a component.</param>
-        <param name="sourceType">Identifies the data type to evaluate for conversion.</param>
-        <summary>Determines whether a class can be converted from a given type to an instance of <see cref="T:System.Windows.Size" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="sourceType" /> can be converted to an instance of <see cref="T:System.Windows.Size" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="sourceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,11 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information about a component.</param>
-        <param name="destinationType">Identifies the data type to evaluate for conversion.</param>
-        <summary>Determines whether an instance of <see cref="T:System.Windows.Size" /> can be converted to a different type.</summary>
-        <returns>
-          <see langword="true" /> if this instance of <see cref="T:System.Windows.Size" /> can be converted to the <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,11 +96,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information about a component.</param>
-        <param name="culture">Culture-specific information that should be respected during conversion.</param>
-        <param name="value">The source object that is being converted.</param>
-        <summary>Attempts to convert a specified object to an instance of <see cref="T:System.Windows.Size" />.</summary>
-        <returns>The instance of <see cref="T:System.Windows.Size" /> that is created from the converted <paramref name="source" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,15 +123,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Provides contextual information about a component.</param>
-        <param name="culture">Culture-specific information that should be respected during conversion.</param>
-        <param name="value">The instance of <see cref="T:System.Windows.Size" /> to convert.</param>
-        <param name="destinationType">The type that this instance of <see cref="T:System.Windows.Size" /> is converted to.</param>
-        <summary>Attempts to convert an instance of <see cref="T:System.Windows.Size" /> to a specified type.</summary>
-        <returns>The object that is created from the converted instance of <see cref="T:System.Windows.Size" />.</returns>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="value" /> is <see langword="null" /> or is not an instance of <see cref="T:System.Windows.Size" />, or if the <paramref name="destinationType" /> is not one of the valid destination types.</exception>
       </Docs>
     </Member>
   </Members>

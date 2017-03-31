@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,38 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the XSLT transform for a digital signature as defined by the W3C.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.Cryptography.Xml.XmlDsigXPathTransform> class allows you to address an XML document using an XSLT transformation.  This class uses XSLT to transform XML nodes into other XML nodes that you want to sign or encrypt.  
-  
- Use the XmlDsigXsltTransform class to sign or encrypt specific parts of an XML document using an XSLT transformation.  
-  
- The Uniform Resource Identifier (URI) that describes the XmlDsigXsltTransform class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigXsltTransformUrl> field.  
-  
- For more information about the XSLT transform, see Section 6.6.5 of the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/.  
-  
-   
-  
-## Examples  
- This section contains two code examples. The first code example shows how to sign and verify an XML document using the XmlDsigXsltTransform class with an envelope signature.  The second code example demonstrates how to use members of the XmlDsigXsltTransform class.  
-  
- **Example #1**  
-  
- [!code-vb[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/visualbasic/t-system.security.crypto_73_1.vb)]
- [!code-cs[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/csharp/t-system.security.crypto_73_1.cs)]
- [!code-cpp[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/cpp/t-system.security.crypto_73_1.cpp)]  
-  
- **Example #2**  
-  
- [!code-cpp[System.Security.Cryptography.Xml.XmlDsigXsltTransform#2](~/add/codesnippet/cpp/t-system.security.crypto_73_2.cpp)]
- [!code-cs[System.Security.Cryptography.Xml.XmlDsigXsltTransform#2](~/add/codesnippet/csharp/t-system.security.crypto_73_2.cs)]
- [!code-vb[System.Security.Cryptography.Xml.XmlDsigXsltTransform#2](~/add/codesnippet/visualbasic/t-system.security.crypto_73_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,24 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to sign and verify an XML document using the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class with an envelope signature.  
-  
- [!code-vb[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/visualbasic/m-system.security.crypto_40_1.vb)]
- [!code-cs[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/csharp/m-system.security.crypto_40_1.cs)]
- [!code-cpp[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/cpp/m-system.security.crypto_40_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -80,16 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="includeComments" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeComments">
-          <see langword="true" /> to include comments; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> class with comments, if specified.</summary>
+        <param name="includeComments">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an XML representation of the parameters of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object that are suitable to be included as subelements of an XMLDSIG <see langword="&lt;Transform&gt;" /> element.</summary>
-        <returns>A list of the XML nodes that represent the transform-specific content needed to describe the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object in an XMLDSIG <see langword="&lt;Transform&gt;" /> element.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,25 +81,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the output of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</summary>
-        <returns>The output of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type of the returned object must be <xref:System.IO.Stream>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the GetOutput method to retrieve the output of the current <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> object. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.Xml.XmlDsigXsltTransform#8](~/add/codesnippet/cpp/m-system.security.crypto_105_1.cpp)]
- [!code-cs[System.Security.Cryptography.Xml.XmlDsigXsltTransform#8](~/add/codesnippet/csharp/m-system.security.crypto_105_1.cs)]
- [!code-vb[System.Security.Cryptography.Xml.XmlDsigXsltTransform#8](~/add/codesnippet/visualbasic/m-system.security.crypto_105_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOutput">
@@ -156,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,27 +102,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the output to return. <see cref="T:System.IO.Stream" /> is the only valid type for this parameter.</param>
-        <summary>Returns the output of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object of type <see cref="T:System.IO.Stream" />.</summary>
-        <returns>The output of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object of type <see cref="T:System.IO.Stream" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type of the returned object must be <xref:System.IO.Stream>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the GetOutput method to retrieve the output of the current <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> object. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.Xml.XmlDsigXsltTransform#7](~/add/codesnippet/cpp/m-system.security.crypto_86_1.cpp)]
- [!code-cs[System.Security.Cryptography.Xml.XmlDsigXsltTransform#7](~/add/codesnippet/csharp/m-system.security.crypto_86_1.cs)]
- [!code-vb[System.Security.Cryptography.Xml.XmlDsigXsltTransform#7](~/add/codesnippet/visualbasic/m-system.security.crypto_86_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="type" /> parameter is not a <see cref="T:System.IO.Stream" /> object.</exception>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InputTypes">
@@ -196,32 +115,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of types that are valid inputs to the <see cref="System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInput%2A" /> method of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</summary>
-        <value>An array of valid input types for the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object; you can pass only objects of one of these types to the <see cref="System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInput%2A" /> method of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The valid input types to <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> are <xref:System.IO.Stream>, <xref:System.Xml.XmlDocument>, and <xref:System.Xml.XmlNodeList>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to call the InputTypes property to retrieve the valid input types for the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.Xml.XmlDsigXsltTransform#4](~/add/codesnippet/cpp/p-system.security.crypto_58_1.cpp)]
- [!code-cs[System.Security.Cryptography.Xml.XmlDsigXsltTransform#4](~/add/codesnippet/csharp/p-system.security.crypto_58_1.cs)]
- [!code-vb[System.Security.Cryptography.Xml.XmlDsigXsltTransform#4](~/add/codesnippet/visualbasic/p-system.security.crypto_58_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadInnerXml">
@@ -231,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,30 +142,9 @@
         <Parameter Name="nodeList" Type="System.Xml.XmlNodeList" />
       </Parameters>
       <Docs>
-        <param name="nodeList">An <see cref="T:System.Xml.XmlNodeList" /> object that encapsulates an XSLT style sheet to load into the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object. This style sheet is applied to the document loaded by the <see cref="System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInput%2A" /> method.</param>
-        <summary>Parses the specified <see cref="T:System.Xml.XmlNodeList" /> object as transform-specific content of a <see langword="&lt;Transform&gt;" /> element and configures the internal state of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object to match the <see langword="&lt;Transform&gt;" /> element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to process subelements of a `<Transform>` element.  
-  
-   
-  
-## Examples  
- The following code example shows how to sign and verify an XML document using the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class with an envelope signature.  
-  
- [!code-vb[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/visualbasic/e39773ca-a7f6-4909-979b-_1.vb)]
- [!code-cs[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/csharp/e39773ca-a7f6-4909-979b-_1.cs)]
- [!code-cpp[Cryptography.Xml.XmlDsigXsltTransform#1](~/add/codesnippet/cpp/e39773ca-a7f6-4909-979b-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="nodeList" /> parameter is <see langword="null" />.  
-  
- -or-  
-  
- The <paramref name="nodeList" /> parameter does not contain an <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</exception>
+        <param name="nodeList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadInput">
@@ -274,7 +154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,25 +163,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The input to load into the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</param>
-        <summary>Loads the specified input into the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type of the input object must be one of the types in the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform.InputTypes%2A> property. The valid input types to <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> are <xref:System.IO.Stream>, <xref:System.Xml.XmlDocument>, and <xref:System.Xml.XmlNodeList>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to call the LoadInput method using the specified <xref:System.Xml.XmlDocument> object as the input. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.Xml.XmlDsigXsltTransform#11](~/add/codesnippet/cpp/m-system.security.crypto_59_1.cpp)]
- [!code-cs[System.Security.Cryptography.Xml.XmlDsigXsltTransform#11](~/add/codesnippet/csharp/m-system.security.crypto_59_1.cs)]
- [!code-vb[System.Security.Cryptography.Xml.XmlDsigXsltTransform#11](~/add/codesnippet/visualbasic/m-system.security.crypto_59_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputTypes">
@@ -312,32 +175,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of types that are possible outputs from the <see cref="System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput%2A" /> methods of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</summary>
-        <value>An array of valid output types for the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object; only objects of one of these types are returned from the <see cref="System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput%2A" /> methods of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigXsltTransform" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.IO.Stream> is the only valid output type for <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to call the OutputTypes property to retrieve the valid output types for the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.Xml.XmlDsigXsltTransform#5](~/add/codesnippet/cpp/p-system.security.crypto_110_1.cpp)]
- [!code-cs[System.Security.Cryptography.Xml.XmlDsigXsltTransform#5](~/add/codesnippet/csharp/p-system.security.crypto_110_1.cs)]
- [!code-vb[System.Security.Cryptography.Xml.XmlDsigXsltTransform#5](~/add/codesnippet/visualbasic/p-system.security.crypto_110_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

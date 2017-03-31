@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectCopyingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Arguments for the <see cref="T:System.Windows.DataObject" />.<see cref="System.Windows.DataObject.Copying" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.DataObject.Copying> event occurs when a copy operation has finished converting the selected content into all specified data formats, has stored all data formats in the associated data object, and is ready to put the data object on the system clipboard or to begin a drag operation.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,18 +29,10 @@
         <Parameter Name="isDragDrop" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="dataObject">A <see cref="T:System.Windows.DataObject" /> containing data ready to be copied.</param>
-        <param name="isDragDrop">A <see langword="Boolean" /> value indicating whether the copy is part of a drag-and-drop operation. <see langword="true" /> to indicate that the copy is part of a drag-and-drop operation; otherwise, <see langword="false" />. If this parameter is set to <see langword="true" />, the <see cref="System.Windows.DataObject.Copying" /> event fires when dragging is initiated.</param>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.DataObjectCopyingEventArgs" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Windows.DataObjectCopyingEventArgs> object is typically created by the application that is initiating the copy operation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="dataObject" /> is **null**.</exception>
+        <param name="dataObject">To be added.</param>
+        <param name="isDragDrop">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataObject">
@@ -59,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data object associated with the <see cref="System.Windows.DataObject.Copying" /> event.</summary>
-        <value>The data object associated with the <see cref="System.Windows.DataObject.Copying" /> event.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

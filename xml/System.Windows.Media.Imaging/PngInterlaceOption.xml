@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.PngInterlaceOption" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a [!INCLUDE[TLA#tla_png](~/add/includes/tlasharptla-png-md.md)] format image is interlaced during encoding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Interlacing refers to the process of displaying a [!INCLUDE[TLA2#tla_png](~/add/includes/tla2sharptla-png-md.md)] frame in two fields. One field contains the even lines of the frame, while the other field contains the odd lines of the frame. When the [!INCLUDE[TLA2#tla_png](~/add/includes/tla2sharptla-png-md.md)] is viewed, the lines in one field are displayed first, and then the lines in the second field are displayed.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.PngBitmapEncoder.Interlace%2A> property of the <xref:System.Windows.Media.Imaging.PngBitmapEncoder> class.  
-  
- [!code-vb[pngbitmapdecoderencoder#3](~/add/codesnippet/visualbasic/PngEncoderDecoder/PngEncoderDecoder.vb#3)]
- [!code-cs[pngbitmapdecoderencoder#3](~/add/codesnippet/csharp/PngEncoderDecoder/PngEncoderDecoder.cs#3)]
- [!code-cpp[pngbitmapdecoderencoder#3](~/add/codesnippet/cpp/pngencoderdecoder/PngEncoderDecoder.cpp#3)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.PngInterlaceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Media.Imaging.PngBitmapEncoder" /> determines whether the image should be interlaced.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.PngInterlaceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The resulting bitmap image is not interlaced.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.PngInterlaceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The resulting bitmap image is interlaced.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

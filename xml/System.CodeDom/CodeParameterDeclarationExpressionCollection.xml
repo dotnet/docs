@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,24 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CodeParameterDeclarationExpressionCollection class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeParameterDeclarationExpression> objects.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use the CodeParameterDeclarationExpressionCollection class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#1](~/add/codesnippet/cpp/t-system.codedom.codepar_1_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#1](~/add/codesnippet/csharp/t-system.codedom.codepar_1_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#1](~/add/codesnippet/visualbasic/t-system.codedom.codepar_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,17 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> objects with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> class containing the specified array of <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> objects.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">one or more objects in the array are <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,18 +63,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpressionCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> class containing the elements of the specified source collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -104,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,21 +90,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to add.</param>
-        <summary>Adds the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to the collection.</summary>
-        <returns>The index at which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeParameterDeclarationExpression> object to a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> instance.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#3](~/add/codesnippet/cpp/221ca488-9995-4ba7-bc0c-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#3](~/add/codesnippet/csharp/221ca488-9995-4ba7-bc0c-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#3](~/add/codesnippet/visualbasic/221ca488-9995-4ba7-bc0c-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -138,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,22 +112,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of type <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> containing the objects to add to the collection.</param>
-        <summary>Copies the elements of the specified array to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add the members of a <xref:System.CodeDom.CodeParameterDeclarationExpression> array to a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#4](~/add/codesnippet/cpp/7fd24603-4ce4-4a86-9959-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#4](~/add/codesnippet/csharp/7fd24603-4ce4-4a86-9959-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#4](~/add/codesnippet/visualbasic/7fd24603-4ce4-4a86-9959-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -173,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,22 +133,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpressionCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> containing the objects to add to the collection.</param>
-        <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the AddRange method overload to add the members of one <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> object to another  <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#4](~/add/codesnippet/cpp/937c9618-5764-407f-a506-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#4](~/add/codesnippet/csharp/937c9618-5764-407f-a506-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#4](~/add/codesnippet/visualbasic/937c9618-5764-407f-a506-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -208,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,22 +154,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to search for in the collection.</param>
-        <summary>Gets a value indicating whether the collection contains the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" />.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the Contains method to search for the presence of a specific <xref:System.CodeDom.CodeParameterDeclarationExpression> object and get the index value at which it was found.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#5](~/add/codesnippet/cpp/9005e47e-a6eb-4ddb-88df-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#5](~/add/codesnippet/csharp/9005e47e-a6eb-4ddb-88df-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#5](~/add/codesnippet/visualbasic/9005e47e-a6eb-4ddb-88df-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -243,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,28 +177,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
-        <param name="index">The index of the array at which to begin inserting.</param>
-        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> to an <xref:System.Array> beginning at the specified index value.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#6](~/add/codesnippet/cpp/0e6ab8a0-cbaa-488a-9705-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#6](~/add/codesnippet/csharp/0e6ab8a0-cbaa-488a-9705-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#6](~/add/codesnippet/visualbasic/0e6ab8a0-cbaa-488a-9705-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -285,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,21 +199,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to locate in the collection.</param>
-        <summary>Gets the index in the collection of the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" />, if it exists in the collection.</summary>
-        <returns>The index in the collection of the specified object, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example searches for the presence of a specific <xref:System.CodeDom.CodeParameterDeclarationExpression> instance and uses the IndexOf method to get the index value at which it was found.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#5](~/add/codesnippet/cpp/ada32394-7281-41c3-a5a7-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#5](~/add/codesnippet/csharp/ada32394-7281-41c3-a5a7-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#5](~/add/codesnippet/visualbasic/ada32394-7281-41c3-a5a7-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -319,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,21 +222,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the specified object should be inserted.</param>
-        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Insert method to add a <xref:System.CodeDom.CodeParameterDeclarationExpression> object to a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#8](~/add/codesnippet/cpp/d103a092-a5f5-4baa-9b88-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#8](~/add/codesnippet/csharp/d103a092-a5f5-4baa-9b88-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#8](~/add/codesnippet/visualbasic/d103a092-a5f5-4baa-9b88-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -354,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,18 +244,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the collection to access.</param>
-        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> at the specified index in the collection.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> at each valid index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is an indexer that can be used to access the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -385,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,21 +266,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the Remove method to delete a <xref:System.CodeDom.CodeParameterDeclarationExpression> object from a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
-  
- [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#9](~/add/codesnippet/cpp/60cf7181-b744-49de-a408-_1.cpp)]
- [!code-cs[CodeParameterDeclarationExpressionCollectionExample#9](~/add/codesnippet/csharp/60cf7181-b744-49de-a408-_1.cs)]
- [!code-vb[CodeParameterDeclarationExpressionCollectionExample#9](~/add/codesnippet/visualbasic/60cf7181-b744-49de-a408-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

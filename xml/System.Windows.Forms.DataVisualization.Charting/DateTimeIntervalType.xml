@@ -10,19 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies an interval type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> enumeration represents date and time interval types.  
-  
- Note that if you use the <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> value, properties other than IntervalType or IntervalOffsetType will treat <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> as an <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> value.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> values are applicable to the <xref:System.Web.UI.DataVisualization.Charting.LabelStyle>, <xref:System.Web.UI.DataVisualization.Charting.Grid>, <xref:System.Web.UI.DataVisualization.Charting.TickMark> and <xref:System.Web.UI.DataVisualization.Charting.StripLine> classes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -38,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Automatically determined by the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Days">
@@ -54,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in days.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hours">
@@ -70,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in hours.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Milliseconds">
@@ -86,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in milliseconds.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minutes">
@@ -102,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in minutes.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Months">
@@ -118,7 +107,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in months.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -134,7 +123,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IntervalType or IntervalOffsetType property is not set. This value is used for grid lines, tick marks, strip lines and axis labels, and indicates that the interval type is being obtained from the <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> object to which the element belongs. Setting this value for an <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> object will have no effect.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -150,7 +139,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in numerical.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Seconds">
@@ -166,7 +155,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in seconds.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Weeks">
@@ -182,7 +171,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in weeks.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Years">
@@ -198,7 +187,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interval type is in years.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

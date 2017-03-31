@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ImageFileMachine" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -16,18 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Identifies the platform targeted by an executable.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> method.  
-  
-> [!NOTE]
->  The values in this enumeration correspond to the constants IMAGE_FILE_MACHINE_I386, IMAGE_FILE_MACHINE_IA64, and IMAGE_FILE_MACHINE_AMD64 in the unmanaged Win32 API, which are accessed by the unmanaged `GetPEKind` function.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AMD64">
@@ -37,14 +31,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targets a 64-bit AMD processor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ARM">
@@ -54,13 +52,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targets an ARM processor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="I386">
@@ -70,14 +73,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targets a 32-bit Intel processor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IA64">
@@ -87,14 +94,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Targets a 64-bit Intel processor.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

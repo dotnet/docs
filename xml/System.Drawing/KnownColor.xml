@@ -4,26 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.KnownColor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the known system colors.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the KnownColor enumeration to print out the names and colors of all its values. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `DisplayKnownColors` method in the form's `Paint` event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cs[System.Drawing.MiscExamples#6](~/add/codesnippet/csharp/t-system.drawing.knownco_1.cs)]
- [!code-cpp[System.Drawing.MiscExamples#6](~/add/codesnippet/cpp/t-system.drawing.knownco_1.cpp)]
- [!code-vb[System.Drawing.MiscExamples#6](~/add/codesnippet/visualbasic/t-system.drawing.knownco_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveBorder">
@@ -33,14 +25,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the active window's border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActiveCaption">
@@ -50,14 +45,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background of the active window's title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActiveCaptionText">
@@ -67,14 +65,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the text in the active window's title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AliceBlue">
@@ -84,14 +85,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AntiqueWhite">
@@ -101,14 +105,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AppWorkspace">
@@ -118,14 +125,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the application workspace. The application workspace is the area in a multiple-document view that is not being occupied by documents.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Aqua">
@@ -135,14 +145,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Aquamarine">
@@ -152,14 +165,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Azure">
@@ -169,14 +185,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Beige">
@@ -186,14 +205,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bisque">
@@ -203,14 +225,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Black">
@@ -220,14 +245,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BlanchedAlmond">
@@ -237,14 +265,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Blue">
@@ -254,14 +285,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BlueViolet">
@@ -271,14 +305,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Brown">
@@ -288,14 +325,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="BurlyWood">
@@ -305,14 +345,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ButtonFace">
@@ -322,14 +365,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined face color of a 3-D element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ButtonHighlight">
@@ -339,14 +385,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color that is the highlight color of a 3-D element. This color is applied to parts of a 3-D element that face the light source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ButtonShadow">
@@ -356,14 +405,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color that is the shadow color of a 3-D element. This color is applied to parts of a 3-D element that face away from the light source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CadetBlue">
@@ -373,14 +425,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Chartreuse">
@@ -390,14 +445,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Chocolate">
@@ -407,14 +465,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -424,14 +485,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined face color of a 3-D element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlDark">
@@ -441,14 +505,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined shadow color of a 3-D element. The shadow color is applied to parts of a 3-D element that face away from the light source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlDarkDark">
@@ -458,14 +525,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color that is the dark shadow color of a 3-D element. The dark shadow color is applied to the parts of a 3-D element that are the darkest color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlLight">
@@ -475,14 +545,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color that is the light color of a 3-D element. The light color is applied to parts of a 3-D element that face the light source.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlLightLight">
@@ -492,14 +565,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined highlight color of a 3-D element. The highlight color is applied to the parts of a 3-D element that are the lightest color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlText">
@@ -509,14 +585,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of text in a 3-D element.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Coral">
@@ -526,14 +605,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CornflowerBlue">
@@ -543,14 +625,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cornsilk">
@@ -560,14 +645,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Crimson">
@@ -577,14 +665,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cyan">
@@ -594,14 +685,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkBlue">
@@ -611,14 +705,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkCyan">
@@ -628,14 +725,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkGoldenrod">
@@ -645,14 +745,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkGray">
@@ -662,14 +765,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkGreen">
@@ -679,14 +785,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkKhaki">
@@ -696,14 +805,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkMagenta">
@@ -713,14 +825,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkOliveGreen">
@@ -730,14 +845,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkOrange">
@@ -747,14 +865,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkOrchid">
@@ -764,14 +885,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkRed">
@@ -781,14 +905,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkSalmon">
@@ -798,14 +925,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkSeaGreen">
@@ -815,14 +945,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkSlateBlue">
@@ -832,14 +965,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkSlateGray">
@@ -849,14 +985,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkTurquoise">
@@ -866,14 +1005,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DarkViolet">
@@ -883,14 +1025,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeepPink">
@@ -900,14 +1045,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeepSkyBlue">
@@ -917,14 +1065,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -934,14 +1085,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the desktop.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DimGray">
@@ -951,14 +1105,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DodgerBlue">
@@ -968,14 +1125,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Firebrick">
@@ -985,14 +1145,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FloralWhite">
@@ -1002,14 +1165,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForestGreen">
@@ -1019,14 +1185,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fuchsia">
@@ -1036,14 +1205,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gainsboro">
@@ -1053,14 +1225,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GhostWhite">
@@ -1070,14 +1245,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gold">
@@ -1087,14 +1265,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Goldenrod">
@@ -1104,14 +1285,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientActiveCaption">
@@ -1121,14 +1305,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the lightest color in the color gradient of an active window's title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientInactiveCaption">
@@ -1138,14 +1325,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the lightest color in the color gradient of an inactive window's title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gray">
@@ -1155,14 +1345,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GrayText">
@@ -1172,14 +1365,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of dimmed text. Items in a list that are disabled are displayed in dimmed text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Green">
@@ -1189,14 +1385,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreenYellow">
@@ -1206,14 +1405,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Highlight">
@@ -1223,14 +1425,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background of selected items. This includes selected menu items as well as selected text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighlightText">
@@ -1240,14 +1445,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the text of selected items.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Honeydew">
@@ -1257,14 +1465,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HotPink">
@@ -1274,14 +1485,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HotTrack">
@@ -1291,14 +1505,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color used to designate a hot-tracked item. Single-clicking a hot-tracked item executes the item.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InactiveBorder">
@@ -1308,14 +1525,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of an inactive window's border.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InactiveCaption">
@@ -1325,14 +1545,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background of an inactive window's title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InactiveCaptionText">
@@ -1342,14 +1565,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the text in an inactive window's title bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IndianRed">
@@ -1359,14 +1585,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indigo">
@@ -1376,14 +1605,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -1393,14 +1625,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background of a ToolTip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="InfoText">
@@ -1410,14 +1645,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the text of a ToolTip.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ivory">
@@ -1427,14 +1665,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Khaki">
@@ -1444,14 +1685,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lavender">
@@ -1461,14 +1705,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LavenderBlush">
@@ -1478,14 +1725,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LawnGreen">
@@ -1495,14 +1745,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LemonChiffon">
@@ -1512,14 +1765,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightBlue">
@@ -1529,14 +1785,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightCoral">
@@ -1546,14 +1805,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightCyan">
@@ -1563,14 +1825,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightGoldenrodYellow">
@@ -1580,14 +1845,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightGray">
@@ -1597,14 +1865,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightGreen">
@@ -1614,14 +1885,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightPink">
@@ -1631,14 +1905,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightSalmon">
@@ -1648,14 +1925,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightSeaGreen">
@@ -1665,14 +1945,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightSkyBlue">
@@ -1682,14 +1965,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightSlateGray">
@@ -1699,14 +1985,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightSteelBlue">
@@ -1716,14 +2005,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LightYellow">
@@ -1733,14 +2025,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lime">
@@ -1750,14 +2045,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LimeGreen">
@@ -1767,14 +2065,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Linen">
@@ -1784,14 +2085,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Magenta">
@@ -1801,14 +2105,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Maroon">
@@ -1818,14 +2125,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumAquamarine">
@@ -1835,14 +2145,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumBlue">
@@ -1852,14 +2165,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumOrchid">
@@ -1869,14 +2185,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumPurple">
@@ -1886,14 +2205,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumSeaGreen">
@@ -1903,14 +2225,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumSlateBlue">
@@ -1920,14 +2245,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumSpringGreen">
@@ -1937,14 +2265,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumTurquoise">
@@ -1954,14 +2285,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediumVioletRed">
@@ -1971,14 +2305,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -1988,14 +2325,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of a menu's background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuBar">
@@ -2005,14 +2345,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background of a menu bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuHighlight">
@@ -2022,14 +2365,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color used to highlight menu items when the menu appears as a flat menu.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuText">
@@ -2039,14 +2385,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of a menu's text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MidnightBlue">
@@ -2056,14 +2405,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MintCream">
@@ -2073,14 +2425,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MistyRose">
@@ -2090,14 +2445,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Moccasin">
@@ -2107,14 +2465,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NavajoWhite">
@@ -2124,14 +2485,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Navy">
@@ -2141,14 +2505,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OldLace">
@@ -2158,14 +2525,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Olive">
@@ -2175,14 +2545,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OliveDrab">
@@ -2192,14 +2565,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Orange">
@@ -2209,14 +2585,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OrangeRed">
@@ -2226,14 +2605,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Orchid">
@@ -2243,14 +2625,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaleGoldenrod">
@@ -2260,14 +2645,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaleGreen">
@@ -2277,14 +2665,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaleTurquoise">
@@ -2294,14 +2685,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaleVioletRed">
@@ -2311,14 +2705,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PapayaWhip">
@@ -2328,14 +2725,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PeachPuff">
@@ -2345,14 +2745,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Peru">
@@ -2362,14 +2765,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pink">
@@ -2379,14 +2785,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Plum">
@@ -2396,14 +2805,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PowderBlue">
@@ -2413,14 +2825,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Purple">
@@ -2430,14 +2845,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Red">
@@ -2447,14 +2865,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RosyBrown">
@@ -2464,14 +2885,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoyalBlue">
@@ -2481,14 +2905,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SaddleBrown">
@@ -2498,14 +2925,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Salmon">
@@ -2515,14 +2945,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SandyBrown">
@@ -2532,14 +2965,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollBar">
@@ -2549,14 +2985,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background of a scroll bar.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SeaGreen">
@@ -2566,14 +3005,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SeaShell">
@@ -2583,14 +3025,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sienna">
@@ -2600,14 +3045,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Silver">
@@ -2617,14 +3065,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkyBlue">
@@ -2634,14 +3085,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SlateBlue">
@@ -2651,14 +3105,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SlateGray">
@@ -2668,14 +3125,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Snow">
@@ -2685,14 +3145,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpringGreen">
@@ -2702,14 +3165,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SteelBlue">
@@ -2719,14 +3185,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -2736,14 +3205,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Teal">
@@ -2753,14 +3225,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thistle">
@@ -2770,14 +3245,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tomato">
@@ -2787,14 +3265,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transparent">
@@ -2804,14 +3285,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Turquoise">
@@ -2821,14 +3305,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Violet">
@@ -2838,14 +3325,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wheat">
@@ -2855,14 +3345,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="White">
@@ -2872,14 +3365,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WhiteSmoke">
@@ -2889,14 +3385,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -2906,14 +3405,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the background in the client area of a window.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowFrame">
@@ -2923,14 +3425,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of a window frame.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowText">
@@ -2940,14 +3445,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The system-defined color of the text in the client area of a window.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Yellow">
@@ -2957,14 +3465,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="YellowGreen">
@@ -2974,14 +3485,17 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A system-defined color.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,31 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyTabScope" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines identifiers that indicate the persistence scope of a tab in the Properties window.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- PropertyTabScope indicates the persistence scope of a tab that is displayed in the Properties window when a component of a design document has an associated <xref:System.ComponentModel.PropertyTabAttribute>.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use PropertyTabScope to specify the scope of a property tab.  
-  
- [!code-cs[PropertyTabExample#1](~/add/codesnippet/csharp/t-system.componentmodel._183_1.cs)]
- [!code-cpp[PropertyTabExample#1](~/add/codesnippet/cpp/t-system.componentmodel._183_1.cpp)]
- [!code-vb[PropertyTabExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._183_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Component">
@@ -38,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This tab is specific to the current component. This tab is added to the Properties window for the current component only and is removed when the component is no longer selected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -55,26 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This tab is specific to the current document. This tab is added to the Properties window and is removed when the currently selected document changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use PropertyTabScope to specify the scope of a property tab.  
-  
- [!code-cs[PropertyTabExample#1](~/add/codesnippet/csharp/t-system.componentmodel._183_1.cs)]
- [!code-cpp[PropertyTabExample#1](~/add/codesnippet/cpp/t-system.componentmodel._183_1.cpp)]
- [!code-vb[PropertyTabExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._183_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global">
@@ -84,14 +68,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This tab is added to the Properties window and can only be removed explicitly by a parent component.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -101,14 +89,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This tab is added to the Properties window and cannot be removed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

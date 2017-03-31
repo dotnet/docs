@@ -3,34 +3,24 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DuplicateAddressDetectionState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.DuplicateAddressDetectionState" />
   <AssemblyInfo>
+    <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the current state of an IP address.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To help ensure that all interfaces on a network have a unique address, the interface host is responsible for running a "duplicate address detection" algorithm on unicast addresses. The purpose of this algorithm is to attempt to prevent non-unique addresses on the network. This process is defined in IETF RFC 1971.  
-  
- This enumeration is used by the <xref:System.Net.NetworkInformation.UnicastIPAddressInformation> and <xref:System.Net.NetworkInformation.MulticastIPAddressInformation> classes. Instances of this class are returned when you retrieve the unicast address information for a <xref:System.Net.NetworkInformation.NetworkInterface> object.  
-  
-   
-  
-## Examples  
- The following code example determines unicast address information.  
-  
- [!code-cs[NclNetInfo2#45](~/add/codesnippet/csharp/t-system.net.networkinfo_0_1.cs)]
- [!code-vb[NclNetInfo2#45](~/add/codesnippet/visualbasic/t-system.net.networkinfo_0_1.vb)]
- [!code-cpp[NclNetInfo2#45](~/add/codesnippet/cpp/t-system.net.networkinfo_0_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Deprecated">
@@ -39,15 +29,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Deprecated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The address is valid, but it is nearing its lease lifetime and should not be used by applications.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -56,15 +54,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Duplicate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The address is not unique. This address should not be assigned to the network interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -73,15 +79,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The address is not valid. A nonvalid address is expired and no longer assigned to an interface; applications should not send data packets to it.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Preferred">
@@ -90,15 +104,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Preferred" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The address is valid and its use is unrestricted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tentative">
@@ -107,15 +129,23 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Tentative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The duplicate address detection procedure's evaluation of the address has not completed successfully. Applications should not use the address because it is not yet valid and packets sent to it are discarded.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

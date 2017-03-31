@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IPphManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -17,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides stop and start control of listener channels.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IPphManager is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="StartProcessProtocolListenerChannel">
@@ -35,7 +27,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,17 +37,10 @@
         <Parameter Name="listenerChannelCallback" Type="System.Web.Hosting.IListenerChannelCallback" />
       </Parameters>
       <Docs>
-        <param name="protocolId">The protocol ID.</param>
-        <param name="listenerChannelCallback">The <see cref="T:System.Web.Hosting.IListenerChannelCallback" /> interface.</param>
-        <summary>Starts the specified process protocol listener channel.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- StartProcessProtocolListenerChannel is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="protocolId">To be added.</param>
+        <param name="listenerChannelCallback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StopProcessProtocol">
@@ -66,7 +50,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,18 +60,10 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="protocolId">The protocol ID of the listener channel to stop.</param>
-        <param name="immediate">
-          <see langword="true" /> to notify the process protocol manager to stop all listener channels synchronously; <see langword="false" /> to stop all listener channels asynchronously.</param>
-        <summary>Stops all protocol listener channels.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- StopProcessProtocol is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="protocolId">To be added.</param>
+        <param name="immediate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StopProcessProtocolListenerChannel">
@@ -98,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,19 +84,11 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="protocolId">The protocol ID for the listener channel.</param>
-        <param name="listenerChannelId">The listener channel ID.</param>
-        <param name="immediate">
-          <see langword="true" /> to notify the process protocol manager to stop all listener channels synchronously; <see langword="false" /> to stop all listener channels asynchronously.</param>
-        <summary>Stops the specified process protocol listener channel.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- StopProcessProtocolListenerChannel is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="protocolId">To be added.</param>
+        <param name="listenerChannelId">To be added.</param>
+        <param name="immediate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

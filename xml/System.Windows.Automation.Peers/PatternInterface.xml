@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.PatternInterface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the control pattern that <see cref="System.Windows.Automation.Peers.AutomationPeer.GetPattern%2A" /> returns.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IDockProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandCollapse">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IExpandCollapseProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Grid">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GridItem">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IGridItemProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IInvokeProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ItemContainer">
@@ -113,7 +107,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IItemContainerProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultipleView">
@@ -123,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IMultipleViewProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RangeValue">
@@ -140,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IRangeValueProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -157,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IScrollProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollItem">
@@ -174,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IScrollItemProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -191,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItem">
@@ -208,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISelectionItemProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SynchronizedInput">
@@ -231,7 +219,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISynchronizedInputProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -241,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITableProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableItem">
@@ -258,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITableItemProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -275,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITextProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Toggle">
@@ -292,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IToggleProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -309,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITransformProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -326,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IValueProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="VirtualizedItem">
@@ -349,7 +331,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IVirtualizedItemProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -359,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IWindowProvider" /> control pattern interface.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

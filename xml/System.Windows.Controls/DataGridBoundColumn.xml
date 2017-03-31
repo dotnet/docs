@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Serves as the base class for columns that can bind to a property in the data source of a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridBoundColumn" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,16 +43,9 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding that associates the column with a property in the data source.</summary>
-        <value>The object that represents the data binding for the column. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Binding property allows a column to specify a property of the data grid's <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> to bind to. For more information about binding paths, see the "Binding Path Syntax" section in [Binding Declarations Overview](../Topic/Binding%20Declarations%20Overview.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClipboardContentBinding">
@@ -68,8 +61,8 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding object to use when getting or setting cell content for the clipboard.</summary>
-        <value>An object that represents the binding.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +79,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.</summary>
-        <value>The style that is used when rendering an editing element. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +97,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +114,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.</summary>
-        <value>The style that is used when rendering a display-only element. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +132,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.DataGridBoundColumn.ElementStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +153,9 @@
         <Parameter Name="newBinding" Type="System.Windows.Data.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="oldBinding">The previous binding.</param>
-        <param name="newBinding">The binding that the column has been changed to.</param>
-        <summary>Notifies the <see cref="T:System.Windows.Controls.DataGrid" /> when the value of the <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property changes.</summary>
+        <param name="oldBinding">To be added.</param>
+        <param name="newBinding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,10 +175,9 @@
         <Parameter Name="baseValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="baseValue">The value that was passed to the delegate.</param>
-        <summary>Determines the value of the <see cref="System.Windows.Controls.DataGridColumn.IsReadOnly%2A" /> property based on property rules from the data grid that contains this column.</summary>
-        <returns>
-          <see langword="true" /> if cells in the column cannot be edited based on rules from the data grid; otherwise, <see langword="false" />.</returns>
+        <param name="baseValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +198,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The cell to update.</param>
-        <param name="propertyName">The name of the column property that has changed.</param>
-        <summary>Rebuilds the contents of a cell in the column in response to a binding change.</summary>
+        <param name="element">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

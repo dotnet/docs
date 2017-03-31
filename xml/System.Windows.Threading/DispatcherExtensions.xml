@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherExtensions" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Presentation</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a set of <see langword="static" /> methods that extend the <see cref="T:System.Windows.Threading.Dispatcher" /> class.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The methods in this class are defined as extension methods that extend the <xref:System.Windows.Threading.Dispatcher> class. This means that they can be called like an instance method on any <xref:System.Windows.Threading.Dispatcher> object.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginInvoke">
@@ -30,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -49,13 +40,11 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The dispatcher that executes the delegate.</param>
-        <param name="action">The delegate to execute, which takes no arguments and does not return a value.</param>
-        <summary>Executes the specified delegate asynchronously with normal priority on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of the BeginInvoke operation.</returns>
+        <param name="dispatcher">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -65,7 +54,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -85,16 +73,12 @@
         <Parameter Name="priority" Type="System.Windows.Threading.DispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The dispatcher that executes the delegate.</param>
-        <param name="action">The delegate to execute, which takes no arguments and does not return a value.</param>
-        <param name="priority">The execution priority of the delegate relative to other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
-        <summary>Executes the specified delegate asynchronously with the specified priority on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of the BeginInvoke operation.</returns>
+        <param name="dispatcher">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="priority">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -104,7 +88,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -123,12 +106,10 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The dispatcher that executes the delegate.</param>
-        <param name="action">The delegate to execute, which takes no arguments and does not return a value.</param>
-        <summary>Executes the specified delegate synchronously with normal priority on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
+        <param name="dispatcher">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -138,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -158,17 +138,11 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The dispatcher that executes the delegate.</param>
-        <param name="action">The delegate to execute, which takes no arguments and does not return a value.</param>
-        <param name="timeout">The maximum time to wait for the operation to finish.</param>
-        <summary>Executes the specified delegate synchronously on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on, and stops execution after the specified time-out period.</summary>
+        <param name="dispatcher">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="priority" /> is equal to <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -178,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -198,17 +171,11 @@
         <Parameter Name="priority" Type="System.Windows.Threading.DispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The dispatcher that executes the delegate.</param>
-        <param name="action">The delegate to execute, which takes no arguments and does not return a value.</param>
-        <param name="priority">The execution priority of the delegate relative to other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
-        <summary>Executes the specified delegate synchronously with the specified priority on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
+        <param name="dispatcher">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="priority">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="priority" /> is equal to <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -218,7 +185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -239,18 +205,12 @@
         <Parameter Name="priority" Type="System.Windows.Threading.DispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">The dispatcher that executes the delegate.</param>
-        <param name="action">The delegate to execute, which takes no arguments and does not return a value.</param>
-        <param name="timeout">The maximum time to wait for the operation to finish.</param>
-        <param name="priority">The execution priority of the delegate relative to other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
-        <summary>Executes the specified delegate synchronously with the specified priority on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on, and stops execution after the specified time-out period.</summary>
+        <param name="dispatcher">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="priority">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="priority" /> is equal to <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
   </Members>

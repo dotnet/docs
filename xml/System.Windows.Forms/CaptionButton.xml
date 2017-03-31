@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CaptionButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of caption button to display.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=fullName>.  
-  
- Caption buttons are the system buttons usually found on the rightmost side of a form's title bar.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use the <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=fullName> method and the CaptionButton enumeration. To run this example paste the following code in a form containing a Button named Button1. The form should import the System.Windows.Forms and System.Drawing namespaces. Ensure the button's Paint event is associated with the event-handling method in this example.  
-  
- [!code-cpp[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/cpp/t-system.windows.forms.c_32_1.cpp)]
- [!code-vb[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/visualbasic/t-system.windows.forms.c_32_1.vb)]
- [!code-cs[System.Windows.Forms.ControlPaintMembers#1](~/add/codesnippet/csharp/t-system.windows.forms.c_32_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CaptionButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Close button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CaptionButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Help button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Maximize">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CaptionButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Maximize button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimize">
@@ -91,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CaptionButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Minimize button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Restore">
@@ -108,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CaptionButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Restore button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

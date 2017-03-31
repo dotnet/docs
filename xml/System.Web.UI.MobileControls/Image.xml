@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Image" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,33 +35,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays an image on a mobile Web page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Image class provides a way to choose an image file based on device characteristics. For certain devices, you can specify built-in images by using a `symbol` : prefix as part of the URL in the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property. For more information, see the Device-Specific section of the Image.  
-  
-> [!NOTE]
->  If your application relies on cookieless sessions, or might receive requests from browsers that require cookieless sessions, using a tilde ("~") in a path can inadvertently result in creating a new session and potentially losing session data. To set a property with a path such as ("~/path"), resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A>("~/path") before assigning it to the property.  
-  
-   
-  
-## Examples  
- The following code sample code shows how to use a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within an Image control to specify different images for different devices. If you have available a file named Sunshine.gif, it will appear in Internet Explorer. If you view the page on a WML device such as an OpenWave phone or a CHTML device, it will appear as a sun icon. The page also displays the name of the browser and the resolved name of the image.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[MobileImageSample#1](~/add/codesnippet/csharp/t-system.web.ui.mobileco_13_1.aspx)]  
-  
- The following is the `<deviceFilters>` section of the `Web.config` file.  
-  
-   
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,12 +46,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Image" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +61,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,16 +75,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alternate text to display when an image is not available for the device. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The alternate text to display when an image is not available for the device.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The alternate text appears in browsers that do not support images or where the image file is not available.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -122,7 +87,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -140,34 +104,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Image" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Image" /></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because various devices provide a set of built-in pictures, such as images for a heart, sunshine, a book, a right arrow, and so on, by using a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within the <xref:System.Web.UI.MobileControls.Image> control, you can provide a wide variety of graphics that can be integrated into the devices themselves, as well as standard Web graphics.  
-  
- For example, you can specify `symbol:63726` as the ImageUrl property value for all devices that require WML markup, and Sunshine.gif as the ImageUrl property value for HTML devices.  
-  
- The exact resolution of the ImageUrl value is provided by an image adapter (such as <xref:System.Web.UI.MobileControls.Adapters.ChtmlImageAdapter>, <xref:System.Web.UI.MobileControls.Adapters.WmlImageAdapter>, or <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter>).  
-  
-   
-  
-## Examples  
- The following code example shows how to use a `<DeviceSpecific>` control within an <xref:System.Web.UI.MobileControls.Image> control to specify different images for different devices. If a file named Sunshine.gif is available, it will appear in Internet Explorer. If you view the page on a WML device such as an OpenWave phone or a CHTML device, it will appear as a sun icon. The page also displays the name of the browser and the resolved name of the image.  
-  
-> [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
-  
- [!code-cs[MobileImageSample#1](~/add/codesnippet/csharp/p-system.web.ui.mobileco_7_1.aspx)]  
-  
- The following is the `<deviceFilters>` section of the Web.config file.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -177,7 +116,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -195,16 +133,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the target URL of the image. The default value is an empty string ("").  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The target URL of the image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If your application relies on cookieless sessions, or might receive requests from browsers that require cookieless sessions, using a tilde ("~") in a path can inadvertently result in creating a new session and potentially losing session data. To set a property with a path such as ("~/path"), resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A>("~/path") before assigning it to the property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -214,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,8 +154,8 @@
         <Parameter Name="argument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="argument">A <see cref="T:System.String" /> that represents an optional event argument to be passed to the event handler.</param>
-        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.Image" /> object of a postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <param name="argument">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -251,16 +180,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed for a softkey when the Image has a <see cref="System.Web.UI.MobileControls.Image.NavigateUrl%2A" /> property defined. The default value is an empty <see langword="string" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <value>The text displayed for a softkey when the image has a <see cref="System.Web.UI.MobileControls.Image.NavigateUrl%2A" /> property defined.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used only for devices that support softkeys. If this property is empty, the `Text` property of the control is used. If the `Text` property is empty or its length is less than 9, the `Text` property is used for the softkey label.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -270,7 +192,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,16 +201,9 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">Optional event argument to be passed to the event handler.</param>
-        <summary>For a description of this member, see <see cref="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A" />.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Image> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

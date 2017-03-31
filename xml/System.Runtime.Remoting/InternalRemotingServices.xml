@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.InternalRemotingServices" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,20 +15,10 @@
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines utility methods for use by the .NET Framework remoting infrastructure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not need to call the `static` methods of the InternalRemotingServices class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.InternalRemotingServices" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,15 +44,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Conditional("_LOGGING")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -72,16 +59,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">A string to place in the message.</param>
-        <summary>Sends a message concerning a remoting channel to an unmanaged debugger.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCachedSoapAttribute">
@@ -91,14 +71,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Metadata.SoapAttribute</ReturnType>
       </ReturnValue>
@@ -106,21 +81,10 @@
         <Parameter Name="reflectionObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="reflectionObject">A class member or method parameter.</param>
-        <summary>Gets an appropriate SOAP-related attribute for the specified class member or method parameter.</summary>
-        <returns>The SOAP-related attribute for the specified class member or method parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- A `"_LOGGING"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
-  
- The <xref:System.Runtime.Remoting.Metadata.SoapAttribute> class is the base class for various SOAP-related attribute classes in the <xref:System.Runtime.Remoting.Metadata> namespace.  
-  
- ]]></format>
-        </remarks>
+        <param name="reflectionObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemotingAssert">
@@ -130,7 +94,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -146,20 +110,10 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="condition">
-          <see langword="true" /> to prevent a message from being displayed; otherwise, <see langword="false" />.</param>
-        <param name="message">The message to display if <c>condition</c> is <see langword="false" />.</param>
-        <summary>Instructs an internal debugger to check for a condition and display a message if the condition is <see langword="false" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- A `"_DEBUG"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
-  
- ]]></format>
-        </remarks>
+        <param name="condition">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemotingTrace">
@@ -169,7 +123,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -190,18 +144,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="messages">An array of type <see cref="T:System.Object" /> that contains any number of messages.</param>
-        <summary>Sends any number of messages concerning remoting channels to an internal debugger.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- A `"_LOGGING"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
-  
- ]]></format>
-        </remarks>
+        <param name="messages">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetServerIdentity">
@@ -211,15 +156,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,17 +172,10 @@
         <Parameter Name="srvID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="m">A <see cref="T:System.Runtime.Remoting.Messaging.MethodCall" /> that represents a method call on a remote object.</param>
-        <param name="srvID">Internal identifying information for a remoted server object.</param>
-        <summary>Sets internal identifying information for a remoted server object for each method call from client to server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- ]]></format>
-        </remarks>
+        <param name="m">To be added.</param>
+        <param name="srvID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,17 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether the <see cref="T:System.Web.UI.WebControls.Menu" /> control renders HTML <see langword="table" /> elements and inline styles, or <see langword="listitem" /> elements and cascading style sheet (CSS) styles.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use the MenuRenderingMode enumeration when you set the <xref:System.Web.UI.WebControls.Menu.RenderingMode%2A> property of the <xref:System.Web.UI.WebControls.Menu> control. The value that you assign to the <xref:System.Web.UI.WebControls.Menu.RenderingMode%2A> property determines how the <xref:System.Web.UI.WebControls.Menu> control renders markup.  
-  
- In ASP.NET 3.5 and earlier versions, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles to control the appearance of the menu in a browser. In ASP.NET 4 and later versions, by default the <xref:System.Web.UI.WebControls.Menu> control uses `listitem` elements and cascading style sheet (CSS) styles. This enumeration is provided for backward compatibility. In ASP.NET 4 and later versions, you can use this enumeration to specify that you want the menu control to generate markup the way it does in earlier versions of ASP.NET.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -36,7 +27,7 @@
         <ReturnType>System.Web.UI.WebControls.MenuRenderingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Web.UI.WebControls.Menu" /> control renders markup in the way it does by default for the version of ASP.NET indicated by the <see cref="System.Web.UI.Control.RenderingCompatibility%2A" /> property of the control. If the value of the <see cref="System.Web.UI.Control.RenderingCompatibility%2A" /> property is <c>3.5</c>, this setting is equivalent to Table. If the value of the <see cref="System.Web.UI.Control.RenderingCompatibility%2A" /> property is <c>4.0</c> or greater, this setting is equivalent to List.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -52,7 +43,7 @@
         <ReturnType>System.Web.UI.WebControls.MenuRenderingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Web.UI.WebControls.Menu" /> control renders markup by using list item (<see langword="li" />) elements and CSS styles.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -68,7 +59,7 @@
         <ReturnType>System.Web.UI.WebControls.MenuRenderingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Web.UI.WebControls.Menu" /> control renders markup by using <see langword="table" /> elements and inline styles.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

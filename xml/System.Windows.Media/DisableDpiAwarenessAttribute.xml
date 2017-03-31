@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.DisableDpiAwarenessAttribute" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,26 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] applications to disable dots per inch (dpi) awareness for all user interface elements.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- By default, [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] applications are dpi aware, which affects how user interface layout is calculated. However, an application can disable dpi awareness by adding the DisableDpiAwarenessAttribute to the application assembly.  
-  
-> [!CAUTION]
->  It is **not** recommended that you set this attribute for your application, unless you need all user interface elements of your application to be non-dpi aware.  
-  
-   
-  
-## Examples  
- The following example shows how to disable Dpi awareness for the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] application by declaring DisableDpiAwarenessAttribute at the assembly level.  
-  
- [!code-cs[DisableDpiAwareness#DisableDpiAwarenessAttribute1](~/add/codesnippet/csharp/DisableDpiAwareness/Window1.xaml.cs#disabledpiawarenessattribute1)]
- [!code-vb[DisableDpiAwareness#DisableDpiAwarenessAttribute1](~/add/codesnippet/visualbasic/disabledpiawareness/window1.xaml.vb#disabledpiawarenessattribute1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.DisableDpiAwarenessAttribute" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

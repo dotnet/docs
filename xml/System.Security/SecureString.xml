@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecureString extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecureString" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Security.SecureString</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,135 +24,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents text that should be kept confidential, such as by deleting it from computer memory when no longer needed. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SecureString is a string type that provides a measure of security. It tries to avoid storing potentially sensitive strings in process memory as plain text.  (For limitations, however, see the [How secure is SecureString?](#HowSecure) section.) The value of an instance of SecureString is automatically protected using a mechanism supported by the underlying platform when the instance is initialized or when the value is modified. Your application can render the instance immutable and prevent further modification by invoking the <xref:System.Security.SecureString.MakeReadOnly%2A> method.  
-  
- The maximum length of a SecureString instance is 65,536 characters.  
-  
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using an instance of the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- The SecureString class and its members are not visible to COM. For more information, see <xref:System.Runtime.InteropServices.ComVisibleAttribute>.  
-  
- In this section:  
-  
- [String vs. SecureString](#vsString)   
- [SecureString operations](#Ops)   
- [SecureString and interop](#interop)   
- [How secure is  SecureString?](#HowSecure)  
-  
-<a name="vsString"></a>   
-## String versus SecureString  
- An instance of the <xref:System.String?displayProperty=fullName> class is both immutable and, when no longer needed, cannot be programmatically scheduled for garbage collection; that is, the instance is read-only after it is created, and it is not possible to predict when the instance will be deleted from computer memory. Because <xref:System.String?displayProperty=fullName> instances are immutable, operations that appear to modify an existing instance  actually create a copy of it to manipulate. Consequently, if a <xref:System.String> object contains sensitive information such as a password, credit card number, or personal data, there is a risk the information could be revealed after it is used because your application cannot delete the data from computer memory.  
-  
- A SecureString object is similar to a <xref:System.String> object in that it has a text value. However, the value of a SecureString object is pinned in memory, may use a protection mechanism, such as encryption, provided by the underlying operating system, can be modified until your application marks it as read-only, and can be deleted from computer memory either by your application calling the <xref:System.Security.SecureString.Dispose%2A> method  or by the .NET Framework garbage collector.  
-  
- For a discussion of the limitations of the SecureString class, see the [How secure is  SecureString?](#HowSecure) section.  
-  
- [Back to top](#top)  
-  
-<a name="Ops"></a>   
-## SecureString operations  
- The SecureString class includes members that allow you to do the following:  
-  
- Instantiate a SecureString object  
- You instantiate a SecureString object by calling its parameterless constructor.  
-  
- Add characters to a SecureString object  
- You can add a single character at a time to a SecureString object  by calling its <xref:System.Security.SecureString.AppendChar%2A> or <xref:System.Security.SecureString.InsertAt%2A> method.  
-  
-> [!IMPORTANT]
->  A SecureString object should never be constructed from a <xref:System.String>, because the sensitive data is already subject to the memory persistence consequences of the immutable <xref:System.String> class. The best way to construct a SecureString object is from a character-at-a-time unmanaged source, such as the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
-  
- Remove characters from a SecureString object  
- You can replace an individual character by calling the <xref:System.Security.SecureString.SetAt%2A> method, remove an individual character by calling the <xref:System.Security.SecureString.RemoveAt%2A> method, or remove all characters from the SecureString instance by calling the  <xref:System.Security.SecureString.Clear%2A> method.  
-  
- Make the SecureString object read-only  
- Once you have defined the string that the SecureString object represents, you call its  <xref:System.Security.SecureString.MakeReadOnly%2A> method to make the string read-only.  
-  
- Get information about the SecureString object  
- The SecureString class has only two members that provide information about the string: its <xref:System.Security.SecureString.Length%2A> property, which indicates the number of UTF16-encoded code units in the string; and the <xref:System.Security.SecureString.IsReadOnly%2A>, method, which indicates whether the instance is read-only.  
-  
- Release the memory allocated to the SecureString instance  
- Because SecureString implements the <xref:System.IDisposable> interface, you release its memory by calling the <xref:System.Security.SecureString.Dispose%2A> method.  
-  
- The SecureString class has no members that inspect, compare, or convert the value of a SecureString. The absence of such members helps protect the value of the instance from accidental or malicious exposure. Use appropriate members of the <xref:System.Runtime.InteropServices.Marshal?displayProperty=fullName> class, such as the <xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A> method, to manipulate the value of a SecureString object.  
-  
- The .NET Framework Class Library commonly uses SecureString instances in the following ways:  
-  
--   To provide password information to a process by using the <xref:System.Diagnostics.ProcessStartInfo> structure or by calling an overload of the <xref:System.Diagnostics.Process.Start%2A?displayProperty=fullName> method that has a parameter of type SecureString.  
-  
--   To provide network password information by calling a <xref:System.Net.NetworkCredential> class constructor that has a parameter of type SecureString or by using the <xref:System.Net.NetworkCredential.SecurePassword%2A?displayProperty=fullName> property.  
-  
--   To provide password information for SQL Server Authentication by calling the <xref:System.Data.SqlClient.SqlCredential.%23ctor%2A?displayProperty=fullName> constructor or retrieving the value of the <xref:System.Data.SqlClient.SqlCredential.Password%2A?displayProperty=fullName> property.  
-  
--   To pass a string to unmanaged code. For more information, see the [SecureString and interop](#interop) section.  
-  
- [Back to top](#top)  
-  
-<a name="interop"></a>   
-## SecureString and interop  
- Because the operating system does not  directly support SecureString, you must convert the value of the SecureString object to the required string type before passing the string to a native method.  The <xref:System.Runtime.InteropServices.Marshal> class has five methods that do this:  
-  
--   <xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A?displayProperty=fullName>, which converts the SecureString string value to a binary string (BSTR) recognized by COM.  
-  
--   <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi%2A?displayProperty=fullName> and <xref:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi%2A?displayProperty=fullName>, which copy the SecureString string value to an ANSI string in unmanaged memory.  
-  
--   <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName> and <xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName>, which copy the SecureString string value to a Unicode string in unmanaged memory.  
-  
- Each of these methods creates a clear-text string in unmanaged memory. It is the responsibility of the developer to zero out and free that memory as soon as it is no longer needed. Each of the string conversion and memory allocation methods has a corresponding method to zero out and free the allocated memory:  
-  
-|Allocation and conversion method|Zero and free method|  
-|--------------------------------------|--------------------------|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToBSTR%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeBSTR%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemAnsi%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemAnsi%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeCoTaskMemUnicode%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToGlobalAllocAnsi%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocAnsi%2A?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.Marshal.SecureStringToCoTaskMemUnicode%2A?displayProperty=fullName>|<xref:System.Runtime.InteropServices.Marshal.ZeroFreeGlobalAllocUnicode%2A?displayProperty=fullName>|  
-  
- [Back to top](#top)  
-  
-<a name="HowSecure"></a>   
-## How secure is SecureString?  
- When created properly, a SecureString instance provides more data protection than a <xref:System.String>. When creating a string from a character-at-a-time source, <xref:System.String> creates multiple intermediate in memory, whereas  SecureString creates just a single instance.  Garbage collection of <xref:System.String> objects  is non-deterministic. In addition, because its memory is not pinned, the garbage collector will make additional copies of <xref:System.String> values when moving and compacting memory. In contrast, the memory allocated to a SecureString object is pinned,  and that memory can be freed by calling the <xref:System.Security.SecureString.Dispose%2A> method.  
-  
- Although data stored in a SecureString instance is more secure than data stored in a <xref:System.String> instance, there are significant limitations on how secure a SecureString instance is. These include:  
-  
- Platform  
- On the Windows operating system, the contents of a SecureString instance's internal character array is encrypted. However, whether because of missing APIs or key management issues,  encryption is not available on all platforms. Because of this, SecureString is available on Desktop (Windows only), and not on .NET Core.  
-  
- Duration  
- Even if the SecureString implementation is able to take advantage of encryption, the plain text assigned to the SecureString instance may be exposed at various times:  
-  
--   Because Windows doesn't offer a secure string implementation at the operating system level, the .NET Framework still has to convert the secure string value to its plain text representation in order to use it.  
-  
--   Whenever the value of the secure string is modified by methods such as <xref:System.Security.SecureString.AppendChar%2A> or <xref:System.Security.SecureString.RemoveAt%2A>, it must be decrypted (i.e., converted back to plain text), modified, and then encrypted again.  
-  
--   If the secure string is used in an interop call, it must be converted to an ANSI string, a Unicode string, or a binary string (BSTR). For more information, see the [SecureString and interop](#interop) section.  
-  
- The time interval for which the SecureString instance's value is exposed  is merely shortened in comparison to the <xref:System.String> class.  
-  
- Storage versus usage  
- More generally, the SecureString class defines a storage mechanism for string values that should be protected or kept confidential. However, outside of the .NET Framework itself, no usage mechanism supports SecureString. This means that the secure string must be converted to a usable form (typically a clear text form) that can be recognized by its target, and     that decryption and conversion must occur in user space.  
-  
- Overall, SecureString is more secure than <xref:System.String> because it limits the exposure of sensitive string data. However, those strings may still be exposed to any process or operation that has access to raw memory, such as a malicious process running on the host computer, a process dump, or a user-viewable swap file. Instead of using SecureString to protect passwords, the recommended alternative is to use an opaque handle to credentials that are stored outside of the process.  
-  
- [Back to top](#top)  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use a SecureString to secure a user’s password for use as a credential to start a new process.  
-  
- [!code-vb[System.Security.SecureString.Ctor#4](~/add/codesnippet/visualbasic/t-system.security.secure_1.vb)]
- [!code-cs[System.Security.SecureString.Ctor#4](~/add/codesnippet/csharp/t-system.security.secure_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,38 +34,22 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.SecureString" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example uses the default (or parameterless) constructor to instantiate a new <xref:System.Security.SecureString> object. It then calls the <xref:System.Security.SecureString.AppendChar%2A> method to add an array of characters to it.  
-  
- [!code-cs[System.Security.SecureString.Ctor#2](~/add/codesnippet/csharp/m-system.security.secure_7_1.cs)]
- [!code-cpp[System.Security.SecureString.Ctor#2](~/add/codesnippet/cpp/m-system.security.secure_7_1.cpp)]
- [!code-vb[System.Security.SecureString.Ctor#2](~/add/codesnippet/visualbasic/m-system.security.secure_7_1.vb)]  
-  
- The following example creates a <xref:System.Security.SecureString> object from the value of a <xref:System.String> object.  
-  
- [!code-vb[System.Security.SecureString.Ctor#3](~/add/codesnippet/visualbasic/m-system.security.secure_7_2.vb)]
- [!code-cpp[System.Security.SecureString.Ctor#3](~/add/codesnippet/cpp/m-system.security.secure_7_2.cpp)]
- [!code-cs[System.Security.SecureString.Ctor#3](~/add/codesnippet/csharp/m-system.security.secure_7_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this instance.</exception>
-        <exception cref="T:System.NotSupportedException">This operation is not supported on this platform.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -193,16 +58,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.#ctor(System.Char*,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -210,36 +80,10 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">A pointer to an array of <see cref="T:System.Char" /> objects.</param>
-        <param name="length">The number of elements of <c>value</c> to include in the new instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.SecureString" /> class from a subarray of <see cref="T:System.Char" /> objects.  
-  
- This constructor is not CLS-compliant. The CLS-compliant alternative is <see cref="System.Security.SecureString.%23ctor" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor initializes the new <xref:System.Security.SecureString> object to the number of characters in `value` specified by `length`; the value of the instance is then encrypted.  
-  
- In C#, this constructor is defined only in the context of unsafe code.  
-  
-   
-  
-## Examples  
- The following example instantiates a new <xref:System.Security.SecureString> object by passing its constructor a pointer to a character array.  
-  
- [!code-cpp[System.Security.SecureString.Ctor2#1](~/add/codesnippet/cpp/m-system.security.secure_3_1.cpp)]
- [!code-cs[System.Security.SecureString.Ctor2#1](~/add/codesnippet/csharp/securestringctor/ctor1.cs#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="length" /> is less than zero or greater than 65,536.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
-        <exception cref="T:System.NotSupportedException">This operation is not supported on this platform.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <param name="value">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendChar">
@@ -248,16 +92,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.AppendChar(System.Char)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -267,35 +116,9 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="c">A character to append to this secure string.</param>
-        <summary>Appends a character to the end of the current secure string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the implementation uses a protection mechanism, such as encryption, the value of this secure string, if any, is unprotected; `c` is appended; then the new value of the secure string is re-protected.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the AppendChar, <xref:System.Security.SecureString.InsertAt%2A>, <xref:System.Security.SecureString.RemoveAt%2A>, <xref:System.Security.SecureString.SetAt%2A>, and <xref:System.Security.SecureString.Clear%2A> methods affect the value of a <xref:System.Security.SecureString> object.  
-  
- [!code-cpp[SecureString.xAt#1](~/add/codesnippet/cpp/m-system.security.secure_6_1.cpp)]
- [!code-cs[SecureString.xAt#1](~/add/codesnippet/csharp/m-system.security.secure_6_1.cs)]
- [!code-vb[SecureString.xAt#1](~/add/codesnippet/visualbasic/m-system.security.secure_6_1.vb)]  
-  
- The following example demonstrates how the AppendChar and <xref:System.Security.SecureString.RemoveAt%2A> methods can be used to collect the characters in a password.  
-  
- [!code-cpp[SecureString.xChar#1](~/add/codesnippet/cpp/m-system.security.secure_6_2.cpp)]
- [!code-vb[SecureString.xChar#1](~/add/codesnippet/visualbasic/m-system.security.secure_6_2.vb)]
- [!code-cs[SecureString.xChar#1](~/add/codesnippet/csharp/m-system.security.secure_6_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">Performing this operation would make the length of this secure string greater than 65,536 characters.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -304,40 +127,25 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes the value of the current secure string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The computer memory that contains the value of this secure string is zeroed, then the length of the value of this secure string is set to zero.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the <xref:System.Security.SecureString.AppendChar%2A>, <xref:System.Security.SecureString.InsertAt%2A>, <xref:System.Security.SecureString.RemoveAt%2A>, <xref:System.Security.SecureString.SetAt%2A>, and Clear methods affect the value of a <xref:System.Security.SecureString> object.  
-  
- [!code-cpp[SecureString.xAt#1](~/add/codesnippet/cpp/m-system.security.secure_5_1.cpp)]
- [!code-cs[SecureString.xAt#1](~/add/codesnippet/csharp/m-system.security.secure_5_1.cs)]
- [!code-vb[SecureString.xAt#1](~/add/codesnippet/visualbasic/m-system.security.secure_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -346,32 +154,26 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.Copy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecureString</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the current secure string.</summary>
-        <returns>A duplicate of this secure string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an instance of a <xref:System.Security.SecureString> is marked read-only, the copy of that instance will not be read-only.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -380,31 +182,25 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the current <see cref="T:System.Security.SecureString" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Dispose method writes binary zeroes to the allocated memory that contains the value of this <xref:System.Security.SecureString> object, then frees the allocated memory.  
-  
- For more information, see [Garbage Collection](../Topic/Garbage%20Collection.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAt">
@@ -413,16 +209,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.InsertAt(System.Int32,System.Char)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -433,37 +234,10 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="index">The index position where parameter <c>c</c> is inserted.</param>
-        <param name="c">The character to insert.</param>
-        <summary>Inserts a character in this secure string at the specified index position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The index is zero-based; the first character in this secure string is at index position zero.  
-  
- If the implementation uses a protection mechanism, such as encryption, the value of the secure string, if any, is unprotected; `c` is inserted at the specified index position; then the new value is re-protected. The InsertAt method yields the same results as the <xref:System.Security.SecureString.AppendChar%2A> method, which inserts a character at the end of a secure string, if the `index` parameter of InsertAt is set to the length of this instance.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the <xref:System.Security.SecureString.AppendChar%2A>, InsertAt, <xref:System.Security.SecureString.RemoveAt%2A>, <xref:System.Security.SecureString.SetAt%2A>, and <xref:System.Security.SecureString.Clear%2A> methods affect the value of a <xref:System.Security.SecureString> object.  
-  
- [!code-cpp[SecureString.xAt#1](~/add/codesnippet/cpp/m-system.security.secure_0_1.cpp)]
- [!code-cs[SecureString.xAt#1](~/add/codesnippet/csharp/m-system.security.secure_0_1.cs)]
- [!code-vb[SecureString.xAt#1](~/add/codesnippet/visualbasic/m-system.security.secure_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero, or greater than the length of this secure string.  
-  
- -or-  
-  
- Performing this operation would make the length of this secure string greater than 65,536 characters.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <param name="index">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -472,32 +246,26 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.IsReadOnly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether this secure string is marked read-only.</summary>
-        <returns>
-          <see langword="true" /> if this secure string is marked read-only; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After an instance of <xref:System.Security.SecureString> is marked read-only by the <xref:System.Security.SecureString.MakeReadOnly%2A> method, any attempt to modify the value of the instance throws an <xref:System.InvalidOperationException>. Use the IsReadOnly method to test whether a <xref:System.Security.SecureString> is read-only before attempting to modify it.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -506,32 +274,25 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecureString.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of characters in the current secure string.</summary>
-        <value>The number of <see cref="T:System.Char" /> objects in this secure string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Length property returns the number of <xref:System.Char> objects in this instance, not the number of Unicode characters. A Unicode character might be represented by more than one <xref:System.Char> object.  
-  
- The maximum length of a <xref:System.Security.SecureString> instance is 65,536 characters.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
@@ -540,43 +301,25 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.MakeReadOnly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Makes the text value of this secure string read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initialize the text value of an instance of the <xref:System.Security.SecureString> class with the <xref:System.Security.SecureString.%23ctor%2A> constructors, and modify the value with the <xref:System.Security.SecureString.Clear%2A>, <xref:System.Security.SecureString.RemoveAt%2A>, <xref:System.Security.SecureString.SetAt%2A>, <xref:System.Security.SecureString.InsertAt%2A>, and <xref:System.Security.SecureString.AppendChar%2A> methods.  
-  
- After you have made your final modifications, use the MakeReadOnly method to make the value of the instance immutable (read-only). After the value is marked as read-only, any further attempt to modify it throws an <xref:System.InvalidOperationException>.  
-  
- The effect of invoking MakeReadOnly is permanent because the <xref:System.Security.SecureString> class provides no means to make the secure string modifiable again. Use the <xref:System.Security.SecureString.IsReadOnly%2A> method to test whether an instance of <xref:System.Security.SecureString> is read-only.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the <xref:System.Security.SecureString.AppendChar%2A> and <xref:System.Security.SecureString.RemoveAt%2A> methods can be used to collect the characters in a password. After the password is collected, it is made read-only.  
-  
- [!code-cpp[SecureString.xChar#1](~/add/codesnippet/cpp/m-system.security.secure_1_1.cpp)]
- [!code-vb[SecureString.xChar#1](~/add/codesnippet/visualbasic/m-system.security.secure_1_1.vb)]
- [!code-cs[SecureString.xChar#1](~/add/codesnippet/csharp/m-system.security.secure_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -585,16 +328,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.RemoveAt(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -604,38 +352,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position of a character in this secure string.</param>
-        <summary>Removes the character at the specified index position from this secure string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The index is zero-based; the first character in this instance is at index position zero.  
-  
- If the implementation uses a protection mechanism, such as encryption, the value of this secure string, if any, is unprotected; the character at the specified index position is removed; then the new value is re-protected.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the <xref:System.Security.SecureString.AppendChar%2A>, <xref:System.Security.SecureString.InsertAt%2A>, RemoveAt, <xref:System.Security.SecureString.SetAt%2A>, and <xref:System.Security.SecureString.Clear%2A> methods affect the value of a <xref:System.Security.SecureString> object.  
-  
- [!code-cpp[SecureString.xAt#1](~/add/codesnippet/cpp/m-system.security.secure_2_1.cpp)]
- [!code-cs[SecureString.xAt#1](~/add/codesnippet/csharp/m-system.security.secure_2_1.cs)]
- [!code-vb[SecureString.xAt#1](~/add/codesnippet/visualbasic/m-system.security.secure_2_1.vb)]  
-  
- The following example demonstrates how the <xref:System.Security.SecureString.AppendChar%2A> and RemoveAt methods can be used to collect the characters in a password.  
-  
- [!code-cpp[SecureString.xChar#1](~/add/codesnippet/cpp/m-system.security.secure_2_2.cpp)]
- [!code-vb[SecureString.xChar#1](~/add/codesnippet/visualbasic/m-system.security.secure_2_2.vb)]
- [!code-cs[SecureString.xChar#1](~/add/codesnippet/csharp/m-system.security.secure_2_2.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero, or greater than or equal to the length of this secure string.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAt">
@@ -644,16 +363,21 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureString.SetAt(System.Int32,System.Char)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Security.SecureString</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -664,33 +388,10 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="index">The index position of an existing character in this secure string</param>
-        <param name="c">A character that replaces the existing character.</param>
-        <summary>Replaces the existing character at the specified index position with another character.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The index is zero-based; the first character in this instance is at index position zero.  
-  
- If the implementation uses a protection mechanism, such as encryption, the value of the secure string, if any, is unprotected; `c` is assigned to the specified index position; then the new value is re-protected.  
-  
-   
-  
-## Examples  
- The following example demonstrates how the <xref:System.Security.SecureString.AppendChar%2A>, <xref:System.Security.SecureString.InsertAt%2A>, <xref:System.Security.SecureString.RemoveAt%2A>, SetAt, and <xref:System.Security.SecureString.Clear%2A> methods affect the value of a <xref:System.Security.SecureString> object.  
-  
- [!code-cpp[SecureString.xAt#1](~/add/codesnippet/cpp/m-system.security.secure_4_1.cpp)]
- [!code-cs[SecureString.xAt#1](~/add/codesnippet/csharp/m-system.security.secure_4_1.cs)]
- [!code-vb[SecureString.xAt#1](~/add/codesnippet/visualbasic/m-system.security.secure_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">This secure string has already been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">This secure string is read-only.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero, or greater than or equal to the length of this secure string.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while protecting or unprotecting the value of this secure string.</exception>
+        <param name="index">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

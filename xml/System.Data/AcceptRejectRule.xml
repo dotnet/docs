@@ -4,30 +4,19 @@
   <TypeSignature Language="DocId" Value="T:System.Data.AcceptRejectRule" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines the action that occurs when the <see cref="System.Data.DataSet.AcceptChanges%2A" /> or <see cref="System.Data.DataTable.RejectChanges%2A" /> method is invoked on a <see cref="T:System.Data.DataTable" /> with a <see cref="T:System.Data.ForeignKeyConstraint" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Changes to a <xref:System.Data.DataTable> are not final until you call the <xref:System.Data.DataTable.AcceptChanges%2A> method. When either <xref:System.Data.DataTable.AcceptChanges%2A> or <xref:System.Data.DataTable.RejectChanges%2A> is called on a row in the parent table, the AcceptRejectRule value determines whether or not changes are propagated to corresponding rows in the child table.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.ForeignKeyConstraint>, sets various of its properties, including the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A>, and adds it to a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
-  
- [!code-cs[DataWorks Data.AcceptRejectRule#1](~/add/codesnippet/csharp/t-system.data.acceptreje_1.cs)]
- [!code-vb[DataWorks Data.AcceptRejectRule#1](~/add/codesnippet/visualbasic/t-system.data.acceptreje_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cascade">
@@ -37,14 +26,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.AcceptRejectRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Changes are cascaded across the relationship.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -54,14 +47,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.AcceptRejectRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No action occurs (default).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

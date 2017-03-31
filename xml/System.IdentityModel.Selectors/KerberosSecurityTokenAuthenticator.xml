@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Authenticates a <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> security token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the KerberosSecurityTokenAuthenticator class to authenticate <xref:System.IdentityModel.Tokens.KerberosReceiverSecurityToken> security tokens.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user is authenticated the claims are added to identify the groups that the Windows user belongs to.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -53,16 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="includeWindowsGroups" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeWindowsGroups">
-          <see langword="true" /> to get the groups the Windows user belongs to; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator" /> class by specifying whether the groups that the Windows user belongs to are obtained when the user is authenticated.</summary>
+        <param name="includeWindowsGroups">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,10 +64,9 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to authenticate.</param>
-        <summary>Gets a value that indicates whether the specified security token can be validated by this security token authenticator.</summary>
-        <returns>
-          <see langword="true" /> when <paramref name="token" /> is a <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> security token; otherwise, <see langword="false" />.</returns>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

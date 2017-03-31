@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ChannelDispatcher" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A component that accepts channels and associates them with a service.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ChannelDispatcher object associates an <xref:System.ServiceModel.Channels.IChannelListener> at a particular URI (called a listen URI) with an instance of a service. Each <xref:System.ServiceModel.ServiceHost> object can have many ChannelDispatcher objects, each associated with a different listener and listen URI for that service.  
-  
- When a message arrives, the ChannelDispatcher queries each of the associated <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects whether the endpoint can accept the message, and passes the message to the one that can. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a ChannelDispatcher when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property.  
-  
- All properties that control the lifetime and behavior of a channel session are available for inspection or modification on the ChannelDispatcher object. In addition to the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>, these include custom <xref:System.ServiceModel.Dispatcher.IChannelInitializer> objects, the <xref:System.ServiceModel.Channels.IChannelListener>, the <xref:System.ServiceModel.ServiceHost>, the associated and <xref:System.ServiceModel.InstanceContext>.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#0](~/add/codesnippet/csharp/t-system.servicemodel.di_0_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#0](~/add/codesnippet/visualbasic/t-system.servicemodel.di_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,31 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="listener" Type="System.ServiceModel.Channels.IChannelListener" />
       </Parameters>
       <Docs>
-        <param name="listener">The <see cref="T:System.ServiceModel.Channels.IChannelListener" /> for the channel dispatcher.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener, with system-provided default timeouts.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#1](~/add/codesnippet/csharp/c36e66cf-4fd5-4f92-a03a-_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#1](~/add/codesnippet/visualbasic/c36e66cf-4fd5-4f92-a03a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="listener" /> is <see langword="null" />.</exception>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -82,25 +47,10 @@
         <Parameter Name="bindingName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="listener">The <see cref="T:System.ServiceModel.Channels.IChannelListener" /> for the channel dispatcher.</param>
-        <param name="bindingName">The name of the binding used to configure the service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener and binding, with system-provided default timeouts.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#2](~/add/codesnippet/csharp/a9625d03-f4da-4d72-ae2d-_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#2](~/add/codesnippet/visualbasic/a9625d03-f4da-4d72-ae2d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="listener" /> is <see langword="null" />.</exception>
+        <param name="listener">To be added.</param>
+        <param name="bindingName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,7 +60,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,26 +68,11 @@
         <Parameter Name="timeouts" Type="System.ServiceModel.IDefaultCommunicationTimeouts" />
       </Parameters>
       <Docs>
-        <param name="listener">The <see cref="T:System.ServiceModel.Channels.IChannelListener" /> for the service.</param>
-        <param name="bindingName">The name of the binding used to configure the service.</param>
-        <param name="timeouts">The <see cref="T:System.ServiceModel.IDefaultCommunicationTimeouts" /> for the service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> class from the provided listener and binding, with the specified default timeouts.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#3](~/add/codesnippet/csharp/cadf0641-a6e2-46bb-8257-_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#3](~/add/codesnippet/visualbasic/cadf0641-a6e2-46bb-8257-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="listener" /> is <see langword="null" />.</exception>
+        <param name="listener">To be added.</param>
+        <param name="bindingName">To be added.</param>
+        <param name="timeouts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AsynchronousTransactedAcceptEnabled">
@@ -154,9 +88,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the transacted accept method calls on listener are asynchronous.</summary>
-        <value>
-          <see langword="true" /> if the transacted accept method calls on listener are asynchronous; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +100,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,19 +109,9 @@
         <Parameter Name="host" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="host">The <see cref="T:System.ServiceModel.ServiceHostBase" /> for the service.</param>
-        <summary>Attaches the channel dispatcher to the host.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingName">
@@ -199,29 +121,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the binding used to configure the service.</summary>
-        <value>The binding name of the service.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Used to obtain the binding name for the binding with which this channel dispatcher is associated.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#4](~/add/codesnippet/csharp/p-system.servicemodel.di_18_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#4](~/add/codesnippet/visualbasic/p-system.servicemodel.di_18_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelInitializers">
@@ -231,29 +139,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a set of <see cref="T:System.ServiceModel.Dispatcher.IChannelInitializer" /> objects that you can use to inspect and add state to channels when they are first created.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedCollection%601" /> of type <see cref="T:System.ServiceModel.Dispatcher.IChannelInitializer" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this property to insert a custom channel initializer into the initialization collection to inspect or modify channel state when they are created. This is also useful to perform the same behavior on outgoing channels if the contract associated with a dispatcher is a duplex contract.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#5](~/add/codesnippet/csharp/p-system.servicemodel.di_19_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#5](~/add/codesnippet/visualbasic/p-system.servicemodel.di_19_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseInput">
@@ -263,7 +157,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,15 +164,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops the listener from accepting new channels.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling this method stops the listener listening.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
@@ -289,23 +175,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default interval of time allowed for the channel dispatcher to close.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the channel dispatcher to close.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This default close timeout can be set using <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.%23ctor%28System.ServiceModel.Channels.IChannelListener%2CSystem.String%2CSystem.ServiceModel.IDefaultCommunicationTimeouts%29>. Otherwise, a service model default value of 1 minute is used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultOpenTimeout">
@@ -315,23 +193,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default interval of time allowed for the channel dispatcher to open.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the default interval of time allowed for the channel dispatcher to close.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This default open timeout can be set using <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.%23ctor%28System.ServiceModel.Channels.IChannelListener%2CSystem.String%2CSystem.ServiceModel.IDefaultCommunicationTimeouts%29>. Otherwise, a service model default value of 1 minute is used.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -341,7 +211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -351,29 +220,9 @@
         <Parameter Name="host" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="host">The <see cref="T:System.ServiceModel.ServiceHostBase" /> for the service.</param>
-        <summary>Detaches the service host from the channel dispatcher.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
- Sets the <xref:System.ServiceModel.ServiceHostBase> associated with the channel dispatcher to `null`.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#18](~/add/codesnippet/csharp/334cfaeb-0991-457b-b54b-_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#18](~/add/codesnippet/visualbasic/334cfaeb-0991-457b-b54b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="host" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Endpoints">
@@ -383,31 +232,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.EndpointDispatcher&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the endpoint dispatchers which forward messages to the channel endpoints.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedCollection%601" /> of <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> which forward messages to the channel endpoints.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> has a distinct <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for each endpoint that the channel can support.  
-  
- Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to obtain access to runtime properties that enable you to customize the runtime across an entire endpoint.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#6](~/add/codesnippet/csharp/p-system.servicemodel.di_22_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#6](~/add/codesnippet/visualbasic/p-system.servicemodel.di_22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorHandlers">
@@ -417,24 +250,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.IErrorHandler&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a set of <see cref="T:System.ServiceModel.Dispatcher.IErrorHandler" /> objects that can be used to insert custom error handling functionality for an endpoint.</summary>
-        <value>A <see cref="System.Collections.Generic.SynchronizedCollection%601" /> of <see cref="T:System.ServiceModel.Dispatcher.IErrorHandler" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#7](~/add/codesnippet/csharp/p-system.servicemodel.di_14_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#7](~/add/codesnippet/visualbasic/p-system.servicemodel.di_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -444,29 +268,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the host for the service associated with the dispatcher.</summary>
-        <value>The <see cref="T:System.ServiceModel.ServiceHostBase" /> for the service associated with the dispatcher.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each <xref:System.ServiceModel.ServiceHost> object can have many <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects, each associated with a different <xref:System.ServiceModel.Channels.IChannelListener> for that service.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#8](~/add/codesnippet/csharp/p-system.servicemodel.di_12_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#8](~/add/codesnippet/visualbasic/p-system.servicemodel.di_12_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeExceptionDetailInFaults">
@@ -476,33 +286,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether to include the details about an exception in a fault.</summary>
-        <value>
-          <see langword="true" /> if the details about an exception are included in the faults; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#19](~/add/codesnippet/csharp/01ac9eb7-71a0-4d33-b665-_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#19](~/add/codesnippet/visualbasic/01ac9eb7-71a0-4d33-b665-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTransactedAccept">
@@ -512,25 +304,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the accept method calls on the listener are done under a transaction.</summary>
-        <value>
-          <see langword="true" /> if the accept method calls on the listener are done under a transaction; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#9](~/add/codesnippet/csharp/p-system.servicemodel.di_10_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#9](~/add/codesnippet/visualbasic/p-system.servicemodel.di_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTransactedReceive">
@@ -540,33 +322,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the receive method calls on the listener are done under a transaction.</summary>
-        <value>
-          <see langword="true" /> if the receive method calls on the listener are done under a transaction; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsTransactedReceive property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#10](~/add/codesnippet/csharp/p-system.servicemodel.di_16_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#10](~/add/codesnippet/visualbasic/p-system.servicemodel.di_16_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Listener">
@@ -576,29 +340,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.IChannelListener</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the listener associated with the channel dispatcher.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.IChannelListener" /> associated with the channel dispatcher.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> associates an <xref:System.ServiceModel.Channels.IChannelListener> at a particular URI with an instance of a service.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#11](~/add/codesnippet/csharp/p-system.servicemodel.di_8_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#11](~/add/codesnippet/visualbasic/p-system.servicemodel.di_8_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ManualAddressing">
@@ -608,35 +358,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the channel dispatcher adds addressing headers to request-reply messages.</summary>
-        <value>
-          <see langword="true" /> if the proxy does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />. See Remarks.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
- Set the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing%2A> property to `true` if you want to prevent the client from adding Message ID and ReplyTo addressing headers to request/response messages so that your application can control these headers.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#12](~/add/codesnippet/csharp/p-system.servicemodel.di_9_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#12](~/add/codesnippet/visualbasic/p-system.servicemodel.di_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPendingReceives">
@@ -652,8 +382,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum pending messages per channel.</summary>
-        <value>An integer representing a maximum number of messages.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,33 +394,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size for a transacted batch.</summary>
-        <value>The maximum size for a transacted batch.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MaxTransactedBatchSize property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#13](~/add/codesnippet/csharp/p-system.servicemodel.di_13_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#13](~/add/codesnippet/visualbasic/p-system.servicemodel.di_13_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageVersion">
@@ -700,34 +412,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the SOAP message and WS-Addressing versions that are used or expected.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is used or expected.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.  
-  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#20](~/add/codesnippet/csharp/p-system.servicemodel.di_3_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#20](~/add/codesnippet/visualbasic/p-system.servicemodel.di_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAbort">
@@ -737,7 +430,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -745,7 +437,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aborts the listener associated with the dispatcher.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,7 +448,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -768,11 +459,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</param>
-        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous completion of the close operation.</param>
-        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
-        <summary>Begins an asynchronous operation to close a channel listener for the dispatcher that must be completed within a specified interval of time.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation to close a channel listener for the dispatcher.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +474,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -795,20 +485,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the open operation has to complete before timing out.</param>
-        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous completion of the open operation.</param>
-        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous open operation.</param>
-        <summary>Begins an asynchronous operation to open a channel listener for the dispatcher that must be completed within a specified interval of time.</summary>
-        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation to open a channel listener for the dispatcher.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The channel dispatcher must be associated with a non-`null` service host when this method is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The host or the message version is <see langword="null" />.</exception>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClose">
@@ -818,7 +500,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -828,8 +509,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the listener to close.</param>
-        <summary>Closes the channel listener associated with the dispatcher within a specified interval of time.</summary>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,7 +521,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -848,7 +528,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a trace of the closing of the endpoint dispatchers associated with the channel dispatcher.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -859,7 +539,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -869,8 +548,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="System.ServiceModel.Dispatcher.ChannelDispatcher.OnBeginClose%2A" /> method.</param>
-        <summary>Completes an asynchronous operation to close a channel listener for the dispatcher.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -881,7 +560,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -891,8 +569,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="System.ServiceModel.Dispatcher.ChannelDispatcher.OnBeginOpen%2A" /> method.</param>
-        <summary>Completes an asynchronous operation to open a channel listener for the dispatcher.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -903,7 +581,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -913,17 +590,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the listener to open.</param>
-        <summary>Opens the listener associated with the channel dispatcher.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The channel dispatcher must be associated with a non-`null` service host when this method is called and message version must be set to a non-`null` value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The host or the message version is <see langword="null" />.</exception>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnOpened">
@@ -933,7 +602,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -941,16 +609,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Populates and validates filter table used to dispatch to the endpoints.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The channel dispatcher must be associated with a non-`null` service host when this method is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The host is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnOpening">
@@ -960,7 +620,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -968,16 +627,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Checks whether the channel dispatcher is attached to a host.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The channel dispatcher must be associated with a non-`null` service host on opening.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The host is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveContextEnabled">
@@ -993,17 +644,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether ReceiveContext is enabled.</summary>
-        <value>
-          <see langword="true" /> if ReceiveContext is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ReceiveContext controls the manner in which messages are handled by the service, for example locking of the message as long as needed.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveSynchronously">
@@ -1013,35 +656,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether the dispatcher uses synchronous calls to read messages from channels.</summary>
-        <value>
-          <see langword="true" /> if the dispatcher uses synchronous methods to read messages from channels; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a binding implements <xref:System.ServiceModel.Channels.IBindingRuntimePreferences>, [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] assigns the value of the <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property to this property. So if this value is `true`, the `false` default value of <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> is overridden.  
-  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#14](~/add/codesnippet/csharp/p-system.servicemodel.di_6_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#14](~/add/codesnippet/visualbasic/p-system.servicemodel.di_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendAsynchronously">
@@ -1057,9 +680,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether messages are sent asynchronously.</summary>
-        <value>
-          <see langword="true" /> if messages are sent asynchronously; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1070,34 +692,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ServiceThrottle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the service throttle for the service associated with the channel dispatcher.</summary>
-        <value>A <see cref="T:System.ServiceModel.Dispatcher.ServiceThrottle" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This provides access to the controls used to optimize the availability and performance of a service.  
-  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#15](~/add/codesnippet/csharp/p-system.servicemodel.di_21_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#15](~/add/codesnippet/visualbasic/p-system.servicemodel.di_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionIsolationLevel">
@@ -1107,35 +710,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default isolation level for transactions.</summary>
-        <value>One of the <see cref="T:System.Transactions.IsolationLevel" /> values. The default is <see cref="T:System.Transactions.IsolationLevel" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TransactionIsolationLevel property to get or set the default isolation level for new transactions created by the dispatcher for the service.  
-  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#16](~/add/codesnippet/csharp/p-system.servicemodel.di_5_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#16](~/add/codesnippet/visualbasic/p-system.servicemodel.di_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The isolation level set is not defined.</exception>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionTimeout">
@@ -1145,33 +728,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies the default timeout for new transactions created by the dispatcher on behalf of the service.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> value that represents the default timeout period for transactions. The default is <see cref="T:System.TimeSpan" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UE_ChannelDispatcher#17](~/add/codesnippet/csharp/p-system.servicemodel.di_1_1.cs)]
- [!code-vb[S_UE_ChannelDispatcher#17](~/add/codesnippet/visualbasic/p-system.servicemodel.di_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than zero or is too large.</exception>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> or <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="T:System.ServiceModel.CommunicationState" /> state.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

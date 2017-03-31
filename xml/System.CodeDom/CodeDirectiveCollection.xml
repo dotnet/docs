@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirectiveCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,23 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeDirective" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CodeDirectiveCollection class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeDirective> objects.  
-  
-   
-  
-## Examples  
- The following code example shows the use of the members of the CodeDirectiveCollection class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#1](~/add/codesnippet/csharp/t-system.codedom.codedir_0_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#1](~/add/codesnippet/visualbasic/t-system.codedom.codedir_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,23 +30,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the CodeDirectiveCollection constructor to create a new instance of the class. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#2](~/add/codesnippet/csharp/m-system.codedom.codedir_1_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#2](~/add/codesnippet/visualbasic/m-system.codedom.codedir_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,18 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeDirective[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeDirective" /> objects with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class with the code directive objects in the specified array.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,18 +63,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.CodeDom.CodeDirectiveCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object with which to initialize the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class with the elements in the specified code directive collection.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -114,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,20 +90,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to add.</param>
-        <summary>Adds the specified <see cref="T:System.CodeDom.CodeDirective" /> object to the collection.</summary>
-        <returns>The index position at which the new element was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the Add method to add a <xref:System.CodeDom.CodeDirective> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#3](~/add/codesnippet/csharp/m-system.codedom.codedir_4_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#3](~/add/codesnippet/visualbasic/m-system.codedom.codedir_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -147,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,21 +112,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirective[]" />
       </Parameters>
       <Docs>
-        <param name="value">An array of <see cref="T:System.CodeDom.CodeDirective" /> objects to add to the collection.</param>
-        <summary>Adds an array of <see cref="T:System.CodeDom.CodeDirective" /> objects to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the AddRange method to add an array of <xref:System.CodeDom.CodeDirective> objects to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#4](~/add/codesnippet/csharp/dfe2970f-e11e-411f-8652-_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#4](~/add/codesnippet/visualbasic/dfe2970f-e11e-411f-8652-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -181,7 +124,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,21 +133,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirectiveCollection" />
       </Parameters>
       <Docs>
-        <param name="value">A <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object containing the <see cref="T:System.CodeDom.CodeDirective" /> objects to add to the collection.</param>
-        <summary>Adds the contents of the specified <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object to the end of the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the AddRange method to add the contents of a <xref:System.CodeDom.CodeDirectiveCollection> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#4](~/add/codesnippet/csharp/7af07b2c-0300-43f6-96fd-_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#4](~/add/codesnippet/visualbasic/7af07b2c-0300-43f6-96fd-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is <see langword="null" />.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -215,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,21 +154,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to search for in the collection.</param>
-        <summary>Gets a value indicating whether the collection contains the specified <see cref="T:System.CodeDom.CodeDirective" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the Contains method to determine whether the collection contains a specific <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#5](~/add/codesnippet/csharp/m-system.codedom.codedir_2_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#5](~/add/codesnippet/visualbasic/m-system.codedom.codedir_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -249,7 +167,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,29 +177,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">An array of type <see cref="T:System.CodeDom.CodeDirective" /> that is the destination of the values copied from the collection.</param>
-        <param name="index">The index in the array at which to begin inserting collection objects.</param>
-        <summary>Copies the contents of the collection to a one-dimensional array beginning at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the CopyTo method to copy the contents of the collection beginning at index 0 to the specified <xref:System.CodeDom.CodeDirective> array. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#6](~/add/codesnippet/csharp/c5f076b3-f274-4f9e-bae5-_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#6](~/add/codesnippet/visualbasic/c5f076b3-f274-4f9e-bae5-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
-  
- -or-  
-  
- The number of elements in the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> is greater than the available space between the index of the target array specified by <paramref name="index" /> and the end of the target array.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than the target array's minimum index.</exception>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -292,7 +190,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,20 +199,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to locate in the collection.</param>
-        <summary>Gets the index in the collection of the specified <see cref="T:System.CodeDom.CodeDirective" /> object, if it exists in the collection.</summary>
-        <returns>The index position in the collection of the specified object, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the IndexOf method to get the index in the collection of the specified <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#5](~/add/codesnippet/csharp/m-system.codedom.codedir_3_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#5](~/add/codesnippet/visualbasic/m-system.codedom.codedir_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -325,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,26 +222,10 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index position where the specified object should be inserted.</param>
-        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to insert.</param>
-        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeDirective" /> object into the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the Insert method to insert a <xref:System.CodeDom.CodeDirective> object at index 0 of the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#8](~/add/codesnippet/csharp/c4a4ceba-9267-4864-bc06-_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#8](~/add/codesnippet/visualbasic/c4a4ceba-9267-4864-bc06-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.  
-  
- -or-  
-  
- <paramref name="index" /> is greater than <see cref="System.Collections.CollectionBase.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -365,7 +235,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,19 +244,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index position to access.</param>
-        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeDirective" /> object at the specified index in the collection.</summary>
-        <value>The <see cref="T:System.CodeDom.CodeDirective" /> at the index position.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is outside the valid range of index positions for the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -397,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -407,20 +266,9 @@
         <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to remove from the collection.</param>
-        <summary>Removes the specified <see cref="T:System.CodeDom.CodeDirective" /> object from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the Remove method to remove the specified <xref:System.CodeDom.CodeDirectiveCollection> object from the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-cs[CodeDirectiveCollectionExample#9](~/add/codesnippet/csharp/m-system.codedom.codedir_0_1.cs)]
- [!code-vb[CodeDirectiveCollectionExample#9](~/add/codesnippet/visualbasic/m-system.codedom.codedir_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

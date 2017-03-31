@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapProtocolImporter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Generates classes for Web services that use the SOAP protocol.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SoapProtocolImporter class generates client proxy code or abstract server code according to the SOAP protocol. The class generates a class for each supported binding defined in a Web Services Description Language (WSDL) document.  
-  
- Typically, instead of invoking SoapProtocolImporter directly, a developer uses the class indirectly through the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,16 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the generation of a binding class.</summary>
-        <returns>A binding class.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During generation of a class for a given binding, the BeginClass method executes before the <xref:System.Web.Services.Description.SoapProtocolImporter> class generates methods that correspond to operations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginNamespace">
@@ -75,7 +56,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,15 +63,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs initialization for an entire code namespace during code generation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During code generation, the BeginNamespace method executes before the <xref:System.Web.Services.Description.SoapProtocolImporter> class generates classes that represent bindings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndClass">
@@ -101,7 +74,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,15 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Processes a binding class after the generation of methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During generation of a class for a given binding, the EndClass method executes after the <xref:System.Web.Services.Description.SoapProtocolImporter> class generates methods that correspond to operations.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndNamespace">
@@ -127,7 +92,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,15 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs processing for an entire code namespace after binding class generation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During code generation, the EndNamespace method executes after the <xref:System.Web.Services.Description.SoapProtocolImporter> class generates classes that represent bindings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateMethod">
@@ -153,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,16 +117,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates method code for a binding class.</summary>
-        <returns>The method code for a binding class.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During generation of a class for a given binding, the GenerateMethod method executes for each binding class method that represents an operation.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBindingSupported">
@@ -180,7 +129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,17 +136,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether a class can be generated for the current binding.</summary>
-        <returns>
-          <see langword="true" /> if the class can be generated for the current binding; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsBindingSupported method determines whether to generate a class for the current binding, as represented by the <xref:System.Web.Services.Description.SoapProtocolImporter.Binding%2A> property. The method checks whether the <xref:System.Web.Services.Description.SoapProtocolImporter.Binding%2A> property's <xref:System.Web.Services.Description.Binding.Extensions%2A> property contains a <xref:System.Web.Services.Description.SoapBinding> instance. In addition, the transport mechanism obtained through the <xref:System.Web.Services.Description.SoapBinding.Transport%2A> property must be supported by the current Web services configuration.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOperationFlowSupported">
@@ -208,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,20 +157,10 @@
         <Parameter Name="flow" Type="System.Web.Services.Description.OperationFlow" />
       </Parameters>
       <Docs>
-        <param name="flow">An <see cref="T:System.Web.Services.Description.OperationFlow" /> enumeration value that represents a transmission pattern.</param>
-        <summary>Determines whether the current operation's operation flow is supported.</summary>
-        <returns>
-          <see langword="true" /> if the current operation's operation flow is supported; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsOperationFlowSupported method determines whether to generate a method for the current operation, as represented by the <xref:System.Web.Services.Description.Operation> property. This evaluation takes place for each operation in a binding for which a class is being generated. If a `false` value is returned, the <xref:System.Web.Services.Description.SoapProtocolImporter.UnsupportedOperationWarning%2A> method executes. A `true` value is returned only if the input value is <xref:System.Web.Services.Description.OperationFlow> or <xref:System.Web.Services.Description.OperationFlow>.  
-  
- For more information, see the <xref:System.Web.Services.Description.OperationMessageCollection.Flow%2A> property. The <xref:System.Web.Services.Description.Operation.Messages%2A> property is of type <xref:System.Web.Services.Description.OperationMessageCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="flow">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSoapEncodingPresent">
@@ -241,7 +170,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,10 +179,9 @@
         <Parameter Name="uriList" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uriList">A space-delimited list of URIs.</param>
-        <summary>Checks for the presence of "http://schemas.xmlsoap.org/soap/encoding/" in a string that represents a list of Uniform Resource Indicators (URIs).</summary>
-        <returns>
-          <see langword="true" /> it the string contains [http://schemas.xmlsoap.org/soap/encoding/](http://schemas.xmlsoap.org/soap/encoding/); otherwise <see langword="false" />.</returns>
+        <param name="uriList">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,15 +192,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value of "Soap".</summary>
-        <value>A <see cref="T:System.String" /> object that contains the string "Soap".</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,15 +210,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.SoapBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Web.Services.Description.SoapBinding" /> instance obtained through the SoapBinding property's <see cref="System.Web.Services.Description.Binding.Extensions%2A" /> property.</summary>
-        <value>A <see cref="T:System.Web.Services.Description.SoapBinding" /> instance obtained through the SoapBinding property's <see cref="System.Web.Services.Description.Binding.Extensions%2A" /> property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,23 +228,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.SoapCodeExporter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object of type <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate code from mappings between SOAP-encoded XML schema content and .NET Framework types.</summary>
-        <value>An object of type <see cref="T:System.Xml.Serialization.SoapCodeExporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate code from mappings between SOAP-encoded XML schema content and .NET Framework types.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.SoapProtocolImporter> class uses a <xref:System.Xml.Serialization.SoapCodeExporter> object to create code from .NET Framework type mappings for XML schema elements and data types that enable SOAP encoding, as opposed to literal XML Schema usage. SOAP encoding is specified in section 5 of the SOAP 1.1 specification. SOAP encoding uses the namespace "http://schemas.xmlsoap.org/soap/encoding/".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SoapImporter">
@@ -329,23 +246,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.SoapSchemaImporter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object of type <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate mappings between SOAP-encoded XML schema content and .NET Framework types.</summary>
-        <value>An object of type <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate mappings between SOAP-encoded XML schema content and .NET Framework types.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.SoapProtocolImporter> class uses a <xref:System.Xml.Serialization.SoapSchemaImporter> object to create .NET Framework type mappings for XML schema elements and data types that enable SOAP encoding, as opposed to literal XML Schema usage. SOAP encoding is specified in section 5 of the SOAP 1.1 specification. SOAP encoding uses the namespace "http://schemas.xmlsoap.org/soap/encoding/".  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlExporter">
@@ -355,23 +264,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlCodeExporter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object of type <see cref="T:System.Xml.Serialization.XmlCodeExporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate code from mappings between literal XML schema content and .NET Framework types.</summary>
-        <value>An object of type <see cref="T:System.Xml.Serialization.XmlCodeExporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate code from mappings between literal XML schema content and .NET Framework types.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.SoapProtocolImporter> class uses an <xref:System.Xml.Serialization.XmlSchemaImporter> object to create .NET Framework type mappings for XML schema elements and data types that require literal XML Schema usage, as opposed to SOAP encoding. SOAP encoding is specified in section 5 of the SOAP 1.1 specification.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlImporter">
@@ -381,23 +282,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlSchemaImporter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object of type <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate mappings between literal XML schema content and .NET Framework types.</summary>
-        <value>An object of type <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> used internally by the <see cref="T:System.Web.Services.Description.SoapProtocolImporter" /> class to generate mappings between literal XML schema content and .NET Framework types.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Description.SoapProtocolImporter> class uses an <xref:System.Xml.Serialization.XmlSchemaImporter> object to create code from .NET Framework type mappings for XML schema elements and data types that require literal XML Schema usage, as opposed to SOAP encoding. SOAP encoding is specified in section 5 of the SOAP 1.1 specification.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

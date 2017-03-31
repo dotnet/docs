@@ -17,21 +17,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T1">The type of the first in argument of the activity delegate.</typeparam>
-    <typeparam name="T2">The type of the second in argument of the activity delegate.</typeparam>
-    <typeparam name="T3">The type of the third in argument of the activity delegate.</typeparam>
-    <typeparam name="TResult">The type of the out argument of the activity delegate.</typeparam>
-    <summary>Defines an activity delegate with three in arguments of type <c>T</c> and one <see langword="out" /> argument of type <c>TResult</c>.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Activities.ActivityDelegate> enables activity authors to expose callbacks with specific signatures that users of the activity can provide activity-based handlers for. ActivityFunc(T1, is an <xref:System.Activities.ActivityDelegate> that returns a value. The signature of the ActivityFunc(T1, is specified as generic type arguments.  
-  
- There are multiple generic versions of this type that take from 1 to 16 in arguments, plus the `out` argument, for the activity that is called. There are also **ActivityAction** types for activity delegates that do not return values.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T1">To be added.</typeparam>
+    <typeparam name="T2">To be added.</typeparam>
+    <typeparam name="T3">To be added.</typeparam>
+    <typeparam name="TResult">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="System.Activities.ActivityFunc%604" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +58,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the first in argument of the activity delegate.</summary>
-        <value>An argument to an activity delegate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +81,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the second in argument of the activity delegate.</summary>
-        <value>An argument to an activity delegate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +104,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the third in argument of the activity delegate.</summary>
-        <value>An argument to an activity delegate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +146,8 @@
         <ReturnType>System.Activities.DelegateOutArgument&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the out argument of the activity delegate.</summary>
-        <value>An argument to an activity delegate.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

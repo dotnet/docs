@@ -4,35 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpNavigator" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants indicating which elements of the Help file to display.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.Help> and <xref:System.Windows.Forms.HelpProvider> classes to provide access to specific elements of a Help file. For example, when used with the <xref:System.Windows.Forms.HelpProvider> component that provides F1 Help, the TopicId or Topic value could be specified to open Help to a context-specific topic.  
-  
-   
-  
-## Examples  
- The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword specified in the **Keyword** text box.  
-  
- For example, to show the Ovals Help page by the index value, select the KeywordIndex value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
-  
- The example uses the <xref:System.Windows.Forms.Help.ShowHelp%2A> method to display the different Help tabs and Help topics, and the <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> method to display the Help index.  
-  
- [!code-cpp[System.Windows.Forms.Help#1](~/add/codesnippet/cpp/t-system.windows.forms.h_4_1.cpp)]
- [!code-cs[System.Windows.Forms.Help#1](~/add/codesnippet/csharp/t-system.windows.forms.h_4_1.cs)]
- [!code-vb[System.Windows.Forms.Help#1](~/add/codesnippet/visualbasic/t-system.windows.forms.h_4_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AssociateIndex">
@@ -42,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to the index entry for the first letter of a specified topic.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -59,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to the search page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -76,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to the index.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeywordIndex">
@@ -93,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to the topic with the specified index entry, if one exists; otherwise, the index entry closest to the specified keyword is displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableOfContents">
@@ -110,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to the table of contents.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Topic">
@@ -127,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to a specified topic, if the topic exists.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopicId">
@@ -144,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Help file opens to a topic indicated by a numeric topic identifier.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

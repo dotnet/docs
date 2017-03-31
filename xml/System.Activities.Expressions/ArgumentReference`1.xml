@@ -17,8 +17,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the argument returned by the ArgumentReference(T).</typeparam>
-    <summary>Represents an <see cref="T:System.Activities.Argument" /> used as an l-value in an expression.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.ArgumentReference%601" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <Parameter Name="argumentName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="argumentName">The argument name.</param>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.ArgumentReference%601" /> class with the argument name.</summary>
+        <param name="argumentName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the argument to which a reference is to be returned.</summary>
-        <value>The argument name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +107,8 @@
         <ReturnType>System.Activities.LocationReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location reference.</summary>
-        <value>The location reference.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +126,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> representation of the <see cref="System.Activities.Expressions.ArgumentReference%601" />.</summary>
-        <returns>The argument name, if the <see cref="System.Activities.Expressions.ArgumentReference%601.ArgumentName%2A" /> has been set, otherwise the activity ID and name.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

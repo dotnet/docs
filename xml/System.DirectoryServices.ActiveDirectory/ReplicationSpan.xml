@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationSpan" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines the span of a replication connection.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The source and destination servers are in different sites.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntraSite">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The source and destination servers are in the same site.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Condition" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,36 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a condition for the <see cref="T:System.Windows.MultiTrigger" /> and the <see cref="T:System.Windows.MultiDataTrigger" />, which apply changes to property values based on a set of conditions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
-  
- The following is a list of cases that will cause an exception:  
-  
--   For each Condition, you can only set either the <xref:System.Windows.Condition.Property%2A> property or the <xref:System.Windows.Condition.Binding%2A> property. If both properties are set, an exception is thrown.  
-  
--   If the Condition is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> property cannot be null.  
-  
--   If the Condition is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> property cannot be null.  
-  
--   An exception is thrown if the specified <xref:System.Windows.Condition.Value%2A> is not valid for the type of the specified <xref:System.Windows.Condition.Property%2A>.  
-  
- Note that if the Condition is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. If it is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set.  
-  
-   
-  
-## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
-   
-  
- See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +49,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -87,9 +56,9 @@
         <Parameter Name="conditionValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="binding">The binding that specifies the property of the condition.</param>
-        <param name="conditionValue">The value of the condition.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
+        <param name="binding">To be added.</param>
+        <param name="conditionValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +69,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -108,9 +76,9 @@
         <Parameter Name="conditionValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="conditionProperty">The property of the condition.</param>
-        <param name="conditionValue">The value of the condition.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class with the specified property and value. This constructor performs parameter validation.</summary>
+        <param name="conditionProperty">To be added.</param>
+        <param name="conditionValue">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +89,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -130,11 +97,10 @@
         <Parameter Name="sourceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="conditionProperty">The property of the condition.</param>
-        <param name="conditionValue">The value of the condition.</param>
-        <param name="sourceName">
-          <c>x:Name</c> of the object with the <c>conditionProperty</c>.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class with the specified property, value, and the name of the source object.</summary>
+        <param name="conditionProperty">To be added.</param>
+        <param name="conditionValue">To be added.</param>
+        <param name="sourceName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +111,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -157,52 +122,9 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding that specifies the property of the condition. This is only applicable to <see cref="T:System.Windows.MultiDataTrigger" /> objects.</summary>
-        <value>The default value is null.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on values of the data that is returned. For example, if you are displaying a list of task items, you may want to display a task with a red background if it is of high priority and has not been looked at for more than two weeks.  
-  
- You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
-  
- Note that if it is a condition for a <xref:System.Windows.MultiDataTrigger>, the Binding and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Property%2A> value would cause an exception in that case.  
-  
-<a name="xamlAttributeUsage_PriorityBinding"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="{Binding  declaration}"/>  
-```  
-  
-<a name="xamlPropertyElementUsage_Binding"></a>   
-## XAML Property Element Usage  
-  
-```  
-<object>  
-  <object.Binding>  
-    <Binding …/>  
-  </object.Binding>  
-</object>  
-```  
-  
-<a name="xamlValues_PriorityBinding"></a>   
-## XAML Values  
- *declaration*  
- A binding declaration. See [Binding Declarations Overview](../Topic/Binding%20Declarations%20Overview.md) for more information.  
-  
-   
-  
-## Examples  
- In the following example, the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> of the <xref:System.Windows.Controls.ListBox> is bound to *Places*, an <xref:System.Collections.ObjectModel.ObservableCollection%601> of *Place* objects. *Place* objects have properties *Name* and *State*.  
-  
- Each <xref:System.Windows.Controls.ListBoxItem> of the <xref:System.Windows.Controls.ListBox> displays a *Place* object. The <xref:System.Windows.Style> in the example is applied to each <xref:System.Windows.Controls.ListBoxItem>. The <xref:System.Windows.Condition>s of the <xref:System.Windows.MultiDataTrigger> are specified such that if the *Name* and *State* of the *Place* data item is "Portland" and "OR" respectively, then the background of corresponding <xref:System.Windows.Controls.ListBoxItem> is set to Cyan.  
-  
- [!code-xml[DataTrigger#1](~/add/codesnippet/xaml/DataTrigger/Window1.xaml#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -212,7 +134,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -227,29 +148,9 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the property of the condition. This is only applicable to <see cref="T:System.Windows.MultiTrigger" /> objects.</summary>
-        <value>A <see cref="T:System.Windows.DependencyProperty" /> that specifies the property of the condition. The default value is null.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.MultiTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the value of the property (specified by the Property property) of the element matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
-  
- If `TargetType` is not set on the style of the template that contains the triggers. Then you need to qualify the property name using the `ClassName.PropertyName` syntax.  
-  
- Note that if it is a condition for a <xref:System.Windows.MultiTrigger>, the Property and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Binding%2A> value would cause an exception in that case.  
-  
- For <xref:System.Windows.Condition>s in <xref:System.Windows.MultiDataTrigger>s, the <xref:System.Windows.Condition.Binding%2A> property should be used instead of this property.  
-  
-   
-  
-## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -269,17 +170,10 @@
         <Parameter Name="eventArgs" Type="System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="targetObject">The object where the markup extension sets the value.</param>
-        <param name="eventArgs">Data that is relevant for markup extension processing.</param>
-        <summary>Handles cases where a markup extension provides a value for a property of a <see cref="T:System.Windows.Condition" /> object</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a markup extension. You do not typically call this method directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="targetObject">To be added.</param>
+        <param name="eventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -299,17 +193,10 @@
         <Parameter Name="eventArgs" Type="System.Windows.Markup.XamlSetTypeConverterEventArgs" />
       </Parameters>
       <Docs>
-        <param name="targetObject">The object where the type converter sets the value.</param>
-        <param name="eventArgs">Data that is relevant for type converter processing.</param>
-        <summary>Handles cases where a type converter provides a value for a property of on a<see cref="T:System.Windows.Condition" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a type converter. You do not typically call this method directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="targetObject">To be added.</param>
+        <param name="eventArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -319,7 +206,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -331,19 +217,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the object with the property that causes the associated setters to be applied. This is only applicable to <see cref="T:System.Windows.MultiTrigger" /> objects.</summary>
-        <value>The default property is <see langword="null" />. If this property is <see langword="null" />, then the property of the object being styled causes the associated setters to be applied.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can set this property to the name of any element within the scope of where the trigger collection (the collection that the trigger that contains this condition is part of) is applied. This is typically a named element that is within the template that contains the trigger.  
-  
- You can name an object using the [x:Name Directive](../Topic/x:Name%20Directive.md) syntax.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Condition" /> is in use, it cannot be modified.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -360,15 +236,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the object that initialization is starting.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
@@ -385,15 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the object that initialization is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -403,7 +265,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -415,28 +276,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the condition.</summary>
-        <value>The Value property cannot be null for a given <see cref="T:System.Windows.Condition" />.  
-  
- See also the Exceptions section. The default value is null.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified Value. If all specified conditions are satisfied, then the trigger is applied. If all specified conditions are satisfied, then the trigger is applied.  
-  
-   
-  
-## Examples  
- The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
-  
-   
-  
- See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Expressions are not supported.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

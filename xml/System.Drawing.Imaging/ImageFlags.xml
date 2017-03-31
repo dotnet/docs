@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the attributes of the pixel data contained in an <see cref="T:System.Drawing.Image" /> object. The <see cref="System.Drawing.Image.Flags%2A" /> property returns a member of this enumeration.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data can be cached for faster access.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorSpaceCmyk">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data uses a CMYK color space.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorSpaceGray">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data is grayscale.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorSpaceRgb">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data uses an RGB color space.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorSpaceYcbcr">
@@ -95,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the image is stored using a YCBCR color space.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColorSpaceYcck">
@@ -112,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the image is stored using a YCCK color space.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasAlpha">
@@ -129,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data contains alpha information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasRealDpi">
@@ -146,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that dots per inch information is stored in the image.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasRealPixelSize">
@@ -163,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the pixel size is stored in the image.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasTranslucent">
@@ -180,14 +170,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the pixel data has alpha values other than 0 (transparent) and 255 (opaque).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -197,14 +186,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is no format information.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartiallyScalable">
@@ -214,14 +202,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data is partially scalable, but there are some limitations.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -231,14 +218,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data is read-only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scalable">
@@ -248,14 +234,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pixel data is scalable.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

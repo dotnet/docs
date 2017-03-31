@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Interacts with the page parser to build HTML server controls that do not have a body or closing tag. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HtmlEmptyTagControlBuilder control interacts with the page parser to build HTML server controls that do not have a body or closing tag, such as `<img>`, `<link>`, `<input>`, and `<meta>`. The <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder.HasBody%2A> property always returns `false`, indicating that controls built with the HtmlEmptyTagControlBuilder control do not have closing tags.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HtmlEmptyTagControlBuilder method is used internally by the ASP.NET page framework and is not intended to be called from your code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasBody">
@@ -53,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,17 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates that the controls built with the <see cref="T:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder" /> control do not have closing tags.</summary>
-        <returns>
-          <see langword="false" /> in all cases.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HasBody method overrides the base class's <xref:System.Web.UI.ControlBuilder.HasBody%2A> method to always return `false`, because the <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder> class represents controls that do not have closing tags. The <xref:System.Web.UI.ControlBuilder.HasBody%2A> method of the <xref:System.Web.UI.ControlBuilder> class determines whether a control has both an opening and a closing tag.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

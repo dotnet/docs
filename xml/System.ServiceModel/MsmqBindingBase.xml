@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqBindingBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The base class for <see cref="T:System.ServiceModel.NetMsmqBinding" /> and <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This abstract class contains properties common to <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. All of the fundamental concepts in queuing are displayed in the form of properties.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqBindingBase" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +41,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,20 +52,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a URI that contains the location of the dead-letter queue for each application, where messages that have expired or that have failed transfer or delivery are placed.</summary>
-        <value>The <see cref="T:System.Uri" /> that contains the location of the dead-letter queue for each application. The default value is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dead-letter queue is a queue on the queue manager of the sending application for expired messages that failed to be delivered.  
-  
- The URI that is specified by CustomDeadLetterQueue must use the net.msmq scheme.  
-  
- If <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue> or <xref:System.ServiceModel.DeadLetterQueue>, then CustomDeadLetterQueue must be set to `null`. If CustomDeadLetterQueue is not `null`, then <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeadLetterQueue">
@@ -85,7 +64,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -97,44 +75,9 @@
         <ReturnType>System.ServiceModel.DeadLetterQueue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an enumeration value that indicates the type of dead-letter queue to use.</summary>
-        <value>A <see cref="T:System.ServiceModel.DeadLetterQueue" /> enumeration value that indicates the type of dead-letter queue to use.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The dead-letter queue is a queue on the queue manager of the sending application for expired messages that have failed to be delivered. The dead-letter queue enumeration specifies the type of dead-letter queue to use. The values are:  
-  
--   `None`: No dead-letter queue is required. If a message fails delivery, no record of it is maintained in the dead-letter queue. This is the default value when <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> is set to `false`.  
-  
--   `System`: The system-wide dead-letter queue is used to record messages that fail delivery. Message Queuing (MSMQ) has a transactional, system, dead-letter queue and a non-transactional, system, dead-letter queue to record messages that fail delivery from transactional and non-transactional queues, respectively. This is the default value when <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> is set to `true`.  
-  
--   `Custom`: The queue specified in the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property that is used to record messages that fail delivery.  
-  
- The reasons a message can fail to reach the receiving application include:  
-  
--   A transactional message is sent to a non-transactional queue.  
-  
--   A non-transactional message is sent to a transactional queue.  
-  
--   An unauthenticated message is sent to a queue that accepts only authenticated messages.  
-  
--   An unencrypted message is sent to a queue that accepts only encrypted messages.  
-  
--   The message expires before the message is delivered to a receiver.  
-  
--   The message storage quota of the target computer or the storage quota of the destination queue is exceeded, or there is no available storage space on the target computer when the message arrives.  
-  
--   The sender does not have the [access rights](http://go.microsoft.com/fwlink/?LinkID=96167) required to place the message in the destination queue.  
-  
--   The digital signature attached to the message is not valid.  
-  
--   An encrypted message cannot be decrypted by the destination queue manager.  
-  
--   The destination queue is purged or deleted before the message is retrieved.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Durable">
@@ -144,7 +87,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -156,19 +98,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the messages processed by this binding are durable or volatile.</summary>
-        <value>
-          <see langword="true" /> if the messages processed by this binding are durable; <see langword="false" /> if they are volatile. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A durable message survives when a queue manager stops responding, while a volatile message does not. Volatile messages are useful when applications can tolerate occasional lost messages.  
-  
- If <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> is set to `true`, the messages must be durable.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExactlyOnce">
@@ -178,7 +110,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -190,25 +121,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether messages processed by this binding are received exactly once.</summary>
-        <value>
-          <see langword="true" /> if messages processed by this binding are received exactly once; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message can be sent with or without assurances. An assurance enables an application to ensure that a sent message reached the receiving message queue, or if it did not, the application can determine this by reading the dead-letter queue.  
-  
- Messages sent with ExactlyOnce set to `true` must be sent to a transactional queue only.  
-  
- ExactlyOnce, when set to `true`, indicates that Message Queuing (MSMQ) ensures that a sent message is delivered to the receiving message queue once and only once. If delivery fails, the message is sent to the dead-letter queue.  
-  
- For messages that require ExactlyOnce to be `false`, the <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property defaults to `null`.  
-  
- For messages that require ExactlyOnce to be `true`, the <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property defaults to a transactional system-wide dead-letter queue in MSMQ.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxReceivedMessageSize">
@@ -218,7 +133,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -230,16 +144,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size, in bytes, for a message that is processed by this binding.</summary>
-        <value>The maximum size (in bytes) for a message that is processed by this binding. The default value is 65,536 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This bound on message size is intended to limit exposure to Denial of Service (DoS) attacks.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxRetryCycles">
@@ -249,7 +156,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -261,16 +167,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of retry cycles to attempt delivery of messages to the receiving application.</summary>
-        <value>The maximum number of retry cycles to attempt delivery of messages to the application. The default value is 2.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A single retry cycle attempts to deliver a message to an application a specified number of times. The number of attempts made is set by the <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> property. If the application fails to access the message after the specified number of immediate retries, the message is sent to a retry queue. Subsequent retry cycles consist of the message being returned from the retry queue to the application queue to attempt delivery to the application again, after a delay specified by the <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A> property. The MaxRetryCycles property specifies the number of retry cycles that the application uses to attempt to deliver the message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveContextEnabled">
@@ -291,9 +190,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the receive context behavior is requested.</summary>
-        <value>
-          <see langword="true" /> if the receive context behavior is requested; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,7 +202,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -316,22 +213,9 @@
         <ReturnType>System.ServiceModel.ReceiveErrorHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an enumeration value that specifies how poison messages are handled.</summary>
-        <value>A <see cref="T:System.ServiceModel.ReceiveErrorHandling" /> value that specifies how poison and other messages that cannot be dispatched are handled.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message in the queue becomes poisoned if repeated attempts to deliver the message failed. This poison message is eventually handled based on the setting of this property. When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the listener is faulted and a <xref:System.ServiceModel.MsmqPoisonMessageException> is traced and thrown. The poison message is left in the queue and must be removed before more messages can be accessed from the queue. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the poison message from the queue.  
-  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the poison message is dropped.  
-  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, a negative acknowledgement is sent to the client and the poison message is removed from the queue. This option is available only on Message Queuing 4.0 and requires [!INCLUDE[wv](~/add/includes/wv-md.md)].  
-  
- When set to <xref:System.ServiceModel.ReceiveErrorHandling>, the poison message is moved to the final poison subqueue. This option is only available on Message Queuing 4.0 and requires [!INCLUDE[wv](~/add/includes/wv-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceiveRetryCount">
@@ -341,7 +225,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -353,18 +236,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of immediate delivery attempts on a message that is read from the application queue.</summary>
-        <value>The maximum number of immediate delivery attempts. The default is 5.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the maximum number of immediate delivery attempts for the message is made and the message is not accessed by the application, then the message is sent to a retry queue to attempt delivery at a later time. If no retry cycles are specified, then the messages is either sent to the poison-message queue, or a negative acknowledgement is sent back to the sender.  
-  
- [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)] <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RetryCycleDelay">
@@ -374,7 +248,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -386,16 +259,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates the time delay between retry cycles when attempting to deliver a message that cannot be delivered immediately.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait before starting the next cycle of delivery attempts to the receiving application. The default value is 10 minutes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A single retry cycle attempts to deliver a message to a receiving application a specified number of times. The number of attempts made is specified by the <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> property. If the application fails to access the message after the specified number of immediate retries, the message is sent to a retry queue. Subsequent retry cycles consist of the message being returned from the retry queue to the application queue to attempt delivery to the application again, after a delay specified by the RetryCycleDelay. The number of retry cycles is specified by <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -405,25 +271,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the scheme for this binding.</summary>
-        <value>The scheme for this binding. The scheme returned depends on the implementation of <see cref="T:System.ServiceModel.MsmqBindingBase" />. The <see cref="T:System.ServiceModel.NetMsmqBinding" /> implementation returns "net.msmq". The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" /> implementation returns "msmq.formatname".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Message Queuing (MSMQ) supports transporting messages between queue managers using both the native MSMQ protocol and the SRMP protocol. Applications that use the queued transport binding can use both of these protocols. The protocol schemes supported by the queued transport binding are net.msmq for the native protocol, net.srmp for the SRMP protocol, and net.srmps for SRMP over HTTPS.  
-  
- The <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> supports a single scheme, msmq.formatname, with which the user can specify the format name of the queue directly in the queue address.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously">
@@ -433,24 +289,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether incoming requests can be handled more efficiently synchronously or asynchronously.</summary>
-        <value>
-          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise<see langword=" false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.MsmqBindingBase.System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property is set to `true` when the <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> is `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeToLive">
@@ -460,7 +307,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -472,16 +318,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval of time that indicates how long the messages processed by this binding can be in the queue before they expire.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> that indicates how long the messages can be in the queue before they expire. The default value is 1 day.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TimeToLive property is set to ensure that time-sensitive messages do not become stale before they are processed by the receiving applications. A message in a queue that is not accessed by the receiving application within the time interval specified is expired. Expired messages are sent to a special queue called the dead-letter queue. The location of the dead-letter queue is set with the <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property or to the appropriate default, based on assurances.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseMsmqTracing">
@@ -491,7 +330,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -503,17 +341,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether messages processed by this binding should be traced.</summary>
-        <value>
-          <see langword="true" /> if messages processed by this binding should be traced; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When tracing is enabled, report messages are created and sent to the report queue each time the message leaves or arrives at a Message Queuing (MSMQ) computer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseSourceJournal">
@@ -523,7 +353,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -535,17 +364,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether copies of messages processed by this binding should be stored in the source journal queue.</summary>
-        <value>
-          <see langword="true" /> if copies of messages processed by this binding should be stored in the source journal queue; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Queued applications that keep a record of messages that have left the computer's outgoing queue can copy the messages to a journal queue. Once a message leaves the outgoing queue and an acknowledgment is received that the message was received on the destination computer, a copy of the message is kept in the sending computer's system journal queue.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidityDuration">
@@ -566,18 +387,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies the duration a message will be locked by the receive context feature.</summary>
-        <value>A timespan object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  If ValidityDuration expires for a message, any transaction that may be used for its processing will be aborted along with the workflow instance if the expiration occurs during the transaction.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

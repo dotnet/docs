@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.BaseUriHelper" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a method to resolve relative [!INCLUDE[TLA#tla_uri#plural](~/add/includes/tlasharptla-urisharpplural-md.md)] with respect to the base [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of a container, such as a <see cref="T:System.Windows.Controls.Frame" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,14 +22,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="BaseUri" /> attached property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -41,7 +39,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -56,20 +53,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="BaseUri" /> for a specified <see cref="T:System.Windows.UIElement" />.</summary>
-        <returns>The base [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of a given element.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to get the <xref:System.Windows.Markup.IUriContext.BaseUri%2A?displayProperty=fullName> property if it is implemented or the <xref:System.Windows.Navigation.BaseUriHelper.BaseUri%2A> attached property if is set on an element. GetBaseUri will traverse the parent elements of `element` to search for the nearest <xref:System.Windows.Navigation.BaseUriHelper.BaseUri%2A> (<xref:System.Windows.Markup.IUriContext> or attached property).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the value of the <see langword="BaseUri" /> attached property. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

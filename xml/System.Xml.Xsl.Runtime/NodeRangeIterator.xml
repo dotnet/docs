@@ -4,7 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.NodeRangeIterator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,15 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Iterates over the singleton node if the starting node is the same node as the ending node. Iterates to the end of the document if the starting node is after the ending node or is in a different document.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Iterate over the nodes in document order, beginning with the start node through all content-typed nodes that follow the starting node, until the ending node is reached. Nodes that do not match the predicate test are filtered out.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -35,7 +31,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,18 +46,11 @@
         <Parameter Name="end" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="start">Node at which iteration begins.</param>
-        <param name="filter">Test expression that determines whether a node is to be filtered out.</param>
-        <param name="end">Node at which iteration ends.</param>
-        <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.NodeRangeIterator" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The method iterates over the nodes in document order, beginning with the start node through all content-typed nodes that follow the starting node, until the ending node is reached. Nodes that do not match the predicate test are filtered out.  
-  
- ]]></format>
-        </remarks>
+        <param name="start">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -68,23 +60,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the current result navigator.</summary>
-        <value>The current result navigator.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The state of the navigator changes only if the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.MoveNext%2A> method has returned `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -94,7 +82,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,17 +93,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Positions the iterator on the next node.</summary>
-        <returns>
-          <see langword="true" /> if the next node exists; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the next node exists, the MoveNext method sets the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.Current%2A> property to the current result navigator; otherwise, the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.Current%2A> property remains unchanged.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

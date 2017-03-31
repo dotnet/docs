@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AndCondition" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a combination of two or more <see cref="T:System.Windows.Automation.PropertyCondition" /> objects that must both be true for a match.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -36,19 +34,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="conditions">Two or more subconditions.</param>
-        <summary>Creates a <see cref="T:System.Windows.Automation.PropertyCondition" /> that is true if all the subconditions are true.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use <xref:System.Windows.Automation.AndCondition> to find [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] elements that match a complex condition.  
-  
- [!code-cs[UIAClient_snip#176](~/add/codesnippet/csharp/CustomElementClient/ConditionSnips.cs#176)]
- [!code-vb[UIAClient_snip#176](~/add/codesnippet/visualbasic/UIAClient_snip/ConditionSnips.vb#176)]  
-  
- ]]></format>
-        </remarks>
+        <param name="conditions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConditions">
@@ -58,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,24 +53,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves an array of the subconditions for this condition.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned array is a copy. Modifying it does not affect the state of the <xref:System.Windows.Automation.AndCondition>.  
-  
-   
-  
-## Examples  
- The following example constructs an <xref:System.Windows.Automation.AndCondition> and then displays the number of conditions it contains.  
-  
- [!code-cs[UIAClient_snip#176](~/add/codesnippet/csharp/CustomElementClient/ConditionSnips.cs#176)]
- [!code-vb[UIAClient_snip#176](~/add/codesnippet/visualbasic/UIAClient_snip/ConditionSnips.vb#176)]  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

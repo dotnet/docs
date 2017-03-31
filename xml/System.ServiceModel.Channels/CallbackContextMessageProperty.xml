@@ -15,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the contents of the <see langword="wsc:CallbackContext" /> message header when using a channel that supports the context exchange protocol.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The context exchange protocol allows for duplex communication between durable services.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +32,8 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified context.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,16 +50,9 @@
         <Parameter Name="callbackAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackAddress">The callback address.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The callback address is the endpoint address that the service uses to call back to the client.  
-  
- ]]></format>
-        </remarks>
+        <param name="callbackAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,17 +69,10 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="listenAddress">The endpoint address the client listens on.</param>
-        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" /> and a <see cref="System.Collections.Generic.IDictionary%602" /> that contains context information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The context information may include client instance and conversation information.  
-  
- ]]></format>
-        </remarks>
+        <param name="listenAddress">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,9 +89,9 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="listenAddress">The endpoint address the client listens on.</param>
-        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified listen address and context information.</summary>
+        <param name="listenAddress">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,9 +109,9 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="listenAddress">The endpoint address the client listens on.</param>
-        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified listen address and context information.</summary>
+        <param name="listenAddress">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +131,8 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">The message to add or replace the callback context message property.</param>
-        <summary>Adds or replaces the current <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance within the specified message.</summary>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +152,8 @@
         <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
       </Parameters>
       <Docs>
-        <param name="properties">The message properties collection to add the callback context message property to.</param>
-        <summary>Adds or replaces the current <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance within the specified message properties collection.</summary>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,16 +170,9 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the callback address.</summary>
-        <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> that contains the callback address.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The callback address is the endpoint address the server uses to call the client.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -216,8 +188,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context associated with the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" />.</summary>
-        <value>The context.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +209,9 @@
         <Parameter Name="listenAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="listenAddress">The listen URI</param>
-        <summary>Merges the client's <paramref name="listenAddress" /> and its context into a single callback address that is sent to the service.</summary>
-        <returns>A <see cref="T:System.ServiceModel.EndpointAddress" /> instance.</returns>
+        <param name="listenAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +229,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</summary>
-        <returns>A copy of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,9 +251,9 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="listenAddress">A reference to store the listen address.</param>
-        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
-        <summary>Gets the listen address and context data from the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</summary>
+        <param name="listenAddress">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,8 +270,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the property name for the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class.</summary>
-        <value>The property name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,11 +292,10 @@
         <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">The message to get the callback context message property from.</param>
-        <param name="contextMessageProperty">A reference to store the callback context message property instance.</param>
-        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance from the specified message.</summary>
-        <returns>
-          <see langword="true" /> if the callback context message property is retrieved successfully; otherwise, <see langword="false" />.</returns>
+        <param name="message">To be added.</param>
+        <param name="contextMessageProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,11 +316,10 @@
         <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="properties">The message properties collection to get the callback context message property from.</param>
-        <param name="contextMessageProperty">A reference to store the callback context message property instance.</param>
-        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance from the specified message properties.</summary>
-        <returns>
-          <see langword="true" /> if the callback context message property is retrieved successfully; otherwise, <see langword="false" />.</returns>
+        <param name="properties">To be added.</param>
+        <param name="contextMessageProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

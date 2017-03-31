@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Services.EnterpriseServicesHelper" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,23 +15,10 @@
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides APIs that are needed for communication and operation with unmanaged classes outside of the <see cref="T:System.AppDomain" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission Value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.Services.EnterpriseServicesHelper" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -73,10 +60,10 @@
         <Parameter Name="retObj" Type="System.MarshalByRefObject" />
       </Parameters>
       <Docs>
-        <param name="ctorMsg">A construction call to the object from which the new <see cref="T:System.Runtime.Remoting.Messaging.ReturnMessage" /> instance is returning.</param>
-        <param name="retObj">A <see cref="T:System.Runtime.Remoting.ObjRef" /> that represents the object that is constructed with the construction call in <c>ctorMsg</c>.</param>
-        <summary>Constructs a <see cref="T:System.Runtime.Remoting.Messaging.ReturnMessage" /> from the specified <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</summary>
-        <returns>A <see cref="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" /> returned from the construction call that is specified in the <paramref name="ctorMsg" /> parameter.</returns>
+        <param name="ctorMsg">To be added.</param>
+        <param name="retObj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,14 +74,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -103,21 +85,10 @@
         <Parameter Name="newcp" Type="System.Runtime.Remoting.Proxies.RealProxy" />
       </Parameters>
       <Docs>
-        <param name="oldcp">A proxy that represents the old instance of a class that is referenced by a CCW.</param>
-        <param name="newcp">A proxy that represents the new instance of a class that is referenced by a CCW.</param>
-        <summary>Switches a [COM Callable Wrapper](../Topic/COM%20Callable%20Wrapper.md) (CCW) from one instance of a class to another instance of the same class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  This method can cause unwanted behavior. Before calling it, the user must ensure that this is a thread-safe operation, and that a call is not being made through the CCW to one of the instances of the class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="oldcp">To be added.</param>
+        <param name="newcp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapIUnknownWithComObject">
@@ -127,14 +98,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -142,19 +108,10 @@
         <Parameter Name="punk" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="punk">A pointer to the <see langword="IUnknown" /> COM interface to wrap.</param>
-        <summary>Wraps the specified <see langword="IUnknown" /> COM interface with a [Runtime Callable Wrapper](../Topic/Runtime%20Callable%20Wrapper.md) (RCW).</summary>
-        <returns>The RCW where the specified <see langword="IUnknown" /> is wrapped.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WrapIUnknownWithComObject method is similar to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A?displayProperty=fullName> method, but does not attempt to maintain the identity of the unmanaged object. For example, two calls with the same `IUnknown` to the current method return two different RCWs, but two calls to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> method with the same `IUnknown` return the same RCW.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
+        <param name="punk">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

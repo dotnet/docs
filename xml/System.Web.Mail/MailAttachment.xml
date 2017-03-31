@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailAttachment" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides properties and methods for constructing an e-mail attachment. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,29 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">The name of the attachment file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Mail.MailAttachment" /> class with the specified file name for the attachment. Sets the <see cref="T:System.Text.Encoding" /> property to <see cref="T:System.Web.Mail.MailEncoding" /> by default. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The mail attachment file is locked while the mail is being sent.  
-  
-   
-  
-## Examples  
- [!code-vb[SystemWebMailMailAttachment#1](~/add/codesnippet/visualbasic/m-system.web.mail.mailat_1.vb)]
- [!code-cs[SystemWebMailMailAttachment#1](~/add/codesnippet/csharp/m-system.web.mail.mailat_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="filename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -68,9 +52,9 @@
         <Parameter Name="encoding" Type="System.Web.Mail.MailEncoding" />
       </Parameters>
       <Docs>
-        <param name="filename">The name of the attachment file.</param>
-        <param name="encoding">The type of <see cref="T:System.Web.Mail.MailEncoding" /> for the attachment.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Mail.MailAttachment" /> class with the specified file name and encoding type for the attachment. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <param name="filename">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,15 +65,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Mail.MailEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of encoding for the e-mail attachment. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>One of the <see cref="T:System.Web.Mail.MailEncoding" /> values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,15 +83,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the attachment file. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>The name of the attachment file.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

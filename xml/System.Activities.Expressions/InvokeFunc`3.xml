@@ -24,10 +24,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T1">The type of the first <see cref="System.Activities.InArgument%601" /> whose value is passed to the <see cref="System.Activities.ActivityFunc%603" />.</typeparam>
-    <typeparam name="T2">The type of the second <see cref="System.Activities.InArgument%601" /> whose value is passed to the <see cref="System.Activities.ActivityFunc%603" />.</typeparam>
-    <typeparam name="TResult">The type of the return <see cref="System.Activities.OutArgument%601" /> whose value is returned from the <see cref="System.Activities.ActivityFunc%603" />.</typeparam>
-    <summary>Invokes an <see cref="System.Activities.ActivityFunc%603" />.</summary>
+    <typeparam name="T1">To be added.</typeparam>
+    <typeparam name="T2">To be added.</typeparam>
+    <typeparam name="TResult">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.InvokeFunc%603" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Activities.InArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the first argument passed to the <see cref="System.Activities.ActivityFunc%603" />.</summary>
-        <value>The first argument passed to the <see cref="System.Activities.ActivityFunc%603" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>System.Activities.InArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the second argument passed to the <see cref="System.Activities.ActivityFunc%603" />.</summary>
-        <value>The second argument passed to the <see cref="System.Activities.ActivityFunc%603" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +131,8 @@
         <ReturnType>System.Activities.ActivityFunc&lt;T1,T2,TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="System.Activities.ActivityFunc%603" /> to be invoked.</summary>
-        <value>The activity function to be invoked.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

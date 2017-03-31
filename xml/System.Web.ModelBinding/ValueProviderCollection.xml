@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the collection of value-provider objects for the application.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Web.ModelBinding.IValueProvider&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">The collection of value providers.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderCollection" /> class by using the specified collection of value providers.</summary>
+        <param name="list">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +71,9 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">The prefix.</param>
-        <summary>Returns a value that indicates whether any value provider in the collection contains the specified prefix.</summary>
-        <returns>
-          <see langword="true" /> if any value provider in the collection contains the specified prefix; otherwise, <see langword="false" />.</returns>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,17 +93,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value object to retrieve.</param>
-        <summary>Returns a value object using the specified key.</summary>
-        <returns>The value object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls <xref:System.Web.ModelBinding.ValueProviderCollection.GetValue%28System.String%2CSystem.Boolean%29>, passing `false` for the `skipValidation` parameter.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -124,11 +116,10 @@
         <Parameter Name="skipValidation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value object to retrieve.</param>
-        <param name="skipValidation">
-          <see langword="true" /> to skip validation; otherwise, <see langword="false" />.</param>
-        <summary>Returns a value object using the specified key and optionally specifies whether validation should be skipped.</summary>
-        <returns>The value object.</returns>
+        <param name="key">To be added.</param>
+        <param name="skipValidation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,11 +140,10 @@
         <Parameter Name="item" Type="System.Web.ModelBinding.IValueProvider" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index location at which to insert the value provider into the collection.</param>
-        <param name="item">The value provider object to insert.</param>
-        <summary>Inserts the specified value provider object into the collection at the specified index location.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -173,11 +163,10 @@
         <Parameter Name="item" Type="System.Web.ModelBinding.IValueProvider" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to replace.</param>
-        <param name="item">The new value for the element at the specified index.</param>
-        <summary>Replaces the value provider at the specified index location with a new value provider.</summary>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

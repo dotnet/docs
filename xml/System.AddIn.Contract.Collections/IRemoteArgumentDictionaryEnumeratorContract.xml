@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,15 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Enumerates the elements of an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get an IRemoteArgumentDictionaryEnumeratorContract, use the <xref:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract.GetEnumeratorContract%2A> method of an <xref:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetEntry">
@@ -31,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -39,21 +30,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the key and the value of the current <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> entry.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> that contains the key and the value of the current <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> entry.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After an enumerator is created or after the <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset%2A> method is called, the <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before calling the GetEntry method; otherwise, the return value of GetEntry is undefined.  
-  
- GetEntry also throws an exception if the last call to <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> returned `false`, which indicates the end of the collection.  
-  
- GetEntry does not move the position of the enumerator, and consecutive calls to GetEntry return the same object until either <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> or <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset%2A> is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" /> is positioned before the first entry of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> or after the last entry.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -63,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,21 +49,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the key of the current <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> entry.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the key of the current <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> entry.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After an enumerator is created or after the <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset%2A> method is called, the <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before calling the GetKey method; otherwise, the return value of GetKey is undefined.  
-  
- GetKey also throws an exception if the last call to <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> returned `false`, which indicates the end of the collection.  
-  
- GetKey does not move the position of the enumerator, and consecutive calls to GetKey return the same object until either <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> or <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset%2A> is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" /> is positioned before the first entry of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> or after the last entry.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -95,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,21 +68,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the value of the current <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> entry.</summary>
-        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the value of the current <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> entry.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After an enumerator is created or after the <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset%2A> method is called, the <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before calling the GetValue method; otherwise, the return value of GetValue is undefined.  
-  
- GetValue also throws an exception if the last call to <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> returned `false`, which indicates the end of the collection.  
-  
- GetValue does not move the position of the enumerator, and consecutive calls to GetValue return the same object until either <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext%2A> or <xref:System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset%2A> is called.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract" /> is positioned before the first entry of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" /> or after the last entry.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

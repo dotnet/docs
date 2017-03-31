@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.GroupDescriptionSelectorCallback" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,10 +17,10 @@
     <ReturnType>System.ComponentModel.GroupDescription</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="group">The parent group.</param>
-    <param name="level">The level of <c>group</c>.</param>
-    <summary>Represents a method that is used to provide custom logic to select the <see cref="T:System.ComponentModel.GroupDescription" /> based on the parent group and its level.</summary>
-    <returns>The <see cref="T:System.ComponentModel.GroupDescription" /> chosen based on the parent group and its level.</returns>
+    <param name="group">To be added.</param>
+    <param name="level">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

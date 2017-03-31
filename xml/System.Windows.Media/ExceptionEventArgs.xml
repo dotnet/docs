@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides error exception data for media events.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,26 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the exception that details the cause of the failure.</summary>
-        <value>The exception that details the error condition.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Security.SecurityException">The attempt to access the media or image file is denied.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">The media or image file is not found.</exception>
-        <exception cref="T:System.IO.FileFormatException">The media or image format is not supported by any installed codec.  
-  
- -or-  
-  
- The file format is not recognized.</exception>
-        <exception cref="T:System.Windows.Media.InvalidWmpVersionException">The detected version of [!INCLUDE[TLA#tla_wmp](~/add/includes/tlasharptla-wmp-md.md)] is not supported.</exception>
-        <exception cref="T:System.NotSupportedException">The operation is not supported.</exception>
-        <exception cref="T:System.Runtime.InteropServices.COMException">A COM error code appears.</exception>
       </Docs>
     </Member>
   </Members>

@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SerializationMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines the serialization method used for a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property of the <xref:System.Web.Configuration.ProfilePropertySettings> object controls the serialization mode for a single profile property setting.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-cs[System.Web.Configuration.ProfileSection#17](~/add/codesnippet/csharp/t-system.web.configurati_92_1.cs)]
- [!code-vb[System.Web.Configuration.ProfileSection#17](~/add/codesnippet/visualbasic/t-system.web.configurati_92_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Binary">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object is serialized using binary serialization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderSpecific">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The provider has implicit knowledge of the type and is responsible for deciding how to serialize the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object into the data store.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -71,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object is serialized to a simple string.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -88,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The profile <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> is serialized as XML using XML serialization.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the auth:AdditionalContext element defined in the authorization extensions to WS-Trust. These extensions are defined in the WS-Federation specification.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The auth:AdditionalContext element can be used to communicate any additional context for a token request (RST). This context is provided as a collection of name-value pairs, each of which corresponds to a single auth:ContextItem subelement. The auth:ContextItem element is represented by the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem> class. You can access the list of context items through the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items%2A> property.  
-  
- For more information about the element that this class represents, see the WS-Federation specification.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +43,9 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">An <see cref="System.Collections.Generic.IList%601" /> of <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" /> class with the specified context items.</summary>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="items" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -72,8 +61,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of context items for this instance.</summary>
-        <value>An <see cref="System.Collections.Generic.IList%601" /> of <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> objects that provide context for the request (RST) as a collection of name-value pairs. The default is an empty list.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

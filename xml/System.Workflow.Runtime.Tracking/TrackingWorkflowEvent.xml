@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies a type of workflow status event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- A workflow instance can pass through several states during the course of its execution. For example, a workflow instance may become idle, or it may be suspended. Every time the workflow instance changes state, it emits a workflow status event to the runtime tracking infrastructure. TrackingWorkflowEvent enumerates the possible types of workflow status event.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Aborted">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has aborted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Changed">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A workflow change has occurred on the workflow instance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -72,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has completed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -89,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been created.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -106,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unhandled exception has occurred.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idle">
@@ -123,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance is idle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Loaded">
@@ -140,14 +122,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been loaded into memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persisted">
@@ -157,14 +138,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been persisted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resumed">
@@ -174,14 +154,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A previously suspended workflow instance has resumed running.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Started">
@@ -191,14 +170,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been started.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspended">
@@ -208,14 +186,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been suspended.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminated">
@@ -225,14 +202,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been terminated.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unloaded">
@@ -242,14 +218,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingWorkflowEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The workflow instance has been unloaded from memory.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

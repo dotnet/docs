@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -33,19 +31,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writingLevel">An enumeration value that specifies the scope of the progress changed event such as for an entire multiple document sequence, a single document, or a single page.</param>
-        <param name="number">Based on the scope defined by <c>writingLevel</c>, the number of documents or the number of pages that have been written.</param>
-        <param name="progressPercentage">The percentage of data that has been written.</param>
-        <param name="state">The user-supplied object that identifies the write operation.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The user-supplied `state` parameter is the object passed to <xref:System.Windows.Documents.Serialization.SerializerWriter.WriteAsync%2A> method that identifies the asynchronous write operation.  
-  
- ]]></format>
-        </remarks>
+        <param name="writingLevel">To be added.</param>
+        <param name="number">To be added.</param>
+        <param name="progressPercentage">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -55,23 +46,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of documents or pages that have been written.</summary>
-        <value>The number of documents or pages that have been written at the time of the event.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property is <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel>, Number specifies the number of documents that have been written.  For all other <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> cases, Number is the number of pages that have been written.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingLevel">
@@ -81,23 +64,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates the scope of the writing progress.</summary>
-        <value>An enumeration that indicates the scope of writing a multiple document sequence, a single document, or single page.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the WritingLevel property is <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel>, the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> property specifies the number of documents that have been written.  For all other WritingLevel cases, the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> property is the number of pages that have been written.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

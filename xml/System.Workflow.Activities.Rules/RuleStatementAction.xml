@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleStatementAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies a property or field to update or a method to run using the CodeDom types.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleStatementAction" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,15 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="codeDomExpression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="codeDomExpression">A <see cref="T:System.CodeDom.CodeExpression" /> specifying the action to perform.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleStatementAction" /> class using a <see cref="T:System.CodeDom.CodeExpression" />.</summary>
+        <param name="codeDomExpression">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +55,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="codeDomStatement" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="codeDomStatement">A <see cref="T:System.CodeDom.CodeStatement" /> specifying the action to perform.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleStatementAction" /> class using a <see cref="T:System.CodeDom.CodeStatement" />.</summary>
+        <param name="codeDomStatement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +73,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</summary>
-        <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> that is identical to this instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,15 +92,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeStatement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the code statement specifying the action to perform.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeStatement" /> specifying the action to perform.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +110,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,10 +119,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Object" />.</param>
-        <summary>Determines whether two object instances are equal.</summary>
-        <returns>
-          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,8 +141,8 @@
         <Parameter Name="context" Type="System.Workflow.Activities.Rules.RuleExecution" />
       </Parameters>
       <Docs>
-        <param name="context">The <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> context used to execute the <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</param>
-        <summary>Executes the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> using the specified <see cref="T:System.Workflow.Activities.Rules.RuleExecution" />.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>The hash code for this instance.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,9 +181,9 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
-        <summary>Returns the fields and properties updated by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</summary>
-        <returns>A list of the fields and properties changed by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</returns>
+        <param name="validation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,8 +201,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string value of the action.</summary>
-        <returns>The string value of the action.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +213,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,18 +222,10 @@
         <Parameter Name="validator" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validator">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
-        <summary>Verifies that the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> is configured correctly and has no errors.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> had no errors; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleStatementAction> contains errors (the Validate method returns false), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
-  
- ]]></format>
-        </remarks>
+        <param name="validator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

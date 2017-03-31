@@ -3,27 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlMetaData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlMetaData" />
   <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies and retrieves metadata information from parameters and columns of <see cref="T:Microsoft.SqlServer.Server.SqlDataRecord" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the creation of several SqlMetaData objects, which describe the column metadata of a record, and the creation of a <xref:Microsoft.SqlServer.Server.SqlDataRecord>. The column values of the <xref:Microsoft.SqlServer.Server.SqlDataRecord> are set and the <xref:Microsoft.SqlServer.Server.SqlDataRecord> is sent to the calling program using the <xref:Microsoft.SqlServer.Server.SqlContext> class.  
-  
- [!code-cs[DataWorks SqlMetaData Samples#1](~/add/codesnippet/csharp/t-microsoft.sqlserver.se_8_1.cs)]
- [!code-vb[DataWorks SqlMetaData Samples#1](~/add/codesnippet/visualbasic/t-microsoft.sqlserver.se_8_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,56 +30,27 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="dbType" Type="System.Data.SqlDbType" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name and type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `Bit`, `BigInt`, `DateTime`, `Decimal`, `Float`, `Int`, `Money`, `Numeric`, `SmallDateTime`, `SmallInt`, `SmallMoney`, `TimeStamp`, `TinyInt`, `UniqueIdentifier`, `Xml`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
-|SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
-|---------------|--------------------|---------------|-----------|------------|---------------------|  
-|`Bit`|1|1|0|0|None|  
-|`BigInt`|8|19|0|0|None|  
-|`DateTime`|8|23|3|0|None|  
-|`Decimal`|9|18|0|0|None|  
-|`Float`|8|53|0|0|None|  
-|`Int`|4|10|0|0|None|  
-|`Money`|8|19|4|0|None|  
-|`Numeric`|9|18|0|0|None|  
-|`SmallDateTime`|4|16|0|0|None|  
-|`SmallInt`|2|5|0|0|None|  
-|`SmallMoney`|4|10|4|0|None|  
-|`TimeStamp`|8|0|0|0|None|  
-|`TinyInt`|1|3|0|0|None|  
-|`UniqueIdentifier`|16|0|0|0|None|  
-|`Xml`|Max (-1)|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-  
-   
-  
-## Examples  
- The following example creates a new <xref:Microsoft.SqlServer.Server.SqlMetaData> object by specifying the column name and a column data type of <xref:System.Data.SqlDbType>.`Int`.  
-  
- [!code-cs[DataWorks SqlMetaData Samples#3](~/add/codesnippet/csharp/91e6d2cf-2ba4-49e0-8d1b-_1.cs)]
- [!code-vb[DataWorks SqlMetaData Samples#3](~/add/codesnippet/visualbasic/91e6d2cf-2ba4-49e0-8d1b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A <see langword="SqlDbType" /> that is not allowed was passed to the constructor as <paramref name="dbType" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,9 +59,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -100,46 +77,11 @@
         <Parameter Name="maxLength" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="maxLength">The maximum length of the specified type.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, and maximum length.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `Binary`, `Char`, `Image`, `NChar`, `Ntext`, `NVarChar`, `Text`, `VarBinary`, `VarChar`.  
-  
- Only a `maxLength` specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1 is allowed for a `dbType` of `Text`, `NText`, or `Image`.  
-  
- For a `dbType` of `Varchar`, `Nvarchar`, or `VarBinary`, a length specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, declares the metadata as varchar(max), nvarchar(max), or nvarbinary(max), respectively.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
-|SqlDbType|Precision|Scale|Locale|Compare options|  
-|---------------|---------------|-----------|------------|---------------------|  
-|Binary|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|Char|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|Image|0|0|0|None|  
-|NChar|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|NText|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|NVarChar|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|Text|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|VarBinary|0|0||IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|VarChar|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-  
-   
-  
-## Examples  
- The following example creates a new <xref:Microsoft.SqlServer.Server.SqlMetaData> object by specifying the column name, a column data type of <xref:System.Data.SqlDbType>`.NVarChar`, and a maximum length of 12 characters.  
-  
- [!code-cs[DataWorks SqlMetaData Samples#2](~/add/codesnippet/csharp/daf78f4b-2b48-4e5f-b504-_1.cs)]
- [!code-vb[DataWorks SqlMetaData Samples#2](~/add/codesnippet/visualbasic/daf78f4b-2b48-4e5f-b504-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A SqlDbType that is not allowed was passed to the constructor as <paramref name="dbType" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,7 +91,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -158,26 +100,11 @@
         <Parameter Name="userDefinedType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="userDefinedType">A <see cref="T:System.Type" /> instance that points to the UDT.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, and user-defined type (UDT).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `UDT`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
-|SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
-|---------------|--------------------|---------------|-----------|------------|---------------------|  
-|UDT|\<Max length of the type> or -1|0|0|0|None|  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A SqlDbType that is not allowed was passed to the constructor as <paramref name="dbType" />, or <paramref name="userDefinedType" /> points to a type that does not have <see cref="T:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute" /> declared.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="userDefinedType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -186,9 +113,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Byte,System.Byte)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -197,27 +132,12 @@
         <Parameter Name="scale" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter or column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="precision">The precision of the parameter or column.</param>
-        <param name="scale">The scale of the parameter or column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, precision, and scale.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `Decimal`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
-|SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
-|---------------|--------------------|---------------|-----------|------------|---------------------|  
-|Decimal|9|18|0|0|None|  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A <see langword="SqlDbType" /> that is not allowed was passed to the constructor as <paramref name="dbType" />, or <paramref name="scale" /> was greater than <paramref name="precision" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="precision">To be added.</param>
+        <param name="scale">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -227,7 +147,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -237,11 +156,11 @@
         <Parameter Name="serverTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="userDefinedType">A <see cref="T:System.Type" /> instance that points to the UDT.</param>
-        <param name="serverTypeName">The SQL Server type name for <c>userDefinedType</c>.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, user-defined type (UDT), and SQLServer type.</summary>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="userDefinedType">To be added.</param>
+        <param name="serverTypeName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,9 +170,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -263,37 +190,13 @@
         <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the parameter or column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="maxLength">The maximum length of the specified type.</param>
-        <param name="locale">The locale ID of the parameter or column.</param>
-        <param name="compareOptions">The comparison rules of the parameter or column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, locale, and compare options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `Char`, `NChar`, `Ntext`, `NVarChar`, `Text`, `VarChar`.  
-  
- Only a `maxLength` specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, is allowed for a `dbType` of `Text` or `NText`.  
-  
- For a `dbType` of `Varchar` or `Nvarchar`, a length specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, declares the metadata as varchar(max) and nvarchar(max), respectively.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
-|SqlDbType|Precision|Scale|  
-|---------------|---------------|-----------|  
-|`Char`|0|0|  
-|`NChar`|0|0|  
-|`NText`|0|0|  
-|`NVarChar`|0|0|  
-|`Text`|0|0|  
-|`VarChar`|0|0|  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A SqlDbType that is not allowed was passed to the constructor as <paramref name="dbType" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="locale">To be added.</param>
+        <param name="compareOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -302,9 +205,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -314,28 +225,13 @@
         <Parameter Name="objectName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="database">The database name of the XML schema collection of a typed XML instance.</param>
-        <param name="owningSchema">The relational schema name of the XML schema collection of a typed XML instance.</param>
-        <param name="objectName">The name of the XML schema collection of a typed XML instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, database name, owning schema, and object name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `Xml`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType`:  
-  
-|SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
-|---------------|--------------------|---------------|-----------|------------|---------------------|  
-|`Xml`|Max (-1)|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />, or <paramref name="objectName" /> is <see langword="null" /> when <paramref name="database" /> and <paramref name="owningSchema" /> are non-<see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A SqlDbType that is not allowed was passed to the constructor as <paramref name="dbType" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="database">To be added.</param>
+        <param name="owningSchema">To be added.</param>
+        <param name="objectName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -344,9 +240,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -357,21 +261,14 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, and default server. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -380,9 +277,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -394,22 +299,15 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="maxLength">The maximum length of the specified type.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -418,9 +316,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Byte,System.Byte,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -433,23 +339,16 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="precision">The precision of the parameter or column.</param>
-        <param name="scale">The scale of the parameter or column.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, precision, scale, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="precision">To be added.</param>
+        <param name="scale">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -458,9 +357,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -473,51 +380,16 @@
         <Parameter Name="userDefinedType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="maxLength">The maximum length of the specified type.</param>
-        <param name="precision">The precision of the parameter or column.</param>
-        <param name="scale">The scale of the parameter or column.</param>
-        <param name="locale">The locale ID of the parameter or column.</param>
-        <param name="compareOptions">The comparison rules of the parameter or column.</param>
-        <param name="userDefinedType">A <see cref="T:System.Type" /> instance that points to the UDT.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, precision, scale, locale ID, compare options, and user-defined type (UDT).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `BigInt`, `Bit`, `BitInt`, `DateTime`, `Decimal`, `Float`, `Image`, `Int`, `Money`, `Ntext`, `Numeric`, `Real`, `SmallDateTime`, `SmallInt`, `SmallMoney`, `Text`, `TimeStamp`, `TinyInt`, `UniqueIdentifier`, `Variant`, `Xml`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
-|SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
-|---------------|--------------------|---------------|-----------|------------|---------------------|  
-|`BigInt`|8|19|0|0|None|  
-|`Bit`|1|1|0|0|None|  
-|`DateTime`|8|23|3|0|None|  
-|`Decimal`|9|18|0|0|None|  
-|`Float`|8|53|0|0|None|  
-|`Image`|Max (-1)|0|0|0|None|  
-|`Int`|4|10|0|0|None|  
-|`Money`|8|19|4|0|None|  
-|`Ntext`|Max (-1)|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|`Real`|4|24|0|0|None|  
-|`Row`|\<number of columns>|0|0|0|None|  
-|`SmallDateTime`|4|16|0|0|None|  
-|`SmallInt`|2|5|0|0|None|  
-|`SmallMoney`|4|10|4|0|None|  
-|`Text`|Max (-1)|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-|`TimeStamp`|8|0|0|0|None|  
-|`TinyInt`|1|3|0|0|None|  
-|`UniqueIdentifier`|16|0|0|0|None|  
-|`UDT`|\<Max length of the type> or -1|0|0|0|None|  
-|`Variant`|8016|0|0|0|None|  
-|`Xml`|Max (-1)|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">A <see langword="SqlDbType" /> that is not allowed was passed to the constructor as <paramref name="dbType" />, or <paramref name="userDefinedType" /> points to a type that does not have <see cref="T:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute" /> declared.</exception>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="precision">To be added.</param>
+        <param name="scale">To be added.</param>
+        <param name="locale">To be added.</param>
+        <param name="compareOptions">To be added.</param>
+        <param name="userDefinedType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -527,7 +399,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -541,23 +412,16 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="userDefinedType">A <see cref="T:System.Type" /> instance that points to the UDT.</param>
-        <param name="serverTypeName">The SQL Server type name for <c>userDefinedType</c>.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, user-defined type, SQL Server type, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="userDefinedType">To be added.</param>
+        <param name="serverTypeName">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -566,9 +430,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -582,24 +454,17 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="maxLength">The maximum length of the specified type.</param>
-        <param name="locale">The locale ID of the parameter or column.</param>
-        <param name="compareOptions">The comparison rules of the parameter or column.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, locale, compare options, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="locale">To be added.</param>
+        <param name="compareOptions">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -608,9 +473,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -624,24 +497,17 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="database">The database name of the XML schema collection of a typed XML instance.</param>
-        <param name="owningSchema">The relational schema name of the XML schema collection of a typed XML instance.</param>
-        <param name="objectName">The name of the XML schema collection of a typed XML instance.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, database name, owning schema, object name, and default server. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="database">To be added.</param>
+        <param name="owningSchema">To be added.</param>
+        <param name="objectName">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -650,9 +516,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -669,27 +543,20 @@
         <Parameter Name="sortOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the column.</param>
-        <param name="dbType">The SQL Server type of the parameter or column.</param>
-        <param name="maxLength">The maximum length of the specified type.</param>
-        <param name="precision">The precision of the parameter or column.</param>
-        <param name="scale">The scale of the parameter or column.</param>
-        <param name="localeId">The locale ID of the parameter or column.</param>
-        <param name="compareOptions">The comparison rules of the parameter or column.</param>
-        <param name="userDefinedType">A <see cref="T:System.Type" /> instance that points to the UDT.</param>
-        <param name="useServerDefault">Specifes whether this column should use the default server value.</param>
-        <param name="isUniqueKey">Specifies if the column in the table-valued parameter is unique.</param>
-        <param name="columnSortOrder">Specifies the sort order for a column.</param>
-        <param name="sortOrdinal">Specifies the ordinal of the sort column.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, precision, scale, locale ID, compare options, and user-defined type (UDT). This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <param name="dbType">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="precision">To be added.</param>
+        <param name="scale">To be added.</param>
+        <param name="localeId">To be added.</param>
+        <param name="compareOptions">To be added.</param>
+        <param name="userDefinedType">To be added.</param>
+        <param name="useServerDefault">To be added.</param>
+        <param name="isUniqueKey">To be added.</param>
+        <param name="columnSortOrder">To be added.</param>
+        <param name="sortOrdinal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -698,9 +565,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -709,12 +584,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Boolean" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Boolean" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -723,9 +596,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Byte)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
@@ -734,12 +615,10 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Byte" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Byte" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -748,9 +627,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -759,12 +646,10 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified array of <see cref="T:System.Byte" /> values against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as an array of <see cref="T:System.Byte" /> values.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -773,9 +658,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Char)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
@@ -784,12 +677,10 @@
         <Parameter Name="value" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Char" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Char" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -798,9 +689,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Char[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char[]</ReturnType>
@@ -809,12 +708,10 @@
         <Parameter Name="value" Type="System.Char[]" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified array of <see cref="T:System.Char" /> values against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as an array <see cref="T:System.Char" /> values.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -823,9 +720,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlBinary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBinary</ReturnType>
@@ -834,12 +739,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlBinary" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlBinary" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlBinary" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -848,9 +751,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlBoolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -859,12 +770,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -873,9 +782,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlByte)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlByte</ReturnType>
@@ -884,12 +801,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlByte" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlByte" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -898,9 +813,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlBytes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBytes</ReturnType>
@@ -909,12 +832,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlBytes" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlBytes" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlBytes" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -923,9 +844,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlChars)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlChars</ReturnType>
@@ -934,12 +863,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlChars" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlChars" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlChars" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -948,9 +875,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -959,12 +894,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -973,9 +906,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
@@ -984,12 +925,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlDecimal" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlDecimal" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -998,9 +937,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlDouble)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
@@ -1009,12 +956,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlDouble" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlDouble" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlDouble" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1023,9 +968,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlGuid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlGuid</ReturnType>
@@ -1034,12 +987,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlGuid" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlGuid" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlGuid" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1048,9 +999,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlInt16</ReturnType>
@@ -1059,12 +1018,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlInt16" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlInt16" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlInt16" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1073,9 +1030,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlInt32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlInt32</ReturnType>
@@ -1084,12 +1049,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlInt32" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlInt32" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlInt32" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1098,9 +1061,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlInt64</ReturnType>
@@ -1109,12 +1080,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlInt64" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlInt64" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlInt64" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1123,9 +1092,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlMoney)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlMoney</ReturnType>
@@ -1134,12 +1111,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlMoney" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlMoney" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlMoney" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1148,9 +1123,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlSingle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
@@ -1159,12 +1142,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlSingle" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlSingle" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlSingle" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1173,9 +1154,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -1184,12 +1173,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlString" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlString" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1198,9 +1185,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlXml)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlXml</ReturnType>
@@ -1209,12 +1204,10 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlXml" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Data.SqlTypes.SqlXml" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Data.SqlTypes.SqlXml" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1223,9 +1216,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -1234,12 +1235,10 @@
         <Parameter Name="value" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.DateTime" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.DateTime" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1248,9 +1247,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -1259,12 +1266,10 @@
         <Parameter Name="value" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.DateTimeOffset" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as an array of <see cref="T:System.DateTimeOffset" /> values.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1273,9 +1278,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Decimal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
@@ -1284,12 +1297,10 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Decimal" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Decimal" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1298,9 +1309,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -1309,12 +1328,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Double" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Double" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1323,9 +1340,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Guid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -1334,12 +1359,10 @@
         <Parameter Name="value" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Guid" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Guid" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1348,9 +1371,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Int16)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
@@ -1359,12 +1390,10 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Int16" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Int16" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1373,9 +1402,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1384,12 +1421,10 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Int32" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Int32" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1398,9 +1433,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -1409,12 +1452,10 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Int64" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Int64" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1423,9 +1464,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1434,12 +1483,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Object" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Object" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1448,9 +1495,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
@@ -1459,12 +1514,10 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.Single" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.Single" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1473,9 +1526,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1484,12 +1545,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.String" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as a <see cref="T:System.String" />.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="Adjust">
@@ -1498,9 +1557,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.TimeSpan)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -1509,12 +1576,10 @@
         <Parameter Name="value" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="value">The value to validate against the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Validates the specified <see cref="T:System.TimeSpan" /> value against the metadata, and adjusts the value if necessary.</summary>
-        <returns>The adjusted value as an array of <see cref="T:System.TimeSpan" /> values.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="Value" /> does not match the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> type, or <paramref name="value" /> could not be adjusted.</exception>
       </Docs>
     </Member>
     <Member MemberName="CompareOptions">
@@ -1523,16 +1588,24 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.CompareOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlCompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the comparison rules used for the column or parameter.</summary>
-        <value>The comparison rules used for the column or parameter as a <see cref="T:System.Data.SqlTypes.SqlCompareOptions" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1543,23 +1616,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the column or parameter.</summary>
-        <value>The data type of the column or parameter as a <see cref="T:System.Data.DbType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default type is <xref:System.Data.DbType>.`String`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InferFromValue">
@@ -1568,9 +1634,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlMetaData.InferFromValue(System.Object,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.SqlMetaData</ReturnType>
@@ -1580,12 +1654,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The object used from which the metadata is inferred.</param>
-        <param name="name">The name assigned to the returned <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</param>
-        <summary>Infers the metadata from the specified object and returns it as a <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</summary>
-        <returns>The inferred metadata as a <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> instance.</returns>
+        <param name="value">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The v<paramref name="alue" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsUniqueKey">
@@ -1594,28 +1667,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.IsUniqueKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates if the column in the table-valued parameter is unique.</summary>
-        <value>A <see langword="Boolean" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default is `FALSE`.  
-  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LocaleId">
@@ -1624,26 +1694,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.LocaleId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the locale ID of the column or parameter.</summary>
-        <value>The locale ID of the column or parameter as a <see cref="T:System.Int64" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is the current locale of the current thread for string-valued SqlDbTypes, and 0 for SqlDbTypes that do not support collation.  
-  
- Returns 0 if the collation of the underlying column type is not defined.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -1652,24 +1721,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.Max" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of <see langword="text" />, <see langword="ntext" />, and <see langword="image" /> data types.</summary>
-        <value>The length of <see langword="text" />, <see langword="ntext" />, and <see langword="image" /> data types.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is -1.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -1678,28 +1748,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum length of the column or parameter.</summary>
-        <value>The maximum length of the column or parameter as a <see cref="T:System.Int64" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The potential maximum length for values of the specified column. Returns 0 for types other than fixed and varying length character and binary types. For variable size columns or parameters declared with the `Max` constructor parameter, it returns -1.  
-  
- For <xref:System.Data.DbType>.`Row` this returns the number of columns in the row metadata instance.  
-  
- The default value is 0.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1708,18 +1775,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the column or parameter.</summary>
-        <value>The name of the column or parameter as a <see cref="T:System.String" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <paramref name="Name" /> specified in the constructor is longer than 128 characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -1728,24 +1802,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.Precision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the precision of the column or parameter.</summary>
-        <value>The precision of the column or parameter as a <see cref="T:System.Byte" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns 0 if the precision of the underlying column type is not defined.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -1754,24 +1829,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scale of the column or parameter.</summary>
-        <value>The scale of the column or parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns 0 if the scale of the underlying column type is not defined.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOrder">
@@ -1780,26 +1856,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.SortOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the sort order for a column.</summary>
-        <value>A <see cref="T:System.Data.SqlClient.SortOrder" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOrdinal">
@@ -1808,28 +1883,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.SortOrdinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the ordinal of the sort column.</summary>
-        <value>The ordinal of the sort column.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default is 1.  
-  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- For more information, see [Table-Valued Parameters](../Topic/Table-Valued%20Parameters.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SqlDbType">
@@ -1838,24 +1910,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.SqlDbType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlDbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the column or parameter.</summary>
-        <value>The data type of the column or parameter as a <see cref="T:System.Data.DbType" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `NVarChar`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1865,25 +1938,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the common language runtime (CLR) type of a user-defined type (UDT).</summary>
-        <value>The CLR type name of a user-defined type as a <see cref="T:System.Type" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `null`.  
-  
- Returns `null` if <xref:Microsoft.SqlServer.Server.SqlMetaData.SqlDbType%2A> is not a UDT type. `Null` may also returned for valid UDT result sets where the assembly is not available to the application.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -1892,24 +1955,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the three-part name of the user-defined type (UDT) or the SQL Server type represented by the instance.</summary>
-        <value>The name of the UDT or SQL Server type as a <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UseServerDefault">
@@ -1918,26 +1982,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.UseServerDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reports whether this column should use the default server value.</summary>
-        <value>A <see langword="Boolean" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default is `FALSE`.  
-  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSchemaCollectionDatabase">
@@ -1946,26 +2009,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the database where the schema collection for this XML instance is located.</summary>
-        <value>The name of the database where the schema collection for this XML instance is located as a <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `null`.  
-  
- This property may be `null` if the collection is defined within the current database. It is also `null` if there is no schema collection, in which case <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A> are also null.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSchemaCollectionName">
@@ -1974,26 +2036,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the schema collection for this XML instance.</summary>
-        <value>The name of the schema collection for this XML instance as a <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `null`.  
-  
- This value is `null` if there is no associated schema collection. If the value is `null`, then <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A> are also `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlSchemaCollectionOwningSchema">
@@ -2002,26 +2063,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the owning relational schema where the schema collection for this XML instance is located.</summary>
-        <value>The owning relational schema where the schema collection for this XML instance is located as a <see cref="T:System.String" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value is `null`.  
-  
- This value may be `null` if the collection is defined within the current database and default schema. It is also null if there is no schema collection, in which case <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A> are also `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

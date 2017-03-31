@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the data of a property for a selected item and enables editing of this property with type-specific data.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,16 +50,9 @@
         <Parameter Name="parentValue" Type="System.Activities.Presentation.PropertyEditing.PropertyValue" />
       </Parameters>
       <Docs>
-        <param name="parentValue">The parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> class that serves as a subproperty of the specified <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For host infrastructure derived classes.  
-  
- ]]></format>
-        </remarks>
+        <param name="parentValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyFilter">
@@ -78,8 +71,8 @@
         <Parameter Name="filter" Type="System.Activities.Presentation.PropertyEditing.PropertyFilter" />
       </Parameters>
       <Docs>
-        <param name="filter">The <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> to apply.</param>
-        <summary>Stores whether the target property value matches a specified <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" />.</summary>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the category in which this property resides.</summary>
-        <value>A <see cref="T:System.String" /> that contains the name of the category.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enables the host infrastructure to create a new host-specific <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> instance.</summary>
-        <returns>A new <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> object.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +126,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the description of the encapsulated property.</summary>
-        <value>A string that contains the description.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the display name for the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
-        <value>A string that contains the display name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +162,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Declaration of the <see cref="T:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" /> event, which occurs when a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> is changed through a call to the <see cref="System.Activities.Presentation.PropertyEditing.PropertyEntry.ApplyFilter%2A" /> method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +179,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a set of standard values is available for this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
-        <value>
-          <see langword="true" /> if a set of standard values is available; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +197,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> is custom-made.</summary>
-        <value>
-          <see langword="true" /> if the property entry is custom-made; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +215,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> is read-only.</summary>
-        <value>
-          <see langword="true" /> if the property entry is read-only; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,17 +233,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" /> matches the filter. Sets the value to indicate that the <see cref="T:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" /> matches the filter and fires the event handler method for the property change.</summary>
-        <value>
-          <see langword="true" /> if the target object matches the filter; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Activities.Presentation.PropertyEditing.PropertyContainer> listens to changes made to this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchesPredicate">
@@ -272,10 +254,9 @@
         <Parameter Name="predicate" Type="System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate" />
       </Parameters>
       <Docs>
-        <param name="predicate">The <see cref="T:System.String" /> display or type name of a filter to match against the target object.</param>
-        <summary>Implementation of a <see cref="T:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" /> method that determines whether the target display or type name matches the specified string containing the name of a filter.</summary>
-        <returns>
-          <see langword="true" /> if the target display or type name matches the specified string; otherwise, <see langword="false" />.</returns>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +276,8 @@
         <Parameter Name="filter" Type="System.Activities.Presentation.PropertyEditing.PropertyFilter" />
       </Parameters>
       <Docs>
-        <param name="filter">The <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> to apply.</param>
-        <summary>Raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyEntry.FilterApplied" /> event.</summary>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +297,8 @@
         <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The EventArgs for this event.</param>
-        <summary>Raises the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> PropertyChanged event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,8 +318,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The name of the property whose value has changed.</param>
-        <summary>Raises the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> event when the <see cref="System.Activities.Presentation.PropertyEditing.PropertyContainer" /> hears that the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> has changed.</summary>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,16 +336,9 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> in classes derived from a host infrastructure.</summary>
-        <value>A parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is used only for subproperties, so its value can be `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -380,7 +354,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Declaration of the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> event, which occurs when a property value changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,8 +371,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the property.</summary>
-        <value>A string that contains the property name.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,8 +389,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the property.</summary>
-        <value>A type that contains the type of the property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,8 +407,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> for this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
-        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,8 +425,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValueEditor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> that is used for editing the value of this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
-        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> object that contains  the current editor.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,8 +443,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a set of possible values supported by this <see cref="System.Activities.Design.PropertyEditing.PropertyEntry" />.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> of possible values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

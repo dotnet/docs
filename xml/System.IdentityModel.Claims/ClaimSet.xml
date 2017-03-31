@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Claims.ClaimSet" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,23 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of claims that are associated with an entity.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After the ClaimSet class has been created, it cannot be changed.  
-  
- Examining the content of a ClaimSet for particular types of claims is a common task when using claim-based authorization. To examine a ClaimSet for the presence of particular claims, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%2A> method. The method provides better performance than iterating directly over the ClaimSet.  
-  
-   
-  
-## Examples  
- [!code-cs[c_ClaimSet#1](~/add/codesnippet/csharp/t-system.identitymodel.c_1_1.cs)]
- [!code-vb[c_ClaimSet#1](~/add/codesnippet/visualbasic/t-system.identitymodel.c_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,20 +31,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Reserved for future use.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsClaim">
@@ -70,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,18 +55,10 @@
         <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" />
       </Parameters>
       <Docs>
-        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> for which to search.</param>
-        <summary>Determines whether the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> contains the specified <see cref="T:System.IdentityModel.Claims.Claim" />.</summary>
-        <returns>
-          <see langword="true" /> if the specified claim is contained in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To find the specified claim, call the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="claim">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsClaim">
@@ -101,7 +68,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,19 +78,11 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" />
       </Parameters>
       <Docs>
-        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> for which to search.</param>
-        <param name="comparer">The <see cref="System.Collections.Generic.IEqualityComparer%601" /> object used to make the comparison.</param>
-        <summary>Determines whether the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> contains the specified <see cref="T:System.IdentityModel.Claims.Claim" />, by using the specified <see cref="System.Collections.Generic.IEqualityComparer%601" /> object.</summary>
-        <returns>
-          <see langword="true" /> if the specified claim is contained in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />; otherwise <see langword="false." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To find the specified claim, call the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="claim">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -134,33 +92,24 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the number of claims in this claim set.</summary>
-        <value>The number of claims in this <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get an individual claim, use the <xref:System.IdentityModel.Claims.ClaimSet.Item%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindClaims">
-      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt; FindClaims (string claimType, string right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt; FindClaims(string claimType, string right) cil managed" />
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt; FindClaims (string resourceType, string right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt; FindClaims(string resourceType, string right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.FindClaims(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,24 +120,11 @@
         <Parameter Name="right" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="claimType">The uniform resource identifier (URI) of a claim type. Several claim types are available as static properties of the <see cref="T:System.IdentityModel.Claims.ClaimTypes" /> class.</param>
-        <param name="right">The URI of the right associated with the new claim. Several rights are available as static properties of the <see cref="T:System.IdentityModel.Claims.Rights" /> class.</param>
-        <summary>When overridden in a derived class, searches for a <see cref="T:System.IdentityModel.Claims.Claim" /> object that matches the specified claim type and rights in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
-        <returns>A <see cref="System.Collections.Generic.IEnumerable%601" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that enables you to enumerate the claims that matches the specified criteria.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine if this <xref:System.IdentityModel.Claims.ClaimSet> contains the claim without returning the claim, call the <xref:System.IdentityModel.Claims.ClaimSet.ContainsClaim%2A> method.  
-  
-   
-  
-## Examples  
- [!code-cs[c_ClaimSet#2](~/add/codesnippet/csharp/m-system.identitymodel.c_1.cs)]
- [!code-vb[c_ClaimSet#2](~/add/codesnippet/visualbasic/m-system.identitymodel.c_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="resourceType">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -198,7 +134,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,18 +141,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, gets a <see cref="System.Collections.Generic.IEnumerator%601" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
-        <returns>A <see cref="System.Collections.Generic.IEnumerator%601" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Issuer">
@@ -227,23 +153,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Claims.ClaimSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the entity that issued this <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
-        <value>The <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued this <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The issuer of the claim set that is returned by the <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property is the <xref:System.IdentityModel.Claims.DefaultClaimSet>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -253,7 +171,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,9 +180,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the claim to be retrieved.</param>
-        <summary>When overridden in a derived class, gets the <see cref="T:System.IdentityModel.Claims.Claim" /> for the specified index.</summary>
-        <value>The <see cref="T:System.IdentityModel.Claims.Claim" /> at the specified index.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,25 +193,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Claims.ClaimSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that represents an application trusted issuer.</summary>
-        <value>The system <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type of <xref:System.IdentityModel.Claims.ClaimSet> object is typically used as the value of the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property for a <xref:System.IdentityModel.Claims.ClaimSet> that is issued by the current application.  
-  
- For example, after an application authenticates a username and password, it creates a <xref:System.IdentityModel.Claims.ClaimSet> that represents the user with the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property set to System.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -304,7 +211,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,18 +218,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an <see cref="System.Collections.Generic.IEnumerator%601" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
-        <returns>A <see cref="System.Collections.Generic.IEnumerator%601" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -333,23 +230,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Claims.ClaimSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a set of claims that contains Windows security identifiers.</summary>
-        <value>A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that contains at least one claim of type <see cref="System.IdentityModel.Claims.ClaimTypes.Sid%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type of <xref:System.IdentityModel.Claims.ClaimSet> object is typically used as the value of the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property for a <xref:System.IdentityModel.Claims.ClaimSet> that is issued by the Windows. For example, after an application authenticates a username and password using Windows authentication, it creates the <xref:System.IdentityModel.Claims.ClaimSet> with the <xref:System.IdentityModel.Claims.ClaimSet.Issuer%2A> property set to Windows.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

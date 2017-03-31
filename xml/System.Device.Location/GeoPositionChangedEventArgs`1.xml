@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the location data in the <see cref="System.Device.Location.GeoPosition%601.Location%2A" /> property of this event's <see cref="System.Device.Location.GeoPositionChangedEventArgs%601.Position%2A" /> property.</typeparam>
-    <summary>Provides data for the <see cref="E:System.Device.Location.GeoCoordinateWatcher.PositionChanged" /> event.</summary>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="position" Type="System.Device.Location.GeoPosition&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="position">The updated position.</param>
-        <summary>Initializes a new instance of the <see cref="System.Device.Location.GeoPositionChangedEventArgs%601" /> class</summary>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <ReturnType>System.Device.Location.GeoPosition&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location data associated with the event.</summary>
-        <value>A <see cref="System.Device.Location.GeoPosition%601" /> object that contains the location data in its <see cref="System.Device.Location.GeoPosition%601.Location%2A" /> property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

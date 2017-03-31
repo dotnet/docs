@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Service" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Groups together a set of related instances of the <see cref="T:System.Web.Services.Description.Port" /> class that are associated with an XML Web service. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `Service` class corresponds to the Web Services Description Language (WSDL) `<service>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- [!code-vb[ServiceClass#1](~/add/codesnippet/visualbasic/t-system.web.services.de_10_1.vb)]
- [!code-cs[ServiceClass#1](~/add/codesnippet/csharp/t-system.web.services.de_10_1.cs)]
- [!code-cpp[ServiceClass#1](~/add/codesnippet/cpp/t-system.web.services.de_10_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +28,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Service" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +44,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -70,18 +56,9 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of extensibility elements associated with the <see cref="T:System.Web.Services.Description.Service" />.</summary>
-        <value>The collection of extensibility elements associated with the <see cref="T:System.Web.Services.Description.Service" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[Service_Class4#2](~/add/codesnippet/cpp/p-system.web.services.de_81_1.cpp)]
- [!code-cs[Service_Class4#2](~/add/codesnippet/csharp/p-system.web.services.de_81_1.cs)]
- [!code-vb[Service_Class4#2](~/add/codesnippet/visualbasic/p-system.web.services.de_81_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ports">
@@ -91,7 +68,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,18 +80,9 @@
         <ReturnType>System.Web.Services.Description.PortCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="T:System.Web.Services.Description.Port" /> instances contained in the <see cref="T:System.Web.Services.Description.Service" />.</summary>
-        <value>A collection of port instances contained in the <see cref="T:System.Web.Services.Description.Service" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[Service_Class4#1](~/add/codesnippet/cpp/p-system.web.services.de_64_1.cpp)]
- [!code-cs[Service_Class4#1](~/add/codesnippet/csharp/p-system.web.services.de_64_1.cs)]
- [!code-vb[Service_Class4#1](~/add/codesnippet/visualbasic/p-system.web.services.de_64_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceDescription">
@@ -124,23 +92,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Service" /> is a member.</summary>
-        <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Service" /> is a member.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- Service_ServiceDescription#1  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

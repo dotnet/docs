@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.HtmlControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides basic design-time functionality for ASP.NET server controls.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -51,18 +48,9 @@
         <ReturnType>System.Web.UI.Design.IHtmlControlDesignerBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the DHTML behavior that is associated with the designer.</summary>
-        <value>An <see cref="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" /> that is associated with the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The Behavior property is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class to set styles for the control at design time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBindings">
@@ -72,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.DataBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data bindings collection for the current control.</summary>
-        <value>A <see cref="T:System.Web.UI.DataBindingCollection" /> that contains the data bindings for the current control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +78,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,16 +89,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the design-time object representing the control that is associated with the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> object on the design surface.</summary>
-        <value>The design-time object representing the control associated with the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignTimeElement property is used by the designer to retrieve the design-time object representing the control that is associated with the <xref:System.Web.UI.Design.HtmlControlDesigner> object on the design surface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -122,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,19 +110,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> object and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Web.UI.Design.HtmlControlDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expressions">
@@ -154,25 +122,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.ExpressionBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the expression bindings for the current control at design time.</summary>
-        <value>An <see cref="T:System.Web.UI.ExpressionBindingCollection" /> that contains the expressions strings set for properties in the current control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The design host, such as [!INCLUDE[vsprvslong](~/add/includes/vsprvslong-md.md)], uses the <xref:System.Web.Compilation.ExpressionBuilder> class to get the <xref:System.Web.UI.Design.ExpressionEditor> class to get the <xref:System.Web.UI.Design.ExpressionEditorSheet> to set expressions for control properties at design time. Expression strings reference a localizable resource, an application setting, a connection string, or a custom expression type.  
-  
- The Expressions collection contains an <xref:System.Web.UI.ExpressionBinding> element for each control property that has an associated expression string. Each <xref:System.Web.UI.ExpressionBinding.ExpressionPrefix%2A> property for each element indicates the associated expression builder implementation. The expression string is parsed and evaluated by its associated <xref:System.Web.Compilation.ExpressionBuilder> to determine the control property value at run time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -182,7 +140,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,16 +149,9 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">The control element for design.</param>
-        <summary>Initializes the designer and sets the component for design.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.Design.ControlDesigner.Initialize%2A> method should be called by the designer host to initialize the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="component">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -211,7 +161,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -224,17 +173,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when a behavior is associated with the element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The OnBehaviorAttached method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class to set styles for the control at design time. Override the <xref:System.Web.UI.Design.HtmlControlDesigner.Initialize%2A> method to manipulate the initial styles for the control at design time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorDetaching">
@@ -244,7 +184,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -257,17 +196,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when a behavior disassociates from the element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The OnBehaviorDetaching method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class to set styles for the control at design time. Override the <xref:System.Web.UI.Design.HtmlControlDesigner.Dispose%2A> method for the control designer to perform actions before the designer object is released.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBindingsCollectionChanged">
@@ -277,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -292,19 +221,9 @@
         <Parameter Name="propName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propName">The name of the property that has changed.</param>
-        <summary>Provides a method that can be used to indicate when a data binding has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnBindingsCollectionChanged method should be called by a control designer after the control designer has made a change to the data bindings for the control.  
-  
-> [!NOTE]
->  The OnBindingsCollectionChanged method is obsolete. Use the <xref:System.Web.UI.DataBindingCollection.Changed> event on the <xref:System.Web.UI.Design.HtmlControlDesigner.DataBindings%2A> collection for equivalent control designer functionality.  
-  
- ]]></format>
-        </remarks>
+        <param name="propName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSetParent">
@@ -314,7 +233,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,7 +240,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a way to perform additional processing when the associated control is attached to a parent control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +251,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,18 +260,9 @@
         <Parameter Name="events" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="events">An <see cref="T:System.Collections.IDictionary" /> that contains the names of the events of the component to expose.</param>
-        <summary>Sets the list of events that are exposed at design-time for the <see cref="T:System.ComponentModel.TypeDescriptor" /> object for the component.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PreFilterEvents method provides a way to add items to or remove items from the dictionary of events that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor> object.  
-  
- The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
-  
- ]]></format>
-        </remarks>
+        <param name="events">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -364,7 +272,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,18 +281,9 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">The set of properties to filter for the component.</param>
-        <summary>Allows the designer to expose a specific set of properties through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object at design time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PreFilterProperties method provides a way to add items to or remove items from the dictionary of properties that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor> object.  
-  
- The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
-  
- ]]></format>
-        </remarks>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldCodeSerialize">
@@ -395,7 +293,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -407,9 +304,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to create a field declaration for the control in the code-behind file for the current design document during serialization.</summary>
-        <value>
-          <see langword="true" />, if a declaration should be created; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

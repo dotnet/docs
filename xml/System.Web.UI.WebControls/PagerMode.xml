@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents the mode of the pager for accessing various pages within the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PagerMode enumeration represents the different display modes for the pager of a <xref:System.Web.UI.WebControls.DataGrid> control. NextPrev displays the pager controls using `Next` and `Previous` buttons; NumericPages displays numeric buttons representing the individual page numbers.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="NextPrev">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A pager with <see langword="Previous" /> and <see langword="Next" /> buttons to access the next and previous pages.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumericPages">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A pager with numbered buttons to access pages directly.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

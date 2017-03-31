@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IRequestHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides access to members that control handing of request messages.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -43,9 +41,9 @@
         <Parameter Name="messageBody" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="messageBody">The <see cref="T:System.IO.Stream" /> object that contains the request.</param>
-        <summary>Provides an entry point for the request.</summary>
-        <returns>The resulting message for the supplied request.</returns>
+        <param name="messageBody">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

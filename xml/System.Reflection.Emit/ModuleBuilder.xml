@@ -1,10 +1,14 @@
 <Type Name="ModuleBuilder" FullName="System.Reflection.Emit.ModuleBuilder">
   <TypeSignature Language="C#" Value="public class ModuleBuilder : System.Reflection.Module, System.Runtime.InteropServices._ModuleBuilder" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModuleBuilder extends System.Reflection.Module implements class System.Runtime.InteropServices._ModuleBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit ModuleBuilder extends System.Reflection.Module implements class System.Runtime.InteropServices._ModuleBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ModuleBuilder" />
   <AssemblyInfo>
+    <AssemblyName>System.Reflection.Emit</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,49 +31,46 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines and represents a module in a dynamic assembly.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get an instance of ModuleBuilder, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code sample demonstrates the use of `ModuleBuilder` to create a dynamic module. Note that the ModuleBuilder is created by calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> in <xref:System.Reflection.Emit.AssemblyBuilder>, rather than through a constructor.  
-  
- [!code-cpp[ModuleBuilder_Class#1](~/add/codesnippet/cpp/t-system.reflection.emit_13_1.cpp)]
- [!code-vb[ModuleBuilder_Class#1](~/add/codesnippet/visualbasic/t-system.reflection.emit_13_1.vb)]
- [!code-cs[ModuleBuilder_Class#1](~/add/codesnippet/csharp/t-system.reflection.emit_13_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ModuleBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Assembly">
       <MemberSignature Language="C#" Value="public override System.Reflection.Assembly Assembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly Assembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ModuleBuilder.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dynamic assembly that defined this instance of <see cref="T:System.Reflection.Emit.ModuleBuilder" />.</summary>
-        <value>The dynamic assembly that defined the current dynamic module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Reflection.Assembly> object that is returned is the <xref:System.Reflection.Emit.AssemblyBuilder> that defined this instance of <xref:System.Reflection.Emit.ModuleBuilder>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateGlobalFunctions">
@@ -78,8 +79,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,28 +92,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Completes the global function definitions and global data definitions for this dynamic module.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method should be called when the user is done with defining all the global functions within this dynamic module. After calling this function, no more new global functions or new global data are allowed.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following sample illustrates the use of `CreateGlobalFunctions` to create a static global method from a <xref:System.Reflection.Emit.MethodBuilder> implemented with <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A>.  
-  
- [!code-cpp[ModuleBuilder_CreateGlobalFunctions#2](~/add/codesnippet/cpp/m-system.reflection.emit_14_1.cpp)]
- [!code-cs[ModuleBuilder_CreateGlobalFunctions#2](~/add/codesnippet/csharp/m-system.reflection.emit_14_1.cs)]
- [!code-vb[ModuleBuilder_CreateGlobalFunctions#2](~/add/codesnippet/visualbasic/m-system.reflection.emit_14_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This method was called previously.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDocument">
@@ -118,7 +103,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,34 +116,13 @@
         <Parameter Name="documentType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="url">The URL for the document.</param>
-        <param name="language">The GUID that identifies the document language. This can be <see cref="T:System.Guid" />.</param>
-        <param name="languageVendor">The GUID that identifies the document language vendor. This can be <see cref="T:System.Guid" />.</param>
-        <param name="documentType">The GUID that identifies the document type. This can be <see cref="T:System.Guid" />.</param>
-        <summary>Defines a document for source.</summary>
-        <returns>The defined document.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Earlier versions of the .NET Framework throw <xref:System.ArgumentException> instead of <xref:System.ArgumentNullException> when `url` is `null`.  
-  
-   
-  
-## Examples  
- The following code sample illustrates the use of `DefineDocument` to attach an external symbol document (in this case, a raw IL file) to a dynamic module.  
-  
- [!code-cs[ModuleBuilder_DefineDocument#1](~/add/codesnippet/csharp/ddafb05e-9e9c-4ff2-9a24-_1.cs)]
- [!code-cpp[ModuleBuilder_DefineDocument#1](~/add/codesnippet/cpp/ddafb05e-9e9c-4ff2-9a24-_1.cpp)]
- [!code-vb[ModuleBuilder_DefineDocument#1](~/add/codesnippet/visualbasic/ddafb05e-9e9c-4ff2-9a24-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />. This is a change from earlier versions of the .NET Framework.</exception>
-        <exception cref="T:System.InvalidOperationException">This method is called on a dynamic module that is not a debug module.</exception>
+        <param name="url">To be added.</param>
+        <param name="language">To be added.</param>
+        <param name="languageVendor">To be added.</param>
+        <param name="documentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineEnum">
@@ -167,15 +131,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineEnum(System.String,System.Reflection.TypeAttributes,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.EnumBuilder</ReturnType>
       </ReturnValue>
@@ -185,50 +148,12 @@
         <Parameter Name="underlyingType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the enumeration type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="visibility">The type attributes for the enumeration. The attributes are any bits defined by <see cref="T:System.Reflection.TypeAttributes" />.</param>
-        <param name="underlyingType">The underlying type for the enumeration. This must be a built-in integer type.</param>
-        <summary>Defines an enumeration type that is a value type with a single non-static field called <paramref name="value__" /> of the specified type.</summary>
-        <returns>The defined enumeration.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The defined enum is a derived class of <xref:System.Enum>. The `value__` field has <xref:System.Reflection.FieldAttributes> and <xref:System.Reflection.FieldAttributes> attributes set.  
-  
- For more information about the built-in integer types that can be specified as the underlying types of enumerations, see [Class Library Overview](../Topic/.NET%20Framework%20Class%20Library%20Overview.md).  
-  
-> [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example illustrates the use of `DefineEnum` to implement an enumeration class in a dynamic module. The example defines an enumeration named `Elevation` that has an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the contents of this assembly.  
-  
-> [!NOTE]
->  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
-  
- [!code-cs[ModuleBuilder_DefineEnum#1](~/add/codesnippet/csharp/db95a780-a6ca-40b6-9752-_1.cs)]
- [!code-vb[ModuleBuilder_DefineEnum#1](~/add/codesnippet/visualbasic/db95a780-a6ca-40b6-9752-_1.vb)]
- [!code-cpp[ModuleBuilder_DefineEnum#1](~/add/codesnippet/cpp/db95a780-a6ca-40b6-9752-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Attributes other than visibility attributes are provided.  
-  
- -or-  
-  
- An enumeration with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- The visibility attributes do not match the scope of the enumeration. For example, <see cref="T:System.Reflection.TypeAttributes" /> is specified for <paramref name="visibility" />, but the enumeration is not a nested type.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="visibility">To be added.</param>
+        <param name="underlyingType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineGlobalMethod">
@@ -237,8 +162,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,45 +180,13 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attributes">The attributes of the method. <c>attributes</c> must include <see cref="T:System.Reflection.MethodAttributes" />.</param>
-        <param name="returnType">The return type of the method.</param>
-        <param name="parameterTypes">The types of the method's parameters.</param>
-        <summary>Defines a global method with the specified name, attributes, return type, and parameter types.</summary>
-        <returns>The defined global method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The global method that this method defines is not usable until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example illustrates the use of `DefineGlobalMethod` to create a type-independent method tied to the current <xref:System.Reflection.Emit.ModuleBuilder>. After building the global method, <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> must be called in order to complete it.  
-  
- [!code-cpp[ModuleBuilder_CreateGlobalFunctions#1](~/add/codesnippet/cpp/135f43c0-9b7a-4f67-8885-_1.cpp)]
- [!code-cs[ModuleBuilder_CreateGlobalFunctions#1](~/add/codesnippet/csharp/135f43c0-9b7a-4f67-8885-_1.cs)]
- [!code-vb[ModuleBuilder_CreateGlobalFunctions#1](~/add/codesnippet/visualbasic/135f43c0-9b7a-4f67-8885-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The method is not static. That is, <paramref name="attributes" /> does not include <see cref="T:System.Reflection.MethodAttributes" />.  
-  
- -or-  
-  
- The length of <paramref name="name" /> is zero  
-  
- -or-  
-  
- An element in the <see cref="T:System.Type" /> array is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A" /> has been previously called.</exception>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineGlobalMethod">
@@ -298,8 +195,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,42 +214,14 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attributes">The attributes of the method. <c>attributes</c> must include <see cref="T:System.Reflection.MethodAttributes" />.</param>
-        <param name="callingConvention">The calling convention for the method.</param>
-        <param name="returnType">The return type of the method.</param>
-        <param name="parameterTypes">The types of the method's parameters.</param>
-        <summary>Defines a global method with the specified name, attributes, calling convention, return type, and parameter types.</summary>
-        <returns>The defined global method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following code sample illustrates the use of `DefineGlobalMethod` to create a type-independent method tied to the current <xref:System.Reflection.Emit.ModuleBuilder>. After building the global method, <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> must be called in order to complete it.  
-  
- [!code-cpp[ModuleBuilder_CreateGlobalFunctions#1](~/add/codesnippet/cpp/d05c51c3-4756-4f2b-8e9f-_1.cpp)]
- [!code-cs[ModuleBuilder_CreateGlobalFunctions#1](~/add/codesnippet/csharp/d05c51c3-4756-4f2b-8e9f-_1.cs)]
- [!code-vb[ModuleBuilder_CreateGlobalFunctions#1](~/add/codesnippet/visualbasic/d05c51c3-4756-4f2b-8e9f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The method is not static. That is, <paramref name="attributes" /> does not include <see cref="T:System.Reflection.MethodAttributes" />.  
-  
- -or-  
-  
- An element in the <see cref="T:System.Type" /> array is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A" /> has been previously called.</exception>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="callingConvention">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineGlobalMethod">
@@ -357,8 +230,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -376,38 +253,18 @@
         <Parameter Name="optionalParameterTypeCustomModifiers" Type="System.Type[][]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded null characters.</param>
-        <param name="attributes">The attributes of the method. <c>attributes</c> must include <see cref="T:System.Reflection.MethodAttributes" />.</param>
-        <param name="callingConvention">The calling convention for the method.</param>
-        <param name="returnType">The return type of the method.</param>
-        <param name="requiredReturnTypeCustomModifiers">An array of types representing the required custom modifiers for the return type, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsBoxed" />. If the return type has no required custom modifiers, specify <see langword="null" />.</param>
-        <param name="optionalReturnTypeCustomModifiers">An array of types representing the optional custom modifiers for the return type, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsBoxed" />. If the return type has no optional custom modifiers, specify <see langword="null" />.</param>
-        <param name="parameterTypes">The types of the method's parameters.</param>
-        <param name="requiredParameterTypeCustomModifiers">An array of arrays of types. Each array of types represents the required custom modifiers for the corresponding parameter of the global method. If a particular argument has no required custom modifiers, specify <see langword="null" /> instead of an array of types. If the global method has no arguments, or if none of the arguments have required custom modifiers, specify <see langword="null" /> instead of an array of arrays.</param>
-        <param name="optionalParameterTypeCustomModifiers">An array of arrays of types. Each array of types represents the optional custom modifiers for the corresponding parameter. If a particular argument has no optional custom modifiers, specify <see langword="null" /> instead of an array of types. If the global method has no arguments, or if none of the arguments have optional custom modifiers, specify <see langword="null" /> instead of an array of arrays.</param>
-        <summary>Defines a global method with the specified name, attributes, calling convention, return type, custom modifiers for the return type, parameter types, and custom modifiers for the parameter types.</summary>
-        <returns>The defined global method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload is provided for designers of managed compilers.  
-  
- You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The method is not static. That is, <paramref name="attributes" /> does not include <see cref="T:System.Reflection.MethodAttributes" />.  
-  
- -or-  
-  
- An element in the <see cref="T:System.Type" /> array is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A" /> method has been previously called.</exception>
+        <param name="name">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="callingConvention">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="requiredReturnTypeCustomModifiers">To be added.</param>
+        <param name="optionalReturnTypeCustomModifiers">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <param name="requiredParameterTypeCustomModifiers">To be added.</param>
+        <param name="optionalParameterTypeCustomModifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineInitializedData">
@@ -416,8 +273,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineInitializedData(System.String,System.Byte[],System.Reflection.FieldAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -429,42 +290,12 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name used to refer to the data. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="data">The binary large object (BLOB) of data.</param>
-        <param name="attributes">The attributes for the field. The default is <see langword="Static" />.</param>
-        <summary>Defines an initialized data field in the .sdata section of the portable executable (PE) file.</summary>
-        <returns>A field to reference the data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
-  
- The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example uses the DefineInitializedData method to define an initialized data field in the `.sdata` section of the portable executable (PE) file.  
-  
- [!code-cpp[ModuleBuilder_DefineInitializedData#1](~/add/codesnippet/cpp/ddded447-86f8-4049-b792-_1.cpp)]
- [!code-vb[ModuleBuilder_DefineInitializedData#1](~/add/codesnippet/visualbasic/ddded447-86f8-4049-b792-_1.vb)]
- [!code-cs[ModuleBuilder_DefineInitializedData#1](~/add/codesnippet/csharp/ddded447-86f8-4049-b792-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The length of <paramref name="name" /> is zero.  
-  
- -or-  
-  
- The size of <paramref name="data" /> is less than or equal to zero or greater than or equal to 0x3f0000.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="data" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A" /> has been previously called.</exception>
+        <param name="name">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineManifestResource">
@@ -474,7 +305,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -486,52 +317,11 @@
         <Parameter Name="attribute" Type="System.Reflection.ResourceAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The case-sensitive name for the resource.</param>
-        <param name="stream">A stream that contains the bytes for the resource.</param>
-        <param name="attribute">An enumeration value that specifies whether the resource is public or private.</param>
-        <summary>Defines a binary large object (BLOB) that represents a manifest resource to be embedded in the dynamic assembly.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Resources that are recorded in the assembly manifest can be managed resources or manifest resource BLOBs, and each of these can be included in the assembly either by linking or by embedding. All four scenarios are supported for dynamic assemblies.  
-  
--   This method allows you to embed a manifest resource BLOB into a dynamic assembly.  
-  
--   To embed a managed resource into the manifest module of a dynamic assembly or into a satellite module, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineResource%2A?displayProperty=fullName> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method to add the resource.  
-  
--   To link a managed resource into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A?displayProperty=fullName> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method to add the linked resource.  
-  
--   To link a manifest resource BLOB into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.AddResourceFile%2A?displayProperty=fullName> method to add the linked resource.  
-  
- In addition, a single Win32 resource can be attached to an assembly by using the <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method or the <xref:System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method. This resource does not appear in the assembly manifest.  
-  
-   
-  
-## Examples  
- The following example generates and saves a dynamic assembly named `EmittedManifestResourceAssembly.exe`, which contains an embedded unmanaged resource. The example creates the assembly, which consists of one module, and opens a memory stream to contain the unmanaged resource. The code then calls the DefineManifestResource method to define the resource.  
-  
-> [!NOTE]
->  You can use any kind of stream for your resource; for example, you can read the unmanaged binary data from a file.  
-  
- The example defines a type in the dynamic module with a `Main` method, and generates MSIL for the method body. After the body for the `Main` method has been generated and the type has been created, the code example writes five bytes to the stream associated with the manifest resource. When the assembly is saved, the resource is appended to it.  
-  
- After running the example, you can run the emitted assembly. The code in the emitted assembly's `Main` method reads the embedded manifest resource and prints the byte values to the console. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the information in the assembly manifest.  
-  
- [!code-cs[DefineManifestResource#1](~/add/codesnippet/csharp/f53e742c-fc1c-42f9-867e-_1.cs)]
- [!code-vb[DefineManifestResource#1](~/add/codesnippet/visualbasic/f53e742c-fc1c-42f9-867e-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="stream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is a zero-length string.</exception>
-        <exception cref="T:System.InvalidOperationException">The dynamic assembly that contains the current module is transient; that is, no file name was specified when <see cref="System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A" /> was called.</exception>
+        <param name="name">To be added.</param>
+        <param name="stream">To be added.</param>
+        <param name="attribute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefinePInvokeMethod">
@@ -541,7 +331,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,51 +348,17 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
-        <param name="attributes">The attributes of the method.</param>
-        <param name="callingConvention">The method's calling convention.</param>
-        <param name="returnType">The method's return type.</param>
-        <param name="parameterTypes">The types of the method's parameters.</param>
-        <param name="nativeCallConv">The native calling convention.</param>
-        <param name="nativeCharSet">The method's native character set.</param>
-        <summary>Defines a <see langword="PInvoke" /> method with the specified name, the name of the DLL in which the method is defined, the attributes of the method, the calling convention of the method, the return type of the method, the types of the parameters of the method, and the <see langword="PInvoke" /> flags.</summary>
-        <returns>The defined <see langword="PInvoke" /> method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some DLL import attributes (see the description of System.Runtime.InteropServices.DllImportAttribute) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
-  
-> [!IMPORTANT]
->  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
-  
- [!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/add/codesnippet/cpp/74aa8fb7-6a2b-47ac-9321-_1.cpp)]
- [!code-cs[ModuleBuilder_DefinePInvokeMethod1#1](~/add/codesnippet/csharp/74aa8fb7-6a2b-47ac-9321-_1.cs)]
- [!code-vb[ModuleBuilder_DefinePInvokeMethod1#1](~/add/codesnippet/visualbasic/74aa8fb7-6a2b-47ac-9321-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The method is not static or if the containing type is an interface.  
-  
- -or-  
-  
- The method is abstract.  
-  
- -or-  
-  
- The method was previously defined.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="dllName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The containing type has been previously created using <see cref="System.Reflection.Emit.TypeBuilder.CreateType%2A" /></exception>
+        <param name="name">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="callingConvention">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <param name="nativeCallConv">To be added.</param>
+        <param name="nativeCharSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefinePInvokeMethod">
@@ -612,7 +368,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,46 +386,18 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
-        <param name="entryName">The name of the entry point in the DLL.</param>
-        <param name="attributes">The attributes of the method.</param>
-        <param name="callingConvention">The method's calling convention.</param>
-        <param name="returnType">The method's return type.</param>
-        <param name="parameterTypes">The types of the method's parameters.</param>
-        <param name="nativeCallConv">The native calling convention.</param>
-        <param name="nativeCharSet">The method's native character set.</param>
-        <summary>Defines a <see langword="PInvoke" /> method with the specified name, the name of the DLL in which the method is defined, the attributes of the method, the calling convention of the method, the return type of the method, the types of the parameters of the method, and the <see langword="PInvoke" /> flags.</summary>
-        <returns>The defined <see langword="PInvoke" /> method.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
-  
-> [!IMPORTANT]
->  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
-  
- This example uses a different overload of the DefinePInvokeMethod method, but the technique is the same.  
-  
- [!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/add/codesnippet/cpp/1ad261dd-fca0-4cbf-a478-_1.cpp)]
- [!code-cs[ModuleBuilder_DefinePInvokeMethod1#1](~/add/codesnippet/csharp/1ad261dd-fca0-4cbf-a478-_1.cs)]
- [!code-vb[ModuleBuilder_DefinePInvokeMethod1#1](~/add/codesnippet/visualbasic/1ad261dd-fca0-4cbf-a478-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The method is not static or if the containing type is an interface or if the method is abstract of if the method was previously defined.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> or <paramref name="dllName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The containing type has been previously created using <see cref="System.Reflection.Emit.TypeBuilder.CreateType%2A" /></exception>
+        <param name="name">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="entryName">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="callingConvention">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <param name="nativeCallConv">To be added.</param>
+        <param name="nativeCharSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineResource">
@@ -679,7 +407,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -690,40 +418,11 @@
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the resource. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="description">The description of the resource.</param>
-        <summary>Defines the named managed embedded resource to be stored in this module.</summary>
-        <returns>A resource writer for the defined resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller must not call the `ResourceWriter.Generate()` and `ResourceWriter.Close()` methods, because these methods are called by `ModuleBuilder.Save` when the dynamic assembly is written to disk.  
-  
- Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example illustrates the use of `DefineResource` to add an external resource to the current <xref:System.Reflection.Emit.ModuleBuilder>.  
-  
- [!code-cs[ModuleBuilder_DefineResource1#1](~/add/codesnippet/csharp/6fb37758-dc4e-4b6e-a176-_1.cs)]
- [!code-cpp[ModuleBuilder_DefineResource1#1](~/add/codesnippet/cpp/6fb37758-dc4e-4b6e-a176-_1.cpp)]
- [!code-vb[ModuleBuilder_DefineResource1#1](~/add/codesnippet/visualbasic/6fb37758-dc4e-4b6e-a176-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Length of <paramref name="name" /> is zero.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null.</exception>
-        <exception cref="T:System.InvalidOperationException">This module is transient.  
-  
- -or-  
-  
- The containing assembly is not persistable.</exception>
+        <param name="name">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineResource">
@@ -733,7 +432,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -745,41 +444,12 @@
         <Parameter Name="attribute" Type="System.Reflection.ResourceAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the resource. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="description">The description of the resource.</param>
-        <param name="attribute">The resource attributes.</param>
-        <summary>Defines the named managed embedded resource with the given attributes that is to be stored in this module.</summary>
-        <returns>A resource writer for the defined resource.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller must not call the `ResourceWriter.Generate()` and `ResourceWriter.Close()` methods, because these methods are called by `ModuleBuilder.Save` when the dynamic assembly is written to disk.  
-  
- Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example illustrates the use of DefineResource to add an external resource to the current <xref:System.Reflection.Emit.ModuleBuilder>.  
-  
- [!code-cs[ModuleBuilder_DefineResource2#1](~/add/codesnippet/csharp/56c48996-033c-4e3f-90d9-_1.cs)]
- [!code-cpp[ModuleBuilder_DefineResource2#1](~/add/codesnippet/cpp/56c48996-033c-4e3f-90d9-_1.cpp)]
- [!code-vb[ModuleBuilder_DefineResource2#1](~/add/codesnippet/visualbasic/56c48996-033c-4e3f-90d9-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Length of <paramref name="name" /> is zero.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is null.</exception>
-        <exception cref="T:System.InvalidOperationException">This module is transient.  
-  
- -or-  
-  
- The containing assembly is not persistable.</exception>
+        <param name="name">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="attribute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -788,15 +458,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeBuilder</ReturnType>
       </ReturnValue>
@@ -804,36 +473,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type, including the namespace. <c>name</c> cannot contain embedded nulls.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> for a private type with the specified name in this module.</summary>
-        <returns>A private type with the specified name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/m-system.reflection.emit_21_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/m-system.reflection.emit_21_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/m-system.reflection.emit_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -842,15 +485,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeBuilder</ReturnType>
       </ReturnValue>
@@ -859,37 +501,11 @@
         <Parameter Name="attr" Type="System.Reflection.TypeAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attr">The attributes of the defined type.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> given the type name and the type attributes.</summary>
-        <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/017f123d-3079-4486-bb76-_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/017f123d-3079-4486-bb76-_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/017f123d-3079-4486-bb76-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="attr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -898,15 +514,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeBuilder</ReturnType>
       </ReturnValue>
@@ -916,38 +531,12 @@
         <Parameter Name="parent" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attr">The attribute to be associated with the type.</param>
-        <param name="parent">The type that the defined type extends.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> given type name, its attributes, and the type that the defined type extends.</summary>
-        <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/4a476207-46dc-4462-90ee-_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/4a476207-46dc-4462-90ee-_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/4a476207-46dc-4462-90ee-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="attr">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -956,15 +545,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeBuilder</ReturnType>
       </ReturnValue>
@@ -975,39 +563,13 @@
         <Parameter Name="typesize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attr">The attributes of the defined type.</param>
-        <param name="parent">The type that the defined type extends.</param>
-        <param name="typesize">The total size of the type.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> given the type name, the attributes, the type that the defined type extends, and the total size of the type.</summary>
-        <returns>A <see langword="TypeBuilder" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. It is forbidden to have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/c4146965-776b-4d08-9121-_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/c4146965-776b-4d08-9121-_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/c4146965-776b-4d08-9121-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="attr">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="typesize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -1016,15 +578,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeBuilder</ReturnType>
       </ReturnValue>
@@ -1035,39 +596,13 @@
         <Parameter Name="packsize" Type="System.Reflection.Emit.PackingSize" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attr">The attributes of the defined type.</param>
-        <param name="parent">The type that the defined type extends.</param>
-        <param name="packsize">The packing size of the type.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> given the type name, the attributes, the type that the defined type extends, and the packing size of the type.</summary>
-        <returns>A <see langword="TypeBuilder" /> object.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/6f51bde6-a173-4b99-b9f3-_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/6f51bde6-a173-4b99-b9f3-_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/6f51bde6-a173-4b99-b9f3-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="attr">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="packsize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -1076,16 +611,17 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1098,39 +634,13 @@
         <Parameter Name="interfaces" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attr">The attributes to be associated with the type.</param>
-        <param name="parent">The type that the defined type extends.</param>
-        <param name="interfaces">The list of interfaces that the type implements.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> given the type name, attributes, the type that the defined type extends, and the interfaces that the defined type implements.</summary>
-        <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/e1a29431-04b1-4aba-8e9d-_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/e1a29431-04b1-4aba-8e9d-_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/e1a29431-04b1-4aba-8e9d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="attr">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="interfaces">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -1139,15 +649,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeBuilder</ReturnType>
       </ReturnValue>
@@ -1159,40 +668,14 @@
         <Parameter Name="typesize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attr">The attributes of the defined type.</param>
-        <param name="parent">The type that the defined type extends.</param>
-        <param name="packingSize">The packing size of the type.</param>
-        <param name="typesize">The total size of the type.</param>
-        <summary>Constructs a <see langword="TypeBuilder" /> given the type name, attributes, the type that the defined type extends, the packing size of the defined type, and the total size of the defined type.</summary>
-        <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Reflection.Emit.TypeBuilder> in the current dynamic module using `CreateType`, builds and completes the type, and saves the assembly.  
-  
- [!code-cpp[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/cpp/05477e14-d50d-406f-a139-_1.cpp)]
- [!code-cs[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/csharp/05477e14-d50d-406f-a139-_1.cs)]
- [!code-vb[Classic ModuleBuilder.DefineType Example#1](~/add/codesnippet/visualbasic/05477e14-d50d-406f-a139-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">A type with the given name exists in the parent assembly of this module.  
-  
- -or-  
-  
- Nested type attributes are set on a type that is not nested.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="attr">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="packingSize">To be added.</param>
+        <param name="typesize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineUninitializedData">
@@ -1201,8 +684,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData(System.String,System.Int32,System.Reflection.FieldAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1214,33 +701,12 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name used to refer to the data. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="size">The size of the data field.</param>
-        <param name="attributes">The attributes for the field.</param>
-        <summary>Defines an uninitialized data field in the .sdata section of the portable executable (PE) file.</summary>
-        <returns>A field to reference the data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
-  
- The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The length of <paramref name="name" /> is zero.  
-  
- -or-  
-  
- <paramref name="size" /> is less than or equal to zero, or greater than or equal to 0x003f0000.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          <see cref="System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A" /> has been previously called.</exception>
+        <param name="name">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineUnmanagedResource">
@@ -1250,7 +716,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1260,22 +726,9 @@
         <Parameter Name="resource" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="resource">An opaque BLOB that represents an unmanaged resource</param>
-        <summary>Defines an unmanaged embedded resource given an opaque binary large object (BLOB) of bytes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An unmanaged resource has already been defined in the module's assembly.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resource" /> is <see langword="null" />.</exception>
+        <param name="resource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineUnmanagedResource">
@@ -1285,14 +738,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1300,32 +748,9 @@
         <Parameter Name="resourceFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceFileName">The name of the unmanaged resource file.</param>
-        <summary>Defines an unmanaged resource given the name of Win32 resource file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An unmanaged resource has already been defined in the module's assembly.  
-  
- -or-  
-  
- <paramref name="resourceFileName" /> is the empty string ("").</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceFileName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="resourceFileName" /> is not found.  
-  
- -or-  
-  
- <paramref name="resourceFileName" /> is a directory.</exception>
+        <param name="resourceFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1334,7 +759,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1344,10 +774,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">An object to compare with this instance, or <see langword="null" />.</param>
-        <summary>Returns a value that indicates whether this instance is equal to the specified object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1357,33 +786,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ModuleBuilder.FullyQualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="String" /> representing the fully qualified name and path to this module.</summary>
-        <value>The fully qualified module name.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To get the name without the path, use `Name`.  
-  
-> [!NOTE]
->  The case of a module name is platform dependent.  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Accesses information in the path. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />.</permission>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetArrayMethod">
@@ -1392,15 +809,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
@@ -1412,34 +828,14 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="arrayClass">An array class.</param>
-        <param name="methodName">The name of a method on the array class.</param>
-        <param name="callingConvention">The method's calling convention.</param>
-        <param name="returnType">The return type of the method.</param>
-        <param name="parameterTypes">The types of the method's parameters.</param>
-        <summary>Returns the named method on an array class.</summary>
-        <returns>The named method on an array class.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `GetArrayMethod` is useful when you have an array of a type whose definition has not been completed and you want to access methods defined on <xref:System.Array>. For example, you might define a type and want to define a method that takes an array of the type as a parameter. In order to access the elements of the array, you will need to call methods of the <xref:System.Array> class.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use GetArrayMethod to obtain the <xref:System.Reflection.MethodInfo> corresponding to a method that returns an array value.  
-  
- [!code-cs[ModuleBuilder_GetArrayMethod#1](~/add/codesnippet/csharp/53485fa2-9a8d-404f-b1c3-_1.cs)]
- [!code-vb[ModuleBuilder_GetArrayMethod#1](~/add/codesnippet/visualbasic/53485fa2-9a8d-404f-b1c3-_1.vb)]
- [!code-cpp[ModuleBuilder_GetArrayMethod#1](~/add/codesnippet/cpp/53485fa2-9a8d-404f-b1c3-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="arrayClass" /> is not an array.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="arrayClass" /> or <paramref name="methodName" /> is <see langword="null" />.</exception>
+        <param name="arrayClass">To be added.</param>
+        <param name="methodName">To be added.</param>
+        <param name="callingConvention">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetArrayMethodToken">
@@ -1449,14 +845,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.MethodToken</ReturnType>
       </ReturnValue>
@@ -1468,38 +859,14 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="arrayClass">The object for the array.</param>
-        <param name="methodName">A string that contains the name of the method.</param>
-        <param name="callingConvention">The calling convention for the method.</param>
-        <param name="returnType">The return type of the method.</param>
-        <param name="parameterTypes">The types of the parameters of the method.</param>
-        <summary>Returns the token for the named method on an array class.</summary>
-        <returns>The token for the named method on an array class.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is similar to <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A>, except that it returns the token of the array method instead of the method itself.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to use <xref:System.Reflection.Emit.ModuleBuilder.GetArrayMethod%2A> to obtain the <xref:System.Reflection.Emit.MethodToken> corresponding to a method that returns an array value.  
-  
- [!code-cs[ModuleBuilder_GetArrayMethod#2](~/add/codesnippet/csharp/9a0c5bb2-7cfb-45c0-9642-_1.cs)]
- [!code-vb[ModuleBuilder_GetArrayMethod#2](~/add/codesnippet/visualbasic/9a0c5bb2-7cfb-45c0-9642-_1.vb)]
- [!code-cpp[ModuleBuilder_GetArrayMethod#2](~/add/codesnippet/cpp/9a0c5bb2-7cfb-45c0-9642-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="arrayClass" /> is not an array.  
-  
- -or-  
-  
- The length of <paramref name="methodName" /> is zero.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="arrayClass" /> or <paramref name="methodName" /> is <see langword="null" />.</exception>
+        <param name="arrayClass">To be added.</param>
+        <param name="methodName">To be added.</param>
+        <param name="callingConvention">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConstructorToken">
@@ -1509,15 +876,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1527,12 +891,10 @@
         <Parameter Name="con" Type="System.Reflection.ConstructorInfo" />
       </Parameters>
       <Docs>
-        <param name="con">The constructor to get a token for.</param>
-        <summary>Returns the token used to identify the specified constructor within this module.</summary>
-        <returns>The token used to identify the specified constructor within this module.</returns>
+        <param name="con">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="con" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetConstructorToken">
@@ -1542,13 +904,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.MethodToken</ReturnType>
       </ReturnValue>
@@ -1557,13 +915,11 @@
         <Parameter Name="optionalParameterTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructor">The constructor to get a token for.</param>
-        <param name="optionalParameterTypes">A collection of the types of the optional parameters to the constructor.</param>
-        <summary>Returns the token used to identify the constructor that has the specified attributes and parameter types within this module.</summary>
-        <returns>The token used to identify the specified constructor within this module.</returns>
+        <param name="constructor">To be added.</param>
+        <param name="optionalParameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="constructor" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -1573,6 +929,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1582,9 +939,9 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inherit">This argument is ignored for objects of this type.</param>
-        <summary>Returns all the custom attributes that have been applied to the current <see cref="T:System.Reflection.Emit.ModuleBuilder" />.</summary>
-        <returns>An array that contains the custom attributes; the array is empty if there are no attributes.</returns>
+        <param name="inherit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1595,6 +952,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1605,15 +963,11 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">The base type from which attributes derive.</param>
-        <param name="inherit">This argument is ignored for objects of this type.</param>
-        <summary>Returns all the custom attributes that have been applied to the current <see cref="T:System.Reflection.Emit.ModuleBuilder" />, and that derive from a specified attribute type.</summary>
-        <returns>An array that contains the custom attributes that are derived, at any level, from <paramref name="attributeType" />; the array is empty if there are no such attributes.</returns>
+        <param name="attributeType">To be added.</param>
+        <param name="inherit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="attributeType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="attributeType" /> is not a <see cref="T:System.Type" /> object supplied by the runtime. For example, <paramref name="attributeType" /> is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributesData">
@@ -1630,16 +984,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns information about the attributes that have been applied to the current <see cref="T:System.Reflection.Emit.ModuleBuilder" />, expressed as <see cref="T:System.Reflection.CustomAttributeData" /> objects.</summary>
-        <returns>A generic list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the current module.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -1649,6 +996,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1659,22 +1007,11 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">The field name.</param>
-        <param name="bindingAttr">A combination of the <see langword="BindingFlags" /> bit flags used to control the search.</param>
-        <summary>Returns a module-level field, defined in the .sdata region of the portable executable (PE) file, that has the specified name and binding attributes.</summary>
-        <returns>A field that has the specified name and binding attributes, or <see langword="null" /> if the field does not exist.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you emit dynamic assemblies, fields in the .sdata region of the portable executable (PE) file are defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A> methods.  
-  
-> [!IMPORTANT]
->  Module-level fields cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -1684,6 +1021,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1693,21 +1031,10 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">A combination of the <see langword="BindingFlags" /> bit flags used to control the search.</param>
-        <summary>Returns all fields defined in the .sdata region of the portable executable (PE) file that match the specified binding flags.</summary>
-        <returns>An array of fields that match the specified flags; the array is empty if no such fields exist.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you emit dynamic assemblies, fields in the .sdata region of the portable executable (PE) file are defined by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineInitializedData%2A> or <xref:System.Reflection.Emit.ModuleBuilder.DefineUninitializedData%2A> methods.  
-  
-> [!IMPORTANT]
->  Module-level fields cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFieldToken">
@@ -1717,14 +1044,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.FieldToken</ReturnType>
       </ReturnValue>
@@ -1732,12 +1054,10 @@
         <Parameter Name="field" Type="System.Reflection.FieldInfo" />
       </Parameters>
       <Docs>
-        <param name="field">The field to get a token for.</param>
-        <summary>Returns the token used to identify the specified field within this module.</summary>
-        <returns>The token used to identify the specified field within this module.</returns>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="field" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1746,7 +1066,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1754,8 +1079,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A 32-bit signed integer hash code.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1766,6 +1091,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1780,27 +1106,15 @@
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" />
       </Parameters>
       <Docs>
-        <param name="name">The method name.</param>
-        <param name="bindingAttr">A combination of <see langword="BindingFlags" /> bit flags used to control the search.</param>
-        <param name="binder">An object that implements <see langword="Binder" />, containing properties related to this method.</param>
-        <param name="callConvention">The calling convention for the method.</param>
-        <param name="types">The parameter types of the method.</param>
-        <param name="modifiers">An array of parameter modifiers used to make binding work with parameter signatures in which the types have been modified.</param>
-        <summary>Returns the module-level method that matches the specified criteria.</summary>
-        <returns>A method that is defined at the module level, and matches the specified criteria; or <see langword="null" /> if such a method does not exist.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method provides the implementation for all overloads of the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method. Use the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method to get methods that have been declared at the module level. Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
-  
-> [!IMPORTANT]
->  Module-level methods cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />, <paramref name="types" /> is <see langword="null" />, or an element of <paramref name="types" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="bindingAttr">To be added.</param>
+        <param name="binder">To be added.</param>
+        <param name="callConvention">To be added.</param>
+        <param name="types">To be added.</param>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -1810,6 +1124,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1819,20 +1134,10 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">A combination of <see langword="BindingFlags" /> bit flags used to control the search.</param>
-        <summary>Returns all the methods that have been defined at the module level for the current <see cref="T:System.Reflection.Emit.ModuleBuilder" />, and that match the specified binding flags.</summary>
-        <returns>An array that contains all the module-level methods that match <paramref name="bindingFlags" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
-  
-> [!IMPORTANT]
->  Module-level methods cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
-  
- ]]></format>
-        </remarks>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMethodToken">
@@ -1842,14 +1147,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.MethodToken</ReturnType>
       </ReturnValue>
@@ -1857,13 +1157,10 @@
         <Parameter Name="method" Type="System.Reflection.MethodInfo" />
       </Parameters>
       <Docs>
-        <param name="method">The method to get a token for.</param>
-        <summary>Returns the token used to identify the specified method within this module.</summary>
-        <returns>The token used to identify the specified method within this module.</returns>
+        <param name="method">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="method" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The declaring type for the method is not in this module.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethodToken">
@@ -1873,13 +1170,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.MethodToken</ReturnType>
       </ReturnValue>
@@ -1888,14 +1181,11 @@
         <Parameter Name="optionalParameterTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="method">The method to get a token for.</param>
-        <param name="optionalParameterTypes">A collection of the types of the optional parameters to the method.</param>
-        <summary>Returns the token used to identify the method that has the specified attributes and parameter types within this module.</summary>
-        <returns>The token used to identify the specified method within this module.</returns>
+        <param name="method">To be added.</param>
+        <param name="optionalParameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="method" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The declaring type for the method is not in this module.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPEKind">
@@ -1915,17 +1205,10 @@
         <Parameter Name="machine" Type="System.Reflection.ImageFileMachine&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="peKind">When this method returns, a combination of the <see cref="T:System.Reflection.PortableExecutableKinds" /> values indicating the nature of the code in the module.</param>
-        <param name="machine">When this method returns, one of the <see cref="T:System.Reflection.ImageFileMachine" /> values indicating the platform targeted by the module.</param>
-        <summary>Gets a pair of values indicating the nature of the code in a module and the platform targeted by the module.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For dynamic modules, `peKind` is always <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> and `machine` is always 0 (zero).  
-  
- ]]></format>
-        </remarks>
+        <param name="peKind">To be added.</param>
+        <param name="machine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureToken">
@@ -1935,14 +1218,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureToken</ReturnType>
       </ReturnValue>
@@ -1950,19 +1228,10 @@
         <Parameter Name="sigHelper" Type="System.Reflection.Emit.SignatureHelper" />
       </Parameters>
       <Docs>
-        <param name="sigHelper">The signature.</param>
-        <summary>Defines a token for the signature that is defined by the specified <see cref="T:System.Reflection.Emit.SignatureHelper" />.</summary>
-        <returns>A token for the defined signature.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method defines a metadata token for the signature described by `sigHelper`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="sigHelper" /> is <see langword="null" />.</exception>
+        <param name="sigHelper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureToken">
@@ -1972,14 +1241,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureToken</ReturnType>
       </ReturnValue>
@@ -1988,13 +1252,11 @@
         <Parameter Name="sigLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sigBytes">The signature binary large object (BLOB).</param>
-        <param name="sigLength">The length of the signature BLOB.</param>
-        <summary>Defines a token for the signature that has the specified character array and signature length.</summary>
-        <returns>A token for the specified signature.</returns>
+        <param name="sigBytes">To be added.</param>
+        <param name="sigLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="sigBytes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSignerCertificate">
@@ -2011,8 +1273,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object corresponding to the certificate included in the Authenticode signature of the assembly which this module belongs to. If the assembly has not been Authenticode signed, <see langword="null" /> is returned.</summary>
-        <returns>A certificate, or <see langword="null" /> if the assembly to which this module belongs has not been Authenticode signed.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2023,14 +1285,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.StringToken</ReturnType>
       </ReturnValue>
@@ -2038,19 +1295,10 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="str">The string to add to the module's constant pool.</param>
-        <summary>Returns the token of the given string in the module’s constant pool.</summary>
-        <returns>The token of the string in the constant pool.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If `str` has already been defined, the existing token will be returned.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="str" /> is <see langword="null" />.</exception>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSymWriter">
@@ -2060,7 +1308,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2068,18 +1316,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the symbol writer associated with this dynamic module.</summary>
-        <returns>The symbol writer associated with this dynamic module.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -2089,7 +1328,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2104,26 +1343,10 @@
         <Parameter Name="className" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="className">The name of the <see cref="T:System.Type" /> to get.</param>
-        <summary>Gets the named type defined in the module.</summary>
-        <returns>The requested type, if the type is defined in this module; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Length of <paramref name="className" /> is zero or is greater than 1023.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="className" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The requested <see cref="T:System.Type" /> is non-public and the caller does not have <see cref="T:System.Security.Permissions.ReflectionPermission" /> to reflect non-public objects outside the current assembly.</exception>
-        <exception cref="T:System.Reflection.TargetInvocationException">A class initializer is invoked and throws an exception.</exception>
-        <exception cref="T:System.TypeLoadException">An error is encountered while loading the <see cref="T:System.Type" />.</exception>
+        <param name="className">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -2133,7 +1356,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2149,26 +1372,11 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">The name of the <see cref="T:System.Type" /> to get.</param>
-        <param name="ignoreCase">If <see langword="true" />, the search is case-insensitive. If <see langword="false" />, the search is case-sensitive.</param>
-        <summary>Gets the named type defined in the module, optionally ignoring the case of the type name.</summary>
-        <returns>The requested type, if the type is defined in this module; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Length of <paramref name="className" /> is zero or is greater than 1023.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="className" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The requested <see cref="T:System.Type" /> is non-public and the caller does not have <see cref="T:System.Security.Permissions.ReflectionPermission" /> to reflect non-public objects outside the current assembly.</exception>
-        <exception cref="T:System.Reflection.TargetInvocationException">A class initializer is invoked and throws an exception.</exception>
+        <param name="className">To be added.</param>
+        <param name="ignoreCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -2178,7 +1386,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2195,32 +1403,12 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">The name of the <see cref="T:System.Type" /> to get.</param>
-        <param name="throwOnError">
-          <see langword="true" /> to throw an exception if the type cannot be found; <see langword="false" /> to return <see langword="null" />.</param>
-        <param name="ignoreCase">If <see langword="true" />, the search is case-insensitive. If <see langword="false" />, the search is case-sensitive.</param>
-        <summary>Gets the named type defined in the module, optionally ignoring the case of the type name. Optionally throws an exception if the type is not found.</summary>
-        <returns>The specified type, if the type is declared in this module; otherwise, <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `throwOnError` parameter only affects what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
-  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">Length of <paramref name="className" /> is zero or is greater than 1023.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="className" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.SecurityException">The requested <see cref="T:System.Type" /> is non-public and the caller does not have <see cref="T:System.Security.Permissions.ReflectionPermission" /> to reflect non-public objects outside the current assembly.</exception>
-        <exception cref="T:System.Reflection.TargetInvocationException">A class initializer is invoked and throws an exception.</exception>
-        <exception cref="T:System.TypeLoadException">
-          <paramref name="throwOnError" /> is <see langword="true" /> and the specified type is not found.</exception>
+        <param name="className">To be added.</param>
+        <param name="throwOnError">To be added.</param>
+        <param name="ignoreCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypes">
@@ -2230,7 +1418,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2238,23 +1426,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns all the classes defined within this module.</summary>
-        <returns>An array that contains the types defined within the module that is reflected by this instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `ReflectionTypeLoadException` is a special class load exception. The `ReflectionTypeLoadException.Types` property contains the array of classes that were defined in the module and loaded. This array can contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
-  
- For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeToken">
@@ -2264,7 +1438,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2274,30 +1448,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the class, including the namespace.</param>
-        <summary>Returns the token used to identify the type with the specified name.</summary>
-        <returns>The token used to identify the type with the specified name within this module.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is useful for clients of the <xref:System.Reflection.Emit.MethodRental> class who want to directly modify the body of a method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is the empty string ("").  
-  
- -or-  
-  
- <paramref name="name" /> represents a <see langword="ByRef" /> type.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" />.  
-  
- -or-  
-  
- The type specified by <paramref name="name" /> could not be found.</exception>
-        <exception cref="T:System.InvalidOperationException">This is a non-transient module that references a transient module.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeToken">
@@ -2307,14 +1461,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.TypeToken</ReturnType>
       </ReturnValue>
@@ -2322,22 +1471,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The type object that represents the class type.</param>
-        <summary>Returns the token used to identify the specified type within this module.</summary>
-        <returns>The token used to identify the given type within this module.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Tokens are used in Microsoft intermediate language (MSIL) instructions to identify objects. Tokens are relative to the module in which they are contained. For example, the token value for `String` is likely to be different from module to module. When `GetTypeToken` is invoked, a reference is added to the module. The reference becomes a permanent part of the module; multiple calls with the same argument have no additional effect.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="type" /> is a <see langword="ByRef" /> type.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">This is a non-transient module that references a transient module.</exception>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -2347,6 +1484,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2357,16 +1495,11 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">The type of custom attribute to test for.</param>
-        <param name="inherit">This argument is ignored for objects of this type.</param>
-        <summary>Returns a value that indicates whether the specified attribute type has been applied to this module.</summary>
-        <returns>
-          <see langword="true" /> if one or more instances of <paramref name="attributeType" /> have been applied to this module; otherwise, <see langword="false" />.</returns>
+        <param name="attributeType">To be added.</param>
+        <param name="inherit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="attributeType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="attributeType" /> is not a <see cref="T:System.Type" /> object supplied by the runtime. For example, <paramref name="attributeType" /> is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsResource">
@@ -2376,6 +1509,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2383,9 +1517,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value indicating whether the object is a resource.</summary>
-        <returns>
-          <see langword="true" /> if the object is a resource; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2396,7 +1529,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2404,9 +1537,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether this dynamic module is transient.</summary>
-        <returns>
-          <see langword="true" /> if this dynamic module is transient; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2423,18 +1555,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the metadata stream version.</summary>
-        <value>A 32-bit integer representing the metadata stream version. The high-order two bytes represent the major version number, and the low-order two bytes represent the minor version number.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For more information on the metadata header, see "Partition II: Metadata Definition and Semantics" in the Common Language Infrastructure (CLI) documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataToken">
@@ -2444,25 +1567,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a token that identifies the current dynamic module in metadata.</summary>
-        <value>An integer token that identifies the current module in metadata.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
-  
-> [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ModuleVersionId">
@@ -2472,25 +1586,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a universally unique identifier (UUID) that can be used to distinguish between two versions of a module.</summary>
-        <value>A <see cref="T:System.Guid" /> that can be used to distinguish between two versions of a module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
-  
-> [!NOTE]
->  More information about metadata can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2499,23 +1604,21 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ModuleBuilder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A string that indicates that this is an in-memory module.</summary>
-        <value>Text that indicates that this is an in-memory module.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The name of a dynamic module cannot be obtained until the module has been saved and reloaded from disk.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveField">
@@ -2525,6 +1628,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2536,32 +1640,12 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">A metadata token that identifies a field in the module.</param>
-        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
-        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
-        <summary>Returns the field identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
-        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the field that is identified by the specified metadata token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
-> [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [Module.ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="metadataToken" /> is not a token for a field in the scope of the current module.  
-  
- -or-  
-  
- <paramref name="metadataToken" /> identifies a field whose parent <see langword="TypeSpec" /> has a signature containing element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
+        <param name="metadataToken">To be added.</param>
+        <param name="genericTypeArguments">To be added.</param>
+        <param name="genericMethodArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveMember">
@@ -2571,6 +1655,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2582,36 +1667,12 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">A metadata token that identifies a type or member in the module.</param>
-        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
-        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
-        <summary>Returns the type or member identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
-        <returns>A <see cref="T:System.Reflection.MemberInfo" /> object representing the type or member that is identified by the specified metadata token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
-> [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [Module.ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="metadataToken" /> is not a token for a type or member in the scope of the current module.  
-  
- -or-  
-  
- <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> or <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.  
-  
- -or-  
-  
- <paramref name="metadataToken" /> identifies a property or event.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
+        <param name="metadataToken">To be added.</param>
+        <param name="genericTypeArguments">To be added.</param>
+        <param name="genericMethodArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveMethod">
@@ -2621,6 +1682,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2632,32 +1694,12 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">A metadata token that identifies a method or constructor in the module.</param>
-        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
-        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
-        <summary>Returns the method or constructor identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
-        <returns>A <see cref="T:System.Reflection.MethodBase" /> object representing the method that is identified by the specified metadata token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
-> [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [Module.ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="metadataToken" /> is not a token for a method or constructor in the scope of the current module.  
-  
- -or-  
-  
- <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
+        <param name="metadataToken">To be added.</param>
+        <param name="genericTypeArguments">To be added.</param>
+        <param name="genericMethodArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveSignature">
@@ -2667,6 +1709,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2676,23 +1719,10 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">A metadata token that identifies a signature in the module.</param>
-        <summary>Returns the signature blob identified by a metadata token.</summary>
-        <returns>An array of bytes representing the signature blob.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Information about metadata tokens and signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="metadataToken" /> is not a valid <see langword="MemberRef" />, <see langword="MethodDef" />, <see langword="TypeSpec" />, signature, or <see langword="FieldDef" /> token in the scope of the current module.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
+        <param name="metadataToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveString">
@@ -2702,6 +1732,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2711,23 +1742,10 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">A metadata token that identifies a string in the string heap of the module.</param>
-        <summary>Returns the string identified by the specified metadata token.</summary>
-        <returns>A <see cref="T:System.String" /> containing a string value from the metadata string heap.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="metadataToken" /> is not a token for a string in the scope of the current module.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
+        <param name="metadataToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveType">
@@ -2737,6 +1755,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2748,32 +1767,12 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">A metadata token that identifies a type in the module.</param>
-        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
-        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
-        <summary>Returns the type identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
-        <returns>A <see cref="T:System.Type" /> object representing the type that is identified by the specified metadata token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
-  
-> [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
-  
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [Module.ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="metadataToken" /> is not a token for a type in the scope of the current module.  
-  
- -or-  
-  
- <paramref name="metadataToken" /> is a <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
+        <param name="metadataToken">To be added.</param>
+        <param name="genericTypeArguments">To be added.</param>
+        <param name="genericMethodArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScopeName">
@@ -2783,14 +1782,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string that represents the name of the dynamic module.</summary>
-        <value>The name of the dynamic module.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2800,15 +1800,14 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2816,20 +1815,9 @@
         <Parameter Name="customBuilder" Type="System.Reflection.Emit.CustomAttributeBuilder" />
       </Parameters>
       <Docs>
-        <param name="customBuilder">An instance of a helper class that specifies the custom attribute to apply.</param>
-        <summary>Applies a custom attribute to this module by using a custom attribute builder.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="customBuilder" /> is <see langword="null" />.</exception>
+        <param name="customBuilder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCustomAttribute">
@@ -2838,16 +1826,17 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2858,22 +1847,10 @@
         <Parameter Name="binaryAttribute" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="con">The constructor for the custom attribute.</param>
-        <param name="binaryAttribute">A byte BLOB representing the attribute.</param>
-        <summary>Applies a custom attribute to this module by using a specified binary large object (BLOB) that represents the attribute.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="con" /> or <paramref name="binaryAttribute" /> is <see langword="null" />.</exception>
+        <param name="con">To be added.</param>
+        <param name="binaryAttribute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSymCustomAttribute">
@@ -2883,7 +1860,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2894,22 +1871,10 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the custom attribute</param>
-        <param name="data">An opaque binary large object (BLOB) of bytes that represents the value of the custom attribute.</param>
-        <summary>This method does nothing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method does nothing.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="url" /> is <see langword="null" />.</exception>
+        <param name="name">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUserEntryPoint">
@@ -2919,14 +1884,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2934,26 +1894,9 @@
         <Parameter Name="entryPoint" Type="System.Reflection.MethodInfo" />
       </Parameters>
       <Docs>
-        <param name="entryPoint">The user entry point.</param>
-        <summary>Sets the user entry point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The compiler might generate a startup stub before calling user main. The startup stub will be the entry point. While the user main will be the user entry point so that debugger will not step into the compiler entry point.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/add/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)] or later.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryPoint" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">This method is called on a dynamic module that is not a debug module.  
-  
- -or-  
-  
- <paramref name="entryPoint" /> is not contained in this dynamic module.</exception>
+        <param name="entryPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.GetIDsOfNames">
@@ -2963,7 +1906,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2977,23 +1920,13 @@
         <Parameter Name="rgDispId" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
-        <param name="rgszNames">Passed-in array of names to be mapped.</param>
-        <param name="cNames">Count of the names to be mapped.</param>
-        <param name="lcid">The locale context in which to interpret the names.</param>
-        <param name="rgDispId">Caller-allocated array which receives the IDs corresponding to the names.</param>
-        <summary>For a description of this member, see <see cref="System.Runtime.InteropServices._ModuleBuilder.GetIDsOfNames%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="riid">To be added.</param>
+        <param name="rgszNames">To be added.</param>
+        <param name="cNames">To be added.</param>
+        <param name="lcid">To be added.</param>
+        <param name="rgDispId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.GetTypeInfo">
@@ -3003,7 +1936,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3015,21 +1948,11 @@
         <Parameter Name="ppTInfo" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="iTInfo">The type information to return.</param>
-        <param name="lcid">The locale identifier for the type information.</param>
-        <param name="ppTInfo">A pointer to the requested type information object.</param>
-        <summary>For a description of this member, see <see cref="System.Runtime.InteropServices._ModuleBuilder.GetTypeInfo%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="iTInfo">To be added.</param>
+        <param name="lcid">To be added.</param>
+        <param name="ppTInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.GetTypeInfoCount">
@@ -3039,7 +1962,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3049,19 +1972,9 @@
         <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcTInfo">The location that receives the number of type information interfaces provided by the object.</param>
-        <summary>For a description of this member, see <see cref="System.Runtime.InteropServices._ModuleBuilder.GetTypeInfoCount%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="pcTInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.Invoke">
@@ -3071,7 +1984,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3088,26 +2001,16 @@
         <Parameter Name="puArgErr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="dispIdMember">The member ID.</param>
-        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
-        <param name="lcid">The locale context in which to interpret arguments.</param>
-        <param name="wFlags">Flags describing the context of the call.</param>
-        <param name="pDispParams">Pointer to a structure containing an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.</param>
-        <param name="pVarResult">Pointer to the location where the result is to be stored.</param>
-        <param name="pExcepInfo">Pointer to a structure that contains exception information.</param>
-        <param name="puArgErr">The index of the first argument that has an error.</param>
-        <summary>For a description of this member, see <see cref="System.Runtime.InteropServices._ModuleBuilder.Invoke%2A" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.Emit.ModuleBuilder> instance is cast to an <xref:System.Runtime.InteropServices._ModuleBuilder> interface.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+        <param name="dispIdMember">To be added.</param>
+        <param name="riid">To be added.</param>
+        <param name="lcid">To be added.</param>
+        <param name="wFlags">To be added.</param>
+        <param name="pDispParams">To be added.</param>
+        <param name="pVarResult">To be added.</param>
+        <param name="pExcepInfo">To be added.</param>
+        <param name="puArgErr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

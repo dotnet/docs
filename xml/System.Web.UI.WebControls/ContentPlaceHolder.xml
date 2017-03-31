@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ContentPlaceHolder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,58 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines a region for content in an ASP.NET master page.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ContentPlaceHolder control defines a relative region for content in a master page, and renders all text, markup, and server controls from a related <xref:System.Web.UI.WebControls.Content> control found in a content page.  
-  
- A <xref:System.Web.UI.WebControls.Content> control is associated with a ContentPlaceHolder using its <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property. Set the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property to the value of the <xref:System.Web.UI.Control.ID%2A> property of the related ContentPlaceHolder control in a master page. More than one ContentPlaceHolder can be declared in a master page.  
-  
- Within a content page, only one <xref:System.Web.UI.WebControls.Content> control can supply the content for a ContentPlaceHolder in the master page. However, in each content page that uses a master page, you can have separate <xref:System.Web.UI.WebControls.Content> controls associated with the ContentPlaceHolder. For example, you can define the ContentPlaceHolder for the page title in a master page. For each content page that uses the master page, you can add a <xref:System.Web.UI.WebControls.Content> control that supplies the text and markup for the page title.  
-  
-> [!NOTE]
->  For XHTML compliance, an empty title element is created if a title has not been defined or cannot be found.  
-  
- You can specify default content placed within the ContentPlaceHolder control tags, but this content is replaced by any content in an associated content page.  
-  
- For more information about master pages and content pages, see [DEL: ASP.NET Master Pages](http://msdn.microsoft.com/en-us/0852291d-6f62-4e9f-a809-45cc81e78d6b).  
-  
-<a name="DeclarativeSyntax"></a>   
-## Declarative Syntax  
-  
-```  
-<asp: ContentPlaceHolder  
-    EnableViewState="True|False"  
-    ID="string"  
-    OnDataBinding="DataBinding event handler"  
-    OnDisposed="Disposed event handler"  
-    OnInit="Init event handler"  
-    OnLoad="Load event handler"  
-    OnPreRender="PreRender event handler"  
-    OnUnload="Unload event handler"  
-    runat="server"  
-    Visible="True|False"  
->  
-        <!-- child controls -->  
-</asp:ContentPlaceHolder>  
-```  
-  
-   
-  
-## Examples  
- The following code example shows how the ContentPlaceHolder control is used to define a content region for a master page. The first Web page is a master page, and defines a content region using a ContentPlaceHolder control.  
-  
-   
-  
- The following code example demonstrates a content page for the preceding master page. The text, markup, and any server controls defined within the <xref:System.Web.UI.WebControls.Content> control template are rendered to the ContentPlaceHolder on the master page.  
-  
- [!code-cs[System.Web.UI.MasterPage_1#3](~/add/codesnippet/csharp/t-system.web.ui.webcontr_225_2.cs)]
- [!code-vb[System.Web.UI.MasterPage_1#3](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_225_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,12 +39,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

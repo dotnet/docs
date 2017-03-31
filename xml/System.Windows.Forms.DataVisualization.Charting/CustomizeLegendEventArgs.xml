@@ -11,19 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" /> event of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CustomizeLegendEventArgs class is used in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event.  
-  
- There are only two properties in this class. The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems%2A> property allows you to delete or modify both default and custom legend items, and to add custom legend items. This property can also be used to change the order of legend items.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName%2A> property is used to identify the legend that raised this event.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +28,8 @@
         <Parameter Name="legendItems" Type="System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />
       </Parameters>
       <Docs>
-        <param name="legendItems">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" /> class with the specified <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />.</summary>
+        <param name="legendItems">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +47,9 @@
         <Parameter Name="legendName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="legendItems">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />.</param>
-        <param name="legendName">The legend name.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" /> class with the specified <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> and legend name.</summary>
+        <param name="legendItems">To be added.</param>
+        <param name="legendName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,21 +66,9 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used to remove, modify or change the order of both custom and default legend items in the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" /> event. Can also be used to add custom legend items.</summary>
-        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The LegendItems property allows you to delete or modify both default and custom legend items in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event, and to add custom legend items. The order of legend items can also be changed.  
-  
-> [!NOTE]
->  The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesPointIndex%2A> and [LegendItem.SeriesPointIndex](assetId:///LegendItem.SeriesPointIndex?qualifyHint=False&amp;autoUpgrade=True) properties can be used to determine the data element that is associated with a default legend item. These properties will return zero-length strings for custom legend items, because custom items are not associated with chart data.  
-  
- This property enables you to determine which <xref:System.Windows.Forms.DataVisualization.Charting.Legend> the event was raised for, which enables you to customize an individual [Legend](assetId:///Legend?qualifyHint=False&amp;autoUpgrade=True).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LegendName">
@@ -107,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> object, which can be used to determine which legend was the sender of the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" /> event.</summary>
-        <value>A <see langword="string" /> value that represents the name of the associated <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

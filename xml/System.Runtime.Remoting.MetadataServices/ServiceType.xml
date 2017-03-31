@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.ServiceType" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Associates a well-known object type that is passed to the Web Services Description Language (WSDL) generator with a remote endpoint that can process messages that are sent to a method on the type.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ServiceType class is used to hold information that is specified on the command line to the [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5) through the `-types` argument.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,15 +22,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The object <see cref="T:System.Type" /> that is passed to the WSDL generator.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> class with the object <see cref="T:System.Type" /> that is passed to the Web Services Description Language (WSDL) generator.</summary>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,9 +47,9 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The object <see cref="T:System.Type" /> that is passed to the WSDL generator.</param>
-        <param name="url">The well-known endpoint that can process messages that are sent to a method on the object type that is specified in the <c>type</c> parameter.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> class with the URL and <see cref="T:System.Type" /> of an object that is passed to the Web Services Description Language (WSDL) generator.</summary>
+        <param name="type">To be added.</param>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,15 +60,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object <see cref="T:System.Type" /> that is passed to the Web Services Description Language (WSDL) generator.</summary>
-        <value>The object <see cref="T:System.Type" /> that the current <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> was created for.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,15 +78,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URL of an object <see cref="T:System.Type" /> that is passed to the Web Services Description Language (WSDL) generator.</summary>
-        <value>The URL of an object <see cref="T:System.Type" /> that the current <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> was created for.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

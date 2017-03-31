@@ -3,9 +3,17 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalizableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LocalizableAttribute" />
   <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,39 +25,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether a property should be localized. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When code is generated for a component, members that are marked with the LocalizableAttribute set to `true` have their property values saved in resource files. You can localize these resource files without modifying the code.  
-  
- By default, members that have no localizable attribute or are marked with the LocalizableAttribute set to `false` will have their property values persisted to code, if the data type allows. Otherwise, if the main component is set to `Localizable`, all properties will be persisted to the resource file. The default is `false`.  
-  
-> [!NOTE]
->  When you mark a property with the LocalizableAttribute set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute.Yes>. For a property marked with the LocalizableAttribute set to `false`, the value is <xref:System.ComponentModel.LocalizableAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.LocalizableAttribute.No?displayProperty=fullName>.  
-  
- For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- The following example marks a property as needing to be localized.  
-  
- [!code-cs[classic localizableattribute example#1](~/add/codesnippet/csharp/t-system.componentmodel._93_1.cs)]
- [!code-cpp[classic localizableattribute example#1](~/add/codesnippet/cpp/t-system.componentmodel._93_1.cpp)]
- [!code-vb[classic localizableattribute example#1](~/add/codesnippet/visualbasic/t-system.componentmodel._93_1.vb)]  
-  
- The next example shows how to check the value of the LocalizableAttribute for `MyProperty`. First, the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Then, the code gets `MyProperty` from the <xref:System.ComponentModel.PropertyDescriptorCollection>. Next, it returns the attributes for this property and saves them in the attributes variable.  
-  
- Finally, the code sets `myAttribute` to the value of the LocalizableAttribute in the <xref:System.ComponentModel.AttributeCollection> and checks whether the property needs to be localized.  
-  
- [!code-cs[classic localizableattribute example#2](~/add/codesnippet/csharp/t-system.componentmodel._93_2.cs)]
- [!code-cpp[classic localizableattribute example#2](~/add/codesnippet/cpp/t-system.componentmodel._93_2.cpp)]
- [!code-vb[classic localizableattribute example#2](~/add/codesnippet/visualbasic/t-system.componentmodel._93_2.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,29 +35,25 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.#ctor(System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isLocalizable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isLocalizable">
-          <see langword="true" /> if a property should be localized; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LocalizableAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example marks a property as needing to be localized. This code creates a new <xref:System.ComponentModel.LocalizableAttribute>, sets its value to <xref:System.ComponentModel.LocalizableAttribute.Yes?displayProperty=fullName>, and binds it to the property.  
-  
- [!code-cs[Classic LocalizableAttribute.LocalizableAttribute Example#1](~/add/codesnippet/csharp/m-system.componentmodel._15_1.cs)]
- [!code-vb[Classic LocalizableAttribute.LocalizableAttribute Example#1](~/add/codesnippet/visualbasic/m-system.componentmodel._15_1.vb)]
- [!code-cpp[Classic LocalizableAttribute.LocalizableAttribute Example#1](~/add/codesnippet/cpp/m-system.componentmodel._15_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <param name="isLocalizable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -89,23 +62,24 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LocalizableAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LocalizableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the default value, which is <see cref="F:System.ComponentModel.LocalizableAttribute.No" />. This <see langword="static" /> field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.LocalizableAttribute>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.LocalizableAttribute?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -114,9 +88,17 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -125,10 +107,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to test the value equality of.</param>
-        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.LocalizableAttribute" />.</summary>
-        <returns>
-          <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,17 +119,25 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for this instance.</summary>
-        <returns>A hash code for the current <see cref="T:System.ComponentModel.LocalizableAttribute" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,17 +148,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines if this attribute is the default.</summary>
-        <returns>
-          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,31 +171,25 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LocalizableAttribute.IsLocalizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a property should be localized.</summary>
-        <value>
-          <see langword="true" /> if a property should be localized; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to check the value of the <xref:System.ComponentModel.LocalizableAttribute> for `MyProperty`. First, the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Then, the code gets `MyProperty` from the <xref:System.ComponentModel.PropertyDescriptorCollection>. Next, it returns the attributes for this property and saves them in the attributes variable.  
-  
- Finally, the code sets `myAttribute` to the value of the <xref:System.ComponentModel.LocalizableAttribute> in the <xref:System.ComponentModel.AttributeCollection> and checks whether the property needs to be localized.  
-  
- [!code-cpp[Classic LocalizableAttribute.IsLocalizable Example#1](~/add/codesnippet/cpp/p-system.componentmodel._43_1.cpp)]
- [!code-cs[Classic LocalizableAttribute.IsLocalizable Example#1](~/add/codesnippet/csharp/p-system.componentmodel._43_1.cs)]
- [!code-vb[Classic LocalizableAttribute.IsLocalizable Example#1](~/add/codesnippet/visualbasic/p-system.componentmodel._43_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -212,25 +198,24 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LocalizableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LocalizableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a property should not be localized. This <see langword="static" /> field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This field is the default setting for this attribute.  
-  
- When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `false`, the value of this attribute is set to the constant member No. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as No.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -239,23 +224,24 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LocalizableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LocalizableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a property should be localized. This <see langword="static" /> field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you mark a property with the <xref:System.ComponentModel.LocalizableAttribute> set to `true`, the value of this attribute is set to the constant member Yes. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as Yes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

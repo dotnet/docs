@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistChildrenAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,30 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines an attribute that is used by ASP.NET server controls to indicate at design time whether nested content that is contained within a server control corresponds to controls or to properties of the server control. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PersistChildrenAttribute is used in combination with the <xref:System.Web.UI.ParseChildrenAttribute> to determine how nested content of a control is interpreted. If PersistChildrenAttribute is `true` and <xref:System.Web.UI.ParseChildrenAttribute> is `false`, the nested content contained within an ASP.NET server control is persisted as controls. If PersistChildrenAttribute is `false` and <xref:System.Web.UI.ParseChildrenAttribute> is `true`, the nested content is persisted as properties of the server control. For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
-  
-   
-  
-## Examples  
- The code example in this section contains two parts. The first code example demonstrates how to set the metadata of a custom control so that at design time, its nested content is persisted as properties of the control. The second code example demonstrates how to use classes in an ASP.NET page.  
-  
- The following code example demonstrates how to apply the PersistChildrenAttribute attribute so that none of a custom server control's nested controls are persisted as nested controls. The custom server control named `CollectionPropertyControl` has the PersistChildrenAttribute attribute set to `false` so that the `Employee` objects that are added are persisted as nested elements.  
-  
- [!code-cs[PersistChildrenAttribute_Sample#1](~/add/codesnippet/csharp/t-system.web.ui.persistc_1.cs)]
- [!code-vb[PersistChildrenAttribute_Sample#1](~/add/codesnippet/visualbasic/t-system.web.ui.persistc_1.vb)]  
-  
- The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page.  
-  
- [!code-cs[PersistChildrenAttribute_Sample#3](~/add/codesnippet/csharp/t-system.web.ui.persistc_2.aspx)]
- [!code-vb[PersistChildrenAttribute_Sample#3](~/add/codesnippet/visualbasic/t-system.web.ui.persistc_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,29 +27,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="persist" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="persist">
-          <see langword="true" /> to persist the nested content as nested controls; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class using a Boolean value indicating whether to persist nested content as nested controls.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.Web.UI.PersistChildrenAttribute> attribute for a custom server control named `CollectionPropertyControl`.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
-  
- [!code-cs[PersistChildrenAttribute_Sample#2](~/add/codesnippet/csharp/m-system.web.ui.persistc_0_1.cs)]
- [!code-vb[PersistChildrenAttribute_Sample#2](~/add/codesnippet/visualbasic/m-system.web.ui.persistc_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="persist">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -90,11 +52,9 @@
         <Parameter Name="usesCustomPersistence" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="persist">
-          <see langword="true" /> to persist nested content as nested controls; otherwise, <see langword="false" />.</param>
-        <param name="usesCustomPersistence">
-          <see langword="true" /> to use customized persistence; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class using two Boolean values. One indicating whether to persist nested content as nested controls and the other indicating whether to use a custom persistence method.</summary>
+        <param name="persist">To be added.</param>
+        <param name="usesCustomPersistence">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,22 +65,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.PersistChildrenAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the default attribute state. The Default field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value for the Default field is `Yes`, indicating that nested content is persisted at design time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -130,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,10 +91,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object to compare with the current object.</param>
-        <summary>Determines whether the specified object is equal to the current object.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,8 +111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class.</summary>
-        <returns>A hash code for the <see cref="T:System.Web.UI.PersistChildrenAttribute" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,22 +130,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value indicating whether the value of the current instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class is the default value of the derived clss.</summary>
-        <returns>
-          <see langword="true" /> if the value of the current instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> is the default instance; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use the IsDefaultAttribute method to determine if the current instance of the <xref:System.Web.UI.PersistChildrenAttribute> class is the same as the default instance.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
-  
- [!code-cs[PersistChildrenAttribute_Sample#3](~/add/codesnippet/csharp/m-system.web.ui.persistc_1_1.aspx)]
- [!code-vb[PersistChildrenAttribute_Sample#3](~/add/codesnippet/visualbasic/m-system.web.ui.persistc_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -207,22 +142,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.PersistChildrenAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that nested content should not persist as nested controls at design time. This field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the No field is called, the inner content of a server control is persisted as properties, not as server.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Persist">
@@ -232,29 +159,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the nested content is persisted as nested controls at design time.</summary>
-        <value>
-          <see langword="true" /> to persist nested content as nested controls; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to get the value of the Persist property.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
-  
- [!code-cs[PersistChildrenAttribute_Sample#3](~/add/codesnippet/csharp/p-system.web.ui.persistc_1_1.aspx)]
- [!code-vb[PersistChildrenAttribute_Sample#3](~/add/codesnippet/visualbasic/p-system.web.ui.persistc_1_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsesCustomPersistence">
@@ -264,34 +177,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the server control provides custom persistence of nested controls at design time.</summary>
-        <value>
-          <see langword="true" /> to provide custom persistence of nested content; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To configure nested content for custom persistence, use the <xref:System.Web.UI.PersistChildrenAttribute> overload that takes a `usesCustomPersistence` parameter.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to get the value of the UsesCustomPersistence property.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
-  
- [!code-cs[PersistChildrenAttribute_Sample#3](~/add/codesnippet/csharp/p-system.web.ui.persistc_0_1.aspx)]
- [!code-vb[PersistChildrenAttribute_Sample#3](~/add/codesnippet/visualbasic/p-system.web.ui.persistc_0_1.aspx)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -301,22 +195,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.PersistChildrenAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that nested content should persist as controls at design time. The Yes field is read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the Yes field is called, nested content is persisted as controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

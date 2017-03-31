@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeParameterWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,19 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a common base implementation for writers of out-going request parameters for Web service clients implemented using HTTP but without SOAP.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MimeParameterWriter and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
-  
- The MimeParameterWriter class establishes a common request-writing format for client-side writing of Web method parameters into HTTP request streams.  
-  
- You will typically not need to use MimeParameterWriter or its descendant classes directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ParameterFormatter%2A> property to the appropriate type.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.MimeParameterWriter" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,18 +50,11 @@
         <Parameter Name="parameters" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="url">The HTTP request's original Uniform Resource Locator (URL).</param>
-        <param name="parameters">The Web method parameter values to be added to the URL, if necessary.</param>
-        <summary>When overridden in a derived class, modifies the outgoing HTTP request's Uniform Request Locator (URL).</summary>
-        <returns>A <see cref="T:System.String" /> object that contains the modified, outgoing HTTP request's Uniform Request Locator (URL).</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Of the classes derived from <xref:System.Web.Services.Protocols.MimeParameterWriter>, only <xref:System.Web.Services.Protocols.UrlParameterWriter> modifies the HTTP request URL.  
-  
- ]]></format>
-        </remarks>
+        <param name="url">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeRequest">
@@ -82,7 +64,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,17 +75,10 @@
         <Parameter Name="values" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="request">The out-going request, where the <see cref="T:System.Net.WebRequest" /> class allows transport protocols besides HTTP.</param>
-        <param name="values">The Web method parameter values.</param>
-        <summary>When overridden in a derived class, initializes the out-going HTTP request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Of the classes derived from <xref:System.Web.Services.Protocols.MimeParameterWriter>, only <xref:System.Web.Services.Protocols.HtmlFormParameterWriter> implements the <xref:System.Web.Services.Protocols.MimeParameterWriter> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="request">To be added.</param>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestEncoding">
@@ -113,23 +88,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the encoding used to write parameters to the HTTP request.</summary>
-        <value>The encoding used to write parameters to the HTTP request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An encoding, as represented by the <xref:System.Text.Encoding> class, defines how to transform characters into a sequence of bytes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UsesWriteRequest">
@@ -139,26 +107,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether Web method parameter values are serialized to the out-going HTTP request body.</summary>
-        <value>
-          <see langword="true" /> if the Web method parameter values are serialized to the out-going HTTP request body; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The UsesWriteRequest property determines whether the <xref:System.Web.Services.Protocols.MimeParameterWriter.WriteRequest%2A> method is invoked.  
-  
- The <xref:System.Web.Services.Protocols.MimeParameterWriter> class's implementation of UsesWriteRequest returns a value of `false`. The only derived class that overrides UsesWriteRequest is <xref:System.Web.Services.Protocols.HtmlFormParameterWriter>, whose implementation returns a value of `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteRequest">
@@ -168,7 +126,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,17 +137,10 @@
         <Parameter Name="values" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="requestStream">An input stream for the outgoing HTTP request's body.</param>
-        <param name="values">The Web method parameter values.</param>
-        <summary>When overridden in a derived class, serializes Web method parameter values into a stream representing the outgoing HTTP request body.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Of the classes derived from <xref:System.Web.Services.Protocols.MimeParameterWriter>, only <xref:System.Web.Services.Protocols.HtmlFormParameterWriter> implements the WriteRequest method.  
-  
- ]]></format>
-        </remarks>
+        <param name="requestStream">To be added.</param>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

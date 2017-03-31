@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of navigation that is taking place NavigationMode is used by the <see cref="System.Windows.Navigation.NavigatingCancelEventArgs.NavigationMode%2A" /> property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigating back to the most recent content in back navigation history. This occurs when the **GoBack** method is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigating to the most recent content on forward navigation history. This occurs when the **GoForward** method is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Navigating to new content. This occurs when the **Navigate** method is called, or when **Source** property is set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reloading the current content. This occurs when the **Refresh** method is called.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

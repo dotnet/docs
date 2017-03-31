@@ -3,34 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IPInterfaceProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPInterfaceProperties" />
   <AssemblyInfo>
+    <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about network interfaces that support Internet Protocol version 4 (IPv4) or Internet Protocol version 6 (IPv6).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class provides access to configuration and address information for network interfaces that support IPv4 or IPv6. You do not create instances of this class; they are returned by the <xref:System.Net.NetworkInformation.NetworkInterface.GetIPProperties%2A> method.  
-  
- To access IPv4-specific properties, use the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties%2A> method. To access IPv6-specific properties, use the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties%2A> method.  
-  
-   
-  
-## Examples  
- The following code example displays address information.  
-  
- [!code-cpp[NclNetInfoReport#8](~/add/codesnippet/cpp/t-system.net.networkinfo_26_1.cpp)]
- [!code-cs[NclNetInfoReport#8](~/add/codesnippet/csharp/t-system.net.networkinfo_26_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,21 +30,22 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPInterfaceProperties.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.IPInterfaceProperties" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor can be called only from classes that derive from <xref:System.Net.NetworkInformation.IPInterfaceProperties>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnycastAddresses">
@@ -62,33 +54,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.AnycastAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the anycast IP addresses assigned to this interface.</summary>
-        <value>An <see cref="T:System.Net.NetworkInformation.IPAddressInformationCollection" /> that contains the anycast addresses for this interface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An anycast address identifies multiple computers. Packets sent to an anycast address are sent to one of the computers identified by the address. Anycast addressing is an IPv6 feature used to update router tables for a group of hosts.  
-  
-   
-  
-## Examples  
- The following code example displays the anycast addresses for the network interfaces on the local computer.  
-  
- [!code-cs[NclNetInfo2#43](~/add/codesnippet/csharp/p-system.net.networkinfo_47_1.cs)]
- [!code-vb[NclNetInfo2#43](~/add/codesnippet/visualbasic/p-system.net.networkinfo_47_1.vb)]
- [!code-cpp[NclNetInfo2#43](~/add/codesnippet/cpp/p-system.net.networkinfo_47_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DhcpServerAddresses">
@@ -97,33 +81,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.DhcpServerAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the addresses of Dynamic Host Configuration Protocol (DHCP) servers for this interface.</summary>
-        <value>An <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> that contains the address information for DHCP servers, or an empty array if no servers are found.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Dynamic Host Configuration Protocol (DHCP) allows a computer to obtain a network address from a DHCP server, as opposed to using a static (fixed) network address. A DHCP server does not permanently assign addresses; instead, it temporarily uses one of a number of available addresses to the computer.  
-  
-   
-  
-## Examples  
- The following code example displays the DHCP address information for the network interfaces on the local computer.  
-  
- [!code-cs[NclNetInfo2#46](~/add/codesnippet/csharp/p-system.net.networkinfo_9_1.cs)]
- [!code-vb[NclNetInfo2#46](~/add/codesnippet/visualbasic/p-system.net.networkinfo_9_1.vb)]
- [!code-cpp[NclNetInfo2#46](~/add/codesnippet/cpp/p-system.net.networkinfo_9_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DnsAddresses">
@@ -132,33 +108,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.DnsAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the addresses of Domain Name System (DNS) servers for this interface.</summary>
-        <value>A <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> that contains the DNS server addresses.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DNS is a hierarchical naming system used to map host names to IP addresses.  
-  
-   
-  
-## Examples  
- The following code example displays the DNS addresses for the network interfaces on the local computer.  
-  
- [!code-cs[NclNetInfo2#42](~/add/codesnippet/csharp/p-system.net.networkinfo_44_1.cs)]
- [!code-vb[NclNetInfo2#42](~/add/codesnippet/visualbasic/p-system.net.networkinfo_44_1.vb)]
- [!code-cpp[NclNetInfo2#42](~/add/codesnippet/cpp/p-system.net.networkinfo_44_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DnsSuffix">
@@ -167,34 +135,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.DnsSuffix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Domain Name System (DNS) suffix associated with this interface.</summary>
-        <value>A <see cref="T:System.String" /> that contains the DNS suffix for this interface, or <see cref="T:System.String" /> if there is no DNS suffix for the interface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DNS suffix identifies the domain name (for example, "contoso.com") that is appended to an unqualified host name to obtain a fully qualified domain name (FQDN) suitable for a DNS name query. For example, if the local machine has "contoso.com" as its DnsSuffix, and must resolve the unqualified host name "www", the FQDN to query is "www.contoso.com".  
-  
-   
-  
-## Examples  
- The following code example displays the DNS suffix.  
-  
- [!code-cs[NclNetInfo2#41](~/add/codesnippet/csharp/p-system.net.networkinfo_3_1.cs)]
- [!code-vb[NclNetInfo2#41](~/add/codesnippet/visualbasic/p-system.net.networkinfo_3_1.vb)]
- [!code-cpp[NclNetInfo2#41](~/add/codesnippet/cpp/p-system.net.networkinfo_3_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.PlatformNotSupportedException">This property is not valid on computers running operating systems earlier than Windows 2000.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GatewayAddresses">
@@ -203,33 +162,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.GatewayAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.GatewayIPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the IPv4 network gateway addresses for this interface.</summary>
-        <value>An <see cref="T:System.Net.NetworkInformation.GatewayIPAddressInformationCollection" /> that contains the address information for network gateways, or an empty array if no gateways are found.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Gateways that implement the Internet Protocol Version 4 (IPv4) to forward packets between networks are returned by this property.  
-  
-   
-  
-## Examples  
- The following code example displays the gateway addresses for the network interfaces on the local computer.  
-  
- [!code-cs[NclNetInfo2#47](~/add/codesnippet/csharp/p-system.net.networkinfo_112_1.cs)]
- [!code-vb[NclNetInfo2#47](~/add/codesnippet/visualbasic/p-system.net.networkinfo_112_1.vb)]
- [!code-cpp[NclNetInfo2#47](~/add/codesnippet/cpp/p-system.net.networkinfo_112_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIPv4Properties">
@@ -238,28 +189,26 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPv4InterfaceProperties</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides Internet Protocol version 4 (IPv4) configuration data for this network interface.</summary>
-        <returns>An <see cref="T:System.Net.NetworkInformation.IPv4InterfaceProperties" /> object that contains IPv4 configuration data, or <see langword="null" /> if no data is available for the interface.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns `null` for <xref:System.Net.NetworkInformation.NetworkInterfaceType> interfaces.  
-  
- For a detailed description of the information available for an interface that supports IPv4, see the <xref:System.Net.NetworkInformation.IPv4InterfaceProperties> class documentation. Note that the object returned by the GetIPv4Properties method reflects the configuration as of the time the object is created. This information is not updated dynamically.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">The interface does not support the IPv4 protocol.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIPv6Properties">
@@ -268,26 +217,26 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPv6InterfaceProperties</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides Internet Protocol version 6 (IPv6) configuration data for this network interface.</summary>
-        <returns>An <see cref="T:System.Net.NetworkInformation.IPv6InterfaceProperties" /> object that contains IPv6 configuration data.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a detailed description of the information available for an interface that supports IPv6, see the <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> documentation. Note that the object returned by the GetIPv6Properties method reflects the configuration as of the time the object is created. This information is not updated dynamically.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">The interface does not support the IPv6 protocol.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDnsEnabled">
@@ -296,34 +245,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.IsDnsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether NetBt is configured to use DNS name resolution on this interface.</summary>
-        <value>
-          <see langword="true" /> if NetBt is configured to use DNS name resolution on this interface; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DNS is a hierarchical naming system used to map host names to IP addresses.  
-  
-   
-  
-## Examples  
- The following code example displays the value of this property.  
-  
- [!code-cs[NclNetInfo2#41](~/add/codesnippet/csharp/p-system.net.networkinfo_55_1.cs)]
- [!code-vb[NclNetInfo2#41](~/add/codesnippet/visualbasic/p-system.net.networkinfo_55_1.vb)]
- [!code-cpp[NclNetInfo2#41](~/add/codesnippet/cpp/p-system.net.networkinfo_55_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDynamicDnsEnabled">
@@ -332,34 +272,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.IsDynamicDnsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether this interface is configured to automatically register its IP address information with the Domain Name System (DNS).</summary>
-        <value>
-          <see langword="true" /> if this interface is configured to automatically register a mapping between its dynamic IP address and static domain names; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Dynamic DNS enables a client to inform the DNS servers that its dynamic IP address is mapped to its static host name.  
-  
-   
-  
-## Examples  
- The following code example displays the value of this property.  
-  
- [!code-cs[NclNetInfo2#41](~/add/codesnippet/csharp/p-system.net.networkinfo_122_1.cs)]
- [!code-vb[NclNetInfo2#41](~/add/codesnippet/visualbasic/p-system.net.networkinfo_122_1.vb)]
- [!code-cpp[NclNetInfo2#41](~/add/codesnippet/cpp/p-system.net.networkinfo_122_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MulticastAddresses">
@@ -368,33 +299,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.MulticastAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.MulticastIPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the multicast addresses assigned to this interface.</summary>
-        <value>An <see cref="T:System.Net.NetworkInformation.MulticastIPAddressInformationCollection" /> that contains the multicast addresses for this interface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A multicast address identifies multiple computers. Packets sent to a multicast address are sent to all computers identified by the address.  
-  
-   
-  
-## Examples  
- The following code example displays the multicast addresses for the network interfaces on the local computer.  
-  
- [!code-cs[NclNetInfo2#44](~/add/codesnippet/csharp/p-system.net.networkinfo_10_1.cs)]
- [!code-vb[NclNetInfo2#44](~/add/codesnippet/visualbasic/p-system.net.networkinfo_10_1.vb)]
- [!code-cpp[NclNetInfo2#44](~/add/codesnippet/cpp/p-system.net.networkinfo_10_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnicastAddresses">
@@ -403,33 +326,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.UnicastAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.UnicastIPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unicast addresses assigned to this interface.</summary>
-        <value>An <see cref="T:System.Net.NetworkInformation.UnicastIPAddressInformationCollection" /> that contains the unicast addresses for this interface.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A unicast address identifies a single computer. Packets sent to a unicast address are sent to the computer identified by the address.  
-  
-   
-  
-## Examples  
- The following code example displays the unicast addresses for the network interfaces on the local computer.  
-  
- [!code-cs[NclNetInfo2#45](~/add/codesnippet/csharp/p-system.net.networkinfo_32_1.cs)]
- [!code-vb[NclNetInfo2#45](~/add/codesnippet/visualbasic/p-system.net.networkinfo_32_1.vb)]
- [!code-cpp[NclNetInfo2#45](~/add/codesnippet/cpp/p-system.net.networkinfo_32_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WinsServersAddresses">
@@ -438,24 +353,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPInterfaceProperties.WinsServersAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the addresses of Windows Internet Name Service (WINS) servers.</summary>
-        <value>An <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> that contains the address information for WINS servers, or an empty array if no servers are found.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- WINS provides a distributed database for registering and querying dynamic NetBIOS names to IP address mappings.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

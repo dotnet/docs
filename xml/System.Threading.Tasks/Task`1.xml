@@ -3,8 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Task`1&lt;TResult&gt; extends System.Threading.Tasks.Task" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Task`1" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -22,35 +32,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">The type of the result produced by this Task(TResult).</typeparam>
-    <summary>Represents an asynchronous operation that can return a value.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Task(TResult) class represents a single operation that returns a value and that usually executes asynchronously. Task(TResult) objects are one of the central components of the  first introduced in the .NET Framework 4. Because the work performed by a Task(TResult) object typically executes asynchronously on a thread pool thread rather than synchronously on the main application thread, you can use the <xref:System.Threading.Tasks.Task.Status%2A> property, as well as the <xref:System.Threading.Tasks.Task.IsCanceled%2A>, <xref:System.Threading.Tasks.Task.IsCompleted%2A>, and <xref:System.Threading.Tasks.Task.IsFaulted%2A> properties, to determine the   state of a task. Most commonly, a lambda expression is used to specify the work that the task is to perform.  
-  
- Task(TResult) instances may be created in a variety of ways. The most common approach, which is available starting with the [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)], is to call the static <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> or <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method. These methods provide a simple way to start a task by using default values and without acquiring additional parameters. The following example uses the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> method to start a task that loops and then displays the number of loop iterations:  
-  
- [!code-vb[System.Threading.Tasks.Task`1#6](~/add/codesnippet/visualbasic/t-system.threading.tasks_0_1.vb)]
- [!code-cs[System.Threading.Tasks.Task`1#6](~/add/codesnippet/csharp/t-system.threading.tasks_0_1.cs)]  
-  
- An alternative, and the most common way to start a task in the [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)], is to call the static <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> or <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=fullName> method. The <xref:System.Threading.Tasks.Task.Factory%2A?displayProperty=fullName> property returns a <xref:System.Threading.Tasks.TaskFactory> object, and the <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property returns a <xref:System.Threading.Tasks.TaskFactory%601> object. Overloads of their `StartNew` method let you pass arguments, define task creation options, and specify a task scheduler. The following example uses the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7B%600%7D%29?displayProperty=fullName> method to start a task. It is functionally equivalent to the code in the previous example.  
-  
- [!code-cs[System.Threading.Tasks.Task`1#7](~/add/codesnippet/csharp/t-system.threading.tasks_0_2.cs)]
- [!code-vb[System.Threading.Tasks.Task`1#7](~/add/codesnippet/visualbasic/t-system.threading.tasks_0_2.vb)]  
-  
- For more complete examples, see [Task-based Asynchronous Programming](../Topic/Task-based%20Asynchronous%20Programming.md).  
-  
- The Task(TResult) class also provides constructors that initialize the task but that do not schedule it for execution. For performance reasons, the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> and `StartNew` methods are the preferred mechanism for creating and scheduling computational tasks, but for scenarios where task creation and scheduling must be separated, the constructors may be used, and the task's <xref:System.Threading.Tasks.Task.Start%2A> method may then be used to schedule the task for execution at a later time.  
-  
- Starting with desktop apps that target the [!INCLUDE[net_v46](~/add/includes/net-v46-md.md)], the culture of the thread that creates and invokes a task becomes part of the thread's context. That is, regardless of the current culture of the thread on which the task executes, the current culture of the task is the culture of the calling thread. For apps that target versions of the .NET Framework prior to the [!INCLUDE[net_v46](~/add/includes/net-v46-md.md)], the culture of the task is the culture of the thread on which the task executes. For more information, see the "Culture and task-based asynchronous operations" section in the <xref:System.Globalization.CultureInfo> topic. Note that Store apps follow the Windows Runtime in setting and getting the default culture.  
-  
- For operations that do not return a value, you use the <xref:System.Threading.Tasks.Task> class.  
-  
- ]]></format>
-    </remarks>
-    <threadsafe>All members of Task(TResult), except for <see cref="System.Threading.Tasks.Task.Dispose%2A" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <typeparam name="TResult">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,36 +43,26 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified function.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> and <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7B%600%7D%29?displayProperty=fullName> methods. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
-   
-  
-## Examples  
- The following example counts the approximate number of words in text files that represent published books. Each task is responsible for opening a file, reading its entire contents asynchronously, and calculating the word count by using a regular expression. The [Task.WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method is called to ensure that all tasks have completed before displaying the word count of each book to the console.  
-  
- Object instantiation is separated from object execution in this example so that the example can ensure that each file exists. If they do not,  it displays the name of the missing file. Otherwise, it calls the <xref:System.Threading.Tasks.Task.Start%2A?displayProperty=fullName> method to launch each task.  
-  
- [!code-cs[System.Threading.Tasks.Task.ctor#2](~/add/codesnippet/csharp/m-system.threading.tasks_3_1.cs)]
- [!code-vb[System.Threading.Tasks.Task.ctor#2](~/add/codesnippet/visualbasic/m-system.threading.tasks_3_1.vb)]  
-  
- The regular expression pattern `\p{P}*\s+` matches zero, one, or more punctuation characters followed by one or more whitespace characters. It assumes that the total number of matches equals the approximate word count.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,26 +71,28 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;System.Object,TResult&gt;" />
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="state">An object representing data to be used by the action.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified function and state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7BSystem.Object%2C%600%7D%2CSystem.Object%29?displayProperty=fullName> method. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,27 +101,28 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0},System.Threading.CancellationToken)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;TResult&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to be assigned to this task.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified function.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> and <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7B%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> methods. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,27 +131,28 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0},System.Threading.Tasks.TaskCreationOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;TResult&gt;" />
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="creationOptions">The <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> used to customize the task's behavior.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified function and creation options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7B%600%7D%2CSystem.Threading.Tasks.TaskCreationOptions%29?displayProperty=fullName> method. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="creationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,8 +161,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object,System.Threading.CancellationToken)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;System.Object,TResult&gt;" />
@@ -192,20 +180,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="state">An object representing data to be used by the function.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to be assigned to the new task.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified action, state, and options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7BSystem.Object%2C%600%7D%2CSystem.Object%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -214,8 +193,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;System.Object,TResult&gt;" />
@@ -223,20 +212,11 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="state">An object representing data to be used by the function.</param>
-        <param name="creationOptions">The <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> used to customize the task's behavior.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified action, state, and options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7BSystem.Object%2C%600%7D%2CSystem.Object%2CSystem.Threading.Tasks.TaskCreationOptions%29?displayProperty=fullName> method. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="creationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -245,8 +225,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;TResult&gt;" />
@@ -254,21 +244,11 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new task.</param>
-        <param name="creationOptions">The <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> used to customize the task's behavior.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified function and creation options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.TaskCreationOptions%2CSystem.Threading.Tasks.TaskScheduler%29?displayProperty=fullName> method.  The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="creationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -277,8 +257,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.#ctor(System.Func{System.Object,`0},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="function" Type="System.Func&lt;System.Object,TResult&gt;" />
@@ -287,22 +277,12 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="function">The delegate that represents the code to execute in the task. When the function has completed, the task's <see cref="System.Threading.Tasks.Task%601.Result%2A" /> property will be set to return the result value of the function.</param>
-        <param name="state">An object representing data to be used by the function.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to be assigned to the new task.</param>
-        <param name="creationOptions">The <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> used to customize the task's behavior.</param>
-        <summary>Initializes a new <see cref="System.Threading.Tasks.Task%601" /> with the specified action, state, and options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7BSystem.Object%2C%600%7D%2CSystem.Object%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.TaskCreationOptions%2CSystem.Threading.Tasks.TaskScheduler%29?displayProperty=fullName> method. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is null.</exception>
+        <param name="function">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="creationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -311,8 +291,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ConfigureAwait(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;TResult&gt;</ReturnType>
@@ -321,9 +311,9 @@
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="continueOnCapturedContext">true to attempt to marshal the continuation back to the original context captured; otherwise, false.</param>
-        <summary>Configures an awaiter used to await this <see cref="System.Threading.Tasks.Task%601" />.</summary>
-        <returns>An object used to await this task.</returns>
+        <param name="continueOnCapturedContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,8 +323,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -343,27 +343,10 @@
         <Parameter Name="continuationAction" Type="System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the antecedent <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task as an argument.</param>
-        <summary>Creates a continuation that executes asynchronously when the target task completes.</summary>
-        <returns>A new continuation task.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting early due to being canceled.  
-  
-   
-  
-## Examples  
- The following example creates an antecedent task that uses the Sieve of Eratosthenes to calculate the prime numbers between 1 and a value entered by the user. An array is used to hold information about the prime numbers. The array index represents the number, and the element's value indicates whether that number is composite (its value is `true`) or prime (its value is `false`). This task is then passed to a continuation task, which is responsible for extracting the prime numbers from the integer array and displaying them.  
-  
- [!code-cs[System.Threading.Tasks.Task`1.ContinueWith#2](~/add/codesnippet/csharp/56025c94-38cf-4516-9576-_1.cs)]
- [!code-vb[System.Threading.Tasks.Task`1.ContinueWith#2](~/add/codesnippet/visualbasic/56025c94-38cf-4516-9576-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <param name="continuationAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -372,8 +355,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -383,27 +376,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate is   passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation action.</param>
-        <summary>Creates a continuation that that is passed state information and that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
-   
-  
-## Examples  
- The following example creates a task that is passed an integer between 2 and 20 and returns an array that contains the first ten exponents (from n<sup>1</sup> to n<sup>10</sup>) of that number. A continuation task is then responsible for displaying the exponents. It is passed both the antecedent and the original number whose exponents the antecedent generates.  
-  
- [!code-cs[System.Threading.Tasks.Task`1.ContinueWith#3](~/add/codesnippet/csharp/f5b5a105-5a04-4f2a-929f-_1.cs)]
- [!code-vb[System.Threading.Tasks.Task`1.ContinueWith#3](~/add/codesnippet/visualbasic/f5b5a105-5a04-4f2a-929f-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -412,8 +389,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -423,36 +410,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate is passed the completed task as an argument.</param>
-        <param name="cancellationToken">The cancellation token that is passed to the new continuation task.</param>
-        <summary>Creates a cancelable continuation that executes asynchronously when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation task.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
-   
-  
-## Examples  
- The following example creates an antecedent task that uses the Sieve of Eratosthenes to calculate the prime numbers between 1 and a value entered by the user. An array is used to hold information about the prime numbers. The array index represents the number, and the element's value indicates whether that number is composite (its value is `true`) or prime (its value is `false`). This task is then passed to a continuation task, which is responsible for extracting the prime numbers from the integer array and displaying them.  
-  
- A cancellation token is passed to both the antecedent and the continuation task. A <xref:System.Timers.Timer?displayProperty=fullName> object is used to define a timeout value of 100 milliseconds. If the event fires, the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> method is called, and the cancellation token is used to request cancellation of the tasks.  
-  
- [!code-cs[System.Threading.Tasks.Task`1.ContinueWith#1](~/add/codesnippet/csharp/e67b85a1-a587-4cbd-88f9-_1.cs)]
- [!code-vb[System.Threading.Tasks.Task`1.ContinueWith#1](~/add/codesnippet/visualbasic/e67b85a1-a587-4cbd-88f9-_1.vb)]  
-  
- Typically, supplying a value of about 100,000 causes the timeout interval to expire and the <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event to fire, and the cancellation request to be set.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.  
-  
- -or-  
-  
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -461,8 +423,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -472,23 +444,11 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to according the condition specified in <c>continuationOptions</c>. When run, the delegate will be passed the completed task as an argument.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <summary>Creates a continuation that executes according the condition specified in <paramref name="continuationOptions" />.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed. If the continuation criteria specified through the `continuationOptions` parameter are not met, the continuation task will be canceled instead of scheduled.  
-  
- For more information, see [Chaining Tasks by Using Continuation Tasks](../Topic/Chaining%20Tasks%20by%20Using%20Continuation%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -497,8 +457,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -508,24 +478,11 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task as an argument.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes asynchronously when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.  
-  
- -or-  
-  
- The <paramref name="scheduler" /> argument is null.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -534,8 +491,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -546,21 +513,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be  passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation action.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has  completed, whether it completes due to running to completion successfully, faulting due to an  unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
-        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -569,8 +527,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -581,21 +549,12 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be  passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation action.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such  as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed. If the continuation criteria specified through the `continuationOptions` parameter are not met, the continuation task will be canceled instead of scheduled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -604,8 +563,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -616,20 +585,12 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation action.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -638,8 +599,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0}},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -651,31 +622,13 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run according the condition specified in <c>continuationOptions</c>. When run, the delegate will be passed the completed task as an argument.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes according the condition specified in <paramref name="continuationOptions" />.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed. If the criteria specified through the `continuationOptions` parameter are not met, the continuation task will be canceled instead of scheduled. For more information, see [Chaining Tasks by Using Continuation Tasks](../Topic/Chaining%20Tasks%20by%20Using%20Continuation%20Tasks.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.  
-  
- -or-  
-  
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationAction" /> argument is null.  
-  
- -or-  
-  
- The <paramref name="scheduler" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -684,8 +637,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith(System.Action{System.Threading.Tasks.Task{`0},System.Object},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -698,24 +661,14 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be  passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation action.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as  well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its  execution.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has  completed. If the criteria specified through the `continuationOptions` parameter  are not met, the continuation task will be canceled instead of scheduled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <param name="continuationAction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -724,8 +677,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -737,20 +700,11 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;,TNewResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task as an argument.</param>
-        <summary>Creates a continuation that executes asynchronously when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -759,8 +713,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -773,28 +737,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation function.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current  task has completed, whether it completes due to running to completion successfully, faulting due  to an unhandled exception, or exiting out early due to being canceled.  
-  
-   
-  
-## Examples  
- The following example creates a chain of continuation tasks. Each task provides the current time, a <xref:System.DateTime> object, for the state argument of the <xref:System.Threading.Tasks.Task.ContinueWith%28System.Action%7BSystem.Threading.Tasks.Task%2CSystem.Object%7D%2CSystem.Object%29> method. Each <xref:System.DateTime> value represents the time at which the continue task is created. Each task produces as its result a second <xref:System.DateTime> value that represents the time at which the task finishes. After all tasks finish, the example displays the date and times at which each continuation task starts and finishes.  
-  
- [!code-vb[TPL_ContinuationState#1](~/add/codesnippet/visualbasic/1c043ad3-98e4-473b-b713-_1.vb)]
- [!code-cs[TPL_ContinuationState#1](~/add/codesnippet/csharp/1c043ad3-98e4-473b-b713-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -803,8 +751,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -817,25 +775,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task as an argument.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new task.</param>
-        <summary>Creates a continuation that executes asynchronously when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.  
-  
- -or-  
-  
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -844,8 +789,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -858,26 +813,12 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run according the condition specified in <c>continuationOptions</c>.  
-  
- When run, the delegate will be passed the completed task as an argument.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <summary>Creates a continuation that executes according the condition specified in <paramref name="continuationOptions" />.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- The `continuationFunction`, when executed, should return a <xref:System.Threading.Tasks.Task%601>..  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -886,8 +827,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -900,25 +851,12 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task as an argument.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes asynchronously when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.  
-  
- -or-  
-  
- The <paramref name="scheduler" /> argument is null.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -927,8 +865,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -942,22 +890,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation function.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new task.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current  task has completed, whether it completes due to running to completion successfully, faulting due  to an unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
-        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -966,8 +905,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -981,24 +930,13 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be  passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation function.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current  task has completed, whether it completes due to running to completion successfully, faulting due  to an unhandled exception, or exiting out early due to being canceled.  
-  
- The `continuationFunction`, when executed, should return a <xref:System.Threading.Tasks.Task%601>. This task's completion state will be transferred to the task returned from the ContinueWith call.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1007,8 +945,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -1022,21 +970,13 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation function.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has  completed, whether it completes due to running to completion successfully, faulting due to an  unhandled exception, or exiting out early due to being canceled.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is null.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1045,8 +985,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},``0},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -1061,36 +1011,14 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run according the condition specified in <c>continuationOptions</c>.  
-  
- When run, the delegate will be passed as an argument this completed task.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new task.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes according the condition specified in <paramref name="continuationOptions" />.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
-  
- The `continuationFunction`, when executed, should return a <xref:System.Threading.Tasks.Task%601>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="System.Threading.Tasks.Task%601" /> has been disposed.  
-  
- -or-  
-  
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="continuationFunction" /> argument is null.  
-  
- -or-  
-  
- The <paramref name="scheduler" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TNewResult&gt;">
@@ -1099,8 +1027,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.ContinueWith``1(System.Func{System.Threading.Tasks.Task{`0},System.Object,``0},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TNewResult&gt;</ReturnType>
@@ -1116,27 +1054,15 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run when the <see cref="System.Threading.Tasks.Task%601" /> completes. When run, the delegate will be  passed the completed task and the caller-supplied state object as arguments.</param>
-        <param name="state">An object representing data to be used by the continuation function.</param>
-        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new task.</param>
-        <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />, as well as execution options, such as <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</param>
-        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
-        <summary>Creates a continuation that executes when the target <see cref="System.Threading.Tasks.Task%601" /> completes.</summary>
-        <returns>A new continuation <see cref="System.Threading.Tasks.Task%601" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has  completed, whether it completes due to running to completion successfully, faulting due to an  unhandled exception, or exiting out early due to being canceled.  
-  
- The `continuationFunction`, when executed, should return a <xref:System.Threading.Tasks.Task%601>. This task's completion state will be transferred to the task returned from the <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=fullName> call.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The  <paramref name="continuationOptions" /> argument specifies an invalid value for <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <typeparam name="TNewResult">To be added.</typeparam>
+        <param name="continuationFunction">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="continuationOptions">To be added.</param>
+        <param name="scheduler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Factory">
@@ -1145,40 +1071,26 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Task`1.Factory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskFactory&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides access to factory methods for creating and configuring <see cref="System.Threading.Tasks.Task%601" /> instances.</summary>
-        <value>A factory object that can create a variety of <see cref="System.Threading.Tasks.Task%601" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns a default instance of the <xref:System.Threading.Tasks.TaskFactory%601> class that is identical to the one created by calling the parameterless <xref:System.Threading.Tasks.TaskFactory%601.%23ctor?displayProperty=fullName> constructor. It has the following property values:  
-  
-|Property|Value|  
-|--------------|-----------|  
-|<xref:System.Threading.Tasks.TaskFactory%601.CancellationToken%2A?displayProperty=fullName>|<xref:System.Threading.CancellationToken.None%2A?displayProperty=fullName>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.ContinuationOptions%2A?displayProperty=fullName>|<xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=fullName>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.CreationOptions%2A?displayProperty=fullName>|<xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName>|  
-|<xref:System.Threading.Tasks.TaskFactory%601.Scheduler%2A?displayProperty=fullName>|`null`, or <xref:System.Threading.Tasks.TaskScheduler.Current%2A?displayProperty=fullName>|  
-  
- The most common use of this property is to create and start a new task in a single call to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=fullName> method.  
-  
-> [!NOTE]
->  Starting with the [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a <xref:System.Threading.Tasks.Task%601> object with default configuration values.  
-  
- The following example uses the static Factory property to make three calls to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=fullName> method. The first starts a `Task<Int32>` object, which executes a lambda expression that returns 1. The second starts a `Task<Test>` object, which executes a lambda expression that instantiates a new `Test` instance. The third starts a `Task<String[]>` object, which enumerates the files in the C:\Users\Public\Pictures\Sample Pictures\ directory. (Note that successful execution of the example requires that the directory exist and that it contain files.  
-  
- [!code-cs[TPL#10](~/add/codesnippet/csharp/p-system.threading.tasks_2_1.cs)]
- [!code-vb[TPL#10](~/add/codesnippet/visualbasic/p-system.threading.tasks_2_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -1187,24 +1099,27 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task`1.GetAwaiter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an awaiter used to await this <see cref="System.Threading.Tasks.Task%601" />.</summary>
-        <returns>An awaiter instance.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is intended for compiler user rather than use directly in code.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -1213,8 +1128,18 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Task`1.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1225,31 +1150,9 @@
         <ReturnType>TResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the result value of this <see cref="System.Threading.Tasks.Task%601" />.</summary>
-        <value>The result value of this <see cref="System.Threading.Tasks.Task%601" />, which is the same type as the task's type parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Accessing the property's get accessor blocks the calling thread until the asynchronous operation is complete; it is equivalent to calling the <xref:System.Threading.Tasks.Task.Wait%2A> method.  
-  
- Once the result of an operation is available, it is stored and is returned immediately on subsequent calls to the Result property. Note that, if an exception occurred during the operation of the task, or if the task has been cancelled, the Result property does not return a value. Instead, attempting to access the property value throws an <xref:System.AggregateException> exception.  
-  
-   
-  
-## Examples  
- The following example is a command-line utility that calculates the number of bytes in the files in each directory whose name is passed as a command-line argument. If the directory contains files, it executes a lambda expression that instantiates a <xref:System.IO.FileStream> object for each file in the directory and retrieves the value of its <xref:System.IO.FileStream.Length%2A?displayProperty=fullName> property. If a directory contains no files, it simply calls the <xref:System.Threading.Tasks.Task.FromResult%2A> method to create a task whose Result property is zero (0). When the tasks finish, the total number of bytes in all a directory's files is available from the Result property.  
-  
- [!code-vb[System.Threading.Tasks.Task.FromResult#1](~/add/codesnippet/visualbasic/p-system.threading.tasks_8_1.vb)]
- [!code-cs[System.Threading.Tasks.Task.FromResult#1](~/add/codesnippet/csharp/p-system.threading.tasks_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.AggregateException">The task was canceled. The <see cref="System.AggregateException.InnerExceptions%2A" /> collection contains a <see cref="T:System.Threading.Tasks.TaskCanceledException" /> object.  
-  
- -or-  
-  
- An exception was thrown during the execution of the task. The <see cref="System.AggregateException.InnerExceptions%2A" /> collection contains information about the exception or exceptions.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

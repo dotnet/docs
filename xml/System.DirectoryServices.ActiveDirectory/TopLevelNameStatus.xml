@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TopLevelNameStatus" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the forest trust account status of a top-level domain in a forest.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The forest trust account is disabled by administrative action.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConflictDisabled">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The forest trust account is disabled due to a conflict with an existing forest trust account.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The forest trust account is enabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NewlyCreated">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The forest trust account was disabled on creation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

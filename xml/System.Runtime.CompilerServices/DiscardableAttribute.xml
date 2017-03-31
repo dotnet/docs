@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DiscardableAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -17,25 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Marks a type definition as discardable.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A type definition might be marked discardable if it is not referenced by any other code in its assembly. This might be useful for languages that support separate compilation, where it is only at link phase that it becomes known whether any type is actually referenced by other code.  
-  
- The classes in <xref:System.Runtime.CompilerServices> are for compiler writers' use only.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to apply the DiscardableAttribute attribute to a type.  
-  
- [!code-cs[Runtime.CompilerServices.DiscardableAttribute#1](~/add/codesnippet/csharp/t-system.runtime.compile_9_1.cs)]
- [!code-vb[Runtime.CompilerServices.DiscardableAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.compile_9_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,23 +32,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DiscardableAttribute" /> class with default values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.DiscardableAttribute> attribute to a type.  
-  
- [!code-cs[Runtime.CompilerServices.DiscardableAttribute#1](~/add/codesnippet/csharp/m-system.runtime.compile_0_1.cs)]
- [!code-vb[Runtime.CompilerServices.DiscardableAttribute#1](~/add/codesnippet/visualbasic/m-system.runtime.compile_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

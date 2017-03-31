@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognitionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,69 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about speech recognition events.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property obtains the recognition information as a <xref:System.Speech.Recognition.RecognitionResult> object. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
-  
- **RecognitionEventArgs** is the base for the following classes:  
-  
--   <xref:System.Speech.Recognition.SpeechRecognizedEventArgs>  
-  
--   <xref:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs>  
-  
--   <xref:System.Speech.Recognition.SpeechHypothesizedEventArgs>  
-  
- RecognitionEventArgs derives from <xref:System.EventArgs>.  
-  
-   
-  
-## Examples  
- The following example attaches a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> events of the speech recognizer. The event argument types for the three events all derive from RecognitionEventArgs, which is used as the event data parameter in the handler.  
-  
-```c#  
-  
-// Initialize the speech recognizer.  
-private void Initialize(SpeechRecognitionEngine recognizer)  
-{  
-  // Attach handlers for the SpeechHypothesized, SpeechRecognitionRejected,  
-  // and SpeechRecognized events.  
-  recognizer.SpeechHypothesized +=  
-    new EventHandler<SpeechHypothesizedEventArgs>(DisplayResult);  
-  recognizer.SpeechRecognitionRejected +=  
-    new EventHandler<SpeechRecognitionRejectedEventArgs>(DisplayResult);  
-  recognizer.SpeechRecognized +=  
-    new EventHandler<SpeechRecognizedEventArgs>(DisplayResult);  
-  
-  // Add other initialization code here.  
-}  
-  
-// Handle the SpeechHypothesized, SpeechRecognitionRejected,  
-// and SpeechRecognized events.  
-private void DisplayResult(object sender, RecognitionEventArgs e)  
-{  
-  if (e is SpeechHypothesizedEventArgs)  
-  {  
-    Console.WriteLine("Speech hypothesized:");  
-  }  
-  else if (e is SpeechRecognitionRejectedEventArgs)  
-  {  
-    Console.WriteLine("Speech recognition rejected:");  
-  }  
-  else if (e is SpeechRecognizedEventArgs)  
-  {  
-    Console.WriteLine("Speech recognized:");  
-  }  
-  
-  // Add code to handle the event.  
-}  
-  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Result">
@@ -84,15 +22,14 @@ private void DisplayResult(object sender, RecognitionEventArgs e)
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.RecognitionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the recognition result data associated with the speech recognition event.</summary>
-        <value>The Result property returns the <see cref="T:System.Speech.Recognition.RecognitionResult" /> that contains the information about the recognition.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

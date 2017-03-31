@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollPattern.ScrollPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.ScrollPattern" /> object using its <see cref="System.Windows.Automation.ScrollPattern.Current%2A" /> or <see cref="System.Windows.Automation.ScrollPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,34 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the UI Automation element can scroll horizontally.</summary>
-        <value>
-          <see langword="true" /> if the UI Automation element can scroll horizontally; otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be dynamic. For example, the content area of the UI Automation element might not be larger than the current viewable area, meaning HorizontallyScrollable is `false`. However, resizing the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element or adding child items can increase the bounds of the content area beyond the viewable area, indicating that HorizontallyScrollable is `true`.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from a UI Automation element and is then used to horizontally scroll the element the requested amount.  
-  
- [!code-cs[UIAScrollPattern_snip#101](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#101)]
- [!code-vb[UIAScrollPattern_snip#101](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#101)]  
-[!code-cs[UIAScrollPattern_snip#107](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#107)]
-[!code-vb[UIAScrollPattern_snip#107](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#107)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollPercent">
@@ -60,26 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current horizontal scroll position.</summary>
-        <value>The horizontal scroll position as a percentage of the total content area within the UI Automation element. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern> object obtained from a target control is passed into a function that retrieves the current horizontal and vertical scroll percentages of the viewable region within the content area.  
-  
- [!code-cs[UIAScrollPattern_snip#1045](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#1045)]
- [!code-vb[UIAScrollPattern_snip#1045](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#1045)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalViewSize">
@@ -89,26 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current horizontal view size.</summary>
-        <value>The horizontal size of the viewable region as a percentage of the total content area within the UI Automation element. The default value is 100.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern> object obtained from a target control is passed into a function that retrieves the current vertical and horizontal sizes of the viewable region as percentages of the total content area.  
-  
- [!code-cs[UIAScrollPattern_snip#1055](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#1055)]
- [!code-vb[UIAScrollPattern_snip#1055](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#1055)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticallyScrollable">
@@ -118,34 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves a value that indicates whether the UI Automation element can scroll vertically.</summary>
-        <value>
-          <see langword="true" /> if the UI Automation element can scroll horizontally; otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property can be dynamic. For example, the content area of the UI Automation element might not be larger than the current viewable area, meaning VerticallyScrollable is `false`. However, resizing the [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] element or adding child items can increase the bounds of the content area beyond the viewable area, indicating that VerticallyScrollable is `true`.  
-  
-   
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from a UI Automation element and is then used to vertically scroll the element the requested amount.  
-  
- [!code-cs[UIAScrollPattern_snip#101](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#101)]
- [!code-vb[UIAScrollPattern_snip#101](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#101)]  
-[!code-cs[UIAScrollPattern_snip#108](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#108)]
-[!code-vb[UIAScrollPattern_snip#108](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#108)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollPercent">
@@ -155,26 +94,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current vertical scroll position.</summary>
-        <value>The vertical scroll position as a percentage of the total content area within the UI Automation element. The default value is 0.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern> object obtained from a target control is passed into a function that retrieves the current horizontal and vertical scroll percentages of the viewable region within the content area.  
-  
- [!code-cs[UIAScrollPattern_snip#1045](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#1045)]
- [!code-vb[UIAScrollPattern_snip#1045](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#1045)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalViewSize">
@@ -184,26 +112,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current vertical view size.</summary>
-        <value>The vertical size of the viewable region as a percentage of the total content area within the UI Automation element. The default value is 100.0.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern> object obtained from a target control is passed into a function that retrieves the current vertical and horizontal sizes of the viewable region as percentages of the total content area.  
-  
- [!code-cs[UIAScrollPattern_snip#1055](~/add/codesnippet/csharp/UIAScrollPattern_snip/UIAScrollPattern_snippets.cs#1055)]
- [!code-vb[UIAScrollPattern_snip#1055](~/add/codesnippet/visualbasic/UIAScrollPattern_snip/UIAScrollPattern_snippets.vb#1055)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

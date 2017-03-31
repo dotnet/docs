@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides change monitoring for SQL Server databases. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SqlChangeMonitor class wraps the ADO.NET <xref:System.Data.SqlClient.SqlDependency> class and adds change monitoring for SQL Server-based dependencies. Therefore, the SqlChangeMonitor class serves as a bridge between the ADO.NET <xref:System.Data.SqlClient.SqlDependency> object and the <xref:System.Runtime.Caching> namespace.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,20 +28,9 @@
         <Parameter Name="dependency" Type="System.Data.SqlClient.SqlDependency" />
       </Parameters>
       <Docs>
-        <param name="dependency">An object that represents an ADO.NET <see cref="T:System.Data.SqlClient.SqlDependency" /> object.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.SqlChangeMonitor" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SqlChangeMonitor method binds the <xref:System.Data.SqlClient.SqlDependency.OnChange> event of the object in `dependency` to the <xref:System.Runtime.Caching.ChangeMonitor.OnChanged%2A> method handler. This enables the change monitor to receive notification of changes in SQL Server databases.  
-  
- When you invoke the SqlChangeMonitor constructor, you must pass a <xref:System.Data.SqlClient.SqlDependency> object as a parameter. When you create a <xref:System.Data.SqlClient.SqlDependency> object, you must pass a <xref:System.Data.SqlClient.SqlCommand> parameter to the constructor. The constructor for <xref:System.Data.SqlClient.SqlDependency> class lets you specify optional information for configuring the <xref:System.Data.SqlClient.SqlDependency> instance.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="dependency" /> is <see langword="null" />.</exception>
+        <param name="dependency">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -85,16 +67,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an identifier for a <see cref="T:System.Runtime.Caching.SqlChangeMonitor" /> instance.</summary>
-        <value>An identifier for the change monitor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.SqlChangeMonitor> class generates a GUID for this property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

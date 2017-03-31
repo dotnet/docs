@@ -4,8 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.CustomBuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,13 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -41,8 +37,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -51,10 +45,10 @@
         <Parameter Name="senderName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class with the specified <see cref="Microsoft.Build.Framework.BuildEventArgs.Message%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.HelpKeyword%2A" />, and <see cref="Microsoft.Build.Framework.BuildEventArgs.SenderName%2A" /> values.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,11 +68,11 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <param name="eventTimestamp">The date and time to associate with the event.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,12 +99,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="message">The text of the event.</param>
-        <param name="helpKeyword">The Help keyword associated with the event.</param>
-        <param name="senderName">The source of the event.</param>
-        <param name="eventTimestamp">The date and time to associate with the event.</param>
-        <param name="messageArgs">The arguments for the message.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class.</summary>
+        <param name="message">To be added.</param>
+        <param name="helpKeyword">To be added.</param>
+        <param name="senderName">To be added.</param>
+        <param name="eventTimestamp">To be added.</param>
+        <param name="messageArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

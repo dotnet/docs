@@ -11,30 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a combo box that is used in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows examples of RibbonComboBox controls that have images and labels, that just have images, and that just have labels.  
-  
- ![Ribbon combo box controls](~/add/media/wpfribbon-combobox.png "Ribbon combo box controls")  
-Ribbon combo box controls  
-  
- The following illustration shows a RibbonComboBox when the drop-down is opened.  
-  
- ![Ribbon combo box control with drop&#45;down open](~/add/media/wpfribbon-combobox-selection.png "Ribbon combo box control with drop-down open")  
-Ribbon combo box control with drop-down open  
-  
-   
-  
-## Examples  
- The following example shows the markup to create a combo box with three available items.  
-  
- [!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/add/codesnippet/xaml/ribboncontrolssample/mainwindow.xaml#ribboncombobox)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +26,7 @@ Ribbon combo box control with drop-down open
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,17 +47,10 @@ Ribbon combo box control with drop-down open
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Unloads the container for the specified item.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonComboBox.PrepareContainerForItemOverride%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEditable">
@@ -95,31 +66,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the content of the combo box can be edited.</summary>
-        <value>
-          <see langword="true" /> if the content of the combo box can be edited; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsEditable"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.IsEditableProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows the markup to create a combo box with three available items.  
-  
- [!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/add/codesnippet/xaml/ribboncontrolssample/mainwindow.xaml#ribboncombobox)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEditableProperty">
@@ -135,7 +84,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.IsEditable%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,24 +101,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether selection-only mode is enabled, in which the contents of the combo box are selectable but not editable.</summary>
-        <value>
-          <see langword="true" /> if the contents of the combo box are selectable but not editable; <see langword="false" /> if the contents of the combo box are not selectable and not editable. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsReadOnly"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.IsReadOnlyProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyProperty">
@@ -185,7 +119,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.IsReadOnly%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +139,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Controls.ActivatingKeyTipEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Contains data about the activation.</param>
-        <summary>Called when the KeyTip or accelerator key is pressed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,15 +158,8 @@ Ribbon combo box control with drop-down open
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> when a new template is applied.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -249,8 +176,8 @@ Ribbon combo box control with drop-down open
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> object for this control.</summary>
-        <returns>A new automation peer object for this control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,8 +197,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.GotKeyboardFocus" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,16 +218,9 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.IsKeyboardFocusWithinChanged> event data.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemsChanged">
@@ -319,8 +239,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Information about the change.</param>
-        <summary>Invoked when the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> property changes.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,8 +260,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,8 +281,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Controls.KeyTipAccessedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Contains data about the activation.</param>
-        <summary>Called when the KeyTip or accelerator key is accessed.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,8 +302,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyUp" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +323,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.LostKeyboardFocus" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,8 +344,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewKeyDown" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,8 +365,8 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewMouseDown" /> routed event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,16 +386,9 @@ Ribbon combo box control with drop-down open
         <Parameter Name="e" Type="System.Windows.Input.TextCompositionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Provides class handling for the <see cref="System.Windows.Input.TextCompositionManager.TextInput" /> routed attached event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This implementation marks the <xref:System.Windows.Input.TextCompositionManager.TextInput> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true`. This implementation does not call the base implementation.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareContainerForItemOverride">
@@ -495,9 +408,9 @@ Ribbon combo box control with drop-down open
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element that is used to display the item.</param>
-        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
-        <summary>Prepares the specified element to display the specified item.</summary>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,23 +427,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item that is displayed in the selection box.</summary>
-        <value>The item that is displayed in the selection box. The registered default is an <see cref="F:System.String.Empty" /> string. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_SelectionBoxItem"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItemProperty">
@@ -546,7 +445,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItem%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,23 +462,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a composite string that specifies how to format the selected item in the selection box if it is displayed as a string.</summary>
-        <value>A composite string that specifies how to format the selected item in the selection box if it is displayed as a string. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_SelectionBoxItemStringFormat"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemStringFormatProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItemStringFormatProperty">
@@ -595,7 +480,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemStringFormat%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,23 +497,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item template of the selection box content.</summary>
-        <value>The item template of the selection box content. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_SelectionBoxItemTemplate"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItemTemplateProperty">
@@ -644,7 +515,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplate%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,23 +532,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.DataTemplate" /> that is used to display the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItem%2A" />.</summary>
-        <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_SelectionBoxItemTemplateSelector"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateSelectorProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxItemTemplateSelectorProperty">
@@ -693,7 +550,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItemTemplateSelector%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -710,31 +567,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the text box that displays the selected item in the combo box.</summary>
-        <value>The width of the text box that displays the selected item in the combo box. The registered default is 0.0. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectionBoxWidth property does not include the widths of the image and label that are associated with the combo box.  
-  
-<a name="dependencyPropertyInfo_SelectionBoxWidth"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxWidthProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows the markup to create a combo box with three available items.  
-  
- [!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/add/codesnippet/xaml/ribboncontrolssample/mainwindow.xaml#ribboncombobox)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBoxWidthProperty">
@@ -750,7 +585,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxWidth%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,24 +602,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether to show the keyboard focus visual for this control.</summary>
-        <value>
-          <see langword="true" /> to show the keyboard focus visual; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_ShowKeyboardCues"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.ShowKeyboardCuesProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowKeyboardCuesProperty">
@@ -800,7 +620,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.ShowKeyboardCues%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,24 +637,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a combo box that is open and displays a drop-down control will remain open when a user clicks the selection box.</summary>
-        <value>
-          <see langword="true" /> to keep the drop-down control open when the user clicks the text area to start editing; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_StaysOpenOnEdit"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.StaysOpenOnEditProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StaysOpenOnEditProperty">
@@ -850,7 +655,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.StaysOpenOnEdit%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -867,24 +672,9 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the currently selected item.</summary>
-        <value>The text of the item that is displayed in the selection box. The registered default is an <see cref="T:System.String" /> string. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When there is no <xref:System.Windows.Controls.Ribbon.RibbonComboBox.SelectionBoxItem%2A> and <xref:System.Windows.Controls.Ribbon.RibbonComboBox.IsEditable%2A> is `true`, this property represents the text entered in the text box. When <xref:System.Windows.Controls.Ribbon.RibbonComboBox.IsEditable%2A> is `false`, this property represents the string version of the selected item.  
-  
-<a name="dependencyPropertyInfo_Text"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonComboBox.TextProperty>|  
-|Metadata properties set to `true`|None|  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
@@ -900,7 +690,7 @@ Ribbon combo box control with drop-down open
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonComboBox.Text%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

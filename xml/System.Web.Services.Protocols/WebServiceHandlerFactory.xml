@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.WebServiceHandlerFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Dynamically manufactures Web service handler instances, whose type or types implement the <see cref="T:System.Web.IHttpHandler" /> interface.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.IHttpHandler> interface establishes the contract that ASP.NET uses to process incoming HTTP Web requests with custom HTTP handlers. The WebServiceHandlerFactory class produces an instance of an <xref:System.Web.IHttpHandler> implementation for handling Web service requests.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.WebServiceHandlerFactory" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +41,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,12 +53,12 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.Web.HttpContext" /> that provides references to intrinsic server objects (For example, <see cref="System.Web.HttpContext.Request%2A" />, <see cref="System.Web.HttpContext.Response%2A" />, <see cref="System.Web.HttpContext.Session%2A" />, and <see cref="System.Web.HttpContext.Server%2A" />) used to service HTTP requests.</param>
-        <param name="verb">The HTTP data transfer method (GET or POST) that the client uses.</param>
-        <param name="url">The raw URL of the requested resource.</param>
-        <param name="filePath">The file-system path of the requested resource.</param>
-        <summary>Returns an <see cref="T:System.Web.IHttpHandler" /> instance.</summary>
-        <returns>An <see cref="T:System.Web.IHttpHandler" /> instance.</returns>
+        <param name="context">To be added.</param>
+        <param name="verb">To be added.</param>
+        <param name="url">To be added.</param>
+        <param name="filePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +69,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,16 +78,9 @@
         <Parameter Name="handler" Type="System.Web.IHttpHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">The <see cref="T:System.Web.IHttpHandler" /> instance to release.</param>
-        <summary>Releases the <see cref="T:System.Web.IHttpHandler" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are no resources associated with a handler instance that the <xref:System.Web.Services.Protocols.WebServiceHandlerFactory> class needs to release.  
-  
- ]]></format>
-        </remarks>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

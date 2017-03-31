@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,16 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>The ReplicationConnection class represents a replication connection.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In Active Directory Domain Services, a replication connection is represented by an NTDS-Connection object.  For more information, see the "[NTDS-Connection](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/c_ntdsconnection.asp)" topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -44,27 +34,11 @@
         <Parameter Name="sourceServer" Type="System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials with which to establish a replication connection.</param>
-        <param name="name">The user-defined name of the connection.</param>
-        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, and source server.</summary>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="sourceServer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
-  
--   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
-  
--   <paramref name="sourceServer" /> is invalid or an empty string.  
-  
--   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or <paramref name="sourceServer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,7 +48,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -84,28 +57,12 @@
         <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials with which to establish a replication connection.</param>
-        <param name="name">The user-defined name of the connection.</param>
-        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
-        <param name="schedule">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that specifies when the source is available for replication.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, source server, and schedule.</summary>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="sourceServer">To be added.</param>
+        <param name="schedule">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
-  
--   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
-  
--   <paramref name="sourceServer" /> is invalid or an empty string.  
-  
--   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" />, <paramref name="sourceServer" /> or <paramref name="schedule" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,7 +72,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -125,32 +81,12 @@
         <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to establish a replication connection with.</param>
-        <param name="name">The user-defined name of the connection.</param>
-        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
-        <param name="transport">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the transport type of the connection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, source server, and transport type.</summary>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="sourceServer">To be added.</param>
+        <param name="transport">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
-  
--   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
-  
--   <paramref name="sourceServer" /> is invalid or an empty string.  
-  
--   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or <paramref name="sourceServer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="context" /> is an AD LDS instance and <paramref name="transport" /> is <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />, which is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,7 +96,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,33 +106,13 @@
         <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials with which to establish a replication connection.</param>
-        <param name="name">The user-defined name of the connection.</param>
-        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
-        <param name="schedule">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that specifies when the source is available for replication.</param>
-        <param name="transport">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the transport type of the connection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, source server, schedule, and transport type.</summary>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="sourceServer">To be added.</param>
+        <param name="schedule">To be added.</param>
+        <param name="transport">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
-  
--   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
-  
--   <paramref name="sourceServer" /> is invalid or an empty string.  
-  
--   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
-  
--   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" />, <paramref name="sourceServer" /> or <paramref name="schedule" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="transport" /> is not valid.</exception>
-        <exception cref="T:System.NotSupportedException">
-          <paramref name="context" /> is an AD LDS instance and <paramref name="transport" /> is <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />, which is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="ChangeNotificationStatus">
@@ -207,18 +122,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.NotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the change notification status of this replication connection.</summary>
-        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.NotificationStatus" /> members that specifies the change notification status of this replication connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">When setting the property, the new value is not valid.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="DataCompressionEnabled">
@@ -228,18 +140,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this replication connection compresses data.</summary>
-        <value>
-          <see langword="true" /> if this replication connection uses data compression; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -249,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,13 +165,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deletes this replication connection.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object has not yet been saved to the underlying directory store.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
       </Docs>
     </Member>
     <Member MemberName="DestinationServer">
@@ -273,17 +176,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the DNS name of the server that is the destination of this replication connection.</summary>
-        <value>A string that contains the DNS name of the server that is the destination of this replication connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -293,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,7 +201,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the unmanaged and managed resources held by the object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,7 +212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,9 +221,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
-        <summary>Releases the unmanaged and, optionally, the managed resources, held by the object.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,18 +233,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this replication connection is enabled.</summary>
-        <value>
-          <see langword="true" /> if this replication connection is enabled; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -356,7 +251,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,7 +258,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Overrides the <see cref="System.Object.Finalize%2A" /> method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +269,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,19 +279,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to search for.</param>
-        <param name="name">The name of the connection to search for.</param>
-        <summary>Retrieves the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object that matches the specified target context and name.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object that represents the connection.</returns>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">The connection could not be found.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="context" /> or <paramref name="name" /> is not valid.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> or <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
       </Docs>
     </Member>
     <Member MemberName="GeneratedByKcc">
@@ -408,18 +293,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this replication connection was generated by the knowledge consistency checker (KCC).</summary>
-        <value>
-          <see langword="true" /> if this replication connection was generated by the KCC; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -429,7 +311,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -437,11 +318,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the replication connection.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the target of the replication connection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
-        <exception cref="T:System.InvalidOperationException">The current object has not been committed to the server. <see cref="System.DirectoryServices.ActiveDirectory.ReplicationConnection.Save%2A" /> must be called first.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -451,17 +330,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of this replication connection.</summary>
-        <value>A string that contains the user-defined name of this replication connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReciprocalReplicationEnabled">
@@ -471,18 +348,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this replication connection supports reciprocal replication.</summary>
-        <value>
-          <see langword="true" /> if this replication connection supports reciprocal replication; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReplicationSchedule">
@@ -492,17 +366,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the schedule on which the source server is available for replication.</summary>
-        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that represents the schedule on which the source server is available for replication. If this property is <see langword="null" />, then the default schedule is used.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReplicationScheduleOwnedByUser">
@@ -512,18 +384,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the replication schedule is owned by the user.</summary>
-        <value>
-          <see langword="true" /> if the replication schedule is owned by the user; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReplicationSpan">
@@ -533,17 +402,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the span of this replication connection.</summary>
-        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSpan" /> members that specifies the span of this replication connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -553,7 +420,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -561,12 +427,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Commits the replication connection to the server. The replication connection object does not actually exist in Active Directory Domain Services until this method is called.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
-        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
       </Docs>
     </Member>
     <Member MemberName="SourceServer">
@@ -576,15 +438,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the DNS name of the server that is the source of this replication connection.</summary>
-        <value>A string that contains the DNS name of the server that is the source of this replication connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,7 +456,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -603,10 +463,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the name of the replication connection.</summary>
-        <returns>A string that contains the name of the replication connection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransportType">
@@ -616,17 +475,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of transport that is used by this replication connection.</summary>
-        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the type of transport that is used by this replication connection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,163 @@
+<Type Name="WebExtensions" FullName="Microsoft.FSharp.Control.WebExtensions">
+  <TypeSignature Language="C#" Value="public static class WebExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed WebExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.WebExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsyncDownloadData">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;byte[]&gt; AsyncDownloadData (System.Net.WebClient this, Uri address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;unsigned int8[]&gt; AsyncDownloadData(class System.Net.WebClient this, class System.Uri address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.WebExtensions.AsyncDownloadData(System.Net.WebClient,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncDownloadData")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Byte[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this" Type="System.Net.WebClient" />
+        <Parameter Name="address" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="this">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncDownloadFile">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; AsyncDownloadFile (System.Net.WebClient this, Uri address, string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; AsyncDownloadFile(class System.Net.WebClient this, class System.Uri address, string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.WebExtensions.AsyncDownloadFile(System.Net.WebClient,System.Uri,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncDownloadFile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this" Type="System.Net.WebClient" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="this">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncDownloadString">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;string&gt; AsyncDownloadString (System.Net.WebClient this, Uri address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;string&gt; AsyncDownloadString(class System.Net.WebClient this, class System.Uri address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.WebExtensions.AsyncDownloadString(System.Net.WebClient,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncDownloadString")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this" Type="System.Net.WebClient" />
+        <Parameter Name="address" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="this">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncGetResponse">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;System.Net.WebResponse&gt; AsyncGetResponse (System.Net.WebRequest );" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class System.Net.WebResponse&gt; AsyncGetResponse(class System.Net.WebRequest ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.WebExtensions.AsyncGetResponse(System.Net.WebRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncGetResponse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Net.WebResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.Net.WebRequest" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -23,15 +23,8 @@
   </Interfaces>
   <Docs>
     <typeparam name="TEntity">To be added.</typeparam>
-    <summary>Represents a table for a particular type in the underlying database.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Data.Linq.Table%601>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Attach">
@@ -50,16 +43,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">The object to be added.</param>
-        <summary>When overridden, attaches a disconnected or "detached" entity to a new <see cref="T:System.Data.Linq.DataContext" /> when original values are required for optimistic concurrency checks.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Data.Linq.Table%601.Attach%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteOnSubmit">
@@ -78,16 +64,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">The object to delete.</param>
-        <summary>When overridden, puts an entity from this table into a <see langword="pending delete" /> state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertOnSubmit">
@@ -106,16 +85,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">The object to insert.</param>
-        <summary>When overridden, adds an entity in a <see langword="pending insert" /> state to this <see cref="System.Data.Linq.ITable%601" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>.  
-  
- ]]></format>
-        </remarks>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocument" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,17 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a document referenced by a symbol store.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A document is defined by a URL and a document type GUID. Using the document type GUID and the URL, you can locate the document. You can optionally store document source in the symbol store.  
-  
- This interface also provides access to that source, if present.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +34,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -63,17 +52,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
-        <value>A <see cref="T:System.NotSupportedException" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -90,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymDocument" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,17 +102,9 @@
         <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">
-          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Called by the <see cref="System.Diagnostics.SymbolStore.SymDocument.Dispose%2A" /> and <see cref="System.Diagnostics.SymbolStore.SymDocument.Finalize%2A" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymDocument" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymDocument.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymDocument.Finalize%2A> methods; do not call this method directly.  
-  
- ]]></format>
-        </remarks>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -135,15 +114,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the current document.</summary>
-        <value>The type of the current document.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,15 +139,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> is reclaimed by garbage collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindClosestLine">
@@ -180,7 +150,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,9 +159,9 @@
         <Parameter Name="line" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="line">The specified line in the document.</param>
-        <summary>Returns the line number of the closest line that is a sequence point, given a line in the current document that might or might not be a sequence point.</summary>
-        <returns>The line number of the closest sequence point to the specified line.</returns>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,10 +179,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
-        <returns>A <see cref="T:System.NotSupportedException" /> in all cases.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSourceRange">
@@ -224,7 +191,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,14 +203,13 @@
         <Parameter Name="endColumn" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startLine">This parameter is not used.</param>
-        <param name="startColumn">This parameter is not used.</param>
-        <param name="endLine">This parameter is not used.</param>
-        <param name="endColumn">This parameter is not used.</param>
-        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
-        <returns>A <see cref="T:System.NotSupportedException" /> in all cases.</returns>
+        <param name="startLine">To be added.</param>
+        <param name="startColumn">To be added.</param>
+        <param name="endLine">To be added.</param>
+        <param name="endColumn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUnmanaged">
@@ -254,7 +219,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,16 +238,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the source for the current document is stored in the symbol store.</summary>
-        <value>
-          <see langword="true" /> if the source for the current document is stored in the symbol store; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,23 +256,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the language of the current document.</summary>
-        <value>A <see cref="T:System.Guid" /> representing the language of the current document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUIDS for common languages are defined in the corsym.idl file included with the [!INCLUDE[winsdklong](~/add/includes/winsdklong-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageVendor">
@@ -320,23 +274,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the language vendor of the current document.</summary>
-        <value>A <see cref="T:System.Guid" /> representing the language vendor of the current document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GUIDS for common languages are defined in the corsym.idl file included with the [!INCLUDE[winsdklong](~/add/includes/winsdklong-md.md)].  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceLength">
@@ -346,15 +292,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length, in bytes, of the embedded source.</summary>
-        <value>The source length of the current document.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,15 +310,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URL of the current document.</summary>
-        <value>The URL of the current document.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

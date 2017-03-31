@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlParser" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for creating a Web server <see cref="T:System.Web.UI.Control" /> control or <see cref="T:System.Web.UI.ITemplate" /> interface from a string of markup that represents a persisted control or template.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The T:System.Web.UI.Design.ControlParser class provides methods that can create a T:System.Web.UI.Control control or T:System.Web.UI.ITemplate interface by parsing a string of markup representing a control or control template.  
-  
-   
-  
-## Examples  
- The following code example shows how to get the HTML markup for a control on a page using the <xref:System.Web.UI.Design.ControlPersister> class and how to instantiate a control from it using the ControlParser class. The example also shows how to display Microsoft Windows dialog boxes from a designer.  
-  
- [!code-cpp[ControlParserPersisterExample#1](~/add/codesnippet/cpp/t-system.web.ui.design.c_3_1.cpp)]
- [!code-vb[ControlParserPersisterExample#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.c_3_1.vb)]
- [!code-cs[ControlParserPersisterExample#1](~/add/codesnippet/csharp/t-system.web.ui.design.c_3_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ParseControl">
@@ -39,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,30 +32,11 @@
         <Parameter Name="controlText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="designerHost">An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> instance that is the designer host for the page.</param>
-        <param name="controlText">The HTML markup for the control.</param>
-        <summary>Creates a control from the specified markup using the specified designer host.</summary>
-        <returns>The <see cref="T:System.Web.UI.Control" /> that *controlText* represents; otherwise, <see langword="null" />, if the parser cannot build the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseControl method accesses the string representing the register directives on the ASP.NET Web page using the services of the designer host. Designer host services are acquired through the <xref:System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager%2A> property of the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> object, or if that is not available, the <xref:System.Web.UI.Design.IWebFormReferenceManager> service.  
-  
- The ParseControl method throws an exception if the parser cannot build the control.  
-  
-   
-  
-## Examples  
- The following code example shows how to create a control from HTML markup text. This code example is part of a larger example provided for the <xref:System.Web.UI.Design.ControlParser> class.  
-  
- [!code-cpp[ControlParserPersisterExample#2](~/add/codesnippet/cpp/d02f6b6f-ff97-49e1-ae33-_1.cpp)]
- [!code-vb[ControlParserPersisterExample#2](~/add/codesnippet/visualbasic/d02f6b6f-ff97-49e1-ae33-_1.vb)]
- [!code-cs[ControlParserPersisterExample#2](~/add/codesnippet/csharp/d02f6b6f-ff97-49e1-ae33-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">A parameter is not valid.</exception>
+        <param name="designerHost">To be added.</param>
+        <param name="controlText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseControl">
@@ -83,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,31 +57,12 @@
         <Parameter Name="directives" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="designerHost">An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> instance that is the designer host for the page.</param>
-        <param name="controlText">The text of the HTML markup for the control.</param>
-        <param name="directives">The page directives to include in the code for the control.</param>
-        <summary>Creates a control from the specified markup using the specified designer host and directives.</summary>
-        <returns>The <see cref="T:System.Web.UI.Control" /> that <paramref name="controlText" /> represents.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseControl method accesses the string representing the register directives on the ASP.NET Web page using the services of the designer host. Designer host services are acquired through the <xref:System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager%2A> property of the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> object, or if that is not available, the <xref:System.Web.UI.Design.IWebFormReferenceManager> service.  
-  
- The ParseControl method throws an exception if the parser cannot build the control.  
-  
-   
-  
-## Examples  
- The following code example shows how to create a control from HTML markup text. This code example is part of a larger example provided for the <xref:System.Web.UI.Design.ControlParser> class.  
-  
- [!code-cpp[ControlParserPersisterExample#2](~/add/codesnippet/cpp/c03c5612-b4ec-4360-95b7-_1.cpp)]
- [!code-vb[ControlParserPersisterExample#2](~/add/codesnippet/visualbasic/c03c5612-b4ec-4360-95b7-_1.vb)]
- [!code-cs[ControlParserPersisterExample#2](~/add/codesnippet/csharp/c03c5612-b4ec-4360-95b7-_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">A parameter is not valid.</exception>
+        <param name="designerHost">To be added.</param>
+        <param name="controlText">To be added.</param>
+        <param name="directives">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseControls">
@@ -129,7 +72,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,26 +82,11 @@
         <Parameter Name="controlText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="designerHost">An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> instance that is the designer host for the page.</param>
-        <param name="controlText">A string that represents a collection of markup for controls.</param>
-        <summary>Creates an array of controls from the specified markup using the specified designer host.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Control" /> elements, parsed from <paramref name="controlText" />; otherwise, <see langword="null" />, if the parser cannot build the controls.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseControls method accesses the string representing the register directives on the ASP.NET Web page using the services of the designer host. Designer host services are acquired through the <xref:System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager%2A> property of the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> object, or if that is not available, the <xref:System.Web.UI.Design.IWebFormReferenceManager> service.  
-  
- The ParseControls method throws an exception if the parser cannot build the controls from the `controlText` parameter.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="designerHost" /> is <see langword="null" />.  
-  
- \- or -  
-  
- <paramref name="controlText" /> is <see langword="null" /> or an empty string ("").</exception>
+        <param name="designerHost">To be added.</param>
+        <param name="controlText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -169,7 +96,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,20 +106,11 @@
         <Parameter Name="templateText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="designerHost">An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> instance that is the designer host for the page.</param>
-        <param name="templateText">A string containing the template markup.</param>
-        <summary>Creates an <see cref="T:System.Web.UI.ITemplate" /> interface from the specified template markup.</summary>
-        <returns>An <see cref="T:System.Web.UI.ITemplate" /> instance created by parsing <paramref name="templateText" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseTemplate method accesses the string representing the register directives on the ASP.NET Web page using the services of the designer host. Designer host services are acquired through the <xref:System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager%2A> property of the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> object, or if that is not available, the <xref:System.Web.UI.Design.IWebFormReferenceManager> service.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="designerHost" /> is <see langword="null" />.</exception>
+        <param name="designerHost">To be added.</param>
+        <param name="templateText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -203,7 +120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,21 +131,12 @@
         <Parameter Name="directives" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="designerHost">An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> instance that is the designer host for the page.</param>
-        <param name="templateText">A string containing the template markup.</param>
-        <param name="directives">Any directives to add to the beginning of the code for the template.</param>
-        <summary>Parses the specified template markup and creates an <see cref="T:System.Web.UI.ITemplate" /> interface.</summary>
-        <returns>An <see cref="T:System.Web.UI.ITemplate" /> instance created by parsing <paramref name="templateText" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ParseTemplate method accesses the string representing the register directives on the ASP.NET Web page using the services of the designer host. Designer host services are acquired through the <xref:System.Web.UI.Design.WebFormsRootDesigner.ReferenceManager%2A> property of the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> object, or if that is not available, the <xref:System.Web.UI.Design.IWebFormReferenceManager> service.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="designerHost" /> is <see langword="null" />.</exception>
+        <param name="designerHost">To be added.</param>
+        <param name="templateText">To be added.</param>
+        <param name="directives">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

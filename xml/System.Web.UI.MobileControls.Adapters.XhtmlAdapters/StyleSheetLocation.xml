@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of location for the style sheet for a mobile control or page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StyleSheetLocation enumeration is used by classes in the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters> namespace to facilitate creating XHTML markup.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationCache">
@@ -34,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The style sheet is stored in the Application Cache.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Internal">
@@ -51,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The style sheet is a set of styles within the current source file (either .aspx or .ascx).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -68,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Not currently used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -85,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default value. The location has not yet been determined.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhysicalFile">
@@ -102,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The style sheet is an external physical file, such as MyStylesheet.css.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionState">
@@ -119,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The style sheet is stored in the current Session state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

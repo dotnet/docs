@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,58 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Serves as the base class for all zone controls that act as containers for <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorZoneBase class is a specialized zone class that inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class and provides a base set of behaviors for derived zones that contain <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. There are several other types of <xref:System.Web.UI.WebControls.WebParts.ToolZone> classes; for more information, see the overview topic for the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. Like other tool zones, EditorZoneBase zones are not visible when a page is in normal browse mode; they are visible only when a page is in edit display mode. Also like the other tool zones, EditorZoneBase zones can only contain the special type of controls they were designed to contain (in this case, <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls).  
-  
- The EditorZoneBase zones provide a special UI for the editing controls they contain. Many of these UI elements are common to all zones in the Web Parts control set. For a detailed discussion of the common UI elements in Web Parts zones, see the class overview topic for the <xref:System.Web.UI.WebControls.WebParts.WebZone> class.  
-  
- Because the EditorZoneBase class is abstract, you cannot use it directly on a Web page. Instead, you must use a control that inherits from the EditorZoneBase class and implements its behavior. You can either use the derived zone that is provided in the Web Parts control set, the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, or you can derive your own custom EditorZoneBase control.  
-  
- The EditorZoneBase class provides a common user interface (UI) to contain special controls that enable end users to edit the properties, layout, appearance, and other attributes of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Some properties that apply to the UI refer to verbs, such as the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ApplyVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CancelVerb%2A>, and <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.OKVerb%2A> properties. Verbs are common actions carried out by users on a page, and are represented in the UI by buttons, links, menu items, or other elements. For example, when users edit properties on a control they can click an apply verb to save the changes.  
-  
- Several other properties affect text that is displayed at various points in the editing UI. These include the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EmptyZoneText%2A>, <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ErrorText%2A>, <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.HeaderText%2A>, and <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.InstructionText%2A> properties.  
-  
- Two important properties provide references to related controls. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts%2A> property is a collection of the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained in the zone. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.WebPartToEdit%2A> property is an object reference to a control contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone>--which might be a <xref:System.Web.UI.WebControls.WebParts.WebPart> control or any other ASP.NET server control, user control, or custom control currently being edited.  
-  
- Finally, the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorPartChrome%2A> property references an instance of an <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object that is associated with the zone, and that contains style characteristics of the peripheral UI elements (known as chrome) such as title and border styles for <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone.  
-  
- A number of the methods of the EditorZoneBase class are specialized to handle the editing of other controls. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.Close%2A> method changes the page from the edit display mode back to a normal browsing view. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome%2A> method is for creating the chrome (peripheral UI elements such as a border, verbs, icons, and a title) that surrounds each <xref:System.Web.UI.WebControls.WebParts.EditorPart> control in the zone. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method is an abstract method; derived classes override it to create instances of all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained in the zone. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.InvalidateEditorParts%2A> method can be called by a derived class if the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone changes for some programmatic reason, which flags the Web Parts control set to recreate and update the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.OnDisplayModeChanged%2A> method is used to set the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to `null` when the display mode changes from edit mode back to browse mode. Finally, the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.OnSelectedWebPartChanged%2A> method is used for handling the event when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is either entering or leaving edit mode. For example, this method is a convenient place to synchronize the property values of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control with the editable values in the associated <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
-  
-   
-  
-## Examples  
- The following code example demonstrates several declarative and programmatic uses of the EditorZoneBase class. Because the class is abstract, the code examples use the derived <xref:System.Web.UI.WebControls.WebParts.EditorZone> class that ships with the Web Parts control set, demonstrating the properties and methods that it inherits from the EditorZoneBase class.  
-  
- The code example has four parts:  
-  
--   A user control that enables you to change display modes on the Web page.  
-  
--   A Web page that contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
-  
--   A custom <xref:System.Web.UI.WebControls.WebParts.EditorZone> class that demonstrates some of the EditorZoneBase class members.  
-  
--   A description of how the example works in a browser.  
-  
- The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](../Topic/Walkthrough:%20Changing%20Display%20Modes%20on%20a%20Web%20Parts%20Page.md) topic, and place the file in the same folder as the .aspx page in this code example.  
-  
- The second part of the code example is a Web page that contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. Near the top of the page is a `Register` directive for the user control. The user control tag is declared in the page with a `<uc1:DisplayModeMenu>` element. Notice that below the `<asp:WebPartZone>` element is an `<asp:EditorZone>` element that contains <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, and has a variety of tags and properties set to determine its appearance and behavior. Most of the code in the page demonstrates the various programmatic uses of the EditorZoneBase properties and methods.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_378_1.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_378_1.aspx)]  
-  
- The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.EditorZone> class that shows how to work with a number of the EditorZoneBase class members. The custom class derives from <xref:System.Web.UI.WebControls.WebParts.EditorZone> so that it can be used with a zone template in the declarative markup of the Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation; thus, you will notice that the `Register` directive near the top of the Web page does not reference an assembly file. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](../Topic/Walkthrough:%20Developing%20and%20Using%20a%20Custom%20Web%20Server%20Control.md).  
-  
- [!code-vb[WebParts_EditorZoneBase_Common#12](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_378_2.vb)]
- [!code-cs[WebParts_EditorZoneBase_Common#12](~/add/codesnippet/csharp/t-system.web.ui.webcontr_378_2.cs)]  
-  
- When you load the page in a browser, you can select **Edit Mode** from the drop-down list to switch to edit mode. You can click the verbs menu (the downward arrow) in the title bar of one of the two controls, and click **Edit** to edit the control. When the editing UI is visible, you can see the effects of the various declarative and programmatic uses of the EditorZoneBase class members.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor, when invoked by an inherited class, passes a <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> object to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, which enables the page to display the editing user interface (UI).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyVerb">
@@ -96,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -117,35 +57,9 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to apply editing changes to a control in edit mode.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that enables end users to apply changes to a control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The apply verb is referenced by the ApplyVerb property on a control derived from the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class. The apply verb saves editing changes that an end user has made in the editing user interface (UI) to a server control that is currently being edited. By default, the apply verb appears in the UI as a <xref:System.Web.UI.WebControls.Button> control. The type of button can be an image, a link, or an actual button; you can set this for all verb buttons in a zone (not for individual buttons) by setting the inherited <xref:System.Web.UI.WebControls.WebParts.WebZone.VerbButtonType%2A> property at the zone level.  
-  
- The apply verb is a zone-level control, which means that although there might be several <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, each editing one or more properties for the server control that is in edit mode, the apply verb works universally to apply all changes from all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone to the server control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to access the ApplyVerb property both declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The first part of the code example shows how to access the ApplyVerb property declaratively in a Web page. This example customizes the text for the verb.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/csharp/p-system.web.ui.webcontr_13_1.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_13_1.aspx)]  
-  
- The second part of the example shows how to access the ApplyVerb property programmatically, by using a toggle button to enable or disable it.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#4](~/add/codesnippet/csharp/p-system.web.ui.webcontr_13_2.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#4](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_13_2.aspx)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and editing UI are visible, you can see the button that represents the apply verb, and click the **Toggle ApplyVerb Enabled** button to enable or disable it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelVerb">
@@ -155,7 +69,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -176,37 +89,9 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to cancel editing changes to a control in edit mode.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that enables end users to cancel editing changes to a control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The cancel verb is referenced by the CancelVerb property on a control derived from the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class. The cancel verb cancels editing changes that an end user has made to a server control in the editing user interface (UI). By default, the cancel verb appears in the UI as a <xref:System.Web.UI.WebControls.Button> control. The type of button can be an image, a link, or an actual button; you can set this for all verb buttons in a zone (not for individual buttons) by setting the inherited <xref:System.Web.UI.WebControls.WebParts.WebZone.VerbButtonType%2A> property at the zone level.  
-  
- When a user cancels editing changes, none of the changes in the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls are applied to the server control that is being edited. In addition, the page remains in edit display mode, but the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls are hidden and the <xref:System.Web.UI.WebControls.WebParts.WebPart> control that was being edited is no longer selected. This allows an end user to select another <xref:System.Web.UI.WebControls.WebParts.WebPart> control to edit without having to change display modes again.  
-  
- The cancel verb is a zone-level control, meaning that while there might be several <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, each editing one or more properties for the server control that is in edit mode, the cancel verb works universally to cancel all changes from all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to access the CancelVerb property both declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The first part of the code example shows how to access the CancelVerb property declaratively in a Web page. This example customizes the text for the verb.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/csharp/p-system.web.ui.webcontr_655_1.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_655_1.aspx)]  
-  
- The second part of the example shows how to access the CancelVerb property programmatically, by using a toggle button to enable or disable it.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#5](~/add/codesnippet/csharp/p-system.web.ui.webcontr_655_2.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#5](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_655_2.aspx)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and editing UI are visible, you can see the button that represents the cancel verb, and click the **Toggle CancelVerb Enabled** button to enable or disable it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -216,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,17 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when a user clicks a close verb in the header of a zone, this method ends the process of editing <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls, and returns a Web Parts page's display mode to browse mode.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Close method provides an implementation for the base method declared in the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The implementation simply calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing%2A> method, which carries out the steps necessary to end the editing process.  
-  
- Calling the Close method returns the page to browse mode, and cancels any editing changes made to any <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -244,7 +119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,7 +126,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the set of child controls associated with an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +137,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,18 +144,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a reference to a new <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> object used to render the peripheral user interface (UI) elements around an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
-        <returns>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> that renders the peripheral UI elements for the zone.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateEditorPartChrome method returns a new <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object. Chrome includes the following peripheral UI elements that surround each individual <xref:System.Web.UI.WebControls.WebParts.EditorPart> control in the zone: a border; a title bar; the items that appear within the title bar, including optional icons, title text, and a verbs menu; and items appearing in the footer area of a control.  
-  
- The CreateEditorPartChrome method uses the returned <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object to create the chrome around each <xref:System.Web.UI.WebControls.WebParts.EditorPart> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -292,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,16 +163,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a base method declaration that derived zones can override to handle the details of creating the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls contained in a zone.</summary>
-        <returns>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> that contains the collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls associated with the zone.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The CreateEditorParts method provides no implementation. It is intended to be implemented in a derived class, and should be used to create an instance of the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained in a zone, whenever the hosting Web page enters edit mode. The <xref:System.Web.UI.WebControls.WebParts.EditorZone.CreateEditorParts%2A?displayProperty=fullName> method provides one example of an implementation of the CreateEditorParts method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -319,16 +175,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control is currently displayed.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> is currently displayed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,7 +193,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -354,18 +207,9 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.EditorPartChrome</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> class associated with the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
-        <value>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" /> that contains style characteristics for the chrome elements of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls in a zone.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorPartChrome property provides a reference to the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> object associated with a zone. When the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorPartChrome%2A> method is called, it creates an instance of the <xref:System.Web.UI.WebControls.WebParts.EditorPartChrome> class, and this instance is used to render the peripheral user interface (UI) elements (also called the chrome) for all <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone.  
-  
- The chrome elements for an individual <xref:System.Web.UI.WebControls.WebParts.EditorPart> control include its border and other items in its header area, such as verbs, icons, and title text, as well as its footer area and its included elements.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditorParts">
@@ -375,7 +219,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -390,39 +233,9 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.EditorPartCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls contained in an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone.</summary>
-        <value>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> that contains all the individual <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls in a zone.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The EditorParts property provides a reference to a collection of all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone. It references both the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls provided with the Web Parts control set, and any custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are added to the zone. Because the collection is read-only, developers who want to create custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls for general editing purposes and add them to the collection should override the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method.  
-  
- If you design custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to edit a specific <xref:System.Web.UI.WebControls.WebParts.WebPart> control, you should override the members of the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface--the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts%2A> method and the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject%2A> property--in the <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The reason to override these members is to enable your <xref:System.Web.UI.WebControls.WebParts.WebPart> control to create the custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls and add them to the EditorParts collection when your control is being edited, and to provide the editing controls with an object reference to the <xref:System.Web.UI.WebControls.WebParts.WebPart> control they are editing. If you want to add a custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> control to edit a server control that does not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, you must implement the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface in the class just as you would for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
-  
-> [!NOTE]
->  Note that any <xref:System.Web.UI.WebControls.WebParts.EditorPart> that is added to the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in an implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts%2A> method must have a value assigned to its ID property, otherwise an exception will be thrown when the collection is assigned to the EditorParts property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to access the EditorParts property programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The first part of the code example demonstrates that the EditorParts property contains references to all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are referenced declaratively in the Web page.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/csharp/p-system.web.ui.webcontr_392_1.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_392_1.aspx)]  
-  
- The second part of the code example programmatically accesses the EditorParts property and lists the ID of each control in a <xref:System.Web.UI.WebControls.Label> control.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#6](~/add/codesnippet/csharp/p-system.web.ui.webcontr_392_2.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#6](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_392_2.aspx)]  
-  
- When you load the page in a browser, you can click the **Display EditorParts Collection** button to list the IDs of all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls referenced in the EditorParts property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> being added to the collection does not have a value assigned to its ID property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -432,15 +245,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a message that appears when a zone contains no controls.</summary>
-        <value>A string containing the message that appears in an empty zone. A default culture-specific string is supplied by the .NET Framework.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,7 +263,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -463,18 +274,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of a zone-level error message to display at the top of the editing user interface (UI).</summary>
-        <value>A localized string that contains the error message.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ErrorText property contains the text of an error message that can be displayed in the UI if an error occurs while rendering controls derived from the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class. The error message is displayed at the top of the zone if an error occurs in any of the individual <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained in the zone. In addition, individual <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls can display their own error messages near the control that receives an error.  
-  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -484,15 +286,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text for the header area of a zone.</summary>
-        <value>A string that contains the header text for the zone. The default is an empty string ("").</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,15 +304,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text in a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control that provides directions for end users.</summary>
-        <value>A string that contains the directions for end users. A default value appropriate to specific tool zones is provided by derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> classes.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -522,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,15 +329,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls associated with an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone to <see langword="null" />, which results in the <see cref="System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A" /> method being called to recreate the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InvalidateEditorParts method can be called by derived classes if the list of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls associated with an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone has changed for some reason, and the derived class needs to get an updated list of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. The derived class should call InvalidateEditorParts, which sets the current collection to `null`. The next time that the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts%2A> collection is accessed, the Web Parts control set automatically invokes the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method to create the updated collection.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -548,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,19 +349,9 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">The previously saved state.</param>
-        <summary>Loads previously saved state information for a zone.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
-  
- The LoadViewState method overrides the base method to check whether the page is being loaded because an OK verb, a cancel verb, or an apply verb was clicked in the zone. If so, the method handles the state associated with each respective scenario.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OKVerb">
@@ -580,7 +361,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -601,37 +381,9 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that applies editing changes to a control in edit mode, and hides the editing user interface (UI).</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that applies editing changes to a control and hides the editing UI.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OK verb is referenced by the OKVerb property on a control derived from the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class. It is similar to the apply verb, in that when a user clicks it, it applies editing changes that the user has made to a server control. In addition, the editing controls are hidden, the <xref:System.Web.UI.WebControls.WebParts.WebPart> control that was being edited is no longer selected (which allows the user to edit another control), and the page remains in edit mode.  
-  
- By default, the OK verb appears in the UI as a <xref:System.Web.UI.WebControls.Button> control. The type of button can be an image, a link, or an actual button; you can set this for all verb buttons in a zone (not for individual buttons) by setting the inherited <xref:System.Web.UI.WebControls.WebParts.WebZone.VerbButtonType%2A> property at the zone level.  
-  
- The OK verb is a zone-level control, meaning that while there might be several <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, each editing one or more properties for the server control that is in edit mode, the OK verb works universally to apply all changes from all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in the zone, and to hide all the controls except for the zone itself.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to access the OKVerb property both declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The first part of the code example shows how to access the OKVerb property declaratively in a Web page. This example customizes the text for the verb.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/csharp/p-system.web.ui.webcontr_399_1.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#2](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_399_1.aspx)]  
-  
- The second part of the example shows how to access the OKVerb programmatically, by using a toggle button to enable or disable it.  
-  
- [!code-cs[WebParts_EditorZoneBase_Common#7](~/add/codesnippet/csharp/p-system.web.ui.webcontr_399_2.aspx)]
- [!code-vb[WebParts_EditorZoneBase_Common#7](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_399_2.aspx)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and editing UI are visible, you can see the button that represents the OK verb, and click the **Toggle OKVerb Enabled** button to enable or disable it.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -641,7 +393,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -652,31 +403,10 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">An <see cref="T:System.Object" /> that raises the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged" /> event.</param>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged" /> event and destroys all <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> and child controls in the zone in preparation for a Web page to enter or exit the edit display mode.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnDisplayModeChanged method provides an implementation for the base method in the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class.  
-  
- The main purpose of the OnDisplayModeChanged method is to prepare a Web page to enter or exit the edit display mode. The method destroys all controls contained in the zone and then calls the base method, which raises the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnDisplayModeChanged method in a derived class. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The custom editor zone derives from the <xref:System.Web.UI.WebControls.WebParts.EditorZone> class so that it can be used with a zone template in the declarative markup of the Web page. The custom class overrides the OnDisplayModeChanged method, setting the background color of the zone to a specified color, and then calls the base method, which destroys all child and <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in preparation for entering or exiting edit display mode.  
-  
- [!code-vb[WebParts_EditorZoneBase_Common#13](~/add/codesnippet/visualbasic/e54d0e41-2a62-4994-8f59-_1.vb)]
- [!code-cs[WebParts_EditorZoneBase_Common#13](~/add/codesnippet/csharp/e54d0e41-2a62-4994-8f59-_1.cs)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and editing user interface (UI) are visible, you can see that the zone has the background color specified in the code.  
-  
- ]]></format>
-        </remarks>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -686,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -696,8 +425,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event, and calls the <see cref="System.Web.UI.WebControls.WebParts.EditorPartChrome.PerformPreRender%2A" /> method for the chrome elements of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,7 +437,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -719,29 +447,10 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">An <see cref="T:System.Object" /> that raises the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" /> event.</param>
-        <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" /> event and sets the <see cref="System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts%2A" /> collection to <see langword="null" /> in the zone in preparation for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control to enter or exit edit mode.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The OnSelectedWebPartChanged method enables you to provide custom handling for the event that occurs when an individual <xref:System.Web.UI.WebControls.WebParts.WebPart> control enters or exits edit mode.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the OnSelectedWebPartChanged method in a derived class. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The custom editor zone derives from the <xref:System.Web.UI.WebControls.WebParts.EditorZone> class so that it can be used with a zone template in the declarative markup of the Web page. The custom class overrides the OnSelectedWebPartChanged method, setting the background color of the specific control that is being edited, and then calls the base method.  
-  
- [!code-vb[WebParts_EditorZoneBase_Common#14](~/add/codesnippet/visualbasic/f8ed5b48-7a40-4597-a46c-_1.vb)]
- [!code-cs[WebParts_EditorZoneBase_Common#14](~/add/codesnippet/csharp/f8ed5b48-7a40-4597-a46c-_1.cs)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> and editing user interface (UI) are visible, you can see that the selected control has the background color specified in the code.  
-  
- ]]></format>
-        </remarks>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -751,7 +460,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -761,16 +469,9 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">A <see cref="T:System.String" /> that contains the argument for the event.</param>
-        <summary>Carries out the actions associated with one of the zone verbs, or raises an event that posts back to the server.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RaisePostBackEvent method carries out the respective actions associated with the OK verb, the cancel verb, or the apply verb, if one of these verbs was clicked in the user interface (UI). Otherwise, it raises an event that posts back to the server.  
-  
- ]]></format>
-        </remarks>
+        <param name="eventArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -780,7 +481,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -790,16 +490,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the zone's content.</param>
-        <summary>Renders the zone to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Render method overrides the base method from the <xref:System.Web.UI.WebControls.WebControl> class to call the <xref:System.Web.UI.Page.VerifyRenderingInServerForm%2A> method, which verifies that an HTML form is rendered for the zone control at run time. After the verification, the method then calls the base method to render the full contents of the zone.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -809,7 +502,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -819,30 +511,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the zone's body content.</param>
-        <summary>Overrides the base method to render the body area of a zone derived from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderBody method renders the body area of an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone, which is the main content area between the header and footer areas and contains <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
-  
- The RenderBody method overrides the base method in the <xref:System.Web.UI.WebControls.WebParts.WebZone> class to provide specialized rendering that addresses layout and style attributes that apply only to <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zones. The method renders a table that contains the entire contents of the body, and within that table, it sets different attribute values depending on various conditions, including the current display mode of the page. If there are no contained controls, it renders the value of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EmptyZoneText%2A> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the RenderBody method in a derived class. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The custom editor zone derives from the <xref:System.Web.UI.WebControls.WebParts.EditorZone> class so that it can be used with a zone template in the declarative markup of the Web page. The custom class overrides the RenderBody method, adding an HTML `<hr />` element to create a line between the header and body of the zone. It then calls the base method to render the rest of the zone's body contents.  
-  
- [!code-vb[WebParts_EditorZoneBase_Common#15](~/add/codesnippet/visualbasic/6b94a57c-2292-4dc5-a2fe-_1.vb)]
- [!code-cs[WebParts_EditorZoneBase_Common#15](~/add/codesnippet/csharp/6b94a57c-2292-4dc5-a2fe-_1.cs)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and editing user interface (UI) are visible, you can see the line created between the header and body of the editor zone.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -852,7 +523,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -862,28 +532,9 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the zone's body content.</param>
-        <summary>Renders the verbs that apply at the zone level.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The RenderVerbs method renders the verbs whose actions apply to the entire zone: the OK verb, the cancel verb, and the apply verb. These verbs are referenced in the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.OKVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CancelVerb%2A>, and <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ApplyVerb%2A> properties.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to override the RenderVerbs method in a derived class. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class overview topic.  
-  
- The custom editor zone derives from the <xref:System.Web.UI.WebControls.WebParts.EditorZone> class so that it can be used with a zone template in the declarative markup of the Web page. The custom class overrides the RenderVerbs method, adding some text to the existing value of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Text%2A> property for each of the zone-level verbs. It then calls the base method to render all the verbs.  
-  
- [!code-vb[WebParts_EditorZoneBase_Common#16](~/add/codesnippet/visualbasic/7f15513e-ba64-4bf1-aa78-_1.vb)]
- [!code-cs[WebParts_EditorZoneBase_Common#16](~/add/codesnippet/csharp/7f15513e-ba64-4bf1-aa78-_1.cs)]  
-  
- When you load the page in a browser, you can select **Edit Mode** in the drop-down list control to switch to edit mode. You can click the verbs menu (the down arrow) in the title bar of one of the controls, and click **Edit** to edit the selected control. When the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and editing user interface (UI) are visible, you can see the text has been changed on the buttons for the zone-level verbs at the bottom of the zone.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -893,7 +544,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -901,16 +551,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves any view-state changes that have occurred after a page was posted back to the server.</summary>
-        <returns>Returns the zone control's current view state. If no view state is associated with the zone, this method returns <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SaveViewState method calls the base method to save view state, and then also saves any view state associated with the apply, cancel, and OK verbs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -920,7 +563,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -928,15 +570,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks changes to a zone control's view state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TrackViewState method first calls the base method to track view state associated with an <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone, and then begins tracking view state for the apply, cancel, and OK verbs.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WebPartToEdit">
@@ -946,23 +581,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control that is currently being edited.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that is currently in edit mode.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Only one <xref:System.Web.UI.WebControls.WebParts.WebPart> control can be edited at a time, and when a control is in edit mode, the WebPartToEdit property provides a reference to that control. The control referenced is the same as the control that is referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart%2A> property. Therefore, a control that is currently being edited is always currently selected.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,17 +21,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the location of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />, or <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance specified with a unique network address configuration by describing the current instance of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> or <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> within the Peer-to-Peer Collaboration Infrastructure.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A peer "endpoint" describes a contact's presence location — the unique network address configuration that describes the currently available instance of the contact within the peer collaboration network. A single contact can be available at multiple endpoints within the peer collaboration network.  
-  
- A peer watching a contact can query any of the endpoints associated with that contact for specific peer presence, application, or object updates.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,12 +32,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Generates a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,15 +47,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endPoint" Type="System.Net.IPEndPoint" />
       </Parameters>
       <Docs>
-        <param name="endPoint">The endpoint associated with the peer.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class with the peer-associated endpoint contained in <see cref="T:System.Net.IPEndPoint" />.</summary>
+        <param name="endPoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +65,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -85,12 +72,10 @@
         <Parameter Name="endPointName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endPoint">The endpoint associated with the peer.</param>
-        <param name="endPointName">Specifies the name associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class with the peer-associated endpoint contained in <see cref="T:System.Net.IPEndPoint" /> and a string specifying <paramref name="endPointName" />.</summary>
+        <param name="endPoint">To be added.</param>
+        <param name="endPointName">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="endPoint" /> argument specifies <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="endPoint" /> specified is not a valid IPv6 endpoint.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,7 +85,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -108,9 +92,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</param>
-        <param name="streamingContext">The serialization destination associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</param>
-        <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance with the associated parameters required for serialization.</summary>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +105,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -134,7 +117,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +128,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -160,8 +142,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">Set to <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object and optionally releases the managed resources.</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,24 +154,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IPEndPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Net.IPEndPoint" /> that contains the IP address associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
-        <value>IP address associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To avoid corrupting the instance state, the caller should not change the EndPoint value if the instance was obtained from <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The specified EndPoint endpoint is not a valid IPv6 endpoint.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -199,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,11 +181,10 @@
         <Parameter Name="other" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Parameters>
       <Docs>
-        <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance to test for equality.</param>
-        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance provided has matching data, else <see langword="false" />.</returns>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -223,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,9 +203,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> to test for equality.</param>
-        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to the specified <see cref="T:System.Object" />.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> is equal to the specified object instance, else <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,7 +216,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,10 +226,10 @@
         <Parameter Name="objB" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to compare.</param>
-        <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to compare.</param>
-        <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> objects are considered equal.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instances provided have matching data, else <see langword="false" />.</returns>
+        <param name="objA">To be added.</param>
+        <param name="objB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,7 +240,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -279,10 +247,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the hash code for a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
-        <returns>A 32-bit signed integer hash code used to compare instances of this type.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -292,7 +259,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,9 +269,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The destination for the serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class instance with the data required to serialize the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance. A derived type must call the base type <see cref="System.Runtime.Serialization.ISerializable.GetObjectData%2A" /> method.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,24 +282,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.String" /> that represents a displayed name for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
-        <value>
-          <see cref="T:System.String" /> representing the display name of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To avoid corrupting the instance state, the caller should not change the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint%2A> value if the instance was obtained from <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NameChanged">
@@ -343,7 +300,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -358,9 +314,8 @@
         <ReturnType>System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.NameChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Signaled when the name associated with a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object changes.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnNameChanged">
@@ -370,7 +325,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -380,8 +334,8 @@
         <Parameter Name="nameChangedArgs" Type="System.Net.PeerToPeer.Collaboration.NameChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="nameChangedArgs">Specifies the type of change that has occurred to the <c>PeerName</c>.</param>
-        <summary>Called when a change occurs to the <paramref name="PeerName" /> specified by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
+        <param name="nameChangedArgs">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +346,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -410,19 +363,9 @@
         <ReturnType>System.ComponentModel.ISynchronizeInvoke</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When this property value is set, all events not fired as the result of an asynchronous operation will have the associated event handlers called back on the thread that created the specific SynchronizingObject.</summary>
-        <value>Object that implements the <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> interface and is used by instances of this type for event handler synchronization on the thread that created it.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
-  
- This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -432,7 +375,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -448,9 +390,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="context">The destination for the serialization.</param>
-        <summary>Populates the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance with the data obtained from the serialized source.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,7 +403,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,11 +410,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> that represents a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
-        <returns>
-          <see cref="T:System.String" /> representing a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

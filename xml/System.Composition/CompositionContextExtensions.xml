@@ -1,0 +1,67 @@
+<Type Name="CompositionContextExtensions" FullName="System.Composition.CompositionContextExtensions">
+  <TypeSignature Language="C#" Value="public static class CompositionContextExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CompositionContextExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContextExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.TypedParts</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SatisfyImports">
+      <MemberSignature Language="C#" Value="public static void SatisfyImports (this System.Composition.CompositionContext compositionContext, object objectWithLooseImports);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SatisfyImports(class System.Composition.CompositionContext compositionContext, object objectWithLooseImports) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compositionContext" Type="System.Composition.CompositionContext" RefType="this" />
+        <Parameter Name="objectWithLooseImports" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="compositionContext">To be added.</param>
+        <param name="objectWithLooseImports">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SatisfyImports">
+      <MemberSignature Language="C#" Value="public static void SatisfyImports (this System.Composition.CompositionContext compositionContext, object objectWithLooseImports, System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SatisfyImports(class System.Composition.CompositionContext compositionContext, object objectWithLooseImports, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compositionContext" Type="System.Composition.CompositionContext" RefType="this" />
+        <Parameter Name="objectWithLooseImports" Type="System.Object" />
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <param name="compositionContext">To be added.</param>
+        <param name="objectWithLooseImports">To be added.</param>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

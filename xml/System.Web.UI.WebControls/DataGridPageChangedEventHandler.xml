@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridPageChangedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,29 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="source">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridPageChangedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" /> event of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event is raised when a button in the page selection element of the <xref:System.Web.UI.WebControls.DataGrid> control is clicked.  
-  
- When you create a DataGridPageChangedEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event. It displays pages on the <xref:System.Web.UI.WebControls.DataGrid> control in 10-item increments.  
-  
- [!code-vb[DataGridAllowPaging#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_404_1.aspx)]
- [!code-cs[DataGridAllowPaging#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_404_1.aspx)]  
-  
- [!code-cs[PageIndexChanged#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_404_2.aspx)]
- [!code-vb[PageIndexChanged#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_404_2.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <param name="source">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

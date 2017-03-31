@@ -4,20 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IStoryFragmentProvider" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines a method for adding the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> part of the markup to an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] package.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element of an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] package, see chapter 9 in the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://go.microsoft.com/fwlink/?LinkId=67000).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddStoryFragment">
@@ -27,7 +19,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -35,16 +26,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> element to an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] package.</summary>
-        <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsStructure" /> that represents a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> element in an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] package.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element of an [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] package, see chapter 9 in the [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://go.microsoft.com/fwlink/?LinkId=67000).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Form.InputLanguageChanged" /> event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the data from the InputLanguageChangedEventArgs to make decisions about whether to change Input Method Editors (IMEs) or swap right-to-left values. You can also change the <xref:System.Threading.Thread.CurrentCulture%2A> of a thread and the <xref:System.Threading.Thread.CurrentUICulture%2A> properties so that different resources get picked up.  
-  
- An InputLanguageChangedEventArgs identifies the locale and the character set of the new input language.  
-  
- The <xref:System.Windows.Forms.Form.InputLanguageChanging> event precedes the <xref:System.Windows.Forms.Form.InputLanguageChanged> event.  
-  
-   
-  
-## Examples  
- The following example creates a new <xref:System.Windows.Forms.Form> and attaches an event handler to the <xref:System.Windows.Forms.Form.InputLanguageChanged> event. This event changes the `IMEmode` when the input language changes to Japanese.  
-  
- [!code-cpp[InputLanguageChanged#1](~/add/codesnippet/cpp/t-system.windows.forms.i_15_1.cpp)]
- [!code-vb[InputLanguageChanged#1](~/add/codesnippet/visualbasic/t-system.windows.forms.i_15_1.vb)]
- [!code-cs[InputLanguageChanged#1](~/add/codesnippet/csharp/t-system.windows.forms.i_15_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -51,9 +29,9 @@
         <Parameter Name="charSet" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="culture">The locale of the input language.</param>
-        <param name="charSet">The character set associated with the new input language.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the specified locale and character set.</summary>
+        <param name="culture">To be added.</param>
+        <param name="charSet">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +42,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -72,19 +49,10 @@
         <Parameter Name="charSet" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="inputLanguage">The input language.</param>
-        <param name="charSet">The character set associated with the new input language.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the specified input language and character set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The input language specifies a culture/keyboard layout pair.  
-  
- See the <xref:System.Windows.Forms.InputLanguageChangedEventArgs.CharSet%2A> property for a list of valid character sets.  
-  
- ]]></format>
-        </remarks>
+        <param name="inputLanguage">To be added.</param>
+        <param name="charSet">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CharSet">
@@ -94,204 +62,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the character set associated with the new input language.</summary>
-        <value>An 8-bit unsigned integer that corresponds to the character set, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Character Set  
-  
- </term>  
-<description> Value  
-  
- </description>  
-</listheader>  
-<item>  
-<term> ANSI_CHARSET  
-  
- </term>  
-<description> 0  
-  
- </description>  
-</item>  
-<item>  
-<term> DEFAULT_CHARSET  
-  
- </term>  
-<description> 1  
-  
- </description>  
-</item>  
-<item>  
-<term> SYMBOL_CHARSET  
-  
- </term>  
-<description> 2  
-  
- </description>  
-</item>  
-<item>  
-<term> MAC_CHARSET  
-  
- </term>  
-<description> 77  
-  
- </description>  
-</item>  
-<item>  
-<term> SHIFTJI_CHARSET  
-  
- </term>  
-<description> 128  
-  
- </description>  
-</item>  
-<item>  
-<term> HANGEUL_CHARSET  
-  
- </term>  
-<description> 129  
-  
- </description>  
-</item>  
-<item>  
-<term> HANGUL_CHARSET  
-  
- </term>  
-<description> 129  
-  
- </description>  
-</item>  
-<item>  
-<term> JOHAB_CHARSET  
-  
- </term>  
-<description> 130  
-  
- </description>  
-</item>  
-<item>  
-<term> GB2312_CHARSET  
-  
- </term>  
-<description> 134  
-  
- </description>  
-</item>  
-<item>  
-<term> CHINESEBIG5_CHARSET  
-  
- </term>  
-<description> 136  
-  
- </description>  
-</item>  
-<item>  
-<term> GREEK_CHARSET  
-  
- </term>  
-<description> 161  
-  
- </description>  
-</item>  
-<item>  
-<term> TURKISH_CHARSET  
-  
- </term>  
-<description> 162  
-  
- </description>  
-</item>  
-<item>  
-<term> VIETNAMESE_CHARSET  
-  
- </term>  
-<description> 163  
-  
- </description>  
-</item>  
-<item>  
-<term> HEBREW_CHARSET  
-  
- </term>  
-<description> 177  
-  
- </description>  
-</item>  
-<item>  
-<term> ARABIC_CHARSET  
-  
- </term>  
-<description> 178  
-  
- </description>  
-</item>  
-<item>  
-<term> BALTIC_CHARSET  
-  
- </term>  
-<description> 186  
-  
- </description>  
-</item>  
-<item>  
-<term> RUSSIAN_CHARSET  
-  
- </term>  
-<description> 204  
-  
- </description>  
-</item>  
-<item>  
-<term> THAI_CHARSET  
-  
- </term>  
-<description> 222  
-  
- </description>  
-</item>  
-<item>  
-<term> EASTEUROPE_CHARSET  
-  
- </term>  
-<description> 238  
-  
- </description>  
-</item>  
-<item>  
-<term> OEM_CHARSET  
-  
- </term>  
-<description> 255  
-  
- </description>  
-</item>  
-</list></value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is the Win32 character set that the user switched to. On ANSI systems, this property can be used to create fonts that can display the correct character set. On Unicode systems, you typically do not need to use this property. Instead, use the <xref:System.Globalization.CultureInfo> class for these functionalities.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#400](~/add/codesnippet/csharp/p-system.windows.forms.i_31_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#400](~/add/codesnippet/visualbasic/p-system.windows.forms.i_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -301,33 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the locale of the input language.</summary>
-        <value>A <see cref="T:System.Globalization.CultureInfo" /> that specifies the locale of the input language.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Culture property specifies a <xref:System.Globalization.CultureInfo> and defines a set of user preference information dependent on the language, sublanguage, country/region, and cultural conventions of the user.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#400](~/add/codesnippet/csharp/p-system.windows.forms.i_21_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#400](~/add/codesnippet/visualbasic/p-system.windows.forms.i_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InputLanguage">
@@ -337,28 +98,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.InputLanguage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the input language.</summary>
-        <value>The input language associated with the object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#400](~/add/codesnippet/csharp/p-system.windows.forms.i_7_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#400](~/add/codesnippet/visualbasic/p-system.windows.forms.i_7_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

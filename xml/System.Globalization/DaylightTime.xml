@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.DaylightTime" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,18 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the period of daylight saving time.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Daylight saving time is a period during the year when the clock is advanced, usually by an hour, to take advantage of extended daylight hours. At the end of the period, the clock is set back to the standard time.  
-  
-> [!WARNING]
->  The DaylightTime object returned by the <xref:System.TimeZone.GetDaylightChanges%2A?displayProperty=fullName> method recognizes only the time zone adjustment rule that is currently in effect, and ignores any previous adjustment rules for which the system has information. Instead, it applies the current adjustment rule backward in time to periods when it may not have been in effect. To retrieve information about all the known adjustment rules for a particular time zone, use the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +32,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="start" Type="System.DateTime" />
@@ -47,18 +45,11 @@
         <Parameter Name="delta" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="start">The object that represents the date and time when daylight saving time begins. The value must be in local time.</param>
-        <param name="end">The object that represents the date and time when daylight saving time ends. The value must be in local time.</param>
-        <param name="delta">The object that represents the difference between standard time and daylight saving time, in ticks.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Globalization.DaylightTime" /> class with the specified start, end, and time difference information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `start` parameter becomes the value of the <xref:System.Globalization.DaylightTime.Start%2A> property of the new object. The `end` parameter becomes the value of the <xref:System.Globalization.DaylightTime.End%2A> property of the new object. The `delta` parameter becomes the value of the <xref:System.Globalization.DaylightTime.Delta%2A> property of the new object.  
-  
- ]]></format>
-        </remarks>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <param name="delta">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Delta">
@@ -68,25 +59,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time interval that represents the difference between standard time and daylight saving time.</summary>
-        <value>The time interval that represents the difference between standard time and daylight saving time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property corresponds to the <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A?displayProperty=fullName> property. Generally, the <xref:System.TimeZoneInfo> class is a more accurate source of information on time zone adjustments than the <xref:System.TimeZone> and <xref:System.Globalization.DaylightTime> classes.  
-  
- If the property value is positive, at the start of daylight saving time, the clock time is advanced by the length of time specified by this property. At the end of daylight saving time, the clock time is set back by the length of time specified by this property. If the property value is negative, the clock time is set back at the start of daylight saving time and advanced at the end.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -96,25 +82,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that represents the date and time when the daylight saving period ends.</summary>
-        <value>The object that represents the date and time when the daylight saving period ends. The value is in local time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property corresponds to the <xref:System.TimeZoneInfo.AdjustmentRule.DateEnd%2A?displayProperty=fullName> property. Generally, the <xref:System.TimeZoneInfo> class is a more accurate source of information on time zone adjustments than the <xref:System.TimeZone> and <xref:System.Globalization.DaylightTime> classes.  
-  
- When the daylight saving period ends, the clock time is set back to standard time.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -124,25 +105,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that represents the date and time when the daylight saving period begins.</summary>
-        <value>The object that represents the date and time when the daylight saving period begins. The value is in local time.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property corresponds to the <xref:System.TimeZoneInfo.AdjustmentRule.DateStart%2A?displayProperty=fullName> property. Generally, the <xref:System.TimeZoneInfo> class is a more accurate source of information on time zone adjustments than the <xref:System.TimeZone> and <xref:System.Globalization.DaylightTime> classes.  
-  
- When the daylight saving period begins, the clock time is advanced by the number of ticks defined by the <xref:System.Globalization.DaylightTime.Delta%2A> property to take advantage of the extended daylight hours.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,1525 @@
+<Type Name="MetadataBuilder" FullName="System.Reflection.Metadata.Ecma335.MetadataBuilder">
+  <TypeSignature Language="C#" Value="public sealed class MetadataBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataBuilder (int userStringHeapStartOffset = 0, int stringHeapStartOffset = 0, int blobHeapStartOffset = 0, int guidHeapStartOffset = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 userStringHeapStartOffset, int32 stringHeapStartOffset, int32 blobHeapStartOffset, int32 guidHeapStartOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="userStringHeapStartOffset" Type="System.Int32" />
+        <Parameter Name="stringHeapStartOffset" Type="System.Int32" />
+        <Parameter Name="blobHeapStartOffset" Type="System.Int32" />
+        <Parameter Name="guidHeapStartOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userStringHeapStartOffset">To be added.</param>
+        <param name="stringHeapStartOffset">To be added.</param>
+        <param name="blobHeapStartOffset">To be added.</param>
+        <param name="guidHeapStartOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.AssemblyDefinitionHandle AddAssembly (System.Reflection.Metadata.StringHandle name, Version version, System.Reflection.Metadata.StringHandle culture, System.Reflection.Metadata.BlobHandle publicKey, System.Reflection.AssemblyFlags flags, System.Reflection.AssemblyHashAlgorithm hashAlgorithm);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.AssemblyDefinitionHandle AddAssembly(valuetype System.Reflection.Metadata.StringHandle name, class System.Version version, valuetype System.Reflection.Metadata.StringHandle culture, valuetype System.Reflection.Metadata.BlobHandle publicKey, valuetype System.Reflection.AssemblyFlags flags, valuetype System.Reflection.AssemblyHashAlgorithm hashAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddAssembly(System.Reflection.Metadata.StringHandle,System.Version,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle,System.Reflection.AssemblyFlags,System.Reflection.AssemblyHashAlgorithm)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.AssemblyDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="version" Type="System.Version" />
+        <Parameter Name="culture" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="publicKey" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="flags" Type="System.Reflection.AssemblyFlags" />
+        <Parameter Name="hashAlgorithm" Type="System.Reflection.AssemblyHashAlgorithm" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="publicKey">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssemblyFile">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.AssemblyFileHandle AddAssemblyFile (System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.BlobHandle hashValue, bool containsMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.AssemblyFileHandle AddAssemblyFile(valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.BlobHandle hashValue, bool containsMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddAssemblyFile(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.AssemblyFileHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="hashValue" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="containsMetadata" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="hashValue">To be added.</param>
+        <param name="containsMetadata">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssemblyReference">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.AssemblyReferenceHandle AddAssemblyReference (System.Reflection.Metadata.StringHandle name, Version version, System.Reflection.Metadata.StringHandle culture, System.Reflection.Metadata.BlobHandle publicKeyOrToken, System.Reflection.AssemblyFlags flags, System.Reflection.Metadata.BlobHandle hashValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.AssemblyReferenceHandle AddAssemblyReference(valuetype System.Reflection.Metadata.StringHandle name, class System.Version version, valuetype System.Reflection.Metadata.StringHandle culture, valuetype System.Reflection.Metadata.BlobHandle publicKeyOrToken, valuetype System.Reflection.AssemblyFlags flags, valuetype System.Reflection.Metadata.BlobHandle hashValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddAssemblyReference(System.Reflection.Metadata.StringHandle,System.Version,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle,System.Reflection.AssemblyFlags,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.AssemblyReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="version" Type="System.Version" />
+        <Parameter Name="culture" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="publicKeyOrToken" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="flags" Type="System.Reflection.AssemblyFlags" />
+        <Parameter Name="hashValue" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="publicKeyOrToken">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="hashValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConstant">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ConstantHandle AddConstant (System.Reflection.Metadata.EntityHandle parent, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ConstantHandle AddConstant(valuetype System.Reflection.Metadata.EntityHandle parent, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddConstant(System.Reflection.Metadata.EntityHandle,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ConstantHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCustomAttribute">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandle AddCustomAttribute (System.Reflection.Metadata.EntityHandle parent, System.Reflection.Metadata.EntityHandle constructor, System.Reflection.Metadata.BlobHandle value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomAttributeHandle AddCustomAttribute(valuetype System.Reflection.Metadata.EntityHandle parent, valuetype System.Reflection.Metadata.EntityHandle constructor, valuetype System.Reflection.Metadata.BlobHandle value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddCustomAttribute(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.CustomAttributeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="constructor" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="value" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="constructor">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCustomDebugInformation">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomDebugInformationHandle AddCustomDebugInformation (System.Reflection.Metadata.EntityHandle parent, System.Reflection.Metadata.GuidHandle kind, System.Reflection.Metadata.BlobHandle value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomDebugInformationHandle AddCustomDebugInformation(valuetype System.Reflection.Metadata.EntityHandle parent, valuetype System.Reflection.Metadata.GuidHandle kind, valuetype System.Reflection.Metadata.BlobHandle value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddCustomDebugInformation(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.GuidHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.CustomDebugInformationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="kind" Type="System.Reflection.Metadata.GuidHandle" />
+        <Parameter Name="value" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="kind">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDeclarativeSecurityAttribute">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.DeclarativeSecurityAttributeHandle AddDeclarativeSecurityAttribute (System.Reflection.Metadata.EntityHandle parent, System.Reflection.DeclarativeSecurityAction action, System.Reflection.Metadata.BlobHandle permissionSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.DeclarativeSecurityAttributeHandle AddDeclarativeSecurityAttribute(valuetype System.Reflection.Metadata.EntityHandle parent, valuetype System.Reflection.DeclarativeSecurityAction action, valuetype System.Reflection.Metadata.BlobHandle permissionSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddDeclarativeSecurityAttribute(System.Reflection.Metadata.EntityHandle,System.Reflection.DeclarativeSecurityAction,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.DeclarativeSecurityAttributeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="action" Type="System.Reflection.DeclarativeSecurityAction" />
+        <Parameter Name="permissionSet" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="permissionSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDocument">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.DocumentHandle AddDocument (System.Reflection.Metadata.BlobHandle name, System.Reflection.Metadata.GuidHandle hashAlgorithm, System.Reflection.Metadata.BlobHandle hash, System.Reflection.Metadata.GuidHandle language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.DocumentHandle AddDocument(valuetype System.Reflection.Metadata.BlobHandle name, valuetype System.Reflection.Metadata.GuidHandle hashAlgorithm, valuetype System.Reflection.Metadata.BlobHandle hash, valuetype System.Reflection.Metadata.GuidHandle language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddDocument(System.Reflection.Metadata.BlobHandle,System.Reflection.Metadata.GuidHandle,System.Reflection.Metadata.BlobHandle,System.Reflection.Metadata.GuidHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.DocumentHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="hashAlgorithm" Type="System.Reflection.Metadata.GuidHandle" />
+        <Parameter Name="hash" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="language" Type="System.Reflection.Metadata.GuidHandle" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="hash">To be added.</param>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEncLogEntry">
+      <MemberSignature Language="C#" Value="public void AddEncLogEntry (System.Reflection.Metadata.EntityHandle entity, System.Reflection.Metadata.Ecma335.EditAndContinueOperation code);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEncLogEntry(valuetype System.Reflection.Metadata.EntityHandle entity, valuetype System.Reflection.Metadata.Ecma335.EditAndContinueOperation code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddEncLogEntry(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.Ecma335.EditAndContinueOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="code" Type="System.Reflection.Metadata.Ecma335.EditAndContinueOperation" />
+      </Parameters>
+      <Docs>
+        <param name="entity">To be added.</param>
+        <param name="code">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEncMapEntry">
+      <MemberSignature Language="C#" Value="public void AddEncMapEntry (System.Reflection.Metadata.EntityHandle entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEncMapEntry(valuetype System.Reflection.Metadata.EntityHandle entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddEncMapEntry(System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="entity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EventDefinitionHandle AddEvent (System.Reflection.EventAttributes attributes, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.EntityHandle type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.EventDefinitionHandle AddEvent(valuetype System.Reflection.EventAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.EntityHandle type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddEvent(System.Reflection.EventAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.EventDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.EventAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEventMap">
+      <MemberSignature Language="C#" Value="public void AddEventMap (System.Reflection.Metadata.TypeDefinitionHandle declaringType, System.Reflection.Metadata.EventDefinitionHandle eventList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEventMap(valuetype System.Reflection.Metadata.TypeDefinitionHandle declaringType, valuetype System.Reflection.Metadata.EventDefinitionHandle eventList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddEventMap(System.Reflection.Metadata.TypeDefinitionHandle,System.Reflection.Metadata.EventDefinitionHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="declaringType" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="eventList" Type="System.Reflection.Metadata.EventDefinitionHandle" />
+      </Parameters>
+      <Docs>
+        <param name="declaringType">To be added.</param>
+        <param name="eventList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddExportedType">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ExportedTypeHandle AddExportedType (System.Reflection.TypeAttributes attributes, System.Reflection.Metadata.StringHandle namespace, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.EntityHandle implementation, int typeDefinitionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ExportedTypeHandle AddExportedType(valuetype System.Reflection.TypeAttributes attributes, valuetype System.Reflection.Metadata.StringHandle namespace, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.EntityHandle implementation, int32 typeDefinitionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddExportedType(System.Reflection.TypeAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.EntityHandle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ExportedTypeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.TypeAttributes" />
+        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="implementation" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="typeDefinitionId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="namespace">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="implementation">To be added.</param>
+        <param name="typeDefinitionId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFieldDefinition">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.FieldDefinitionHandle AddFieldDefinition (System.Reflection.FieldAttributes attributes, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.BlobHandle signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.FieldDefinitionHandle AddFieldDefinition(valuetype System.Reflection.FieldAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.BlobHandle signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddFieldDefinition(System.Reflection.FieldAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.FieldDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFieldLayout">
+      <MemberSignature Language="C#" Value="public void AddFieldLayout (System.Reflection.Metadata.FieldDefinitionHandle field, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFieldLayout(valuetype System.Reflection.Metadata.FieldDefinitionHandle field, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddFieldLayout(System.Reflection.Metadata.FieldDefinitionHandle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.Reflection.Metadata.FieldDefinitionHandle" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="field">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFieldRelativeVirtualAddress">
+      <MemberSignature Language="C#" Value="public void AddFieldRelativeVirtualAddress (System.Reflection.Metadata.FieldDefinitionHandle field, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFieldRelativeVirtualAddress(valuetype System.Reflection.Metadata.FieldDefinitionHandle field, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddFieldRelativeVirtualAddress(System.Reflection.Metadata.FieldDefinitionHandle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.Reflection.Metadata.FieldDefinitionHandle" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="field">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddGenericParameter">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GenericParameterHandle AddGenericParameter (System.Reflection.Metadata.EntityHandle parent, System.Reflection.GenericParameterAttributes attributes, System.Reflection.Metadata.StringHandle name, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.GenericParameterHandle AddGenericParameter(valuetype System.Reflection.Metadata.EntityHandle parent, valuetype System.Reflection.GenericParameterAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddGenericParameter(System.Reflection.Metadata.EntityHandle,System.Reflection.GenericParameterAttributes,System.Reflection.Metadata.StringHandle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.GenericParameterHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.GenericParameterAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddGenericParameterConstraint">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GenericParameterConstraintHandle AddGenericParameterConstraint (System.Reflection.Metadata.GenericParameterHandle genericParameter, System.Reflection.Metadata.EntityHandle constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.GenericParameterConstraintHandle AddGenericParameterConstraint(valuetype System.Reflection.Metadata.GenericParameterHandle genericParameter, valuetype System.Reflection.Metadata.EntityHandle constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddGenericParameterConstraint(System.Reflection.Metadata.GenericParameterHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.GenericParameterConstraintHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericParameter" Type="System.Reflection.Metadata.GenericParameterHandle" />
+        <Parameter Name="constraint" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="genericParameter">To be added.</param>
+        <param name="constraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportScope">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ImportScopeHandle AddImportScope (System.Reflection.Metadata.ImportScopeHandle parentScope, System.Reflection.Metadata.BlobHandle imports);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ImportScopeHandle AddImportScope(valuetype System.Reflection.Metadata.ImportScopeHandle parentScope, valuetype System.Reflection.Metadata.BlobHandle imports) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddImportScope(System.Reflection.Metadata.ImportScopeHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportScopeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentScope" Type="System.Reflection.Metadata.ImportScopeHandle" />
+        <Parameter Name="imports" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="parentScope">To be added.</param>
+        <param name="imports">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddInterfaceImplementation">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.InterfaceImplementationHandle AddInterfaceImplementation (System.Reflection.Metadata.TypeDefinitionHandle type, System.Reflection.Metadata.EntityHandle implementedInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.InterfaceImplementationHandle AddInterfaceImplementation(valuetype System.Reflection.Metadata.TypeDefinitionHandle type, valuetype System.Reflection.Metadata.EntityHandle implementedInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddInterfaceImplementation(System.Reflection.Metadata.TypeDefinitionHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.InterfaceImplementationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="implementedInterface" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="implementedInterface">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLocalConstant">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.LocalConstantHandle AddLocalConstant (System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.BlobHandle signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.LocalConstantHandle AddLocalConstant(valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.BlobHandle signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddLocalConstant(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.LocalConstantHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLocalScope">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.LocalScopeHandle AddLocalScope (System.Reflection.Metadata.MethodDefinitionHandle method, System.Reflection.Metadata.ImportScopeHandle importScope, System.Reflection.Metadata.LocalVariableHandle variableList, System.Reflection.Metadata.LocalConstantHandle constantList, int startOffset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.LocalScopeHandle AddLocalScope(valuetype System.Reflection.Metadata.MethodDefinitionHandle method, valuetype System.Reflection.Metadata.ImportScopeHandle importScope, valuetype System.Reflection.Metadata.LocalVariableHandle variableList, valuetype System.Reflection.Metadata.LocalConstantHandle constantList, int32 startOffset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddLocalScope(System.Reflection.Metadata.MethodDefinitionHandle,System.Reflection.Metadata.ImportScopeHandle,System.Reflection.Metadata.LocalVariableHandle,System.Reflection.Metadata.LocalConstantHandle,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.LocalScopeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="importScope" Type="System.Reflection.Metadata.ImportScopeHandle" />
+        <Parameter Name="variableList" Type="System.Reflection.Metadata.LocalVariableHandle" />
+        <Parameter Name="constantList" Type="System.Reflection.Metadata.LocalConstantHandle" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <param name="importScope">To be added.</param>
+        <param name="variableList">To be added.</param>
+        <param name="constantList">To be added.</param>
+        <param name="startOffset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLocalVariable">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.LocalVariableHandle AddLocalVariable (System.Reflection.Metadata.LocalVariableAttributes attributes, int index, System.Reflection.Metadata.StringHandle name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.LocalVariableHandle AddLocalVariable(valuetype System.Reflection.Metadata.LocalVariableAttributes attributes, int32 index, valuetype System.Reflection.Metadata.StringHandle name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddLocalVariable(System.Reflection.Metadata.LocalVariableAttributes,System.Int32,System.Reflection.Metadata.StringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.LocalVariableHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.LocalVariableAttributes" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddManifestResource">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ManifestResourceHandle AddManifestResource (System.Reflection.ManifestResourceAttributes attributes, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.EntityHandle implementation, uint offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ManifestResourceHandle AddManifestResource(valuetype System.Reflection.ManifestResourceAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.EntityHandle implementation, unsigned int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddManifestResource(System.Reflection.ManifestResourceAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.EntityHandle,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ManifestResourceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.ManifestResourceAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="implementation" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="offset" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="implementation">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMarshallingDescriptor">
+      <MemberSignature Language="C#" Value="public void AddMarshallingDescriptor (System.Reflection.Metadata.EntityHandle parent, System.Reflection.Metadata.BlobHandle descriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMarshallingDescriptor(valuetype System.Reflection.Metadata.EntityHandle parent, valuetype System.Reflection.Metadata.BlobHandle descriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMarshallingDescriptor(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="descriptor" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="descriptor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMemberReference">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MemberReferenceHandle AddMemberReference (System.Reflection.Metadata.EntityHandle parent, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.BlobHandle signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MemberReferenceHandle AddMemberReference(valuetype System.Reflection.Metadata.EntityHandle parent, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.BlobHandle signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMemberReference(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MemberReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodDebugInformation">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDebugInformationHandle AddMethodDebugInformation (System.Reflection.Metadata.DocumentHandle document, System.Reflection.Metadata.BlobHandle sequencePoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodDebugInformationHandle AddMethodDebugInformation(valuetype System.Reflection.Metadata.DocumentHandle document, valuetype System.Reflection.Metadata.BlobHandle sequencePoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMethodDebugInformation(System.Reflection.Metadata.DocumentHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodDebugInformationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Reflection.Metadata.DocumentHandle" />
+        <Parameter Name="sequencePoints" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="document">To be added.</param>
+        <param name="sequencePoints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodDefinition">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDefinitionHandle AddMethodDefinition (System.Reflection.MethodAttributes attributes, System.Reflection.MethodImplAttributes implAttributes, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.BlobHandle signature, int bodyOffset, System.Reflection.Metadata.ParameterHandle parameterList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodDefinitionHandle AddMethodDefinition(valuetype System.Reflection.MethodAttributes attributes, valuetype System.Reflection.MethodImplAttributes implAttributes, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.BlobHandle signature, int32 bodyOffset, valuetype System.Reflection.Metadata.ParameterHandle parameterList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMethodDefinition(System.Reflection.MethodAttributes,System.Reflection.MethodImplAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle,System.Int32,System.Reflection.Metadata.ParameterHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" />
+        <Parameter Name="implAttributes" Type="System.Reflection.MethodImplAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="bodyOffset" Type="System.Int32" />
+        <Parameter Name="parameterList" Type="System.Reflection.Metadata.ParameterHandle" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="implAttributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="signature">To be added.</param>
+        <param name="bodyOffset">To be added.</param>
+        <param name="parameterList">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodImplementation">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodImplementationHandle AddMethodImplementation (System.Reflection.Metadata.TypeDefinitionHandle type, System.Reflection.Metadata.EntityHandle methodBody, System.Reflection.Metadata.EntityHandle methodDeclaration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodImplementationHandle AddMethodImplementation(valuetype System.Reflection.Metadata.TypeDefinitionHandle type, valuetype System.Reflection.Metadata.EntityHandle methodBody, valuetype System.Reflection.Metadata.EntityHandle methodDeclaration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMethodImplementation(System.Reflection.Metadata.TypeDefinitionHandle,System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodImplementationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="methodBody" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="methodDeclaration" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="methodBody">To be added.</param>
+        <param name="methodDeclaration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodImport">
+      <MemberSignature Language="C#" Value="public void AddMethodImport (System.Reflection.Metadata.MethodDefinitionHandle method, System.Reflection.MethodImportAttributes attributes, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.ModuleReferenceHandle module);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMethodImport(valuetype System.Reflection.Metadata.MethodDefinitionHandle method, valuetype System.Reflection.MethodImportAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.ModuleReferenceHandle module) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMethodImport(System.Reflection.Metadata.MethodDefinitionHandle,System.Reflection.MethodImportAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.ModuleReferenceHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.MethodImportAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="module" Type="System.Reflection.Metadata.ModuleReferenceHandle" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="module">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodSemantics">
+      <MemberSignature Language="C#" Value="public void AddMethodSemantics (System.Reflection.Metadata.EntityHandle association, System.Reflection.MethodSemanticsAttributes semantics, System.Reflection.Metadata.MethodDefinitionHandle methodDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMethodSemantics(valuetype System.Reflection.Metadata.EntityHandle association, valuetype System.Reflection.MethodSemanticsAttributes semantics, valuetype System.Reflection.Metadata.MethodDefinitionHandle methodDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMethodSemantics(System.Reflection.Metadata.EntityHandle,System.Reflection.MethodSemanticsAttributes,System.Reflection.Metadata.MethodDefinitionHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="association" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="semantics" Type="System.Reflection.MethodSemanticsAttributes" />
+        <Parameter Name="methodDefinition" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+      </Parameters>
+      <Docs>
+        <param name="association">To be added.</param>
+        <param name="semantics">To be added.</param>
+        <param name="methodDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethodSpecification">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSpecificationHandle AddMethodSpecification (System.Reflection.Metadata.EntityHandle method, System.Reflection.Metadata.BlobHandle instantiation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSpecificationHandle AddMethodSpecification(valuetype System.Reflection.Metadata.EntityHandle method, valuetype System.Reflection.Metadata.BlobHandle instantiation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddMethodSpecification(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodSpecificationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="instantiation" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <param name="instantiation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddModule">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ModuleDefinitionHandle AddModule (int generation, System.Reflection.Metadata.StringHandle moduleName, System.Reflection.Metadata.GuidHandle mvid, System.Reflection.Metadata.GuidHandle encId, System.Reflection.Metadata.GuidHandle encBaseId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ModuleDefinitionHandle AddModule(int32 generation, valuetype System.Reflection.Metadata.StringHandle moduleName, valuetype System.Reflection.Metadata.GuidHandle mvid, valuetype System.Reflection.Metadata.GuidHandle encId, valuetype System.Reflection.Metadata.GuidHandle encBaseId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddModule(System.Int32,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.GuidHandle,System.Reflection.Metadata.GuidHandle,System.Reflection.Metadata.GuidHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ModuleDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="generation" Type="System.Int32" />
+        <Parameter Name="moduleName" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="mvid" Type="System.Reflection.Metadata.GuidHandle" />
+        <Parameter Name="encId" Type="System.Reflection.Metadata.GuidHandle" />
+        <Parameter Name="encBaseId" Type="System.Reflection.Metadata.GuidHandle" />
+      </Parameters>
+      <Docs>
+        <param name="generation">To be added.</param>
+        <param name="moduleName">To be added.</param>
+        <param name="mvid">To be added.</param>
+        <param name="encId">To be added.</param>
+        <param name="encBaseId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddModuleReference">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ModuleReferenceHandle AddModuleReference (System.Reflection.Metadata.StringHandle moduleName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ModuleReferenceHandle AddModuleReference(valuetype System.Reflection.Metadata.StringHandle moduleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddModuleReference(System.Reflection.Metadata.StringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ModuleReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moduleName" Type="System.Reflection.Metadata.StringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="moduleName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNestedType">
+      <MemberSignature Language="C#" Value="public void AddNestedType (System.Reflection.Metadata.TypeDefinitionHandle type, System.Reflection.Metadata.TypeDefinitionHandle enclosingType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNestedType(valuetype System.Reflection.Metadata.TypeDefinitionHandle type, valuetype System.Reflection.Metadata.TypeDefinitionHandle enclosingType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddNestedType(System.Reflection.Metadata.TypeDefinitionHandle,System.Reflection.Metadata.TypeDefinitionHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="enclosingType" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="enclosingType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParameter">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ParameterHandle AddParameter (System.Reflection.ParameterAttributes attributes, System.Reflection.Metadata.StringHandle name, int sequenceNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ParameterHandle AddParameter(valuetype System.Reflection.ParameterAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, int32 sequenceNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddParameter(System.Reflection.ParameterAttributes,System.Reflection.Metadata.StringHandle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ParameterHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.ParameterAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="sequenceNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="sequenceNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProperty">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.PropertyDefinitionHandle AddProperty (System.Reflection.PropertyAttributes attributes, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.BlobHandle signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.PropertyDefinitionHandle AddProperty(valuetype System.Reflection.PropertyAttributes attributes, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.BlobHandle signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddProperty(System.Reflection.PropertyAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.PropertyDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.PropertyAttributes" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPropertyMap">
+      <MemberSignature Language="C#" Value="public void AddPropertyMap (System.Reflection.Metadata.TypeDefinitionHandle declaringType, System.Reflection.Metadata.PropertyDefinitionHandle propertyList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPropertyMap(valuetype System.Reflection.Metadata.TypeDefinitionHandle declaringType, valuetype System.Reflection.Metadata.PropertyDefinitionHandle propertyList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddPropertyMap(System.Reflection.Metadata.TypeDefinitionHandle,System.Reflection.Metadata.PropertyDefinitionHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="declaringType" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="propertyList" Type="System.Reflection.Metadata.PropertyDefinitionHandle" />
+      </Parameters>
+      <Docs>
+        <param name="declaringType">To be added.</param>
+        <param name="propertyList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStandaloneSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StandaloneSignatureHandle AddStandaloneSignature (System.Reflection.Metadata.BlobHandle signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.StandaloneSignatureHandle AddStandaloneSignature(valuetype System.Reflection.Metadata.BlobHandle signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddStandaloneSignature(System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.StandaloneSignatureHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStateMachineMethod">
+      <MemberSignature Language="C#" Value="public void AddStateMachineMethod (System.Reflection.Metadata.MethodDefinitionHandle moveNextMethod, System.Reflection.Metadata.MethodDefinitionHandle kickoffMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddStateMachineMethod(valuetype System.Reflection.Metadata.MethodDefinitionHandle moveNextMethod, valuetype System.Reflection.Metadata.MethodDefinitionHandle kickoffMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddStateMachineMethod(System.Reflection.Metadata.MethodDefinitionHandle,System.Reflection.Metadata.MethodDefinitionHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moveNextMethod" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="kickoffMethod" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+      </Parameters>
+      <Docs>
+        <param name="moveNextMethod">To be added.</param>
+        <param name="kickoffMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTypeDefinition">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.TypeDefinitionHandle AddTypeDefinition (System.Reflection.TypeAttributes attributes, System.Reflection.Metadata.StringHandle namespace, System.Reflection.Metadata.StringHandle name, System.Reflection.Metadata.EntityHandle baseType, System.Reflection.Metadata.FieldDefinitionHandle fieldList, System.Reflection.Metadata.MethodDefinitionHandle methodList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.TypeDefinitionHandle AddTypeDefinition(valuetype System.Reflection.TypeAttributes attributes, valuetype System.Reflection.Metadata.StringHandle namespace, valuetype System.Reflection.Metadata.StringHandle name, valuetype System.Reflection.Metadata.EntityHandle baseType, valuetype System.Reflection.Metadata.FieldDefinitionHandle fieldList, valuetype System.Reflection.Metadata.MethodDefinitionHandle methodList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddTypeDefinition(System.Reflection.TypeAttributes,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.FieldDefinitionHandle,System.Reflection.Metadata.MethodDefinitionHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.TypeDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Reflection.TypeAttributes" />
+        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="baseType" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="fieldList" Type="System.Reflection.Metadata.FieldDefinitionHandle" />
+        <Parameter Name="methodList" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">To be added.</param>
+        <param name="namespace">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="baseType">To be added.</param>
+        <param name="fieldList">To be added.</param>
+        <param name="methodList">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTypeLayout">
+      <MemberSignature Language="C#" Value="public void AddTypeLayout (System.Reflection.Metadata.TypeDefinitionHandle type, ushort packingSize, uint size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTypeLayout(valuetype System.Reflection.Metadata.TypeDefinitionHandle type, unsigned int16 packingSize, unsigned int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddTypeLayout(System.Reflection.Metadata.TypeDefinitionHandle,System.UInt16,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="packingSize" Type="System.UInt16" />
+        <Parameter Name="size" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="packingSize">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTypeReference">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.TypeReferenceHandle AddTypeReference (System.Reflection.Metadata.EntityHandle resolutionScope, System.Reflection.Metadata.StringHandle namespace, System.Reflection.Metadata.StringHandle name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.TypeReferenceHandle AddTypeReference(valuetype System.Reflection.Metadata.EntityHandle resolutionScope, valuetype System.Reflection.Metadata.StringHandle namespace, valuetype System.Reflection.Metadata.StringHandle name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddTypeReference(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.TypeReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolutionScope" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="resolutionScope">To be added.</param>
+        <param name="namespace">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTypeSpecification">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.TypeSpecificationHandle AddTypeSpecification (System.Reflection.Metadata.BlobHandle signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.TypeSpecificationHandle AddTypeSpecification(valuetype System.Reflection.Metadata.BlobHandle signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.AddTypeSpecification(System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.TypeSpecificationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddBlob">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddBlob (byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddBlob(unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddBlob(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddBlob">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddBlob (System.Collections.Immutable.ImmutableArray&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddBlob(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddBlob(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddBlob">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddBlob (System.Reflection.Metadata.BlobBuilder value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddBlob(class System.Reflection.Metadata.BlobBuilder value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddBlob(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddBlobUTF16">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddBlobUTF16 (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddBlobUTF16(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddBlobUTF16(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddBlobUTF8">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddBlobUTF8 (string value, bool allowUnpairedSurrogates = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddBlobUTF8(string value, bool allowUnpairedSurrogates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddBlobUTF8(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="allowUnpairedSurrogates" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="allowUnpairedSurrogates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddConstantBlob">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddConstantBlob (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddConstantBlob(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddConstantBlob(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddDocumentName">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle GetOrAddDocumentName (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobHandle GetOrAddDocumentName(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddDocumentName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddGuid">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GuidHandle GetOrAddGuid (Guid guid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.GuidHandle GetOrAddGuid(valuetype System.Guid guid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddGuid(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.GuidHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="guid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddString">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle GetOrAddString (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.StringHandle GetOrAddString(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAddUserString">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.UserStringHandle GetOrAddUserString (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.UserStringHandle GetOrAddUserString(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetOrAddUserString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.UserStringHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowCount">
+      <MemberSignature Language="C#" Value="public int GetRowCount (System.Reflection.Metadata.Ecma335.TableIndex table);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetRowCount(valuetype System.Reflection.Metadata.Ecma335.TableIndex table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetRowCount(System.Reflection.Metadata.Ecma335.TableIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowCounts">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; GetRowCounts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; GetRowCounts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.GetRowCounts" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReserveGuid">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ReservedBlob&lt;System.Reflection.Metadata.GuidHandle&gt; ReserveGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ReservedBlob`1&lt;valuetype System.Reflection.Metadata.GuidHandle&gt; ReserveGuid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.ReserveGuid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ReservedBlob&lt;System.Reflection.Metadata.GuidHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReserveUserString">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ReservedBlob&lt;System.Reflection.Metadata.UserStringHandle&gt; ReserveUserString (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ReservedBlob`1&lt;valuetype System.Reflection.Metadata.UserStringHandle&gt; ReserveUserString(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.ReserveUserString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ReservedBlob&lt;System.Reflection.Metadata.UserStringHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCapacity">
+      <MemberSignature Language="C#" Value="public void SetCapacity (System.Reflection.Metadata.Ecma335.HeapIndex heap, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCapacity(valuetype System.Reflection.Metadata.Ecma335.HeapIndex heap, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.SetCapacity(System.Reflection.Metadata.Ecma335.HeapIndex,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="heap" Type="System.Reflection.Metadata.Ecma335.HeapIndex" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="heap">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCapacity">
+      <MemberSignature Language="C#" Value="public void SetCapacity (System.Reflection.Metadata.Ecma335.TableIndex table, int rowCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCapacity(valuetype System.Reflection.Metadata.Ecma335.TableIndex table, int32 rowCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataBuilder.SetCapacity(System.Reflection.Metadata.Ecma335.TableIndex,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+        <Parameter Name="rowCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="rowCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

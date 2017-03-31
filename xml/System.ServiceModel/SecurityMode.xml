@@ -4,34 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.SecurityMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines the security settings for a binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any `ProtectionLevel` settings of a transport are ignored if the SecurityMode is set to None. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](../Topic/Understanding%20Protection%20Level.md).  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] security and how this property affects general security features, see [Securing Services](../Topic/Securing%20Services.md) and [Programming WCF Security](../Topic/Programming%20WCF%20Security.md). [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the transport mode, see [Transport Security](../Topic/Transport%20Security.md).  
-  
- Note that if you choose TransportWithMessageCredential, then the value set in <xref:System.ServiceModel.HttpClientCredentialType> or <xref:System.ServiceModel.TcpClientCredentialType> is ignored.  
-  
-   
-  
-## Examples  
- The following example sets the `Mode` property of the <xref:System.ServiceModel.WSHttpBinding>. For more examples, see [How to: Set the Security Mode](../Topic/How%20to:%20Set%20the%20Security%20Mode.md).  
-  
- [!code-vb[c_SettingSecurityMode#1](~/add/codesnippet/visualbasic/t-system.servicemodel.se_9_1.vb)]
- [!code-cs[c_SettingSecurityMode#1](~/add/codesnippet/csharp/t-system.servicemodel.se_9_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -41,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security is provided using SOAP message security.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -58,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security is disabled.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -75,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Security is provided using a secure transport (for example, HTTPS).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportWithMessageCredential">
@@ -92,14 +73,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A secure transport (for example, HTTPS) provides integrity, confidentiality, and authentication while SOAP message security provides client authentication.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

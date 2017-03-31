@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardDevice" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,21 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Abstract class that represents a keyboard device.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The KeyboardDevice supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  
-  
- For keyboard related input, use the <xref:System.Windows.Input.Keyboard> class. The <xref:System.Windows.Input.Keyboard> class represents the keyboard to an application and provides methods, properties, and events that reflect the state of the keyboard.  
-  
- The <xref:System.Windows.Input.Keyboard> class delegates to the appropriate KeyboardDevice.  
-  
- Each <xref:System.Windows.Input.InputDevice> object represents one particular input device.  For example, if there are two mice, there will be two <xref:System.Windows.Input.InputDevice> objects.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -51,8 +36,8 @@
         <Parameter Name="inputManager" Type="System.Windows.Input.InputManager" />
       </Parameters>
       <Docs>
-        <param name="inputManager">The input manager associated with this <see cref="T:System.Windows.Input.KeyboardDevice" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyboardDevice" /> class.</summary>
+        <param name="inputManager">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +48,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -75,10 +59,9 @@
         <ReturnType>System.Windows.PresentationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.PresentationSource" /> that is reporting input for this device.</summary>
-        <value>The source of input for this device.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for getting the active source.  Associated enumerations: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ClearFocus">
@@ -95,15 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears focus.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ClearFocus method sets the focus to `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultRestoreFocusMode">
@@ -119,8 +95,8 @@
         <ReturnType>System.Windows.Input.RestoreFocusMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the behavior of [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] when restoring focus.</summary>
-        <value>An enumeration value that specifies the behavior of [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] when restoring focus. The default in <see cref="T:System.Windows.Input.RestoreFocusMode" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +107,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -146,12 +121,10 @@
         <Parameter Name="element" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="element">The element to move focus to.</param>
-        <summary>Sets keyboard focus on the specified <see cref="T:System.Windows.IInputElement" />.</summary>
-        <returns>The element that has keyboard focus.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="element" /> is not a <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FocusedElement">
@@ -161,15 +134,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the element that has keyboard focus.</summary>
-        <value>The element with keyboard focus.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,12 +161,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>Gets the set of key states for the specified <see cref="T:System.Windows.Input.Key" />.</summary>
-        <returns>The set of key states for the specified key.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="key" /> is not a valid key.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyStatesFromSystem">
@@ -205,7 +174,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,9 +183,9 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>When overridden in a derived class, obtains the <see cref="T:System.Windows.Input.KeyStates" /> for the specified <see cref="T:System.Windows.Input.Key" />.</summary>
-        <returns>The set of key states for the specified key.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,13 +205,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Input.Key" /> is in the down state.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the down state; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="key" /> is not a valid key.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsKeyToggled">
@@ -254,7 +218,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,13 +227,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Input.Key" /> is in the toggled state.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the toggled state; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="key" /> is not a valid key.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsKeyUp">
@@ -280,7 +240,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,13 +249,10 @@
         <Parameter Name="key" Type="System.Windows.Input.Key" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>Determines whether the specified <see cref="T:System.Windows.Input.Key" /> is in the up state.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="key" /> is in the up state; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
-          <paramref name="key" /> is not a valid key.</exception>
       </Docs>
     </Member>
     <Member MemberName="Modifiers">
@@ -306,15 +262,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the set of <see cref="T:System.Windows.Input.ModifierKeys" /> which are currently pressed.</summary>
-        <value>The set of modifier keys.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,23 +280,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the specified <see cref="T:System.Windows.IInputElement" /> that input from this device is sent to.</summary>
-        <value>The element that receives input.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The target for a <xref:System.Windows.Input.KeyboardDevice> is the object that has keyboard focus.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

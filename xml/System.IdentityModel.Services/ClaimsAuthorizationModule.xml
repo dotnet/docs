@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an HTTP module that performs claims-based authorization.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class enables claims-based authorization by serving as an HTTP module in the HTTP processing pipeline.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.ClaimsAuthorizationModule" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,18 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the requestor (principal) is authorized for the current request.</summary>
-        <returns>
-          <see langword="true" /> if the principal is authorized; otherwise, <see langword="false" />. The default is <see langword="true" /> if no claims authentication manager is associated with this module.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The claims authentication manager specified in the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager%2A> property is invoked to authorize the request.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:System.Security.Claims.ClaimsPrincipal" /> associated with the request is not authorized.</exception>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClaimsAuthorizationManager">
@@ -78,10 +62,9 @@
         <ReturnType>System.Security.Claims.ClaimsAuthorizationManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current claims authorization manager instance that is used by this module.</summary>
-        <value>The claims authorization manager instance or <see langword="null" /> if no claims authorization manager is associated with this module.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -98,7 +81,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disposes of the resources (other than memory) used by the module.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +101,8 @@
         <Parameter Name="context" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="context">The application object that contains this module.</param>
-        <summary>Initializes the module and prepares it to handle events from its [!INCLUDE[vstecasp](~/add/includes/vstecasp-md.md)] application object.</summary>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,15 +120,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the module properties based on definitions in the configuration file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initializes the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager%2A> property from the claims authorization manager that is specified in configuration by the <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthorizationManager%2A?displayProperty=fullName> property on the <xref:System.IdentityModel.Configuration.IdentityConfiguration> object set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can specify the claims authentication manager in a configuration file through the [\&lt;claimsAuthorizationManager\&gt;](../Topic/%3CclaimsAuthorizationManager%3E.md) element.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAuthorizeRequest">
@@ -165,9 +141,9 @@
         <Parameter Name="args" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the event.</param>
-        <param name="args">The data for the event.</param>
-        <summary>Handles the HTTP pipeline <see cref="E:System.Web.HttpApplication.AuthorizeRequest" /> event</summary>
+        <param name="sender">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

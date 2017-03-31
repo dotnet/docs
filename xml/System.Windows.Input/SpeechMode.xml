@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.SpeechMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the mode of interpretation for speech input.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to specify the speech mode using the SpeechMode enumeration.  
-  
- [!code-vb[languagemanager#2](~/add/codesnippet/visualbasic/inputmanager/window1.xaml.vb#2)]
- [!code-cs[languagemanager#2](~/add/codesnippet/csharp/inputmanager/Window1.xaml.cs#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Command">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speech input is interpreted as commands.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dictation">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speech input is interpreted as dictation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speech input mode is indeterminate.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

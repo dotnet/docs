@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEvent" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,25 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Identifies a [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)] event.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Identifiers of these types are found as fields in various classes to identify events; for example, <xref:System.Windows.Automation.InvokePattern.InvokedEvent>. They are also found in the event arguments passed to UI Automation clients.  
-  
- It is not possible to create custom events.  
-  
-   
-  
-## Examples  
- In the following example event handler, the AutomationEvent in the event arguments is compared with the AutomationEvent that identifies the Invoked event.  
-  
- [!code-vb[UIAClient_snip#173](~/add/codesnippet/visualbasic/UIAClient_snip/ClientForm.vb#173)]
- [!code-cs[UIAClient_snip#173](~/add/codesnippet/csharp/CustomElementClient/ClientForm.cs#173)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LookupById">
@@ -40,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,17 +31,10 @@
         <Parameter Name="id" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="id">Identifier of the event.</param>
-        <summary>Retrieves an <see cref="T:System.Windows.Automation.AutomationEvent" /> that encapsulates the specified numerical identifier.</summary>
-        <returns>An <see cref="T:System.Windows.Automation.AutomationEvent" /> that encapsulates the specified numerical identifier.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Normally, events are identified by an <xref:System.Windows.Automation.AutomationEvent> object. This method can be used by UI Automation providers to create such an object when only the numerical identifier (the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> inherited from <xref:System.Windows.Automation.AutomationIdentifier>) is known.  
-  
- ]]></format>
-        </remarks>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

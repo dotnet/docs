@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class for designers for data views based on hierarchical data. This class must be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerHierarchicalDataSourceView class is used by developers of custom data source designers.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,16 +29,10 @@
         <Parameter Name="viewPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> that is the designer for the associated control.</param>
-        <param name="viewPath">A unique path to the block of data to use for the view.</param>
-        <summary>Initiates a new instance of the <see cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <param name="viewPath">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="owner" /> is <see langword="null" />  
-  
- -or-  
-  
- <paramref name="viewPath" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DataSourceDesigner">
@@ -57,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IHierarchicalDataSourceDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the associated designer.</summary>
-        <value>The parent <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,20 +69,10 @@
         <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="isSampleData">
-          <see langword="true" /> to indicate the returned data is sample data; <see langword="false" /> to indicate the returned data is live data.</param>
-        <summary>Generates design-time data that matches the schema of the associated data source control and returns a value indicating whether the data is sample or real data.</summary>
-        <returns>This implementation always returns <see langword="null" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The GetDesignTimeData method should provide a design-time version of data for use by the associated data-bound control designer.  
-  
- It is not expected nor recommended that the designer perform actual data access at design time. Instead, the designer should create sample data that matches the schema of the data source.  
-  
- ]]></format>
-        </remarks>
+        <param name="isSampleData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -109,23 +82,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path to the block of data that is presented in the view.</summary>
-        <value>The path provided when creating the <see cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The specific nature of the Path property is determined by the nature of the data. For XML data, it would be an XPath query, but for other kinds of data it could be a URL or some other unique identifying path.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -135,28 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a schema that describes the data source view for the associated control.</summary>
-        <value>This implementation always returns <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Schema property allows the control designer of a data-bound control to provide intelligent choices based on the design-time data source view that is selected for data binding.  
-  
-   
-  
-## Examples  
- For a complete example of using the Schema method with views and schemas and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCookieMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how cookies are used for a Web application.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The HttpCookieMode enumeration is used to specify the value of the `cookieless` attribute in the `sessionState` configuration section. It is used by all features that support cookieless authentication.  
-  
- The HttpCookieMode enumeration values specify how a cookie should be used to maintain information about the user. When AutoDetect is used, ASP.NET queries the browser or device to determine whether it supports cookies. If the browser or device supports cookies, then cookies are used to persist user data; otherwise, an identifier is used in the query string.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoDetect">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ASP.NET determines whether the requesting browser or device supports cookies. If the requesting browser or device supports cookies then AutoDetect uses cookies to persist user data; otherwise, an identifier is used in the query string. If the browser or device supports the use of cookies but cookies are currently disabled, cookies are still used by the requesting feature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseCookies">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cookies are used to persist user data regardless of whether the browser or device supports cookies.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseDeviceProfile">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ASP.NET determines whether to use cookies based on <see cref="T:System.Web.HttpBrowserCapabilities" /> setting. If the setting indicates that the browser or device supports cookies, cookies are used; otherwise, an identifier is used in the query string.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseUri">
@@ -82,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The calling feature uses the query string to store an identifier regardless of whether the browser or device supports cookies.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

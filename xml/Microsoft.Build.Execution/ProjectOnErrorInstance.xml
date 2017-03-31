@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Wraps an [OnError Element (MSBuild)](../Topic/OnError%20Element%20\(MSBuild\).md).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is an immutable class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Condition">
@@ -40,8 +33,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unevaluated Condition attribute value of this OnError element.</summary>
-        <value>Returns the unevaluated Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +51,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the condition, if any</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,16 +69,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unevaluated ExecuteTargets attribute value of this OnError element.</summary>
-        <value>Returns the unevaluated ExecuteTargets attribute value, which may be an empty string.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The targets to execute if a task fails.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteTargetsLocation">
@@ -101,8 +87,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the execute targets attribute, if any</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +105,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the element</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

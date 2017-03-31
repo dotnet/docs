@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Provider.ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,26 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base implementation for the extensible provider model.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The provider model is intended to encapsulate all or part of the functionality of multiple ASP.NET features, such as membership, profiles, and protected configuration. It allows the developer to create supporting classes that provide multiple implementations of the encapsulated functionality. In addition, developers can write new features using the provider model. This can be an effective way to support multiple implementations of a feature's functionality without duplicating the feature code or recoding the application layer if the implementation method needs to be changed.  
-  
- The ProviderBase class is simple, containing only a few basic methods and properties that are common to all providers. Feature-specific providers (such as <xref:System.Web.Security.MembershipProvider>) inherit from ProviderBase and establish the necessary methods and properties that the implementation-specific providers for that feature must support. Implementation-specific providers (such as <xref:System.Web.Security.SqlMembershipProvider>) inherit in turn from a feature-specific provider (in this case, <xref:System.Web.Security.MembershipProvider>).  
-  
- The most important aspect of the provider model is that the implementation (for example, whether data is persisted as a text file or in a database) is abstracted from the application code. The type of the implementation-specific provider for the given feature is designated in a configuration file. The feature-level provider then reads in the type from the configuration file and acts as a factory to the feature code. The application developer can then use the feature classes in the application code. The implementation type can be swapped out in the configuration file, eliminating the need to rewrite the code to accommodate the different implementation methodology.  
-  
- The providers included with ASP.NET are mostly abstractions of data persistence implementations for features like profiles or membership. However, this model can be applied to any other kind of feature functionality that could be abstracted and implemented in multiple ways.  
-  
-   
-  
-## Examples  
- For an example of how to use the ProviderBase class, see [Profile Provider Implementation Example](../Topic/Profile%20Provider%20Implementation%20Example.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Provider.ProviderBase" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,23 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a brief, friendly description suitable for display in administrative tools or other user interfaces (UIs).</summary>
-        <value>A brief, friendly description suitable for display in administrative tools or other UIs.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a configured provider does not supply a description, the value of the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property is returned as a default.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -83,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,27 +65,10 @@
         <Parameter Name="config" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="name">The friendly name of the provider.</param>
-        <param name="config">A collection of the name/value pairs representing the provider-specific attributes specified in the configuration for this provider.</param>
-        <summary>Initializes the provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The base class implementation internally tracks the number of times the provider's `Initialize` method has been called. If a provider is initialized more than once, an `InvalidOperationException` is thrown stating that the provider is already initialized.  
-  
- Because most feature providers call Initialize prior to performing provider-specific initialization, this method is a central location for preventing double initialization.  
-  
-   
-  
-## Examples  
- For an example of how to use Initialize, see [Profile Provider Implementation Example](../Topic/Profile%20Provider%20Implementation%20Example.md).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The name of the provider is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The name of the provider has a length of zero.</exception>
-        <exception cref="T:System.InvalidOperationException">An attempt is made to call Initialize on a provider after the provider has already been initialized.</exception>
+        <param name="name">To be added.</param>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -124,23 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the friendly name used to refer to the provider during configuration.</summary>
-        <value>The friendly name used to refer to the provider during configuration.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The recommended pattern for this string is: [*Provider Creator*][*Implementation Type*][*Feature*]Provider. Although the <xref:System.Configuration.Provider.ProviderBase.Description%2A> property also provides a friendly description, the Name property is used as an identifier for the provider.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

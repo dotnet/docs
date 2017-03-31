@@ -1,16 +1,19 @@
 <Type Name="ZoneMembershipCondition" FullName="System.Security.Policy.ZoneMembershipCondition">
-  <TypeSignature Language="C#" Value="public sealed class ZoneMembershipCondition" />
+  <TypeSignature Language="C#" Value="public sealed class ZoneMembershipCondition : System.Security.Policy.IMembershipCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ZoneMembershipCondition extends System.Object implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable, class System.Security.Policy.IMembershipCondition" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ZoneMembershipCondition" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Policy.IMembershipCondition</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -18,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Determines whether an assembly belongs to a code group by testing its zone of origin. This class cannot be inherited.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,17 +32,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="zone" Type="System.Security.SecurityZone" />
       </Parameters>
       <Docs>
-        <param name="zone">The <see cref="T:System.Security.SecurityZone" /> for which to test.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ZoneMembershipCondition" /> class with the zone that determines membership.</summary>
+        <param name="zone">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="zone" /> parameter is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Check">
@@ -49,7 +51,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,20 +61,10 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">The evidence set against which to make the test.</param>
-        <summary>Determines whether the specified evidence satisfies the membership condition.</summary>
-        <returns>
-          <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This membership condition tests only the <xref:System.Security.Policy.Zone> evidence object.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -82,7 +74,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,11 +82,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an equivalent copy of the membership condition.</summary>
-        <returns>A new, identical copy of the current membership condition.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -104,7 +94,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,13 +104,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object to compare to the current <see cref="T:System.Security.Policy.ZoneMembershipCondition" />.</param>
-        <summary>Determines whether the zone from the specified object is equivalent to the zone contained in the current <see cref="T:System.Security.Policy.ZoneMembershipCondition" />.</summary>
-        <returns>
-          <see langword="true" /> if the zone from the specified object is equivalent to the zone contained in the current <see cref="T:System.Security.Policy.ZoneMembershipCondition" />; otherwise, <see langword="false" />.</returns>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property for the current object or the specified object is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property for the current object or the specified object is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -130,7 +117,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,11 +127,9 @@
         <Parameter Name="e" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="e">The XML encoding to use to reconstruct the security object.</param>
-        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="e" /> parameter is not a valid membership condition element.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -154,7 +139,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,12 +150,10 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="e">The XML encoding to use to reconstruct the security object.</param>
-        <param name="level">The policy level context used to resolve named permission set references.</param>
-        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <param name="e">To be added.</param>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="e" /> parameter is not a valid membership condition element.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -180,7 +163,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,11 +171,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for the current membership condition.</summary>
-        <returns>The hash code for the current membership condition.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SecurityZone">
@@ -202,25 +183,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the zone for which the membership condition tests.</summary>
-        <value>The zone for which the membership condition tests.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Refer to the <xref:System.Security.SecurityZone> enumeration for a definition of specific zones.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An attempt is made to set SecurityZone to an invalid <see cref="T:System.Security.SecurityZone" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -230,7 +202,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,11 +210,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates and returns a string representation of the membership condition.</summary>
-        <returns>A string representation of the state of the membership condition.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -252,7 +222,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,11 +230,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-        <returns>An XML encoding of the security object, including any state information.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -274,7 +242,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,12 +252,10 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="level">The policy level context for resolving named permission set references.</param>
-        <summary>Creates an XML encoding of the security object and its current state with the specified <see cref="T:System.Security.Policy.PolicyLevel" />.</summary>
-        <returns>An XML encoding of the security object, including any state information.</returns>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="System.Security.Policy.ZoneMembershipCondition.SecurityZone%2A" /> property is not a valid <see cref="T:System.Security.SecurityZone" />.</exception>
       </Docs>
     </Member>
   </Members>

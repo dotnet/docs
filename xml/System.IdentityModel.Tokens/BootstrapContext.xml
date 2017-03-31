@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains a serialized version of the original token that was used at sign-in time.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,11 +32,9 @@
         <Parameter Name="token" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="token">An array that represents the token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified array.</summary>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,16 +50,14 @@
         <Parameter Name="token" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="token">A string that represents the token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified string.</summary>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BootstrapContext (System.IdentityModel.Tokens.SecurityToken token, System.IdentityModel.Tokens.SecurityTokenHandler tokenHandler);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.IdentityModel.Tokens.SecurityTokenHandler tokenHandler) cil managed" />
+      <MemberSignature Language="C#" Value="public BootstrapContext (System.IdentityModel.Tokens.SecurityToken token, System.IdentityModel.Tokens.SecurityTokenHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.IdentityModel.Tokens.SecurityTokenHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityTokenHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -73,23 +69,10 @@
         <Parameter Name="tokenHandler" Type="System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Parameters>
       <Docs>
-        <param name="token">The security token to serialize.</param>
-        <param name="tokenHandler">The handler with which to serialize the token.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified security token and token handler.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The token handler is not used to deserialize the token because it cannot be assumed to exist at the time when the token is deserialized.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="tokenHandler" /> is <see langword="null" />.</exception>
+        <param name="token">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,16 +89,14 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The serialized data.</param>
-        <param name="context">The context for serialization.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class from a stream.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="info" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
-      <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
@@ -131,12 +112,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The object to populate with data.</param>
-        <param name="context">The destination for this serialization. Can be <see langword="null" />.</param>
-        <summary>Populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with data needed to serialize the current <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> object.</summary>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SecurityToken">
@@ -152,16 +131,9 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security token that was used to initialize the context.</summary>
-        <value>The security token or <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityTokenHandler">
@@ -177,16 +149,9 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityTokenHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the token handler that was used to initialize the context.</summary>
-        <value>The token handler or <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Token">
@@ -202,16 +167,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the string that was used to initialize the context.</summary>
-        <value>The string that was used to initialize the context or <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.String%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TokenBytes">
@@ -227,16 +185,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the array that was used to initialize the context.</summary>
-        <value>The array that was used to initialize the context or <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is only set if the [BootstrapContext.BootstrapContext(Byte\<xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.Byte%5B%5D%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

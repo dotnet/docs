@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxDefaultButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants defining the default button on a <see cref="T:System.Windows.Forms.MessageBox" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the <xref:System.Windows.Forms.MessageBoxOptions> member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
-  
- [!code-cs[MessageBox.Show Variations#2](~/add/codesnippet/csharp/t-system.windows.forms.m_7_1.cs)]
- [!code-cpp[MessageBox.Show Variations#2](~/add/codesnippet/cpp/t-system.windows.forms.m_7_1.cpp)]
- [!code-vb[MessageBox.Show Variations#2](~/add/codesnippet/visualbasic/t-system.windows.forms.m_7_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Button1">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxDefaultButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The first button on the message box is the default button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Button2">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxDefaultButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The second button on the message box is the default button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Button3">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxDefaultButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The third button on the message box is the default button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

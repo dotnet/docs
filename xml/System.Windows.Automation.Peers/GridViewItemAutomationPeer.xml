@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Exposes the data items in the collection of <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> in <see cref="T:System.Windows.Controls.GridView" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,9 +29,9 @@
         <Parameter Name="listviewAP" Type="System.Windows.Automation.Peers.ListViewAutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="owner">The data item that is associated with this <see cref="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />.</param>
-        <param name="listviewAP">The <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> that is the parent of this <see cref="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <param name="listviewAP">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control type for the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
-        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the collection of child elements of the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A" />.</summary>
-        <returns>The collection of child elements.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,8 +87,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the name of the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />. Called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
-        <returns>A string that contains "ListViewItem".</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

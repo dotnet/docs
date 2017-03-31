@@ -19,17 +19,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TEventSource">The type that raises the event.</typeparam>
-    <typeparam name="TEventArgs">The type that holds the event data.</typeparam>
-    <summary>Provides a type-safe <see cref="T:System.Windows.WeakEventManager" /> that enables you to specify the event handler to use for the "weak event listener" pattern. This class defines a type parameter for the source of the event and a type parameter for the event data that is used.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.WeakEventManager> class enables you to leverage the weak event listener pattern by specifying the event to subscribe to, the source of the event, and event handler.  You can use WeakEventManager(TEventSource, as an alternative to implementing the <xref:System.Windows.IWeakEventListener> interface and using a specialized <xref:System.Windows.WeakEventManager>. When you call <xref:System.Windows.WeakEventManager%602.AddHandler%2A>, the source must be of type `TEventSource` and the event handler you pass must have `TEventArgs` as its event data. This ensures that type checking occurs at compile time.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="TEventSource">To be added.</typeparam>
+    <typeparam name="TEventArgs">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddHandler">
@@ -50,10 +43,10 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;TEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">The source object that raises the specified event.</param>
-        <param name="eventName">The name of the event to subscribe to.</param>
-        <param name="handler">The delegate that handles the event.</param>
-        <summary>Adds the specified event handler to the specified event.</summary>
+        <param name="source">To be added.</param>
+        <param name="eventName">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +64,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new object to contain listeners to an event.</summary>
-        <returns>A new object to contain listeners to an event.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +87,10 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;TEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">The source object that raises the specified event.</param>
-        <param name="eventName">The name of the event to remove the handler from.</param>
-        <param name="handler">The delegate to remove</param>
-        <summary>Removes the specified event handler from the specified event.</summary>
+        <param name="source">To be added.</param>
+        <param name="eventName">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +110,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">The object to that raises the event.</param>
-        <summary>Starts listening for the event on the specified object.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +131,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">The object to that raises the event.</param>
-        <summary>Stops listening for the event on the specified object.</summary>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

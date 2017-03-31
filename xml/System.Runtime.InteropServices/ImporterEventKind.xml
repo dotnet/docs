@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ImporterEventKind" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,15 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the callbacks that the type library importer makes when importing a type library.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type library importer passes the values of this enumeration to the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent%2A> method of an object which implements the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink> interface. The value passed identifies the specific kind of event being reported.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ERROR_REFTOINVALIDTYPELIB">
@@ -34,14 +27,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ImporterEventKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not supported in this version of the .NET Framework.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NOTIF_CONVERTWARNING">
@@ -51,14 +44,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ImporterEventKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the event is invoked when a warning occurs during conversion.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NOTIF_TYPECONVERTED">
@@ -68,14 +61,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ImporterEventKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the event is invoked when a type has been imported.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

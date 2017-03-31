@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the print manager for the chart.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="container" Type="System.ComponentModel.Design.IServiceContainer" />
       </Parameters>
       <Docs>
-        <param name="container">An <see cref="T:System.ComponentModel.Design.IServiceContainer" /> reference.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.PrintingManager" /> class.</summary>
+        <param name="container">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Frees, releases, or resets managed resources.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases unmanaged and, optionally, managed resources</summary>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +90,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays a Page Setup dialog.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +110,8 @@
         <Parameter Name="showPrintDialog" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="showPrintDialog">
-          <see langword="true" /> to indicate that a print dialog should be shown; otherwise, <see langword="false" />.</param>
-        <summary>Prints the chart.</summary>
+        <param name="showPrintDialog">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +139,8 @@
         <ReturnType>System.Drawing.Printing.PrintDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a print document for the chart.</summary>
-        <value>A <see cref="T:System.Drawing.Printing.PrintDocument" /> object for the chart.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +161,9 @@
         <Parameter Name="position" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">The printer <see cref="T:System.Drawing.Graphics" /> object.</param>
-        <param name="position">The position to draw on the graphics.</param>
-        <summary>Draws the chart on the printer graphics.</summary>
+        <param name="graphics">To be added.</param>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +181,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a preview of the chart.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

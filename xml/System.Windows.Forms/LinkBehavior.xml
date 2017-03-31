@@ -4,31 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the behaviors of a link in a <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property of the <xref:System.Windows.Forms.LinkLabel>.  
-  
-   
-  
-## Examples  
- The following example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A?displayProperty=fullName> property using the LinkBehavior enumeration. It alsodemonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A?displayProperty=fullName>, <xref:System.Windows.Forms.LinkLabel.Text%2A> and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties. To run this sample place it in a blank form and call the InitializeLinkLabel method from the form's constructor or Load method.  
-  
- [!code-cs[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/csharp/t-system.windows.forms.l_27_1.cs)]
- [!code-vb[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_27_1.vb)]
- [!code-cpp[System.Windows.Forms.LinkLabelExample#1](~/add/codesnippet/cpp/t-system.windows.forms.l_27_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysUnderline">
@@ -38,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The link always displays with underlined text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoverUnderline">
@@ -55,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The link displays underlined text only when the mouse is hovered over the link text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeverUnderline">
@@ -72,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The link text is never underlined. The link can still be distinguished from other text by use of the <see cref="System.Windows.Forms.LinkLabel.LinkColor%2A" /> property of the <see cref="T:System.Windows.Forms.LinkLabel" /> control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemDefault">
@@ -89,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The behavior of this setting depends on the options set using the Internet Options dialog box in Control Panel or Internet Explorer.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,17 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an enumeration of <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> options.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -39,14 +29,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default option. No noted characteristic.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DelegateProperty">
@@ -56,14 +45,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This option is used to specify whether or not a property is of type <see cref="T:System.Delegate" />. It is important to use this to disambiguate the delegate properties from events.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -73,14 +61,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> represents metadata.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonSerialized">
@@ -90,22 +77,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /></summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- is not serialized.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -115,14 +93,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> is an optional property.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -132,14 +109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> is read-only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

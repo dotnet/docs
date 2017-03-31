@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextBoxBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,24 +28,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements the basic functionality required by text controls.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class implements the core features of text manipulation controls, such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.RichTextBox>. These include text selection, **Clipboard** functionality, multiline text control support, and many events.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example also uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline text box control useful for creating text documents.  
-  
- [!code-cpp[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/cpp/t-system.windows.forms.t_46_1.cpp)]
- [!code-cs[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/csharp/t-system.windows.forms.t_46_1.cs)]
- [!code-vb[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.t_46_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptsTab">
@@ -56,7 +39,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -68,28 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether pressing the TAB key in a multiline text box control types a TAB character in the control instead of moving the focus to the next control in the tab order.</summary>
-        <value>
-          <see langword="true" /> if users can enter tabs in a multiline text box using the TAB key; <see langword="false" /> if pressing the TAB key moves the focus. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> property must also be `true` to get a TAB character in the control.  
-  
- If the AcceptsTab property is set to `true`, the user must press CTRL+TAB to move the focus to the next control in the tab order.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example also uses the AcceptsTab, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline text box control useful for creating text documents.  
-  
- [!code-cpp[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_75_1.cpp)]
- [!code-cs[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_75_1.cs)]
- [!code-vb[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_75_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AcceptsTabChanged">
@@ -99,32 +62,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.AcceptsTab%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the AcceptsTabChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the AcceptsTabChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#241](~/add/codesnippet/csharp/e-system.windows.forms.t_105_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#241](~/add/codesnippet/visualbasic/e-system.windows.forms.t_105_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendText">
@@ -134,7 +79,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,25 +88,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text to append to the current contents of the text box.</param>
-        <summary>Appends text to the current text of a text box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to add text to the existing text in the control instead of using the concatenation operator (+) to concatenate text to the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the AppendText method and the <xref:System.Windows.Forms.TextBoxBase.TextLength%2A> property to copy text from one <xref:System.Windows.Forms.TextBox> to another. This example requires that two <xref:System.Windows.Forms.TextBox> controls named, `textBox1` and `textBox2`, have been added to a form and that `textBox1` has text assigned to its <xref:System.Windows.Forms.Control.Text%2A> property.  
-  
- [!code-cpp[TextBoxBase.AppendText#1](~/add/codesnippet/cpp/m-system.windows.forms.t_68_1.cpp)]
- [!code-cs[TextBoxBase.AppendText#1](~/add/codesnippet/csharp/m-system.windows.forms.t_68_1.cs)]
- [!code-vb[TextBoxBase.AppendText#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_68_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -172,7 +100,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -196,27 +123,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the height of the control automatically adjusts when the font assigned to the control is changed.</summary>
-        <value>
-          <see langword="true" /> if the height of the control automatically adjusts when the font is changed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set the AutoSize property to `true` for a <xref:System.Windows.Forms.TextBox>, when the <xref:System.Windows.Forms.Control.Font%2A> changes, the <xref:System.Windows.Forms.TextBox> expands or contracts the <xref:System.Windows.Forms.Control.Height%2A> to accommodate the larger or smaller text. The <xref:System.Windows.Forms.Control.Width%2A> of the <xref:System.Windows.Forms.TextBox> does not change.  
-  
- If you want to change the size of the control as the user enters text, you can use a <xref:System.Windows.Forms.RichTextBox> control and use its <xref:System.Windows.Forms.RichTextBox.ContentsResized> event to change its size.  
-  
-   
-  
-## Examples  
- This example assumes that you have a form with two text boxes, two buttons, and click events for each of the buttons. The example demonstrates the AutoSize property by setting it to `true` for one text box and `false` for the other. When you click one button the text boxes are filled with a smaller text, and when you click the other button the text boxes are filled with larger text. The text box that has AutoSize set to `true` expands in height to accommodate the larger text. The width does not change.  
-  
- [!code-cs[SystemWindowsFormsAutoSize#1](~/add/codesnippet/csharp/AutoSizeCS/Form1.cs#1)]
- [!code-vb[SystemWindowsFormsAutoSize#1](~/add/codesnippet/visualbasic/AutoSize/Form1.vb#1)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -226,7 +135,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -241,15 +149,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -259,7 +160,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -271,20 +171,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the control.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the background of the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the BackColor property to change the background color of the text control to blend into the color scheme of your forms.  
-  
- To change the color of the text within the control, use the <xref:System.Windows.Forms.TextBoxBase.ForeColor%2A> property. When setting the BackColor property of your text control, ensure that the color you choose does not cause the text of the control to disappear. For example, if the BackColor and <xref:System.Windows.Forms.TextBoxBase.ForeColor%2A> properties are both set to `Color.Black`, the text within your textbox control will not be visible.  
-  
- This property might be over ridden if the <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property of the <xref:System.Windows.Forms.TextBoxBase> is set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -294,7 +183,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -309,16 +197,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>The background image for the object.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -328,7 +209,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -343,15 +223,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.BackgroundImage%2A" /> property changes. This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -361,7 +234,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -376,16 +248,9 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ImageLayout" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -395,7 +260,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -410,15 +274,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.BackgroundImageLayout%2A" /> property changes. This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -428,7 +285,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -443,29 +299,9 @@
         <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border type of the text box control.</summary>
-        <value>A <see cref="T:System.Windows.Forms.BorderStyle" /> that represents the border type of the text box control. The default is <see langword="Fixed3D" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the BorderStyle property to create borderless and flat style controls, in addition to the default three-dimensional control.  
-  
-> [!NOTE]
->  The derived class, <xref:System.Windows.Forms.RichTextBox>, does not support the `BorderStyle.FixedSingle` style. This style will cause the <xref:System.Windows.Forms.BorderStyle> to use the `BorderStyle.Fixed3D` style instead.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create a text box that can properly display text using 20-point Arial with a single border. This example uses the <xref:System.Windows.Forms.TextBoxBase.PreferredHeight%2A> property to determine the appropriate height of the control after the font and BorderStyle have been assigned to the control.  
-  
- [!code-cs[Classic TextBoxBase.BorderStyle Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_74_1.cs)]
- [!code-cpp[Classic TextBoxBase.BorderStyle Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_74_1.cpp)]
- [!code-vb[Classic TextBoxBase.BorderStyle Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_74_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyleChanged">
@@ -475,32 +311,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.BorderStyle%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the BorderStyleChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the BorderStyleChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#242](~/add/codesnippet/csharp/e-system.windows.forms.t_10_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#242](~/add/codesnippet/visualbasic/e-system.windows.forms.t_10_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -510,16 +328,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="System.Windows.Forms.Control.ImeMode%2A" /> property can be set to an active value, to enable IME support.</summary>
-        <value>
-          <see langword="false" /> if the <see cref="System.Windows.Forms.TextBoxBase.ReadOnly%2A" /> property is <see langword="true" /> or if this <see cref="T:System.Windows.Forms.TextBoxBase" /> class is set to use a password mask character; otherwise, <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,7 +346,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -545,26 +360,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user can undo the previous operation in a text box control.</summary>
-        <value>
-          <see langword="true" /> if the user can undo the previous operation performed in a text box control; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this method returns `true`, you can call the <xref:System.Windows.Forms.TextBoxBase.Undo%2A> method to undo the last operation in a text box. You can use this method in the <xref:System.Windows.Forms.MenuItem.Popup> event of a <xref:System.Windows.Forms.MenuItem>, or in code that manages the state of buttons on a <xref:System.Windows.Forms.ToolBar> to enable or disable the ability to undo the previous operation in a text box control.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.CanUndo Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_157_1.cs)]
- [!code-cpp[Classic TextBoxBase.CanUndo Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_157_1.cpp)]
- [!code-vb[Classic TextBoxBase.CanUndo Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_157_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -574,7 +372,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -582,24 +379,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all text from the text box control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to clear the contents of the control instead of assigning the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property an empty string.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create an event handler for the <xref:System.Windows.Forms.Control.TextChanged> event. The code within the event handler restricts data to numbers. After text has been entered in the control, the code determines if the text entered is a number. If the text is not a number, the code clears the text from the control and a <xref:System.Windows.Forms.MessageBox> is displayed to alert the user that only numbers are accepted. The example requires that a `Boolean` variable named `flag` and a <xref:System.Windows.Forms.TextBox> control called `textBox1` are defined outside of this method. This example demonstrates how to use a flag variable to avoid a cascading event in the <xref:System.Windows.Forms.Control.TextChanged> event.  
-  
- [!code-cpp[Classic TextBoxBase.Clear Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_62_1.cpp)]
- [!code-vb[Classic TextBoxBase.Clear Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_62_1.vb)]
- [!code-cs[Classic TextBoxBase.Clear Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_62_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearUndo">
@@ -609,7 +390,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -617,24 +397,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears information about the most recent operation from the undo buffer of the text box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to prevent an undo operation from repeating, based on the state of your application.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_67_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_67_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_67_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -644,7 +408,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -659,24 +422,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the text box is clicked.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to handle the Click event. To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.TextBox> control called TextBox1. This example requires that the event-handling method has been associated with the Click event.  
-  
- [!code-cs[System.Windows.Forms.TextBoxBaseScrolling#2](~/add/codesnippet/csharp/e-system.windows.forms.t_46_1.cs)]
- [!code-cpp[System.Windows.Forms.TextBoxBaseScrolling#2](~/add/codesnippet/cpp/e-system.windows.forms.t_46_1.cpp)]
- [!code-vb[System.Windows.Forms.TextBoxBaseScrolling#2](~/add/codesnippet/visualbasic/e-system.windows.forms.t_46_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -686,7 +433,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -694,24 +440,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copies the current selection in the text box to the **Clipboard**.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method, instead of using the <xref:System.Windows.Forms.Clipboard> class, to copy text in the text box and place it in the **Clipboard**.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_0_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_0_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_0_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -721,7 +451,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -729,9 +458,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a handle for the control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -741,15 +469,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
-        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -760,7 +487,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -768,24 +494,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Moves the current selection in the text box to the **Clipboard**.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method will only cut text from the text box if text is selected in the control. You can use this method, instead of using the <xref:System.Windows.Forms.Clipboard> class, to copy text in the text box and move it to the **Clipboard**.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_51_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_51_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_51_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCursor">
@@ -795,23 +505,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default cursor for the control.</summary>
-        <value>An object of type <see cref="T:System.Windows.Forms.Cursor" /> representing the current default cursor.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override DefaultCursor to configure a default cursor for your control. This is more efficient than setting the cursor in the control's constructor, and gives automatic support for certain cursor-related designer functions.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -821,15 +523,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
-        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,7 +541,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -848,7 +548,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Specifies that the value of the <see cref="System.Windows.Forms.TextBoxBase.SelectionLength%2A" /> property is zero so that no characters are selected in the control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -859,7 +559,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -871,17 +570,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether control drawing is done in a buffer before the control is displayed. This property is not relevant for this class.</summary>
-        <value>
-          <see langword="true" /> to implement double buffering on the control; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -891,7 +582,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -903,20 +593,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color of the control.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the control's foreground color.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the ForeColor property to change the color of the text within the control to match the text of other controls on your form. You can also use this property to highlight a specific text box that contains an invalid value.  
-  
- To change the background color of the control, use the <xref:System.Windows.Forms.TextBoxBase.BackColor%2A> property. When setting the ForeColor property of your text control, ensure that the color you choose does not cause the text of the control to disappear. For example, if the ForeColor and <xref:System.Windows.Forms.TextBoxBase.BackColor%2A> properties are both set to `Color.Black`, the text within your textbox control will not be visible.  
-  
- This property might be over ridden if the <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property of the <xref:System.Windows.Forms.TextBoxBase> is set to `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCharFromPosition">
@@ -926,7 +605,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -936,20 +614,10 @@
         <Parameter Name="pt" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="pt">The location from which to seek the nearest character.</param>
-        <summary>Retrieves the character that is closest to the specified location within the control.</summary>
-        <returns>The character at the specified location.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the location specified in the `pt` parameter is outside the client area of the control, the first character of the string closest to the point specified in `pt` is returned. You can use this method to determine which characters are located near a specific point within the control. You can then use this value to perform operations on the text at that location.  
-  
-> [!NOTE]
->  If the specified location in the `pt` parameter is located on the right side of the client area of the control, the last character of the string closest to the point specified in `pt` is returned.  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCharIndexFromPosition">
@@ -959,7 +627,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -969,20 +636,10 @@
         <Parameter Name="pt" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="pt">The location to search.</param>
-        <summary>Retrieves the index of the character nearest to the specified location.</summary>
-        <returns>The zero-based character index at the specified location.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns the character index that is closest to the position specified in the `pt` parameter. The character index is a zero-based index of text in the control, including spaces. You can use this method to determine where in the text the user has the mouse over by passing the mouse coordinates to this method. This can be useful if you want to perform tasks when the user rests the mouse pointer over a word in the text of the control.  
-  
-> [!IMPORTANT]
->  If the specified location is not within the client rectangle of the control, or is beyond the last character in the control, the return value is the index of the last character.  
-  
- ]]></format>
-        </remarks>
+        <param name="pt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexFromLine">
@@ -992,7 +649,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1002,20 +658,10 @@
         <Parameter Name="lineNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineNumber">The line for which to get the index of its first character.</param>
-        <summary>Retrieves the index of the first character of a given line.</summary>
-        <returns>The zero-based index of the first character in the specified line.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Line numbering in the text box starts at zero. If the `lineNumber` parameter is greater than the last line in the text box, GetFirstCharIndexFromLine returns -1.  
-  
- GetFirstCharIndexFromLine returns the first character index of a physical line. The physical line is the displayed line, not the assigned line. The number of displayed lines can be greater than the number of assigned lines due to word wrap. For example, if you assign two long lines to a <xref:System.Windows.Forms.RichTextBox> control and set <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> to `true`, the two long assigned lines result in four physical (or displayed lines).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="lineNumber" /> parameter is less than zero.</exception>
+        <param name="lineNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexOfCurrentLine">
@@ -1025,7 +671,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1033,8 +678,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the index of the first character of the current line.</summary>
-        <returns>The zero-based character index in the current line.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1045,7 +690,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1055,20 +699,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The character index position to search.</param>
-        <summary>Retrieves the line number from the specified character position within the text of the control.</summary>
-        <returns>The zero-based line number in which the character index is located.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to determine the line number based on the character index specified in the `index` parameter of the method. The first line of text in the control returns the value zero. The GetLineFromCharIndex method returns the physical line number where the indexed character is located within the control. For example, if a portion of the first logical line of text in the control wraps to the next line, the GetLineFromCharIndex method returns 1 if the character at the specified character index has wrapped to the second physical line. If <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> is set to `false`, no portion of the line wraps to the next, and the method returns 0 for the specified character index. You can use this method to determine which line a specific character index is located within. For example, after calling the <xref:System.Windows.Forms.RichTextBox.Find%2A> method to search for text, you can obtain the character index to where the search results are found. You can call this method with the character index returned by the <xref:System.Windows.Forms.RichTextBox.Find%2A> method to determine which line the word was found.  
-  
-> [!NOTE]
->  If the character index specified in the `index` parameter is beyond the available number of lines contained within the control, the last line number is returned.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromCharIndex">
@@ -1078,7 +712,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1088,17 +721,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the character for which to retrieve the location.</param>
-        <summary>Retrieves the location within the control at the specified character index.</summary>
-        <returns>The location of the specified character within the client rectangle of the control.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to determine where in the control a specific character index is located. You can use this method for such tasks as displaying shortcut menu items or help information for a word in the control. For example, if you wanted to display a menu of options to the user when the user right clicks on a word in the control, you can use this method to determine the position of the word to properly display a <xref:System.Windows.Forms.ContextMenu> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -1108,7 +734,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1120,26 +745,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the selected text in the text box control remains highlighted when the control loses focus.</summary>
-        <value>
-          <see langword="true" /> if the selected text does not appear highlighted when the text box control loses focus; <see langword="false" />, if the selected text remains highlighted when the text box control loses focus. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to keep text highlighted in a text box control while another form or a dialog box has focus, such as a spelling checker dialog box.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the HideSelection property. To run the example, paste the following code in a form. Call the `InitializeTextBox` method in the form's constructor or `Load` method.  
-  
- [!code-cs[System.Windows.Forms.TextBoxBaseScrolling#3](~/add/codesnippet/csharp/p-system.windows.forms.t_79_1.cs)]
- [!code-cpp[System.Windows.Forms.TextBoxBaseScrolling#3](~/add/codesnippet/cpp/p-system.windows.forms.t_79_1.cpp)]
- [!code-vb[System.Windows.Forms.TextBoxBaseScrolling#3](~/add/codesnippet/visualbasic/p-system.windows.forms.t_79_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HideSelectionChanged">
@@ -1149,32 +757,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.HideSelection%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the HideSelectionChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the HideSelectionChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#245](~/add/codesnippet/csharp/e-system.windows.forms.t_114_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#245](~/add/codesnippet/visualbasic/e-system.windows.forms.t_114_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -1184,15 +774,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Input Method Editor (IME) mode of a control.</summary>
-        <value>The IME mode of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1203,7 +792,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1213,18 +801,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">One of the Keys value.</param>
-        <summary>Determines whether the specified key is an input key or a special key that requires preprocessing.</summary>
-        <returns>
-          <see langword="true" /> if the specified key is an input key; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsInputKey method returns `true` when the `keyData` parameter includes the <xref:System.Windows.Forms.Keys> value and the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A> property is `true`. IsInputKey returns `false` if `keyData` contains both <xref:System.Windows.Forms.Keys> and <xref:System.Windows.Forms.Keys>.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Lines">
@@ -1234,7 +814,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1255,28 +834,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the lines of text in a text box control.</summary>
-        <value>An array of strings that contains the text in a text box control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each element in the array becomes a line of text in the text box control. If the <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> property of the text box control is set to `true` and a newline character appears in the text, the text following the newline character is added to a new element in the array and displayed on a separate line.  
-  
-> [!NOTE]
->  By default, the collection of lines is a read-only copy of the lines in the <xref:System.Windows.Forms.TextBox>. To get a writable collection of lines, use code similar to the following: `textBox1.Lines = new string[] { "abcd" };`  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to extract all strings of text from a multiline text box control and displays them using the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> method. This example requires that a <xref:System.Windows.Forms.TextBox> control has been created, named `textBox1`, and that it has been filled with lines of text.  
-  
- [!code-cs[Classic TextBoxBase.Lines Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_115_1.cs)]
- [!code-vb[Classic TextBoxBase.Lines Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_115_1.vb)]
- [!code-cpp[Classic TextBoxBase.Lines Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_115_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -1286,7 +846,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1301,29 +860,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of characters the user can type or paste into the text box control.</summary>
-        <value>The number of characters that can be entered into the control. The default is 32767.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to restrict the length of text entered in the control for values such as postal codes and telephone numbers, or to restrict the length of text entered when the data is to be entered in a database. You can limit the text entered into the control to the maximum length of the corresponding field in the database.  
-  
-> [!NOTE]
->  In code, you can set the value of the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property to a value that has a length greater than the value specified by the MaxLength property. This property only affects text entered into the control at run time.  
-  
-   
-  
-## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.TextBox>, to create a text box that is used to accept a password. This example uses the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change all characters typed to uppercase and the MaxLength property to restrict the password length to eight characters. This example also uses the <xref:System.Windows.Forms.TextBox.TextAlign%2A> property to center the password in the <xref:System.Windows.Forms.TextBox> control.  
-  
- [!code-cs[Classic TextBoxBase.MaxLength Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_15_1.cs)]
- [!code-cpp[Classic TextBoxBase.MaxLength Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_15_1.cpp)]
- [!code-vb[Classic TextBoxBase.MaxLength Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_15_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value assigned to the property is less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Modified">
@@ -1333,7 +872,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1348,28 +886,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates that the text box control has been modified by the user since the control was created or its contents were last set.</summary>
-        <value>
-          <see langword="true" /> if the control's contents have been modified; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to determine if the user has modified the contents of the text box control. You can also set this property in code to indicate that changes were made to the text box control by the application. This property can be used by validation and data-saving methods to determine if changes were made in a text box control so the changed contents can be validated or saved.  
-  
- If you change the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property programmatically, the Modified property reverts to `false`. This does not raise the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.Control.TextChanged> event for a <xref:System.Windows.Forms.TextBox>, a derived class, to determine if the contents of the <xref:System.Windows.Forms.TextBox> control have changed since the control was filled with data. The example uses a string to store the original contents of the control and compares it against the contents of the <xref:System.Windows.Forms.TextBox> to determine if the contents have changed. If the contents have changed, the Modified property is set to `true`. Otherwise, it is reset to `false`. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created and that a `String` variable named `originalText` has been created to store the original text for the <xref:System.Windows.Forms.TextBox> control.  
-  
- [!code-cpp[Classic TextBoxBase.Modified Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_48_1.cpp)]
- [!code-cs[Classic TextBoxBase.Modified Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_48_1.cs)]
- [!code-vb[Classic TextBoxBase.Modified Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_48_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifiedChanged">
@@ -1379,34 +898,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.Modified%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you change the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property programmatically, the <xref:System.Windows.Forms.TextBoxBase.Modified%2A> property reverts to `false`. This does not raise the ModifiedChanged event.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ModifiedChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the ModifiedChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#246](~/add/codesnippet/csharp/e-system.windows.forms.t_141_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#246](~/add/codesnippet/visualbasic/e-system.windows.forms.t_141_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1416,7 +915,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1431,27 +929,8 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the control is clicked by the mouse.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.RichTextBox> control does not raise a <xref:System.Windows.Forms.TextBoxBase.Click> event for right clicks. The MouseClick event provides the functional equivalent.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the MouseClick event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the MouseClick event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#244](~/add/codesnippet/csharp/e-system.windows.forms.t_39_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#244](~/add/codesnippet/visualbasic/e-system.windows.forms.t_39_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Multiline">
@@ -1461,7 +940,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1479,51 +957,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this is a multiline text box control.</summary>
-        <value>
-          <see langword="true" /> if the control is a multiline text box control; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A multiline text box allows you to display more than one line of text in the control. If the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `true`, text entered into the multiline text box is wrapped to the next line in the control. If the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `false`, text entered into the multiline text box control will be displayed on the same line until a newline character is entered.  
-  
- The following can be used as newline characters:  
-  
--   <xref:System.Environment.NewLine%2A?displayProperty=fullName>  
-  
--   ControlChars.CrLf  
-  
--   vbCrLf (Visual Basic only)  
-  
- You can add scroll bars to a text box using the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property to display horizontal and/or vertical scroll bars. This allows the user to scroll through the text that extends beyond the dimensions of the control.  
-  
-> [!NOTE]
->  Because the default value of the Multiline property is `false`, the default size of a <xref:System.Windows.Forms.TextBox> will be in accordance with the font size even if you resize the <xref:System.Windows.Forms.TextBox>. To get a consistent size for your <xref:System.Windows.Forms.TextBox>, set its <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`.  
-  
-> [!NOTE]
->  On Japanese operating systems, if the Multiline property is set to `true`, setting the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property will display the text of the password, thus compromising system security. Therefore, on Japanese operating systems, set the Multiline property to `false` if you set the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property.  
-  
-> [!NOTE]
->  This property is set to `false` by default for all derived classes, with the exception of the <xref:System.Windows.Forms.RichTextBox> control.  
-  
- For a <xref:System.Windows.Forms.RichTextBox> control, the <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> property affects whether or not the control will automatically resize, as follows:  
-  
--   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=fullName> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> is set to `true`, <xref:System.Windows.Forms.RichTextBox> will not automatically resize.  
-  
--   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=fullName> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> is set to `false`, <xref:System.Windows.Forms.RichTextBox> will automatically resize.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example also uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline text box control useful for creating text documents.  
-  
- [!code-cpp[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_174_1.cpp)]
- [!code-cs[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_174_1.cs)]
- [!code-vb[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_174_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MultilineChanged">
@@ -1533,32 +969,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.Multiline%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the MultilineChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the MultilineChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#247](~/add/codesnippet/csharp/e-system.windows.forms.t_111_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#247](~/add/codesnippet/visualbasic/e-system.windows.forms.t_111_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAcceptsTabChanged">
@@ -1568,7 +986,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1578,18 +995,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TextBoxBase.AcceptsTabChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnAcceptsTabChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBorderStyleChanged">
@@ -1599,7 +1007,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1609,18 +1016,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TextBoxBase.BorderStyleChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnBorderStyleChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1630,7 +1028,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1640,8 +1037,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1652,7 +1049,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1662,8 +1058,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1674,7 +1070,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1684,8 +1079,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1696,7 +1091,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1706,18 +1100,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raise the <see cref="E:System.Windows.Forms.TextBoxBase.HideSelectionChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnHideSelectionChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnModifiedChanged">
@@ -1727,7 +1112,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1737,18 +1121,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TextBoxBase.ModifiedChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnModifiedChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1758,7 +1133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1768,8 +1142,8 @@
         <Parameter Name="mevent" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="mevent">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
+        <param name="mevent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1780,7 +1154,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1790,18 +1163,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TextBoxBase.MultilineChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnMultilineChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaddingChanged">
@@ -1811,7 +1175,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1821,16 +1184,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>This method is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnReadOnlyChanged">
@@ -1840,7 +1196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1850,18 +1205,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TextBoxBase.ReadOnlyChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnReadOnlyChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1871,7 +1217,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1881,8 +1226,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1893,7 +1238,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1911,16 +1255,9 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -1930,7 +1267,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1948,15 +1284,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1966,7 +1295,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1981,15 +1309,8 @@
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the control is redrawn. This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1999,7 +1320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2007,25 +1327,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Replaces the current selection in the text box with the contents of the **Clipboard**.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Paste method will only paste text into the control if text is currently stored in the **Clipboard**.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_56_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_56_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_56_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for reading from the **Clipboard**. Associated enumeration: the <see langword="AllClipboard" /> value of <see cref="T:System.Security.Permissions.UIPermissionClipboard" />.</permission>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredHeight">
@@ -2035,7 +1338,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2053,18 +1355,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the preferred height for a text box.</summary>
-        <value>The preferred height of a text box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The size returned by this property is based on the font height and border style of the text box. You can use this property to determine the appropriate size of the text box to ensure that text is properly displayed in the control. The value returned by this property is in pixels.  
-  
- The value of PreferredHeight represents the minimum height the text box must have in order to display a single line of text without clipping the text on the top or bottom. This value is the same whether the <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> property is set to `true` or `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -2074,7 +1367,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2085,13 +1377,11 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference that represents the window message to process.</param>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the shortcut key to process.</param>
-        <summary>Processes a command key.</summary>
-        <returns>
-          <see langword="true" /> if the command key was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="msg">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -2101,7 +1391,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2111,10 +1400,9 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog key.</summary>
-        <returns>
-          <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2125,7 +1413,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2140,17 +1427,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether text in the text box is read-only.</summary>
-        <value>
-          <see langword="true" /> if the text box is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to `true`, the contents of the control cannot be changed by the user at runtime. With this property set to `true`, you can still set the value of the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property in code. You can use this feature instead of disabling the control with the <xref:System.Windows.Forms.Control.Enabled%2A> property to allow the contents to be copied and ToolTips to be shown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChanged">
@@ -2160,32 +1439,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.TextBoxBase.ReadOnly%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the ReadOnlyChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the ReadOnlyChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#248](~/add/codesnippet/csharp/e-system.windows.forms.t_93_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#248](~/add/codesnippet/visualbasic/e-system.windows.forms.t_93_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollToCaret">
@@ -2195,7 +1456,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2203,27 +1463,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control to the current caret position.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to scroll the contents of the control until the caret is within the visible region of the control. If the caret is positioned below the visible region of the control, the ScrollToCaret method will scroll the contents of the control until the caret is visible at the bottom of the control. If the caret is positioned above the visible region of the control, this method scrolls the contents of the control until the caret is visible at the top of the control. You can use this method in a multiline text box to ensure that the current text entry point is within the visible region of the control.  
-  
-> [!NOTE]
->  This method has no effect if the control does not have focus or if the caret is already positioned in the visible region of the control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Keys> enumeration and the ScrollToCaret method to ensure that the text insertion point, represented by the caret, is always visible on the screen after the ENTER key has been pressed. To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.TextBox> control called `TextBox1` and a <xref:System.Windows.Forms.RichTextBox> control called `RichTextBox1`. This example requires that the event-handling method has been associated with the <xref:System.Windows.Forms.Control.KeyDown> event.  
-  
- [!code-cs[System.Windows.Forms.TextBoxBaseScrolling#1](~/add/codesnippet/csharp/m-system.windows.forms.t_54_1.cs)]
- [!code-cpp[System.Windows.Forms.TextBoxBaseScrolling#1](~/add/codesnippet/cpp/m-system.windows.forms.t_54_1.cpp)]
- [!code-vb[System.Windows.Forms.TextBoxBaseScrolling#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_54_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2233,7 +1474,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2244,33 +1484,10 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">The position of the first character in the current text selection within the text box.</param>
-        <param name="length">The number of characters to select.</param>
-        <summary>Selects a range of text in the text box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want to set the start position to the first character in the control's text, set the `start` parameter to 0. You can use this method to select a substring of text, such as when searching through the text of the control and replacing information.  
-  
-> [!NOTE]
->  You can programmatically move the caret within the text box by setting the `start` parameter to the position within the text box where you want the caret to move to and set the `length` parameter to a value of zero (0). The text box must have focus in order for the caret to be moved.  
-  
-> [!NOTE]
->  If this method is called without any parameters, an alternative method is used. This alternative method inherits from the <xref:System.Windows.Forms.Control> class. When called, it sets the input focus to the control and selects the contents of the control. For more information, see the <xref:System.Windows.Forms.Control.Select%2A?displayProperty=fullName> method.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to search the contents of the control for the instance of the word "fox". If found, the code selects the word in the control using the Select method. This example requires that a <xref:System.Windows.Forms.TextBox> named `textBox1` has been created and its <xref:System.Windows.Forms.TextBoxBase.Text%2A> property contains the sentence "The quick brown fox jumps over the lazy dog."  
-  
- [!code-vb[Classic TextBoxBase.Select Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_58_1.vb)]
- [!code-cpp[Classic TextBoxBase.Select Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_58_1.cpp)]
- [!code-cs[Classic TextBoxBase.Select Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_58_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="start" /> parameter is less than zero.</exception>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2280,7 +1497,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2288,24 +1504,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Selects all text in the text box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method enables you to select all text within the control. You can use this method in conjunction with the <xref:System.Windows.Forms.TextBoxBase.Cut%2A> method, which requires text to be selected in the control, to cut the entire contents of the control and paste them into the **Clipboard**.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to determine if any text is selected in the control. If no text is selected, a call is made to the SelectAll method before copying the contents of the control to the **Clipboard**. This example requires that a <xref:System.Windows.Forms.TextBox> has been created named `textBox1`.  
-  
- [!code-cpp[Classic TextBoxBase.SelectAll Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_38_1.cpp)]
- [!code-vb[Classic TextBoxBase.SelectAll Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_38_1.vb)]
- [!code-cs[Classic TextBoxBase.SelectAll Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_38_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedText">
@@ -2315,7 +1515,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2330,25 +1529,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the currently selected text in the control.</summary>
-        <value>A string that represents the currently selected text in the text box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can assign text to this property to change the text currently selected in the text box. If no text is currently selected in the text box, this property returns a zero-length string.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cpp[Classic TextBoxBase.SelectedText Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_22_1.cpp)]
- [!code-vb[Classic TextBoxBase.SelectedText Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_22_1.vb)]
- [!code-cs[Classic TextBoxBase.SelectedText Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_22_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -2358,7 +1541,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2373,29 +1555,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of characters selected in the text box.</summary>
-        <value>The number of characters selected in the text box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to determine if any characters are currently selected in the text box control before performing operations on the selected text. When the value of the SelectionLength property is set to a value that is larger than the number of characters within the text of the control, the value of the SelectionLength property is set to the entire length of text within the control minus the value of the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> property (if any value is specified for the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> property).  
-  
-> [!NOTE]
->  You can programmatically move the caret within the text box by setting the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> to the position within the text box where you want the caret to move to and set the SelectionLength property to a value of zero (0). The text box must have focus in order for the caret to be moved.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_221_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_221_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_221_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -2405,7 +1567,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2420,41 +1581,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting point of text selected in the text box.</summary>
-        <value>The starting position of text selected in the text box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no text is selected in the control, this property indicates the insertion point, or caret, for new text. If you set this property to a location beyond the length of the text in the control, the selection start position will be placed after the last character. When text is selected in the text box control, changing this property might decrease the value of the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property. If the remaining text in the control after the position indicated by the SelectionStart property is less than the value of the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property, the value of the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property is automatically decreased. The value of the SelectionStart property never causes an increase in the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property.  
-  
- You can programmatically move the selection within the text box by setting the SelectionStart and the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> properties.  
-  
- You can programmatically move the caret within the text box by setting the SelectionStart to the position within the text box where you want the caret to move to and set the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property to a value of zero (0).  
-  
- The <xref:System.Windows.Forms.TextBox> must have focus in order for the selection or the caret to be moved. You can set the SelectionStart property of a <xref:System.Windows.Forms.TextBox> that is <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> by giving it the <xref:System.Windows.Forms.Control.Focus%2A> first.  
-  
-   
-  
-## Examples  
- **Example 1**  
-  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_73_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_73_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_73_1.cpp)]  
-  
- **Example 2**  
-  
- The following example sets the SelectionStart property of a <xref:System.Windows.Forms.TextBox> that is <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> by giving it the <xref:System.Windows.Forms.Control.Focus%2A> first.  
-  
- [!code-vb[SystemWindowsFormsTextBoxBase#1](~/add/codesnippet/visualbasic/SelectionStart/Form1.vb#1)]
- [!code-cs[SystemWindowsFormsTextBoxBase#1](~/add/codesnippet/csharp/SelectionStartCS/Form1.cs#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -2464,7 +1593,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2478,24 +1606,13 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">The new <see cref="System.Windows.Forms.Control.Left%2A" /> property value of the control.</param>
-        <param name="y">The new <see cref="System.Windows.Forms.Control.Top%2A" /> property value of the control.</param>
-        <param name="width">The new <see cref="System.Windows.Forms.Control.Width%2A" /> property value of the control.</param>
-        <param name="height">Not used.</param>
-        <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
-        <summary>Sets the specified bounds of the <see cref="T:System.Windows.Forms.TextBoxBase" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.TextBoxBase> control uses the <xref:System.Windows.Forms.TextBoxBase.PreferredHeight%2A> property to set the bounds if the <xref:System.Windows.Forms.TextBoxBase.AutoSize%2A> property is `true` and the <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> property is `false`.  
-  
- Typically, the parameters that correspond to the bounds not included in the `specified` parameter are passed in with their current values. For example, the <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Width%2A>, or the <xref:System.Drawing.Point.X%2A> or <xref:System.Drawing.Point.Y%2A> properties of the <xref:System.Windows.Forms.Control.Location%2A> property can be passed in with a reference to the current instance of the control. However all values passed in are honored and applied to the control.  
-  
- The `specified` parameter represents the elements of the controls <xref:System.Windows.Forms.Control.Bounds%2A> changed by your application. For example, if you change the <xref:System.Windows.Forms.Control.Size%2A> of the control, the `specified` parameter value is the `Size` value of <xref:System.Windows.Forms.BoundsSpecified>. However, if the <xref:System.Windows.Forms.Control.Size%2A> is adjusted in response to the <xref:System.Windows.Forms.Control.Dock%2A> property being set, the `specified` parameter value is the `None` value of <xref:System.Windows.Forms.BoundsSpecified>.  
-  
- ]]></format>
-        </remarks>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShortcutsEnabled">
@@ -2505,7 +1622,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2517,45 +1633,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the defined shortcuts are enabled.</summary>
-        <value>
-          <see langword="true" /> to enable the shortcuts; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ShortcutsEnabled property to enable or disable the following shortcut key combinations and the control’s shortcut menu:  
-  
--   CTRL+Z  
-  
--   CTRL+E  
-  
--   CTRL+C  
-  
--   CTRL+Y  
-  
--   CTRL+X  
-  
--   CTRL+BACKSPACE  
-  
--   CTRL+V  
-  
--   CTRL+DELETE  
-  
--   CTRL+A  
-  
--   SHIFT+DELETE  
-  
--   CTRL+L  
-  
--   SHIFT+INSERT  
-  
--   CTRL+R  
-  
- You can override this property to specify other shortcut keys.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -2565,7 +1645,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2580,25 +1659,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current text in the text box.</summary>
-        <value>The text displayed in the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To display multiple lines of text in a text box, set the <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> property to `true`. To read or set the text of a multiline text box, use the <xref:System.Windows.Forms.TextBoxBase.Lines%2A> property. The amount of text that can be entered in the <xref:System.Windows.Forms.RichTextBox> control is limited only by available system memory.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example also uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline text box control useful for creating text documents.  
-  
- [!code-cpp[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_191_1.cpp)]
- [!code-cs[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_191_1.cs)]
- [!code-vb[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_191_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextLength">
@@ -2608,7 +1671,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2620,25 +1682,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of text in the control.</summary>
-        <value>The number of characters contained in the text of the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to determine the number of characters in a string for tasks such as searching for specific strings of text within the text of the control, where knowledge of the total number of characters is needed.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TextBoxBase.AppendText%2A> method and the TextLength property to copy text from one <xref:System.Windows.Forms.TextBox> to another. This example requires that two <xref:System.Windows.Forms.TextBox> controls named, `textBox1` and `textBox2`, have been added to a form and that `textBox1` has text assigned to its <xref:System.Windows.Forms.Control.Text%2A> property.  
-  
- [!code-cpp[TextBoxBase.AppendText#1](~/add/codesnippet/cpp/p-system.windows.forms.t_280_1.cpp)]
- [!code-cs[TextBoxBase.AppendText#1](~/add/codesnippet/csharp/p-system.windows.forms.t_280_1.cs)]
- [!code-vb[TextBoxBase.AppendText#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_280_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2648,7 +1694,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2656,8 +1701,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.TextBoxBase" /> control.</summary>
-        <returns>A string that represents the current <see cref="T:System.Windows.Forms.TextBoxBase" />. The string includes the type and the <see cref="T:System.Windows.Forms.TextBoxBase" /> property of the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2668,7 +1713,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2676,27 +1720,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Undoes the last edit operation in the text box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method will undo the last **Clipboard** or text change operation performed in the text box control if the <xref:System.Windows.Forms.TextBoxBase.CanUndo%2A> property returns `true`.  
-  
-> [!NOTE]
->  The Undo method does not work with the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.TextChanged> events.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class. It provides <xref:System.Windows.Forms.MenuItem.Click> event handlers for <xref:System.Windows.Forms.MenuItem> objects that perform Cut, Copy, Paste, and Undo operations. This example requires that a <xref:System.Windows.Forms.TextBox> control named `textBox1` has been created.  
-  
- [!code-cs[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/csharp/m-system.windows.forms.t_22_1.cs)]
- [!code-vb[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.t_22_1.vb)]
- [!code-cpp[Classic TextBoxBase.SelectionLength Example#1](~/add/codesnippet/cpp/m-system.windows.forms.t_22_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -2706,7 +1731,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2716,8 +1740,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2728,7 +1752,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2743,29 +1766,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether a multiline text box control automatically wraps words to the beginning of the next line when necessary.</summary>
-        <value>
-          <see langword="true" /> if the multiline text box control wraps words; <see langword="false" /> if the text box control automatically scrolls horizontally when the user types past the right edge of the control. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is set to `true`, horizontal scroll bars are not displayed regardless of the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property setting.  
-  
-> [!NOTE]
->  In the derived class, <xref:System.Windows.Forms.TextBox>, text within the control will always wrap regardless of the property setting of this property unless the <xref:System.Windows.Forms.TextBox.TextAlign%2A> property is set to `HorizontalAlignment.Left`.  
-  
-   
-  
-## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to create a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example also uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and WordWrap properties to make the multiline text box control useful for creating text documents.  
-  
- [!code-cpp[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/cpp/p-system.windows.forms.t_271_1.cpp)]
- [!code-cs[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/csharp/p-system.windows.forms.t_271_1.cs)]
- [!code-vb[Classic TextBoxBase.AcceptsTab Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.t_271_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

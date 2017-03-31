@@ -3,34 +3,25 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TcpStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.TcpStatistics" />
   <AssemblyInfo>
+    <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides Transmission Control Protocol (TCP) statistical data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Instances of this class are returned by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetTcpIPv4Statistics%2A> and <xref:System.Net.NetworkInformation.IPGlobalProperties.GetTcpIPv6Statistics%2A> methods, to give applications access to TCP traffic information.  
-  
- The information in this class correlates to the management information objects described in [http://www.ietf.org/rfc/rfc2012.txt](http://www.ietf.org/rfc/rfc2012.txt).  
-  
-   
-  
-## Examples  
- The following code example displays the TCP statistics for the specified address family.  
-  
- [!code-cpp[NCLNetInfoReport#2](~/add/codesnippet/cpp/t-system.net.networkinfo_4_1.cpp)]
- [!code-cs[NCLNetInfoReport#2](~/add/codesnippet/csharp/t-system.net.networkinfo_4_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,21 +30,22 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.TcpStatistics.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.TcpStatistics" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor can be called only by classes that derive from the <xref:System.Net.NetworkInformation.TcpStatistics> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionsAccepted">
@@ -62,33 +54,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ConnectionsAccepted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of accepted Transmission Control Protocol (TCP) connection requests.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP connection requests accepted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the SYN-RCVD state from the LISTEN state."  
-  
-   
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_98_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_98_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_98_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionsInitiated">
@@ -97,33 +81,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ConnectionsInitiated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of Transmission Control Protocol (TCP) connection requests made by clients.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP connections initiated by clients.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the SYN-SENT state from the CLOSED state."  
-  
-   
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_26_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_26_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_26_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CumulativeConnections">
@@ -132,28 +108,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.CumulativeConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the total number of Transmission Control Protocol (TCP) connections established.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of connections established.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_2_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_2_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_2_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentConnections">
@@ -162,33 +135,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.CurrentConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of current Transmission Control Protocol (TCP) connections.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of current TCP connections.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT."  
-  
-   
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_116_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_116_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_116_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorsReceived">
@@ -197,28 +162,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ErrorsReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of Transmission Control Protocol (TCP) errors received.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP errors received.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_117_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_117_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_117_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FailedConnectionAttempts">
@@ -227,33 +189,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.FailedConnectionAttempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of failed Transmission Control Protocol (TCP) connection attempts.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of failed TCP connection attempts.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the CLOSED state from either the SYN-SENT state or the SYN-RCVD state, plus the number of times TCP connections have made a direct transition to the LISTEN state from the SYN-RCVD state."  
-  
-   
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_84_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_84_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_84_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumConnections">
@@ -262,33 +216,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.MaximumConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum number of supported Transmission Control Protocol (TCP) connections.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP connections that can be supported.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the maximum number of connections is dynamic, this property returns -1.  
-  
-   
-  
-## Examples  
- The following code example displays time-out and maximum connection information.  
-  
- [!code-cs[NCLNetInfo2#5](~/add/codesnippet/csharp/p-system.net.networkinfo_101_1.cs)]
- [!code-vb[NCLNetInfo2#5](~/add/codesnippet/visualbasic/p-system.net.networkinfo_101_1.vb)]
- [!code-cpp[NCLNetInfo2#5](~/add/codesnippet/cpp/p-system.net.networkinfo_101_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumTransmissionTimeout">
@@ -297,33 +243,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum retransmission time-out value for Transmission Control Protocol (TCP) segments.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the maximum number of milliseconds permitted by a TCP implementation for the retransmission time-out value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TCP starts a retransmission timer when each outbound segment is passed to the network layer (IP). If no acknowledgement is received for the data in the segment before the timer expires, the segment is retransmitted. The timer can be set to any value between the <xref:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout%2A> value and the MaximumTransmissionTimeout value.  
-  
-   
-  
-## Examples  
- The following code example displays time-out and maximum connection information.  
-  
- [!code-cs[NCLNetInfo2#5](~/add/codesnippet/csharp/p-system.net.networkinfo_107_1.cs)]
- [!code-vb[NCLNetInfo2#5](~/add/codesnippet/visualbasic/p-system.net.networkinfo_107_1.vb)]
- [!code-cpp[NCLNetInfo2#5](~/add/codesnippet/cpp/p-system.net.networkinfo_107_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumTransmissionTimeout">
@@ -332,33 +270,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minimum retransmission time-out value for Transmission Control Protocol (TCP) segments.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the minimum number of milliseconds permitted by a TCP implementation for the retransmission time-out value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TCP starts a retransmission timer when each outbound segment is passed to the network layer (IP). If no acknowledgement is received for the data in the segment before the timer expires, the segment is retransmitted. The timer The timer can be set to any value between the MinimumTransmissionTimeout value and the <xref:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout%2A> value.  
-  
-   
-  
-## Examples  
- The following code example displays time-out and maximum connection information.  
-  
- [!code-cs[NCLNetInfo2#5](~/add/codesnippet/csharp/p-system.net.networkinfo_21_1.cs)]
- [!code-vb[NCLNetInfo2#5](~/add/codesnippet/visualbasic/p-system.net.networkinfo_21_1.vb)]
- [!code-cpp[NCLNetInfo2#5](~/add/codesnippet/cpp/p-system.net.networkinfo_21_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetConnections">
@@ -367,33 +297,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ResetConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of RST packets received by Transmission Control Protocol (TCP) connections.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of reset TCP connections.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state."  
-  
-   
-  
-## Examples  
- The following code example displays connection information.  
-  
- [!code-cs[NCLNetInfo2#6](~/add/codesnippet/csharp/p-system.net.networkinfo_123_1.cs)]
- [!code-vb[NCLNetInfo2#6](~/add/codesnippet/visualbasic/p-system.net.networkinfo_123_1.vb)]
- [!code-cpp[NCLNetInfo2#6](~/add/codesnippet/cpp/p-system.net.networkinfo_123_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetsSent">
@@ -402,33 +324,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ResetsSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of Transmission Control Protocol (TCP) segments sent with the reset flag set.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments sent with the reset flag set.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TCP resets are specified using the reset (RST) control bit in the TCP header.  
-  
-   
-  
-## Examples  
- The following code example displays segment information.  
-  
- [!code-cs[NCLNetInfo2#7](~/add/codesnippet/csharp/p-system.net.networkinfo_67_1.cs)]
- [!code-vb[NCLNetInfo2#7](~/add/codesnippet/visualbasic/p-system.net.networkinfo_67_1.vb)]
- [!code-cpp[NCLNetInfo2#7](~/add/codesnippet/cpp/p-system.net.networkinfo_67_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentsReceived">
@@ -437,33 +351,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.SegmentsReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of Transmission Control Protocol (TCP) segments received.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments received.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This data includes segments with errors and segments received on currently established connections.  
-  
-   
-  
-## Examples  
- The following code example displays segment information.  
-  
- [!code-cs[NCLNetInfo2#7](~/add/codesnippet/csharp/p-system.net.networkinfo_126_1.cs)]
- [!code-vb[NCLNetInfo2#7](~/add/codesnippet/visualbasic/p-system.net.networkinfo_126_1.vb)]
- [!code-cpp[NCLNetInfo2#7](~/add/codesnippet/cpp/p-system.net.networkinfo_126_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentsResent">
@@ -472,33 +378,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.SegmentsResent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of Transmission Control Protocol (TCP) segments re-sent.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments retransmitted.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TCP segments that are not acknowledged as being received at the destination are retransmitted.  
-  
-   
-  
-## Examples  
- The following code example displays segment information.  
-  
- [!code-cs[NCLNetInfo2#7](~/add/codesnippet/csharp/p-system.net.networkinfo_60_1.cs)]
- [!code-vb[NCLNetInfo2#7](~/add/codesnippet/visualbasic/p-system.net.networkinfo_60_1.vb)]
- [!code-cpp[NCLNetInfo2#7](~/add/codesnippet/cpp/p-system.net.networkinfo_60_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentsSent">
@@ -507,33 +405,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.SegmentsSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of Transmission Control Protocol (TCP) segments sent.</summary>
-        <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments sent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This data includes segments sent for currently established connections but does not include segments containing only retransmitted octets.  
-  
-   
-  
-## Examples  
- The following code example displays segment information.  
-  
- [!code-cs[NCLNetInfo2#7](~/add/codesnippet/csharp/p-system.net.networkinfo_19_1.cs)]
- [!code-vb[NCLNetInfo2#7](~/add/codesnippet/visualbasic/p-system.net.networkinfo_19_1.vb)]
- [!code-cpp[NCLNetInfo2#7](~/add/codesnippet/cpp/p-system.net.networkinfo_19_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

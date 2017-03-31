@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Design.LanguageOption" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Design</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is not intended for public use and is used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GenerateCSharpCode">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Design.LanguageOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Generates C# code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenerateVBCode">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Services.Design.LanguageOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Generates Visual Basic code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

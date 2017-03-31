@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TabItem" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,30 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a selectable item inside a <see cref="T:System.Windows.Controls.TabControl" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TabItem is a <xref:System.Windows.Controls.HeaderedContentControl>. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A> and its header property is <xref:System.Windows.Controls.HeaderedContentControl.Header%2A>. For more information, see the <xref:System.Windows.Controls.HeaderedContentControl> class.  
-  
-## Customizing the TabControl Control  
- To apply the same property settings to multiple TabItem controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the TabItem, see [TabControl Styles and Templates](../Topic/TabControl%20Styles%20and%20Templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in TabItem control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
-  
-   
-  
-## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.TabControl> with TabItem elements.  
-  
- [!code-xml[TabControl#1](~/add/codesnippet/xaml/TabControl.TabControlSimple/Pane1.xaml#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,12 +27,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.TabItem" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +42,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -81,32 +56,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.TabItem" /> is selected.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.TabItem" /> is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_IsSelected"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabItem.IsSelectedProperty>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
-  
-   
-  
-## Examples  
- The following example shows how to use the IsSelected property to select a <xref:System.Windows.Controls.TabItem> programmatically.  
-  
- [!code-xml[TabControlStyles#4](~/add/codesnippet/xaml/TabControlGrid/Pane1.xaml#4)]
- [!code-xml[TabControlStyles#4](~/add/codesnippet/xaml/p-system.windows.control_261_1.xaml)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -116,14 +68,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabItem.IsSelected%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,8 +94,8 @@
         <Parameter Name="e" Type="System.Windows.Input.AccessKeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.Input.AccessKeyEventArgs" />.</param>
-        <summary>Responds when an <see cref="System.Windows.Controls.AccessText.AccessKey%2A" /> for a <see cref="T:System.Windows.Controls.TabControl" /> is called.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,9 +116,9 @@
         <Parameter Name="newContent" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oldContent">Old value of the content property.</param>
-        <param name="newContent">New value of the content property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.ContentControl.Content%2A" /> property changes.</summary>
+        <param name="oldContent">To be added.</param>
+        <param name="newContent">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,9 +139,9 @@
         <Parameter Name="newContentTemplate" Type="System.Windows.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldContentTemplate">Old value of the content template property.</param>
-        <param name="newContentTemplate">New value of the content template property.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.TabControl.ContentTemplate%2A" /> property changes.</summary>
+        <param name="oldContentTemplate">To be added.</param>
+        <param name="newContentTemplate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +152,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,9 +162,9 @@
         <Parameter Name="newContentTemplateSelector" Type="System.Windows.Controls.DataTemplateSelector" />
       </Parameters>
       <Docs>
-        <param name="oldContentTemplateSelector">Old value of the content template selector.</param>
-        <param name="newContentTemplateSelector">New value of the content template selector.</param>
-        <summary>Called when the <see cref="System.Windows.Controls.TabControl.ContentTemplateSelector%2A" /> property changes.</summary>
+        <param name="oldContentTemplateSelector">To be added.</param>
+        <param name="newContentTemplateSelector">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +175,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
-        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +194,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,8 +203,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Provides data for <see cref="T:System.Windows.Input.MouseButtonEventArgs" />.</param>
-        <summary>Responds to the <see cref="E:System.Windows.ContentElement.MouseLeftButtonDown" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,7 +215,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,8 +224,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Keyboard input event arguments.</param>
-        <summary>Announces that the keyboard is focused on this element.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +236,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,8 +245,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="System.Windows.Controls.Primitives.Selector.Selected" /> event.</param>
-        <summary>Called to indicate that the <see cref="System.Windows.Controls.TabItem.IsSelected%2A" /> property has changed to <see langword="true" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +257,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -324,8 +266,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data for the <see cref="System.Windows.Controls.Primitives.Selector.Unselected" /> event.</param>
-        <summary>Called to indicate that the <see cref="System.Windows.Controls.TabItem.IsSelected%2A" /> property has changed to <see langword="false" />.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,39 +278,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Dock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the tab strip placement.</summary>
-        <value>One of the <see cref="T:System.Windows.Controls.Dock" /> values. The default is <see cref="T:System.Windows.Controls.Dock" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property cannot be set. It gets its value from the <xref:System.Windows.Controls.TabControl.TabStripPlacement%2A?displayProperty=fullName> property of the parent <xref:System.Windows.Controls.TabControl>.  
-  
-<a name="dependencyPropertyInfo_TabStripPlacement"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabItem.TabStripPlacementProperty>|  
-|Metadata properties set to `true`|None|  
-  
-   
-  
-## Examples  
- The following example shows how to retrieve TabStripPlacement information about a <xref:System.Windows.Controls.TabItem>.  
-  
- [!code-vb[TabItem_snip#TabItemPlacement](~/add/codesnippet/visualbasic/tabcontrolsimple/pane1.xaml.vb#tabitemplacement)]
- [!code-cs[TabItem_snip#TabItemPlacement](~/add/codesnippet/csharp/TabItem_snip.TabControlSimple/Pane1.xaml.cs#tabitemplacement)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStripPlacementProperty">
@@ -378,14 +296,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.TabItem.TabStripPlacement%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

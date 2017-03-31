@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Manages a collection of extensions for a <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Hosting.WorkflowInstanceExtensionManager" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,18 +46,9 @@
         <Parameter Name="singletonExtension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="singletonExtension">The extension to add.</param>
-        <summary>Adds the specified extension to the collection of extensions.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this overload is used, each workflow instance that requests this extension type will get the extension instance provided to this method. If each workflow instance should have its own instance of the extension, use the other <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> overload.  
-  
- If any of the <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> overloads are called after <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.MakeReadOnly%2A>, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="singletonExtension">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add&lt;T&gt;">
@@ -83,19 +74,10 @@
         <Parameter Name="extensionCreationFunction" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of extension to add.</typeparam>
-        <param name="extensionCreationFunction">The method that creates the extension.</param>
-        <summary>Registers a <see cref="System.Func%601" /> that is used to provide an instance of an extension when requested by a workflow instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this overload is used, each workflow instance that requests this extension type will get a new instance of the extension. If a singleton extension is desired, use the other <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> overload.  
-  
- If any of the <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> overloads are called after <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.MakeReadOnly%2A>, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="extensionCreationFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
@@ -112,15 +94,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Marks the collection of extensions as read-only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called when a workflow host is prepared for execution. If any of the <xref:System.Activities.Hosting.WorkflowInstanceExtensionManager.Add%2A> overloads are called after MakeReadOnly, an <xref:System.InvalidOperationException> is thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

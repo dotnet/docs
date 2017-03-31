@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.XmlDocumentSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,23 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents the structure, or schema, of an <see cref="T:System.Xml.XmlDocument" />. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XmlDocumentSchema class is used by custom control designer components to list the structural elements of an XML document at design time. Use the XmlDocumentSchema class to populate lists of document elements to allow users to select document elements in UI features at design time.  
-  
-   
-  
-## Examples  
- The following code example uses an XmlDocumentSchema object to display the structure of an XML document in a <xref:System.Web.UI.WebControls.TreeView> control.  
-  
- [!code-vb[XmlDocumentSchemaSample#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.x_5_1.vb)]
- [!code-cs[XmlDocumentSchemaSample#1](~/add/codesnippet/csharp/t-system.web.ui.design.x_5_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +26,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,17 +33,10 @@
         <Parameter Name="xPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlDocument">An instance of an <see cref="T:System.Xml.XmlDocument" /> object.</param>
-        <param name="xPath">An XPath string identifying the child nodes of the document root.</param>
-        <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.XmlDocumentSchema" /> class using a specified <see cref="T:System.Xml.XmlDocument" /> and an XPath string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the `xPath` parameter to specify either a specific node within the XML document to examine, or specify the empty string ("") to examine the complete document.  
-  
- ]]></format>
-        </remarks>
+        <param name="xmlDocument">To be added.</param>
+        <param name="xPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetViews">
@@ -70,7 +46,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,8 +53,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array containing information about each child node starting at the node identified by the <paramref name="xPath" /> parameter in the constructor, or each child node starting at the document root if the <paramref name="xPath" /> parameter is empty.</summary>
-        <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

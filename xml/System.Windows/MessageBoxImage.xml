@@ -4,35 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxImage" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the icon that is displayed by a message box.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows the different message box icons.  
-  
-|||  
-|-|-|  
-|![Hand icon](~/add/media/messagebox-hand.gif "Hand icon")|Hand|  
-|![Question icon](~/add/media/messagebox-question.gif "Question icon")|Question|  
-|![Exclamation icon](~/add/media/messagebox-exclamation.gif "Exclamation icon")|Exclamation|  
-|![Asterisk icon](~/add/media/messagebox-asterisk.gif "Asterisk icon")|Asterisk|  
-|![Stop icon](~/add/media/messagebox-stop.gif "Stop icon")|Stop|  
-|![Error icon](~/add/media/messagebox-error.gif "Error icon")|Error|  
-|![Warning icon](~/add/media/messagebox-warning.gif "Warning icon")|Warning|  
-|![Information icon](~/add/media/messagebox-information.gif "Information icon")|Information|  
-  
- For a sample that demonstrates several options when using the <xref:System.Windows.MessageBox>, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Asterisk">
@@ -42,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -59,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exclamation">
@@ -76,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -93,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of a white X in a circle with a red background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Information">
@@ -110,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -127,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No icon is displayed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -144,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of a question mark in a circle.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -161,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -178,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

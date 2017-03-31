@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageMediaSizeName" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the page size or roll width of the paper or other print media.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used to provide values for the <xref:System.Printing.PageMediaSize.PageMediaSizeName%2A> property. The <xref:System.Printing.PageMediaSize> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageMediaSizeCapability%2A> property where it specifies the various page sizes a printer can use, and the <xref:System.Printing.PrintTicket.PageMediaSize%2A> property, where it instructs a printer which page size to use.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BusinessCard">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Business card</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreditCard">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Credit card</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA0">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A0</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA1">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A1</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA10">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A10</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA2">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A2</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA3">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A3</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA3Extra">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A3 Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA3Rotated">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A3 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA4">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A4</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA4Extra">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A4 Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA4Rotated">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A4 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA5">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A5</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA5Extra">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A5 Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA5Rotated">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A5 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA6">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A6</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA6Rotated">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A6 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA7">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A7</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA8">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A8</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA9">
@@ -352,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A9</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB0">
@@ -369,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B0</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB1">
@@ -386,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B1</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB10">
@@ -403,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B10</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB2">
@@ -420,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B2</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB3">
@@ -437,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B3</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB4">
@@ -454,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B4</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB4Envelope">
@@ -471,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B4 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB5Envelope">
@@ -488,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B5 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB5Extra">
@@ -505,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B5 Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB7">
@@ -522,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B7</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB8">
@@ -539,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B8</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB9">
@@ -556,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>B9</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC0">
@@ -573,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C0</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC1">
@@ -590,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C1</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC10">
@@ -607,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C10</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC2">
@@ -624,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C2</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC3">
@@ -641,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C3</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC3Envelope">
@@ -658,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C3 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC4">
@@ -675,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C4</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC4Envelope">
@@ -692,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C4 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC5">
@@ -709,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C5</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC5Envelope">
@@ -726,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C5 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC6">
@@ -743,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C6</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC6C5Envelope">
@@ -760,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C6C5 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC6Envelope">
@@ -777,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C6 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC7">
@@ -794,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C7</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC8">
@@ -811,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C8</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC9">
@@ -828,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C9</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISODLEnvelope">
@@ -845,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>DL Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISODLEnvelopeRotated">
@@ -862,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>DL Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOSRA3">
@@ -879,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>SRA 3</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Japan2LPhoto">
@@ -896,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>2L Photo</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou3Envelope">
@@ -913,14 +853,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chou 3 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou3EnvelopeRotated">
@@ -930,14 +869,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chou 3 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou4Envelope">
@@ -947,14 +885,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chou 4 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou4EnvelopeRotated">
@@ -964,14 +901,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Chou 4 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanDoubleHagakiPostcard">
@@ -981,14 +917,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Double Hagaki Postcard</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanDoubleHagakiPostcardRotated">
@@ -998,14 +933,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Double Hagaki Postcard Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanHagakiPostcard">
@@ -1015,14 +949,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Hagaki Postcard</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanHagakiPostcardRotated">
@@ -1032,14 +965,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Hagaki Postcard Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku2Envelope">
@@ -1049,14 +981,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Kaku 2 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku2EnvelopeRotated">
@@ -1066,14 +997,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Kaku 2 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku3Envelope">
@@ -1083,14 +1013,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Kaku 3 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku3EnvelopeRotated">
@@ -1100,14 +1029,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Kaku 3 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanLPhoto">
@@ -1117,14 +1045,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>L Photo</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanQuadrupleHagakiPostcard">
@@ -1134,14 +1061,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quadruple Hagaki Postcard</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou1Envelope">
@@ -1151,14 +1077,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 1 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou2Envelope">
@@ -1168,14 +1093,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 2 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou3Envelope">
@@ -1185,14 +1109,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 3 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou4Envelope">
@@ -1202,14 +1125,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 4 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou4EnvelopeRotated">
@@ -1219,14 +1141,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 4 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou6Envelope">
@@ -1236,14 +1157,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 6 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou6EnvelopeRotated">
@@ -1253,14 +1173,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>You 6 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB0">
@@ -1270,14 +1189,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B0</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB1">
@@ -1287,14 +1205,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B1</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB10">
@@ -1304,14 +1221,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B10</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB2">
@@ -1321,14 +1237,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B2</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB3">
@@ -1338,14 +1253,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B3</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB4">
@@ -1355,14 +1269,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B4</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB4Rotated">
@@ -1372,14 +1285,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B4 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB5">
@@ -1389,14 +1301,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B5</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB5Rotated">
@@ -1406,14 +1317,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B5 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB6">
@@ -1423,14 +1333,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B6</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB6Rotated">
@@ -1440,14 +1349,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B6 Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB7">
@@ -1457,14 +1365,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B7</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB8">
@@ -1474,14 +1381,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B8</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB9">
@@ -1491,14 +1397,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Japanese Industrial Standard B9</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica10x11">
@@ -1508,14 +1413,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>10 x 11</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica10x12">
@@ -1525,14 +1429,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>10 x 12</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica10x14">
@@ -1542,14 +1445,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>10 x 14</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica11x17">
@@ -1559,14 +1461,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>11 x 17</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica14x17">
@@ -1576,14 +1477,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>14 x 17</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica4x6">
@@ -1593,14 +1493,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>4 x 6</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica4x8">
@@ -1610,14 +1509,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>4 x 8</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica5x7">
@@ -1627,14 +1525,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>5 x 7</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica8x10">
@@ -1644,14 +1541,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>8 x 10</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica9x11">
@@ -1661,14 +1557,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>9 x 11</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureASheet">
@@ -1678,14 +1573,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Architecture A Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureBSheet">
@@ -1695,14 +1589,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Architecture B Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureCSheet">
@@ -1712,14 +1605,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Architecture C Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureDSheet">
@@ -1729,14 +1621,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Architecture D Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureESheet">
@@ -1746,14 +1637,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Architecture E Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaCSheet">
@@ -1763,14 +1653,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>C Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaDSheet">
@@ -1780,14 +1669,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>D Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaESheet">
@@ -1797,14 +1685,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>E Sheet</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaExecutive">
@@ -1814,14 +1701,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Executive</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaGermanLegalFanfold">
@@ -1831,14 +1717,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>German Legal Fanfold</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaGermanStandardFanfold">
@@ -1848,14 +1733,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>German Standard Fanfold</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLegal">
@@ -1865,14 +1749,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legal</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLegalExtra">
@@ -1882,14 +1765,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legal Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetter">
@@ -1899,14 +1781,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Letter</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetterExtra">
@@ -1916,14 +1797,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Letter Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetterPlus">
@@ -1933,14 +1813,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Letter Plus</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetterRotated">
@@ -1950,14 +1829,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Letter Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaMonarchEnvelope">
@@ -1967,14 +1845,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Monarch Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNote">
@@ -1984,14 +1861,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Note</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber10Envelope">
@@ -2001,14 +1877,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>\#10 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber10EnvelopeRotated">
@@ -2018,14 +1893,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>\#10 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber11Envelope">
@@ -2035,14 +1909,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>\#11 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber12Envelope">
@@ -2052,14 +1925,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>\#12 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber14Envelope">
@@ -2069,14 +1941,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>\#14 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber9Envelope">
@@ -2086,14 +1957,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>\#9 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaPersonalEnvelope">
@@ -2103,14 +1973,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Personal Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaQuarto">
@@ -2120,14 +1989,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quarto</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaStatement">
@@ -2137,14 +2005,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Statement</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaSuperA">
@@ -2154,14 +2021,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Super A</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaSuperB">
@@ -2171,14 +2037,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Super B</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaTabloid">
@@ -2188,14 +2053,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tabloid</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaTabloidExtra">
@@ -2205,14 +2069,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tabloid Extra</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricA3Plus">
@@ -2222,14 +2085,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A3 Plus</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricA4Plus">
@@ -2239,14 +2101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A4 Plus</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricFolio">
@@ -2256,14 +2117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Folio</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricInviteEnvelope">
@@ -2273,14 +2133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Invite Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricItalianEnvelope">
@@ -2290,14 +2149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Italian Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC10Envelope">
@@ -2307,14 +2165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #10 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC10EnvelopeRotated">
@@ -2324,14 +2181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #10 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC16K">
@@ -2341,14 +2197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China 16K</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC16KRotated">
@@ -2358,14 +2213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China 16K Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC1Envelope">
@@ -2375,14 +2229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #1 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC1EnvelopeRotated">
@@ -2392,14 +2245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #1 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC2Envelope">
@@ -2409,14 +2261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #2 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC2EnvelopeRotated">
@@ -2426,14 +2277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #2 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC32K">
@@ -2443,14 +2293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China 32K</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC32KBig">
@@ -2460,14 +2309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China 32K Big</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC32KRotated">
@@ -2477,14 +2325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China 32K Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC3Envelope">
@@ -2494,14 +2341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #3 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC3EnvelopeRotated">
@@ -2511,14 +2357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #3 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC4Envelope">
@@ -2528,14 +2373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #4 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC4EnvelopeRotated">
@@ -2545,14 +2389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #4 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC5Envelope">
@@ -2562,14 +2405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #5 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC5EnvelopeRotated">
@@ -2579,14 +2421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #5 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC6Envelope">
@@ -2596,14 +2437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #6 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC6EnvelopeRotated">
@@ -2613,14 +2453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #6 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC7Envelope">
@@ -2630,14 +2469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #7 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC7EnvelopeRotated">
@@ -2647,14 +2485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #7 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC8Envelope">
@@ -2664,14 +2501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #8 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC8EnvelopeRotated">
@@ -2681,14 +2517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #8 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC9Envelope">
@@ -2698,14 +2533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #9 Envelope</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC9EnvelopeRotated">
@@ -2715,14 +2549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>People's Republic of China #9 Envelope Rotated</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll04Inch">
@@ -2732,14 +2565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>4-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll06Inch">
@@ -2749,14 +2581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>6-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll08Inch">
@@ -2766,14 +2597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>8-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll12Inch">
@@ -2783,14 +2613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>12-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll15Inch">
@@ -2800,14 +2629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>15-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll18Inch">
@@ -2817,14 +2645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>18-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll22Inch">
@@ -2834,14 +2661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>22-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll24Inch">
@@ -2851,14 +2677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>24-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll30Inch">
@@ -2868,14 +2693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>30-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll36Inch">
@@ -2885,14 +2709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>36-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll54Inch">
@@ -2902,14 +2725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>54-inch wide roll</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -2919,14 +2741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Unknown paper size</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

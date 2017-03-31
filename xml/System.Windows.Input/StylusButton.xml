@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButton" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,18 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a button on a stylus.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following checks whether the user pressed the barrel button on a stylus.  
-  
- [!code-vb[StylusSnippets#24](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#24)]
- [!code-cs[StylusSnippets#24](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#24)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Guid">
@@ -33,31 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Guid" /> that represents the stylus button.</summary>
-        <value>The <see cref="T:System.Guid" /> property that represents the stylus button.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property is guaranteed to be unique among stylus buttons on the system.  
-  
-   
-  
-## Examples  
- The following checks whether the user pressed the barrel button on a stylus.  
-  
- [!code-vb[StylusSnippets#24](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#24)]
- [!code-cs[StylusSnippets#24](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#24)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -67,26 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the stylus button.</summary>
-        <value>The name of the stylus button.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the Name property.  
-  
- [!code-vb[StylusSnippets#25](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#25)]
- [!code-cs[StylusSnippets#25](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#25)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StylusButtonState">
@@ -96,26 +58,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the stylus button.</summary>
-        <value>One of the <see cref="T:System.Windows.Input.StylusButtonState" /> values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the StylusButtonState property.  
-  
- [!code-vb[StylusSnippets#26](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#26)]
- [!code-cs[StylusSnippets#26](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#26)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StylusDevice">
@@ -125,26 +76,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the stylus that this button belongs to.</summary>
-        <value>A <see cref="T:System.Windows.Input.StylusDevice" /> that represents the stylus of the current <see cref="T:System.Windows.Input.StylusButton" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the StylusDevice property.  
-  
- [!code-vb[StylusSnippets#27](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#27)]
- [!code-cs[StylusSnippets#27](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#27)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -154,7 +94,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,19 +101,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a string representation of the <see cref="T:System.Windows.Input.StylusButton" />.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the ToString method.  
-  
- [!code-vb[StylusSnippets#28](~/add/codesnippet/visualbasic/StylusSnippets_VB/Window1.xaml.vb#28)]
- [!code-cs[StylusSnippets#28](~/add/codesnippet/csharp/StylusSnippets_CS/Window1.xaml.cs#28)]  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

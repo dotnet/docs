@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PageRange" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies a range of pages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- PageRange defines a range of pages that should be processed in an operation such as  printing.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,23 +22,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="page" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="page">The page that is printed or processed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class that includes only the single specified page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `page` parameter value is 1-based; page number 1 is the first page.  
-  
- ]]></format>
-        </remarks>
+        <param name="page">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -56,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,19 +47,10 @@
         <Parameter Name="pageTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageFrom">The first page of the range.</param>
-        <param name="pageTo">The last page of the range.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class with the specified first and last pages.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `pageFrom` and `PageTo` parameter values are 1-based; page number 1 is the first page.  
-  
- Since the range includes both the "from" and "to" pages, the total number of pages is "<xref:System.Windows.Controls.PageRange.PageTo%2A> - <xref:System.Windows.Controls.PageRange.PageFrom%2A> + 1".  
-  
- ]]></format>
-        </remarks>
+        <param name="pageFrom">To be added.</param>
+        <param name="pageTo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -86,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,10 +69,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The object tested.</param>
-        <summary>Tests whether an object of unknown type is equal to this <see cref="T:System.Windows.Controls.PageRange" />.</summary>
-        <returns>
-          <see langword="true" /> if the object is of type <see cref="T:System.Windows.Controls.PageRange" /> and is equal to this <see cref="T:System.Windows.Controls.PageRange" />; otherwise, <see langword="false" />.</returns>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +82,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,10 +91,9 @@
         <Parameter Name="pageRange" Type="System.Windows.Controls.PageRange" />
       </Parameters>
       <Docs>
-        <param name="pageRange">The <see cref="T:System.Windows.Controls.PageRange" /> tested.</param>
-        <summary>Tests whether a <see cref="T:System.Windows.Controls.PageRange" /> is equal to this <see cref="T:System.Windows.Controls.PageRange" />.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <param name="pageRange">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,8 +111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code value for the <see cref="T:System.Windows.Controls.PageRange" />.</summary>
-        <returns>The hash code value for the <see cref="T:System.Windows.Controls.PageRange" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,11 +133,10 @@
         <Parameter Name="pr2" Type="System.Windows.Controls.PageRange" />
       </Parameters>
       <Docs>
-        <param name="pr1">The first <see cref="T:System.Windows.Controls.PageRange" />.</param>
-        <param name="pr2">The second <see cref="T:System.Windows.Controls.PageRange" />.</param>
-        <summary>Defines the "==" operator for testing whether two specified <see cref="T:System.Windows.Controls.PageRange" /> objects are equal.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <param name="pr1">To be added.</param>
+        <param name="pr2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +147,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,11 +157,10 @@
         <Parameter Name="pr2" Type="System.Windows.Controls.PageRange" />
       </Parameters>
       <Docs>
-        <param name="pr1">The first <see cref="T:System.Windows.Controls.PageRange" />.</param>
-        <param name="pr2">The second <see cref="T:System.Windows.Controls.PageRange" />.</param>
-        <summary>Defines the "!=" operator for testing whether two specified <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal; otherwise, <see langword="false" />.</returns>
+        <param name="pr1">To be added.</param>
+        <param name="pr2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,23 +171,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page number of the first page in the range.</summary>
-        <value>The 1-based page number of the first page in the range.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PageFrom property is 1-based; page number 1 is the first page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PageTo">
@@ -232,23 +189,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page number of the last page in the range.</summary>
-        <value>The 1-based page number of the last page in the range.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The PageTo property is 1-based; page number 1 is the first page.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -258,7 +207,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,8 +214,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string representation of the range.</summary>
-        <returns>A string that represents the range of pages in the format "<see cref="System.Windows.Controls.PageRange.PageFrom%2A" /><c>-</c><see cref="System.Windows.Controls.PageRange.PageTo%2A" />".</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

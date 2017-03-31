@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigRoot" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines interfaces used by internal .NET structures to support a configuration root object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,14 +24,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.Internal.InternalConfigEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the method that handles the ConfigChanged event of an <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,14 +41,13 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.Internal.InternalConfigEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the method that handles the ConfigRemoved event of a <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +58,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,9 +67,9 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">A string representing the path to a configuration file.</param>
-        <summary>Returns an <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a configuration specified by a configuration path.</summary>
-        <returns>An <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a configuration specified by <paramref name="configPath" />.</returns>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +80,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,10 +90,10 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="section">A string representing a section of a configuration file.</param>
-        <param name="configPath">A string representing the path to a configuration file.</param>
-        <summary>Returns an <see cref="T:System.Object" /> representing the data in a section of a configuration file.</summary>
-        <returns>An <see cref="T:System.Object" /> representing the data in a section of a configuration file.</returns>
+        <param name="section">To be added.</param>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +104,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,9 +113,9 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">The path of configuration file.</param>
-        <summary>Returns a value representing the file path of the nearest configuration ancestor that has configuration data.</summary>
-        <returns>Returns a string representing the file path of the nearest configuration ancestor that has configuration data.</returns>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +126,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,9 +135,9 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">The path of the configuration file.</param>
-        <summary>Returns an <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a unique configuration record for given configuration path.</summary>
-        <returns>An <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a unique configuration record for a given configuration path.</returns>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,10 +158,9 @@
         <Parameter Name="isDesignTime" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="host">An <see cref="T:System.Configuration.Internal.IInternalConfigHost" /> object.</param>
-        <param name="isDesignTime">
-          <see langword="true" /> if design time; <see langword="false" /> if run time.</param>
-        <summary>Initializes a configuration object.</summary>
+        <param name="host">To be added.</param>
+        <param name="isDesignTime">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,16 +171,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a value indicating whether the configuration is a design-time configuration.</summary>
-        <value>
-          <see langword="true" /> if the configuration is a design-time configuration; <see langword="false" /> if the configuration is not a design-time configuration.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +189,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,8 +198,8 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">The path of the configuration file.</param>
-        <summary>Finds and removes a configuration record and all its children for a given configuration path.</summary>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityTokenAttachmentMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>An enumeration that lists the ways in which security tokens are attached.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration specifies the signing and encrypting relationships between a message and its signature.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Endorsing">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The token is used to sign the message signature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signed">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The token is included in the message signature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignedEncrypted">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The token is included in the message signature and is encrypted.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignedEndorsing">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The token is included in and signs the message signature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

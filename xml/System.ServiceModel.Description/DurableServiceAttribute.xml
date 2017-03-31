@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DurableServiceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,29 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the internal execution behavior of a durable service contract implementation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following items are checked as part of the validation logic for durable services:  
-  
--   All sessionful bindings have a context binding element such as <xref:System.ServiceModel.Configuration.WSHttpContextBindingElement> or <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>.  
-  
--   The <xref:System.ServiceModel.ConcurrencyMode> value must not be set to Multiple.  
-  
--   The <xref:System.ServiceModel.InstanceContextMode> value must be PerSession.  
-  
--   There must be one sessionful endpoint configured for the service.  
-  
--   If the contract disallows sessions, then <xref:System.ServiceModel.Description.DurableOperationAttribute.CanCreateInstance%2A> must be set to `true` for all operations.  
-  
--   If the contract permits or allows sessions then all operations for which <xref:System.ServiceModel.Description.DurableOperationAttribute.CanCreateInstance%2A> is set to `true` must be request/response operations, that is <xref:System.Workflow.Activities.OperationInfo.IsOneWay%2A> cannot be set to `true`.  
-  
--   If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=fullName>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,12 +34,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.DurableServiceAttribute" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,11 +61,11 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">Not implemented.</param>
-        <param name="serviceHostBase">Not implemented.</param>
-        <param name="endpoints">Not implemented.</param>
-        <param name="bindingParameters">Not implemented.</param>
-        <summary>Not implemented in <see cref="T:System.ServiceModel.Description.DurableServiceAttribute" />.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <param name="endpoints">To be added.</param>
+        <param name="bindingParameters">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +76,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,9 +86,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <summary>Customizes the service runtime to support durable service behavior properties, such as specifying a <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" /> for the service.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,26 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the service instance state is persisted to the <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" /> using the same transaction under which the operation is run.</summary>
-        <value>
-          <see langword="true" /> if the service instance state is persisted using the same transaction; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If SaveStateInOperationTransaction is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=fullName>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
-  
- Setting SaveStateInOperationTransaction to `true` makes the service state transactional with the operation transaction. This means that if the operation's transaction rolls back, the service state also rolls back.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnknownExceptionAction">
@@ -153,23 +117,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.UnknownExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.Description.UnknownExceptionAction" /> enumeration value associated with the durable service.</summary>
-        <value>An <see cref="T:System.ServiceModel.Description.UnknownExceptionAction" /> enumeration value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When <xref:System.ServiceModel.Description.DurableServiceAttribute> is instantiated, it sets this property value to <xref:System.ServiceModel.Description.UnknownExceptionAction>. This means that whenever an unknown exception is encountered by the durable service, the service instance is terminated and any state information is deleted from the persistence store.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -179,7 +135,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,9 +145,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">The service description.</param>
-        <param name="serviceHostBase">The service host.</param>
-        <summary>Verifies that all durable operations on the service are set up correctly.</summary>
+        <param name="serviceDescription">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

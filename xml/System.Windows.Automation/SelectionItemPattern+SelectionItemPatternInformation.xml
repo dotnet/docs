@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.SelectionItemPattern" /> object using its <see cref="System.Windows.Automation.SelectionItemPattern.Current%2A" /> or <see cref="System.Windows.Automation.SelectionItemPattern.Cached%2A" /> accessors.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,29 +22,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether an item is selected.</summary>
-        <value>
-          <see langword="true" /> if the item is selected; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to remove an element from the collection of currently selected items.  
-  
- [!code-vb[UIASelectionItemPattern_snip#103](~/add/codesnippet/visualbasic/UIASelectionItemPattern_snip/UIASelectionItemPattern_snippets.vb#103)]
- [!code-cs[UIASelectionItemPattern_snip#103](~/add/codesnippet/csharp/UIASelectionItemPattern_snip/UIASelectionItemPattern_snippets.cs#103)]  
-[!code-vb[UIASelectionItemPattern_snip#105](~/add/codesnippet/visualbasic/UIASelectionItemPattern_snip/UIASelectionItemPattern_snippets.vb#105)]
-[!code-cs[UIASelectionItemPattern_snip#105](~/add/codesnippet/csharp/UIASelectionItemPattern_snip/UIASelectionItemPattern_snippets.cs#105)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionContainer">
@@ -55,26 +40,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Automation.AutomationElement" /> that supports the <see cref="T:System.Windows.Automation.SelectionPattern" /> control pattern and acts as the container for the calling object.</summary>
-        <value>The container object. The default is a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/add/includes/tlasharptla-visualbnet-md.md)]).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to retrieve the <xref:System.Windows.Automation.AutomationElement> representing the selection container of a selection item.  
-  
- [!code-vb[UIASelectionItemPattern_snip#103](~/add/codesnippet/visualbasic/UIASelectionItemPattern_snip/UIASelectionItemPattern_snippets.vb#103)]
- [!code-cs[UIASelectionItemPattern_snip#103](~/add/codesnippet/csharp/UIASelectionItemPattern_snip/UIASelectionItemPattern_snippets.cs#103)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

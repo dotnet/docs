@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,16 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Configures the security settings of a <see langword="basicHttpBinding" /> binding.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UEBasicHttpBinding#8](~/add/codesnippet/csharp/t-system.servicemodel.ba_1_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#8](~/add/codesnippet/visualbasic/t-system.servicemodel.ba_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,11 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpSecurity" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,29 +39,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpMessageSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the message-level security settings for a <see langword="basicHttpBinding" /> binding.</summary>
-        <value>A <see cref="T:System.ServiceModel.BasicHttpMessageSecurity" />, which represents the message-level security settings for this binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default security settings are: a <xref:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType%2A> of <xref:System.ServiceModel.BasicHttpMessageCredentialType>; and an <xref:System.ServiceModel.BasicHttpMessageSecurity.AlgorithmSuite%2A> of <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A>.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UEBasicHttpBinding#9](~/add/codesnippet/csharp/p-system.servicemodel.ba_6_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#9](~/add/codesnippet/visualbasic/p-system.servicemodel.ba_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -78,30 +58,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the security mode for a <see langword="basicHttpBinding" /> binding.</summary>
-        <value>A value in the <see cref="T:System.ServiceModel.BasicHttpSecurityMode" /> enumeration. The default value for this property is <see cref="T:System.ServiceModel.BasicHttpSecurityMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value of this property affects which settings in <xref:System.ServiceModel.BasicHttpSecurity.Transport%2A> or <xref:System.ServiceModel.BasicHttpSecurity.Message%2A> become effective.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UEBasicHttpBinding#10](~/add/codesnippet/csharp/p-system.servicemodel.ba_0_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#10](~/add/codesnippet/visualbasic/p-system.servicemodel.ba_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is not a legal value for <see cref="T:System.ServiceModel.BasicHttpSecurityMode" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMessage">
@@ -123,9 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether a message element should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the message should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +113,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Determines whether the transport element should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the transport element should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,29 +125,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.HttpTransportSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the transport-level security settings for a <see langword="basicHttpBinding" /> binding.</summary>
-        <value>The transport-level security settings for a <see langword="basicHttpBinding" /> binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.HttpTransportSecurity> object returned by this property contains properties that control authentication parameters for the HTTP transport.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UEBasicHttpBinding#11](~/add/codesnippet/csharp/p-system.servicemodel.ba_5_1.cs)]
- [!code-vb[S_UEBasicHttpBinding#11](~/add/codesnippet/visualbasic/p-system.servicemodel.ba_5_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

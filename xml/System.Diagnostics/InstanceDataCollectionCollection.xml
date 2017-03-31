@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.InstanceDataCollectionCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,23 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.InstanceDataCollection" /> objects.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The InstanceDataCollectionCollection class represents the collection returned from the <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A> method. This collection contains all the counter and instance data. The collection contains an <xref:System.Diagnostics.InstanceDataCollection> object for each counter. Each <xref:System.Diagnostics.InstanceDataCollection> object contains the performance data for all counters for that instance. Thus, the data is indexed by counter name and then by instance name.  
-  
-   
-  
-## Examples  
- The following code example displays the instance data for a particular <xref:System.Diagnostics.PerformanceCounterCategory> on the local computer. It first displays a numbered list of <xref:System.Diagnostics.PerformanceCounterCategory> names. After the user enters the number of one of the categories, the example gets the InstanceDataCollectionCollection for that <xref:System.Diagnostics.PerformanceCounterCategory>. It then converts the collection returned by the <xref:System.Diagnostics.InstanceDataCollectionCollection.Values%2A> property to an array of <xref:System.Diagnostics.InstanceDataCollection> objects. The example displays the instance data associated with each <xref:System.Diagnostics.InstanceData> of each <xref:System.Diagnostics.InstanceDataCollection>.  
-  
- [!code-vb[System.Diagnostics.InstanceData.KeysValues#1](~/add/codesnippet/visualbasic/t-system.diagnostics.ins_0_1.vb)]
- [!code-cs[System.Diagnostics.InstanceData.KeysValues#1](~/add/codesnippet/csharp/t-system.diagnostics.ins_0_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,17 +22,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This constructor has been deprecated.  Please use System.Diagnostics.PerformanceCounterCategory.ReadCategory() to get an instance of this collection instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+          <AttributeName>System.Obsolete("Use PerformanceCounterCategory.ReadCategory()")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.InstanceDataCollectionCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +42,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,29 +51,10 @@
         <Parameter Name="counterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="counterName">The name of the performance counter.</param>
-        <summary>Determines whether an instance data collection for the specified counter (identified by one of the indexed <see cref="T:System.Diagnostics.InstanceDataCollection" /> objects) exists in the collection.</summary>
-        <returns>
-          <see langword="true" /> if an instance data collection containing the specified counter exists in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `counterName` parameter is case-insensitive.  
-  
- Each <xref:System.Diagnostics.InstanceDataCollection> object in the collection contains the performance data for all counters for an instance. The data is indexed by counter name and then by instance name. Contains returns `true` if there is an <xref:System.Diagnostics.InstanceDataCollection> object whose associated counter has the name specified by the `counterName` parameter.  
-  
-   
-  
-## Examples  
- The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name and counter name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the <xref:System.Diagnostics.PerformanceCounterCategory> and then uses the Contains method to determine if the specified counter exists. If the counter exists, the example gets the associated <xref:System.Diagnostics.InstanceDataCollection> and displays the instance names from the collection.  
-  
- [!code-cs[System.Diagnostics.InstanceDataCollectionCollection.ItemContains#2](~/add/codesnippet/csharp/m-system.diagnostics.ins_1_1.cs)]
- [!code-vb[System.Diagnostics.InstanceDataCollectionCollection.ItemContains#2](~/add/codesnippet/visualbasic/m-system.diagnostics.ins_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="counterName" /> parameter is <see langword="null" />.</exception>
+        <param name="counterName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -101,7 +64,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,20 +74,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="counters">An array of <see cref="T:System.Diagnostics.InstanceDataCollection" /> instances (identified by the counters they contain) to add to the collection.</param>
-        <param name="index">The location at which to add the new instances.</param>
-        <summary>Copies an array of <see cref="T:System.Diagnostics.InstanceDataCollection" /> instances to the collection, at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the CopyTo method to convert an <xref:System.Diagnostics.InstanceDataCollectionCollection> into an array of <xref:System.Diagnostics.InstanceDataCollection> objects. Each element of the <xref:System.Diagnostics.InstanceDataCollection> array is passed to a function for further processing.  
-  
- [!code-cs[System.Diagnostics.InstanceData.CopyTo#5](~/add/codesnippet/csharp/392a7087-21fc-4a12-8c7a-_1.cs)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#5](~/add/codesnippet/visualbasic/392a7087-21fc-4a12-8c7a-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="counters">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -135,7 +87,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,28 +96,10 @@
         <Parameter Name="counterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="counterName">The name of the performance counter.</param>
-        <summary>Gets the instance data for the specified counter.</summary>
-        <value>An <see cref="T:System.Diagnostics.InstanceDataCollection" /> item, by which the <see cref="T:System.Diagnostics.InstanceDataCollectionCollection" /> object is indexed.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `counterName` parameter is case-insensitive.  
-  
- Each <xref:System.Diagnostics.InstanceDataCollection> object in the collection contains the performance data for all counters for an instance. The data is indexed by counter name and then by instance name. The indexer uses the `counterName` parameter to step through the counters associated with this collection of instance data.  
-  
-   
-  
-## Examples  
- The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name and counter name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the <xref:System.Diagnostics.PerformanceCounterCategory>. Then, if the <xref:System.Diagnostics.PerformanceCounter> exists, the example uses the Item property (referenced as an indexer) to obtain the associated <xref:System.Diagnostics.InstanceDataCollection> and displays the instance names from the collection.  
-  
- [!code-cs[System.Diagnostics.InstanceDataCollectionCollection.ItemContains#2](~/add/codesnippet/csharp/p-system.diagnostics.ins_1_1.cs)]
- [!code-vb[System.Diagnostics.InstanceDataCollectionCollection.ItemContains#2](~/add/codesnippet/visualbasic/p-system.diagnostics.ins_1_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="counterName" /> parameter is <see langword="null" />.</exception>
+        <param name="counterName">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -176,31 +109,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object and counter registry keys for the objects associated with this instance data collection.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> that represents a set of object-specific registry keys.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. You can access this data as you would access any other registry data. However, although you use the registry to collect performance data, the data is not stored in the registry database. Instead, the system collects the data from the appropriate system object managers.  
-  
-   
-  
-## Examples  
- The following code example uses the Keys property of an <xref:System.Diagnostics.InstanceDataCollectionCollection> to return a collection of counter names, which it converts to an array of <xref:System.String>. It generates an array of <xref:System.Diagnostics.InstanceDataCollection> objects using the <xref:System.Diagnostics.InstanceDataCollectionCollection.Values%2A> property. For each element in the array of counter names, it displays the name and calls a function to process the associated <xref:System.Diagnostics.InstanceDataCollection>.  
-  
- [!code-vb[System.Diagnostics.InstanceData.KeysValues#4](~/add/codesnippet/visualbasic/p-system.diagnostics.ins_6_1.vb)]
- [!code-cs[System.Diagnostics.InstanceData.KeysValues#4](~/add/codesnippet/csharp/p-system.diagnostics.ins_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -210,26 +127,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the instance data values that comprise the collection of instances for the counter.</summary>
-        <value>An <see cref="T:System.Collections.ICollection" /> that represents the counter's instances and their associated data values.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the Values property of an <xref:System.Diagnostics.InstanceDataCollectionCollection> to return a collection of <xref:System.Diagnostics.InstanceDataCollection> objects, which it converts to an array. It generates an array of counter names using the <xref:System.Diagnostics.InstanceDataCollectionCollection.Keys%2A> property. For each element in the array of <xref:System.Diagnostics.InstanceDataCollection> objects, it displays the associated counter name and calls a function to process the <xref:System.Diagnostics.InstanceDataCollection>.  
-  
- [!code-vb[System.Diagnostics.InstanceData.KeysValues#4](~/add/codesnippet/visualbasic/p-system.diagnostics.ins_0_1.vb)]
- [!code-cs[System.Diagnostics.InstanceData.KeysValues#4](~/add/codesnippet/csharp/p-system.diagnostics.ins_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

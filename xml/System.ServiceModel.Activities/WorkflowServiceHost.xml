@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a host for workflows. Supports features like messaging activities, multi-instancing, and configuration.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the WorkflowServiceHost class.  
-  
- [!code-cs[SendReceiveParameters#03](~/add/codesnippet/csharp/echoworkflowservice/program.cs#03)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,19 +50,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="activity">The root activity of the workflow service.</param>
-        <param name="baseAddresses">An array of  base addresses for the workflow service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified activity and base addresses.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-cs[CreationEndpoint#0](~/add/codesnippet/csharp/d7ce2a74-6ab2-460f-aba1-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="activity">To be added.</param>
+        <param name="baseAddresses">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,9 +76,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="serviceImplementation">The root activity of the workflow service to be hosted.</param>
-        <param name="baseAddresses">An array of base addresses for the workflow service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified service object and base addresses.</summary>
+        <param name="serviceImplementation">To be added.</param>
+        <param name="baseAddresses">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +102,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="serviceDefinition">The workflow service to host.</param>
-        <param name="baseAddresses">An array of base addresses for the hosted workflow service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified service definition and collection of base addresses.</summary>
+        <param name="serviceDefinition">To be added.</param>
+        <param name="baseAddresses">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +121,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the root activity of the hosted workflow service.</summary>
-        <value>The root activity of the hosted workflow service.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,18 +142,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint to add.</param>
-        <summary>Adds a service endpoint to the workflow service host.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the AddServiceEndpoint method.  
-  
- [!code-cs[CreationEndpoint#0](~/add/codesnippet/csharp/c257e330-a8ba-4d02-b66c-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -192,21 +165,12 @@
         <Parameter Name="address" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The service contract exposed by the endpoint.</param>
-        <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint..</param>
-        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, and address.</summary>
-        <returns>A service endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a service endpoint using this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -227,21 +191,12 @@
         <Parameter Name="address" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The service contract exposed by the endpoint.</param>
-        <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint.</param>
-        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, and address.</summary>
-        <returns>A service endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a service endpoint using this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -263,22 +218,13 @@
         <Parameter Name="listenUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The service contract exposed by the endpoint.</param>
-        <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint.</param>
-        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
-        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, endpoint address, and listen URI.</summary>
-        <returns>A service endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a service endpoint using this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -300,22 +246,13 @@
         <Parameter Name="listenUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="implementedContract">The contract exposed by the endpoint.</param>
-        <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint.l</param>
-        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
-        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, endpoint address, and listen URI.</summary>
-        <returns>A service endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a service endpoint using this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="implementedContract">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -338,23 +275,14 @@
         <Parameter Name="behaviorConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceContractName">The contract exposed by the endpoint</param>
-        <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint.</param>
-        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
-        <param name="behaviorConfigurationName">The endpoint behavior configuration name.</param>
-        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, endpoint address, listen URI, and behavior configuration name.</summary>
-        <returns>A service endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a service endpoint using this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="serviceContractName">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <param name="behaviorConfigurationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -377,23 +305,14 @@
         <Parameter Name="behaviorConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceContractName">The contract exposed by the endpoint.</param>
-        <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint.</param>
-        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
-        <param name="behaviorConfigurationName">The behavior configuration name.</param>
-        <summary>Adds a service endpoint to the workflow service host using the specified implemented contract, binding, endpoint address, listen URI, and a behavior configuration name.</summary>
-        <returns>A service endpoint.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add a service endpoint using this method.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <param name="serviceContractName">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <param name="behaviorConfigurationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDescription">
@@ -412,17 +331,10 @@
         <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="implementedContracts">A collection of key/value pairs that contains the contract description for the hosted workflow service.</param>
-        <summary>Creates a service description of the hosted workflow service using the specified key/value pair collection of address, binding, contract and behavior service endpoint information.</summary>
-        <returns>A service for the hosted workflow service.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override this method to control how the service description of the hosted workflow service is created.  
-  
- ]]></format>
-        </remarks>
+        <param name="implementedContracts">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DurableInstancingOptions">
@@ -438,8 +350,8 @@
         <ReturnType>System.ServiceModel.Activities.DurableInstancingOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.Activities.DurableInstancingOptions" /> associated with the workflow service host.</summary>
-        <value>The durable instancing options.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,7 +369,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the runtime for the workflow service host.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,7 +387,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when  the workflow service host is aborted.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,11 +409,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">The period of time the asynchronous close operation has to complete before timing out.</param>
-        <param name="callback">The asynchronous callback delegate that receives notification of the completion of the asynchronous close operation.</param>
-        <param name="state">User-define state data that is associated with the asynchronous close operation.</param>
-        <summary>Begins an asynchronous operation invoked when the workflow service host is closed.</summary>
-        <returns>A reference to the asynchronous close operation.</returns>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,16 +433,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">The period of time the close operation has to complete before timing out.</param>
-        <summary>Closes down the hosted service, including the channel dispatchers and associated instance contexts and listeners.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The workflow runtime will try to persist any hosted workflow when OnClose is called, but persistence is not guaranteed in this scenario.  If important business data is being hosted, the instances should persist frequently (such as after each Send operation, or after an interval of time) to ensure that data is not lost.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEndClose">
@@ -549,8 +454,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">A reference to the asynchronous operation.</param>
-        <summary>Completes an asynchronous operation invoked when the workflow service host is closed.</summary>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,8 +472,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Activities.WorkflowService&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of workflow versions that are supported by this workflow service host.</summary>
-        <value>A list of workflow versions that are supported by this workflow service host.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,18 +490,9 @@
         <ReturnType>System.Activities.Hosting.WorkflowInstanceExtensionManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Activities.Hosting.WorkflowInstanceExtensionManager" /> object to add or remove extensions to the workflow service instance.</summary>
-        <value>workflow instance extension manager.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to add an extension to the workflow service host.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

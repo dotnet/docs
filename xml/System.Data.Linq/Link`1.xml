@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Link`1" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -15,16 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the elements in the deferred source.</typeparam>
-    <summary>Used to enable deferred loading of individual properties (similar to <see cref="System.Data.Linq.EntityRef%601" />).</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you assign a deferred source (<xref:System.Collections.Generic.IEnumerable%601>) to Link(T), Link(T) loads the value by enumerating the source the first time the <xref:System.Data.Linq.Link%601.Value%2A> property is accessed.  
-  
- ]]></format>
-    </remarks>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,23 +26,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">The source collection.</param>
-        <summary>Initializes a new instance of the <see cref="System.Data.Linq.Link%601" /> structure by referencing the source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to initialize the <xref:System.Data.Linq.Link%601> with a deferred value loader (implements <xref:System.Collections.Generic.IEnumerable%601>)  
-  
- ]]></format>
-        </remarks>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,15 +44,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="link" Type="System.Data.Linq.Link&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="link">The <see cref="System.Data.Linq.Link%601" /> instance from which to copy.</param>
-        <summary>Initializes a new instance of the <see cref="System.Data.Linq.Link%601" /> structure by copying the internal state from another <see cref="System.Data.Linq.Link%601" /> instance.</summary>
+        <param name="link">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,23 +62,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">The value for the property.</param>
-        <summary>Initializes a new instance of the <see cref="System.Data.Linq.Link%601" /> structure by referencing the value of the property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor when the value for the property is already known.  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasLoadedOrAssignedValue">
@@ -105,26 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the <see cref="System.Data.Linq.Link%601" /> has loaded or assigned a value.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="System.Data.Linq.Link%601" /> has either loaded or assigned a value; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- "Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
-  
- [!INCLUDE[vbtecdlinq](~/add/includes/vbtecdlinq-md.md)] uses this property to make sure that the <xref:System.Data.Linq.Link%601> has a value, so that accesing it will not trigger deferred loading.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasValue">
@@ -134,15 +98,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the source has a value.</summary>
-        <value>Returns <see langword="true" /> if the source has an assigned or loaded value (including null).</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,15 +116,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value assigned to or loaded by the <see cref="System.Data.Linq.Link%601" />.</summary>
-        <value>The value of this deferred property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>SymbolResolver is an extension for providing a host <see cref="T:System.Activities.LocationReferenceEnvironment" /> containing objects that can be dereferenced by a string name.  Values provided through a SymbolResolver are not persisted.  Persistence of SymbolResolver values is a host responsibility.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Hosting.SymbolResolver" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The symbol to add.</param>
-        <summary>Adds a symbol using the specified key/value pair.</summary>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +78,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the symbol.</param>
-        <param name="value">The value of the symbol to reference.</param>
-        <summary>Adds a symbol using the specified symbol name and value.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,17 +101,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the symbol.</param>
-        <param name="type">The type of the symbol value.</param>
-        <summary>Adds a symbol using the specified symbol name and type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The symbol is added with the default value for the specified type.  
-  
- ]]></format>
-        </remarks>
+        <param name="key">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -132,10 +125,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the symbol.</param>
-        <param name="value">The value of the symbol to reference.</param>
-        <param name="type">The type of the symbol value.</param>
-        <summary>Adds a symbol using the specified symbol name, value, and type.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.Activities.LocationReferenceEnvironment" /> instance that enables access to references of symbol values in <see cref="T:System.Activities.Hosting.SymbolResolver" /> represented as <see cref="T:System.Activities.LocationReference" /> objects.</summary>
-        <returns>A location reference that enables access to references to symbol values in <see cref="T:System.Activities.Hosting.SymbolResolver" /> represented as <see cref="T:System.Activities.LocationReference" /> objects.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all symbols from the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,10 +185,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The symbol as a key/value pair to locate in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</param>
-        <summary>Returns a value that indicates whether the <see cref="T:System.Activities.Hosting.SymbolResolver" /> contains the specified symbol.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Activities.Hosting.SymbolResolver" /> contains the specified symbol; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +207,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the symbol to locate.</param>
-        <summary>Returns a value that indicates whether the <see cref="T:System.Activities.Hosting.SymbolResolver" /> contains a symbol with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Activities.Hosting.SymbolResolver" /> contains a symbol with the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +230,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The one-dimensional array of key/value pairs to copy the symbols to. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in the destination array at which copying begins.</param>
-        <summary>Copies the symbols in the <see cref="T:System.Activities.Hosting.SymbolResolver" /> to an existing one-dimensional array of key/value pairs, starting at the specified array index.</summary>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +249,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of symbols contained in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-        <value>The number of symbols contained in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +273,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through a collection of key/value pairs where the keys are the symbol names and values the symbol values.</summary>
-        <returns>An enumerator that iterates through a collection of key/value pairs.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,17 +291,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the dictionary of symbols in the <see cref="T:System.Activities.Hosting.SymbolResolver" /> is read-only.</summary>
-        <value>
-          <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property always returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -329,9 +312,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the item.</param>
-        <summary>Gets or sets the value of the item associated with the specified key.</summary>
-        <value>The value of the item associated with the specified key.</value>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,8 +331,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all keys in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-        <value>A collection of all keys in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,10 +352,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">The symbol to remove.</param>
-        <summary>Removes the specified symbol from the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-        <returns>
-          <see langword="true" /> if the symbol is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the symbol is not present.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,10 +374,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the symbol to remove.</param>
-        <summary>Removes a symbol from the <see cref="T:System.Activities.Hosting.SymbolResolver" /> using a specified key.</summary>
-        <returns>
-          <see langword="true" /> if the symbol is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the symbol is not present.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,16 +394,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through a collection of key/value pairs where the keys are the symbol names and values the symbol values.</summary>
-        <returns>An enumerator that iterates through a collection of key/value pairs.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.Hosting.SymbolResolver> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -442,11 +416,10 @@
         <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the value to get.</param>
-        <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
-        <summary>Gets the value associated with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Activities.Hosting.SymbolResolver" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,8 +436,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all values in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-        <value>A collection of all values in the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

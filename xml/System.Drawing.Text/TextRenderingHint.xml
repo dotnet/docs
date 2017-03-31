@@ -4,33 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.TextRenderingHint" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the quality of text rendering.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The quality ranges from text (fastest performance, but lowest quality) to antialiased text (better quality, but slower performance) to ClearType text (best quality on an LCD display).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of the <xref:System.Drawing.Graphics.TextRenderingHint%2A> and <xref:System.Drawing.Graphics.TextContrast%2A> properties and the TextRenderingHint enumeration.  
-  
- This example is designed to be used with Windows Forms. Paste the code into a form and call the `ChangeTextRenderingHintAndTextContrast` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.GraphicsProperties#5](~/add/codesnippet/cpp/t-system.drawing.text.te_1.cpp)]
- [!code-vb[System.Drawing.GraphicsProperties#5](~/add/codesnippet/visualbasic/t-system.drawing.text.te_1.vb)]
- [!code-cs[System.Drawing.GraphicsProperties#5](~/add/codesnippet/csharp/t-system.drawing.text.te_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AntiAlias">
@@ -40,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Each character is drawn using its antialiased glyph bitmap without hinting. Better quality due to antialiasing. Stem width differences may be noticeable because hinting is turned off.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AntiAliasGridFit">
@@ -57,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Each character is drawn using its antialiased glyph bitmap with hinting. Much better quality due to antialiasing, but at a higher performance cost.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClearTypeGridFit">
@@ -74,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Each character is drawn using its glyph ClearType bitmap with hinting. The highest quality setting. Used to take advantage of ClearType font features.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleBitPerPixel">
@@ -91,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Each character is drawn using its glyph bitmap. Hinting is not used.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleBitPerPixelGridFit">
@@ -108,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Each character is drawn using its glyph bitmap. Hinting is used to improve character appearance on stems and curvature.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemDefault">
@@ -125,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Each character is drawn using its glyph bitmap, with the system default rendering hint. The text will be drawn using whatever font-smoothing settings the user has selected for the system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

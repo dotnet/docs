@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,17 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an implementation of the OLE DB <see langword="IConnectionPointContainer" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EnumConnectionPoints">
@@ -40,7 +30,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,18 +39,9 @@
         <Parameter Name="enumC" Type="Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="enumC">When the method returns, this parameter contains the interface pointer of the enumerator. This parameter is passed uninitialized.</param>
-        <summary>Creates an enumerator of all the connection points supported in the connectable object, one connection point per IID.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="enumC">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindConnectionPoint">
@@ -71,7 +51,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,19 +61,10 @@
         <Parameter Name="cp" Type="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="riid">A reference to the outgoing interface IID whose connection point is being requested.</param>
-        <param name="cp">When the method returns, this parameter contains the connection point that manages the outgoing interface <c>riid</c>. This parameter is passed uninitialized.</param>
-        <summary>Queries the connectable object about whether it has a connection point for a particular IID, and, if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
-  
- [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
-  
- ]]></format>
-        </remarks>
+        <param name="riid">To be added.</param>
+        <param name="cp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

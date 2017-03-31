@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionResult" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,19 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enumeration of activity result values that qualifies the state of an <see cref="T:System.Workflow.ComponentModel.Activity" /> that has an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of <see langword="Closed" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Result represents the final status of an <xref:System.Workflow.ComponentModel.Activity> instance within a workflow instance. The values of the enumeration are based upon the activity state diagram that is determined by the activity-engine contract. Values other than None are allowed only for an activity whose <xref:System.Workflow.ComponentModel.ActivityExecutionStatus> is <xref:System.Workflow.ComponentModel.ActivityExecutionStatus>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Canceled">
@@ -38,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity has transitioned to the closed state from the canceling state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Compensated">
@@ -55,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity has transitioned to the closed state from the compensating state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Faulted">
@@ -72,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity has transitioned to the closed state from the faulting state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -89,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity is not in the <see cref="System.Workflow.ComponentModel.ActivityExecutionStatus.Closed" /> state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
@@ -106,14 +90,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity has transitioned to the closed state from the executing state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Uninitialized">
@@ -123,14 +106,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity has transitioned to the closed state from the initialized state.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

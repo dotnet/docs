@@ -8,15 +8,8 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides a service available to the [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] host to store and retrieve data.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This interface is implemented and used internally by [!INCLUDE[vs2010](~/add/includes/vs2010-md.md)], which is the primary host of the [!INCLUDE[wfd2](~/add/includes/wfd2-md.md)].  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddData">
@@ -36,9 +29,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the data to add.</param>
-        <param name="value">The data associated with the specified key.</param>
-        <summary>Adds the specified key/value pair to the dictionary.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,10 +51,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>Returns a value that indicates whether the dictionary contains an item with the specified key.</summary>
-        <returns>
-          <see langword="true" /> if the dictionary contains an item with the specified key; otherwise, <see langword="false" />.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +73,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to get the data for.</param>
-        <summary>Returns the data associated with the specified key.</summary>
-        <returns>The data associated with the specified key.</returns>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +95,8 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key whose data is to be removed.</param>
-        <summary>Removes the data associated with the specified key from the dictionary.</summary>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +117,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">They key of the item to update the value of.</param>
-        <param name="value">The data to update the item with.</param>
-        <summary>Updates the data for an existing dictionary item identified by the specified key.</summary>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

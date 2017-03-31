@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,35 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of checked items in a list view control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ListView.CheckedListViewItemCollection stores the checked items in a <xref:System.Windows.Forms.ListView> control. Items can only be checked if the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property of the <xref:System.Windows.Forms.ListView> control is set to `true`. The items stored in the ListView.CheckedListViewItemCollection are items contained in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The <xref:System.Windows.Forms.ListView.ListViewItemCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListView> control.  
-  
- The following table shows an example of how the <xref:System.Windows.Forms.ListView.ListViewItemCollection> stores the items of the <xref:System.Windows.Forms.ListView> as well as their selection states in an example <xref:System.Windows.Forms.ListView> control.  
-  
-|Index|Item|Checked state in the ListView|  
-|-----------|----------|-----------------------------------|  
-|0|Item1|Unchecked|  
-|1|Item2|Checked|  
-|2|Item3|Unchecked|  
-|3|Item4|Checked|  
-|4|Item5|Checked|  
-  
- Based on the <xref:System.Windows.Forms.ListView.ListViewItemCollection> example in the previous table, the following table demonstrates how the ListView.CheckedListViewItemCollection would appear.  
-  
-|Index|Checked item in ListViewItemCollection|  
-|-----------|--------------------------------------------|  
-|0|Item2|  
-|1|Item4|  
-|2|Item5|  
-  
- You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> class is a member of the ListView.CheckedListViewItemCollection. Once you know that the item is in the collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A> method to determine the position of the item in the ListView.CheckedListViewItemCollection.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,23 +31,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.ListView" />
       </Parameters>
       <Docs>
-        <param name="owner">The <see cref="T:System.Windows.Forms.ListView" /> control that owns the collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
-  
- ]]></format>
-        </remarks>
+        <param name="owner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -85,7 +49,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,18 +58,10 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item to locate in the collection.</param>
-        <summary>Determines whether the specified item is located in the collection.</summary>
-        <returns>
-          <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Contains method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> is a one of the checked items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that an item is in the checked item collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A?displayProperty=fullName> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -116,7 +71,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,19 +80,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to search for.</param>
-        <summary>Determines if a column with the specified key is contained in the collection.</summary>
-        <returns>
-          <see langword="true" /> if an item with the specified key is contained in the collection; otherwise, <see langword="false." /></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property of a <xref:System.Windows.Forms.ListViewItem> corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The owner <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -148,7 +93,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,17 +103,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">An <see cref="T:System.Array" /> representing the array to copy the contents of the collection to.</param>
-        <param name="index">The location within the destination array to copy the items from the collection to.</param>
-        <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this method to combine the checked items from multiple collections into a single array.  
-  
- ]]></format>
-        </remarks>
+        <param name="dest">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -179,7 +116,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -191,16 +127,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
-        <value>The number of items in the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to determine the number of checked items in the <xref:System.Windows.Forms.ListView> control. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -210,7 +139,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,8 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the checked item collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the checked item collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +158,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,17 +167,10 @@
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item to locate in the collection.</param>
-        <summary>Returns the index within the collection of the specified item.</summary>
-        <returns>The zero-based index of the item in the collection; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method), you can use the IndexOf method to determine where a specific item within the <xref:System.Windows.Forms.ListView.ListViewItemCollection> for the <xref:System.Windows.Forms.ListView> is stored within the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -260,7 +180,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,22 +189,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The name of the item to retrieve the index for.</param>
-        <summary>Determines the index for an item with the specified key.</summary>
-        <returns>The zero-based index for the <see cref="T:System.Windows.Forms.ListViewItem" /> with the specified name, if found; otherwise, -1.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ListViewItem.Name%2A> property of a <xref:System.Windows.Forms.ListViewItem> corresponds to the key for an item in a <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
- The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, IndexOfKey returns -1.  
-  
- If IndexOfKey is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The owner <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -295,24 +202,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
-        <value>
-          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is always `true` for this collection. The items in the collection can only be modified by the <xref:System.Windows.Forms.ListView> control.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -322,7 +220,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,19 +229,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item in the collection to retrieve.</param>
-        <summary>Gets the item at the specified index within the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. The item stored in this collection is an item in the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView> that represents a checked item in the <xref:System.Windows.Forms.ListView>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="System.Windows.Forms.ListView.CheckedListViewItemCollection.Count%2A" /> property of <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -354,7 +242,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,20 +251,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key of the item in the collection to retrieve.</param>
-        <summary>Gets an item with the specified key within the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item with the specified index within the collection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Item returns `null` if the `key` parameter is `null` or empty.  
-  
- The <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A> property corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The owner <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -387,16 +264,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" /> is synchronized (thread safe).</summary>
-        <value>
-          <see langword="false" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,15 +282,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that can be used to synchronize access to the collection of controls.</summary>
-        <value>The object used to synchronize the collection.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -426,7 +300,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,18 +309,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The item to add to the collection.</param>
-        <summary>Adds an item to the collection.</summary>
-        <returns>The zero-based index where value is located in the collection.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -457,7 +322,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,16 +329,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To clear the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, set the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property to `false` for each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -484,7 +340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,10 +349,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> to locate in the <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />.</param>
-        <summary>Verifies whether the item is checked.</summary>
-        <returns>
-          <see langword="true" /> if item is found in the <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />; otherwise, <see langword="false" />.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,7 +362,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -518,9 +371,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> that represents the item to locate in the collection.</param>
-        <summary>Returns the index within the collection of the specified item.</summary>
-        <returns>The zero-based index of the item if it is in the collection; otherwise, -1.</returns>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,7 +384,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,18 +394,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which value should be inserted.</param>
-        <param name="value">The object to be added to the <see cref="T:System.Windows.Forms.ListView.SelectedIndexCollection" />.</param>
-        <summary>Inserts an item into the collection at a specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -563,16 +407,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
-        <value>
-          <see langword="true" /> in all cases.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -583,7 +425,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -593,11 +434,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets an object from the collection.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> that represents the item located at the specified index within the collection.</value>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotSupportedException">This property cannot be set.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -607,7 +447,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -617,17 +456,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to be removed from the <see cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />.</param>
-        <summary>Removes the first occurrence of an item from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -637,7 +468,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -647,17 +477,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes an item from the collection at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

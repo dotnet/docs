@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SspiSecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a security token provider that provides an SSPI security token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SSPI security token is not capable of any cryptographic operations, but contains only the settings needed for Windows authentication.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -39,20 +30,11 @@
         <Parameter Name="allowUnauthenticatedCallers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="credential">The <see cref="T:System.Net.NetworkCredential" /> that represents the server identity.</param>
-        <param name="extractGroupsForWindowsAccounts">
-          <see langword="true" /> to expand users to include Windows Groups; otherwise, <see langword="false" />.</param>
-        <param name="allowUnauthenticatedCallers">
-          <see langword="true" /> to allow unauthenticated callers; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SspiSecurityTokenProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The instance of this class is used for SSPI tokens on the service.  
-  
- ]]></format>
-        </remarks>
+        <param name="credential">To be added.</param>
+        <param name="extractGroupsForWindowsAccounts">To be added.</param>
+        <param name="allowUnauthenticatedCallers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,7 +44,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -71,19 +52,11 @@
         <Parameter Name="impersonationLevel" Type="System.Security.Principal.TokenImpersonationLevel" />
       </Parameters>
       <Docs>
-        <param name="credential">The <see cref="T:System.Net.NetworkCredential" /> that represents the client identity.</param>
-        <param name="allowNtlm">
-          <see langword="true" /> to allow NTLM authentication; otherwise, <see langword="false" />.</param>
-        <param name="impersonationLevel">The <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> granted to the server.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SspiSecurityTokenProvider" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The new instance of this class is used for SSPI tokens on the client.  
-  
- ]]></format>
-        </remarks>
+        <param name="credential">To be added.</param>
+        <param name="allowNtlm">To be added.</param>
+        <param name="impersonationLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTokenCore">
@@ -93,7 +66,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,17 +75,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the time-out interval.</param>
-        <summary>Gets the security token.</summary>
-        <returns>The security token.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The security token is of type <xref:System.ServiceModel.Security.Tokens.SspiSecurityToken>.  
-  
- ]]></format>
-        </remarks>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

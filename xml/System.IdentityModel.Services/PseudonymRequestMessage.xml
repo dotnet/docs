@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Federation Pseudonym Request message. This message is created when the received message wa parameter is “wpseudo1.0”.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the message that this class represents, see the WS-Federation specification.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +28,8 @@
         <Parameter Name="baseUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="baseUrl">The base URL to which this message applies.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.PseudonymRequestMessage" /> class with the specified base URL.</summary>
+        <param name="baseUrl">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,16 +46,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wpseudo parameter of the message.</summary>
-        <value>A string that contains the value of the wpseudo parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set to `null` or an empty string to remove the wpseudo parameter from the message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PseudonymPtr">
@@ -78,17 +64,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wpseudoptr parameter of the message.</summary>
-        <value>A string that contains the value of the wpseudoptr parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set to `null` or an empty string to remove the wpseudoptr parameter from the message.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -104,17 +82,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Reply parameter of the message.</summary>
-        <value>A string that contains the value of the wreply parameter. This is the URL to which the reply should be sent.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set to `null` or an empty string to remove the wreply parameter from the message.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -130,16 +100,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wresult parameter of the message.</summary>
-        <value>A string that contains the value of the wresult parameter.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set to `null` or an empty string to remove the wresult parameter from the message.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResultPtr">
@@ -155,17 +118,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the wresultptr parameter of the message.</summary>
-        <value>A string that contains the value of the wresultptr parameter. This is a URI.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Set to `null` or an empty string to remove the wresultptr parameter from the message.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -182,15 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>No validation is performed by the framework. Users of this class should validate externally.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No validation is performed by the framework. Users of this class should validate externally.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -209,18 +157,9 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The text writer to which to write the message.</param>
-        <summary>Writes this message in a query string form to the specified text writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method calls the <xref:System.IdentityModel.Services.PseudonymReqeustMessage.Validate%2A> method before writing the message.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer" /> is <see langword="null" />.</exception>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

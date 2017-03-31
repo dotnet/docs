@@ -4,24 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ThemeColor" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Luna</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents possible color variants for the [!INCLUDE[TLA#tla_ms](~/add/includes/tlasharptla-ms-md.md)] themes.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each theme potentially has multiple color variants, which, presumably, are visually similar but in different colors. Luna, for example, has all three color variants: Homestead, Metallic, and NormalColor. Aero and Royale have NormalColor.  
-  
- Classic doesn't have a color variant, but instead uses color schemes, including Pumpkin, Rose, and Spruce. A color scheme, unlike a color variant, defines values for each of the colors which make up the system palette as well as certain values for certain metrics like font names and sizes.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Homestead">
@@ -31,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used by the Luna theme; the localized color name is Olive.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Metallic">
@@ -48,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used by the Luna theme; the localized color name is Sliver.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NormalColor">
@@ -65,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Used by the Luna, Aero, and Classic themes; the localized color name is Blue.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,44 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a plug-in that can be added to a control's <see cref="System.Windows.UIElement.StylusPlugIns%2A" /> property.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The StylusPlugIn allows you to manipulate <xref:System.Windows.Input.StylusPoint> objects on separate threads. Separate threads are used so that the ink still renders as the tablet pen inputs data even if the application is doing something else.  
-  
- To intercept stylus points from the hardware, create a class that inherits from the StylusPlugIn class.  The StylusPlugIn class has the following methods that you can override to manipulate <xref:System.Windows.Input.StylusPoint> objects on a thread in the pen thread pool.  
-  
--   <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A>  
-  
--   <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A>  
-  
--   <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A>  
-  
--   <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusEnter%2A>  
-  
--   <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusLeave%2A>  
-  
- The pen's input is routed to an element's StylusPlugIn on the pen thread. Since accurate hit-testing cannot be performed on the pen thread, some elements might occasionally receive stylus input intended for other elements. If you need to make sure the input was routed correctly before performing an operation, subscribe to and perform the operation in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDownProcessed%2A>, <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMoveProcessed%2A>, or <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method. These methods are invoked by the main application thread after accurate hit-testing has been performed. To subscribe to these methods, call the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> method in the method that occurs on the pen thread. For example, if you call <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A>, the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMoveProcessed%2A> occurs.  
-  
-> [!NOTE]
->  If you use a StylusPlugIn inside a control, you should test the plug-in and control extensively to make sure they do not throw any unintended exceptions.  
-  
-<a name="xamlTextUsage_StylusPlugIn"></a>   
-## XAML Text Usage  
- This class is not typically used in XAML.  
-  
-   
-  
-## Examples  
- The following example creates a custom StylusPlugIn that constrains the ink to a certain area on the control.  
-  
- [!code-cs[StylusPluginSamples#1](~/add/codesnippet/csharp/StylusPluginSamples/FilterPlugin.cs#1)]
- [!code-vb[StylusPluginSamples#1](~/add/codesnippet/visualbasic/StylusPluginSamples/FilterPlugin.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,26 +37,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.UIElement" /> to which the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is attached.</summary>
-        <value>The <see cref="T:System.Windows.UIElement" /> to which the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is attached.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the Element of the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> when it is added to the <xref:System.Windows.UIElement.StylusPlugIns%2A> collection.  
-  
- [!code-vb[StylusPluginSamples#22](~/add/codesnippet/visualbasic/StylusPluginSamples/CustomDynamicRenderer.vb#22)]
- [!code-cs[StylusPluginSamples#22](~/add/codesnippet/csharp/StylusPluginSamples/CustomDynamicRenderer.cs#22)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementBounds">
@@ -104,31 +55,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the cached bounds of the element.</summary>
-        <value>The cached bounds of the element.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> caches the bounds of its element to perform hit testing.  
-  
-   
-  
-## Examples  
- The following example demonstrates how a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, which inherits from <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn>, uses an <xref:System.Windows.Media.ImageBrush> to render a stroke.  This brush partially draws the image file specified by `imageFile`.  
-  
- [!code-vb[StylusPluginSamples#17](~/add/codesnippet/visualbasic/StylusPluginSamples/ImageRenderer.vb#17)]
- [!code-cs[StylusPluginSamples#17](~/add/codesnippet/csharp/StylusPluginSamples/ImageRenderer.cs#17)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -138,35 +73,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is active.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is active; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_Enabled"></a>   
-## XAML Text Usage  
- This property is not typically used in XAML.  
-  
-   
-  
-## Examples  
- The following example checks the value of the Enabled property in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnEnabledChanged%2A> method.  
-  
- [!code-vb[StylusPluginSamples#16](~/add/codesnippet/visualbasic/StylusPluginSamples/CustomDynamicRenderer.vb#16)]
- [!code-cs[StylusPluginSamples#16](~/add/codesnippet/csharp/StylusPluginSamples/CustomDynamicRenderer.cs#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsActiveForInput">
@@ -176,36 +91,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is able to accept input.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is able to accept input; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following conditions must be met for the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> to accept input:  
-  
--   The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> is a member of a <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>.  
-  
--   The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.Element%2A> of the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> is visible and enabled.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to override the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnIsActiveForInputChanged%2A> method.  
-  
- [!code-vb[StylusPluginSamples#18](~/add/codesnippet/visualbasic/StylusPluginSamples/CustomDynamicRenderer.vb#18)]
- [!code-cs[StylusPluginSamples#18](~/add/codesnippet/csharp/StylusPluginSamples/CustomDynamicRenderer.cs#18)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAdded">
@@ -215,7 +109,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,18 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is added to an element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.Element%2A> of the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> when it is added to the <xref:System.Windows.UIElement.StylusPlugIns%2A> collection.  
-  
- [!code-vb[StylusPluginSamples#22](~/add/codesnippet/visualbasic/StylusPluginSamples/CustomDynamicRenderer.vb#22)]
- [!code-cs[StylusPluginSamples#22](~/add/codesnippet/csharp/StylusPluginSamples/CustomDynamicRenderer.cs#22)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -244,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,18 +134,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Input.StylusPlugIns.StylusPlugIn.Enabled%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example checks the value of the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.Enabled%2A> property in the OnEnabledChanged method.  
-  
- [!code-vb[StylusPluginSamples#16](~/add/codesnippet/visualbasic/StylusPluginSamples/CustomDynamicRenderer.vb#16)]
- [!code-cs[StylusPluginSamples#16](~/add/codesnippet/csharp/StylusPluginSamples/CustomDynamicRenderer.cs#16)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnIsActiveForInputChanged">
@@ -273,7 +145,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,23 +152,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Input.StylusPlugIns.StylusPlugIn.IsActiveForInput%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the OnIsActiveForInputChanged method to allocate and clean up resources used by the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn>.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to override the OnIsActiveForInputChanged method.  
-  
- [!code-vb[StylusPluginSamples#18](~/add/codesnippet/visualbasic/StylusPluginSamples/CustomDynamicRenderer.vb#18)]
- [!code-cs[StylusPluginSamples#18](~/add/codesnippet/csharp/StylusPluginSamples/CustomDynamicRenderer.cs#18)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRemoved">
@@ -307,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -315,7 +170,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> is removed from an element.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,7 +181,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,24 +190,9 @@
         <Parameter Name="rawStylusInput" Type="System.Windows.Input.StylusPlugIns.RawStylusInput" />
       </Parameters>
       <Docs>
-        <param name="rawStylusInput">A <see cref="T:System.Windows.Input.StylusPlugIns.RawStylusInput" /> that contains information about input from the pen.</param>
-        <summary>Occurs on a thread in the pen thread pool when the tablet pen touches the digitizer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method occurs on a pen thread, so minimize work in this method to avoid impacting performance.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to override the OnStylusDown method. To create a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that restricts ink to a certain area, see the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> overview.  
-  
- [!code-cs[StylusPluginSamples#8](~/add/codesnippet/csharp/StylusPluginSamples/FilterPlugin.cs#8)]
- [!code-vb[StylusPluginSamples#8](~/add/codesnippet/visualbasic/StylusPluginSamples/FilterPlugin.vb#8)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rawStylusInput">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusDownProcessed">
@@ -363,7 +202,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,26 +212,10 @@
         <Parameter Name="targetVerified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="callbackData">The object that the application passed to the <see cref="System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A" /> method.</param>
-        <param name="targetVerified">
-          <see langword="true" /> if the pen's input was correctly routed to the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" />; otherwise, <see langword="false" />.</param>
-        <summary>Occurs on the application UI (user interface) thread when the tablet pen touches the digitizer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To subscribe to this method, call <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A> method.  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread. The relationship between <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A> and on OnStylusDownProcessed is identical.  
-  
- [!code-cs[StylusPluginSamples#12](~/add/codesnippet/csharp/StylusPluginSamples/RecognizerPlugin.cs#12)]
- [!code-vb[StylusPluginSamples#12](~/add/codesnippet/visualbasic/StylusPluginSamples/RecognizerPlugin.vb#12)]  
-  
- ]]></format>
-        </remarks>
+        <param name="callbackData">To be added.</param>
+        <param name="targetVerified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusEnter">
@@ -403,7 +225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -414,18 +235,10 @@
         <Parameter Name="confirmed" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="rawStylusInput">A <see cref="T:System.Windows.Input.StylusPlugIns.RawStylusInput" /> that contains information about input from the pen.</param>
-        <param name="confirmed">
-          <see langword="true" /> if the pen actually entered the bounds of the element; otherwise, <see langword="false" />.</param>
-        <summary>Occurs on a pen thread when the cursor enters the bounds of an element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method occurs on a pen thread, so minimize work in this method to avoid impacting performance.  
-  
- ]]></format>
-        </remarks>
+        <param name="rawStylusInput">To be added.</param>
+        <param name="confirmed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusLeave">
@@ -435,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -446,28 +258,10 @@
         <Parameter Name="confirmed" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="rawStylusInput">A <see cref="T:System.Windows.Input.StylusPlugIns.RawStylusInput" /> that contains information about input from the pen.</param>
-        <param name="confirmed">
-          <see langword="true" /> if the pen actually left the bounds of the element; otherwise, <see langword="false" />.</param>
-        <summary>Occurs on a pen thread when the cursor leaves the bounds of an element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method occurs on a pen thread, so minimize work in this method to avoid impacting performance.  
-  
-   
-  
-## Examples  
- The following example resets the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> when the cursor leaves the bounds of the element.  
-  
- [!code-cs[StylusPluginSamples#20](~/add/codesnippet/csharp/StylusPluginSamples/RecognizerPlugin.cs#20)]
- [!code-vb[StylusPluginSamples#20](~/add/codesnippet/visualbasic/StylusPluginSamples/RecognizerPlugin.vb#20)]  
-[!code-cs[StylusPluginSamples#14](~/add/codesnippet/csharp/StylusPluginSamples/RecognizerPlugin.cs#14)]
-[!code-vb[StylusPluginSamples#14](~/add/codesnippet/visualbasic/StylusPluginSamples/RecognizerPlugin.vb#14)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rawStylusInput">To be added.</param>
+        <param name="confirmed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusMove">
@@ -477,7 +271,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -487,24 +280,9 @@
         <Parameter Name="rawStylusInput" Type="System.Windows.Input.StylusPlugIns.RawStylusInput" />
       </Parameters>
       <Docs>
-        <param name="rawStylusInput">A <see cref="T:System.Windows.Input.StylusPlugIns.RawStylusInput" /> that contains information about input from the pen.</param>
-        <summary>Occurs on a pen thread when the tablet pen moves on the digitizer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method occurs on a pen thread, so minimize work in this method to avoid impacting performance.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to override the OnStylusMove method. To create a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that restricts ink to a certain area, see the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> overview.  
-  
- [!code-cs[StylusPluginSamples#9](~/add/codesnippet/csharp/StylusPluginSamples/FilterPlugin.cs#9)]
- [!code-vb[StylusPluginSamples#9](~/add/codesnippet/visualbasic/StylusPluginSamples/FilterPlugin.vb#9)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rawStylusInput">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusMoveProcessed">
@@ -514,7 +292,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -525,26 +302,10 @@
         <Parameter Name="targetVerified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="callbackData">The object that the application passed to the <see cref="System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A" /> method.</param>
-        <param name="targetVerified">
-          <see langword="true" /> if the pen's input was correctly routed to the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" />; otherwise, <see langword="false" />.</param>
-        <summary>Occurs on the application UI (user interface) thread when the tablet pen moves on the digitizer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To subscribe to this method, call <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A> method  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread. The relationship between <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A> and on OnStylusMoveProcessed is identical.  
-  
- [!code-cs[StylusPluginSamples#12](~/add/codesnippet/csharp/StylusPluginSamples/RecognizerPlugin.cs#12)]
- [!code-vb[StylusPluginSamples#12](~/add/codesnippet/visualbasic/StylusPluginSamples/RecognizerPlugin.vb#12)]  
-  
- ]]></format>
-        </remarks>
+        <param name="callbackData">To be added.</param>
+        <param name="targetVerified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusUp">
@@ -554,7 +315,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -564,24 +324,9 @@
         <Parameter Name="rawStylusInput" Type="System.Windows.Input.StylusPlugIns.RawStylusInput" />
       </Parameters>
       <Docs>
-        <param name="rawStylusInput">A <see cref="T:System.Windows.Input.StylusPlugIns.RawStylusInput" /> that contains information about input from the pen.</param>
-        <summary>Occurs on a pen thread when the user lifts the tablet pen from the digitizer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method occurs on a pen thread, so minimize work in this method to avoid impacting performance.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to override the OnStylusUp method. To create a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that restricts ink to a certain area, see the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> overview.  
-  
- [!code-cs[StylusPluginSamples#10](~/add/codesnippet/csharp/StylusPluginSamples/FilterPlugin.cs#10)]
- [!code-vb[StylusPluginSamples#10](~/add/codesnippet/visualbasic/StylusPluginSamples/FilterPlugin.vb#10)]  
-  
- ]]></format>
-        </remarks>
+        <param name="rawStylusInput">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnStylusUpProcessed">
@@ -591,7 +336,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -602,26 +346,10 @@
         <Parameter Name="targetVerified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="callbackData">The object that the application passed to the <see cref="System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A" /> method.</param>
-        <param name="targetVerified">
-          <see langword="true" /> if the pen's input was correctly routed to the <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" />; otherwise, <see langword="false" />.</param>
-        <summary>Occurs on the application UI (user interface) thread when the user lifts the tablet pen from the digitizer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To subscribe to this method, call <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> method  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> checks for the gesture in the OnStylusUpProcessed method, which is called from the application UI thread.  
-  
- [!code-cs[StylusPluginSamples#12](~/add/codesnippet/csharp/StylusPluginSamples/RecognizerPlugin.cs#12)]
- [!code-vb[StylusPluginSamples#12](~/add/codesnippet/visualbasic/StylusPluginSamples/RecognizerPlugin.vb#12)]  
-  
- ]]></format>
-        </remarks>
+        <param name="callbackData">To be added.</param>
+        <param name="targetVerified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

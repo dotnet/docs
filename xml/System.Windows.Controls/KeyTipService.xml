@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a service that provides properties, methods, and events to enable and manage KeyTips in WPF <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.ActivatingKeyTipEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The identifier of the routed event for which the handler is attached.</param>
-        <param name="handler">The specific handler implementation to add to the event handler collection on this element.</param>
-        <summary>Adds the routed event handler for the <see cref="System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The identifier of the routed event for which the handler is attached.</param>
-        <param name="handler">The specific handler implementation to add to the event handler collection on this element.</param>
-        <summary>Adds the routed event handler for the <see cref="System.Windows.Controls.KeyTipService.KeyTipAccessed" /> event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +95,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The identifier of the routed event for which the handler is attached.</param>
-        <param name="handler">The specific handler implementation to add to the event handler collection on this element.</param>
-        <summary>Adds the routed event handler for the <see cref="System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Hides the KeyTips that are currently displayed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,11 +135,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The object from which the property value is read.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Controls.KeyTipService.IsKeyTipScope%2A" /> attached property for the specified element.</summary>
-        <returns>The object’s <see cref="System.Windows.Controls.KeyTipService.IsKeyTipScope%2A" /> property value.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyTip">
@@ -158,11 +157,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The object from which the property value is read.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Controls.KeyTipService.KeyTip%2A" /> attached property for the specified element.</summary>
-        <returns>The object’s <see cref="System.Windows.Controls.KeyTipService.KeyTip%2A" /> property value.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyTipStyle">
@@ -181,11 +179,10 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">The object from which the property value is read.</param>
-        <summary>Returns the value of the <see cref="System.Windows.Controls.KeyTipService.KeyTipStyle%2A" /> attached property for the specified element.</summary>
-        <returns>The object’s <see cref="System.Windows.Controls.KeyTipService.KeyTipStyle%2A" /> property value.</returns>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsKeyTipScopeProperty">
@@ -201,7 +198,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.KeyTipService.IsKeyTipScope%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +215,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.KeyTipService.KeyTipAccessed" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +232,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.KeyTipService.KeyTip%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +249,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.KeyTipService.KeyTipStyle%2A" /> dependency property.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,7 +266,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> routed event.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,9 +287,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.ActivatingKeyTipEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The identifier of the routed event for which the handler is attached.</param>
-        <param name="handler">The specific handler implementation to remove from the event handler collection on this element.</param>
-        <summary>Removes the routed event handler for the <see cref="System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +310,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The identifier of the routed event for which the handler is attached.</param>
-        <param name="handler">The specific handler implementation to remove from the event handler collection on this element.</param>
-        <summary>Removes the routed event handler for the <see cref="System.Windows.Controls.KeyTipService.KeyTipAccessed" /> event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,9 +333,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The identifier of the routed event for which the handler is attached.</param>
-        <param name="handler">The specific handler implementation to remove from the event handler collection on this element.</param>
-        <summary>Removes the routed event handler for the <see cref="System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> event.</summary>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,11 +356,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The object to which the attached property is written.</param>
-        <param name="value">The value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.KeyTipService.IsKeyTipScope%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetKeyTip">
@@ -383,11 +379,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">The object to which the attached property is written.</param>
-        <param name="value">The value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.KeyTipService.KeyTip%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetKeyTipStyle">
@@ -407,11 +402,10 @@
         <Parameter Name="value" Type="System.Windows.Style" />
       </Parameters>
       <Docs>
-        <param name="element">The object to which the attached property is written.</param>
-        <param name="value">The value to set.</param>
-        <summary>Sets the value of the <see cref="System.Windows.Controls.KeyTipService.KeyTipStyle%2A" /> attached property for the specified element.</summary>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

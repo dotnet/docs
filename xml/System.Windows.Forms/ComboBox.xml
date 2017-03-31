@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBox" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,37 +31,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows combo box control.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A ComboBox displays a text box combined with a <xref:System.Windows.Forms.ListBox>, which enables the user to select items from the list or enter a new value.  
-  
- The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property specifies whether the list is always displayed or whether the list is displayed in a drop-down. The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property also specifies whether the text portion can be edited. See <xref:System.Windows.Forms.ComboBoxStyle> for the available settings and their effects. There is no setting to always display the list and disallow entering a new value. To display a list to which no new values can be added, use a <xref:System.Windows.Forms.ListBox> control.  
-  
- To add or remove objects in the list at run time, use methods of the <xref:System.Windows.Forms.ComboBox.ObjectCollection> class (through the <xref:System.Windows.Forms.ComboBox.Items%2A> property of the ComboBox). You can assign an array of object references with the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method. The list then displays the default string value for each object. You can add individual objects with the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method. You can delete items with the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method or clear the entire list with the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Clear%2A> method.  
-  
- In addition to display and selection functionality, the ComboBox also provides features that enable you to efficiently add items to the ComboBox and to find text within the items of the list. With the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> methods, you can add a large number of items to the ComboBox without the control being repainted each time an item is added to the list. The <xref:System.Windows.Forms.ComboBox.FindString%2A> and <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> methods enable you to search for an item in the list that contains a specific search string.  
-  
- You can use these properties to manage the currently selected item in the list, the <xref:System.Windows.Forms.ComboBox.Text%2A> property to specify the string displayed in the editing field, the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property to get or set the current item, and the <xref:System.Windows.Forms.ComboBox.SelectedItem%2A> property to get or set a reference to the object.  
-  
-> [!NOTE]
->  If you have a <xref:System.Windows.Forms.ListBox>, ComboBox, or <xref:System.Windows.Forms.CheckedListBox> on a base Windows Forms page and want to modify the string collections of those controls in a derived form, the string collections of those controls in the base form must be empty. If the string collections are not empty, they become read-only when you derive another form.  
-  
-   
-  
-## Examples  
- The following code example is a complete application showing how you can use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method to add items to a ComboBox, the <xref:System.Windows.Forms.ComboBox.FindString%2A> method to find items in a ComboBox, and the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> methods to efficiently add a large number items to a ComboBox. The ability to store values that are different from displayed text is inherited from <xref:System.Windows.Forms.ListControl>. For an example of how to use this feature, see the <xref:System.Windows.Forms.ListControl> class.  
-  
- You must add references to the `System.Drawing` and `System.Windows.Forms` namespaces to run this example.  
-  
- [!code-vb[ComboBox#1](~/add/codesnippet/visualbasic/t-system.windows.forms.c_20_1.vb)]
- [!code-cpp[ComboBox#1](~/add/codesnippet/cpp/t-system.windows.forms.c_20_1.cpp)]
- [!code-cs[ComboBox#1](~/add/codesnippet/csharp/t-system.windows.forms.c_20_1.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,12 +42,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ComboBox" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +57,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,8 +71,8 @@
         <Parameter Name="value" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="value">The items to add.</param>
-        <summary>Adds the specified items to the combo box.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +83,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -139,23 +106,9 @@
         <ReturnType>System.Windows.Forms.AutoCompleteStringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a custom <see cref="T:System.Collections.Specialized.StringCollection" /> to use when the <see cref="System.Windows.Forms.ComboBox.AutoCompleteSource%2A" /> property is set to <see langword="CustomSource" />.</summary>
-        <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> to use with <see cref="System.Windows.Forms.ComboBox.AutoCompleteSource%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the AutoCompleteCustomSource, <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered. If there are duplicate entries in the maintained source, automatic completion behaves unpredictably.  
-  
- The use of the AutoCompleteCustomSource property is optional, but you must set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property to `CustomSource` in order to use AutoCompleteCustomSource.  
-  
- You must use the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties together.  
-  
-> [!NOTE]
->  The operating system might limit the number of custom strings that it can display at once. For strings that contain a forward slash (/) or backward slash (\\), automatic completion appends all characters only up to and including the slash.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteMode">
@@ -165,7 +118,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -183,36 +135,9 @@
         <ReturnType>System.Windows.Forms.AutoCompleteMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an option that controls how automatic completion works for the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>One of the values of <see cref="T:System.Windows.Forms.AutoCompleteMode" />. The values are <see cref="T:System.Windows.Forms.AutoCompleteMode" />, <see cref="T:System.Windows.Forms.AutoCompleteMode" />, <see cref="T:System.Windows.Forms.AutoCompleteMode" />, and <see cref="T:System.Windows.Forms.AutoCompleteMode" />. The default is <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>, AutoCompleteMode, and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered. If there are duplicate entries in the maintained source, automatic completion behaves unpredictably.  
-  
- If you set <xref:System.Windows.Forms.ComboBoxStyle> to <xref:System.Windows.Forms.ComboBoxStyle>, the list displays only if AutoCompleteMode is <xref:System.Windows.Forms.AutoCompleteMode> or <xref:System.Windows.Forms.AutoCompleteMode>.  
-  
- The use of the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource> in order to use <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>.  
-  
- You must use the AutoCompleteMode and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties together.  
-  
- With AutoCompleteMode set to <xref:System.Windows.Forms.AutoCompleteMode> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> set to <xref:System.Windows.Forms.AutoCompleteSource>, the behavior is as follows:  
-  
--   If the list of strings is empty, pressing the BACKSPACE or DELETE key does nothing.  
-  
--   If the BACKSPACE key is pressed in less than one second, the previous item is selected, or nothing is selected if the list of string is empty.  
-  
--   If the BACKSPACE key is pressed in more than one second, the first item is selected.  
-  
--   If the DELETE key is pressed, the first item is selected.  
-  
-> [!NOTE]
->  The operating system might limit the number of custom strings that it can display at once. For strings that contain a forward slash (/) or backward slash (\\), automatic completion appends all characters only up to and including the slash.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteSource">
@@ -222,7 +147,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -240,34 +164,9 @@
         <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the source of complete strings used for automatic completion.</summary>
-        <value>One of the values of <see cref="T:System.Windows.Forms.AutoCompleteSource" />. The options are <see langword="AllSystemSources" />, <see langword="AllUrl" />, <see langword="FileSystem" />, <see langword="HistoryList" />, <see langword="RecentlyUsedList" />, <see langword="CustomSource" />, and <see langword="None" />. The default is <see langword="None" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A>, and AutoCompleteSource properties to create a <xref:System.Windows.Forms.ComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
-  
- The use of the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the AutoCompleteSource property to <xref:System.Windows.Forms.AutoCompleteSource> in order to use <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>.  
-  
- You must use the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> and AutoCompleteSource properties together.  
-  
- With <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> set to <xref:System.Windows.Forms.AutoCompleteMode> and AutoCompleteSource set to <xref:System.Windows.Forms.AutoCompleteSource>, the behavior is as follows:  
-  
--   If the list of strings is empty, pressing the BACKSPACE or DELETE key does nothing.  
-  
--   If the BACKSPACE key is pressed in less than one second, the previous item is selected, or nothing is selected if the list of string is empty.  
-  
--   If the BACKSPACE key is pressed in more than one second, the first item is selected.  
-  
--   If the DELETE key is pressed, the first item is selected.  
-  
-> [!NOTE]
->  The operating system might limit the number of custom strings that it can display at once. For strings that contain a forward slash (/) or backward slash (\\), automatic completion appends all characters only up to and including the slash.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -277,15 +176,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the control.</summary>
-        <value>A color object that represents the background color of the control. The default is the value of the <see cref="System.Windows.Forms.Control.DefaultBackColor%2A" /> property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,7 +194,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -311,16 +208,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant to this class.</summary>
-        <value>The background image displayed in the control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant to this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -330,7 +220,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -345,15 +234,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="System.Windows.Forms.ComboBox.BackgroundImage%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant to this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -363,7 +245,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -378,17 +259,9 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image layout as defined in the <see cref="T:System.Windows.Forms.ImageLayout" /> enumeration.</summary>
-        <value>One of the values of <see cref="T:System.Windows.Forms.ImageLayout" /> (<see langword="Center" />, <see langword="None" />, <see langword="Stretch" />, <see langword="Tile" />, or <see langword="Zoom" />).</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant to this class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.ImageLayout" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -398,7 +271,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -413,15 +285,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ComboBox.BackgroundImageLayout%2A" /> property changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant to this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginUpdate">
@@ -431,7 +296,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,26 +303,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Maintains performance when items are added to the <see cref="T:System.Windows.Forms.ComboBox" /> one at a time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method prevents the control from painting until the <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> method is called.  
-  
- The preferred way to add items to the <xref:System.Windows.Forms.ComboBox> is to use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method of the <xref:System.Windows.Forms.ComboBox.ObjectCollection> class (through the <xref:System.Windows.Forms.ComboBox.Items%2A> property of the <xref:System.Windows.Forms.ComboBox>). This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ComboBox.ObjectCollection> class, you can use the BeginUpdate method to prevent the control from repainting the <xref:System.Windows.Forms.ComboBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ComboBox> to repaint. This way of adding items can prevent flicker during the drawing of the <xref:System.Windows.Forms.ComboBox> when a large number of items are being added to the list.  
-  
-   
-  
-## Examples  
- The following code example shows the usage of the BeginUpdate and <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> methods. The example is part of a complete code example in the <xref:System.Windows.Forms.ComboBox> class overview.  
-  
- [!code-cs[ComboBox#3](~/add/codesnippet/csharp/m-system.windows.forms.c_21_1.cs)]
- [!code-cpp[ComboBox#3](~/add/codesnippet/cpp/m-system.windows.forms.c_21_1.cpp)]
- [!code-vb[ComboBox#3](~/add/codesnippet/visualbasic/m-system.windows.forms.c_21_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -468,7 +314,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -476,8 +321,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the control.</summary>
-        <returns>A new accessibility object for the control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,7 +333,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -496,15 +340,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a handle for the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is overridden in <xref:System.Windows.Forms.ComboBox> to avoid multiple layouts during handle creation due to <xref:System.Windows.Forms.ComboBox> size change.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -514,15 +351,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
-        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -533,7 +369,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -551,24 +386,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data source for this <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>An object that implements the <see cref="T:System.Collections.IList" /> interface or an <see cref="T:System.Array" />. The default is <see langword="null" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A data source can be a database, a Web service, or an object that can later be used to generate data-bound controls. When the DataSource property is set, the items collection cannot be modified.  
-  
-   
-  
-## Examples  
- The following example uses the DataSource property to display an array of weekdays in a <xref:System.Windows.Forms.ComboBox>.  
-  
- [!code-cs[System.Windows.Forms.ComboBox.DataSource#1](~/add/codesnippet/csharp/p-system.windows.forms.c_55_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBox.DataSource#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_55_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -578,15 +398,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
-        <value>The default size of the control.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,7 +416,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -607,19 +425,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ComboBox" /> and optionally releases the managed resources.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ComboBox> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -629,7 +437,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -644,15 +451,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant for this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawItem">
@@ -662,33 +462,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a visual aspect of an owner-drawn <see cref="T:System.Windows.Forms.ComboBox" /> changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is used by an owner-drawn <xref:System.Windows.Forms.ComboBox>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.ComboBox>. If you have a variable sized item (when the <xref:System.Windows.Forms.ComboBox.DrawMode%2A?displayProperty=fullName> property is set to the `OwnerDrawVariable` value of <xref:System.Windows.Forms.DrawMode?displayProperty=fullName>), before drawing an item, the <xref:System.Windows.Forms.ComboBox.MeasureItem> event is raised. You can create an event handler for the <xref:System.Windows.Forms.ComboBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the DrawItem event.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an owner-drawn combo box by setting the <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property to `OwnerDrawnVariable` and handling the DrawItem and <xref:System.Windows.Forms.ComboBox.MeasureItem> events. It also demonstrates setting the <xref:System.Windows.Forms.ComboBox.DropDownWidth%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties. To run the example, paste the following code in a form. Call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/csharp/e-system.windows.forms.c_37_1.cs)]
- [!code-cpp[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/cpp/e-system.windows.forms.c_37_1.cpp)]
- [!code-vb[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/visualbasic/e-system.windows.forms.c_37_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawMode">
@@ -698,7 +479,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -713,21 +493,9 @@
         <ReturnType>System.Windows.Forms.DrawMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether your code or the operating system will handle drawing of elements in the list.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.DrawMode" /> enumeration values. The default is <see cref="T:System.Windows.Forms.DrawMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to create an owner-drawn combo box by setting the DrawMode property to `OwnerDrawnVariable` and handling the <xref:System.Windows.Forms.ComboBox.DrawItem> and <xref:System.Windows.Forms.ComboBox.MeasureItem> events. It also demonstrates setting the <xref:System.Windows.Forms.ComboBox.DropDownWidth%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties. To run the example, paste the following code in a form. Call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/csharp/p-system.windows.forms.c_58_1.cs)]
- [!code-cpp[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/cpp/p-system.windows.forms.c_58_1.cpp)]
- [!code-vb[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_58_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a valid <see cref="T:System.Windows.Forms.DrawMode" /> enumeration value.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDown">
@@ -737,31 +505,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the drop-down portion of a <see cref="T:System.Windows.Forms.ComboBox" /> is shown.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the text property and using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method to populate the <xref:System.Windows.Forms.ComboBox>. It also demonstrates handling the DropDown event. To run the example, paste the following code in a form and call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/visualbasic/e-system.windows.forms.c_54_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/cpp/e-system.windows.forms.c_54_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/csharp/e-system.windows.forms.c_54_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownClosed">
@@ -771,34 +522,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the drop-down portion of the <see cref="T:System.Windows.Forms.ComboBox" /> is no longer visible.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the DropDownClosed event to restore the state of the <xref:System.Windows.Forms.ComboBox> from changes you made in response to the <xref:System.Windows.Forms.ComboBox.DropDown> event.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the DropDownClosed event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ComboBox> named `ComboBox1`. Then ensure that the event handler is associated with the DropDownClosed event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#168](~/add/codesnippet/csharp/e-system.windows.forms.c_51_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#168](~/add/codesnippet/visualbasic/e-system.windows.forms.c_51_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownHeight">
@@ -808,7 +539,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -826,17 +556,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height in pixels of the drop-down portion of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>The height, in pixels, of the drop-down box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the DropDownHeight property resets the <xref:System.Windows.Forms.ComboBox.IntegralHeight%2A> property to `false`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified value is less than one.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownStyle">
@@ -846,7 +568,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -861,26 +582,9 @@
         <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the style of the combo box.</summary>
-        <value>One of the <see cref="T:System.Windows.Forms.ComboBoxStyle" /> values. The default is <see langword="DropDown" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DropDownStyle property specifies whether the list is always displayed or whether the list is displayed in a drop-down. The DropDownStyle property also specifies whether the text portion can be edited. See <xref:System.Windows.Forms.ComboBoxStyle> for the available settings and their effects. There is no setting to always display the list and disallow entering a new value. To display a list to which no new values can be added, use a <xref:System.Windows.Forms.ListBox> control.  
-  
-   
-  
-## Examples  
- The following code example demonstrates setting the DropDownStyle property. To run the example, paste the following code in a form. Call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/csharp/p-system.windows.forms.c_99_1.cs)]
- [!code-cpp[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/cpp/p-system.windows.forms.c_99_1.cpp)]
- [!code-vb[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_99_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ComboBoxStyle" /> values.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownStyleChanged">
@@ -890,32 +594,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ComboBox.DropDownStyle%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the DropDownStyleChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ComboBox> named `ComboBox1`. Then ensure that the event handler is associated with the DropDownStyleChanged event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#166](~/add/codesnippet/csharp/e-system.windows.forms.c_9_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#166](~/add/codesnippet/visualbasic/e-system.windows.forms.c_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownWidth">
@@ -925,36 +611,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the of the drop-down portion of a combo box.</summary>
-        <value>The width, in pixels, of the drop-down box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a value has not been set for the DropDownWidth, this property returns the <xref:System.Windows.Forms.Control.Width%2A> of the combo box.  
-  
-> [!NOTE]
->  The width of the drop-down cannot be smaller than the <xref:System.Windows.Forms.ComboBox> width.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an owner-drawn combo box by setting the <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property to `OwnerDrawnVariable` and handling the <xref:System.Windows.Forms.ComboBox.DrawItem> and <xref:System.Windows.Forms.ComboBox.MeasureItem> events. It also demonstrates setting the DropDownWidth and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties. To run the example, paste the following code in a form. Call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/csharp/p-system.windows.forms.c_40_1.cs)]
- [!code-cpp[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/cpp/p-system.windows.forms.c_40_1.cpp)]
- [!code-vb[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/visualbasic/p-system.windows.forms.c_40_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The specified value is less than one.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DroppedDown">
@@ -964,7 +629,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -979,9 +643,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the combo box is displaying its drop-down portion.</summary>
-        <value>
-          <see langword="true" /> if the drop-down portion is displayed; otherwise, <see langword="false" />. The default is false.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -992,7 +655,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1000,24 +662,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resumes painting the <see cref="T:System.Windows.Forms.ComboBox" /> control after painting is suspended by the <see cref="System.Windows.Forms.ComboBox.BeginUpdate%2A" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The preferred way to add items to the <xref:System.Windows.Forms.ComboBox> is to use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method of the <xref:System.Windows.Forms.ComboBox.ObjectCollection> class (through the <xref:System.Windows.Forms.ComboBox.Items%2A> property of the <xref:System.Windows.Forms.ComboBox>). This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ComboBox.ObjectCollection> class, you can use the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ComboBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the EndUpdate method to enable the <xref:System.Windows.Forms.ComboBox> to repaint. This way of adding items can prevent flickered drawing of the <xref:System.Windows.Forms.ComboBox> when a large number of items are being added to the list.  
-  
-   
-  
-## Examples  
- The following code example shows the usage of the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> and EndUpdate methods. The example is part of a code example in the <xref:System.Windows.Forms.ComboBox> class overview.  
-  
- [!code-cs[ComboBox#3](~/add/codesnippet/csharp/m-system.windows.forms.c_93_1.cs)]
- [!code-cpp[ComboBox#3](~/add/codesnippet/cpp/m-system.windows.forms.c_93_1.cpp)]
- [!code-vb[ComboBox#3](~/add/codesnippet/visualbasic/m-system.windows.forms.c_93_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindString">
@@ -1027,7 +673,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1037,26 +682,10 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The <see cref="T:System.String" /> to search for.</param>
-        <summary>Returns the index of the first item in the <see cref="T:System.Windows.Forms.ComboBox" /> that starts with the specified string.</summary>
-        <returns>The zero-based index of the first item found; returns -1 if no match is found.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text, and returning the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ComboBox>, you must use the version of the FindString method that provides a parameter for specifying a starting index within the <xref:System.Windows.Forms.ComboBox>. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> method.  
-  
-   
-  
-## Examples  
- The following code example shows the usage of the FindString method and <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property. The example is part of a complete code example in the <xref:System.Windows.Forms.ComboBox> class overview.  
-  
- [!code-cs[ComboBox#4](~/add/codesnippet/csharp/m-system.windows.forms.c_115_1.cs)]
- [!code-cpp[ComboBox#4](~/add/codesnippet/cpp/m-system.windows.forms.c_115_1.cpp)]
- [!code-vb[ComboBox#4](~/add/codesnippet/visualbasic/m-system.windows.forms.c_115_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindString">
@@ -1066,7 +695,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1077,23 +705,11 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="s">The <see cref="T:System.String" /> to search for.</param>
-        <param name="startIndex">The zero-based index of the item before the first item to be searched. Set to -1 to search from the beginning of the control.</param>
-        <summary>Returns the index of the first item in the <see cref="T:System.Windows.Forms.ComboBox" /> beyond the specified index that contains the specified string. The search is not case sensitive.</summary>
-        <returns>The zero-based index of the first item found; returns -1 if no match is found, or 0 if the <paramref name="s" /> parameter specifies <see cref="T:System.String" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text, returning the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method or changing the item's text. This method is typically used after a call has been made using the version of this method that does not specify a starting index. Once an initial item has been found in the list, this method is typically used to find further instances of the search text by specifying the index position in the `startIndex` parameter of the item after the first found instance of the search text. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="startIndex" /> is less than -1.  
-  
- -or-  
-  
- The <paramref name="startIndex" /> is greater than the last index in the collection.</exception>
+        <param name="s">To be added.</param>
+        <param name="startIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindStringExact">
@@ -1103,7 +719,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1113,26 +728,10 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">The <see cref="T:System.String" /> to search for.</param>
-        <summary>Finds the first item in the combo box that matches the specified string.</summary>
-        <returns>The zero-based index of the first item found; returns -1 if no match is found, or 0 if the <paramref name="s" /> parameter specifies <see cref="T:System.String" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a string to compare against the text associated with the items in the combo box list. The search looks for a match starting from the beginning of the text, returning the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ComboBox>, you must use the version of the FindStringExact method that provides a parameter for specifying a starting index within the <xref:System.Windows.Forms.ComboBox>. If you want to perform partial word search instead of an exact word match, use the <xref:System.Windows.Forms.ComboBox.FindString%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.MaxDropDownItems%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties and using the FindStringExact methods to search the <xref:System.Windows.Forms.ComboBox>. It also shows handling the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/visualbasic/m-system.windows.forms.c_8_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/cpp/m-system.windows.forms.c_8_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/csharp/m-system.windows.forms.c_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindStringExact">
@@ -1142,7 +741,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1153,34 +751,11 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="s">The <see cref="T:System.String" /> to search for.</param>
-        <param name="startIndex">The zero-based index of the item before the first item to be searched. Set to -1 to search from the beginning of the control.</param>
-        <summary>Finds the first item after the specified index that matches the specified string.</summary>
-        <returns>The zero-based index of the first item found; returns -1 if no match is found, or 0 if the <paramref name="s" /> parameter specifies <see cref="T:System.String" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a string to compare against the text associated with the items in the combo box list. The search looks for a match starting from the beginning of the text, returning the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method or changing the item's text. This method is typically used after a call has been made using the version of this method that does not specify a starting index. Once an initial item has been found in the list, this method is typically used to find further instances of the search text by specifying the index position in the `startIndex` parameter of the item after the first found instance of the search text. If you want to perform partial word search instead of an exact word match, use the <xref:System.Windows.Forms.ComboBox.FindString%2A> method.  
-  
- The search performed by this method is circular. Although the search starts at the next index after the `startIndex` parameter, the search restarts at 0 when the end of the collection is reached. However, note that if the `startIndex` parameter itself is equal to the last index in the collection, an exception is thrown.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.MaxDropDownItems%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties and using the <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> methods to search the <xref:System.Windows.Forms.ComboBox>. It also shows handling the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/visualbasic/m-system.windows.forms.c_38_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/cpp/m-system.windows.forms.c_38_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/csharp/m-system.windows.forms.c_38_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="startIndex" /> is less than -1.  
-  
- -or-  
-  
- The <paramref name="startIndex" /> is equal to the last index in the collection.</exception>
+        <param name="s">To be added.</param>
+        <param name="startIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -1190,7 +765,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1205,23 +779,9 @@
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the appearance of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>One of the enumeration values that specifies the appearance of the control. The options are <see langword="Flat" />, <see langword="Popup" />, <see langword="Standard" />, and <see langword="System" />. The default is <see langword="Standard" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Starting with the .NET Framework 4.5.2, if the FlatStyle property is set to <xref:System.Windows.Forms.FlatStyle> or <xref:System.Windows.Forms.FlatStyle>, the drop-down arrow may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
-  
-```  
-<appSettings>  
-  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
-</appSettings>  
-```  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.FlatStyle" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -1231,16 +791,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ComboBox" /> has focus.</summary>
-        <value>
-          <see langword="true" /> if this control has focus; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1251,15 +809,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color of the control.</summary>
-        <value>The foreground color of the control. The default is the value of the <see cref="System.Windows.Forms.Control.DefaultForeColor%2A" /> property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1270,7 +827,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1280,24 +836,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the item to return the height of.</param>
-        <summary>Returns the height of an item in the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <returns>The height, in pixels, of the item at the specified index.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Windows.Forms.ComboBox.DrawMode%2A> is not set to `OwnerDrawVariable`, the value of the `index` parameter is ignored because all items in a standard <xref:System.Windows.Forms.ComboBox> are the same size. You can use this property when you are using an owner-drawn <xref:System.Windows.Forms.ComboBox> to determine the size of any item within the <xref:System.Windows.Forms.ComboBox>.  
-  
- For more information about specifying the height for items in an owner-drawn list, see <xref:System.Windows.Forms.ComboBox.MeasureItem> event.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is less than zero.  
-  
- -or-  
-  
- The <paramref name="index" /> is greater than count of items in the list.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntegralHeight">
@@ -1307,7 +849,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1322,22 +863,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control should resize to avoid showing partial items.</summary>
-        <value>
-          <see langword="true" /> if the list portion can contain only complete items; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to `true`, the control automatically resizes to ensure that an item is not partially displayed. If you want to maintain the original size of the <xref:System.Windows.Forms.ComboBox> based on the space requirements of your form, set this property to `false`. If the <xref:System.Windows.Forms.ComboBox> does not contain any items, this property has no effect.  
-  
- Setting the <xref:System.Windows.Forms.ComboBox.DropDownHeight%2A> property resets the IntegralHeight property to `false`.  
-  
-> [!NOTE]
->  If the <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property is set to `OwnerDrawVariable`, this property has no effect.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -1347,7 +875,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1357,18 +884,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
-        <summary>Determines whether the specified key is a regular input key or a special key that requires preprocessing.</summary>
-        <returns>
-          <see langword="true" /> if the specified key is a regular input key; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsInputKey method returns `true` when the `keyData` parameter includes the <xref:System.Windows.Forms.Keys> or <xref:System.Windows.Forms.Keys> value and the <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> property is `true`.  
-  
- ]]></format>
-        </remarks>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemHeight">
@@ -1378,7 +897,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1390,19 +908,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height of an item in the combo box.</summary>
-        <value>The height, in pixels, of an item in the combo box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property is set to `OwnerDrawFixed`, all items have the same height. When the <xref:System.Windows.Forms.DrawMode> property is set to `OwnerDrawVariable`, the ItemHeight property specifies the height of each item added to the <xref:System.Windows.Forms.ComboBox>. Because each item in an owner-drawn list can have a different height, you can use the <xref:System.Windows.Forms.ComboBox.GetItemHeight%2A> method to get the height of a specific item in the <xref:System.Windows.Forms.ComboBox>. If you use the ItemHeight property on a <xref:System.Windows.Forms.ComboBox> with items of variable height, this property returns the height of the first item in the control.  
-  
- For more information about specifying the height for items in an owner-drawn list, see <xref:System.Windows.Forms.ComboBox.MeasureItem> event.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The item height value is less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1412,7 +920,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1433,29 +940,9 @@
         <ReturnType>System.Windows.Forms.ComboBox+ObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object representing the collection of the items contained in this <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>A <see cref="T:System.Windows.Forms.ComboBox.ObjectCollection" /> representing the items in the <see cref="T:System.Windows.Forms.ComboBox" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property enables you to obtain a reference to the list of items that are currently stored in the <xref:System.Windows.Forms.ComboBox>. With this reference, you can add items, remove items, and obtain a count of the items in the collection.  
-  
- Although the <xref:System.Windows.Forms.ComboBox> is typically used to display text items, you can add any object to the <xref:System.Windows.Forms.ComboBox>. Typically, the representation of an object in the <xref:System.Windows.Forms.ComboBox> is the string returned by that object's <xref:System.Object.ToString%2A> method. If you want to have a member of the object displayed instead, choose the member that will be displayed by setting the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property to the name of the appropriate member. You can also choose a member of the object that will represent the value returned by the object by setting the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property. For more information, see <xref:System.Windows.Forms.ListControl>.  
-  
- For more information about the tasks that can be performed with the item collection, see the <xref:System.Windows.Forms.ComboBox.ObjectCollection?displayProperty=fullName> class reference topics.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to add a small number of <xref:System.Windows.Forms.ComboBox> items. If you need to add a large number of items, see the example at <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A>. Both examples are part of a larger example available in the <xref:System.Windows.Forms.ComboBox> class overview.  
-  
- [!code-cs[ComboBox#2](~/add/codesnippet/csharp/p-system.windows.forms.c_31_1.cs)]
- [!code-cpp[ComboBox#2](~/add/codesnippet/cpp/p-system.windows.forms.c_31_1.cpp)]
- [!code-vb[ComboBox#2](~/add/codesnippet/visualbasic/p-system.windows.forms.c_31_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxDropDownItems">
@@ -1465,7 +952,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1480,21 +966,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of items to be shown in the drop-down portion of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>The maximum number of items of in the drop-down portion. The minimum for this property is 1 and the maximum is 100.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the MaxDropDownItems and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties and using the <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> methods to search the <xref:System.Windows.Forms.ComboBox>. It also shows handling the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/visualbasic/p-system.windows.forms.c_80_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/cpp/p-system.windows.forms.c_80_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/csharp/p-system.windows.forms.c_80_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The maximum number is set less than one or greater than 100.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumSize">
@@ -1504,15 +978,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size that is the upper limit that the <see cref="System.Windows.Forms.Control.GetPreferredSize%2A" /> method can specify.</summary>
-        <value>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1523,7 +996,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1538,8 +1010,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of characters a user can type into the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>The maximum number of characters a user can enter. Values of less than zero are reset to zero, which is the default value.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1550,33 +1022,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MeasureItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs each time an owner-drawn <see cref="T:System.Windows.Forms.ComboBox" /> item needs to be drawn and when the sizes of the list items are determined.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can create an event handler for this event to specify the size an item is made before it is drawn in the <xref:System.Windows.Forms.ComboBox.DrawItem> event.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create an owner-drawn combo box by setting the <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property to `OwnerDrawnVariable` and handling the <xref:System.Windows.Forms.ComboBox.DrawItem> and MeasureItem events. It also demonstrates setting the <xref:System.Windows.Forms.ComboBox.DropDownWidth%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties. To run the example, paste the following code in a form. Call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/csharp/e-system.windows.forms.c_74_1.cs)]
- [!code-cpp[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/cpp/e-system.windows.forms.c_74_1.cpp)]
- [!code-vb[System.Windows.Forms.ComboBoxOwnerDrawn#1](~/add/codesnippet/visualbasic/e-system.windows.forms.c_74_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumSize">
@@ -1586,15 +1039,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size that is the lower limit that the <see cref="System.Windows.Forms.Control.GetPreferredSize%2A" /> method can specify.</summary>
-        <value>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1605,7 +1057,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1615,8 +1066,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1627,7 +1078,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1637,8 +1087,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DataSourceChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1649,7 +1099,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1659,8 +1108,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DisplayMemberChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1671,7 +1120,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1681,20 +1129,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.DrawItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.DrawItem" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called each time an owner-drawn <xref:System.Windows.Forms.ComboBox> item needs to be drawn and after <xref:System.Windows.Forms.ComboBox.OnMeasureItem%2A> is called. For more information, see <xref:System.Windows.Forms.ComboBox.DrawItem>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnDrawItem method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDropDown">
@@ -1704,7 +1141,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1714,20 +1150,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.DropDown" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised each time the drop-down is displayed.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnDropDown method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDropDownClosed">
@@ -1737,7 +1162,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1747,18 +1171,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.DropDownClosed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnDropDownClosed method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDropDownStyleChanged">
@@ -1768,7 +1183,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1778,20 +1192,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.DropDownStyleChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when you set <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> to a new value.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnDropDownStyleChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1801,7 +1204,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1811,8 +1213,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1823,7 +1225,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1833,8 +1234,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1845,7 +1246,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1860,18 +1260,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnGotFocus method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1881,7 +1272,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1891,18 +1281,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnHandleCreated method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -1912,7 +1293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1922,18 +1302,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnHandleDestroyed method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1943,7 +1314,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1958,18 +1328,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnKeyDown method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyPress">
@@ -1979,7 +1340,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1989,16 +1349,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyPressEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the value of the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property of `e` is <xref:System.Windows.Forms.Keys> or <xref:System.Windows.Forms.Keys> and the <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> property is `true`, the OnKeyPress method sets <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> to `false`.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -2008,7 +1361,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2023,18 +1375,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnLostFocus method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMeasureItem">
@@ -2044,7 +1387,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2054,20 +1396,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.MeasureItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> that was raised.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.MeasureItem" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is called each time an owner-drawn <xref:System.Windows.Forms.ComboBox> item needs to be drawn and before <xref:System.Windows.Forms.ComboBox.OnDrawItem%2A> is called. For more information, see <xref:System.Windows.Forms.ComboBox.MeasureItem>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMeasureItem method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -2077,7 +1408,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2087,18 +1417,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseEnter" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMouseEnter method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -2108,7 +1429,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2118,18 +1438,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnMouseLeave method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentBackColorChanged">
@@ -2139,7 +1450,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2149,18 +1459,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnParentBackColorChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -2170,7 +1471,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2180,18 +1480,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnResize method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -2201,7 +1492,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2211,20 +1501,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.SelectedIndexChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when you select a new item from the list or when you set the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnSelectedIndexChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedItemChanged">
@@ -2234,7 +1513,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2244,20 +1522,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.DomainUpDown.SelectedItemChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is raised when you select a new item from the list or when you set the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnSelectedItemChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedValueChanged">
@@ -2267,7 +1534,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2277,18 +1543,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnSelectedValueChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChangeCommitted">
@@ -2298,7 +1555,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2308,29 +1564,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.SelectionChangeCommitted" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> is raised only when the user changes the combo box selection, or when you set the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>. However, depending on how the <xref:System.Windows.Forms.ComboBox> is configured, and how the user changes the selected item, the <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> event may not be raised. Alternatively, you can handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged>, but note that this event occurs whether the index is changed programmatically or by the user.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnSelectionChangeCommitted method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> event and the <xref:System.Windows.Forms.ComboBox.SelectionLength%2A> property to change the length of the text box depending on what the user has selected and committed.  
-  
- [!code-cpp[System.Windows.Forms.ComboBoxSelectedText#1](~/add/codesnippet/cpp/m-system.windows.forms.c_33_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxSelectedText#1](~/add/codesnippet/csharp/m-system.windows.forms.c_33_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBoxSelectedText#1](~/add/codesnippet/visualbasic/m-system.windows.forms.c_33_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -2340,7 +1576,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2355,18 +1590,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnTextChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextUpdate">
@@ -2376,7 +1602,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2386,18 +1611,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.TextUpdate" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnTextUpdate method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnValidating">
@@ -2407,7 +1623,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2422,18 +1637,9 @@
         <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Validating" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
- The OnValidating method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -2443,7 +1649,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2461,16 +1666,9 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -2480,7 +1678,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2495,15 +1692,8 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not relevant to this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant to this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -2513,7 +1703,6 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2528,15 +1717,8 @@
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.ComboBox" /> control is redrawn.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This event is not relevant for this class.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredHeight">
@@ -2546,7 +1728,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2561,16 +1742,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the preferred height of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>The preferred height, in pixels, of the item area of the combo box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The preferred height is a value based on the font height and an adjustment for the border.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessKeyEventArgs">
@@ -2580,7 +1754,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2590,10 +1763,9 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">A message object, passed by reference, that represents the window message to process.</param>
-        <summary>Processes a key message and generates the appropriate control events.</summary>
-        <returns>
-          <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2604,7 +1776,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2614,8 +1785,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The location of the item to refresh.</param>
-        <summary>Refreshes the item contained at the specified location.</summary>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2626,7 +1797,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2634,7 +1804,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes all <see cref="T:System.Windows.Forms.ComboBox" /> items.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2645,7 +1815,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2653,7 +1822,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the <see cref="System.Windows.Forms.Control.Text%2A" /> property to its default value.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2664,7 +1833,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2675,9 +1843,9 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="factor">The factor by which the height and width of the control will be scaled.</param>
-        <param name="specified">A  value that specifies the bounds of the control to use when defining its size and position.</param>
-        <summary>Scales a control's location, size, padding and margin.</summary>
+        <param name="factor">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2688,7 +1856,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2699,25 +1866,10 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">The position of the first character in the current text selection within the text box.</param>
-        <param name="length">The number of characters to select.</param>
-        <summary>Selects a range of text in the editable portion of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want to set the start position to the first character in the control's text, set the `start` parameter to zero. You can use this method to select a substring of text, such as when searching through the text of the control and replacing information.  
-  
-> [!NOTE]
->  <xref:System.Windows.Forms.ComboBox.SelectionStart%2A> returns the lower value of the current selection. For example, `Select(10, -4)` selects the text from character position 6 through character position 10. If you now get the <xref:System.Windows.Forms.ComboBox.SelectionStart%2A> value, it will be 6 rather than 10.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="start" /> is less than zero.  
-  
- -or-  
-  
- <paramref name="start" /> plus <paramref name="length" /> is less than zero.</exception>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2727,7 +1879,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2735,7 +1886,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Selects all the text in the editable portion of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2746,7 +1897,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2761,39 +1911,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index specifying the currently selected item.</summary>
-        <value>A zero-based index of the currently selected item. A value of negative one (-1) is returned if no item is selected.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property indicates the zero-based index of the currently selected item in the combo box list. Setting a new index raises the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event.  
-  
- SelectedIndex, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
-  
--   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `false`, SelectedIndex will not be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
-  
--   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `true`, SelectedIndex will be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
-  
-> [!NOTE]
->  To deselect the currently selected item, set the SelectedIndex to -1. You cannot set the SelectedIndex of a <xref:System.Windows.Forms.ComboBox> item to -1 if the item is a data-bound item.  
-  
-   
-  
-## Examples  
- The following code example show how to use the <xref:System.Windows.Forms.ComboBox.FindString%2A> method and SelectedIndex property. The example is part of a complete example in the <xref:System.Windows.Forms.ComboBox> class overview.  
-  
- [!code-cs[ComboBox#4](~/add/codesnippet/csharp/p-system.windows.forms.c_4_1.cs)]
- [!code-cpp[ComboBox#4](~/add/codesnippet/cpp/p-system.windows.forms.c_4_1.cpp)]
- [!code-vb[ComboBox#4](~/add/codesnippet/visualbasic/p-system.windows.forms.c_4_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than or equal to -2.  
-  
- -or-  
-  
- The specified index is greater than or equal to the number of items in the combo box.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -2803,33 +1923,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="System.Windows.Forms.ComboBox.SelectedIndex%2A" /> property has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can create an event handler for this event to determine when the selected index in the <xref:System.Windows.Forms.ComboBox> has been changed. This can be useful when you need to display information in other controls based on the current selection in the <xref:System.Windows.Forms.ComboBox>. You can use the event handler for this event to load the information in the other controls.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.MaxDropDownItems%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties and using the <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> methods to search the <xref:System.Windows.Forms.ComboBox>. It also shows handling the SelectedIndexChanged event.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/visualbasic/e-system.windows.forms.c_30_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/cpp/e-system.windows.forms.c_30_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxFindString#0](~/add/codesnippet/csharp/e-system.windows.forms.c_30_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -2839,7 +1940,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2857,28 +1957,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets currently selected item in the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>The object that is the currently selected item or <see langword="null" /> if there is no currently selected item.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you set the SelectedItem property to an object, the <xref:System.Windows.Forms.ComboBox> attempts to make that object the currently selected one in the list. If the object is found in the list, it is displayed in the edit portion of the <xref:System.Windows.Forms.ComboBox> and the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property is set to the corresponding index. If the object does not exist in the list, the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property is left at its current value.  
-  
-> [!NOTE]
->  The <xref:System.Windows.Forms.ComboBox> class searches for the specified object by using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.IndexOf%2A> method. This method uses the <xref:System.Object.Equals%2A> method to determine equality.  
-  
-   
-  
-## Examples  
- The following code example shows the usage of the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> and the SelectedItem properties. The example is part of a complete code example in the <xref:System.Windows.Forms.ComboBox> class overview.  
-  
- [!code-cs[ComboBox#5](~/add/codesnippet/csharp/p-system.windows.forms.c_112_1.cs)]
- [!code-cpp[ComboBox#5](~/add/codesnippet/cpp/p-system.windows.forms.c_112_1.cpp)]
- [!code-vb[ComboBox#5](~/add/codesnippet/visualbasic/p-system.windows.forms.c_112_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedText">
@@ -2888,7 +1969,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2903,22 +1983,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that is selected in the editable portion of a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <value>A string that represents the currently selected text in the combo box. If <see cref="System.Windows.Forms.ComboBox.DropDownStyle%2A" /> is set to <see cref="T:System.Windows.Forms.ComboBoxStyle" />, the return value is an empty string ("").</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the SelectedText property to retrieve or change the currently selected text in a <xref:System.Windows.Forms.ComboBox> control. However, you should be aware that the selection can change automatically because of user interaction. For example, if you retrieve the SelectedText value in a button <xref:System.Windows.Forms.Control.Click> event handler, the value will be an empty string. This is because the selection is automatically cleared when the input focus moves from the combo box to the button.  
-  
- When the combo box loses focus, the selection point moves to the beginning of the text and any selected text becomes unselected. In this case, getting the SelectedText property retrieves an empty string, and setting the SelectedText property adds the specified value to the beginning of the text.  
-  
- When the combo box gains focus, the full text in the control is automatically selected. If you call the control's <xref:System.Windows.Forms.Control.Focus%2A> method to set the input focus, the full text is selected regardless of whether the control already had focus.  
-  
- When the user selects an item from the drop-down list or by using the UP ARROW and DOWN ARROW keys, the text for the new item is automatically selected. However, if you try to get the SelectedText value in a <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> or <xref:System.Windows.Forms.ListControl.SelectedValueChanged> event handler, the property returns an empty string. This is because, at the time of these events, the previous SelectedText value has been cleared and the new value has not yet been set. To retrieve the current value in a <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> or <xref:System.Windows.Forms.ListControl.SelectedValueChanged> event handler, use the <xref:System.Windows.Forms.ComboBox.SelectedItem%2A> property instead.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChangeCommitted">
@@ -2928,33 +1995,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user changes the selected item and that change is displayed in the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The SelectionChangeCommitted event is raised only when the user changes the combo box selection, and you can create a handler for this event to provide special handling for the <xref:System.Windows.Forms.ComboBox> when the user changes the selected item in the list. However, depending on how the <xref:System.Windows.Forms.ComboBox> is configured, and how the user changes the selected item, the SelectionChangeCommitted event may not be raised. Alternatively, you can handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged>, but note that this event occurs whether the index is changed programmatically or by the user.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example uses the SelectionChangeCommitted event and the <xref:System.Windows.Forms.ComboBox.SelectionLength%2A> property to change the length of the text box depending on what the user has selected and committed.  
-  
- [!code-cpp[System.Windows.Forms.ComboBoxSelectedText#1](~/add/codesnippet/cpp/e-system.windows.forms.c_73_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxSelectedText#1](~/add/codesnippet/csharp/e-system.windows.forms.c_73_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBoxSelectedText#1](~/add/codesnippet/visualbasic/e-system.windows.forms.c_73_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -2964,7 +2012,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2979,17 +2026,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of characters selected in the editable portion of the combo box.</summary>
-        <value>The number of characters selected in the combo box.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use this property to determine whether any characters are currently selected in the combo box control before performing operations on the selected text. When the value of the SelectionLength property is set to a value that is larger than the number of characters within the text of the control, the value of the SelectionLength property is set to the entire length of text within the control minus the value of the <xref:System.Windows.Forms.ComboBox.SelectionStart%2A> property (if any value is specified for the <xref:System.Windows.Forms.ComboBox.SelectionStart%2A> property).  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value was less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -2999,7 +2038,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3014,20 +2052,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting index of text selected in the combo box.</summary>
-        <value>The zero-based index of the first character in the string of the current text selection.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If no text is selected in the control, this property indicates the insertion point for new text. If you set this property to a location beyond the length of the text in the control, the selection start position is placed after the last character. When text is selected in the text box control, changing this property can release the value of the <xref:System.Windows.Forms.ComboBox.SelectionLength%2A> property. If the remaining text in the control after the position indicated by the SelectionStart property is less than the value of the <xref:System.Windows.Forms.ComboBox.SelectionLength%2A> property, the value of the <xref:System.Windows.Forms.ComboBox.SelectionLength%2A> property is automatically decreased. The value of the SelectionStart property never causes an increase in the <xref:System.Windows.Forms.ComboBox.SelectionLength%2A> property.  
-  
-> [!NOTE]
->  SelectionStart returns the lower value of the current selection. For example, `Select(10, -4)` selects the text from character position 6 through character position 10. If you now get the SelectionStart value, it will be 6 rather than 10.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">The value is less than zero.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -3037,7 +2064,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3051,12 +2077,12 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">The horizontal location in pixels of the control.</param>
-        <param name="y">The vertical location in pixels of the control.</param>
-        <param name="width">The width in pixels of the control.</param>
-        <param name="height">The height in pixels of the control.</param>
-        <param name="specified">One of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
-        <summary>Sets the size and location of the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="specified">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3067,7 +2093,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3078,9 +2103,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The array index of the object.</param>
-        <param name="value">The object.</param>
-        <summary>When overridden in a derived class, sets the object with the specified index in the derived class.</summary>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3091,7 +2116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3101,8 +2125,8 @@
         <Parameter Name="value" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="value">An array of items.</param>
-        <summary>When overridden in a derived class, sets the specified array of objects in a collection in the derived class.</summary>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3113,7 +2137,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3125,20 +2148,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the items in the combo box are sorted.</summary>
-        <value>
-          <see langword="true" /> if the combo box is sorted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property specifies whether the <xref:System.Windows.Forms.ComboBox> sorts existing entries and add new entries to the appropriate sorted position in the list. You can use this property to automatically sort items in a <xref:System.Windows.Forms.ComboBox>. As items are added to a sorted <xref:System.Windows.Forms.ComboBox>, the items are moved to the appropriate location in the sorted list. When you set the property to `false`, new items are added to the end of the existing list. The sort is case-insensitive and in alphabetically ascending order.  
-  
- Attempting to set the Sorted property on a data-bound control raises an <xref:System.ArgumentException>. You must sort the data using the underlying data model.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">An attempt was made to sort a <see cref="T:System.Windows.Forms.ComboBox" /> that is attached to a data source.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -3148,7 +2160,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3163,25 +2174,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text associated with this control.</summary>
-        <value>The text associated with this control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the Text property to `null` or an empty string ("") sets the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> to -1. Setting the Text property to a value that is in the <xref:System.Windows.Forms.ComboBox.Items%2A> collection sets the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> to the index of that item. Setting the Text property to a value that is not in the collection leaves the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> unchanged.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the Text property and using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method to populate the <xref:System.Windows.Forms.ComboBox>. It also demonstrates handling the <xref:System.Windows.Forms.ComboBox.DropDown> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event.  
-  
- [!code-vb[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/visualbasic/p-system.windows.forms.c_97_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/cpp/p-system.windows.forms.c_97_1.cpp)]
- [!code-cs[System.Windows.Forms.ComboBoxDropDown#2](~/add/codesnippet/csharp/p-system.windows.forms.c_97_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextUpdate">
@@ -3191,34 +2186,14 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the control has formatted the text, but before the text is displayed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the TextUpdate event to validate the text before it is actually shown. TextUpdate is not fired if the <xref:System.Windows.Forms.ComboBox.Text%2A> property is programmatically changed.  
-  
- For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the TextUpdate event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ComboBox> named `ComboBox1`. Then ensure that the event handler is associated with the TextUpdate event.  
-  
- [!code-cs[System.Windows.Forms.EventExamples#167](~/add/codesnippet/csharp/e-system.windows.forms.c_34_1.cs)]
- [!code-vb[System.Windows.Forms.EventExamples#167](~/add/codesnippet/visualbasic/e-system.windows.forms.c_34_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3228,7 +2203,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3236,8 +2210,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.ComboBox" /> control.</summary>
-        <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Windows.Forms.ComboBox" />. The string includes the type and the number of items in the <see cref="T:System.Windows.Forms.ComboBox" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3248,7 +2222,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3258,28 +2231,9 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All messages are sent to the <xref:System.Windows.Forms.Control.WndProc%2A> method after getting filtered through the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method.  
-  
- The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the `WindowProc` function documentation in the Windows Platform SDK reference located in the MSDN library at http://msdn.microsoft.com/library.  
-  
-   
-  
-## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values. Actual constant values can be found in the Windows.h header file included in the Platform SDK (Core SDK section) download, which is also available in the MSDN library at http://msdn.microsoft.com/library.  
-  
- [!code-cs[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/csharp/m-system.windows.forms.c_80_1.cs)]
- [!code-vb[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/visualbasic/m-system.windows.forms.c_80_1.vb)]
- [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/cpp/m-system.windows.forms.c_80_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for inheriting classes to call unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
+        <param name="m">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

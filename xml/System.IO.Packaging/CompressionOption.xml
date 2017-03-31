@@ -3,15 +3,18 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompressionOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.CompressionOption" />
   <AssemblyInfo>
+    <AssemblyName>System.IO.Packaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the compression level for content that is stored in a <see cref="T:System.IO.Packaging.PackagePart" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,15 +24,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Fast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Compression is optimized for performance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -38,15 +44,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Maximum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Compression is optimized for size.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -55,15 +64,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Compression is optimized for a balance between size and performance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotCompressed">
@@ -72,15 +84,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.NotCompressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Compression is turned off.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuperFast">
@@ -89,15 +104,18 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CompressionOption.SuperFast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Compression is optimized for high performance.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

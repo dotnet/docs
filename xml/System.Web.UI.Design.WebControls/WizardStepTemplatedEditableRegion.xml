@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines an editable region of content within the design-time markup of a template in a wizard step for a <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +22,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,9 +29,9 @@
         <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
       </Parameters>
       <Docs>
-        <param name="templateDefinition">A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object that defines a template element in a wizard step at design time.</param>
-        <param name="wizardStep">A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object that represents a step displayed in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion" /> class.</summary>
+        <param name="templateDefinition">To be added.</param>
+        <param name="wizardStep">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,15 +42,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the associated design-time wizard step.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

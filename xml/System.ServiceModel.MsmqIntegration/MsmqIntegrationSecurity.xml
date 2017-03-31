@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The MsmqIntegrationSecurity class encapsulates the transport security settings for the Message Queuing (MSMQ) integration channel.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Message Queuing integration channel enables [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] applications to communicate with existing Message Queuing applications.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +37,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -58,16 +48,9 @@
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode" /> that is associated with the Message Queuing (MSMQ) integration channel.</summary>
-        <value>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode" /> that is associated with the Message Queuing integration channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> is an enumeration that contains the following values: <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>. The default value is <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -77,23 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqTransportSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> that is associated with the Message Queuing (MSMQ) integration channel.</summary>
-        <value>The <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> that is associated with the Message Queuing integration channel.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.MsmqTransportSecurity> encapsulates the security settings for the Message Queuing integration transport. The settings are the same for both the Message Queuing integration and queued transports. <xref:System.ServiceModel.MsmqTransportSecurity> enables you to set the Authentication Mode, Encryption Algorithm, Secure Hash Algorithm, and Protection Level.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

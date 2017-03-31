@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IDuplexChannel" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -16,15 +16,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines the interface that a channel must implement to both send and receive messages.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IDuplexChannel interface is the union of the <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel> interfaces. The IDuplexChannel interface does not mandate any correlation between the <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel> when implemented. This means, in particular, that the contract does not mandate that the sender of messages that are received through the <xref:System.ServiceModel.Channels.IInputChannel> is equal to the recipient of messages sent through the <xref:System.ServiceModel.Channels.IOutputChannel>.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members />
 </Type>

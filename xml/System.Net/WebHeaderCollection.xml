@@ -3,12 +3,21 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WebHeaderCollection extends System.Collections.Specialized.NameValueCollection implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebHeaderCollection" />
   <AssemblyInfo>
-    <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Collections.Specialized.NameValueCollection</BaseTypeName>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.Specialized.NameValueCollection</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -21,43 +30,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains protocol headers associated with a request or response.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WebHeaderCollection class is generally accessed through <xref:System.Net.WebRequest.Headers%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Headers%2A?displayProperty=fullName>. Some common headers are considered restricted and are either exposed directly by the API (such as `Content-Type`) or protected by the system and cannot be changed.  
-  
- The restricted headers are:  
-  
--   Accept  
-  
--   Connection  
-  
--   Content-Length  
-  
--   Content-Type  
-  
--   Date  
-  
--   Expect  
-  
--   Host  
-  
--   If-Modified-Since  
-  
--   Range  
-  
--   Referrer  
-  
--   Transfer-Encoding  
-  
--   User-Agent  
-  
--   Proxy-Connection  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,13 +40,21 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.WebHeaderCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,29 +65,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> containing the information required to serialize the <see cref="T:System.Net.WebHeaderCollection" />.</param>
-        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> containing the source of the serialized stream associated with the new <see cref="T:System.Net.WebHeaderCollection" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.WebHeaderCollection" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.WebHeaderCollection> class.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="headerName" /> contains invalid characters.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="headerName" /> is a null reference or <see cref="F:System.String.Empty" />.</exception>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -115,8 +90,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -125,46 +104,9 @@
         <Parameter Name="header" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The header to add, with the name and value separated by a colon.</param>
-        <summary>Inserts the specified header into the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `header` parameter must be specified in the format "name:value". If the specified header does not exist in the collection, a new header is added to the collection.  
-  
- If the header specified in `header` is already present in the collection, the value part of the `header` is concatenated with the existing value.  
-  
-   
-  
-## Examples  
- The following example adds a name/value pair to a <xref:System.Net.WebHeaderCollection> using the <xref:System.Net.WebHeaderCollection.Add%2A> Method.  
-  
- [!code-vb[WebHeaderCollection_Add#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_5_1.vb)]
- [!code-cpp[WebHeaderCollection_Add#1](~/add/codesnippet/cpp/m-system.net.webheaderco_5_1.cpp)]
- [!code-cs[WebHeaderCollection_Add#1](~/add/codesnippet/csharp/m-system.net.webheaderco_5_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="header" /> is <see langword="null" /> or <see cref="T:System.String" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="header" /> does not contain a colon (:) character.  
-  
- The length of <paramref name="value" /> is greater than 65535.  
-  
- -or-  
-  
- The name part of <paramref name="header" /> is <see cref="T:System.String" /> or contains invalid characters.  
-  
- -or-  
-  
- <paramref name="header" /> is a restricted header that should be set with a property.  
-  
- -or-  
-  
- The value part of <paramref name="header" /> contains invalid characters.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length the string after the colon (:) is greater than 65535.</exception>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -174,8 +116,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -185,21 +131,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The header to add to the collection.</param>
-        <param name="value">The content of the header.</param>
-        <summary>Inserts the specified header with the specified value into the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified header does not exist, the Add method inserts a new header into the list of header name/value pairs.  
-  
- If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpRequestHeader" />.</exception>
+        <param name="header">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -209,8 +144,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -220,21 +159,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The header to add to the collection.</param>
-        <param name="value">The content of the header.</param>
-        <summary>Inserts the specified header with the specified value into the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified header does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpResponseHeader" />.</exception>
+        <param name="header">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -244,8 +172,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -255,39 +187,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The header to add to the collection.</param>
-        <param name="value">The content of the header.</param>
-        <summary>Inserts a header with the specified name and value into the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the header specified in `name` does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the header specified in `name` is already present, `value` is added to the existing comma-separated list of values associated with `name`.  
-  
-   
-  
-## Examples  
- The following example adds a name/value pair to a <xref:System.Net.WebHeaderCollection> using the <xref:System.Net.WebHeaderCollection.Add%2A> Method.  
-  
- [!code-vb[WebHeaderCollection_Add#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_10_1.vb)]
- [!code-cpp[WebHeaderCollection_Add#1](~/add/codesnippet/cpp/m-system.net.webheaderco_10_1.cpp)]
- [!code-cs[WebHeaderCollection_Add#1](~/add/codesnippet/csharp/m-system.net.webheaderco_10_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is <see langword="null" />, <see cref="T:System.String" />, or contains invalid characters.  
-  
- -or-  
-  
- <paramref name="name" /> is a restricted header that must be set with a property setting.  
-  
- -or-  
-  
- <paramref name="value" /> contains invalid characters.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddWithoutValidate">
@@ -297,8 +200,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -308,25 +215,10 @@
         <Parameter Name="headerValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="headerName">The header to add to the collection.</param>
-        <param name="headerValue">The content of the header.</param>
-        <summary>Inserts a header into the collection without checking whether the header is on the restricted header list.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The AddWithoutValidate method adds a header to the collection without checking whether the header is on the restricted header list.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="headerName" /> is <see langword="null" />, <see cref="T:System.String" />, or contains invalid characters.  
-  
- -or-  
-  
- <paramref name="headerValue" /> contains invalid characters.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="headerName" /> is not <see langword="null" /> and the length of <paramref name="headerValue" /> is too long (greater than 65,535 characters).</exception>
+        <param name="headerName">To be added.</param>
+        <param name="headerValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -335,26 +227,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all header names (keys) in the collection.</summary>
-        <value>An array of type <see cref="T:System.String" /> containing all header names in a Web request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the AllKeys property to get the header names a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_Get_Values_2#1](~/add/codesnippet/csharp/p-system.net.webheaderco_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -364,25 +255,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all headers from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example clears the headers in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_Get_Values_2#1](~/add/codesnippet/csharp/m-system.net.webheaderco_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -391,26 +277,25 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of headers in the collection.</summary>
-        <value>An <see cref="T:System.Int32" /> indicating the number of headers in a request.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the Count property to iterate through a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_Get_Values_2#1](~/add/codesnippet/csharp/p-system.net.webheaderco_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -420,8 +305,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -430,25 +319,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the key to get from the collection.</param>
-        <summary>Gets the value of a particular header in the collection, specified by an index into the collection.</summary>
-        <returns>A <see cref="T:System.String" /> containing the value of the specified header.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses the Get method to retrieve a header value in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_Get_Values_2#1](~/add/codesnippet/csharp/m-system.net.webheaderco_1_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is negative.  
-  
- -or-  
-  
- <paramref name="index" /> exceeds the size of the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -458,8 +332,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -468,24 +346,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the Web header.</param>
-        <summary>Gets the value of a particular header in the collection, specified by the name of the header.</summary>
-        <returns>A <see cref="T:System.String" /> holding the value of the specified header.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns `null` if there is no `name` header in the collection.  
-  
-   
-  
-## Examples  
- The following code example uses the Get property to retrieve header values in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_Get_Values_2#1](~/add/codesnippet/csharp/m-system.net.webheaderco_8_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -495,16 +359,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through the <see cref="T:System.Net.WebHeaderCollection" /> instance.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Net.WebHeaderCollection" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,8 +383,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -525,25 +397,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the key to get from the collection.</param>
-        <summary>Gets the header name at the specified position in the collection.</summary>
-        <returns>A <see cref="T:System.String" /> holding the header name.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example uses GetKey to get a header name in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_Get_Values_2#1](~/add/codesnippet/csharp/m-system.net.webheaderco_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is negative.  
-  
- -or-  
-  
- <paramref name="index" /> exceeds the size of the collection.</exception>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -553,8 +410,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -564,17 +425,10 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
-        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
- ]]></format>
-        </remarks>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -584,8 +438,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -594,17 +452,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The header index to return.</param>
-        <summary>Gets an array of header values stored in the <paramref name="index" /> position of the header collection.</summary>
-        <returns>An array of header strings.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetValues returns the contents of the specified header as an array.  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -614,8 +465,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -624,26 +479,10 @@
         <Parameter Name="header" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The header to return.</param>
-        <summary>Gets an array of header values stored in a header.</summary>
-        <returns>An array of header strings.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- GetValues returns the contents of the specified header as an array.  
-  
-   
-  
-## Examples  
- The following example uses the GetValues method to retrieve an array of values for each header in the <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cs[WebHeaderCollection_GetValues_1#1](~/add/codesnippet/csharp/m-system.net.webheaderco_6_1.cs)]
- [!code-cpp[WebHeaderCollection_GetValues_1#1](~/add/codesnippet/cpp/m-system.net.webheaderco_6_1.cpp)]
- [!code-vb[WebHeaderCollection_GetValues_1#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_6_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRestricted">
@@ -653,8 +492,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -663,57 +506,10 @@
         <Parameter Name="headerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="headerName">The header to test.</param>
-        <summary>Tests whether the specified HTTP header can be set for the request.</summary>
-        <returns>
-          <see langword="true" /> if the header is restricted; otherwise <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsRestricted method returns `true` to indicate that a header is restricted and must be set using properties instead of directly or is set by the system. The restricted headers are:  
-  
--   Accept  
-  
--   Connection  
-  
--   Content-Length  
-  
--   Content-Type  
-  
--   Date  
-  
--   Expect  
-  
--   Host  
-  
--   If-Modified-Since  
-  
--   Range  
-  
--   Referer  
-  
--   Transfer-Encoding  
-  
--   User-Agent  
-  
--   Proxy-Connection  
-  
-   
-  
-## Examples  
- The following example checks the IsRestricted property to see if any headers are prohibited from being set.  
-  
- [!code-cpp[WebHeaderCollection_IsRestricted#1](~/add/codesnippet/cpp/m-system.net.webheaderco_3_1.cpp)]
- [!code-cs[WebHeaderCollection_IsRestricted#1](~/add/codesnippet/csharp/m-system.net.webheaderco_3_1.cs)]
- [!code-vb[WebHeaderCollection_IsRestricted#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_3_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="headerName" /> is <see langword="null" /> or <see cref="T:System.String" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="headerName" /> contains invalid characters.</exception>
+        <param name="headerName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRestricted">
@@ -723,8 +519,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -734,58 +534,11 @@
         <Parameter Name="response" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="headerName">The header to test.</param>
-        <param name="response">Does the Framework test the response or the request?</param>
-        <summary>Tests whether the specified HTTP header can be set for the request or the response.</summary>
-        <returns>
-          <see langword="true" /> if the header is restricted; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The IsRestricted method returns `true` to indicate that a request or response header is restricted and must be set using properties instead of directly or is set by the system. The restricted headers are:  
-  
--   Accept  
-  
--   Connection  
-  
--   Content-Length  
-  
--   Content-Type  
-  
--   Date  
-  
--   Expect  
-  
--   Host  
-  
--   If-Modified-Since  
-  
--   Range  
-  
--   Referer  
-  
--   Transfer-Encoding  
-  
--   User-Agent  
-  
--   Proxy-Connection  
-  
-   
-  
-## Examples  
- The following example checks the <xref:System.Net.WebHeaderCollection.IsRestricted%2A> property to see if any request headers are prohibited from being set.  
-  
- [!code-cpp[WebHeaderCollection_IsRestricted#1](~/add/codesnippet/cpp/m-system.net.webheaderco_0_1.cpp)]
- [!code-cs[WebHeaderCollection_IsRestricted#1](~/add/codesnippet/csharp/m-system.net.webheaderco_0_1.cs)]
- [!code-vb[WebHeaderCollection_IsRestricted#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_0_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="headerName" /> is <see langword="null" /> or <see cref="T:System.String" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="headerName" /> contains invalid characters.</exception>
+        <param name="headerName">To be added.</param>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -794,9 +547,17 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Item(System.Net.HttpRequestHeader)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -805,11 +566,10 @@
         <Parameter Name="header" Type="System.Net.HttpRequestHeader" />
       </Parameters>
       <Docs>
-        <param name="header">The request header value.</param>
-        <summary>Gets or sets the specified request header.</summary>
-        <value>A <see cref="T:System.String" /> instance containing the specified header value.</value>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpRequestHeader" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -818,9 +578,17 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Item(System.Net.HttpResponseHeader)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -829,12 +597,32 @@
         <Parameter Name="header" Type="System.Net.HttpResponseHeader" />
       </Parameters>
       <Docs>
-        <param name="header">The response header value.</param>
-        <summary>Gets or sets the specified response header.</summary>
-        <value>A <see cref="T:System.String" /> instance containing the specified header.</value>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpResponseHeader" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[string name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -844,15 +632,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of header names (keys) in the collection.</summary>
-        <value>A <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> containing all header names in a Web request.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,8 +655,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -873,8 +669,8 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the deserialization event.</param>
-        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and raises the deserialization event when the deserialization is complete.</summary>
+        <param name="sender">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -885,8 +681,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -895,17 +695,9 @@
         <Parameter Name="header" Type="System.Net.HttpRequestHeader" />
       </Parameters>
       <Docs>
-        <param name="header">The <see cref="T:System.Net.HttpRequestHeader" /> instance to remove from the collection.</param>
-        <summary>Removes the specified header from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Remove deletes the specified header from the collection. If the specified header does not exist, the method does nothing.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpRequestHeader" />.</exception>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -915,8 +707,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -925,17 +721,9 @@
         <Parameter Name="header" Type="System.Net.HttpResponseHeader" />
       </Parameters>
       <Docs>
-        <param name="header">The <see cref="T:System.Net.HttpResponseHeader" /> instance to remove from the collection.</param>
-        <summary>Removes the specified header from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method does nothing.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpResponseHeader" />.</exception>
+        <param name="header">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -944,9 +732,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Remove(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -955,33 +751,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the header to remove from the collection.</param>
-        <summary>Removes the specified header from the collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method returns.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Net.WebHeaderCollection.Remove%2A> method to remove a header from the <xref:System.Net.WebHeaderCollection>. After the header is removed, this example prints all existing headers to the screen to prove that it has been removed.  
-  
- [!code-cpp[WebHeaderCollection_Remove#1](~/add/codesnippet/cpp/m-system.net.webheaderco_9_1.cpp)]
- [!code-cs[WebHeaderCollection_Remove#1](~/add/codesnippet/csharp/m-system.net.webheaderco_9_1.cs)]
- [!code-vb[WebHeaderCollection_Remove#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_9_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" /><see cref="T:System.String" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is a restricted header.  
-  
- -or-  
-  
- <paramref name="name" /> contains invalid characters.</exception>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -991,8 +763,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1002,21 +778,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The <see cref="T:System.Net.HttpRequestHeader" /> value to set.</param>
-        <param name="value">The content of the header to set.</param>
-        <summary>Sets the specified header to the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the header specified in the header does not exist, the Set method inserts a new header into the list of header name/value pairs.  
-  
- If the header specified in `header` is already present, `value` replaces the existing value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpRequestHeader" />.</exception>
+        <param name="header">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -1026,8 +791,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1037,21 +806,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">The <see cref="T:System.Net.HttpResponseHeader" /> value to set.</param>
-        <param name="value">The content of the header to set.</param>
-        <summary>Sets the specified header to the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the header specified in `header` is already present, `value` replaces the existing value.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
-        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpResponseHeader" />.</exception>
+        <param name="header">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -1061,8 +819,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1072,37 +834,29 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The header to set.</param>
-        <param name="value">The content of the header to set.</param>
-        <summary>Sets the specified header to the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the header specified in `header` is already present, `value` replaces the existing value.  
-  
-   
-  
-## Examples  
- The following example uses the <xref:System.Net.WebHeaderCollection.Set%2A> method to set the value of an existing header.  
-  
- [!code-cs[WebHeaderCollection_Set#1](~/add/codesnippet/csharp/m-system.net.webheaderco_4_1.cs)]
- [!code-vb[WebHeaderCollection_Set#1](~/add/codesnippet/visualbasic/m-system.net.webheaderco_4_1.vb)]
- [!code-cpp[WebHeaderCollection_Set#1](~/add/codesnippet/cpp/m-system.net.webheaderco_4_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="null" /> or <see cref="T:System.String" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is a restricted header.  
-  
- -or-  
-  
- <paramref name="name" /> or <paramref name="value" /> contain invalid characters.</exception>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1112,8 +866,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1123,9 +881,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">The object into which this <see cref="T:System.Net.WebHeaderCollection" /> will be serialized.</param>
-        <param name="streamingContext">The destination of the serialization.</param>
-        <summary>Serializes this instance into the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</summary>
+        <param name="serializationInfo">To be added.</param>
+        <param name="streamingContext">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,16 +894,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the <see cref="T:System.Net.WebHeaderCollection" /> to a byte array..</summary>
-        <returns>A <see cref="T:System.Byte" /> array holding the header collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1155,17 +917,25 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is obsolete.</summary>
-        <returns>The <see cref="T:System.String" /> representation of the collection.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

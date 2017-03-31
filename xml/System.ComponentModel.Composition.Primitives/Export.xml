@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.Export" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -11,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an export, which is a type that consists of a delay-created exported object and the metadata that describes that object.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,19 +23,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.Export.Definition%2A> property and the <xref:System.ComponentModel.Composition.Primitives.Export.GetExportedValueCore%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -44,6 +39,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -51,16 +47,10 @@
         <Parameter Name="exportedValueGetter" Type="System.Func&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="definition">An object that describes the contract that the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> object satisfies.</param>
-        <param name="exportedValueGetter">A method that is called to create the exported object of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" />. This delays the creation of the object until the <see cref="System.ComponentModel.Composition.Primitives.Export.Value%2A" /> property is called.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> class with the specified export definition and exported object getter.</summary>
+        <param name="definition">To be added.</param>
+        <param name="exportedValueGetter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="definition" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="exportedObjectGetter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +60,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,18 +68,10 @@
         <Parameter Name="exportedValueGetter" Type="System.Func&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="contractName">The contract name of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> object.</param>
-        <param name="exportedValueGetter">A method that is called to create the exported object of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" />. This delays the creation of the object until the <see cref="System.ComponentModel.Composition.Primitives.Export.Value%2A" /> method is called.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> class with the specified contract name and exported value getter.</summary>
+        <param name="contractName">To be added.</param>
+        <param name="exportedValueGetter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="contractName" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="exportedObjectGetter" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="contractName" /> is an empty string ("").</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +81,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -106,19 +90,11 @@
         <Parameter Name="exportedValueGetter" Type="System.Func&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="contractName">The contract name of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> object.</param>
-        <param name="metadata">The metadata of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> object or <see langword="null" /> to set the <see cref="System.ComponentModel.Composition.Primitives.Export.Metadata%2A" /> property to an empty, read-only <see cref="System.Collections.Generic.IDictionary%602" /> object.</param>
-        <param name="exportedValueGetter">A method that is called to create the exported object of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" />. This delays the creation of the object until the <see cref="System.ComponentModel.Composition.Primitives.Export.Value%2A" /> method is called.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> class with the specified contract name, metadata, and exported value getter.</summary>
+        <param name="contractName">To be added.</param>
+        <param name="metadata">To be added.</param>
+        <param name="exportedValueGetter">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="contractName" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="exportedObjectGetter" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="contractName" /> is an empty string ("").</exception>
       </Docs>
     </Member>
     <Member MemberName="Definition">
@@ -128,23 +104,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.Primitives.ExportDefinition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the definition that describes the contract that the export satisfies.</summary>
-        <value>A definition that describes the contract that the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> object satisfies.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Overrides of this property should never return `null`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">This property was not overridden by a derived class.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExportedValueCore">
@@ -154,6 +123,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,11 +131,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the exported object the export provides.</summary>
-        <returns>The exported object the export provides.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NotImplementedException">The GetExportedValueCore method was not overridden by a derived class.</exception>
-        <exception cref="T:System.ComponentModel.Composition.CompositionException">An error occurred during composition. <see cref="System.ComponentModel.Composition.CompositionException.Errors%2A" /> will contain a collection of errors that occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -175,23 +143,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the metadata for the export.</summary>
-        <value>The metadata of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property returns the value of <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> of the <xref:System.ComponentModel.Composition.Primitives.Export.Definition%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">The <see cref="System.ComponentModel.Composition.Primitives.Export.Definition%2A" /> property was not overridden by a derived class.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -201,14 +162,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides the object this export represents.</summary>
-        <value>The object this export represents.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

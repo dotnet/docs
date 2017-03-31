@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WebScriptEnablingBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,27 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides support for the behavior that enables [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When applied to an endpoint, the WebScriptEnablingBehavior behavior enables [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] and ASP.NET AJAX integration, except for the support required for JavaScript Object Notation (JSON) encoding. Various types of encoding, including JSON, are enabled by the <xref:System.ServiceModel.Configuration.WebMessageEncodingElement> or by an appropriately configured <xref:System.ServiceModel.WebHttpBinding>. The WebScriptEnablingBehavior behavior implements the <xref:System.ServiceModel.Description.IEndpointBehavior> and inherits from <xref:System.ServiceModel.Description.WebHttpBehavior>, which enables the more general Web programming model for [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] services exposing non-SOAP endpoints.  
-  
- Specifically, the WebScriptEnablingBehavior:  
-  
--   Enables the HTTP programming model, including dispatch to operations based on a URL suffix, support for HTTP verb selection (POST or GET) and HTTP cache duration control. [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the HTTP programming model, see [WCF Web HTTP Programming Model Overview](../Topic/WCF%20Web%20HTTP%20Programming%20Model%20Overview.md). Note that the default HTTP verb is POST when using this behavior.  
-  
--   Enables the correct formatter for each operation's request and response messages - for example, support for URL parameters.  
-  
--   Enables the JavaScript Proxy endpoint.  
-  
- To call a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service from an ASP.NET AJAX client, the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> binding and the WebScriptEnablingBehavior must be added to the endpoint behavior collection. This can be done either in configuration by adding the <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> or without using configuration by activating the AJAX endpoint with the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> instead of the default factory in the [@ServiceHost](../Topic/@ServiceHost.md) directive in the .svc file.  
-  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] different ways to enable a [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](../Topic/Creating%20WCF%20Services%20for%20ASP.NET%20AJAX.md).  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,22 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebScriptEnablingBehavior" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
-  
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddClientErrorInspector">
@@ -67,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,7 +60,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,7 +83,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,17 +93,10 @@
         <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> that exposes the contract.</param>
-        <param name="clientRuntime">The <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> to which the custom behavior is applied.</param>
-        <summary>Applies the behavior to the client across an endpoint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implements the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Dispatcher.ClientRuntime%29> method to view, modify, or add custom extension to the client runtime across all messages used with an endpoint or for specific operations.  
-  
- ]]></format>
-        </remarks>
+        <param name="endpoint">To be added.</param>
+        <param name="clientRuntime">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyDispatchBehavior">
@@ -146,7 +106,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,17 +116,10 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> that exposes the contract.</param>
-        <param name="endpointDispatcher">The <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> to which the custom behavior is applied.</param>
-        <summary>Applies the behavior to the service endpoint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Normally, this method is called by [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] automatically when the behavior is applied to an endpoint. So there is no need to call this method manually.  
-  
- ]]></format>
-        </remarks>
+        <param name="endpoint">To be added.</param>
+        <param name="endpointDispatcher">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticFormatSelectionEnabled">
@@ -183,17 +135,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines if automatic format selection is enabled.</summary>
-        <value>
-          <see langword="true" /> if automatic format selection is enabled; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] automatic format selection, see [WCF Web HTTP Formatting](../Topic/WCF%20Web%20HTTP%20Formatting.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultBodyStyle">
@@ -203,24 +147,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default message body style.</summary>
-        <value>The <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> value. This default value is the only valid value.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Web.WebMessageBodyStyle> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The body style set is not supported.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultOutgoingRequestFormat">
@@ -230,17 +165,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default outgoing request message format.</summary>
-        <value>The <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> used by outgoing request messages. The default value is <see cref="T:System.ServiceModel.Web.WebMessageFormat" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The message format set is not a valid value of <see cref="T:System.ServiceModel.Web.WebMessageFormat" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultOutgoingResponseFormat">
@@ -250,17 +183,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the default outgoing response message format.</summary>
-        <value>The <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> used by outgoing response messages. The default value is <see cref="T:System.ServiceModel.Web.WebMessageFormat" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The message format set is not a valid value of <see cref="T:System.ServiceModel.Web.WebMessageFormat" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FaultExceptionEnabled">
@@ -276,8 +207,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag that specifies whether a FaultException is generated when an internal server error (HTTP status code: 500) occurs.</summary>
-        <value>Returns <see langword="true" /> if the flag is enabled; otherwise returns <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,7 +219,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,17 +247,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines if the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] REST Help page is enabled.</summary>
-        <value>
-          <see langword="true" /> if the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] REST Help page is enabled; otherwise <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crabout](~/add/includes/crabout-md.md)] the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] REST Help page, see [WCF Web HTTP Service Help Page](../Topic/WCF%20Web%20HTTP%20Service%20Help%20Page.md).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -337,7 +259,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -347,17 +268,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> that exposes the contract.</param>
-        <summary>Confirms that the endpoint meets the requirements that allow it to function as an ASP.NET AJAX endpoint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Verifies that the endpoint is not `null`, uses the HTTP or HTTPS schemes, does not use the <xref:System.Xml.Serialization.XmlSerializer>, uses either the HTTP GET or POST verb, that the <xref:System.ServiceModel.Channels.MessageVersion> of the binding is set to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>, and that the binding contains a <xref:System.ServiceModel.Channels.TransportBindingElement> where <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A> is set to `true`. This method also checks that there are no SOAP headers or wrapper names on the methods, or other unsupported aspects of the operations.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The endpoint does not meet one of the requirements for being an ASP.NET AJAX endpoint.</exception>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

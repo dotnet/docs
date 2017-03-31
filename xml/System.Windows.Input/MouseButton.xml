@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseButton" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines values that specify the buttons on a mouse device.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:System.Windows.Input.Mouse.MouseDown> event handler that uses the MouseButton enumeration to determine which button was pressed. Depending on which button was pressed, the background of the control that fired the event is changed.  
-  
- [!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/add/codesnippet/visualbasic/mousesnippetsample/window1.xaml.vb#mouseeventargschangedbutton)]
- [!code-cs[mousesnippetsample#MouseEventArgsChangedButton](~/add/codesnippet/csharp/MouseSnippetSample/Window1.xaml.cs#mouseeventargschangedbutton)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Left">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The left mouse button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Middle">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The middle mouse button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The right mouse button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XButton1">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The first extended mouse button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="XButton2">
@@ -100,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The second extended mouse button.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

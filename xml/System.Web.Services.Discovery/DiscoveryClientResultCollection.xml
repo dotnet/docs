@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> objects. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[DiscoveryClientResultCollection#1](~/add/codesnippet/cpp/t-system.web.services.di_0_1.cpp)]
- [!code-cs[DiscoveryClientResultCollection#1](~/add/codesnippet/csharp/t-system.web.services.di_0_1.cs)]
- [!code-vb[DiscoveryClientResultCollection#1](~/add/codesnippet/visualbasic/t-system.web.services.di_0_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,19 +49,10 @@
         <Parameter Name="value" Type="System.Web.Services.Discovery.DiscoveryClientResult" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> to add to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</param>
-        <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</summary>
-        <returns>The position into which the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> was inserted.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#6](~/add/codesnippet/csharp/08b092d9-9cba-4864-b354-_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#6](~/add/codesnippet/cpp/08b092d9-9cba-4864-b354-_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#6](~/add/codesnippet/visualbasic/08b092d9-9cba-4864-b354-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -80,7 +62,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,20 +72,10 @@
         <Parameter Name="value" Type="System.Web.Services.Discovery.DiscoveryClientResult" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> to locate in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</param>
-        <summary>Determines whether the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" /> contains a specific <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" />.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> is found in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#7](~/add/codesnippet/csharp/59144019-9e76-4642-9adc-_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#7](~/add/codesnippet/cpp/59144019-9e76-4642-9adc-_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#7](~/add/codesnippet/visualbasic/59144019-9e76-4642-9adc-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -113,7 +85,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,26 +95,10 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">The zero-based index of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> to get or set.</param>
-        <summary>Gets or sets the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> at position <paramref name="i" /> of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</summary>
-        <value>The <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> at the specified index.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
-   
-  
-## Examples  
- [!code-cs[DiscoveryClientResult_Filename#8](~/add/codesnippet/csharp/2c0183cf-5764-47a2-83c4-_1.cs)]
- [!code-cpp[DiscoveryClientResult_Filename#8](~/add/codesnippet/cpp/2c0183cf-5764-47a2-83c4-_1.cpp)]
- [!code-vb[DiscoveryClientResult_Filename#8](~/add/codesnippet/visualbasic/2c0183cf-5764-47a2-83c4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="i" /> is not a valid index in the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</exception>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -152,7 +108,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,21 +118,9 @@
         <Parameter Name="value" Type="System.Web.Services.Discovery.DiscoveryClientResult" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> to remove from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</param>
-        <summary>Removes the first occurrence of a specific <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> from the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Services.Discovery.DiscoveryClientResult> elements that follow the removed <xref:System.Web.Services.Discovery.DiscoveryClientResult> move up to occupy the vacated spot.  
-  
-   
-  
-## Examples  
- DiscoveryClientResult_Filename#1  
-  
- ]]></format>
-        </remarks>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

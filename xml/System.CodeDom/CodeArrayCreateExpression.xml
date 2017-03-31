@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArrayCreateExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,28 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an expression that creates an array.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- CodeArrayCreateExpression can be used to represent a code expression that creates an array. Expressions that create an array should specify either a number of elements, or a list of expressions to use to initialize the array.  
-  
- Most arrays can be initialized immediately following declaration. The <xref:System.CodeDom.CodeArrayCreateExpression.Initializers%2A> property can be set to the expression to use to initialize the array.  
-  
- A CodeArrayCreateExpression only directly supports creating single-dimension arrays. If a language allows arrays of arrays, it is possible to create them by nesting a CodeArrayCreateExpression within a CodeArrayCreateExpression. Not all languages support arrays of arrays. You can check whether an <xref:System.CodeDom.Compiler.ICodeGenerator> for a language declares support for nested arrays by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
-  
-   
-  
-## Examples  
- The following code uses a CodeArrayCreateExpression to create an array of integers with 10 indexes.  
-  
- [!code-cpp[CodeArrayCreateExpressionSnippet#1](~/add/codesnippet/cpp/t-system.codedom.codearr_1_1.cpp)]
- [!code-cs[CodeArrayCreateExpressionSnippet#1](~/add/codesnippet/csharp/t-system.codedom.codearr_1_1.cs)]
- [!code-vb[CodeArrayCreateExpressionSnippet#1](~/add/codesnippet/visualbasic/t-system.codedom.codearr_1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +45,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -75,9 +52,9 @@
         <Parameter Name="size" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="createType">A <see cref="T:System.CodeDom.CodeTypeReference" /> indicating the data type of the array to create.</param>
-        <param name="size">An expression that indicates the number of indexes of the array to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and code expression indicating the number of indexes for the array.</summary>
+        <param name="createType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +65,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -102,9 +78,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="createType">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the array to create.</param>
-        <param name="initializers">An array of expressions to use to initialize the array.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and initialization expressions.</summary>
+        <param name="createType">To be added.</param>
+        <param name="initializers">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +91,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,9 +98,9 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="createType">A <see cref="T:System.CodeDom.CodeTypeReference" /> indicating the data type of the array to create.</param>
-        <param name="size">The number of indexes of the array to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and number of indexes for the array.</summary>
+        <param name="createType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +111,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -144,9 +118,9 @@
         <Parameter Name="size" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="createType">The name of the data type of the array to create.</param>
-        <param name="size">An expression that indicates the number of indexes of the array to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type name and code expression indicating the number of indexes for the array.</summary>
+        <param name="createType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +131,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,9 +144,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="createType">The name of the data type of the array to create.</param>
-        <param name="initializers">An array of expressions to use to initialize the array.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type name and initializers.</summary>
+        <param name="createType">To be added.</param>
+        <param name="initializers">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +157,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -192,9 +164,9 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="createType">The name of the data type of the array to create.</param>
-        <param name="size">The number of indexes of the array to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type name and number of indexes for the array.</summary>
+        <param name="createType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +177,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -213,9 +184,9 @@
         <Parameter Name="size" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="createType">The data type of the array to create.</param>
-        <param name="size">An expression that indicates the number of indexes of the array to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and code expression indicating the number of indexes for the array.</summary>
+        <param name="createType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +197,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -240,9 +210,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="createType">The data type of the array to create.</param>
-        <param name="initializers">An array of expressions to use to initialize the array.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and initializers.</summary>
+        <param name="createType">To be added.</param>
+        <param name="initializers">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +223,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -261,9 +230,9 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="createType">The data type of the array to create.</param>
-        <param name="size">The number of indexes of the array to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and number of indexes for the array.</summary>
+        <param name="createType">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,15 +243,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type of array to create.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the type of the array.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,15 +261,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the initializers with which to initialize the array.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the initialization values.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,15 +279,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of indexes in the array.</summary>
-        <value>The number of indexes in the array.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,23 +297,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the expression that indicates the size of the array.</summary>
-        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the size of the array.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The size of the array can be represented with a <xref:System.CodeDom.CodeExpression>.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

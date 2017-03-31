@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ColorConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Converts instances of other types to and from an instance of <see cref="T:System.Windows.Media.Color" />.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,12 +22,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.ColorConverter" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +37,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,10 +47,10 @@
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="td">Describes the context information of a type.</param>
-        <param name="t">The type of the source that is being evaluated for conversion.</param>
-        <summary>Determines whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Color" />.</summary>
-        <returns>**true** if the type can be converted to a <see cref="T:System.Windows.Media.Color" />; otherwise, **false**.</returns>
+        <param name="td">To be added.</param>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +61,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,10 +71,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="destinationType">The desired type this <see cref="T:System.Windows.Media.Color" /> is being evaluated for conversion.</param>
-        <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Color" /> can be converted to a different type.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.Color" /> can be converted to <paramref name="destinationType" />; otherwise, **false**.</returns>
+        <param name="context">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +85,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,19 +96,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="td">Describes the context information of a type.</param>
-        <param name="ci">Cultural information to respect during conversion.</param>
-        <param name="value">The object being converted.</param>
-        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Media.Color" />.</summary>
-        <returns>The <see cref="T:System.Windows.Media.Color" /> created from converting <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.ColorConverter.CanConvertFrom%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="td">To be added.</param>
+        <param name="ci">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFromString">
@@ -123,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,9 +120,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to convert to a <see cref="T:System.Windows.Media.Color" />.</param>
-        <summary>Attempts to convert a string to a <see cref="T:System.Windows.Media.Color" />.</summary>
-        <returns>A <see cref="T:System.Windows.Media.Color" /> that represents the converted text.</returns>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +133,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -164,20 +150,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">Describes the context information of a type.</param>
-        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.Color" /> to convert.</param>
-        <param name="destinationType">The type to convert this <see cref="T:System.Windows.Media.Color" /> to.</param>
-        <summary>Attempts to convert a <see cref="T:System.Windows.Media.Color" /> to a specified type.</summary>
-        <returns>The object created from converting this <see cref="T:System.Windows.Media.Color" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.ColorConverter.CanConvertTo%2A> method.  
-  
- ]]></format>
-        </remarks>
+        <param name="context">To be added.</param>
+        <param name="culture">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="destinationType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

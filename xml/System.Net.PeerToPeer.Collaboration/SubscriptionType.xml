@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.SubscriptionType" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies if a remote peer subscribed to the local peer can receive event notifications.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.SubscriptionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a remote peer can subscribe to the local peer as well as receive event notifications.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Blocked">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.SubscriptionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a remote peer can subscribe to the local peer, but will not receive event notifications.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

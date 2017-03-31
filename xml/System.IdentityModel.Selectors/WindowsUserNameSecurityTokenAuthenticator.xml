@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Uses Windows authentication to authenticate the user name and password in a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security token.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method uses Windows authentication to authenticate a user name and password.  
-  
- To provide a custom authentication scheme, see the <xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,20 +22,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user is authenticated, claims that identify the Windows groups that a user belongs to are initially added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property and eventually to the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,16 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="includeWindowsGroups" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeWindowsGroups">
-          <see langword="true" /> to get the groups the Windows user belongs to; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class by specifying whether the claims that identify the Windows groups that a user belongs to are initially added to the <see cref="System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A" /> property when the user is authenticated.</summary>
+        <param name="includeWindowsGroups">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +55,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,20 +65,11 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">The user name associated with the security token.</param>
-        <param name="password">The password associated with the security token.</param>
-        <summary>Authenticates the specified user name and password and returns the set of authorization policies for <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security tokens.</summary>
-        <returns>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `userName` parameter must be in one of the following formats: `domain\username` or `username`. If the `userName` parameter is in the `domain\username` format, then there must be only one backslash (\\) character separating the user name and domain.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="userName" /> contains more than one backslash (\\) character.</exception>
+        <param name="userName">To be added.</param>
+        <param name="password">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

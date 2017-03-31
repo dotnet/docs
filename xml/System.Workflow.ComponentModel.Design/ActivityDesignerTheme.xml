@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,34 +16,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides the look and feel property settings to a designer in a design-time environment.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
-  
- Designer themes define the look and feel of a designer. This includes any background styles, foreground styles, fonts, and icons defined for the designer.  
-  
- You can create a custom designer theme if you want to provide configuration abilities to properties unique to your designer. If you do not specify a designer theme for a custom designer, the theme from the base class is used.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom ActivityDesignerTheme by deriving from the ActivityDesignerTheme class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,15 +27,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="theme" Type="System.Workflow.ComponentModel.Design.WorkflowTheme" />
       </Parameters>
       <Docs>
-        <param name="theme">A <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> that contains the theme information for the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</param>
-        <summary>Initializes an instance of an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />.</summary>
+        <param name="theme">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +45,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -91,29 +62,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Drawing.Color" /> to end with when using a color gradient for the background color.</summary>
-        <value>The background ending <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BackColorEnd indicates the ending color of a background gradient. To use background gradient color, set the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart%2A> and BackColorEnd properties. The background will gradually change color from the starting color to the ending color.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColorStart">
@@ -123,7 +74,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -141,29 +91,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting color of the background when using a color gradient on the background.</summary>
-        <value>The background starting <see cref="T:System.Drawing.Color" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BackColorStart indicates the background color, or the beginning color of a background gradient. To use background gradient color, set the BackColorStart and <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd%2A> properties. The background will gradually change color from the start color to the end color.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundStyle">
@@ -173,7 +103,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -185,41 +114,9 @@
         <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background style.</summary>
-        <value>A <see cref="T:System.Drawing.Drawing2D.LinearGradientMode" /> that describes the background style.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use BackgroundStyle to get or set how the background displays color. The BackgroundStyle can be set to one of four modes:  
-  
- `BackwardDiagonal`  
- Specifies a gradient from upper right to lower left.  
-  
- `ForwardDiagonal`  
- Specifies a gradient from upper left to lower right.  
-  
- `Horizontal`  
- Specifies a gradient from left to right.  
-  
- `Vertical`  
- Specifies a gradient from top to bottom.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BoldFont">
@@ -229,7 +126,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -244,16 +140,9 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font for the theme.</summary>
-        <value>The <see cref="T:System.Drawing.Font" /> of the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- BoldFont represents the font to use for highlighted text for the theme.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -263,7 +152,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -281,29 +169,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the BorderColor for the theme.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the BorderColor of the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BorderColor is the color used to draw borders for shapes.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderPen">
@@ -313,7 +181,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -328,16 +195,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the BorderPen for the theme.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> that represents the BorderPen of the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BorderPen is the pen used to draw borders for shapes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -347,7 +207,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -362,29 +221,9 @@
         <ReturnType>System.Drawing.Drawing2D.DashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style used for the border.</summary>
-        <value>A <see cref="T:System.Drawing.Drawing2D.DashStyle" /> enumeration that represents the style used for the border.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BorderStyle is the style of line to draw for borders of shapes.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -394,7 +233,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -409,16 +247,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width of the border in pixels.</summary>
-        <value>The width of the border in pixels.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The BorderWidth is the width in pixels for borders of shapes.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignerGeometry">
@@ -428,7 +259,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -443,22 +273,9 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerGeometry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the geometry of the designer.</summary>
-        <value>An enumeration that describes the geometry of the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DesignerGeometry represents the default geometry of shapes for the theme.  
-  
- `Rectangle`  
- Draws shapes with squared corners.  
-  
- `RoundedRectangle`  
- Draws shapes with rounded corners.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignerImage">
@@ -468,7 +285,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -483,16 +299,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the image associated with the designer.</summary>
-        <value>The <see cref="T:System.Drawing.Image" /> to display for the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerImage is the default image to display for the designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignerImagePath">
@@ -502,7 +311,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -517,16 +325,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image path for the designer.</summary>
-        <value>The image path for the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The DesignerImagePath is the path to the image file to use as the default image to display for the designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -536,7 +337,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -546,17 +346,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources and optionally releases the managed resources used by <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `disposing` is `true`, this method releases all resources held by any managed objects that <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> references. This method invokes the `Dispose` method of each referenced object.  
-  
- ]]></format>
-        </remarks>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -566,7 +358,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -581,16 +372,9 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font of the text used by the theme.</summary>
-        <value>The font of the designer theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Font` is used to display text in the designer. The `Font` property determines the font to use for regular text displayed in the designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -600,7 +384,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -618,29 +401,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the foreground.</summary>
-        <value>A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the ForeColor property to specify the foreground color of the theme. The foreground color is usually the color of the text.  
-  
-   
-  
-## Examples  
- The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
-  
- [!code-cs[WF_Samples#80](~/add/codesnippet/csharp/wf_snippets/snippets.cs#80)]
- [!code-vb[WF_Samples#80](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#80)]  
-  
- To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
-  
- [!code-cs[WF_Samples#79](~/add/codesnippet/csharp/wf_snippets/snippets.cs#79)]
- [!code-vb[WF_Samples#79](~/add/codesnippet/visualbasic/wf_snippets/snippets.vb#79)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundBrush">
@@ -650,7 +413,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -665,16 +427,9 @@
         <ReturnType>System.Drawing.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Brush" /> object associated with the theme.</summary>
-        <value>A <see cref="T:System.Drawing.Brush" /> object associated with the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Assigning this property causes the brush associated with the theme to draw filled lines and curves.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundPen">
@@ -684,7 +439,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -699,16 +453,9 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Pen" /> used for painting the foreground of the theme.</summary>
-        <value>A <see cref="T:System.Drawing.Pen" /> that is used to paint the foreground of the theme.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Drawing.Pen> is used to draw a line of a specified width and style. The line drawn by a `Pen` object can be filled in a variety of fill styles, including solid colors and textures. The fill style depends on which brush or texture used as the fill object.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBackgroundBrush">
@@ -718,7 +465,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -736,17 +482,10 @@
         <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rectangle">A <see cref="T:System.Drawing.Rectangle" /> that specifies the location and size of the area on the background.</param>
-        <summary>Gets a brush used to paint the area specified by the rectangle passed.</summary>
-        <returns>A <see cref="T:System.Drawing.Brush" /> that is used to fill interiors of graphical shapes such as rectangles, ellipses, pies, polygons, and paths.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The background brush is used to fill the interior of the background of the designer.  
-  
- ]]></format>
-        </remarks>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageSize">
@@ -756,7 +495,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -771,16 +509,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the image of the theme.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the image.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ImageSize is the <xref:System.Drawing.Size> of the default image used by the theme for the designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -790,7 +521,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -798,15 +528,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the designer theme.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Initializes the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> with the ambient theme.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAmbientPropertyChanged">
@@ -816,7 +539,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -826,16 +548,9 @@
         <Parameter Name="ambientProperty" Type="System.Workflow.ComponentModel.Design.AmbientProperty" />
       </Parameters>
       <Docs>
-        <param name="ambientProperty">The property that has changed.</param>
-        <summary>Called to signal changes to ambient settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- OnAmbientPropertyChanged is used to notify the theme to apply changes to ambient properties.  
-  
- ]]></format>
-        </remarks>
+        <param name="ambientProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -845,7 +560,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -860,16 +574,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the designer.</summary>
-        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the designer.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The size property represents the <xref:System.Drawing.Size> of the designer.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

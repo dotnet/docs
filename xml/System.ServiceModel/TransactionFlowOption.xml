@@ -4,30 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionFlowOption" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>An enumeration that is used with the <see cref="T:System.ServiceModel.TransactionFlowAttribute" /> to specify the transaction flow policy for a service operation.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This enumeration is used to instantiate an instance of the <xref:System.ServiceModel.TransactionFlowAttribute> class, which is used to mark a service contract method to indicate its transaction flow policy.  
-  
-   
-  
-## Examples  
- The following code example demonstrates the use of this enumeration together with the TransactionFlowOption class at the operation level.  
-  
- [!code-cs[OperationBehaviorAttribute1#2](~/add/codesnippet/csharp/operationbehaviorattribute1.client/services.cs#2)]
- [!code-vb[OperationBehaviorAttribute1#2](~/add/codesnippet/visualbasic/operationbehaviorattribute1.client/services.vb#2)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Allowed">
@@ -37,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Transaction may be flowed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mandatory">
@@ -54,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Transaction must be flowed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAllowed">
@@ -71,14 +56,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A transaction should not be flowed. This is the default value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

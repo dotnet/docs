@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a base class for data source objects that get data by using LINQ queries.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with this <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</summary>
-        <returns>The default data source view that is associated with the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">The name of the data source view to get.</param>
-        <summary>Gets the data source view that is associated with the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> object.</summary>
-        <returns>The default data source view that is associated with the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</returns>
+        <param name="viewName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a collection of names that represent views that are associated with the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</summary>
-        <returns>A collection of names that represent views that are associated with the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">An object that represents the state of the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</param>
-        <summary>Loads the state of the values in the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control that must be persisted.</summary>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data</param>
-        <summary>Initializes the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> object by using the event data.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +157,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a query is added to or removed from a data source control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +175,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="System.Web.UI.DataSourceView.OnDataSourceViewChanged%2A" /> method of the <see cref="T:System.Web.UI.DataSourceView" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +193,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the current view state of the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</summary>
-        <returns>The saved state of the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +212,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Tracks view-state changes of the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control so that the changes can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the control.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +230,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates the parameter values that have changed since the previous request.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

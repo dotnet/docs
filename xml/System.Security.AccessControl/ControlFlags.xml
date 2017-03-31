@@ -3,8 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ControlFlags" />
   <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>These flags affect the security descriptor behavior.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,15 +30,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclAutoInherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the Discretionary Access Control List (DACL) has been automatically inherited from the parent. Set by resource managers only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryAclAutoInheritRequired">
@@ -43,15 +51,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclAutoInheritRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ignored.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryAclDefaulted">
@@ -60,15 +72,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclDefaulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the DACL was obtained by a defaulting mechanism. Set by resource managers only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryAclPresent">
@@ -77,15 +93,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclPresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the DACL is not <see langword="null" />. Set by resource managers or users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryAclProtected">
@@ -94,15 +114,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclProtected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the resource manager prevents auto-inheritance. Set by resource managers or users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiscretionaryAclUntrusted">
@@ -111,15 +135,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclUntrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ignored.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GroupDefaulted">
@@ -128,15 +156,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.GroupDefaulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the group <see cref="T:System.Security.Principal.SecurityIdentifier" /> was obtained by a defaulting mechanism. Set by resource managers only; should not be set by callers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -145,15 +177,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>No control flags.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDefaulted">
@@ -162,15 +198,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.OwnerDefaulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the owner <see cref="T:System.Security.Principal.SecurityIdentifier" /> was obtained by a defaulting mechanism. Set by resource managers only; should not be set by callers.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RMControlValid">
@@ -179,15 +219,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.RMControlValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the contents of the Reserved field are valid.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelfRelative">
@@ -196,15 +240,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.SelfRelative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the security descriptor binary representation is in the self-relative format.  This flag is always set.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerSecurity">
@@ -213,15 +261,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.ServerSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ignored.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAclAutoInherited">
@@ -230,15 +282,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.SystemAclAutoInherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the System Access Control List (SACL) has been automatically inherited from the parent. Set by resource managers only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAclAutoInheritRequired">
@@ -247,15 +303,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.SystemAclAutoInheritRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ignored.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAclDefaulted">
@@ -264,15 +324,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.SystemAclDefaulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the SACL was obtained by a defaulting mechanism. Set by resource managers only.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAclPresent">
@@ -281,15 +345,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.SystemAclPresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the SACL is not <see langword="null" />. Set by resource managers or users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAclProtected">
@@ -298,15 +366,19 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ControlFlags.SystemAclProtected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the resource manager prevents auto-inheritance. Set by resource managers or users.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

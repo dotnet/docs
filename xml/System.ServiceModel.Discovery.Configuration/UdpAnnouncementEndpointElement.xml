@@ -11,15 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines a configuration element for a UDP announcement endpoint.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A UDP announcement endpoint is a standard endpoint that utilizes UDP transport protocol that specifies where a discoverable service sends announcement messages and where an announcement service listens for announcement messages.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of <see cref="T:System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +46,9 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">Not implemented.</param>
-        <summary>When called or overridden by a derived class, creates and initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpAnnouncementEndpoint" /> class that uses the contract description of the current Discovery protocol version and mode.</summary>
-        <returns>A UDP announcement endpoint.</returns>
+        <param name="contractDescription">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +65,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When called or overridden by a derived class, gets the type of the UDP announcement endpoint.</summary>
-        <value>The type of the UDP announcement endpoint.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +86,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint object to convert.</param>
-        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> into a <see cref="T:System.ServiceModel.Discovery.UdpAnnouncementEndpoint" />.</summary>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +115,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum delay a service is required to wait before sending announcement messages.</summary>
-        <value>The maximum delay.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,16 +138,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the MulticastAddress property of a UDP announcement endpoint element.</summary>
-        <value>A URI address.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The multicast address is the IP address from which messages are sent simultaneously to multiple host computers.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApplyConfiguration">
@@ -174,9 +160,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint to which UDP announcement configuration settings are applied.</param>
-        <param name="serviceEndpointElement">Not implemented.</param>
-        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a UDP announcement endpoint.</summary>
+        <param name="endpoint">To be added.</param>
+        <param name="serviceEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +183,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The service endpoint to which UDP announcement configuration settings are applied.</param>
-        <param name="serviceEndpointElement">Not implemented.</param>
-        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a UDP announcement endpoint.</summary>
+        <param name="endpoint">To be added.</param>
+        <param name="serviceEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +205,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">The channel endpoint element to initialize and validate.</param>
-        <summary>When called or overridden by a derived class, initializes and validates the specified instance of a <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" />.</summary>
+        <param name="channelEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +226,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">The service endpoint element to initialize and validate.</param>
-        <summary>When called or overridden by a derived class, initializes and validates the specified instance of a <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElement" />.</summary>
+        <param name="serviceEndpointElement">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +244,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When called or overridden by a derived class, gets a collection of the configuration settings contained in a <see cref="T:System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement" /> instance.</summary>
-        <value>A collection of configuration settings.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,8 +267,8 @@
         <ReturnType>System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the binding settings of a UDP transport configuration element.</summary>
-        <value>A UDP configuration element.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

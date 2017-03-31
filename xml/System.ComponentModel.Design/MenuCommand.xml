@@ -4,8 +4,12 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommand" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,43 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows menu or toolbar command item.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The MenuCommand class represents information about a Windows menu or toolbar command. The <xref:System.ComponentModel.Design.IMenuCommandService> interface allows you to add MenuCommand objects to the Visual Studio menu.  
-  
- This class provides the following members:  
-  
--   An event-handler property to which you can attach an event handler for the command.  
-  
--   A <xref:System.ComponentModel.Design.CommandID> property that uniquely identifies the command.  
-  
--   An <xref:System.ComponentModel.Design.MenuCommand.Invoke%2A> method that executes the command.  
-  
--   An <xref:System.ComponentModel.Design.MenuCommand.OnCommandChanged%2A> method that can be overridden to handle the event that occurs when a new command is selected.  
-  
--   Boolean flag states that indicate whether the command is <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A>, <xref:System.ComponentModel.Design.MenuCommand.Supported%2A>, or <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>.  
-  
--   An <xref:System.ComponentModel.Design.MenuCommand.OleStatus%2A> property that indicates the OLE command status code for the command.  
-  
--   An override for the <xref:System.ComponentModel.Design.MenuCommand.ToString%2A> method.  
-  
-   
-  
-## Examples  
- The following code example creates a MenuCommand object, configures its properties, and adds it to the <xref:System.ComponentModel.Design.IMenuCommandService>.  
-  
- Create an instance of the `Component1` class on your form and open the form in a design environment like Visual Studio. Press the F1 key to invoke the MenuCommand.  
-  
- [!code-cpp[MenuCommand Example#10](~/add/codesnippet/cpp/t-system.componentmodel._11_1.cpp)]
- [!code-cs[MenuCommand Example#10](~/add/codesnippet/csharp/t-system.componentmodel._11_1.cs)]
- [!code-vb[MenuCommand Example#10](~/add/codesnippet/visualbasic/t-system.componentmodel._11_1.vb)]  
-  
- ]]></format>
-    </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="T:System.Security.Permissions.SecurityAction" />, <see cref="T:System.Security.Permissions.SecurityAction" />. Associated state:</permission>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,29 +32,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handler" Type="System.EventHandler" />
         <Parameter Name="command" Type="System.ComponentModel.Design.CommandID" />
       </Parameters>
       <Docs>
-        <param name="handler">The event to raise when the user selects the menu item or toolbar button.</param>
-        <param name="command">The unique command ID that links this menu command to the environment's menu.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.MenuCommand" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to an <xref:System.ComponentModel.Design.IMenuCommandService> object.  
-  
- [!code-cpp[MenuCommand Example#1](~/add/codesnippet/cpp/0d01c3a9-eede-4f5b-b9c2-_1.cpp)]
- [!code-cs[MenuCommand Example#1](~/add/codesnippet/csharp/0d01c3a9-eede-4f5b-b9c2-_1.cs)]
- [!code-vb[MenuCommand Example#1](~/add/codesnippet/visualbasic/0d01c3a9-eede-4f5b-b9c2-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="handler">To be added.</param>
+        <param name="command">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -95,16 +57,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this menu item is checked.</summary>
-        <value>
-          <see langword="true" /> if the item is checked; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,22 +80,19 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu command changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A command can change if it becomes checked or disabled.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandID">
@@ -140,15 +102,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ComponentModel.Design.CommandID" /> associated with this menu command.</summary>
-        <value>The <see cref="T:System.ComponentModel.Design.CommandID" /> associated with the menu command.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,28 +125,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this menu item is available.</summary>
-        <value>
-          <see langword="true" /> if the item is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to <xref:System.ComponentModel.Design.IMenuCommandService>.  
-  
- [!code-cpp[MenuCommand Example#1](~/add/codesnippet/cpp/p-system.componentmodel._22_1.cpp)]
- [!code-cs[MenuCommand Example#1](~/add/codesnippet/csharp/p-system.componentmodel._22_1.cs)]
- [!code-vb[MenuCommand Example#1](~/add/codesnippet/visualbasic/p-system.componentmodel._22_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -190,15 +148,19 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invokes the command.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +171,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -219,8 +185,8 @@
         <Parameter Name="arg" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="arg">An optional argument for use by the command.</param>
-        <summary>Invokes the command with the given parameter.</summary>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,15 +197,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the OLE command status code for this menu item.</summary>
-        <value>An integer containing a mixture of status flags that reflect the state of this menu item.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,8 +220,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -260,18 +234,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.MenuCommand.CommandChanged" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The OnCommandChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
- ]]></format>
-        </remarks>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -281,23 +246,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the public properties associated with the <see cref="T:System.ComponentModel.Design.MenuCommand" />.</summary>
-        <value>An <see cref="T:System.Collections.IDictionary" /> containing the public properties of the <see cref="T:System.ComponentModel.Design.MenuCommand" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All menu commands store their public properties in the Properties collection. The key in the properties dictionary is the property name. This allows for generic enumeration of properties and provides a consistent substrate from which new properties can be added without modifying the class definition.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Supported">
@@ -307,28 +269,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this menu item is supported.</summary>
-        <value>
-          <see langword="true" /> if the item is supported, which is the default; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to the <xref:System.ComponentModel.Design.IMenuCommandService>.  
-  
- [!code-cpp[MenuCommand Example#1](~/add/codesnippet/cpp/p-system.componentmodel._28_1.cpp)]
- [!code-cs[MenuCommand Example#1](~/add/codesnippet/csharp/p-system.componentmodel._28_1.cs)]
- [!code-vb[MenuCommand Example#1](~/add/codesnippet/visualbasic/p-system.componentmodel._28_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -338,16 +292,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of this menu command.</summary>
-        <returns>A string containing the value of the <see cref="System.ComponentModel.Design.MenuCommand.CommandID%2A" /> property appended with the names of any flags that are set, separated by pipe bars (|). These flag properties include <see cref="System.ComponentModel.Design.MenuCommand.Checked%2A" />, <see cref="System.ComponentModel.Design.MenuCommand.Enabled%2A" />, <see cref="System.ComponentModel.Design.MenuCommand.Supported%2A" />, and <see cref="System.ComponentModel.Design.MenuCommand.Visible%2A" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,28 +316,20 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this menu item is visible.</summary>
-        <value>
-          <see langword="true" /> if the item is visible; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to the <xref:System.ComponentModel.Design.IMenuCommandService>.  
-  
- [!code-cpp[MenuCommand Example#1](~/add/codesnippet/cpp/p-system.componentmodel._40_1.cpp)]
- [!code-cs[MenuCommand Example#1](~/add/codesnippet/csharp/p-system.componentmodel._40_1.cs)]
- [!code-vb[MenuCommand Example#1](~/add/codesnippet/visualbasic/p-system.componentmodel._40_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,27 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">The source of the event.</param>
-    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged" /> or <see cref="E:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged" /> events of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control changes. The <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property changes.  
-  
- When you create a DataGridViewAutoSizeModeEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
-  
-   
-  
-## Examples  
- The following code demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event.  
-  
- [!code-cs[System.Windows.Forms.DataGridView.AutoSizing#10](~/add/codesnippet/csharp/t-system.windows.forms.d_135_1.cs)]
- [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#10](~/add/codesnippet/cpp/t-system.windows.forms.d_135_1.cpp)]
- [!code-vb[System.Windows.Forms.DataGridView.AutoSizing#10](~/add/codesnippet/visualbasic/t-system.windows.forms.d_135_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

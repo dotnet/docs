@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.StaticResourceExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,23 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a markup extension that supports static (XAML load time) resource references made from XAML.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class is a markup extension implementation. Markup extension classes in WPF exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] XAML  processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) usage from XAML. For more information on the mechanics of static resource lookup in WPF XAML, see [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) or [XAML Resources](../Topic/XAML%20Resources.md).  
-  
- `{StaticResource}` is a markup extension that is specific to the WPF implementation of XAML. You can use `{StaticResource}` when referencing the default XAML namespace for WPF, without using a prefix. In contrast, markup extensions that are defined for XAML language support (such as `{x:Type}`) require the prefix for the XAML language XAML namespace in the usage. For more information, see [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md).  
-  
- Static resource references are generally used in XAML whenever a [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) is not explicitly necessary.  
-  
-<a name="xamlTextUsage_StaticResourceExtension"></a>   
-## XAML Text Usage  
- See Remarks  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +30,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.StaticResourceExtension" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,18 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceKey" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="resourceKey">The key of the resource that this markup extension references.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.StaticResourceExtension" /> class, with the provided initial key.</summary>
+        <param name="resourceKey">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceKey" /> parameter is <see langword="null" />, either through markup extension usage or explicit construction.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">
@@ -83,7 +63,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,31 +72,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">Object that can provide services for the markup extension.</param>
-        <summary>Returns an object that should be set on the property where this extension is applied. For <see cref="T:System.Windows.StaticResourceExtension" />, this is the object found in a resource dictionary, where the object to find is identified by the <see cref="System.Windows.StaticResourceExtension.ResourceKey%2A" />.</summary>
-        <returns>The object value to set on the property where the markup extension provided value is evaluated.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method supports [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] XAML processor implementation, and is not intended to be called directly. The XAML processor implementation uses this method for proper handling of `StaticResource` extension values during object creation.  
-  
- The property to be set can be identified by a <xref:System.Reflection.PropertyInfo> (standard property) or <xref:System.Windows.DependencyProperty> (dependency property).  
-  
- This implementation relies on XAML-related services based on the passed `serviceProvider`. It must not be `null`. In the [!INCLUDE[net_v40_short](~/add/includes/net-v40-short-md.md)] implementation, the following are required services from service context:  
-  
--   <xref:System.Xaml.IXamlSchemaContextProvider>  
-  
--   <xref:System.Xaml.IAmbientProvider>  
-  
--   <xref:System.Xaml.IRootObjectProvider>  
-  
- If any of these services are missing, usage of the markup extension throws an exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">
-          <paramref name="serviceProvider" /> was <see langword="null" />, or failed to implement a required service.</exception>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -127,7 +85,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -139,19 +96,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key value passed by this static resource reference. They key is used  to return the object matching that key in resource dictionaries.</summary>
-        <value>The resource key for a resource.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] usage information, see [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
-  
-<a name="xamlTextUsage_ResourceKey"></a>   
-## XAML Text Usage  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">Specified value as <see langword="null" />, either through markup extension usage or explicit construction.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

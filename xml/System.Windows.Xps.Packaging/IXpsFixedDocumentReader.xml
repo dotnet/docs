@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IXpsFixedDocumentReader" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -13,23 +12,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines methods for reading the parts of a <see cref="T:System.Windows.Documents.FixedDocument" /> and also for limited types of writing to the document.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to obtain a reference to an object that implements this interface.  
-  
- [!code-cs[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/add/codesnippet/csharp/XpsReadWriteSign/SignatureDialog.xaml.cs#signaturedefinitioncommandhandler)]
- [!code-vb[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/add/codesnippet/visualbasic/xpsreadwritesign/signaturedialog.xaml.vb#signaturedefinitioncommandhandler)]  
-  
- The following example shows how to use an IXpsFixedDocumentReader to obtain an IXpsFixedDocumentReader collection in order to access each page in a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-vb[DocumentStructure#DocStrucFixedDoc](~/add/codesnippet/visualbasic/documentstructure/window1.xaml.vb#docstrucfixeddoc)]
- [!code-cs[DocumentStructure#DocStrucFixedDoc](~/add/codesnippet/csharp/DocumentStructure/Window1.xaml.cs#docstrucfixeddoc)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddSignatureDefinition">
@@ -39,7 +23,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,8 +32,8 @@
         <Parameter Name="signatureDefinition" Type="System.Windows.Xps.Packaging.XpsSignatureDefinition" />
       </Parameters>
       <Docs>
-        <param name="signatureDefinition">The definition that is added.</param>
-        <summary>Adds the specified <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> to the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <param name="signatureDefinition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +44,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,7 +51,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Flushes the package <see cref="T:System.IO.Stream" /> and also commits an <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> to the package.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,15 +62,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the zero-based position of the document in the <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
-        <value>An <see cref="T:System.Int32" /> that represents the document location in the sequence.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,23 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsStructure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see langword="DocumentStructure" /> part, if one exists, of the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>An <see cref="T:System.Windows.Xps.Packaging.XpsStructure" /> that represents the <see langword="DocumentStructure" /> element, if one exists, and its child elements.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] document does not need to have a Document Structure part.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FixedPages">
@@ -125,26 +98,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.IXpsFixedPageReader&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Windows.Documents.FixedPage" /> readers, one reader for each page in the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>A collection of fixed page readers, one reader for each page in the <see cref="T:System.Windows.Documents.FixedDocument" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the FixedPages property to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access the individual pages in a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-vb[DocumentStructure#DocStrucFixedDoc](~/add/codesnippet/visualbasic/documentstructure/window1.xaml.vb#docstrucfixeddoc)]
- [!code-cs[DocumentStructure#DocStrucFixedDoc](~/add/codesnippet/csharp/DocumentStructure/Window1.xaml.cs#docstrucfixeddoc)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFixedPage">
@@ -154,7 +116,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,9 +125,9 @@
         <Parameter Name="pageSource" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="pageSource">The [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] of the page.</param>
-        <summary>Gets a reader for the <see cref="T:System.Windows.Documents.FixedPage" /> with the specified [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)].</summary>
-        <returns>An <see cref="T:System.Windows.Xps.Packaging.IXpsFixedPageReader" /> for the page.</returns>
+        <param name="pageSource">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,23 +138,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PrintTicket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Printing.PrintTicket" />, if one exists, that is associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>A <see cref="T:System.Printing.PrintTicket" /> that contains the default printing options for the document; or <see langword="null" /> if no print ticket exists for the document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about the <xref:System.Printing.PrintTicket> part of an [!INCLUDE[TLA#tla_xps](~/add/includes/tlasharptla-xps-md.md)] document, see chapter 2 in the [!INCLUDE[TLA2#tla_xps](~/add/includes/tla2sharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveSignatureDefinition">
@@ -203,7 +156,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,8 +165,8 @@
         <Parameter Name="signatureDefinition" Type="System.Windows.Xps.Packaging.XpsSignatureDefinition" />
       </Parameters>
       <Docs>
-        <param name="signatureDefinition">The definition that is removed.</param>
-        <summary>Removes the specified <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> from the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <param name="signatureDefinition">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,15 +177,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Windows.Xps.Packaging.XpsSignatureDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all the signature definitions that are associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>An <see cref="System.Collections.Generic.ICollection%601" /> of signature definitions, typically one for every person who signed or will sign the document.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,15 +195,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsThumbnail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the thumbnail image, if a thumbnail exists, that is associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>An <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> that represents the image.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,26 +213,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_uri](~/add/includes/tlasharptla-uri-md.md)] of the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
-        <value>A <see cref="T:System.Uri" /> that represents the [!INCLUDE[TLA2#tla_uri](~/add/includes/tla2sharptla-uri-md.md)] for the document.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Uri property.  
-  
- [!code-vb[XpsReadWriteSign#IterateXpsPackageParts](~/add/codesnippet/visualbasic/xpsreadwritesign/readingandwritingxps.vb#iteratexpspackageparts)]
- [!code-cs[XpsReadWriteSign#IterateXpsPackageParts](~/add/codesnippet/csharp/XpsReadWriteSign/ReadingAndWritingXps.cs#iteratexpspackageparts)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,241 @@
+<Type Name="SourceConstructFlags" FullName="Microsoft.FSharp.Core.SourceConstructFlags">
+  <TypeSignature Language="C#" Value="public enum SourceConstructFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SourceConstructFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.SourceConstructFlags" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Closure">
+      <MemberSignature Language="C#" Value="Closure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags Closure = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.Closure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="Exception" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags Exception = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.Exception" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="Field" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags Field = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.Field" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KindMask">
+      <MemberSignature Language="C#" Value="KindMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags KindMask = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.KindMask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Module">
+      <MemberSignature Language="C#" Value="Module" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags Module = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.Module" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonPublicRepresentation">
+      <MemberSignature Language="C#" Value="NonPublicRepresentation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags NonPublicRepresentation = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.NonPublicRepresentation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="ObjectType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags ObjectType = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.ObjectType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordType">
+      <MemberSignature Language="C#" Value="RecordType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags RecordType = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.RecordType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SumType">
+      <MemberSignature Language="C#" Value="SumType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags SumType = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.SumType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnionCase">
+      <MemberSignature Language="C#" Value="UnionCase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags UnionCase = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.UnionCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="Value" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.SourceConstructFlags Value = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.SourceConstructFlags.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.SourceConstructFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

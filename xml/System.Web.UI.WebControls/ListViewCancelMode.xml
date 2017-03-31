@@ -4,30 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewCancelMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines the type of operation that the user was performing when the **Cancel** button was clicked in a <see cref="T:System.Web.UI.WebControls.ListView" /> item.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ListViewCancelMode enumeration is used to represent the type of operation that the user was performing when the **Cancel** button was clicked in a <xref:System.Web.UI.WebControls.ListView> item. (A Cancel button is a button whose `CommandName` property set to "Cancel".)  
-  
-   
-  
-## Examples  
- The following example shows how to use the ListViewCancelMode enumeration to check which operation is being canceled in a <xref:System.Web.UI.WebControls.ListView> item.  
-  
- [!code-vb[System.Web.UI.WebControls.ListView.ItemCanceling#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_138_1.aspx)]
- [!code-cs[System.Web.UI.WebControls.ListView.ItemCanceling#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_138_1.aspx)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CancelingEdit">
@@ -37,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user canceled an edit operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CancelingInsert">
@@ -54,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user canceled an insert operation.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

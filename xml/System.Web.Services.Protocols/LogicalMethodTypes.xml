@@ -4,24 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.LogicalMethodTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how the XML Web service method was invoked.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cpp[LogicalMethodInfo_GetCustomAttribute#1](~/add/codesnippet/cpp/t-system.web.services.pr_11_1.cpp)]
- [!code-cs[LogicalMethodInfo_GetCustomAttribute#1](~/add/codesnippet/csharp/t-system.web.services.pr_11_1.cs)]
- [!code-vb[LogicalMethodInfo_GetCustomAttribute#1](~/add/codesnippet/visualbasic/t-system.web.services.pr_11_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Async">
@@ -31,14 +22,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The XML Web service method is invoked asynchronously.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sync">
@@ -48,14 +39,14 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The XML Web service method is invoked synchronously.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

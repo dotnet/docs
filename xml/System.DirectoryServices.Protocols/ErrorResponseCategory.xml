@@ -4,14 +4,13 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ErrorResponseCategory" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The ErrorResponseCategory enumeration contains possible DSML error responses.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -22,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Authentication failed. The value is equal to 5.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectionClosed">
@@ -39,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DSML provider connected to a server, but the server closed the connection without responding to the request. The value is equal to 2.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotConnect">
@@ -56,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DSML provider was unable to connect to a server. The value is equal to 1.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="GatewayInternalError">
@@ -73,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>There is an internal gateway error. The value is equal to 4.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MalformedRequest">
@@ -90,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The client failed to specify a request ID for each request. The value is equal to 3.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAttempted">
@@ -107,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DSML provider did not attempt to execute a request element. The value is equal to 0.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -124,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An unknown error occurred. The value is equal to 7.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnresolvableUri">
@@ -141,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The client provider is unable to resolve the URI to a value that can transferred to the server. The value is equal to 6.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

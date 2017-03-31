@@ -10,66 +10,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the modes in which classes derived from <see cref="T:System.Windows.Media.Animation.EasingFunctionBase" /> perform their easing.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following graphs demonstrate the different values of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>, where *f*(*t*) represents the animation progress and *t* represents time.  
-  
- <xref:System.Windows.Media.Animation.BackEase>  
-  
- ![BackEase EasingMode graphs.](~/add/media/backease-graph.png "BackEase EasingMode graphs.")  
-  
- <xref:System.Windows.Media.Animation.BounceEase>  
-  
- ![BounceEase EasingMode graphs.](~/add/media/bounceease-graph.png "BounceEase EasingMode graphs.")  
-  
- <xref:System.Windows.Media.Animation.CircleEase>  
-  
- ![CircleEase EasingMode graphs.](~/add/media/circleease-graph.png "CircleEase EasingMode graphs.")  
-  
- <xref:System.Windows.Media.Animation.CubicEase>  
-  
- ![CubicEase EasingMode graphs.](~/add/media/cubicease-graph.png "CubicEase EasingMode graphs.")  
-  
- <xref:System.Windows.Media.Animation.ElasticEase>  
-  
- ![ElasticEase with graphs of different easingmodes.](~/add/media/elasticease-graph.png "ElasticEase with graphs of different easingmodes.")  
-  
- <xref:System.Windows.Media.Animation.ExponentialEase>  
-  
- ![ExponentialEase graphs of different easingmodes.](~/add/media/exponentialease-graph.png "ExponentialEase graphs of different easingmodes.")  
-  
- <xref:System.Windows.Media.Animation.PowerEase>  
-  
- ![QuarticEase with graphs of different easingmodes.](~/add/media/quarticease-graph.png "QuarticEase with graphs of different easingmodes.")  
-  
- <xref:System.Windows.Media.Animation.QuadraticEase>  
-  
- ![QuadraticEase with graphs of different easingmodes](~/add/media/quadraticease-graph.png "QuadraticEase with graphs of different easingmodes")  
-  
- <xref:System.Windows.Media.Animation.QuarticEase>  
-  
- ![QuarticEase with graphs of different easingmodes.](~/add/media/quarticease-graph.png "QuarticEase with graphs of different easingmodes.")  
-  
- <xref:System.Windows.Media.Animation.QuinticEase>  
-  
- ![QuinticEase with graphs of different easingmodes.](~/add/media/quinticease-graph.png "QuinticEase with graphs of different easingmodes.")  
-  
- <xref:System.Windows.Media.Animation.SineEase>  
-  
- ![SineEase for different EasingMode values](~/add/media/sineease-graph.png "SineEase for different EasingMode values")  
-  
-<a name="xamlAttributeUsage_HorizontalAlignment"></a>   
-## XAML Attribute Usage  
-  
-```  
-<object property="enumMemberName"/>  
-```  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EaseIn">
@@ -85,7 +27,7 @@
         <ReturnType>System.Windows.Media.Animation.EasingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interpolation follows the mathematical formula associated with the easing function.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EaseInOut">
@@ -101,7 +43,7 @@
         <ReturnType>System.Windows.Media.Animation.EasingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interpolation uses EaseIn for the first half of the animation and EaseOut for the second half.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EaseOut">
@@ -117,7 +59,7 @@
         <ReturnType>System.Windows.Media.Animation.EasingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

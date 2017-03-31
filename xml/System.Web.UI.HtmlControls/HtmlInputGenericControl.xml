@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the methods, properties, and events for server-side access to the HTML5 <see langword="input" /> element.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputGenericControl" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputGenericControl" /> class based on the specified type.</summary>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,11 +77,10 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The index in the posted collection that references the content to load.</param>
-        <param name="postCollection">The collection of all posted values.</param>
-        <summary>Processes the postback data for the HTML5 <see langword="input" /> element.</summary>
-        <returns>
-          <see langword="true" /> if the posted content differs from the content in a previous postback; otherwise, <see langword="false" />.</returns>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +100,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +121,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.HtmlControls.HtmlInputGenericControl.ServerChange" /> event.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invokes the <see cref="System.Web.UI.HtmlControls.HtmlInputGenericControl.OnServerChange%2A" /> method when the posted data for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputGenericControl" /> element has changed.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,7 +157,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the content of the HTML5 <see langword="input" /> element changes between posts to the server.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,19 +178,11 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The index in the posted collection that references the content to load.</param>
-        <param name="postCollection">The collection of all posted values.</param>
-        <summary>When implemented in a derived class, processes postback data for an HTML5 <see langword="input" /> element.</summary>
-        <returns>
-          <see langword="true" /> if the state of the HTML5 <see langword="input" /> element changes because of the postback; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputGenericControl> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="postDataKey">To be added.</param>
+        <param name="postCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -208,15 +199,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented in a derived class, invokes the <see cref="System.Web.UI.HtmlControls.HtmlInputGenericControl.OnServerChange%2A" /> method when the posted data for the HTML5 <see langword="input" /> element has changed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputGenericControl> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

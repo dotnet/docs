@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBoxRenderer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,28 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to render a combo box control with visual styles. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ComboBoxRenderer class provides a set of `static` methods that can be used to render a combo box control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style. To draw a combo box, use the <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%2A> method to draw the text box and the <xref:System.Windows.Forms.ComboBoxRenderer.DrawDropDownButton%2A> method to draw the drop-down arrow.  
-  
- If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%2A> and <xref:System.Windows.Forms.ComboBoxRenderer.DrawDropDownButton%2A> will draw the combo box with the current visual style. Otherwise, these methods will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property.  
-  
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox.DropDownButton?displayProperty=fullName> and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit?displayProperty=fullName> classes. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md).  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%2A> and <xref:System.Windows.Forms.ComboBoxRenderer.DrawDropDownButton%2A> methods to draw a combo box that responds to mouse clicks.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxRenderer#0](~/add/codesnippet/csharp/t-system.windows.forms.c_12_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBoxRenderer#0](~/add/codesnippet/visualbasic/t-system.windows.forms.c_12_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxRenderer#0](~/add/codesnippet/cpp/t-system.windows.forms.c_12_1.cpp)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DrawDropDownButton">
@@ -43,7 +22,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,36 +33,11 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ComboBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the drop-down arrow.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the drop-down arrow.</param>
-        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the drop-down arrow.</param>
-        <summary>Draws a drop-down arrow with the current visual style of the operating system.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property returns `true`.  
-  
-   
-  
-## Examples  
- The following code example uses the DrawDropDownButton method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a drop-down arrow in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ComboBoxRenderer> class.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxRenderer#4](~/add/codesnippet/csharp/2b5a7f20-f30b-40aa-af29-_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBoxRenderer#4](~/add/codesnippet/visualbasic/2b5a7f20-f30b-40aa-af29-_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxRenderer#4](~/add/codesnippet/cpp/2b5a7f20-f30b-40aa-af29-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
-  
- -or-  
-  
- Visual styles are disabled by the user in the operating system.  
-  
- -or-  
-  
- Visual styles are not applied to the client area of application windows.</exception>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawTextBox">
@@ -94,7 +47,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,27 +58,11 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ComboBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
-        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box in the specified state and bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property returns `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
-  
- -or-  
-  
- Visual styles are disabled by the user in the operating system.  
-  
- -or-  
-  
- Visual styles are not applied to the client area of application windows.</exception>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawTextBox">
@@ -136,7 +72,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,29 +85,13 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ComboBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
-        <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
-        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box in the specified state and bounds, with the specified text.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property returns `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
-  
- -or-  
-  
- Visual styles are disabled by the user in the operating system.  
-  
- -or-  
-  
- Visual styles are not applied to the client area of application windows.</exception>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="comboBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawTextBox">
@@ -182,7 +101,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -197,39 +115,14 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ComboBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
-        <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds in which to draw <c>comboBoxText</c>.</param>
-        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box in the specified state and bounds, with the specified text and text bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property returns `true`.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Windows.Forms.VisualStyles.ComboBoxState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a text box. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ComboBoxRenderer> class.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxRenderer#4](~/add/codesnippet/csharp/eb80cd1d-29ce-4b0b-b415-_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBoxRenderer#4](~/add/codesnippet/visualbasic/eb80cd1d-29ce-4b0b-b415-_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxRenderer#4](~/add/codesnippet/cpp/eb80cd1d-29ce-4b0b-b415-_1.cpp)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
-  
- -or-  
-  
- Visual styles are disabled by the user in the operating system.  
-  
- -or-  
-  
- Visual styles are not applied to the client area of application windows.</exception>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="comboBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="textBounds">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawTextBox">
@@ -239,7 +132,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,30 +146,14 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ComboBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
-        <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
-        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box in the specified state and bounds, with the specified text and text formatting.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property returns `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
-  
- -or-  
-  
- Visual styles are disabled by the user in the operating system.  
-  
- -or-  
-  
- Visual styles are not applied to the client area of application windows.</exception>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="comboBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawTextBox">
@@ -287,7 +163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,31 +178,15 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ComboBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
-        <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds in which to draw <c>comboBoxText</c>.</param>
-        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box in the specified state and bounds, with the specified text, text formatting, and text bounds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.ComboBoxRenderer.IsSupported%2A> property returns `true`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
-  
- -or-  
-  
- Visual styles are disabled by the user in the operating system.  
-  
- -or-  
-  
- Visual styles are not applied to the client area of application windows.</exception>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="comboBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="textBounds">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSupported">
@@ -337,33 +196,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ComboBoxRenderer" /> class can be used to draw a combo box with visual styles.</summary>
-        <value>
-          <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If this property is `false`, the <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%2A> or <xref:System.Windows.Forms.ComboBoxRenderer.DrawDropDownButton%2A> methods will throw an <xref:System.InvalidOperationException>.  
-  
-   
-  
-## Examples  
- The following code example uses the IsSupported property to determine whether to use the <xref:System.Windows.Forms.ComboBoxRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ComboBoxRenderer> class.  
-  
- [!code-cs[System.Windows.Forms.ComboBoxRenderer#2](~/add/codesnippet/csharp/p-system.windows.forms.c_8_1.cs)]
- [!code-vb[System.Windows.Forms.ComboBoxRenderer#2](~/add/codesnippet/visualbasic/p-system.windows.forms.c_8_1.vb)]
- [!code-cpp[System.Windows.Forms.ComboBoxRenderer#2](~/add/codesnippet/cpp/p-system.windows.forms.c_8_1.cpp)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

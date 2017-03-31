@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopeNameValue" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the input scope name which modifies how input from alternative input methods is interpreted.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Input.InputScopeName> enumeration provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> property values of the <xref:System.Windows.Input.InputScopePhrase> class.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddressCity">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a city address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressCountryName">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the name of a country.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressCountryShortName">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the abbreviated name of a country.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressStateOrProvince">
@@ -80,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a state or province.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressStreet">
@@ -97,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a street address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlphanumericFullWidth">
@@ -114,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for alphanumeric full-width characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlphanumericHalfWidth">
@@ -131,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for alphanumeric half-width characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bopomofo">
@@ -148,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the Bopomofo Mandarin Chinese phonetic transcription system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencyAmount">
@@ -165,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for amount of currency.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencyAmountAndSymbol">
@@ -182,14 +165,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for amount and symbol of currency.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencyChinese">
@@ -199,14 +181,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for Chinese currency.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -216,14 +197,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a calendar date.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateDay">
@@ -233,14 +213,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the numeric day in a calendar date.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateDayName">
@@ -250,14 +229,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the name of the day in a calendar date.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateMonth">
@@ -267,14 +245,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the numeric month in a calendar date.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateMonthName">
@@ -284,14 +261,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the name of the month in a calendar date.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateYear">
@@ -301,14 +277,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the year in a calendar date.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -318,14 +293,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default handling of input commands.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Digits">
@@ -335,14 +309,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for digits.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailSmtpAddress">
@@ -352,14 +325,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a Simple Mail Transfer Protocol (SMTP) email address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailUserName">
@@ -369,14 +341,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for an email user name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -386,14 +357,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a file name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullFilePath">
@@ -403,14 +373,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the full path of a file.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hanja">
@@ -420,14 +389,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for Hanja characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hiragana">
@@ -437,14 +405,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the Hiragana writing system.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KatakanaFullWidth">
@@ -454,14 +421,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for full-width Katakana characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="KatakanaHalfWidth">
@@ -471,14 +437,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for half-width Katakana characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogOnName">
@@ -488,14 +453,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a log on name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -505,14 +469,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberFullWidth">
@@ -522,14 +485,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a full-width number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneChar">
@@ -539,14 +501,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for one character.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -556,14 +517,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a password.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalFullName">
@@ -573,14 +533,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a person's full name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalGivenName">
@@ -590,14 +549,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a person's given name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalMiddleName">
@@ -607,14 +565,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a person's middle name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalNamePrefix">
@@ -624,14 +581,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the prefix of a person's name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalNameSuffix">
@@ -641,14 +597,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the suffix of a person's name.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalSurname">
@@ -658,14 +613,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a person's surname.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhraseList">
@@ -675,14 +629,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a phrase list.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PostalAddress">
@@ -692,14 +645,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a postal address.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="PostalCode">
@@ -709,14 +661,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a postal code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegularExpression">
@@ -726,14 +677,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a regular expression.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Srgs">
@@ -743,14 +693,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the Speech Recognition Grammar Specification (SRGS).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneAreaCode">
@@ -760,14 +709,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a telephone area code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneCountryCode">
@@ -777,14 +725,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a telephone country code.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneLocalNumber">
@@ -794,14 +741,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a telephone local number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneNumber">
@@ -811,14 +757,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a telephone number.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -828,14 +773,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeHour">
@@ -845,14 +789,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the hour of the time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeMinorSec">
@@ -862,14 +805,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for the minutes or seconds of time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -879,14 +821,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for a Uniform Resource Locator (URL).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -896,14 +837,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text input pattern for XML.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

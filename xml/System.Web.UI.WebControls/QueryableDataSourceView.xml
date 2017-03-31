@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Supports the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control and provides an interface for data-bound controls to perform LINQ data operations.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="owner">The data source control that the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object is associated with.</param>
-        <param name="viewName">The unique name for the data source view in the scope of the data source control that owns it.</param>
-        <param name="context">The current <see cref="T:System.Web.HttpContext" /> instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> class.</summary>
+        <param name="owner">To be added.</param>
+        <param name="viewName">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control creates a dynamic an <see langword="OrderBy" /> clause.</summary>
-        <value>
-          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object dynamically creates an <see langword="OrderBy" /> clause; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +72,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control creates a dynamic <see langword="Where" /> clause.</summary>
-        <value>
-          <see langword="true" /> if dynamic creation of the <see langword="Where" /> clause is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +90,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports paging by default.</summary>
-        <value>
-          <see langword="true" /> if paging is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +108,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports sorting by default.</summary>
-        <value>
-          <see langword="true" /> if sorting is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,11 +131,11 @@
         <Parameter Name="validationErrors" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Exception&gt;" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to delete.</param>
-        <param name="oldValues">The row values to evaluate in order to detect data conflicts.</param>
-        <param name="validationErrors">The list of conversion errors that are created in the data source when a CRUD operation fails.</param>
-        <summary>Creates the objects to use for the delete operation.</summary>
-        <returns>The objects to use for the delete operation.</returns>
+        <param name="keys">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <param name="validationErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,10 +156,10 @@
         <Parameter Name="validationErrors" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Exception&gt;" />
       </Parameters>
       <Docs>
-        <param name="values">The values of the rows to insert in the data source.</param>
-        <param name="validationErrors">The list of conversion errors that are created by the system when a CRUD operation fails.</param>
-        <summary>Creates the objects to use for the insert operation by using the values to insert and the error message to display if the operation fails.</summary>
-        <returns>The objects to use for the insert operation.</returns>
+        <param name="values">To be added.</param>
+        <param name="validationErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +179,9 @@
         <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
       </Parameters>
       <Docs>
-        <param name="arguments">Objects that are used to request operations on the data beyond basic data retrieval.</param>
-        <summary>Creates a Select query expression by using the select arguments of the data source.</summary>
-        <returns>A list of data objects.</returns>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,12 +204,12 @@
         <Parameter Name="validationErrors" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Exception&gt;" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to update.</param>
-        <param name="values">The values of the rows to update in the data source.</param>
-        <param name="oldValues">The row values to evaluate in order to detect data conflicts.</param>
-        <param name="validationErrors">The list of conversion errors that are created by the system when a CRUD operation fails.</param>
-        <summary>Creates the objects to use for the update operation by using the specified values.</summary>
-        <returns>The objects to use for the update operation.</returns>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <param name="validationErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +226,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports delete operations.</summary>
-        <value>
-          <see langword="true" /> if delete operations are supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +244,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports insert operations.</summary>
-        <value>
-          <see langword="true" /> if insert operations are supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +262,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports paging.</summary>
-        <value>Always <see langword="true" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,9 +280,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports retrieving the total number of data rows, and retrieving the data.</summary>
-        <value>
-          <see langword="true" /> if the object supports retrieving the total number of data rows; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,9 +298,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports a sorted view of the retrieved data.</summary>
-        <value>
-          <see langword="true" /> if the object supports a sorted view of the retrieved data; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,9 +316,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control supports update operations.</summary>
-        <value>
-          <see langword="true" /> if update operations are supported; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,7 +335,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the original values.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -364,9 +355,9 @@
         <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
       </Parameters>
       <Docs>
-        <param name="arguments">A collection of objects that are used to request operations on the data beyond basic data retrieval.</param>
-        <summary>Creates an instance of a query context object that contains the evaluated parameter collections.</summary>
-        <returns>An instance of the context object that contains the evaluated parameter collections.</returns>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,10 +378,10 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to delete.</param>
-        <param name="oldValues">The row values to evaluate in order to detect data conflicts.</param>
-        <summary>Performs a delete operation.</summary>
-        <returns>The number of rows that were deleted from the data source.</returns>
+        <param name="keys">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,9 +401,9 @@
         <Parameter Name="oldEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oldEntity">The data object to delete.</param>
-        <summary>Deletes a data object from a table.</summary>
-        <returns>The number of rows that were deleted from the data object.</returns>
+        <param name="oldEntity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,8 +420,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection that contains the parameters that are used during a delete operation.</summary>
-        <value>A collection that contains the parameters that are used by the <see cref="System.Web.UI.WebControls.QueryableDataSourceView.Delete%2A" /> method.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,8 +438,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the data object to use for CUD operations.</summary>
-        <value>An instance of the type of the data object to use for CUD operations.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,7 +456,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the event that causes the data-retrieval operation to complete has occurred.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,7 +473,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the event that occurs before a data-retrieval operation has occurred.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,10 +494,10 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to delete.</param>
-        <param name="oldValues">The row values to evaluate in order to detect data conflicts.</param>
-        <summary>Performs a delete operation on data items that the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object represents by using the specified values.</summary>
-        <returns>The number of objects or rows that were deleted from the data source.</returns>
+        <param name="keys">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,9 +517,9 @@
         <Parameter Name="values" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="values">The values of the rows to insert in the data source.</param>
-        <summary>Performs an insert operation on the data items that the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object represents by using the specified value.</summary>
-        <returns>The number of objects or rows that were inserted into the data source.</returns>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,10 +540,10 @@
         <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" />
       </Parameters>
       <Docs>
-        <param name="source">The data source to use.</param>
-        <param name="context">The data context to use.</param>
-        <summary>Executes paging by using the <see cref="T:System.Web.UI.WebControls.QueryContext" /> object from the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> object.</summary>
-        <returns>The number of pages of data in the data object.</returns>
+        <param name="source">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,10 +564,10 @@
         <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" />
       </Parameters>
       <Docs>
-        <param name="source">The data source object to use.</param>
-        <param name="context">The data context to use.</param>
-        <summary>Performs a query, sort, or paging operation on the <see cref="System.Linq.IQueryable%601" /> object.</summary>
-        <returns>The data object that contains the result of the query, of sorting, or of paging.</returns>
+        <param name="source">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,10 +588,10 @@
         <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" />
       </Parameters>
       <Docs>
-        <param name="source">The data source to use.</param>
-        <param name="context">The data context to use.</param>
-        <summary>Executes query expressions by using an <see cref="T:System.Linq.IQueryable" /> object and the <see cref="T:System.Web.UI.WebControls.QueryContext" /> object.</summary>
-        <returns>The data source that contains the results of the query expressions.</returns>
+        <param name="source">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -620,9 +611,9 @@
         <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
       </Parameters>
       <Docs>
-        <param name="arguments">A collection of objects that are used to request operations on the data beyond basic data retrieval.</param>
-        <summary>Performs a data-retrieval operation.</summary>
-        <returns>The result of the requested operation.</returns>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -643,10 +634,10 @@
         <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" />
       </Parameters>
       <Docs>
-        <param name="source">The data source to use.</param>
-        <param name="context">The data context to use.</param>
-        <summary>Performs a sorting operation.</summary>
-        <returns>The sorted data object.</returns>
+        <param name="source">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,11 +659,11 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to update.</param>
-        <param name="values">The values of the rows to update.</param>
-        <param name="oldValues">The row values to evaluate in order to detect data conflicts.</param>
-        <summary>Performs an update operation.</summary>
-        <returns>The number of rows that were updated in the data source.</returns>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,9 +683,9 @@
         <Parameter Name="keys" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to update.</param>
-        <summary>Retrieves the original values for the specified keys that were stored during the Select operation.</summary>
-        <returns>The original values for the specified keys that were stored during the Select operation.</returns>
+        <param name="keys">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,9 +705,9 @@
         <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" />
       </Parameters>
       <Docs>
-        <param name="context">The data context to apply the query to.</param>
-        <summary>Gets initial <see cref="T:System.Linq.IQueryable" /> object for the data source view based on the query context.</summary>
-        <returns>The initial <see cref="T:System.Linq.IQueryable" /> object for the data source view.</returns>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -733,8 +724,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name or names of the properties to use during the select operation for grouping data.</summary>
-        <value>A value that is used to create the GroupBy expression.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -751,8 +742,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of parameters whose values are used to create the <see langword="GroupBy" /> clause during the select operation.</summary>
-        <value>A collection of parameters that are used to create the <see langword="GroupBy" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,9 +764,9 @@
         <Parameter Name="operation" Type="System.Web.UI.DataSourceOperation" />
       </Parameters>
       <Docs>
-        <param name="errors">The type of any field-specific exception that occurred during the CRUD operations.</param>
-        <param name="operation">The data operation that caused the exception.</param>
-        <summary>Called by methods that perform CRUD operations when a CRUD operation fails in the data-object building process.</summary>
+        <param name="errors">To be added.</param>
+        <param name="operation">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,9 +786,9 @@
         <Parameter Name="values" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="values">The values of the rows to insert.</param>
-        <summary>Performs an asynchronous insert operation on the data items that the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object represents.</summary>
-        <returns>The number of rows that were inserted into the data source.</returns>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,9 +808,9 @@
         <Parameter Name="newEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="newEntity">The data object to insert.</param>
-        <summary>Inserts data objects into a <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object.</summary>
-        <returns>The number of objects that were inserted into the data source view.</returns>
+        <param name="newEntity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -836,8 +827,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of parameters that are used during the insert operation.</summary>
-        <value>A collection that contains the parameters that are used during the insert operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -854,9 +845,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object is saving changes to its view state.</summary>
-        <value>
-          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,8 +866,8 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">The <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> control state to restore.</param>
-        <summary>Restores the previously saved view state for the data source view.</summary>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,8 +887,8 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.QueryCreatedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">The event data.</param>
-        <summary>Raises the <see cref="E:System.Web.UI.WebControls.QueryableDataSourceView.QueryCreated" /> event after the <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> control has created an <see cref="T:System.Linq.IQueryable" /> object.</summary>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -919,9 +909,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">The source of the event.</param>
-        <param name="e">The event data.</param>
-        <summary>Calls the <see cref="System.Web.UI.WebControls.QueryableDataSourceView.RaiseViewChanged%2A" /> method.</summary>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -938,8 +928,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name or names of the properties that are used during the select operation to sort data.</summary>
-        <value>A value that is used to create the <see langword="OrderBy" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -956,8 +946,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of parameters that are used during the select operation to sort data.</summary>
-        <value>The parameters that are used to create the <see langword="OrderBy" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -974,8 +964,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the names of the properties that are used during the select operation to sort grouped data.</summary>
-        <value>A value that is used to create the <see langword="OrderGroupsBy" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -992,8 +982,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of parameters that are used to create the <see langword="OrderGroupsBy" /> clause.</summary>
-        <value>The parameters that are used to create the <see langword="OrderGroupsBy" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1010,7 +1000,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a query is created.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1028,7 +1018,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Calls the <see cref="System.Web.UI.DataSourceView.OnDataSourceViewChanged%2A" /> method.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1046,8 +1036,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves changes to view state for the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> object since the time that the page was posted to the server.</summary>
-        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceView" /> control's view state.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1064,8 +1054,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the properties and calculated values that are included in the retrieved data.</summary>
-        <value>The values that are used to create the Select command.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1082,8 +1072,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of parameters that are used during a data-retrieval operation.</summary>
-        <value>The parameters that are used to create the Select command.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1103,16 +1093,9 @@
         <Parameter Name="results" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="results">The result of the operations.</param>
-        <summary>Stores the original values from the <see langword="Select" /> operation in the control's view state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you derive from this class you can override this method and call the <xref:System.Web.UI.WebControls.QueryableDataSourceView.StoreOriginalValues%2A> method to determine which columns should be store for optimistic concurrency.  
-  
- ]]></format>
-        </remarks>
+        <param name="results">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StoreOriginalValues">
@@ -1132,9 +1115,9 @@
         <Parameter Name="include" Type="System.Func&lt;System.ComponentModel.PropertyDescriptor,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="results">The result of the operation.</param>
-        <param name="include">The method that determines the properties to include.</param>
-        <summary>Stores the original values from the select operation in the control's view state when delete or update operations are enabled.</summary>
+        <param name="results">To be added.</param>
+        <param name="include">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1151,17 +1134,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When implemented by a class, gets a value that indicates whether a server control is tracking its view-state changes.</summary>
-        <value>
-          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.QueryableDataSourceView> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -1180,16 +1155,9 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">The state of the data source control.</param>
-        <summary>When implemented by a class, loads the server control's previously saved view state for the control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.QueryableDataSourceView> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -1206,16 +1174,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented by a class, saves the changes to a server control's view state to an object.</summary>
-        <returns>The object that contains the changes to the server control's view state.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.QueryableDataSourceView> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1232,15 +1193,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When implemented by a class, gets a value that indicates whether a server control is tracking its view-state changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.QueryableDataSourceView> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1257,7 +1211,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes tracking of view-state changes to the server control so that they can be stored in the server control's state.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1279,11 +1233,11 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">The keys of the rows to update.</param>
-        <param name="values">The values of the rows to update.</param>
-        <param name="oldValues">The row values to evaluate in order to detect data conflicts.</param>
-        <summary>Performs an update operation.</summary>
-        <returns>The number of rows that were updated in the data source.</returns>
+        <param name="keys">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="oldValues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1304,10 +1258,10 @@
         <Parameter Name="newEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oldEntity">The object to update.</param>
-        <param name="newEntity">The updated object.</param>
-        <summary>Updates a data object.</summary>
-        <returns>The number of rows that were updated in the data object.</returns>
+        <param name="oldEntity">To be added.</param>
+        <param name="newEntity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1324,8 +1278,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of parameters that are used during an update operation.</summary>
-        <value>A collection of parameters that are used during an update operation.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1342,8 +1296,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies what conditions must be true for a row to be included in the retrieved data.</summary>
-        <value>A string that is used to create the <see langword="Where" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1360,8 +1314,8 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of parameters that are used to create a <see langword="Where" /> clause.</summary>
-        <value>A collection of parameters that are used to create a <see langword="Where" /> clause.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,7 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivationFactory" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory" />
   <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -13,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables classes to be activated by the [!INCLUDE[wrt](~/add/includes/wrt-md.md)].</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +28,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory.ActivateInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -31,8 +41,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a new instance of the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] class that is created by the <see cref="T:System.Runtime.InteropServices.WindowsRuntime.IActivationFactory" /> interface.</summary>
-        <returns>The new instance of the [!INCLUDE[wrt](~/add/includes/wrt-md.md)] class.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

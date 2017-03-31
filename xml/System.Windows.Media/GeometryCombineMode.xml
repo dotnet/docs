@@ -4,32 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryCombineMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the different methods by which two geometries can be combined.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following illustration shows the different geometry combine modes.  
-  
- ![Different combine modes applied to two geometries](~/add/media/mmgraphics-geometrycombinemodes.png "Different combine modes applied to two geometries")  
-Geometry Combine Modes  
-  
-   
-  
-## Examples  
- The following example shows how to combine two geometries using the Union combine mode.  
-  
- [!code-xml[geometrysample#23](~/add/codesnippet/xaml/t-system.windows.media.g_1_1.xaml)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exclude">
@@ -39,14 +21,13 @@ Geometry Combine Modes
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The second region is excluded from the first.  Given two geometries, <paramref name="A" /> and <paramref name="B" />, the area of geometry <paramref name="B" /> is removed from the area of geometry <paramref name="A" />, producing a region that is <paramref name="A-B" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -56,14 +37,13 @@ Geometry Combine Modes
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The two regions are combined by taking their intersection.  The new area consists of the overlapping region between the two geometries.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -73,14 +53,13 @@ Geometry Combine Modes
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The two regions are combined by taking the union of both.  The resulting geometry is geometry <paramref name="A" /> + geometry <paramref name="B" />.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -90,14 +69,13 @@ Geometry Combine Modes
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The two regions are combined by taking the area that exists in the first region but not the second and the area that exists in the second region but not the first.  The new region consists of <paramref name="(A-B)" /> + <paramref name="(B-A)" />, where <paramref name="A" /> and <paramref name="B" /> are geometries.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

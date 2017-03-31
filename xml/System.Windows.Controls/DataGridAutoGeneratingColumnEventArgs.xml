@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.AutoGeneratingColumn" /> event.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="column" Type="System.Windows.Controls.DataGridColumn" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The name of the property bound to the generated column.</param>
-        <param name="propertyType">The type of the property bound to the generated column.</param>
-        <param name="column">The generated column.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs" /> class.</summary>
+        <param name="propertyName">To be added.</param>
+        <param name="propertyType">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,17 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the event should be canceled.</summary>
-        <value>
-          <see langword="true" /> if the event should be canceled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Setting the Cancel property to `true` stops the column from being generated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -76,16 +68,9 @@
         <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the generated column.</summary>
-        <value>The generated column.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Column property can be used to modify properties of the column that is being generated.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyDescriptor">
@@ -101,8 +86,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the descriptor of the property bound to the generated column.</summary>
-        <value>An object that contains metadata for the property.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +104,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the property bound to the generated column.</summary>
-        <value>The name of the property bound to the generated column.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +122,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the property bound to the generated column.</summary>
-        <value>The type of the property bound to the generated column.</value>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

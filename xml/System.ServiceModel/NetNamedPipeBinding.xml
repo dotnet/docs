@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetNamedPipeBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,28 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a secure and reliable binding that is optimized for on-machine communication.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The NetNamedPipeBinding generates a run-time communication stack by default, which uses transport security, named pipes for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] system-provided choice for on-machine communication. It also supports transactions.  
-  
- The default configuration for the NetNamedPipeBinding is similar to the configuration provided by the <xref:System.ServiceModel.NetTcpBinding>, but it is simpler because the [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the <xref:System.ServiceModel.SecurityMode> setting only offers the <xref:System.ServiceModel.SecurityMode> and <xref:System.ServiceModel.SecurityMode> options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` parameter in <xref:System.ServiceModel.NetNamedPipeBinding.%23ctor%28System.ServiceModel.NetNamedPipeSecurityMode%29> the constructor.  
-  
-   
-  
-## Examples  
- The following example shows the part of the configuration file that contains the section for the NetNamedPipeBinding with values set to defaults.  
-  
-   
-  
- The following example shows how to programmatically use the NetNamedPipeBinding class.  
-  
- [!code-cs[S_UENetNamedPipe#2](~/add/codesnippet/csharp/t-system.servicemodel.ne_5_2.cs)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,27 +26,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetNamedPipeBinding" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default security mode used is <xref:System.ServiceModel.NetNamedPipeSecurityMode>.  
-  
-   
-  
-## Examples  
- The following example shows the part of the configuration file that contains the section for the <xref:System.ServiceModel.NetNamedPipeBinding> with values set to defaults.  
-  
-   
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -77,28 +41,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="securityMode" Type="System.ServiceModel.NetNamedPipeSecurityMode" />
       </Parameters>
       <Docs>
-        <param name="securityMode">The <see cref="T:System.ServiceModel.NetNamedPipeSecurityMode" /> value that specifies whether Windows security is used with named pipes.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetNamedPipeBinding" /> class with a specified security mode.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor when you want to configure the security explicitly. The default is <xref:System.ServiceModel.NetNamedPipeSecurityMode> when using the default constructor.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UENetNamedPipe#3](~/add/codesnippet/csharp/9da2bbae-469d-4db2-8f3a-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="securityMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,28 +59,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configurationName">The binding configuration name for the [netNamedPipeBinding Element](../Topic/%3CnetNamedPipeBinding%3E.md).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetNamedPipeBinding" /> class with a specified configuration name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor when you want to initialize the binding settings from configuration.  
-  
-   
-  
-## Examples  
- [!code-cs[S_UENetNamedPipe#4](~/add/codesnippet/csharp/m-system.servicemodel.ne_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <param name="configurationName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBindingElements">
@@ -139,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,16 +84,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a collection with the binding elements for the binding.</summary>
-        <returns>The <see cref="System.Collections.Generic.ICollection%601" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> that makes up the binding.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-cs[S_UENetNamedPipe#12](~/add/codesnippet/csharp/m-system.servicemodel.ne_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnvelopeVersion">
@@ -166,31 +96,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of SOAP that is used for messages processed by this binding.</summary>
-        <value>
-          <see cref="System.ServiceModel.EnvelopeVersion.Soap12%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SOAP 1.2 must be used with this binding.  
-  
-   
-  
-## Examples  
- The following example shows how to get the version of SOAP.  
-  
- [!code-cs[S_UENetNamedPipe#16](~/add/codesnippet/csharp/p-system.servicemodel.ne_2_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HostNameComparisonMode">
@@ -200,7 +114,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -212,18 +125,9 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching the URI.</summary>
-        <value>The <see cref="System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode%2A" /> value that indicates whether the hostname is used to reach the service when matching the URI. The default value is <see cref="T:System.ServiceModel.HostNameComparisonMode" />, which ignores the hostname in the match.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to get the HostNameComparisonMode property.  
-  
- [!code-cs[S_UENetNamedPipe#13](~/add/codesnippet/csharp/p-system.servicemodel.ne_30_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferPoolSize">
@@ -233,7 +137,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -245,23 +148,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of bytes that are used to buffer incoming messages in memory.</summary>
-        <value>The maximum number of bytes that are used to buffer incoming messages in memory. The default value is 524,288 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you receive more data than you can buffer, the data that exceeds the buffer size remains on the underlying socket until your buffer has room for the rest of the data.  
-  
-   
-  
-## Examples  
- The following example shows how to get the MaxBufferPoolSize value.  
-  
- [!code-cs[S_UENetNamedPipe#5](~/add/codesnippet/csharp/p-system.servicemodel.ne_6_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferSize">
@@ -271,7 +160,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -283,24 +171,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of bytes used to buffer incoming messages in memory.</summary>
-        <value>The maximum number of bytes that are used to buffer incoming messages in memory. The default value is 65,536 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you receive more data than you can buffer, the data that exceeds the buffer size remains on the underlying socket until your buffer has room for the rest of the data.  
-  
-   
-  
-## Examples  
- The following example shows how to get the MaxBufferSize value.  
-  
- [!code-cs[S_UENetNamedPipe#6](~/add/codesnippet/csharp/p-system.servicemodel.ne_17_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than 0.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxConnections">
@@ -310,30 +183,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of connections, both inbound and outbound, that are allowed to endpoints configured with the named pipe binding.</summary>
-        <value>The maximum number of named pipe connections that are allowed with this binding. The default value is 10.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The maximum number of inbound and the maximum number of outbound connections are set to the same value.  
-  
-   
-  
-## Examples  
- The following example shows how to get the MaxConnections values.  
-  
- [!code-cs[S_UENetNamedPipe#7](~/add/codesnippet/csharp/p-system.servicemodel.ne_26_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxReceivedMessageSize">
@@ -343,7 +201,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -355,18 +212,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum size, in bytes, for a received message that is processed by the binding.</summary>
-        <value>The maximum size (in bytes) for a received message that is processed by the binding. The default value is 65,536 bytes.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to get the MaxReceivedMessageSize value.  
-  
- [!code-cs[S_UENetNamedPipe#8](~/add/codesnippet/csharp/p-system.servicemodel.ne_27_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReaderQuotas">
@@ -376,41 +224,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
-        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints on SOAP messages exchanged. The default values for these constraints are provided in the following Remarks section.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values are as follows:  
-  
--   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
-  
--   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
-  
--   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
-  
--   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
-  
--   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
-  
-   
-  
-## Examples  
- The following example shows how to get the ReaderQuotas object.  
-  
- [!code-cs[S_UENetNamedPipe#11](~/add/codesnippet/csharp/p-system.servicemodel.ne_0_1.cs)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -420,25 +242,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the URI transport scheme for the channels and listeners that are configured with this binding.</summary>
-        <value>Returns "net.pipe".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to get the URI transport scheme.  
-  
- [!code-cs[S_UENetNamedPipe#10](~/add/codesnippet/csharp/p-system.servicemodel.ne_11_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Security">
@@ -448,30 +260,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetNamedPipeSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object that specifies the type of security used with services configured with this binding.</summary>
-        <value>The <see cref="T:System.ServiceModel.NetNamedPipeSecurity" /> that is used with this binding. The default value is <see cref="T:System.ServiceModel.NetNamedPipeSecurityMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.NetNamedPipeSecurity> provides the types of security and settings available to the <xref:System.ServiceModel.NetNamedPipeBinding>.  
-  
-   
-  
-## Examples  
- The following example shows how to get the type of security to be used with this binding.  
-  
- [!code-cs[S_UENetNamedPipe#9](~/add/codesnippet/csharp/p-system.servicemodel.ne_28_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMaxConnections">
@@ -493,9 +290,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.NetNamedPipeBinding.MaxConnections%2A" /> property has changed from its default value and should be serialized.</summary>
-        <returns>
-          <see langword="True" /> if the <see cref="System.ServiceModel.NetNamedPipeBinding.MaxConnections%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,9 +314,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.NetNamedPipeBinding.ReaderQuotas%2A" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.NetNamedPipeBinding.ReaderQuotas%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,9 +338,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.NetNamedPipeBinding.Security%2A" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.NetNamedPipeBinding.Security%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,9 +362,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that indicates whether the <see cref="System.ServiceModel.NetNamedPipeBinding.TransactionProtocol%2A" /> property has changed from its default value and should be serialized. This is used by [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] for XAML integration.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="System.ServiceModel.NetNamedPipeBinding.TransactionProtocol%2A" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,26 +374,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether incoming requests are handled synchronously or asynchronously.</summary>
-        <value>
-          <see langword="false" /> to indicate that the incoming requests are handled asynchronously.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the part of the configuration file that contains the section for the <xref:System.ServiceModel.NetNamedPipeBinding> with values set to defaults.  
-  
- [!code-cs[S_UENetNamedPipe#17](~/add/codesnippet/csharp/b3618cf5-a128-4f69-90d9-_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionFlow">
@@ -610,7 +392,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -622,24 +403,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether transactions should be flowed to the service.</summary>
-        <value>
-          <see langword="true" /> if the client’s transactions should be flowed to the service; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The TransactionFlow property enables you to specify whether this binding should support flowing transactions.  
-  
-   
-  
-## Examples  
- The following example shows how to get the value of TransactionFlow the binding.  
-  
- [!code-cs[S_UENetNamedPipe#14](~/add/codesnippet/csharp/p-system.servicemodel.ne_7_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionProtocol">
@@ -649,30 +415,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransactionProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the transactions protocol used by the service to flow transactions.</summary>
-        <value>The <see cref="T:System.ServiceModel.TransactionProtocol" /> used by the service to flow transactions. The default protocol is <see cref="System.ServiceModel.TransactionProtocol.OleTransactions%2A" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WS-Atomic Transaction protocol can also be used by setting the <xref:System.ServiceModel.TransactionProtocol.WSAtomicTransactionOctober2004%2A> value.  
-  
-   
-  
-## Examples  
- The following example shows how to get the TransactionProtocol object.  
-  
- [!code-cs[S_UENetNamedPipe#15](~/add/codesnippet/csharp/p-system.servicemodel.ne_29_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TransferMode">
@@ -682,7 +433,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -694,23 +444,9 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the service configured with the binding uses streamed (in one or both directions) or buffered modes of message transfer.</summary>
-        <value>The <see cref="T:System.ServiceModel.TransferMode" /> value that indicates whether the service configured with the binding uses streamed (in one or both directions) or buffered modes of message transfer. The default is <see cref="T:System.ServiceModel.TransferMode" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is possible to stream only the incoming or the outgoing messages by specifying, respectively, <xref:System.ServiceModel.TransferMode> or <xref:System.ServiceModel.TransferMode>.  
-  
-   
-  
-## Examples  
- The following example shows how to get the TransferMode.  
-  
- [!code-cs[S_UENetNamedPipe#18](~/add/codesnippet/csharp/p-system.servicemodel.ne_14_1.cs)]  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

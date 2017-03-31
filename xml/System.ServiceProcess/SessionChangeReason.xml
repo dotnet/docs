@@ -4,25 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.SessionChangeReason" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the reason for a Terminal Services session change notice.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the use of the SessionChangeReason enumeration in an implementation of the <xref:System.ServiceProcess.ServiceBase.OnSessionChange%2A> method in a class derived from <xref:System.ServiceProcess.ServiceBase>.  This code example is part of a larger example provided for the <xref:System.ServiceProcess.ServiceBase> class.  
-  
- [!code-cs[ServiceBase_Commands#9](~/add/codesnippet/csharp/t-system.serviceprocess._1_1.cs)]
- [!code-vb[ServiceBase_Commands#9](~/add/codesnippet/visualbasic/t-system.serviceprocess._1_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ConsoleConnect">
@@ -32,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A console session has connected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConsoleDisconnect">
@@ -49,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A console session has disconnected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteConnect">
@@ -66,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A remote session has connected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteDisconnect">
@@ -83,14 +69,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A remote session has disconnected.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionLock">
@@ -100,14 +85,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A session has been locked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionLogoff">
@@ -117,14 +101,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A user has logged off from a session.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionLogon">
@@ -134,14 +117,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A user has logged on to a session.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionRemoteControl">
@@ -151,14 +133,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The remote control status of a session has changed.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionUnlock">
@@ -168,14 +149,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.SessionChangeReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A session has been unlocked.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

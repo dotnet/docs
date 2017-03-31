@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigClientHost" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -14,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines interfaces that allow the internal .NET Framework infrastructure to customize configuration.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,7 +24,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,8 +31,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the path to the application configuration file.</summary>
-        <returns>A string representing the path to the application configuration file.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,8 +50,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representing the path to the known local user configuration file.</summary>
-        <returns>A string representing the path to the known local user configuration file.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +62,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representing the path to the known roaming user configuration file.</summary>
-        <returns>A string representing the path to the known roaming user configuration file.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +81,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,10 +90,9 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">A string representing the path to the application configuration file.</param>
-        <summary>Returns a value indicating whether a configuration file path is the same as a currently known application configuration file path.</summary>
-        <returns>
-          <see langword="true" /> if a string representing a configuration path is the same as a path to the application configuration file; <see langword="false" /> if a string representing a configuration path is not the same as a path to the application configuration file.</returns>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +103,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,10 +112,9 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">A string representing the path to the application configuration file.</param>
-        <summary>Returns a value indicating whether a configuration file path is the same as the configuration file path for the currently known local user.</summary>
-        <returns>
-          <see langword="true" /> if a string representing a configuration path is the same as a path to a known local user configuration file; otherwise, <see langword="false" />.</returns>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +125,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,10 +134,9 @@
         <Parameter Name="configPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configPath">A string representing the path to an application configuration file.</param>
-        <summary>Returns a value indicating whether a configuration file path is the same as the configuration file path for the currently known roaming user.</summary>
-        <returns>
-          <see langword="true" /> if a string representing a configuration path is the same as a path to a known roaming user configuration file; otherwise, <see langword="false" />.</returns>
+        <param name="configPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

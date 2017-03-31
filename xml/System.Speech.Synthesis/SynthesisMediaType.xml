@@ -4,22 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisMediaType" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumerates the types of media files.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructors of the <xref:System.Speech.Synthesis.FilePrompt> class use SynthesisMediaType to indicate the media type of the file from which the prompt will be constructed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ssml">
@@ -29,14 +21,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisMediaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the media type is SSML.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -46,14 +37,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisMediaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the media type is Text.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WaveAudio">
@@ -63,14 +53,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisMediaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that the media type is WaveAudio.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

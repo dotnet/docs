@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextMatchCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -12,24 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a collection of instances of the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> class. This class cannot be inherited.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Web.Services.Description.MimeTextMatch> represents a MIME text pattern for which an HTTP transmission will be searched. For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the properties and methods exposed by the `MimeTextMatchCollection` class.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#1](~/add/codesnippet/cpp/t-system.web.services.de_47_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#1](~/add/codesnippet/csharp/t-system.web.services.de_47_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#1](~/add/codesnippet/visualbasic/t-system.web.services.de_47_1.vb)]  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,12 +23,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,21 +49,10 @@
         <Parameter Name="match" Type="System.Web.Services.Description.MimeTextMatch" />
       </Parameters>
       <Docs>
-        <param name="match">The <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to the end of the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" />.</summary>
-        <returns>The zero-based index where the <paramref name="match" /> parameter has been added.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `Add` method.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#4](~/add/codesnippet/cpp/8b1a7038-6c94-4a89-a4c4-_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#4](~/add/codesnippet/csharp/8b1a7038-6c94-4a89-a4c4-_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#4](~/add/codesnippet/visualbasic/8b1a7038-6c94-4a89-a4c4-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="match">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -89,7 +62,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,22 +72,10 @@
         <Parameter Name="match" Type="System.Web.Services.Description.MimeTextMatch" />
       </Parameters>
       <Docs>
-        <param name="match">The <see cref="T:System.Web.Services.Description.MimeTextMatch" /> for which to check collection membership.</param>
-        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.MimeTextMatch" /> is a member of the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" />.</summary>
-        <returns>
-          <see langword="true" /> if the <paramref name="match" /> parameter is a member of the <see langword="MimeTextMatchCollection" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `Contains` method.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#3](~/add/codesnippet/cpp/7455c0c8-a73e-48ab-8ade-_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#3](~/add/codesnippet/csharp/7455c0c8-a73e-48ab-8ade-_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#3](~/add/codesnippet/visualbasic/7455c0c8-a73e-48ab-8ade-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="match">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -124,7 +85,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,21 +96,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The array of type <see cref="T:System.Web.Services.Description.MimeTextMatch" /> serving as the destination for the copy action.</param>
-        <param name="index">The zero-based index at which to start placing the copied collection.</param>
-        <summary>Copies the entire <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.MimeTextMatch" />, starting at the specified zero-based index of the target array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `CopyTo` method.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#5](~/add/codesnippet/cpp/9b126cbc-8e52-465c-b46d-_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#5](~/add/codesnippet/csharp/9b126cbc-8e52-465c-b46d-_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#5](~/add/codesnippet/visualbasic/9b126cbc-8e52-465c-b46d-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -159,7 +109,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,21 +119,10 @@
         <Parameter Name="match" Type="System.Web.Services.Description.MimeTextMatch" />
       </Parameters>
       <Docs>
-        <param name="match">The <see cref="T:System.Web.Services.Description.MimeTextMatch" /> for which to search in the collection.</param>
-        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.MimeTextMatch" /> and returns the zero-based index of the first occurrence within the collection.</summary>
-        <returns>A 32-bit signed integer.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of the `IndexOf` method.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#8](~/add/codesnippet/cpp/964e104a-757b-4763-a51b-_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#8](~/add/codesnippet/csharp/964e104a-757b-4763-a51b-_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#8](~/add/codesnippet/visualbasic/964e104a-757b-4763-a51b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="match">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -193,7 +132,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,35 +143,10 @@
         <Parameter Name="match" Type="System.Web.Services.Description.MimeTextMatch" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>match</c> parameter.</param>
-        <param name="match">The <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to add to the collection.</param>
-        <summary>Adds the specified <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> at the specified index.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
-  
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `match` parameter is added to the end of the <xref:System.Web.Services.Description.MimeTextMatchCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the `Insert` method.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#9](~/add/codesnippet/cpp/62fac8dd-87d1-45b3-ae0b-_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#9](~/add/codesnippet/csharp/62fac8dd-87d1-45b3-ae0b-_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#9](~/add/codesnippet/visualbasic/62fac8dd-87d1-45b3-ae0b-_1.vb)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
-  
- \- or -  
-  
- The <paramref name="index" /> parameter is greater than <see cref="System.Collections.CollectionBase.Count%2A" />.</exception>
+        <param name="index">To be added.</param>
+        <param name="match">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -242,7 +156,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,21 +166,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> whose value is returned or modified.</param>
-        <summary>Gets or sets the value of the member of the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> at the specified zero-based index.</summary>
-        <value>A <see langword="MimeTextMatch" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates the use of a zero-based index to retrieve a member of the `MimeTextMatchCollection`.  
-  
- [!code-cpp[MimeText_Match_MatchColl_9#7](~/add/codesnippet/cpp/p-system.web.services.de_89_1.cpp)]
- [!code-cs[MimeText_Match_MatchColl_9#7](~/add/codesnippet/csharp/p-system.web.services.de_89_1.cs)]
- [!code-vb[MimeText_Match_MatchColl_9#7](~/add/codesnippet/visualbasic/p-system.web.services.de_89_1.vb)]  
-  
- ]]></format>
-        </remarks>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -276,7 +179,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,25 +189,9 @@
         <Parameter Name="match" Type="System.Web.Services.Description.MimeTextMatch" />
       </Parameters>
       <Docs>
-        <param name="match">The <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to remove from the collection.</param>
-        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.MimeTextMatch" /> from the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
-  
- The elements that follow the removed `MimeTextMatch` move up to occupy the vacated spot.  
-  
-   
-  
-## Examples  
- The following example demonstrates the use of the `Remove` method.  
-  
- MimeText_Match_MatchColl_9#6  
-  
- ]]></format>
-        </remarks>
+        <param name="match">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

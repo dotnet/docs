@@ -4,7 +4,6 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SizeToContent" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how a window will automatically size itself to fit the size of its content. Used by the <see cref="System.Windows.Window.SizeToContent%2A" /> property.</summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,14 +26,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a window will automatically set its height to fit the height of its content, but not the width.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -44,14 +42,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a window will not automatically set its size to fit the size of its content. Instead, the size of a window is determined by other properties, including <see cref="System.Windows.FrameworkElement.Width%2A" />, <see cref="System.Windows.FrameworkElement.Height%2A" />, <see cref="System.Windows.FrameworkElement.MaxWidth%2A" />, <see cref="System.Windows.FrameworkElement.MaxHeight%2A" />, <see cref="System.Windows.FrameworkElement.MinWidth%2A" />, and <see cref="System.Windows.FrameworkElement.MinHeight%2A" />. See [WPF Windows Overview](../Topic/WPF%20Windows%20Overview.md).</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -61,14 +58,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a window will automatically set its width to fit the width of its content, but not the height.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="WidthAndHeight">
@@ -78,14 +74,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that a window will automatically set both its width and height to fit the width and height of its content.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

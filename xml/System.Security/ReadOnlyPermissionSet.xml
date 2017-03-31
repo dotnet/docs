@@ -11,17 +11,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a read-only collection that can contain many different types of permissions.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Read-only permission sets are created from explicit XML and cannot be modified after creation. This restriction ensures that the permission set will be restored to the same XML encoding that it was originally created from. Attempting to add or remove a permission from the ReadOnlyPermissionSet results in an <xref:System.InvalidOperationException>.  
-  
- Note that any permission you obtain from the ReadOnlyPermissionSet is only a copy of the permission. If the copy is mutable and is changed, the permission that is in the ReadOnlyPermissionSet is not changed.  
-  
- ]]></format>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,11 +28,9 @@
         <Parameter Name="permissionSetXml" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="permissionSetXml">The XML element from which to take the value of the new <see cref="T:System.Security.ReadOnlyPermissionSet" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.ReadOnlyPermissionSet" /> class.</summary>
+        <param name="permissionSetXml">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="permissionSetXml" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddPermissionImpl">
@@ -80,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the <see cref="T:System.Security.ReadOnlyPermissionSet" />.</summary>
-        <returns>A copy of the read-only permission set.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,23 +90,9 @@
         <Parameter Name="et" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="et">The XML encoding to use to reconstruct the security object.</param>
-        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This override of <xref:System.Security.PermissionSet.FromXml%2A?displayProperty=fullName> is intended to be called by the base class <xref:System.Security.PermissionSet> when it is deserializing the permission set. An exception is thrown if you attempt to call FromXml directly. You cannot modify a read-only permission set with a FromXml call.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="et" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="et" /> parameter is not a valid permission element.  
-  
- -or-  
-  
- The <paramref name="et" /> parameter's version number is not supported.</exception>
-        <exception cref="T:System.InvalidOperationException">The object is not being deserialized; that is, <see cref="T:System.Security.PermissionSet" /> did not call back into FromXml during deserialization.</exception>
+        <param name="et">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumeratorImpl">
@@ -174,16 +149,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the collection is read-only.</summary>
-        <value>Always <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Security.ReadOnlyPermissionSet> is always read-only, so this value must always be `true`.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovePermissionImpl">
@@ -244,8 +212,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-        <returns>An XML encoding of the security object, including any state information.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
